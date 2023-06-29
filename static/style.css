@@ -4,7 +4,7 @@ body { padding-top: 56px; }
 .bg-hero { background-color: rgb(133, 236, 211); }
 
 /* CALLOUT */
-.bd-callout { padding:1.25rem; margin-top:1.25rem; margin-bottom:1.25rem; border:1px solid #000000; border-left-width:.25rem; border-radius:.25rem }
+.bd-callout { padding:1.25rem; margin-top:1.25rem; margin-bottom:1.25rem; border:1px solid #ffffff; border-left-width:.25rem; border-radius:.25rem }
 .bd-callout h4 { margin-bottom:.25rem }
 .bd-callout p:last-child { margin-bottom:0 }
 .bd-callout code { border-radius:.25rem }
