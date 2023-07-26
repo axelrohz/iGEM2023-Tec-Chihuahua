@@ -1,89 +1,77 @@
-<menu>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
 
+    <!---- TEAM NAME ---->
+    <a class="navbar-brand" href="#">Tec-Chihuahua</a>
 
-<head>
- 
+    <!---- SMALL SCREEN MENU ICON ---->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto left-aligned">
 
-  <!-- Template Main CSS File -->
- 
-  
+        <!---- HOME ---->
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+        </li>
 
-  <!-- =======================================================
-  * Template Name: Scaffold - v2.0.0
-  * Template URL: https://bootstrapmade.com/scaffold-bootstrap-metro-style-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-
-
-<header id="header" class="fixed-top">
-  <div class="container d-flex">
-
-    <div class="logo mr-auto">
-      <h1 class="text-light"><a href=""><span>AureoBos</span></a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-    </div>
- 
-    
-
-    <nav class="nav-menu d-none d-lg-block">
-      <ul>
-        <li><a class="active" href="{{ url_for('pages', page='home') }}">Home</a></li>
-        
-            
-        <li class="drop-down"><a href="">Project</a>
-          <ul>
-            
-            <li><a href="{{ url_for('pages', page='description') }}">Description</a></li>
-            <li><a href="#">Experiment</a></li>
-            <li><a href="#">Engineering</a></li>
-            <li><a href="#">Results</a></li>
-            <li><a href="#">Parts</a></li>
-            <li><a href="#">Contribution</a></li>
-            
+        <!---- TEAM ---->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="{{ url_for('pages', page='team') }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Team
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='team') }}">Team</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='attributions') }}">Attributions</a></li>
           </ul>
         </li>
-        <li class="drop-down"><a href="">Human practices</a>
-          <ul>
-            <li><a href="#">Integrated human practices</a></li>
-            <li><a href="#">Public engagment</a></li>
-            <li><a href="#">Inspiring</a></li>
-            
+
+        <!---- PROJECT ---->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Project
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='contribution') }}">Contribution</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='description') }}"</a>Description</li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='engineering') }}">Engineering</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='experiments') }}">Experiments</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='notebook') }}">Notebook</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='results') }}">Results</a></li>
           </ul>
         </li>
-        <li class="drop-down"><a href="">Members</a>
-          <ul>
-            <li><a href="{{ url_for('pages', page='team') }}">Team</a></li>
-            <li><a href="#">Behind the scenes</a></li>
-            <li><a href="#">Attributions</a></li>
-            <li><a href="#">Sponsors</a></li>
-            
-            
+
+        <!---- SAFETY ---->
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('pages', page='safety') }}">Safety</a>
+        </li>
+
+        <!---- HUMAN PRACTICES ---->
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('pages', page='human-practices') }}">Human Practices</a>
+        </li>
+
+        <!---- AWARDS ---->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Awards
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='education') }}">Education</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='entrepreneurship') }}">Entrepreneurship</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='hardware') }}">Hardware</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='inclusivity') }}">Inclusivity</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='measurement') }}">Measurement</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='model') }}">Model</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='plant') }}">Plant</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='software') }}">Software</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='sustainable') }}">Sustainable</a></li>
           </ul>
         </li>
-        <li><a href="{{ url_for('pages', page='entrepreneurship') }}">Entrepreneurship</a></li>
-        <li><a href="{{ url_for('pages', page='model') }}">Model</a></li>
-     
-        
-
-        
-        
-
-        
-
-        
-
-
-       
 
       </ul>
-    </nav><!-- .nav-menu -->
-
-   
-</header><!-- End Header -->
-</menu>
+    </div>
+  </div>
+</nav>

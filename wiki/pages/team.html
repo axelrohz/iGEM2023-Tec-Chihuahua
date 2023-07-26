@@ -5,133 +5,30 @@
 
 {% block page_content %}
 
-
-<div class="container">
-  <div class="row">
-      
-      <div class="col-sm-10 col-sm-offset-1">
-       <div class="col-md-4 col-sm-6">
-           <div class="card-container">
-              <div class="card">
-                  <div class="front">
-                      <div class="cover">
-                          
-                      </div>
-                      <div class="user">
-                        <img class="img-circle" src="{{ url_for('static', filename = 'assets/img/AnaElisa2.png') }}" />
-                      </div>
-                      <div class="content">
-                          <div class="main">
-                              <h3 class="name">Ana Elisa</h3>
-                              <p class="profession"> Experimental desing manager</p>
-                              <p class="text-center">"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>
-                          </div>
-                          <div class="footer">
-                              <i class="fa fa-mail-forward"></i> Auto Rotation
-                          </div>
-                      </div>
-                  </div> <!-- end front panel -->
-                  <div class="back">
-                      <div class="header">
-                          <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
-                      </div>
-                      <div class="content">
-                          <div class="main">
-                              <h4 class="text-center">Job Description</h4>
-                              <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
-
-                              <div class="stats-container">
-                                  <div class="stats">
-                                      <h4>235</h4>
-                                      <p>
-                                          Followers
-                                      </p>
-                                  </div>
-                                  <div class="stats">
-                                      <h4>114</h4>
-                                      <p>
-                                          Following
-                                      </p>
-                                  </div>
-                                  <div class="stats">
-                                      <h4>35</h4>
-                                      <p>
-                                          Projects
-                                      </p>
-                                  </div>
-                              </div>
-
-                          </div>
-                      </div>
-                      <div class="footer">
-                          <div class="social-links text-center">
-                              <a href="#" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
-                              <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
-                              <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
-                          </div>
-                      </div>
-                  </div> <!-- end back panel -->
-              </div> <!-- end card -->
-          </div> <!-- end card-container -->
-      </div> <!-- end col sm 3 -->
-
- <script>
-  $().ready(function(){
-        $('[rel="tooltip"]').tooltip();
-
-    });
-
-    function rotateCard(btn){
-        var $card = $(btn).closest('.card-container');
-        console.log($card);
-        if($card.hasClass('hover')){
-            $card.removeClass('hover');
-        } else {
-            $card.addClass('hover');
-        }
-    }
- </script>
-
-<div class="container relative des">
-    <div class="row">
-      <nav id="sidenav-wrapper" class="col-2 d-flex">
-        <ul id="sidenav" class="nav flex-column align-self-start">
-          <li class="nav-header">CONTENTS</li>
-          <li class="nav-item">
-            <a class="sidenav-link nav-link" href="#"
-              ><span class="sidenav-space"></span>Overview</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="sidenav-link nav-link" href="#"
-              ><span class="sidenav-space"></span>Current trends</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="sidenav-link nav-link" href="#"
-              ><span class="sidenav-space"></span>Binanox</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="sidenav-link nav-link" href="#"
-              ><span class="sidenav-space"></span>Chemical synthesis</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="sidenav-link nav-link" href="#"
-              ><span class="sidenav-space"></span>Conclusions</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="sidenav-link nav-link" href="#"
-              ><span class="sidenav-space"></span>References</a
-            >
-          </li>
-        </ul>
-      </nav>
-  
-
- 
+<div class="row">
+  <div class="col-8">
+    <h2>What should this page contain?</h2>
+    <hr>
+    <ul>
+      <li>Include pictures of your teammates, don't forget instructors and advisors!</li>
+      <li>You can add a small biography or a few words from each team member, to tell us what you like, and what motivated you to participate in iGEM.</li>
+      <li>Take team pictures! Show us your school, your lab and little bit of your city.</li>
+      <li>Remember that image galleries can help you showcase many pictures while saving space.</li>
+    </ul>
+    <div class="bd-callout bd-callout-info"><strong>Important:</strong> Your wiki pages will be archived at the end of the iGEM season and this content will remain online. Please keep this in mind as you post photos and personal information on this page.</div>
+  </div>
+  <div class="col-4">
+    <h2>Inspirations</h2>
+    <hr>
+    <ul>
+      <li><a href="https://2019.igem.org/Team:CU/Team">2019 CU</a></li>
+      <li><a href="https://2019.igem.org/Team:UANL/Team">2019 UANL</a></li>
+      <li><a href="https://2019.igem.org/Team:William_and_Mary/Team">2019 William and Mary</a></li>
+      <li><a href="https://2020.igem.org/Team:BOKU-Vienna/Team">2020 BOKU Vienna </a></li>
+      <li><a href="https://2020.igem.org/Team:CAU_China/Team_Member">2020 CAU China</a></li>
+      <li><a href="https://2020.igem.org/Team:Lethbridge/Members">2020 Lethbridge</a></li>
+    </ul>
+  </div>
 </div>
 
 {% endblock %}
