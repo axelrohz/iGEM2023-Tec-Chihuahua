@@ -5,78 +5,60 @@
 
 {% block page_content %}
 
-<div class="container-fluid p-5">
-    <div class="row">
-      <div id="carouselHero" class="carousel slide carousel-fade" data-bs-ride="carousel">
-       <div class="carousel-indicators">
-         <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-         <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="1" aria-label="Slide 2"></button>
-         <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="2" aria-label="Slide 3"></button>
-   </div>
-       <div class="carousel-inner">
-         <div class="carousel-item active">
-           <img src="https://med.nyu.edu/research/office-science-research/sites/default/files/styles/fixed_height_450_1600w_565h/public/2020-11/osr-landing-hero.jpg?h=ee874d6d&itok=M8qR1aQZ" class="d-block w-100" alt="...">
-           <div class="carousel-caption d-flex">
-             <div class="vstack gap-3 align-self-end">
-               <h5>First slide label</h5>
-               <p>Some representative placeholder content for the first slide.</p>
-             </div>
-           </div>
-         </div>
-         <div class="carousel-item">
-           <img src="https://assets.answersingenesis.org/img/cms/content/contentnode/header_image/is-scientific-research-flawed.jpg" class="d-block w-100" alt="...">
-           <div class="carousel-caption d-flex">
-             <div class="vstack gap-3 align-self-end">
-               <h5>First slide label</h5>
-               <p>Some representative placeholder content for the first slide.</p>
-             </div>
-           </div>
-         </div>
-         <div class="carousel-item">
-           <img src="https://www.sartorius.com/resource/image/10550/16x9/1050/590/acaab72df96332f5fe32ffeed6945536/3E22CB7B8D31ABA8AFD92036412503D8/lt-filtratio-6907.jpg" class="d-block w-100" alt="...">
-           <div class="carousel-caption d-flex">
-             <div class="vstack gap-3 align-self-end">
-               <h5>Third slide label</h5>
-               <p>Some representative placeholder content for the first slide.</p>
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
- <div class="container">
-   <div class="row align-items-center g-5">
-     <div class="col-lg-5">
-       <img src="https://www.sartorius.com/resource/image/10550/16x9/1050/590/acaab72df96332f5fe32ffeed6945536/3E22CB7B8D31ABA8AFD92036412503D8/lt-filtratio-6907.jpg" alt="..." class="img-fluid">
-   </div>
-     <div class="col-lg-7">
-       <h2>Introduction</h2>
-     This is some content from a media component. You can replace this with any content and adjust it as needed.
-     </div>
-   </div>
-   <div class="row align-items-center g-5 banner">
-     <div class="col-lg-10 offset-lg-1 p-5">
-       <h2>Banner Title</h2>
-       <p>Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
-     </div>
-   </div>
-     <div class="row align-items-center section">
-       <div class="col-lg-7 p-5">
-          <h2 class="float-end">Banner Title</h2>
-         <p class="float-end">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
-       </div>
-       <div class="col-lg-5">
-         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_aVxy88F3VF_ofNURabVenT5adlGPDeQ7jg&usqp=CAU" class="img-fluid float-start" />
-       </div>
-     </div>
-   <div class="row align-items-center gx-5 banner-img">
-     <div class="col-lg-8 offset-lg-1 p-5">
-       <h2>Banner Title</h2>
-       <p>Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
-     </div>
-   </div>
- </div>
+<section class="slider">
+    <ul class="carousel" id="carousel">
+      <li class="bg-1">
+        <h1>Slide 1</h1>
+        <p>For desktops: hovering pauses slide.</p>
+        <p>For mobile: ?! Fork me!</p>
+      </li>
+      <li class="bg-2">
+         <h1>Slide 2</h1>
+         <p>For desktops: hovering pauses slide.</p>
+         <p>For mobile: ?! Fork me!
+      </li>
+      <li class="bg-3">
+         <h1>Slide 3</h1>
+         <p>For desktops: hovering pauses slide.</p>
+        <p>For mobile: ?! Fork me!</p>
+      </li>
+    </ul>
+    <ul class="sliderpagnation">
+        <li><a href="#"><i class="fa fa-circle"></i></a></li>
+        <li><a href="#"><i class="fa fa-circle"></i></a></li>
+        <li><a href="#"><i class="fa fa-circle"></i></a></li>
+    </ul>
+</section>
+<script>
+    //requires carouFredsel.js
+//pen by Beatrize
+
+jQuery(document).ready(function() {
+  "use strict";
+  $(".carousel").carouFredSel({
+    responsive: true,
+    width: "100%",
+    circular: true,
+    scroll: {
+      item: 1,
+      duration: 500,
+      pauseOnHover: true
+    },
+    auto: true,
+    items: {
+      visible: {
+        min: 1,
+        max: 1
+      },
+      height: "variable"
+    },
+    pagination: {
+      container: ".sliderpagnation",
+      anchorBuilder: false
+    }
+  });
+});
+</script>
        
 
 
