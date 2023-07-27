@@ -6,12 +6,10 @@
 {% block page_content %}
 
 <div class="bc-banner text-center">
-    <div class="bc-banner-label"></div>
     <div class="bc-banner-body">
         <h1 class="animated-title">Attributions</h1>
     </div>
 </div>
-
 
 
  <style>
@@ -19,25 +17,7 @@
         position: relative;
         border: 1px solid #ccc;
         overflow: hidden;
-    }
-
-    .bc-banner-label {
-        position: absolute;
-        top: -20px;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: #f54291;
-        padding: 8px 20px;
-        border-radius: 20px;
-        z-index: 2;
-    }
-
-    .bc-banner-body {
-        position: relative;
-        z-index: 1;
-        padding: 2rem;
         background-image: linear-gradient(135deg, #ff7a59, #f54291);
-        clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
     }
 
     .bc-banner a {
@@ -47,6 +27,23 @@
 
     .bc-banner a:hover {
         opacity: 0.8;
+    }
+
+    .bc-banner-body {
+        position: relative;
+        z-index: 2;
+        padding: 2rem;
+    }
+
+    .bc-banner .bc-banner-cover {
+        position: absolute;
+        opacity: 0.3;
+        filter: alpha(opacity=30); /* For IE8 and earlier */
+        object-fit: cover;
+        top: 0;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
     }
 
     .animated-title {
@@ -66,7 +63,6 @@
             transform: translateY(-10px);
         }
     }
-
 
  </style>
 
