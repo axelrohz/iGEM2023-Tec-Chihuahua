@@ -5,16 +5,61 @@
 
 {% block page_content %}
 
-<div class="content">
-    <h1 class="title">the beautiful aurora
-      <div class="aurora">
-        <div class="aurora__item"></div>
-        <div class="aurora__item"></div>
-        <div class="aurora__item"></div>
-        <div class="aurora__item"></div>
-      </div>
-    </h1>
-    <p class="subtitle">Attributions</p>
-  </div>
+<div class="bc-banner text-center">
+    <a href="http://hubs.to/ppTGS" onclick="ga('send', 'event', 'BC-banner', 'click', 'hubspot marketing signup');">
+    <div class="bc-banner-header">
+       <img src="https://www.hubspot.com/hubfs/HSMF%20-%20Paid%20Acquisition/HubSpot_Logo_PNG-2.png" alt="HubSpot Marketing Free" width="100">
+    </div>
+    <div class="bc-banner-body">
+       <h2>Start Collecting More Leads in Minutes</h2> 
+       <p>With HubSpot Marketing Free, you'll have everything you need to convert more visitors into leads. You'll be up and running in just minutes.</p>
+ 
+       <span class="btn btn-primary">Sign Up For Free</span>
+        
+    </div>
+       
+ <img src="https://www.hubspot.com/hs-fs/hubfs/lead-capture-3-1.jpg?width=1800&name=lead-capture-3-1.jpg" alt="HubSpot Marketing Free" class="bc-banner-cover img-responsive">
+       
+       
+       </a>
+ </div>
+ <style>
+    .bc-banner {
+       position:relative;
+       border:1px solid #ccc;
+       overflow:hidden;
+       background-color:#ff7a59;
+    }
+    .bc-banner a {
+       text-decoration:none;
+       color:#fff;
+    }
+    .bc-banner a:hover {
+       opacity:0.8;
+    }
+    .bc-banner-header {
+       background-color:#fff;
+       position:relative;
+       z-index:2;
+       padding:1rem;
+    }
+    
+    .bc-banner-body {
+       position:relative;
+       z-index:2;
+       padding:2rem;
+    }
+    .bc-banner .bc-banner-cover {
+       position:absolute;
+       opacity: 0.3;
+       filter: alpha(opacity=30); /* For IE8 and earlier */
+       object-fit: cover;
+       top:0;
+       z-index:1;
+       height: 100%;
+       width: 100%;
+    }
+    
+ </style>
 
 {% endblock %}
