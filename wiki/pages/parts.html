@@ -5,11 +5,12 @@
 
 {% block page_content %}
 
-<div class="bc-banner text-center">
-    <div class="bc-banner-body">
-        <h1 class="animated-title">Attributions</h1>
+    <div class="bc-banner text-center">
+        <div class="bc-banner-body">
+            <h1 class="title">Attributions</h1>
+        </div>
     </div>
-</div>
+
 
 
  <style>
@@ -17,10 +18,10 @@
         position: relative;
         border: 1px solid #ccc;
         overflow: hidden;
-        width: 80%; /* Ajustamos el ancho del rectángulo */
-        max-width: 600px; /* Limitamos el ancho máximo para mantener el diseño */
-        margin: 0 auto; /* Centramos el rectángulo horizontalmente */
-        border-radius: 10px; /* Agregamos bordes redondeados para un aspecto más profesional */
+        width: 80%;
+        max-width: 600px;
+        margin: 0 auto;
+        border-radius: 10px;
         background-image: linear-gradient(135deg, #DE8551, #e32f5c);
     }
 
@@ -39,25 +40,20 @@
         padding: 2rem;
     }
 
-    .animated-title {
-        font-size: 36px;
+    .title {
+        font-size: 48px; /* Ajustamos el tamaño de fuente para hacerlo más llamativo */
         font-weight: bold;
         color: #fff;
         margin: 0;
         padding: 0;
-        animation: animateTitle 2s ease infinite;
+        /* Eliminamos la animación para que el título no se mueva */
     }
 
-    @keyframes animateTitle {
-        0%, 100% {
-            transform: translateY(0);
-        }
-        50% {
-            transform: translateY(-10px);
-        }
+    /* Opcional: añadir estilos adicionales para mejorar la legibilidad */
+    .title {
+        letter-spacing: 2px; /* Aumentamos el espaciado entre letras */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Agregamos una sombra para resaltar el texto */
     }
 
-
- </style>
 
 {% endblock %}
