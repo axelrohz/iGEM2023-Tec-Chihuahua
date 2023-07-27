@@ -6,10 +6,12 @@
 {% block page_content %}
 
 <div class="bc-banner text-center">
+    <div class="bc-banner-label"></div>
     <div class="bc-banner-body">
         <h1 class="animated-title">Attributions</h1>
     </div>
 </div>
+
 
 
  <style>
@@ -19,13 +21,23 @@
         overflow: hidden;
     }
 
+    .bc-banner-label {
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #f54291;
+        padding: 8px 20px;
+        border-radius: 20px;
+        z-index: 2;
+    }
+
     .bc-banner-body {
         position: relative;
-        z-index: 2;
+        z-index: 1;
         padding: 2rem;
         background-image: linear-gradient(135deg, #ff7a59, #f54291);
-        /* Creamos la forma de pincel con clip-path */
-        clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
     }
 
     .bc-banner a {
@@ -54,6 +66,7 @@
             transform: translateY(-10px);
         }
     }
+
 
  </style>
 
