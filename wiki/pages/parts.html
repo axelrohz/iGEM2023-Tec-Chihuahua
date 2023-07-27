@@ -4,66 +4,60 @@
 {% block lead %}We ask every team to think deeply and creatively about whether their project is responsible and good for the world. Consider how the world affects your work and how your work affects the world.{% endblock %}
 
 {% block page_content %}
-<head>
-    <title>Interactive Banner</title>
-    <style>
-        .bc-banner {
-            position: relative;
-            border: 1px solid #ccc;
-            overflow: hidden;
-            width: 80%;
-            max-width: 600px;
-            margin: 0 auto;
-            border-radius: 10px;
-            background-image: linear-gradient(135deg, #1eeba7, #3ae89f);
-            transition: transform 0.3s ease; /* Added transition for smooth movement */
-        }
-
-        .bc-banner:hover {
-            transform: translateX(5px); /* Move the banner 5px to the right on hover */
-        }
-
-        .bc-banner a {
-            text-decoration: none;
-            color: #fff;
-        }
-
-        .bc-banner a:hover {
-            opacity: 0.8;
-        }
-
-        .bc-banner-body {
-            position: relative;
-            z-index: 2;
-            padding: 2rem;
-        }
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #fff; /* Change the page background to white */
-        }
-
-        .title {
-            font-size: 48px; /* Adjust font size to make it more prominent */
-            font-weight: bold;
-            color: #fff;
-            margin: 0;
-            padding: 0;
-            /* Remove animation to keep the title steady */
-        }
-
-        /* Optional: add additional styles to improve readability */
-        .title {
-            letter-spacing: 2px; /* Increase letter spacing */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add shadow to highlight the text */
-        }
-    </style>
-</head>
-<body>
-    <div class="bc-banner text-center">
-        <div class="bc-banner-body">
-            <h1 class="title">Attributions</h1>
-        </div>
+<div class="bc-banner text-center">
+    <div class="bc-banner-body">
+        <h1 class="title">Attributions</h1>
     </div>
-</body>
+</div>
+
+
+
+<style>
+    .bc-banner {
+        position: relative;
+        border: 1px solid #ccc;
+        overflow: hidden;
+        width: 80%;
+        max-width: 600px;
+        margin: 0 auto;
+        border-radius: 10px;
+        background-image: linear-gradient(135deg, #1eeba7, #3ae89f);
+    }
+
+    .bc-banner a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .bc-banner a:hover {
+        opacity: 0.8;
+    }
+
+    .bc-banner-body {
+        position: relative;
+        z-index: 2;
+        padding: 2rem;
+    }
+    body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Cambiar el fondo de la página a blanco */
+    }
+
+    .title {
+        font-size: 48px; /* Ajustamos el tamaño de fuente para hacerlo más llamativo */
+        font-weight: bold;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        /* Eliminamos la animación para que el título no se mueva */
+    }
+
+    /* Opcional: añadir estilos adicionales para mejorar la legibilidad */
+    .title {
+        letter-spacing: 2px; /* Aumentamos el espaciado entre letras */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Agregamos una sombra para resaltar el texto */
+    }
+
+</style>
 {% endblock %}
