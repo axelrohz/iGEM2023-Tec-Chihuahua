@@ -14,15 +14,40 @@
 
 
  <style>
+    /* Add a container for the header and the banner */
+    .header-container {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+    }
+
+    /* Make the banner longer and cover the header */
     .bc-banner {
         position: relative;
         border: 1px solid #ccc;
         overflow: hidden;
-        width: 80%;
-        max-width: 600px;
+        width: 100%; /* Adjust the width to cover the entire container */
+        max-width: 1200px; /* Set a maximum width to maintain readability */
         margin: 0 auto;
         border-radius: 10px;
         background-image: linear-gradient(135deg, #1eeba7, #3ae89f);
+    }
+
+    /* Add some animation to the banner */
+    .bc-banner {
+        animation: gradientAnimation 8s linear infinite;
+    }
+
+    @keyframes gradientAnimation {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
     }
 
     .bc-banner a {
@@ -41,7 +66,7 @@
     }
 
     .title {
-        font-size: 48px; /* Ajustamos el tamaño de fuente para hacerlo más llamativo */
+        font-size: 64px; /* Increase the font size for a more striking look */
         font-weight: bold;
         color: #fff;
         margin: 0;
@@ -54,6 +79,7 @@
         letter-spacing: 2px; /* Aumentamos el espaciado entre letras */
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Agregamos una sombra para resaltar el texto */
     }
+
 
 
 {% endblock %}
