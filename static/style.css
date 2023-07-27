@@ -346,6 +346,74 @@ body {
     }
 }
 
+/*csrol*/
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+}
+
+body {
+  width: 100%;
+}
+
+h1 {
+  color: #fff;
+  font-size: 46px;
+  font-family: 'Pacifico', cursive;
+}
+
+p {
+  color: #fff;
+  font-family: verdana, sans-serif;
+}
+/* slider */
+.slider, .slider ul.carousel, .slider ul.carousel li {
+  height: 200px;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.slider ul.carousel li h1 {
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+.primary {
+  color: #000;
+}
+
+.bg-1 {
+  background: #833ab4; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fcb045,
+    #fd1d1d,
+    #833ab4
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fcb045,
+    #fd1d1d,
+    #833ab4
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
 
 
 
