@@ -389,9 +389,20 @@ p {
   margin-bottom: 30px;
 }
 
+/* pagnation  <- -> */
+.slider ul.sliderpagnation li a {
+  color: #ccc;
+}
 
+.slider ul.sliderpagnation li.selected a {
+  color: #937AFF;
+}
 
-
+.slider ul.sliderpagnation li {
+  padding: 0 3px;
+  height: 28px;
+  line-height: 28px;
+}
 
 .primary {
   color: #000;
@@ -412,7 +423,6 @@ p {
     #833ab4
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
 
 
 
