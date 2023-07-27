@@ -409,18 +409,18 @@ p {
 }
 
 .bg-1 {
-  background: #447D9C; /* fallback for old browsers */
+  background: #833ab4; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #5BC5AB,
-    #A9BA6C,
-    #C55B75
+    #fcb045,
+    #fd1d1d,
+    #833ab4
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #F6AE2D,
-    #DE8551,
-    #D27063
+    #fcb045,
+    #fd1d1d,
+    #833ab4
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -428,12 +428,12 @@ p {
   background: #f857a6; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #5BC5AB,
+    #833ab4,
     #4BC0C8
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #5BC5AB,
+    #833ab4,
     #4BC0C8
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
