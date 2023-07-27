@@ -13,11 +13,15 @@
 
 
  <style>
-        .bc-banner {
+    .bc-banner {
         position: relative;
         border: 1px solid #ccc;
         overflow: hidden;
-        background-image: linear-gradient(135deg, #5BC5AB, #DE8551);
+        width: 80%; /* Ajustamos el ancho del rectángulo */
+        max-width: 600px; /* Limitamos el ancho máximo para mantener el diseño */
+        margin: 0 auto; /* Centramos el rectángulo horizontalmente */
+        border-radius: 10px; /* Agregamos bordes redondeados para un aspecto más profesional */
+        background-image: linear-gradient(135deg, #a4f2d2, #94c9bd);
     }
 
     .bc-banner a {
@@ -33,17 +37,6 @@
         position: relative;
         z-index: 2;
         padding: 2rem;
-    }
-
-    .bc-banner .bc-banner-cover {
-        position: absolute;
-        opacity: 0.3;
-        filter: alpha(opacity=30); /* For IE8 and earlier */
-        object-fit: cover;
-        top: 0;
-        z-index: 1;
-        height: 100%;
-        width: 100%;
     }
 
     .animated-title {
@@ -63,6 +56,7 @@
             transform: translateY(-10px);
         }
     }
+
 
  </style>
 
