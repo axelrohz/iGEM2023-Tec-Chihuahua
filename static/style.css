@@ -349,33 +349,7 @@ body {
 /*csrol*/
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 /* reset */
-* {
-  margin: 0;
-  padding: 0;
-}
 
-ul {
-  list-style: none;
-}
-
-ul li {
-  display: inline-block;
-}
-
-body {
-  width: 100%;
-}
-
-h1 {
-  color: #fff;
-  font-size: 46px;
-  font-family: 'Pacifico', cursive;
-}
-
-p {
-  color: #fff;
-  font-family: verdana, sans-serif;
-}
 /* slider */
 .slider, .slider ul.carousel, .slider ul.carousel li {
   height: 200px;
