@@ -133,6 +133,11 @@
       margin-bottom: 30px;
     }
 
+    /* Smooth Scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
     /* Responsive Styles */
     @media (max-width: 767px) {
       .col-xs-3 {
@@ -140,7 +145,33 @@
       }
 
       .col-xs-9 {
-        width: 100%; /* Expand the
+        width: 100%; /* Expand the content column to fill the screen */
+      }
+    }
+
+  </style>
+
+  <script>
+    $(document).ready(function () {
+      // Change the navigation bar color as the user scrolls through sections
+      $(window).scroll(function () {
+        var position = $(this).scrollTop();
+        $(".navbar-default .navbar-nav>li").each(function () {
+          var target = $(this).find('a').attr('href');
+          var targetPosition = $(target).offset().top;
+          var targetHeight = $(target).outerHeight();
+          if (position >= targetPosition - 100 && position < targetPosition + targetHeight - 100) {
+            $(this).addClass('active').siblings().removeClass('active');
+          }
+        });
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>
 
 
 
