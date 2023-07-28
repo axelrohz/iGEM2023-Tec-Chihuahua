@@ -35,7 +35,7 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-3">
-        <div id="myScrollspy" class="navbar navbar-default affix-top" data-spy="affix" data-offset-top="100">
+        <div id="myScrollspy" class="navbar navbar-default" data-spy="affix" data-offset-top="100">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#section-1">Section One</a></li>
             <li><a href="#section-2">Section Two</a></li>
@@ -82,28 +82,33 @@
       box-shadow: none;
       margin-top: 20px;
       padding: 10px;
+      position: fixed; /* Fixed positioning */
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100; /* Make sure the navigation bar stays on top */
     }
 
     .navbar-default .navbar-nav>li>a {
       color: #555;
       font-weight: bold;
-      transition: background-color 0.3s ease, color 0.3s ease;
+      transition: background-color 0.5s ease, color 0.3s ease;
       border-radius: 100px; /* Oval shape for links */
       padding: 8px 15px; /* Adjust padding for the oval shape */
+      background-size: 200% 100%; /* For gradient transition */
+      background-image: linear-gradient(to right, #21e9e9 50%, transparent 50%);
+      background-position: 100% 0; /* Initially the background is on the right */
     }
 
     .navbar-default .navbar-nav>li.active>a,
     .navbar-default .navbar-nav>li>a:hover {
-      background: #21e9e9;
+      background-position: 0 0; /* Change the background position to make the color move */
       color: #fff;
     }
 
     /* Sticky Navigation */
     #myScrollspy.affix {
-      position: fixed;
       top: 20px;
-      width: 140px;
-      margin-right: 15px;
     }
 
     /* Offset to make it aligned with content */
@@ -135,33 +140,7 @@
       }
 
       .col-xs-9 {
-        width: 100%; /* Expand the content column to fill the screen */
-      }
-    }
-
-  </style>
-
-  <script>
-    $(document).ready(function () {
-      // Change the navigation bar color as the user scrolls through sections
-      $(window).scroll(function () {
-        var position = $(this).scrollTop();
-        $(".navbar-default .navbar-nav>li").each(function () {
-          var target = $(this).find('a').attr('href');
-          var targetPosition = $(target).offset().top;
-          var targetHeight = $(target).outerHeight();
-          if (position >= targetPosition - 100 && position < targetPosition + targetHeight - 100) {
-            $(this).addClass('active').siblings().removeClass('active');
-          }
-        });
-      });
-    });
-
-  </script>
-
-</body>
-
-</html>
+        width: 100%; /* Expand the
 
 
 
