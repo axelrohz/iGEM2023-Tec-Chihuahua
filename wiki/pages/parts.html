@@ -100,34 +100,33 @@
       padding: 10px;
       position: fixed; /* Make the navigation bar fixed */
       width: 180px; /* Make the navigation bar wider */
+      top: 0; /* Stick the navigation bar to the top of the page */
     }
-
+  
     .navbar-default .navbar-nav>li>a {
       color: #555;
       font-weight: bold;
       transition: background-color 0.3s ease, color 0.3s ease;
       border-radius: 20px; /* Rounded rectangle shape for links */
     }
-
+  
     .navbar-default .navbar-nav>li.active>a,
     .navbar-default .navbar-nav>li>a:hover {
       background: #21e9e9;
       color: #fff;
     }
-
+  
     /* Sticky Navigation */
     #myScrollspy.affix {
-      position: fixed;
-      top: 20px;
-      width: 180px;
-      margin-right: 15px;
+      /* Adjust the top value as needed */
+      top: 80px;
     }
-
+  
     /* Offset to make it aligned with content */
     #myScrollspy.affix-top {
       top: 100px;
     }
-
+  
     /* Section Styling */
     h2 {
       margin-top: 40px;
@@ -135,16 +134,16 @@
       padding-bottom: 10px;
       transition: border-color 0.3s ease;
     }
-
+  
     h2:hover {
       border-color: #21e9e9;
     }
-
+  
     p {
       line-height: 1.6;
       margin-bottom: 30px;
     }
-
+  
     /* Responsive Styles */
     @media (max-width: 767px) {
       .col-xs-3 {
@@ -156,6 +155,7 @@
       }
     }
   </style>
+  
 
   <style>
     .card-container {
