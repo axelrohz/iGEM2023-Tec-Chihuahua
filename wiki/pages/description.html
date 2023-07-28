@@ -5,28 +5,44 @@
 {endblock}
 
 {% block page_content %}
-<link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-   
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-<div class="header-container">
-  <!-- Add your header content here -->
-</div>
-
-<br>
-
-<div class="bc-banner text-center">
-  <div class="bc-banner-body">
-      <h1 class="title">Project Description <i class="fas fa-book trophy-icon"></i></h1>
+  <div class="header-container">
+    <!-- Add your header content here -->
   </div>
-</div>
-
-<br> 
-<!-- Add the rest of your content here -->
+  
+  <br>
+  
+  <div class="bc-banner text-center">
+    <div class="bc-banner-body">
+      <h1 class="title">Project Description <i class="fas fa-book trophy-icon"></i></h1>
+    </div>
+  </div>
+  
+  <br>
+  
+  <div class="card-container">
+    <div class="card" id="card1">
+      <h2>Card 1</h2>
+      <p>Card content goes here...</p>
+    </div>
+    <div class="card" id="card2">
+      <h2>Card 2</h2>
+      <p>Card content goes here...</p>
+    </div>
+    <div class="card" id="card3">
+      <h2>Card 3</h2>
+      <p>Card content goes here...</p>
+    </div>
+  </div>
 
 </body>
-<br>
+</html>
 
 
 
