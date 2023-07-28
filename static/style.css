@@ -581,13 +581,8 @@ body {
 
 
 
-.container .box {
-    max-width: 320px;
-    position: relative;
-    background: #FFF;
-    padding: 70px 30px 50px;
-    box-shadow: 0 15px 45px rgba(0, 0, 0, .1);
-}
+
+
 
 .container .box::before {
     content: '';
@@ -643,6 +638,17 @@ body {
 .container .box:hover h3,
 .container .box:hover p {
     color: #FFF;
+}
+@media (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 30px;
+    }
+
+    .box {
+        margin-bottom: 20px;
+    }
 }
 
 
