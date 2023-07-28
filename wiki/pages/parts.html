@@ -77,10 +77,9 @@
   <style>
     /* Custom Styles for Improved Appearance */
     .navbar-default {
-      background-color: #f9f9f9;
+      background-color: transparent; /* Set the navigation bar background to transparent */
       border: none;
-      border-radius: 20px; /* Rounded rectangle shape */
-      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+      box-shadow: none;
       margin-top: 20px;
       padding: 10px;
     }
@@ -89,7 +88,8 @@
       color: #555;
       font-weight: bold;
       transition: background-color 0.3s ease, color 0.3s ease;
-      border-radius: 20px; /* Rounded rectangle shape for links */
+      border-radius: 100px; /* Oval shape for links */
+      padding: 8px 15px; /* Adjust padding for the oval shape */
     }
 
     .navbar-default .navbar-nav>li.active>a,
@@ -133,13 +133,32 @@
       .col-xs-3 {
         display: none; /* Hide the navigation sidebar on small screens */
       }
-      
+
       .col-xs-9 {
         width: 100%; /* Expand the content column to fill the screen */
       }
     }
 
   </style>
+
+  <script>
+    $(document).ready(function () {
+      // Change the navigation bar color as the user scrolls through sections
+      $(window).scroll(function () {
+        var position = $(this).scrollTop();
+        $(".navbar-default .navbar-nav>li").each(function () {
+          var target = $(this).find('a').attr('href');
+          var targetPosition = $(target).offset().top;
+          var targetHeight = $(target).outerHeight();
+          if (position >= targetPosition - 100 && position < targetPosition + targetHeight - 100) {
+            $(this).addClass('active').siblings().removeClass('active');
+          }
+        });
+      });
+    });
+
+  </script>
+
 </body>
 
 </html>
