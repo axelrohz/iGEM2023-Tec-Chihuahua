@@ -61,6 +61,7 @@
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    backface-visibility: hidden; /* Evita que las tarjetas den la vuelta */
   }
   
   .card:hover {
@@ -77,12 +78,14 @@
     margin: 0;
     font-size: 20px;
     color: #333;
+    transform: translateZ(0); /* Resuelve el problema de las letras al revés */
   }
   
   .card p {
     margin: 5px 0;
     font-size: 14px;
     color: #666;
+    transform: translateZ(0); /* Resuelve el problema de las letras al revés */
   }
   
   .card::before {
@@ -92,28 +95,8 @@
     left: 0;
     width: 100%;
     height: 50%;
-    background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
-    opacity: 0;
-    transition: opacity 0.2s ease;
-  }
-  
-  .card:hover::before {
-    opacity: 1;
-  }
-  
-  /* Add responsive styles for mobile phones */
-  @media (max-width: 768px) {
-    .card-container {
-      flex-direction: column;
-    }
-    
-    .card {
-      width: 90%;
-      margin: 10px auto;
-    }
-  }
-</style>
-</html>
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255,
+
 
 
 
