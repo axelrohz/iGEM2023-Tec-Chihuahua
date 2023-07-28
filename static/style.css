@@ -576,8 +576,6 @@ body {
   }
 
 /*card descriptionn impact, reduce*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-
 
 * {
     margin: 0;
@@ -591,7 +589,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(#1434A4, #1434A4 50%, #FFF 50%, #FFF 100%);
+    background: linear-gradient(#1434A4, #1b3aaa 50%, #FFF 50%, #FFF 100%);
 }
 
 .container {
