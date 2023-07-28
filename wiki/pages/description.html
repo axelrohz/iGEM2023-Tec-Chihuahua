@@ -64,28 +64,27 @@
     backface-visibility: hidden; /* Evita que las tarjetas den la vuelta */
   }
   
-  .card:hover {
-    background-color: #f0f0f0; /* Hacer que el color de la tarjeta se mantenga estático al pasar el cursor */
-  }
-  
   .card i {
     font-size: 36px;
     margin-bottom: 10px;
     color: #666;
+    display: block; /* Hacer que el icono ocupe toda la anchura de la tarjeta */
+    text-align: center; /* Centrar el icono verticalmente */
+    line-height: 80px; /* Ajustar la altura de línea para centrar el icono */
   }
   
   .card h2 {
     margin: 0;
     font-size: 20px;
     color: #333;
-    transform: translateZ(0); /* Resuelve el problema de las letras al revés */
+    text-align: center; /* Centrar el título */
   }
   
   .card p {
     margin: 5px 0;
     font-size: 14px;
     color: #666;
-    transform: translateZ(0); /* Resuelve el problema de las letras al revés */
+    text-align: center; /* Centrar el contenido */
   }
   
   .card::before {
@@ -97,16 +96,16 @@
     height: 50%;
     background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
     opacity: 0;
-    transition: opacity 0.2s ease;
   }
   
   .card:hover::before {
     opacity: 1;
   }
   
-  
-  
-  
+  /* Agregar sombra para dar profundidad */
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
   
   /* Add responsive styles for mobile phones */
   @media (max-width: 768px) {
@@ -121,6 +120,7 @@
   }
 </style>
 </html>
+
 
 
 
