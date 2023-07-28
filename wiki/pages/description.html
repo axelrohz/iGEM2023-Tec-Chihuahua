@@ -43,6 +43,15 @@
       <p>Card content goes here...</p>
     </div>
   </div>
+  
+  <div class="introduction-container">
+    <h2>Introduction</h2>
+    <div class="introduction-text">
+      <p>In the heart of Chihuahua, Mexico, lies our tight-knit team, bound not only by our passion for science but also by a deep love for our community. Each one of us has a unique connection to this land, whether we were born here or have spent most of our lives embracing its breathtaking landscapes and basking in the warmth of its people. This beautiful state thrives on its economy driven by mining, agriculture, and livestock sectors. Their determination and hard work have been the lifeblood of our local economy, shaping the fundamental structure of our society.</p>
+      <p>In the early stages of our project, we pondered the possible challenges to tackle, and one of our teammates, Alexa, shared a story about the issues her godmother, a woman who owns a dairy farm, faced. This sparked our curiosity, and we embarked on an online investigation into the world of dairy farming. During our research, a pressing issue captured our attention – mastitis, a prevalent problem in the dairy industry. We became aware of the significant financial losses that this disease caused for facility owners, a revelation that struck a chord with us, and we felt compelled to explore this issue further.</p>
+      <p>Our idea started with our desire to improve the local dairy industry since Chihuahua was the fourth main milk producer in the country in 2022, making up to 490,274 thousand liters[1] and is currently the third place in our country with the biggest population of dairy cows[2].</p>
+    </div>
+  </div>
 
 </body>
 <style>
@@ -59,8 +68,8 @@
     border-radius: 20px; /* Hacer las tarjetas más estilizadas */
     background-color: #f0f0f0;
     position: relative;
-    
-    
+    overflow: hidden;
+    backface-visibility: hidden; /* Evita que las tarjetas den la vuelta */
   }
   
   .card i {
@@ -86,29 +95,14 @@
     text-align: center; /* Centrar el contenido */
   }
   
+  /* Eliminar la pseudo-clase :before para mantener las tarjetas siempre visibles */
+  
   /* Agregar sombra para dar profundidad */
   .card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-  /* Add responsive styles for mobile phones */
-  @media (max-width: 768px) {
-    .card-container {
-      flex-direction: column;
-    }
-    
-    .card {
-      width: 90%;
-      margin: 10px auto;
-    }
-  }
-</style>
-</html>
-
-
-
-
-
+  /* Estilos para la se
 
 
 
