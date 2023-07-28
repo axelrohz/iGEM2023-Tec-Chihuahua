@@ -604,7 +604,7 @@ body {
 }
 
 .container .box h2 {
-    position: relative;
+    position: absolute;
     left: 40px;
     top: 60px;
     font-size: 4em;
@@ -621,7 +621,7 @@ body {
 }
 
 .container .box h3 {
-    position: relative;
+    position: absolute;
     font-size: 1.5em;
     z-index: 2;
     color: #333;
@@ -629,7 +629,7 @@ body {
 }
 
 .container .box p {
-    position: relative;
+    position: absolute;
     z-index: 2;
     color: #555;
     transition: 0.5s;
