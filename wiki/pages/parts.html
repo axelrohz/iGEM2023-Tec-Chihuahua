@@ -5,91 +5,84 @@
 
 {% block page_content %}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Attributions</title>
-  <style>
-      /* General styles for body */
-      body {
-          font-family: Arial, sans-serif;
-          margin: 0;
-          padding: 0;
-      }
+<div class="bc-banner text-center">
+    <div class="bc-banner-body">
+        <h1 class="title">Attributions</h1>
+    </div>
+</div>
 
-      /* Header styles */
-      .header-container {
-          background-color: #333;
-          color: #fff;
-          padding: 20px;
-          text-align: center;
-      }
 
-      /* Banner styles */
-      .bc-banner {
-          position: relative;
-          border: 1px solid #ccc;
-          overflow: hidden;
-          width: 100%;
-          max-width: 1200px;
-          margin: 0 auto;
-          border-radius: 10px;
-          background-image: linear-gradient(135deg, #1eeba7, #3ae89f);
-          animation: gradientAnimation 8s linear infinite;
-      }
 
-      @keyframes gradientAnimation {
-          0% {
-              background-position: 0% 50%;
-          }
-          50% {
-              background-position: 100% 50%;
-          }
-          100% {
-              background-position: 0% 50%;
-          }
-      }
 
-      .bc-banner a {
-          text-decoration: none;
-          color: #fff;
-      }
+<style>
+    /* Add a container for the header and the banner */
+    .header-container {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+    }
 
-      .bc-banner a:hover {
-          opacity: 0.8;
-      }
+    /* Make the banner longer and cover the header */
+    .bc-banner {
+        position: relative;
+        border: 1px solid #ccc;
+        overflow: hidden;
+        width: 100%; /* Adjust the width to cover the entire container */
+        max-width: 1200px; /* Set a maximum width to maintain readability */
+        margin: 0 auto;
+        border-radius: 10px;
+        background-image: linear-gradient(135deg, #1eeba7, #3ae89f);
+    }
 
-      .bc-banner-body {
-          position: relative;
-          z-index: 2;
-          padding: 2rem;
-          text-align: center;
-      }
+    /* Add some animation to the banner */
+    .bc-banner {
+        animation: gradientAnimation 8s linear infinite;
+    }
 
-      .title {
-          font-size: 64px;
-          font-weight: bold;
-          color: #fff;
-          margin: 0;
-          padding: 0;
-          letter-spacing: 2px;
-          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-      }
-  </style>
-</head>
-<body>
-  <div class="header-container">
-      <h1 class="title">Attributions</h1>
-  </div>
+    @keyframes gradientAnimation {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
 
-  <div class="bc-banner">
-      <div class="bc-banner-body">
-          <h1 class="title">Attributions</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum, est eget faucibus ullamcorper, ipsum odio elementum nunc, in semper lorem turpis at justo.</p>
-          <a href="#">Learn More</a>
-      </div>
-  </div>
-</body>
+    .bc-banner a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .bc-banner a:hover {
+        opacity: 0.8;
+    }
+
+    .bc-banner-body {
+        position: relative;
+        z-index: 2;
+        padding: 2rem;
+    }
+
+    .title {
+        font-size: 64px; /* Increase the font size for a more striking look */
+        font-weight: bold;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        /* Eliminamos la animación para que el título no se mueva */
+    }
+
+    /* Opcional: añadir estilos adicionales para mejorar la legibilidad */
+    .title {
+        letter-spacing: 2px; /* Aumentamos el espaciado entre letras */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Agregamos una sombra para resaltar el texto */
+    }
+
+
+</style>
 
 <section id="services" class="services section-bg">
     <div class="container">
