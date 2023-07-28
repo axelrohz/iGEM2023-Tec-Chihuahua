@@ -579,35 +579,7 @@ body {
 
 /* Add your other styles here */
 
-.card-container {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .card {
-    width: 30%;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .card:hover {
-    background-color: #f0f0f0;
-  }
-  
-  /* Add responsive styles for mobile phones */
-  @media (max-width: 768px) {
-    .card-container {
-      flex-direction: column;
-    }
-    
-    .card {
-      width: 90%;
-      margin: 10px auto;
-    }
-  }
+
   
 
 
