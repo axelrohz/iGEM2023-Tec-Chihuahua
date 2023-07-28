@@ -645,14 +645,4 @@ body {
     color: #FFF;
 }
 
-@media (max-width: 1000px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-        padding: 60px 30px;
-    }
 
-    .box {
-        margin-bottom: 20px;
-    }
-}
