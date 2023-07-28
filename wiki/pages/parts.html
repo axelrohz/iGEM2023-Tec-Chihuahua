@@ -47,9 +47,6 @@
     </div>
   </div>
   
-
-
-
   <div class="container">
     <div class="row">
       <div class="col-xs-3">
@@ -159,74 +156,44 @@
       }
     }
   </style>
+
   <style>
     .card-container {
-    display: flex;
-    justify-content: space-between;
-  }
+      display: flex;
+      justify-content: space-between;
+    }
   
-  .card {
-    width: 180px;
-    height: 160px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 20px; /* Hacer las tarjetas más estilizadas */
-    background-color: #f0f0f0;
-    position: relative;
-    
-  }
+    .card {
+      width: 180px;
+      height: 160px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 20px; /* Hacer las tarjetas más estilizadas */
+      background-color: #f0f0f0;
+      position: relative;
+      margin-bottom: 20px; /* Add margin between cards */
+    }
   
-  .card i {
-    font-size: 36px;
-    margin-bottom: 10px;
-    color: #666;
-    display: block; /* Hacer que el icono ocupe toda la anchura de la tarjeta */
-    text-align: center; /* Centrar el icono verticalmente */
-    line-height: 80px; /* Ajustar la altura de línea para centrar el icono */
-  }
+    .card i {
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #666;
+      display: block; /* Hacer que el icono ocupe toda la anchura de la tarjeta */
+      text-align: center; /* Centrar el icono verticalmente */
+      line-height: 80px; /* Ajustar la altura de línea para centrar el icono */
+    }
   
-  .card h2 {
-    margin: 0;
-    font-size: 20px;
-    color: #333;
-    text-align: center; /* Centrar el título */
-  }
+    .card h2 {
+      margin: 0;
+      font-size: 20px;
+      color: #333;
+      text-align: center; /* Centrar el título */
+    }
   
-  .card p {
-    margin: 5px 0;
-    font-size: 14px;
-    color: #666;
-    text-align: center; /* Centrar el contenido */
-  }
-  
-  /* Eliminar la pseudo-clase :before para mantener las tarjetas siempre visibles */
-  
-  /* Agregar sombra para dar profundidad */
-  .card {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
+    .card p {
+      margin: 5px 0;
+     
 
-</style>
-
-  <script>
-    // Smooth scrolling for anchor links
-    $(document).ready(function() {
-      $("a").on('click', function(event) {
-        if (this.hash !== "") {
-          event.preventDefault();
-          var hash = this.hash;
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function() {
-            window.location.hash = hash;
-          });
-        }
-      });
-    });
-  </script>
-</body>
-</html>
 
 
 {% endblock %}
