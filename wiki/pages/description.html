@@ -86,20 +86,7 @@
     text-align: center; /* Centrar el contenido */
   }
   
-  .card::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 50%;
-    background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
-    opacity: 0;
-  }
-  
-  .card:hover::before {
-    opacity: 1;
-  }
+  /* Eliminar la pseudo-clase :before para mantener las tarjetas siempre visibles */
   
   /* Agregar sombra para dar profundidad */
   .card {
@@ -119,6 +106,7 @@
   }
 </style>
 </html>
+
 
 
 
