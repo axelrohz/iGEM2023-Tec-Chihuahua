@@ -176,35 +176,7 @@
 
 
 
-<!-- JS Plugins Init. -->
-<script>
-  (function() {
-    // INITIALIZATION OF STICKY BLOCKS
-    // =======================================================
-    Promise.all(Array.from(document.images)
-      .filter(img => !img.complete)
-      .map(img => new Promise(resolve => {
-        img.onload = img.onerror = resolve
-      })))
-      .then(() => {
-        new HSStickyBlock('.js-sticky-block', {
-          targetSelector: document.getElementById('header').classList.contains('navbar-fixed') ? '#header' : null
-        })
-      })
 
-
-    // INITIALIZATION OF SCROLLSPY
-    // =======================================================
-    new bootstrap.ScrollSpy(document.body, {
-      target: '#navbarSettingsEg2',
-      offset: 10
-    })
-
-    new HSScrollspy('#navbarVerticalNavMenuEg2', {
-      breakpoint: 'lg'
-    })
-  })()
-</script>
 <style>
     .card-container {
     display: flex;
@@ -252,12 +224,40 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-  /* Estilos para la se
+
+</style>
+
+<!-- JS Plugins Init. -->
+<script>
+  (function() {
+    // INITIALIZATION OF STICKY BLOCKS
+    // =======================================================
+    Promise.all(Array.from(document.images)
+      .filter(img => !img.complete)
+      .map(img => new Promise(resolve => {
+        img.onload = img.onerror = resolve
+      })))
+      .then(() => {
+        new HSStickyBlock('.js-sticky-block', {
+          targetSelector: document.getElementById('header').classList.contains('navbar-fixed') ? '#header' : null
+        })
+      })
 
 
+    // INITIALIZATION OF SCROLLSPY
+    // =======================================================
+    new bootstrap.ScrollSpy(document.body, {
+      target: '#navbarSettingsEg2',
+      offset: 10
+    })
 
+    new HSScrollspy('#navbarVerticalNavMenuEg2', {
+      breakpoint: 'lg'
+    })
+  })()
+</script>
 
-
+<script src="../assets/vendor/hs-scrollspy/dist/hs-scrollspy.min.js"></script>
 
 
 
