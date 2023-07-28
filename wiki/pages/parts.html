@@ -74,15 +74,37 @@
 
         /* Style the trophy icon */
         .trophy-icon {
-            animation: spinAnimation 2s linear infinite;
+            /* Add a default scale animation */
+            animation: pulseAnimation 1.5s ease infinite;
         }
 
-        @keyframes spinAnimation {
+        /* Add a new pulse animation on hover */
+        .trophy-icon:hover {
+            animation: pulseAnimationHover 1.5s ease infinite;
+            color: #ffca28; /* Change the color on hover */
+        }
+
+        @keyframes pulseAnimation {
             0% {
-                transform: rotate(0deg);
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
             }
             100% {
-                transform: rotate(360deg);
+                transform: scale(1);
+            }
+        }
+
+        @keyframes pulseAnimationHover {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
             }
         }
 
@@ -121,11 +143,6 @@
 <!-- Add the rest of your content here -->
 
 </body>
-
-<!-- Add the rest of your content here -->
-
-</body>
-
 
 
 <section id="services" class="services section-bg">
