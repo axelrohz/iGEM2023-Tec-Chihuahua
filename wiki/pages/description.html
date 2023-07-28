@@ -7,137 +7,178 @@
 {% block page_content %}
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <style>
-        /* Add a container for the header and the banner */
-        .header-container {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-        }
+<style>
+  /* Add a container for the header and the banner */
+  .header-container {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
 
-        /* Make the banner longer and cover the header */
-        .bc-banner {
-            position: relative;
-            border: 1px solid #ccc;
-            overflow: hidden;
-            width: 100%; /* Adjust the width to cover the entire container */
-            max-width: 1200px; /* Set a maximum width to maintain readability */
-            margin: 0 auto;
-            border-radius: 10px;
-            background-image: linear-gradient(135deg, #1eeba7, #3ae89f);
-        }
+  /* Make the banner longer and cover the header */
+  .bc-banner {
+    position: relative;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    width: 100%; /* Adjust the width to cover the entire container */
+    max-width: 1200px; /* Set a maximum width to maintain readability */
+    margin: 0 auto;
+    border-radius: 10px;
+    background-image: linear-gradient(135deg, #1eeba7, #3ae89f);
+  }
 
-        /* Add some animation to the banner */
-        .bc-banner {
-            animation: gradientAnimation 8s linear infinite;
-        }
+  /* Add some animation to the banner */
+  .bc-banner {
+    animation: gradientAnimation 8s linear infinite;
+  }
 
-        @keyframes gradientAnimation {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
-        }
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
-        .bc-banner a {
-            text-decoration: none;
-            color: #fff;
-        }
+  .bc-banner a {
+    text-decoration: none;
+    color: #fff;
+  }
 
-        .bc-banner a:hover {
-            opacity: 0.8;
-        }
+  .bc-banner a:hover {
+    opacity: 0.8;
+  }
 
-        .bc-banner-body {
-            position: relative;
-            z-index: 2;
-            padding: 2rem;
-        }
+  .bc-banner-body {
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+  }
 
-        .title {
-            font-size: 64px; /* Increase the font size for a more striking look */
-            font-weight: bold;
-            color: #fff;
-            margin: 0;
-            padding: 0;
-            /* Eliminamos la animación para que el título no se mueva */
-        }
+  .title {
+    font-size: 64px; /* Increase the font size for a more striking look */
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    /* Eliminamos la animación para que el título no se mueva */
+  }
 
-        /* Opcional: añadir estilos adicionales para mejorar la legibilidad */
-        .title {
-            letter-spacing: 2px; /* Aumentamos el espaciado entre letras */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Agregamos una sombra para resaltar el texto */
-        }
+  /* Opcional: añadir estilos adicionales para mejorar la legibilidad */
+  .title {
+    letter-spacing: 2px; /* Aumentamos el espaciado entre letras */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Agregamos una sombra para resaltar el texto */
+  }
 
-        /* Style the trophy icon */
-        .trophy-icon {
-            /* Add a default scale animation */
-            animation: pulseAnimation 1.5s ease infinite;
-        }
+  /* Style the trophy icon */
+  .trophy-icon {
+    /* Add a default scale animation */
+    animation: pulseAnimation 1.5s ease infinite;
+  }
 
-        /* Add a new pulse animation on hover */
-        .trophy-icon:hover {
-            animation: pulseAnimationHover 1.5s ease infinite;
-            color: #42fdce; /* Change the color on hover */
-        }
+  /* Add a new pulse animation on hover */
+  .trophy-icon:hover {
+    animation: pulseAnimationHover 1.5s ease infinite;
+    color: #42fdce; /* Change the color on hover */
+  }
 
-        @keyframes pulseAnimation {
-            0% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.1);
-            }
-            100% {
-                transform: scale(1);
-            }
-        }
+  @keyframes pulseAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 
-        @keyframes pulseAnimationHover {
-            0% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.2);
-            }
-            100% {
-                transform: scale(1);
-            }
-        }
+  @keyframes pulseAnimationHover {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 
-        /* Make the banner responsive for mobile devices */
-        @media (max-width: 767px) {
-            .bc-banner-body {
-                padding: 1rem;
-            }
-            .title {
-                font-size: 36px;
-            }
-        }
+  /* Make the banner responsive for mobile devices */
+  @media (max-width: 767px) {
+    .bc-banner-body {
+      padding: 1rem;
+    }
+    .title {
+      font-size: 36px;
+    }
+  }
 
-        /* Remove the black line at the top */
-        body {
-            margin: 0;
-            padding: 0;
-        }
+  /* Remove the black line at the top */
+  body {
+    margin: 0;
+    padding: 0;
+  }
 
-    </style>
+  /* Add styles for the navigation bar */
+  .nav-container {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .nav-item {
+    margin-bottom: 10px;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .nav-link:hover {
+    color: #1eeba7;
+  }
+
+</style>
 </head>
 <body>
 <div class="header-container">
   <!-- Add your header content here -->
 </div>
 
+<!-- Add the navigation bar -->
+<div class="nav-container">
+  <ul class="nav-list">
+    <li class="nav-item"><a class="nav-link" href="#introduction">Introduction</a></li>
+    <li class="nav-item"><a class="nav-link" href="#into-the-udder">Into the Udder</a></li>
+    <li class="nav-item"><a class="nav-link" href="#beating-mastitis">Beating Mastitis</a></li>
+  </ul>
+</div>
+
 <br>
 
 <div class="bc-banner text-center">
   <div class="bc-banner-body">
-      <h1 class="title">Proyect Description <i class="fas fa-book trophy-icon"></i></h1>
+      <h1 class="title">Project Description <i class="fas fa-book trophy-icon"></i></h1>
   </div>
 </div>
 
@@ -146,11 +187,5 @@
 
 </body>
 <br>
-
-
-
-
-
-
-
 {% endblock %}
+
