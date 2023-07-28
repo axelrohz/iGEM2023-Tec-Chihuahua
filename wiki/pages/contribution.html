@@ -4,206 +4,178 @@
 {% block lead %}Make a useful contribution for future iGEM teams. Use this page to document that contribution.{% endblock %}
 
 {% block page_content %}
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Add necessary meta tags, title, and stylesheets -->
+  <link rel="stylesheet" href="path/to/bootstrap.css">
+  <link rel="stylesheet" href="path/to/font-awesome.css">
+  <style>
+    /* Add necessary CSS styles */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
-<div class="container relative con">
-  <div class="row">
-    <nav id="sidenav-wrapper" class="col-2 d-flex">
-      <ul id="sidenav" class="nav flex-column align-self-start">
-        <li class="nav-header">CONTENTS</li>
-        <li class="nav-item">
-          <a class="sidenav-link nav-link" href="#introduction"
-            ><span class="sidenav-space"></span>Introduction</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="sidenav-link nav-link" href="#crowd"
-            ><span class="sidenav-space"></span> Crowdfunding guide</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="sidenav-link nav-link" href="#np"
-            ><span class="sidenav-space"></span> Nanoparticle production guide</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="sidenav-link nav-link" href="#mg"
-            ><span class="sidenav-space"></span> Modeling guide</a
-          >
-        </li>
-      </ul>
-    </nav>
-    <div id="page-content-wrapper" class="col-lg-10 ms-auto">
-      <div id="introduction">
-        <div class="row my-5">
-          <div class="col-lg-12">
-            <h1>Introduction</h1>
-            <p>
-              On this page we show the contributions that we have made to the
-              iGEM community. During our project we encountered some challenges,
-              and gained valuable experience by solving them. We want to pass
-              this knowledge onto future iGEM teams. Therefore, we have
-              developed a crowdfunding guide as many teams set up crowdfunding
-              to finance their project. This guide helps future teams in
-              navigating the process of setting up a crowdfunding campaign.
-              Furthermore, we created a guide for the production of
-              nanoparticles. When working with nanoparticles you have to
-              consider a great number of aspects and safety risks. To make this
-              process easier for teams wanting to work with nanoparticles, this
-              guide describes what conditions are needed to create certain
-              nanoparticles and what safety measures will need to be taken.
-              Lastly, we also created a step-by-step guide that gives insight to
-              future teams on how to apply the statistical model called
-              Box-Behnken Design to their project.
-            </p>
+    /* Add styles for the sidenav and page-content-wrapper */
+    #sidenav-wrapper {
+      padding-top: 20px;
+    }
+
+    #sidenav {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    #sidenav li {
+      padding: 8px 0;
+    }
+
+    .sidenav-link {
+      color: #007bff;
+    }
+
+    #page-content-wrapper {
+      padding-top: 20px;
+    }
+
+    /* Add styles for the accordion elements */
+    .accordion-general-label {
+      margin: 0;
+    }
+
+    .accordion-general-icon-wrapper {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .accordion-icon {
+      transform: rotate(0);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .accordion-general.open .accordion-icon {
+      transform: rotate(45deg);
+    }
+
+    /* Add styles for the collapse elements */
+    .collapse {
+      display: none;
+    }
+
+    .collapse.show {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container relative con">
+    <div class="row">
+      <nav id="sidenav-wrapper" class="col-2 d-flex">
+        <ul id="sidenav" class="nav flex-column align-self-start">
+          <li class="nav-header">CONTENTS</li>
+          <li class="nav-item">
+            <a class="sidenav-link nav-link" href="#introduction"><span class="sidenav-space"></span>Introduction</a>
+          </li>
+          <li class="nav-item">
+            <a class="sidenav-link nav-link" href="#crowd"><span class="sidenav-space"></span>Crowdfunding guide</a>
+          </li>
+          <li class="nav-item">
+            <a class="sidenav-link nav-link" href="#np"><span class="sidenav-space"></span>Nanoparticle production guide</a>
+          </li>
+          <li class="nav-item">
+            <a class="sidenav-link nav-link" href="#mg"><span class="sidenav-space"></span>Modeling guide</a>
+          </li>
+        </ul>
+      </nav>
+      <div id="page-content-wrapper" class="col-lg-10 ms-auto">
+        <div id="introduction">
+          <div class="row my-5">
+            <div class="col-lg-12">
+              <h1>Introduction</h1>
+              <p>
+                On this page we show the contributions that we have made to the
+                iGEM community. During our project, we encountered some challenges
+                and gained valuable experience by solving them. We want to pass
+                this knowledge onto future iGEM teams. Therefore, we have
+                developed a crowdfunding guide as many teams set up crowdfunding
+                to finance their project. This guide helps future teams in
+                navigating the process of setting up a crowdfunding campaign.
+                Furthermore, we created a guide for the production of
+                nanoparticles. When working with nanoparticles, you have to
+                consider a great number of aspects and safety risks. To make this
+                process easier for teams wanting to work with nanoparticles, this
+                guide describes what conditions are needed to create certain
+                nanoparticles and what safety measures will need to be taken.
+                Lastly, we also created a step-by-step guide that gives insight to
+                future teams on how to apply the statistical model called
+                Box-Behnken Design to their project.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div id="crowd">
-        <div class="row my-5" style="cursor: pointer">
-          <button
-            class="btn d-flex justify-content-between accordion-general w-100"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#crowd-d"
-            aria-expanded="false"
-            aria-controls="crowd-d"
-          >
-            <h1 class="accordion-general-label"><i class="twa twa-red-heart"></i> Crowdfunding guide</h1>
-            <div
-              class="d-flex flex-shrink-0 flex-grow-0 justify-content-center accordion-general-icon-wrapper"
+        <div id="crowd">
+          <div class="row my-5" style="cursor: pointer">
+            <button
+              class="btn d-flex justify-content-between accordion-general w-100"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#crowd-d"
+              aria-expanded="false"
+              aria-controls="crowd-d"
             >
-              <i
-                class="accordion-icon align-self-center fa-solid fa-plus fa-xl"
-              ></i>
-            </div>
-          </button>
-          <div
-            class="collapse px-0"
-            id="crowd-d"
-            style="transform: translateY(-2px)"
-          >
-            <div class="card card-body accordion-general-content px-5">
-              <p>
-                Many iGEM teams set up crowdfunding to help finance their
-                project. This comes with quite a few, maybe unexpected
-                challenges. This guide helps future teams in navigating the
-                process of setting up a crowdfunding campaign.
-              </p>
-              <p>
-                If the pdf doesn't show, click
-                <a
-                  class="hyperlink"
-                  target="_blank"
-                  href="https://static.igem.wiki/teams/4259/wiki/contribution-page/crowdfunding-guide-1.pdf"
-                  >here</a
-                >
-                to download the pdf!
-              </p>
-              <iframe
-                class="pdf align-self-center my-5"
-                loading="lazy"
-                title="Crowdfunding guide"
-                src="https://static.igem.wiki/teams/4259/wiki/contribution-page/crowdfunding-guide-1.pdf#zoom=FitW"
-              >
-              </iframe>
+              <h1 class="accordion-general-label"><i class="twa twa-red-heart"></i> Crowdfunding guide</h1>
+              <div class="d-flex flex-shrink-0 flex-grow-0 justify-content-center accordion-general-icon-wrapper">
+                <i class="accordion-icon align-self-center fa-solid fa-plus fa-xl"></i>
+              </div>
+            </button>
+            <div class="collapse px-0" id="crowd-d" style="transform: translateY(-2px)">
+              <div class="card card-body accordion-general-content px-5">
+                <p>
+                  Many iGEM teams set up crowdfunding to help finance their
+                  project. This comes with quite a few, maybe unexpected
+                  challenges. This guide helps future teams in navigating the
+                  process of setting up a crowdfunding campaign.
+                </p>
+                <p>
+                  If the pdf doesn't show, click
+                  <a class="hyperlink" target="_blank" href="https://static.igem.wiki/teams/4259/wiki/contribution-page/crowdfunding-guide-1.pdf">here</a>
+                  to download the pdf!
+                </p>
+                <iframe class="pdf align-self-center my-5" loading="lazy" title="Crowdfunding guide" src="https://static.igem.wiki/teams/4259/wiki/contribution-page/crowdfunding-guide-1.pdf#zoom=FitW"></iframe>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div id="np">
-        <div class="row my-5" style="cursor: pointer">
-          <button
-            class="btn d-flex justify-content-between accordion-general w-100"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#np-d"
-            aria-expanded="false"
-            aria-controls="np-d"
-          >
-            <h1 class="accordion-general-label">
-              <i class="twa twa-woman-construction-worker"></i> Nanoparticle production guide
-            </h1>
-            <div
-              class="d-flex flex-shrink-0 flex-grow-0 justify-content-center accordion-general-icon-wrapper"
+        <div id="np">
+          <div class="row my-5" style="cursor: pointer">
+            <button
+              class="btn d-flex justify-content-between accordion-general w-100"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#np-d"
+              aria-expanded="false"
+              aria-controls="np-d"
             >
-              <i
-                class="accordion-icon align-self-center fa-solid fa-plus fa-xl"
-              ></i>
-            </div>
-          </button>
-          <div
-            class="collapse px-0"
-            id="np-d"
-            style="transform: translateY(-2px)"
-          >
-            <div class="card card-body accordion-general-content px-5">
-              <p>
-                This protocol will help future teams to safely produce metallic
-                nanoparticles by using their organism of choice.
-              </p>
-              <p>
-                If the pdf doesn't show, click
-                <a
-                  class="hyperlink"
-                  target="_blank"
-                  href="https://static.igem.wiki/teams/4259/wiki/contribution-page/nanoparticle-production-guide-1.pdf"
-                  >here</a
-                >
-                to download the pdf!
-              </p>
-              <iframe
-                class="pdf align-self-center my-5"
-                loading="lazy"
-                title="Nanoparticle production guide"
-                src="https://static.igem.wiki/teams/4259/wiki/contribution-page/nanoparticle-production-guide-1.pdf#zoom=FitW"
-              >
-              </iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="mg">
-        <div class="row my-5" style="cursor: pointer">
-          <button
-            class="btn d-flex justify-content-between accordion-general w-100"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mg-d"
-            aria-expanded="false"
-            aria-controls="mg-d"
-          >
-            <h1 class="accordion-general-label"><i class="twa twa-woman-dancing"></i>Modeling guide</h1>
-            <div
-              class="d-flex flex-shrink-0 flex-grow-0 justify-content-center accordion-general-icon-wrapper"
-            >
-              <i
-                class="accordion-icon align-self-center fa-solid fa-plus fa-xl"
-              ></i>
-            </div>
-          </button>
-          <div
-            class="collapse px-0"
-            id="mg-d"
-            style="transform: translateY(-2px)"
-          >
-            <div class="card card-body accordion-general-content px-5">
-              <p>
-                On our <a class="hyperlink" href="{{ url_for('pages', page='model') }}">Modeling page</a> we’ve included a step-by-step plan on how
-                to apply Box-Behnken Design to your experiments. This guideline
-                not only gives future teams an idea of how to use the software,
-                but also outlines how to choose your factors, their values, and
-                what to do after you’ve obtained your data. Overall, the
-                guideline makes it possible for future teams to prevent them
-                from making the same mistakes we did and to build upon our
-                knowledge.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+              <h1 class="accordion-general-label"><i class="twa twa-woman-construction-worker"></i> Nanoparticle production guide</h1>
+              <div class="d-flex flex-shrink-0 flex-grow-0 justify-content-center accordion-general-icon-wrapper">
+                <i class="accordion-icon align-self-center fa-solid fa-plus fa-xl"></i>
+              </div>
+            </button>
+            <div class="collapse px-0" id="np-d" style="transform: translateY(-2px)">
+              <div class="card card-body accordion-general-content px-5">
+                <p>
+                  This protocol will help future teams to safely produce metallic
+                  nanoparticles by using their organism of choice.
+                </p>
+                <p>
+                  If the pdf doesn't show, click
+                  <a
+
 
 
 {% endblock %}
