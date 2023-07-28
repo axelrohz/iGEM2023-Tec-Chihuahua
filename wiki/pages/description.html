@@ -6,44 +6,126 @@
 
 {% block page_content %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Description</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
-        /* Add your existing styles here */
-
-        /* Additional styles for project information */
-        .project-info {
-            margin: 20px auto;
-            max-width: 800px;
+        /* Add a container for the header and the banner */
+        .header-container {
+            background-color: #333;
+            color: #fff;
             padding: 20px;
-            background-color: #f9f9f9;
+        }
+
+        /* Make the banner longer and cover the header */
+        .bc-banner {
+            position: relative;
+            border: 1px solid #ccc;
+            overflow: hidden;
+            width: 100%; /* Adjust the width to cover the entire container */
+            max-width: 1200px; /* Set a maximum width to maintain readability */
+            margin: 0 auto;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            background-image: linear-gradient(135deg, #1eeba7, #3ae89f);
         }
 
-        .project-info h2 {
-            font-size: 28px;
-            margin-bottom: 10px;
+        /* Add some animation to the banner */
+        .bc-banner {
+            animation: gradientAnimation 8s linear infinite;
         }
 
-        .project-info p {
-            font-size: 16px;
-            line-height: 1.6;
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
-        .project-info img {
-            width: 100%;
-            max-width: 600px;
-            display: block;
-            margin: 20px auto;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        .bc-banner a {
+            text-decoration: none;
+            color: #fff;
         }
+
+        .bc-banner a:hover {
+            opacity: 0.8;
+        }
+
+        .bc-banner-body {
+            position: relative;
+            z-index: 2;
+            padding: 2rem;
+        }
+
+        .title {
+            font-size: 64px; /* Increase the font size for a more striking look */
+            font-weight: bold;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            /* Eliminamos la animación para que el título no se mueva */
+        }
+
+        /* Opcional: añadir estilos adicionales para mejorar la legibilidad */
+        .title {
+            letter-spacing: 2px; /* Aumentamos el espaciado entre letras */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Agregamos una sombra para resaltar el texto */
+        }
+
+        /* Style the trophy icon */
+        .trophy-icon {
+            /* Add a default scale animation */
+            animation: pulseAnimation 1.5s ease infinite;
+        }
+
+        /* Add a new pulse animation on hover */
+        .trophy-icon:hover {
+            animation: pulseAnimationHover 1.5s ease infinite;
+            color: #42fdce; /* Change the color on hover */
+        }
+
+        @keyframes pulseAnimation {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes pulseAnimationHover {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Make the banner responsive for mobile devices */
+        @media (max-width: 767px) {
+            .bc-banner-body {
+                padding: 1rem;
+            }
+            .title {
+                font-size: 36px;
+            }
+        }
+
+        /* Remove the black line at the top */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
     </style>
 </head>
 <body>
@@ -55,43 +137,16 @@
 
 <div class="bc-banner text-center">
   <div class="bc-banner-body">
-      <h1 class="title">Project Description <i class="fas fa-book trophy-icon"></i></h1>
+      <h1 class="title">Proyect Description <i class="fas fa-book trophy-icon"></i></h1>
   </div>
 </div>
 
 <br> 
-
-<!-- Project Information Section -->
-<div class="project-info">
-    <h2>Project Overview</h2>
-    <p>
-        [Write a brief overview of your project here. Describe what the project is about, its objectives, and its significance.]
-    </p>
-
-    <h2>Features</h2>
-    <p>
-        [List the key features of your project here. Highlight the functionalities that make your project unique and useful.]
-    </p>
-
-    <h2>Technologies Used</h2>
-    <p>
-        [Mention the technologies, programming languages, and frameworks used to develop your project.]
-    </p>
-
-    <h2>Screenshots/Images</h2>
-    <img src="path/to/your/image-1.jpg" alt="Project Screenshot 1">
-    <p>
-        [Add a caption or description for the image if necessary.]
-    </p>
-
-    <img src="path/to/your/image-2.jpg" alt="Project Screenshot 2">
-    <p>
-        [Add a caption or description for the image if necessary.]
-    </p>
-</div>
+<!-- Add the rest of your content here -->
 
 </body>
-</html>
+<br>
+
 
 
 
