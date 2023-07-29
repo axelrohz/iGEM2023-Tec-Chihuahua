@@ -5,6 +5,87 @@
 
 {% block page_content %}
 
+<style>
+  p {
+    text-align: justify;
+  }
+
+  :root {
+    --accordion-padding-y: 1rem;
+    --accordion-padding-x: 1.25rem;
+    --accordion-color: #333; /* Dark text color */
+    --accordion-bg: #f5f5f5; /* Light background color */
+    --accordion-border-width: 1px;
+    --accordion-border-color: rgba(0, 0, 0, 0.125);
+    --accordion-border-radius: 0.25rem;
+    --accordion-inner-border-radius: calc(var(--accordion-border-radius) - var(--accordion-border-width));
+  }
+
+  .accordion {
+    margin-bottom: 2rem;
+  }
+
+  .accordion-item {
+    border: none;
+    border-radius: var(--accordion-border-radius);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .accordion-header {
+    background-color: var(--accordion-bg);
+    border: none;
+    border-radius: var(--accordion-inner-border-radius);
+    padding: var(--accordion-padding-y) var(--accordion-padding-x);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .accordion-header:hover {
+    background-color: #eaeaea; /* Slightly darker on hover */
+  }
+
+  .accordion-button {
+    color: var(--accordion-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+  }
+
+  .accordion-body {
+    padding: var(--accordion-body-padding-y) var(--accordion-body-padding-x);
+    display: none;
+    overflow: hidden;
+  }
+
+  .accordion-body p {
+    margin: 0 0 1rem;
+  }
+
+  .accordion-body a {
+    color: #007bff; /* Blue link color */
+  }
+
+  .accordion-body iframe {
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+  }
+
+  .accordion-item.active .accordion-body {
+    display: block;
+  }
+
+  /* Add plus/minus icons for the accordion button */
+  .accordion-button::before {
+    content: "+";
+    margin-right: 0.5rem;
+  }
+
+  .accordion-item.active .accordion-button::before {
+    content: "-";
+  }
+</style>
+
 <div class="container relative con">
   <div class="row">
     <nav id="sidenav-wrapper" class="col-2 d-flex">
@@ -341,57 +422,5 @@
   </div>
 </div>
 
-
-<!--Prueba acordeon adolfo 29 jul 2023-->
-
-<style>
-  
-  p{
-    text-align:justify;
-  }
-  
-  :root {
-    --accordion-padding-y: 1rem;
-    --accordion-padding-x: 1.25rem;
-    --accordion-color: var(--body-color);
-    --accordion-bg: var(--body-bg);
-    --accordion-border-width: var(--border-width);
-    --accordion-border-color: rgba(0, 0, 0, 0.125);
-    --accordion-border-radius: var(--border-radius);
-    --accordion-inner-border-radius: calc(var(--accordion-border-radius) - var(--accordion-border-width));
-  }
-
-  .accordion-body {
-    padding: var(--accordion-body-padding-y) var(--accordion-body-padding-x);
-  }
-
-  .accordion-button {
-    padding: var(--accordion-button-padding-y) var(--accordion-button-padding-x);
-    color: var(--accordion-color);
-    background-color: var(--accordion-bg);
-    transition: var(--btn-transition), border-radius 0.15s ease;
-  }
-
-  .accordion-button.active {
-    background-color: #f2f2f2; /* tint-color($component-active-bg, 90%) */
-    color: #191970; /* shade-color($primary, 10%) */
-  }
-
-  .accordion-button:focus {
-    border-color: #80bdff; /* $input-focus-border-color */
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* $btn-focus-box-shadow */
-  }
-
-  .accordion-icon {
-    width: 1.25rem;
-    color: var(--accordion-color);
-    transition: transform 0.2s ease-in-out;
-    transform: rotate(-180deg);
-  }
-
-  .accordion-button.active .accordion-icon {
-    color: #191970; /* $accordion-button-active-color */
-  }
-</style>
 
 {% endblock %}
