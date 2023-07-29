@@ -1,89 +1,123 @@
 <menu>
 
 
-<head>
- 
-
-  
-
-  <!-- Template Main CSS File -->
- 
-  
-
-  <!-- =======================================================
-  * Template Name: Scaffold - v2.0.0
-  * Template URL: https://bootstrapmade.com/scaffold-bootstrap-metro-style-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-
-
-<header id="header" class="fixed-top">
-  <div class="container d-flex">
-
-    <div class="logo mr-auto">
-      <h1 class="text-light"><a href=""><span>AureoBos</span></a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-    </div>
- 
-    
-
-    <nav class="nav-menu d-none d-lg-block">
-      <ul>
-        <li><a class="active" href="{{ url_for('pages', page='home') }}">Home</a></li>
-        
-            
-        <li class="drop-down"><a href="">Project</a>
-          <ul>
-            
-            <li><a href="{{ url_for('pages', page='description') }}">Description</a></li>
-            <li><a href="#">Experiment</a></li>
-            <li><a href="#">Engineering</a></li>
-            <li><a href="#">Results</a></li>
-            <li><a href="#">Parts</a></li>
-            <li><a href="#">Contribution</a></li>
-            
-          </ul>
-        </li>
-        <li class="drop-down"><a href="">Human practices</a>
-          <ul>
-            <li><a href="#">Integrated human practices</a></li>
-            <li><a href="#">Public engagment</a></li>
-            <li><a href="#">Inspiring</a></li>
-            
-          </ul>
-        </li>
-        <li class="drop-down"><a href="">Members</a>
-          <ul>
-            <li><a href="{{ url_for('pages', page='team') }}">Team</a></li>
-            <li><a href="#">Behind the scenes</a></li>
-            <li><a href="#">Attributions</a></li>
-            <li><a href="#">Sponsors</a></li>
-            
-            
-          </ul>
-        </li>
-        <li><a href="{{ url_for('pages', page='entrepreneurship') }}">Entrepreneurship</a></li>
-        <li><a href="{{ url_for('pages', page='model') }}">Model</a></li>
-     
-        
-
-        
-        
-
-        
-
-        
-
-
-       
-
-      </ul>
-    </nav><!-- .nav-menu -->
-
+  <head>
    
-</header><!-- End Header -->
-</menu>
+  
+    
+  
+  
+  </head>
+  
+  
+  
+  <header id="header" class="fixed-top">
+    <div class="container d-flex">
+  
+      <div class="logo mr-auto">
+        <h1 class="text-light"><a href=""><span>AureoBos</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+   
+      
+    <button class="nav-toggle d-lg-none">
+      <nav class="nav-menu d-none d-lg-block">
+        
+        <ul>
+          <li><a class="active" href="{{ url_for('pages', page='') }}">Home</a></li>
+          
+              
+          <li class="drop-down"><a href="">Project</a>
+            <ul>
+              
+              <li><a href="{{ url_for('pages', page='description') }}">Description</a></li>
+              <li><a href="#">Experiment</a></li>
+              <li><a href="#">Engineering</a></li>
+              <li><a href="#">Results</a></li>
+              <li><a href="{{ url_for('pages', page='parts') }}">Parts</a></li>
+              <li><a href="{{ url_for('pages', page='contribution') }}">Contribution</a></li>
+              
+            </ul>
+          </li>
+          <li class="drop-down"><a href="">Human practices</a>
+            <ul>
+              <li><a href="#">Integrated human practices</a></li>
+              <li><a href="#">Public engagment</a></li>
+              <li><a href="#">Inspiring</a></li>
+              
+            </ul>
+          </li>
+          <li class="drop-down"><a href="">Members</a>
+            <ul>
+              <li><a href="{{ url_for('pages', page='team') }}">Team</a></li>
+              <li><a href="#">Behind the scenes</a></li>
+              <li><a href="{{ url_for('pages', page='attributions') }}">Attributions</a></li>
+              <li><a href="#">Sponsors</a></li>
+              <li><a href="{{ url_for('pages', page='contribution') }}">Contribution</a></li>
+              
+            </ul>
+          </li>
+          <li><a href="{{ url_for('pages', page='entrepreneurship') }}">Entrepreneurship</a></li>
+          <li><a href="{{ url_for('pages', page='model') }}">Model</a></li>
+       
+          
+  
+          
+          
+  
+          
+  
+          
+  
+  
+         
+  
+        </ul>
+      </nav><!-- .nav-menu -->
+    </button>
+  
+     
+  </header><!-- End Header -->
+  </menu>
+  <script>
+    // JavaScript to handle the mobile navigation menu toggle
+    document.addEventListener("DOMContentLoaded", function () {
+      const navToggle = document.querySelector(".nav-toggle");
+      const navMenu = document.querySelector(".nav-menu");
+  
+      navToggle.addEventListener("click", function () {
+        navMenu.classList.toggle("show-mobile-menu");
+      });
+    });
+  </script>
+  
+  <style>
+    .nav-toggle {
+      display: block;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+    }
+  
+    .nav-toggle span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: #000;
+      margin: 5px auto;
+    }
+  
+    /* Show the mobile navigation menu when the toggle button is clicked */
+    .nav-menu.show-mobile-menu {
+      display: block;
+    }
+  
+    /* Styling for the mobile navigation menu */
+    @media (max-width: 991px) {
+      .nav-menu {
+        display: none;
+      }
+    }
+  </style>
