@@ -5,101 +5,239 @@
 {endblock}
 
 {% block page_content %}
+
 <!DOCTYPE html>
 <html>
 <head>
-  <link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet">
+  <title>Collection</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
   <div class="header-container">
     <!-- Add your header content here -->
   </div>
-  
   <br>
-  
+  <br>
   <div class="bc-banner text-center">
     <div class="bc-banner-body">
       <h1 class="title">Project Description <i class="fas fa-book trophy-icon"></i></h1>
     </div>
   </div>
-  
   <br>
-  
+  <br>
   <div class="card-container">
     <div class="card" id="card1">
       <i class="fas fa-flask"></i>
-      <h2>Reduce Antibiotics</h2>
-      <p>Card content goes here...</p>
+      <h2>Reduce Antibiotic Use</h2>
+      <p>...</p>
     </div>
     <div class="card" id="card2">
       <i class="fas fa-globe"></i>
       <h2>Impact the World</h2>
-      <p>Card content goes here...</p>
+      <p>...</p>
     </div>
     <div class="card" id="card3">
       <i class="fas fa-carrot"></i>
-      <h2>Impact Nutrition</h2>
-      <p>Card content goes here...</p>
+      <h2>Less Food Waste</h2>
+      <p>...</p>
     </div>
   </div>
   
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-3">
+        <div id="myScrollspy" class="navbar navbar-default affix-top" data-spy="affix" data-offset-top="100">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="section-1">Introduction</a></li>
+            <li><a href="section-2">Into the Udder: Bovine Mastitis</a></li>
+            <li><a href="section-3">Beating Mastitis</a></li>
+            <li><a href="section-4">Milk is Money</a></li>
+            <li><a href="section-5">The Risk Beyond</a></li>
+            <li><a href="A New Antimicrobial Era">A New Antimicrobial Era</a></li>
+            <li><a href="The World In Our Project">The World In Our Project</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xs-9">
+        <h2 id="section-1"">Introduction</h2>
+        <h3>
+          In the heart of Chihuahua, Mexico, lies our tight-knit team, bound not only by our passion for science but also by a deep love for our community. Each one of us has a unique connection to this land, whether we were born here or have spent most of our lives embracing its breathtaking landscapes and basking in the warmth of its people. This beautiful state thrives on its economy driven by mining, agriculture, and livestock sectors. Their determination and hard work have been the lifeblood of our local economy, shaping the fundamental structure of our society.
+          In the early stages of our project, we pondered the possible challenges to tackle, and one of our teammates, Alexa, shared a story about the issues her godmother, a woman who owns a dairy farm, faced. This sparked our curiosity, and we embarked on an online investigation into the world of dairy farming.  During our research, a pressing issue captured our attention – mastitis, a prevalent problem in the dairy industry. We became aware of the significant financial losses that this disease caused for facility owners, a revelation that struck a chord with us, and we felt compelled to explore this issue further.
+          Our idea started with our desire to improve the local dairy industry since Chihuahua was the fourth main milk producer in the country in 2022, making up to 490,274 thousand liters[1] and is currently the third place in our country with the biggest population of dairy cows[2]. 
+        </h3>
 
+        <h2 id="section-2">Into the Udder: Bovine Mastitis</h2>
+        <h3>
+          Udder health is a critical concern for the dairy industry worldwide, and bovine mastitis stands as the most prevalent and costly disease affecting dairy cattle[3]. Characterized by the inflammation of the mammary gland due to microbial infection, this condition has multiple causes, including poor environmental hygiene, suboptimal milking practices, and other management factors[4]. 
+          (imagen de ubre con y sin mastitis. Mejor si son de archivo propio.)
+          The impact of bovine mastitis extends beyond individual cows, encompassing three distinct classes of inflammation: clinical, subclinical, and chronic[3]. The clinical form manifests with evident symptoms such as redness and swelling of the udder, accompanied by fever and changes in milk appearance. Subclinical mastitis, however, remains hidden, resulting in decreased milk production and an elevated somatic cell count. Chronic mastitis, a persistent and challenging form of the disease, presents sporadic clinical flare-ups over several months[3].
+          <img src="https://static.igem.wiki/teams/4607/wiki/project-description/project-description-5.png" alt="mastitistypes"> <figcaption>Figure 1. Levels of bovine mastitis and its signs and symptoms.</figcaption>  <br>
+          Among the numerous causal agents, Staphylococcus aureus and  Streptococcus agalactiae are regarded as contagious pathogens contributing to bovine mastitis. S. aureus, the most prevailing pathogen known to cause bovine mastitis, is a profiling milk contaminant that produces harmful toxins and enzymes that damage milking tissue. On the other hand, S. agalactiae is adept at forming biofilms and resides in the bovine gastrointestinal tract. The disease’s occurrence is influenced by various host factors, including age, breeding, genetics, and udder structure[3].
+          <img src="https://static.igem.wiki/teams/4607/wiki/project-description/project-description-4-1-1.png" alt="agentescausales"> <figcaption>Figure 2. S. agalactiae and S. aureus in the mastitis infection.</figcaption> <br>
+          <img src="https://static.igem.wiki/teams/4607/wiki/project-description/project-description4-1.png" alt="mastitiscausas"> <figcaption>Figure 3.  Characteristics in the host that can cause mastitis.</figcaption> <br>
 
+        </h3>
 
+        <h2 id="section-3">Beating Mastitis</h2>
+        <h3>
+          Mastitis is often treated using various methods including intramammary infusion, dry cow therapy, vaccination, and antibiotics [9]. In Mexico, the government approves the use of a wide spectrum of antibiotics for mastitis treatment. Additionally, alternative treatments like bacteriophages, probiotics, and herbal remedies are available, providing a range of options for dairy farmers. Among the existing treatments, intramammary infusion of antibiotics has shown significant effectiveness in reducing mastitis incidence and improving milk quality. Strict regulations in many countries require a withdrawal period after administering antibiotics to dairy cows. During this time, known as the withdrawal period, milk from the treated cow must not be collected for human consumption, leading to economic losses for the producers[5]. Due to our [human practices] interviews, the monthly incidence of mastitis must be 5%, and most of the antibiotics require a 3 day withdrawal, a cow per day produces an average 25 liters of milk, so in only one month producers would be losing near 375 liters per month.
+        </h3>
 
+        <h2 id="section-4">Milk is Moneyr</h2>
+        <h3>
+          The implications of bovine mastitis resound throughout the dairy industry, implying great costs that include treatment, animal rearing, and compromised milk production. Furthermore, the composition, quantity, and quality of the milk are negatively impacted, while affected cows may suffer long-term aftermath, including damaged udders that impede future milk production[4]. For the Mexican dairy industry and economies worldwide, bovine mastitis stands as a leading cause of economic loss[6]. As the number of dairy cattle rises, the incidence of this disease is projected to increase, making the bovine mastitis market size a significant contributor to the global economy by 2027, according to the research published by the University of Glasgow, mastitis is estimated to cost around 19,7 billion dollars to 30 billion USA worldwide, this includes several costs, such as diagnostics, milk loss, veterinary services, labor, therapeutics, among others[7 ].
+        </h3>
 
+        <h2 id="section-5">The Risk Beyond</h2>
+        <h3>
+          What if this milk did not go to waste? Due to their efficiency, antibiotics continue to be widely used by cattle owners. Unfortunately, this extensive use results in significant portions of antibiotics being released through milk, posing serious risks to human health[5]. The emergence of antibiotic resistance, a global concern, is a direct consequence of this overuse, affecting both human and animal populations. Antibiotic resistance can be either innate or acquired, with plasmid-induced resistance being a major driver of its spread. Additionally, biofilm growth has been found to protect bacteria from the effects of antibiotic treatment. Consequently, improper administration of antibiotics can lead to counterproductive outcomes, increasing antibiotic resistance[9]. Antimicrobial resistance is something inevitable, but the situation we are facing is the consequence of the disproportionate and mistaken usage of antibiotics. The World Bank estimated that up to 3.8% of the global gross domestic product could be lost due to antimicrobial resistance by 2050[10]. Globally, antimicrobial resistance is recognized as one of the top 10 global health threats. Alarmingly, it is estimated that approximately 4.95 million deaths in 2019 were associated with bacterial antibiotic resistance (GLASS Report). Hence, it is crucial to raise awareness about the implications of antibiotic use in our food supply.
 
+        </h3>
 
-<style>
+        <h2 id="section-6">The New Antimicrobial Era</h2>
+        <h3>
+          Bacteriophage endolysins are considered a great alternative for antibiotics since they have shown specific antimicrobial activity against gram-positive bacteria, even in antibiotic-resistant strains. Using the power of endolysins, we approach the bovine mastitis problem caused by three gram-positive bacteria: S. aureus, S. uberis, and S. agalactiae. 
+           The mechanism of endolysins is very specific: they interact with the bacterial cell membrane, causing cellular lysis. These proteins have two ends: the N-terminal, which is the catalytic domain, and the C-terminal, which is the cell wall binding domain that determines the specificity of the endolysin against bacteria[11]. Nonetheless, the endolysin’s in vivo half-life is around 20 minutes[12]. This exceedingly brief time frame severely limits its ability to act effectively as an active compound drug. It is crucial to emphasize that this 20-minute time span is far from sufficient to encompass the entire process of production, purification, distribution, storage, and other essential steps required for the drug's successful application and availability in the market. This short duration limits its ability to act effectively as an active compound drug. For this reason, we look forward to increasing its half-life by binding the protein to an albumin-binding domain[13].For our solution, we use two endolysins: LysCSA13 and LysK. 
+           <img src="https://static.igem.wiki/teams/4607/wiki/project-description/project-description-3.png" alt="mecanismo"> <figcaption>Figure 4.  Mechanism of binding and bacterial lysis of endolysins.</figcaption> <br>
+        </h3>
+
+        <h2 id="section-7">The world in our project</h2>
+        <h3>
+          In the heart of Chihuahua, Mexico, lies our tight-knit team, bound not only by our passion for science but also by a deep love for our community. Each one of us has a unique connection to this land, whether we were born here or have spent most of our lives embracing its breathtaking landscapes and basking in the warmth of its people. This beautiful state thrives on its economy driven by mining, agriculture, and livestock sectors. Their determination and hard work have been the lifeblood of our local economy, shaping the fundamental structure of our society.
+          In the early stages of our project, we pondered the possible challenges to tackle, and one of our teammates, Alexa, shared a story about the issues her godmother, a woman who owns a dairy farm, faced. This sparked our curiosity, and we embarked on an online investigation into the world of dairy farming.  During our research, a pressing issue captured our attention – mastitis, a prevalent problem in the dairy industry. We became aware of the significant financial losses that this disease caused for facility owners, a revelation that struck a chord with us, and we felt compelled to explore this issue further.
+          Our idea started with our desire to improve the local dairy industry since Chihuahua was the fourth main milk producer in the country in 2022, making up to 490,274 thousand liters[1] and is currently the third place in our country with the biggest population of dairy cows[2]. 
+        </h3>
+
+      </div>
+    </div>
+  </div>
+
+  <style>
+    @import url(https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+
+    h3 {
+      font-family: 'Inter Tight';
+      font-size: large;
+      color: #302535;
+      text-align: justify;
+    }
+    /* Custom Styles for Improved Appearance */
+    .navbar-default {
+      background-color: #f9f9f9;
+      border: none;
+      border-radius: 5px; /* Rounded rectangle shape */
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+      margin-top: 10px;
+      padding: 7px;
+      position: absolute; /* Make the navigation bar fixed */
+      width: 180px; /* Make the navigation bar wider */ 
+    }
+  
+    .navbar-default .navbar-nav>li>a {
+      font-family: 'Inter Tight';
+      color: #302535;
+      font-weight: 600;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      border-radius: 5px; /* Rounded rectangle shape for links */
+    }
+  
+    .navbar-default .navbar-nav>li.active>a,
+    .navbar-default .navbar-nav>li>a:hover {
+      background: linear-gradient(#5BC5AB, #A7DCD3) ;
+      color: #F3F3FA;
+    }
+  
+    /* Sticky Navigation */
+    #myScrollspy.affix {
+      /* Adjust the top value as needed */
+      top: 80px;
+    }
+  
+    /* Offset to make it aligned with content */
+    #myScrollspy.affix-top {
+      top: 100px;
+    }
+  
+    /* Section Styling */
+    h2 {
+      margin-top: 40px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+      transition: border-color 0.3s ease;
+      font-family: 'Inter Tight';
+      font-size: 7rem;
+      color: #5BC5AB;
+      font-weight: 700;
+    }
+
+    img {
+      align-items: center;
+      max-width: 100%;
+      height: auto;
+
+    }
+  
+    h2:hover {
+      border-color:  #5BC5AB;
+    }
+  
+    p {
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+  
+    /* Responsive Styles */
+    @media (max-width: 767px) {
+      .col-xs-3 {
+        display: none; /* Hide the navigation sidebar on small screens */
+      }
+      
+      .col-xs-9 {
+        width: 100%; /* Expand the content column to fill the screen */
+      }
+    }
+  </style>
+  
+
+  <style>
     .card-container {
-    display: flex;
-    justify-content: space-between;
-  }
+      display: flex;
+      justify-content: center;
+    }
   
-  .card {
-    width: 180px;
-    height: 160px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 20px; /* Hacer las tarjetas más estilizadas */
-    background-color: #f0f0f0;
-    position: relative;
-    
-  }
+    .card {
+      width: 180px;
+      height: 160px;
+      padding: 1rem;
+      border-radius: 5px; /* Hacer las tarjetas más estilizadas */
+      background: ;rgb(245, 239, 240)
+      position: relative;
+      margin-bottom: 20px; /* Add margin between cards */
+    }
   
-  .card i {
-    font-size: 36px;
-    margin-bottom: 10px;
-    color: #666;
-    display: block; /* Hacer que el icono ocupe toda la anchura de la tarjeta */
-    text-align: center; /* Centrar el icono verticalmente */
-    line-height: 80px; /* Ajustar la altura de línea para centrar el icono */
-  }
+    .card i {
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #302535;
+      display: block; /* Hacer que el icono ocupe toda la anchura de la tarjeta */
+      text-align: center; /* Centrar el icono verticalmente */
+      line-height: 80px; /* Ajustar la altura de línea para centrar el icono */
+    }
   
-  .card h2 {
-    margin: 0;
-    font-size: 20px;
-    color: #333;
-    text-align: center; /* Centrar el título */
-  }
+    .card h2 {
+      margin: 0;
+      font-size: 20px;
+      color: #302535;
+      text-align: center; /* Centrar el título */
+    }
   
-  .card p {
-    margin: 5px 0;
-    font-size: 14px;
-    color: #666;
-    text-align: center; /* Centrar el contenido */
-  }
-  
-  /* Eliminar la pseudo-clase :before para mantener las tarjetas siempre visibles */
-  
-  /* Agregar sombra para dar profundidad */
-  .card {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-
-</style>
+    .card p {
+      margin: 5px 0;
 
 
 
