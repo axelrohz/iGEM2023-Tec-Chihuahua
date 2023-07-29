@@ -351,50 +351,47 @@
 
 <style>
   :root {
-  --accordion-padding-y: 1rem;
-  --accordion-padding-x: 1.25rem;
-  --accordion-color: var(--body-color);
-  --accordion-bg: var(--body-bg);
-  --accordion-border-width: var(--border-width);
-  --accordion-border-color: rgba(0, 0, 0, 0.125);
-  --accordion-border-radius: var(--border-radius);
-  --accordion-inner-border-radius: calc(var(--accordion-border-radius) - var(--accordion-border-width));
-}
+    --accordion-padding-y: 1rem;
+    --accordion-padding-x: 1.25rem;
+    --accordion-color: var(--body-color);
+    --accordion-bg: var(--body-bg);
+    --accordion-border-width: var(--border-width);
+    --accordion-border-color: rgba(0, 0, 0, 0.125);
+    --accordion-border-radius: var(--border-radius);
+    --accordion-inner-border-radius: calc(var(--accordion-border-radius) - var(--accordion-border-width));
+  }
 
-.accordion-body {
-  padding: var(--accordion-body-padding-y) var(--accordion-body-padding-x);
-}
+  .accordion-body {
+    padding: var(--accordion-body-padding-y) var(--accordion-body-padding-x);
+  }
 
-.accordion-button {
-  padding: var(--accordion-button-padding-y) var(--accordion-button-padding-x);
-  color: var(--accordion-color);
-  background-color: var(--accordion-bg);
-  transition: var(--btn-transition), border-radius 0.15s ease;
-}
+  .accordion-button {
+    padding: var(--accordion-button-padding-y) var(--accordion-button-padding-x);
+    color: var(--accordion-color);
+    background-color: var(--accordion-bg);
+    transition: var(--btn-transition), border-radius 0.15s ease;
+  }
 
-.accordion-button.active {
-  background-color: #f2f2f2; /* tint-color($component-active-bg, 90%) */
-  color: #191970; /* shade-color($primary, 10%) */
-}
+  .accordion-button.active {
+    background-color: #f2f2f2; /* tint-color($component-active-bg, 90%) */
+    color: #191970; /* shade-color($primary, 10%) */
+  }
 
-.accordion-button:focus {
-  border-color: #80bdff; /* $input-focus-border-color */
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* $btn-focus-box-shadow */
-}
+  .accordion-button:focus {
+    border-color: #80bdff; /* $input-focus-border-color */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* $btn-focus-box-shadow */
+  }
 
-.accordion-icon {
-  width: 1.25rem;
-  color: var(--accordion-color);
-  transition: transform 0.2s ease-in-out;
-  transform: rotate(-180deg);
-}
+  .accordion-icon {
+    width: 1.25rem;
+    color: var(--accordion-color);
+    transition: transform 0.2s ease-in-out;
+    transform: rotate(-180deg);
+  }
 
-.accordion-button.active .accordion-icon {
-  color: #191970; /* $accordion-button-active-color */
-}
-
-/* Insert the base64-encoded SVG icons here for the accordion-button-icon and accordion-button-active-icon */
-
+  .accordion-button.active .accordion-icon {
+    color: #191970; /* $accordion-button-active-color */
+  }
 </style>
 
 {% endblock %}
