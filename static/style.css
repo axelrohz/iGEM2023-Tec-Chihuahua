@@ -491,6 +491,7 @@ body {
     line-height:1em;
     text-align: center;
     color: #4DC3FA;
+    font-family: 'Inter Tight';
   }
 
   h2 {
@@ -512,14 +513,15 @@ body {
     font-family: 'Inter Tight';
   }
 
-  .blue { color: #185875; }
-  .yellow { color: #FFF842; }
+  .blue { color: #447D9C; }
+  .yellow { color: #F6AE2D; }
 
   .container th h1 {
       font-weight: bold;
       font-size: 1em;
     text-align: left;
-    color: #185875;
+    color: #447D9C;
+    font-family: 'Inter Tight';
   }
 
   .container td {
@@ -559,7 +561,7 @@ body {
       background-color: #ffffff;
   }
 
-  .container td:first-child { color: #FB667A; }
+  .container td:first-child { color: #C55B75; font-family: 'Inter Tight';}
 
   .container tr:hover {
     background-color: #ffffff;
