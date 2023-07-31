@@ -593,7 +593,10 @@ body {
 
 /* Add your other styles here */
 
-
+/*CONTRIBUTIONS*/
+#header {
+    background: cornflowerblue center center / cover no-repeat ;
+  }
   
 
 
