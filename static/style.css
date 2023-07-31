@@ -594,11 +594,26 @@ body {
 /* Add your other styles here */
 
 /*CONTRIBUTIONS*/
-#header {
-    background: cornflowerblue center center / cover no-repeat ;
+
+.btn {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
   }
   
-
+  /* Green */
+  .btncard {
+    border-color: #4DC3FA;
+    color: #F74933;
+  }
+  
+  .btncard:hover {
+    background-color: #04AA6D;
+    color: white;
+  }
 
 
 
