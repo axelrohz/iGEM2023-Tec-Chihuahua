@@ -1,57 +1,81 @@
+<menu>
+
+
 <head>
-  <!-- CSS import statements (keep them as they are) -->
+ 
+
+  
+
+
 </head>
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 <header id="header" class="fixed-top">
   <div class="container d-flex">
 
-      <div class="logo mr-auto">
-          <h1 class="text-light" style="font-family: 'Oswald';">
-              <a href=""><span>AureoBos</span></a>
-          </h1>
-          <!-- Uncomment below if you prefer to use an image logo -->
-          <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      </div>
+    <div class="logo mr-auto">
+      <h1 class="text-light", style="font-family: 'Oswald';"><a href=""><span>AureoBos</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+    </div>
+ 
+    
 
-      <nav class="nav-menu d-none d-lg-block">
+    <nav class="nav-menu d-none d-lg-block">
+      <ul>
+        <li><a class="active" href="{{ url_for('pages', page='') }}">Home</a></li>
+        
+            
+        <li class="drop-down"><a href="">Project</a>
           <ul>
-              <li><a class="active" href="{{ url_for('pages', page='') }}">Home</a></li>
-
-              <li class="drop-down">
-                  <a href="">Project</a>
-                  <ul>
-                      <li><a href="{{ url_for('pages', page='description') }}">Description</a></li>
-                      <li><a href="{{ url_for('pages', page='experiment') }}">Experiment</a></li>
-                      <li><a href="{{ url_for('pages', page='engineering') }}">Engineering</a></li>
-                      <li><a href="{{ url_for('pages', page='results') }}">Results</a></li>
-                      <li><a href="{{ url_for('pages', page='parts') }}">Parts</a></li>
-                      <li><a href="{{ url_for('pages', page='contribution') }}">Contribution</a></li>
-                  </ul>
-              </li>
-
-              <li class="drop-down">
-                  <a href="">Human practices</a>
-                  <ul>
-                      <li><a href="#">Integrated human practices</a></li>
-                      <li><a href="#">Public engagement</a></li>
-                      <li><a href="#">Inspiring</a></li>
-                  </ul>
-              </li>
-
-              <li class="drop-down">
-                  <a href="">Members</a>
-                  <ul>
-                      <li><a href="{{ url_for('pages', page='team') }}">Team</a></li>
-                      <li><a href="#">Behind the scenes</a></li>
-                      <li><a href="{{ url_for('pages', page='attributions') }}">Attributions</a></li>
-                      <li><a href="#">Sponsors</a></li>
-                      <li><a href="{{ url_for('pages', page='contribution') }}">Contribution</a></li>
-                  </ul>
-              </li>
-
-              <li><a href="{{ url_for('pages', page='entrepreneurship') }}">Entrepreneurship</a></li>
-              <li><a href="{{ url_for('pages', page='model') }}">Model</a></li>
+            
+            <li><a href="{{ url_for('pages', page='description') }}">Description</a></li>
+            <li><a href="{{ url_for('pages', page='') }}"></a>Experiment</li>
+            <li><a href="{{ url_for('pages', page='') }}"></a>Engineering</li>
+            <li><a href="{{ url_for('pages', page='') }}">Results</a></li>
+            <li><a href="{{ url_for('pages', page='parts') }}">Parts</a></li>
+            <li><a href="{{ url_for('pages', page='contribution') }}">Contribution</a></li>
+            
           </ul>
-      </nav><!-- .nav-menu -->
-  </div>
+        </li>
+        <li class="drop-down"><a href="">Human practices</a>
+          <ul>
+            <li><a href="#">Integrated human practices</a></li>
+            <li><a href="#">Public engagment</a></li>
+            <li><a href="#">Inspiring</a></li>
+            
+          </ul>
+        </li>
+        <li class="drop-down"><a href="">Members</a>
+          <ul>
+            <li><a href="{{ url_for('pages', page='team') }}">Team</a></li>
+            <li><a href="#">Behind the scenes</a></li>
+            <li><a href="{{ url_for('pages', page='attributions') }}">Attributions</a></li>
+            <li><a href="#">Sponsors</a></li>
+            <li><a href="{{ url_for('pages', page='contribution') }}">Contribution</a></li>
+            
+          </ul>
+        </li>
+        <li><a href="{{ url_for('pages', page='entrepreneurship') }}">Entrepreneurship</a></li>
+        <li><a href="{{ url_for('pages', page='model') }}">Model</a></li>
+     
+        
+
+        
+        
+
+        
+
+        
+
+
+       
+
+      </ul>
+    </nav><!-- .nav-menu -->
+
+   
 </header><!-- End Header -->
+</menu>
