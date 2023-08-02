@@ -18,93 +18,186 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+
     <style>
-        body, html {
+        body,
+        html {
             height: 100%;
+            overflow-x: hidden; /* Hide horizontal scrollbar */
             margin: 0;
         }
 
         header {
-            height: 100vh;
-            overflow: hidden;
-            position: relative;
+            height: 80vh; /* Set a fixed height for the header */
+            overflow: hidden; /* Hide vertical scrollbar */
         }
 
         header .item {
-            position: absolute;
-            top: 0;
-            left: 0;
+            height: 100%;
+            position: relative;
+        }
+
+        header .item img {
             width: 100%;
             height: 100%;
-            background-size: cover;
-            background-position: center;
-            opacity: 0;
-            animation: fadeInOut 12s infinite;
+            object-fit: cover;
         }
 
-        @keyframes fadeInOut {
-            0% {
-                opacity: 0;
-            }
-            25% {
-                opacity: 1;
-            }
-            75% {
-                opacity: 1;
-            }
-            100% {
-                opacity: 0;
-            }
-        }
-
-        .header-content {
+        header .item .cover {
+            padding: 75px 0;
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.6);
+            display: flex;
+            align-items: center;
+        }
+
+        header .item .cover .header-content {
+            position: relative;
+            padding: 56px;
+            overflow: hidden;
+        }
+
+        header .item .cover .header-content .line {
+            content: "";
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            position: absolute;
+            border: 9px solid #fff;
+            -webkit-clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+            clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+        }
+
+        header .item .cover .header-content h2 {
+            font-weight: 300;
+            font-size: 35px;
             color: #fff;
         }
 
-        .header-content h2 {
-            font-weight: 300;
-            font-size: 35px;
-            margin-bottom: 20px;
-        }
-
-        .header-content h1 {
+        header .item .cover .header-content h1 {
             font-size: 56px;
             font-weight: 600;
-            margin-bottom: 20px;
+            margin: 5px 0 20px;
+            word-spacing: 3px;
+            color: #fff;
         }
 
-        .header-content h4 {
+        header .item .cover .header-content h4 {
             font-size: 24px;
             font-weight: 300;
             line-height: 36px;
+            color: #fff;
+        }
+
+        header .owl-item.active h1 {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            animation-name: fadeInDown;
+            animation-delay: 0.3s;
+        }
+
+        header .owl-item.active h2 {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            animation-name: fadeInDown;
+            animation-delay: 0.3s;
+        }
+
+        header .owl-item.active h4 {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            animation-name: fadeInUp;
+            animation-delay: 0.3s;
+        }
+
+        header .owl-item.active .line {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            animation-name: fadeInLeft;
+            animation-delay: 0.3s;
+        }
+
+        header .owl-nav .owl-prev,
+        header .owl-nav .owl-next {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            display: block;
+            z-index: 1000;
+            border-radius: 0;
+            opacity: 0;
+            -webkit-transition: all 0.4s ease-out;
+            transition: all 0.4s ease-out;
+            background: rgba(0, 0, 0, 0.5) !important;
+            cursor: pointer;
+        }
+
+        header .owl-nav .owl-prev span,
+        header .owl-nav .owl-next span {
+            font-size: 1.6875rem;
+            color: #fff;
+        }
+
+        header .owl-nav .owl-prev:hover,
+        header .owl-nav .owl-next:hover {
+            background: #000 !important;
+        }
+
+        header:hover .owl-prev,
+        header:hover .owl-next {
+            opacity: 1;
         }
 
         /* Responsive adjustments */
         @media (max-width: 991px) {
-            .header-content h1 {
+            header .item .cover .header-content {
+                padding: 20px; /* Reduce padding on smaller screens */
+            }
+            header .item .cover .header-content h1 {
                 font-size: 40px; /* Decrease font size for smaller screens */
             }
-            .header-content h2 {
+            header .item .cover .header-content h2 {
                 font-size: 24px; /* Decrease font size for smaller screens */
             }
-            .header-content h4 {
+            header .item .cover .header-content h4 {
                 font-size: 18px; /* Decrease font size for smaller screens */
+            }
+            header .owl-nav .owl-prev,
+            header .owl-nav .owl-next {
+                width: 30px; /* Decrease arrow button size for smaller screens */
+                height: 30px;
+            }
+            header .owl-nav .owl-prev span,
+            header .owl-nav .owl-next span {
+                font-size: 1rem; /* Decrease arrow icon size for smaller screens */
             }
         }
 
         @media (max-width: 767px) {
-            .header-content h1 {
+            header .item .cover .header-content h1 {
                 font-size: 30px; /* Further decrease font size for even smaller screens */
             }
-            .header-content h2 {
+            header .item .cover .header-content h2 {
                 font-size: 20px; /* Further decrease font size for even smaller screens */
             }
-            .header-content h4 {
+            header .item .cover .header-content h4 {
                 font-size: 16px; /* Further decrease font size for even smaller screens */
             }
         }
@@ -113,13 +206,72 @@
 
 <body>
     <header>
-        <div class="item" style="background-image: url('https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0061.jpeg');">
-            <div class="header-content">
-                <h2>Project description</h2>
-                <h1>Our Global and Integrated Solutions</h1>
-                <h4>Social impact</h4>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0061.jpeg"
+                    alt="">
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content">
+                            <div class="line"></div>
+                            <h2>Proyect description</h2>
+                            <h1>Our Global and Integrated Solutions</h1>
+                            <h4>Social impact</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0139.jpeg"
+                    alt="">
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content">
+                            <div class="line animated bounceInLeft"></div>
+                            <h2>Proyect description</h2>
+                            <h1>Our Global and Integrated Solutions</h1>
+                            <h4>Social impact</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0046.jpeg"
+                    alt="">
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content">
+                            <div class="line animated bounceInLeft"></div>
+                            <h2>Proyect description</h2>
+                            <h1>Our Global and Integrated Solutions</h1>
+                            <h4>Social impact</h4>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <script>
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                dots: false,
+                nav: true,
+                mouseDrag: false,
+                autoplay: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            });
+        </script>
     </header>
     <h1>Hi! You can scroll now!</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ullamcorper magna a ex pulvinar feugiat.
@@ -138,7 +290,6 @@
 </body>
 
 </html>
-
 
 
 
