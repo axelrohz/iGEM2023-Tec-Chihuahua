@@ -46,6 +46,94 @@
             object-fit: cover;
         }
 
+        header .item .cover {
+            padding: 75px 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.6);
+            display: flex;
+            align-items: center;
+        }
+
+        header .item .cover .header-content {
+            position: relative;
+            padding: 56px;
+            overflow: hidden;
+        }
+
+        header .item .cover .header-content .line {
+            content: "";
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            position: absolute;
+            border: 9px solid #fff;
+            -webkit-clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+            clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+        }
+
+        header .item .cover .header-content h2 {
+            font-weight: 300;
+            font-size: 35px;
+            color: #fff;
+        }
+
+        header .item .cover .header-content h1 {
+            font-size: 56px;
+            font-weight: 600;
+            margin: 5px 0 20px;
+            word-spacing: 3px;
+            color: #fff;
+        }
+
+        header .item .cover .header-content h4 {
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 36px;
+            color: #fff;
+        }
+
+        header .owl-item.active h1 {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            animation-name: fadeInDown;
+            animation-delay: 0.3s;
+        }
+
+        header .owl-item.active h2 {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            animation-name: fadeInDown;
+            animation-delay: 0.3s;
+        }
+
+        header .owl-item.active h4 {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            animation-name: fadeInUp;
+            animation-delay: 0.3s;
+        }
+
+        header .owl-item.active .line {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            animation-name: fadeInLeft;
+            animation-delay: 0.3s;
+        }
+
         header .owl-nav .owl-prev,
         header .owl-nav .owl-next {
             width: 40px;
@@ -122,14 +210,44 @@
             <div class="item">
                 <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0061.jpeg"
                     alt="">
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content">
+                            <div class="line"></div>
+                            <h2>Proyect description</h2>
+                            <h1>Our Global and Integrated Solutions</h1>
+                            <h4>Social impact</h4>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="item">
                 <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0139.jpeg"
                     alt="">
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content">
+                            <div class="line animated bounceInLeft"></div>
+                            <h2>Proyect description</h2>
+                            <h1>Our Global and Integrated Solutions</h1>
+                            <h4>Social impact</h4>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="item">
                 <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0046.jpeg"
                     alt="">
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content">
+                            <div class="line animated bounceInLeft"></div>
+                            <h2>Proyect description</h2>
+                            <h1>Our Global and Integrated Solutions</h1>
+                            <h4>Social impact</h4>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -159,7 +277,6 @@
 </body>
 
 </html>
-
 
 
 
