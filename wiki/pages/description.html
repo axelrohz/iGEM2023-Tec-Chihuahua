@@ -6,261 +6,235 @@
 
 {% block page_content %}
 
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Collection</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
-<body>
-  <div class="header-container">
-    <!-- Add your header content here -->
-  </div>
-  <br>
-  <br>
-  <div class="bc-banner text-center">
-    <div class="bc-banner-body">
-      <h1 class="title">Project Description <i class="fas fa-book trophy-icon"></i></h1>
-    </div>
-  </div>
-  <br>
-  <br>
-  <div class="card-container">
-    <div class="card" id="card1">
-      <i class="fas fa-flask"></i>
-      <h2>Reduce Antibiotic Use</h2>
-      <p>...</p>
-    </div>
-    <div class="card" id="card2">
-      <i class="fas fa-globe"></i>
-      <h2>Impact the World</h2>
-      <p>...</p>
-    </div>
-    <div class="card" id="card3">
-      <i class="fas fa-carrot"></i>
-      <h2>Less Food Waste</h2>
-      <p>...</p>
-    </div>
-  </div>
-  
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-3">
-        <div id="myScrollspy" class="navbar navbar-default affix-top" data-spy="affix" data-offset-top="100">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="section-1">Introduction</a></li>
-            <li><a href="section-2">Into the Udder: Bovine Mastitis</a></li>
-            <li><a href="section-3">Beating Mastitis</a></li>
-            <li><a href="section-4">Milk is Money</a></li>
-            <li><a href="section-5">The Risk Beyond</a></li>
-            <li><a href="A New Antimicrobial Era">A New Antimicrobial Era</a></li>
-            <li><a href="The World In Our Project">The World In Our Project</a></li>
-          </ul>
+<!-- 
+  Bootstrap docs: https://getbootstrap.com/docs
+-->
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+
+<header>
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0061.jpeg" alt="">
+            <div class="cover">
+                <div class="container">
+                    <div class="header-content">
+                        <div class="line"></div>
+                        <h2>Reinvent Business Experience with</h2>
+                        <h1>Our Global and Integrated Solutions</h1>
+                        <h4>We help entrepreneurs, start-ups and enterprises shape their ideas into business</h4>
+                    </div>
+                </div>
+             </div>
+        </div>                    
+        <div class="item">
+            <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0139.jpeg" alt="">
+            <div class="cover">
+                <div class="container">
+                    <div class="header-content">
+                        <div class="line animated bounceInLeft"></div>
+                        <h2>Reinvent Digital Experience with</h2>
+                        <h1>Our Digital and Intelligent Solutions</h1>
+                        <h4>We help entrepreneurs, start-ups and enterprises shape their dreams into profits</h4>
+                    </div>
+                </div>
+             </div>
+        </div>                
+        <div class="item">
+            <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0046.jpeg" alt="">
+            <div class="cover">
+                <div class="container">
+                    <div class="header-content">
+                        <div class="line animated bounceInLeft"></div>
+                        <h2>Reinvent Client Experience with</h2>
+                        <h1>Our CRM and Software Solutions</h1>
+                        <h4>We help entrepreneurs, start-ups and enterprises shape their leads into clients</h4>
+                    </div>
+                </div>
+             </div>
         </div>
-      </div>
-      <div class="col-xs-9">
-        <h2 id="section-1"">Introduction</h2>
-        <h3>
-          In the heart of Chihuahua, Mexico, lies our tight-knit team, bound not only by our passion for science but also by a deep love for our community. Each one of us has a unique connection to this land, whether we were born here or have spent most of our lives embracing its breathtaking landscapes and basking in the warmth of its people. This beautiful state thrives on its economy driven by mining, agriculture, and livestock sectors. Their determination and hard work have been the lifeblood of our local economy, shaping the fundamental structure of our society.
-          In the early stages of our project, we pondered the possible challenges to tackle, and one of our teammates, Alexa, shared a story about the issues her godmother, a woman who owns a dairy farm, faced. This sparked our curiosity, and we embarked on an online investigation into the world of dairy farming.  During our research, a pressing issue captured our attention – mastitis, a prevalent problem in the dairy industry. We became aware of the significant financial losses that this disease caused for facility owners, a revelation that struck a chord with us, and we felt compelled to explore this issue further.
-          Our idea started with our desire to improve the local dairy industry since Chihuahua was the fourth main milk producer in the country in 2022, making up to <b>490,274</b> thousand liters [1] and is currently the third place in our country with the biggest population of dairy cows [2]. 
-        </h3>
-
-        <h2 id="section-2">Into the Udder: Bovine Mastitis</h2>
-        <h3>
-          Udder health is a critical concern for the dairy industry worldwide, and bovine mastitis stands as the most prevalent and costly disease affecting dairy cattle [3]. Characterized by the inflammation of the mammary gland due to microbial infection, this condition has multiple causes, including poor environmental hygiene, suboptimal milking practices, and other management factors [4]. 
-          (imagen de ubre con y sin mastitis. Mejor si son de archivo propio.)
-          The impact of bovine mastitis extends beyond individual cows, encompassing three distinct classes of inflammation: clinical, subclinical, and chronic [3]. The clinical form manifests with evident symptoms such as redness and swelling of the udder, accompanied by fever and changes in milk appearance. Subclinical mastitis, however, remains hidden, resulting in decreased milk production and an elevated somatic cell count. Chronic mastitis, a persistent and challenging form of the disease, presents sporadic clinical flare-ups over several months[3].
-          <img src="https://static.igem.wiki/teams/4607/wiki/project-description/project-description-5.png" alt="mastitistypes"> <figcaption> <b>Figure 1.</b> Levels of bovine mastitis and its signs and symptoms.</figcaption>  <br>
-          Among the numerous causal agents, <i>Staphylococcus aureus</i> and  <i>Streptococcus agalactiae</i> are regarded as contagious pathogens contributing to bovine mastitis. <i>S. aureus</i>, the most prevailing pathogen known to cause bovine mastitis, is a profiling milk contaminant that produces harmful toxins and enzymes that damage milking tissue. On the other hand, <i>S. agalactiae</i> is adept at forming biofilms and resides in the bovine gastrointestinal tract. The disease’s occurrence is influenced by various host factors, including age, breeding, genetics, and udder structure [3].
-          <img src="https://static.igem.wiki/teams/4607/wiki/project-description/project-description-4-1-1.png" alt="agentescausales"> <figcaption><b>Figure 2.</b> <i>S. agalactiae</i> and <i>S. aureus</i> in the mastitis infection.</figcaption> <br>
-          <img src="https://static.igem.wiki/teams/4607/wiki/project-description/project-description4-1.png" alt="mastitiscausas"> <figcaption>Figure 3.  Characteristics in the host that can cause mastitis.</figcaption> <br>
-
-        </h3>
-
-        <h2 id="section-3">Beating Mastitis</h2>
-        <h3>
-          Mastitis is often treated using various methods including intramammary infusion, dry cow therapy, vaccination, and antibiotics [9]. In Mexico, the government approves the use of a wide spectrum of antibiotics for mastitis treatment. Additionally, alternative treatments like bacteriophages, probiotics, and herbal remedies are available, providing a range of options for dairy farmers. Among the existing treatments, intramammary infusion of antibiotics has shown significant effectiveness in reducing mastitis incidence and improving milk quality. Strict regulations in many countries require a withdrawal period after administering antibiotics to dairy cows. During this time, known as the withdrawal period, milk from the treated cow must not be collected for human consumption, leading to economic losses for the producers[5]. Due to our [human practices] interviews, the monthly incidence of mastitis must be 5%, and most of the antibiotics require a 3 day withdrawal, a cow per day produces an average 25 liters of milk, so in only one month producers would be losing near <b>375 liters per month</b>.
-        </h3>
-
-        <h2 id="section-4">Milk is Money</h2>
-        <h3>
-          The implications of bovine mastitis resound throughout the dairy industry, implying great costs that include treatment, animal rearing, and compromised milk production. Furthermore, the composition, quantity, and quality of the milk are negatively impacted, while affected cows may suffer long-term aftermath, including damaged udders that impede future milk production [4]. For the Mexican dairy industry and economies worldwide, bovine mastitis stands as a leading cause of economic loss [6]. As the number of dairy cattle rises, the incidence of this disease is projected to increase, making the bovine mastitis market size a significant contributor to the global economy by 2027, according to the research published by the University of Glasgow, mastitis is estimated to cost around <b>19,7 billion</b> dollars to <b>30 billion</b> USA worldwide, this includes several costs, such as diagnostics, milk loss, veterinary services, labor, therapeutics, among others [7].
-        </h3>
-
-        <h2 id="section-5">The Risk Beyond</h2>
-        <h3>
-          What if this milk did not go to waste? Due to their efficiency, antibiotics continue to be widely used by cattle owners. Unfortunately, this extensive use results in significant portions of antibiotics being released through milk, posing serious risks to human health [5]. The emergence of antibiotic resistance, a global concern, is a direct consequence of this overuse, affecting both human and animal populations. Antibiotic resistance can be either innate or acquired, with plasmid-induced resistance being a major driver of its spread. Additionally, biofilm growth has been found to protect bacteria from the effects of antibiotic treatment. Consequently, improper administration of antibiotics can lead to counterproductive outcomes, increasing antibiotic resistance [9]. Antimicrobial resistance is something inevitable, but the situation we are facing is the consequence of the disproportionate and mistaken usage of antibiotics. The World Bank estimated that up to 3.8% of the global gross domestic product could be lost due to antimicrobial resistance by 2050 [10]. Globally, antimicrobial resistance is recognized as one of the top 10 global health threats. Alarmingly, it is estimated that approximately <b>4.95 million deaths</b> in 2019 were associated with bacterial antibiotic resistance (GLASS Report). Hence, it is crucial to raise awareness about the implications of antibiotic use in our food supply.
-
-        </h3>
-
-        <h2 id="section-6">The New Antimicrobial Era</h2>
-        <h3>
-          Bacteriophage endolysins are considered a great alternative for antibiotics since they have shown specific antimicrobial activity against gram-positive bacteria, even in antibiotic-resistant strains. Using the power of endolysins, we approach the bovine mastitis problem caused by three gram-positive bacteria: <i>S. aureus, S. uberis, and S. agalactiae</i>. 
-           The mechanism of endolysins is very specific: they interact with the bacterial cell membrane, causing cellular lysis. These proteins have two ends: the N-terminal, which is the catalytic domain, and the C-terminal, which is the cell wall binding domain that determines the specificity of the endolysin against bacteria [11]. Nonetheless, the endolysin’s in vivo half-life is around 20 minutes [12]. This exceedingly brief time frame severely limits its ability to act effectively as an active compound drug. It is crucial to emphasize that this 20-minute time span is far from sufficient to encompass the entire process of production, purification, distribution, storage, and other essential steps required for the drug's successful application and availability in the market. This short duration limits its ability to act effectively as an active compound drug. For this reason, we look forward to increasing its half-life by binding the protein to an albumin-binding domain [13].For our solution, we use two endolysins: LysCSA13 and LysK. 
-           <img src="https://static.igem.wiki/teams/4607/wiki/project-description/project-description-3.png" alt="mecanismo"> <figcaption> <em>Figure 4.</em> Mechanism of binding and bacterial lysis of endolysins.</figcaption> <br>
-        </h3>
-
-        <h2 id="section-7">The world in our project</h2>
-        <h3>
-          In the heart of Chihuahua, Mexico, lies our tight-knit team, bound not only by our passion for science but also by a deep love for our community. Each one of us has a unique connection to this land, whether we were born here or have spent most of our lives embracing its breathtaking landscapes and basking in the warmth of its people. This beautiful state thrives on its economy driven by mining, agriculture, and livestock sectors. Their determination and hard work have been the lifeblood of our local economy, shaping the fundamental structure of our society.
-          In the early stages of our project, we pondered the possible challenges to tackle, and one of our teammates, Alexa, shared a story about the issues her godmother, a woman who owns a dairy farm, faced. This sparked our curiosity, and we embarked on an online investigation into the world of dairy farming.  During our research, a pressing issue captured our attention – mastitis, a prevalent problem in the dairy industry. We became aware of the significant financial losses that this disease caused for facility owners, a revelation that struck a chord with us, and we felt compelled to explore this issue further.
-          Our idea started with our desire to improve the local dairy industry since Chihuahua was the fourth main milk producer in the country in 2022, making up to <b>490,274</b> thousand liters [1] and is currently the third place in our country with the biggest population of dairy cows [2]. 
-        </h3>
-        <h2 id="section-8"> References</h2> 
-        <h3>
-          <br>1. SIAP. (2022). Escenario mensual de productos agroalimentarios. Secretaría de Agricultura y Desarrollo Rural. https://www.gob.mx/cms/uploads/attachment/file/744355/Leche_de_bovino_Junio.pdf 
-          <br> 2. Pesquera, S. de I. A. y. (2023). Población ganadera. gob.mx. http://www.gob.mx/siap/documentos/poblacion-ganadera-136762?idiom=es 
-          <br>3. Cheng, W. N., & Han, S. G. (2020). Bovine mastitis: Risk factors, therapeutic strategies, and alternative treatments - A review. Asian-Australasian Journal of Animal Sciences, 33(11), 1699–1713. https://doi.org/10.5713/ajas.20.0156
-          <br>4. Sharun, K., Dhama, K., Tiwari, R., Gugjoo, M. B., Iqbal Yatoo, Mohd., Patel, S. K., Pathak, M., Karthik, K., Khurana, S. K., Singh, R., Puvvala, B., Amarpal, Singh, R., Singh, K. P., & Chaicumpa, W. (2021). Advances in therapeutic and managemental approaches of bovine mastitis: A comprehensive review. The Veterinary Quarterly, 41(1), 107–136. https://doi.org/10.1080/01652176.2021.1882713
-          <br>5. Sachi, S., Ferdous, J., Sikder, M. H., & Azizul Karim Hussani, S. M. (2019). Antibiotic residues in milk: Past, present, and future. Journal of Advanced Veterinary and Animal Research, 6(3), 315–332. https://doi.org/10.5455/javar.2019.f350
-          <br>6. Quintana, A. (2021, February 19). Impacto económico de la mastitis en la productividad del ganadero lechero. BM Editores, SA de CV. https://bmeditores.mx/ganaderia/impacto-economico-de-la-mastitis-en-la-productividad-del-ganadero-lechero/
-          <br>7. Fortune Business Insights. (2020). Market Research Report “Bovine Mastitis Market Size, Share &COVID-19 Impact Analysis, By Type (Clinical, and Sub-Clinical), By Product (Antibiotics, and Others), By Route of Administration (Intra-Mammary, and Systemic), By Therapy (Lactating Period and Dry Period) and Regional Forecast, 2020–2027. (FBI103482; p. 150). https://www.fortunebusinessinsights.com/bovine-mastitis-market-103482
-          <br>8. FAO, I. (2023). The State of Food Security and Nutrition in the World 2023: Urbanization, agrifood systems transformation and healthy diets across the rural–urban continuum. FAO,  IFAD,  UNICEF,  WFP,  WHO. https://doi.org/10.4060/cc3017en
-          <br>9. Palma, E., Tilocca, B., & Roncada, P. (2020). Antimicrobial Resistance in Veterinary Medicine: An Overview. International Journal of Molecular Sciences, 21(6), 1914. https://doi.org/10.3390/ijms21061914
-          <br>10. Jonas, O., Irwin, A., Berthe, F., Le Gall, F., & Marquez, P. (2017). Drug-resistant infections: A threat to our economic future (Vol. 2) : final report (Final Report 114679). World Bank. https://documents.worldbank.org/en/publication/documents-reports/documentdetail/323311493396993758/final-report
-          <br>11. Fernández, L., González, S., Campelo, A. B., Martínez, B., Rodríguez, A., & García, P. (2017). Downregulation of Autolysin-Encoding Genes by Phage-Derived Lytic Proteins Inhibits Biofilm Formation in Staphylococcus aureus. Antimicrobial Agents and Chemotherapy, 61(5), e02724-16. https://doi.org/10.1128/AAC.02724-16
-          <br>12. Resch, G., Moreillon, P., & Fischetti, V. A. (2011). PEGylating a bacteriophage endolysin inhibits its bactericidal activity. AMB Express, 1, 29. https://doi.org/10.1186/2191-0855-1-29
-          <br>13. Seijsing, J., Sobieraj, A. M., Keller, N., Shen, Y., Zinkernagel, A. S., Loessner, M. J., & Schmelcher, M. (2018). Improved Biodistribution and Extended Serum Half-Life of a Bacteriophage Endolysin by Albumin Binding Domain Fusion. Frontiers in Microbiology, 9, 2927. https://doi.org/10.3389/fmicb.2018.02927
-          <br>14. Angelopoulou, A., Warda, A. K., Hill, C., & Ross, R. P. (2019). Non-antibiotic microbial solutions for bovine mastitis—Live biotherapeutics, bacteriophage, and phage lysins. Critical Reviews in Microbiology, 45(5–6), 564–580. https://doi.org/10.1080/1040841X.2019.1648381
-
-        </h3>
-
-      </div>
     </div>
-  </div>
 
-  <style>
-    @import url(https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+    <style>
 
-    h3 {
-      font-family: 'Inter Tight';
-      font-size: large;
-      color: #302535;
-      text-align: justify;
-    }
-    /* Custom Styles for Improved Appearance */
-    .navbar-default {
-      background-color: #f9f9f9;
-      border: none;
-      border-radius: 5px; /* Rounded rectangle shape */
-      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
-      margin-top: 10px;
-      padding: 7px;
-      position: absolute; /* Make the navigation bar fixed */
-      width: 180px; /* Make the navigation bar wider */ 
-    }
-  
-    .navbar-default .navbar-nav>li>a {
-      font-family: 'Inter Tight';
-      color: #302535;
-      font-weight: 600;
-      transition: background-color 0.3s ease, color 0.3s ease;
-      border-radius: 5px; /* Rounded rectangle shape for links */
-      font-size: large;
-    }
-  
-    .navbar-default .navbar-nav>li.active>a,
-    .navbar-default .navbar-nav>li>a:hover {
-      background: linear-gradient(#5BC5AB, #A7DCD3) ;
-      color: #F3F3FA;
-    }
-  
-    /* Sticky Navigation */
-    #myScrollspy.affix {
-      /* Adjust the top value as needed */
-      top: 80px;
-    }
-  
-    /* Offset to make it aligned with content */
-    #myScrollspy.affix-top {
-      top: 100px;
-    }
-  
-    /* Section Styling */
-    h2 {
-      margin-top: 40px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 10px;
-      transition: border-color 0.3s ease;
-      font-family: 'Inter Tight';
-      font-size: 6rem;
-      color: #5BC5AB;
-      font-weight: 700;
-    }
-
-    img {
-      align-items: center;
-      max-width: 100%;
-      height: auto;
-
-    }
-  
-    h2:hover {
-      border-color:  #5BC5AB;
-    }
-  
-    p {
-      line-height: 1.6;
-      margin-bottom: 30px;
-    }
-  
-    /* Responsive Styles */
-    @media (max-width: 767px) {
-      .col-xs-3 {
-        display: none; /* Hide the navigation sidebar on small screens */
+      header .item {
+        height: 100vh;
+        position: relative;
       }
-      
-      .col-xs-9 {
-        width: 100%; /* Expand the content column to fill the screen */
+      header .item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
-    }
-  </style>
-  
+      header .item .cover {
+        padding: 75px 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        align-items: center;
+      }
+      header .item .cover .header-content {
+        position: relative;
+        padding: 56px;
+        overflow: hidden;
+      }
+      header .item .cover .header-content .line {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        border: 9px solid #fff;
+        -webkit-clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+        clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+      }
+      header .item .cover .header-content h2 {
+        font-weight: 300;
+        font-size: 35px;
+        color: #fff;
+      }
+      header .item .cover .header-content h1 {
+        font-size: 56px;
+        font-weight: 600;
+        margin: 5px 0 20px;
+        word-spacing: 3px;
+        color: #fff;
+      }
+      header .item .cover .header-content h4 {
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 36px;
+        color: #fff;
+      }
+      header .owl-item.active h1 {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-name: fadeInDown;
+        animation-delay: 0.3s;
+      }
+      header .owl-item.active h2 {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-name: fadeInDown;
+        animation-delay: 0.3s;
+      }
+      header .owl-item.active h4 {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-name: fadeInUp;
+        animation-delay: 0.3s;
+      }
+      header .owl-item.active .line {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-name: fadeInLeft;
+        animation-delay: 0.3s;
+      }
+      header .owl-nav .owl-prev {
+        position: absolute;
+        left: 15px;
+        top: 43%;
+        opacity: 0;
+        -webkit-transition: all 0.4s ease-out;
+        transition: all 0.4s ease-out;
+        background: rgba(0, 0, 0, 0.5) !important;
+        width: 40px;
+        cursor: pointer;
+        height: 40px;
+        position: absolute;
+        display: block;
+        z-index: 1000;
+        border-radius: 0;
+      }
+      header .owl-nav .owl-prev span {
+        font-size: 1.6875rem;
+        color: #fff;
+      }
+      header .owl-nav .owl-prev:focus {
+        outline: 0;
+      }
+      header .owl-nav .owl-prev:hover {
+        background: #000 !important;
+      }
+      header .owl-nav .owl-next {
+        position: absolute;
+        right: 15px;
+        top: 43%;
+        opacity: 0;
+        -webkit-transition: all 0.4s ease-out;
+        transition: all 0.4s ease-out;
+        background: rgba(0, 0, 0, 0.5) !important;
+        width: 40px;
+        cursor: pointer;
+        height: 40px;
+        position: absolute;
+        display: block;
+        z-index: 1000;
+        border-radius: 0;
+      }
+      header .owl-nav .owl-next span {
+        font-size: 1.6875rem;
+        color: #fff;
+      }
+      header .owl-nav .owl-next:focus {
+        outline: 0;
+      }
+      header .owl-nav .owl-next:hover {
+        background: #000 !important;
+      }
+      header:hover .owl-prev {
+        left: 0px;
+        opacity: 1;
+      }
+      header:hover .owl-next {
+        right: 0px;
+        opacity: 1;
+      }
+    </style>
 
-  <style>
-    .card-container {
-      display: flex;
-      justify-content: center;
-    }
-  
-    .card {
-      width: 180px;
-      height: 160px;
-      padding: 1rem;
-      border-radius: 5px; /* Hacer las tarjetas más estilizadas */
-      background: ;rgb(245, 239, 240)
-      position: relative;
-      margin-bottom: 20px; /* Add margin between cards */
-    }
-  
-    .card i {
-      font-size: 36px;
-      margin-bottom: 10px;
-      color: #302535;
-      display: block; /* Hacer que el icono ocupe toda la anchura de la tarjeta */
-      text-align: center; /* Centrar el icono verticalmente */
-      line-height: 80px; /* Ajustar la altura de línea para centrar el icono */
-    }
-  
-    .card h2 {
-      margin: 0;
-      font-size: 20px;
-      color: #302535;
-      text-align: center; /* Centrar el título */
-    }
-  
-    .card p {
-      margin: 5px 0;
-
-
-
-
+    <script>
+            $('.owl-carousel').owlCarousel({
+          loop:true,
+          margin:10,
+          dots:false,
+          nav:true,
+          mouseDrag:false,
+          autoplay:true,
+          animateOut: 'slideOutUp',
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:1
+              },
+              1000:{
+                  items:1
+              }
+          }
+      });
+    </script>
+</header>
 
 
 
