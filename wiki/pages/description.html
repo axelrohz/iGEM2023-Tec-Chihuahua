@@ -6,248 +6,156 @@
 
 {% block page_content %}
 
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Fullscreen</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
 
-<header>
-    <div class="owl-carousel owl-theme">
-        <div class="item">
-            <img src="https://cdn.pixabay.com/photo/2015/05/31/10/51/technology-791029_960_720.jpg" alt="">
-            <div class="cover">
-                <div class="container">
-                    <div class="header-content">
-                        <div class="line"></div>
-                        <h2>Reinvent Business Experience with</h2>
-                        <h1>Our Global and Integrated Solutions</h1>
-                        <h4>We help entrepreneurs, start-ups and enterprises shape their ideas into business</h4>
-                    </div>
-                </div>
-             </div>
-        </div>                    
-        <div class="item">
-            <img src="https://cdn.pixabay.com/photo/2017/10/17/19/11/fantasy-2861815_960_720.jpg" alt="">
-            <div class="cover">
-                <div class="container">
-                    <div class="header-content">
-                        <div class="line animated bounceInLeft"></div>
-                        <h2>Reinvent Digital Experience with</h2>
-                        <h1>Our Digital and Intelligent Solutions</h1>
-                        <h4>We help entrepreneurs, start-ups and enterprises shape their dreams into profits</h4>
-                    </div>
-                </div>
-             </div>
-        </div>                
-        <div class="item">
-            <img src="https://cdn.pixabay.com/photo/2017/07/17/23/51/wormhole-2514312_960_720.jpg" alt="">
-            <div class="cover">
-                <div class="container">
-                    <div class="header-content">
-                        <div class="line animated bounceInLeft"></div>
-                        <h2>Reinvent Client Experience with</h2>
-                        <h1>Our CRM and Software Solutions</h1>
-                        <h4>We help entrepreneurs, start-ups and enterprises shape their leads into clients</h4>
-                    </div>
-                </div>
-             </div>
-        </div>
-    </div>
-        <p>El párrafo generalmente lo definimos como un conjunto de oraciones escritas que comparten un tema y un contexto comunicativo, por lo que las escribimos en un orden, es decir, en secuencia. El párrafo también es considerado una de las unidades en que se puede dividir un texto escrito.</p>
     <style>
-        header .item {
-    height: 100vh;
-    position: relative;
-    }
-    header .item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    }
-    header .item .cover {
-    padding: 75px 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.6);
-    display: flex;
-    align-items: center;
-    }
-    header .item .cover .header-content {
-    position: relative;
-    padding: 56px;
-    overflow: hidden;
-    }
-    header .item .cover .header-content .line {
-    content: "";
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    position: absolute;
-    border: 9px solid #fff;
-    -webkit-clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
-    clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
-    }
-    header .item .cover .header-content h2 {
-    font-weight: 300;
-    font-size: 35px;
-    color: #fff;
-    }
-    header .item .cover .header-content h1 {
-    font-size: 56px;
-    font-weight: 600;
-    margin: 5px 0 20px;
-    word-spacing: 3px;
-    color: #fff;
-    }
-    header .item .cover .header-content h4 {
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 36px;
-    color: #fff;
-    }
-    header .owl-item.active h1 {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    animation-name: fadeInDown;
-    animation-delay: 0.3s;
-    }
-    header .owl-item.active h2 {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    animation-name: fadeInDown;
-    animation-delay: 0.3s;
-    }
-    header .owl-item.active h4 {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    animation-name: fadeInUp;
-    animation-delay: 0.3s;
-    }
-    header .owl-item.active .line {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    animation-name: fadeInLeft;
-    animation-delay: 0.3s;
-    }
-    header .owl-nav .owl-prev {
-    position: absolute;
-    left: 15px;
-    top: 43%;
-    opacity: 0;
-    -webkit-transition: all 0.4s ease-out;
-    transition: all 0.4s ease-out;
-    background: rgba(0, 0, 0, 0.5) !important;
-    width: 40px;
-    cursor: pointer;
-    height: 40px;
-    position: absolute;
-    display: block;
-    z-index: 1000;
-    border-radius: 0;
-    }
-    header .owl-nav .owl-prev span {
-    font-size: 1.6875rem;
-    color: #fff;
-    }
-    header .owl-nav .owl-prev:focus {
-    outline: 0;
-    }
-    header .owl-nav .owl-prev:hover {
-    background: #000 !important;
-    }
-    header .owl-nav .owl-next {
-    position: absolute;
-    right: 15px;
-    top: 43%;
-    opacity: 0;
-    -webkit-transition: all 0.4s ease-out;
-    transition: all 0.4s ease-out;
-    background: rgba(0, 0, 0, 0.5) !important;
-    width: 40px;
-    cursor: pointer;
-    height: 40px;
-    position: absolute;
-    display: block;
-    z-index: 1000;
-    border-radius: 0;
-    }
-    header .owl-nav .owl-next span {
-    font-size: 1.6875rem;
-    color: #fff;
-    }
-    header .owl-nav .owl-next:focus {
-    outline: 0;
-    }
-    header .owl-nav .owl-next:hover {
-    background: #000 !important;
-    }
-    header:hover .owl-prev {
-    left: 0px;
-    opacity: 1;
-    }
-    header:hover .owl-next {
-    right: 0px;
-    opacity: 1;
-    }
-    .owl-carousel {
-    overflow: hidden;
-    }
-    .carousel-container {
-        max-width: 1000px; /* Establece el ancho máximo del carrusel para dispositivos más grandes */
-        margin: 0 auto; /* Centra el carrusel horizontalmente */
-        overflow: hidden; /* Para ocultar cualquier contenido que se desborde */
-    }
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
 
-    .carousel-container .item {
-        height: 60vh; /* Altura relativa para adaptarse a diferentes tamaños de dispositivos móviles */
-        position: relative;
-    }
+        header {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
 
-    .carousel-container .item img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* Ajusta la imagen para que ocupe todo el contenedor sin deformarla */
-    }
-    header .item {
-        height: 60vh; /* Reduced height for smaller carousel */
-        position: relative;
-    }
+        header .item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-    header .item .cover .header-content {
-        padding: 20px; /* Reduced padding for smaller content area */
-        max-width: 80%; /* Limit the maximum width of the content area */
-        margin: 0 auto; /* Center the content area horizontally */
-    }
+        header .item .cover {
+            padding: 75px 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.6);
+            display: flex;
+            align-items: center;
+        }
 
-    header .item .cover .header-content h2 {
-        font-size: 20px; /* Reduced font size for smaller screens */
-    }
+        header .item .cover .header-content {
+            position: relative;
+            padding: 56px;
+            overflow: hidden;
+        }
 
-    header .item .cover .header-content h1 {
-        font-size: 32px; /* Reduced font size for smaller screens */
-    }
+        header .item .cover .header-content .line {
+            content: "";
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            position: absolute;
+            border: 9px solid #fff;
+            -webkit-clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+            clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+        }
 
-    header .item .cover .header-content h4 {
-        font-size: 18px; /* Reduced font size for smaller screens */
-        line-height: 24px; /* Reduced line-height for better readability */
-    }
+        header .item .cover .header-content h2 {
+            font-weight: 300;
+            font-size: 35px;
+            color: #fff;
+        }
+
+        header .item .cover .header-content h1 {
+            font-size: 56px;
+            font-weight: 600;
+            margin: 5px 0 20px;
+            word-spacing: 3px;
+            color: #fff;
+        }
+
+        header .item .cover .header-content h4 {
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 36px;
+            color: #fff;
+        }
+
+        .owl-carousel {
+            overflow: hidden;
+        }
+
+        .owl-carousel .owl-item.active h1,
+        .owl-carousel .owl-item.active h2,
+        .owl-carousel .owl-item.active h4,
+        .owl-carousel .owl-item.active .line {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            animation-delay: 0.3s;
+        }
     </style>
+</head>
+<body>
+    <header>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="https://cdn.pixabay.com/photo/2015/05/31/10/51/technology-791029_960_720.jpg" alt="">
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content">
+                            <div class="line"></div>
+                            <h2>Reinvent Business Experience with</h2>
+                            <h1>Our Global and Integrated Solutions</h1>
+                            <h4>We help entrepreneurs, start-ups and enterprises shape their ideas into business</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://cdn.pixabay.com/photo/2017/10/17/19/11/fantasy-2861815_960_720.jpg" alt="">
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content">
+                            <div class="line animated bounceInLeft"></div>
+                            <h2>Reinvent Digital Experience with</h2>
+                            <h1>Our Digital and Intelligent Solutions</h1>
+                            <h4>We help entrepreneurs, start-ups and enterprises shape their dreams into profits</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://cdn.pixabay.com/photo/2017/07/17/23/51/wormhole-2514312_960_720.jpg" alt="">
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content">
+                            <div class="line animated bounceInLeft"></div>
+                            <h2>Reinvent Client Experience with</h2>
+                            <h1>Our CRM and Software Solutions</h1>
+                            <h4>We help entrepreneurs, start-ups and enterprises shape their leads into clients</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="carousel-container">
+        <p>El párrafo generalmente lo definimos como un conjunto de oraciones escritas que comparten un tema y un contexto comunicativo, por lo que las escribimos en un orden, es decir, en secuencia. El párrafo también es considerado una de las unidades en que se puede dividir un texto escrito.</p>
+    </div>
+
     <script>
         $('.owl-carousel').owlCarousel({
             loop: true,
@@ -273,9 +181,8 @@
             }
         });
     </script>
-    
-</header>
-
+</body>
+</html>
 
 
 
