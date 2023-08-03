@@ -6,7 +6,6 @@
 
 {% block page_content %}
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,7 +30,7 @@
         }
 
         header {
-            height: 100vh; /* Changed to 100vh to cover the entire viewport height */
+            height: 100vh;
             overflow: hidden;
         }
 
@@ -47,7 +46,7 @@
         }
 
         header .item .cover {
-            padding: 75px 0;
+            padding: 5% 0; /* Adjusted padding for better visibility on smaller screens */
             position: absolute;
             width: 100%;
             height: 100%;
@@ -60,7 +59,7 @@
 
         header .item .cover .header-content {
             position: relative;
-            padding: 56px;
+            padding: 3%; /* Adjusted padding for better visibility on smaller screens */
             overflow: hidden;
         }
 
@@ -79,12 +78,12 @@
 
         header .item .cover .header-content h2 {
             font-weight: 300;
-            font-size: 35px;
+            font-size: 4vw; /* Responsive font size */
             color: #fff;
         }
 
         header .item .cover .header-content h1 {
-            font-size: 56px;
+            font-size: 7vw; /* Responsive font size */
             font-weight: 600;
             margin: 5px 0 20px;
             word-spacing: 3px;
@@ -92,52 +91,26 @@
         }
 
         header .item .cover .header-content h4 {
-            font-size: 24px;
+            font-size: 3.5vw; /* Responsive font size */
             font-weight: 300;
-            line-height: 36px;
+            line-height: 5vw; /* Responsive line height */
             color: #fff;
         }
 
-        header .owl-item.active h1 {
-            -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-            -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
-            animation-name: fadeInDown;
-            animation-delay: 0.3s;
-        }
-
-        header .owl-item.active h2 {
-            -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-            -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
-            animation-name: fadeInDown;
-            animation-delay: 0.3s;
-        }
-
-        header .owl-item.active h4 {
-            -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-            -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
-            animation-name: fadeInUp;
-            animation-delay: 0.3s;
-        }
-
+        header .owl-item.active h1,
+        header .owl-item.active h2,
+        header .owl-item.active h4,
         header .owl-item.active .line {
             -webkit-animation-duration: 1s;
             animation-duration: 1s;
             -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
-            animation-name: fadeInLeft;
-            animation-delay: 0.3s;
         }
 
         header .owl-nav .owl-prev,
         header .owl-nav .owl-next {
-            width: 40px;
-            height: 40px;
+            width: 5vw; /* Responsive width */
+            height: 5vw; /* Responsive height */
             position: absolute;
             display: block;
             z-index: 1000;
@@ -151,7 +124,7 @@
 
         header .owl-nav .owl-prev span,
         header .owl-nav .owl-next span {
-            font-size: 1.6875rem;
+            font-size: 2vw; /* Responsive font size */
             color: #fff;
         }
 
@@ -168,37 +141,39 @@
         /* Responsive adjustments */
         @media (max-width: 991px) {
             header .item .cover .header-content {
-                padding: 20px;
+                padding: 10px;
             }
             header .item .cover .header-content h1 {
-                font-size: 40px;
+                font-size: 6vw;
             }
             header .item .cover .header-content h2 {
-                font-size: 24px;
+                font-size: 3vw;
             }
             header .item .cover .header-content h4 {
-                font-size: 18px;
+                font-size: 2.5vw;
+                line-height: 4vw;
             }
             header .owl-nav .owl-prev,
             header .owl-nav .owl-next {
-                width: 30px;
-                height: 30px;
+                width: 3vw;
+                height: 3vw;
             }
             header .owl-nav .owl-prev span,
             header .owl-nav .owl-next span {
-                font-size: 1rem;
+                font-size: 1.5vw;
             }
         }
 
         @media (max-width: 767px) {
             header .item .cover .header-content h1 {
-                font-size: 30px;
+                font-size: 4vw;
             }
             header .item .cover .header-content h2 {
-                font-size: 20px;
+                font-size: 2.5vw;
             }
             header .item .cover .header-content h4 {
-                font-size: 16px;
+                font-size: 2vw;
+                line-height: 3vw;
             }
         }
     </style>
@@ -252,24 +227,26 @@
         </div>
 
         <script>
-            $('.owl-carousel').owlCarousel({
-                loop: true,
-                margin: 10,
-                dots: false,
-                nav: true,
-                mouseDrag: false,
-                autoplay: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 1
-                    },
-                    1000: {
-                        items: 1
+            $(document).ready(function () {
+                $('.owl-carousel').owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    dots: false,
+                    nav: true,
+                    mouseDrag: false,
+                    autoplay: true,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 1
+                        },
+                        1000: {
+                            items: 1
+                        }
                     }
-                }
+                });
             });
         </script>
     </header>
