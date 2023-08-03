@@ -31,7 +31,7 @@
         }
 
         header {
-            height: 100vh;
+            height: 100vh; /* Changed to 100vh to cover the entire viewport height */
             overflow: hidden;
         }
 
@@ -42,12 +42,12 @@
 
         header .item img {
             width: 100%;
-            height: auto; /* Change height to auto to maintain aspect ratio */
+            height: 100%;
             object-fit: cover;
         }
 
         header .item .cover {
-            padding: 10% 0; /* Adjust padding to control the content position */
+            padding: 75px 0;
             position: absolute;
             width: 100%;
             height: 100%;
@@ -60,7 +60,7 @@
 
         header .item .cover .header-content {
             position: relative;
-            padding: 2rem;
+            padding: 56px;
             overflow: hidden;
         }
 
@@ -98,11 +98,77 @@
             color: #fff;
         }
 
-        /* The rest of the CSS remains the same */
+        header .owl-item.active h1 {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            animation-name: fadeInDown;
+            animation-delay: 0.3s;
+        }
 
+        header .owl-item.active h2 {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            animation-name: fadeInDown;
+            animation-delay: 0.3s;
+        }
+
+        header .owl-item.active h4 {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            animation-name: fadeInUp;
+            animation-delay: 0.3s;
+        }
+
+        header .owl-item.active .line {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            animation-name: fadeInLeft;
+            animation-delay: 0.3s;
+        }
+
+        header .owl-nav .owl-prev,
+        header .owl-nav .owl-next {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            display: block;
+            z-index: 1000;
+            border-radius: 0;
+            opacity: 0;
+            -webkit-transition: all 0.4s ease-out;
+            transition: all 0.4s ease-out;
+            background: rgba(0, 0, 0, 0.5) !important;
+            cursor: pointer;
+        }
+
+        header .owl-nav .owl-prev span,
+        header .owl-nav .owl-next span {
+            font-size: 1.6875rem;
+            color: #fff;
+        }
+
+        header .owl-nav .owl-prev:hover,
+        header .owl-nav .owl-next:hover {
+            background: #000 !important;
+        }
+
+        header:hover .owl-prev,
+        header:hover .owl-next {
+            opacity: 1;
+        }
+
+        /* Responsive adjustments */
         @media (max-width: 991px) {
             header .item .cover .header-content {
-                padding: 1rem;
+                padding: 20px;
             }
             header .item .cover .header-content h1 {
                 font-size: 40px;
@@ -141,7 +207,6 @@
 <body>
     <header>
         <div class="owl-carousel owl-theme">
-            <!-- Add 'div' wrapper for each item -->
             <div class="item">
                 <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0061.jpeg"
                     alt="">
@@ -208,7 +273,24 @@
             });
         </script>
     </header>
-    <
+    <h1>Hi! You can scroll now!</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ullamcorper magna a ex pulvinar feugiat.
+        Suspendisse euismod efficitur ultrices. Vivamus dictum lorem quis quam tristique, id congue mi tempus. Morbi
+        vehicula ex elit, eu interdum tortor congue eu. Integer feugiat malesuada eros ac tincidunt. Suspendisse
+        potenti. Vestibulum dapibus, neque eget dignissim feugiat, justo elit congue elit, nec tincidunt ex lorem
+        eu mauris. Vivamus id turpis vel neque rutrum tristique a ac tortor. Quisque rhoncus justo vitae tristique
+        congue. Nullam sed sem quis purus luctus consectetur. Etiam ac urna quam. Duis tincidunt risus sed blandit
+        feugiat. Donec rhoncus ipsum eu tellus interdum, ac pharetra felis feugiat.</p>
+    <p>Proin bibendum nibh eget tellus tincidunt, nec facilisis libero eleifend. Sed facilisis a neque in bibendum.
+        Integer congue, lacus a luctus finibus, velit enim rhoncus sapien, a facilisis erat ipsum at nunc. Nulla
+        facilisi. Aenean vitae lorem in felis efficitur bibendum. Cras eleifend risus eget quam dapibus, nec
+        lobortis velit convallis. Proin sit amet arcu vel metus hendrerit eleifend. Nullam pellentesque mauris
+        vitae justo tempus, at tempor velit cursus. Maecenas id lorem vel tortor iaculis suscipit ut vitae metus.
+        In hac habitasse platea dictumst.</p>
+</body>
+
+</html>
+
 
 
 
