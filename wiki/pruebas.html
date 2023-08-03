@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+  
+{% block title %}Project Description{% endblock %}
+{block lead}Use of bacteriophage endolysins to offer a nonantibiotic solution to contagious bovine mastitis caused by Staphylococcus aureus and Streptococcus agalactiae.
+{endblock}
+
+{% block page_content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Slide Show</title>
+    <style>
+        ::-webkit-scrollbar { 
+            display: none; 
+        }
+
+        #slide-show {
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .bg1 {
+            background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/222641/iStockStreetScene.jpg");
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center center;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .slider-center {
+            position: absolute;
+            height: 15%;
+            width: 80%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .slide-text {
+            font-size: 20px;
+            color: #fff;
+        }
+
+        .slide-text h2 {
+            font-weight: 200;
+            font-family: Raleway;
+            font-size: 30px;
+            line-height: 40px;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <section id="slide-show">
+        <div class="bg1">
+            <div class="slider-center">
+                <div class="slide-text">
+                    <h2>As I stand out here in the wonders of the unknown at Hadley,</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+{% endblock %}
