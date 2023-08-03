@@ -224,7 +224,29 @@
         height: 100%;
         object-fit: cover; /* Ajusta la imagen para que ocupe todo el contenedor sin deformarla */
     }
+    header .item {
+        height: 60vh; /* Reduced height for smaller carousel */
+        position: relative;
+    }
 
+    header .item .cover .header-content {
+        padding: 20px; /* Reduced padding for smaller content area */
+        max-width: 80%; /* Limit the maximum width of the content area */
+        margin: 0 auto; /* Center the content area horizontally */
+    }
+
+    header .item .cover .header-content h2 {
+        font-size: 20px; /* Reduced font size for smaller screens */
+    }
+
+    header .item .cover .header-content h1 {
+        font-size: 32px; /* Reduced font size for smaller screens */
+    }
+
+    header .item .cover .header-content h4 {
+        font-size: 18px; /* Reduced font size for smaller screens */
+        line-height: 24px; /* Reduced line-height for better readability */
+    }
     </style>
     <script>
         $('.owl-carousel').owlCarousel({
@@ -242,7 +264,10 @@
                 600: {
                     items: 1
                 },
-                1000: {
+                768: {
+                    items: 1
+                },
+                992: {
                     items: 1
                 }
             }
