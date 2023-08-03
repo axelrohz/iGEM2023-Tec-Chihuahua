@@ -6,213 +6,72 @@
 
 {% block page_content %}
 
-<section id="slide-show">
-  
-    <div class="slidex activx">
-      <div class="bg1">
-        <div class="slider-center">
-          <div class="slide-text"><h2>As I stand out here in the wonders of the unknown at Hadley,  </h2></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Slide Show</title>
+    <style>
+        ::-webkit-scrollbar { 
+            display: none; 
+        }
+
+        #slide-show {
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .bg1 {
+            background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/222641/iStockStreetScene.jpg");
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center center;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .slider-center {
+            position: absolute;
+            height: 15%;
+            width: 80%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .slide-text {
+            font-size: 20px;
+            color: #fff;
+        }
+
+        .slide-text h2 {
+            font-weight: 200;
+            font-family: Raleway;
+            font-size: 30px;
+            line-height: 40px;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <section id="slide-show">
+        <div class="bg1">
+            <div class="slider-center">
+                <div class="slide-text">
+                    <h2>As I stand out here in the wonders of the unknown at Hadley,</h2>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-
-
-
-</section> 
-
-<section id="unten">
-
-</section>
-<style>
-    ::-webkit-scrollbar { 
-    display: none; 
-    }
-
-    #slide-show {
-    height: 100vh;
-    min-height: 100vh;
-    overflow: hidden;
-    width: 100vw;
-    min-width: 100vw !important;
-    }
-
-    .slide-text {
-    font-size: 20px;
-    color: #fff;
-    text-align:center;
-    }
-
-    .slide-text b {
-    font-weight: 400; 
-    }
-
-    .slide-text h2 {
-    font-weight: 200;
-    font-family: Raleway;
-    font-size: 50px;
-    text-align: center;
-    line-height: 60px;
-    letter-spacing: 1px;
-    color: #fff;
-    }
-
-    .slidex {
-    opacity: 0;
-    transition: opacity 1.5s ease-in-out;
-    z-index: -1;
-    }
-
-    .activx {
-    opacity: 1;
-    }
-
-    .slideshow-nav {
-    position: absolute;
-    bottom: 50%; 
-    width: 100vw;
-    min-width: 100vw !important;
-    font-size: 30px;
-    background: transparent;  
-    }
-
-    .previousx {
-    float: left;
-    }
-
-    .nextx {
-    float: right;
-    }
-
-    .bg1, .bg2, .bg3, .bg4 {
-    background-repeat: no-repeat !important;
-    background-attachment: scroll !important;
-    background-position: center center !important;
-    background-size: cover !important;
-    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/222641/iStockStreetScene.jpg");
-    height: 100vh;
-    min-height: 100vh;
-    overflow: hidden;
-    width: 100vw;
-    min-width: 100vw !important;
-    position: absolute;
-    top:0;
-    left:0;
-    }
-
-    .bg2 {background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/222641/2D6HOGVCGE.jpg");}
-    .bg3 { background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/222641/BusScene.jpg");}
-    .bg4 {background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/222641/sun-trees.jpg");}
-
-    .slider-center {
-    position: absolute;
-    height:15%;
-    width: 50%;
-    left: 50%;
-    top: 50%;
-    background-color: transparent;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: left;
-    letter-spacing: 2px;
-    }
-
-    .nav-link {
-    transition: all 0.4s;
-    padding: 15px;
-    color:#fff;
-    opacity: 0.2;
-    font-size: 40px;  
-    }
-    .nav-link:hover {
-    color: #999;
-    font-size: 80px;
-    opacity: 0.8;
-    }
-
-    .arrow a {
-    position: absolute;
-    bottom:0;
-    left: 50%;
-    color: #fff;
-    transition: all 0.4s;
-    cursor: pointer;
-    font-size: 80px;
-    padding: 0 0 20px 0;
-    opacity: 0.2;
-    }
-
-    .arrow a:hover {
-    color: #999;
-    font-size: 100px;
-    opacity: 0.8;
-    }
-
-
-    #unten {
-    width: 100vw;
-    min-width: 100vw !important;
-    height: 800px;
-    background-color: #999;
-    
-    
-    }
-</style>
-
-<script>
-    $(document).ready(function(){
-        var $prev = $('.previousx');
-        var $next = $('.nextx');
-        var mode = "auto";
-        $prev.on({
-            click: function(e){
-            e.preventDefault();
-            mode = "manual";
-            showPreviousImage();
-            }
-        });
-        $next.on({
-            click: function(e){
-            e.preventDefault();
-            mode = "manual";
-            showNextImage();
-            
-            }
-        });
-        
-        setInterval(function(){
-            if(mode==="auto"){
-            showNextImage();
-            }
-        },5000);
-        
-        function showNextImage(){
-            var $actEl = $('.activx');
-            var $nextEl = $actEl.next('.slidex');
-            if($nextEl.length){
-                $actEl.removeClass('activx');
-                $nextEl.addClass('activx');
-            }else{
-                $actEl.removeClass('activx');
-                $('.slidex:first-child').addClass('activx');
-            }
-        }
-        
-        function showPreviousImage(){
-            var $actEl = $('.activx');
-            var $prevEl = $actEl.prev('.slidex');
-            if($prevEl.length){
-                $actEl.removeClass('activx');
-                $prevEl.addClass('activx');
-            }else{
-                $actEl.removeClass('activx');
-                $('.slidex.last').addClass('activx');
-            }
-        }
-        });
-</script>
-
+    </section>
+</body>
+</html>
 
 
 
