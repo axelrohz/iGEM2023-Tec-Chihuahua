@@ -8,149 +8,238 @@
 
 
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
-
-    <style>
-        body,
-        html {
-            height: 100%;
-            overflow-x: hidden;
-            margin: 0;
-        }
-
-        header {
-            height: 100vh; /* Changed to 100vh to cover the entire viewport height */
-            overflow: hidden;
-        }
-
-        header .item {
-            height: 100%;
-            position: relative;
-        }
-
-        header .item .cover .header-content {
-            position: relative;
-            padding: 56px;
-            overflow: hidden;
-        }
-
-        /* Center the carousel container */
-        .carousel-container {
-            max-width: 1200px; /* Adjust this value to your desired maximum width */
-            margin: 0 auto; /* This centers the container horizontally */
-        }
-
-        /* Make the carousel images responsive */
-        header .item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        /* Your existing CSS styles */
-    </style>
+    <meta charset="utf-8">
+    <title>Bootstrap and OwlCarousel with Flask</title>
+    <link href="{{ url_for('static', filename='bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='animate.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='owl.theme.default.css') }}" rel="stylesheet">
 </head>
-
 <body>
-    <div class="carousel-container">
-        <header>
-            <div class="owl-carousel owl-theme">
-                <div class="item">
-                    <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0061.jpeg"
-                        alt="">
-                    <div class="cover">
-                        <div class="container">
-                            <div class="header-content">
-                                <div class="line"></div>
-                                <h2>Proyect description</h2>
-                                <h1>Our Global and Integrated Solutions</h1>
-                                <h4>Social impact</h4>
-                            </div>
+    <header>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0046.jpeg" alt="">
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content">
+                            <div class="line"></div>
+                            <h2>Reinvent Business Experience with</h2>
+                            <h1>Our Global and Integrated Solutions</h1>
+                            <h4>We help entrepreneurs, start-ups and enterprises shape their ideas into business</h4>
                         </div>
                     </div>
-                </div>
-                <div class="item">
-                    <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0139.jpeg"
-                        alt="">
-                    <div class="cover">
-                        <div class="container">
-                            <div class="header-content">
-                                <div class="line animated bounceInLeft"></div>
-                                <h2>Proyect description</h2>
-                                <h1>Our Global and Integrated Solutions</h1>
-                                <h4>Social impact</h4>
-                            </div>
+                 </div>
+            </div>                    
+            <div class="item">
+                <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0046.jpeg" alt="">
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content">
+                            <div class="line animated bounceInLeft"></div>
+                            <h2>Reinvent Digital Experience with</h2>
+                            <h1>Our Digital and Intelligent Solutions</h1>
+                            <h4>We help entrepreneurs, start-ups and enterprises shape their dreams into profits</h4>
                         </div>
                     </div>
-                </div>
-                <div class="item">
-                    <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0046.jpeg"
-                        alt="">
-                    <div class="cover">
-                        <div class="container">
-                            <div class="header-content">
-                                <div class="line animated bounceInLeft"></div>
-                                <h2>Proyect description</h2>
-                                <h1>Our Global and Integrated Solutions</h1>
-                                <h4>Social impact</h4>
-                            </div>
+                 </div>
+            </div>                
+            <div class="item">
+                <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0046.jpeg" alt="">
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content">
+                            <div class="line animated bounceInLeft"></div>
+                            <h2>Reinvent Client Experience with</h2>
+                            <h1>Our CRM and Software Solutions</h1>
+                            <h4>We help entrepreneurs, start-ups and enterprises shape their leads into clients</h4>
                         </div>
                     </div>
-                </div>
+                 </div>
             </div>
-        </header>
-    </div>
-    <h1>Hi! You can scroll now!</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ullamcorper magna a ex pulvinar feugiat.
-        Suspendisse euismod efficitur ultrices. Vivamus dictum lorem quis quam tristique, id congue mi tempus. Morbi
-        vehicula ex elit, eu interdum tortor congue eu. Integer feugiat malesuada eros ac tincidunt. Suspendisse
-        potenti. Vestibulum dapibus, neque eget dignissim feugiat, justo elit congue elit, nec tincidunt ex lorem
-        eu mauris. Vivamus id turpis vel neque rutrum tristique a ac tortor. Quisque rhoncus justo vitae tristique
-        congue. Nullam sed sem quis purus luctus consectetur. Etiam ac urna quam. Duis tincidunt risus sed blandit
-        feugiat. Donec rhoncus ipsum eu tellus interdum, ac pharetra felis feugiat.</p>
-    <p>Proin bibendum nibh eget tellus tincidunt, nec facilisis libero eleifend. Sed facilisis a neque in bibendum.
-        Integer congue, lacus a luctus finibus, velit enim rhoncus sapien, a facilisis erat ipsum at nunc. Nulla
-        facilisi. Aenean vitae lorem in felis efficitur bibendum. Cras eleifend risus eget quam dapibus, nec
-        lobortis velit convallis. Proin sit amet arcu vel metus hendrerit eleifend. Nullam pellentesque mauris
-        vitae justo tempus, at tempor velit cursus. Maecenas id lorem vel tortor iaculis suscipit ut vitae metus.
-        In hac habitasse platea dictumst.</p>
-
-    <script>
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 10,
-            dots: false,
-            nav: true,
-            mouseDrag: false,
-            autoplay: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 1
-                },
-                1000: {
-                    items: 1
-                }
+        </div>
+        
+    </header>
+    <script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='owl.carousel.js') }}"></script>
+    <style>
+                header .item {
+        height: 100vh;
+        position: relative;
+        }
+        header .item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+        header .item .cover {
+        padding: 75px 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        align-items: center;
+        }
+        header .item .cover .header-content {
+        position: relative;
+        padding: 56px;
+        overflow: hidden;
+        }
+        header .item .cover .header-content .line {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        border: 9px solid #fff;
+        -webkit-clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+        clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+        }
+        header .item .cover .header-content h2 {
+        font-weight: 300;
+        font-size: 35px;
+        color: #fff;
+        }
+        header .item .cover .header-content h1 {
+        font-size: 56px;
+        font-weight: 600;
+        margin: 5px 0 20px;
+        word-spacing: 3px;
+        color: #fff;
+        }
+        header .item .cover .header-content h4 {
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 36px;
+        color: #fff;
+        }
+        header .owl-item.active h1 {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-name: fadeInDown;
+        animation-delay: 0.3s;
+        }
+        header .owl-item.active h2 {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-name: fadeInDown;
+        animation-delay: 0.3s;
+        }
+        header .owl-item.active h4 {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-name: fadeInUp;
+        animation-delay: 0.3s;
+        }
+        header .owl-item.active .line {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-name: fadeInLeft;
+        animation-delay: 0.3s;
+        }
+        header .owl-nav .owl-prev {
+        position: absolute;
+        left: 15px;
+        top: 43%;
+        opacity: 0;
+        -webkit-transition: all 0.4s ease-out;
+        transition: all 0.4s ease-out;
+        background: rgba(0, 0, 0, 0.5) !important;
+        width: 40px;
+        cursor: pointer;
+        height: 40px;
+        position: absolute;
+        display: block;
+        z-index: 1000;
+        border-radius: 0;
+        }
+        header .owl-nav .owl-prev span {
+        font-size: 1.6875rem;
+        color: #fff;
+        }
+        header .owl-nav .owl-prev:focus {
+        outline: 0;
+        }
+        header .owl-nav .owl-prev:hover {
+        background: #000 !important;
+        }
+        header .owl-nav .owl-next {
+        position: absolute;
+        right: 15px;
+        top: 43%;
+        opacity: 0;
+        -webkit-transition: all 0.4s ease-out;
+        transition: all 0.4s ease-out;
+        background: rgba(0, 0, 0, 0.5) !important;
+        width: 40px;
+        cursor: pointer;
+        height: 40px;
+        position: absolute;
+        display: block;
+        z-index: 1000;
+        border-radius: 0;
+        }
+        header .owl-nav .owl-next span {
+        font-size: 1.6875rem;
+        color: #fff;
+        }
+        header .owl-nav .owl-next:focus {
+        outline: 0;
+        }
+        header .owl-nav .owl-next:hover {
+        background: #000 !important;
+        }
+        header:hover .owl-prev {
+        left: 0px;
+        opacity: 1;
+        }
+        header:hover .owl-next {
+        right: 0px;
+        opacity: 1;
+        }
+</style>
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        dots:false,
+        nav:true,
+        mouseDrag:false,
+        autoplay:true,
+        animateOut: 'slideOutUp',
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
             }
-        });
+        }
+    });
+
     </script>
 </body>
-
 </html>
+
 
 
 
