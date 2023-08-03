@@ -35,87 +35,42 @@ body {
 /* Estilos para el carrusel */
 header .owl-carousel {
     overflow: hidden;
-    position: relative;
-}
-
-header .owl-item {
-    height: 100vh;
-    position: relative;
 }
 
 header .item img {
     width: 100%;
-    height: 100%;
+    height: 400px; /* Ajusta la altura como desees */
     object-fit: cover;
 }
 
-header .item .cover {
-    padding: 75px 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.6);
-    display: flex;
-    align-items: center;
-}
-
-header .item .cover .header-content {
-    position: relative;
-    padding: 56px;
-    overflow: hidden;
-}
-
-header .item .cover .header-content .line {
-    content: "";
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    position: absolute;
-    border: 9px solid #fff;
-    -webkit-clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
-    clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
-}
-
-header .item .cover .header-content h2 {
-    font-weight: 300;
-    font-size: 35px;
-    color: #fff;
-}
-
-header .item .cover .header-content h1 {
-    font-size: 56px;
-    font-weight: 600;
-    margin: 5px 0 20px;
-    word-spacing: 3px;
-    color: #fff;
-}
-
-header .item .cover .header-content h4 {
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 36px;
-    color: #fff;
-}
-
-/* Estilos para los párrafos */
+/* Estilos para párrafos y títulos */
 header h1 {
     font-size: 18px;
     line-height: 30px;
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
+    text-align: center; /* Centra el párrafo */
     color: #333;
 }
 
-/* Estilos para los títulos */
-h2, h3, h4, h5, h6 {
-    text-align: center;
+header h2, header h3, header h4, header h5, header h6 {
+    text-align: center; /* Centra los títulos */
     padding: 20px;
     color: #333;
+}
+
+/* Estilos para responsividad */
+@media (max-width: 767px) {
+    header .item img {
+        height: 250px; /* Ajusta la altura para pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 576px) {
+    header .item img {
+        height: 150px; /* Ajusta la altura para pantallas aún más pequeñas */
+    }
 }
 </style>
 
@@ -123,7 +78,7 @@ h2, h3, h4, h5, h6 {
 <body>
 
 <header>
-    <div class="container">
+    <div class="container"> <!-- Envuelve el carrusel en un contenedor para centrarlo -->
         <div class="owl-carousel owl-theme">
             <div class="item">
                 <img src="https://cdn.pixabay.com/photo/2015/05/31/10/51/technology-791029_960_720.jpg" alt="">
@@ -138,18 +93,11 @@ h2, h3, h4, h5, h6 {
                     </div>
                 </div>
             </div>
-            <div class="item">
-                <!-- Agrega aquí los otros elementos del carrusel -->
-            </div>
-            <div class="item">
-                <!-- Agrega aquí los otros elementos del carrusel -->
-            </div>
+            <!-- Agrega otros elementos del carrusel aquí -->
         </div>
     </div>
+    <h1>El párrafo generalmente lo definimos como un conjunto de oraciones escritas que comparten un tema y un contexto comunicativo, por lo que las escribimos en un orden, es decir, en secuencia. El párrafo también es considerado una de las unidades en que se puede dividir un texto escrito.</h1>
 </header>
-
-<!-- Contenido de la página -->
-<h1>El párrafo generalmente lo definimos como un conjunto de oraciones escritas que comparten un tema y un contexto comunicativo, por lo que las escribimos en un orden, es decir, en secuencia. El párrafo también es considerado una de las unidades en que se puede dividir un texto escrito.</h1>
 
 <!-- Otros títulos y párrafos -->
 <h2>Título 2</h2>
@@ -158,7 +106,6 @@ h2, h3, h4, h5, h6 {
 <h3>Título 3</h3>
 <p>Otro párrafo de ejemplo para demostrar la centralización del contenido.</p>
 
-</body>
 <script>
 $(document).ready(function() {
     $('.owl-carousel').owlCarousel({
@@ -187,13 +134,9 @@ $(document).ready(function() {
     });
 });
 </script>
+
+</body>
 </html>
-
-
-
-
-
-
 
 
 
