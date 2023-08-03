@@ -31,47 +31,140 @@
         }
 
         header {
-            height: 70vh; /* Changed to 70vh for a smaller header */
+            height: 100vh; /* Changed to 100vh to cover the entire viewport height */
             overflow: hidden;
-            position: relative; /* Added to make sure header height doesn't affect the content */
         }
 
-        /* ... (Rest of the CSS remains unchanged) ... */
+        .owl-carousel {
+            height: 100vh; /* Set carousel height to cover the entire viewport height */
+        }
+
+        .owl-carousel .item {
+            height: 100%;
+            position: relative;
+        }
+
+        .owl-carousel .item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .owl-carousel .item .cover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            display: flex;
+            align-items: center;
+        }
+
+        .owl-carousel .item .cover .header-content {
+            padding: 56px;
+            overflow: hidden;
+        }
+
+        .owl-carousel .item .cover .header-content .line {
+            content: "";
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            position: absolute;
+            border: 9px solid #fff;
+            -webkit-clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+            clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+        }
+
+        .owl-carousel .item .cover .header-content h2 {
+            font-weight: 300;
+            font-size: 35px;
+            color: #fff;
+        }
+
+        .owl-carousel .item .cover .header-content h1 {
+            font-size: 56px;
+            font-weight: 600;
+            margin: 5px 0 20px;
+            word-spacing: 3px;
+            color: #fff;
+        }
+
+        .owl-carousel .item .cover .header-content h4 {
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 36px;
+            color: #fff;
+        }
+
+        .owl-carousel .owl-nav .owl-prev,
+        .owl-carousel .owl-nav .owl-next {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            display: block;
+            z-index: 1000;
+            border-radius: 0;
+            opacity: 0;
+            -webkit-transition: all 0.4s ease-out;
+            transition: all 0.4s ease-out;
+            background: rgba(0, 0, 0, 0.5) !important;
+            cursor: pointer;
+        }
+
+        .owl-carousel .owl-nav .owl-prev span,
+        .owl-carousel .owl-nav .owl-next span {
+            font-size: 1.6875rem;
+            color: #fff;
+        }
+
+        .owl-carousel .owl-nav .owl-prev:hover,
+        .owl-carousel .owl-nav .owl-next:hover {
+            background: #000 !important;
+        }
+
+        header:hover .owl-nav .owl-prev,
+        header:hover .owl-nav .owl-next {
+            opacity: 1;
+        }
 
         /* Responsive adjustments */
         @media (max-width: 991px) {
-            header .item .cover .header-content {
-                padding: 10px; /* Adjusted padding for smaller screens */
+            .owl-carousel .item .cover .header-content {
+                padding: 20px;
             }
-            header .item .cover .header-content h1 {
-                font-size: 30px;
+            .owl-carousel .item .cover .header-content h1 {
+                font-size: 40px;
             }
-            header .item .cover .header-content h2 {
-                font-size: 20px;
+            .owl-carousel .item .cover .header-content h2 {
+                font-size: 24px;
             }
-            header .item .cover .header-content h4 {
-                font-size: 16px;
+            .owl-carousel .item .cover .header-content h4 {
+                font-size: 18px;
             }
-            header .owl-nav .owl-prev,
-            header .owl-nav .owl-next {
+            .owl-carousel .owl-nav .owl-prev,
+            .owl-carousel .owl-nav .owl-next {
                 width: 30px;
                 height: 30px;
             }
-            header .owl-nav .owl-prev span,
-            header .owl-nav .owl-next span {
+            .owl-carousel .owl-nav .owl-prev span,
+            .owl-carousel .owl-nav .owl-next span {
                 font-size: 1rem;
             }
         }
 
         @media (max-width: 767px) {
-            header .item .cover .header-content h1 {
-                font-size: 20px; /* Further reduced font size for smaller screens */
+            .owl-carousel .item .cover .header-content h1 {
+                font-size: 30px;
             }
-            header .item .cover .header-content h2 {
-                font-size: 18px; /* Further reduced font size for smaller screens */
+            .owl-carousel .item .cover .header-content h2 {
+                font-size: 20px;
             }
-            header .item .cover .header-content h4 {
-                font-size: 14px; /* Further reduced font size for smaller screens */
+            .owl-carousel .item .cover .header-content h4 {
+                font-size: 16px;
             }
         }
     </style>
@@ -87,7 +180,7 @@
                     <div class="container">
                         <div class="header-content">
                             <div class="line"></div>
-                            <h2>Project description</h2>
+                            <h2>Proyect description</h2>
                             <h1>Our Global and Integrated Solutions</h1>
                             <h4>Social impact</h4>
                         </div>
@@ -101,7 +194,7 @@
                     <div class="container">
                         <div class="header-content">
                             <div class="line animated bounceInLeft"></div>
-                            <h2>Project description</h2>
+                            <h2>Proyect description</h2>
                             <h1>Our Global and Integrated Solutions</h1>
                             <h4>Social impact</h4>
                         </div>
@@ -115,7 +208,7 @@
                     <div class="container">
                         <div class="header-content">
                             <div class="line animated bounceInLeft"></div>
-                            <h2>Project description</h2>
+                            <h2>Proyect description</h2>
                             <h1>Our Global and Integrated Solutions</h1>
                             <h4>Social impact</h4>
                         </div>
@@ -123,29 +216,25 @@
                 </div>
             </div>
         </div>
-
         <script>
-            $(document).ready(function () {
-                $('.owl-carousel').owlCarousel({
-                    loop: true,
-                    margin: 10,
-                    dots: false,
-                    nav: true,
-                    mouseDrag: false,
-                    autoplay: true,
-                    autoplayTimeout: 3000, /* Reduced autoplay timeout for a slower slideshow */
-                    responsive: {
-                        0: {
-                            items: 1
-                        },
-                        600: {
-                            items: 1
-                        },
-                        1000: {
-                            items: 1
-                        }
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 0,
+                dots: false,
+                nav: true,
+                mouseDrag: false,
+                autoplay: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
                     }
-                });
+                }
             });
         </script>
     </header>
@@ -166,6 +255,7 @@
 </body>
 
 </html>
+
 
 
 
