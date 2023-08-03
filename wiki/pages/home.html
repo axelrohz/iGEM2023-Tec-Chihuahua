@@ -6,57 +6,192 @@
 {% block page_content %}
 
 
-<section id="hero">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="fade-up">
-        
-        <div>
-          <h1>Healthy cows, no antibiotics: The Power of endolysins</h1>
-          <h2>Use of bacteriophage endolysins to offer a non-antibiotic solution to contagious bovine mastitis caused by <i>Staphylococcus aureus</i>, <i>Streptococcus uberis</i> and <i>Streptococcus agalactiae</i></h2>
-          
-        </div>
-      </div>
-      <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left">
 
-        <img  src="" class="img-fluid" alt="">
-        <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Fullscreen</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
 
-          <div class="container mt-3">
-            <button type="button" class="btn btn-outline-info" id="toastbtn">Get to know Taffy</button>
-          
-            <div class="toast" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-              <div class="toast-header bg-primary text-white">
-                <strong class="">I'm Taffy</strong>
-              </div>
-              <div class="toast-body">
-                <p>I'm a Mexican dairy cow and I would like to give you a tour through our wiki</p>
-              </div>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        header {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+
+        header .item {
+            height: 100vh;
+            position: relative;
+        }
+
+        header .item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        header .item .cover {
+            padding: 75px 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.6);
+            display: flex;
+            align-items: center;
+        }
+
+        header .item .cover .header-content {
+            position: relative;
+            padding: 56px;
+            overflow: hidden;
+        }
+
+        header .item .cover .header-content .line {
+            content: "";
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            position: absolute;
+            border: 9px solid #fff;
+            -webkit-clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+            clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+        }
+
+        header .item .cover .header-content h2 {
+            font-weight: 300;
+            font-size: 35px;
+            color: #fff;
+        }
+
+        header .item .cover .header-content h1 {
+            font-size: 56px;
+            font-weight: 600;
+            margin: 5px 0 20px;
+            word-spacing: 3px;
+            color: #fff;
+        }
+
+        header .item .cover .header-content h4 {
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 36px;
+            color: #fff;
+        }
+
+        .owl-carousel {
+            overflow: hidden;
+        }
+
+        .owl-carousel .owl-item.active h1,
+        .owl-carousel .owl-item.active h2,
+        .owl-carousel .owl-item.active h4,
+        .owl-carousel .owl-item.active .line {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            animation-delay: 0.3s;
+        }
+        .carousel-container {
+            margin-bottom: 50px; /* Agregar margen inferior al párrafo */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="https://cdn.pixabay.com/photo/2015/05/31/10/51/technology-791029_960_720.jpg" alt="">
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content">
+                            <div class="line"></div>
+                            <h2>Reinvent Business Experience with</h2>
+                            <h1>Our Global and Integrated Solutions</h1>
+                            <h4>We help entrepreneurs, start-ups and enterprises shape their ideas into business</h4>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          
-          <script>
-            document.getElementById("toastbtn").onclick = function() {
-              var toastEl = document.querySelector('.toast');
-              var toast = new bootstrap.Toast(toastEl);
-              toast.show();
-          
-              setTimeout(function() {
-                toast.hide();
-              }, 5000);
-            };
-          </script>
-          
-          </body>
-        
-       
-      </div>
+            <div class="item">
+                <img src="https://cdn.pixabay.com/photo/2017/10/17/19/11/fantasy-2861815_960_720.jpg" alt="">
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content">
+                            <div class="line animated bounceInLeft"></div>
+                            <h2>Reinvent Digital Experience with</h2>
+                            <h1>Our Digital and Intelligent Solutions</h1>
+                            <h4>We help entrepreneurs, start-ups and enterprises shape their dreams into profits</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://cdn.pixabay.com/photo/2017/07/17/23/51/wormhole-2514312_960_720.jpg" alt="">
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content">
+                            <div class="line animated bounceInLeft"></div>
+                            <h2>Reinvent Client Experience with</h2>
+                            <h1>Our CRM and Software Solutions</h1>
+                            <h4>We help entrepreneurs, start-ups and enterprises shape their leads into clients</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="carousel-container">
+        <p>El párrafo generalmente lo definimos como un conjunto de oraciones escritas que comparten un tema y un contexto comunicativo, por lo que las escribimos en un orden, es decir, en secuencia. El párrafo también es considerado una de las unidades en que se puede dividir un texto escrito.</p>
     </div>
-  </div>
 
-</section><!-- End Hero -->
-
-<!-- ======= Toast ======= -->
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            dots: false,
+            nav: true,
+            mouseDrag: false,
+            autoplay: true,
+            animateOut: 'slideOutUp',
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                768: {
+                    items: 1
+                },
+                992: {
+                    items: 1
+                }
+            }
+        });
+    </script>
+</body>
+</html>
 
 
 
