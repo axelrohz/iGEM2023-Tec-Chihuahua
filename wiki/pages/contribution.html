@@ -118,28 +118,23 @@
     font-size: 16px;
     cursor: pointer;
     font-family: 'Inter Tight';
-  }
-
-  .btn {
-  color: $slate-color;
-  cursor: pointer;
-  display: inline-block;
-  letter-spacing: 0.075em;
-  padding: .8em 1em;
-  margin: auto 2em;
-  position: relative;
-  align-self: center;
-  text-transform: uppercase;
-  border: 3px $blue-color solid;
-  border-image: linear-gradient(45deg, $blue-color 0%, $pink-color 100%);
-  border-image-slice: 1 1 0 0;
-  z-index: 1;
-  box-shadow: -0.5em .5em transparentize($slate-color,1);
-  transform-origin: left bottom;
-  @include transition-all;
+    color: $slate-color;
+    cursor: pointer;
+    display: inline-block;
+    letter-spacing: 0.075em;
+    padding: .8em 1em;
+    margin: auto 2em;
+    position: relative;
+    align-self: center;
+    border: 3px $blue-color solid;
+    border-image: linear-gradient(45deg, $blue-color 0%, $pink-color 100%);
+    border-image-slice: 1 1 0 0;
+    z-index: 1;
+    box-shadow: -0.5em .5em transparentize($slate-color,1);
+    transform-origin: left bottom;
+    @include transition-all;
   
-  &:before,
-  &:after {
+  &:before,&:after {
     border: 3px $blue-color solid;
     content: '';
     display: block;
@@ -191,17 +186,6 @@
   }
 }
 
-
-
-  .btn-card {
-    border-color: #F3F3FA;
-    background:linear-gradient(45 deg,#A9BA6C, #5BC5AB, #447D9C);
-  }
-  
-  .btn-card:hover {
-    border: linear-gradient(45 deg,#A9BA6C, #5BC5AB, #447D9C);
-    color: #F3F3FA;
-  }
 
 </style>
 
