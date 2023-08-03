@@ -35,38 +35,36 @@
             overflow: hidden;
         }
 
-        .owl-carousel {
-            height: 100vh; /* Set carousel height to cover the entire viewport height */
-        }
-
-        .owl-carousel .item {
+        header .item {
             height: 100%;
             position: relative;
         }
 
-        .owl-carousel .item img {
+        header .item img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
 
-        .owl-carousel .item .cover {
+        header .item .cover {
+            padding: 75px 0;
             position: absolute;
+            width: 100%;
+            height: 100%;
             top: 0;
             left: 0;
-            right: 0;
-            bottom: 0;
             background: rgba(0, 0, 0, 0.6);
             display: flex;
             align-items: center;
         }
 
-        .owl-carousel .item .cover .header-content {
+        header .item .cover .header-content {
+            position: relative;
             padding: 56px;
             overflow: hidden;
         }
 
-        .owl-carousel .item .cover .header-content .line {
+        header .item .cover .header-content .line {
             content: "";
             display: inline-block;
             width: 100%;
@@ -79,13 +77,13 @@
             clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
         }
 
-        .owl-carousel .item .cover .header-content h2 {
+        header .item .cover .header-content h2 {
             font-weight: 300;
             font-size: 35px;
             color: #fff;
         }
 
-        .owl-carousel .item .cover .header-content h1 {
+        header .item .cover .header-content h1 {
             font-size: 56px;
             font-weight: 600;
             margin: 5px 0 20px;
@@ -93,15 +91,51 @@
             color: #fff;
         }
 
-        .owl-carousel .item .cover .header-content h4 {
+        header .item .cover .header-content h4 {
             font-size: 24px;
             font-weight: 300;
             line-height: 36px;
             color: #fff;
         }
 
-        .owl-carousel .owl-nav .owl-prev,
-        .owl-carousel .owl-nav .owl-next {
+        header .owl-item.active h1 {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            animation-name: fadeInDown;
+            animation-delay: 0.3s;
+        }
+
+        header .owl-item.active h2 {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            animation-name: fadeInDown;
+            animation-delay: 0.3s;
+        }
+
+        header .owl-item.active h4 {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            animation-name: fadeInUp;
+            animation-delay: 0.3s;
+        }
+
+        header .owl-item.active .line {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            animation-name: fadeInLeft;
+            animation-delay: 0.3s;
+        }
+
+        header .owl-nav .owl-prev,
+        header .owl-nav .owl-next {
             width: 40px;
             height: 40px;
             position: absolute;
@@ -115,55 +149,55 @@
             cursor: pointer;
         }
 
-        .owl-carousel .owl-nav .owl-prev span,
-        .owl-carousel .owl-nav .owl-next span {
+        header .owl-nav .owl-prev span,
+        header .owl-nav .owl-next span {
             font-size: 1.6875rem;
             color: #fff;
         }
 
-        .owl-carousel .owl-nav .owl-prev:hover,
-        .owl-carousel .owl-nav .owl-next:hover {
+        header .owl-nav .owl-prev:hover,
+        header .owl-nav .owl-next:hover {
             background: #000 !important;
         }
 
-        header:hover .owl-nav .owl-prev,
-        header:hover .owl-nav .owl-next {
+        header:hover .owl-prev,
+        header:hover .owl-next {
             opacity: 1;
         }
 
         /* Responsive adjustments */
         @media (max-width: 991px) {
-            .owl-carousel .item .cover .header-content {
+            header .item .cover .header-content {
                 padding: 20px;
             }
-            .owl-carousel .item .cover .header-content h1 {
+            header .item .cover .header-content h1 {
                 font-size: 40px;
             }
-            .owl-carousel .item .cover .header-content h2 {
+            header .item .cover .header-content h2 {
                 font-size: 24px;
             }
-            .owl-carousel .item .cover .header-content h4 {
+            header .item .cover .header-content h4 {
                 font-size: 18px;
             }
-            .owl-carousel .owl-nav .owl-prev,
-            .owl-carousel .owl-nav .owl-next {
+            header .owl-nav .owl-prev,
+            header .owl-nav .owl-next {
                 width: 30px;
                 height: 30px;
             }
-            .owl-carousel .owl-nav .owl-prev span,
-            .owl-carousel .owl-nav .owl-next span {
+            header .owl-nav .owl-prev span,
+            header .owl-nav .owl-next span {
                 font-size: 1rem;
             }
         }
 
         @media (max-width: 767px) {
-            .owl-carousel .item .cover .header-content h1 {
+            header .item .cover .header-content h1 {
                 font-size: 30px;
             }
-            .owl-carousel .item .cover .header-content h2 {
+            header .item .cover .header-content h2 {
                 font-size: 20px;
             }
-            .owl-carousel .item .cover .header-content h4 {
+            header .item .cover .header-content h4 {
                 font-size: 16px;
             }
         }
@@ -216,10 +250,11 @@
                 </div>
             </div>
         </div>
+
         <script>
             $('.owl-carousel').owlCarousel({
                 loop: true,
-                margin: 0,
+                margin: 10,
                 dots: false,
                 nav: true,
                 mouseDrag: false,
@@ -255,7 +290,6 @@
 </body>
 
 </html>
-
 
 
 
