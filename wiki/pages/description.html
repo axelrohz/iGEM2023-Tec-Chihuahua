@@ -204,9 +204,12 @@
     right: 0px;
     opacity: 1;
     }
+    .owl-carousel {
+    overflow: hidden;
+    }
     </style>
     <script>
-        $('.owl-carousel').owlCarousel({
+       $('.owl-carousel').owlCarousel({
             loop:true,
             margin:10,
             dots:false,
@@ -224,8 +227,13 @@
                 1000:{
                     items:1
                 }
-            }
+            },
+            // Agregar estas opciones para deshabilitar el desplazamiento horizontal
+            touchDrag: false,
+            pullDrag: false,
+            freeDrag: false
         });
+
     </script>
 </header>
 
