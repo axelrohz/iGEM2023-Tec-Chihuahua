@@ -41,7 +41,7 @@
 
         header .item img {
             width: 100%;
-            height: 100%;
+            height: auto; /* Ajustar el ancho, la altura se ajustará automáticamente */
             object-fit: cover;
         }
 
@@ -55,12 +55,13 @@
             background: rgba(0, 0, 0, 0.6);
             display: flex;
             align-items: center;
+            justify-content: center; /* Centrar vertical y horizontalmente */
         }
 
         header .item .cover .header-content {
             position: relative;
-            padding: 56px;
-            overflow: hidden;
+            padding: 16px; /* Reducir el padding para dispositivos móviles */
+            text-align: center; /* Centrar el texto en dispositivos móviles */
         }
 
         header .item .cover .header-content .line {
@@ -80,10 +81,11 @@
             font-weight: 300;
             font-size: 35px;
             color: #fff;
+            margin: 10px 0; /* Aumentar el margen para dispositivos móviles */
         }
 
         header .item .cover .header-content h1 {
-            font-size: 56px;
+            font-size: 40px; /* Reducir el tamaño de fuente para dispositivos móviles */
             font-weight: 600;
             margin: 5px 0 20px;
             word-spacing: 3px;
@@ -91,9 +93,9 @@
         }
 
         header .item .cover .header-content h4 {
-            font-size: 24px;
+            font-size: 20px; /* Reducir el tamaño de fuente para dispositivos móviles */
             font-weight: 300;
-            line-height: 36px;
+            line-height: 28px; /* Reducir el interlineado para dispositivos móviles */
             color: #fff;
         }
 
@@ -119,15 +121,16 @@
         /* Media queries para hacerlo responsive */
         @media screen and (max-width: 768px) {
             header .item .cover .header-content h1 {
-                font-size: 36px;
+                font-size: 30px;
             }
 
             header .item .cover .header-content h2 {
-                font-size: 28px;
+                font-size: 24px;
             }
 
             header .item .cover .header-content h4 {
-                font-size: 18px;
+                font-size: 16px;
+                line-height: 22px;
             }
 
             .carousel-container {
@@ -212,6 +215,7 @@
     </script>
 </body>
 </html>
+
 
 
 
