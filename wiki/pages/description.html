@@ -11,7 +11,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Page Title</title>
+<title>Tu título de página</title>
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -21,23 +21,109 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
 
 <style>
-    /* Your existing styles here */
+/* Estilos generales */
+body {
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    margin: 0;
+    padding: 0;
+}
 
-    /* Additional styles for centering and responsiveness */
-    header .container {
-        max-width: 100%;
-    }
+.container {
+    max-width: 100%;
+}
 
-    header .owl-carousel {
-        overflow: hidden;
-    }
+/* Estilos para el carrusel */
+header .owl-carousel {
+    overflow: hidden;
+    position: relative;
+}
+
+header .owl-item {
+    height: 100vh;
+    position: relative;
+}
+
+header .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header .item .cover {
+    padding: 75px 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+}
+
+header .item .cover .header-content {
+    position: relative;
+    padding: 56px;
+    overflow: hidden;
+}
+
+header .item .cover .header-content .line {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    border: 9px solid #fff;
+    -webkit-clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+    clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+}
+
+header .item .cover .header-content h2 {
+    font-weight: 300;
+    font-size: 35px;
+    color: #fff;
+}
+
+header .item .cover .header-content h1 {
+    font-size: 56px;
+    font-weight: 600;
+    margin: 5px 0 20px;
+    word-spacing: 3px;
+    color: #fff;
+}
+
+header .item .cover .header-content h4 {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+    color: #fff;
+}
+
+/* Estilos para los párrafos */
+header h1 {
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+}
+
+/* Estilos para los títulos */
+h2, h3, h4, h5, h6 {
+    text-align: center;
+    padding: 20px;
+    color: #333;
+}
 </style>
 
 </head>
 <body>
 
 <header>
-    <div class="container"> <!-- Wrap carousel in a container to center it -->
+    <div class="container">
         <div class="owl-carousel owl-theme">
             <div class="item">
                 <img src="https://cdn.pixabay.com/photo/2015/05/31/10/51/technology-791029_960_720.jpg" alt="">
@@ -52,43 +138,57 @@
                     </div>
                 </div>
             </div>
-            <!-- Add other carousel items here -->
+            <div class="item">
+                <!-- Agrega aquí los otros elementos del carrusel -->
+            </div>
+            <div class="item">
+                <!-- Agrega aquí los otros elementos del carrusel -->
+            </div>
         </div>
     </div>
-    <h1>El párrafo generalmente lo definimos como un conjunto de oraciones escritas que comparten un tema y un contexto comunicativo, por lo que las escribimos en un orden, es decir, en secuencia. El párrafo también es considerado una de las unidades en que se puede dividir un texto escrito.</h1>
 </header>
 
-<script>
-    $(document).ready(function() {
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 10,
-            dots: false,
-            nav: true,
-            mouseDrag: false,
-            autoplay: true,
-            animateOut: 'slideOutUp',
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 1
-                },
-                1000: {
-                    items: 1
-                }
-            },
-            // Agregar estas opciones para deshabilitar el desplazamiento horizontal
-            touchDrag: false,
-            pullDrag: false,
-            freeDrag: false
-        });
-    });
-</script>
+<!-- Contenido de la página -->
+<h1>El párrafo generalmente lo definimos como un conjunto de oraciones escritas que comparten un tema y un contexto comunicativo, por lo que las escribimos en un orden, es decir, en secuencia. El párrafo también es considerado una de las unidades en que se puede dividir un texto escrito.</h1>
+
+<!-- Otros títulos y párrafos -->
+<h2>Título 2</h2>
+<p>Este es un párrafo de ejemplo para mostrar cómo se ven los párrafos y títulos centrados.</p>
+
+<h3>Título 3</h3>
+<p>Otro párrafo de ejemplo para demostrar la centralización del contenido.</p>
 
 </body>
+<script>
+$(document).ready(function() {
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        dots: false,
+        nav: true,
+        mouseDrag: false,
+        autoplay: true,
+        animateOut: 'slideOutUp',
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        },
+        // Agregar estas opciones para deshabilitar el desplazamiento horizontal
+        touchDrag: false,
+        pullDrag: false,
+        freeDrag: false
+    });
+});
+</script>
 </html>
+
 
 
 
