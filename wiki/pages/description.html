@@ -26,13 +26,13 @@
         body,
         html {
             height: 100%;
-            overflow-x: hidden; /* Hide horizontal scrollbar */
+            overflow-x: hidden;
             margin: 0;
         }
 
         header {
-            height: 80vh; /* Set a fixed height for the header */
-            overflow: hidden; /* Hide vertical scrollbar */
+            height: 100vh; /* Changed to 100vh to cover the entire viewport height */
+            overflow: hidden;
         }
 
         header .item {
@@ -168,37 +168,37 @@
         /* Responsive adjustments */
         @media (max-width: 991px) {
             header .item .cover .header-content {
-                padding: 20px; /* Reduce padding on smaller screens */
+                padding: 20px;
             }
             header .item .cover .header-content h1 {
-                font-size: 40px; /* Decrease font size for smaller screens */
+                font-size: 40px;
             }
             header .item .cover .header-content h2 {
-                font-size: 24px; /* Decrease font size for smaller screens */
+                font-size: 24px;
             }
             header .item .cover .header-content h4 {
-                font-size: 18px; /* Decrease font size for smaller screens */
+                font-size: 18px;
             }
             header .owl-nav .owl-prev,
             header .owl-nav .owl-next {
-                width: 30px; /* Decrease arrow button size for smaller screens */
+                width: 30px;
                 height: 30px;
             }
             header .owl-nav .owl-prev span,
             header .owl-nav .owl-next span {
-                font-size: 1rem; /* Decrease arrow icon size for smaller screens */
+                font-size: 1rem;
             }
         }
 
         @media (max-width: 767px) {
             header .item .cover .header-content h1 {
-                font-size: 30px; /* Further decrease font size for even smaller screens */
+                font-size: 30px;
             }
             header .item .cover .header-content h2 {
-                font-size: 20px; /* Further decrease font size for even smaller screens */
+                font-size: 20px;
             }
             header .item .cover .header-content h4 {
-                font-size: 16px; /* Further decrease font size for even smaller screens */
+                font-size: 16px;
             }
         }
     </style>
