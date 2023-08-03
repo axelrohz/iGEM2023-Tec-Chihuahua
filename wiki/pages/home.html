@@ -25,6 +25,7 @@
             margin: 0;
             padding: 0;
             overflow-x: hidden;
+            font-family: Arial, sans-serif;
         }
 
         header {
@@ -110,8 +111,28 @@
             animation-fill-mode: both;
             animation-delay: 0.3s;
         }
+
         .carousel-container {
             margin-bottom: 50px; /* Agregar margen inferior al párrafo */
+        }
+
+        /* Media queries para hacerlo responsive */
+        @media screen and (max-width: 768px) {
+            header .item .cover .header-content h1 {
+                font-size: 36px;
+            }
+
+            header .item .cover .header-content h2 {
+                font-size: 28px;
+            }
+
+            header .item .cover .header-content h4 {
+                font-size: 18px;
+            }
+
+            .carousel-container {
+                margin-bottom: 20px;
+            }
         }
     </style>
 </head>
@@ -191,6 +212,7 @@
     </script>
 </body>
 </html>
+
 
 
 
