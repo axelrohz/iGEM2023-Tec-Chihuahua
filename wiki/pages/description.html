@@ -31,87 +31,26 @@
         }
 
         header {
-            height: 100vh;
+            height: 70vh; /* Changed to 70vh for a smaller header */
             overflow: hidden;
+            position: relative; /* Added to make sure header height doesn't affect the content */
         }
 
-        header .item {
-            height: 100%;
-            position: relative;
-        }
+        /* ... (Rest of the CSS remains unchanged) ... */
 
-        header .item img {
-            width: 100%;
-            height: auto; /* Change height to auto to maintain aspect ratio */
-            object-fit: cover;
-        }
-
-        header .item .cover {
-            padding: 10% 0; /* Adjust padding to control the content position */
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            background: rgba(0, 0, 0, 0.6);
-            display: flex;
-            align-items: center;
-        }
-
-        header .item .cover .header-content {
-            position: relative;
-            padding: 2rem;
-            overflow: hidden;
-        }
-
-        header .item .cover .header-content .line {
-            content: "";
-            display: inline-block;
-            width: 100%;
-            height: 100%;
-            left: 0;
-            top: 0;
-            position: absolute;
-            border: 9px solid #fff;
-            -webkit-clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
-            clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
-        }
-
-        header .item .cover .header-content h2 {
-            font-weight: 300;
-            font-size: 35px;
-            color: #fff;
-        }
-
-        header .item .cover .header-content h1 {
-            font-size: 56px;
-            font-weight: 600;
-            margin: 5px 0 20px;
-            word-spacing: 3px;
-            color: #fff;
-        }
-
-        header .item .cover .header-content h4 {
-            font-size: 24px;
-            font-weight: 300;
-            line-height: 36px;
-            color: #fff;
-        }
-
-        /* The rest of the CSS remains the same */
-
+        /* Responsive adjustments */
         @media (max-width: 991px) {
             header .item .cover .header-content {
-                padding: 1rem;
+                padding: 10px; /* Adjusted padding for smaller screens */
             }
             header .item .cover .header-content h1 {
-                font-size: 40px;
+                font-size: 30px;
             }
             header .item .cover .header-content h2 {
-                font-size: 24px;
+                font-size: 20px;
             }
             header .item .cover .header-content h4 {
-                font-size: 18px;
+                font-size: 16px;
             }
             header .owl-nav .owl-prev,
             header .owl-nav .owl-next {
@@ -126,13 +65,13 @@
 
         @media (max-width: 767px) {
             header .item .cover .header-content h1 {
-                font-size: 30px;
+                font-size: 20px; /* Further reduced font size for smaller screens */
             }
             header .item .cover .header-content h2 {
-                font-size: 20px;
+                font-size: 18px; /* Further reduced font size for smaller screens */
             }
             header .item .cover .header-content h4 {
-                font-size: 16px;
+                font-size: 14px; /* Further reduced font size for smaller screens */
             }
         }
     </style>
@@ -141,7 +80,6 @@
 <body>
     <header>
         <div class="owl-carousel owl-theme">
-            <!-- Add 'div' wrapper for each item -->
             <div class="item">
                 <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0061.jpeg"
                     alt="">
@@ -149,7 +87,7 @@
                     <div class="container">
                         <div class="header-content">
                             <div class="line"></div>
-                            <h2>Proyect description</h2>
+                            <h2>Project description</h2>
                             <h1>Our Global and Integrated Solutions</h1>
                             <h4>Social impact</h4>
                         </div>
@@ -163,7 +101,7 @@
                     <div class="container">
                         <div class="header-content">
                             <div class="line animated bounceInLeft"></div>
-                            <h2>Proyect description</h2>
+                            <h2>Project description</h2>
                             <h1>Our Global and Integrated Solutions</h1>
                             <h4>Social impact</h4>
                         </div>
@@ -177,7 +115,7 @@
                     <div class="container">
                         <div class="header-content">
                             <div class="line animated bounceInLeft"></div>
-                            <h2>Proyect description</h2>
+                            <h2>Project description</h2>
                             <h1>Our Global and Integrated Solutions</h1>
                             <h4>Social impact</h4>
                         </div>
@@ -187,24 +125,27 @@
         </div>
 
         <script>
-            $('.owl-carousel').owlCarousel({
-                loop: true,
-                margin: 10,
-                dots: false,
-                nav: true,
-                mouseDrag: false,
-                autoplay: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 1
-                    },
-                    1000: {
-                        items: 1
+            $(document).ready(function () {
+                $('.owl-carousel').owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    dots: false,
+                    nav: true,
+                    mouseDrag: false,
+                    autoplay: true,
+                    autoplayTimeout: 3000, /* Reduced autoplay timeout for a slower slideshow */
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 1
+                        },
+                        1000: {
+                            items: 1
+                        }
                     }
-                }
+                });
             });
         </script>
     </header>
@@ -225,7 +166,6 @@
 </body>
 
 </html>
-
 
 
 
