@@ -12,7 +12,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slider Fullscreen</title>
+    <title>Improved Responsive Slider</title>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -184,42 +184,39 @@
     <header>
         <div class="owl-carousel owl-theme">
             <div class="item">
-                <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0046.jpeg"
-                    alt="">
+                <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0046.jpeg" alt="">
                 <div class="cover">
                     <div class="container">
                         <div class="header-content">
                             <div class="line"></div>
-                            <h2>The Power of endolysins</h2>
-                            <h1>Global social impact</h1>
+                            <h2>The Power of Endolysins</h2>
+                            <h1>Global Social Impact</h1>
                             <h4>Auereobos</h4>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="item">
-                <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0022.jpeg"
-                    alt="">
+                <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0022.jpeg" alt="">
                 <div class="cover">
                     <div class="container">
                         <div class="header-content">
                             <div class="line animated bounceInLeft"></div>
-                            <h2>The Power of endolysins</h2>
-                            <h1>Global social impact</h1>
+                            <h2>The Power of Endolysins</h2>
+                            <h1>Global Social Impact</h1>
                             <h4>Auereobos</h4>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="item">
-                <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0139.jpeg"
-                    alt="">
+                <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0139.jpeg" alt="">
                 <div class="cover">
                     <div class="container">
                         <div class="header-content">
                             <div class="line animated bounceInLeft"></div>
-                            <h2>The Power of endolysins</h2>
-                            <h1>Global social impact</h1>
+                            <h2>The Power of Endolysins</h2>
+                            <h1>Global Social Impact</h1>
                             <h4>Auereobos</h4>
                         </div>
                     </div>
@@ -235,33 +232,36 @@
     </div>
 
     <script>
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 10,
-            dots: false,
-            nav: true,
-            mouseDrag: false,
-            autoplay: true,
-            animateOut: 'slideOutUp',
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 1
-                },
-                768: {
-                    items: 1
-                },
-                992: {
-                    items: 1
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                dots: true,
+                nav: false,
+                mouseDrag: true,
+                autoplay: true,
+                animateOut: 'fadeOut',
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    768: {
+                        items: 1
+                    },
+                    992: {
+                        items: 1
+                    }
                 }
-            }
+            });
         });
     </script>
 </body>
 
 </html>
+
 
 
 
