@@ -88,12 +88,14 @@
     .slide {
       width: 100%;
       position: relative;
+      overflow: hidden;
     }
 
     .slide img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      transition: transform 1s ease;
     }
 
     .slide-content {
@@ -101,11 +103,11 @@
       bottom: 0;
       left: 0;
       right: 0;
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(0, 0, 0, 0.7);
       color: #fff;
-      padding: 20px;
+      padding: 40px;
       transform: translateY(100%);
-      transition: transform 0.3s ease;
+      transition: transform 0.5s ease;
     }
 
     .slider .slide.active .slide-content {
@@ -114,12 +116,12 @@
 
     .slide-content h2 {
       margin: 0;
-      font-size: 24px;
+      font-size: 32px;
     }
 
     .slide-content p {
       margin: 10px 0;
-      font-size: 14px;
+      font-size: 18px;
     }
 
     @media (max-width: 768px) {
@@ -138,22 +140,21 @@
       }
 
       .slide-content {
-        background-color: rgba(0, 0, 0, 0.8);
-        padding: 40px;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 20px;
       }
 
       .slide-content h2 {
-        font-size: 32px;
+        font-size: 24px;
       }
 
       .slide-content p {
-        font-size: 18px;
+        font-size: 16px;
       }
     }
   </style>
 </body>
 </html>
-
 
 
 
