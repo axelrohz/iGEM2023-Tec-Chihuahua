@@ -5,52 +5,70 @@
 {endblock}
 
 {% block page_content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Example</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    main {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-image: url("https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0046.jpeg");
+      background-position: center center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    h1, p {
+      color: #E5E5E2;
+    }
+
+    h1 {
+      font-size: 50px;
+    }
+
+    section {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Media Query for Mobile Devices */
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 30px;
+      }
+    }
+
+    /* Add more media queries as needed for different screen sizes */
+  </style>
+</head>
 <body>
   <main>
     <h1>TÍTULO</h1>
-    <p> Este es un ejemplo</p>
-   </main> 
+    <p>Este es un ejemplo</p>
+  </main>
   <section>
     <h2>Subtítulo</h2>
   </section>
 </body>
-<style>
-  *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
+</html>
 
-main{
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-image: url("https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0046.jpeg");
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-h1, p{
-  color: #E5E5E2;
-}
-
-h1{
-  font-size: 50px;
-}
-
-section{
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-}
-</style>
 
 
 
