@@ -8,87 +8,59 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Slider with Swiper</title>
-
-    <!-- Add Swiper CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            overflow-x: hidden;
-        }
-
-        .swiper-container {
-            width: 100%;
-            height: 70vh; /* Use 'vh' unit to scale the slider */
-        }
-
-        .swiper-slide {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .carousel-container {
-            margin-bottom: 1.5vw;
-            padding: 0 2vw;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider Responsivo</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0046.jpeg" alt="">
-            </div>
-            <div class="swiper-slide">
-                <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0022.jpeg" alt="">
-            </div>
-            <div class="swiper-slide">
-                <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0139.jpeg" alt="">
-            </div>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
+  <div class="slider-container">
+    <div class="slider">
+      <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0046.jpeg" alt="Imagen 1">
+      <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0046.jpeg" alt="Imagen 2">
+      <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0046.jpeg" alt="Imagen 3">
     </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const slider = document.querySelector('.slider');
+      const images = slider.querySelectorAll('img');
+      const imageWidth = images[0].clientWidth;
+      let currentIndex = 0;
 
-    <div class="carousel-container">
-        <p>El párrafo generalmente lo definimos como un conjunto de oraciones escritas que comparten un tema y un
-            contexto comunicativo, por lo que las escribimos en un orden, es decir, en secuencia. El párrafo también es
-            considerado una de las unidades en que se puede dividir un texto escrito.</p>
-    </div>
+      function slideNext() {
+        currentIndex = (currentIndex + 1) % images.length;
+        slider.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
+      }
 
-    <!-- Add Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      setInterval(slideNext, 5000); // Cambia la imagen cada 5 segundos (5000 ms)
+    });
+  </script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
 
-    <script>
-        // Initialize Swiper
-        var swiper = new Swiper('.swiper-container', {
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-            },
-            autoplay: {
-                delay: 3000, // Change the delay to control the slider speed (in ms)
-            },
-        });
-    </script>
+    .slider-container {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .slider {
+      display: flex;
+      transition: transform 1s ease;
+    }
+
+    .slider img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
 </body>
-
 </html>
+
 
 
 
