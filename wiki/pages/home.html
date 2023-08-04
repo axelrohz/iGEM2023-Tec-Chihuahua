@@ -12,7 +12,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Improved Responsive Slider</title>
+    <title>Responsive Slider with Swiper</title>
+
+    <!-- Add Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
     <style>
         body {
@@ -22,199 +25,45 @@
             overflow-x: hidden;
         }
 
-        header {
+        .swiper-container {
             width: 100%;
-            height: 100vh;
-            position: relative;
+            height: 70vh; /* Use 'vh' unit to scale the slider */
         }
 
-        header .item {
-            height: 100vh;
-            position: relative;
+        .swiper-slide {
             display: flex;
             justify-content: center;
             align-items: center;
-            overflow: hidden;
         }
 
-        header .item img {
-            width: 100%;
+        img {
+            max-width: 100%;
             height: auto;
-            object-fit: cover;
-        }
-
-        header .item .cover {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            background: rgba(0, 0, 0, 0.6);
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-
-        header .item:hover .cover {
-            opacity: 1;
-        }
-
-        header .item .cover .header-content {
-            max-width: 80%;
-            margin: 0 auto;
-            padding: 16px;
-            position: relative;
-        }
-
-        header .item .cover .header-content .line {
-            content: "";
-            display: inline-block;
-            width: 100%;
-            height: 100%;
-            left: 0;
-            top: 0;
-            position: absolute;
-            border: 9px solid #fff;
-            clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
-        }
-
-        header .item .cover .header-content h2 {
-            font-weight: 300;
-            font-size: 4vw;
-            color: #fff;
-            margin: 10px 0;
-        }
-
-        header .item .cover .header-content h1 {
-            font-size: 5vw;
-            font-weight: 600;
-            margin: 5px 0 20px;
-            word-spacing: 3px;
-            color: #fff;
-        }
-
-        header .item .cover .header-content h4 {
-            font-size: 2.5vw;
-            font-weight: 300;
-            line-height: 28px;
-            color: #fff;
-        }
-
-        .owl-carousel {
-            overflow: hidden;
-        }
-
-        .owl-carousel .owl-item.active .cover {
-            opacity: 1;
         }
 
         .carousel-container {
-            margin-bottom: 5vw;
-            padding: 0 5vw;
-        }
-
-        /* Media queries */
-        @media screen and (max-width: 1199px) {
-            header .item .cover .header-content h1 {
-                font-size: 5.5vw;
-            }
-
-            header .item .cover .header-content h2 {
-                font-size: 5vw;
-            }
-
-            header .item .cover .header-content h4 {
-                font-size: 3vw;
-                line-height: 4vw;
-            }
-
-            .carousel-container {
-                margin-bottom: 3vw;
-            }
-        }
-
-        @media screen and (max-width: 991px) {
-            header .item .cover .header-content h1 {
-                font-size: 6vw;
-            }
-
-            header .item .cover .header-content h2 {
-                font-size: 5.5vw;
-            }
-
-            header .item .cover .header-content h4 {
-                font-size: 3vw;
-                line-height: 3.5vw;
-            }
-
-            .carousel-container {
-                margin-bottom: 2vw;
-            }
-        }
-
-        @media screen and (max-width: 768px) {
-            header .item .cover .header-content h1 {
-                font-size: 7vw;
-            }
-
-            header .item .cover .header-content h2 {
-                font-size: 6vw;
-            }
-
-            header .item .cover .header-content h4 {
-                font-size: 3.5vw;
-                line-height: 4vw;
-            }
-
-            .carousel-container {
-                margin-bottom: 1vw;
-            }
+            margin-bottom: 1.5vw;
+            padding: 0 2vw;
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <div class="owl-carousel owl-theme">
-            <div class="item">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
                 <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0046.jpeg" alt="">
-                <div class="cover">
-                    <div class="header-content">
-                        <div class="line"></div>
-                        <h2>The Power of Endolysins</h2>
-                        <h1>Global Social Impact</h1>
-                        <h4>Auereobos</h4>
-                    </div>
-                </div>
             </div>
-            <div class="item">
+            <div class="swiper-slide">
                 <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0022.jpeg" alt="">
-                <div class="cover">
-                    <div class="header-content">
-                        <div class="line"></div>
-                        <h2>The Power of Endolysins</h2>
-                        <h1>Global Social Impact</h1>
-                        <h4>Auereobos</h4>
-                    </div>
-                </div>
             </div>
-            <div class="item">
+            <div class="swiper-slide">
                 <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0139.jpeg" alt="">
-                <div class="cover">
-                    <div class="header-content">
-                        <div class="line"></div>
-                        <h2>The Power of Endolysins</h2>
-                        <h1>Global Social Impact</h1>
-                        <h4>Auereobos</h4>
-                    </div>
-                </div>
             </div>
         </div>
-    </header>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
 
     <div class="carousel-container">
         <p>El párrafo generalmente lo definimos como un conjunto de oraciones escritas que comparten un tema y un
@@ -222,37 +71,25 @@
             considerado una de las unidades en que se puede dividir un texto escrito.</p>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <!-- Add Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <script>
-        $(document).ready(function () {
-            $('.owl-carousel').owlCarousel({
-                loop: true,
-                margin: 10,
-                dots: true,
-                nav: false,
-                mouseDrag: true,
-                autoplay: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 1
-                    },
-                    768: {
-                        items: 1
-                    },
-                    992: {
-                        items: 1
-                    }
-                }
-            });
+        // Initialize Swiper
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            autoplay: {
+                delay: 3000, // Change the delay to control the slider speed (in ms)
+            },
         });
     </script>
 </body>
 
 </html>
+
 
 
 
