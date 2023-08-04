@@ -6,6 +6,9 @@
 {% block page_content %}
 
 
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +20,7 @@
 <body>
   <div class="slider-container">
     <div class="slider">
-      <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0046.jpeg" alt="Imagen 1">
+      <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0046.jpeg" alt="Imagen 1" class="active">
       <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0046.jpeg" alt="Imagen 2">
       <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0046.jpeg" alt="Imagen 3">
     </div>
@@ -30,14 +33,19 @@
       let currentIndex = 0;
 
       function slideNext() {
+        images[currentIndex].classList.remove('active');
         currentIndex = (currentIndex + 1) % images.length;
-        slider.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
+        images[currentIndex].classList.add('active');
       }
 
       setInterval(slideNext, 5000); // Cambia la imagen cada 5 segundos (5000 ms)
     });
   </script>
   <style>
+    html, body {
+      height: 100%;
+    }
+
     body {
       margin: 0;
       padding: 0;
@@ -45,23 +53,29 @@
 
     .slider-container {
       width: 100%;
+      height: 100vh;
       overflow: hidden;
     }
 
     .slider {
       display: flex;
-      transition: transform 1s ease;
+      transition: opacity 1s ease;
     }
 
     .slider img {
       width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .slider img.active {
+      opacity: 1;
     }
   </style>
 </body>
 </html>
-
-
 
 
 
