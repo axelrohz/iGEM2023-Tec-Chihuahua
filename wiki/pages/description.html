@@ -26,6 +26,7 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
+            overflow-x: hidden;
         }
 
         header {
@@ -56,12 +57,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            text-align: center;
         }
 
         header .item .cover .header-content {
-            position: relative;
+            max-width: 80%;
+            margin: 0 auto;
             padding: 16px;
-            text-align: center;
         }
 
         header .item .cover .header-content .line {
@@ -73,7 +75,6 @@
             top: 0;
             position: absolute;
             border: 9px solid #fff;
-            -webkit-clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
             clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
         }
 
@@ -116,6 +117,7 @@
 
         .carousel-container {
             margin-bottom: 50px;
+            padding: 0 20px;
         }
 
         /* Media queries */
@@ -260,6 +262,7 @@
 </body>
 
 </html>
+
 
 
 
