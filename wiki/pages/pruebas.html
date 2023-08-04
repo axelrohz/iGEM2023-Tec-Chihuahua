@@ -6,30 +6,32 @@
 
 {% block page_content %}
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Parallax Effect</title>
+  <title>Project Description</title>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <style>
     body {
       margin: 0;
-      font-family: "Arial", sans-serif;
     }
-
     .sample-header {
       position: fixed;
       left: 0;
       top: 0;
       width: 100%;
-      height: 100vh;
-      background-image: url("https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0022.jpeg");
+      height: 100vh; /* Ajusta la altura para que la imagen sea visible en todo el viewport */
+      background-image: url("https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0139.jpeg");
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+      font-family: "Montserrat", sans-serif;
     }
-
     .sample-header::before {
       content: "";
       position: absolute;
@@ -40,46 +42,30 @@
       background-color: MidnightBlue;
       opacity: 0.3;
     }
-
-    .sample-header-section {
-      position: relative;
-      padding: 20% 0 10%;
-      max-width: 640px;
-      margin-left: auto;
-      margin-right: auto;
-      color: white;
-      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-      text-align: center;
-    }
-
-    h1 {
-      font-weight: bold;
-      font-size: 40px;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      font-weight: normal;
-      font-size: 24px;
-    }
-
     .sample-section-wrap {
       position: relative;
-      background-color: #f0f0f0;
+      background-color: white;
     }
-
     .sample-section {
-      position: relative;
       max-width: 640px;
       margin: 0 auto;
       padding: 40px;
     }
-
-    p {
-      font-size: 16px;
-      line-height: 1.6;
-    }
   </style>
+</head>
+<body>
+  <div class="sample-header">
+    <div class="sample-header-section">
+      <h1>Project Description</h1>
+      <h2>Scroll down to see the parallax effect</h2>
+      <h3>Background landscape scrolls with its own depth</h3>
+    </div>
+  </div>
+  <div class="sample-section-wrap">
+    <div class="sample-section">
+      <!-- Aquí iría el contenido de la descripción del proyecto -->
+    </div>
+  </div>
   <script>
     function parallax_height() {
       var scroll_top = $(this).scrollTop();
@@ -88,6 +74,7 @@
       $(".sample-section").css({ "margin-top": header_height });
       $(".sample-header").css({ height: header_height - scroll_top });
     }
+
     parallax_height();
     $(window).scroll(function() {
       parallax_height();
@@ -96,21 +83,6 @@
       parallax_height();
     });
   </script>
-</head>
-<body>
-  <div class="sample-header">
-    <div class="sample-header-section">
-      <h1>Scroll down to see the parallax effect</h1>
-      <h2>Background landscape scrolls with its own depth</h2>
-    </div>
-  </div>
-  <div class="sample-section-wrap">
-    <div class="sample-section">
-      <p>
-        <!-- Your content goes here -->
-      </p>
-    </div>
-  </div>
 </body>
 </html>
 
