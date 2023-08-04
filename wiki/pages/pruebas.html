@@ -13,13 +13,14 @@
   <style>
     body {
       margin: 0;
+      overflow: hidden; /* Para ocultar el desplazamiento vertical y evitar el parpadeo */
     }
     .sample-header {
       position: fixed;
       left: 0;
       top: 0;
       width: 100%;
-      height: 100vh; /* Ajusta la altura para que la imagen sea visible en todo el viewport */
+      height: 100%; /* Utilizar el 100% para cubrir toda la pantalla */
       background-image: url("https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0139.jpeg");
       background-position: center;
       background-size: cover;
@@ -45,11 +46,14 @@
     .sample-section-wrap {
       position: relative;
       background-color: white;
+      padding-top: 100vh; /* Asegurarse de que el contenido no se superponga a la imagen */
     }
     .sample-section {
       max-width: 640px;
       margin: 0 auto;
       padding: 40px;
+      position: relative;
+      z-index: 1; /* Colocar el contenido encima de la imagen */
     }
   </style>
 </head>
@@ -109,6 +113,7 @@
   </script>
 </body>
 </html>
+
 
 
 
