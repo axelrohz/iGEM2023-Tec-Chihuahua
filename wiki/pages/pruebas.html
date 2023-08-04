@@ -27,8 +27,8 @@
         <div class="carousel-item active">
           <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0139.jpeg" alt="First Slide" class="d-block w-100">
           <div class="carousel-caption d-none d-md-block">
-            <h3>Our Project</h3>
-            <p>We are a team of students who are working to develop a new renewable energy technology.</p>
+            <h3 class="animated fadeInDown">Our Project Auereobos</h3>
+            <p>Proyect description</p>
           </div>
         </div>
         <!-- Slide Two - Set the background image for this slide in the line below -->
@@ -74,6 +74,23 @@
   <!-- Bootstrap JS and jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <style>
+      .carousel-caption h3 {
+    animation: fadeInDown 0.5s ease-in-out;
+    }
+
+  @keyframes fadeInDown {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  </style>
 
   <script>
     $(document).ready(function() {
