@@ -36,6 +36,7 @@
         images[currentIndex].classList.remove('active');
         currentIndex = (currentIndex + 1) % images.length;
         images[currentIndex].classList.add('active');
+        slider.style.transform = `translateX(-${currentIndex * 100}%)`;
       }
 
       setInterval(slideNext, 5000); // Cambia la imagen cada 5 segundos (5000 ms)
@@ -55,27 +56,43 @@
       width: 100%;
       height: 100vh;
       overflow: hidden;
+      position: relative;
     }
 
     .slider {
       display: flex;
-      transition: opacity 1s ease;
+      transition: transform 1s ease;
+      height: 100%;
+      width: 100%;
     }
 
     .slider img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      opacity: 0;
-      transition: opacity 0.5s ease;
     }
 
     .slider img.active {
       opacity: 1;
     }
+
+    @media (max-width: 768px) {
+      .slider {
+        flex-wrap: nowrap;
+      }
+
+      .slider img {
+        width: 100%;
+      }
+
+      .slider-container {
+        height: 60vh; /* Cambia la altura para dispositivos móviles */
+      }
+    }
   </style>
 </body>
 </html>
+
 
 
 
