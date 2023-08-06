@@ -13,6 +13,8 @@
   <title>Responsive and Automatic Bootstrap Slider</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
   <header>
@@ -72,6 +74,38 @@
       </p>
     </div>
   </section>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Scrollspy Vertical</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav class="scrollspy" id="scrollspy">
+      <ul>
+        <li><a href="#seccion1">Sección 1</a></li>
+        <li><a href="#seccion2">Sección 2</a></li>
+        <li><a href="#seccion3">Sección 3</a></li>
+        <!-- Agrega más enlaces de acuerdo a tu página -->
+      </ul>
+    </nav>
+  
+    <main>
+      <section id="seccion1">
+        <!-- Contenido de la sección 1 -->
+      </section>
+      <section id="seccion2">
+        <!-- Contenido de la sección 2 -->
+      </section>
+      <section id="seccion3">
+        <!-- Contenido de la sección 3 -->
+      </section>
+      <!-- Agrega más secciones de acuerdo a tu página -->
+    </main>
+  
+    <script src="script.js"></script>
+  </body>
 
   <!-- Bootstrap JS and jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -138,6 +172,42 @@
 .carousel-caption-custom p {
   font-size: 30px; /* Tamaño del párrafo */
 }
+/* esto es de la barra*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav.scrollspy {
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav.scrollspy ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav.scrollspy li {
+  margin-bottom: 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 100px; /* Ajusta este valor según tu contenido */
+}
+
 
   </style>
 
@@ -161,6 +231,38 @@
         interval: 2000
       });
     });
+
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+  const scrollspy = document.getElementById("scrollspy");
+  const sections = document.querySelectorAll("section");
+
+  function updateScrollspy() {
+    const currentScroll = window.scrollY;
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop - 100; // Ajusta este valor según tu preferencia
+      const sectionBottom = sectionTop + section.offsetHeight;
+
+      if (currentScroll >= sectionTop && currentScroll < sectionBottom) {
+        const activeLink = scrollspy.querySelector(`[href="#${section.id}"]`);
+        scrollspy.querySelectorAll("a").forEach((link) => {
+          link.classList.remove("active");
+        });
+        activeLink.classList.add("active");
+      }
+    });
+  }
+
+  function toggleScrollspy() {
+    scrollspy.classList.toggle("open");
+  }
+
+  scrollspy.addEventListener("click", toggleScrollspy);
+  window.addEventListener("scroll", updateScrollspy);
+});
+
   </script>
 </body>
 </html>
