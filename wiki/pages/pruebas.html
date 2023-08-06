@@ -105,14 +105,22 @@
 @media (max-width: 768px) {
   .carousel {
     height: 200px;
+    flex: 0 0 50%; /* Cambia el ancho de las diapositivas a 50% en pantallas más pequeñas */
   }
 }
 .carousel {
   max-width: 200%;
   margin: 0 auto;
+  position: relative; /* Asegurar que el slider ocupe el ancho completo */
+  left: 0; /* Asegurar que el slider comience desde la esquina izquierda */
 }
 .carousel-item {
   margin: 0 10px;
+}
+@media screen and (max-width: 480px) {
+  .slider li {
+    flex: 0 0 100%; /* Cambia el ancho de las diapositivas a 100% en pantallas aún más pequeñas */
+  }
 }
 
   </style>
