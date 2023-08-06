@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="styles.css">
 
   <style>
-    /* Estilos del slider */
     .carousel-caption h3 {
       animation: fadeInDown 0.5s ease-in-out;
     }
@@ -26,7 +25,6 @@
         transform: translateY(100%);
         opacity: 0;
       }
-
       100% {
         transform: translateY(0);
         opacity: 1;
@@ -38,7 +36,9 @@
         width: 100%;
         text-align: center;
       }
+    }
 
+    @media (max-width: 768px) {
       .carousel {
         height: 200px;
         flex: 0 0 50%;
@@ -160,12 +160,8 @@
         <div class="carousel-item">
           <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0046.jpeg" alt="Second Slide" class="d-block w-100">
           <div class="carousel-caption d-none d-md-block">
-            <div class="carousel-caption d-none d-md-block">
-              <h3 class="animated fadeInDown">Our Project Auereobos</h3>
-              <p>Proyect description</p>
-            </div>
-          </div>
-            
+            <h3 class="animated fadeInDown">Our Project Auereobos</h3>
+            <p>Proyect description</p>
           </div>
         </div>
         <!-- Slide Three - Set the background image for this slide in the line below -->
@@ -198,8 +194,12 @@
     </div>
   </section>
 
+  <!-- Botón para abrir/cerrar la Scrollspy -->
+  <button id="toggleScrollspyBtn" class="btn btn-primary">Toggle Scrollspy</button>
+
   <!-- Scrollspy -->
   <nav class="scrollspy closed" id="scrollspy">
+    <button id="closeScrollspyBtn" class="btn btn-danger">&times;</button>
     <h3>Contents</h3>
     <div id="scrollspy-content">
       <ul>
@@ -247,40 +247,51 @@
       $('.carousel').carousel({
         interval: 2000
       });
-    });
 
-    document.addEventListener("DOMContentLoaded", function () {
-      const scrollspy = document.getElementById("scrollspy");
-      const sections = document.querySelectorAll("section");
+      // Botón para abrir/cerrar la Scrollspy
+      $("#toggleScrollspyBtn").click(function() {
+        $("#scrollspy").toggleClass("closed");
+      });
 
-      function updateScrollspy() {
-        const currentScroll = window.scrollY;
+      // Botón para cerrar la Scrollspy
+      $("#closeScrollspyBtn").click(function() {
+        $("#scrollspy").addClass("closed");
+      });
 
-        sections.forEach((section) => {
-          const sectionTop = section.offsetTop - 100; // Ajusta este valor según tu preferencia
-          const sectionBottom = sectionTop + section.offsetHeight;
+      // Scrollspy
+      document.addEventListener("DOMContentLoaded", function () {
+        const scrollspy = document.getElementById("scrollspy");
+        const sections = document.querySelectorAll("section");
 
-          if (currentScroll >= sectionTop && currentScroll < sectionBottom) {
-            const activeLink = scrollspy.querySelector(`[href="#${section.id}"]`);
-            scrollspy.querySelectorAll("a").forEach((link) => {
-              link.classList.remove("active");
-            });
-            activeLink.classList.add("active");
-          }
-        });
-      }
+        function updateScrollspy() {
+          const currentScroll = window.scrollY;
 
-      function toggleScrollspy() {
-        scrollspy.classList.toggle("open");
-        scrollspy.classList.toggle("closed");
-      }
+          sections.forEach((section) => {
+            const sectionTop = section.offsetTop - 100;
+            const sectionBottom = sectionTop + section.offsetHeight;
 
-      scrollspy.addEventListener("click", toggleScrollspy);
-      window.addEventListener("scroll", updateScrollspy);
+            if (currentScroll >= sectionTop && currentScroll < sectionBottom) {
+              const activeLink = scrollspy.querySelector(`[href="#${section.id}"]`);
+              scrollspy.querySelectorAll("a").forEach((link) => {
+                link.classList.remove("active");
+              });
+              activeLink.classList.add("active");
+            }
+          });
+        }
+
+        function toggleScrollspy() {
+          scrollspy.classList.toggle("open");
+        }
+
+        scrollspy.addEventListener("click", toggleScrollspy);
+        window.addEventListener("scroll", updateScrollspy);
+      });
     });
   </script>
 </body>
 </html>
+
 
 
 
