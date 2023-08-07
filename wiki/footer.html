@@ -37,81 +37,117 @@
   </div>
 
 
-  <!--here is marquee-->
-  <div class="marquee">
-    <div class="marquee_group">
-      <p>REDCASE</p>
-      <p aria-hidden="true">REDCASE</p>
-      <p aria-hidden="true">REDCASE</p>
-      <p aria-hidden="true">REDCASE</p>
-      <p aria-hidden="true">REDCASE</p>
+    <!-- Slider main container -->
+  <div class="mySwiper swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
     </div>
+    <!-- If we need pagination -->
+  <!--   <div class="swiper-pagination"></div> -->
 
-    <div aria-hidden="true" class="marquee_group">
-      <p>REDCASE</p>
-      <p>REDCASE</p>
-      <p>REDCASE</p>
-      <p>REDCASE</p>
-      <p>REDCASE</p>
-    </div>
+    <!-- If we need navigation buttons -->
+  <!--   <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div> -->
   </div>
 
-
   <style>
+    html, body {
+    position: relative;
+    height: 100%;
+  }
+
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* .swiper {
+  width: 100%;
+  height: 100%;
+  } */
+  .swiper-wrapper{
+    -webkit-transition-timing-function:linear!important;
+    transition-timing-function:linear!important; 
+  }
+  /*     .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  } */
+  .swiper-slide {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    font-size: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 0 50px;
+  }
+  </style>
+  <script>
+      <!-- Initialize Swiper -->
+  var swiper = new Swiper(".mySwiper", {
+    // Optional parameters
+    // slidesPerView: 5,
+    spaceBetween: 0,
+    centeredSlides: true,
+    speed: 1500,
+    autoplay: {
+      delay: 0,
+    },
+    loop: true,
+    slidesPerView: 'auto',
+    allowTouchMove: false,
+    disableOnInteraction: true,
+    // If we need pagination
+    // pagination: {
+    //   el: ".swiper-pagination",
+    //   clickable: true,
+    // },
+    // Navigation arrows
+    // navigation: {
+    //   nextEl: '.swiper-button-next',
+    //   prevEl: '.swiper-button-prev',
+    // },
+    // Breakpoints
+    // breakpoints: {
+    //   640: {
+    //     slidesPerView: 2,
+    //     spaceBetween: 20,
+    //   },
+    //   768: {
+    //     slidesPerView: 4,
+    //     spaceBetween: 40,
+    //   },
+    //   1024: {
+    //     slidesPerView: 5,
+    //     spaceBetween: 50,
+    //   },
+    // },
+  });
+  </script>
 
 
 
-    * {
-      box-sizing: border-box;
-    }
-    
-    body {
-      min-height: 100vh;
-    }
-    
-    body {
-      --space: 2rem;
-    
-      display: grid;
-      align-content: center;
-      overflow: hidden;
-      gap: var(--space);
-      width: 100%;
-      font-family: "Corben", system-ui, sans-serif;
-      font-size: 1.5rem;
-      line-height: 1.5;
-    }
-    
-    .marquee {
-      --duration: 15s;
-      --gap: var(--space);
-    
-      display: flex;
-      overflow: hidden;
-      user-select: none;
-      gap: 2.4rem;
-    }
-    
-    .marquee_group {
-      flex-shrink: 0;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      gap: var(--gap);
-      min-width: 100%;
-      animation: scroll var(--duration) linear infinite;
-    }
-    
-    
-    
-    @keyframes scroll {
-      0% {
-        transform: translateX(0);
-      }
-    
-      100% {
-        transform: translateX(calc(-100% - var(--gap)));
-      }
-    }
-    </style>
+
 </footer>
