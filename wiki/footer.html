@@ -1,12 +1,24 @@
-<footer class="pt-5 pb-5 footer py-5 mt-5 bg-dark text-white">
-  <div class="container">
-    <div class="row mb-4">
-      <div class="col-lg-6 col-xs-12">
-        <h4 class="mb-3">Heading</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique convallis</p>
-      </div>
-      <div class="col-lg-3 col-xs-12">
-        <h4 class="mt-lg-0 mt-sm-3">Links</h4>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website Title</title>
+  <!-- Add your CSS and other meta tags here -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Your website content goes here -->
+
+  <footer class="pt-5 pb-5 footer py-5 mt-5 bg-dark text-white">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-lg-6 col-xs-12">
+          <h4 class="mb-3">Heading</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique convallis</p>
+        </div>
+        <div class="col-lg-3 col-xs-12">
+          <h4 class="mt-lg-0 mt-sm-3">Links</h4>
           <ul class="m-2 p-2">
             <li><a href="#">Lorem ipsum</a></li>
             <li><a href="#">Nam mauris velit</a></li>
@@ -15,139 +27,48 @@
             <li><a href="#">Sed faucibus</a></li>
             <li><a href="#">Mauris efficitur nulla</a></li>
           </ul>
+        </div>
+        <div class="col-lg-3 col-xs-12">
+          <h4 class="mt-lg-0 mt-sm-4 mb-3">Contact</h4>
+          <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
+          <p class="mb-0">(541) 754-3010</p>
+          <p>info@hsdf.com</p>
+        </div>
       </div>
-      <div class="col-lg-3 col-xs-12">
-        <h4 class="mt-lg-0 mt-sm-4 mb-3">Contact</h4>
-        <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
-        <p class="mb-0">(541) 754-3010</p>
-        <p>info@hsdf.com</p>
+      <hr>
+
+      <!-- The following MUST be on every page: license information and link to the repository on gitlab.igem.org -->
+      <div class="row mt-4">
+        <div class="col">
+          <p class="mb-0"><small>© 2023 - Content on this site is licensed under a <a class="subfoot" href="https://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International license</a>.</small></p>
+          <p><small>The repository used to create this website is available at <a href="https://gitlab.igem.org/2023/tec-chihuahua">gitlab.igem.org/2023/tec-chihuahua</a>.</small></p>
+        </div>
       </div>
     </div>
-    <hr>
-      
 
-
-    <!-- The following MUST be on every page: license information and link to the repository on gitlab.igem.org -->
-    <div class="row mt-4">
-      <div class="col">
-        <p class="mb-0"><small>© 2023 - Content on this site is licensed under a <a class="subfoot" href="https://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International license</a>.</small></p>
-	      <p><small>The repository used to create this website is available at <a href="https://gitlab.igem.org/2023/tec-chihuahua">gitlab.igem.org/2023/tec-chihuahua</a>.</small></p>
-      </div>
+    <!-- Add the scrolling text using CSS animation -->
+    <div class="scrolling-text">
+      Your scrolling text here
     </div>
-  </div>
-
-
-    <!-- Slider main container -->
-  <div class="mySwiper swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div>
-    </div>
-    <!-- If we need pagination -->
-  <!--   <div class="swiper-pagination"></div> -->
-
-    <!-- If we need navigation buttons -->
-  <!--   <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div> -->
-  </div>
+  </footer>
 
   <style>
-    html, body {
-    position: relative;
-    height: 100%;
-  }
+    /* Define CSS animation for scrolling text */
+    @keyframes marquee {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
 
-  body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
-  }
-
-  /* .swiper {
-  width: 100%;
-  height: 100%;
-  } */
-  .swiper-wrapper{
-    -webkit-transition-timing-function:linear!important;
-    transition-timing-function:linear!important; 
-  }
-  /*     .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  } */
-  .swiper-slide {
-    width: 200px;
-    height: 200px;
-    text-align: center;
-    font-size: 33px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    padding: 0 50px;
-  }
+    /* Apply the animation to the scrolling text */
+    .scrolling-text {
+      animation: marquee 10s linear infinite;
+      white-space: nowrap;
+      color: white;
+      background-color: #333;
+      padding: 5px;
+      font-size: 16px;
+    }
   </style>
-  <script>
-      <!-- Initialize Swiper -->
-  var swiper = new Swiper(".mySwiper", {
-    // Optional parameters
-    // slidesPerView: 5,
-    spaceBetween: 0,
-    centeredSlides: true,
-    speed: 1500,
-    autoplay: {
-      delay: 0,
-    },
-    loop: true,
-    slidesPerView: 'auto',
-    allowTouchMove: false,
-    disableOnInteraction: true,
-    // If we need pagination
-    // pagination: {
-    //   el: ".swiper-pagination",
-    //   clickable: true,
-    // },
-    // Navigation arrows
-    // navigation: {
-    //   nextEl: '.swiper-button-next',
-    //   prevEl: '.swiper-button-prev',
-    // },
-    // Breakpoints
-    // breakpoints: {
-    //   640: {
-    //     slidesPerView: 2,
-    //     spaceBetween: 20,
-    //   },
-    //   768: {
-    //     slidesPerView: 4,
-    //     spaceBetween: 40,
-    //   },
-    //   1024: {
-    //     slidesPerView: 5,
-    //     spaceBetween: 50,
-    //   },
-    // },
-  });
-  </script>
+</body>
+</html>
 
-
-
-
-</footer>
