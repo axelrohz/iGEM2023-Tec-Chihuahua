@@ -46,29 +46,50 @@
       </div>
     </div>
 
-    <!-- Add the scrolling text using CSS animation -->
-    <div class="scrolling-text">
-      Your scrolling text here
+    <!-- Add the rotating marquee with words -->
+    <div class="marquee-container">
+      <div class="marquee-text">
+        <span>Your</span>
+        <span>rotating</span>
+        <span>words</span>
+        <span>here</span>
+      </div>
     </div>
   </footer>
 
   <style>
-    /* Define CSS animation for scrolling text */
+    /* Your other CSS styles go here */
+
+    /* Define CSS animation for rotating marquee */
     @keyframes marquee {
-      0% { transform: translateX(100%); }
-      100% { transform: translateX(-100%); }
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-100%); }
     }
 
-    /* Apply the animation to the scrolling text */
-    .scrolling-text {
+    /* Apply the animation to the rotating marquee */
+    .marquee-container {
+      overflow: hidden;
+    }
+
+    .marquee-text {
+      display: flex;
       animation: marquee 10s linear infinite;
+    }
+
+    .marquee-text span {
+      padding: 0 20px;
       white-space: nowrap;
-      color: white;
-      background-color: #333;
-      padding: 5px;
-      font-size: 16px;
+    }
+
+    /* Adjust the font size and other styles as needed */
+    @media (max-width: 767px) {
+      .marquee-text span {
+        padding: 0 10px;
+        font-size: 14px;
+      }
     }
   </style>
 </body>
 </html>
+
 
