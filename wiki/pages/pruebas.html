@@ -14,151 +14,78 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Estilos de la ScrollSpy */
+    nav.scrollspy {
+      position: fixed;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      transition: transform 0.3s ease;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
 
+    nav.scrollspy ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav.scrollspy li {
+      margin-bottom: 10px;
+    }
+
+    nav.scrollspy a {
+      color: #333;
+      text-decoration: none;
+      display: block;
+      padding: 8px;
+      border-radius: 3px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    nav.scrollspy a:hover {
+      background-color: #f8f9fa;
+    }
+
+    nav.scrollspy a.active {
+      background-color: #007bff;
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    
-  </header>
+  <nav class="scrollspy" id="scrollspy">
+    <ul>
+      <li><a href="#seccion1">Sección 1</a></li>
+      <li><a href="#seccion2">Sección 2</a></li>
+      <li><a href="#seccion3">Sección 3</a></li>
+      <!-- Agrega más enlaces de acuerdo a tu página -->
+    </ul>
+  </nav>
 
-  <!-- Page Content -->
-  <section class="py-5">
-    <div class="container">
-      <h1>Proyect description</h1>
-      <p>The background images for the slider are set directly in the HTML using inline CSS. The rest of the styles for this template are contained within the
-        <code>full-slider.css</code> file.
-      </p>
-    </div>
-  </section>
+  <main>
+    <section id="seccion1">
+      <!-- Contenido de la sección 1 -->
+    </section>
+    <section id="seccion2">
+      <!-- Contenido de la sección 2 -->
+    </section>
+    <section id="seccion3">
+      <!-- Contenido de la sección 3 -->
+    </section>
+    <!-- Agrega más secciones de acuerdo a tu página -->
+  </main>
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sticky Scrollspy Vertical</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <nav class="scrollspy" id="scrollspy">
-      <ul>
-        <li><a href="#seccion1">Sección 1</a></li>
-        <li><a href="#seccion2">Sección 2</a></li>
-        <li><a href="#seccion3">Sección 3</a></li>
-        <!-- Agrega más enlaces de acuerdo a tu página -->
-      </ul>
-    </nav>
-  
-    <main>
-      <section id="seccion1">
-        <!-- Contenido de la sección 1 -->
-      </section>
-      <section id="seccion2">
-        <!-- Contenido de la sección 2 -->
-      </section>
-      <section id="seccion3">
-        <!-- Contenido de la sección 3 -->
-      </section>
-      <!-- Agrega más secciones de acuerdo a tu página -->
-    </main>
-  
-    <script src="script.js"></script>
-  </body>
-
+  <script src="script.js"></script>
   <!-- Bootstrap JS and jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-  <style>
-      .carousel-caption h3 {
-    animation: fadeInDown 0.5s ease-in-out;
-    }
-        .py-5 {
-      transition-duration: 500ms;
-      transition-property: margin-right;
-    }
-
-  @keyframes fadeInDown {
-    0% {
-      transform: translateY(100%);
-      opacity: 0;
-    }
-
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
-
-/* esto es de la barra*/
-body {
-  margin: 0;
-  padding: 0;
-}
-
-nav.scrollspy {
-  position: fixed;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-   transition: transform 0.3s ease;
-  border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  background-color: #fff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-nav.scrollspy ul {
-  list-style: none;
-  padding: 10px;
-  margin: 0;
-}
-
-nav.scrollspy li {
-  margin-bottom: 10px;
-}
-nav.scrollspy a {
-  color: #333;
-  text-decoration: none;
-  display: block;
-  padding: 8px;
-  border-radius: 3px;
-}
-
-nav.scrollspy a:hover {
-  background-color: #f5f5f5;
-}
-
-nav.scrollspy a.active {
-  background-color: #007bff;
-  color: #fff;
-}
-
-main {
-  padding: 20px;
-}
-
-section {
-  margin-bottom: 100px; /* Ajusta este valor según tu contenido */
-}
-
-
-  </style>
-
   <script>
     $(document).ready(function() {
-      // Hace el slider responsivo
-      function adjustSliderHeight() {
-        var headerHeight = $('header').outerHeight();
-        var windowHeight = $(window).height() - headerHeight;
-        $('.carousel-item').css('height', windowHeight);
-      }
-
-      adjustSliderHeight();
-
-      $(window).on('resize', function() {
-        adjustSliderHeight();
-      });
+      // ... (Código para el slider)
 
       // Hace el slider automático con un intervalo de 5 segundos
       $('.carousel').carousel({
@@ -166,40 +93,47 @@ section {
       });
     });
 
-  </script>
-  <script>
     document.addEventListener("DOMContentLoaded", function () {
-  const scrollspy = document.getElementById("scrollspy");
-  const sections = document.querySelectorAll("section");
+      const scrollspy = document.getElementById("scrollspy");
+      const sections = document.querySelectorAll("section");
 
-  function updateScrollspy() {
-    const currentScroll = window.scrollY;
+      let isScrolling = false;
 
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop - 100; // Ajusta este valor según tu preferencia
-      const sectionBottom = sectionTop + section.offsetHeight;
+      function updateScrollspy() {
+        if (!isScrolling) {
+          window.requestAnimationFrame(() => {
+            const currentScroll = window.scrollY;
 
-      if (currentScroll >= sectionTop && currentScroll < sectionBottom) {
-        const activeLink = scrollspy.querySelector(`[href="#${section.id}"]`);
-        scrollspy.querySelectorAll("a").forEach((link) => {
-          link.classList.remove("active");
-        });
-        activeLink.classList.add("active");
+            sections.forEach((section) => {
+              const sectionTop = section.offsetTop - 150;
+              const sectionBottom = sectionTop + section.offsetHeight;
+
+              if (currentScroll >= sectionTop && currentScroll < sectionBottom) {
+                const activeLink = scrollspy.querySelector(`[href="#${section.id}"]`);
+                scrollspy.querySelectorAll("a").forEach((link) => {
+                  link.classList.remove("active");
+                });
+                activeLink.classList.add("active");
+              }
+            });
+
+            isScrolling = false;
+          });
+        }
+        isScrolling = true;
       }
+
+      function toggleScrollspy() {
+        scrollspy.classList.toggle("open");
+      }
+
+      scrollspy.addEventListener("click", toggleScrollspy);
+      window.addEventListener("scroll", updateScrollspy);
     });
-  }
-
-  function toggleScrollspy() {
-    scrollspy.classList.toggle("open");
-  }
-
-  scrollspy.addEventListener("click", toggleScrollspy);
-  window.addEventListener("scroll", updateScrollspy);
-});
-
   </script>
 </body>
 </html>
+
 
 
 

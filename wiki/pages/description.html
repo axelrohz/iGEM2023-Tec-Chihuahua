@@ -17,6 +17,7 @@
       margin: 0;
       padding: 0;
       height: 100%;
+      font-size: 16px; /* Ajustamos el tamaño de fuente base */
     }
 
     .header {
@@ -31,8 +32,8 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 120%; /* Aumentamos el ancho para que la imagen sea más larga */
-      height: 60%; /* Reducimos la altura para ocupar menos espacio vertical */
+      width: 100vw; /* La imagen ocupa todo el ancho de la página */
+      height: 100vh; /* La imagen ocupa todo el alto de la página */
       object-fit: cover; /* Ajustamos la propiedad object-fit para llenar el espacio de la imagen */
       opacity: 0; /* La imagen está inicialmente oculta */
       transform: scale(1.2);
@@ -68,7 +69,7 @@
       }
 
       .header-image {
-        height: 40%; /* Ajustar la altura en dispositivos móviles */
+        height: auto; /* Ajustar la altura en dispositivos móviles */
       }
 
       .header-content {
@@ -93,6 +94,7 @@
   </script>
 </body>
 </html>
+
 
 
 
