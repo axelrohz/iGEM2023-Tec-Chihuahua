@@ -1,99 +1,137 @@
-<footer style="background-color: #deded5;">
-  <div class="container p-4">
-    <div class="row">
-      <div class="col-lg-6 col-md-12 mb-4">
-        <h5 class="mb-3" style="letter-spacing: 2px; color: #818963;">Footer Content</h5>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-          voluptatem veniam, est atque cumque eum delectus sint!
-        </p>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nombre de tu sitio web</title>
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Estilos para el footer */
+    .footer {
+      background-color: #f5f5f5;
+      padding: 50px 0;
+      text-align: center;
+    }
+    
+    .footer h4 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+    
+    .footer p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+    
+    .footer ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .footer ul li {
+      margin-bottom: 10px;
+    }
+    
+    .footer a {
+      color: #333;
+      text-decoration: none;
+    }
+    
+    /* Estilos para la marquesina */
+    .marquee-container {
+      overflow: hidden;
+      background-color: #f5f5f5;
+      padding: 20px 0;
+    }
+    
+    .marquee {
+      display: flex;
+      animation: marquee 20s linear infinite;
+    }
+    
+    .marquee a {
+      margin-right: 30px;
+    }
+    
+    @keyframes marquee {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Contenido de tu sitio web -->
+  <div>
+    <!-- ... (contenido del sitio web) ... -->
+  </div>
+
+  <!-- Footer con marquesina para sponsors -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Heading</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="col-md-4">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="#">Lorem ipsum</a></li>
+            <li><a href="#">Nam mauris velit</a></li>
+            <li><a href="#">Etiam vitae mauris</a></li>
+            <li><a href="#">Fusce scelerisque</a></li>
+            <li><a href="#">Sed faucibus</a></li>
+            <li><a href="#">Mauris efficitur nulla</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>Contact</h4>
+          <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
+          <p>(541) 754-3010</p>
+          <p>info@example.com</p>
+        </div>
       </div>
-      <div class="col-lg-3 col-md-6 mb-4">
-        <h5 class="mb-3" style="letter-spacing: 2px; color: #818963;">Links</h5>
-        <ul class="list-unstyled mb-0">
-          <li class="mb-1">
-            <a href="#!" style="color: #4f4f4f;">Frequently Asked Questions</a>
-          </li>
-          <li class="mb-1">
-            <a href="#!" style="color: #4f4f4f;">Delivery</a>
-          </li>
-          <li class="mb-1">
-            <a href="#!" style="color: #4f4f4f;">Pricing</a>
-          </li>
-          <li>
-            <a href="#!" style="color: #4f4f4f;">Where We Deliver</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-lg-3 col-md-6 mb-4">
-        <h5 class="mb-1" style="letter-spacing: 2px; color: #818963;">Opening Hours</h5>
-        <table class="table" style="color: #4f4f4f; border-color: #666;">
-          <tbody>
-            <tr>
-              <td>Mon - Fri:</td>
-              <td>8am - 9pm</td>
-            </tr>
-            <tr>
-              <td>Sat - Sun:</td>
-              <td>8am - 1am</td>
-            </tr>
-          </tbody>
-        </table>
+    </div>
+  </footer>
+
+  <!-- Marquesina con los sponsors -->
+  <div class="marquee-container">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="marquee">
+            <!-- Agrega aquí los enlaces a las imágenes de los sponsors -->
+            <a href="#"><img src="image1.jpg" alt="Sponsor 1"></a>
+            <a href="#"><img src="image2.jpg" alt="Sponsor 2"></a>
+            <a href="#"><img src="image3.jpg" alt="Sponsor 3"></a>
+            <!-- Agrega más sponsors si es necesario -->
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2023 Copyright:
-    <a class="text-dark" href="https://example.com/">YourWebsite.com</a>
-  </div>
-</footer>
 
-<div class="marquee-container">
-  <marquee behavior="scroll" direction="left" class="marquee">
-    <img src="image1.jpg" alt="Image 1">
-    <img src="image2.jpg" alt="Image 2">
-    <img src="image3.jpg" alt="Image 3">
-  </marquee>
-</div>
+  <!-- JavaScript para pausar la marquesina al pasar el cursor sobre ella -->
+  <script>
+    var marquee = document.querySelector('.marquee');
+    marquee.addEventListener('mouseenter', function () {
+      this.style.animationPlayState = 'paused';
+    });
 
-<style>
-  @media (max-width: 768px) {
-    .col-lg-6 {
-      flex-basis: 100%;
-      max-width: 100%;
-    }
-    .col-lg-3 {
-      flex-basis: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  .marquee-container {
-    overflow: hidden;
-    background-color: #f5f5f5;
-  }
-  
-  .marquee {
-    display: flex;
-    animation: marquee 15s linear infinite;
-  }
-  
-  .marquee img {
-    max-width: 100px;
-    margin-right: 20px;
-  }
-  
-  @keyframes marquee {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-</style>
-
+    marquee.addEventListener('mouseleave', function () {
+      this.style.animationPlayState = 'running';
+    });
+  </script>
+</body>
+</html>
 
 
 
