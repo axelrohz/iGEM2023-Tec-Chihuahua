@@ -5,6 +5,7 @@
 {endblock}
 
 {% block page_content %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,69 +17,20 @@
   <link rel="stylesheet" href="styles.css">
   <style>
     /* Estilos de la ScrollSpy */
-    nav.scrollspy {
-      position: sticky;
-      top: 20px;
-      right: 20px;
-      transform: translateY(0%);
-      transition: transform 0.3s ease;
-      border-radius: 5px;
-      background-color: rgba(255, 255, 255, 0.9);
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      width: 150px;
-      max-height: 300px;
-      overflow-y: hidden;
-      padding: 10px 0;
-      z-index: 1000;
-    }
-
-    nav.scrollspy ul {
-      list-style: none;
-      padding: 0;
+    body {
       margin: 0;
-      text-align: center;
-      display: none;
-      transition: max-height 0.3s ease;
-      overflow: hidden;
+      padding: 0;
     }
 
-    nav.scrollspy.active ul {
-      display: block;
-      max-height: 1000px;
+    /* ... (otros estilos) ... */
+
+    /* Estilos para el contenido */
+    main {
+      padding: 20px;
+      margin-top: 60px; /* Ajusta este valor según tus necesidades */
     }
 
-    nav.scrollspy li {
-      margin-bottom: 10px;
-    }
-
-    nav.scrollspy a {
-      color: #333;
-      text-decoration: none;
-      display: block;
-      padding: 8px;
-      border-radius: 3px;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-
-    nav.scrollspy a:hover {
-      background-color: #f8f9fa;
-    }
-
-    nav.scrollspy a.active {
-      background-color: #007bff;
-      color: #fff;
-    }
-
-    nav.scrollspy .toggle-btn {
-      background-color: transparent;
-      border: none;
-      color: #333;
-      text-align: center;
-      width: 100%;
-      cursor: pointer;
-      padding: 5px 0;
-      font-size: 20px;
-    }
+    /* ... (otros estilos) ... */
   </style>
 </head>
 <body>
@@ -166,7 +118,6 @@
   </script>
 </body>
 </html>
-
 
 
 
