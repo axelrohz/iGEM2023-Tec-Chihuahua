@@ -17,7 +17,8 @@
       margin: 0;
       padding: 0;
       height: 100%;
-      font-size: 16px; /* Ajustamos el tamaño de fuente base */
+      font-size: 16px;
+      font-family: Arial, sans-serif; /* Cambiamos la fuente para una apariencia más limpia */
     }
 
     .header {
@@ -27,10 +28,10 @@
     }
 
     .header-image {
-      width: 100%; /* La imagen ocupa todo el ancho del encabezado */
-      height: auto; /* La altura se ajusta automáticamente */
-      object-fit: cover; /* Ajustamos la propiedad object-fit para llenar el espacio de la imagen */
-      opacity: 0; /* La imagen está inicialmente oculta */
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      opacity: 0;
       transition: opacity 1.5s ease-in-out;
     }
 
@@ -40,24 +41,24 @@
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
-      color: rgba(255, 255, 255, 0.8); /* Agregamos transparencia al color del texto */
-      transition: transform 0.3s, font-size 0.3s, color 0.3s; /* Agregamos transición al color del texto */
-      padding: 20px; /* Agregamos un espacio alrededor del texto */
-      width: 100%; /* Aseguramos que el texto ocupe todo el ancho */
-      opacity: 0; /* El título está inicialmente oculto */
-      animation: fadeIn 1.5s ease-in-out forwards; /* Animación de desvanecimiento del título */
+      color: rgba(255, 255, 255, 0.9);
+      transition: transform 0.3s, font-size 0.3s, color 0.3s;
+      padding: 20px;
+      width: 100%;
+      opacity: 0;
+      animation: fadeIn 1.5s ease-in-out forwards;
     }
 
     .header-content h1 {
-      font-size: 3.5rem; /* Tamaño más grande para el título */
+      font-size: 3rem; /* Reducimos el tamaño del título para una apariencia más sutil */
       margin: 0;
-      font-weight: bold; /* Agregamos negrita al título */
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra para resaltar el título */
+      font-weight: bold;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     }
 
     .header:hover .header-content {
-      transform: translate(-50%, -50%) scale(1.1); /* Efecto de escala en el título al pasar el cursor */
-      color: white; /* Cambio de color del título al pasar el cursor */
+      transform: translate(-50%, -50%) scale(1.05);
+      color: white;
     }
 
     @keyframes fadeIn {
@@ -70,12 +71,12 @@
     }
 
     .header-image.loaded {
-      opacity: 1; /* Mostrar la imagen cuando la clase "loaded" se agrega */
+      opacity: 1;
     }
 
     @media screen and (max-width: 768px) {
       .header-content h1 {
-        font-size: 2rem; /* Ajustar el tamaño del título en dispositivos móviles */
+        font-size: 2rem;
       }
     }
   </style>
@@ -89,7 +90,6 @@
   </header>
 
   <script>
-    // Agregar la clase "loaded" a la imagen después de un retraso
     setTimeout(function() {
       document.querySelector('.header-image').classList.add('loaded');
     }, 500);
