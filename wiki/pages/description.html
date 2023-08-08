@@ -6,7 +6,74 @@
 
 {% block page_content %}
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página con Header</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0139.jpeg" alt="Imagen de encabezado">
+    <h1>Mi Página Web</h1>
+  </header>
+  <main>
+    <!-- Aquí coloca el contenido principal de tu página -->
+  </main>
+</body>
+</html>
+<style>
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  position: relative;
+  text-align: center;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.5s ease;
+}
+
+header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 24px;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+header:hover img {
+  opacity: 0.7;
+}
+
+header:hover h1 {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+
+</style>
 
 
 
