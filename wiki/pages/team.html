@@ -146,8 +146,7 @@ body.dada
   
 }
 
-.container
-{
+.container {
   position: relative;
   display: flex;
   justify-content: center;
@@ -155,7 +154,7 @@ body.dada
   flex-wrap: wrap;
   gap: 100px 50px;
   padding: 40px 50px;
-  
+  margin-top: 80px; /* Add margin to the top to prevent overlap with navigation */
 }
 
 .container .card{
@@ -497,6 +496,11 @@ body.welcome {
   border-radius: 100%;
   transform: translate(-50%, -50%);
   animation: puff 0.5s 0.0s cubic-bezier(0.05, 0.055, 0.675, 0.19) forwards, borderRadius 0.0s 0.5s linear forwards;
+}
+.papa {
+  height: calc(100vh - 60px);
+  display: flex;
+  padding-top: 80px; /* Add padding to the top to prevent overlap with navigation */
 }
 
    
