@@ -2,7 +2,7 @@
   <div class="container p-4">
     <div class="row">
       <div class="col-lg-6 col-md-12 mb-4">
-        <h5 class="mb-3" style="letter-spacing: 2px; color: #818963;">footer content</h5>
+        <h5 class="mb-3" style="letter-spacing: 2px; color: #818963;">Footer Content</h5>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
           molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
@@ -10,7 +10,7 @@
         </p>
       </div>
       <div class="col-lg-3 col-md-6 mb-4">
-        <h5 class="mb-3" style="letter-spacing: 2px; color: #818963;">links</h5>
+        <h5 class="mb-3" style="letter-spacing: 2px; color: #818963;">Links</h5>
         <ul class="list-unstyled mb-0">
           <li class="mb-1">
             <a href="#!" style="color: #4f4f4f;">Frequently Asked Questions</a>
@@ -22,12 +22,12 @@
             <a href="#!" style="color: #4f4f4f;">Pricing</a>
           </li>
           <li>
-            <a href="#!" style="color: #4f4f4f;">Where we deliver?</a>
+            <a href="#!" style="color: #4f4f4f;">Where We Deliver</a>
           </li>
         </ul>
       </div>
       <div class="col-lg-3 col-md-6 mb-4">
-        <h5 class="mb-1" style="letter-spacing: 2px; color: #818963;">opening hours</h5>
+        <h5 class="mb-1" style="letter-spacing: 2px; color: #818963;">Opening Hours</h5>
         <table class="table" style="color: #4f4f4f; border-color: #666;">
           <tbody>
             <tr>
@@ -44,10 +44,18 @@
     </div>
   </div>
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2020 Copyright:
-    <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    © 2023 Copyright:
+    <a class="text-dark" href="https://example.com/">YourWebsite.com</a>
   </div>
 </footer>
+
+<div class="marquee-container">
+  <marquee behavior="scroll" direction="left" class="marquee">
+    <img src="image1.jpg" alt="Image 1">
+    <img src="image2.jpg" alt="Image 2">
+    <img src="image3.jpg" alt="Image 3">
+  </marquee>
+</div>
 
 <style>
   @media (max-width: 768px) {
@@ -60,7 +68,32 @@
       max-width: 50%;
     }
   }
+  
+  .marquee-container {
+    overflow: hidden;
+    background-color: #f5f5f5;
+  }
+  
+  .marquee {
+    display: flex;
+    animation: marquee 15s linear infinite;
+  }
+  
+  .marquee img {
+    max-width: 100px;
+    margin-right: 20px;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
 </style>
+
 
 
 
