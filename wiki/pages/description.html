@@ -44,6 +44,15 @@
       transition: transform 0.3s, font-size 0.3s, color 0.3s; /* Agregamos transición al color del texto */
       padding: 20px; /* Agregamos un espacio alrededor del texto */
       width: 100%; /* Aseguramos que el texto ocupe todo el ancho */
+      opacity: 0; /* El título está inicialmente oculto */
+      animation: fadeIn 1.5s ease-in-out forwards; /* Animación de desvanecimiento del título */
+    }
+
+    .header-content h1 {
+      font-size: 3.5rem; /* Tamaño más grande para el título */
+      margin: 0;
+      font-weight: bold; /* Agregamos negrita al título */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra para resaltar el título */
     }
 
     .header:hover .header-content {
@@ -51,24 +60,22 @@
       color: white; /* Cambio de color del título al pasar el cursor */
     }
 
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
     .header-image.loaded {
       opacity: 1; /* Mostrar la imagen cuando la clase "loaded" se agrega */
     }
 
-    .header h1 {
-      font-size: 4rem;
-      color: #fff;
-      margin: 0;
-      transition: font-size 0.3s; /* Agregamos transición al tamaño de fuente del título */
-    }
-
     @media screen and (max-width: 768px) {
-      .header h1 {
-        font-size: 2rem;
-      }
-
-      .header-content {
-        font-size: 1.5rem; /* Ajustar el tamaño del texto en dispositivos móviles */
+      .header-content h1 {
+        font-size: 2rem; /* Ajustar el tamaño del título en dispositivos móviles */
       }
     }
   </style>
@@ -89,6 +96,8 @@
   </script>
 </body>
 </html>
+
+
 
 
 
