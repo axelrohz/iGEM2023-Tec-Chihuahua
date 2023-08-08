@@ -5,7 +5,6 @@
 {endblock}
 
 {% block page_content %}
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -38,35 +37,18 @@
       transform: translate(-50%, -50%);
       text-align: center;
       color: white;
+      transition: transform 0.3s, font-size 0.3s;
     }
 
-    .overlay {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 20px;
-      color: white;
-      text-align: center;
-      border-radius: 5px;
-      transition: transform 0.3s, border-radius 0.3s;
-      opacity: 0;
-    }
-
-    .overlay h1 {
-      margin: 0;
-    }
-
-    .container:hover .overlay {
+    .header:hover .header-content {
       transform: translate(-50%, -50%) scale(1.1);
-      border-radius: 50%;
-      opacity: 1;
+      font-size: 3rem;
     }
 
     .header h1 {
       font-size: 2.5rem;
       color: #fff;
+      margin: 0;
     }
 
     @media screen and (max-width: 768px) {
@@ -80,10 +62,6 @@
   <header class="header">
     <div class="header-content">
       <h1>Project Description</h1>
-    </div>
-    <div class="overlay">
-      <h1>Welcome to Our Project</h1>
-      <p>This is a brief description of our exciting project and what it aims to achieve.</p>
     </div>
   </header>
 </body>
