@@ -23,21 +23,15 @@
     .header {
       position: relative;
       width: 100%;
-      height: 100vh;
       overflow: hidden;
-      perspective: 1000px; /* Agregamos perspectiva para efecto 3D */
     }
 
     .header-image {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100vw; /* La imagen ocupa todo el ancho de la página */
-      height: 100vh; /* La imagen ocupa todo el alto de la página */
+      width: 100%; /* La imagen ocupa todo el ancho del encabezado */
+      height: auto; /* La altura se ajusta automáticamente */
       object-fit: cover; /* Ajustamos la propiedad object-fit para llenar el espacio de la imagen */
       opacity: 0; /* La imagen está inicialmente oculta */
-      transform: scale(1.2);
-      transition: opacity 1.5s ease-in-out, transform 1.5s cubic-bezier(0.2, 1, 0.2, 1); /* Animaciones de entrada */
+      transition: opacity 1.5s ease-in-out;
     }
 
     .header-content {
@@ -48,13 +42,12 @@
       text-align: center;
       color: white;
       transition: transform 0.3s, font-size 0.3s;
-      padding: 20px; /* Agregamos un espacio alrededor del texto para dispositivos móviles */
+      padding: 20px; /* Agregamos un espacio alrededor del texto */
       width: 100%; /* Aseguramos que el texto ocupe todo el ancho */
     }
 
     .header-image.loaded {
       opacity: 1; /* Mostrar la imagen cuando la clase "loaded" se agrega */
-      transform: scale(1);
     }
 
     .header h1 {
@@ -66,10 +59,6 @@
     @media screen and (max-width: 768px) {
       .header h1 {
         font-size: 2rem;
-      }
-
-      .header-image {
-        height: auto; /* Ajustar la altura en dispositivos móviles */
       }
 
       .header-content {
@@ -94,6 +83,7 @@
   </script>
 </body>
 </html>
+
 
 
 

@@ -25,12 +25,15 @@
       border-radius: 5px;
       background-color: rgba(255, 255, 255, 0.9);
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      width: 120px;
+      padding: 10px 0;
     }
 
     nav.scrollspy ul {
       list-style: none;
       padding: 0;
       margin: 0;
+      text-align: center;
     }
 
     nav.scrollspy li {
@@ -54,10 +57,30 @@
       background-color: #007bff;
       color: #fff;
     }
+
+    nav.scrollspy .toggle-btn {
+      background-color: transparent;
+      border: none;
+      color: #333;
+      text-align: center;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .scrollspy.closed {
+      width: 50px;
+      overflow: hidden;
+    }
+
+    .scrollspy.closed .toggle-btn {
+      text-align: left;
+      padding-left: 5px;
+    }
   </style>
 </head>
 <body>
-  <nav class="scrollspy" id="scrollspy">
+  <nav class="scrollspy closed" id="scrollspy">
+    <button class="toggle-btn" id="toggleBtn">Contents</button>
     <ul>
       <li><a href="#seccion1">Sección 1</a></li>
       <li><a href="#seccion2">Sección 2</a></li>
@@ -79,7 +102,6 @@
     <!-- Agrega más secciones de acuerdo a tu página -->
   </main>
 
-  <script src="script.js"></script>
   <!-- Bootstrap JS and jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
@@ -90,6 +112,14 @@
       // Hace el slider automático con un intervalo de 5 segundos
       $('.carousel').carousel({
         interval: 2000
+      });
+
+      // Toggle de la ScrollSpy
+      const scrollspy = document.getElementById("scrollspy");
+      const toggleBtn = document.getElementById("toggleBtn");
+
+      toggleBtn.addEventListener("click", function() {
+        scrollspy.classList.toggle("closed");
       });
     });
 
@@ -133,6 +163,7 @@
   </script>
 </body>
 </html>
+
 
 
 
