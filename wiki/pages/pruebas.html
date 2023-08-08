@@ -108,7 +108,8 @@
       height: auto;
       object-fit: cover;
       opacity: 0.8; /* Darken the image slightly */
-      transition: opacity 1.5s ease-in-out;
+      background: rgba(0, 0, 0, 0.5); /* Opacity of 50% with a background color */
+      transition: opacity 1.5s ease-in-out, background 1.5s ease-in-out; /* Transition for both opacity and background */
     }
 
     .header-content {
