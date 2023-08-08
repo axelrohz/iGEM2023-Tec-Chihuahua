@@ -12,8 +12,10 @@
       animation: marquee 20s linear infinite; /* Ajusta la velocidad según lo desees */
     }
     .footer {
-    background-color: rgb(146, 146, 146); /* Cambia el color de fondo a blanco */
-    color: black; /* Cambia el color del texto a negro */
+      background-color: rgb(230, 230, 230); /* Cambia el color de fondo a un gris claro */
+      color: black; /* Cambia el color del texto a negro */
+      padding: 30px 0; /* Añade un poco de espacio alrededor del contenido del footer */
+
   }
 
     /* Estilos para las imágenes de los sponsors dentro de la marquesina */
@@ -39,7 +41,7 @@
   </div>
 
   <!-- Footer con marquesina para sponsors -->
-  <footer class="pt-5 pb-5 footer py-5 mt-5 bg-dark text-dark bg-white">
+  <footer class="pt-5 pb-5 footer py-5 mt-5 bg-light text-dark"></footer>
 
     <div class="container">
       <div class="row mb-4">
@@ -85,14 +87,13 @@
   <!-- JavaScript para pausar la marquesina al pasar el cursor sobre ella -->
   <script>
     var marquee = document.querySelector('.marquee');
-    marquee.addEventListener('mouseenter', function () {
-      this.style.animationPlayState = 'paused';
-    });
+      marquee.addEventListener('mouseenter', function () {
+        this.style.animationPlayState = 'paused';
+      });
 
-    // Reanudar la marquesina cuando el cursor se aleje
-    marquee.addEventListener('mouseleave', function () {
-      this.style.animationPlayState = 'running';
-    });
+      marquee.addEventListener('mouseleave', function () {
+        this.style.animationPlayState = 'running';
+      });
   </script>
 </body>
 </html>
