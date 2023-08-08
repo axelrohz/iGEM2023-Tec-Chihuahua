@@ -10,9 +10,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive and Automatic Bootstrap Slider</title>
+  <title>ScrollSpy with Sections</title>
   <!-- Bootstrap CSS -->
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
   <style>
     /* Estilos de la ScrollSpy */
     body {
@@ -98,78 +98,57 @@
       <li><a href="#seccion1">Sección 1</a></li>
       <li><a href="#seccion2">Sección 2</a></li>
       <li><a href="#seccion3">Sección 3</a></li>
-      <!-- Agrega más enlaces de acuerdo a tu página -->
     </ul>
   </nav>
 
   <main>
     <section id="seccion1">
-      <!-- Contenido de la sección 1 -->
+      <h2>Sección 1</h2>
+      <p>Contenido de la sección 1.</p>
     </section>
     <section id="seccion2">
-      <!-- Contenido de la sección 2 -->
+      <h2>Sección 2</h2>
+      <p>Contenido de la sección 2.</p>
     </section>
     <section id="seccion3">
-      <!-- Contenido de la sección 3 -->
+      <h2>Sección 3</h2>
+      <p>Contenido de la sección 3.</p>
     </section>
-    <!-- Agrega más secciones de acuerdo a tu página -->
   </main>
 
   <!-- Bootstrap JS and jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
   <script>
-    $(document).ready(function() {
-      // ... (Código para el slider)
-
-      // Hace el slider automático con un intervalo de 5 segundos
-      $('.carousel').carousel({
-        interval: 2000
-      });
-
-      // Toggle de la ScrollSpy
-      const scrollspy = document.getElementById("scrollspy");
-      const toggleBtn = document.getElementById("toggleBtn");
-
-      toggleBtn.addEventListener("click", function() {
-        scrollspy.classList.toggle("active");
-      });
-    });
-
     document.addEventListener("DOMContentLoaded", function () {
       const scrollspy = document.getElementById("scrollspy");
       const sections = document.querySelectorAll("section");
 
-      let isScrolling = false;
-
       function updateScrollspy() {
-        if (!isScrolling) {
-          window.requestAnimationFrame(() => {
-            const currentScroll = window.scrollY;
+        const currentScroll = window.scrollY;
 
-            sections.forEach((section) => {
-              const sectionTop = section.offsetTop - 150;
-              const sectionBottom = sectionTop + section.offsetHeight;
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop - 150;
+          const sectionBottom = sectionTop + section.offsetHeight;
 
-              if (currentScroll >= sectionTop && currentScroll < sectionBottom) {
-                const activeLink = scrollspy.querySelector(`[href="#${section.id}"]`);
-                scrollspy.querySelectorAll("a").forEach((link) => {
-                  link.classList.remove("active");
-                });
-                activeLink.classList.add("active");
-              }
+          if (currentScroll >= sectionTop && currentScroll < sectionBottom) {
+            const activeLink = scrollspy.querySelector(`[href="#${section.id}"]`);
+            scrollspy.querySelectorAll("a").forEach((link) => {
+              link.classList.remove("active");
             });
-
-            isScrolling = false;
-          });
-        }
-        isScrolling = true;
+            activeLink.classList.add("active");
+          }
+        });
       }
 
       function toggleScrollspy() {
-        scrollspy.classList.toggle("open");
+        scrollspy.classList.toggle("active");
       }
 
+      // Actualización inicial de ScrollSpy
+      updateScrollspy();
+
+      // Listeners para eventos
       scrollspy.addEventListener("click", toggleScrollspy);
       window.addEventListener("scroll", updateScrollspy);
     });
