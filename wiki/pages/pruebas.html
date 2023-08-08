@@ -17,18 +17,19 @@
   <style>
     /* Estilos de la ScrollSpy */
     nav.scrollspy {
-      position: fixed;
-      bottom: 20px;
+      position: sticky;
+      top: 20px;
       right: 20px;
-      transform: translateY(100%);
+      transform: translateY(0%);
       transition: transform 0.3s ease;
       border-radius: 5px;
       background-color: rgba(255, 255, 255, 0.9);
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
       width: 150px;
       max-height: 300px;
-      overflow-y: auto;
+      overflow-y: hidden;
       padding: 10px 0;
+      z-index: 1000;
     }
 
     nav.scrollspy ul {
@@ -36,6 +37,11 @@
       padding: 0;
       margin: 0;
       text-align: center;
+      display: none;
+    }
+
+    nav.scrollspy.active ul {
+      display: block;
     }
 
     nav.scrollspy li {
@@ -69,21 +75,11 @@
       cursor: pointer;
       padding: 5px 0;
     }
-
-    .scrollspy.closed {
-      transform: translateY(0%);
-      max-height: 35px;
-    }
-
-    .scrollspy.closed .toggle-btn {
-      text-align: center;
-      padding: 0;
-    }
   </style>
 </head>
 <body>
-  <nav class="scrollspy closed" id="scrollspy">
-    <button class="toggle-btn" id="toggleBtn">Toggle</button>
+  <nav class="scrollspy active" id="scrollspy">
+    <div class="toggle-btn" id="toggleBtn">⬇</div>
     <ul>
       <li><a href="#seccion1">Sección 1</a></li>
       <li><a href="#seccion2">Sección 2</a></li>
@@ -122,7 +118,7 @@
       const toggleBtn = document.getElementById("toggleBtn");
 
       toggleBtn.addEventListener("click", function() {
-        scrollspy.classList.toggle("closed");
+        scrollspy.classList.toggle("active");
       });
     });
 
@@ -166,6 +162,7 @@
   </script>
 </body>
 </html>
+
 
 
 
