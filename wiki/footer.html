@@ -2,61 +2,33 @@
 <html>
 <head>
   <title>Nombre de tu sitio web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    /* Estilos generales */
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2; /* Gris claro como color de fondo */
     }
-    
-    /* Estilos para el footer */
     .footer {
-      background-color: #f5f5f5;
-      padding: 50px 0;
+      background-color: #ffffff;
+      color: #000000;
+      padding: 30px 0;
       text-align: center;
     }
-    
-    .footer h4 {
-      font-size: 1.5rem;
-      margin-bottom: 20px;
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
     }
-    
-    .footer p {
-      font-size: 0.9rem;
-      color: #666;
-    }
-    
-    .footer ul {
-      list-style: none;
-      padding: 0;
-    }
-    
-    .footer ul li {
-      margin-bottom: 10px;
-    }
-    
-    .footer a {
-      color: #333;
-      text-decoration: none;
-    }
-    
-    /* Estilos para la marquesina */
-    .marquee-container {
-      overflow: hidden;
-      background-color: #f5f5f5;
-      padding: 20px 0;
-    }
-    
     .marquee {
       display: flex;
+      overflow: hidden;
+      white-space: nowrap;
       animation: marquee 20s linear infinite;
     }
-    
     .marquee a {
       margin-right: 30px;
     }
-    
     @keyframes marquee {
       0% {
         transform: translateX(100%);
@@ -68,64 +40,53 @@
   </style>
 </head>
 <body>
-  <!-- Contenido de tu sitio web -->
-  <div>
-    <!-- ... (contenido del sitio web) ... -->
-  </div>
-
-  <!-- Footer con marquesina para sponsors -->
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h4>Heading</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="col-md-4">
-          <h4>Links</h4>
-          <ul>
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Nam mauris velit</a></li>
-            <li><a href="#">Etiam vitae mauris</a></li>
-            <li><a href="#">Fusce scelerisque</a></li>
-            <li><a href="#">Sed faucibus</a></li>
-            <li><a href="#">Mauris efficitur nulla</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h4>Contact</h4>
-          <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
-          <p>(541) 754-3010</p>
-          <p>info@example.com</p>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1>Nombre de tu sitio web</h1>
+        <p>Bienvenido a nuestro sitio web.</p>
       </div>
     </div>
-  </footer>
-
-  <!-- Marquesina con los sponsors -->
-  <div class="marquee-container">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="marquee">
-            <!-- Agrega aquí los enlaces a las imágenes de los sponsors -->
-            <a href="#"><img src="image1.jpg" alt="Sponsor 1"></a>
-            <a href="#"><img src="image2.jpg" alt="Sponsor 2"></a>
-            <a href="#"><img src="image3.jpg" alt="Sponsor 3"></a>
-            <!-- Agrega más sponsors si es necesario -->
-          </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Heading</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique convallis.</p>
+      </div>
+      <div class="col-md-3">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="#">Lorem ipsum</a></li>
+          <li><a href="#">Nam mauris velit</a></li>
+          <li><a href="#">Etiam vitae mauris</a></li>
+          <li><a href="#">Fusce scelerisque</a></li>
+          <li><a href="#">Sed faucibus</a></li>
+          <li><a href="#">Mauris efficitur nulla</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h4>Contact</h4>
+        <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
+        <p>(541) 754-3010</p>
+        <p>info@hsdf.com</p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <div class="marquee">
+          <a href="#"><img src="sponsor1.jpg" alt="Sponsor 1"></a>
+          <a href="#"><img src="sponsor2.jpg" alt="Sponsor 2"></a>
+          <a href="#"><img src="sponsor3.jpg" alt="Sponsor 3"></a>
         </div>
       </div>
     </div>
   </div>
-
-  <!-- JavaScript para pausar la marquesina al pasar el cursor sobre ella -->
   <script>
     var marquee = document.querySelector('.marquee');
     marquee.addEventListener('mouseenter', function () {
       this.style.animationPlayState = 'paused';
     });
-
     marquee.addEventListener('mouseleave', function () {
       this.style.animationPlayState = 'running';
     });
