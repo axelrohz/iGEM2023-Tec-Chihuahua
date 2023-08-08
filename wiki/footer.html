@@ -12,26 +12,18 @@
       animation: marquee 20s linear infinite; /* Ajusta la velocidad según lo desees */
     }
     .footer {
-      background-color: rgb(119, 117, 117); /* Cambia el color de fondo a un gris claro */
-      color: black; /* Cambia el color del texto a negro */
+      background-color: #f9f9f9; /* Cambia el color de fondo a un tono claro */
+      color: #333; /* Cambia el color del texto a un gris oscuro */
       padding: 30px 0; /* Añade un poco de espacio alrededor del contenido del footer */
-
-  }
-
-    /* Estilos para las imágenes de los sponsors dentro de la marquesina */
-    .marquee a {
-      margin-right: 30px; /* Espacio entre cada sponsor */
+      text-align: center; /* Centra el contenido del footer */
     }
-
-    /* Animación para desplazar los sponsors horizontalmente */
-    @keyframes marquee {
-      0% {
-        transform: translateX(100%);
-      }
-      100% {
-        transform: translateX(-100%);
-      }
+    .footer h4 {
+      color: #555; /* Color de encabezado más suave */
     }
+    .footer p {
+      margin-bottom: 10px; /* Espacio entre párrafos en el footer */
+    }
+    /* Resto de tus estilos... */
   </style>
 </head>
 <body>
@@ -41,26 +33,22 @@
   </div>
 
   <!-- Footer con marquesina para sponsors -->
-  <footer class="pt-5 pb-5 footer py-5 mt-5 bg-light text-dark"></footer>
-
+  <footer class="pt-5 pb-5 footer py-5 mt-5 bg-light text-dark">
     <div class="container">
       <div class="row mb-4">
-        <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="col-lg-4 col-md-6 col-sm-12">
           <h4 class="mb-3">Heading</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique convallis</p>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="col-lg-4 col-md-6 col-sm-12">
           <h4 class="mt-lg-0 mt-sm-3">Links</h4>
-          <ul class="m-2 p-2">
+          <ul class="m-0 p-0">
             <li><a href="#">Lorem ipsum</a></li>
             <li><a href="#">Nam mauris velit</a></li>
-            <li><a href="#">Etiam vitae mauris</a></li>
-            <li><a href="#">Fusce scelerisque</a></li>
-            <li><a href="#">Sed faucibus</a></li>
-            <li><a href="#">Mauris efficitur nulla</a></li>
+            <!-- Agrega más enlaces... -->
           </ul>
         </div>
-        <div class="col-lg-3 col-md-12 col-sm-12">
+        <div class="col-lg-4 col-md-12 col-sm-12">
           <h4 class="mt-lg-0 mt-sm-4 mb-3">Contact</h4>
           <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
           <p class="mb-0">(541) 754-3010</p>
@@ -74,9 +62,8 @@
         <div class="col">
           <div class="marquee">
             <!-- Agrega aquí los enlaces a las imágenes de los sponsors -->
-            <a href="#"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.snapgene.com%2F&psig=AOvVaw14rfvkD0D38VLtR0uW7cVK&ust=1691504455851000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMCswqTfyoADFQAAAAAdAAAAABAD" alt="Sponsor 1"></a>
-            <a href="#"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.snapgene.com%2F&psig=AOvVaw14rfvkD0D38VLtR0uW7cVK&ust=1691504455851000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMCswqTfyoADFQAAAAAdAAAAABAD" alt="Sponsor 2"></a>
-            <a href="#"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.snapgene.com%2F&psig=AOvVaw14rfvkD0D38VLtR0uW7cVK&ust=1691504455851000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMCswqTfyoADFQAAAAAdAAAAABAD" alt="Sponsor 3"></a>
+            <a href="#"><img src="imagen-sponsor1.jpg" alt="Sponsor 1"></a>
+            <a href="#"><img src="imagen-sponsor2.jpg" alt="Sponsor 2"></a>
             <!-- Agrega más sponsors si es necesario -->
           </div>
         </div>
@@ -87,15 +74,16 @@
   <!-- JavaScript para pausar la marquesina al pasar el cursor sobre ella -->
   <script>
     var marquee = document.querySelector('.marquee');
-      marquee.addEventListener('mouseenter', function () {
-        this.style.animationPlayState = 'paused';
-      });
+    marquee.addEventListener('mouseenter', function () {
+      this.style.animationPlayState = 'paused';
+    });
 
-      marquee.addEventListener('mouseleave', function () {
-        this.style.animationPlayState = 'running';
-      });
+    marquee.addEventListener('mouseleave', function () {
+      this.style.animationPlayState = 'running';
+    });
   </script>
 </body>
 </html>
+
 
 
