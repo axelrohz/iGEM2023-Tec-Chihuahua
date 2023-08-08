@@ -104,25 +104,24 @@
     }
 
     .header-image {
-      width: 100%; /* La imagen ocupa todo el ancho del encabezado */
-      height: auto; /* La altura se ajusta automáticamente */
-      object-fit: cover; /* Ajustamos la propiedad object-fit para llenar el espacio de la imagen */
-      opacity: 0; /* La imagen está inicialmente oculta */
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      opacity: 0.8; /* Darken the image slightly */
       transition: opacity 1.5s ease-in-out;
     }
 
     .header-content {
       position: absolute;
-      bottom: 0;
+      top: 50%; /* Center the title vertically */
       left: 50%;
-      transform: translateX(-50%);
+      transform: translate(-50%, -50%);
       text-align: center;
-      color: rgba(255, 255, 255, 0.8); /* Agregamos transparencia al color del texto */
-      transition: transform 0.3s, font-size 0.3s, color 0.3s; /* Agregamos transición al color del texto */
-      padding: 20px; /* Agregamos un espacio alrededor del texto */
-      width: 100%; /* Aseguramos que el texto ocupe todo el ancho */
-      opacity: 0; /* El título está inicialmente oculto */
-      animation: fadeIn 1.5s ease-in-out forwards; /* Animación de desvanecimiento del título */
+      color: rgba(255, 255, 255, 0.9);
+      transition: transform 0.3s, font-size 0.3s, color 0.3s;
+      padding: 20px;
+      width: 100%;
+      opacity: 1;
     }
 
     .header:hover .header-content {
