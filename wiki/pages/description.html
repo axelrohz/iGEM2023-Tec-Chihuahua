@@ -5,7 +5,49 @@
 {endblock}
 
 {% block page_content %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página con Header</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0139.jpeg" alt="Imagen de encabezado">
+  </header>
+  <main>
+    <!-- Aquí coloca el contenido principal de tu página -->
+  </main>
+</body>
+</html>
+<style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
 
+header {
+  width: 100%;
+  height: 200px; /* Ajusta la altura según tus necesidades */
+  overflow: hidden;
+  position: relative;
+}
+
+header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease; /* Establece la duración y el efecto de transición deseado */
+}
+
+header img:hover {
+  opacity: 0.7; /* Opacidad reducida al pasar el ratón por encima */
+}
+
+</style>
 
 
 
