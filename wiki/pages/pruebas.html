@@ -89,7 +89,93 @@
       padding: 20px;
       margin-top: 60px; /* Ajusta este valor según tus necesidades */
     }
+    /*aqui para abajo es el header*/
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-size: 16px; /* Ajustamos el tamaño de fuente base */
+    }
+
+    .header {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .header-image {
+      width: 100%; /* La imagen ocupa todo el ancho del encabezado */
+      height: auto; /* La altura se ajusta automáticamente */
+      object-fit: cover; /* Ajustamos la propiedad object-fit para llenar el espacio de la imagen */
+      opacity: 0; /* La imagen está inicialmente oculta */
+      transition: opacity 1.5s ease-in-out;
+    }
+
+    .header-content {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      color: rgba(255, 255, 255, 0.8); /* Agregamos transparencia al color del texto */
+      transition: transform 0.3s, font-size 0.3s, color 0.3s; /* Agregamos transición al color del texto */
+      padding: 20px; /* Agregamos un espacio alrededor del texto */
+      width: 100%; /* Aseguramos que el texto ocupe todo el ancho */
+      opacity: 0; /* El título está inicialmente oculto */
+      animation: fadeIn 1.5s ease-in-out forwards; /* Animación de desvanecimiento del título */
+    }
+
+    .header:hover .header-content {
+      transform: translateX(-50%) translateY(-50%) scale(1.1); /* Efecto de escala en el título al pasar el cursor */
+      color: white; /* Cambio de color del título al pasar el cursor */
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .header-image.loaded {
+      opacity: 1; /* Mostrar la imagen cuando la clase "loaded" se agrega */
+    }
+
+    .header h1 {
+      font-size: 4rem;
+      color: #fff;
+      margin: 0;
+      transition: font-size 0.3s; /* Agregamos transición al tamaño de fuente del título */
+    }
+
+    @media screen and (max-width: 768px) {
+      .header h1 {
+        font-size: 2rem;
+      }
+
+      .header-content {
+        font-size: 1.5rem; /* Ajustar el tamaño del texto en dispositivos móviles */
+      }
+    }
   </style>
+  <body>
+    <header class="header">
+      <img class="header-image" src="https://static.igem.wiki/teams/4607/wiki/images/dsc-0023.jpeg" alt="Project Image">
+      <div class="header-content">
+        <h1>Project Description</h1>
+      </div>
+    </header>
+  
+    <script>
+      // Agregar la clase "loaded" a la imagen después de un retraso
+      setTimeout(function() {
+        document.querySelector('.header-image').classList.add('loaded');
+      }, 500);
+    </script>
+  </body>
+  <br>
 </head>
 <body>
   <nav class="scrollspy active" id="scrollspy">
