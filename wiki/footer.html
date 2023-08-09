@@ -12,9 +12,14 @@
       animation: marquee 20s linear infinite; /* Ajusta la velocidad según lo desees */
     }
     @keyframes marquee {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
-  }
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+    /* Estilos para las imágenes de los sponsors */
+    .marquee a img {
+      max-height: 50px; /* Ajusta la altura deseada */
+      margin: 0 20px; /* Espacio entre las imágenes */
+    }
     .footer {
       background-color: #f9f9f9; /* Cambia el color de fondo a un tono claro */
       color: #333; /* Cambia el color del texto a un gris oscuro */
@@ -93,6 +98,7 @@
   </script>
 </body>
 </html>
+
 
 
 
