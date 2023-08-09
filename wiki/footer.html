@@ -32,6 +32,14 @@
     .footer p {
       margin-bottom: 10px; /* Espacio entre párrafos en el footer */
     }
+    /* Estilos para el botón "Back to Top" */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+      cursor: pointer;
+    }
     /* Resto de tus estilos... */
   </style>
 </head>
@@ -70,7 +78,6 @@
       <div class="row mt-4">
         <div class="col">
           <div class="marquee">
-            <!-- Agrega aquí los enlaces a las imágenes de los sponsors -->
             <a href="#"><img src="https://static.igem.wiki/teams/4607/wiki/footer/descarga.png" alt="CTR"></a>
             <a href="#"><img src="https://static.igem.wiki/teams/4607/wiki/footer/sanpgene2.png" alt="snapgene"></a>
             <a href="#"><img src="https://static.igem.wiki/teams/4607/wiki/footer/logo-idt.png" alt="IDT Integrated DNA Technologies"></a>
@@ -78,14 +85,16 @@
             <a href="#"><img src="https://static.igem.wiki/teams/4607/wiki/footer/logo-ichijuv.png" alt="Ichihuv"></a>
             <a href="#"><img src="https://static.igem.wiki/teams/4607/wiki/footer/eic-tec-de-monterrey.png" alt="Escuela de ingenieria y ciencias tec de Monterrey"></a>
             <a href="#"><img src="https://static.igem.wiki/teams/4607/wiki/footer/neb.png" alt="New England Biolabs"></a>
-            <!-- Agrega más sponsors si es necesario -->
           </div>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- JavaScript para pausar la marquesina al pasar el cursor sobre ella -->
+  <!-- Botón "Back to Top" -->
+  <div class="back-to-top" id="backToTop">&#8593; Back to Top</div>
+
+  <!-- JavaScript para pausar la marquesina al pasar el cursor sobre ella y para el botón "Back to Top" -->
   <script>
     var marquee = document.querySelector('.marquee');
     marquee.addEventListener('mouseenter', function () {
@@ -95,9 +104,26 @@
     marquee.addEventListener('mouseleave', function () {
       this.style.animationPlayState = 'running';
     });
+
+    var backToTopButton = document.getElementById('backToTop');
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 300) {
+        backToTopButton.style.display = 'block';
+      } else {
+        backToTopButton.style.display = 'none';
+      }
+    });
+
+    backToTopButton.addEventListener('click', function () {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
   </script>
 </body>
 </html>
+
 
 
 
