@@ -10,16 +10,13 @@
       overflow: hidden;
       white-space: nowrap;
       animation: marquee 20s linear infinite; /* Ajusta la velocidad según lo desees */
+      animation: marquee 20s linear infinite;
     }
     @keyframes marquee {
       0% { transform: translateX(100%); }
       100% { transform: translateX(-100%); }
     }
-    /* Estilos para las imágenes de los sponsors */
-    .marquee a img {
-      max-height: 50px; /* Ajusta la altura deseada */
-      margin: 0 20px; /* Espacio entre las imágenes */
-    }
+    
     .footer {
       background-color: #f9f9f9; /* Cambia el color de fondo a un tono claro */
       color: #333; /* Cambia el color del texto a un gris oscuro */
@@ -40,7 +37,20 @@
       display: none;
       cursor: pointer;
     }
+    
     /* Resto de tus estilos... */
+    @media (max-width: 768px) {
+      .marquee a img {
+        max-height: 20px; /* Ajusta la altura deseada para pantallas pequeñas */
+        margin: 0 5px; /* Espacio entre las imágenes en pantallas pequeñas */
+      }
+      /* Ajusta otros estilos aquí si es necesario */
+    }
+    .marquee a img {
+      /* ... (otros estilos) ... */
+      max-height: 30px; /* Ajusta la altura deseada */
+      margin: 0 10px; /* Espacio entre las imágenes */
+    }
   </style>
 </head>
 <body>
