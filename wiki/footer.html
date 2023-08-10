@@ -22,7 +22,7 @@
       color: #333; /* Cambia el color del texto a un gris oscuro */
       
       text-align: center; /* Centra el contenido del footer */
-      padding: 20px 0;
+      padding: 10px 0; /* Reduce el padding en dispositivos móviles */
     }
     .footer h4 {
       color: #555; /* Color de encabezado más suave */
@@ -41,20 +41,24 @@
     
     /* Resto de tus estilos... */
     @media (max-width: 768px) {
-      .footer .row {
-        flex-direction: column;
-      }
-      /* Ajusta otros estilos aquí si es necesario */
+    .footer .col-lg-4 {
+      text-align: center;
+      margin-bottom: 20px; /* Agrega espacio entre las columnas en dispositivos móviles */
     }
+    .footer .row {
+      flex-direction: column;
+    }
+  }
     .marquee a img {
       /* ... (otros estilos) ... */
-      max-height: 30px; /* Ajusta la altura deseada */
-      margin: 0 10px; /* Espacio entre las imágenes */
+      max-height: 20px; /* Ajusta la altura deseada para dispositivos móviles */
+      margin: 0 5px; /* Reduce el espacio entre las imágenes */
+      
     }
     .footer .col-lg-4 {
         text-align: center;
       }
-    }
+    
   </style>
 </head>
 <body>
