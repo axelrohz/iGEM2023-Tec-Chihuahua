@@ -2,34 +2,27 @@
 <html>
 <head>
   <title>Nombre de tu sitio web</title>
+  <!-- Agrega aquí tus enlaces a archivos CSS, fuentes, etc. si los tienes -->
   <style>
-    /* Estilos generales */
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
     /* Estilos para el contenedor de la marquesina */
     .marquee {
       display: flex;
       overflow: hidden;
       white-space: nowrap;
-      animation: marquee 20s linear infinite;
+      animation: marquee 20s linear infinite; /* Ajusta la velocidad según lo desees */
+    
     }
     @keyframes marquee {
       0% { transform: translateX(100%); }
       100% { transform: translateX(-100%); }
     }
     
-    /* Estilos para las imágenes de los sponsors */
-    .marquee a img {
-      max-height: 50px; /* Ajusta la altura deseada */
-      margin: 0 20px; /* Espacio entre las imágenes */
-    }
     .footer {
       background-color: #f9f9f9; /* Cambia el color de fondo a un tono claro */
       color: #333; /* Cambia el color del texto a un gris oscuro */
-      padding: 30px 0; /* Añade un poco de espacio alrededor del contenido del footer */
+      
       text-align: center; /* Centra el contenido del footer */
+      padding: 20px 0;
     }
     .footer h4 {
       color: #555; /* Color de encabezado más suave */
@@ -45,20 +38,21 @@
       display: none;
       cursor: pointer;
     }
+    
     /* Resto de tus estilos... */
     @media (max-width: 768px) {
-      .marquee a img {
-        max-height: 30px; /* Ajusta la altura deseada para pantallas pequeñas */
-        margin: 0 10px; /* Espacio entre las imágenes en pantallas pequeñas */
+      .footer .row {
+        flex-direction: column;
       }
-      .footer {
-        padding: 20px 0;
-      }
-      .footer h4 {
-        font-size: 18px;
-      }
-      .footer p {
-        font-size: 14px;
+      /* Ajusta otros estilos aquí si es necesario */
+    }
+    .marquee a img {
+      /* ... (otros estilos) ... */
+      max-height: 30px; /* Ajusta la altura deseada */
+      margin: 0 10px; /* Espacio entre las imágenes */
+    }
+    .footer .col-lg-4 {
+        text-align: center;
       }
     }
   </style>
@@ -68,6 +62,7 @@
   <div>
     <!-- ... (contenido del sitio web) ... -->
   </div>
+
   <!-- Footer con marquesina para sponsors -->
   <footer class="pt-5 pb-5 footer py-5 mt-5 bg-light text-dark">
     <div class="container">
@@ -92,6 +87,7 @@
         </div>
       </div>
       <hr>
+
       <!-- La marquesina con los sponsors -->
       <div class="row mt-4">
         <div class="col">
@@ -108,17 +104,21 @@
       </div>
     </div>
   </footer>
+
   <!-- Botón "Back to Top" -->
   <div class="back-to-top" id="backToTop">&#8593; Back to Top</div>
+
   <!-- JavaScript para pausar la marquesina al pasar el cursor sobre ella y para el botón "Back to Top" -->
   <script>
     var marquee = document.querySelector('.marquee');
     marquee.addEventListener('mouseenter', function () {
       this.style.animationPlayState = 'paused';
     });
+
     marquee.addEventListener('mouseleave', function () {
       this.style.animationPlayState = 'running';
     });
+
     var backToTopButton = document.getElementById('backToTop');
     window.addEventListener('scroll', function () {
       if (window.scrollY > 300) {
@@ -127,6 +127,7 @@
         backToTopButton.style.display = 'none';
       }
     });
+
     backToTopButton.addEventListener('click', function () {
       window.scrollTo({
         top: 0,
@@ -136,7 +137,6 @@
   </script>
 </body>
 </html>
-
 
 
 
