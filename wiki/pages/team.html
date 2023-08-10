@@ -5,6 +5,13 @@
 
 {% block page_content %}
 
+<div class="gradContainer1">
+
+
+
+
+
+</div>
 
 <body>
   
@@ -397,10 +404,37 @@ top: 225px;
 opacity: 1;
 }
 
-h1 {
+.h1 {
   font-family: 'Inter Tight';
   font-weight: 800;
 }
+
+.gradContainer1 {
+  position: absolute;
+  max-width: fit-content;
+  max-height: 2rem;
+  background: linear-gradient(-45deg, #447D9C,#5BC5AB,#A9BA6C,#F6AE2D,#DE8551,#D27063,#C55B75);
+  background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+}
+
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
 </style>
 </body>
 
