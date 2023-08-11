@@ -187,7 +187,7 @@
 })(jQuery);
 
   //TEAMS
-  var tl = 0;
+var tl = 0;
 var magnitude = 0.3;
 var fixed = $('.navigation');
 
