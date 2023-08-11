@@ -838,7 +838,7 @@ opacity: 1;
     font-weight: 800;
     border: 4px solid #F3F3FA;
     display: box;
-    top: 10px;
+    align-items: center;
     padding: 2rem;
     position: absolute;
     font-family: 'Inter Tight';
