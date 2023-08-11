@@ -812,7 +812,7 @@ opacity: 1;
     flex-direction: column;
   }
   
-  .header {
+  .header-grad {
     width: 100%;
     height: 300px;
     background: linear-gradient(45deg, #447d9c, #5bc5ab, #a9ba6c, #f6ae2d, #de8551, #d27063, #c55b75);
@@ -833,7 +833,7 @@ opacity: 1;
     50%{background-position:17% 100%}
     100%{background-position:84% 0%} }
   
-  .header h1 {
+  .header-grad h1 {
     color: #F3F3FA;
     font-weight: 800;
     border: 4px solid #F3F3FA;
