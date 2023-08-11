@@ -10,7 +10,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ScrollSpy with Sections</title>
+  <title>Static Sections</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
   <style>
@@ -24,8 +24,6 @@
       position: fixed;
       top: 70px;
       right: 30px;
-      transform: translateY(0%);
-      transition: transform 0.3s ease;
       border-radius: 5px;
       background-color: rgba(255, 255, 255, 0.9);
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -41,14 +39,6 @@
       padding: 0;
       margin: 0;
       text-align: center;
-      display: none;
-      transition: max-height 0.3s ease;
-      overflow: hidden;
-    }
-
-    nav.scrollspy.active ul {
-      display: block;
-      max-height: 1000px;
     }
 
     nav.scrollspy li {
@@ -61,7 +51,6 @@
       display: block;
       padding: 8px;
       border-radius: 3px;
-      transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     nav.scrollspy a:hover {
@@ -110,7 +99,6 @@
       object-fit: cover;
       opacity: 0.8; /* Darken the image slightly */
       background: rgba(0, 0, 0, 0.5); /* Opacity of 50% with a background color */
-      transition: opacity 1.5s ease-in-out, background 1.5s ease-in-out; /* Transition for both opacity and background */
     }
 
     .header-content {
@@ -120,7 +108,6 @@
       transform: translate(-50%, -50%);
       text-align: center;
       color: rgba(255, 255, 255, 0.9);
-      transition: transform 0.3s, font-size 0.3s, color 0.3s;
       padding: 20px;
       width: 100%;
       opacity: 1;
@@ -129,15 +116,6 @@
     .header:hover .header-content {
       transform: translateX(-50%) translateY(-50%) scale(1.1); /* Efecto de escala en el título al pasar el cursor */
       color: white; /* Cambio de color del título al pasar el cursor */
-    }
-
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
     }
 
     .header-image.loaded {
@@ -149,7 +127,6 @@
       font-size: 4rem;
       color: #fff;
       margin: 0;
-      transition: font-size 0.3s; /* Agregamos transición al tamaño de fuente del título */
     }
 
     section {
@@ -160,8 +137,6 @@
       .header h1 {
         font-size: 2rem;
       }
-
-
 
       .header-content {
         font-size: 1.5rem; /* Ajustar el tamaño del texto en dispositivos móviles */
