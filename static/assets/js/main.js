@@ -208,8 +208,8 @@ addEventListener('scroll', function(){
  
 function interp(t){
   var x = t-(tl-t);
-  $('.header').css({top: x*magnitude}); 
-  $('.header').children().css({bottom: x*magnitude/2});  
+  $('.header-grad').css({top: x*magnitude}); 
+  $('.header-grad').children().css({bottom: x*magnitude/2});  
 }
 
 $('img').click(function(){
