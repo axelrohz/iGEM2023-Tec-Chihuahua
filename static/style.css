@@ -890,6 +890,23 @@ opacity: 1;
   }
 
 
+  /* Estilos para pantallas más pequeñas que 600px */
+@media (max-width: 600px) {
+    /* Estilos para dispositivos móviles */
+}
+
+/* Estilos para pantallas entre 600px y 992px */
+@media (min-width: 600px) and (max-width: 992px) {
+    /* Estilos para tablets y pantallas pequeñas */
+}
+
+/* Estilos para pantallas más grandes que 992px */
+@media (min-width: 992px) {
+    /* Estilos para pantallas de escritorio */
+}
+
+
+
 
 
 
