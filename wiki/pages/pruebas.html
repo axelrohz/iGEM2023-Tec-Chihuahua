@@ -168,7 +168,7 @@
   <nav class="scrollspy active" id="scrollspy">
     <div class="toggle-btn" id="toggleBtn">⬇ Contents</div>
     <ul>
-      <li><a href="#seccion1"></a></li>
+      <li><a href="#seccion1">Sección 1</a></li>
       <li><a href="#seccion2">Sección 2</a></li>
       <li><a href="#seccion3">Sección 3</a></li>
     </ul>
@@ -195,7 +195,6 @@
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const scrollspy = document.getElementById("scrollspy");
-      const toggleBtn = document.getElementById("toggleBtn");
       const sections = document.querySelectorAll("section");
 
       function updateScrollspy() {
@@ -219,23 +218,12 @@
         scrollspy.classList.toggle("active");
       }
 
-      toggleBtn.addEventListener("click", toggleScrollspy);
+      // Actualización inicial de ScrollSpy
+      updateScrollspy();
+
+      // Listeners para eventos
+      scrollspy.addEventListener("click", toggleScrollspy);
       window.addEventListener("scroll", updateScrollspy);
-
-      // Desplazamiento suave al hacer clic en los enlaces de ScrollSpy
-      const scrollLinks = document.querySelectorAll('nav.scrollspy a');
-
-      scrollLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-          e.preventDefault();
-          const targetId = this.getAttribute('href');
-          const targetSection = document.querySelector(targetId);
-          window.scrollTo({
-            top: targetSection.offsetTop - 140, // Ajusta el desplazamiento según tus necesidades
-            behavior: 'smooth'
-          });
-        });
-      });
     });
   </script>
 </body>
