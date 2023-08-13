@@ -594,7 +594,7 @@ body {
 
 .parallax-team {
     background-image: url("https://static.igem.wiki/teams/4607/wiki/members/aver.jpg");
-    min-height: 500px; 
+    min-height: 500px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -614,7 +614,8 @@ body {
 /* Media Query para dispositivos móviles con ancho máximo de 768px */
 @media (max-width: 768px) {
     .parallax-team {
-      min-height: 30vh; /* Ajusta la altura relativa para dispositivos más pequeños */
+      min-height: 200px; /* Ajusta la altura para dispositivos más pequeños */
+      background-attachment: scroll; /* Cambia a scroll para mejorar la responsividad */
     }
   }
 
