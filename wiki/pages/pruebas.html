@@ -20,14 +20,73 @@
       padding: 0;
     }
 
+    nav.scrollspy {
+      position: fixed;
+      top: 70px;
+      right: 30px;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      width: 150px;
+      max-height: 300px;
+      overflow-y: hidden;
+      padding: 10px 0;
+      z-index: 1000;
+    }
+
+    nav.scrollspy ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+
+    nav.scrollspy li {
+      margin-bottom: 10px;
+    }
+
+    nav.scrollspy a {
+      color: #333;
+      text-decoration: none;
+      display: block;
+      padding: 8px;
+      border-radius: 3px;
+    }
+
+    nav.scrollspy a:hover {
+      background-color: #f8f9fa;
+    }
+
+    nav.scrollspy a.active {
+      background-color: #00ffff;
+      color: #fff;
+    }
+
+    nav.scrollspy .toggle-btn {
+      background-color: transparent;
+      border: none;
+      color: #333;
+      text-align: center;
+      width: 100%;
+      cursor: pointer;
+      padding: 5px 0;
+      font-size: 20px;
+    }
+
     /* Estilos para el contenido */
     main {
       padding: 20px;
       margin-top: 60px; /* Ajusta este valor según tus necesidades */
       padding-top: 70px; /* Añadir espacio para la ScrollSpy */
     }
+    /*aqui para abajo es el header*/
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-size: 16px; /* Ajustamos el tamaño de fuente base */
+    }
 
-    /* Estilos para el encabezado */
     .header {
       position: relative;
       width: 100%;
@@ -44,7 +103,7 @@
 
     .header-content {
       position: absolute;
-      top: 50%;
+      top: 50%; /* Center the title vertically */
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
@@ -54,6 +113,16 @@
       opacity: 1;
     }
 
+    .header:hover .header-content {
+      transform: translateX(-50%) translateY(-50%) scale(1.1); /* Efecto de escala en el título al pasar el cursor */
+      color: white; /* Cambio de color del título al pasar el cursor */
+    }
+
+    .header-image.loaded {
+      opacity: 1; /* Mostrar la imagen cuando la clase "loaded" se agrega */
+      background: rgba(0, 0, 0, 0.5); /* Opacidad del 50% */
+    }
+
     .header h1 {
       font-size: 4rem;
       color: #fff;
@@ -61,11 +130,95 @@
     }
 
     section {
-      display: none; /* Oculta las secciones inicialmente */
-      padding-top: 150px;
+      padding-top: 150px; /* Ajustar este valor para dar espacio suficiente para el encabezado y la imagen */
     }
 
-    /* Estilo para el botón de toggling */
+    @media screen and (max-width: 768px) {
+      .header h1 {
+        font-size: 2rem;
+      }
+      .contents-list {
+        display: none;
+        position: fixed;
+        top: 70px;
+        right: 30px;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        width: 150px;
+        max-height: 300px;
+        overflow-y: auto;
+        padding: 10px 0;
+        z-index: 1000;
+      }
+      .contents-list ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+      }
+      .contents-list li {
+        margin-bottom: 10px;
+      }
+
+      .header-content {
+        font-size: 1.5rem; /* Ajustar el tamaño del texto en dispositivos móviles */
+      }
+      .contents-list a {
+      color: #333;
+      text-decoration: none;
+      display: block;
+      padding: 8px;
+      border-radius: 3px;
+    }
+
+.contents-list a:hover {
+  background-color: #f8f9fa;
+}
+    }
+    /* Estilos para el contenido de las secciones desglosadas */
+    .section-contents {
+      display: none;
+      position: fixed;
+      top: 70px;
+      right: 190px;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      width: 150px;
+      max-height: 300px;
+      overflow-y: auto;
+      padding: 10px 0;
+      z-index: 1000;
+    }
+
+    .section-contents ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+
+    .section-contents li {
+      margin-bottom: 10px;
+    }
+
+    .section-contents a {
+      color: #333;
+      text-decoration: none;
+      display: block;
+      padding: 8px;
+      border-radius: 3px;
+    }
+
+    .section-contents a:hover {
+      background-color: #f8f9fa;
+    }
+
+    .section-contents.active {
+      display: block;
+    }
+
     .toggle-btn {
       position: fixed;
       top: 70px;
@@ -87,19 +240,37 @@
     </div>
   </header>
 
-  <!-- Botón para alternar la visibilidad de las secciones -->
-  <button class="toggle-btn" id="toggleBtn">Mostrar Secciones</button>
+  <div>
+  
+    <script src="../../static/assets/js/main.js"></script>
+    <div class="wrap">
+  <header class="header-grad"><h1>Proyect Description</h1></header>
+</div>
+<script>
+  setTimeout(function() {
+    document.querySelector('.header-image').classList.add('loaded');
+  }, 500);
+</script>
 
+  <nav class="scrollspy active" id="scrollspy">
+    
+    <ul>
+      <li><a href="#seccion1">Sección 1</a></li>
+      <li><a href="#seccion2">Sección 2</a></li>
+      <li><a href="#seccion3">Sección 3</a></li>
+    </ul>
+  </nav>
+  <button class="toggle-btn" id="toggleBtn">Toggle Sections</button>
   <main>
-    <section id="seccion1" class="active">
+    <section id="seccion1">
       <h2>Sección 1</h2>
       <p>Contenido de la sección 1.</p>
     </section>
-    <section id="seccion2" class="active">
+    <section id="seccion2">
       <h2>Sección 2</h2>
       <p>Contenido de la sección 2.</p>
     </section>
-    <section id="seccion3" class="active">
+    <section id="seccion3">
       <h2>Sección 3</h2>
       <p>Contenido de la sección 3.</p>
     </section>
@@ -110,19 +281,19 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      const sections = document.querySelectorAll("section");
-      const toggleBtn = document.getElementById("toggleBtn");
+      const scrollspy = document.getElementById("scrollspy");
+      const sectionContents = document.querySelector(".section-contents");
 
-      function toggleSections() {
-        sections.forEach(section => section.classList.toggle("active"));
+      function toggleSectionContents() {
+        sectionContents.classList.toggle("active");
       }
 
-      toggleBtn.addEventListener("click", toggleSections);
+      const toggleBtn = document.getElementById("toggleBtn");
+      toggleBtn.addEventListener("click", toggleSectionContents);
     });
   </script>
 </body>
 </html>
-
 
 
 
