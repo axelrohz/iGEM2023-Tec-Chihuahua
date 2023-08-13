@@ -251,6 +251,10 @@
       function toggleScrollspy() {
         const contentsList = document.getElementById("contentsList");
         contentsList.classList.toggle("active");
+        const sectionContents = document.getElementById("sectionContents");
+      }
+      function toggleContentsList() {
+        sectionContents.classList.toggle("active");
       }
 
       // Actualización inicial de ScrollSpy
@@ -264,6 +268,9 @@
   contentsLinks.forEach((link) => {
     link.addEventListener("click", () => {
       toggleScrollspy();
+    });
+    const toggleBtn = document.getElementById("toggleBtn");
+      toggleBtn.addEventListener("click", toggleContentsList);
     });
   </script>
 </body>
