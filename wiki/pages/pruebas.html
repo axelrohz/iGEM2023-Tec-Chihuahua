@@ -218,18 +218,6 @@
     .section-contents.active {
       display: block;
     }
-
-    .toggle-btn {
-      position: fixed;
-      top: 70px;
-      right: 30px;
-      border: none;
-      background-color: #007bff;
-      color: #fff;
-      padding: 10px 15px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
   </style>
 </head>
 <body>
@@ -253,14 +241,14 @@
 </script>
 
   <nav class="scrollspy active" id="scrollspy">
-    
+    <div class="toggle-btn" id="toggleBtn">⬇ Contents</div>
     <ul>
       <li><a href="#seccion1">Sección 1</a></li>
       <li><a href="#seccion2">Sección 2</a></li>
       <li><a href="#seccion3">Sección 3</a></li>
     </ul>
   </nav>
-  <button class="toggle-btn" id="toggleBtn">Toggle Sections</button>
+
   <main>
     <section id="seccion1">
       <h2>Sección 1</h2>
