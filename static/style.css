@@ -599,6 +599,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  @media (max-width: 768px) {
+    .parallax-team {
+      min-height: 100vh;
+    }
+  }
 *
 {
   margin: 0;
@@ -606,15 +612,6 @@ body {
   box-sizing: border-box;
   font-family: 'InterTight', sans-serif;
 }
-
-/* Media Query para dispositivos móviles con ancho máximo de 768px */
-@media (max-width: 768px) {
-    .parallax-team {
-      min-height: 200px; /* Ajusta la altura para dispositivos más pequeños */
-      background-attachment: scroll; /* Cambia a scroll para mejorar la responsividad */
-    }
-  }
-
 
 .teamContainer
 {
