@@ -120,35 +120,28 @@
     .section-contents.active {
       display: block;
     }
-    /* Estilos para el contenedor de secciones */
-    .sections-container {
-      overflow: hidden;
-      max-height: 0;
-      transition: max-height 0.3s ease-in-out;
-    }
-
-    /* Estilos para el botón de despliegue */
-    .toggle-btn {
-      /* ... otros estilos ... */
-      cursor: pointer;
-    }
-
-    /* Estilos para el contenedor de secciones cuando está activo */
-    .sections-container.active {
-      max-height: 500px; /* Ajusta el valor según el contenido de las secciones */
-      transition: max-height 0.3s ease-in-out;
-    }
   </style>
 </head>
 <body>
-  <header class="header">
-    <div class="header-image">
-      <img src="https://static.igem.wiki/teams/4607/wiki/images/dsc-0023.jpeg" alt="Project Image" style="width: 100%; height: auto;">
-    </div>
-    <div class="header-content">
-      <h1>Project Title</h1>
-    </div>
-  </header>
+  <link href="{{ url_for('static', filename = 'css/team.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename = 'css/body.css') }}" rel="stylesheet">
+
+  <img class="parallax-team" src="https://static.igem.wiki/teams/4607/wiki/members/dsc-0003.jpg">
+  
+  <div class="image-space"><h1 class="title"> Team </h1>
+  </div>
+  
+
+
+<div class="parallax-content">
+  <div class="wrap">
+  <div class="title2"><h1>Meet our Team</h1></div>
+</div>
+    <script src="../../static/assets/js/main.js"></script>
+    <div class="wrap">
+  <header class="header-grad"><h1>Members</h1></header>
+</div>
+
 
   <nav class="scrollspy active" id="scrollspy">
     <div class="toggle-btn" id="toggleBtn">⬇ Contents</div>
