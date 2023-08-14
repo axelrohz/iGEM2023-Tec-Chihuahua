@@ -27,10 +27,8 @@
       border-radius: 5px;
       background-color: rgba(255, 255, 255, 0.9);
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      width: 150px;
-      max-height: 300px;
-      overflow-y: hidden;
-      padding: 10px 0;
+      width: 100%;
+      max-width: 300px;
       z-index: 1000;
     }
 
@@ -76,102 +74,72 @@
     /* Estilos para el contenido */
     main {
       padding: 20px;
-      margin-top: 60px; /* Ajusta este valor según tus necesidades */
-      padding-top: 70px; /* Añadir espacio para la ScrollSpy */
+      margin-top: 60px;
+      padding-top: 70px;
     }
-    /*aqui para abajo es el header*/
-    body, html {
-      margin: 0;
+
+    /* Estilos para el rectángulo de secciones */
+    .section-contents {
+      display: none;
+      position: fixed;
+      top: 70px;
+      right: 0;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 200px;
+      z-index: 1000;
+      transition: max-height 0.3s ease-in-out;
+    }
+
+    .section-contents ul {
+      list-style: none;
       padding: 0;
-      height: 100%;
-      font-size: 16px; /* Ajustamos el tamaño de fuente base */
-    }
-
-    .header {
-      position: relative;
-      width: 100%;
-      overflow: hidden;
-    }
-
-    .header-image {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      opacity: 0.8; /* Darken the image slightly */
-      background: rgba(0, 0, 0, 0.5); /* Opacity of 50% with a background color */
-    }
-
-    .header-content {
-      position: absolute;
-      top: 50%; /* Center the title vertically */
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      color: rgba(255, 255, 255, 0.9);
-      padding: 20px;
-      width: 100%;
-      opacity: 1;
-    }
-
-    .header:hover .header-content {
-      transform: translateX(-50%) translateY(-50%) scale(1.1); /* Efecto de escala en el título al pasar el cursor */
-      color: white; /* Cambio de color del título al pasar el cursor */
-    }
-
-    .header-image.loaded {
-      opacity: 1; /* Mostrar la imagen cuando la clase "loaded" se agrega */
-      background: rgba(0, 0, 0, 0.5); /* Opacidad del 50% */
-    }
-
-    .header h1 {
-      font-size: 4rem;
-      color: #fff;
       margin: 0;
+      text-align: center;
     }
 
-    section {
-      padding-top: 150px; /* Ajustar este valor para dar espacio suficiente para el encabezado y la imagen */
+    .section-contents li {
+      margin-bottom: 10px;
     }
 
-    @media screen and (max-width: 768px) {
-      .header h1 {
-        font-size: 2rem;
-      }
+    .section-contents a {
+      color: #333;
+      text-decoration: none;
+      display: block;
+      padding: 8px;
+      border-radius: 3px;
+    }
 
-      .header-content {
-        font-size: 1.5rem; /* Ajustar el tamaño del texto en dispositivos móviles */
-      }
+    .section-contents a:hover {
+      background-color: #f8f9fa;
+    }
+
+    .section-contents.active {
+      display: block;
     }
   </style>
 </head>
 <body>
   <header class="header">
-    <img class="header-image" src="https://static.igem.wiki/teams/4607/wiki/images/dsc-0023.jpeg" alt="Project Image">
+    <div class="header-image">
+      <img src="https://static.igem.wiki/teams/4607/wiki/images/dsc-0023.jpeg" alt="Project Image" style="width: 100%; height: auto;">
+    </div>
     <div class="header-content">
-      <h1></h1>
+      <h1>Project Title</h1>
     </div>
   </header>
 
-  <div>
-  
-    <script src="../../static/assets/js/main.js"></script>
-    <div class="wrap">
-  <header class="header-grad"><h1>Proyect Description</h1></header>
-</div>
-  <script>
-    // Agregar la clase "loaded" a la imagen después de un retraso
-    setTimeout(function() {
-      document.querySelector('.header-image').classList.add('loaded');
-    }, 500);
-  </script>
-
   <nav class="scrollspy active" id="scrollspy">
     <div class="toggle-btn" id="toggleBtn">⬇ Contents</div>
-    <ul>
-      <li><a href="#seccion1">Sección 1</a></li>
-      <li><a href="#seccion2">Sección 2</a></li>
-      <li><a href="#seccion3">Sección 3</a></li>
-    </ul>
+    <div class="section-contents" id="sectionContents">
+      <ul>
+        <li><a href="#seccion1">Sección 1</a></li>
+        <li><a href="#seccion2">Sección 2</a></li>
+        <li><a href="#seccion3">Sección 3</a></li>
+      </ul>
+    </div>
   </nav>
 
   <main>
@@ -194,40 +162,18 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      const scrollspy = document.getElementById("scrollspy");
-      const sections = document.querySelectorAll("section");
+      const toggleBtn = document.getElementById("toggleBtn");
+      const sectionContents = document.getElementById("sectionContents");
 
-      function updateScrollspy() {
-        const currentScroll = window.scrollY;
-
-        sections.forEach((section) => {
-          const sectionTop = section.offsetTop - 150;
-          const sectionBottom = sectionTop + section.offsetHeight;
-
-          if (currentScroll >= sectionTop && currentScroll < sectionBottom) {
-            const activeLink = scrollspy.querySelector(`[href="#${section.id}"]`);
-            scrollspy.querySelectorAll("a").forEach((link) => {
-              link.classList.remove("active");
-            });
-            activeLink.classList.add("active");
-          }
-        });
-      }
-
-      function toggleScrollspy() {
-        scrollspy.classList.toggle("active");
-      }
-
-      // Actualización inicial de ScrollSpy
-      updateScrollspy();
-
-      // Listeners para eventos
-      scrollspy.addEventListener("click", toggleScrollspy);
-      window.addEventListener("scroll", updateScrollspy);
+      toggleBtn.addEventListener("click", function () {
+        sectionContents.classList.toggle("active");
+      });
     });
   </script>
 </body>
 </html>
+
+
 
 
 
