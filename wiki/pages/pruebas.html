@@ -79,17 +79,61 @@
     }
 
     /* Estilos para el rectángulo de secciones */
+    .section-contents {
+      display: none;
+      position: fixed;
+      top: 50px;
+      right: 0;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 200px;
+      z-index: 1000;
+      transition: max-height 0.3s ease-in-out;
+      
+    }
+
+    .section-contents ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+
+    .section-contents li {
+      margin-bottom: 10px;
+    }
+
+    .section-contents a {
+      color: #333;
+      text-decoration: none;
+      display: block;
+      padding: 8px;
+      border-radius: 3px;
+    }
+
+    .section-contents a:hover {
+      background-color: #f8f9fa;
+    }
+
+    .section-contents.active {
+      display: block;
+    }
+    /* Estilos para el contenedor de secciones */
     .sections-container {
       overflow: hidden;
       max-height: 0;
       transition: max-height 0.3s ease-in-out;
     }
 
+    /* Estilos para el botón de despliegue */
     .toggle-btn {
       /* ... otros estilos ... */
       cursor: pointer;
     }
 
+    /* Estilos para el contenedor de secciones cuando está activo */
     .sections-container.active {
       max-height: 500px; /* Ajusta el valor según el contenido de las secciones */
       transition: max-height 0.3s ease-in-out;
@@ -108,24 +152,28 @@
 
   <nav class="scrollspy active" id="scrollspy">
     <div class="toggle-btn" id="toggleBtn">⬇ Contents</div>
-    <div class="sections-container" id="sectionsContainer">
-      <section id="seccion1">
-        <h2>Sección 1</h2>
-        <p>Contenido de la sección 1.</p>
-      </section>
-      <section id="seccion2">
-        <h2>Sección 2</h2>
-        <p>Contenido de la sección 2.</p>
-      </section>
-      <section id="seccion3">
-        <h2>Sección 3</h2>
-        <p>Contenido de la sección 3.</p>
-      </section>
+    <div class="section-contents" id="sectionContents">
+      <ul>
+        <li><a href="#seccion1">Sección 1</a></li>
+        <li><a href="#seccion2">Sección 2</a></li>
+        <li><a href="#seccion3">Sección 3</a></li>
+      </ul>
     </div>
   </nav>
 
   <main>
-    <!-- ... contenido de las secciones ... -->
+    <section id="seccion1">
+      <h2>Sección 1</h2>
+      <p>Contenido de la sección 1.</p>
+    </section>
+    <section id="seccion2">
+      <h2>Sección 2</h2>
+      <p>Contenido de la sección 2.</p>
+    </section>
+    <section id="seccion3">
+      <h2>Sección 3</h2>
+      <p>Contenido de la sección 3.</p>
+    </section>
   </main>
 
   <!-- Bootstrap JS and jQuery -->
@@ -134,16 +182,15 @@
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const toggleBtn = document.getElementById("toggleBtn");
-      const sectionsContainer = document.getElementById("sectionsContainer");
+      const sectionContents = document.getElementById("sectionContents");
 
       toggleBtn.addEventListener("click", function () {
-        sectionsContainer.classList.toggle("active");
+        sectionContents.classList.toggle("active");
       });
     });
   </script>
 </body>
 </html>
-
 
 
 
