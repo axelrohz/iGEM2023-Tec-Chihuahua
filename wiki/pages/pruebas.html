@@ -269,15 +269,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      const scrollspy = document.getElementById("scrollspy");
-      const sectionContents = document.querySelector(".section-contents");
-
-      function toggleSectionContents() {
-        sectionContents.classList.toggle("active");
-      }
-
+      const sectionContents = document.querySelector(".scrollspy ul");
       const toggleBtn = document.getElementById("toggleBtn");
-      toggleBtn.addEventListener("click", toggleSectionContents);
+
+      toggleBtn.addEventListener("click", function () {
+        sectionContents.classList.toggle("active");
+      });
     });
   </script>
 </body>
