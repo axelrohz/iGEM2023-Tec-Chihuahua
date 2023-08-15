@@ -122,73 +122,74 @@
     }
 
     /*cards*/
-    .card {
-  position: relative;
+    .container {
   width: 190px;
   height: 254px;
-  color: #fff;
-  transition: 0.5s;
-  cursor: pointer;
-}
-
-.card:hover {
-  transform: translateY(-20px);
-}
-
-.card::before {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: linear-gradient(45deg, #ffbc00, #ff0058);
-  border-radius: 1.2em;
-}
-
-.card::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(45deg, #ffbc00, #ff0058);
-  filter: blur(30px);
-}
-
-.card span {
-  position: absolute;
-  top: 6px;
-  left: 6px;
-  right: 6px;
-  bottom: 6px;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 2;
-  border-radius: 1em;
-}
-
-.card span::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.card .content {
+  background: transparent;
   position: relative;
-  padding: 10px;
-  z-index: 10;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.438);
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card {
+  cursor: default;
   width: 100%;
   height: 100%;
+  position: relative;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 800;
-  font-size: 1.5em;
+  font-size: 34px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #212121;
+  background-color: rgba(255, 255, 255, 0.074);
+  border: 1px solid rgba(255, 255, 255, 0.222);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  transition: all ease .3s;
+}
+
+.container::after,
+.container::before {
+  width: 100px;
+  height: 100px;
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  transition: .5s linear;
+}
+
+.container::after {
+  top: -20px;
+  left: -20px;
+  background-color: rgba(125, 214, 66, 0.603);
+  animation: animFirst 5s linear infinite;
+}
+
+.container::before {
+  background-color: rgb(226, 223, 54);
+  top: 70%;
+  left: 70%;
+  animation: animSecond 5s linear infinite;
+  animation-delay: 3s;
+}
+
+.container:hover {
+  box-shadow: 0px 0px 10px rgba(0, 77, 32, 0.432)
+}
+
+.container:hover::after {
+  left: 80px;
+  transform: scale(1.2);
+}
+
+.container:hover::before {
+  left: -10px;
+  transform: scale(1.2);
 }
   </style>
 </head>
@@ -238,11 +239,13 @@
       <p  style="text-align:justify">
         In fact, 82% of total world milk is obtained from cattle[3], and  its production has increased more than 59% in the last three decades, from 530 million tons in 1988 to 843 million tons in 2018. About 150 million households worldwide are engaged in dairy farming. In most developing countries, milk production is carried out by smallholders, exerting a significant impact on household livelihoods, food security and nutritional requirements. For these smallholders dairy farming offers a crucial source of income[4].
       </p>
-      <div class="card">
-        <span></span>
-                 <div class="content">82% of total world milk is obtained from cattle</div>
-             </div>
-      </section>
+      <div class="container">
+        <div class="card">
+          <h1>82% of total world milk</h1>
+          <h2>is obtained from cattle</h2>
+        </div>
+      </div>
+     
       <br>
       <p  style="text-align:justify">
         We believe that our project has the potential to make a significant impact, not just within Chihuahua’s dairy sector, but also on a global scale across the dairy industry. By developing a treatment for mastitis, we can help to reduce the financial losses caused by this disease, improve the health of dairy cows, and help reduce milk loss. This will make a difference for dairy farmers in Chihuahua and around the globe. For the most part, it will help to ensure that milk remains as a safe and affordable source of nutrients for people all around the world. 
