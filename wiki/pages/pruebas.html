@@ -171,6 +171,33 @@
       <p  style="text-align:justify">
         In fact, 82% of total world milk is obtained from cattle[3], and  its production has increased more than 59% in the last three decades, from 530 million tons in 1988 to 843 million tons in 2018. About 150 million households worldwide are engaged in dairy farming. In most developing countries, milk production is carried out by smallholders, exerting a significant impact on household livelihoods, food security and nutritional requirements. For these smallholders dairy farming offers a crucial source of income[4].
       </p>
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Work',     11],
+          ['Eat',      2],
+          ['Commute',  2],
+          ['Watch TV', 2],
+          ['Sleep',    7]
+        ]);
+
+        var options = {
+          title: 'My Daily Activities',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+    </script>
+ 
+  <body>
+    <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
+  </body>
       <br>
       <p  style="text-align:justify">
         We believe that our project has the potential to make a significant impact, not just within Chihuahua’s dairy sector, but also on a global scale across the dairy industry. By developing a treatment for mastitis, we can help to reduce the financial losses caused by this disease, improve the health of dairy cows, and help reduce milk loss. This will make a difference for dairy farmers in Chihuahua and around the globe. For the most part, it will help to ensure that milk remains as a safe and affordable source of nutrients for people all around the world. 
