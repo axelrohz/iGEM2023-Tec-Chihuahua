@@ -122,75 +122,81 @@
     }
 
     /*cards*/
-    .container {
-  width: 190px;
-  height: 254px;
-  background: transparent;
+    .card-container {
+  width: 300px;
+  height: 300px;
   position: relative;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.438);
-  overflow: hidden;
   border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 
 .card {
-  cursor: default;
   width: 100%;
   height: 100%;
-  position: relative;
-  z-index: 2;
+  border-radius: inherit;
+}
+
+.card .front-content {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 34px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #212121;
-  background-color: rgba(255, 255, 255, 0.074);
-  border: 1px solid rgba(255, 255, 255, 0.222);
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
-  border-radius: 10px;
-  transition: all ease .3s;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
 }
 
-.container::after,
-.container::before {
-  width: 100px;
-  height: 100px;
-  content: '';
+.card .front-content p {
+  font-size: 32px;
+  font-weight: 700;
+  opacity: 1;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
+}
+
+.card .content {
   position: absolute;
-  border-radius: 50%;
-  transition: .5s linear;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+  color: #e8e8e8;
+  padding: 20px;
+  line-height: 1.5;
+  border-radius: 5px;
+  pointer-events: none;
+  transform: translateY(96%);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-.container::after {
-  top: -20px;
-  left: -20px;
-  background-color: rgba(125, 214, 66, 0.603);
-  animation: animFirst 5s linear infinite;
+.card .content .heading {
+  font-size: 32px;
+  font-weight: 700;
 }
 
-.container::before {
-  background-color: rgb(226, 223, 54);
-  top: 70%;
-  left: 70%;
-  animation: animSecond 5s linear infinite;
-  animation-delay: 3s;
+.card:hover .content {
+  transform: translateY(0);
 }
 
-.container:hover {
-  box-shadow: 0px 0px 10px rgba(0, 77, 32, 0.432)
+.card:hover .front-content {
+  transform: translateY(-30%);
 }
 
-.container:hover::after {
-  left: 80px;
-  transform: scale(1.2);
+.card:hover .front-content p {
+  opacity: 0;
 }
 
-.container:hover::before {
-  left: -10px;
-  transform: scale(1.2);
-}
+
   </style>
 </head>
 <body>
@@ -239,16 +245,29 @@
       <p  style="text-align:justify">
         In fact, 82% of total world milk is obtained from cattle[3], and  its production has increased more than 59% in the last three decades, from 530 million tons in 1988 to 843 million tons in 2018. About 150 million households worldwide are engaged in dairy farming. In most developing countries, milk production is carried out by smallholders, exerting a significant impact on household livelihoods, food security and nutritional requirements. For these smallholders dairy farming offers a crucial source of income[4].
       </p>
-      <div class="container">
-        <div class="card">
-          hover
-        </div>
-      </div>
+      
      
       <br>
       <p  style="text-align:justify">
         We believe that our project has the potential to make a significant impact, not just within Chihuahua’s dairy sector, but also on a global scale across the dairy industry. By developing a treatment for mastitis, we can help to reduce the financial losses caused by this disease, improve the health of dairy cows, and help reduce milk loss. This will make a difference for dairy farmers in Chihuahua and around the globe. For the most part, it will help to ensure that milk remains as a safe and affordable source of nutrients for people all around the world. 
       </p>
+      <br>
+      <div class="card-container">
+        <div class="card">
+        <div class="front-content">
+          <p>Why?</p>
+        </div>
+        <div class="content">
+          <p class="heading">Card Hover</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipii
+            voluptas ten mollitia pariatur odit, ab
+            minus ratione adipisci accusamus vel est excepturi laboriosam magnam
+            necessitatibus dignissimos molestias.
+          </p>
+        </div>
+      </div>
+      </div>
     </section>
     <section id="seccion2">
       <h2>Into the Udder / Impact of Bovine Mastitis</h2>
