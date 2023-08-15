@@ -5,13 +5,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'InterTight', sans-serif;
+    font-family: 'Oswald', sans-serif;
     user-select: text;
   }
 
 .mybody {
 	font-size: 14px;
-	font-family: "Inter Tight";
+	font-family: "Oswald";
 	background-color: #f3f5f9;
     font-weight: 300;
     line-height: 1.42em;
@@ -133,7 +133,7 @@
     font-weight: 800;
     text-shadow: 2px 2px 4px #302535;
     position: relative;
-    font-family: 'Inter Tight';
+    font-family: 'Oswald';
   }
   
   @media (max-width: 660px) {
@@ -148,7 +148,7 @@
       font-weight: 800;
       text-shadow: 2px 2px 4px #302535;
       position: relative;
-      font-family: 'Inter Tight'; 
+      font-family: 'Oswald'; 
       font-size: 1.5rem;
     }
     
