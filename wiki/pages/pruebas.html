@@ -127,40 +127,34 @@
   height: 300px;
   position: relative;
   border-radius: 10px;
-}
-
-.card-container::before {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
-  transform: translate3d(0, 0, 0) scale(0.95);
-  filter: blur(20px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 
 .card {
   width: 100%;
   height: 100%;
   border-radius: inherit;
-  overflow: hidden;
 }
 
-.card .img-content {
+.card .front-content {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
-  transition: scale 0.6s, rotate 0.6s, filter 1s;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
 }
 
-.card .img-content svg {
-  width: 50px;
-  height: 50px;
-  fill: #e8e8e8;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+.card .front-content p {
+  font-size: 32px;
+  font-weight: 700;
+  opacity: 1;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
 }
 
 .card .content {
@@ -175,13 +169,13 @@
   justify-content: center;
   text-align: center;
   gap: 10px;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
   color: #e8e8e8;
   padding: 20px;
   line-height: 1.5;
   border-radius: 5px;
-  opacity: 0;
   pointer-events: none;
-  transform: translateY(50px);
+  transform: translateY(-96%);
   transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
@@ -191,19 +185,17 @@
 }
 
 .card:hover .content {
-  opacity: 1;
   transform: translateY(0);
 }
 
-.card:hover .img-content {
-  scale: 2.5;
-  rotate: 30deg;
-  filter: blur(7px);
+.card:hover .front-content {
+  transform: translateY(30%);
 }
 
-.card:hover .img-content svg {
-  fill: transparent;
+.card:hover .front-content p {
+  opacity: 0;
 }
+
 
 
 
@@ -265,8 +257,8 @@
       <br>
       <div class="card-container">
         <div class="card">
-        <div class="img-content">
-          <hq>Why</hq>
+        <div class="front-content">
+          <p>Hover me</p>
         </div>
         <div class="content">
           <p class="heading">Card Hover</p>
@@ -279,6 +271,7 @@
         </div>
       </div>
       </div>
+      
       
     </section>
     <section id="seccion2">
