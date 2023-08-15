@@ -122,112 +122,81 @@
     }
 
     /*cards*/
-    .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 350px;
-  background: #444;
-  border-radius: 10px;
-}
-
-.card {
+    .card-container {
+  width: 300px;
+  height: 300px;
   position: relative;
-  background: #333;
-  width: 250px;
-  height: 350px;
   border-radius: 10px;
-  padding: 2rem;
-  color: #aaa;
-  box-shadow: 0 .25rem .25rem rgba(0,0,0,0.2),
-    0 0 1rem rgba(0,0,0,0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
 
-.card__image-container {
-  margin: -2rem -2rem 1rem -2rem;
+.card {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
 }
 
-.card__line {
-  opacity: 0;
-  animation: LineFadeIn .8s .8s forwards ease-in;
+.card .front-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
 }
 
-.card__image {
-  opacity: 0;
-  animation: ImageFadeIn .8s 1.4s forwards;
+.card .front-content p {
+  font-size: 32px;
+  font-weight: 700;
+  opacity: 1;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
 }
 
-.card__title {
-  color: white;
-  margin-top: 35px;
-  margin-bottom: 10px;
-  font-weight: 800;
-  letter-spacing: 0.01em;
-}
-
-.card__content {
-  margin-top: -1rem;
-  opacity: 0;
-  animation: ContentFadeIn .8s 1.6s forwards;
-}
-
-.card__svg {
+.card .content {
   position: absolute;
+  top: 0;
   left: 0;
-  top: 115px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+  color: #e8e8e8;
+  padding: 20px;
+  line-height: 1.5;
+  border-radius: 5px;
+  pointer-events: none;
+  transform: translateX(-96%);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-@keyframes LineFadeIn {
-  0% {
-    opacity: 0;
-    d: path("M 0 300 Q 0 300 0 300 Q 0 300 0 300 C 0 300 0 300 0 300 Q 0 300 0 300 ");
-    stroke: #fff;
-  }
-
-  50% {
-    opacity: 1;
-    d: path("M 0 300 Q 50 300 100 300 Q 250 300 350 300 C 350 300 500 300 650 300 Q 750 300 800 300");
-    stroke: #888BFF;
-  }
-
-  100% {
-    opacity: 1;
-    d: path("M -2 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 802 400");
-    stroke: #545581;
-  }
+.card .content .heading {
+  font-size: 32px;
+  font-weight: 700;
 }
 
-@keyframes ContentFadeIn {
-  0% {
-    transform: translateY(-1rem);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+.card:hover .content {
+  transform: translateY(0);
 }
 
-@keyframes ImageFadeIn {
-  0% {
-    transform: translate(-.5rem, -.5rem) scale(1.05);
-    opacity: 0;
-    filter: blur(2px);
-  }
-
-  50% {
-    opacity: 1;
-    filter: blur(2px);
-  }
-
-  100% {
-    transform: translateY(0) scale(1.0);
-    opacity: 1;
-    filter: blur(0);
-  }
+.card:hover .front-content {
+  transform: translateX(-30%);
 }
+
+.card:hover .front-content p {
+  opacity: 0;
+}
+
+
 
 
 
@@ -286,23 +255,23 @@
         We believe that our project has the potential to make a significant impact, not just within Chihuahua’s dairy sector, but also on a global scale across the dairy industry. By developing a treatment for mastitis, we can help to reduce the financial losses caused by this disease, improve the health of dairy cows, and help reduce milk loss. This will make a difference for dairy farmers in Chihuahua and around the globe. For the most part, it will help to ensure that milk remains as a safe and affordable source of nutrients for people all around the world. 
       </p>
       <br>
-      <div class="container">
+      <div class="card-container">
         <div class="card">
-           <div class="card__image-container">
-          </div>
-            
-            <svg class="card__svg" viewBox="0 0 800 500">
-      
-              <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333"></path>
-              <path class="card__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent"></path>
-            </svg>
-          
-           <div class="card__content">
-             <p class="card__title">why?</p>
-           <p>Soluta dolor praesentium at quod autem omnis, amet earum nesciunt porro.</p>
-          </div>
+        <div class="front-content">
+          <p>Hover me</p>
+        </div>
+        <div class="content">
+          <p class="heading">Card Hover</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipii
+            voluptas ten mollitia pariatur odit, ab
+            minus ratione adipisci accusamus vel est excepturi laboriosam magnam
+            necessitatibus dignissimos molestias.
+          </p>
         </div>
       </div>
+      </div>
+      
    
       
       
