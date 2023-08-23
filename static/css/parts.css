@@ -1,0 +1,66 @@
+.dad{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f8fa;
+}
+.headParts{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    height: 650px;
+}
+
+.headParts .headingParts{
+    width: 100%;
+    height: 450px;
+    background-color: #5BC5AB;
+}
+
+.headingParts .textParts{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 170px;
+
+}
+
+.headingParts .textParts h1{
+    font-size: 7rem;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+}
+
+.headingParts .textParts h3{
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    width: 55%;
+    margin: 0 auto;
+}
+
+.headParts .waveParts{
+    width: 100%;
+    transform: scaleY(-0.5);
+    position: relative;
+    top: -16vw;
+    z-index: -2;
+
+}
+
+.text{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 70px;
+}
+.ex{
+    width: 100%;
+
+}
