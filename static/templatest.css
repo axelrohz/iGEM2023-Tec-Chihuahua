@@ -133,12 +133,15 @@ h1, h2, h3, h4, h5, h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
-
+.nav-menu{
+  height: 100%;
+}
 
 .nav-menu, .nav-menu * {
   margin: 0;
   padding: 0;
   list-style: none;
+  height: 100%;
 }
 
 .nav-menu > ul > li {
@@ -176,9 +179,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: ease all 0.3s;
   overflow: visible;
 
-  padding: 0;
-  margin: 0;
-  list-style: none;
+  
 
 }
 
