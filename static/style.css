@@ -559,10 +559,8 @@ body {
   .container td:first-child { color: #C55B75; font-family: 'Inter Tight'; font-weight: 600;}
 
   .container tr:hover {
-    background-color: #ffffff;
-  -webkit-box-shadow: 0 6px 6px -6px #ffffff;
-      -moz-box-shadow: 0 6px 6px -6px #ffffff;
-            box-shadow: 0 6px 6px -6px #ffffff;
+    background-color: #ff0000;
+  
   }
 
   .container td:hover {
