@@ -558,24 +558,7 @@ body {
 
   .container td:first-child { color: #C55B75; font-family: 'Inter Tight'; font-weight: 600;}
 
-  .container tr:hover {
-    background-color: #ffffff;
-  -webkit-box-shadow: 0 6px 6px -6px #ffffff;
-      -moz-box-shadow: 0 6px 6px -6px #ffffff;
-            box-shadow: 0 6px 6px -6px #ffffff;
-  }
-
-  .container td:hover {
-    background-color: #F3F3FA;
-    color: #302535;
-    
-    box-shadow: #C55B75 -1px 1px, #D27063 -2px 2px, #DE8551 -3px 3px, #F6AE2D -4px 4px;
-    transform: translate3d(4px, -50px, 0);
-    transition-delay: 0s;
-      transition-duration: 0.4s;
-      transition-property: all;
-    transition-timing-function: line;
-  }
+  
 
   @media (max-width: 800px) {
   .container td:nth-child(4),
