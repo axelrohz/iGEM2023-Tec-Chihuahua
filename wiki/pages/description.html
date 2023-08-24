@@ -41,14 +41,7 @@
             </div>
             <div class="teamScroll">
                 <div class="wrap" id="sec1">
-                    <div><h1>FOOD SAFETY STARTS ON THE FARM</h1></div>
-                    <div><h2>AureoBos’ Origin </h2></div>
-                    <p>
-                      In the biggest state of Mexico, Chihuahua, lies our tight-knit team, bound not only by our passion for science but also by our love for our community. Our connection to the region, rich in stunning landscapes and warm people, drives our work. The state's economy thrives on mining, agriculture, and livestock activities, with the determination of its residents shaping society's core. During the project's early stages, inspired by a story from our teammate Alexa about her godmother's dairy farm challenges, we delved into dairy farming issues. Mastitis, a prevalent disease affecting dairy cattle, caught our attention due to its significant multifaceted impact on dairy owners. Motivated by Chihuahua's prominence in the Mexican dairy industry [1], we recognized the global significance of addressing this issue.
-                      Analyzing the problems that impact the world, we sought to understand how our community is bound to the international economic activities, and we found the perfect candidate: milk. Milk is a nutrient-dense food that plays an important role in the diet of over 6 billion people around the world. It provides high-quality protein and essential micronutrients in an easily absorbed form (figure 1) [2]. 
-                    </p>
-                    <img  src="https://static.igem.wiki/teams/4607/wiki/project-description/images/milk-nutrients-100g.png">
-
+                    
                 </div>
                 <div>
 
@@ -57,57 +50,7 @@
         </div>
 
     </div>
-    <script type="text/javascript" src="{{ url_for('static', filename = 'assets/js/team.js') }}"></script>
-    <script type="text/javascript">
-        var tScroll = document.querySelectorAll('.teamScroll');
-        tScroll[0].addEventListener('scroll', teamColor);
 
-        function teamColor() {
-            var sect1 = document.getElementById('sec1');
-            var sect2 = document.getElementById('sec2');
-            var sect3 = document.getElementById('sec3');
-            var sect4 = document.getElementById('sec4');
-
-            var sect1Top = sect1.getBoundingClientRect().top;
-            var sect2Top = sect2.getBoundingClientRect().top;
-            var sect3Top = sect3.getBoundingClientRect().top;
-            var sect4Top = sect4.getBoundingClientRect().top;
-
-            var body = document.querySelectorAll('.teamBody');
-            var bodyTop = body[0].getBoundingClientRect().top;
-
-            var windowheight = window.innerHeight;
-            var ofset = 50;
-
-            var stickhead = document.querySelectorAll('.stickhead')[0];
-
-            if (sect4Top < windowheight / 2 + ofset) {
-                stickhead.classList.add('s4');
-                stickhead.classList.remove('s3');
-                stickhead.classList.remove('s2');
-                stickhead.classList.remove('s1');
-            } else {
-                if (sect3Top < windowheight / 2 + ofset) {
-                    stickhead.classList.add('s3');
-                    stickhead.classList.remove('s4');
-                    stickhead.classList.remove('s2');
-                    stickhead.classList.remove('s1');
-                } else {
-                    if (sect2Top < windowheight / 2 + ofset) {
-                        stickhead.classList.add('s2');
-                        stickhead.classList.remove('s4');
-                        stickhead.classList.remove('s1');
-                        stickhead.classList.remove('s3');
-                    } else {
-                        stickhead.classList.add('s1');
-                        stickhead.classList.remove('s4');
-                        stickhead.classList.remove('s2');
-                        stickhead.classList.remove('s3');
-                    }
-                }
-            }
-        }
-    </script>
 </body>
 </html>
 
