@@ -51,7 +51,66 @@
 
     </div>
     <h1 class="fancy-title">Título Subrayado</h1>
-
+    <script type="text/javascript">
+        var tScroll = document.querySelectorAll('.teamScroll');
+  tScroll[0].addEventListener('scroll',teamColor);
+  
+  function teamColor(){
+      var sect1 = document.getElementById('sec1');
+      var sect2 = document.getElementById('sec2');
+      var sect3 = document.getElementById('sec3');
+      var sect4 = document.getElementById('sec4');
+  
+      var sect1Top = sect1.getBoundingClientRect().top;
+      var sect2Top = sect2.getBoundingClientRect().top;
+      var sect3Top = sect3.getBoundingClientRect().top;
+      var sect4Top = sect4.getBoundingClientRect().top;
+      
+      var body = document.querySelectorAll('.teamBody');
+      var bodyTop = body[0].getBoundingClientRect().top;
+      
+      var windowheight = window.innerHeight;
+      var ofset = 50
+  
+      var stickhead = document.querySelectorAll('.stickhead')[0];
+      
+  
+      if(sect4Top < windowheight/2 + ofset){
+          
+        stickhead.classList.add('s4');
+        stickhead.classList.remove('s3');
+        stickhead.classList.remove('s2');
+        stickhead.classList.remove('s1');
+          
+      } else{
+        if (sect3Top < windowheight/2 + ofset){
+  
+          stickhead.classList.add('s3');
+          stickhead.classList.remove('s4');
+          stickhead.classList.remove('s2');
+          stickhead.classList.remove('s1');
+  
+        } else{
+          if (sect2Top < windowheight/2 + ofset){
+      
+            stickhead.classList.add('s2');
+            stickhead.classList.remove('s4');
+            stickhead.classList.remove('s1');
+            stickhead.classList.remove('s3');
+            
+          } else{
+                  
+            stickhead.classList.add('s1');
+            stickhead.classList.remove('s4');
+            stickhead.classList.remove('s2');
+            stickhead.classList.remove('s3');
+          }
+        }
+      }
+  
+      
+  }
+      </script>
 </body>
 </html>
 
