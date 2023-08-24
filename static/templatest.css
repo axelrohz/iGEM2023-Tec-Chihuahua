@@ -163,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu .drop-down ul {
-  display:flex;
+  display:block;
   position: absolute;
   left: 0;
   top: calc(100% + 30px);
