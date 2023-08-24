@@ -133,6 +133,10 @@ h1, h2, h3, h4, h5, h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
+.nav-menu{
+  z-index: 99;
+}
+
 .nav-menu, .nav-menu * {
   margin: 0;
   padding: 0;
@@ -156,7 +160,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #ff0000;
+  color: #00e1ff;
   text-decoration: none;
 }
 
