@@ -558,6 +558,15 @@ body {
 
   .container td:first-child { color: #C55B75; font-family: 'Inter Tight'; font-weight: 600;}
 
+  .container td:hover {
+    animation-name: example;
+    animation-duration: 4s;
+  }
+  
+  @keyframes example {
+    from {color: red;}
+    to {color: yellow;}
+  }
   
 
   @media (max-width: 800px) {
