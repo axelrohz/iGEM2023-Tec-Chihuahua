@@ -525,9 +525,9 @@ body {
   .container td {
       font-weight: normal;
       font-size: 1em;
-    -webkit-box-shadow: 0 2px 2px -2px #ffffff;
-      -moz-box-shadow: 0 2px 2px -2px #ffffff;
-            box-shadow: 0 2px 2px -2px #ffffff;
+    -webkit-box-shadow: 0 2px 2px -2px #f7f8fa;
+      -moz-box-shadow: 0 2px 2px -2px #f7f8fa;
+            box-shadow: 0 2px 2px -2px #f7f8fa;
   }
 
   .container {
