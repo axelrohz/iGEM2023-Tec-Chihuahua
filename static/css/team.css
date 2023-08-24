@@ -1,22 +1,7 @@
 /*Team Layout*/
   @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&display=swap');
 
-  .mybody::-webkit-scrollbar {
-    width: 100px;
-  }
-  
-  .mybody::-webkit-scrollbar-track {
-    background-color: #f1f1f1;
-  }
-  
-  .mybody::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 5px;
-  }
-  
-  .mybody::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
-  }
+ 
 
 .teamBody{
     display: flex;
