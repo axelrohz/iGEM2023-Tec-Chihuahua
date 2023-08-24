@@ -568,11 +568,11 @@ body {
   }
   
   td:nth-child(2) {
-    animation-delay: 0.2s;
+    animation-delay: 0.5s;
   }
   
   td:nth-child(3) {
-    animation-delay: 0.4s;
+    animation-delay: 1s;
   }
   
   @keyframes wave {
@@ -586,6 +586,7 @@ body {
       transform: translateY(0);
     }
   }
+  
   
 
   
