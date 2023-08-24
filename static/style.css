@@ -560,12 +560,12 @@ body {
 
   .container td:hover {
     animation-name: example;
-    animation-duration: 4s;
+    animation-duration: 0.2s;
   }
   
   @keyframes example {
-    from {color: red;}
-    to {color: yellow;}
+    from {background-color: red;}
+    to {background-color: yellow;}
   }
   
 
