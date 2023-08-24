@@ -6,18 +6,20 @@
 
 {% block page_content %}
 
-
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Enlaces a hojas de estilo CSS -->
     <link rel="stylesheet" href="../../static/css/body.css">
     <link rel="stylesheet" href="../../static/css/description.css">
     <link href="{{ url_for('static', filename = 'css/description.css') }}" rel="stylesheet">
     <link href="{{ url_for('static', filename = 'css/body.css') }}" rel="stylesheet">
 </head>
 <body class="mybody">
+    <!-- Imagen de fondo con clase "parallax-team" -->
     <img class="parallax-team" src="https://static.igem.wiki/teams/4607/wiki/project-description/images/dsc-0139.jpeg">
     <div class="image-space">
+        <!-- Título del equipo -->
         <h1 class="title">Team</h1>
     </div>
     <div class="parallax-content">
@@ -25,6 +27,7 @@
             <div class="stickhead">
                 <div class="teamHead">
                     <div class="teamTxt">
+                        <!-- Título de la descripción del proyecto -->
                         <h1 class="head">Project Description</h1>
                         <div class="teamList">
                             <a>- </a>
@@ -33,86 +36,81 @@
                             <a>- </a>
                         </div>
                     </div>
+                    <!-- Imagen SVG con una forma ondulante (wave) -->
                     <svg id="visual" class="wave" viewBox="0 0 450 900" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                        <path d="M334 900L337.8 878.5C341.7 857 349.3 814 354.5 771.2C359.7 728.3 362.3 685.7 354.3 642.8C346.3 600 327.7 557 319.8 514.2C312 471.3 315 428.7 324.3 385.8C333.7 343 349.3 300 351.3 257.2C353.3 214.3 341.7 171.7 343 128.8C344.3 86 358.7 43 365.8 21.5L373 0L450 0L450 21.5C450 43 450 86 450 128.8C450 171.7 450 214.3 450 257.2C450 300 450 343 450 385.8C450 428.7 450 471.3 450 514.2C450 557 450 600 450 642.8C450 685.7 450 728.3 450 771.2C450 814 450 857 450 878.5L450 900Z" fill="#dbdbdb"></path>
-                        <path d="M414 900L406.5 878.5C399 857 384 814 380 771.2C376 728.3 383 685.7 388.8 642.8C394.7 600 399.3 557 397.3 514.2C395.3 471.3 386.7 428.7 384.8 385.8C383 343 388 300 393.5 257.2C399 214.3 405 171.7 403.3 128.8C401.7 86 392.3 43 387.7 21.5L383 0L450 0L450 21.5C450 43 450 86 450 128.8C450 171.7 450 214.3 450 257.2C450 300 450 343 450 385.8C450 428.7 450 471.3 450 514.2C450 557 450 600 450 642.8C450 685.7 450 728.3 450 771.2C450 814 450 857 450 878.5L450 900Z" fill="#f3f5f9"></path>
+                        <!-- Definición de las formas de onda -->
+                        <path d="..." fill="#dbdbdb"></path>
+                        <path d="..." fill="#f3f5f9"></path>
                     </svg>
                 </div>
             </div>
             <div class="teamScroll">
                 <div class="wrap" id="sec1">
+                    <!-- Título subrayado -->
                     <h1 class="fancy-title">Título Subrayado</h1>
                 </div>
                 <div>
-
+                    <!-- Contenido adicional podría ir aquí -->
                 </div>
             </div>
         </div>
-
     </div>
     
+    <!-- Script para cambiar el color del encabezado del equipo mientras se desplaza -->
     <script type="text/javascript">
         var tScroll = document.querySelectorAll('.teamScroll');
-  tScroll[0].addEventListener('scroll',teamColor);
-  
-  function teamColor(){
-      var sect1 = document.getElementById('sec1');
-      var sect2 = document.getElementById('sec2');
-      var sect3 = document.getElementById('sec3');
-      var sect4 = document.getElementById('sec4');
-  
-      var sect1Top = sect1.getBoundingClientRect().top;
-      var sect2Top = sect2.getBoundingClientRect().top;
-      var sect3Top = sect3.getBoundingClientRect().top;
-      var sect4Top = sect4.getBoundingClientRect().top;
-      
-      var body = document.querySelectorAll('.teamBody');
-      var bodyTop = body[0].getBoundingClientRect().top;
-      
-      var windowheight = window.innerHeight;
-      var ofset = 50
-  
-      var stickhead = document.querySelectorAll('.stickhead')[0];
-      
-  
-      if(sect4Top < windowheight/2 + ofset){
-          
-        stickhead.classList.add('s4');
-        stickhead.classList.remove('s3');
-        stickhead.classList.remove('s2');
-        stickhead.classList.remove('s1');
-          
-      } else{
-        if (sect3Top < windowheight/2 + ofset){
-  
-          stickhead.classList.add('s3');
-          stickhead.classList.remove('s4');
-          stickhead.classList.remove('s2');
-          stickhead.classList.remove('s1');
-  
-        } else{
-          if (sect2Top < windowheight/2 + ofset){
-      
-            stickhead.classList.add('s2');
-            stickhead.classList.remove('s4');
-            stickhead.classList.remove('s1');
-            stickhead.classList.remove('s3');
+        tScroll[0].addEventListener('scroll',teamColor);
+        
+        function teamColor(){
+            // Obtiene las secciones y sus posiciones
+            var sect1 = document.getElementById('sec1');
+            var sect2 = document.getElementById('sec2');
+            var sect3 = document.getElementById('sec3');
+            var sect4 = document.getElementById('sec4');
+            // Calcula las posiciones de las secciones y el cuerpo del equipo
+            var sect1Top = sect1.getBoundingClientRect().top;
+            var sect2Top = sect2.getBoundingClientRect().top;
+            var sect3Top = sect3.getBoundingClientRect().top;
+            var sect4Top = sect4.getBoundingClientRect().top;
+            var body = document.querySelectorAll('.teamBody');
+            var bodyTop = body[0].getBoundingClientRect().top;
+            var windowheight = window.innerHeight;
+            var ofset = 50;
+            var stickhead = document.querySelectorAll('.stickhead')[0];
             
-          } else{
-                  
-            stickhead.classList.add('s1');
-            stickhead.classList.remove('s4');
-            stickhead.classList.remove('s2');
-            stickhead.classList.remove('s3');
-          }
+            // Cambia la clase del encabezado del equipo según la posición del scroll
+            if (sect4Top < windowheight/2 + ofset){
+                stickhead.classList.add('s4');
+                stickhead.classList.remove('s3');
+                stickhead.classList.remove('s2');
+                stickhead.classList.remove('s1');
+            } else{
+                if (sect3Top < windowheight/2 + ofset){
+                    stickhead.classList.add('s3');
+                    stickhead.classList.remove('s4');
+                    stickhead.classList.remove('s2');
+                    stickhead.classList.remove('s1');
+                } else{
+                    if (sect2Top < windowheight/2 + ofset){
+                        stickhead.classList.add('s2');
+                        stickhead.classList.remove('s4');
+                        stickhead.classList.remove('s1');
+                        stickhead.classList.remove('s3');
+                    } else{
+                        stickhead.classList.add('s1');
+                        stickhead.classList.remove('s4');
+                        stickhead.classList.remove('s2');
+                        stickhead.classList.remove('s3');
+                    }
+                }
+            }
         }
-      }
-  
-      
-  }
-      </script>
+    </script>
 </body>
 </html>
+
+
+
 
     
 {% endblock %}
