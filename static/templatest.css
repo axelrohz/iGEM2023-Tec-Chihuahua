@@ -133,10 +133,7 @@ h1, h2, h3, h4, h5, h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
-.nav-menu{
-  z-index: 99;
-  height: auto;
-}
+
 
 .nav-menu, .nav-menu * {
   margin: 0;
@@ -166,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu .drop-down ul {
-  display: block;
+  display:flex;
   position: absolute;
   left: 0;
   top: calc(100% + 30px);
@@ -178,6 +175,10 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: ease all 0.3s;
   overflow: visible;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
 
 }
 
