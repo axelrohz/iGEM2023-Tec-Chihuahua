@@ -133,21 +133,23 @@ h1, h2, h3, h4, h5, h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
-.nav-menu{
-  height: 50px;
-}
+
 
 .nav-menu, .nav-menu * {
   margin: 0;
   padding: 0;
   list-style: none;
-  height: 50px;
+  
 }
 
 .nav-menu > ul > li {
   position: relative;
   white-space: nowrap;
   float: left;
+}
+
+.container.d-flex{
+  height: 100%;
 }
 
 .nav-menu a {
