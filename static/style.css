@@ -547,16 +547,16 @@ body {
 
   /* Background-color of the odd rows */
   .container tr:nth-child(odd) {
-      background-color: #ffffff;
+      background-color: #f7f8fa;
   }
 
   /* Background-color of the even rows */
   .container tr:nth-child(even) {
-      background-color: #ffffff;
+      background-color: #f7f8fa;
   }
 
   .container th {
-      background-color: #ffffff;
+      background-color: #f7f8fa;
   }
 
   .container td:first-child { color: #C55B75; font-family: 'Inter Tight'; font-weight: 600;}
