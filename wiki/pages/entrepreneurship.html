@@ -5,39 +5,557 @@
 
 {% block page_content %}
 
+<link rel="stylesheet" href="static/css/parts.css">
+<script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
 
-
-<div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Best Supporting Entrepreneurship</h4>
-      <p>The Best Supporting Entrepreneurship award recognizes exceptional effort to build a business case and commercialize an iGEM project. This award is open to all teams to show that entrepreneurship is something all teams can aspire to do with their project. This award can go to an new project, or to a previous project that a team aimed to commercialize. Have you filed a provisional patent on your project/device/process? Have you raised money to build and ship products? Have you pitched your idea to investors and received money? As always in iGEM, the aim is to impress the judges!</p>
-      <p>To compete for the Best Supporting Entrepreneurship prize, please describe your work on this page and also fill out the description on the <a href="https://competition.igem.org/deliverables/judging-form">judging form</a>.</p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/awards">2023 Awards Page</a> for more information.</p>
+<body class="dad">
+<div class="headParts">
+    <div class="headingParts">
+        <div class="textParts">
+            <h1>Attributions</h1>
+            <h3> </h3>
+        </div>
     </div>
-  </div>
+
+    <svg class="waveParts" id="visual" viewBox="0 0 960 540" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+        <g>
+            <path id="wave11"
+                d="M0 335L20 326.2C40 317.3 80 299.7 120 292.3C160 285 200 288 240 301.8C280 315.7 320 340.3 360 348.3C400 356.3 440 347.7 480 337.2C520 326.7 560 314.3 600 311C640 307.7 680 313.3 720 321.2C760 329 800 339 840 332.2C880 325.3 920 301.7 940 289.8L960 278L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
+                fill="#A7DCD3"></path>
+            <path id="wave12"
+                d="M0 384L20 379.2C40 374.3 80 364.7 120 373.8C160 383 200 411 240 424C280 437 320 435 360 424.5C400 414 440 395 480 391.3C520 387.7 560 399.3 600 398.2C640 397 680 383 720 374.2C760 365.3 800 361.7 840 358.3C880 355 920 352 940 350.5L960 349L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
+                fill="#81D1BF"></path>
+            <path id="wave13"
+                d="M0 483L20 480.8C40 478.7 80 474.3 120 475.8C160 477.3 200 484.7 240 488.5C280 492.3 320 492.7 360 486.7C400 480.7 440 468.3 480 464.3C520 460.3 560 464.7 600 471C640 477.3 680 485.7 720 480.3C760 475 800 456 840 450.8C880 445.7 920 454.3 940 458.7L960 463L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
+                fill="#5BC5AB"></path>
+        </g>
+        <g style="visibility: hidden">
+            <path id="wave21"
+                d="M0 315L20 324.2C40 333.3 80 351.7 120 354.3C160 357 200 344 240 333.3C280 322.7 320 314.3 360 324C400 333.7 440 361.3 480 358.8C520 356.3 560 323.7 600 311.8C640 300 680 309 720 321.7C760 334.3 800 350.7 840 344.2C880 337.7 920 308.3 940 293.7L960 279L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
+                fill="#A7DCD3"></path>
+            <path id="wave22"
+                d="M0 387L20 390.3C40 393.7 80 400.3 120 394.8C160 389.3 200 371.7 240 376.2C280 380.7 320 407.3 360 421.2C400 435 440 436 480 433.7C520 431.3 560 425.7 600 414.7C640 403.7 680 387.3 720 382.7C760 378 800 385 840 384.5C880 384 920 376 940 372L960 368L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
+                fill="#81D1BF"></path>
+            <path id="wave23"
+                d="M0 485L20 486.7C40 488.3 80 491.7 120 490.5C160 489.3 200 483.7 240 479.5C280 475.3 320 472.7 360 466.8C400 461 440 452 480 449.5C520 447 560 451 600 458.2C640 465.3 680 475.7 720 478.3C760 481 800 476 840 469C880 462 920 453 940 448.5L960 444L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
+                fill="#5BC5AB"></path>
+        </g>
+
+
+    </svg>
+
+    <script>
+        const tween = KUTE.fromTo(
+            '#wave11',
+            { path: '#wave11' },
+            { path: '#wave21' },
+            { repeat: 999, duration: 5000, yoyo: true }
+        ).start();
+    </script>
+    <script>
+        const tween2 = KUTE.fromTo(
+            '#wave12',
+            { path: '#wave12' },
+            { path: '#wave22' },
+            { repeat: 999, duration: 4000, yoyo: true }
+        ).start();
+    </script>
+    <script>
+        const tween3 = KUTE.fromTo(
+            '#wave13',
+            { path: '#wave13' },
+            { path: '#wave23' },
+            { repeat: 999, duration: 3000, yoyo: true }
+        ).start();
+    </script>
+
+
 </div>
 
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>Patents and intellectual property</h2>
-    <hr>
-    <p>If your team is seriously considering commercializing and looking into building a company after the competition, you may want to look at how you are going to protect your work and secure investment. Investors will usually require some form of intellectual protection, so you may want to investigate how to apply for a patent or provisional patent in your country and region before disclosing your project at iGEM. Remember that you can only be evaluated in iGEM based on what you share on your wiki and at the Jamboree, so any work you don't present can't count towards your project.</p>
-    <p>This is an area where we are different as we care about sharing, openness and contributing to the community and investors don't always agree with these values. It is up to you and your team to decide what to do. Remember that most universities have a commercialization department and that you can talk to them before coming to a decision.</p>
-  </div>
-  <div class="col-lg-4">
-    <h2>Inspirations</h2>
-    <hr>
-    <ul>
-      <li><a href="https://2019.igem.org/Team:UCopenhagen/Entrepreneurship">2019 UCopenhagen</a></li>
-      <li><a href="https://2019.igem.org/Team:Thessaly/Entrepreneurship">2019 Thessaly</a></li>
-      <li><a href="https://2019.igem.org/Team:NCKU_Tainan/Entrepreneurship">2019 NCKU Tainan</a></li>
-      <li><a href="https://2020.igem.org/Team:TAS_Taipei/Entrepreneurship">2020 TAS Taipei</a></li>
-      <li><a href="https://2020.igem.org/Team:KCL_UK/Entrepreneurship">2020 KCL UK</a></li>
-      <li><a href="https://2020.igem.org/Team:Calgary/Entrepreneurship">2020 Calgary</a></li>
-    </ul>
-  </div>
-</div>
+<table class="container">
+	<thead>
+		<tr>
+			<th><h1>Name</h1></th>
+			<th><h1>Rol</h1></th>
+			<th><h1>General Tasks</h1></th>
+			<th><h1>Specific Tasks</h1></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Cynthia Lizeth González Trevizo</td>
+			<td><b>Primary Instructor</b></td>
+			<td> Supervision, Analysis,
+        Background Research,
+        Project Administration, 
+        Fundraising
+      </td>
+			<td>(1) <b>Supervision.</b> Supervised all of the work our team did <br> (2) <b>Analysis.</b> Verified the feasibility of the project idea presented by the team members <br> (3) <b>Background Research.</b> Reading and debugging of scientific articles and regulations about animal medicines <br> (4) <b>Project Administration.</b> Managed the activities carried out by all team members, instructors, advisors, sponsorships, the scientific community, and our university <br>(5) <b>Fundraising.</b> Raised in-kind donations for the development of the project and obtained financial support from our university</td>
+		</tr>
+		<tr>
+			<td>Gladys Guadalupe López Ávalos</td>
+			<td><b>Secondary PI</b></td>
+			<td>Supervision, Background Research</td>
+			<td>(1) <b>Supervision.</b> Helped us by supervising and validating all the protocols carried out in the experimental part. <br>(2) <b>Background Research.</b> Helped us by reviewing the literature for the comparison and analysis of the results obtained in the laboratory</td>
+		</tr>
+		<tr>
+			<td>María Sofía Lopez Vargas</td>
+			<td><b>Student Leader</b></td>
+			<td>Supervision, Analysis, Conceptualization, Background Research, Project Administration, Fundraising, Public Engagement, Writing </td>
+			<td>(1) <b>Supervision.</b> Supervised all of the work our different team areas carried out <br> (2) <b>Analysis.</b> Analyzed data and literature documented by past iGEM teams related to mastitis <br> (3) <b>Conceptualization.</b> Contributed with the development of ideas to improve the initial project proposal <br>(4) <b>Background Research.</b> Reading and debugging of scientific articles and regulations about animal medicines <br> (5) <b>Project Administration.</b> Managed and coordinated the project activities, planning, and execution <br> (6) <b>Fundraising.</b> Raised money for the development of our project through the sale of desserts, raffle tickets and search for sponsorships <br> (7) <b>Public Engagement.</b> Engaged with the community through interviews and diffusion of information about the problematic <br> (8) <b>Writing.</b> Wrote and edited the content for the wiki regarding human practices, wrote and reviewed the official documents to be shared with sponsorships, and fast checked the information gathered by GPT</td>
+		</tr>
+    <tr>
+			<td>Adolfo Carrasco Orrantia</td>
+			<td><b>Student</b></td>
+			<td>Analysis, Conceptualization, Background Research, Investigation, Notebook/Record Keeping, Project Administration, Fundraising</td>
+			<td>(1) <b>Analysis.</b> Analyzed data and literature documented by past iGEM teams related to mastitis <br>(2) <b>Conceptualization.</b> Contributed to the development of ideas to improve the initial project proposal <br>(3) <b>Background Research.</b> Researched various sources of information on the protocols necessary to execute in the experimental phase of the project were searched. This covered both specific and standardized protocols, such as miniprep or DNA resuspension, as well as more general ones such as media preparation, antibiotics, etc <br>(4) <b>Investigation.</b> Participated in all the experimental part carried out such as transformation, production of chemocompetent cells and golden gate assembly <br>(5) <b>Notebook/Record Keeping.</b> In charge of keeping the laboratory notebook, detailing the experimental part <br>(6) <b>Project Administration.</b> As leader of the laboratory team within the project, part of his job was to plan, coordinate and ensure the correct execution of the scheduled tasks week by week within the wet lab <br> (7) <b>Fundraising.</b> Participated in fundraising activities, which have been raffles, social events, sponsorship negotiations and crowdfunding</td>
+		</tr>
+    <tr>
+			<td>Ana Elisa Domínguez Chávez</td>
+			<td><b>Student</b></td>
+			<td>Conceptualization, Background Research, Fundraising, Safety, Investigation, Writin.</td>
+			<td>(1) <b>Conceptualization.</b> Contributed to the development of the proposal <br>(2) <b>Background Research.</b> Analyzed papers about other endolysins used as a treatment for mastitis and search for protocols that will be used in the laboratory <br>(3) <b>Fundraising.</b> Raised money for the development of the project by selling desserts and raffle tickets <br>(4) <b>Safety.</b> Answered the questions and submit the preliminary version of the safety form <br>(5) <b>Investigation.</b> Participated in wet lab through the preparation of agar plates, resuspension of DNA, bacterial transformation, extraction of DNA and Golden Gate Assembly <br>(6) <b>Writing.</b> Wrote and edited content for the wiki related to the engineering success page and safety</td>
+		</tr>
+    <tr>
+      <td>Axel Armando Rojero Hernández</td>
+      <td><b>Student</b></td>
+      <td>Conceptualization, Background Research, Fundraising, Safety, Investigation, Analysis, Writing, Visualization</td>
+      <td>(1) <b>Conceptualization.</b> Developed our proposal through the analysis of previous teams' work related to bovine mastitis and other similar problems and the in-depth scientific research development <br>(2) <b>Background research.</b> Conducted an extensive analysis of scientific articles relevant to all the processes needed for the optimal application and production of the enzybiotic treatment <br>(3) <b>Fundraising.</b> Proposed and collaborated in a wide variety of fundraising events, among which stand out diverse industrial sponsorships, social sponsorship at traffic lights, and specific sources of laboratory sponsorships <br>(4) <b>Safety.</b> Collaborated with all the solicited requirements from the safety form <br>(5) <b>Investigation.</b> Actively participated in the development and preparation of all the experimentation required for the production, evaluation, and optimal application of the endolysins treatment proposed <br>(6) <b>Analysis.</b> Conducted an in-depth research and evaluation of all the previous investigations, contributions, and developments of every of the previous iGEM teams, supplemented with all the scientific research <br>(7) <b>Writing.</b> Developed, reviewed, and edited content related to the lab section, specifically parts, contributions, the design of the new parts, and all the other lab pages related. <br>(8) <b>Visualization.</b> Conducted an extensive evaluation of the wiki lab pages, as a full-time lab member</td>
+    </tr>
+    <tr>
+      <td>Lucía Arely Jiménez Hernández</td>
+      <td><b>Student</b></td>
+      <td>Conceptualization, Analysis, Fundraising, Public Engagement, Entrepreneurship, Writing, Project Administration, Visualization, Safety</td>
+      <td>(1) <b>Conceptualization.</b> Brainstormed and developed ideas for the project in the entrepreneurship area <br>(2) <b>Analysis.</b> Analyzed work done by previous teams related to entrepreneurship in order to set the work plan for our project, as well as the technical aspects that will impact the commercialization of our product <br>(3) <b>Fundraising.</b> Raised money for the development of our project through the sale of desserts, raffle tickets and search for sponsorships <br>(4) <b>Public Engagement.</b> Engaged with the community through interviews and visits in order to understand the problem and inform people about it <br>(5) <b>Entrepreneurship.</b>
+        developed the business model of the project as well as participated in different interactions that helped validate the business idea and other commercially relevant activities <br>(6) <b>Writing.</b> Wrote and edited the content for the Wiki related to entrepreneurship, as well as drafted official documents to be shared outside the team with different government agencies or enterprises. Also fast checked the references and information gathered by GPT-4. <br>(7) <b>Project Administration.</b> Managed and coordinated the project activities, planning, and execution related to entrepreneurship <br>(8) <b>Visualization.</b> Prepared the presentations, videos required and visual aids for the things related to entrepreneurship such as the participation in several contests, pitch nights, etc. <br>(9) <b>Investigation.</b> Collected data during interviews with direct and indirect stakeholders of our project <br>(10) <b>Safety. </b>Drafted the documents to ensure compliance with the safety guidelines related to the government in order to enable the development and commercialization of our product</td>
+    </tr>
+    <tr>
+      <td>Alexa Rodríguez Soto</td>
+      <td><b>Student</b></td>
+      <td>Conceptualization, Background Research, Fundraising, Public Engagement, Wiki Coding, Visualization, Writing</td>
+      <td>(1) <b>Conceptualization.</b> Contributed to the development of the initial proposal <br>(2) <b>Background Research.</b> Contributed on the investigation to develop our final product, as well as the reading of scientific papers to validate the information we had <br>(3) <b>Fundraising.</b> Raised money for the development of our project through the sale of desserts, raffle tickets and search for sponsorships <br>(4) <b>Public Engagement.</b> Went to public places to ask about the knowledge of the problematic and how they think they are affected by it, engaging with a broader community that contemplates dairy consumers <br>(5) <b>Wiki Coding.</b> Helped during the first deliverable of the project description <br>(6) <b>Visualization.</b> Created the team’s logo design as well as the character, and graphics <br>(7) <b>Writing.</b> Wrote the interviews of human practices to place them in the wiki, as well as fast checked the references and information gathered by GPT-4 </td>
+    </tr>
+    <tr>
+      <td>María Guadalupe Marmolejo Rocha</td>
+      <td><b>Student</b></td>
+      <td>Conceptualization, Background Research, Fundraising, Public engagement, Entrepreneurship, Investigation</td>
+      <td>(1) <b>Conceptualization.</b> Brainstormed and developed ideas to improve the project and its scope <br>(2) <b>Background Research.</b> Extensive analysis of scientific articles and relevant papers for the development in synthetic biology of endolysins like a treatment in bovine mastitis <br>(3) <b>Fundraising.</b> Assisted in the planification and execution of fundraising activities for the team <br>(4) <b>Public Engagement.</b> Went to public spaces where we could ask the community  about the problem and how they think it affects them or if they have any idea of it, in order to bring different points of view to our project, as well as traveled to nearby communities in the state that are directly affected by the problem <br>(5) <b>Entrepreneurship.</b> Assisted to the Startups Summer School, and collaborated with the development of our project in the field of entrepreneurship <br>(6) <b>Investigation.</b> Collected data for the Human Practices area through interviews with people and communities related to the problem</td>
+    </tr>
+    <tr>
+      <td>Giuliana Herrera López</td>
+      <td><b>Student</b></td>
+      <td>Conceptualization,
+        Project administration,
+        Fundraising,
+        Software,
+        Wiki Coding,
+        Visualization, Writing
+      </td>
+      <td> (1) <b>Conceptualization.</b> Contributed to the development of the proposal in the part of web development and user experience <br>(2) <b>Project Administration.</b> As the wiki team leader, used the design thinking method as a work method, and managed tasks with the role of project management <br>(3) <b>Fundraising.</b>
+        raised money for the development of our project through the sale of desserts, raffle tickets and search for sponsorships <br>(4) <b>Software.</b> Carried out tests to improve the experience and user interfaces on the wiki <br>(5) <b>Wiki Coding.</b>
+        wrote the code in Github to build the team Wiki <br>(6) <b>Visualization. </b> Wrote and edited wiki content.  <br>(7) <b>Writing. </b>Edited wiki content.
+      </td>
+    </tr>
+    <tr>
+      <td>Seychelle Alejandra Osuna Chavarría</td>
+      <td><b>Student</b></td>
+      <td>
+        Conceptualization, Background Research, Fundraising, Writing, Wiki
+      </td>
+      <td> 
+        (1) <b>Conceptualization.</b> Contributed to the development of the proposal <br>(2) <b>Background Research.</b> Analyzed papers, reports and news about endolysins, bovine mastitis development, treatments nowadays and the impact of the disease in the industry <br>(3) <b>Fundraising.</b> Contributed organizing the first raffle and assisted other fundraising events <br>(4) <b>Writing.</b> Contributed writing the first draft of the project description area, as well as continuing the team notebook and recording some interviews <br>(5) <b>Wiki.</b> Ddeveloped the user experience principles used in the page, coding and developing the image of it
+      </td>
+    </tr>
+    <tr>
+      <td>Paulina Baeza Solis</td>
+      <td><b>Student</b></td>
+      <td>
+        Fundraising, Analysis, Conceptualization, Background Research, Software, Visualization, Writing
+      </td>
+      <td> 
+        (1) <b>Fundraising.</b> Participated in the organization of fundraising events, sought sponsorships, participated in food sales, and helped with raffle events <br>(2) <b>Analysis.</b> Conducted an analysis of the work of previous teams, more specifically, an analysis of their models, as well as the winning models on the iGEM website and the 2023 Judge’s Handbook <br>(3) <b>Conceptualization.</b> Had a brainstorming session to integrate all the previous research <br>(4) <b>Background Research.</b> Read scientific articles to inform about the possibilities of the project, as well as outcomes, discussions, among other aspects <br>(5) <b>Software.</b> Developed and tested computer programs and code for the project, specifically for the mathematical model part of the project <br>(6) <b>Visualization.</b> Created visuals such as graphics to aid in the understanding of the mathematical model <br>(7) <b>Writing.</b> Wrote and edited content for the wiki and other documents shared within the group
+      </td>
+    </tr>
+    <tr>
+      <td>Anna Sofia Rivera Aguirre</td>
+      <td><b>Student</b></td>
+      <td>
+        Analysis, Conceptualization, Background Research, Investigation, Data Curation, Fundraising, Writing
+      <td> 
+        (1) <b>Analysis.</b> Conducted an analysis of previous teams' work on mastitis, identified strengths in previous award-winning mathematical models, reviewed literature on deterministic and stochastic models of gene expression, and studied the mechanism of IPTG induction <br>(2) <b>Conceptualization.</b> Engaged in brainstorming sessions to develop the conceptual framework for our mathematical model <br>(3) <b>Background Research.</b> Conducted an extensive review of scientific articles to gather information on the development and types of mathematical models, the mechanisms of IPTG induction, parameter estimation, and Monte Carlo simulation techniques <br>(4) <b>Investigation.</b> Collected and curated data provided by the laboratory team to validate the mathematical model <br>(5) <b>Data Curation.</b> Annotated and organized the data describing gene expression regulated by IPTG induction <br>(6) <b>Fundraising.</b> Organized and coordinated fundraising events, established logistics for fundraising parties, solicited sponsorship from various sources, including crowdfunding and securing sponsorships for laboratory resources <br>(7) <b>Writing.</b> Developed, reviewed, and edited content related to the mathematical model for the project's wiki
+      </td>
+    </tr>
+    <tr>
+      <td>Vanessa Araceli Montoya Pizarro</td>
+      <td><b>Student</b></td>
+      <td>
+        Conceptualization, Background Research, Data Curation, Software, Visualization
+      <td> 
+        (1) <b>Conceptualization.</b> Contributed to the development of the proposal and ideas to improve the initial project proposal, as well as brainstormed ideas for the mathematical model
+        <br>(2) <b>Background Research.</b> Reviewed several academic papers about the elaboration of different types of mathematical models (deterministics, stochastic, Montecarlo), IPTG induction (steps, considerations, parameters) <br>(3) <b>Data Curation.</b>
+        wrote and organized the information of the IPTG induction <br>(4) <b>Writing.</b> Wrote the content that will appear on the wiki, especially in the area of “​​Mathematical Model”, defining the chemical equations that occur during IPTG induction, as well as the elaboration of charts with the chemical reactions, constants and symbols <br>(5) <b>Software.</b> Used of Software to develop and test the mathematical model <br>(6) <b>Visualization.</b> Created visuals such as graphics and diagrams to aid in the understanding of the mathematical model <br>(7) <b>Fundraising.</b> Raised money for the development of the project by selling desserts and raffle tickets
+      </td>
+    </tr>
+    <tr>
+      <td>Carmen Rocío Maldonado Barraza</td>
+      <td><b>Instructor</b></td>
+      <td>
+        Supervision
+      <td> 
+        (1) <b>Supervision.</b> Carmen supervised our work and helped us through the official and administration processes we required from our university to strengthen our project.
+      </td>
+    </tr>
+    <tr>
+      <td>Alberto Aguilar González</td>
+      <td><b>Instructor</b></td>
+      <td>
+        Supervision, Software, Visualization
+      <td> 
+        (1) <b>Supervision.</b> Supervised our work related to wiki;
+        <br>(2) <b>Software.</b> Helped with the code implementation and development of responsive functions within the navigation bar. Carried tests on the pages to check that everything funtioned; and <br>(3) <b>Visualization.</b> Enabled the team to create responsive, secure and fast user interfaces. Made sure to use resources that were freely available to the public, and always checked the licenses of the software and iGEM to ensure compliance.
+      </td>
+    </tr>
+    <tr>
+      <td>Raúl Lizarraras Durán</td>
+      <td><b>Instructor</b></td>
+      <td>
+        Supervision, Entrepreneurship
+      <td> 
+        (1) <b>Supervision.</b> Supervised the work related to entrepreneurship, development and commercialization of our product, helping the team connect with different stakeholders that contribute to the validation of our product; and
+        <br>(2) <b>Entrepreneurship.</b> Helped us develop successfully our business plan as well as other tools related to the area.
+      </td>
+    </tr>
+    <tr>
+      <td>Ana Victoria Gutiérrez Reyes</td>
+      <td><b>Instructor</b></td>
+      <td>
+        Supervision, Public Engagement
+      <td> 
+        (1) <b>Supervision.</b> Supervised our work related to human practices and the way our project impacted the world; and <br>(2) <b>Public Engagement.</b> Gave us recommendations of how to map, approach and connect with the different types of stakeholders that our project contemplated.
+
+      </td>
+    </tr>
+    <tr>
+      <td>Sergio Armando Medina González</td>
+      <td><b>Instructor</b></td>
+      <td>
+        Supervision, Background Research, Conceptualization, Analysis
+      <td> 
+        (1) <b>Supervision.</b> Guided and supervised our team throughout the project. He provided valuable insights and feedback, validating and enhancing our mathematical model idea; <br>(2) <b>Background Research.</b> Extensively reviewed relevant literature and kept us informed about the latest developments in the field. His expertise allowed us to make well-informed decisions and consider a wide range of ideas; <br>(3) <b>Conceptualization.</b> Actively involved in the brainstorming sessions, supporting us in evaluating the pros and cons of potential considerations and actions for the mathematical model; and <br>(4) <b>Analysis.</b> Supported us by analyzing data generated by the mathematical model team and also by examining data provided by other teams.
+      </td>
+    </tr>
+    <tr>
+      <td>Daniela Oloño Fierro</td>
+      <td><b>Instructor</b></td>
+      <td>
+        Supervision
+      <td> 
+        (1) <b>Supervision.</b> Having participated in iGEM 2018, Daniela assisted us with the in silico assembly of genetic constructs.
+        Supervised the wet lab team by analyzing the results of the experimental part and providing support and advice for experiments and troubleshooting. She granted us recommendations when formulating the project proposal for the competition, offering invaluable insights to reinforce the proposal.
+
+      </td>
+    </tr>
+    <tr>
+      <td>Judith Esmeralda García Mata</td>
+      <td><b>Advisor</b></td>
+      <td>
+        Supervision
+      </td>
+      <td> 
+        (1) <b>Supervision.</b> Having participated in iGEM 2022 and leader of human practices, Judith helped us by supervising all of our interview formats, as well as the flyers we gave out for public engagement, followed up on consultations to discuss how we are performing in the human practices area.
+      </td>
+    </tr>
+    <tr>
+      <td>Arlen Aguirre Narváez</td>
+      <td><b>Advisor</b></td>
+      <td>
+        Supervision
+      </td>
+      <td> 
+        (1) <b>Supervision.</b> Having participated in iGEM 2022 as part of the entrepreneurship team, Arlen helped us supervise the documents and interactions related to the business model and different activities related to the development and commercialization of our project.  She also helped us in the area of human practices by giving us recommendations.
+
+      </td>
+    </tr>
+    <tr>
+      <td>Denisse Chacón Ramirez</td>
+      <td><b>Advisor</b></td>
+      <td>
+        Supervision
+      </td>
+      <td> 
+        (1) <b>Supervision.</b> Having participated in iGEM 2022, Denisse provided us with assistance for in silico assembly of genetic constructions and resolving issues while clarifying doubts. Additionally, she offered guidance during project proposal development and execution, providing valuable feedback to strengthen the proposal. Once the project was underway, she continued to review and advise on the progress of the dry lab on a daily basis. 
+      </td>
+    </tr>
+    <tr>
+      <td>Gabriela Carolina Gajón Robles</td>
+      <td><b>Advisor</b></td>
+      <td>
+        Supervision
+      </td>
+      <td> 
+        (1) <b>Supervision.</b> Having participated in iGEM 2019, Carolina supervised the wet lab team by analyzing the results of the experimental phase and offering support and guidance for experiments and troubleshooting. Furthermore, she bestowed us with counsel throughout the project proposal development for the competition, delivering precious feedback to bolster the proposal.
+      </td>
+    </tr>
+    <tr>
+      <td>Alejandro Rojo Moreno</td>
+      <td><b>Advisor</b></td>
+      <td>
+        Supervision
+      </td>
+      <td> 
+        (1) <b>Supervision.</b> Having participated in iGEM 2022, Alejandro assisted us with the in silico assembly of genetic constructs and has helped us solve problems and clarify any doubts related to it. Additionally, he provided us with his advice in crafting the project proposal for the competition, offering valuable suggestions to enhance the proposal. Once the project was initiated, he reviewed the results obtained from the wet lab on a daily basis and provided guidance for future experiments. Furthermore, he supported us by giving feedback for the documentation of the wet lab work and also, helped providing daily advice, feedback and clarifying any doubt regarding the area of mathematical model.
+      </td>
+    </tr>
+    <tr>
+      <td>Elena Elizabeth Mercado Flores</td>
+      <td><b>Advisor</b></td>
+      <td>
+        Conceptualization, Background Research & Supervision
+      </td>
+      <td> 
+        (1) <b>Conceptualization.</b> She helped us in the development of ideas to improve our project; <br>(2) <b>Background Research.</b> Helped us enrich our proposal,  in the research of Endolysins focused on destroying the microorganisms that cause mastitis; and <br>(3) <b>Supervision.</b> Having participated in iGEM 2022 she helped us since the brainstorming of ideas for our project, and continue giving us her advice in the different areas of the project, as well as supervised what we did in different areas.
+      </td>
+    </tr>
+    
+	</tbody>
+</table>
+
+<br><br>
+
+<h2>External Contributions</h2>
+
+</body>
+
+
+<table class="container">
+	<thead>
+    <tr>
+			<th><h1>Name</h1></th>
+			<th><h1>Institution Type</h1></th>
+			<th><h1>Relationship to team</h1></th>
+			<th><h1>General Tasks</h1></th>
+      <th><h1>Specific Tasks</h1></th>
+		</tr>
+	</thead>
+  <tbody>
+    <tr>
+			<td>Yara Victoria Gómez Peinado</td>
+			<td>Academic</td>
+			<td> 
+        External Advisor
+      </td>
+      <td> 
+        Conceptualization
+      </td>
+			<td>Yara, a member of team 2019 and having been nominated to the special prize of integrated human practices, gave us a recommendation, which helped us improve our human practices strategy.</td>
+		</tr>
+    <tr>
+			<td>Jocelyn Canero Rosillo</td>
+			<td>Academic</td>
+			<td> 
+        Assistant
+      </td>
+      <td> 
+        Investigation
+      </td>
+			<td>Jocelyn, an undergraduate biotechnology engineering student, assisted  in the experimental part, from the resuspension of the plasmid DNA from the iGEM plates to the assembly of the constructs of interest.</td>
+		</tr>
+    <tr>
+			<td>Alonso Soto</td>
+			<td>Nonprofit</td>
+			<td> 
+        External Advisor
+      </td>
+      <td> 
+        Public engagement
+      </td>
+			<td>
+        Alonso is part of the civil association State Committee for Livestock Promotion and Protection of Chihuahua, he helped the human practices and 
+        entrepreneurship team connect with small, medium and large producers of dairy.
+      </td>
+		</tr>
+    <tr>
+			<td>Ana Sofía Contreras </td>
+			<td>Industry</td>
+			<td> 
+        External Advisor
+      </td>
+      <td> 
+        Entrepreneurship
+      </td>
+			<td>
+        Ana Sofía, representing the Entrepreneurial Ecosystem of our university, gave us guidance on the Nova Orion Pre-Incubation program (STELLA) and connected us with different mentors in order to successfully accomplish the program.
+      </td>
+		</tr>
+    <tr>
+			<td>Sispre</td>
+			<td>Industry</td>
+			<td> 
+        Sponsor 
+      </td>
+      <td> 
+        Fundraising
+      </td>
+			<td>
+        This company awarded a grant to support our team. 
+      </td>
+		</tr>
+    <tr>
+			<td>SnapGene</td>
+			<td>Industry</td>
+			<td> 
+        Sponsor 
+      </td>
+      <td> 
+        Fundraising
+      </td>
+			<td>
+        Provided SnapGene licenses for the development of our project. 
+      </td>
+		</tr>
+    <tr>
+			<td>SnapGene</td>
+			<td>Industry</td>
+			<td> 
+        Sponsor 
+      </td>
+      <td> 
+        Fundraising
+      </td>
+			<td>
+        Provided SnapGene licenses for the development of our project. 
+      </td>
+		</tr>
+    <tr>
+			<td>CTR Scientific </td>
+			<td>Industry</td>
+			<td> 
+        Sponsor 
+      </td>
+      <td> 
+        Fundraising
+      </td>
+			<td>
+        Provided our team with reagents, lab material, and lab coats.  
+      </td>
+		</tr>
+    <tr>
+			<td>New England Biolabs </td>
+			<td>Industry</td>
+			<td> 
+        Sponsor 
+      </td>
+      <td> 
+        Fundraising
+      </td>
+			<td>
+        Provided us with reagents and laboratory materials.
+      </td>
+		</tr>
+    <tr>
+			<td>Twist Bioscience </td>
+			<td>Industry</td>
+			<td> 
+        Sponsor 
+      </td>
+      <td> 
+        Fundraising
+      </td>
+			<td>
+        Supplied custom nucleic acids.
+      </td>
+		</tr>
+    <tr>
+			<td>IDT: Integrated DNA Technologies</td>
+			<td>Industry</td>
+			<td> 
+        Sponsor 
+      </td>
+      <td> 
+        Fundraising
+      </td>
+			<td>
+        Supplied custom nucleic acids. 
+      </td>
+		</tr>
+    <tr>
+			<td>Bicisur</td>
+			<td>Industry</td>
+			<td> 
+        Sponsor 
+      </td>
+      <td> 
+        Fundraising
+      </td>
+			<td>
+        Provided us the official shirts of the team. 
+      </td>
+		</tr>
+    <tr>
+			<td>ChatGPT, version GPT-4 (from OpenAI)</td>
+			<td>Industry</td>
+			<td> 
+        Contractor 
+      </td>
+      <td> 
+        Writing
+      </td>
+			<td>
+        We used GPT-4 for the initial draft of the important points to consider and address in the interviews, considering the different types of stakeholders  . Later on, the references were verified by the team as well as the writing was fact-checked and edited. 
+      </td>
+		</tr>
+    <tr>
+			<td>Instituto Chihuahuense de la Juventud</td>
+			<td>Government</td>
+			<td> 
+        Sponsor 
+      </td>
+      <td> 
+        Fundraising
+      </td>
+			<td>
+        Government agency which awarded a grant to support our team. 
+      </td>
+		</tr>
+
+  </tbody>
+
+ 
+
+</table>
+
+<br><br>
+
+<h2>Project Timeline</h2>
+
+</body>
+
+
+<table class="container">
+	<thead>
+    <tr>
+			<th><h1>Project Activity</h1></th>
+			<th><h1>Start Date</h1></th>
+			<th><h1>End Date</h1></th>
+			<th><h1>General Tasks</h1></th>
+      
+		</tr>
+	</thead>
+  <tbody>
+    
+
+  </tbody>
+
+ 
+
+</table>
+
+
+
+
+</body>
+
+
 
 {% endblock %}
