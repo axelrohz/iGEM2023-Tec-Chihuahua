@@ -1,18 +1,5 @@
-{% extends "layout.html" %}
-
-{% block title %}Team{% endblock %}
-{% block lead %}On this page you can introduce your team members, instructors, and advisors.{% endblock %}
-
-{% block page_content %}
-
-<link rel="stylesheet" href="../../static/css/body.css">
-<link rel="stylesheet" href="../../static/css/team.css">
-
-<link href="{{ url_for('static', filename = 'css/team.css') }}" rel="stylesheet">
-<link href="{{ url_for('static', filename = 'css/body.css') }}" rel="stylesheet">
-
-
-<script src= "{{ url_for('static', filename = 'assets/js/team.js') }}"></script>
+<link rel="stylesheet" href="./style.css">
+<script src= "./script.js"></script>
 
 
 
@@ -35,16 +22,19 @@
       <div class="teamHead"> 
 
           <div class="teamTxt">
-          <h1 class="head">Meet our Team!!!</h1>
+          <h1 class="head">Meet our Team!</h1>
           <div class="teamList">
-          <a>- Members</a>
-          <a>- Advisors</a>
-          <a>- Instructors</a>
-          <a>- PIs</a>
+          <a>Members</a>
+          <br>
+          <a>Advisors</a>
+          <br>
+          <a>Instructors</a>
+          <br>
+          <a>PIs</a>
         </div>
         </div>
 
-          <svg id="visual" class="wave" viewBox="0 0 450 900"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M334 900L337.8 878.5C341.7 857 349.3 814 354.5 771.2C359.7 728.3 362.3 685.7 354.3 642.8C346.3 600 327.7 557 319.8 514.2C312 471.3 315 428.7 324.3 385.8C333.7 343 349.3 300 351.3 257.2C353.3 214.3 341.7 171.7 343 128.8C344.3 86 358.7 43 365.8 21.5L373 0L450 0L450 21.5C450 43 450 86 450 128.8C450 171.7 450 214.3 450 257.2C450 300 450 343 450 385.8C450 428.7 450 471.3 450 514.2C450 557 450 600 450 642.8C450 685.7 450 728.3 450 771.2C450 814 450 857 450 878.5L450 900Z" fill="#dbdbdb"></path><path d="M414 900L406.5 878.5C399 857 384 814 380 771.2C376 728.3 383 685.7 388.8 642.8C394.7 600 399.3 557 397.3 514.2C395.3 471.3 386.7 428.7 384.8 385.8C383 343 388 300 393.5 257.2C399 214.3 405 171.7 403.3 128.8C401.7 86 392.3 43 387.7 21.5L383 0L450 0L450 21.5C450 43 450 86 450 128.8C450 171.7 450 214.3 450 257.2C450 300 450 343 450 385.8C450 428.7 450 471.3 450 514.2C450 557 450 600 450 642.8C450 685.7 450 728.3 450 771.2C450 814 450 857 450 878.5L450 900Z" fill="#f3f5f9"></path></svg>
+          <svg id="visual" class="wave" viewBox="0 0 450 900"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M334 900L337.8 878.5C341.7 857 349.3 814 354.5 771.2C359.7 728.3 362.3 685.7 354.3 642.8C346.3 600 327.7 557 319.8 514.2C312 471.3 315 428.7 324.3 385.8C333.7 343 349.3 300 351.3 257.2C353.3 214.3 341.7 171.7 343 128.8C344.3 86 358.7 43 365.8 21.5L373 0L450 0L450 21.5C450 43 450 86 450 128.8C450 171.7 450 214.3 450 257.2C450 300 450 343 450 385.8C450 428.7 450 471.3 450 514.2C450 557 450 600 450 642.8C450 685.7 450 728.3 450 771.2C450 814 450 857 450 878.5L450 900Z" fill="#E9E8EF"></path><path d="M414 900L406.5 878.5C399 857 384 814 380 771.2C376 728.3 383 685.7 388.8 642.8C394.7 600 399.3 557 397.3 514.2C395.3 471.3 386.7 428.7 384.8 385.8C383 343 388 300 393.5 257.2C399 214.3 405 171.7 403.3 128.8C401.7 86 392.3 43 387.7 21.5L383 0L450 0L450 21.5C450 43 450 86 450 128.8C450 171.7 450 214.3 450 257.2C450 300 450 343 450 385.8C450 428.7 450 471.3 450 514.2C450 557 450 600 450 642.8C450 685.7 450 728.3 450 771.2C450 814 450 857 450 878.5L450 900Z" fill="#F3F3FA"></path></svg>
       </div>
     </div>
     
@@ -52,8 +42,10 @@
         
 
         <div class="wrap" id="sec1">
-      <header><h0>Members</h0></header>
-    </div>
+            <header class="TeamHeader"> 
+                <h1>Members</h1>
+            </header>
+        </div>
     
 
     
@@ -71,8 +63,10 @@
           </div>
     
           <div class="content">
+            <br>
             <h1 style="color:rgb(68, 125, 156)">Adolfo</h1>
-            <p>Wet lab is led by this witty nerd. Interested in the small details in nature and with previous work in mechanics, he knew his path was in science. His meticulousness keeps our work clean. He’s sure he would be an <em>Acidithiobacillus ferrooxidans</em> His favorite dairy product is chocolate milk. <br> “Now I am become endolysin, the destroyer of bacteria”   </p>
+            <br>
+            <p>Blah Blah asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach  asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach </p>
           </div>
         </div>
     
@@ -83,8 +77,10 @@
           </div>
     
           <div class="content">
+            <br>
             <h1 style="color:rgb(68, 125, 156)">Ana Elisa</h1>
-            <p>If you need to talk, you should come to her. Although her most distinguishable feature is her beaming attitude, her productiveness takes the second place. Her passion for science seems reflected in her work. She would be <em>Pseudomonas aeruginosa</em>. Her favorite dairy product is ice cream.  <br> "Acá no”<sup> 1 </sup><*</p>
+            <br>
+            <p>Blah Blah asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach  asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach </p>
           </div>
         </div>
     
@@ -95,8 +91,10 @@
           </div>
     
           <div class="content">
+            <br>
             <h1 style="color:rgb(68, 125, 156)">Axel</h1>
-            <p>Our team’s problem solving relies on him, one of our most diplomatic members. This sensitive person acts as a change agent and has no problem in showing vulnerability. He would be an <em>Agrobacterium tumefaciens </em>(he thinks it’s poetic). His favorite dairy product is Greek yogurt. <br> “Why’s everything going so smooth? This seems suspicious” </p>
+            <br>
+            <p>Blah Blah asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach  asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach </p>
           </div>
         </div>
     
@@ -109,8 +107,10 @@
           </div>
     
           <div class="content">
+            <br>
             <h1 style="color:#5BC5AB">Pau</h1>
-            <p>Our zesty model leader always knows how to crack a joke that makes us laugh. Her love for science begun in math and physics, which made her choose her area. If she were a microorganism, she would be <em>Staphylococcus aureus</em>. Her favorite dairy product is frozen yogurt. <br> "Aren't you craving (insert any type of food)?" </p>
+            <br>
+            <p>Blah Blah asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach  asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach </p>
           </div>
         </div>
     
@@ -121,8 +121,10 @@
           </div>
     
           <div class="content">
+            <br>
             <h1 style="color:#5BC5AB">Topi</h1>
-            <p> The team’s sportiest member embodies the definition of discipline and motivates our team constantly. Her curiosity and eagerness to learn made her a perfect candidate for her area. She would definitely be a <em> Milnesium tardigradum</em> Her favorite dairy product is also greek yogurt. <br> “Project’s written with j, not with y!” </p>
+            <br>
+            <p>Blah Blah asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach  asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach </p>
           </div>
         </div>
     
@@ -133,8 +135,10 @@
           </div>
     
           <div class="content">
+            <br>
             <h1 style="color:#5BC5AB">Vanessa</h1>
-            <p>Having history in the International chemistry olympiad, our most calm member knows her way through a mathematical model. This important member likes calculus and keeps our environment chill. She identifies herself with <em>Lactobacillus acidophilus</em>. Her favorite dairy product is ice cream.  <br> “Actually, I had thought about that”</p>
+            <br>
+            <p>Blah Blah asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach  asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach </p>
           </div>
         </div>
     
@@ -148,8 +152,10 @@
           </div>
     
           <div class="content">
+            <br>
             <h1 style="color:rgb(169, 186, 108)">Giuliana</h1>
-            <p>This software engineering student leads the wiki team using her knowledge to communicate our project to the world. Her hyperactivity maintains the team energized and she’s always speaking her mind. If she was a microorganism, she would be a microchip.  Her favorite dairy product is cheese. <br> “I can’t do lab, how you live without ctrl-Z?” </p>
+            <br>
+            <p>Blah Blah asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach  asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach </p>
           </div>
         </div>
     
@@ -160,8 +166,10 @@
           </div>
     
           <div class="content">
+            <br>
             <h1 style="color:rgb(169, 186, 108)">Seychelle</h1>
-            <p>Our iconic capibara-like member always has something to feed us with and  lends a helping hand when needed. Her love for science comes from her curiosity (she’s always asking “But, why?). Her life aspiration is to be like <em>Deinococcus radiodurans</em>. Her favorite dairy product is goat cheese (Really?). <br>“What were we doing?”</p>
+            <br>
+            <p>Blah Blah asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach  asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach </p>
           </div>
         </div>
     
@@ -175,8 +183,10 @@
           </div>
     
           <div class="content">
+            <br>
             <h1 style="color:rgb(246, 174, 45)">Arely</h1>
-            <p>This determined law student is best known for her entrepreneurship abilities, which lead this area in our project. Feeling passion for technology, she knew this was her place. When asked about what microorganism she would be, she just said “<em>Jurisprudencia <sup>2</sup></em>”. Her favorite dairy product is yogurt.  <br> “Sorry, I’m a Lic” <sup>2</sup> </p>
+            <br>
+            <p>Blah Blah asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach  asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach </p>
           </div>
         </div>
     
@@ -187,8 +197,10 @@
           </div>
     
           <div class="content">
+            <br>
             <h1 style="color:rgb(246, 174, 45)">Lupita</h1>
-            <p>Empathetic to death, she always knows how to comfort any of us. This animal lover trusts that her life path resides in science and her passion keeps our team moving. She sees herself in Pseudomonas aeruginosa. Her favorite dairy product is ice cream. <br> “La de chambear no te la sabes <sup>3</sup>”</p>
+            <br>
+            <p>Blah Blah asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach  asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach </p>
           </div>
         </div>
     
@@ -201,8 +213,10 @@
           </div>
     
           <div class="content">
+            <br>
             <h1 style="color:rgb(197, 91, 117)">Alexa</h1>
-            <p>Our creative human practices leader stands as a very active person. She never runs out of style and her love for human practices stands in her passion’s roots: inspiring people who nurtured her love for science.  She’s definitely <em>Saccharomices cerevisiae</em>. Her favorite dairy product is ice cream. <br> “Bombastic side eye” </p>
+            <br>
+            <p>Blah Blah asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach  asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach </p>
           </div>
         </div>
     
@@ -215,15 +229,22 @@
           </div>
     
           <div class="content">
+            <br>
             <h1 style="color:rgb(197, 91, 117)">Sofi</h1>
-            <p>Our bold leader is in charge of opening the way of our team through her love for learning and spending time with people. She needs to be constantly moving and her kindness gives us peace of mind. Pichia pastoris sticks with her. Her favorite dairy product is yogurt. <br> “ I NEED candy” </p>
+            <br>
+            <p>Blah Blah asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach  asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach </p>
           </div>
         </div>
       </div>
     
     
       <div class="wrap" id="sec2">
-    <header><h0>Advisors</h0></header>
+        <header class="TeamHeader">
+            <br>
+            <br>
+            <h1>Advisors</h1>
+            <br>
+        </header>
     </div>
     
       <div class="teamContainer">
@@ -234,8 +255,10 @@
           </div>
     
           <div class="content">
+            <br>
             <h1 style="color:rgb(68, 125, 156)">Caro</h1>
-            <p>After saying yes to science, this 2019 determined member knows her way through the lab. Our dear advisor helps our lab team in any doubt we have. Her favorite microorganism is <em> Phaeodactylum tricornutum </em>. Her favorite dairy product is panela cheese.  <br> “Kind people are my kind of people” </p>
+            <br>
+            <p>Blah Blah asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach  asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach </p>
           </div>
         </div>
     
@@ -245,7 +268,9 @@
           </div>
     
           <div class="content">
+            <br>
             <h1 style="color:#5BC5AB">Liz</h1>
+            <br>
             <p>Blah Blah asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach  asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach </p>
           </div>
         </div>
@@ -257,8 +282,10 @@
           </div>
     
           <div class="content">
+            <br>
             <h1 style="color:rgb(169, 186, 108)">Rojo</h1>
-            <p>This 2022 wiki leader guides us, mainly, through math model and wiki. This daring individual encourages us to keep trying our best. His favorite microorganism is <em>Toxoplasma gondii </em>. His favorite dairy product is the classical thing: milk.  <br> “You're not gonna believe this because it usually never happens, but I made a mistake” </p>
+            <br>
+            <p>Blah Blah asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach  asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach </p>
           </div>
         </div>
     
@@ -268,8 +295,10 @@
           </div>
     
           <div class="content">
+            <br>
             <h1 style="color:rgb(246, 174, 45)">Denisse</h1>
-            <p>Our 2022 Student Leader believes that science becomes truly satisfying when sharing knowledge. Her kind reviews and guidance had made our whole team more efficient. Her favorite microorganism is <em>Paramecium aurelia </em>. Her favorite dairy product is strawberry yogurt.  <br>“What if we make an Excel?” </br></p>
+             <br>
+            <p>Blah Blah asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach  asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach </p>
           </div>
         </div>
     
@@ -280,18 +309,22 @@
           </div>
     
           <div class="content">
+            <br>
             <h1 style="color:rgb(197, 91, 117)">Judith</h1>
-            <p>2022 was a great year, and of course our Human Practices leader couldn’t miss. This energetic and resilient person guides our human and entrepreneurship areas, giving us amazing advice. Her favorite microorganism is <em> Shewanella oneidensis</em>. Her favorite dairy product is Yakult. “Con pan las penas son menos” <sup> 4</sup></p>
+            <br>
+            <p>Blah Blah asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach  asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach </p>
           </div>
-
         </div>
-
-        
     
       </div>
 
       <div class="wrap" id="sec3">
-    <header><h0>Instructors</h0></header>
+    <header class="TeamHeader">
+        <br>
+        <br>
+        <h1>Instructors</h1>
+        <br>
+    </header>
     </div>
     
     <div class="teamContainer">
@@ -301,92 +334,14 @@
         </div>
     
         <div class="content">
+            <br>
           <h1 style="color:rgb(197, 91, 117)">Carmen</h1>
+          <br>
           <p>Blah Blah asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach  asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach </p>
         </div>
       </div>
     
     </div> 
-    <div class="teamContainer">
-    
-      <div class="teamCar">
-        <div class="image" style="--gradient:linear-gradient(45deg, rgba(68, 125, 156, 1), rgba(91, 197, 171, 1))">
-          <img class="img" src="" alt="1">
-        </div>
-  
-        <div class="content">
-          <h1 style="color:rgb(68, 125, 156)">Joan</h1>
-          <p>Blah Blah asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach  asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach </p>
-        </div>
-      </div>
-  
-      <div class="teamCar">
-        <div class="image" style="--gradient:linear-gradient(45deg, rgba(91, 197, 171,0.8), rgba(169, 186, 108,1))">
-          <img class="img" src="">
-        </div>
-  
-        <div class="content">
-          <h1 style="color:#5BC5AB">Ana Vic</h1>
-          <p> Another past member that helps to make out our best work in entrepreneurship and human practices. Her favorite microorganisms are microalgae. <br>“Multitasking doesn’t exist, it’s your parents” </p>
-        </div>
-      </div>
-  
-      <div class="teamCar">
-        <div class="image" style="--gradient:linear-gradient(45deg, rgba(246, 174, 45, 0.8), rgba(169,186, 108,1))">
-          <img class="img" src=""1">
-        </div>
-  
-        <div class="content">
-          <h1 style="color:rgb(169, 186, 108)">Dani</h1>
-          <p> Also a past member. Specifically, 2018. This cheerful advisor offers her valuable help in areas like wet lab and math model. Her objective is to work in projects with great impact in science and society. Her favorite microorganism is <em> Pseudomonas aeruginosa </em>. Her favorite dairy product is greek yogurt. <br>“I don’t want to be an adult anymore” </p>
-        </div>
-      </div>
-  
-      <div class="teamCar">
-        <div class="image" style="--gradient:linear-gradient(45deg, rgba(246, 174, 45,0.8), rgba(222, 133, 181, 1))">
-          <img class="img" src="" alt="1">
-        </div>
-  
-        <div class="content">
-          <h1 style="color:rgb(246, 174, 45)">Antonia</h1>
-          <p>Blah Blah asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach  asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach </p>
-        </div>
-      </div>
-  
-  
-      <div class="teamCar">
-        <div class="image" style="--gradient:linear-gradient(45deg, rgba(197, 91, 117,1), rgba(246, 174, 45, 1))">
-          <img class="img" src="" alt="1">
-        </div>
-  
-        <div class="content">
-          <h1 style="color:rgb(197, 91, 117)">Sergio</h1>
-          <p> This expert shares his knowledge on mathematical models to nurture our project. His favorite dairy product is cheese.
-            <br>“Kinkis <sup> 5</sup>” </p>
-        </div>
-      </div>
-      
-      <div class="teamCar">
-        <div class="image" style="--gradient:linear-gradient(45deg, rgba(91, 197, 171,0.8), rgba(169, 186, 108,1))">
-          <img class="img" src="">
-        </div>
-
-      <div class="content">
-        <h1 style="color:rgb(68, 125, 156)">Raúl</h1>
-        <p>Blah Blah asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach  asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="teamCar">
-    <div class="image" style="--gradient:linear-gradient(45deg, rgba(246, 174, 45, 0.8), rgba(169,186, 108,1))">
-      <img class="img" src=""1">
-    </div>
-    <div class="content">
-      <h1 style="color:#5BC5AB">Alberto</h1>
-      <p>This software expert guides our wiki team in their way. His favorite microorganism is <em> Propionibacterium freudenreichii </em>. His favorite dairy product is lactose-free milk.<br>“Patience is the mother of all virtues”</p>
-    </div>
-  </div>
     
     
     
@@ -394,7 +349,12 @@
     
     
       <div class="wrap" id="sec4">
-    <header><h0>PIs</h0></header>
+        <header class="TeamHeader">
+            <br>
+            <br>
+            <h1>PIs</h1>
+            <br>
+        </header>
     </div>
     
     <div class="teamContainer">
@@ -404,8 +364,10 @@
         </div>
     
         <div class="content">
+            <br>
           <h1 style="color:rgb(197, 91, 117)">Cynthia</h1>
-          <p> Our perfectionist Primary Instructor loves to see every member of the team evolve into something different. Her favorite microorganism is <em> Thermus aquaticus </em>. Her favorite dairy product is butter.  </p>
+          <br>
+          <p>Blah Blah asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach  asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach </p>
         </div>
       </div>
     
@@ -415,8 +377,10 @@
         </div>
     
         <div class="content">
+            <br>
           <h1 style="color:rgb(197, 91, 117)">Gladys</h1>
-          <p>This perseverant expert in proteins lights our path through our lab development. Her favorite microorganism is <em> Mycobacterium tuberculosis </em>. Her favorite dairy product is ice cream. <br> “ ”</p>
+          <br>
+          <p>Blah Blah asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach  asdadsa dasdad asd ad  sad asd ad as dasdsad sdsad lsdasdsa lorem thus wbla blah blah blach </p>
         </div>
       </div>
     </div> 
@@ -426,7 +390,7 @@
     </div>
     </div>
     </div>
-
+    
     <script type="text/javascript">
       var tScroll = document.querySelectorAll('.teamScroll');
 tScroll[0].addEventListener('scroll',teamColor);
