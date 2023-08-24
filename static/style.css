@@ -530,9 +530,9 @@ body {
   .container {
       text-align: left;
       overflow: hidden;
-      width: 80%;
+      width: 100%;
       margin: 0 auto;
-    display: table;
+    display: block;
     padding: 0 0 8em 0;
   }
 
