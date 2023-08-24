@@ -134,14 +134,14 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 /* Desktop Navigation */
 .nav-menu{
-  height: 100%;
+  height: 500px;
 }
 
 .nav-menu, .nav-menu * {
   margin: 0;
   padding: 0;
   list-style: none;
-  height: 100%;
+  height: 500px;
 }
 
 .nav-menu > ul > li {
