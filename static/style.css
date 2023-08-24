@@ -528,19 +528,14 @@ body {
   }
 
   .container {
-      text-align: left;
+      text-align: justify;
       overflow: hidden;
       width: 80%;
-      margin: 0 auto;
+
     display: table;
-    padding: 0 0 8em 0;
   }
 
-  .container td, .container th {
-      padding-bottom: auto;
-      padding-top: auto;
-    padding-left:auto;  
-  }
+ 
 
   /* Background-color of the odd rows */
   .container tr:nth-child(odd) {
