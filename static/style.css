@@ -563,7 +563,7 @@ body {
 
 
   td {
-    animation: wave 10s infinite;
+    animation: wave 5s infinite;
   }
   
   td:nth-child(1) {
