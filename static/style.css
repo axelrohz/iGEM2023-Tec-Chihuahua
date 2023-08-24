@@ -530,9 +530,9 @@ body {
   .container {
       text-align: left;
       overflow: hidden;
-      width: 100%;
+      width: 80%;
       margin: 0 auto;
-    display: block;
+    display: table;
     padding: 0 0 8em 0;
   }
 
@@ -559,8 +559,10 @@ body {
   .container td:first-child { color: #C55B75; font-family: 'Inter Tight'; font-weight: 600;}
 
   .container tr:hover {
-    background-color: #ff0000;
-  
+    background-color: #ffffff;
+  -webkit-box-shadow: 0 6px 6px -6px #ffffff;
+      -moz-box-shadow: 0 6px 6px -6px #ffffff;
+            box-shadow: 0 6px 6px -6px #ffffff;
   }
 
   .container td:hover {
@@ -568,7 +570,7 @@ body {
     color: #302535;
     
     box-shadow: #C55B75 -1px 1px, #D27063 -2px 2px, #DE8551 -3px 3px, #F6AE2D -4px 4px;
-    transform: translate3d(4px, -4px, 0);
+    transform: translate3d(4px, -50px, 0);
     transition-delay: 0s;
       transition-duration: 0.4s;
       transition-property: all;
