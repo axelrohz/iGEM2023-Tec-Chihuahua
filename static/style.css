@@ -519,13 +519,7 @@ body {
       box-shadow: #447D9C;
   }
 
-  .container td {
-      font-weight: normal;
-      font-size: 1em;
-    -webkit-box-shadow: 0 2px 2px -2px #ffffff;
-      -moz-box-shadow: 0 2px 2px -2px #ffffff;
-            box-shadow: 0 2px 2px -2px #ffffff;
-  }
+  
 
   .container {
       text-align: left;
