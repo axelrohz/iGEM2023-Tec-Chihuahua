@@ -578,6 +578,10 @@ body {
   td:nth-child(4) {
     animation-delay: 1.2s;
   }
+
+  td:nth-child(4) {
+    animation-delay: 1.6s;
+  }
   
   @keyframes wave {
     0% {
