@@ -2,15 +2,15 @@
     font-family: 'Inter', sans-serif;
     width: 80%;
     margin: 0 auto;
-    border-collapse: separate;
-    border-spacing: 0.5em;
+    border-collapse: collapse;
     border: 2px solid #447D9C;
   }
   
   .container th, .container td {
-    padding: 1.5%;
+    padding: 12px;
     text-align: left;
-    transition: transform 0.4s ease, background-color 0.3s ease;
+    border: 1px solid #447D9C;
+    transition: background-color 0.3s, transform 0.3s;
   }
   
   .container th {
@@ -19,20 +19,18 @@
   }
   
   .container td {
-    background-color: #ffffff;
+    background-color: #f5f5f5;
     color: #302535;
-    border: 1px solid #447D9C;
   }
   
   .container tr:nth-child(odd) td {
-    background-color: #F3F3FA;
+    background-color: #f9f9f9;
   }
   
-  .container td:hover {
+  .container tr:hover td {
     background-color: #F6AE2D;
     color: #ffffff;
-    transform: translate3d(4px, -4px, 0);
-    border: 1px solid #F6AE2D;
+    transform: translate(4px, -4px);
     box-shadow: 0 6px 6px -6px #ffffff;
   }
   
