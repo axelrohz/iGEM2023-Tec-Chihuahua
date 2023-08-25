@@ -609,24 +609,21 @@ body {
 
 
 /*table attribution */
-
-
-
 h1 {
-  font-size:3em; 
+  font-size: 3em;
   font-weight: 300;
-  line-height:1em;
+  line-height: 1em;
   text-align: center;
   color: #4DC3FA;
   font-family: 'Inter Tight';
 }
 
 h2 {
-  font-size:1em; 
+  font-size: 1em;
   font-weight: 300;
   text-align: center;
   display: block;
-  line-height:1em;
+  line-height: 1em;
   padding-bottom: 2em;
   color: #302535;
   font-family: 'Inter Tight';
@@ -640,81 +637,83 @@ h2 a {
   font-family: 'Inter Tight';
 }
 
-.blue { color: #447D9C; }
-.yellow { color: #F6AE2D; }
+.blue {
+  color: #447D9C;
+}
+
+.yellow {
+  color: #F6AE2D;
+}
 
 .container th h1 {
-    font-weight: bold;
-    font-size: 1em;
-    text-align: left;
-    color: #447D9C;
-    font-family: 'Inter Tight';
-    box-sizing: content-box;
-    box-shadow: #447D9C;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: left;
+  color: #447D9C;
+  font-family: 'Inter Tight';
+  box-sizing: content-box;
+  box-shadow: #447D9C;
 }
 
 .container td {
-    font-weight: normal;
-    font-size: 1em;
+  font-weight: normal;
+  font-size: 1em;
   -webkit-box-shadow: 0 2px 2px -2px #ffffff;
-    -moz-box-shadow: 0 2px 2px -2px #ffffff;
-          box-shadow: 0 2px 2px -2px #ffffff;
+  -moz-box-shadow: 0 2px 2px -2px #ffffff;
+  box-shadow: 0 2px 2px -2px #ffffff;
 }
 
 .container {
-    text-align: left;
-    overflow: hidden;
-    width: 80%;
-    margin: 0 auto;
+  text-align: left;
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
   display: table;
   padding: 0 0 8em 0;
+  border-collapse: separate;
+  border-spacing: 0.5em; /* Adjust as needed */
 }
 
 .container td, .container th {
-    padding-bottom: 2%;
-    padding-top: 2%;
-  padding-left:2%;  
+  padding-bottom: 2%;
+  padding-top: 2%;
+  padding-left: 2%;
 }
 
 /* Background-color of the odd rows */
 .container tr:nth-child(odd) {
-    background-color: #ffffff;
+  background-color: #f5f5f5; /* Adjust as needed */
 }
 
 /* Background-color of the even rows */
 .container tr:nth-child(even) {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .container th {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
-.container td:first-child { color: #C55B75; font-family: 'Inter Tight'; font-weight: 600;}
+.container td:first-child {
+  color: #C55B75;
+  font-family: 'Inter Tight';
+  font-weight: 600;
+}
 
 .container tr:hover {
   background-color: #ffffff;
--webkit-box-shadow: 0 6px 6px -6px #ffffff;
-    -moz-box-shadow: 0 6px 6px -6px #ffffff;
-          box-shadow: 0 6px 6px -6px #ffffff;
-}
-
-.container td:hover {
-  background-color: #F3F3FA;
-  color: #302535;
-  
-  box-shadow: #C55B75 -1px 1px, #D27063 -2px 2px, #DE8551 -3px 3px, #F6AE2D -4px 4px;
-  transform: translate3d(4px, -4px, 0);
-  transition-delay: 0s;
-    transition-duration: 0.4s;
-    transition-property: all;
-  transition-timing-function: line;
+  -webkit-box-shadow: 0 6px 6px -6px #ffffff;
+  -moz-box-shadow: 0 6px 6px -6px #ffffff;
+  box-shadow: 0 6px 6px -6px #ffffff;
 }
 
 @media (max-width: 800px) {
-.container td:nth-child(4),
-.container th:nth-child(4) { display: none; }
+  .container td:nth-child(4),
+  .container th:nth-child(4) {
+    display: none;
+  }
 }
+
 
 
 /*card descriptionn impact, reduce*/
