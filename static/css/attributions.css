@@ -32,8 +32,7 @@
   }
 
 
-.TABLA tbody tr:nth-child(1):hover, 
-.TABLA tbody tr:nth-child(2):hover {
+.error:hover{
     background-color: #F6AE2D;
     color: #ffffff;
     transform: translate(4px, -4px);
