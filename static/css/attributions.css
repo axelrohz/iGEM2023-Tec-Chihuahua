@@ -32,12 +32,12 @@
   }
 
 
-.error td:hover{
-    background-color: #F6AE2D;
-    color: #ffffff;
-    transform: translate(4px, -4px);
-    box-shadow: 0 6px 6px -6px #ffffff;
-}
+    .error td:hover{
+        background-color: #F6AE2D;
+        color: #ffffff;
+        transform: translate(4px, -4px);
+        box-shadow: 0 6px 6px -6px #ffffff;
+    }
 
 
   h2 {
