@@ -32,7 +32,7 @@
   }
 
 
-    .error td:hover{
+    .TABLA .error td:hover{
         background-color: #F6AE2D;
         color: #ffffff;
         transform: translate(4px, -4px);
