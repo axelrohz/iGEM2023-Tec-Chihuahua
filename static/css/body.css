@@ -54,6 +54,13 @@
     height: calc(37vw);
   }
 
+  @media screen and (max-width: 768px) {
+    .image-space{
+      height: calc(45vw);
+    }
+  }
+    
+  
   .title{
     font-size: 8rem;
     font-weight: 800;
