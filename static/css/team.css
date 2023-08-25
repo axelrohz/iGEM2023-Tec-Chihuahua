@@ -133,7 +133,7 @@
     overflow: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    padding-top: 100px;
+    padding-top: 20px;
     position: relative;
     transition: 2.5s;
     z-index: 1;
@@ -149,6 +149,71 @@
   .teamBody.active .teamScroll{
     width: 100%;
   }
+
+
+  @media screen and (max-width: 768px) {
+    /* Estilos para dispositivos móviles */
+    /* Quiero quitar el flex y q todo se vea en la pantalla */
+    .teamBody{
+      display: block;
+      position: relative;
+    }
+    .stickhead{
+      width: 100% !important;
+      position: relative;
+      height: 5rem;
+    }
+
+    .wave{
+      display: none;
+    }
+
+    .teamHead .teamTxt{
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      position: relative;
+      top: 0%;
+      padding-right: 0px;
+      transition: top 1.5s ease, left 1.5s ease, width 0.1s ease, padding-right 0.1s ease;
+      left: 0px;
+  
+    }
+
+    .teamBody.active .teamHead .teamTxt{
+      top:0%;
+      left: auto;
+      width: auto;
+      padding-right: 0px;
+    }
+    .teamBody .teamHead .teamTxt .teamList{
+      display: none;
+    }
+
+    .teamHead .teamTxt .head{
+      font-size: 2rem;
+      font-weight: 500;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-family: 'Bricolage Grotesque';
+      line-height: 2.5rem;
+      color: #F3F3FA;
+     
+    }
+
+    
+  .teamBody .teamScroll{
+    width: 100%;
+  }
+
+
+
+  }
+
 
 
 
@@ -179,6 +244,7 @@ transition: 0.5s;
 overflow: hidden;
 
 }
+
 
 .teamContainera .teamCar:before
 {
@@ -358,6 +424,32 @@ opacity: 0;
 height: 250px;
 top: 225px;
 opacity: 1;
+}
+
+@media screen and (max-width: 520px) { 
+  /* Estilos para dispositivos móviles */
+  .teamContainer{
+    display: flex;
+    padding:0;  
+    gap: 0px 0px;
+  }
+
+  .teamContainer .teamCar{
+    transform: scale(0.75);
+  }
+
+  
+  
+}
+
+@media screen and (max-width: 350px) {
+  /* Estilos para dispositivos móviles */
+  .teamContainer .teamCar{
+    transform: scale(0.55);
+  }
+
+  
+  
 }
 
 *

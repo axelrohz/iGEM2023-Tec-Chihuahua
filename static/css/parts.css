@@ -46,6 +46,17 @@ body{
     margin: 0 auto;
 }
 
+@media screen and (max-width: 768px) {
+    .headingParts .textParts h1{
+        font-size: 5rem;
+    }
+    .headingParts .textParts h3{
+        font-size: 1.2rem;
+        width: 80%;
+    }
+}
+ 
+
 .headParts .waveParts{
     width: 100%;
     transform: scaleY(-0.5);

@@ -673,7 +673,7 @@ h2 a {
   overflow: hidden;
   width: 80%;
   margin: 0 auto;
-  display: table;
+  display: block;
   padding: 0 0 8em 0;
   border-collapse: separate;
   border-spacing: 0.5em; /* Adjust as needed */
