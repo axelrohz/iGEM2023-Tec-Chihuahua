@@ -1,4 +1,4 @@
-.container .TABLA{
+.container {
     font-family: 'Inter', sans-serif;
     width: 80%;
     margin: 0 auto;
@@ -13,16 +13,29 @@
     transition: background-color 0.3s, transform 0.3s;
   }
   
+  .container th {
+    background-color: #447D9C;
+    color: #ffffff;
+  }
   
   .container td {
     background-color: #f5f5f5;
     color: #302535;
   }
   
-  .container tr:hover td {
+  .container tr:nth-child(odd) td {
+    background-color: #f9f9f9;
+  }
+  
+  .container td:hover {
     background-color: #F6AE2D;
     color: #ffffff;
     transform: translate(4px, -4px);
     box-shadow: 0 6px 6px -6px #ffffff;
+  }
+  
+  .container td:hover::before {
+    content: "Hovered: ";
+    font-weight: bold;
   }
   
