@@ -6,7 +6,7 @@ function reveal(){
   var revealBottom = reveals[0].getBoundingClientRect().bottom;
   var image = document.querySelectorAll('.image-space');
   var hideTop = image[0].getBoundingClientRect().top;
-  var revealpoint = -20;
+  var revealpoint = -80;
   if(revealBottom < windowheight - revealpoint){
     reveals[0].classList.add('active');
   }
