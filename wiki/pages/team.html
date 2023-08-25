@@ -426,9 +426,7 @@
     </div>
 
     <script type="text/javascript">
-      var tScroll = document.querySelectorAll('.teamScroll');
-tScroll[0].addEventListener('scroll',teamColor);
-
+window.addEventListener('scroll',teamColor);
 function teamColor(){
     var sect1 = document.getElementById('sec1');
     var sect2 = document.getElementById('sec2');
@@ -446,11 +444,12 @@ function teamColor(){
     var windowheight = window.innerHeight;
     var ofset = 50
 
-    var stickhead = document.querySelectorAll('.stickhead')[0];
-    
+    var stickhead = document.querySelectorAll('.teamHead')[0];
+  
+    console.log("sect "+sect2Top);
 
     if(sect4Top < windowheight/2 + ofset){
-        
+      console.log('sect4');
       stickhead.classList.add('s4');
       stickhead.classList.remove('s3');
       stickhead.classList.remove('s2');
@@ -458,7 +457,7 @@ function teamColor(){
         
     } else{
       if (sect3Top < windowheight/2 + ofset){
-
+        console.log('sect3');
         stickhead.classList.add('s3');
         stickhead.classList.remove('s4');
         stickhead.classList.remove('s2');
@@ -466,13 +465,14 @@ function teamColor(){
 
       } else{
         if (sect2Top < windowheight/2 + ofset){
-    
+          console.log('sect2');
           stickhead.classList.add('s2');
           stickhead.classList.remove('s4');
           stickhead.classList.remove('s1');
           stickhead.classList.remove('s3');
           
         } else{
+          console.log('s1');
                 
           stickhead.classList.add('s1');
           stickhead.classList.remove('s4');
