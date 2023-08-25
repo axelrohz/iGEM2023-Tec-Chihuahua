@@ -609,45 +609,22 @@ body {
 
 
 /*table attribution */
-
-.container{
+.container {
   font-family: 'Inter Tight';
+  text-align: left;
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+  display: table;
+  padding: 0 0 8em 0;
+  border: 2px solid #447D9C; /* Agrega un borde a la tabla */
+  border-collapse: separate;
+  border-spacing: 0.5em; /* Ajusta según necesites */
 }
 
-h1 {
-  font-size: 3em;
-  font-weight: 300;
-  line-height: 1em;
-  text-align: center;
-  color: #4DC3FA;
-  font-family: 'Inter Tight';
-}
-
-h2 {
-  font-size: 1em;
-  font-weight: 300;
-  text-align: center;
-  display: block;
-  line-height: 1em;
-  padding-bottom: 2em;
-  color: #302535;
-  font-family: 'Inter Tight';
-}
-
-h2 a {
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #302535;
-  text-decoration: none;
-  font-family: 'Inter Tight';
-}
-
-.blue {
-  color: #447D9C;
-}
-
-.yellow {
-  color: #F6AE2D;
+.container th, .container td {
+  padding: 2%;
+  border: 1px solid #447D9C; /* Agrega un borde a las celdas */
 }
 
 .container th h1 {
@@ -668,25 +645,14 @@ h2 a {
   box-shadow: 0 2px 2px -2px #ffffff;
 }
 
-.container {
-  text-align: left;
-  overflow: hidden;
-  width: 80%;
-  margin: 0 auto;
-  display: table;
-  padding: 0 0 8em 0;
-  border-collapse: separate;
-  border-spacing: 0.5em; /* Adjust as needed */
+.container td:hover {
+  background-color: #F3F3FA;
+  color: #302535;
+  transform: translate3d(4px, -4px, 0); /* Movimiento individual por celda */
+  transition: transform 0.4s ease; /* Transición para el movimiento */
+  border: 1px solid #F6AE2D; /* Cambia el borde al hacer hover */
+  box-shadow: 0 6px 6px -6px #ffffff; /* Cambia el sombreado al hacer hover */
 }
-
-.container td, .container th {
-  padding-bottom: 2%;
-  padding-top: 2%;
-  padding-left: 2%;
-  transition: transform 0.3s ease; /* Agrega una transición al movimiento */
-}
-
-
 
 .container th {
   background-color: #ffffff;
@@ -700,16 +666,13 @@ h2 a {
 
 .container tr:hover {
   background-color: #ffffff;
-  -webkit-box-shadow: 0 6px 6px -6px #ffffff;
-  -moz-box-shadow: 0 6px 6px -6px #ffffff;
-  box-shadow: 0 6px 6px -6px #ffffff;
 }
 
-.container tr:hover td {
-  background-color: #F3F3FA;
-  color: #302535;
-  transform: translate3d(4px, -4px, 0); /* Aplicar el movimiento */
-  transition: transform 0.4s ease; /* Transición para el movimiento */
+@media (max-width: 800px) {
+  .container td:nth-child(4),
+  .container th:nth-child(4) {
+    display: none;
+  }
 }
 
 
