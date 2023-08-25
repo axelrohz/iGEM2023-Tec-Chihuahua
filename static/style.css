@@ -687,6 +687,7 @@ h2 a {
 }
 
 
+
 .container th {
   background-color: #ffffff;
 }
@@ -697,18 +698,21 @@ h2 a {
   font-weight: 600;
 }
 
+.container tr:hover {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 6px 6px -6px #ffffff;
+  -moz-box-shadow: 0 6px 6px -6px #ffffff;
+  box-shadow: 0 6px 6px -6px #ffffff;
+}
+
 .container tr:hover td {
   background-color: #F3F3FA;
   color: #302535;
   transform: translate3d(4px, -4px, 0); /* Aplicar el movimiento */
   transition: transform 0.4s ease; /* Transición para el movimiento */
 }
-@media (max-width: 800px) {
-  .container td:nth-child(4),
-  .container th:nth-child(4) {
-    display: none;
-  }
-}
+
+
 
 
 
