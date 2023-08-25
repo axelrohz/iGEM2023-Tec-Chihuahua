@@ -3,11 +3,11 @@ window.addEventListener('scroll',reveal);
 function reveal(){
   var reveals = document.querySelectorAll('.teamBody');
   var windowheight = window.innerHeight;
-  var revealBottom = reveals[0].getBoundingClientRect().bottom;
+  var revealBottom = reveals[0].getBoundingClientRect().top;
   var image = document.querySelectorAll('.image-space');
   var hideTop = image[0].getBoundingClientRect().top;
-  var revealpoint = -80;
-  if(revealBottom < windowheight - revealpoint){
+  var revealpoint = -20;
+  if(revealBottom < 80){
     reveals[0].classList.add('active');
   }
   else{
