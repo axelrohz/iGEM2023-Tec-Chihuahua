@@ -686,15 +686,6 @@ h2 a {
   transition: transform 0.3s ease; /* Agrega una transición al movimiento */
 }
 
-/* Background-color of the odd rows */
-.container tr:nth-child(odd) {
-  background-color: #f5f5f5; /* Adjust as needed */
-}
-
-/* Background-color of the even rows */
-.container tr:nth-child(even) {
-  background-color: #ffffff;
-}
 
 .container th {
   background-color: #ffffff;
@@ -706,20 +697,12 @@ h2 a {
   font-weight: 600;
 }
 
-.container tr:hover {
-  background-color: #ffffff;
-  -webkit-box-shadow: 0 6px 6px -6px #ffffff;
-  -moz-box-shadow: 0 6px 6px -6px #ffffff;
-  box-shadow: 0 6px 6px -6px #ffffff;
-}
-
 .container tr:hover td {
   background-color: #F3F3FA;
   color: #302535;
   transform: translate3d(4px, -4px, 0); /* Aplicar el movimiento */
   transition: transform 0.4s ease; /* Transición para el movimiento */
 }
-
 @media (max-width: 800px) {
   .container td:nth-child(4),
   .container th:nth-child(4) {
