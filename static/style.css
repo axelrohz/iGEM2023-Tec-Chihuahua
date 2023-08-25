@@ -608,161 +608,103 @@ body {
 
 /*table attribution */
 
+/*table attribution */
 
 
-  h1 {
-    font-size:3em; 
-    font-weight: 300;
-    line-height:1em;
-    text-align: center;
-    color: #4DC3FA;
+
+h1 {
+  font-size:3em; 
+  font-weight: 300;
+  line-height:1em;
+  text-align: center;
+  color: #4DC3FA;
+  font-family: 'Inter Tight';
+}
+
+h2 {
+  font-size:1em; 
+  font-weight: 300;
+  text-align: center;
+  display: block;
+  line-height:1em;
+  padding-bottom: 2em;
+  color: #302535;
+  font-family: 'Inter Tight';
+}
+
+h2 a {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #302535;
+  text-decoration: none;
+  font-family: 'Inter Tight';
+}
+
+.blue { color: #447D9C; }
+.yellow { color: #F6AE2D; }
+
+.container th h1 {
+    font-weight: bold;
+    font-size: 1em;
+    text-align: left;
+    color: #447D9C;
     font-family: 'Inter Tight';
-  }
-
-  h2 {
-    font-size:1em; 
-    font-weight: 300;
-    text-align: center;
-    display: block;
-    line-height:1em;
-    padding-bottom: 2em;
-    color: #302535;
-    font-family: 'Inter Tight';
-  }
-
-  h2 a {
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #302535;
-    text-decoration: none;
-    font-family: 'Inter Tight';
-  }
-
-  .blue { color: #447D9C; }
-  .yellow { color: #F6AE2D; }
-
-  .container th h1 {
-      font-weight: bold;
-      font-size: 1em;
-      text-align: left;
-      color: #447D9C;
-      font-family: 'Inter Tight';
-      box-sizing: content-box;
-      box-shadow: #447D9C;
-  }
-
-  .container td {
-      font-weight: normal;
-      font-size: 1em;
-    -webkit-box-shadow: 0 2px 2px -2px #f7f8fa;
-      -moz-box-shadow: 0 2px 2px -2px #f7f8fa;
-            box-shadow: 0 2px 2px -2px #f7f8fa;
-  }
-
-  .container {
-      text-align: left;
-      overflow: hidden;
-      width: 80%;
-      margin: 0 auto;
-    display: table;
-    padding: 0 0 8em 0;
-  }
-
-  .container td, .container th {
-      padding-bottom: 2%;
-      padding-top: 2%;
-    padding-left:2%;  
-  }
-
-  /* Background-color of the odd rows */
-  .container tr:nth-child(odd) {
-      background-color: #f7f8fa;
-  }
-
-  /* Background-color of the even rows */
-  .container tr:nth-child(even) {
-      background-color: #f7f8fa;
-  }
-
-  .container th {
-      background-color: #f7f8fa;
-  }
-
-  .container td:first-child { color: #C55B75; font-family: 'Inter Tight'; font-weight: 600;}
+    box-sizing: content-box;
+    box-shadow: #447D9C;
+}
 
 
-  td {
-    animation: wave 5s infinite;
-  }
+
+.container {
+    text-align: left;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+  display: table;
+  padding: 0 0 8em 0;
+}
+
+
+
+/* Background-color of the odd rows */
+.container tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Background-color of the even rows */
+.container tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.container th {
+    background-color: #ffffff;
+}
+
+.container td:first-child { color: #C55B75; font-family: 'Inter Tight'; font-weight: 600;}
+
+.container tr:hover {
+  background-color: #ffffff;
+-webkit-box-shadow: 0 6px 6px -6px #ffffff;
+    -moz-box-shadow: 0 6px 6px -6px #ffffff;
+          box-shadow: 0 6px 6px -6px #ffffff;
+}
+
+.container td:hover {
+  background-color: #F3F3FA;
+  color: #302535;
   
-  td:nth-child(1) {
-    animation-delay: 0s;
-  }
-  
-  td:nth-child(2) {
-    animation-delay: 0.5s;
-  }
-  
-  td:nth-child(3) {
-    animation-delay: 1s;
-  }
-  
-  td:nth-child(4) {
-    animation-delay: 1.5s;
-  }
-  
-  td:nth-child(5) {
-    animation-delay: 2s;
-  }
-  
-  td:nth-child(6) {
-    animation-delay: 2.5s;
-  }
-  
-  td:nth-child(7) {
-    animation-delay: 3s;
-  }
-  
-  td:nth-child(8) {
-    animation-delay: 3.5s;
-  }
-  
-  td:nth-child(9) {
-    animation-delay: 4s;
-  }
-  
-  td:nth-child(10) {
-    animation-delay: 4.5s;
-  }
-  
+  box-shadow: #C55B75 -1px 1px, #D27063 -2px 2px, #DE8551 -3px 3px, #F6AE2D -4px 4px;
+  transform: translate3d(4px, -4px, 0);
+  transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+  transition-timing-function: line;
+}
 
-  @keyframes wave {
-    0% {
-      transform: translateY(0);
-    }
-    25% {
-      transform: translateY(-10px);
-    }
-    50% {
-      transform: translateY(-5px);
-    }
-    75% {
-      transform: translateY(-10px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-  
-  
-
-  
-  
-
-  @media (max-width: 800px) {
-  .container td:nth-child(4),
-  .container th:nth-child(4) { display: none; }
-  }
+@media (max-width: 800px) {
+.container td:nth-child(4),
+.container th:nth-child(4) { display: none; }
+}
 
 /*card descriptionn impact, reduce*/
 
