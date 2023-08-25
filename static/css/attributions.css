@@ -23,9 +23,6 @@
     color: #302535;
   }
   
-  .TABLA tr:nth-child(odd) td {
-    background-color: #F6AE2D;
-  }
   
   .TABLA td:hover {
     background-color: #F6AE2D;
