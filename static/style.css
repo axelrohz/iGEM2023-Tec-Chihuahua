@@ -609,6 +609,11 @@ body {
 
 
 /*table attribution */
+
+.container{
+  font-family: 'Inter Tight';
+}
+
 h1 {
   font-size: 3em;
   font-weight: 300;
@@ -678,6 +683,7 @@ h2 a {
   padding-bottom: 2%;
   padding-top: 2%;
   padding-left: 2%;
+  transition: transform 0.3s ease; /* Agrega una transición al movimiento */
 }
 
 /* Background-color of the odd rows */
@@ -707,12 +713,20 @@ h2 a {
   box-shadow: 0 6px 6px -6px #ffffff;
 }
 
+.container tr:hover td {
+  background-color: #F3F3FA;
+  color: #302535;
+  transform: translate3d(4px, -4px, 0); /* Aplicar el movimiento */
+  transition: transform 0.4s ease; /* Transición para el movimiento */
+}
+
 @media (max-width: 800px) {
   .container td:nth-child(4),
   .container th:nth-child(4) {
     display: none;
   }
 }
+
 
 
 
