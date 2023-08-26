@@ -13,7 +13,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../static/css/body.css">
     <link rel="stylesheet" href="../../static/css/team.css">
-    <link rel="stylesheet" href="../../static/css/description.css">
     <link href="{{ url_for('static', filename='css/team.css') }}" rel="stylesheet">
     <link href="{{ url_for('static', filename='css/body.css') }}" rel="stylesheet">
     <script src="{{ url_for('static', filename='assets/js/team.js') }}"></script>
@@ -194,6 +193,17 @@
 
 <style>
 
+.uno h1 {
+  font-family: 'Bricolage Grotesque';
+  font-size: 7rem;
+  font-weight: 600;
+  background-image: linear-gradient(#C55B75,#D27063,#DE8551);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-align: left;
+  max-width: 50%;}
+
     p {
         align-content: center;
         justify-content: center;
@@ -207,8 +217,22 @@
         font-size: 3rem;
         font-weight: 400;
         color: #302535;
-
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        grid-template-rows: 16px 0;
+        grid-gap: 22px;
+        align-items: center;
+        max-width: 100%;
+        
     }
+    
+    h2:after, h3:before {
+    content: " ";
+    display: block;
+    border: 2px solid #5BC5AB;
+    background-color:#f8f8f8;}
+
+
 </style>
 
 
