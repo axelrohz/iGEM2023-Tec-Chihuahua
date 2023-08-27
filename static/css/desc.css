@@ -208,7 +208,7 @@
       align-items: center;
       max-width: 100%;
   }
-   h2:after,.dos h2:before {
+   h2:after, h2:before {
     content: " ";
     display: block;
     border: 2px solid #5BC5AB;
