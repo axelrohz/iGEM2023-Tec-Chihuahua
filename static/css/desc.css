@@ -215,5 +215,135 @@
     display: block;
     border: 2px solid #5BC5AB;
     background-color:#f8f8f8;
-    margin-right: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+
     }
+
+/*cards fig 4. */
+
+
+.hover-card, .hover-card2, .hover-card3 {
+  
+  margin: 0 10px;
+  display:flex
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  max-width: 300px;
+  min-height: 450px;
+}
+
+.face, .face-2 , .face-3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  backface-visibility: hidden;
+  border: 1px solid #ddd;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.face1 {
+  transition-duration: 0.5s;
+  transform: translate(0deg);
+  background: linear-gradient(180deg, #519D8E, #5BC5AB, #A7DCD3, #5BC5AB, #519D8E);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.face1-2 {
+  transition-duration: 0.5s;
+  transform: translate(0deg);
+  background: linear-gradient(180deg,#F6AE2D,#F6C061, #F5D194, #F6C061,#F6AE2D);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.face1-3 {
+  transition-duration: 0.5s;
+  transform: translate(0deg);
+  background: linear-gradient(180deg, #8B955F, #A9BA6C, #CED7B3, #A9BA6C, #8B955F);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.face2 {
+  transition-duration: 0.5s;
+  transform: translate(180deg);
+  background-color: #A7DCD3;
+  opacity: 0;
+
+
+}
+
+.face2-2 {
+  transition-duration: 0.5s;
+  transform: translate(180deg);
+  background-color: #F5D194;
+  opacity: 0;
+
+}
+
+.face2-3 {
+  transition-duration: 0.5s;
+  transform: translate(180deg);
+  background-color: #CED7B3;
+  opacity: 0;
+
+}
+
+
+.hover-card:hover .face1 {
+  transition-duration: 0.5s;
+  transform: translate(180deg);
+  opacity: 0;
+
+}
+
+.hover-card2:hover .face1-2 {
+  transition-duration: 0.5s;
+  transform: translate(180deg);
+  opacity: 0;
+
+}
+
+.hover-card3:hover .face1-3 {
+  transition-duration: 0.5s;
+  transform: translate(180deg);
+  opacity: 0;
+
+}
+
+.hover-card:hover .face2 {
+  transition-duration: 0.5s;
+  transform: translate(360deg);
+  opacity: 1;
+
+}
+
+.hover-card2:hover .face2-2 {
+  transition-duration: 0.5s;
+  transform: translate(360deg);
+  opacity: 1;
+
+}
+
+.hover-card3:hover .face2-3 {
+  transition-duration: 0.5s;
+  transform: translate(360deg);
+  opacity: 1;
+
+}
+
+h10 {
+  font-size: 30px;
+  font-family: 'bricolage grotesque';
+  font-weight: 300;
+  color: #302535;
+}
+
