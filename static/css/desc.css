@@ -195,42 +195,25 @@
         margin-right: 50px;
         font-family: 'Quicksand';
     }
-
     h2 {
-        font-family: 'Bricolage Grotesque';
-        font-size: 3vw;
-        font-weight: 400;
-        color: #302535;
-        max-width: 100%;
-        position: relative;
-        margin: 100px auto;
-        text-align: center;
-
-        
-    }
-
-    h2:before{
-      content: "";
-      display:block;
-      width: 120px;
-      height:2px;
-      background: #5bc5ab;
-      position: absolute;
-      left: 0;
-      top: 50%;
-      z-index: -2;
-      }
-      h2:after{
-      content: "";
-      display:block;
-      width: 120px;
-      height:2px;
-      background: #5BC5AB;
-      position: absolute;
-      right: 0;
-      top: 50%;
-      z-index: -2;
-      }
+      text-align: center;
+      font-family: 'Bricolage Grotesque';
+      font-size:3vw; 
+      font-weight:500; 
+      color:#302535;  
+      display: grid;
+      grid-template-columns: 1fr max-content 1fr;
+      grid-template-rows: 16px 0;
+      grid-gap: 22px;
+      align-items: center;
+      max-width: 100%;
+  }
+   h2:after,.dos h2:before {
+    content: " ";
+    display: block;
+    border: 2px solid #5BC5AB;
+    background-color:#f8f8f8;
+}
 /*cards fig 4. */
 
 .responsiveimg {
