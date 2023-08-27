@@ -222,21 +222,22 @@
 
 /*cards fig 4. */
 
-
-
-  /*DESCRIPTION*/
-/*cards fig 4. */
+.hovcont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: transparent
+}
 
 
 .hover-card, .hover-card2, .hover-card3 {
+  width: 300px;
+  height: 450px;
   perspective: 1000px;
   margin: 0 10px;
-  display:flex
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  max-width: 300px;
-  max-height: 450px;
 }
 
 .face, .face-2 , .face-3 {
