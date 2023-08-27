@@ -9,11 +9,14 @@ body {
   align-items: center;
   margin: 0;
   background-color: #ffffff;
+  min-width: 300px;
+  min-height: 450px;
+
 }
 
 .hover-card, .hover-card2, .hover-card3 {
-  max-width: 300px;
-  max-height: 450px;
+  min-width: 30%;
+  min-height: 45% ;
   perspective: 1000px;
   margin: 0 10px;
 }
