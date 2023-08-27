@@ -222,6 +222,11 @@
 
 /*cards fig 4. */
 
+.responsiveimg {
+  width: 100%;
+  height: auto;
+}
+
 .hovcont {
   display: flex;
   flex-direction: row;
@@ -300,7 +305,7 @@
   transform: translate(180deg);
   background-color: #CED7B3;
   opacity: 0;
-
+  img
 }
 
 
