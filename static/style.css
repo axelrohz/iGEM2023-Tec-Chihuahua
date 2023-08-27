@@ -18,8 +18,8 @@
 }
 
 .face, .face-2 , .face-3 {
-  width: 100%;
-  height: 100%;
+  width: 30%;
+  height: 45%;
   display: flex;
   flex-direction: column;
   justify-content: center;
