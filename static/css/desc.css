@@ -230,8 +230,8 @@
   justify-content: center;
   align-items: center;
   margin: 0;
-  min-width: 300px;
-  min-height: 450px;
+  max-width: 300px;
+  max-height: 450px;
 }
 
 .face, .face-2 , .face-3 {
