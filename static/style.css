@@ -6,7 +6,7 @@
 
 
 .hover-card, .hover-card2, .hover-card3 {
-  perspective: 1000px;
+  
   margin: 0 10px;
   display:flex
   justify-content: center;
