@@ -13,8 +13,8 @@ body {
 }
 
 .hover-card, .hover-card2, .hover-card3 {
-  width: 300px;
-  height: 450px;
+  max-width: 300px;
+  max-height: 450px;
   perspective: 1000px;
   margin: 0 10px;
 }
