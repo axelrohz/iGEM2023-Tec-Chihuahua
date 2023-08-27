@@ -3,22 +3,18 @@
 
 /*DESCRIPTION*/
 /*cards fig 4. */
-body {
+
+
+.hover-card, .hover-card2, .hover-card3 {
+  perspective: 1000px;
+  margin: 0 10px;
   display:flex
   justify-content: center;
   align-items: center;
   margin: 0;
   background-color: #ffffff;
-  min-width: 915px;
-  min-height: 500px;
-
-}
-
-.hover-card, .hover-card2, .hover-card3 {
-  min-width: 30%;
-  min-height: 45% ;
-  perspective: 1000px;
-  margin: 0 10px;
+  miwidth: 915px;
+  min-height: 450px;
 }
 
 .face, .face-2 , .face-3 {
