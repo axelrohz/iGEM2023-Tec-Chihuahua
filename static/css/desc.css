@@ -223,7 +223,7 @@
 /*cards fig 4. */
 
 .responsiveimg {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -352,9 +352,10 @@
 }
 
 h10 {
-  font-size: 30px;
+  font-size: 5vw;
   font-family: 'bricolage grotesque';
   font-weight: 300;
   color: #302535;
+  text-align: center;
 }
 
