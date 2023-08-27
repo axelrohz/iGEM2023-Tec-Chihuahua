@@ -207,6 +207,7 @@
         grid-gap: 22px;
         align-items: center;
         max-width: 100%;
+        position: relative;
         
     }
 
