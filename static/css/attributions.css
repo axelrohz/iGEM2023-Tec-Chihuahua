@@ -3,18 +3,18 @@
     width: 80%;
     margin: 0 auto;
     border-collapse: collapse;
-    border: 2px solid #C55B75;
+    border: 2px solid #D27063;
   }
   
   .TABLA th, .TABLA td {
     padding: 12px;
     text-align: left;
-    border: 1px solid #C55B75;
+    border: 1px solid #D27063;
     transition: background-color 0.3s, transform 0.3s;
   }
   
   .TABLA th {
-    background-color: #C55B75;
+    background-color: #D27063;
     color: #ffffff;
   }
   
