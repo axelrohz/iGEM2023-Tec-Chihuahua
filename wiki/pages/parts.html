@@ -123,9 +123,19 @@ the world. Consider how the world affects your work and how your work affects th
 
                     </p>
                     <br>
-                    <h2>Overview</h2>
+                    <h2>LysCSA13-ABD </h2>
                     <p align="justify">
-                        
+                        <div id="container">
+                            
+                            
+                            <ul class="faq">
+                              <li class="q"> Lorem ipsum dolor sit amet, consectetur adipiscing elit? <i class="fas fa-plus"></i></li>
+                              <li class="a">Suspendisse sit amet elit lacinia, feugiat magna at, luctus massa. Aliquam sodales dictum nulla. consectetur adipiscing elit.</li>
+                              
+                              <li class="q"> Lorem ipsum dolor sit amet, consectetur adipiscing elit? <i class="fas fa-plus"></i></li>
+                              <li class="a">Suspendisse sit amet elit lacinia, feugiat magna at, luctus massa. Aliquam sodales dictum nulla. consectetur adipiscing elit.</li>
+                            </ul>
+                          </div>
                     </p>
                     
 
@@ -137,7 +147,30 @@ the world. Consider how the world affects your work and how your work affects th
     </div>
 </body>
 </html>
+<script>
+     // Accordian Action
+     var action = 'click';
+    var speed = "500";
 
+    // Document Ready
+    $(document).ready(function(){
+      // Question handler
+      $('li.q').on(action, function(){
+        // Check if the current question is already opened
+        var isOpen = $(this).hasClass('rotate');
+
+        // Reset all other questions
+        $('li.q').removeClass('rotate');
+        $('li.a').slideUp(speed);
+
+        // Open or close the current question accordingly
+        if (!isOpen) {
+          $(this).addClass('rotate');
+          $(this).next().slideDown(speed);
+        }
+      }); // End on click
+    }); // End Ready
+</script>
 
 
 {% endblock %}

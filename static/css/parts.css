@@ -163,4 +163,71 @@ h1 {
         box-shadow: 0 6px 6px -6px #ffffff;
     }
 
-
+    * {
+        margin: 0;
+        padding: 0;
+      }
+  
+      body {
+        font-family: 'roboto', sans-serif;
+        color: #666;
+        font-size: 16px;
+        background: #f9f9f9;
+        line-height: 1.6em;
+      }
+  
+      ul, li { list-style: none; }
+  
+      #container {
+        width: 60%;
+        margin: 150px auto;
+        overflow: auto;
+      }
+  
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+  
+      .title {
+        height: 40px;
+        background: #6bb170;
+        color: white;
+        text-align: center;
+        padding-top: 13px;
+      }
+  
+      .faq li { padding: 20px; }
+  
+      .faq li.q {
+        
+        font-weight: bold;
+        font-size: 120%;
+        border: 1px #ddd solid;
+        border-radius: 15px;
+        cursor: pointer;
+        margin-top: 15px;
+      }
+  
+      .faq li.a {
+        background: #3BB0D6;
+        display: none;
+        color:#fff;
+      }
+  
+      .faq li.q i {
+        float: right;
+        transition: transform 0.3s ease-in-out;
+      }
+  
+      .faq li.q.rotate i::before {
+        content: "\f068"; /* Cross icon */
+      }
+  
+      .faq li.q i::before {
+        content: "\f067"; /* Plus icon */
+      }
+  
+      @media (max-width:800px) {
+        #container { width: 90%; }
+      }
