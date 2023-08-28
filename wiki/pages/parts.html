@@ -125,16 +125,46 @@ the world. Consider how the world affects your work and how your work affects th
                     <br>
                     <h2>LysCSA13-ABD </h2>
                     <p align="justify">
-                        <div id="container">
-                            
-                            
-                            <ul class="faq">
-                              <li class="q"> Lorem ipsum dolor sit amet, consectetur adipiscing elit? <i class="fas fa-plus"></i></li>
-                              <li class="a">Suspendisse sit amet elit lacinia, feugiat magna at, luctus massa. Aliquam sodales dictum nulla. consectetur adipiscing elit.</li>
-                              
-                              <li class="q"> Lorem ipsum dolor sit amet, consectetur adipiscing elit? <i class="fas fa-plus"></i></li>
-                              <li class="a">Suspendisse sit amet elit lacinia, feugiat magna at, luctus massa. Aliquam sodales dictum nulla. consectetur adipiscing elit.</li>
-                            </ul>
+                        <div class="center">
+                            <div class="container">
+                              <div class="setting-description">
+                                <div class="setting-description-text" style="margin-left: 15px">
+                                  <h10>Description</h10>
+                                </div>
+                              </div>
+                              <div class="wrapper-dropdown" id="dropdown">
+                                <span class="selected-display" id="destination">Pick an option!</span>
+                                <svg class="arrow" id="drp-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="transition-all ml-auto rotate-180">
+                                  <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <ul class="dropdown">
+                                  <li class="item">Option 1</li>
+                                  <li class="item">Option 2</li>
+                                  <li class="item">Option 3</li>
+                                  <li class="item">Option 4</li>
+                                </ul>
+                              </div>
+                          
+                              <br>
+                          
+                              <div class="setting-description">
+                                <div class="setting-description-text" style="margin-left: 15px">
+                                  <h10>Description</h10>
+                                </div>
+                              </div>
+                              <div class="wrapper-dropdown" id="dropdown">
+                                <span class="selected-display" id="destination">Pick a different option!</span>
+                                <svg class="arrow" id="drp-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="transition-all ml-auto rotate-180">
+                                  <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <ul class="dropdown">
+                                  <li class="item">Special Option 1</li>
+                                  <li class="item">Special Option 2</li>
+                                  <li class="item">Special Option 3</li>
+                                  <li class="item">Special Option 4</li>
+                                </ul>
+                              </div>
+                            </div>
                           </div>
                     </p>
                     
@@ -147,28 +177,66 @@ the world. Consider how the world affects your work and how your work affects th
     </div>
 </body>
 <script>
-    // Accordian Action
-    var action = 'click';
-   var speed = "500";
+    const selectedAll = document.querySelectorAll(".wrapper-dropdown");
 
-   // Document Ready
-   $(document).ready(function(){
-     // Question handler
-     $('li.q').on(action, function(){
-       // Check if the current question is already opened
-       var isOpen = $(this).hasClass('rotate');
+selectedAll.forEach((selected) => {
+  const optionsContainer = selected.children[2];
+  const optionsList = selected.querySelectorAll("div.wrapper-dropdown li");
 
-       // Reset all other questions
-       $('li.q').removeClass('rotate');
-       $('li.a').slideUp(speed);
+  selected.addEventListener("click", () => {
+    let arrow = selected.children[1];
 
-       // Open or close the current question accordingly
-       if (!isOpen) {
-         $(this).addClass('rotate');
-         $(this).next().slideDown(speed);
-       }
-     }); // End on click
-   }); // End Ready
+    if (selected.classList.contains("active")) {
+      handleDropdown(selected, arrow, false);
+    } else {
+      let currentActive = document.querySelector(".wrapper-dropdown.active");
+
+      if (currentActive) {
+        let anotherArrow = currentActive.children[1];
+        handleDropdown(currentActive, anotherArrow, false);
+      }
+
+      handleDropdown(selected, arrow, true);
+    }
+  });
+
+  // update the display of the dropdown
+  for (let o of optionsList) {
+    o.addEventListener("click", () => {
+      selected.querySelector(".selected-display").innerHTML = o.innerHTML;
+    });
+  }
+});
+
+// check if anything else ofther than the dropdown is clicked
+window.addEventListener("click", function (e) {
+  if (e.target.closest(".wrapper-dropdown") === null) {
+    closeAllDropdowns();
+  }
+});
+
+// close all the dropdowns
+function closeAllDropdowns() {
+  const selectedAll = document.querySelectorAll(".wrapper-dropdown");
+  selectedAll.forEach((selected) => {
+    const optionsContainer = selected.children[2];
+    let arrow = selected.children[1];
+
+    handleDropdown(selected, arrow, false);
+  });
+}
+
+// open all the dropdowns
+function handleDropdown(dropdown, arrow, open) {
+  if (open) {
+    arrow.classList.add("rotated");
+    dropdown.classList.add("active");
+  } else {
+    arrow.classList.remove("rotated");
+    dropdown.classList.remove("active");
+  }
+}
+
 </script>
 </html>
 
