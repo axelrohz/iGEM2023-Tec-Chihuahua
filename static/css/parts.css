@@ -200,7 +200,7 @@ h1 {
       .faq li { padding: 20px; }
   
       .faq li.q {
-        
+        background: #fff;
         font-weight: bold;
         font-size: 120%;
         border: 1px #ddd solid;
