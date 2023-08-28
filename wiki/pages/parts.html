@@ -6,84 +6,153 @@ the world. Consider how the world affects your work and how your work affects th
 
 {% block page_content %}
 
-<link rel="stylesheet" href="static/css/parts.css">
-<script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/body.css">
+    <link rel="stylesheet" href="../../static/css/desc.css">
+    <link href="{{ url_for('static', filename='css/desc.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/body.css') }}" rel="stylesheet">
+    <script src="{{ url_for('static', filename='assets/js/team.js') }}"></script>
+</head>
+<body class="mybody">
+    <img class="parallax-team" src="https://static.igem.wiki/teams/4607/wiki/project-description/vacastun.jpg">
+    <div class="image-space"><h1 class="title"> Team </h1></div>
+    <div class="parallax-content">
+        <div class="teamBody">
+            <div class="stickhead">
+                <div class="teamHead">
+                    <div class="teamTxt">
+                        <h1 class="head">Project Description</h1>
+                    </div>
+                    <svg id="visual" class="wave" viewBox="0 0 450 900" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                        <path d="M334 900L337.8 878.5C341.7 857 349.3 814 354.5 771.2C359.7 728.3 362.3 685.7 354.3 642.8C346.3 600 327.7 557 319.8 514.2C312 471.3 315 428.7 324.3 385.8C333.7 343 349.3 300 351.3 257.2C353.3 214.3 341.7 171.7 343 128.8C344.3 86 358.7 43 365.8 21.5L373 0L450 0L450 21.5C450 43 450 86 450 128.8C450 171.7 450 214.3 450 257.2C450 300 450 343 450 385.8C450 428.7 450 471.3 450 514.2C450 557 450 600 450 642.8C450 685.7 450 728.3 450 771.2C450 814 450 857 450 878.5L450 900Z"
+                            fill="#dbdbdb"></path>
+                        <path d="M414 900L406.5 878.5C399 857 384 814 380 771.2C376 728.3 383 685.7 388.8 642.8C394.7 600 399.3 557 397.3 514.2C395.3 471.3 386.7 428.7 384.8 385.8C383 343 388 300 393.5 257.2C399 214.3 405 171.7 403.3 128.8C401.7 86 392.3 43 387.7 21.5L383 0L450 0L450 21.5C450 43 450 86 450 128.8C450 171.7 450 214.3 450 257.2C450 300 450 343 450 385.8C450 428.7 450 471.3 450 514.2C450 557 450 600 450 642.8C450 685.7 450 728.3 450 771.2C450 814 450 857 450 878.5L450 900Z"
+                            fill="#f3f5f9"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="teamScroll">
+                <div class="wrap" id="sec1">
+                    <div class="uno">
+                        <h1>Food Safety Starts On The Farm</h1>
+                    </div>
+                    <div class="texthide">
+                    <br>
+                    <br>
+                    <h2>AureoBos’ Origin</h2>
+                    <p align="justify">
+                        In the biggest state of Mexico, Chihuahua, lies our tight-knit team, bound not only by our passion for science but also by our love for our community. Our connection to the region, rich in stunning landscapes and warm people, drives our work. The state's economy thrives on mining, agriculture, and livestock activities, with the determination of its residents shaping society's core. During the project's early stages, inspired by a story from our teammate Alexa about her godmother's dairy farm challenges, we delved into dairy farming issues. Mastitis, a prevalent disease affecting dairy cattle, caught our attention due to its significant multifaceted impact on dairy owners. Motivated by Chihuahua's prominence in the Mexican dairy industry <sup>[1]</sup>, we recognized the global significance of addressing this issue.
+                    </p>
+                    <br>
+                    <p align="justify">
+                        Analyzing the problems that impact the world, we sought to understand how our community is bound to the international economic activities, and we found the perfect candidate: milk. Milk is a nutrient-dense food that plays an important role in the diet of over 6 billion people around the world. It provides high-quality protein and essential micronutrients in an easily absorbed form (figure 1) <sup>[2]</sup>.
+                    </p>
+                    <br>
+                    <p align="justify">
+                        We aim to contribute to our feeding’s backbone by offering a safe solution to one of the biggest problems of the milk production chain. With a shared commitment, we work in an attempt to reduce food waste and improve quality as well as  <strong> enhance food safety </strong>. This way, AureoBos reveals a new possibility to revolutionize the dairy industry. 
+                    </p>
+                    <br>
+                    <h5>This will make a difference for dairy farmers in Chihuahua and around the globe.</h5> 
+                    <br>
+                    <h2> Into the Udder / Impact of Bovine Mastitis</h2>
+                    <br>
+                    <p align="justify">
+                        When we think about milk, we immediately associate it with cows, and that is not very far from reality.  
+                    </p>
+                    <br>
+                    <p align="justify">
+                        In fact, 82% of total world milk is obtained from cattle <sup>[3]</sup>. About 150 million households worldwide are engaged in dairy farming. In most developing countries, like Mexico, milk production is carried out by smallholders, exerting a significant impact on household livelihoods, food security and nutritional requirements. For these smallholders, dairy farming offers a crucial source of income <sup>[4]</sup>.
+                    </p>
+                    <br>
+                    <h2>Did You Know…</h2>
+                    <br>
+                    <p align=" justify">
+                        With an astonishing production of 550,498 thousand metric tons of milk as of July 2023 <sup>[5]</sup>, the dairy industry stands a major employer worldwide, underscoring the critical importance of udder health.
+                    </p>
+                    <br>
+                    <p align="justify">
+                        The low affordability and availability of milk are related to various factors like the deficient cattle facilities and milking procedures, which can lead to mastitis <sup>[6]</sup>, an inflammation of the mammary gland caused by several mistakes. (Image 1) <sup>[7]</sup>. (Añadir diagrama de las causas de mastitis con su respectiva fuente) The disease’s occurrence may also be influenced by host factors  (figure 3). 
+                    </p>
+                    <br>
+                    <p>
+                        Certain contagious pathogens stand out as significant contributors, notably <em>Staphylococcus aureus</em>, <em>Streptococcus agalactiae</em>, and <em>Streptococcus uberis</em> (figure 2), all of which damage the milking tissue,  thus, causing irreversible damage to the cow’s milk production. 
+                    </p
+                    <br>
+                    <p align="justify">
+                        <em>S. aureus</em>, the predominant pathogen responsible for bovine mastitis, produces harmful toxins and enzymes. These include protein A, which hinders  antibody recognition by neutrophils; beta-lactamase inducingmicroabscess formation; and TSST-1 (Toxic shock syndrome toxin-1), the major cause of toxic shock syndrome characterized by fever, rash and organ failure <sup>[8] [9]</sup>.
+                    </p>
+                    <br>
+                    <p align="justify">
+                        On the other hand, <em>S. agalactiae</em> is adept at forming biofilms and resides in the bovine gastrointestinal tract <sup>[10]</sup>. Lastly, <em>S. uberis</em> is associated with clinical and sub-clinical infections. It was reported that α-casein and β-casein in milk induce production of biofilms, which help <em>S. uberis</em> to persist under environmental stress and resist antibiotic treatment <sup>[11]</sup>.
+                    </p>
+                    <br>
+                    <p align="justify">
+                        The impact of bovine mastitis extends beyond individual cows. When engaging with our stakeholders, we noticed that the absence of preventive measures such as proper hygiene in both the cowpens and the milking routine significantly raises the risk of infection. Mastitis infections manifest in three forms: subclinical, clinical, and chronic (figure 4). Subclinical mastitis, if not addressed, progresses to clinical stage. Untreated mastitis lowers milk production, increases financial losses, and can harm the cow's udder. Severe cases can even result in cow mortality <sup>[12]</sup>.
+                    </p>
+                    <br>
+                    <div>
+                        <div class="hovcont">
 
-<body class="dad">
-<div class="headParts">
-    <div class="headingParts">
-        <div class="textParts">
-            <h1>Parts</h1>
-            <h3> Agregar una descripcion medio larga, aver como se ve con estas palabras ya no se que mas decir ok? ok, ok, va vallanse a nose donde </h3>
+                            <div class="hover-card">
+                                <div class="face face1">
+                                    <h10>Chronic Mastitis</h10>
+                                </div>
+                                <div class="face face2">
+                                    <img src="https://static.igem.wiki/teams/4607/wiki/project-description/chronic.png" alt="Image" class="responsiveimg">
+                                </div>
+                            </div>
+                        
+                            <div class="hover-card2">
+                              <div class="face-2 face1-2">
+                                  <h10>Clinic Mastitis</h10>
+                              </div>
+                              <div class="face-2 face2-2">
+                                  <img src="https://static.igem.wiki/teams/4607/wiki/project-description/clinic.png" alt="Image" class="responsiveimg">
+                              </div>
+                            </div>
+                        
+                            <div class="hover-card3">
+                              <div class="face-3 face1-3">
+                                  <h10>Subclinic Mastitis</h10>
+                              </div>
+                              <div class="face-3 face2-3">
+                                  <img src="https://static.igem.wiki/teams/4607/wiki/project-description/subclinic.png" alt="Image" class="responsiveimg">
+                              </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <p> <small>
+                        <em> Figure 4.</em> Classification of mastitis according to symptoms and signs.
+                    </p> </small>
+                    <br>
+                    <h2>Milk Is Money</h2>
+                    <br>
+                    <p align="justify">
+                        Milk is a valuable commodity worldwide. The global dairy market was valued at 893 billion  USD in 2022 <sup>[13]</sup>, and milk production and consumption have been increasing in the last 5 years. As a result, at least 80% of the world's population now consumes dairy products <sup>[14] </sup> .
+                        <br>
+                        Bovine mastitis  results in substantial expenses encompassing treatment, animal care, and compromised milk yield. Milk composition, quantity, and quality are adversely affected, with enduring consequences such as impaired udders hindering future milk production for affected cows <sup>[7]</sup>. For both the Mexican dairy sector and global economies bovine mastitis stands as a leading cause of financial loss <sup>[15]</sup>. With rising dairy cattle populations, the disease's prevalence is poised to escalate, projecting the bovine mastitis market size to significantly impact the global economy by 2027. According to the research from the University of Glasgow, mastitis is estimated to cost around 19,7 billion dollars to 30 billion USD worldwide; these costs include diagnostics, milk loss, veterinary services, labor, therapeutics, among others <sup>[16]</sup>.
+                    </p>
+                    <br>
+                    <h2>Conventional Treatments</h2>
+                    <p align="justify">
+                        Mastitis’  primary treatment consists of antibiotics, such as natural or synthetic penicillins. However, overuse of antibiotics in bovine mastitis can trigger resistance and non-response, raising costs and endangering public health <sup>[17]</sup>.
+                    </p>
+
+
+
+                </div>
+                </div>
+            </div>
         </div>
     </div>
-
-    <svg class="waveParts" id="visual" viewBox="0 0 960 540" xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-        <g>
-            <path id="wave11"
-                d="M0 335L20 326.2C40 317.3 80 299.7 120 292.3C160 285 200 288 240 301.8C280 315.7 320 340.3 360 348.3C400 356.3 440 347.7 480 337.2C520 326.7 560 314.3 600 311C640 307.7 680 313.3 720 321.2C760 329 800 339 840 332.2C880 325.3 920 301.7 940 289.8L960 278L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
-                fill="#A7DCD3"></path>
-            <path id="wave12"
-                d="M0 384L20 379.2C40 374.3 80 364.7 120 373.8C160 383 200 411 240 424C280 437 320 435 360 424.5C400 414 440 395 480 391.3C520 387.7 560 399.3 600 398.2C640 397 680 383 720 374.2C760 365.3 800 361.7 840 358.3C880 355 920 352 940 350.5L960 349L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
-                fill="#81D1BF"></path>
-            <path id="wave13"
-                d="M0 483L20 480.8C40 478.7 80 474.3 120 475.8C160 477.3 200 484.7 240 488.5C280 492.3 320 492.7 360 486.7C400 480.7 440 468.3 480 464.3C520 460.3 560 464.7 600 471C640 477.3 680 485.7 720 480.3C760 475 800 456 840 450.8C880 445.7 920 454.3 940 458.7L960 463L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
-                fill="#5BC5AB"></path>
-        </g>
-        <g style="visibility: hidden">
-            <path id="wave21"
-                d="M0 315L20 324.2C40 333.3 80 351.7 120 354.3C160 357 200 344 240 333.3C280 322.7 320 314.3 360 324C400 333.7 440 361.3 480 358.8C520 356.3 560 323.7 600 311.8C640 300 680 309 720 321.7C760 334.3 800 350.7 840 344.2C880 337.7 920 308.3 940 293.7L960 279L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
-                fill="#A7DCD3"></path>
-            <path id="wave22"
-                d="M0 387L20 390.3C40 393.7 80 400.3 120 394.8C160 389.3 200 371.7 240 376.2C280 380.7 320 407.3 360 421.2C400 435 440 436 480 433.7C520 431.3 560 425.7 600 414.7C640 403.7 680 387.3 720 382.7C760 378 800 385 840 384.5C880 384 920 376 940 372L960 368L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
-                fill="#81D1BF"></path>
-            <path id="wave23"
-                d="M0 485L20 486.7C40 488.3 80 491.7 120 490.5C160 489.3 200 483.7 240 479.5C280 475.3 320 472.7 360 466.8C400 461 440 452 480 449.5C520 447 560 451 600 458.2C640 465.3 680 475.7 720 478.3C760 481 800 476 840 469C880 462 920 453 940 448.5L960 444L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
-                fill="#5BC5AB"></path>
-        </g>
-
-
-    </svg>
-
-    <script>
-        const tween = KUTE.fromTo(
-            '#wave11',
-            { path: '#wave11' },
-            { path: '#wave21' },
-            { repeat: 999, duration: 5000, yoyo: true }
-        ).start();
-    </script>
-    <script>
-        const tween2 = KUTE.fromTo(
-            '#wave12',
-            { path: '#wave12' },
-            { path: '#wave22' },
-            { repeat: 999, duration: 4000, yoyo: true }
-        ).start();
-    </script>
-    <script>
-        const tween3 = KUTE.fromTo(
-            '#wave13',
-            { path: '#wave13' },
-            { path: '#wave23' },
-            { repeat: 999, duration: 3000, yoyo: true }
-        ).start();
-    </script>
-
-
-</div>
-<div class="text">
-    <img src="static/better2.jpg" class="ex"/>
-</div>
- ejemplo de diagrama 
-<div class="dContaint">
-        <img src="" class="dChange"/>
-        <img src="" class="dChange hoverr"/>
-    <button class="dButton">Change</button>
-    <button class="dButton">Change</button>
-</div>
 </body>
+</html>
 
 
 
