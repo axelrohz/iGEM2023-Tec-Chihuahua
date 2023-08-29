@@ -196,7 +196,7 @@
         font-weight: 300;
         font-family: 'Quicksand';
         text-align: justify;
-        line-height: 1.5rem;
+        line-height: 1.5;
     }
     h2 {
       text-align: center;
