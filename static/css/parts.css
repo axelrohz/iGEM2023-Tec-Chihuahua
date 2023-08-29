@@ -126,7 +126,7 @@ h1 {
 .TABLA {
     
     width: 80%;
-    
+    margin: auto;
     border: 2px solid #D27063;
   }
   
