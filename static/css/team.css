@@ -18,6 +18,7 @@
     height: 100vh;    
     display: flex;
     flex:auto;
+    transition: 2.5s;
   }
 
 
