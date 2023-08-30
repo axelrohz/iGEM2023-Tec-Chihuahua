@@ -13,6 +13,10 @@
     z-index: 999;
     
   }
+
+  #Index h2{
+    color: black;
+  }
   
   #Index a {
     display: block;
@@ -43,7 +47,7 @@
   
   #Index-toggle span {
   display: block;
-  width: 100%;
+  width: 25%;
   height: 4px;
   background-color: black;
   margin-bottom: 4px;
