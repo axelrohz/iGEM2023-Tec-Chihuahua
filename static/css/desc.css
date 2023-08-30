@@ -457,7 +457,6 @@ h10 {
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 8px;
-  font-family: 'Bricolage Grotesque';
 }
 
 .card-text {
@@ -469,7 +468,6 @@ h10 {
   visibility: hidden;
   opacity: 0;
   transition: 1s;
-  font-family: 'Quicksand';
 }
 
 .card-text p {
@@ -501,7 +499,7 @@ h10 {
 }
 
 .card:hover .card-text {
-  height: 180px;
+  height: 200px;
   left: 0;
   /* top: 40%; */
   bottom: 0;
