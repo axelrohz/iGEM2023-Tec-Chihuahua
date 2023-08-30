@@ -152,6 +152,10 @@ h1 {
     border: 2px solid #D27063;
   }
   
+  .linkPrueba{
+    color: #3A5169;
+    font-weight: 600;;
+  }
   .TABLA th, .TABLA td {
     padding: 12px;
     text-align: left;
