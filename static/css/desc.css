@@ -458,20 +458,18 @@ h10 {
  }
  
  .item--1 {
-  background: #DE8551;
+  background: #5BC5AB;
  }
  
  .item--2 {
-  background: #A9BA6C;
+  background: #F6AE2D;
  }
  
  .item--3 {
-  background: #447D9C;
- }
- 
- .item--4 {
   background: #D27063;
  }
+ 
+ 
  
  .quantity {
   font-size: 25px;
