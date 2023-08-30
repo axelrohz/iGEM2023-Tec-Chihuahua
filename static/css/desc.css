@@ -430,9 +430,9 @@ h10 {
   height: 254px;
   
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 5px;
+  grid-template-columns: 4fr 4fr;
+  grid-template-rows: 2fr 2fr;
+  gap: 7px;
   overflow: visible;
  }
  
@@ -485,17 +485,17 @@ h10 {
  }
  
  .text--1 {
-  color: rgba(149,149,255,1);
+  color: rgb(253, 253, 253);
  }
  
  .text--2 {
-  color: rgba(252,161,71,1);
+  color: rgb(253, 253, 253);
  }
  
  .text--3 {
-  color: rgba(66,193,110,1);
+  color:rgb(253, 253, 253);
  }
  
  .text--4 {
-  color: rgba(220,91,183,1);
+  color: rgb(253, 253, 253);
  }
