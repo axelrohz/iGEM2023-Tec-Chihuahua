@@ -1,7 +1,6 @@
 /* Index */
 
 #Index {
-  display: none;
   position: fixed;
   bottom: 60px;
   left: 20px;
@@ -30,67 +29,67 @@
 }
 
 #Index-toggle {
-  position: fixed;
-  bottom: 20px;
+  display: none; /* Ocultamos el input */
+}
+
+label {
+  cursor: pointer;
+  position: fixed; /* Cambiamos el label de posición */
+  bottom: 20px; /* Lo colocamos en la misma posición que el input original */
   left: 20px;
-  width: 3vm;
+  width: 3%; /* Le damos el mismo tamaño que el input original */
   height: auto;
   border:none;
   background-color: rgba(255, 255, 255, 0);
   z-index: 1000;
-  text-align: center;
 }
 
-#Index-toggle:active{
-  outline: none;
-}
-
-#Inicio h2{
-  display: none;
-}
-
-
-#Index-toggle span {
-display: block;
-width: 100%;
+label span {
+display: block; /* Cambiamos los span de posición */
+width: 60%;
 height: 4px;
 background-color: black;
 margin-bottom: 4px;
 z-index: 1000;
-
+transition: all 0.3s ease-in-out; /* Añadimos una transición para el cambio de forma */
 }
 
-@media only screen and (max-width: 600px) {
-  #Index {
-    width: 80%;
-    bottom: 10px;
-    left: 10%;
-    border-radius: 10px;
-    padding: 5px;
-  }
-
-  #Index a {
-    font-size: 1.2rem;
-    padding-bottom: 5%;
-    padding-top: 5%;
-  }
-
-  #Index-toggle {
-    width: 5%;
-    height: 5%;
-    bottom: 10px;
-    left: 10px;
-  }
-
-  #Index-toggle span {
-    height: 6px;
-    margin-bottom: 6px;
-  }
+#Index-toggle:checked + label span:nth-child(1) {
+    transform: rotate(45deg) translate(7px,7px); /* Rotamos y trasladamos el primer span para formar una X */
 }
 
+#Index-toggle:checked + label span:nth-child(2) {
+    opacity:0; /* Ocultamos el segundo span */
+}
 
+#Index-toggle:checked + label span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px,-4px); /* Rotamos y trasladamos el tercer span para formar una X */
+}
 
+@media only screen and (max-width:600px) {
+    #Index {
+      width:80%;
+      bottom:10px;
+      left:10%;
+      border-radius:10px;
+      padding:5px;
+    }
   
+    #Index a {
+      font-size :1.2rem;
+      padding-bottom :5%;
+      padding-top :5%;
+    }
   
+    label {
+      width :5%;
+      height :5%;
+      bottom :10px;
+      left :10px;
+    }
   
-  
+    label span {
+      height :6px;
+      margin-bottom :6px;
+    }
+}
