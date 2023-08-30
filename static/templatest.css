@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Bricolage Grotesque';
     color: #444444;
   }
   
@@ -23,7 +23,7 @@ body {
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Raleway", sans-serif;
+    font-family: 'Bricolage Grotesque';
   }
   
   /*--------------------------------------------------------------
@@ -161,7 +161,7 @@ body {
     padding: 10px 15px;
     transition: 0.3s;
     font-size: 15px;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Bricolage Grotesque';
   }
   
   .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
@@ -448,7 +448,7 @@ body {
     font-weight: 400;
     margin-bottom: 20px;
     padding-bottom: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Bricolage Grotesque';
     color: #627680;
   }
   
@@ -479,7 +479,7 @@ body {
     font-weight: 400;
     font-size: 32px;
     color: #364146;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Bricolage Grotesque';
   }
   
   .about .content ul {
