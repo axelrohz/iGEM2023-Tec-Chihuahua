@@ -499,7 +499,7 @@ h10 {
 }
 
 .card:hover .card-text {
-  height: 200px;
+  height: 180px;
   left: 0;
   /* top: 40%; */
   bottom: 0;
