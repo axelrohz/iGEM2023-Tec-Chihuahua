@@ -33,12 +33,16 @@
   position: fixed;
   bottom: 20px;
   left: 20px;
-  width: 3%;
-  height: 3%;
+  width: 3vm;
+  height: auto;
   border:none;
   background-color: rgba(255, 255, 255, 0);
   z-index: 1000;
   text-align: center;
+}
+
+#Index-toggle:active{
+  outline: none;
 }
 
 #Inicio h2{
