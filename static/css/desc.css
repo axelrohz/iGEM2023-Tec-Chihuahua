@@ -553,7 +553,7 @@ img {
   background:#F3F3FA;
   border-radius:50%;
 }
-.empwave:before,.wave:after{
+.empwave:before,.empwave:after{
   content:'';
   position:absolute;
   width:200%;
