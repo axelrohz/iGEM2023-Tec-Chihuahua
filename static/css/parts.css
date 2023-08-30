@@ -154,6 +154,7 @@ h1 {
   .colorTextoTabla{
     color: #447d9c;
     font-weight: 600;
+    font-family: 'Quicksand';
   }
   .TABLA th, .TABLA td {
     padding: 12px;
@@ -193,9 +194,11 @@ h1 {
         box-sizing: border-box;
       }
       body {
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Quicksand', sans-serif;
         background-color: #34495e;
         color: #fff;
+        text-align: justify;
+        align-items: center;
       }
       h1 {
         text-align: center;
@@ -214,6 +217,7 @@ h1 {
         margin: 1rem 0;
         border-radius: 0.5rem;
         box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+
       }
       .accordion-item-header {
         padding: 0.5rem 3rem 0.5rem 1rem;
@@ -244,6 +248,7 @@ h1 {
         line-height: 1.5rem;
         border-top: 1px solid;
         border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+        justify-content:center;
       }
       
       @media(max-width:767px) {
