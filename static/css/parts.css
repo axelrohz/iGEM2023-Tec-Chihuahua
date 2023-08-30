@@ -3,6 +3,10 @@ body{
     display: block !important;
 }
 
+p {
+  margin: 30px;
+}
+
 h1 {
     font-family: 'Bricolage Grotesque';
     color: #F3F3FA;
@@ -258,6 +262,8 @@ h1 {
         font-weight: 600;
         font-family: 'Quicksand';
         text-align: justify;
+        margin-left: 20px;
+        margin-right: 20px;
       }
       
       @media(max-width:767px) {
