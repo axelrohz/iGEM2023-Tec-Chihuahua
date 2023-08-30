@@ -231,7 +231,7 @@ h1 {
       }
       .accordion-item-header {
         padding: 0.5rem 3rem 0.5rem 1rem;
-        
+        min-height: 3.5rem;
         line-height: 1.25rem;
         font-weight: bold;
         display: flex;
@@ -243,7 +243,7 @@ h1 {
       }
       .accordion-item-header::after {
         content: "\002B";
-        font-size: 2rem;
+        font-size: 3rem;
         position: absolute;
         right: 1rem;
       }
