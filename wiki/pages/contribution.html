@@ -115,6 +115,16 @@
 <div class="card-containar">
   <div class="card">
     <div class="card-details">
+      <img src="https://static.igem.wiki/teams/4607/wiki/contribution/parts.jpeg" class="card-img" alt="Image">
+      <p class="text-title">New BioParts</p>
+      <p class="text-body">Developing a business plan <b>can be tricky and at times confusing</b>. This is why we are delighted to offer this handbook for upcoming <b>iGEM teams</b>, thus facilitating the process of <b>becoming entrepreneurs!</b>
+      </p>
+    </div>
+    <button class="card-button"><a href="">Download</a></button>
+  </div>
+  <div class="card">
+    <div class="card-details">
+      <img src="https://static.igem.wiki/teams/4607/wiki/contribution/bussinessplan.jpeg" class="card-img" alt="Image">
       <p class="text-title">Business Plan Guide</p>
       <p class="text-body">Developing a business plan <b>can be tricky and at times confusing</b>. This is why we are delighted to offer this handbook for upcoming <b>iGEM teams</b>, thus facilitating the process of <b>becoming entrepreneurs!</b>
       </p>
@@ -123,90 +133,110 @@
   </div>
   <div class="card">
     <div class="card-details">
-      <p class="text-title">Business Plan Guide</p>
+      <img src="https://static.igem.wiki/teams/4607/wiki/contribution/troubleshooting.jpeg" class="card-img" alt="Image">
+      <p class="text-title">Troubleshooting Guide</p>
       <p class="text-body">Developing a business plan <b>can be tricky and at times confusing</b>. This is why we are delighted to offer this handbook for upcoming <b>iGEM teams</b>, thus facilitating the process of <b>becoming entrepreneurs!</b>
       </p>
     </div>
-    <button class="card-button"><a href="https://static.igem.wiki/teams/4607/wiki/contribution/contribution-entrepreneurship.pdf">Download</a></button>
-  </div>
-  <div class="card">
-    <div class="card-details">
-      <p class="text-title">Business Plan Guide</p>
-      <p class="text-body">Developing a business plan <b>can be tricky and at times confusing</b>. This is why we are delighted to offer this handbook for upcoming <b>iGEM teams</b>, thus facilitating the process of <b>becoming entrepreneurs!</b>
-      </p>
-    </div>
-    <button class="card-button"><a href="https://static.igem.wiki/teams/4607/wiki/contribution/contribution-entrepreneurship.pdf">Download</a></button>
+    <button class="card-button"><a href="https://static.igem.wiki/teams/4607/wiki/contribution/troubleshooting-1.pdf">Download</a></button>
   </div>
 </div>
 </div>
 
 
 <style>
-  .card {
- width: 300px;
- height: 454px;
- border-radius: 20px;
- background: #f5f5f5;
- position: relative;
- padding: 1.8rem;
- border: 2px solid #c3c6ce;
- transition: 0.5s ease-out;
- overflow: visible;
- margin:10px 10px;
-}
-.card-containar{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 90vh;
-  background-color: transparent;
-}
-.card-details {
- color: black;
- height: 100%;
- gap: .5em;
- display: grid;
- place-content: center;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&family=Oswald:wght@200;300;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-.card-button {
- transform: translate(-50%, 125%);
- width: 80%;
- border-radius: 3rem;
- border: none;
- background-color: #5BC5AB;
- color: #fff;
- font-size: 0.5rem;
- padding: .5rem 1rem;
- position: absolute;
- left: 50%;
- bottom: 0;
- opacity: 0;
- transition: 0s ease-out;
-}
 
-.text-body {
- color: rgb(134, 134, 134);
- font-size: 1.5vh;
-}
+.card {
+    width: 325px;
+    height: 480px;
+    border-radius: 5px;
+    background: #F3F3FA;
+    position: relative;
+    border: 2px solid #f5f5f5;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    margin:10px 10px;
+    border-color: #302535;
+   }
+   .card-containar{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     height: 90vh;
+     background-color: transparent;
+   }
+   .card-details {
+    align-items: center;
+    height: 100%;
+    gap: .5em;
+   }
+ 
+   .card-button {
+    transform: translate(-50%, 125%);
+    width: 40%;
+    border-radius: 3px;
+    border: none;
+    background: linear-gradient(45deg, #5BC5AB, #A7DCD3,#5BC5AB);
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    opacity: 0;
+    transition: 0.5s ease-out;
+    font-family: 'Quicksand';
+    text-decoration: none;
+   }
+   
+   .text-body {
+    color:#302535;
+    font-size: 1rem;
+    font-family: 'Quicksand';
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 10px;
+    text-align: justify;
+   }
+   
+   /*Text*/
+   .text-title {
 
-/*Text*/
-.text-title {
- font-size: 1.vw;
- font-weight: bold;
-}
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Bricolage Grotesque';
+    margin-left: 20px;
+    margin-right: 20px;
+    color:#302535;
+    margin-top: 15px;
+    margin-bottom: 0;
+    inline-size: 1.5;
 
-/*Hover*/
-.card:hover {
- border-color: #5BC5AB;
- box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-}
-
-.card:hover .card-button {
- transform: translate(-50%, 50%);
- opacity: 1;
-}
+   }
+   
+   /*Hover*/
+   .card:hover {
+    border-color: #5BC5AB;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+    transition: 0.2s ease-out;
+    
+   }
+   
+   .card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+   }
+   
+   .card-img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-radius: 1px;
+   }
 
 </style>
 </body>
