@@ -1,0 +1,19 @@
+function toggleIndex() {
+    var Index = document.getElementById("Index");
+    if (Index.style.display === "none") {
+        Index.style.display = "block";
+    } else {
+        Index.style.display = "none";
+    }
+}
+window.onload = function() {
+    var Index = document.getElementById("Index");
+    var headings = document.querySelectorAll("h2");
+    for (var i = 0; i < headings.length; i++) {
+        var heading = headings[i];
+        var link = document.createElement("a");
+        link.href = "#" + heading.id;
+        link.textContent = heading.textContent;
+        Index.appendChild(link);
+    }
+}
