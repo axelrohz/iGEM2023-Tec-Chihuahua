@@ -506,7 +506,22 @@ h10 {
   visibility: visible;
   opacity: 1;
 }
-
+.card:hover .ajusteSegundaCardTexto {
+  height: 225px;
+  left: 0;
+  /* top: 40%; */
+  bottom: 0;
+  visibility: visible;
+  opacity: 1;
+}
+.card:hover .ajusteTerceraCardTexto{
+  height: 280px;
+  left: 0;
+  /* top: 40%; */
+  bottom: 0;
+  visibility: visible;
+  opacity: 1;
+}
 /*empire*/
 
 .empirecont {
