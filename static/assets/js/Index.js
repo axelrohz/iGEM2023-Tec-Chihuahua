@@ -11,6 +11,9 @@ window.onload = function() {
     var headings = document.querySelectorAll("h2");
     for (var i = 0; i < headings.length; i++) {
         var heading = headings[i];
+        if (!heading.id) {
+            heading.id = heading.textContent.replace(/\s+/g, '-').toLowerCase();
+        }
         var link = document.createElement("a");
         link.href = "#" + heading.id;
         link.textContent = heading.textContent;
