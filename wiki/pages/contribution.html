@@ -112,49 +112,45 @@
     </div>
   </div>
 
-<div class="card-containar">
-  <div class="card">
-    <div class="card-details">
-      <img src="https://static.igem.wiki/teams/4607/wiki/contribution/parts.jpeg" class="card-img" alt="Image">
-      <p class="text-title">New BioParts</p>
-      <p class="text-body">Developing a business plan <b>can be tricky and at times confusing</b>. This is why we are delighted to offer this handbook for upcoming <b>iGEM teams</b>, thus facilitating the process of <b>becoming entrepreneurs!</b>
-      </p>
+  <div class="cardbut-containar">
+    <div class="cardbut">
+      <div class="carbut-details">
+        <img src="./img/bussinessplan.jpeg" class="cardbut-img" alt="Image">
+        <p class="cardbuttext-title">Business Plan Guide</p>
+        <p class="cardbuttext-body">Developing a business plan <b>can be tricky and at times confusing</b>. This is why we are delighted to offer this handbook for upcoming <b>iGEM teams</b>, thus facilitating the process of <b>becoming entrepreneurs!</b>
+        </p>
+      </div>
+      <button class="cardbut-button"><a href="https://static.igem.wiki/teams/4607/wiki/contribution/contribution-entrepreneurship.pdf">Read More</a></button>
     </div>
-    <button class="card-button"><a href="">Download</a></button>
-  </div>
-  <div class="card">
-    <div class="card-details">
-      <img src="https://static.igem.wiki/teams/4607/wiki/contribution/bussinessplan.jpeg" class="card-img" alt="Image">
-      <p class="text-title">Business Plan Guide</p>
-      <p class="text-body">Developing a business plan <b>can be tricky and at times confusing</b>. This is why we are delighted to offer this handbook for upcoming <b>iGEM teams</b>, thus facilitating the process of <b>becoming entrepreneurs!</b>
-      </p>
+    <div class="cardbut">
+      <div class="cardbut-details">
+        <img src="./img/WhatsApp Image 2023-08-27 at 15.19.06.jpeg" class="cardbut-img" alt="Image">
+        <p class="cardbuttext-title">Business Plan Guide</p>
+        <p class="cardbuttext-body">Developing a business plan <b>can be tricky and at times confusing</b>. This is why we are delighted to offer this handbook for upcoming <b>iGEM teams</b>, thus facilitating the process of <b>becoming entrepreneurs!</b>
+        </p>
+      </div>
+      <button class="cardbut-button"><a href="https://static.igem.wiki/teams/4607/wiki/contribution/contribution-entrepreneurship.pdf">Read More</a></button>
     </div>
-    <button class="card-button"><a href="https://static.igem.wiki/teams/4607/wiki/contribution/contribution-entrepreneurship.pdf">Download</a></button>
-  </div>
-  <div class="card">
-    <div class="card-details">
-      <img src="https://static.igem.wiki/teams/4607/wiki/contribution/troubleshooting.jpeg" class="card-img" alt="Image">
-      <p class="text-title">Troubleshooting Guide</p>
-      <p class="text-body">Developing a business plan <b>can be tricky and at times confusing</b>. This is why we are delighted to offer this handbook for upcoming <b>iGEM teams</b>, thus facilitating the process of <b>becoming entrepreneurs!</b>
-      </p>
+    <div class="cardbut">
+      <div class="cardbut-details">
+        <img src="./img/WhatsApp Image 2023-08-27 at 15.18.58.jpg" class="cardbut-img" alt="Image">
+        <p class="cardbuttext-title">Business Plan Guide</p>
+        <p class="cardbuttext-body">Developing a business plan <b>can be tricky and at times confusing</b>. This is why we are delighted to offer this handbook for upcoming <b>iGEM teams</b>, thus facilitating the process of <b>becoming entrepreneurs!</b>
+        </p>
+      </div>
+      <button class="cardbut-button"><a href="https://static.igem.wiki/teams/4607/wiki/contribution/contribution-entrepreneurship.pdf">Read More</a></button>
     </div>
-    <button class="card-button"><a href="https://static.igem.wiki/teams/4607/wiki/contribution/troubleshooting-1.pdf">Download</a></button>
   </div>
-</div>
+
 </div>
 
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&family=Oswald:wght@200;300;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-p {
-  font-family: 'Quicksand';
-  font-weight: 500;
-  color: black;
-}
-.card {
-    width: 340px;
-    height: 500px;
+  .cardbut {
+    width: 325px;
+    height: 480px;
     border-radius: 5px;
     background: #F3F3FA;
     position: relative;
@@ -162,25 +158,23 @@ p {
     transition: 0.5s ease-out;
     overflow: visible;
     margin:10px 10px;
-    top: ;
-
+    border-color: #302535;
    }
-   .card-containar{
+   .cardbut-containar{
      display: flex;
      flex-direction: row;
      justify-content: center;
      align-items: center;
-     height:500px;
+     height: 90vh;
      background-color: transparent;
-     margin: 50px;
    }
-   .card-details {
+   .cardbut-details {
     align-items: center;
     height: 100%;
     gap: .5em;
    }
  
-   .card-button {
+   .cardbut-button {
     transform: translate(-50%, 125%);
     width: 40%;
     border-radius: 3px;
@@ -197,12 +191,12 @@ p {
     text-decoration: none;
    }
    
-   .text-body {
+   .cardbuttext-body {
     color:#302535;
     font-size: 1rem;
     font-family: 'Quicksand';
-    margin-left: 12px;
-    margin-right: 12px;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 10px;
@@ -210,36 +204,38 @@ p {
    }
    
    /*Text*/
-   .text-title {
+   .cardbuttext-title {
 
     font-size: 1.8rem;
     font-weight: bold;
     font-family: 'Bricolage Grotesque';
-    margin-left: 12px;
-    margin-right: 12px;
+    margin-left: 20px;
+    margin-right: 20px;
     color:#302535;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 0;
+    inline-size: 1.5;
 
    }
    
    /*Hover*/
-   .card:hover {
+   .cardbut:hover {
     border-color: #5BC5AB;
     box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
     transition: 0.2s ease-out;
     
    }
    
-   .card:hover .card-button {
+   .cardbut:hover .cardbut-button {
     transform: translate(-50%, 50%);
     opacity: 1;
    }
    
-   .card-img {
+   .cardbut-img {
     width: 100%;
     height: auto;
     position: relative;
+    border-radius: 1px;
    }
 
 </style>
