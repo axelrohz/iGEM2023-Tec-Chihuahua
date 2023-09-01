@@ -39,7 +39,7 @@ window.onload = function() {
             var target = document.getElementById(this.href.split('#')[1]);
             
             // Calcula la posición de desplazamiento ajustada
-            var offsetPosition = target.offsetTop - 0; // Ajusta este valor según la altura de tu barra de navegación
+            var offsetPosition = target.offsetTop - 200; // Ajusta este valor según la altura de tu barra de navegación
             
             // Desplaza suavemente hasta el elemento
             window.scrollTo({
