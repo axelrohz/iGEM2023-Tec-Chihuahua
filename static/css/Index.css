@@ -4,7 +4,8 @@
 
 #Index {
   position: fixed;
-  top: 24%;
+  top: 27%;
+  left: 10%;
   width: 13%;
   max-width: 13%;
   background-color: white;
@@ -44,8 +45,8 @@
 label {
   cursor: pointer;
   position: fixed; 
-  top: 16%; 
-  left: 20px;
+  top: 18%; 
+  left: 5%;
   width: 3%; 
   height: auto;
   border:none;
@@ -56,6 +57,7 @@ label {
 
 label h3{
   margin-left: 100%;
+
 }
 
 label div{
