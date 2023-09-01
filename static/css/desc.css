@@ -694,7 +694,7 @@ img {
 .antibioticscont {
   margin: auto;
   align-items: center;
-  max-height: auto;
+  max-height: 900px;
   max-width: 900px;
   background-color: #F3F3FA;
   display: grid;
@@ -717,8 +717,8 @@ img {
 
 .antibioticsdot {
   display: flex;
-  height: 200px;
-  width:200px;
+  height: 300px;
+  width:300px;
   border-radius: 50%;
   background-image: radial-gradient(circle,#CED7B3,#A9BA6C 90%);
   justify-self: center;
@@ -734,7 +734,7 @@ img {
 
 .antibioticsdot img {
   width: auto;
-  height: 150px;
+  height: 100px;
   justify-items: center;
   position: absolute;
   top:30%;
@@ -744,8 +744,8 @@ img {
 
 .antibioticsdot:hover {
   display: flex;
-  height: 150px;
-  width:150px;
+  height: 200px;
+  width:200px;
   transform: scale(0.8);
   transition: 0.2s ease-in-out;
   border-radius: 50%;
@@ -759,7 +759,7 @@ img {
 
 .antibioticsdot:hover img {
   width: auto;
-  height: 100px;
+  height: 90px;
   justify-items: center;
   position: absolute;
   top:37%;
