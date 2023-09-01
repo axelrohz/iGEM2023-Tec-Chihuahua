@@ -717,8 +717,8 @@ img {
 
 .antibioticsdot {
   display: flex;
-  min-height: 200px;
-  min-width:200px;
+  height: 200px;
+  width:200px;
   border-radius: 50%;
   background-image: radial-gradient(circle,#CED7B3,#A9BA6C 90%);
   justify-self: center;
@@ -744,8 +744,8 @@ img {
 
 .antibioticsdot:hover {
   display: flex;
-  min-height: 150px;
-  min-width:150px;
+  height: 150px;
+  width:150px;
   transform: scale(0.8);
   transition: 0.2s ease-in-out;
   border-radius: 50%;
