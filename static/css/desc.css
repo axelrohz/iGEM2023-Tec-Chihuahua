@@ -689,7 +689,7 @@ img {
   text-align: center;
   font-family: 'Quicksand';
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 1rem;
 
 }
 
@@ -709,7 +709,15 @@ img {
 }
 
 .antibioticscont h1 {
-  font-size: 4rem;
+  font-size: 3rem;
+  font-family: 'Bricolage Grotesque';
+  color: #302535;
+  text-align: center;
+  margin: 10px;
+}
+
+.antibioticscont h2 {
+  font-size: 2rem;
   font-family: 'Bricolage Grotesque';
   color: #302535;
   text-align: center;
