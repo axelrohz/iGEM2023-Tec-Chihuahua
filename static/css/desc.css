@@ -857,7 +857,7 @@ img {
   text-align: center;
 }
 
-.treatmentsdot img {
+.treatmentssdot img {
   width: auto;
   height: 130px;
   justify-items: center;
@@ -867,7 +867,7 @@ img {
 }
 
 
-.treatmentsdot:hover {
+.treatmentssdot:hover {
   display: flex;
   height: 250px;
   width:250px;
@@ -882,7 +882,7 @@ img {
   top: -60px;
 }
 
-.treatmentsdot:hover img {
+.treatmentssdot:hover img {
   width: auto;
   height: 90px;
   justify-items: center;
@@ -890,7 +890,7 @@ img {
   top:37%;
 }
 
-.treatmentsdot:hover .treatmentstxt{
+.treatmentssdot:hover .treatmentstxt{
   visibility: visible;
 }
 
