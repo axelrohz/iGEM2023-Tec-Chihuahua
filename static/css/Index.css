@@ -4,8 +4,8 @@
 
 #Index {
   position: fixed;
-  top: 27%;
-  left: 10%;
+  top: 30%;
+  left: 2%;
   width: 13%;
   max-width: 13%;
   background-color: white;
@@ -42,11 +42,15 @@
   display: none; /* Ocultamos el input */
 }
 
+#acomodar{
+  background-color: rgba(116, 115, 115, 0.459);
+}
+
 label {
   cursor: pointer;
   position: fixed; 
   top: 18%; 
-  left: 5%;
+  left: 2%;
   width: 3%; 
   height: auto;
   border:none;
