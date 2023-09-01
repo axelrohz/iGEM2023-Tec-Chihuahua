@@ -705,10 +705,11 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 .antibioticscont h1 {
-  font-size: 3rem;
+  font-size: 2.3rem;
   font-family: 'Bricolage Grotesque';
   color: #302535;
   text-align: center;
@@ -732,6 +733,7 @@ img {
   position: relative;
   justify-content: center;
   text-align: center;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 .antibioticsdot img {
@@ -781,7 +783,7 @@ img {
 }
 *AVAILABLE TREATMENTS*/
 
-.treatmentssdot p{
+.treatmentsdot p{
   color: #302535;
   text-align: center;
   font-family: 'Quicksand';
@@ -852,7 +854,7 @@ img {
   text-align: center;
 }
 
-.treatmentssdot img {
+.treatmentsdot img {
   width: auto;
   height: 130px;
   justify-items: center;
@@ -862,14 +864,14 @@ img {
 }
 
 
-.treatmentssdot:hover {
+.treatmentsdot:hover {
   display: flex;
   height: 250px;
   width:250px;
   transform: scale(0.8);
   transition: 0.2s ease-in-out;
   border-radius: 50%;
-  background-image: radial-gradient(circle,#CED7B3,#A9BA6C 90%);
+  background-image: radial-gradient(circle,#D794A8,#C55B75 90%);
   justify-self: center;
   padding: 50px;
   margin: 10px;
@@ -885,13 +887,24 @@ img {
   top:37%;
 }
 
-.treatmentssdot:hover .treatmentstxt{
+.treatmentsdot:hover .treatmentstxt{
   visibility: visible;
 }
 
 .frase {
-  opacity: 0; /* Inicialmente, el texto es invisible */
-  animation: fadeIn 1s ease-in-out forwards; /* Animación de fadeIn durante 1 segundo */
+  font-size: 2rem;
+  font-family: 'Bricolage Grotesque';
+  font-weight: 300;
+  color: #302535;
+  text-align: left;
+}
+.frase:before {
+  visibility: hidden;
+}
+
+.frase:after {
+  visibility: visible;
+
 }
 .containerFrase{
   text-align: center; /* Centra el contenido horizontalmente dentro del contenedor */
