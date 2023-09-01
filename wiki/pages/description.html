@@ -102,6 +102,37 @@
                     <p align="justify">
                         Analyzing the problems that impact the world, we sought to understand how our community is bound to the international economic activities, and we found the perfect candidate: milk. Milk is a nutrient-dense food that plays an important role in the diet of over 6 billion people around the world. It provides high-quality protein and essential micronutrients in an easily absorbed form (figure 1) <sup>[2]</sup>.
                     </p>
+                    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                    <script type="text/javascript">
+                      google.charts.load("current", {packages:["corechart"]});
+                      google.charts.setOnLoadCallback(drawChart);
+                      function drawChart() {
+                        var data = google.visualization.arrayToDataTable([
+                          ['Protein', 3.28],
+                          ['Total lipid (fat)', 3.2],
+                          ['Carbohydrate', 4.67],
+                          ['Sugar',  4.81],
+                          ['Minerals', 0.424411002],
+                          ['Vitamins',  0.01821007194]
+                          ['Fatty acids (monounsaturated)',0.688 ]
+                          ['Fatty acids (polyunsaturated)', 0.108]
+                          ['Fatty acids (saturated)', 1.86]
+                          ['Cholesterol',0.012]
+                        ]);
+                
+                        var options = {
+                          title: 'Milk nutrients',
+                          is3D: true,
+                        };
+                
+                        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+                        chart.draw(data, options);
+                      }
+                    </script>
+                  </head>
+                  <body>
+                    <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
+                  </body>
                     <br>
                     <p align="justify">
                         We aim to contribute to our feeding’s backbone by offering a safe solution to one of the biggest problems of the milk production chain. With a shared commitment, we work in an attempt to reduce food waste and improve quality as well as  <strong> enhance food safety </strong>. This way, AureoBos reveals a new possibility to revolutionize the dairy industry. 
