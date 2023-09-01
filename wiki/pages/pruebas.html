@@ -5,137 +5,76 @@
 {endblock}
 
 {% block page_content %}
-<br>
-<div class="frame">
-    <div class="center">
-          <p class="quote">
-              I know quite certainly that I myself have no special talent; curiosity, <span class="strong">obsession</span> and dogged endurance, combined with self-criticism have brought me to my ideas.
-          </p>
-          <div class="dictionary">
-              <p class="pronunciation">əbˈseʃ(ə)n]<span class="fa fa-volume-up"></p>
-              <p><b>Obsession</b>, a persistent disturbing preoccupation with an often unreasonable idea or feeling.</p>
-          </div>
-          <div class="author-div">
-              <span class="author">- <em>Albert Einstein</em></span>
-          </div>
-    </div>
+
+
+<style>
+  /* Tooltip container */
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  
+/*cosas del hover*/
+.underline-closing:after,
+.underline-closing:before
+{
+    position: absolute;
+    z-index: -1
+}
+
+.underline-closing:after {
+    content: "";
+    width: 3px;
+    height: 3px;
+    bottom: 0;
+    left: 0
+}
+.underline-closing:focus:before,
+.underline-closing:hover:before {
+    width: 50%;
+    height: 3px
+}
+
+.underline-closing:focus:after,
+.underline-closing:hover:after {
+    width: 50%;
+    height: 3px
+}
+
+.underline-closing:before {
+    content: "";
+    width: 3px;
+    height: 3px;
+    bottom: 0;
+    right: 0
+}
+  </style>
+  
+  <div class="tooltip">
+    <p class="underline-closing">Hover over me</p>
+    <span class="tooltiptext">Tooltip text</span>
   </div>
-  <br>
- <style>
-    .frame {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 400px;
-  height: 400px;
-  margin-top: -200px;
-  margin-left: -200px;
-  border-radius: 2px;
-  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  color: #000;
-  font-weight: 400;
-  background: #C1FBA4;
-  font-family: 'Open Sans', Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.center {
-  width: 80%;
-}
-
-.center p {
-  margin: 2em 0 0 0;
-}
-
-.center .quote {
-  line-height: 1.5;
-  font-size: 1.4rem;
-}
-
-.center .quote .strong {
-  padding: .2em .4em;
-  cursor: pointer;
-  background: #286F8A;
-  color: #fff;
-}
-
-.center .author-div {
-  margin-top: 1.5em;
-}
-
-.center .author {
-  font-weight: 300;
-  font-size: 1.4rem;
-}
-
-.center .dictionary {
-  position: absolute;
-  top: 0;
-  left: 15%;
-  width: 70%;
-  background: #286F8A;
-  color: #fff;
-  line-height: 1.5;
-  border-radius: 3px;
-  opacity: 0;
-  transition: top .3s ease forwards, opacity .3s ease forwards;
-}
-
-.center .dictionary::after {
-  content: '';
-  height: 1em;
-  width: 1em;
-  background: #286F8A;
-  position: absolute;
-  top: 7.7em;
-  left: 7.6em;
-  transform: rotate(45deg);
-}
-
-.center .dictionary p {
-  margin: 0;
-  padding: .8em;
-}
-
-.center .dictionary .pronunciation {
-  background: #fff;
-  color: #286F8A;
-  padding: .3em .8em;
-  display: flex;
-  align-items: center;
-}
-
-.center .dictionary .pronunciation .fa {
-  margin-left: .5em;
-  cursor: pointer;
-  height: 1em;
-  width: 1em;
-}
-
-.center .dictionary .pronunciation .fa:hover {
-  font-size: 1.2em;
-}
-
-.center .active {
-  opacity: 1;
-  top: 1em;
-}
-
- </style>
-
-<script>
-    $('.strong').bind('click', () => {
-	$('.dictionary').toggleClass('active');
-});
-</script>
-
-
-
 
 
 
