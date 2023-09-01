@@ -42,6 +42,14 @@
   display: none; /* Ocultamos el input */
 }
 
+#FONDO{
+  background-color: rgba(0, 0, 0, 0.37);
+  top: 30%;
+  left: 1%;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
 
 label {
   cursor: pointer;
@@ -51,14 +59,17 @@ label {
   width: 3%; 
   height: auto;
   border:none;
-  background-color: rgba(0, 0, 0, 0.37);
   z-index: 1000;
 
 }
 
 label h3{
   margin-left: 100%;
-  border: 2px solid rgb(255, 255, 255);
+  text-shadow:
+    -1px -1px 0 rgb(255, 255, 255),
+    1px -1px 0 rgb(255, 255, 255),
+    -1px 1px 0 rgb(255, 255, 255),
+    1px 1px 0 rgb(255, 255, 255);
   
 }
 
