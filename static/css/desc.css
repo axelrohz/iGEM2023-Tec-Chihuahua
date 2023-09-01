@@ -827,69 +827,6 @@ img {
   justify-content: center;
 }
 
-.treatmentscont h1 {
-  font-size: 3rem;
-  font-family: 'Bricolage Grotesque';
-  color: #302535;
-  text-align: center;
-  margin: 10px;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.treatmentssdot {
-  display: flex;
-  height: 300px;
-  width:300px;
-  border-radius: 50%;
-  background-image: radial-gradient(circle,#D794A8,#C55B75 90%);
-  justify-self: center;
-  padding: 50px;
-  margin: 10px;
-  align-self: center;
-  transition: 0.2s ease-in-out;
-  top: 0;
-  position: relative;
-  justify-content: center;
-  text-align: center;
-}
-
-.treatmentsdot img {
-  width: auto;
-  height: 130px;
-  justify-items: center;
-  position: absolute;
-  top:30%;
-  transition: 0.2s ease-in-out;
-}
-
-
-.treatmentsdot:hover {
-  display: flex;
-  height: 250px;
-  width:250px;
-  transform: scale(0.8);
-  transition: 0.2s ease-in-out;
-  border-radius: 50%;
-  background-image: radial-gradient(circle,#D794A8,#C55B75 90%);
-  justify-self: center;
-  padding: 50px;
-  margin: 10px;
-  align-self: center;
-  top: -60px;
-}
-
-.treatmentsdot:hover img {
-  width: auto;
-  height: 90px;
-  justify-items: center;
-  position: absolute;
-  top:37%;
-}
-
-.treatmentsdot:hover .treatmentstxt{
-  visibility: visible;
-}
 
 .frase {
   font-size: 2rem;
