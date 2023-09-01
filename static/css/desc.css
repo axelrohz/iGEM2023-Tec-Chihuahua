@@ -770,3 +770,17 @@ img {
 .antibioticsdot:hover .antibioticstxt{
   visibility: visible;
 }
+/*frase*/
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+#frase {
+  opacity: 0; /* Inicialmente, el texto es invisible */
+  animation: fadeIn 1s ease-in-out forwards; /* Animación de fadeIn durante 1 segundo */
+}
