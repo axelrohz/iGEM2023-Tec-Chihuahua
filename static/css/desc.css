@@ -707,6 +707,7 @@ img {
   justify-content: center;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
   margin-bottom: 80px;
+  margin-top: 80px;
 }
 
 .antibioticscont h1 {
@@ -782,9 +783,7 @@ img {
       opacity: 1;
   }
 }
-*AVAILABLE TREATMENTS*/
-
-
+/*AVAILABLE TREATMENTS*/
 
 .treatmentscont {
   margin: auto;
