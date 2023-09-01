@@ -677,19 +677,18 @@ img {
 .antibioticstxt {
   position: absolute;
   top: 110%;
-  left: 65%;
+  left: 25%;
   margin-left: -60px;
   z-index: 1;
   visibility: hidden;
   background-color: transparent;
   text-align: center;
   color: #302535;
-  text-align: center;
+  text-align: justify;
   font-family: 'Quicksand';
   font-weight: 500;
+  width: 270px;
   font-size: 1rem;
-  width: 100px;
-  height: 50px;
 
 }
 
@@ -714,6 +713,8 @@ img {
   color: #302535;
   text-align: center;
   margin: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .antibioticsdot {
