@@ -706,6 +706,7 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 80px;
 }
 
 .antibioticscont h1 {
@@ -783,34 +784,7 @@ img {
 }
 *AVAILABLE TREATMENTS*/
 
-.treatmentsdot p{
-  color: #302535;
-  text-align: center;
-  font-family: 'Quicksand';
-  font-weight: 500;
-  font-size: 1.3rem;
-  justify-self: center;
-  margin-top: 10px;
-  margin-left: 50px;
-}
 
-.treatmentstxt {
-  position: absolute;
-  top: 110%;
-  left: 25%;
-  margin-left: -60px;
-  z-index: 1;
-  visibility: hidden;
-  background-color: transparent;
-  text-align: center;
-  color: #302535;
-  text-align: justify;
-  font-family: 'Quicksand';
-  font-weight: 500;
-  width: 270px;
-  font-size: 1rem;
-
-}
 
 .treatmentscont {
   margin: auto;
@@ -825,6 +799,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 80px;
 }
 
 
