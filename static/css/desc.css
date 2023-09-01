@@ -212,6 +212,7 @@
       grid-gap: 22px;
       align-items: center;
       max-width: 100%;
+      padding-top: 150px;
   }
    h2:after, h2:before {
     content: " ";
