@@ -1,11 +1,23 @@
+let reverse = false;
 function toggleIndex() {
-    var Index = document.getElementById("Index");
-    if (Index.style.display === "none") {
-        Index.style.display = "block";
-    } else {
-        Index.style.display = "none";
+  var Index = document.getElementById("Index");
+  if (Index.style.display === "none") {
+    Index.style.display = "block";
+    if (!reverse) {
+      Index.classList.add("roll-in-blurred-left");
+      Index.classList.remove("roll-in-blurred-left-Reverse");
+      reverse = true;
     }
+  } else {
+    if (reverse){
+        Index.classList.add("roll-in-blurred-left-Reverse");
+        Index.classList.remove("roll-in-blurred-left");
+        reverse = false;
+    }
+    Index.style.display = "none";
+  }
 }
+
 window.onload = function() {
     var Index = document.getElementById("Index");
     var headings = document.querySelectorAll("h2");

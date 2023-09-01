@@ -22,6 +22,12 @@
   transition: transform 0.5s;
 }
 
+#Index h3{
+  text-align: center;
+  margin-top: -5%;
+  margin-bottom: -2%;
+}
+
 
 #Index a:hover {
   transform: translateY(20%) translateX(8%);
@@ -65,6 +71,29 @@ transition: all 0.3s ease-in-out; /* Añadimos una transición para el cambio de
 #Index-toggle:checked + label span:nth-child(3) {
     transform: rotate(-45deg) translate(5px,-4px); /* Rotamos y trasladamos el tercer span para formar una X */
 }
+
+.roll-in-blurred-left {
+	animation: roll-in-blurred-left 0.65s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+.roll-in-blurred-left-Reverse {
+	animation: roll-in-blurred-left 0.65s cubic-bezier(0.230, 1.000, 0.320, 1.000) reverse both;
+}
+
+ @keyframes roll-in-blurred-left {
+  0% {
+    transform: translateX(-1000px) rotate(-720deg);
+    filter: blur(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+
 
 @media only screen and (max-width:600px) {
     #Index {
