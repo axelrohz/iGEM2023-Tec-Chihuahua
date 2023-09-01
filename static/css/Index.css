@@ -44,10 +44,10 @@
 
 #FONDO{
   background-color: rgba(0, 0, 0, 0.144);
-  bottom: 73%;
+  bottom: 71.5%;
   left: .5%;
-  height: 14%;
-  width: 9%;
+  height: 17%;
+  width: 11%;
   position: fixed;
   display: flex;
 }
