@@ -507,7 +507,6 @@ h10 {
   opacity: 1;
 }
 /*empire*/
-
 .empirecont {
   margin: 0 auto;
   width: 500px;
@@ -660,4 +659,112 @@ img {
     height: 515px;
 }
 
+}
+
+/*COMMONLY USED ANTIBIOTICS*/
+.antibioticsdot p {
+  color: #302535;
+  text-align: center;
+  font-family: 'Quicksand';
+  font-weight: 500;
+  font-size: 1.3rem;
+  justify-self: center;
+  margin-top: 10px;
+  
+
+}
+
+.antibioticstxt {
+  position: absolute;
+  top: 110%;
+  left: 65%;
+  margin-left: -60px;
+  z-index: 1;
+  visibility: hidden;
+  background-color: transparent;
+  text-align: center;
+  color: #302535;
+  text-align: center;
+  font-family: 'Quicksand';
+  font-weight: 500;
+  font-size: 1.3rem;
+
+}
+
+.antibioticscont {
+  margin: auto;
+  align-items: center;
+  max-height: auto;
+  max-width: 900px;
+  background-color: #F3F3FA;
+  display: grid;
+  padding-bottom: 50px;
+  padding-top: 30px;
+  gap: 20px;
+  grid-template-columns: repeat(5,1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.antibioticscont h1 {
+  font-size: 4rem;
+  font-family: 'Bricolage Grotesque';
+  color: #302535;
+  text-align: center;
+  margin: 10px;
+}
+
+.antibioticsdot {
+  display: flex;
+  min-height: 200px;
+  min-width:200px;
+  border-radius: 50%;
+  background-image: radial-gradient(circle,#CED7B3,#A9BA6C 90%);
+  justify-self: center;
+  padding: 50px;
+  margin: 10px;
+  align-self: center;
+  transition: 0.2s ease-in-out;
+  top: 0;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+}
+
+.antibioticsdot img {
+  width: auto;
+  height: 150px;
+  justify-items: center;
+  position: absolute;
+  top:30%;
+  transition: 0.2s ease-in-out;
+}
+
+
+.antibioticsdot:hover {
+  display: flex;
+  min-height: 150px;
+  min-width:150px;
+  transform: scale(0.8);
+  transition: 0.2s ease-in-out;
+  border-radius: 50%;
+  background-image: radial-gradient(circle,#CED7B3,#A9BA6C 90%);
+  justify-self: center;
+  padding: 50px;
+  margin: 10px;
+  align-self: center;
+  top: -60px;
+}
+
+.antibioticsdot:hover img {
+  width: auto;
+  height: 100px;
+  justify-items: center;
+  position: absolute;
+  top:37%;
+}
+
+.antibioticsdot:hover .antibioticstxt{
+  visibility: visible;
 }
