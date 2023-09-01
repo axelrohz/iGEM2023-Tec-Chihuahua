@@ -780,7 +780,8 @@ img {
   }
 }
 *AVAILABLE TREATMENTS*/
-.treatmentsdot p{
+
+.treatmentssdot p{
   color: #302535;
   text-align: center;
   font-family: 'Quicksand';
@@ -834,7 +835,7 @@ img {
   padding-right: 50px;
 }
 
-.treatmentsdot {
+.treatmentssdot {
   display: flex;
   height: 300px;
   width:300px;
@@ -861,7 +862,7 @@ img {
 }
 
 
-.treatmentsdot:hover {
+.treatmentssdot:hover {
   display: flex;
   height: 250px;
   width:250px;
