@@ -29,6 +29,53 @@ window.onload = function() {
         var link = document.createElement("a");
         link.href = "#" + heading.id;
         link.textContent = heading.textContent;
+        
+        // Agrega un controlador de eventos al enlace
+        link.addEventListener('click', function(event) {
+            // Previene el comportamiento predeterminado del enlace
+            event.preventDefault();
+            
+            // Obtiene el elemento al que se hace referencia
+            var target = document.getElementById(this.href.split('#')[1]);
+            
+            // Calcula la posición de desplazamiento ajustada
+            var offsetPosition = target.offsetTop - 50; // Ajusta este valor según la altura de tu barra de navegación
+            
+            // Desplaza suavemente hasta el elemento
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        });
+        
         Index.appendChild(link);
     }
+    
+    // Agrega un controlador de eventos de desplazamiento a la ventana
+    window.addEventListener('scroll', function() {
+        // Obtiene todos los enlaces en el div #Index
+        var links = document.querySelectorAll('#Index a');
+        
+        // Recorre cada enlace
+        for (var i = 0; i < links.length; i++) {
+            var link = links[i];
+            
+            // Obtiene el elemento al que se hace referencia
+            var target = document.getElementById(link.href.split('#')[1]);
+            
+            // Comprueba si el elemento está visible en la ventana
+            var rect = target.getBoundingClientRect();
+            if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                // Si el elemento está visible, resalta el enlace
+                link.style.fontWeight = 'bold';
+                link.style.textDecoration = 'underline';
+                link.style.color= '#5BC5AB'
+            } else {
+                // Si el elemento no está visible, quita el resaltado del enlace
+                link.style.fontWeight = 'normal';
+                link.style.textDecoration = 'none';
+                link.style.color= 'black'
+            }
+        }
+    });
 }

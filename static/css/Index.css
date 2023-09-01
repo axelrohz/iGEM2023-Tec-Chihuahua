@@ -1,15 +1,20 @@
 /* Index */
 
+
+
 #Index {
   position: fixed;
-  bottom: 60px;
-  left: 20px;
-  width: auto;
+  top: 24%;
+  width: 13%;
+  max-width: 13%;
   background-color: white;
   border-radius: 20px;
   padding: 10px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
   z-index: 999;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 70%;
   
 }
 
@@ -20,12 +25,10 @@
   text-decoration: none; 
   color: black;
   transition: transform 0.5s;
-}
-
-#Index h3{
-  text-align: center;
-  margin-top: -5%;
-  margin-bottom: -2%;
+  word-break: break-all;
+  white-space: normal;
+  border-radius: 50px;
+  
 }
 
 
@@ -40,14 +43,23 @@
 
 label {
   cursor: pointer;
-  position: fixed; /* Cambiamos el label de posición */
-  bottom: 20px; /* Lo colocamos en la misma posición que el input original */
+  position: fixed; 
+  top: 16%; 
   left: 20px;
-  width: 3%; /* Le damos el mismo tamaño que el input original */
+  width: 3%; 
   height: auto;
   border:none;
   background-color: rgba(255, 255, 255, 0);
   z-index: 1000;
+
+}
+
+label h3{
+  margin-left: 100%;
+}
+
+label div{
+  margin-bottom: -150%;
 }
 
 label span {
@@ -93,32 +105,20 @@ transition: all 0.3s ease-in-out; /* Añadimos una transición para el cambio de
   }
 }
 
-
-
-@media only screen and (max-width:600px) {
-    #Index {
-      width:80%;
-      bottom:10px;
-      left:10%;
-      border-radius:10px;
-      padding:5px;
-    }
-  
-    #Index a {
-      font-size :1.2rem;
-      padding-bottom :5%;
-      padding-top :5%;
-    }
-  
-    label {
-      width :5%;
-      height :5%;
-      bottom :10px;
-      left :10px;
-    }
-  
-    label span {
-      height :6px;
-      margin-bottom :6px;
-    }
+#Index::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 50px;
 }
+
+#Index::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+#Index::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+#Index::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
