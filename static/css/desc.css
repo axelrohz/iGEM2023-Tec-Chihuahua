@@ -663,7 +663,7 @@ img {
 }
 
 /*COMMONLY USED ANTIBIOTICS*/
-.antibioticsdot p {
+.antibioticsdot {
   color: #302535;
   text-align: center;
   font-family: 'Quicksand';
@@ -672,8 +672,6 @@ img {
   justify-self: center;
   margin-top: 10px;
   margin-left: 50px;
-  
-
 }
 
 .antibioticstxt {
