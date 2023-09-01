@@ -780,7 +780,10 @@ img {
   }
 }
 
-#frase {
+.frase {
   opacity: 0; /* Inicialmente, el texto es invisible */
   animation: fadeIn 1s ease-in-out forwards; /* Animación de fadeIn durante 1 segundo */
+}
+.containerFrase{
+  text-align: center; /* Centra el contenido horizontalmente dentro del contenedor */
 }
