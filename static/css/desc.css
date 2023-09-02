@@ -469,28 +469,26 @@ img {
 
 .antibioticstxt {
   position: absolute;
-  top: 110%;
-  left: 25%;
-  margin-left: -60px;
   z-index: 1;
   visibility: hidden;
-  background-color: transparent;
+  background-color: #F5D194;
+  border-radius: 5px;
   text-align: center;
   color: #302535;
   text-align: justify;
   font-family: 'Quicksand';
   font-weight: 500;
   width: 270px;
+  height: 150px;
   font-size: 1rem;
-
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 .antibioticscont {
   margin: auto;
   align-items: center;
-  max-height: 900px;
-  max-width: 900px;
-  background-color: #E9BCA6;
+  max-height: 800px;
+  max-width: 700px;
   padding-bottom: 50px;
   padding-top: 30px;
   gap: 20px;
@@ -498,14 +496,14 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
   margin-bottom: 80px;
   margin-top: 80px;
 }
 
 .antibioticscont h1 {
   font-size: 2.3rem;
-  font-family: 'Bricolage Grotesque';
+  font-family: 'Quicksand';
+  text-transform:capitalize;
   color: #302535;
   text-align: center;
   margin: 10px;
@@ -629,8 +627,8 @@ img {
   color: #302535;
   text-align: center;
   margin: 10px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 .treatmentssdot {
