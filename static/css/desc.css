@@ -471,18 +471,19 @@ img {
   position: absolute;
   z-index: 1;
   visibility: hidden;
-  background-color: #F5D194;
+  background-color: #F3F3FA;
   border-radius: 5px;
   text-align: center;
   color: #302535;
-  text-align: justify;
+  text-align: center;
   font-family: 'Quicksand';
   font-weight: 500;
   width: 270px;
   height: 150px;
-  font-size: 1rem;
+  font-size: 0.8rem;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-}
+  padding: 20px;
+    }
 
 .antibioticscont {
   margin: auto;
