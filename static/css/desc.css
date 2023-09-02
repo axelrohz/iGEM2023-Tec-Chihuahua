@@ -748,7 +748,7 @@ img {
 }
 
 #Vaca{
-  position:static;
+  position:absolute;
   align-items: center;
   max-width: 50%;
   margin-left: 35%;
