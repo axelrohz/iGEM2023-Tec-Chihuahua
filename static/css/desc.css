@@ -512,7 +512,7 @@ img {
   padding-right: 100px;
 }
 
-.antibioticscont h2 {
+.antibioticscont h3, a {
   font-size: 1.5rem;
   font-family: 'Quicksand';
   text-transform:capitalize;
@@ -617,19 +617,20 @@ img {
 
 .treatmentstxt {
   position: absolute;
-  top: 110%;
-  left: 25%;
-  margin-left: -60px;
   z-index: 1;
   visibility: hidden;
-  background-color: transparent;
+  background-color: #F3F3FA;
+  border-radius: 5px;
   text-align: center;
   color: #302535;
-  text-align: justify;
+  text-align: center;
   font-family: 'Quicksand';
   font-weight: 500;
   width: 270px;
-  font-size: 1rem;
+  height: 150px;
+  font-size: 0.8rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
 
 }
 
