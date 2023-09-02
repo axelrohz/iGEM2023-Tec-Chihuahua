@@ -6,7 +6,86 @@
 
 {% block page_content %}
 
+<div>
+    <link rel="stylesheet" href="../../static/css/circleDiagramENT.css"/>
+    <link rel="stylesheet" href="../../static/css/fillDiagram.css"/>
+    <br>
+        test
+    <br>
 
+    <div class="circleDiagram">
+        <div class="whatCircle">
+            <div class="circleText">
+                <h3>What?</h3>
+                <p> Enzybiotic treatment for S. aureus, S. agalactiae and S. uberis, E. coli that cause bovine mastitis</p>
+            </div>
+        </div>
+        <div class="howCircle">
+            <div class="circleText">
+                <h3>How?</h3>
+                <p>Biosynthesizing recombinant proteins within prokaryotic cells</p>
+            </div>
+        </div>
+        <div class="whyCircle">
+            <div class="circleText">
+                <h3>Why?</h3>
+                <p>To reduce milk waste, mitigate the economic impact of mastitis, improve the quality of life of the dairy producers, and leave a positive impact on the environment.</p>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+    
+    <div class="diagramSwitch">
+        <div class="waveDiagram" id="wave">
+            <div class="imgContainENT" id="img1">
+                <img class="imagenWave" src="../../static/img1test.png"/>
+            </div>
+            <div class="imgContainENT active" id="img2">
+                <img class="imagenWave" src="../../static/img2test.png"/>
+            </div>
+            <div class="waveContain" >
+                <div class="box"></div>
+                <svg class="rev" viewBox="0 0 1920 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="#5BC5AB" d="M 0 0 C 64 0 64 43 128 43 L 128 43 L 128 0 L 0 0 Z" stroke-width="0"></path> <path fill="#5BC5AB" d="M 127 43 C 177 43 177 25 227 25 L 227 25 L 227 0 L 127 0 Z" stroke-width="0"></path> <path fill="#5BC5AB" d="M 226 25 C 307 25 307 98 388 98 L 388 98 L 388 0 L 226 0 Z" stroke-width="0"></path><path fill="#5BC5AB" d="M 387 98 C 449 98 449 77 511 77 L 511 77 L 511 0 L 387 0 Z" stroke-width="0"></path><path fill="#5BC5AB" d="M 510 77 C 583 77 583 153 656 153 L 656 153 L 656 0 L 510 0 Z" stroke-width="0"></path><path fill="#5BC5AB" d="M 655 153 C 720.5 153 720.5 42 786 42 L 786 42 L 786 0 L 655 0 Z" stroke-width="0"></path><path fill="#5BC5AB" d="M 785 42 C 911 42 911 233 1037 233 L 1037 233 L 1037 0 L 785 0 Z" stroke-width="0"></path><path fill="#5BC5AB" d="M 1036 233 C 1133.5 233 1133.5 140 1231 140 L 1231 140 L 1231 0 L 1036 0 Z" stroke-width="0"></path><path fill="#5BC5AB" d="M 1230 140 C 1356.5 140 1356.5 311 1483 311 L 1483 311 L 1483 0 L 1230 0 Z" stroke-width="0"></path><path fill="#5BC5AB" d="M 1482 311 C 1539.5 311 1539.5 265 1597 265 L 1597 265 L 1597 0 L 1482 0 Z" stroke-width="0"></path><path fill="#5BC5AB" d="M 1596 265 C 1753 265 1753 398 1910 398 L 1910 398 L 1910 0 L 1596 0 Z" stroke-width="0"></path></svg>
+                
+            </div>
+        </div>
+
+        <div class="butSep">
+            <button class="waveButt" id="bt1" onclick="image1()">
+                Small & Medium Scale Producers
+            </button>
+            <button class="waveButt active" id="bt2" onclick="image2()">
+                Large Scale Producers
+            </button>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function image1(){
+            document.getElementById("wave").classList.add("active");
+            setTimeout(function(){
+                document.getElementById("wave").classList.remove("active"); 
+                document.getElementById("img1").classList.add("active");
+                document.getElementById("img2").classList.remove("active");
+            }, 6500);
+            document.getElementById("bt1").classList.add("active");
+            document.getElementById("bt2").classList.remove("active");
+        }
+
+        function image2(){
+            document.getElementById("wave").classList.add("active");
+            setTimeout(function(){
+                document.getElementById("wave").classList.remove("active"); 
+                document.getElementById("img2").classList.add("active");
+                document.getElementById("img1").classList.remove("active");
+
+            }, 6500);
+            document.getElementById("bt2").classList.add("active");
+            document.getElementById("bt1").classList.remove("active");
+        }
+    </script>
+
+</div>
 
 
 {% endblock %}
