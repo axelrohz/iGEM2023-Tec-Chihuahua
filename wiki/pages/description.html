@@ -26,7 +26,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <script src="{{ url_for('static', filename='assets/js/team.js') }}"></script>
-    
+    <script src="{{ url_for('static', filename='assets/js/desc.js') }}"></script>
 </head>
 <body class="mybody">
     <img class="parallax-team" src="https://static.igem.wiki/teams/4607/wiki/project-description/dsc-0122-2.jpg">
@@ -387,7 +387,15 @@
                     <img src="https://static.igem.wiki/teams/4607/wiki/parts/project-description/images/project-description/diagrama-ubre-photoroom-png-photoroom.png">
                     <p><strong>Figure 2.</strong> <em>S. agalactiae, S. aureus</em> and <em>S. uberis</em> in the mastitis infection.</p>
                     <br>
+                    <div id="Vaca">
+                      
+                      <img src="https://static.igem.wiki/teams/4607/wiki/project-description/vaca.png" alt="Cow" onclick="DesplegarVaca()" id="cow">
+                      <img src="https://static.igem.wiki/teams/4607/wiki/project-description/diagrama-vaca.jpeg" alt="Cow-Diagram" id="Diagrama">
+                      
+                      <h1 onclick="DesplegarVaca()" id="clickme">CLICK ME</h1>
                     
+                    
+                    </div>
                     <p><strong>Figure 3.</strong> Host characteristics that may influence the occurrence of mastitis.</p>
                     <br>
                     <p align="justify">
