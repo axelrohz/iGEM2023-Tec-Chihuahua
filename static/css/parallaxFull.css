@@ -16,6 +16,24 @@
   .teamScroll{
     padding-top: 100px !important;
   }
+  .teamBody .teamScroll .wrap {
+    width: 100vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    }
+
+  .teamBody .teamScroll .wrap .texthide{
+    opacity: 0;
+    transition: 0.75s;
+    position: relative;
+    }
+
+  .teamBody.active .teamScroll .wrap .texthide{
+    opacity: 1;
+    transition-delay: 2.3s;
+  }
+
+
   @media screen and (max-width: 768px) {
   .teamBody .teamScroll{
     padding-top: 50px;
