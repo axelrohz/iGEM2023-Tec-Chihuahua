@@ -792,6 +792,7 @@ img {
     overflow: hidden;
     border-radius: 20px;
     position: relative;
+    margin-bottom: 120px;
   }
 .img .imgmethodology{
   height: 100%;
