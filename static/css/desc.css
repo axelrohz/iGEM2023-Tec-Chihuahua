@@ -1051,3 +1051,36 @@ z-index:-1;
 transform:scaleX(1);
 transition-delay:0.8s;
 }
+/*pos it*/
+.note-contain {
+  margin-top: 30px;
+  position: relative;
+  width: 300px;
+  height: 250px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.note {
+  color: black;
+  position: relative;
+  width: 300px;
+  height: 250px;
+  padding: 20px;
+  font-size: 30px;
+  box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
+  display: block;
+  margin: 45px 0 0 0;
+  text-align: center;
+}
+
+
+
+.pinup {
+  background :#f0e9a0;
+  -webkit-transform: rotate(3.5deg);
+  -moz-transform: rotate(3.5deg);
+  -o-transform: rotate(3.5deg);
+  -ms-transform: rotate(3.5deg);
+  transform: rotate(3.5deg);
+}
