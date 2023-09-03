@@ -473,7 +473,7 @@ img {
   margin-left: 50px;
 }
 
-.antibioticstxt, .treatmentstxt {
+.antibioticstxt, {
   position: absolute;
   z-index: 1;
   visibility: hidden;
@@ -505,11 +505,11 @@ img {
   justify-content: center;
   margin-bottom: 120px;
   margin-top: 80px;
-  background-color: #9CB8CB;
+  background-color: #E3B2AF;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
-.antibioticscont, .treatmentscont h1 {
+.antibioticscont, h1 {
   font-size: 2.2rem;
   font-family: 'Quicksand';
   text-transform:capitalize;
@@ -520,7 +520,7 @@ img {
   padding-right: 100px;
 }
 
-.antibioticscont, .treatmentscont h3{
+.antibioticscont, h3{
   font-size: 1.2rem;
   font-family: 'Quicksand';
   text-transform:uppercase;
@@ -532,8 +532,8 @@ img {
 
 .antibioticsdot {
   display: flex;
-  height: 300px;
-  width:300px;
+  height: 250px;
+  width:250px;
   border-radius: 50%;
   background-image: radial-gradient(circle,#CED7B3,#A9BA6C 90%);
   justify-self: center;
@@ -560,12 +560,12 @@ img {
 
 .antibioticsdot:hover {
   display: flex;
-  height: 250px;
-  width:250px;
+  height: 200px;
+  width:200px;
   transform: scale(0.8);
   transition: 0.2s ease-in-out;
   border-radius: 50%;
-  background-image: radial-gradient(circle,#CED7B3,#A9BA6C 90%);
+  background-image: radial-gradient(circle,#E9BCA6,#DE8551 90%);
   justify-self: center;
   padding: 50px;
   margin: 10px;
@@ -611,6 +611,37 @@ img {
   margin-bottom: 80px;
 }
 
+.antibioticscont, h3{
+  font-size: 1.2rem;
+  font-family: 'Quicksand';
+  text-transform:uppercase;
+  color: #302535;
+  text-align: center;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+.treatmentstxt {
+  font-size: 1.2rem;
+  font-family: 'Quicksand';
+  text-transform:uppercase;
+  color: #302535;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.treatmentscont h1 {
+  font-size: 2.2rem;
+  font-family: 'Quicksand';
+  text-transform:capitalize;
+  color: #302535;
+  text-align: center;
+  margin-top: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
 .treatmentsdot p{
   color: #302535;
   text-align: center;
@@ -624,8 +655,8 @@ img {
 
 .treatmentssdot {
   display: flex;
-  height: 300px;
-  width:300px;
+  height: 250px;
+  width:250px;
   border-radius: 50%;
   background-image: radial-gradient(circle,#D794A8,#C55B75 90%);
   justify-self: center;
@@ -651,8 +682,8 @@ img {
 
 .treatmentssdot:hover {
   display: flex;
-  height: 250px;
-  width:250px;
+  height: 200px;
+  width:200px;
   transform: scale(0.8);
   transition: 0.2s ease-in-out;
   border-radius: 50%;
