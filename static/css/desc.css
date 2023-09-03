@@ -503,7 +503,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 80px;
+  margin-bottom: 120px;
   margin-top: 80px;
 }
 
@@ -568,7 +568,7 @@ img {
   padding: 50px;
   margin: 10px;
   align-self: center;
-  top: -60px;
+  top: -30px;
 }
 
 .antibioticsdot:hover img {
@@ -598,7 +598,7 @@ img {
   align-items: center;
   max-height: 900px;
   max-width: 1200px;
-  background-color: #F5D194;
+  background-color: transparent;
   padding-bottom: 50px;
   padding-top: 30px;
   gap: 20px;
@@ -631,9 +631,9 @@ img {
   text-align: center;
   font-family: 'Quicksand';
   font-weight: 500;
-  width: 270px;
-  height: 150px;
-  font-size: 0.8rem;
+  width: 280px;
+  height: auto;
+  font-size: 1rem;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
   padding: 20px;
 
@@ -688,7 +688,7 @@ img {
   padding: 50px;
   margin: 10px;
   align-self: center;
-  top: -60px;
+  top: -30px;
 }
 
 .treatmentssdot:hover img {
