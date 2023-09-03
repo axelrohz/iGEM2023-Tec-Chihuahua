@@ -572,7 +572,7 @@ img {
   transition: 0.2s ease-in-out;
 }
 
-.antibioticsdot:hover, .antibioticstxt{
+.antibioticsdot:hover .antibioticstxt{
   visibility: visible;
 }
 
