@@ -2,14 +2,10 @@ function DesplegarVaca() {
   var cow = document.getElementById('cow');
   var diagram = document.getElementById('Diagrama');
   var clickme = document.getElementById('CLICK');
-  var SPAN1 = document.getElementById('span1');
-  var SPAN2 = document.getElementById('span2')
-
+  
   if (diagram.style.display === 'flex') {
     // Si el diagrama ya está visible, ocultarlo y mover la vaca de nuevo a la izquierda
     diagram.style.display = 'none';
-    SPAN1.style.display='none'
-    SPAN2.style.display='none'
     setTimeout(function() {
       clickme.style.display = 'inline-block';
     }, 300);
@@ -45,9 +41,6 @@ function DesplegarVaca() {
       cow.style.bottom='25%';
     };
     
-    setTimeout(function() {
-      SPAN1.style.display = 'flex';
-      SPAN2.style.display = 'flex';
-    }, 300);
+    
 
   }}
