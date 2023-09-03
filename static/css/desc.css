@@ -921,7 +921,7 @@ input[type="checkbox"]{
   position: relative;
   width: 50%;
   left: -10%;
-  margin-bottom: 90%;
+  margin-bottom: -90%;
 }
 
 #cow {
@@ -933,7 +933,7 @@ input[type="checkbox"]{
 
 #span1{
   display:none; /* Cambiamos los span de posición */
-  margin-top: -65%;
+  margin-top: 65%;
   margin-left: 39%;
 
   width: 25%;
