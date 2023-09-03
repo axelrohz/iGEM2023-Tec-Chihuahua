@@ -1009,7 +1009,7 @@ transition: 1s color;
 }
 .tooltip:before
 {
-content:'sip';
+content:'';
 position:absolute;
 bottom:0;
 left:0;
