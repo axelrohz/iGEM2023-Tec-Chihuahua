@@ -473,7 +473,7 @@ img {
   margin-left: 50px;
 }
 
-.antibioticstxt, {
+.antibioticstxt {
   position: absolute;
   z-index: 1;
   visibility: hidden;
@@ -581,7 +581,7 @@ img {
   top:37%;
 }
 
-.antibioticsdot:hover .antibioticstxt{
+.antibioticsdot:hover, .antibioticstxt{
   visibility: visible;
 }
 /*frase*/
