@@ -512,7 +512,6 @@ img {
 .antibioticscont, h1 {
   font-size: 2.2rem;
   font-family: 'Quicksand';
-  text-transform:capitalize;
   color: #302535;
   text-align: center;
   margin-top: 10px;
@@ -523,7 +522,6 @@ img {
 .antibioticscont, h3 {
   font-size: 1.2rem;
   font-family: 'Quicksand';
-  text-transform:uppercase;
   color: #302535;
   text-align: center;
   padding-left: 100px;
@@ -609,7 +607,6 @@ img {
 .treatmentscont h3{
   font-size: 1.2rem;
   font-family: 'Quicksand';
-  text-transform:uppercase;
   color: #302535;
   text-align: center;
   padding-left: 300px;
