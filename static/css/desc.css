@@ -968,10 +968,9 @@ input[type="checkbox"]{
   bottom: 30px;
   left: 20px;
   right: 0;
-  /*cons esto se cambia el tamano de la box, por si esta muy grande el texto */
   width: 300px;
 }
-/*flecha que conecta el bloque con el texto */
+
 .tooltip-box::after{
   content: "";
   visibility: hidden;
