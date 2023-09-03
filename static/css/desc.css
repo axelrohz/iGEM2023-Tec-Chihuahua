@@ -462,6 +462,24 @@ img {
   color: #5BC5AB;
 }
 
+.antibioticscont {
+  margin: auto;
+  align-items: center;
+  max-height: 900px;
+  max-width: 750px;
+  padding-bottom: 50px;
+  padding-top: 30px;
+  gap: 20px;
+  grid-template-columns: repeat(5,1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 120px;
+  margin-top: 80px;
+  background-color: #E3B2AF;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
 .antibioticsdot p{
   color: #302535;
   text-align: center;
@@ -491,24 +509,6 @@ img {
   padding: 20px;
     }
 
-.antibioticscont {
-  margin: auto;
-  align-items: center;
-  max-height: 900px;
-  max-width: 750px;
-  padding-bottom: 50px;
-  padding-top: 30px;
-  gap: 20px;
-  grid-template-columns: repeat(5,1fr);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 120px;
-  margin-top: 80px;
-  background-color: #E3B2AF;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-}
-
 .antibioticscont, h1 {
   font-size: 2.2rem;
   font-family: 'Quicksand';
@@ -520,7 +520,7 @@ img {
   padding-right: 100px;
 }
 
-.antibioticscont, h3{
+.antibioticscont, h3 {
   font-size: 1.2rem;
   font-family: 'Quicksand';
   text-transform:uppercase;
@@ -535,7 +535,7 @@ img {
   height: 250px;
   width:250px;
   border-radius: 50%;
-  background-image: radial-gradient(circle,#CED7B3,#A9BA6C 90%);
+  background-image: radial-gradient(circle,#E9BCA6,#DE8551 90%);
   justify-self: center;
   padding: 50px;
   margin: 10px;
@@ -547,16 +547,6 @@ img {
   text-align: center;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
-
-.antibioticsdot img {
-  width: auto;
-  height: 130px;
-  justify-items: center;
-  position: absolute;
-  top:30%;
-  transition: 0.2s ease-in-out;
-}
-
 
 .antibioticsdot:hover {
   display: flex;
@@ -573,17 +563,20 @@ img {
   top: -30px;
 }
 
-.antibioticsdot:hover img {
+.antibioticsdot img {
   width: auto;
-  height: 90px;
+  height: 130px;
   justify-items: center;
   position: absolute;
-  top:37%;
+  top:30%;
+  transition: 0.2s ease-in-out;
 }
 
-.antibioticsdot:hover, .antibioticstxt{
+.antibioticsdot:hover, .antibioticstxt:hover{
   visibility: visible;
 }
+
+
 /*frase*/
 @keyframes fadeIn {
   0% {
