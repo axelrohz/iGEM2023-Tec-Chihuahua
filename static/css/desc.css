@@ -909,7 +909,8 @@ input[type="checkbox"]{
 #CLICK{
   width: 8%;
   display:absolute;
-  
+  bottom: 25%;
+  left: 15%;
 }
 
 
@@ -920,7 +921,7 @@ input[type="checkbox"]{
   position: relative;
   width: 50%;
   left: -10%;
-  margin-bottom: -50%;
+  margin-bottom: 50%;
 }
 
 #cow {
@@ -932,7 +933,7 @@ input[type="checkbox"]{
 
 #span1{
   display:none; /* Cambiamos los span de posición */
-  margin-top: -65%;
+  margin-top: 65%;
   margin-left: 39%;
 
   width: 25%;
@@ -944,7 +945,7 @@ input[type="checkbox"]{
 
 #span2{
   display:none; /* Cambiamos los span de posición */
-  margin-top: 29%;
+  margin-top: -29%;
   margin-left: 39%;
 
   width: 25%;
