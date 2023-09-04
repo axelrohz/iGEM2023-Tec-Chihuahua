@@ -1028,7 +1028,6 @@ z-index:-1;
 .tooltipSignificado:hover:after
 {
 transform:scaleX(1);
-background-color: #5BC5AB;
 transition-delay:0.8s;
 }
 
