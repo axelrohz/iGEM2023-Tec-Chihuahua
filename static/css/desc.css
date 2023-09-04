@@ -1085,7 +1085,8 @@ transition-delay:0.8s;
   position:relative;
   color:#5BC5AB;
   text-decoration:none;
-  font-family:sans-serif;
+  font-family: "Quicksand";
+  font-size: 14px;
   transition: 1s color;
 }
 .tooltipSignificado:hover{
