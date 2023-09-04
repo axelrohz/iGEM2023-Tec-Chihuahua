@@ -1045,6 +1045,7 @@ transition-delay:0.8s;
   color: white;
   border-radius: 5px;
   padding: 5px 10px;
+  font-size: 14px;
   z-index: 500;
   text-align: center;
   width: 300px; /* Ancho automático para ajustarse al contenido */
@@ -1086,7 +1087,6 @@ transition-delay:0.8s;
   color:#5BC5AB;
   text-decoration:none;
   font-family: "Quicksand";
-  font-size: 14px;
   transition: 1s color;
 }
 .tooltipSignificado:hover{
