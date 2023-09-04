@@ -936,7 +936,7 @@ input[type="checkbox"]{
 }
 
 /*tooltips cosas */
-.tooltip-box {
+.tooltipSignificadoBox {
     position: absolute;
     visibility: hidden;
     background-color: transparent;
@@ -950,11 +950,9 @@ input[type="checkbox"]{
     bottom: 30px;
     left: 20px;
     right: 0;
-    /*cons esto se cambia el tamano de la box, por si esta muy grande el texto */
     width: 300px;
   }
-  /*flecha que conecta el bloque con el texto */
-  .tooltip-box::after{
+  .tooltipSignificadoBox::after{
     content: "";
     visibility: hidden;
     border-top: 10px solid transparent;
@@ -965,12 +963,12 @@ input[type="checkbox"]{
     left: 3px;
     transition: 1s border-top;
 }
-.tooltip:hover .tooltip-box::after{
+.tooltipSignificado:hover .tooltipSignificadoBox::after{
     border-top: 10px solid #493F4E;
     transition-delay:0.6s;
     visibility: visible;
 }
-.tooltip:hover .tooltip-box{
+.tooltipSignificado:hover .tooltipSignificadoBox{
     transition-property: background-color, color;
     transition-duration: 1s,1.5s;
     transition-delay:0.5s,0.6s;
@@ -978,19 +976,19 @@ input[type="checkbox"]{
     color: white; 
     visibility: visible;
 }
-.tooltip
+.tooltipSignificado
 {
 position:relative;
-color:#5BC5AB;
+color:#5BC5AB importan;
 text-decoration:none;
 font-family:sans-serif;
 transition: 1s color;
 }
-.tooltip:hover{
+.tooltipSignificado:hover{
     color: #fff;
     transition-delay: 0.5s;
 }
-.tooltip:before
+.tooltipSignificado:before
 {
 content:'';
 position:absolute;
@@ -1005,13 +1003,13 @@ transition-property:height,width;
 transition-delay:0.3s,0.3s;
 transition-duration:0.5s;
 }
-.tooltip:hover:before
+.tooltipSignificado:hover:before
 {
 transition-property:width,height;
 width:0px;
 height:100%;
 }
-.tooltip:after
+.tooltipSignificado:after
 {
 content:'';
 position:absolute;
@@ -1027,7 +1025,7 @@ transition-delay:0s;
 transform-origin:left;
 z-index:-1;
 }
-.tooltip:hover:after
+.tooltooltipSignificadotip:hover:after
 {
 transform:scaleX(1);
 transition-delay:0.8s;
