@@ -646,7 +646,7 @@ img {
   font-weight: 500;
   font-size: 1.3rem;
   justify-self: center;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-left: 50px;
 }
 
@@ -672,7 +672,7 @@ img {
   height: 150px;
   justify-items: center;
   align-items: center;
-  position: absolute;
+  position: initial;
   top:30%;
   transition: 0.2s ease-in-out;
 }
@@ -935,7 +935,8 @@ input[type="checkbox"]{
   margin-top: -5%;
 }
 
-/*tooltips cosas */.tooltip-box {
+/*tooltips cosas */
+.tooltip-box {
     position: absolute;
     visibility: hidden;
     background-color: transparent;
@@ -1031,7 +1032,8 @@ z-index:-1;
 transform:scaleX(1);
 transition-delay:0.8s;
 }
-/*pos it*/
+
+/*post it*/
 .note-contain {
   margin-top: 30px;
   position: relative;
@@ -1053,7 +1055,6 @@ transition-delay:0.8s;
   margin: -17px 0 0 0;
   text-align: center;
 }
-
 
 
 .pinup {
