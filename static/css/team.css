@@ -271,4 +271,7 @@ opacity: 1;
     align-items: flex-start;
     margin-bottom: 10px;
 }
+p{
+  text-align: justify;
+}
 /*linkdin*/
