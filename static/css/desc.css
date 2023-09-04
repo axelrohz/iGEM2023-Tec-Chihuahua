@@ -248,9 +248,11 @@ h10 {
 }
 
 .card-item h3 {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 8px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .card-text {
