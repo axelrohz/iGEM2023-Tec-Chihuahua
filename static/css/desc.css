@@ -290,6 +290,7 @@ h10 {
   background-color: #5BC5AB;
   color: white;
   height: 210px;
+  width: 300px;
 }
 
 .card:hover .card-text {
