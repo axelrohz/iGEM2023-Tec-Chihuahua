@@ -1025,7 +1025,7 @@ transition-delay:0s;
 transform-origin:left;
 z-index:-1;
 }
-.tooltooltipSignificado:hover:after
+.tooltipSignificado:hover:after
 {
 transform:scaleX(1);
 background-color: #5BC5AB;
