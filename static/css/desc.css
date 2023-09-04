@@ -987,6 +987,7 @@ transition: 1s color;
 .tooltipSignificado:hover{
     color: #fff;
     transition-delay: 0.5s;
+    background-color: #5BC5AB;
 }
 .tooltipSignificado:before
 {
