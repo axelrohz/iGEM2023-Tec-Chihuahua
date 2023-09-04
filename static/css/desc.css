@@ -979,7 +979,7 @@ input[type="checkbox"]{
 .tooltipSignificado
 {
 position:relative;
-color:#5BC5AB importan;
+color:#5BC5AB;
 text-decoration:none;
 font-family:sans-serif;
 transition: 1s color;
