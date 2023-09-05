@@ -9,7 +9,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+    overflow: hidden;
     background-color: var(--colorENT) !important;
     -ms-overflow-style: none !important;  /* IE and Edge */
     scrollbar-width: none !important;  
@@ -36,9 +36,13 @@ footer{
     background-color: var(--colorENT) !important;
 }
 
+.backENT{
+    z-index: -100;
+}
+
 .titleCont{
     width: 100%;
-    height: calc(60vh + 1080px);
+    height:100vh;
     position: relative;
     background-color: var(--colorENT);
 }
@@ -56,7 +60,7 @@ footer{
 
 .titleENT{
     width: 100%;
-    height: 135vh;
+    height: 100vh;
     background-color: var(--colorENT);
     position: absolute;
     top: 0;
@@ -149,7 +153,7 @@ footer{
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 0;
+    top: 55px;
     left: 0;
     z-index: 2;
     opacity: 1;
@@ -182,9 +186,20 @@ footer{
 
 .dark1{
     width: 100%;
-    height: fit-content;
+    height: 100vh;
     padding: relative;
     background-color: #315659;
+}
+
+.transition1{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    opacity: 1;
+    transition: 1.5s;
 }
 
 .transition2{
