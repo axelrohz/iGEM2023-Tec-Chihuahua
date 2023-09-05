@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 
 :root{
- --colorENT: #43b39a;
+ --colorENT: #5BC5AB;
 }
 
 
@@ -11,10 +11,16 @@ body{
     box-sizing: border-box;
     overflow-x: hidden;
     background-color: var(--colorENT) !important;
+    -ms-overflow-style: none !important;  /* IE and Edge */
+    scrollbar-width: none !important;  
+}
+
+body::-webkit-scrollbar {
+    display: none !important;  /* Safari and Chrome */
 }
 
 #header{
-    background-color:var(--colorENT) !important;
+    background-color:#31565900 !important;
     color: white   !important;
 }
 
@@ -32,7 +38,7 @@ footer{
 
 .titleCont{
     width: 100%;
-    height: 135vh;
+    height: calc(60vh + 1080px);
     position: relative;
     background-color: var(--colorENT);
 }
@@ -42,7 +48,7 @@ footer{
     height: 100vh;
     background-image: url("../cow.png");
     position: absolute;
-    top: 35vh;
+    top: 60vh;
     left: 0;
     z-index: 1;
     
@@ -79,6 +85,33 @@ footer{
     transition: 4s;
 }
 
+.enterp{
+    width: 100%;
+    height: fit-content;
+    top: 50%;
+    color: white;
+    position: absolute;
+    left: 0;
+    transition: 1s;
+    transition-timing-function: cubic-bezier(.74,.17,.68,.93);
+    z-index: 4;
+    transform: translate(0,-50%) scale(1);
+}
+
+.topdown{
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    top: 0vh;
+    display: flex;
+    justify-content: center;
+    font-size: 3vw;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    transition: 1s;
+    transition-timing-function: cubic-bezier(.55,-1,.29,.97);
+}
+
 .letter{
     position: relative;
     font-family: 'Oswald';
@@ -88,7 +121,7 @@ footer{
     height: fit-content;
     margin: 0px;
     opacity: 1;
-    
+    z-index: 4;
 }
 
 
@@ -97,4 +130,82 @@ footer{
   top: -500px;
     opacity: 0;
     transform: var(--degL);
+}
+
+.titleENT:hover .enterp{
+    transform: translate(0,-50%) scale(0);
+    transition-timing-function: cubic-bezier(.5,-0.92,.29,.97);
+    opacity: 0;
+    
+    
+}
+
+.titleENT:hover .enterp .topdown{
+    top: 1vh;
+
+}
+
+.bubENT{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 1;
+    transition: 5s;
+    z-index: 2;
+    animation: bubble 10s infinite;
+}
+
+.titleENT:hover .bubENT{
+    opacity: 0;
+    top: -100vh;
+    animation: bubble 10s infinite;
+
+}
+
+.titleENT:hover .bubENT .buble{
+   }
+
+@keyframes bubble{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-40px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.dark1{
+    width: 100%;
+    height: fit-content;
+    padding: relative;
+    background-color: #315659;
+}
+
+.transition2{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    opacity: 1;
+    transition: 1.5s;
+}
+
+.sect3{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    opacity: 1;
+    transition: 1.5s;
+    background-color: white;
 }

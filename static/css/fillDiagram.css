@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     margin: auto;
+    margin-top: 100px;
 }
 
 .waveDiagram{
@@ -14,11 +15,10 @@
     position: relative;
     margin: 0 auto;
     overflow: hidden;
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.192);
-    border-radius: 10px;
-    border: #d0d8e7;
-    border-style: solid;
-    border-width: 3px;
+    box-shadow: inset 0px 0px 20px 3px rgba(0, 0, 0, 0.233);
+    border-radius: 35px;
+    z-index: 22;
+    background: white
 }
 
 .waveContain{
@@ -27,7 +27,7 @@
     position: absolute;
     bottom:  125px;
     left:  -650%;
-    transition: 7s;
+    transition: 4s;
     transition-timing-function: cubic-bezier(.56,.21,.43,.7);
     display: flex;
     flex-wrap: nowrap;
@@ -42,7 +42,7 @@
 .box{
     width: 100vw;
     height: 624px;
-    background-color:#5BC5AB;
+    background-color:#315659;
     transform: translate(-197%, 1px);
 }
 
@@ -59,6 +59,10 @@
     top: 0;
     left: 0;
     display: none;
+    box-shadow: inset -1px 1px 15px 16px rgb(0 0 0 / 11%);
+    padding: 30px;
+    border-radius: 35px;
+
 }
 
 .imgContainENT.active{
