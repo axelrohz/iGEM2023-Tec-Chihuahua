@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&family=Oswald:wght@200;300;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+p {
+  margin: 30px;
+}
+
+h1 {
+    font-family: 'Bricolage Grotesque';
+    font-size: 4rem;
+    font-weight: 600;
+    background-image: linear-gradient(#C55B75,#D27063,#DE8551);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+    max-width: initial;
+}
+
+.uno h1 {
+    font-family: 'Bricolage Grotesque';
+    font-size: 5rem;
+    font-weight: 600;
+    background-image: linear-gradient(#C55B75,#D27063,#DE8551);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+    max-width: 70%;}
+    
+  
+      p {
+          align-content: center;
+          justify-content: center;
+          font-size: 1.2rem;
+          margin-right: 50px;
+          font-weight: 500;
+          font-family: 'Quicksand';
+          text-align: justify;
+          line-height: 1.5;
+          color: black;
+      }
+      h2 {
+        text-align: center;
+        font-family: 'Bricolage Grotesque';
+        font-size:3vw; 
+        font-weight:500; 
+        color:#302535;  
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        grid-template-rows: 16px 0;
+        grid-gap: 22px;
+        align-items: center;
+        max-width: 100%;
+        padding-top: 100px;
+    }
+     h2:after, h2:before {
+      content: " ";
+      display: block;
+      border: 2px solid #5BC5AB;
+      background-color:#f8f8f8;
+  }
+  /*cards fig 4. */
+  
+  .responsiveimg {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .hovcont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+    background-color: transparent
+  }
+.dad{
+    margin: 0;
+    padding: 0;
+    background-color: #F3F3FA;
+}
+
+.accordion {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+.accordion-item {
+  background-color: #fff;
+  color: #111;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+
+}
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-family: 'Bricolage Grotesque';
+  font-size: 1.5rem;
+}
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 1.5rem;
+  position: absolute;
+  right: 1rem;
+}
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+  justify-content:center;
+  font-weight: 600;
+  font-family: 'Quicksand';
+  text-align: justify;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/*borde imagenes*/
+button { margin:40px auto; padding:0; line-height:2em; } 
+button b { font-size:50px; font-weight:800; padding:0; line-height:2em; padding:0 1em; } 
+
+
+.border-gradient {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to bottom, #42afa0, #004a84) border-box;
+  border-radius: 10px;
+  border: 8px solid transparent; 
+  color: #248193;
+}
+
+.text-gradient {
+    background-color: #004a84;
+    background-image: linear-gradient(to bottom, #42afa0, #004a84);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.mashup {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to bottom, #42afa0, #004a84) border-box;
+  border-radius: 10px;
+  border: 8px solid transparent;
+}
+.mashup b {
+    display:block; width:100%; 
+    background-color: #004a84;
+    background-image: linear-gradient(to bottom, #42afa0, #004a84);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color:transparent;
+}
+
+
