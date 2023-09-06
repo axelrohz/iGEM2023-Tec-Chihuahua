@@ -218,7 +218,12 @@ footer{
     transition: 2s;
     width: 100vw;
     overflow-x: hidden;
+    -ms-overflow-style: none !important;  /* IE and Edge */
+    scrollbar-width: none !important;  
+}
 
+.backENT::-webkit-scrollbar {
+    display: none !important;  /* Safari and Chrome */
 }
 
 .backENT.sc1{
