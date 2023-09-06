@@ -213,7 +213,7 @@ iGEM project.{% endblock %}
 
         <div class="hideeDad">
         <div class="hidee def">
-            <a href="#" class="scroll-down"> <p>Scroll Down</p></a>
+            <a href="#" onclick="scrollToBottom()" class="scroll-down"> <p>Scroll Down</p></a>
         </div>
     </div>
 
@@ -244,6 +244,22 @@ iGEM project.{% endblock %}
             }, 3800);
             document.getElementById("bt2").classList.add("active");
             document.getElementById("bt1").classList.remove("active");
+        }
+    </script>
+
+
+    <script type="text/javascript">
+        const scrollToBottom = () => {
+            // get the div element by its id
+            const div = document.getElementById("scrl");
+            const div2 = document.getElementById("scrlS1");
+            // smooth scroll to the bottom of the div
+            
+            div.scrollTo({
+                top: div2.offsetHeight,
+                behavior: 'smooth'
+            });
+
         }
     </script>
 
@@ -340,9 +356,8 @@ iGEM project.{% endblock %}
                                     anim[0].classList.add('active');
                                     hidee[0].classList.remove('def');
 
-                                   setTimeout(function () {
                                     hideeDad[0].classList.add('dead');
-                                    }, 2000);
+                                    
                                 }
                                 else{
                                     back[0].classList.add("sc1");
@@ -353,10 +368,8 @@ iGEM project.{% endblock %}
                                     back[0].classList.remove("sc6");
                                     anim[0].classList.remove('active');
                                     hideeDad[0].classList.remove('dead');
+                                    hidee[0].classList.add('def');
 
-                                    setTimeout(function () {
-                                        hidee[0].classList.add('def');
-                                    }, 2000);                                    
                                     
                                 }
                             }
