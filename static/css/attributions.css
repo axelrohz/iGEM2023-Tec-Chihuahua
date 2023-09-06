@@ -21,3 +21,8 @@ border: 2px solid #5BC5AB;
 background-color:#f8f8f8;
 }
  
+iframe {
+  width: 100%;
+  height: auto;
+  padding-bottom: 56.25%;
+}
