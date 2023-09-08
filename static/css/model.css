@@ -3,7 +3,11 @@
 	height: 800px;
 	display: flex;
 	flex-wrap: nowrap;
-	width: 100vw;
+}
+
+.welcomepage{
+    width: 100vw;
+    height: 400px;
 }
 /*index*/
 .sidebar { 
@@ -20,15 +24,19 @@
 	height:100%;
 }
 
-div{
-    height:1000px;
+
+.sectionbox div{
+    height:400px;
 }
 
 /*botones */
 
 .botones-redireccion{
 	position: relative;
-	margin: 100px auto;
+	margin: 150px auto;
+}
+.botones-redireccion div{
+    height: 400px;
 }
 
 .contenedorBoton{
@@ -145,8 +153,8 @@ div{
 	position: absolute;
 	width: 180px;
 	height: 180px; /* Asegura que el alto sea igual al ancho para hacer el botón redondo */
-	top: 28.5%;
-	left: 66%;
+	top: 35%;
+	left: 78%;
 	border-radius: 50%; /* Hace que el botón sea redondo */
 	border-color: #447D9C;
 	border-width: 30px;
