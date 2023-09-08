@@ -1,0 +1,98 @@
+#scrlS0{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #315659;
+}
+
+
+#scrlS1{
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+
+}
+
+#scrlS11{
+    width: 100%;
+    height: 100vh;
+    padding: 20vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: tomato;
+    
+}
+
+#scrlS12{
+    width: 100%;
+    height: 30vh;
+    padding: 20vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: lavender;
+}
+
+
+#scrlS2{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: thistle;
+}
+
+#scrlS21{
+    width: 100%;
+    height: 50vh;
+    padding: 20vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: thistle;
+}
+
+#scrlS3{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: teal;
+
+}
+
+#scrlS4{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: burlywood;
+}
+
+#scrlS5{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: yellowgreen;
+
+}
+
+#scrlS6{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: green;
+}
