@@ -141,6 +141,7 @@ footer{
     overflow: auto;
     -ms-overflow-style: none !important;  /* IE and Edge */
     scrollbar-width: none !important;  
+    z-index: 55;
 }
 
 .scrollHolder::-webkit-scrollbar {
@@ -148,66 +149,7 @@ footer{
 }
 
 
-#scrlS0{
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    top: 0;
-    left: 0;
-}
 
-#scrlS1{
-    width: 100%;
-    height: 30vh;
-    position: relative;
-    top: 0;
-    left: 0;
-
-}
-
-#scrlS2{
-    width: 100%;
-    height: 50vh;
-    position: relative;
-    top: 0;
-    left: 0;
-
-}
-
-#scrlS3{
-    width: 100%;
-    height: 50vh;
-    position: relative;
-    top: 0;
-    left: 0;
-
-}
-
-#scrlS4{
-    width: 100%;
-    height: 50vh;
-    position: relative;
-    top: 0;
-    left: 0;
-
-}
-
-#scrlS5{
-    width: 100%;
-    height: 50vh;
-    position: relative;
-    top: 0;
-    left: 0;
-
-}
-
-#scrlS6{
-    width: 100%;
-    height: 50vh;
-    position: relative;
-    top: 0;
-    left: 0;
-}
 
 
 .backENT{
@@ -225,6 +167,10 @@ footer{
 .backENT::-webkit-scrollbar {
     display: none !important;  /* Safari and Chrome */
 }
+
+
+
+
 
 .backENT.sc1{
     top:0;
@@ -296,7 +242,7 @@ footer{
     height: 100%;
     display: flex;
     justify-content: center;
-    top: 22vh;
+    top: 26vh;
     color: white;
     font-size: 11vw;
     font-weight: 900;
@@ -304,6 +250,7 @@ footer{
     position: absolute;
     left: 0;
     transition: 4s;
+    transition-delay: 1s;
 }
 
 .enterp{
@@ -317,6 +264,7 @@ footer{
     transition-timing-function: cubic-bezier(.74,.17,.68,.93);
     z-index: 4;
     transform: translate(0,-50%) scale(1);
+    transition-delay: 1s;
 }
 
 .topdown{
@@ -331,6 +279,7 @@ footer{
     font-family: 'Roboto', sans-serif;
     transition: 1s;
     transition-timing-function: cubic-bezier(.55,-1,.29,.97);
+    transition-delay: 1s;
 }
 
 .letter{
@@ -338,6 +287,7 @@ footer{
     font-family: 'Oswald';
     top: 0 ;
     transition: var(--timeL);
+    transition-delay: 1s;
     width: fit-content;
     height: fit-content;
     margin: 0px;
@@ -351,11 +301,13 @@ footer{
   top: -500px;
     opacity: 0;
     transform: var(--degL);
+    transition-delay: 0s;
 }
 
 .titleENT.active .enterp{
     transform: translate(0,-50%) scale(0);
     transition-timing-function: cubic-bezier(.5,-0.92,.29,.97);
+    transition-delay: 0s;
     opacity: 0;
     
     
@@ -363,6 +315,7 @@ footer{
 
 .titleENT.active .enterp .topdown{
     top: 1vh;
+    transition-delay: 0s;
 
 }
 
@@ -377,12 +330,14 @@ footer{
     transition: 5s;
     z-index: 2;
     animation: bubble 10s infinite;
+    transition-delay: 1s;
 }
 
 .titleENT.active .bubENT{
     opacity: 0;
     top: -100vh;
     animation: bubble 10s infinite;
+    transition-delay: 0s;
 
 }
 
@@ -440,4 +395,66 @@ footer{
     opacity: 1;
     transition: 1.5s;
     background-color: white;
+}
+
+.pitchENT{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    transition: 1.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pitchENT.dead{
+    display: none;
+
+}
+
+.pitchCont{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    display: block;;
+}
+
+.pitch{
+    color: white;
+    font-size: 3.7vw;
+    width: 60%;
+    font-weight: 700;
+    transition: var(--trTime);
+    transform: var(--trDir);
+    margin: auto;
+    top: 50vh;
+    transition-delay: calc(var(--trDelay)-1s);
+    opacity: 0;
+}
+
+.pitchENT.active .pitchCont .pitch{
+    transform: translate(0%, 0%);
+    transition-delay: var(--trDelay);
+    opacity: 1;
+}
+
+.pitch .line{
+    transition: 2s;
+    transform: rotate3d(1,0,0,90deg);
+    width: 100%;    
+    transition-delay: calc(var(--trDelay)-1s);
+
+}
+
+.pitchENT.active .pitchCont .pitch .line{
+    transform: rotate3d(1,0,0,0deg);
+    transition-delay: var(--trDelay);
+}
+
+.pitch .line.last{
+    text-align: right;
+    padding-right: 8%;
 }
