@@ -11,6 +11,7 @@ iGEM project.{% endblock %}
     <link rel="stylesheet" href="../../static/css/circleDiagramENT.css" />
     <link rel="stylesheet" href="../../static/css/fillDiagram.css" />
     <link rel="stylesheet" href="../../static/css/entrepreneurship.css" />
+    <link rel="stylesheet" href="../../static/css/sectionsENT.css" />
 
     <link href="{{ url_for('static', filename = 'css/circleDiagramENT.css') }}" rel="stylesheet">
     <link href="{{ url_for('static', filename = 'css/fillDiagram.css') }}" rel="stylesheet">
@@ -130,13 +131,50 @@ iGEM project.{% endblock %}
         </div>
         
         <div id="scrl" class="scrollHolder">
-            <div id="scrlS0" class="scrlS0"></div>
-            <div id="scrlS1"></div>
-            <div id="scrlS2"></div>
-            <div id="scrlS3"></div>
-            <div id="scrlS4"></div>
-            <div id="scrlS5"></div>
-            <div id="scrlS6"></div>
+            
+            <div id="scrlS0" class="scrlS0" style="color: white; font-size: 5rem;"> SHHH NO TOQUEN ESTA </div>
+            
+
+            <div id="scrlS1">
+                <div id="scrlS11">
+                    <div class="pitchENT">
+                        <div class="pitchCont">
+                            <div class="pitch" style="--trDelay:1s; --trTime:1.5s; --trDir:translate(-20%, 00%);">  
+                                <div class="line" style="--trDelay:1s;" > “It would be treating mastitis </div>
+                            </div>
+                            <div class="pitch" style="--trDelay:1.2s; --trTime:1.5s; --trDir:translate(20%, 00%);">  
+                                <div class="line" style="--trDelay:1.2s;" > without antibiotics, the dream of </div>
+                            </div>
+                            <div class="pitch" style="--trDelay:1.3s; --trTime:1.5s; --trDir:translate(-20%, 00%);">  
+                                <div class="line" style="--trDelay:1.3s;" >  every milk producer”  </div>
+                            </div>
+                            <div class="pitch" style="--trDelay:1.5s; --trTime:1.5s; --trDir:translate(20%, 00%);">  
+                                <div class="line last" style="--trDelay:1.5s;" >  - DVM Rodolfo Jaquez. </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="scrlS12"> </div>
+            </div>
+
+
+            <div id="scrlS2"> 
+                <div id="scrlS21"> 
+                    ejemplo 
+                </div> 
+            </div>
+            
+            
+            <div id="scrlS3"> agregar aqui </div>
+            
+            
+            <div id="scrlS4"> agregar aqui </div>
+            
+            
+            <div id="scrlS5"> agregar aqui </div>
+            
+            
+            <div id="scrlS6"> agregar aqui </div>
 
             
             <div class="circleDiagram">
@@ -215,11 +253,17 @@ iGEM project.{% endblock %}
 
         </div>
 
-        <div class="hideeDad">
-        <div class="hidee def">
-            <a href="#" onclick="scrollToBottom()" class="scroll-down"> <p>Scroll Down</p></a>
+        <div class="hideeDad dead">
+            <div class="hidee def">
+                <a href="#" onclick="scrollToBottom()" class="scroll-down"> <p>Scroll Down</p></a>
+            </div>
         </div>
-    </div>
+
+        
+        
+        <div class="videoENT">
+
+        </div>
 
     </div>
 
@@ -280,20 +324,21 @@ iGEM project.{% endblock %}
             var reveals4 = document.getElementById('scrlS4');
             var reveals5 = document.getElementById('scrlS5');
             var reveals6 = document.getElementById('scrlS6');
+
             var hidee = document.querySelectorAll('.hidee');
             var hideeDad = document.querySelectorAll('.hideeDad');
-
+            var pitch = document.querySelectorAll('.pitchENT');
 
 
             var anim = document.querySelectorAll('.titleENT');
             var back = document.querySelectorAll('.backENT');
-            var windowheight = window.innerHeight;
-            var revealBottom = reveals.getBoundingClientRect().bottom;
-            var revealBottom2 = reveals2.getBoundingClientRect().bottom;
-            var revealBottom3 = reveals3.getBoundingClientRect().bottom;
-            var revealBottom4 = reveals4.getBoundingClientRect().bottom;
-            var revealBottom5 = reveals5.getBoundingClientRect().bottom;
-            var revealBottom6 = reveals6.getBoundingClientRect().bottom;
+            var windowheight = 100;
+            var revealBottom = reveals.getBoundingClientRect().top;
+            var revealBottom2 = reveals2.getBoundingClientRect().top;
+            var revealBottom3 = reveals3.getBoundingClientRect().top;
+            var revealBottom4 = reveals4.getBoundingClientRect().top;
+            var revealBottom5 = reveals5.getBoundingClientRect().top;
+            var revealBottom6 = reveals6.getBoundingClientRect().top;
             
 
 
@@ -304,7 +349,9 @@ iGEM project.{% endblock %}
                 back[0].classList.remove("sc4");
                 back[0].classList.remove("sc5");
                 back[0].classList.remove("sc1");
+
                 hideeDad[0].classList.add('dead');
+                pitch[0].classList.remove('active');
 
             }
             else{
@@ -315,7 +362,9 @@ iGEM project.{% endblock %}
                     back[0].classList.remove("sc4");
                     back[0].classList.remove("sc1");
                     back[0].classList.remove("sc6");
+
                     hideeDad[0].classList.add('dead');
+                    pitch[0].classList.remove('active');
                 }
                 else{
                     
@@ -326,7 +375,9 @@ iGEM project.{% endblock %}
                         back[0].classList.remove("sc1");
                         back[0].classList.remove("sc5");
                         back[0].classList.remove("sc6");
+
                         hideeDad[0].classList.add('dead');
+                        pitch[0].classList.remove('active');
 
                     }
                     else{
@@ -337,7 +388,9 @@ iGEM project.{% endblock %}
                             back[0].classList.remove("sc4");
                             back[0].classList.remove("sc5");
                             back[0].classList.remove("sc6");
+
                             hideeDad[0].classList.add('dead');
+                            pitch[0].classList.remove('active');
                         }
                         else{
                             if(revealBottom2 <= windowheight){
@@ -348,6 +401,9 @@ iGEM project.{% endblock %}
                                 back[0].classList.remove("sc5");
                                 back[0].classList.remove("sc6");
                                 hideeDad[0].classList.add('dead');
+                                pitch[0].classList.remove('active');
+
+                                console.log("in view 3");
                             }
                             else{
                                 if(revealBottom <= windowheight){
@@ -357,22 +413,36 @@ iGEM project.{% endblock %}
                                     back[0].classList.remove("sc4");
                                     back[0].classList.remove("sc5");
                                     back[0].classList.remove("sc6");
-                                    anim[0].classList.add('active');
-                                    hidee[0].classList.remove('def');
 
+                                    anim[0].classList.add('active');
+
+                                    hidee[0].classList.remove('def');
                                     hideeDad[0].classList.add('dead');
+
+                                        pitch[0].classList.add('active');
+                                    console.log("in view 2");
                                     
                                 }
                                 else{
-                                    back[0].classList.add("sc1");
+                                    pitch[0].classList.remove('active');
+
+                                    
+                                        back[0].classList.add("sc1");
                                     back[0].classList.remove("sc2");
                                     back[0].classList.remove("sc3");
                                     back[0].classList.remove("sc4");
                                     back[0].classList.remove("sc5");
                                     back[0].classList.remove("sc6");
+                                    
                                     anim[0].classList.remove('active');
+
                                     hideeDad[0].classList.remove('dead');
                                     hidee[0].classList.add('def');
+
+                                    console.log("out of view 1");
+
+                                    
+
 
                                     
                                 }
