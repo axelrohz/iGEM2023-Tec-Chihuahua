@@ -275,3 +275,8 @@ p{
   text-align: justify;
 }
 /*linkdin*/
+svg {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
