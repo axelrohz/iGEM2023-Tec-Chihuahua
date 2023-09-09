@@ -102,7 +102,7 @@
 }
 
 /* Estilos para los botones en forma de div */
-.bactericidalEvaluation{
+.methods{
   width: 200px;
   height: 200px;
   left: 35%;
@@ -115,7 +115,7 @@
   transition: background-color 0.5s, transform 0.5s;
   overflow: hidden;
 }
-.upstreamDownstream{
+.overview{
   top: 50%;
   left: -12%;
   width: 200px;
@@ -128,7 +128,7 @@
   transition: background-color 0.5s, transform 0.5s;
   position: absolute;
 }
-.scalingUp{
+.results{
   top: 50%;
   left: 80%;
   width: 200px;
@@ -149,44 +149,44 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  width: 196px;
+  width: 180px;
 }
 
-.upstreamDownstream:hover .button-content,
-.bactericidalEvaluation:hover .button-content,
-.scalingUp:hover .button-content{
-  align: center;
-  top:50px;
+.overview:hover .button-content,
+.methods:hover .button-content,
+.results:hover .button-content{
+  height: fit-content;
+  top: 40%;
 }
 
 
 /* Efecto de crecimiento y cambio de fondo al pasar el cursor sobre los div de los botones */
-.bactericidalEvaluation:hover {
+.methods:hover {
   border: none;
   background-color: #C55B75;
   transform: scale(1.5);
 }
-.upstreamDownstream:hover {
+.overview:hover {
   border: none;
   background-color: #5BC5AB;
   transform: scale(1.5);
 }
-.scalingUp:hover {
+.results:hover {
   border: none;
   background-color: #447D9C;
   transform: scale(1.5);
 }
 
 /* Estilo para el contenido de los div de los botones al pasar el cursor sobre ellos */
-.bactericidalEvaluation:hover .tituloBoton,
-.upstreamDownstream:hover .tituloBoton,
-.scalingUp:hover .tituloBoton {
+.methods:hover .tituloBoton,
+.overview:hover .tituloBoton,
+.results:hover .tituloBoton {
   font-size: 18px;
 }
 
-.bactericidalEvaluation:hover .contentBoton,
-.upstreamDownstream:hover .contentBoton,
-.scalingUp:hover .contentBoton  {
+.methods:hover .contentBoton,
+.overview:hover .contentBoton,
+.results:hover .contentBoton  {
   text-align: justify;
   color: white;
   display: block;
@@ -205,37 +205,36 @@
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   display: none;
   position: absolute;
-  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   font-size: 10px;
 }
 
-.bactericidalEvaluation:hover .learnMore {
+.methods:hover .learnMore {
   display: inline-block;
   width: 80px;
   background-color: #C55B75;
   position: absolute;
-  bottom: -98px;
+  bottom: -50px;
   left: 50%;
   transform: translateX(-50%);
 }
-.upstreamDownstream:hover .learnMore{
+.overview:hover .learnMore{
   display: inline-block;
   width: 80px;
   background-color: #5BC5AB;
   position: absolute;
-  bottom: -98px;
+  bottom: -50px;
   left: 50%;
   transform: translateX(-50%);
 }
-.scalingUp:hover .learnMore{
+.results:hover .learnMore{
   display: inline-block;
   width: 80px;
   background-color: #447D9C;
   position: absolute;
-  bottom: -98px;
+  bottom: -50px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -253,19 +252,18 @@
 }
 
 /* Efecto de sombra y transformación al pasar el cursor sobre los botones */
-.bactericidalEvaluation:hover .tituloBoton,
-.upstreamDownstream:hover .tituloBoton,
-.scalingUp:hover .tituloBoton,
-.bactericidalEvaluation:hover .contentBoton,
-.upstreamDownstream:hover .contentBoton,
-.scalingUp:hover .contentBoton {
+.methods:hover .tituloBoton,
+.overview:hover .tituloBoton,
+.results:hover .tituloBoton,
+.methods:hover .contentBoton,
+.overview:hover .contentBoton,
+.results:hover .contentBoton {
   color: white;
   max-width: 100%;
   max-height: 100%;
   display: contents;
   height: 139px;
   width: 175px;
-  top: 28%;
 }
 
 
