@@ -171,8 +171,12 @@ footer{
     position: relative;
     top: 0;
     left: 0;
-
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    
 }
+
 
 #scrlS3{
     width: 100%;
@@ -180,6 +184,11 @@ footer{
     position: relative;
     top: 0;
     left: 0;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
 
 }
 
@@ -189,6 +198,11 @@ footer{
     position: relative;
     top: 0;
     left: 0;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
 
 }
 
@@ -198,6 +212,10 @@ footer{
     position: relative;
     top: 0;
     left: 0;
+    display: absolute;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
 
 }
 
@@ -207,6 +225,7 @@ footer{
     position: relative;
     top: 0;
     left: 0;
+    display: flex;
 }
 
 
