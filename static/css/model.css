@@ -49,7 +49,7 @@
 
 .logocontainer{
 	background: transparent;
-	top: 140%;
+	top: 102%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 650px;
@@ -89,7 +89,6 @@
   position: absolute;
   top: 60%;
   left: 49%;
-  width: 50%;
   z-index: -4;
   transform: translate(-50%, -50%);
 }
@@ -129,7 +128,7 @@
   transition: background-color 0.5s, transform 0.5s;
   position: absolute;
 }
-.scailingUp{
+.scalingUp{
   top: 50%;
   left: 80%;
   width: 200px;
@@ -146,10 +145,18 @@
 .button-content {
   position: absolute;
   top: 50%;
-  height: 60px;
+  height: fit-content;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  width: 196px;
+}
+
+.upstreamDownstream:hover .button-content,
+.bactericidalEvaluation:hover .button-content,
+.scalingUp:hover .button-content{
+  align: center;
+  top:50px;
 }
 
 
@@ -164,7 +171,7 @@
   background-color: #5BC5AB;
   transform: scale(1.5);
 }
-.scailingUp:hover {
+.scalingUp:hover {
   border: none;
   background-color: #447D9C;
   transform: scale(1.5);
@@ -173,13 +180,13 @@
 /* Estilo para el contenido de los div de los botones al pasar el cursor sobre ellos */
 .bactericidalEvaluation:hover .tituloBoton,
 .upstreamDownstream:hover .tituloBoton,
-.scailingUp:hover .tituloBoton {
+.scalingUp:hover .tituloBoton {
   font-size: 18px;
 }
 
 .bactericidalEvaluation:hover .contentBoton,
 .upstreamDownstream:hover .contentBoton,
-.scailingUp:hover .contentBoton  {
+.scalingUp:hover .contentBoton  {
   text-align: justify;
   color: white;
   display: block;
@@ -210,7 +217,7 @@
   width: 80px;
   background-color: #C55B75;
   position: absolute;
-  bottom: -35px;
+  bottom: -98px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -219,46 +226,46 @@
   width: 80px;
   background-color: #5BC5AB;
   position: absolute;
-  bottom: -35px;
+  bottom: -98px;
   left: 50%;
   transform: translateX(-50%);
 }
-.scailingUp:hover .learnMore{
+.scalingUp:hover .learnMore{
   display: inline-block;
   width: 80px;
   background-color: #447D9C;
   position: absolute;
-  bottom: -35px;
+  bottom: -98px;
   left: 50%;
   transform: translateX(-50%);
 }
 /* Estilo para los títulos y contenido de los div de los botones */
 .tituloBoton {
   font-size: 20px;
-  font-family: "Quicksand";
   font-weight: bold;
+  align-items: center;
+  margin: auto auto;
 }
 
 .contentBoton {
   font-size: 13px;
-  font-family: "Quicksand";
   display: none;
 }
 
 /* Efecto de sombra y transformación al pasar el cursor sobre los botones */
 .bactericidalEvaluation:hover .tituloBoton,
 .upstreamDownstream:hover .tituloBoton,
-.scailingUp:hover .tituloBoton,
+.scalingUp:hover .tituloBoton,
 .bactericidalEvaluation:hover .contentBoton,
 .upstreamDownstream:hover .contentBoton,
-.scailingUp:hover .contentBoton {
+.scalingUp:hover .contentBoton {
   color: white;
   max-width: 100%;
   max-height: 100%;
   display: contents;
-  top: 40%;
   height: 139px;
   width: 175px;
+  top: 28%;
 }
 
 
