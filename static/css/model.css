@@ -7,7 +7,10 @@
 
 .welcomepage{
     width: 100vw;
-    height: 400px;
+    height: 800px;
+    background-color: gray;
+    margin-bottom: 1px;
+    padding-top: 50px;
 }
 
 
@@ -49,7 +52,7 @@
 
 .logocontainer{
 	background: transparent;
-	top: 102%;
+	top: 152%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 650px;
@@ -97,7 +100,7 @@
   display: inline-block;
   margin: 80px;
   width: 100vw;
-  height: 550px;
+  height: 607px;
   max-width: 900px;
 }
 
