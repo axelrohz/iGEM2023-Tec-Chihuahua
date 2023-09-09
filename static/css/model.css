@@ -52,13 +52,12 @@
 
 .logocontainer{
 	background: transparent;
-	top: 152%;
+	top: 187%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 650px;
 	height: 600px;
 	position: absolute;
-  margin-bottom: 200%;
 }
 
 
