@@ -327,7 +327,7 @@ h2::after, h2::before{
   background-color: #f8f8f8;
 }
 
-h1{
+.subtitle{
   text-align: center;
   font-family: 'Bricolage Grotesque';
   font-size:3vw; 
@@ -341,7 +341,7 @@ h1{
   max-width: 100%;
   padding-top: 100px;
 }
-h1:after, h1:before {
+.subtitle:after, .subtitle:before {
 content: " ";
 display: block;
 border: 2px solid #5BC5AB;
