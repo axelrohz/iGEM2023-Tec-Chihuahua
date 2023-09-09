@@ -9,10 +9,12 @@
     width: 100vw;
     height: 400px;
 }
+
+
 /*index*/
 .sidebar { 
     grid-area: sidebar;
-    width: 300px;
+    width: 400px;
 	margin-top: 1%;
 	height: 100%;
 }
@@ -44,14 +46,16 @@
 	margin: auto;
 	height: 30px;
 }
-#logocontainer{
+
+.logocontainer{
 	background: transparent;
-	top: 50%;
+	top: 140%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 650px;
 	height: 600px;
 	position: absolute;
+  margin-bottom: 200%;
 }
 
 
@@ -71,11 +75,10 @@
 }
 
 #taffy {
-  margin: 0;
   position: absolute;
   top: 70%;
   left: 50%;
-  width: 25%;
+  width: 50%;
   transform: translate(-50%, -50%);
   z-index: -5;
 }
@@ -84,168 +87,221 @@
   width: 50%;
   margin: 0;
   position: absolute;
-  top: 54%;
+  top: 60%;
   left: 49%;
-  width: 30%;
+  width: 50%;
   z-index: -4;
   transform: translate(-50%, -50%);
 }
 
-/*botones*/
-.bacterialEvaluation { /*imagen arriba*/
-  margin-top: 10px;
-  position: absolute;
-  width: 180px;
-  height: 180px; /* Asegura que el alto sea igual al ancho para hacer el botón redondo */
-  top: 0%;
-  left: 35%;
-  border-radius: 50%; /* Hace que el botón sea redondo */
-  border-color: #C55B75;
-  border-width: 30px;
-  color: #C55B75;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.5s, transform 0.5s;
+.button-container {
+  display: inline-block;
+  margin: 80px;
+  width: 100vw;
+  height: 550px;
+  max-width: 900px;
 }
 
-.bacterialEvaluation:hover {
-  margin-right: 40%;
-  color: white;
-  border-radius: none;
+/* Estilos para los botones en forma de div */
+.bactericidalEvaluation{
+  width: 200px;
+  height: 200px;
+  left: 35%;
+  color: #C55B75;
+  background-color: transparent;
+  border: 5px solid #C55B75;
+  border-radius: 50%;
+  border-width: 30px;
+  position: relative;
+  transition: background-color 0.5s, transform 0.5s;
+  overflow: hidden;
+}
+.upstreamDownstream{
+  top: 50%;
+  left: -12%;
+  width: 200px;
+  height: 200px;
+  color: #5BC5AB;
+  background-color: transparent;
+  border: 5px solid #5BC5AB; /* Borde en los div de los botones */
+  border-radius: 50%; /* Hace que los div de los botones sean circulares */
+  border-width: 30px;
+  transition: background-color 0.5s, transform 0.5s;
+  position: absolute;
+}
+.scailingUp{
+  top: 50%;
+  left: 80%;
+  width: 200px;
+  height: 200px;
+  color: #447D9C;
+  background-color: transparent;
+  border: 5px solid #447D9C; /* Borde en los div de los botones */
+  border-radius: 50%; /* Hace que los div de los botones sean circulares */
+  border-width: 30px;
+  transition: background-color 0.5s, transform 0.5s;
+  position: absolute;
+}
+
+.button-content {
+  position: absolute;
+  top: 50%;
+  height: 60px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+/* Efecto de crecimiento y cambio de fondo al pasar el cursor sobre los div de los botones */
+.bactericidalEvaluation:hover {
+  border: none;
   background-color: #C55B75;
   transform: scale(1.5);
-  border-width: 0px;
-  padding-left: 3%;
-  padding-right: 3%;
-  padding-bottom: 4%;
 }
-
-.upstreamDownstream { /*imagen izquierda*/
-  margin: 0;
-  position: absolute;
-  width: 180px;
-  height: 180px; /* Asegura que el alto sea igual al ancho para hacer el botón redondo */
-  top: 35%;
-  left: -10%;
-  border-radius: 50%; /* Hace que el botón sea redondo */
-  border-color: #5BC5AB;
-  border-width: 30px;
-  color: #5BC5AB;
-  font-size: 14;
-  cursor: pointer;
-  transition: background-color 0.5s, transform 0.5s;
-}
-
 .upstreamDownstream:hover {
-  margin-right: 40%;
-  color: white;
-  border-radius: none;
+  border: none;
   background-color: #5BC5AB;
   transform: scale(1.5);
-  border-width: 0px;
-  padding-left: 3%;
-  padding-right: 3%;
-  padding-bottom: 6%;
+}
+.scailingUp:hover {
+  border: none;
+  background-color: #447D9C;
+  transform: scale(1.5);
 }
 
-.scalingUp { /*imagen izquierda*/
-	margin: 0;
-	position: absolute;
-	width: 180px;
-	height: 180px; /* Asegura que el alto sea igual al ancho para hacer el botón redondo */
-	top: 35%;
-	left: 78%;
-	border-radius: 50%; /* Hace que el botón sea redondo */
-	border-color: #447D9C;
-	border-width: 30px;
-	color: #447D9C;
-	font-size: 14px; /* Añadido "px" al tamaño de fuente */
-	cursor: pointer;
-	transition: background-color 0.5s, transform 0.5s;
+/* Estilo para el contenido de los div de los botones al pasar el cursor sobre ellos */
+.bactericidalEvaluation:hover .tituloBoton,
+.upstreamDownstream:hover .tituloBoton,
+.scailingUp:hover .tituloBoton {
+  font-size: 18px;
 }
-  
-  .scalingUp:hover {
-	margin-right: 40%;
-	color: white;
-	border-radius: none;
-	background-color: #5BC5AB;
-	transform: scale(1.5);
-	border-width: 0px;
-	padding-left: 3%;
-	padding-right: 3%;
-	padding-bottom: 6%;
-  }
 
-.tituloBoton{
+.bactericidalEvaluation:hover .contentBoton,
+.upstreamDownstream:hover .contentBoton,
+.scailingUp:hover .contentBoton  {
+  text-align: justify;
+  color: white;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  padding-bottom: 10px;
+}
+
+/* Estilo para el botón "Learn More" al pasar el cursor sobre los div de los botones */
+.learnMore {
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 10px;
+  color: white;
+  padding: 5px 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  font-size: 10px;
+}
+
+.bactericidalEvaluation:hover .learnMore {
+  display: inline-block;
+  width: 80px;
+  background-color: #C55B75;
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.upstreamDownstream:hover .learnMore{
+  display: inline-block;
+  width: 80px;
+  background-color: #5BC5AB;
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.scailingUp:hover .learnMore{
+  display: inline-block;
+  width: 80px;
+  background-color: #447D9C;
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* Estilo para los títulos y contenido de los div de los botones */
+.tituloBoton {
   font-size: 20px;
   font-family: "Quicksand";
   font-weight: bold;
 }
 
-.contentBoton{
+.contentBoton {
   font-size: 13px;
   font-family: "Quicksand";
   display: none;
 }
 
-.scalingUp:hover .tituloBoton{
-  font-size: 18px;
-}
-
-.scalingUp:hover .contentBoton{
+/* Efecto de sombra y transformación al pasar el cursor sobre los botones */
+.bactericidalEvaluation:hover .tituloBoton,
+.upstreamDownstream:hover .tituloBoton,
+.scailingUp:hover .tituloBoton,
+.bactericidalEvaluation:hover .contentBoton,
+.upstreamDownstream:hover .contentBoton,
+.scailingUp:hover .contentBoton {
   color: white;
-  max-width: 10%;
-  max-height: 10%;
+  max-width: 100%;
+  max-height: 100%;
   display: contents;
+  top: 40%;
+  height: 139px;
+  width: 175px;
 }
 
-.upstreamDownstream:hover .tituloBoton{
-  font-size: 18px;
+
+/*introduccion*/
+.introduction{
+  text-align: center;
 }
 
-.upstreamDownstream:hover .contentBoton{
-  color: white;
-  max-width: 10%;
-  max-height: 10%;
-  display: contents;
+/*cosas del side bar index*/
+
+.index1{
+  width: 200px;
+  text-align: center;
+}
+.navigation ul {
+  padding: 0;
 }
 
-.bacterialEvaluation:hover .tituloBoton{
-  font-size: 18px;
+.navigation li {
+  list-style: none;
 }
 
-.bacterialEvaluation:hover .contentBoton{
-  color: white;
-  max-width: 10%;
-  max-height: 10%;
-  display: contents;
+.navigation li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 3.6rem 0.3rem;
+  font-weight: 400;
+  transition: all ease-out 250ms;
 }
 
-.learnMoreB, .learnMoreU, .learnMoreS {
-  color: white;
-  border: 3px solid white;
-  border-radius: 10px;
-  padding: 5px 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+.navigation li a:hover {
+  color: blue;
 }
 
-.learnMoreB:hover, .learnMoreU:hover, .learnMoreS:hover {
-  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
-  transform: perspective(1000px) rotateX(5deg) rotateY(5deg);
+p{
+margin-left: 5%;
+margin-right: 5%;
 }
-
-.scalingUp:hover .learnMoreS{
-	display: contents;
-	background-color: #447D9C;
-}
-
-.bacterialEvaluation:hover .learnMoreB{
-	display: contents;
-	background-color: #C55B75;
-}
-
-.upstreamDownstream:hover .learnMoreU{
-	display:inline;
-	background-color: #5BC5AB;
+h2::after, h2::before{
+  content: " ";
+  text-align: center;
+  display: block;
+  border: 2px solid #5BC5AB;
+  background-color: #f8f8f8;
 }
