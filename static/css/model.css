@@ -418,3 +418,23 @@ background-color:#f8f8f8;}
     transform: translateY(0);
   }
 }
+
+.tituloContenido{
+  margin-left:46px;
+}
+
+.contenido{
+  text-align: justify;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: 'Quicksand';
+  text-align: justify;
+  line-height: 1.5;
+  margin-left: 43px !important;
+  color: black;
+}
+
+.Content{
+  margin-left: 10px;
+  margin-right: 10px;
+}
