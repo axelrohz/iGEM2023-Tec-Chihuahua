@@ -6,119 +6,100 @@
 
 {% block page_content %}
 
-<div class="parallax-team">
-  <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
-  <link rel="stylesheet" href="static/css/parts.css">
-  <link rel="stylesheet" href="static/css/waveHead.css">
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/body.css">
+    <link rel="stylesheet" href="../../static/css/desc.css">
+    <link rel="stylesheet" href="../../static/css/parallax.css">
+    <link rel="stylesheet" href="../../static/css/parallaxFull.css">
+    
 
-  <div class="headParts">
-      <div class="headingParts">
-          <div class="textParts">
-              <h1>Results</h1>
+    <link href="{{ url_for('static', filename='css/desc.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/body.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename = 'css/parallax.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename = 'css/parallaxFull.css') }}" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="{{ url_for('static', filename='assets/js/team.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/desc.js') }}"></script>
+</head>
+<body class="mybody">
+  <img class="parallax-team" src="https://static.igem.wiki/teams/4607/wiki/project-description/whatsapp-image-2023-08-27-at-15-34-55.jpeg">
+  <div class="image-space"><h1 class="title"> Team </h1></div>
+  <div class="parallax-content">
+      <div class="teamBody">
+          <div class="stickhead">
+              <div class="teamHead">
+                  <div class="teamTxt">
+                      <h1 class="head">Results</h1>
+                  </div>
+                  <svg id="visual" class="wave" viewBox="0 0 450 900" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                      <path d="M334 900L337.8 878.5C341.7 857 349.3 814 354.5 771.2C359.7 728.3 362.3 685.7 354.3 642.8C346.3 600 327.7 557 319.8 514.2C312 471.3 315 428.7 324.3 385.8C333.7 343 349.3 300 351.3 257.2C353.3 214.3 341.7 171.7 343 128.8C344.3 86 358.7 43 365.8 21.5L373 0L450 0L450 21.5C450 43 450 86 450 128.8C450 171.7 450 214.3 450 257.2C450 300 450 343 450 385.8C450 428.7 450 471.3 450 514.2C450 557 450 600 450 642.8C450 685.7 450 728.3 450 771.2C450 814 450 857 450 878.5L450 900Z"
+                          fill="#dbdbdb"></path>
+                      <path d="M414 900L406.5 878.5C399 857 384 814 380 771.2C376 728.3 383 685.7 388.8 642.8C394.7 600 399.3 557 397.3 514.2C395.3 471.3 386.7 428.7 384.8 385.8C383 343 388 300 393.5 257.2C399 214.3 405 171.7 403.3 128.8C401.7 86 392.3 43 387.7 21.5L383 0L450 0L450 21.5C450 43 450 86 450 128.8C450 171.7 450 214.3 450 257.2C450 300 450 343 450 385.8C450 428.7 450 471.3 450 514.2C450 557 450 600 450 642.8C450 685.7 450 728.3 450 771.2C450 814 450 857 450 878.5L450 900Z"
+                          fill="#f3f5f9"></path>
+                  </svg>
+              </div>
+          </div>
+          <div class="teamScroll">
+              <div class="wrap" id="sec1">
+                                   
+                  <div class="row mt-4">
+                    <div class="col-lg-5">
+                      <h2>What should this page contain?</h2>
+                      <hr>
+                      <ul>
+                        <li>Clearly and objectively describe the results of your work.</li>
+                        <li>Future plans for the project.</li>
+                        <li>Considerations for replicating the experiments.</li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-7">
+                      <h2>Describe what your results mean</h2>
+                      <hr>
+                      <ul>
+                        <li>Interpretation of the results obtained during your project. Don't just show a plot/figure/graph/other, tell us what you think the data means. This is an important part of your project that the judges will look for.</li>
+                        <li>Show data, but remember <b>all measurement and characterization data must also be on the Part's Main Page on the <a href="http://parts.igem.org/Main_Page">Registry</a>.</b> Otherwise these data will not be in consideration for any medals or part awards!</li>
+                        <li>Consider including an analysis summary section to discuss what your results mean. Judges like to read what you think your data means, beyond all the data you have acquired during your project.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="row mt-4">
+                    <div class="col-lg-8">
+                      <h2>Project Achievements</h2>
+                      <hr>
+                      <p>You can also include a list of bullet points (and links) of the successes and failures you have had over your summer. It is a quick reference page for the judges to see what you achieved during your summer.</p>
+                      <ul>
+                        <li>A list of linked bullet points of the successful results during your project</li>
+                        <li>A list of linked bullet points of the unsuccessful results during your project. This is about being scientifically honest. If you worked on an area for a long time with no success, tell us so we know where you put your effort.</li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-4">
+                      <h2>Inspirations</h2>
+                      <hr>
+                      <ul>
+                        <li><a href="https://2019.igem.org/Team:Newcastle/Results">2019 Newcastle</a></li>
+                        <li><a href="https://2019.igem.org/Team:Munich/Results">2019 Munich</a></li>
+                        <li><a href="https://2019.igem.org/Team:Tec-Chihuahua/Results">2019 Tec Chihuahua</a></li>
+                        <li><a href="https://2020.igem.org/Team:Aalto-Helsinki/Results">2020 Aalto Helsinki</a></li>
+                        <li><a href="https://2020.igem.org/Team:GreatBay_SCIE/Results">2020 GreatBay SCIE</a></li>
+                        <li><a href="https://2020.igem.org/Team:Queens_Canada/Results">2020 Queens Canada</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+              </div>
+                              
           </div>
       </div>
-  
-      <svg class="waveParts" id="visual" viewBox="0 0 960 540" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-          <g>
-              <path id="wave11"
-                  d="M0 335L20 326.2C40 317.3 80 299.7 120 292.3C160 285 200 288 240 301.8C280 315.7 320 340.3 360 348.3C400 356.3 440 347.7 480 337.2C520 326.7 560 314.3 600 311C640 307.7 680 313.3 720 321.2C760 329 800 339 840 332.2C880 325.3 920 301.7 940 289.8L960 278L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
-                  fill="#A7DCD3"></path>
-              <path id="wave12"
-                  d="M0 384L20 379.2C40 374.3 80 364.7 120 373.8C160 383 200 411 240 424C280 437 320 435 360 424.5C400 414 440 395 480 391.3C520 387.7 560 399.3 600 398.2C640 397 680 383 720 374.2C760 365.3 800 361.7 840 358.3C880 355 920 352 940 350.5L960 349L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
-                  fill="#81D1BF"></path>
-              <path id="wave13"
-                  d="M0 483L20 480.8C40 478.7 80 474.3 120 475.8C160 477.3 200 484.7 240 488.5C280 492.3 320 492.7 360 486.7C400 480.7 440 468.3 480 464.3C520 460.3 560 464.7 600 471C640 477.3 680 485.7 720 480.3C760 475 800 456 840 450.8C880 445.7 920 454.3 940 458.7L960 463L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
-                  fill="#5BC5AB"></path>
-          </g>
-          <g style="visibility: hidden">
-              <path id="wave21"
-                  d="M0 315L20 324.2C40 333.3 80 351.7 120 354.3C160 357 200 344 240 333.3C280 322.7 320 314.3 360 324C400 333.7 440 361.3 480 358.8C520 356.3 560 323.7 600 311.8C640 300 680 309 720 321.7C760 334.3 800 350.7 840 344.2C880 337.7 920 308.3 940 293.7L960 279L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
-                  fill="#A7DCD3"></path>
-              <path id="wave22"
-                  d="M0 387L20 390.3C40 393.7 80 400.3 120 394.8C160 389.3 200 371.7 240 376.2C280 380.7 320 407.3 360 421.2C400 435 440 436 480 433.7C520 431.3 560 425.7 600 414.7C640 403.7 680 387.3 720 382.7C760 378 800 385 840 384.5C880 384 920 376 940 372L960 368L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
-                  fill="#81D1BF"></path>
-              <path id="wave23"
-                  d="M0 485L20 486.7C40 488.3 80 491.7 120 490.5C160 489.3 200 483.7 240 479.5C280 475.3 320 472.7 360 466.8C400 461 440 452 480 449.5C520 447 560 451 600 458.2C640 465.3 680 475.7 720 478.3C760 481 800 476 840 469C880 462 920 453 940 448.5L960 444L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
-                  fill="#5BC5AB"></path>
-          </g>
-  
-  
-      </svg>
-  
-      <script>
-          const tween = KUTE.fromTo(
-              '#wave11',
-              { path: '#wave11' },
-              { path: '#wave21' },
-              { repeat: 999, duration: 5000, yoyo: true }
-          ).start();
-      </script>
-      <script>
-          const tween2 = KUTE.fromTo(
-              '#wave12',
-              { path: '#wave12' },
-              { path: '#wave22' },
-              { repeat: 999, duration: 4000, yoyo: true }
-          ).start();
-      </script>
-      <script>
-          const tween3 = KUTE.fromTo(
-              '#wave13',
-              { path: '#wave13' },
-              { path: '#wave23' },
-              { repeat: 999, duration: 3000, yoyo: true }
-          ).start();
-      </script>
-  
-  
-  </div> 
-</div>
+  </div>
+</body>
+</html>
 
-<div class="row mt-4">
-  <div class="col-lg-5">
-    <h2>What should this page contain?</h2>
-    <hr>
-    <ul>
-      <li>Clearly and objectively describe the results of your work.</li>
-      <li>Future plans for the project.</li>
-      <li>Considerations for replicating the experiments.</li>
-    </ul>
-  </div>
-  <div class="col-lg-7">
-    <h2>Describe what your results mean</h2>
-    <hr>
-    <ul>
-      <li>Interpretation of the results obtained during your project. Don't just show a plot/figure/graph/other, tell us what you think the data means. This is an important part of your project that the judges will look for.</li>
-      <li>Show data, but remember <b>all measurement and characterization data must also be on the Part's Main Page on the <a href="http://parts.igem.org/Main_Page">Registry</a>.</b> Otherwise these data will not be in consideration for any medals or part awards!</li>
-      <li>Consider including an analysis summary section to discuss what your results mean. Judges like to read what you think your data means, beyond all the data you have acquired during your project.</li>
-    </ul>
-  </div>
-</div>
-
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>Project Achievements</h2>
-    <hr>
-    <p>You can also include a list of bullet points (and links) of the successes and failures you have had over your summer. It is a quick reference page for the judges to see what you achieved during your summer.</p>
-    <ul>
-      <li>A list of linked bullet points of the successful results during your project</li>
-      <li>A list of linked bullet points of the unsuccessful results during your project. This is about being scientifically honest. If you worked on an area for a long time with no success, tell us so we know where you put your effort.</li>
-    </ul>
-  </div>
-  <div class="col-lg-4">
-    <h2>Inspirations</h2>
-    <hr>
-    <ul>
-      <li><a href="https://2019.igem.org/Team:Newcastle/Results">2019 Newcastle</a></li>
-      <li><a href="https://2019.igem.org/Team:Munich/Results">2019 Munich</a></li>
-      <li><a href="https://2019.igem.org/Team:Tec-Chihuahua/Results">2019 Tec Chihuahua</a></li>
-      <li><a href="https://2020.igem.org/Team:Aalto-Helsinki/Results">2020 Aalto Helsinki</a></li>
-      <li><a href="https://2020.igem.org/Team:GreatBay_SCIE/Results">2020 GreatBay SCIE</a></li>
-      <li><a href="https://2020.igem.org/Team:Queens_Canada/Results">2020 Queens Canada</a></li>
-    </ul>
-  </div>
-</div>
 
 {% endblock %}
