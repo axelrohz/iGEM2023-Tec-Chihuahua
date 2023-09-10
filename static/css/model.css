@@ -515,20 +515,10 @@ background-color:#f8f8f8;}
 }
 
 
-.card-slider1 {
+.card-slider {
   background: #447D9C;
   width: 378px;
-  height: 520px
-}
-.card-slider2 {
-  background: #5BC5AB;
-  width: 378px;
-  height: 520px
-}
-.card-slider3 {
-  background: #D27063;
-  width: 378px;
-  height: 520px
+  height: 520px;
 }
 
 .cardTitle1{
