@@ -28,9 +28,10 @@ h1 {
   color: #111;
   margin: auto;
   border-radius: 3px;
-  box-shadow: 5px 5px #519D8E ;
+  box-shadow: 7px 7px #5BC5AB ;
   width: 80%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  border: solid 0.5px #EBEBF1;
 
 }
 
