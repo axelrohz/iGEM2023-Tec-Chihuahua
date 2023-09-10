@@ -4,6 +4,10 @@
  --colorENT: #5BC5AB;
 }
 
+.INDEX{
+    display: none;
+}
+
 
 body{
     margin: 0;
@@ -256,7 +260,7 @@ footer{
 .enterp{
     width: 100%;
     height: fit-content;
-    top: 50%;
+    top: 60%;
     color: white;
     position: absolute;
     left: 0;

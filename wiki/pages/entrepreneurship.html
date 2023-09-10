@@ -12,6 +12,8 @@ iGEM project.{% endblock %}
     <link rel="stylesheet" href="../../static/css/fillDiagram.css" />
     <link rel="stylesheet" href="../../static/css/entrepreneurship.css" />
     <link rel="stylesheet" href="../../static/css/sectionsENT.css" />
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+  
 
     <link href="{{ url_for('static', filename = 'css/circleDiagramENT.css') }}" rel="stylesheet">
     <link href="{{ url_for('static', filename = 'css/fillDiagram.css') }}" rel="stylesheet">
@@ -133,7 +135,7 @@ iGEM project.{% endblock %}
         
         <div id="scrl" class="scrollHolder">
             
-            <div id="scrlS0" class="scrlS0" style="color: white; font-size: 5rem;"> SHHH NO TOQUEN ESTA </div>
+            <div id="scrlS0" class="scrlS0" style="color: white; font-size: 5rem;">  </div>
             
 
             <div id="scrlS1">
@@ -156,11 +158,71 @@ iGEM project.{% endblock %}
                     </div>
                 </div>
                 <div id="scrlS12"> 
-                    video 
+                    <img class="imgENT1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg"> 
                 </div>
 
                 <div id="scrlS13">
-                    parte esa del diagrama y los popups
+                    <div class="circleCont">
+                        <div class="CText">
+                            Design thinking: “We 
+                            <a href="#" onclick="popInfo()" class="testEMP">empathized</a>  
+                            with dairy cattle owners, defining that current solutions for mastitis were inadequate and costly, ideating the way to solve it through our product. We were able to prototype AureoBos, and test it in the lab through rigorous experiments, proposing to implement it as an effective and sustainable solution to combat mastitis in dairy cattle.
+
+                        </div>
+
+
+                        <div class="circleDiagram">
+                            <div class="whatCircle">
+                                <div class="circleText">
+                                    <h3>What?</h3>
+                                    <p> Enzybiotic treatment for S. aureus, S. agalactiae and S. uberis, E. coli that cause bovine
+                                        mastitis
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="howCircle">
+                                <div class="circleText">
+                                    <h3>How?</h3>
+                                    <p>Biosynthesizing recombinant proteins within prokaryotic cells</p>
+                                </div>
+                            </div>
+                            <div class="whyCircle">
+                                <div class="circleText">
+                                    <h3>Why?</h3>
+                                    <p>To reduce milk waste, mitigate the economic impact of mastitis, improve the quality of life of
+                                        the
+                                        dairy producers, and leave a positive impact on the environment.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="infopop">
+                        <span id="close" onclick="this.parentNode.classList.remove('active');">x</span>
+                        testing
+                    </div>
+
+                    <div class="Cholder">
+                        <div class="blobCHolder">
+                            <div class="blobC">
+                                <svg id="visual" viewBox="0 0 1920 1080" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                                    <g style="visibility: hidden;" transform="translate(1096.4983701871233 440.52451049849526)"><path id="blobC1" d="M825.9 -337.4C973.4 -221.3 929.2 144.8 759.6 338.7C590.1 532.7 295 554.3 -66.8 592.9C-428.7 631.5 -857.4 687 -1055.8 476.4C-1254.3 265.8 -1222.5 -210.8 -1008.2 -365.5C-793.9 -520.2 -396.9 -352.9 -28.9 -336.3C339.2 -319.6 678.4 -453.5 825.9 -337.4" fill="#ffffff"></path></g>
+                                    <g  transform="translate(1015.8071302070475 545.5575828310416)"><path id="blobC2" d="M902 -379.4C1078.8 -214.5 1069.8 199 888.5 334.6C707.3 470.2 353.6 327.9 -37.5 349.6C-428.7 371.3 -857.4 556.9 -1037.6 421.9C-1217.9 286.8 -1149.8 -168.8 -935.5 -355.4C-721.1 -542 -360.6 -459.5 1 -460.1C362.6 -460.7 725.2 -544.3 902 -379.4" fill="#ffffff"></path></g> 
+                                </svg>
+                                <script>
+                                    const tween = KUTE.fromTo(
+                                        '#blobC2',
+                                        { path: '#blobC1' },
+                                        { path: '#blobC2' },
+                                        { repeat: 999, duration: 8000, yoyo: true }
+                                    ).start();
+                                </script>
+                          
+                            </div>
+    
+                    </div>                        
+                    </div>
                 </div>
             </div>
 
@@ -242,30 +304,6 @@ iGEM project.{% endblock %}
             </div>
 
             
-            <div class="circleDiagram">
-                <div class="whatCircle">
-                    <div class="circleText">
-                        <h3>What?</h3>
-                        <p> Enzybiotic treatment for S. aureus, S. agalactiae and S. uberis, E. coli that cause bovine
-                            mastitis
-                        </p>
-                    </div>
-                </div>
-                <div class="howCircle">
-                    <div class="circleText">
-                        <h3>How?</h3>
-                        <p>Biosynthesizing recombinant proteins within prokaryotic cells</p>
-                    </div>
-                </div>
-                <div class="whyCircle">
-                    <div class="circleText">
-                        <h3>Why?</h3>
-                        <p>To reduce milk waste, mitigate the economic impact of mastitis, improve the quality of life of
-                            the
-                            dairy producers, and leave a positive impact on the environment.</p>
-                    </div>
-                </div>
-            </div>
     
             <div class="diagramSwitch">
                 <div class="waveDiagram" id="wave">
@@ -520,6 +558,14 @@ iGEM project.{% endblock %}
 
 
         }
+    </script>
+
+    <script type="text/javascript">
+        function popInfo(){
+            var pop = document.querySelectorAll('.infopop');
+            pop[0].classList.add('active');
+        }
+        
     </script>
 
 </body>
