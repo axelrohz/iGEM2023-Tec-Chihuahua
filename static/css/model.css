@@ -549,6 +549,7 @@ background-color:#f8f8f8;}
 
 .Content{
   margin-left: 10px;
+  height: fit-content;
   margin-right: 10px;
 }
 /*animación al pasar el cursor encima de las preguntas*/
