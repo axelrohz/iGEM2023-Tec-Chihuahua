@@ -91,9 +91,58 @@
 
                 <h2> Second Round: Golden Gate Assembly and Identification </h2>
 
+                <p>
+                  From the iGem 2023 plate, the BioBrick™ BBa_J435330 (plate 2, well A15) was <a>resuspended<a/>, which was <a> transformed</a> into <em>E. coli 5</em>-alpha by heat shock, and subsequently <a>extracted and purified</a> with the PureLink™ Quick Plasmid Miniprep Kit (Invitrogen™, Lot #01260760). This part was chosen as the backbone due to its high replication origin, dual antibiotic resistance (kanamycin and ampicillin), and compatibility with the Golden Gate assembly method. Once the BBa_J435330 backbone was extracted and purified, <a>Golden Gate assembly reactions<a/> were performed using the BsaI enzyme (NEB E1601, Lot #10182427) to insert each of the transcriptional units into the BBa_J435330 backbone. <br>
+                  After the Golden Gate assembly reaction, a bacterial <a>transformation</a> into <em>E. coli </em> 5-alpha was performed, followed by plating on LB agar with kanamycin (50 µg/mL). However, colonies were obtained both on the plates seeded with the transformation and in the negative controls. This led us to suspect that the plates from the Golden Gate reaction might contain a mixture of colonies transformed with the target construct and others transformed with the backbone alone, making them indistinguishable by visual inspection. <br>
+                  To confirm this, re-plating of several colonies from the same plate was conducted onto other plates with kanamycin and ampicillin. This was done in order to take advantage of the dual antibiotic resistance feature present in the used backbone. A colony from the reaction-seeded plate was selected and then plated onto two separate plates: one with kanamycin (50 µg/mL) and another with ampicillin (100 µg/mL). The same identifying number was assigned to both antibiotics.
+                  The next day, observation revealed that some colonies grew on both antibiotics, while specific colonies only grew on kanamycin (50 µg/mL) and on ampicillin there wasn't any growth (100 µg/mL). This suggested that these colonies might have been transformed with a construct carrying resistance only to kanamycin (50 µg/mL) and not to ampicillin. This led us to suspect that our construct might indeed be present in these colonies. <br>
+                  To verify this, a colony that exhibited only kanamycin resistance (50 µg/mL) was selected. DNA plasmid extraction and purification were performed using the PureLink™ Quick Plasmid Miniprep Kit (Invitrogen™, Lot #01260760). <br>
+                  With the aim of assessing the effectiveness of the Golden Gate assembly protocol, we conducted an enzymatic digestion to linearize the plasmids, followed by an analysis through agarose gel electrophoresis. We cut pUC-LysK and pUC-LysCSA13 to digestion using the SmaI enzyme, and pUC-LysSS underwent digestion using the EcoRI enzyme. <br>
+                  The next step of our recombinant protein production process was grouped into the third round of experimentation. All the selection, optimization, and standardization of our protein induction protocols were performed as follows:
+                  <br>
+                  <br>
 
+                  <b><em>Protein production</em></b>
+                  Our constructs contain the biobrick <a href="http://parts.igem.org/Part:BBa_J435350">BBa_J435350 </a>, a T7 promoter with LacO regulation regions. It was chosen because of its high transcription levels, and regulation activity.  To induce the protein production of our <em>E. coli BL21 (DE3) </em> transformants (pUC-LysCSA13 & pUC-LysK), isopropyl β-D-1 thiogalactopyranoside (IPTG) was used as inducer for the LacO regulation regions, then the reagent makes the transformants available to synthetize our endolysins. 
+                  <br>
+                  <br>
+                  <b><em>Protein induction kinetics</em></b>
+                  To identify the best protein induction parameters, <a>protein induction kinetics</a> were performed. Based on previous studies, we identified that the optimal temperature and time conditions were about 6 hours at 37° C. Related to the IPTG concentration, the experiments were performed at 0.2 mM, 0.5 mM, and 1 mM, for all of our transformants. The inductions were performed with the <em>E. coli BL21 (DE3)</em> transformed with the expression plasmids obtained from the Golden Gate Assembly. <br>
+                  Protein induction kinetics were performed at 37° C, for 6 hours at maximum agitation in an orbital shaker. Five treatments were included for each endolysin: Negative control with E. coli BL21 (DE3), negative control with <em>E. coli BL21 (DE3)</em> transformed with the endolysin without IPTG induction, and three <em>E. coli BL21 (DE3)</em> transformed with the endolysin induced at three different concentrations of IPTG, 0.2 mM, 0.5 mM, and 1 mM. The samples were collected by hour, obtaining 200 μL, by each treatment. <br>
+                  To identify the best induction parameters, a SDS-PAGE was performed. Considering that the molecular weight of LysCSA13-ABD was 35.098 kDa, and LysK-ABD-SH3B30 weights 28.437 kDa. The concentrations of the SDS-PAGE phases were 12% and 6%, for separator and concentrator phases respectively. The best parameters were IPTG at 0.2 mM and 5 hours for LysCSA13-ABD, while LysK-ABD-SH3B30 requires 6 hours at the same IPTG concentration.<br>
+                  Once the best protein induction parameters were established, a new SDS-PAGE was performed to assess the protein expression site in the cell. Our endolysins were induced at 0.2 mM IPTG, for 5 (LysK-ABD-SH3B30) and 6 (LysCSA13-ABD) hours at 37° C. We obtained a massive protein expression after pellets were harvested. To evaluate the expression site, the reagent B-PER extracted the intracellular proteins, liberating the soluble and insoluble proteins. For the LysCSA13-ABD an insoluble fraction has been demonstrated. On the other hand, LysK-ABD-SH3B30 yielded typical results of a soluble protein.
 
+                  <br>
+                  <br>
+                </p>
+                <br>
+                <br>
 
+                <h2>Protocols</h2>
+
+                <br>
+                <br>
+
+                <h2>References</h2>
+                <p>
+                  Addgene (2016). Addgene: Pouring LB Agar Plates. [online] Addgene.org. Available at: https://www.addgene.org/protocols/pouring-lb-agar-plates/.
+                  <br>
+                  Cha, Y., Son, B., & Ryu, S. (2019). Effective removal of staphylococcal biofilms on various food contact surfaces by Staphylococcus aureus phage endolysin LysCSA13. Food Microbiology, 103245. doi:10.1016/j.fm.2019.103245
+                  <br>
+                  New England Biolabs. (2019). High Efficiency Transformation Protocol (C2987H/C2987I) | NEB. Neb.com. https://international.neb.com/protocols/0001/01/01/high-efficiency-transformation-protocol-c2987
+                  <br>
+                  iGEM (2023). iGEM Technology. [online] technology.igem.org. Available at: https://technology.igem.org/distribution/handbook [Accessed 24 Jun. 2023].
+                  <br>
+                  Seaver, S. (2014). How to make a 25-50 mg/ml Chloramphenicol Stock Solution v1. doi:https://doi.org/10.17504/protocols.io.ci5ug5.
+                  <br>
+                  Sanz-Gaitero, M., Keary, R., Garcia-Doval, C., Coffey, A., & van Raaij, M. J. (2013). Crystallization of the CHAP domain of the endolysin from Staphylococcus aureus bacteriophage K. Acta Crystallographica. Section F, Structural Biology and Crystallization Communications, 69(Pt 12), 1393–1396. https://doi.org/10.1107/S1744309113030133
+                  <br>
+                  Seijsing, J., Sobieraj, A. M., Keller, N., Shen, Y., Zinkernagel, A. S., Loessner, M. J., & Schmelcher, M. (2018). Improved biodistribution and extended serum half-life of a bacteriophage endolysin by albumin binding domain fusion. Frontiers in Microbiology, 9, 2927. https://doi.org/10.3389/fmicb.2018.02927
+                  <br>
+
+                </p>
+                
+              
               </div>
                               
           </div>
