@@ -9,14 +9,23 @@
 
 {% block page_content %}
 
-<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/body.css">
+    <link rel="stylesheet" href="../../static/css/desc.css">
+    <link rel="stylesheet" href="../../static/css/parallax.css">
+    <link rel="stylesheet" href="../../static/css/parallaxFull.css">
+    <link rel="stylesheet" href="../../static/css/experiments.css">
     
-    <div class="parallax-team">
-        <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
-        <link rel="stylesheet" href="static/css/parts.css">
-        <link rel="stylesheet" href="static/css/waveHead.css">
-        <link rel="stylesheet" href="static/css/experiments.css">
-        
+
+    <link href="{{ url_for('static', filename='css/desc.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/body.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename = 'css/parallax.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename = 'css/parallaxFull.css') }}" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <script src="{{ url_for('static', filename='assets/js/team.js') }}"></script>
     <script src="{{ url_for('static', filename='assets/js/desc.js') }}"></script>
@@ -111,7 +120,35 @@
                 <br>
 
                 <h2>Protocols</h2>
-
+                <div>
+                    <!--https://docs.google.com/document/d/11uCDS7MXz4AeLz2jDPTZTSwt6BhzBj6CVe-KyLJl2LU/edit-->
+                    <!--https://codepen.io/wikyware-net/pen/dyKPRxQ-->
+                
+                    <div class="ag-format-container">
+                        <div class="ag-courses_box">
+        
+        
+                            <div class="ag-courses_item">
+                            <a href="#" class="ag-courses-item_link">
+                                <div class="ag-courses-item_bg"></div>
+                        
+                                <div class="ag-courses-item_title">
+                                Biobrick DNA Resuspension 
+                                </div>
+                        
+                                <div class="ag-courses-item_content">
+                                
+                                
+                                </div>
+                            </a>
+                            </div>
+                        
+        
+        
+                        
+                        </div>
+                    </div>
+                </div>
                 <br>
                 <br>
 
@@ -143,63 +180,6 @@
 </body>
 </html>
 
-    <div>
-        <h2>Protocols</h2>
-        <div>
-            <!--https://docs.google.com/document/d/11uCDS7MXz4AeLz2jDPTZTSwt6BhzBj6CVe-KyLJl2LU/edit-->
-            <!--https://codepen.io/wikyware-net/pen/dyKPRxQ-->
-        
-            <div class="ag-format-container">
-                <div class="ag-courses_box">
-
-
-                    <div class="ag-courses_item">
-                    <a href="#" class="ag-courses-item_link">
-                        <div class="ag-courses-item_bg"></div>
-                
-                        <div class="ag-courses-item_title">
-                        Biobrick DNA Resuspension 
-                        </div>
-                
-                        <div class="ag-courses-item_content">
-                        
-                        
-                        </div>
-                    </a>
-                    </div>
-                
-
-
-                
-                </div>
-                </div>
-                <div class="row mt-4">
-                    <div class="col-lg-8">
-                        <h2>What should this page contain?</h2>
-                        <hr>
-                        <p>Describe the research, experiments, and protocols you used in your iGEM project. These should be detailed enough for another team to repeat your experiments.</p>
-                        <p>If you made Parts this year, please remember to put all information, characterization, and measurement data on the Part's Main Page on the <a href="http://parts.igem.org/Main_Page">Registry</a>.</p>
-                    </div>
-                    <div class="col-lg-4">
-                        <h2>Inspirations</h2>
-                        <hr>
-                        <ul>
-                        <li><a href="https://2019.igem.org/Team:Nantes/Experiments">2019 Nantes</a></li>
-                        <li><a href="https://2019.igem.org/Team:TU_Eindhoven/Experiments">2019 TU Eindhoven</a></li>
-                        <li><a href="https://2019.igem.org/Team:Mingdao/Demonstrate">2019 Mingdao</a></li>
-                        <li><a href="https://2020.igem.org/Team:Amsterdam/Experiments">2020 Amsterdam</a></li>
-                        <li><a href="https://2020.igem.org/Team:NCTU_Formosa/Experiments">2020 NCTU Formosa</a></li>
-                        <li><a href="https://2020.igem.org/Team:USAFA/Experiments">2020 USAFA</a></li>
-                        </ul>
-                    </div>
-                    </div>
-        
-        </div>
-    
-    </div>
-    
-        
-</body>
 
     
 {% endblock %}
