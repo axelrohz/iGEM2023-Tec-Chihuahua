@@ -1,7 +1,27 @@
+h2 {
+  text-align: center;
+  font-family: 'Bricolage Grotesque';
+  font-size:3vw; 
+  font-weight:500; 
+  color:#302535;  
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows: 16px 0;
+  grid-gap: 22px;
+  align-items: center;
+  max-width: 100%;
+  padding-top: 100px;
+}
+
+
+
 .ag-format-container {
-    width: 1142px;
-    margin: 0 auto;
-  }
+  width: 1142px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1; 
+}
+
   
 
   .ag-courses_box {
@@ -29,7 +49,7 @@
   .ag-courses-item_link {
     display: block;
     padding: 30px 20px;
-    background-color: #121212;
+    background-color: #F3F3FA;
   
     overflow: hidden;
   
@@ -48,35 +68,24 @@
   .ag-courses-item_title {
     min-height: 87px;
     margin: 0 0 25px;
-  
+    font-family: 'Bricolage Grotesque';
     overflow: hidden;
   
     font-weight: bold;
     font-size: 30px;
-    color: #FFF;
+    color: #000000;
   
     z-index: 2;
     position: relative;
   }
-  .ag-courses-item_date-box {
-    font-size: 18px;
-    color: #FFF;
-  
-    z-index: 2;
-    position: relative;
-  }
-  .ag-courses-item_date {
-    font-weight: bold;
-    color: #f9b234;
-  
-    -webkit-transition: color .5s ease;
-    -o-transition: color .5s ease;
-    transition: color .5s ease
+  .ag-courses-item_content{
+    font-family: 'Quicksand';
+    font-size: 16px;
+    color: #000000;
   }
   .ag-courses-item_bg {
     height: 128px;
     width: 128px;
-    background-color: #f9b234;
   
     z-index: 1;
     position: absolute;
@@ -89,21 +98,18 @@
     -o-transition: all .5s ease;
     transition: all .5s ease;
   }
-  .ag-courses_item:nth-child(2n) .ag-courses-item_bg {
-    background-color: #3ecd5e;
-  }
-  .ag-courses_item:nth-child(3n) .ag-courses-item_bg {
-    background-color: #e44002;
-  }
-  .ag-courses_item:nth-child(4n) .ag-courses-item_bg {
-    background-color: #952aff;
-  }
-  .ag-courses_item:nth-child(5n) .ag-courses-item_bg {
-    background-color: #cd3e94;
-  }
-  .ag-courses_item:nth-child(6n) .ag-courses-item_bg {
-    background-color: #4c49ea;
-  }
+  .ag-courses_item:nth-child(-n+7) .ag-courses-item_bg {
+    background-color: #447D9C;
+}
+.ag-courses_item:nth-child(n+8):nth-child(-n+13) .ag-courses-item_bg {
+  background-color: #C55B75;
+}
+.ag-courses_item:nth-child(14) .ag-courses-item_bg {
+    background-color: #F6AE2D;
+}
+.ag-courses_item:nth-child(15) .ag-courses-item_bg {
+    background-color: #5BC5AB;
+
   
   
   
@@ -140,4 +146,4 @@
     .ag-courses-item_date-box {
       font-size: 16px;
     }
-  }
+  }}
