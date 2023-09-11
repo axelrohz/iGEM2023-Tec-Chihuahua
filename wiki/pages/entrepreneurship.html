@@ -19,7 +19,7 @@ iGEM project.{% endblock %}
     <link href="{{ url_for('static', filename = 'css/fillDiagram.css') }}" rel="stylesheet">
     <link href="{{ url_for('static', filename = 'css/entrepreneurship.css') }}" rel="stylesheet">
     <link href="{{ url_for('static', filename = 'css/sectionsENT.css') }}" rel="stylesheet">
-
+    <link href="{{ url_for('static', filename = 'css/desc.css') }}" rel="stylesheet">
 
     <div class="bodyENT">
         <div class="backENT">
@@ -229,27 +229,149 @@ iGEM project.{% endblock %}
 
             <div id="scrlS2"> 
                 <div id="scrlS21"> 
-                    
-                    
-                    
+                    <div class="Titletext">
+                        Unmet Needs
+                    </div>
+                    <div class="pieholder">
+                   
+                    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                    <script type="text/javascript">
+                      google.charts.load("current", {packages:["corechart"]});
+                      google.charts.setOnLoadCallback(drawChart);
+                      function drawChart() {
+                        var data = google.visualization.arrayToDataTable([
+                          ['Implication', 'Percentage'],
+                          ['Milk production loss',     33.5],
+                          ['Veterinary fees and drug costs',  24  ],
+                          ['Loss due to discarded milk',  4.67],
+                          ['Sugar', 18],
+                          ['Cost due to excess labor demand', 4],
+                          ['Loss due to premature culling', 23]
+                          
+                          
 
+                        ]);
+                        
+                
+                        var options = {
+                          title: 'Cost of Mastitis',
+                          is3D: true,
+                          backgroundColor: "transparent",
+                          colors: ["#5BC5AB", "#C55B75", "#D27063", "#447D9C", "#DE8551"],
+                        };
+                
+                        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+                        chart.draw(data, options);
+                      }
+                    </script>
+                    <div id="piechart_3d" style="width: 600px; height: 500px;"></div>
+                    
+                    <div class="parrafoder">
+                        Mastitis is the major infectious disease problem in dairy cows. Based on a global dairy cow population of 271 million dairy cows, it has been estimated that treating it costs the dairy industry around $19.7B–32B (USD) billion dollars per year<sup>1</sup>. These costs consist of several consequences that are triggered by this disease<sup></sup>. A visual representation of these implications can be visualized in Figure 1.
+                    </div>
+                    
+                    
+                </div>
                 </div> 
                 <div id="scrlS22">
-                    Oportunities
+                    <div class="but">
+                        
+                        <a href="#scrlS31"><button class="Btn">Dairy Producers</button></a>
+                        <a href="scrlS32"><button class="Btn">Pains and unmet needs</button></a>
+                        <a href=""><button class="Btn">First Potential Customers</button></a>
+                        
+                        <button class="Btn">Existing solutions </button>
+                        <button class="Btn">Meeting the needs</button>
+                    </div>
                 </div>
             </div>
             
             
             <div id="scrlS3"> 
                 <div id="scrlS31">
-                    Possible
-                </div>
+                    <div class="oporttext">
+                        Dairy Producers
+                    </div>
+                
+                    <div class="parportu2">
+                        In order to draft the first potential customers for AureoBos, it is necessary to identify who is directly affected by the consequences of mastitis. As stated in the previous section, the implications that integrate the cost of treating bovine mastitis are directly charged to dairy producers. Through our human practices we learned that they are the ones who face head-on the disease, deciding which treatment they are going to use based on the recommendations done from - the next important character- veterinary zootechnicians. 
+
+                        
+                    </div>
+                    <div class="parportu3">
+                        Although dairy farmers have the power of decision making and purchasing, the reality is that most of the time they are driven by the recommendations, diagnosis and intervention of veterinary zootechnicians, even though they interact differently depending on the scale of their production. To better understand these characteristics, check out the next figure.
+                    </div>
+                    <img src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/scale.png" alt="Texto alternativo de la imagen">
+                </div>    
+                    
+               
                 <div id="scrlS32">
-                    Scalability
+                    <div id="scrlS21">
+                        <div class="oporttext1">
+                            Understanding their pains and unmet needs
+                        </div>
+                    
+                        <div class="parportu1">
+                            Although small, medium and large scale producers have different characteristics in the way of managing their farm, as well as how they treat mastitis and their relationship with veterinary zootechnicians, we learned through our interviews and visits that their pains and current needs are the same. Understanding the unmet needs they have is essential for the successful development and implementation of AureoBos.
+                        </div>
+                        <div class="parportu4">
+                            Our integrated human practices helped us learn that dairy producers and cattle owners need a treatment that effectively addresses bovine mastitis, without using antibiotics so milk isn’t discarded and their production isn’t reduced due to the milk withdrawal period. This treatment needs to be backed up by the recognition of veterinary zootechnicians and scientific evidence that compares and indicates how AureoBos is better than any other conventional treatment. 
+                            
+                        </div>
+                        <div class="parportu5">
+                            They also communicated that they require a treatment that is easy to administer and integrate into their existing routines, ensuring minimal disruption to their operations. They require a product which doesn’t harm the cattle, doesn’t compromise the milk quality, and doesn’t pose health risks to either animals or humans. Finally, the treatment needs to be accessible in terms of availability and affordability in the geographical and economic situation. 
+
+                            Having developed the above, you can find a visual representation of these needs through the following empathy map. 
+                            
+                        </div>
+                        <div class="imgempre">
+                            <img src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/empathy-map.png" alt="Texto alternativo de la imagen">
+                        </div>
+
+                    </div>
                 </div>
                 <div id="scrlS33">
-                    Inventive 
+                    <div id="scrlS21">
+                        <div class="oporttext2">   
+                            First Potential Customers
+                        </div>
+                    </div>
+
+                        
+                    
+                        <div class="parportu6">
+                            Recognizing the presence of small, medium, and large-scale producers, as well as understanding how mastitis affects them, it becomes evident that these individuals, whether under the guidance of a veterinary zootechnician or not, are our ultimate end-users. However, after engaging with them and also with global veterinary pharmaceutical companies like MSD Animal Health and Zoetis, we discerned the existence of two distinct customer types.
+
+                            
+                            
+
+                        </div>
+                        <div class="paportu7">
+                            We refer to a division between large-scale producers and small to medium-sized producers. Initially, AureoBos would primarily supply to large-scale producers, whereas to reach small and medium-sized ones, an intermediary is required. Thus, the veterinary pharmaceutical providers in these regions would also become our clients, serving as the bridge to connect with the smaller producers.
+
+                            The following illustration demonstrates how AureoBos interacts with its clients in both scenarios. Further detailed explanations of these business models will be covered in the Development Plans section below. 
+                        </div>
+                    </div>
+                    
                 </div>
+                
+                <div id="scrlS33">
+                    <div id="scrlS21">
+                        <div class="oporttext11">   
+                            Existing solutions
+                        </div>
+                    </div>
+
+                        
+                    
+                        <div class="parportu9">
+                            Through the visits and interviews done with our users, we identified the existing solutions that dairy cattle owners currently use. Having heard first-hand about the competition let us do a better analysis, which basically consists on the following benchmarking: 
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
             </div>
             
             
@@ -276,13 +398,13 @@ iGEM project.{% endblock %}
                     Financial Projection
                 </div> 
                 <div id="scrlS48">
-                    Legal Strategy 
+                    
                 </div> 
                 <div id="scrlS49">
-                    Risk Assessment and Management
+                    
                 </div>
                 <div id="scrlS410">
-                    Government & Regulatory Agencies 
+                    
                 </div>
             </div>
             
