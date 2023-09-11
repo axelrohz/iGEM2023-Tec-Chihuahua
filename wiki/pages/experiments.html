@@ -30,7 +30,7 @@
     <script src="{{ url_for('static', filename='assets/js/desc.js') }}"></script>
 </head>
 <body class="mybody">
-  <img class="parallax-team" src="https://static.igem.wiki/teams/4607/wiki/project-description/whatsapp-image-2023-08-27-at-15-34-55.jpeg">
+  <img class="parallax-team" src="https://static.igem.wiki/teams/4607/wiki/experiments/exp.jpg">
   <div class="image-space"><h1 class="title"> Team </h1></div>
   <div class="parallax-content">
       <div class="teamBody">
@@ -50,26 +50,50 @@
           </div>
           <div class="teamScroll">
               <div class="wrap" id="sec1">
-                <div class="row mt-4">
-                  <div class="col-lg-8">
-                    <h2>What should this page contain?</h2>
-                    <hr>
-                    <p>Describe the research, experiments, and protocols you used in your iGEM project. These should be detailed enough for another team to repeat your experiments.</p>
-                    <p>If you made Parts this year, please remember to put all information, characterization, and measurement data on the Part's Main Page on the <a href="http://parts.igem.org/Main_Page">Registry</a>.</p>
-                  </div>
-                  <div class="col-lg-4">
-                    <h2>Inspirations</h2>
-                    <hr>
-                    <ul>
-                      <li><a href="https://2019.igem.org/Team:Nantes/Experiments">2019 Nantes</a></li>
-                      <li><a href="https://2019.igem.org/Team:TU_Eindhoven/Experiments">2019 TU Eindhoven</a></li>
-                      <li><a href="https://2019.igem.org/Team:Mingdao/Demonstrate">2019 Mingdao</a></li>
-                      <li><a href="https://2020.igem.org/Team:Amsterdam/Experiments">2020 Amsterdam</a></li>
-                      <li><a href="https://2020.igem.org/Team:NCTU_Formosa/Experiments">2020 NCTU Formosa</a></li>
-                      <li><a href="https://2020.igem.org/Team:USAFA/Experiments">2020 USAFA</a></li>
-                    </ul>
-                  </div>
+                <div class="uno">
+                  <h1> Experimentation is the greatest science</h1>
                 </div>
+                <br>
+                <br>
+                <br>
+                
+
+                <h2> Experimental Design </h2>
+                <br>
+                <div>
+                  <img src="https://static.igem.wiki/teams/4607/wiki/experiments/expdes.png" alt="Experimental Design">
+                  <p align="justify"> 
+                    a) Storing resuspended biobricks in <em>Escherichia coli</em> DH5a by thermal shock transformation <br>
+                    b) Extraction of the BioBrick-containing plasmids by miniprep. <br>
+                    c) Digestion and purification of biobricks. <br>
+                    d) Construction of the expression vectors by Golden Gate Assembly. <br>
+                    e) Induction, extraction and purification of recombinant proteins. <br>
+                    f) Protein analysis through SDS-PAGE, antibiograms and PCR. <br>
+                    </p>
+                </div>
+
+                <h2> First Round: Plasmid Construction and Analysis </h2>
+                <p align="justify">
+                  The initial round of experimentation encompassed the <em>in silico </em> design of our plasmids, their synthesis, assembly, transformation, and analysis of the constructs. This comprehensive phase integrates computational design with practical implementation, culminating in the evaluation of the resulting constructs.
+                  To design our endolysins coding sequences, we conducted an in-depth protein analysis. This helped us to identify the crucial domains required to produce highly effective and catalytically specific endolysins. The resulting sequences encode the following intein-fusion proteins
+                  The coding sequence (CDS) of the three recombinant intein-fusion proteins (LysK endolysin, LysCSA13, and LysSS) was <em>in silico</em> edited to incorporate BsaI enzyme recognition sites at the ends of the sequence. In the same way, each CDS design has been evaluated through the protein structural model analysis tool, Alpha Fold 2, to identify the original functional protein structures and compare them with our final designs, ensuring their enzymatic activity.
+                  Afterwards, we proceeded with the <a href="">selection</a>of the bioparts to be utilized in the assembly of the transcriptional units (TUs) that would express our proteins. <br>
+                  The selected components for the construction of the transcriptional units were:
+                  <ul>
+                    <li>Promoter: BBa_J435350RBS</li>
+                    <li>RBS: BBa_Z0262</li>
+                    <li>Terminator: BBa_J435371</li>
+                    <li>Backbone: BBa_J435330</li>
+                  </ul>
+                  <br>
+                  These parts were assembled in SnapGene® software using the Golden Gate method, employing the type IIS restriction enzyme BsaI.The transcriptional units (TUs) of each of our endolysins (TU LysK, TU LysCSA13, and TU LysSS) were synthesized by Twist Bioscience, making this possible by the sponsorship of 10 kb of FREE Twist Gene Fragments for iGEM teams.
+                </p>
+
+                <h2> Second Round: Golden Gate Assembly and Identification </h2>
+
+
+
+
               </div>
                               
           </div>
