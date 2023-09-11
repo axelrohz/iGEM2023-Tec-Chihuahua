@@ -6,6 +6,7 @@
     border-collapse: collapse;
     border: 2px solid #D27063;
   }
+
   .colorTextoTabla{
     color: #447d9c;
     font-weight: 600;
@@ -21,6 +22,13 @@
   .TABLA th {
     background-color: #D27063;
     color: #ffffff;
+  }
+
+  .TABLA th h1 {
+    margin: auto;
+    font-size: 1.5rem;
+    text-align: center;
+    justify-self: center;
   }
   
   .TABLA td {
