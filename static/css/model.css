@@ -1,6 +1,6 @@
 .layout {
 	width: 100vw;
-	height: 800px;
+	height: 100%;
 	display: flex;
 	flex-wrap: nowrap;
 }
@@ -38,6 +38,119 @@
     height:400px;
 }
 
+/*italicas */
+.i {
+  letter-spacing: 0px;
+  padding: 1cm 0cm 1cm 0cm;
+  font-size: 14px;
+  font-style: italic;
+  transition: all .2s ease-in-out;
+}
+
+.i:hover {
+  transform: scale(1.0);
+}
+
+
+/*tooltips cosas */
+.tooltipSignificadoBox {
+  position: absolute;
+  visibility: hidden;
+  background-color: #493F4E; /* Cambiado el color de fondo predeterminado */
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  z-index: 500;
+  text-align: center;
+  width: 300px; /* Ancho automático para ajustarse al contenido */
+  left: 50%;
+  transform: translateX(-50%); /* Centrar horizontalmente */
+  bottom: 100%; /* Colocar por encima de la palabra */
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+/*flecha que conecta el bloque con el texto */
+.tooltipSignificadoBox::after {
+  content: "";
+  visibility: hidden;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+  left: 50%; /* Centrar horizontalmente */
+  bottom: -7px;
+  transform: translateX(-50%); /* Centrar la flecha horizontalmente */
+  transition: 1s border-top;
+}
+.tooltipSignificado:hover .tooltipSignificadoBox::after{
+  border-top: 10px solid #493F4E;
+  transition-delay:0.6s;
+  visibility: visible;
+}
+.tooltipSignificado:hover .tooltipSignificadoBox {
+  opacity: 1; /* Mostrar en hover */
+  visibility: visible;
+  transition-delay: 0.2s;
+  margin-bottom: 8px;
+  opacity: 95%;
+}
+.tooltipSignificado
+{
+  position:relative;
+  color:#5BC5AB;
+  text-decoration:none;
+  font-family: "Quicksand";
+  transition: 1s color;
+}
+.tooltipSignificado:hover{
+    color: #fff;
+    margin-left: 1px;
+    margin-right: 1px;
+    transition-delay: 0.5s;
+}
+.tooltipSignificado:before
+{
+  content:'';
+  position:absolute;
+  bottom:0;
+  width:90%;
+  height:2px;
+  color: #fff;
+  background:#5BC5AB;
+  transform-style:linear;
+  transition-property:height,width;
+  transition-delay:0.3s,0.3s;
+  transition-duration:0.5s;
+}
+.tooltipSignificado:hover:before
+{
+  transition-property:width,height;
+  width:0px;
+  height:100%;
+}
+.tooltipSignificado:after
+{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  width:100%;
+  height:100%;
+  background:#5BC5AB;
+  padding-left: 3px;
+  transform:scaleX(0);
+  transition:0.5s;
+  transition-delay:0s;
+  transform-origin:left;
+  z-index:-1;
+}
+.tooltipSignificado:hover:after
+{
+  transform:scaleX(1);
+  transition-delay:0.8s;
+}
 /*botones */
 
 .botones-redireccion{
@@ -420,7 +533,7 @@ background-color:#f8f8f8;}
 }
 
 .tituloContenido{
-  margin-left:46px;
+  margin-left:43px;
 }
 
 .contenido{
@@ -438,3 +551,120 @@ background-color:#f8f8f8;}
   margin-left: 10px;
   margin-right: 10px;
 }
+/*animación al pasar el cursor encima de las preguntas*/
+.cta {
+  position: relative;
+  margin: span;
+  padding: 8px 12px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  margin-left: 43px !important;
+  
+ }
+ 
+ .cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #D27063;
+  width: 45px;
+  height: 100%;
+  transition: all 0.3s ease;
+ }
+ 
+ .cta span {
+  position: relative;
+  font-family: 'Quicksand';
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: black;
+ }
+ 
+ .cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+ }
+ 
+ .cta:hover:before {
+  width: 100%;
+  background: #DE8551;
+ }
+ 
+ .cta:hover svg {
+  transform: translateX(0);
+ }
+ 
+ .cta:active {
+  transform: scale(0.95);
+ }
+ 
+ .cta2 {
+  position: relative;
+  margin: span;
+  padding: 8px 12px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  margin-left: 43px !important;
+  
+ }
+ 
+ .cta2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #DE8551;
+  width: 45px;
+  height: 100%;
+  transition: all 0.3s ease;
+ }
+ 
+ .cta2 span {
+  position: relative;
+  font-family: 'Quicksand';
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: black;
+ }
+ 
+ .cta2 svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+ }
+ 
+ .cta2:hover:before {
+  width: 100%;
+  background: #F6AE2D;
+ }
+ 
+ .cta2:hover svg {
+  transform: translateX(0);
+ }
+ 
+ .cta2:active {
+  transform: scale(0.95);
+ }
+ 
