@@ -1,33 +1,60 @@
 
 .hipervinculoaqua {
   font-family: 'Quicksand';
-  font-weight: 400;
+  font-weight: 700;
   color: #5BC5AB;
 }
 
+.hipervinculoaqua:hover {
+  font-family: 'Quicksand';
+  font-weight: 700;
+  color: #5BC5AB;
+  text-decoration: underline;
+}
 
 .hipervinculorosa {
   font-family: 'Quicksand';
-  font-weight: 400;
+  font-weight: 700;
   color: #C55B75;
+}
+
+.hipervinculorosa:hover {
+  font-family: 'Quicksand';
+  font-weight: 700;
+  color: #C55B75;
+  text-decoration: underline;
 }
 
 .hipervinculoazul {
   font-family: 'Quicksand';
-  font-weight: 400;
+  font-weight: 470;
   color: #447D9C;
+}
+
+.hipervinculoazul:hover {
+  font-family: 'Quicksand';
+  font-weight: 700;
+  color: #447D9C;
+  text-decoration: underline;
 }
 
 .hipervinculoverde {
   font-family: 'Quicksand';
-  font-weight: 400;
+  font-weight: 700;
   color: #A9BA6C;
+}
+
+.hipervinculoverde:hover {
+  font-family: 'Quicksand';
+  font-weight: 700;
+  color: #A9BA6C;
+  text-decoration: underline;
 }
 
 .list {
   font-family: 'Quicksand';
-  line-height: 1.5;
-  font-size: 1.5rem;
+  line-height: 1rem;
+  font-size: 1rem;
 }
 
 h2 {
@@ -103,12 +130,11 @@ background-color:#f8f8f8;
     transform: scale(10);
   }
   .ag-courses-item_title {
-    min-height: 87px;
     margin: 0 0 25px;
     font-family: 'Bricolage Grotesque';
     overflow: hidden;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 23px;
     color: #000000;
     line-height: 1.15;
     z-index: 2;
@@ -141,8 +167,8 @@ background-color:#f8f8f8;
   
   }
   .ag-courses_item:nth-child(n+8):nth-child(-n+15) .ag-courses-item_bg {
-  background-color: #C55B75;
-}
+    background-color: #C55B75;
+  }
 .ag-courses_item:nth-child(16) .ag-courses-item_bg {
     background-color: #DE8551;
   }
