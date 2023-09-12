@@ -1,6 +1,4 @@
-{% extends "layoutIndex.html" %}
-
-  
+{% extends "layoutIndex.html" %}  
 {% block title %}Model{% endblock %}
 {% block lead %}Explain your model's assumptions, data, parameters, and results in a way that anyone could understand.{% endblock %}
 
@@ -12,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../static/css/model.css">
     <link href="{{ url_for('static', filename = 'css/model.css') }}" rel="stylesheet">
+    <script type=”text/javascript” src=”http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML”></script>
   </head>
   <body>
     <div class="welcomepage">
@@ -90,30 +89,125 @@
       </div>
       <div>
         <p class="contenido">
-          Biological systems are highly dynamic and complex, and as we dive deeper into their intricacies, inherent variability and random fluctuations emerge. In this context, mathematical models offer a valuable tool for rigorous analysis,1 and play a crucial role in research, effectively bridging the gap between theory and practice to unlock the true potential of understanding these complex systems. Mathematical models use observation and manipulation in the same way as experiments bypassing challenges such as high costs, time consumption, and risks.
+          Biological systems are highly dynamic and complex, and as we dive deeper into their intricacies, inherent variability and random fluctuations emerge. In this context, mathematical models offer a valuable tool for rigorous analysis,<sup>1</sup> and play a crucial role in research, effectively bridging the gap between theory and practice to unlock the true potential of understanding these complex systems. Mathematical models use observation and manipulation in the same way as experiments bypassing challenges such as high costs, time consumption, and risks.
           <br>
           <br>
-          To systematically integrate all the stages of AureoBos, from recombinant protein production to practical application, our model adopts an end-to-end approach. Initially, we use a first principle model to capture the mechanism’s behavior responsible for inducing the production of our target endolysins, we utilized isopropyl β-D-1-thiogalactopyranoside (IPTG) as an inducer, triggering the protein expression system. However, this mechanism raised important questions: 
+          To systematically integrate all the stages of AureoBos, from recombinant protein production to practical application, our model adopts an 
+          <b class="tooltipSignificado">end-to-end
+            <span class="tooltipSignificadoBox">
+              Strategy that encompasses the entire process, aiming to simulate and analyze relevant stages, components, and interactions involved.
+            </span>
+          </b> 
+          approach. Initially, we use a 
+          <b class="tooltipSignificado">first principle
+            <span class="tooltipSignificadoBox">
+              First principle models are built on a fundamental understanding of underlying 
+              <b class="i">ab initio</b>
+              physio-chemical phenomena such as mass transfer, heat transfer and mass flow.
+            </span>
+          </b>  
+          model to capture the mechanism’s behavior responsible for inducing the production of our target endolysins, we utilized isopropyl β-D-1-thiogalactopyranoside (IPTG) as an inducer, triggering the protein expression system. However, this mechanism raised important questions: 
           <br>
           <br>
-          <ul>    
-            <li>
-              What are the specific conditions that yield the best quantitative and qualitative results in our production process? 
-            </li>
-            <li>
-              How does the system behave under various conditions, and what factors affect its efficiency? 
-            </li>
-            <li>
-              How robust is the system when changing the above-mentioned conditions? 
-            </li>
-          </ul>
+        <p class="cta">
+          <span>What are the specific conditions that yield the best quantitative and qualitative results in our production process?</span>
+        </p>
+          <br>
+          <p class="cta">
+            <span>How does the system behave under various conditions, and what factors affect its efficiency?</span>
+          </p>
+          <br>
+          <p class="cta">
+            <span>How robust is the system when changing the above-mentioned conditions?</sp>
+          </p>
+        </p>
+        <br>
+        <p class="contenido"> 
+          Moreover, having taken these crucial aspects into consideration, our focus expanded towards considering the subsequent steps required to develop a viable alternative to antibiotic therapy. This included the use of steady-state equations for purification and quantifying the endolysin concentrations, thus, the pivotal phase of our study unfolded:
+        </p>
+        <br>
+        <p class="cta2">
+          <span>How effective is the endolysin in killing the target bacteria?</span>
+        </p>
+          <br>
+          <p class="cta2">
+            <span>Is there a dose-response relationship between endolysin concentration and bacterial kill rate?</span>
+          </p>
+          <br>
+          <p class="cta2">
+            <span>Are there synergistic or antagonistic interactions between the endolysins?</sp>
+          </p>
+        </p>
+        <br>
+        <p class="contenido"> 
+          The model's construction and evaluation rely on a fusion of empirical data, existing literature, and mechanistic insights. By considering multiple parameters, such as dynamic interactions among system components (kinetic coefficients/interactions), system heterogeneities, and uncertainties, we employed stochastic analysis to simulate the system's responses under various scenarios, thereby establishing a range of conditions where protein expression is most favorable. Experimental data, such as IPTG concentration and endolysin production rates, contributed to parameter estimation and model calibration.
+        </p>
+        <br>
+        <p class="contenido"> 
+          The quantification of specific endolysin yield was achieved through a 
+          <b class="tooltipSignificado">black-box
+            <span class="tooltipSignificadoBox">
+              Simplified representation of a process, focusing solely on the inputs and outputs of the system without explicitly modeling the underlying mechanism.
+            </span>
+          </b>  
+          surrogate model, incorporating equations derived from literature for steady-state behavior. This model was centered around the purification stage, offering a foundation for the downstream process. 
+        </p>
+        <br>
+        <p class="contenido">
+          In the culmination of our study, we sought to undertand how the endolysin's mechanism interacts with various bacterial strains. This investigation was carried out using a design of experiments (DoE) approach inspired by the concept of a three-dimensional checkerboard assay. To determine whether the endolysin efficacy is modulated by synergic or antagonistic interactions, we employed a 
+          <b class="tooltipSignificado">response surface
+            <span class="tooltipSignificadoBox">
+              Technique used to analyze the relationship between input variables and a response variable, allowing for an optimization of the response by adjusting the inputs.
+            </span>
+          </b>
+           methodology. 
+        </p>
+        <br>
+        <p class="contenido">
+          In our approach, two sequential models are used, the first represents the 
+          <b class="tooltipSignificado">upstream 
+            <span class="tooltipSignificadoBox">
+              Describes the initial stages of the process.
+            </span>
+          </b>
+          (induction system) and 
+          <b class="tooltipSignificado">downstream 
+            <span class="tooltipSignificadoBox">
+              Models the subsequent stages and the final outcome.
+            </span>
+          </b> 
+          (purification process) together, while the second accounts for the 
+          <b class="tooltipSignificado">implementation
+            <span class="tooltipSignificadoBox">
+              <b class="i">In vitro</b> endolysin performance.
+            </span>  
+          </b>  
+          (endolysin evaluation over target bacteria)
+        </p>
+        <br>
+        <p class="contenido">
+          Our modeling process consists of a system representation through 13 ordinary differential equations (ODEs), enabling us to predict protein expression accurately. To address the stochastic nature of the system, where behavior is influenced by probabilities,<sup>2</sup> and achieve robust/realistic results, we account the uncertainty sources into our model by a Monte Carlo simulation to identify the model's parameters range and assess the sensitivity to changes. Parameter robustness is crucial in modeling, as even minor variations can significantly impact the model's behavior and performance.  
+        </p>
+        <br>
+        <p class="contenido">
+          We utilized Response Surface Methodology (RSM) as a statistical tool in our product development work. This involved optimizing factorial variables, enabling the identification of factor settings for desired responses, meeting specifications, and modeling relationships between factors and responses. Within our bactericidal system optimization, RSM allowed for trade-offs between responses, resulting in the identification of factor settings that collectively optimized multiple variables within our mathematical model.
         </p>
       </div>
       <div class="tituloContenido">
         <h3 id="introduction">Conclusion</h3>
       </div>
+      <div>
+        <!--aquí irá la conclusión-->
+      </div>
       <div class="tituloContenido">
-        <h3 id="introduction">Reference</h3>
+        <h3 id="introduction">References</h3>
+      </div>
+      <div>
+        <p class="contenido">
+          (1)	Banwarth-Kuhn, M.; Sindi, S. How and Why to Build a Mathematical Model: A Case Study Using Prion Aggregation. <em>J. Biol. Chem.</em> <b>2020</b>, <em>295</em> (15), 5022–5035. https://doi.org/10.1074/jbc.REV119.009851.
+          <br>
+          (2)	Karlebach, G.; Shamir, R. Modelling and Analysis of Gene Regulatory Networks. <em>Nat. Rev. Mol. Cell Biol.</em> <b>2008</b>, <em>9</em> (10), 770–780. https://doi.org/10.1038/nrm2503.
+        </p>
       </div>
     </div>
   </div>
@@ -136,7 +230,1351 @@
       </nav>
     </div>
     <div class="secciones">
-      <p>DENTRO DE ESTE DIV PONER LAS COSAS DE LAS SECCIONES</p>
+      <div class="tituloContenido">
+        <h3 id="Upstream">Upstream</h3>
+      </div>
+      <div class="tituloContenido">
+        <h4>Underlying theory</h4>
+      </div>
+      <p class="contenido">The IPTG induction mechanism has 3 key elements: The operator (LacO),  lac repressor, and inductor (IPTG). These elements interact in a coordinated manner, as illustrated in Figure 1. The process unfolds as follows:</p>
+      <br>
+      <br>
+      <br>
+      <div class="tituloContenido">
+        <h5>Production of Lac repressor. Steps 1-4</h5>
+      </div>
+      <br>
+      <br>
+      <p class="contenido">The system's dynamics are under the influence of the Lac repressor, which is a regulatory molecule encoded by the LacI regulatory gene (G). This protein exhibits constitutive expression, forming monomers (R<sub>M</sub>), dimers (R<sub>D</sub>), and tetramers (R<sub>T</sub>) through subunit bonding.<sup>3</sup> The chemical reaction for modeling the repressor mRNA production is assumed to be governed by the sole dependence on the quantity of the LacI gene. Additionally,  the  production of monomer is dependent on the mRNA of repressor (M<sub>LI</sub>) concentration. The favored formation is Tetramers over dimers over monomers.</p>
+      <br>
+      <table2>
+        <tr>
+          <td>
+            <math  class="contenido">
+            <mi>G</mi><mover>
+             <mo>&#x2192;</mo>
+             <mrow>
+              <msub>
+               <mi>k</mi>
+               <mn>1</mn>
+              </msub>
+              </mrow>
+            </mover>
+            <msub>
+             <mi>M</mi>
+             <mrow>
+              <mi>L</mi><mi>I</mi></mrow>
+            </msub>
+            </math>
+          </td>
+          <td ALIGN="left">(i)</td>
+        </tr>
+        <tr>
+          <td >
+            <math class="contenido">
+            <msub>
+             <mi>M</mi>
+             <mrow>
+              <mi>L</mi><mi>I</mi></mrow>
+            </msub>
+            <mover>
+             <mo>&#x2192;</mo>
+             <mrow>
+              <msub>
+               <mi>k</mi>
+               <mn>2</mn>
+              </msub>
+              </mrow>
+            </mover>
+            <msub>
+             <mi>M</mi>
+             <mrow>
+              <mi>L</mi><mi>I</mi></mrow>
+            </msub>
+            <mo>+</mo><msub>
+             <mi>R</mi>
+             <mrow>
+              <mi>M</mi></mrow>
+            </msub>
+           </math>
+           </td>
+          <td  ALIGN="left">(ii)</td>
+        </tr>
+        <tr>
+          <td >
+            <math class="contenido">
+            <mn>2</mn><msub>
+             <mi>R</mi>
+             <mi>M</mi>
+            </msub>
+            <munderover>
+             <mo>&#x21C4;</mo>
+             <mrow>
+              <msub>
+               <mi>k</mi>
+               <mn>4</mn>
+              </msub>
+              </mrow>
+             <mrow>
+              <msub>
+               <mi>k</mi>
+               <mn>3</mn>
+              </msub>
+              </mrow>
+            </munderover>
+            <msub>
+             <mi>R</mi>
+             <mi>D</mi>
+            </msub>
+           </math>
+           </td>
+          <td ALIGN="">(iii,iv)</td>
+        </tr>
+        <tr>
+          <td ALIGN="center">
+            <math class="contenido">
+            <mn>2</mn><msub>
+             <mi>R</mi>
+             <mi>D</mi>
+            </msub>
+            <munderover>
+             <mo>&#x21C4;</mo>
+             <mrow>
+              <msub>
+               <mi>k</mi>
+               <mn>6</mn>
+              </msub>
+              </mrow>
+             <mrow>
+              <msub>
+               <mi>k</mi>
+               <mn>5</mn>
+              </msub>
+              </mrow>
+            </munderover>
+            <msub>
+             <mi>R</mi>
+             <mi>T</mi>
+            </msub>
+           </math>
+           </td>
+          <td>(v,vi)</td>
+        </tr>
+      </table2>
+        <br>
+        <br>
+        <div class="tituloContenido">
+          <h5>Formation of repressor-Operator complex. Steps 5-6</h5>
+        </div>
+        <p class="contenido">In its tetrameric and dimeric configurations, the repressor exhibits strong affinity for the operator (O). This binding event effectively obstructs RNA polymerase’s access to the promoter region, resulting in the inhibition of endolysin gene transcription. Consequently, The repressor in its tetrameric and dimeric form, displays a strong affinity for the operator (O). When the repressor binds to the operator, it effectively blocks RNA polymerase from accessing the promoter, leading to the inhibition of endolysin gene transcription. Consequently, in the absence of other factors, endolysin production is low or absent (leak transcript). On the contrary, the monomeric form of the lac repressor demonstrates a reduced affinity for the operator and lacks the capability to effectively bind to it.<sup>4</sup> </p>
+        <table2>
+          <tr>
+            <td>
+              <math class="contenido">
+                <msub>
+                <mi>R</mi>
+                <mi>D</mi>
+                </msub>
+                <mo>+</mo><mi>O</mi><munderover>
+                <mo>&#x21C4;</mo>
+                <mrow>
+                  <msub>
+                  <mi>k</mi>
+                  <mn>8</mn>
+                  </msub>
+                  </mrow>
+                <mrow>
+                  <msub>
+                  <mi>k</mi>
+                  <mn>7</mn>
+                  </msub>
+                  </mrow>
+                </munderover>
+                <msub>
+                <mi>R</mi>
+                <mi>D</mi>
+                </msub>
+                <mi>O</mi>
+              </math>
+            </td>
+            <td  ALIGN="right">(vii,viii)</td>
+          <tr>
+              <td>
+                <math class="contenido">
+                  <msub>
+                  <mi>R</mi>
+                  <mi>T</mi>
+                  </msub>
+                  <mo>+</mo><mi>O</mi><munderover>
+                  <mo>&#x21C4;</mo>
+                  <mrow>
+                    <msub>
+                    <mi>k</mi>
+                    <mrow>
+                      <mn>10</mn></mrow>
+                    </msub>
+                    </mrow>
+                  <mrow>
+                    <msub>
+                    <mi>k</mi>
+                    <mn>9</mn>
+                    </msub>
+                    </mrow>
+                  </munderover>
+                  <msub>
+                  <mi>R</mi>
+                  <mi>D</mi>
+                  </msub>
+                  <mi>O</mi>
+                </math>
+              </td>
+              <td ALIGN="right">(ix,x)</td>    
+          <tr>
+        </table > 
+        <br>       
+        <br>
+        <div class="tituloContenido">
+          <h5>Input of IPTG. Step 11</h5>
+        </div>
+        <br>
+        <p class="contenido">The entry of IPTG into <em>Escherichia coli</em> BL21 cells occurs through two potential mechanisms: simple diffusion and active transport facilitated by the lactose permease, encoded by the LacY gene. The active transport pathway has been reported to not be significant on <em>E.coli</em>, thus, we won't take it into account in our model.<sup>5</sup> As a result, we focus solely on the predominant method of IPTG entry, which is simple diffusion. In this process, IPTG molecules passively move across the cell membrane in response to the concentration gradient, without the need for energy expenditure or assistance from specific transporters.</p>      
+        <br>
+        <p class="contenido">We employ Fick's law of diffusion (Eq. 1) to characterize the process of simple diffusion. The equation takes into account 2 variables: IPTG concentration and absorption surface. Notably, in our model, we maintain the absorption surface as a constant, disregarding any membrane expansion during binary fission. This choice enables us to establish all our mathematical equations as dependent solely on IPTG concentration. In this context, where x denotes the membrane thickness, 'K' represents the diffusion constant, 'A' stands for the absorption surface, 'IPTG extracellular' signifies the IPTG concentration in the culture medium, and 'IPTG intratracellular' refers to the IPTG concentration within the bacterial cells.
+        </p>
+        <math display='block'>
+          <mfrac>
+           <mrow>
+            <mi>&#x0394;</mi><mi>I</mi><mi>P</mi><mi>T</mi><msub>
+             <mi>G</mi>
+             <mrow>
+              <mi>I</mi><mi>n</mi><mi>t</mi><mi>r</mi><mi>a</mi><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi><mi>u</mi><mi>l</mi><mi>a</mi><mi>r</mi></mrow>
+            </msub>
+            </mrow>
+           <mrow>
+            <mi>&#x0394;</mi><mi>t</mi></mrow>
+          </mfrac>
+          <mo>=</mo><mi>K</mi><mi>A</mi><mfrac>
+           <mrow>
+            <mi>&#x0394;</mi><mi>I</mi><mi>P</mi><mi>T</mi><msub>
+             <mi>G</mi>
+             <mrow>
+              <mi>e</mi><mi>x</mi><mi>t</mi><mi>r</mi><mi>a</mi><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi><mi>u</mi><mi>l</mi><mi>a</mi><mi>r</mi></mrow>
+            </msub>
+            </mrow>
+           <mrow>
+            <mi>&#x0394;</mi><mi>t</mi></mrow>
+          </mfrac>
+         </math>
+         <p LIGN="right">(1)</p>
+         <div class="tituloContenido">
+          <h5>Formation of repressor-IPTG complex. Steps 12-15</h5>
+        </div>
+        <p class="contenido">Upon the introduction of IPTG into the system, it binds with the dimeric and tetrameric forms of the repressor protein. It’s important to note that each monomer within both the dimer and tetramer structure can accommodate a single IPTG molecule for binding. Upon binding, IPTG triggers an allosteric structural transformation in the tetrameric repressor, resulting to a decrease in its affinity for the operator.<sup>6</sup> Consequently, the monomeric repressor loses its capacity to effectively bind to the operator, allowing RNA polymerase’s access to the promoter. This, in turn, enables the transcription and subsequent production of the endolysins.</p>
+        <br>
+        <p class="contenido">The formation of the IPTG-repressor complex can occur through two mechanisms:<sup>3</sup></p>
+        <ol  class="contenido">
+          <li  class="contenido">The repressor exists in a free state.</li>
+          <li  class="contenido">The repressor is part of the repressor-operator complex, where it is already bound to the operator sequence.</li>
+        </ol >
+          <p class="contenido">When the repressor is bound to the operator, the introduction of IPTG interferes with the repressor-operator complex, leading to its disruption. As a result, the extent of repressor inactivation is directly correlated with the number of binding sites occupied by IPTG. Interestingly, even with just two IPTG molecules bound to specific sites, the repressor can undergo effective inactivation.<sup>7</sup> <b>Figure 2</b> illustrates the different conformations that can exist.</p>
+          <br>
+          <br>
+          <br>
+        <p class="contenido">We are considering these distinct conformations to deactivate the tetramer repressor, which requires a Hill coefficient of 2-3. However, it's noteworthy that only two IPTG molecules are required to inactivate the dimeric repressor.</p>
+        <math display='block'>
+          <mn>2</mn><mi>I</mi><mo>+</mo><msub>
+           <mi>R</mi>
+           <mi>D</mi>
+          </msub>
+          <munderover>
+           <mo>&#x21C4;</mo>
+           <mrow>
+            <msub>
+             <mi>k</mi>
+             <mrow>
+              <mn>12</mn></mrow>
+            </msub>
+            </mrow>
+           <mrow>
+            <msub>
+             <mi>k</mi>
+             <mrow>
+              <mn>11</mn></mrow>
+            </msub>
+            </mrow>
+          </munderover>
+          <msub>
+           <mi>I</mi>
+           <mn>2</mn>
+          </msub>
+          <msub>
+           <mi>R</mi>
+           <mi>D</mi>
+          </msub>
+         </math>
+         <p ALIGN="right">(xi,xii)</p>
+         <math display='block'>
+          <mn>2</mn><mi>I</mi><mo>+</mo><msub>
+           <mi>R</mi>
+           <mi>D</mi>
+          </msub>
+          <mi>O</mi><munderover>
+           <mo>&#x21C4;</mo>
+           <mrow>
+            <msub>
+             <mi>k</mi>
+             <mrow>
+              <mn>14</mn></mrow>
+            </msub>
+            </mrow>
+           <mrow>
+            <msub>
+             <mi>k</mi>
+             <mrow>
+              <mn>13</mn></mrow>
+            </msub>
+            </mrow>
+          </munderover>
+          <msub>
+           <mi>I</mi>
+           <mn>2</mn>
+          </msub>
+          <msub>
+           <mi>R</mi>
+           <mi>D</mi>
+          </msub>
+          <mo>+</mo><mi>O</mi>
+         </math>
+         <p ALIGN="right">(xiii,xiv)</p>
+         <math display='block'>
+          <mi>n</mi><mi>I</mi><mo>+</mo><msub>
+           <mi>R</mi>
+           <mi>T</mi>
+          </msub>
+          <munderover>
+           <mo>&#x21C4;</mo>
+           <mrow>
+            <msub>
+             <mi>k</mi>
+             <mrow>
+              <mn>16</mn></mrow>
+            </msub>
+            </mrow>
+           <mrow>
+            <msub>
+             <mi>k</mi>
+             <mrow>
+              <mn>15</mn></mrow>
+            </msub>
+            </mrow>
+          </munderover>
+          <msub>
+           <mi>I</mi>
+           <mi>n</mi>
+          </msub>
+          <msub>
+           <mi>R</mi>
+           <mi>T</mi>
+          </msub>
+         </math>
+         <p  ALIGN="right">(xv,xvi)</p>
+         <math display='block'>
+          <mi>n</mi><mi>I</mi><mo>+</mo><msub>
+           <mi>R</mi>
+           <mi>T</mi>
+          </msub>
+          <mi>O</mi><munderover>
+           <mo>&#x21C4;</mo>
+           <mrow>
+            <msub>
+             <mi>k</mi>
+             <mrow>
+              <mn>18</mn></mrow>
+            </msub>
+            </mrow>
+           <mrow>
+            <msub>
+             <mi>k</mi>
+             <mrow>
+              <mn>17</mn></mrow>
+            </msub>
+            </mrow>
+          </munderover>
+          <msub>
+           <mi>I</mi>
+           <mi>n</mi>
+          </msub>
+          <msub>
+           <mi>R</mi>
+           <mi>T</mi>
+          </msub>
+          <mo>+</mo><mi>O</mi>
+         </math>
+         <p  ALIGN="right">(xvii,xviii)</p>
+         <div class="tituloContenido">
+          <h5>Protein production. Steps 18-19</h5>
+        </div>
+        <p class="contenido">As the operator becomes unoccupied due to the inactivation of the lac repressor through IPTG binding, RNA polymerase gains the ability to initiate transcription of the endolysin gene. In our model, the transcription of endolysin is solely contingent on the concentration of free operator sites.</p>
+        <br>
+        <p class="contenido"><em>E. coli</em>recombinant expression systems that utilize lac operon control elements to modulate gene expression, low levels expression are produced during bacterial growth prior to induction, known as leakage. This leaking limits cell growth when toxic proteins for <em>E. coli</em> are produced and cause instability in the pET expression system.<sup>8</sup></p>
+        <br>
+        <p class="contenido">The concentration of recombinant proteins in bacterial cells is crucial for large-scale production, as high levels can be toxic, reducing yields. However, for the sake of model simplicity and tractability, we have omitted toxicity considerations.</p>
+        <math display='block'>
+          <mi>O</mi><mover>
+           <mo>&#x2192;</mo>
+           <mrow>
+            <msub>
+             <mi>k</mi>
+             <mrow>
+              <mn>19</mn></mrow>
+            </msub>
+            </mrow>
+          </mover>
+          <mi>O</mi><mo>+</mo><msub>
+           <mi>M</mi>
+           <mi>E</mi>
+          </msub>
+         </math>
+         <p ALIGN="right">(xix)</p>
+         <math display='block'>
+          <msub>
+           <mi>R</mi>
+           <mi>D</mi>
+          </msub>
+          <mi>O</mi><mover>
+           <mo>&#x2192;</mo>
+           <mrow>
+            <msub>
+             <mi>k</mi>
+             <mrow>
+              <mn>20</mn></mrow>
+            </msub>
+            </mrow>
+          </mover>
+          <msub>
+           <mi>R</mi>
+           <mi>D</mi>
+          </msub>
+          <mi>O</mi><mo>+</mo><msub>
+           <mi>M</mi>
+           <mi>E</mi>
+          </msub>
+         </math>
+         <p  ALIGN="right">(xx)</p>
+         <math display='block'>
+          <msub>
+           <mi>R</mi>
+           <mi>T</mi>
+          </msub>
+          <mi>O</mi><mover>
+           <mo>&#x2192;</mo>
+           <mrow>
+            <msub>
+             <mi>k</mi>
+             <mrow>
+              <mn>21</mn></mrow>
+            </msub>
+            </mrow>
+          </mover>
+          <msub>
+           <mi>R</mi>
+           <mi>T</mi>
+          </msub>
+          <mi>O</mi><mo>+</mo><msub>
+           <mi>M</mi>
+           <mi>E</mi>
+          </msub>
+         </math>
+         <p  ALIGN="right">(xxi)</p>
+         <math display='block'>
+          <msub>
+           <mi>M</mi>
+           <mi>E</mi>
+          </msub>
+          <mover>
+           <mo>&#x2192;</mo>
+           <mrow>
+            <msub>
+             <mi>k</mi>
+             <mrow>
+              <mn>22</mn></mrow>
+            </msub>
+            </mrow>
+          </mover>
+          <msub>
+           <mi>M</mi>
+           <mi>E</mi>
+          </msub>
+          <mo>+</mo><mi>E</mi>
+         </math>
+          <p  ALIGN="right">(xxii)</p>         
+          <br>
+         <div class="tituloContenido">
+          <h5>Degradation of mRNA and protein compounds. Steps 7-10, 16-17, 20-21</h5>
+        </div>
+        <p class="contenido">The non-hydrolyzable chemical bond in IPTG, specifically involving the sulfur (S) atom, is a critical aspect of its mechanism of action within the cell. This unique characteristic prevents IPTG from being metabolized or degraded by cellular machinery. In our model, we take into account this specific feature, making an important assumption that the compounds that form complexes with IPTG are subject to degradation, leaving behind the free IPTG molecules that were involved in the complex formation.</p>
+        <p class="contenido">It is worth noting that when the lac repressor exists in its dimeric or tetrameric form and is bound to the operator, it is rendered non-degradable. This is because these bound repressor complexes are part of the regulatory mechanism that inhibits the transcription of the endolysin gene. As such, the bound dimers and tetramers are not subject to degradation in the model.</p>
+        <math display='block'>
+          <msub>
+           <mi>M</mi>
+           <mrow>
+            <mi>L</mi><mi>I</mi></mrow>
+          </msub>
+          <mover>
+           <mo>&#x2192;</mo>
+           
+           <mrow>
+            <msub>
+             <mi>k</mi>
+             <mrow>
+              <mn>23</mn></mrow>
+            </msub>
+            </mrow>
+          </mover>
+          <mo>&#x2205;</mo>
+         </math>
+          <p>(xxiii)</p>
+          <math display='block'>
+            <msub>
+             <mi>R</mi>
+             <mi>M</mi>
+            </msub>
+            <mover>
+             <mo>&#x2192;</mo>
+             <mrow>
+              <msub>
+               <mi>k</mi>
+               <mrow>
+                <mn>24</mn></mrow>
+              </msub>
+              </mrow>
+            </mover>
+            <mo>&#x2205;</mo>
+           </math>
+           <p  ALIGN="right">(xxiv)</p>
+           <math display='block'>
+            <msub>
+             <mi>R</mi>
+             <mi>D</mi>
+            </msub>
+            <mover>
+             <mo>&#x2192;</mo>
+             <mrow>
+              <msub>
+               <mi>k</mi>
+               <mrow>
+                <mn>25</mn></mrow>
+              </msub>
+              </mrow>
+            </mover>
+            <mo>&#x2205;</mo>
+           </math>
+           <p  ALIGN="right">(xxv)</p>
+           <math display='block'>
+            <msub>
+             <mi>R</mi>
+             <mi>T</mi>
+            </msub>
+            <mover>
+             <mo>&#x2192;</mo>
+             <mrow>
+              <msub>
+               <mi>k</mi>
+               <mrow>
+                <mn>26</mn></mrow>
+              </msub>
+              </mrow>
+            </mover>
+            <mo>&#x2205;</mo>
+           </math>
+           <p  ALIGN="right">(xxvi)</p>
+           <math display='block'>
+            <msub>
+             <mi>I</mi>
+             <mn>2</mn>
+            </msub>
+            <msub>
+             <mi>R</mi>
+             <mi>D</mi>
+            </msub>
+            <mover>
+             <mo>&#x2192;</mo>
+             <mrow>
+              <msub>
+               <mi>k</mi>
+               <mrow>
+                <mn>27</mn></mrow>
+              </msub>
+              </mrow>
+            </mover>
+            <mo>&#x2205;</mo>
+           </math>
+           <p  ALIGN="right">(xxvii)</p>
+           <math display='block'>
+            <msub>
+             <mi>I</mi>
+             <mi>n</mi>
+            </msub>
+            <msub>
+             <mi>R</mi>
+             <mi>T</mi>
+            </msub>
+            <mover>
+             <mo>&#x2192;</mo>
+             <mrow>
+              <msub>
+               <mi>k</mi>
+               <mrow>
+                <mn>28</mn></mrow>
+              </msub>
+              </mrow>
+            </mover>
+            <mo>&#x2205;</mo>
+           </math>
+           <p  ALIGN="right">(xxviii)</p>
+           <math display='block'>
+            <msub>
+             <mi>M</mi>
+             <mi>E</mi>
+            </msub>
+            <mover>
+             <mo>&#x2192;</mo>
+             <mrow>
+              <msub>
+               <mi>k</mi>
+               <mrow>
+                <mn>29</mn></mrow>
+              </msub>
+              </mrow>
+            </mover>
+            <mo>&#x2205;</mo>
+           </math>
+           <p  ALIGN="right">(xxix)</p>
+           <math display='block'>
+            <mi>E</mi><mover>
+             <mo>&#x2192;</mo>
+             <mrow>
+              <msub>
+               <mi>k</mi>
+               <mrow>
+                <mn>30</mn></mrow>
+              </msub>
+              </mrow>
+            </mover>
+            <mo>&#x2205;</mo>
+           </math>
+           <p  ALIGN="right">(xxx)</p>
+           <br>
+           <div class="tituloContenido">
+            <h4>Model building</h4>
+          </div>
+          <div class="tituloContenido">
+            <h5>Chemical reactions</h5>
+          </div>
+          <p class="contenido">Drawing from the available literature, we have acquired the essential chemical reactions governing our system's behavior. These reactions laid the groundwork for formulating our ODEs.</p>
+
+          <div class="box-wrap">
+            <div class="table-wrap">
+                <table summary= <b>Table 1</b> Chemical reactions on the IPTG induction model.
+                    <thead>
+                        <tr>
+                            <th>Number</th>
+                            <th>Chemical reactions</th>
+                            <th>Meaning</th>
+                            <th>Schematic representation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>(1)</td>
+                            <td></td>
+                            <td>Entrance of IPTG into <em>Escherichia coli</em> (Simple diffusion)</td>
+                            <td>
+                              <img src="https://static.igem.wiki/teams/4607/wiki/modelo/ecuaciones-representacion-esquematica/ecuacion-1-removebg-preview.png"   style="max-width:250px ;"/></td>
+                        </tr>
+                        <tr>
+                            <td>(i)</td>
+                            <td>
+                              <math class="contenido">
+                                <msub>
+                                 <mi>M</mi>
+                                 <mrow>
+                                  <mi>L</mi><mi>I</mi></mrow>
+                                </msub>
+                                <mover>
+                                 <mo>&#x2192;</mo>
+                                 <mrow>
+                                  <msub>
+                                   <mi>k</mi>
+                                   <mn>2</mn>
+                                  </msub>
+                                  </mrow>
+                                </mover>
+                                <msub>
+                                 <mi>M</mi>
+                                 <mrow>
+                                  <mi>L</mi><mi>I</mi></mrow>
+                                </msub>
+                                <mo>+</mo><msub>
+                                 <mi>R</mi>
+                                 <mi>M</mi>
+                                </msub> 
+                              </math>
+                            </td>
+                            <td>Production of the repressor mRNA.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>(ii)</td>
+                            <td>
+                              <math  class="contenido">
+                                <msub>
+                                 <mi>M</mi>
+                                 <mrow>
+                                  <mi>L</mi><mi>I</mi></mrow>
+                                </msub>
+                                <mover>
+                                 <mo>&#x2192;</mo>
+                                 <mrow>
+                                  <msub>
+                                   <mi>k</mi>
+                                   <mn>2</mn>
+                                  </msub>
+                                  </mrow>
+                                </mover>
+                                <msub>
+                                 <mi>M</mi>
+                                 <mrow>
+                                  <mi>L</mi><mi>I</mi></mrow>
+                                </msub>
+                                <mo>+</mo><msub>
+                                 <mi>R</mi>
+                                 <mi>M</mi>
+                                </msub>
+                               </math>                                                          
+                            </td>
+                            <td>Translation of the repressor mRNA (monomer formation)</td>
+                            <td>
+                              <img src="https://static.igem.wiki/teams/4607/wiki/modelo/ecuaciones-representacion-esquematica/ecuacion-3-removebg-preview.png" style="max-width:250px ;"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>(iii,iv)</td>
+                            <td>
+                              <math class="contenido">
+                                <mn>2</mn><msub>
+                                 <mi>R</mi>
+                                 <mi>M</mi>
+                                </msub>
+                                <munderover>
+                                 <mo>&#x21C4;</mo>
+                                 <mrow>
+                                  <msub>
+                                   <mi>k</mi>
+                                   <mn>4</mn>
+                                  </msub>
+                                  </mrow>
+                                 <mrow>
+                                  <msub>
+                                   <mi>k</mi>
+                                   <mn>3</mn>
+                                  </msub>
+                                  </mrow>
+                                </munderover>
+                                <msub>
+                                 <mi>R</mi>
+                                 <mi>D</mi>
+                                </msub>
+                               </math>
+                            </td>
+                            <td>Formation of dimers (repressor).</td>
+                            <td>
+                              <img src="https://static.igem.wiki/teams/4607/wiki/modelo/ecuaciones-representacion-esquematica/ecuacion-4-5-removebg-preview.png" style="max-width:250px ;"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>(v,vi)</td>
+                            <td>
+                              <math class="contenido">
+                              <mn>2</mn><msub>
+                               <mi>R</mi>
+                               <mi>D</mi>
+                              </msub>
+                              <munderover>
+                               <mo>&#x21C4;</mo>
+                               <mrow>
+                                <msub>
+                                 <mi>k</mi>
+                                 <mn>6</mn>
+                                </msub>
+                                </mrow>
+                               <mrow>
+                                <msub>
+                                 <mi>k</mi>
+                                 <mn>5</mn>
+                                </msub>
+                                </mrow>
+                              </munderover>
+                              <msub>
+                               <mi>R</mi>
+                               <mi>T</mi>
+                              </msub>
+                             </math>
+                             </td>
+                            <td>Formation of tetramers (repressor).</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>(vii,viii)</td>
+                            <td>
+                              <math class="contenido">
+                                <msub>
+                                 <mi>R</mi>
+                                 <mi>D</mi>
+                                </msub>
+                                <mo>+</mo><mi>O</mi><munderover>
+                                 <mo>&#x21C4;</mo>
+                                 <mrow>
+                                  <msub>
+                                   <mi>k</mi>
+                                   <mn>8</mn>
+                                  </msub>
+                                  </mrow>
+                                 <mrow>
+                                  <msub>
+                                   <mi>k</mi>
+                                   <mn>7</mn>
+                                  </msub>
+                                  </mrow>
+                                </munderover>
+                                <msub>
+                                 <mi>R</mi>
+                                 <mi>D</mi>
+                                </msub>
+                                <mi>O</mi>
+                               </math>
+                               
+                            </td>
+                            <td>Binding of the dimer to LacO (operator).</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>(ix,x)</td>
+                            <td>
+                              <math class="contenido">
+                              <msub>
+                               <mi>R</mi>
+                               <mi>T</mi>
+                              </msub>
+                              <mo>+</mo><mi>O</mi><munderover>
+                               <mo>&#x21C4;</mo>
+                               <mrow>
+                                <msub>
+                                 <mi>k</mi>
+                                 <mrow>
+                                  <mn>10</mn></mrow>
+                                </msub>
+                                </mrow>
+                               <mrow>
+                                <msub>
+                                 <mi>k</mi>
+                                 <mn>9</mn>
+                                </msub>
+                                </mrow>
+                              </munderover>
+                              <msub>
+                               <mi>R</mi>
+                               <mi>T</mi>
+                              </msub>
+                              <mi>O</mi>
+                             </math>
+                             </td>
+                            <td>Binding of the tetramer to operator.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>(xi,xii)</td>
+                            <td>
+                              <math class="contenido">
+                                <mn>2</mn><mi>I</mi><mo>+</mo><msub>
+                                 <mi>R</mi>
+                                 <mi>D</mi>
+                                </msub>
+                                <munderover>
+                                 <mo>&#x21C4;</mo>
+                                 <mrow>
+                                  <msub>
+                                   <mi>k</mi>
+                                   <mrow>
+                                    <mn>12</mn></mrow>
+                                  </msub>
+                                  </mrow>
+                                 <mrow>
+                                  <msub>
+                                   <mi>k</mi>
+                                   <mrow>
+                                    <mn>11</mn></mrow>
+                                  </msub>
+                                  </mrow>
+                                </munderover>
+                                <msub>
+                                 <mi>I</mi>
+                                 <mn>2</mn>
+                                </msub>
+                                <msub>
+                                 <mi>R</mi>
+                                 <mi>D</mi>
+                                </msub>
+                               </math>
+                            </td>
+                            <td>Binding of IPTG to the dimer.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>(xiii,xiv)</td>
+                            <td>
+                              <math class="contenido">
+                                <mn>2</mn><mi>I</mi><mo>+</mo><msub>
+                                 <mi>R</mi>
+                                 <mi>D</mi>
+                                </msub>
+                                <mi>O</mi><munderover>
+                                 <mo>&#x21C4;</mo>
+                                 <mrow>
+                                  <msub>
+                                   <mi>k</mi>
+                                   <mrow>
+                                    <mn>14</mn></mrow>
+                                  </msub>
+                                  </mrow>
+                                 <mrow>
+                                  <msub>
+                                   <mi>k</mi>
+                                   <mrow>
+                                    <mn>13</mn></mrow>
+                                  </msub>
+                                  </mrow>
+                                </munderover>
+                                <msub>
+                                 <mi>I</mi>
+                                 <mn>2</mn>
+                                </msub>
+                                <msub>
+                                 <mi>R</mi>
+                                 <mi>D</mi>
+                                </msub>
+                                <mo>+</mo><mi>O</mi>
+                               </math>                               
+                            </td>
+                            <td>Binding of IPTG to the dimer-operator complex.</td>
+                            <td></td>
+                        </tr>
+                      <tr>
+                            <td>(xv,xvi)</td>
+                            <td>
+                              <math class="contenido">
+                                <mi>n</mi><mi>I</mi><mo>+</mo><msub>
+                                 <mi>R</mi>
+                                 <mi>T</mi>
+                                </msub>
+                                <munderover>
+                                 <mo>&#x21C4;</mo>
+                                 <mrow>
+                                  <msub>
+                                   <mi>k</mi>
+                                   <mrow>
+                                    <mn>16</mn></mrow>
+                                  </msub>
+                                  </mrow>
+                                 <mrow>
+                                  <msub>
+                                   <mi>k</mi>
+                                   <mrow>
+                                    <mn>15</mn></mrow>
+                                  </msub>
+                                  </mrow>
+                                </munderover>
+                                <msub>
+                                 <mi>I</mi>
+                                 <mi>n</mi>
+                                </msub>
+                                <msub>
+                                 <mi>R</mi>
+                                 <mi>T</mi>
+                                </msub>
+                               </math>                               
+                            </td>
+                            <td>Binding of IPTG to tetramer.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                          <td>(xvii,xviii)</td>
+                          <td>
+                            <math  class="contenido">
+                              <mi>n</mi><mi>I</mi><mo>+</mo><msub>
+                               <mi>R</mi>
+                               <mi>T</mi>
+                              </msub>
+                              <mi>O</mi><munderover>
+                               <mo>&#x21C4;</mo>
+                               <mrow>
+                                <msub>
+                                 <mi>k</mi>
+                                 <mrow>
+                                  <mn>18</mn></mrow>
+                                </msub>
+                                </mrow>
+                               <mrow>
+                                <msub>
+                                 <mi>k</mi>
+                                 <mrow>
+                                  <mn>17</mn></mrow>
+                                </msub>
+                                </mrow>
+                              </munderover>
+                              <msub>
+                               <mi>I</mi>
+                               <mi>n</mi>
+                              </msub>
+                              <msub>
+                               <mi>R</mi>
+                               <mi>T</mi>
+                              </msub>
+                              <mo>+</mo><mi>O</mi>
+                             </math>                             
+                          </td>
+                          <td>Binding of IPTG to the tetramer-operator complex.</td>
+                          <td></td>
+                      </tr>
+                      <tr>
+                        <td>(xix)</td>
+                        <td>
+                          <math class="contenido">
+                            <mi>O</mi><mover>
+                             <mo>&#x2192;</mo>
+                             <mrow>
+                              <msub>
+                               <mi>k</mi>
+                               <mrow>
+                                <mn>19</mn></mrow>
+                              </msub>
+                              </mrow>
+                            </mover>
+                            <mi>O</mi><mo>+</mo><msub>
+                             <mi>M</mi>
+                             <mi>E</mi>
+                            </msub>
+                           </math>
+                        </td>
+                        <td>Transcription of endolysin.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>(xx)</td>
+                        <td>
+                          <math class="contenido"'>
+                            <msub>
+                             <mi>R</mi>
+                             <mi>D</mi>
+                            </msub>
+                            <mi>O</mi><mover>
+                             <mo>&#x2192;</mo>
+                             <mrow>
+                              <msub>
+                               <mi>k</mi>
+                               <mrow>
+                                <mn>20</mn></mrow>
+                              </msub>
+                              </mrow>
+                            </mover>
+                            <msub>
+                             <mi>R</mi>
+                             <mi>D</mi>
+                            </msub>
+                            <mi>O</mi><mo>+</mo><msub>
+                             <mi>M</mi>
+                             <mi>E</mi>
+                            </msub>
+                           </math>                            
+                        </td>
+                        <td>Transcript leak from endolysin in dimers.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>(xxi)</td>
+                        <td>
+                          <math class="contenido">
+                            <msub>
+                             <mi>R</mi>
+                             <mi>T</mi>
+                            </msub>
+                            <mi>O</mi><mover>
+                             <mo>&#x2192;</mo>
+                             <mrow>
+                              <msub>
+                               <mi>k</mi>
+                               <mrow>
+                                <mn>21</mn></mrow>
+                              </msub>
+                              </mrow>
+                            </mover>
+                            <msub>
+                             <mi>R</mi>
+                             <mi>T</mi>
+                            </msub>
+                            <mi>O</mi><mo>+</mo><msub>
+                             <mi>M</mi>
+                             <mi>E</mi>
+                            </msub>
+                           </math>                           
+                        </td>
+                        <td>Transcript leak from endolysin in tetramers.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>(xxii)</td>
+                        <td>
+                          <math class="contenido">
+                            <msub>
+                             <mi>M</mi>
+                             <mi>E</mi>
+                            </msub>
+                            <mover>
+                             <mo>&#x2192;</mo>
+                             <mrow>
+                              <msub>
+                               <mi>k</mi>
+                               <mrow>
+                                <mn>22</mn></mrow>
+                              </msub>
+                              </mrow>
+                            </mover>
+                            <msub>
+                             <mi>M</mi>
+                             <mi>E</mi>
+                            </msub>
+                            <mo>+</mo><mi>E</mi>
+                           </math>
+                        </td>
+                        <td>Translation of the endolysin.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>(xxiii)</td>
+                        <td>
+                          <math class="contenido">
+                            <msub>
+                             <mi>M</mi>
+                             <mrow>
+                              <mi>L</mi><mi>I</mi></mrow>
+                            </msub>
+                            <mover>
+                             <mo>&#x2192;</mo>
+                             <mrow>
+                              <msub>
+                               <mi>k</mi>
+                               <mrow>
+                                <mn>23</mn></mrow>
+                              </msub>
+                              </mrow>
+                            </mover>
+                            <mo>&#x2205;</mo>
+                           </math>                           
+                        </td>
+                        <td>Degradation of the repressor mRNA.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>(xxiv)</td>
+                        class="contenido"
+                        <td>
+                          <math class="contenido">
+                            <msub>
+                             <mi>R</mi>
+                             <mi>M</mi>
+                            </msub>
+                            <mover>
+                             <mo>&#x2192;</mo>
+                             <mrow>
+                              <msub>
+                               <mi>k</mi>
+                               <mrow>
+                                <mn>24</mn></mrow>
+                              </msub>
+                              </mrow>
+                            </mover>
+                            <mo>&#x2205;</mo>
+                           </math>
+                        </td>
+                        <td>Degradation of the repressor monomers.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>(xxv)</td>
+                        <td>
+                          <math class="contenido">
+                            <msub>
+                             <mi>R</mi>
+                             <mi>D</mi>
+                            </msub>
+                            <mover>
+                             <mo>&#x2192;</mo>
+                             <mrow>
+                              <msub>
+                               <mi>k</mi>
+                               <mrow>
+                                <mn>25</mn></mrow>
+                              </msub>
+                              </mrow>
+                            </mover>
+                            <mo>&#x2205;</mo>
+                           </math>                             
+                        </td>
+                        <td>Degradation of the repressor dimers.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>(xxvi)</td>
+                        <td>
+                          <math class="contenido">
+                            <msub>
+                             <mi>R</mi>
+                             <mi>T</mi>
+                            </msub>
+                            <mover>
+                             <mo>&#x2192;</mo>
+                             <mrow>
+                              <msub>
+                               <mi>k</mi>
+                               <mrow>
+                                <mn>26</mn></mrow>
+                              </msub>
+                              </mrow>
+                            </mover>
+                            <mo>&#x2205;</mo>
+                           </math>                                                   
+                        </td>
+                        <td>Degradation of the repressor tetramers</td>
+                        <td></td>
+                    </tr>
+                     <tr>
+                        <td>(xxvii)</td>
+                        <td>
+                          <math class="contenido">
+                            <msub>
+                             <mi>I</mi>
+                             <mn>2</mn>
+                            </msub>
+                            <msub>
+                             <mi>R</mi>
+                             <mi>D</mi>
+                            </msub>
+                            <mover>
+                             <mo>&#x2192;</mo>
+                             <mrow>
+                              <msub>
+                               <mi>k</mi>
+                               <mrow>
+                                <mn>27</mn></mrow>
+                              </msub>
+                              </mrow>
+                            </mover>
+                            <mo>&#x2205;</mo>
+                           </math>                           
+                        </td>
+                        <td>Degradation of the dimer-IPTG complex.</td>
+                        <td>surat</td>
+                    </tr>
+                    <tr>
+                      <td>(xxviii)</td>
+                      <td>
+                        <math class="contenido">
+                          <msub>
+                           <mi>I</mi>
+                           <mi>n</mi>
+                          </msub>
+                          <msub>
+                           <mi>R</mi>
+                           <mi>T</mi>
+                          </msub>
+                          <mover>
+                           <mo>&#x2192;</mo>
+                           <mrow>
+                            <msub>
+                             <mi>k</mi>
+                             <mrow>
+                              <mn>28</mn></mrow>
+                            </msub>
+                            </mrow>
+                          </mover>
+                          <mo>&#x2205;</mo>
+                         </math>                          
+                      </td>
+                      <td>Degradation of the tetramer-IPTG complex.</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>(xxix)</td>
+                      <td>
+                        <math class="contenido">
+                          <msub>
+                           <mi>M</mi>
+                           <mi>E</mi>
+                          </msub>
+                          <mover>
+                           <mo>&#x2192;</mo>
+                           <mrow>
+                            <msub>
+                             <mi>k</mi>
+                             <mrow>
+                              <mn>29</mn></mrow>
+                            </msub>
+                            </mrow>
+                          </mover>
+                          <mo>&#x2205;</mo>
+                         </math>   
+                      </td>
+                      <td>Degradation of the endolysin mRNA.</td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td>(xxx)</td>
+                      <td>
+                        <math class="contenido">
+                          <mi>E</mi><mover>
+                           <mo>&#x2192;</mo>
+                           <mrow>
+                            <msub>
+                             <mi>k</mi>
+                             <mrow>
+                              <mn>30</mn></mrow>
+                            </msub>
+                            </mrow>
+                          </mover>
+                          <mo>&#x2205;</mo>
+                         </math>                         
+                      </td>
+                      <td>Degradation of the endolysin.</td>
+                      <td></td>
+                  </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+
+           
+
+           
+           
+
+         
+        
+
+
+
     </div>
     </div>
   <div class="secciones">
