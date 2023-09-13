@@ -18,111 +18,96 @@
 }
 
 
+/*cards overview*/
 
 .mkt-3dSlider{
-  max-height: 500px;
-  max-width: 83vw;
-}
-[type=radio] {
-  display: none;
+  height: 500px;
+  width: 83vw;
 }
 
-#slider {
-  height: 20vw;
+.card1 {
   position: relative;
-  perspective: 1000px;
+  top: 50%;
+  left: 17%;
+  width: 350px;
+  height: 300px;
+  margin: -150px;
+  float: left;
+  perspective: 500px;
+}
+.card2 {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: 300px;
+  margin: -150px;
+  float: left;
+  perspective: 500px;
+}
+.card3 {
+  position: relative;
+  top: 50%;
+  left: 83%;
+  width: 350px;
+  height: 300px;
+  margin: -150px;
+  float: left;
+  perspective: 500px;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  transition: transform 1s;
   transform-style: preserve-3d;
-
-}
-
-#slider label {
-  margin: auto;
   border-radius: 20px;
-  height: 180px;
+}
+
+.card1:hover .content ,.card2:hover .content ,.card3:hover .content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+.front {
   position: absolute;
-  left: 0; right: 0;
-  cursor: pointer;
-  border-width: 20px;
-  border:#302535;
-  border-color: #000;
-  transition: transform 0.4s ease;
-}
-
-#s1:checked ~ #slide4, #s2:checked ~ #slide5,
-#s3:checked ~ #slide1, #s4:checked ~ #slide2,
-#s5:checked ~ #slide3 {
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-  transform: translate3d(-30%,0,-200px);
-  max-height: 30vw;
-  z-index: 6;
-}
-
-#s1:checked ~ #slide5, #s2:checked ~ #slide1,
-#s3:checked ~ #slide2, #s4:checked ~ #slide3,
-#s5:checked ~ #slide4 {
-  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-  transform: translate3d(-15%,0,-100px);
-  max-height: 30vw;
-  z-index: 6;
-}
-
-
-
-#s1:checked ~ #slide2, #s2:checked ~ #slide3,
-#s3:checked ~ #slide4, #s4:checked ~ #slide5,
-#s5:checked ~ #slide1 {
-  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-  transform: translate3d(15%,0,-100px);
-  max-height: 30vw;
-  z-index: 5;
-}
-
-#s1:checked ~ #slide3, #s2:checked ~ #slide4,
-#s3:checked ~ #slide5, #s4:checked ~ #slide1,
-#s5:checked ~ #slide2 {
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-  transform: translate3d(30%,0,-200px);
-  max-height: 30vw;
-  z-index: 3;
-}
-
-.mkt-3dSlider {  
-  padding: 72px 0 
-}
-
-
-.card-slider1 {
-  background: #5BC5AB;
-  width: 378px;
-  height: 520px;
-}
-
-.card-slider2 {
-  background: #447D9C;
-  width: 378px;
-  height: 520px;
-}
-.card-slider3 {
-  background: #C55B75;
-  width: 378px;
-  height: 520px;
-}
-
-.cardTitle1{
-  margin-top: 30px;
+  height: 100%;
+  width: 100%;
+  background:linear-gradient(#D19152,#D27063);
+  line-height: 300px;
+  color: white;
   text-align: center;
-}
-.cardTitle2{
-  margin-top: 30px;
-  text-align: center;
-}
-
-.cardTitle3{
-  margin-top: 30px;
-  text-align: center;
+  font-size: 60px;
+  border-radius: 20px;
+  backface-visibility: hidden;
 }
 
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  line-height: 300px;
+  color:  #D27063;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 20px;
+  backface-visibility: hidden;
+}
+.back {
+  background: transparent;
+  transform: rotateY( 180deg );
+}
+.textCard{
+  color: #D27063;
+  line-height: 2;
+  font-size: 23px;
+  padding-top: 28px;
+
+}
 /*index*/
+
 .sidebar { 
     grid-area: sidebar;
     width: 400px;
@@ -656,9 +641,6 @@ background-color:#f8f8f8;}
   height: fit-content;
   margin-right: 10px;
 }
-
-
-
 /*animación al pasar el cursor encima de las preguntas*/
 .cta {
   position: relative;
@@ -705,12 +687,12 @@ background-color:#f8f8f8;}
   transition: all 0.3s ease;
  }
  
- .cta:hover:before {
-  width: 100%;
+.cta:hover:before {
+  width: 90%;
   background: #DE8551;
- }
- 
- .cta:hover svg {
+}
+
+.cta:hover svg {
   transform: translateX(0);
  }
  
@@ -775,4 +757,55 @@ background-color:#f8f8f8;}
  .cta2:active {
   transform: scale(0.95);
  }
- 
+/*Tabla de las ecuaciones quimicas*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.table-wrap {
+  max-width: 1300;
+  margin: 50;
+  overflow-x: auto;
+}
+
+table, td, th {
+/*   border: 1px solid #ddd; */
+  text-align: left;
+  font-size:18px;
+}
+
+table thead tr{
+     background-color: #071665;
+    color: #fff;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+   border-radius: 16px 16px 0px 0px;
+  overflow: hidden;
+}
+
+table tbody tr td{
+ border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 15px;
+  white-space: nowrap;
+}
+
+table tbody tr:nth-child(odd) {
+ background: #b4b4b442;
+  color: #000;
+  font-weight: 500;
+}
+
+.box-wrap {
+  padding: 0px 16px;
+}
+
+table tbody tr td::last-child{
+background-color:red;
+}
