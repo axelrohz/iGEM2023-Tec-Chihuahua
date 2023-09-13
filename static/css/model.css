@@ -686,12 +686,12 @@ background-color:#f8f8f8;}
   transition: all 0.3s ease;
  }
  
- .cta:hover:before {
-  width: 100%;
+.cta:hover:before {
+  width: 90%;
   background: #DE8551;
- }
- 
- .cta:hover svg {
+}
+
+.cta:hover svg {
   transform: translateX(0);
  }
  
