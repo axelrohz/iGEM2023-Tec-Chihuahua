@@ -18,7 +18,97 @@
 }
 
 
+/*cards overview*/
+
+.mkt-3dSlider{
+  height: 500px;
+  width: 83vw;
+}
+
+.card1 {
+  position: relative;
+  top: 50%;
+  left: 17%;
+  width: 350px;
+  height: 300px;
+  margin: -150px;
+  float: left;
+  perspective: 500px;
+}
+.card2 {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: 300px;
+  margin: -150px;
+  float: left;
+  perspective: 500px;
+}
+.card3 {
+  position: relative;
+  top: 50%;
+  left: 83%;
+  width: 350px;
+  height: 300px;
+  margin: -150px;
+  float: left;
+  perspective: 500px;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card1:hover .content ,.card2:hover .content ,.card3:hover .content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+
+.front {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  line-height: 300px;
+  color: #03446A;
+  text-align: center;
+  font-size: 60px;
+  border-radius: 20px;
+  backface-visibility: hidden;
+}
+
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  line-height: 300px;
+  color: #03446A;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 20px;
+  backface-visibility: hidden;
+}
+.back {
+  background: #03446A;
+  transform: rotateY( 180deg );
+}
+.textCard{
+  height:300px;
+  color:red;
+  line-height: 2;
+  font-size: 23px;
+  padding-top: 28px;
+
+}
 /*index*/
+
 .sidebar { 
     grid-area: sidebar;
     width: 400px;
@@ -668,4 +758,55 @@ background-color:#f8f8f8;}
  .cta2:active {
   transform: scale(0.95);
  }
- 
+/*Tabla de las ecuaciones quimicas*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.table-wrap {
+  max-width: 1300;
+  margin: 50;
+  overflow-x: auto;
+}
+
+table, td, th {
+/*   border: 1px solid #ddd; */
+  text-align: left;
+  font-size:18px;
+}
+
+table thead tr{
+     background-color: #071665;
+    color: #fff;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+   border-radius: 16px 16px 0px 0px;
+  overflow: hidden;
+}
+
+table tbody tr td{
+ border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 15px;
+  white-space: nowrap;
+}
+
+table tbody tr:nth-child(odd) {
+ background: #b4b4b442;
+  color: #000;
+  font-weight: 500;
+}
+
+.box-wrap {
+  padding: 0px 16px;
+}
+
+table tbody tr td::last-child{
+background-color:red;
+}
