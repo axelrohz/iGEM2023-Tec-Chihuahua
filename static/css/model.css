@@ -69,14 +69,13 @@
   transform: rotateY( 180deg ) ;
   transition: transform 0.5s;
 }
-
 .front {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: #fff;
+  background: linear-gradient(#99d9c9,#459582);
   line-height: 300px;
-  color: #03446A;
+  color: white;
   text-align: center;
   font-size: 60px;
   border-radius: 20px;
@@ -89,19 +88,18 @@
   width: 100%;
   background: white;
   line-height: 300px;
-  color: #03446A;
+  color: #5BC5AB;
   text-align: center;
   font-size: 15px;
   border-radius: 20px;
   backface-visibility: hidden;
 }
 .back {
-  background: #03446A;
+  background: transparent;
   transform: rotateY( 180deg );
 }
 .textCard{
-  height:300px;
-  color:red;
+  color:#5BC5AB;
   line-height: 2;
   font-size: 23px;
   padding-top: 28px;
