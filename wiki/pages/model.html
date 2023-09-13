@@ -84,11 +84,134 @@
       </nav>
     </div>
     <div class="Content">
+      <div class="mkt-3dSlider py-6">
+        <section id="slider">
+          <input class="card-slider" type="radio" name="slider" id="s2">
+          <input class="card-slider" type="radio" name="slider" id="s3" checked>
+          <input class="card-slider" type="radio" name="slider" id="s4">
+          <label for="s2" id="slide2" class="card-slider1">
+            <h1 class="cardTitle1">How?</h1>
+            <p>Stochastic analysis of induction system, steady-state equations for purification and analysis of dose-mediated endolysin bactericidal effects.
+            </p>
+          </label>
+          <label for="s3" id="slide3" class="card-slider2">
+            <h1 class="cardTitle2">What?</h1>
+            <p>Analyze complex systems through sub-model integration of all stages of the project.</p>
+          </label>
+          <label for="s4" id="slide4" class="card-slider3">
+            <h1 class="cardTitle3">Why?</h1>
+            <p>Understand and optimize the production and effectiveness of endolysins as a promising alternative to antibiotics.</p>
+          </label>
+        </section>
+      </div>
       <div class="tituloContenido">
         <h3 id="introduction">Introduction</h3>
       </div>
       <div>
         <p class="contenido">
+          Biological systems are highly dynamic and complex, and as we dive deeper into their intricacies, inherent variability and random fluctuations emerge. In this context, mathematical models offer a valuable tool for rigorous analysis,<sup>1</sup> and play a crucial role in research, effectively bridging the gap between theory and practice to unlock the true potential of understanding these complex systems. Mathematical models use observation and manipulation in the same way as experiments bypassing challenges such as high costs, time consumption, and risks.
+        </p>
+        <br>
+        <br>
+        <p class="contenido">
+        To systematically integrate all the stages of AureoBos, from recombinant protein production to practical application, our model adopts an 
+          <b class="tooltipSignificado">end-to-end
+            <span class="tooltipSignificadoBox">
+              Strategy that encompasses the entire process, aiming to simulate and analyze relevant stages, components, and interactions involved.
+            </span>
+          </b> 
+          approach. Initially, we use a 
+          <b class="tooltipSignificado">first principle
+            <span class="tooltipSignificadoBox">
+              First principle models are built on a fundamental understanding of underlying 
+              <b class="i">ab initio</b>
+              physio-chemical phenomena such as mass transfer, heat transfer and mass flow.
+            </span>
+          </b>  
+          model to capture the mechanism’s behavior responsible for inducing the production of our target endolysins, we utilized isopropyl β-D-1-thiogalactopyranoside (IPTG) as an inducer, triggering the protein expression system. However, this mechanism raised important questions:
+        </p>
+        <br>
+        <br>
+        <p class="cta">
+          <span>What are the specific conditions that yield the best quantitative and qualitative results in our production process?</span>
+        </p>
+        <br>
+        <p class="cta">
+          <span>How does the system behave under various conditions, and what factors affect its efficiency?</span>
+        </p>
+        <br>
+        <p class="cta">
+          <span>How robust is the system when changing the above-mentioned conditions?</sp>
+        </p>
+        <br>
+        <p class="contenido"> 
+          Moreover, having taken these crucial aspects into consideration, our focus expanded towards considering the subsequent steps required to develop a viable alternative to antibiotic therapy. This included the use of steady-state equations for purification and quantifying the endolysin concentrations, thus, the pivotal phase of our study unfolded:
+        </p>
+        <br>
+        <p class="cta2">
+          <span>How effective is the endolysin in killing the target bacteria?</span>
+        </p>
+        <br>
+        <p class="cta2">
+          <span>Is there a dose-response relationship between endolysin concentration and bacterial kill rate?</span>
+        </p>
+        <br>
+        <p class="cta2">
+          <span>Are there synergistic or antagonistic interactions between the endolysins?</sp>
+        </p>
+        <br>
+        <p class="contenido"> 
+          The model's construction and evaluation rely on a fusion of empirical data, existing literature, and mechanistic insights. By considering multiple parameters, such as dynamic interactions among system components (kinetic coefficients/interactions), system heterogeneities, and uncertainties, we employed stochastic analysis to simulate the system's responses under various scenarios, thereby establishing a range of conditions where protein expression is most favorable. Experimental data, such as IPTG concentration and endolysin production rates, contributed to parameter estimation and model calibration.
+        </p>
+        <br>
+        <p class="contenido"> 
+          The quantification of specific endolysin yield was achieved through a 
+          <b class="tooltipSignificado">black-box
+            <span class="tooltipSignificadoBox">
+              Simplified representation of a process, focusing solely on the inputs and outputs of the system without explicitly modeling the underlying mechanism.
+            </span>
+          </b>  
+          surrogate model, incorporating equations derived from literature for steady-state behavior. This model was centered around the purification stage, offering a foundation for the downstream process. 
+        </p>
+        <br>
+        <p class="contenido">
+          In the culmination of our study, we sought to undertand how the endolysin's mechanism interacts with various bacterial strains. This investigation was carried out using a design of experiments (DoE) approach inspired by the concept of a three-dimensional checkerboard assay. To determine whether the endolysin efficacy is modulated by synergic or antagonistic interactions, we employed a 
+          <b class="tooltipSignificado">response surface
+            <span class="tooltipSignificadoBox">
+              Technique used to analyze the relationship between input variables and a response variable, allowing for an optimization of the response by adjusting the inputs.
+            </span>
+          </b>
+          methodology. 
+        </p>
+        <br>
+        <p class="contenido">
+          In our approach, two sequential models are used, the first represents the 
+          <b class="tooltipSignificado">upstream 
+            <span class="tooltipSignificadoBox">
+              Describes the initial stages of the process.
+            </span>
+          </b>
+          (induction system) and 
+          <b class="tooltipSignificado">downstream 
+            <span class="tooltipSignificadoBox">
+              Models the subsequent stages and the final outcome.
+            </span>
+          </b> 
+          (purification process) together, while the second accounts for the 
+          <b class="tooltipSignificado">implementation
+            <span class="tooltipSignificadoBox">
+              <b class="i">In vitro</b> endolysin performance.
+            </span>  
+          </b>  
+          (endolysin evaluation over target bacteria)
+        </p>
+        <br>
+        <p class="contenido">
+          Our modeling process consists of a system representation through 13 ordinary differential equations (ODEs), enabling us to predict protein expression accurately. To address the stochastic nature of the system, where behavior is influenced by probabilities,<sup>2</sup> and achieve robust/realistic results, we account the uncertainty sources into our model by a Monte Carlo simulation to identify the model's parameters range and assess the sensitivity to changes. Parameter robustness is crucial in modeling, as even minor variations can significantly impact the model's behavior and performance.  
+        </p>
+        <br>
+        <p class="contenido">
+          We utilized Response Surface Methodology (RSM) as a statistical tool in our product development work. This involved optimizing factorial variables, enabling the identification of factor settings for desired responses, meeting specifications, and modeling relationships between factors and responses. Within our bactericidal system optimization, RSM allowed for trade-offs between responses, resulting in the identification of factor settings that collectively optimized multiple variables within our mathematical model.
           Biological systems are highly dynamic and complex, and as we dive deeper into their intricacies, inherent variability and random fluctuations emerge. In this context, mathematical models offer a valuable tool for rigorous analysis,<sup>1</sup> and play a crucial role in research, effectively bridging the gap between theory and practice to unlock the true potential of understanding these complex systems. Mathematical models use observation and manipulation in the same way as experiments bypassing challenges such as high costs, time consumption, and risks.
           <br>
           <br>
@@ -211,6 +334,10 @@
       </div>
     </div>
   </div>
+
+
+
+  <!--seccion Methods-->
   <div class="secciones">
     <div class="seccionMethods">
         <p class="subtitleM">Methods</p>

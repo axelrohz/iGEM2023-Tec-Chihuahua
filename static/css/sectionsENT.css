@@ -37,6 +37,15 @@
     left: 0;
 }
 
+#scrlS22{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    padding-top: 50vh;
+    top: 0;
+    left: 0
+}
+
 .imgENT1{
     width: 100%;
     height: 0%;
@@ -162,6 +171,7 @@
     width: 100%;
     height: fit-content;
     position: relative;
+    padding-top: 20vh;
     top: 0;
     left: 0;
     
@@ -169,8 +179,7 @@
 
 #scrlS21{
     width: 100%;
-    height: 50vh;
-    padding: 20vh;
+    height: fit-content;
     position: relative;
     top: 0;
     left: 0;
@@ -179,10 +188,19 @@
 
 #scrlS3{
     width: 100%;
-    height: 50vh;
+    height: 80vh;
     position: relative;
     top: 0;
     left: 0;
+
+}
+#scrlS31{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    top: 0;
+    left: 20vh;
+    padding: auto;
 
 }
 
@@ -210,4 +228,13 @@
     position: relative;
     top: 0;
     left: 0;
+}
+#scrlS34{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    padding-top: 20vh;
+    top: 0;
+    left: 0;
+
 }
