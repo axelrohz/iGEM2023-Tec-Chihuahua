@@ -920,9 +920,8 @@ background-color:red;
   z-index: 3;
   width: 10px;
   height: 18px;
-  background-color: red;
-  bottom: 557px;
-  left: 323px;
+  bottom: 276px;
+  left: 456px;
 }
 
 .ciclo1:hover .azul1{
@@ -959,8 +958,8 @@ background-color:red;
   position: absolute;
   width: 10px;
   height: 18px;
-  bottom: 561px;
-  left: 418px;
+  bottom: 279px;
+  left: 550px;
   z-index: 3;
 }
 .ciclo2:hover .azul2{
@@ -994,8 +993,9 @@ background-color:red;
   position: absolute;
   width: 10px;
   height: 18px;
-  bottom: 561px;
-  left: 497px;
+  bottom: 280px;
+  left: 629px;
+  z-index: 3;
 }
 .ciclo3:hover .azul3{
   opacity: 300%;
@@ -1026,8 +1026,9 @@ background-color:red;
   position: absolute;
   width: 10px;
   height: 18px;
-  bottom: 561px;
-  left: 607px;
+  bottom: 278px;
+  left: 739px;
+  z-index: 3;
 }
 .ciclo4:hover .azul4{
   opacity: 300%;
@@ -1059,8 +1060,9 @@ background-color:red;
   position: absolute;
   width: 10px;
   height: 18px;
-  bottom: 521px;
-  left: 515px;
+  bottom: 240px;
+  left: 647px;
+  z-index: 3;
 }
 .ciclo5:hover .azul5{
   opacity: 300%;
@@ -1112,8 +1114,9 @@ background-color:red;
   position: absolute;
   width: 10px;
   height: 18px;
-  bottom: 500px;
-  left: 710px;
+  bottom: 219px;
+  left: 842px;
+  z-index: 3;
 }
 .ciclo6:hover .azul6{
   opacity: 300%;
@@ -1163,8 +1166,9 @@ background-color:red;
   position: absolute;
   width: 10px;
   height: 18px;
-  bottom: 572px;
-  left: 388px;
+  bottom: 292px;
+  left: 518px;
+  z-index: 3;
 }
 .ciclo7:hover .azul7{
   opacity: 300%;
@@ -1196,8 +1200,9 @@ background-color:red;
   position: absolute;
   width: 10px;
   height: 18px;
-  bottom: 585px;
-  left: 457px;
+  bottom: 306px;
+  left: 590px;
+  z-index: 3;
 }
 .ciclo8:hover .azul8{
   opacity: 300%;
@@ -1230,8 +1235,9 @@ background-color:red;
   position: absolute;
   width: 10px;
   height: 18px;
-  bottom: 582px;
-  left: 578px;
+  bottom: 302px;
+  left: 710px;
+  z-index: 3;
 }
 .ciclo9:hover .azul9{
   opacity: 300%;
@@ -1255,4 +1261,246 @@ background-color:red;
   top: 14px;
   width: 25px;
   border-radius: 20px;
+}
+
+.ciclo10{
+  position: absolute;
+  width: 10px;
+  height: 18px;
+  bottom: 296px;
+  left: 827px;
+  z-index: 3;
+}
+.ciclo10:hover .azul10{
+  opacity: 300%;
+}
+
+.circuloTachado4{
+  position: relative;
+  bottom: 99px;
+  height: 17px;
+  right: -10px;
+  width: 23px;
+  box-shadow: 0 0 15px #F6AE2D;
+  border-radius: 20px;
+  opacity: 0%;
+}
+
+.dosAmarillasRojas5{
+  position: relative;
+  box-shadow: 0 0 15px red;
+  opacity: 0%;
+  height: 48px;
+  bottom: 7px;
+  right: 31px;
+  width: 25px;
+  border-radius: 20px;
+}
+
+.ciclo11{
+  position: absolute;
+  width: 10px;
+  height: 18px;
+  bottom: 86px;
+  left: 247px;
+  z-index: 3;
+}
+.ciclo11:hover .azul11{
+  opacity: 300%;
+}
+
+.tresBolasVerdes{
+  position: relative;
+  bottom: 3px;
+  height: 41px;
+  right: -36px;
+  width: 38px;
+  box-shadow: 0 0 15px #F6AE2D;
+  border-radius: 20px;
+  opacity: 0%;
+}
+
+.muchasBolasVerdes{
+  position: relative;
+  bottom: 85px;
+  height: 92px;
+  right: 105px;
+  width: 86px;
+  box-shadow: 0 0 15px #F6AE2D;
+  border-radius: 30px;
+  opacity: 0%;
+}
+
+.ciclo12{
+  position: absolute;
+  width: 10px;
+  height: 18px;
+  bottom: 124px;
+  left: 656px;
+  z-index: 3;
+}
+.ciclo12:hover .azul12{
+  opacity: 300%;
+}
+
+.dosBolasVerdes{
+  position: relative;
+  box-shadow: 0 0 15px red;
+  opacity: 0%;
+  width: 15px;
+  height: 41px;
+  left: 20px;
+  bottom: 18px;
+  border-radius: 20px;
+}
+
+.dosBolasVerdes2{
+  position: relative;
+  box-shadow: 0 0 15px red;
+  opacity: 0%;
+  width: 15px;
+  height: 39px;
+  left: -38px;
+  bottom: 58px;
+  border-radius: 20px;
+}
+
+.ciclo13{
+  position: absolute;
+  width: 10px;
+  height: 18px;
+  bottom: 117px;
+  left: 835px;
+  z-index: 3;
+}
+.ciclo13:hover .azul13{
+  opacity: 300%;
+}
+
+.dosBolasVerdes3{
+  position: relative;
+  box-shadow: 0 0 15px red;
+  opacity: 0%;
+  width: 15px;
+  height: 41px;
+  left: 17px;
+  bottom: 18px;
+  border-radius: 20px;
+}
+
+.dosBolasVerdes4{
+  position: relative;
+  box-shadow: 0 0 15px red;
+  opacity: 0%;
+  width: 15px;
+  height: 39px;
+  left: -41px;
+  bottom: 58px;
+  border-radius: 20px;
+}
+
+.ciclo14{
+  position: absolute;
+  width: 10px;
+  height: 18px;
+  bottom: 318px;
+  left: 638px;
+  z-index: 3;
+}
+.ciclo14:hover .azul14{
+  opacity: 300%;
+}
+
+.dosBolasVerdes5{
+  position: relative;
+  box-shadow: 0 0 15px red;
+  opacity: 0%;
+  width: 15px;
+  height: 41px;
+  left: 5px;
+  bottom: 8px;
+  border-radius: 20px;
+  transform: rotate(-35deg);
+}
+
+.dosBolasVerdes6{
+  position: relative;
+  box-shadow: 0 0 15px red;
+  opacity: 0%;
+  width: 15px;
+  height: 39px;
+  left: 39px;
+  bottom: 74px;
+  border-radius: 20px;
+  transform: rotate(-25deg);
+}
+
+.ciclo15{
+  position: absolute;
+  width: 10px;
+  height: 18px;
+  bottom: 330px;
+  left: 760px;
+  z-index: 3;
+}
+.ciclo15:hover .azul15{
+  opacity: 300%;
+}
+
+.dosBolasVerdes7{
+  position: relative;
+  box-shadow: 0 0 15px red;
+  opacity: 0%;
+  width: 15px;
+  height: 41px;
+  left: 4px;
+  bottom: 1px;
+  border-radius: 20px;
+  transform: rotate(-30deg);
+}
+
+.dosBolasVerdes8{
+  position: relative;
+  box-shadow: 0 0 15px red;
+  opacity: 0%;
+  width: 15px;
+  height: 39px;
+  left: 38px;
+  bottom: 67px;
+  border-radius: 20px;
+  transform: rotate(-30deg);
+}
+
+.ciclo16{
+  position: absolute;
+  width: 10px;
+  height: 18px;
+  bottom: 358px;
+  left: 680px;
+  z-index: 3;
+}
+.ciclo16:hover .azul16{
+  opacity: 300%;
+}
+
+.dosAmarillasDosBolas{
+  position: relative;
+  bottom: 36px;
+  height: 41px;
+  right: 57px;
+  width: 38px;
+  box-shadow: 0 0 15px #F6AE2D;
+  border-radius: 20px;
+  opacity: 0%;
+}
+
+.circuloTachado5{
+  position: relative;
+  bottom: 91px;
+  height: 17px;
+  right: -7px;
+  width: 23px;
+  box-shadow: 0 0 15px #F6AE2D;
+  border-radius: 20px;
+  opacity: 0%;
 }
