@@ -69,7 +69,7 @@ h2 {
   grid-gap: 22px;
   align-items: center;
   max-width: 100%;
-  padding-top: 100px;
+  padding-top: 10px;
 }
 h2:after, h2:before {
 content: " ";
@@ -261,3 +261,5 @@ background-color:#f8f8f8;
       border: 2px solid #F6AE2D;
       background-color:#f8f8f8;}
 
+
+      
