@@ -1122,7 +1122,7 @@ background-color:red;
   opacity: 300%;
 }
 
-.dosAmarillasRojas4{
+.dosAmarillasRojas2{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
@@ -1286,7 +1286,7 @@ background-color:red;
   opacity: 0%;
 }
 
-.dosAmarillasRojas5{
+.dosAmarillasRojas3{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
@@ -1365,6 +1365,28 @@ background-color:red;
   border-radius: 20px;
 }
 
+.dosAmarillasDosBolas2{
+  position: relative;
+  bottom: 42px;
+  height: 41px;
+  right: -15px;
+  width: 38px;
+  box-shadow: 0 0 15px #F6AE2D;
+  border-radius: 20px;
+  opacity: 0%;
+}
+
+.lacO7{
+  position: relative;
+  box-shadow: 0 0 15px red;
+  opacity: 0%;
+  right: 48px;
+  width: 67px;
+  height: 41px;
+  bottom: 197px;
+  border-radius: 10px;
+}
+
 .ciclo13{
   position: absolute;
   width: 10px;
@@ -1396,6 +1418,27 @@ background-color:red;
   height: 39px;
   left: -41px;
   bottom: 58px;
+  border-radius: 20px;
+}
+
+.lacO7{
+  position: relative;
+  box-shadow: 0 0 15px red;
+  opacity: 0%;
+  right: 64px;
+  width: 67px;
+  height: 21px;
+  bottom: 37px;
+}
+
+.dosAmarillasRojasDosBolas{
+  position: relative;
+  box-shadow: 0 0 15px red;
+  opacity: 0%;
+  height: 56px;
+  bottom: 70px;
+  right: -17px;
+  width: 39px;
   border-radius: 20px;
 }
 
@@ -1435,6 +1478,28 @@ background-color:red;
   transform: rotate(-25deg);
 }
 
+.dosCosasAmarillas5{
+  position: relative;
+  box-shadow: 0 0 15px red;
+  opacity: 0%;
+  height: 29px;
+  bottom: 91px;
+  left: 38px;
+  width: 25px;
+  border-radius: 20px;
+}
+
+.dosAmarillasDosBolas3{
+  position: relative;
+  bottom: 153px;
+  height: 41px;
+  right: 16px;
+  width: 38px;
+  box-shadow: 0 0 15px #F6AE2D;
+  border-radius: 20px;
+  opacity: 0%;
+}
+
 .ciclo15{
   position: absolute;
   width: 10px;
@@ -1471,6 +1536,28 @@ background-color:red;
   transform: rotate(-30deg);
 }
 
+.dosAmarillasRojas4{
+  position: relative;
+  box-shadow: 0 0 15px red;
+  opacity: 0%;
+  height: 48px;
+  bottom: 110px;
+  right: -36px;
+  width: 25px;
+  border-radius: 20px;
+}
+
+.dosAmarillasRojasDosBolas2{
+  position: relative;
+  box-shadow: 0 0 15px red;
+  opacity: 0%;
+  height: 56px;
+  bottom: 161px;
+  right: 9px;
+  width: 39px;
+  border-radius: 20px;
+}
+
 .ciclo16{
   position: absolute;
   width: 10px;
@@ -1499,6 +1586,40 @@ background-color:red;
   bottom: 91px;
   height: 17px;
   right: -7px;
+  width: 23px;
+  box-shadow: 0 0 15px #F6AE2D;
+  border-radius: 20px;
+  opacity: 0%;
+}
+
+.ciclo17{
+  position: absolute;
+  width: 10px;
+  height: 18px;
+  bottom: 366px;
+  left: 805px;
+  z-index: 3;
+}
+.ciclo17:hover .azul17{
+  opacity: 300%;
+}
+
+.dosAmarillasRojasDosBolas3{
+  position: relative;
+  box-shadow: 0 0 15px red;
+  opacity: 0%;
+  height: 56px;
+  bottom: 46px;
+  right: 56px;
+  width: 39px;
+  border-radius: 20px;
+}
+
+.circuloTachado6{
+  position: relative;
+  bottom: 99px;
+  height: 17px;
+  right: -13px;
   width: 23px;
   box-shadow: 0 0 15px #F6AE2D;
   border-radius: 20px;
