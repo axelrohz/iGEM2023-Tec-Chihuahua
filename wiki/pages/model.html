@@ -75,10 +75,9 @@
     <div class="index1">
       <nav class="navigation">
         <ul>
-          <li>
-            <a class="introduction" href="#introduction">Introduction</a>
-            <a class="conclusion" href="#conclusion">Conclusion</a>
-            <a class="references" href="#references">References</a>
+          <li><a class="introduction" href="#introduction">Introduction</a></li>
+          <li><a class="conclusion" href="#conclusion">Conclusion</a></li>
+          <li><a class="references" href="#referencesO">References</a></li>
           </li>
         </ul>
       </nav>
@@ -302,7 +301,7 @@
               Technique used to analyze the relationship between input variables and a response variable, allowing for an optimization of the response by adjusting the inputs.
             </span>
           </b>
-           methodology. 
+          methodology. 
         </p>
         <br>
         <p class="contenido">
@@ -336,13 +335,13 @@
         </p>
       </div>
       <div class="tituloContenido">
-        <h3 id="introduction">Conclusion</h3>
+        <h3 id="conclusion">Conclusion</h3>
       </div>
       <div>
         <!--aquí irá la conclusión-->
       </div>
       <div class="tituloContenido">
-        <h3 id="introduction">References</h3>
+        <h3 id="referencesO">References</h3>
       </div>
       <div>
         <p class="contenido">
@@ -369,21 +368,78 @@
         <ul>
           <li>
             <a href="#upstream">Upstream</a>
-            <a href="#downstream">Downstream</a>
-            <a href="#references">References</a>
+            <ul>
+              <li><a href="#underlying_theory">Underlying theory</a></li>
+              <li><a href="#model_building">Model Building</a></li>
+            </ul>
+          </li>
+          <li><a href="#downstream">Downstream</a></li>
+          <li><a href="#referencesM">References</a></li>
           </li>
         </ul>
       </nav>
     </div>
     <div class="secciones">
       <div class="tituloContenido">
-        <h3 id="Upstream">Upstream</h3>
+        <h1 id="upstream">Upstream</h1>
       </div>
       <div class="tituloContenido">
-        <h4>Underlying theory</h4>
+        <h4 id="underlying_theory">Underlying theory</h4>
       </div>
       <p class="contenido">The IPTG induction mechanism has 3 key elements: The operator (LacO),  lac repressor, and inductor (IPTG). These elements interact in a coordinated manner, as illustrated in Figure 1. The process unfolds as follows:</p>
       <br>
+      <div class="diagramaIPTG">
+        <img class="imagenDiagrama" src="https://static.igem.wiki/teams/4607/wiki/modelo/ecuaciones-representacion-esquematica/modelo/imagenciclo.png" alt="imagen pasos">
+        <div class="ciclo1">
+            <b class="tooltipSignificadoDiagrama">1<span class="tooltipSignificadoBoxDiagrama">Transcription of the LacI gene.</span></b>
+            <div class="hilo_ondulante azul1"></div>
+            <div class="lacl_gene azul1"></div>
+        </div>
+        <div class="ciclo2">
+            <b class="tooltipSignificadoDiagrama">2<span class="tooltipSignificadoBoxDiagrama">Translation of the mRNA (formation of the repressor monomer).</span></b>
+            <div class="hilo_ondulante2 azul2"></div>
+            <div class="cosaAmarilla azul2"></div>
+        </div>
+        <div class="ciclo3">
+            <b class="tooltipSignificadoDiagrama">3<span class="tooltipSignificadoBoxDiagrama">Formation of the repressor dimer.</span></b>
+            <div class="cosaAmarilla2 azul3"></div>
+            <div class="dosCosasAmarillas azul3"></div>
+        </div>
+        <div class="ciclo4">
+            <b class="tooltipSignificadoDiagrama">4<span class="tooltipSignificadoBoxDiagrama">Formation of the repressor tetramer.</span></b>
+            <div class="dosCosasAmarillas2 azul4"></div>
+            <div class="dosAmarillasRojas azul4"></div>
+        </div>
+        <div class="ciclo5">
+            <b class="tooltipSignificadoDiagrama">5<span class="tooltipSignificadoBoxDiagrama">The dimer binds to the LacO site (dimer-LacO complex).</span></b>
+            <div class="dosCosasAmarillas3 azul5"></div>
+            <div class="lacO1 azul5"></div>
+            <div class="lacO2 azul5"></div>
+            <div class="lacO3 azul5"></div>
+        </div>
+        <div class="ciclo6">
+            <b class="tooltipSignificadoDiagrama">6<span class="tooltipSignificadoBoxDiagrama">The tetramer binds to the LacO site (tetraSmer-LacO complex).</span></b>
+            <div class="dosAmarillasRojas4 azul6"></div>
+            <div class="lacO4 azul6"></div>
+            <div class="lacO5 azul6"></div>
+            <div class="lacO6Amarillos azul6"></div>
+        </div>
+        <div class="ciclo7">
+            <b class="tooltipSignificadoDiagrama">7<span class="tooltipSignificadoBoxDiagrama"> Degradation of the mRNA (repressor).</span></b>
+            <div class="hilo_ondulante3 azul7"></div>
+            <div class="circuloTachado azul7"></div>
+        </div>
+        <div class="ciclo8">
+            <b class="tooltipSignificadoDiagrama">8<span class="tooltipSignificadoBoxDiagrama">Degradation of the repressor monomer.</span></b>
+            <div class="cosaAmarilla3 azul8"></div>
+            <div class="circuloTachado2 azul8"></div>
+        </div>
+        <div class="ciclo9">
+            <b class="tooltipSignificadoDiagrama">9<span class="tooltipSignificadoBoxDiagrama">Degradation of the repressor dimer.</span></b>
+            <div class="dosCosasAmarillas4"></div>
+            <div class="circuloTachado3"></div>
+        </div>
+      </div>
       <br>
       <br>
       <div class="tituloContenido">
@@ -447,7 +503,7 @@
           <td  ALIGN="left">(ii)</td>
         </tr>
         <tr>
-          <td >
+          <td>
             <math class="contenido">
             <mn>2</mn><msub>
              <mi>R</mi>
@@ -518,7 +574,7 @@
             <td>
               <math class="contenido">
                 <msub>
-                <mi>R</mi>
+                <mi>R</mi> 
                 <mi>D</mi>
                 </msub>
                 <mo>+</mo><mi>O</mi><munderover>
@@ -879,7 +935,7 @@
           </mover>
           <mo>&#x2205;</mo>
          </math>
-          <p>(xxiii)</p>
+          <p ALIGN="right">(xxiii)</p>
           <math display='block'>
             <msub>
              <mi>R</mi>
@@ -1012,7 +1068,7 @@
            <p  ALIGN="right">(xxx)</p>
            <br>
            <div class="tituloContenido">
-            <h4>Model building</h4>
+            <h4 id="model_building">Model building</h4>
           </div>
           <div class="tituloContenido">
             <h5>Chemical reactions</h5>
@@ -1021,7 +1077,11 @@
 
           <div class="box-wrap">
             <div class="table-wrap">
-                <table summary= <b>Table 1</b> Chemical reactions on the IPTG induction model.
+                <table>
+                  <p style="
+                  height: 6px;
+                  left: -43px; 
+                  position: relative;"><b>Table 1</b> Chemical reactions on the IPTG induction model.</p>
                     <thead>
                         <tr>
                             <th>Number</th>
@@ -1532,7 +1592,6 @@
                     </tr>
                     <tr>
                         <td>(xxiv)</td>
-                        class="contenido"
                         <td>
                           <math class="contenido">
                             <msub>
@@ -1733,7 +1792,7 @@
       <nav class="navigation">
         <ul>
           <li>
-            <a href="#references">References</a>
+            <a href="#referencesR">References</a>
           </li>
         </ul>
       </nav>

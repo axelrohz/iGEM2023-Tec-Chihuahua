@@ -59,12 +59,12 @@
                 <br>
                 <br>
 
-                <p class="subtitleF1"></p>
-                
-
                 <h2> Experimental Design </h2>
                 <br>
                 <div>
+                    <p>
+                        Our experimental design covers the set of procedures we executed in order to successfully produce our recombinant endolysins. Covering everything from our Plasmid construction to the bactericidal assays, this page explains our journey through the laboratory.
+                    </p>
                   <img src="https://static.igem.wiki/teams/4607/wiki/experiments/expdes.png" alt="Experimental Design">
                   <p align="justify"> 
                     a) Storing resuspended biobricks in <em>Escherichia coli</em> DH5a by thermal shock transformation <br>
@@ -76,7 +76,7 @@
                     </p>
                 </div>
 
-                <p class="subtitleF1">First Round: Plasmid Construction and Analysis</p>
+                <h2>Round Zero: Plasmid Construction and Analysis</h2>
 
                 <p align="justify">
                   The initial round of experimentation encompassed the <em>in silico </em> design of our plasmids, their synthesis, assembly, transformation, and analysis of the constructs. This comprehensive phase integrates computational design with practical implementation, culminating in the evaluation of the resulting constructs.
@@ -86,19 +86,19 @@
                   The selected components for the construction of the transcriptional units were:
 
                   <ul class="list">
-                    <li>Promoter: BBa_J435350RBS</li>
-                    <li>RBS: BBa_Z0262</li>
-                    <li>Terminator: BBa_J435371</li>
-                    <li>Backbone: BBa_J435330</li>
+                    <li class="list">Promoter: BBa_J435350RBS</li>
+                    <li class="list">RBS: BBa_Z0262</li>
+                    <li class="list">Terminator: BBa_J435371</li>
+                    <li class="list">Backbone: BBa_J435330</li>
                   </ul>
                   <br>
                   <p align="justify">These parts were assembled in SnapGene® software using the Golden Gate method, employing the type IIS restriction enzyme BsaI.The transcriptional units (TUs) of each of our endolysins (TU LysK, TU LysCSA13, and TU LysSS) were synthesized by Twist Bioscience, making this possible by the sponsorship of 10 kb of FREE Twist Gene Fragments for iGEM teams.</p>
                 </p>
 
-                <p class="subtitleF2">Second Round: Golden Gate Assembly and Identification</p>
+                <p class="subtitleF1">First Round: Golden Gate Assembly/p>
 
                 <p align="justify">
-                  From the iGem 2023 plate, the BioBrick™ BBa_J435330 (plate 2, well A15) was <a class="hipervinculoazul" href="">resuspended<a/>, which was <a class="hipervinculuazul" href=""> transformed</a> into <em>E. coli 5</em>-alpha by heat shock, and subsequently <a class="hipervinculuazul" href="">extracted and purified</a> with the PureLink™ Quick Plasmid Miniprep Kit (Invitrogen™, Lot #01260760). This part was chosen as the backbone due to its high replication origin, dual antibiotic resistance (kanamycin and ampicillin), and compatibility with the Golden Gate assembly method. Once the BBa_J435330 backbone was extracted and purified, <a>Golden Gate assembly reactions<a/> were performed using the BsaI enzyme (NEB E1601, Lot #10182427) to insert each of the transcriptional units into the BBa_J435330 backbone. <br>
+                  From the iGem 2023 plate, the BioBrick™ BBa_J435330 (plate 2, well A15) was <a class="hipervinculoazul" href="">resuspended<a/>, which was <a class="hipervinculoazul" href=""> transformed</a> into <em>E. coli 5</em>-alpha by heat shock, and subsequently <a class="hipervinculoazul" href="">extracted and purified</a> with the PureLink™ Quick Plasmid Miniprep Kit (Invitrogen™, Lot #01260760). This part was chosen as the backbone due to its high replication origin, dual antibiotic resistance (kanamycin and ampicillin), and compatibility with the Golden Gate assembly method. Once the BBa_J435330 backbone was extracted and purified, <a>Golden Gate assembly reactions<a/> were performed using the BsaI enzyme (NEB E1601, Lot #10182427) to insert each of the transcriptional units into the BBa_J435330 backbone. <br>
                   After the Golden Gate assembly reaction, a bacterial <a class="hipervinculoazul" href="">transformation</a> into <em>E. coli </em> 5-alpha was performed, followed by plating on LB agar with kanamycin (50 µg/mL). However, colonies were obtained both on the plates seeded with the transformation and in the negative controls. This led us to suspect that the plates from the Golden Gate reaction might contain a mixture of colonies transformed with the target construct and others transformed with the backbone alone, making them indistinguishable by visual inspection. <br>
                   To confirm this, re-plating of several colonies from the same plate was conducted onto other plates with kanamycin and ampicillin. This was done in order to take advantage of the dual antibiotic resistance feature present in the used backbone. A colony from the reaction-seeded plate was selected and then plated onto two separate plates: one with kanamycin (50 µg/mL) and another with ampicillin (100 µg/mL). The same identifying number was assigned to both antibiotics.
                   The next day, observation revealed that some colonies grew on both antibiotics, while specific colonies only grew on kanamycin (50 µg/mL) and on ampicillin there wasn't any growth (100 µg/mL). This suggested that these colonies might have been transformed with a construct carrying resistance only to kanamycin (50 µg/mL) and not to ampicillin. This led us to suspect that our construct might indeed be present in these colonies. <br>
@@ -108,16 +108,16 @@
                   <br>
                 </p>
 
-                <p class="subtitleF3">Third  Round of Experimentation: Protein Expression</p>
+                <p class="subtitleF2">Second Round: Protein Expression</p>
                 <p>               
                     
-                    <b><em>Protein production</em></b> <br>
+                    <b><em>Protein Production</em></b> <br>
                     The next step of our recombinant protein production process was grouped into the third round of experimentation. All the selection, optimization, and standardization of our protein induction protocols were performed as follows:
-                    Our constructs contain the biobrick <a href="http://parts.igem.org/Part:BBa_J435350">BBa_J435350 </a>, a T7 promoter with LacO regulation regions. It was chosen because of its high transcription levels, and regulation activity.  To induce the protein production of our <em>E. coli BL21 (DE3) </em> transformants (pUC-LysCSA13 & pUC-LysK), isopropyl β-D-1 thiogalactopyranoside (IPTG) was used as inducer for the LacO regulation regions, then the reagent makes the transformants available to synthetize our endolysins. 
+                    Our constructs contain the biobrick <a class="hipervinculorosa" href="http://parts.igem.org/Part:BBa_J435350">BBa_J435350 </a>, a T7 promoter with LacO regulation regions. It was chosen because of its high transcription levels, and regulation activity.  To induce the protein production of our <em>E. coli BL21 (DE3) </em> transformants (pUC-LysCSA13 & pUC-LysK), isopropyl β-D-1 thiogalactopyranoside (IPTG) was used as inducer for the LacO regulation regions, then the reagent makes the transformants available to synthetize our endolysins. 
                     <br>
                     <br>
 
-                    <b><em>Protein induction kinetics</em></b> <br>
+                    <b><em>Protein Induction Kinetics</em></b> <br>
                     To identify the best protein induction parameters, <a class="hipervinculoverde" href="">protein induction kinetics</a> were performed. Based on previous studies, we identified that the optimal temperature and time conditions were about 6 hours at 37° C. Related to the IPTG concentration, the experiments were performed at 0.2 mM, 0.5 mM, and 1 mM, for all of our transformants. The inductions were performed with the <em>E. coli BL21 (DE3)</em> transformed with the expression plasmids obtained from the Golden Gate Assembly. <br>
                     Protein induction kinetics were performed at 37° C, for 6 hours at maximum agitation in an orbital shaker. Five treatments were included for each endolysin: Negative control with E. coli BL21 (DE3), negative control with <em>E. coli BL21 (DE3)</em> transformed with the endolysin without IPTG induction, and three <em>E. coli BL21 (DE3)</em> transformed with the endolysin induced at three different concentrations of IPTG, 0.2 mM, 0.5 mM, and 1 mM. The samples were collected by hour, obtaining 200 μL, by each treatment. <br>
                     To identify the best induction parameters, a SDS-PAGE was performed. Considering that the molecular weight of LysCSA13-ABD was 35.098 kDa, and LysK-ABD-SH3B30 weights 28.437 kDa. The concentrations of the SDS-PAGE phases were 12% and 6%, for separator and concentrator phases respectively. The best parameters were IPTG at 0.2 mM and 5 hours for LysCSA13-ABD, while LysK-ABD-SH3B30 requires 6 hours at the same IPTG concentration.<br>
@@ -126,7 +126,11 @@
                 </p>
                 <br>
                 <br>
-                <p class="subtitleF4">Fourth Round of Experimentation: Bactericidal Assays</p>
+                <p class="subtitleF3">Third Round: Protein Purification</p>
+                <br>
+                <br>
+
+                <p class="subtitleF4">Fourth Round: Bactericidal Assays</p>
 
                 <h2>Protocols</h2>
                 <div>
