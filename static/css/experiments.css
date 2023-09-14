@@ -169,8 +169,12 @@ background-color:#f8f8f8;
   .ag-courses_item:nth-child(n+8):nth-child(-n+13) .ag-courses-item_bg {
   background-color: #C55B75;
 }
-.ag-courses_item:nth-child(n+14):nth-child(-n+16) .ag-courses-item_bg {
+.ag-courses_item:nth-child(n+14):nth-child(-n+15) .ag-courses-item_bg {
   background-color: #A9BA6C;
+}
+
+.ag-courses_item:nth-child(16) .ag-courses-item_bg {
+  background-color: #F6AE2D;
 }
 
 .ag-courses_item:nth-child(17) .ag-courses-item_bg {
@@ -179,7 +183,6 @@ background-color:#f8f8f8;
   
   .ag-courses_item:nth-child(18) .ag-courses-item_bg {
     background-color: #5BC5AB;
-
   
   
   
