@@ -4,7 +4,7 @@
   font-size: 40px;
   background:
     linear-gradient(-90deg,#000,#0000 0) 10px 0,
-    linear-gradient(#5BC5AB 0 0) #D27063 0;
+    linear-gradient(#000000 0 0) #5BC5AB 0;
   background-size:calc(var(--n)*1ch) 200%;
   -webkit-background-clip:padding-box,text;
   background-clip:padding-box,text;
@@ -24,74 +24,76 @@
 .codingText{
   position: absolute;
   margin-left: 30px;
-  opacity: 50%;
+  opacity: 0.1;
 }
 
 .codingText2{
   position: absolute;
   margin-left: 30px;
   top:150px;
-  opacity: 50%;
+  opacity: 0.1;
 }
 .codingText3{
   position: absolute;
   margin-left: 30px;
   top:200px;
 
-  opacity: 50%;
+  opacity: 0.1;
 }
 .codingText4{
   position: absolute;
   margin-left: 30px;
   top:250px;
-  opacity: 50%;
+  opacity: 0.1;
 }
 .codingText5{
   position: absolute;
   margin-left: 30px;
   top:300px;
-  opacity: 50%;
+  opacity: 0.1;
 }
 .codingText6{
   position: absolute;
   margin-left:30px;
-  opacity: 50%;
+  opacity: 0.1;
   top:350px;
 
 }
 .codingText7{
   position: absolute;
   margin-left: 30px;
-  opacity: 50%;
+  opacity: 0.1;
   top:400px;
 }
 .codingText8{
   position: absolute;
   margin-left: 30px;
   top:450px;
-  opacity: 50%;
+  opacity: 0.1;
 }
 .codingText9{
   position: absolute;
   margin-left: 30px;
-
+  opacity: 0.1;
   top:500px;
 }
 .codingText10{
   position: absolute;
   margin-left: 30px;
   top:550px;
+  opacity: 0.1;
 }
 .codingText11{
   position: absolute;
   margin-left: 30px;
   top:600px;
+  opacity: 0.1;
 }
 .codingText12{
   position: absolute;
   margin-left: 30px;
   top:650px;
-
+  opacity: 0.1;
 }
 
 .layout {
@@ -106,7 +108,7 @@
   height: 800px;
   margin-bottom: 1px;
   padding-top: 50px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "InterTight", sans-serif;
   display: grid;
   place-content: center;
   text-align: center;
@@ -668,10 +670,11 @@ background-color:#f8f8f8;}
 }
 
 .Title{
-  font-family: 'Bricolage Grotesque';
+  font-family: "InterTight", sans-serif;
   font-weight:bold;
   letter-spacing: 4px;
   font-size:150px;
+  z-index: 10;
 }
 
 .welcomepage {
