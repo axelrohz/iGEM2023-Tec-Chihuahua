@@ -14,56 +14,26 @@
   </head>
   <body>
     <div class="welcomepage">
-      <div class="codingText">
-        <span class="type" style="--n:147">
-          for i = 1:S
-          k = (M(:,i))';
-          [n,m] = size(Y(:,1));
-        </span>
+      <div class="inner-header flex">
+        <h1 class = "Title">Model</h1>
       </div>
-      <div class="codingText2">
-      <span class="type" style="--n:147">
-        [t,Y] = ode15s(@(t,y) odefcn(t,y,k),[t0 tf], y0);</span>
+    
+      <!--Waves Container-->
+      <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+        </svg>
       </div>
-      <div class="codingText3">
-      <span class="type" style="--n:147">
-        [n,m] = size(Y(:,1));</span>
-      </div>
-      <div class="codingText4">
-      <span class="type" style="--n:147">
-        if size(R,1) > size(Y,1)</span>
-      </div>
-      <div class="codingText5">
-      <span class="type" style="--n:147">
-        T(:,i) = [t;repmat(t(size(t,1)),size(T,1) - size(t,1),1)]; </span>
-      </div>
-      <div class="codingText6">
-      <span class="type" style="--n:147">
-        R(:,((1+13*(i-1)):(13+13*(i-1)))) = [Y;repmat(Y((size(Y,1)),:),(size(R,1) - size(Y,1)),1)];</span>
-      </div>
-      <div class="codingText7">
-      <span class="type" style="--n:147">else size(Y,1) > size(R,1) && i ~= 1</span>
-      </div>
-      <div class="codingText8">
-      <span class="type" style="--n:147">T = [t,[T;repmat(T(size(T,1),:),size(t,1) - size(T,1),1)]]; </p>
-      </div>
-      <div class="codingText9">
-        <span class="type" style="--n:147">T(:,S+1) = []; </span>
-      </div>
-      <div class="codingText10">
-        <span class="type" style="--n:147">R = [Y,[R;repmat(R(size(R,1),:),size(Y,1) - size(R,1),1)]]; </span>
-      </div>
-      <div class="codingText11">
-        <span class="type" style="--n:147">R(:,((size(R,2)-12):size(R,2))) =[];</span>
-      </div>
-      <div class="codingText12">
-        <span class="type" style="--n:147">end</span>
-      </div>
-        
-      <div class="typewriter">
-        <h1 class="Title">Model</h1>
-      </div>
-    </div> 
+    </div>
     <!--Seccion que ya sirve, no mover-->
     <div class="button-container">
       <div id="logo">
