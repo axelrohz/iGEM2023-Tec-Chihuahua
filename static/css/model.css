@@ -689,7 +689,7 @@ background-color:#f8f8f8;}
   margin-right: 10px;
 }
 /*animación al pasar el cursor encima de las preguntas*/
-.cta {
+.cta1, .cta2, .cta3, .cta4, .cta5, .cta6, .cta7, .cta8, .cta9, .cta10, .cta11, .cta12{
   position: relative;
   margin: span;
   padding: 8px 12px;
@@ -700,7 +700,7 @@ background-color:#f8f8f8;}
   
  }
  
- .cta:before {
+ .cta1:before, .cta2:before, .cta3:before, .cta4:before, .cta5:before, .cta6:before, .cta7:before, .cta8:before, .cta9:before, .cta10:before, .cta11:before, .cta12:before {
   content: "";
   position: absolute;
   top: 0;
@@ -713,7 +713,7 @@ background-color:#f8f8f8;}
   transition: all 0.3s ease;
  }
  
- .cta span {
+ .cta1 span, .cta2 span, .cta3 span, .cta4 span, .cta5 span, .cta6 span, .cta7 span, .cta8 span, .cta9 span, .cta10 span, .cta11 span, .cta12 span{
   position: relative;
   font-family: 'Quicksand';
   font-size: 1.2rem;
@@ -721,7 +721,7 @@ background-color:#f8f8f8;}
   color: black;
  }
  
- .cta svg {
+ .cta1 svg, .cta2 svg, .cta3 svg, .cta4 svg, .cta5 svg, .cta6 svg, .cta7 svg, .cta8 svg, .cta9 svg, .cta10 svg, .cta11 svg, .cta12 svg{
   position: relative;
   top: 0;
   margin-left: 10px;
@@ -734,76 +734,63 @@ background-color:#f8f8f8;}
   transition: all 0.3s ease;
  }
  
-.cta:hover:before {
+.cta1:hover:before{
   width: 90%;
   background: #DE8551;
 }
-
-.cta:hover svg {
-  transform: translateX(0);
- }
- 
- .cta:active {
-  transform: scale(0.95);
- }
- 
- .cta2 {
-  position: relative;
-  margin: span;
-  padding: 8px 12px;
-  transition: all 0.2s ease;
-  border: none;
-  background: none;
-  margin-left: 43px !important;
-  
- }
- 
- .cta2:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  border-radius: 50px;
+.cta2:hover:before{
+  width: 75%;
   background: #DE8551;
-  width: 45px;
-  height: 100%;
-  transition: all 0.3s ease;
- }
- 
- .cta2 span {
-  position: relative;
-  font-family: 'Quicksand';
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: black;
- }
- 
- .cta2 svg {
-  position: relative;
-  top: 0;
-  margin-left: 10px;
-  fill: none;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke: #234567;
-  stroke-width: 2;
-  transform: translateX(-5px);
-  transition: all 0.3s ease;
- }
- 
- .cta2:hover:before {
-  width: 100%;
-  background: #F6AE2D;
- }
- 
- .cta2:hover svg {
+}
+.cta3:hover:before{
+  width: 60%;
+  background: #DE8551;
+}
+.cta4:hover:before{
+  width: 47%;
+  background: #DE8551;
+}
+.cta5:hover:before{
+  width: 75%;
+  background: #DE8551;
+}
+.cta6:hover:before{
+  width: 60%;
+  background: #DE8551;
+}
+.cta7:hover:before{
+  width: 90%;
+  background: #DE8551;
+}
+.cta8:hover:before{
+  width: 75%;
+  background: #DE8551;
+}
+.cta9:hover:before{
+  width: 60%;
+  background: #DE8551;
+}
+.cta10:hover:before{
+  width: 47%;
+  background: #DE8551;
+}
+.cta11:hover:before{
+  width: 75%;
+  background: #DE8551;
+}
+.cta12:hover:before{
+  width: 60%;
+  background: #DE8551;
+}
+
+.cta1:hover svg, .cta2:hover svg, .cta3:hover svg, .cta4:hover svg, .cta5:hover svg, .cta6:hover svg, .cta7:hover svg, .cta8:hover svg, .cta9:hover svg, .cta10:hover svg, .cta11:hover svg, .cta12:hover svg{
   transform: translateX(0);
  }
  
- .cta2:active {
+ .cta1:active, .cta2:active, .cta3:active, .cta4:active, .cta5:active, .cta6:active, .cta7:active, .cta8:active, .cta9:active, .cta10:active, .cta11:active, .cta12:active{
   transform: scale(0.95);
  }
+ 
 /*Tabla de las ecuaciones quimicas*/
 * {
   margin: 0;
