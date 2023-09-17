@@ -83,7 +83,12 @@
   backface-visibility: hidden;
 }
 
-.back {
+.back1, .back2, .back3 {
+  background: transparent;
+  transform: rotateY( 180deg );
+}
+
+.back1 {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -95,10 +100,35 @@
   border-radius: 20px;
   backface-visibility: hidden;
 }
-.back {
-  background: transparent;
-  transform: rotateY( 180deg );
+
+.back2 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  line-height: 300px;
+  color:  #D27063;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 20px;
+  backface-visibility: hidden;
+  padding-top: 45px;
 }
+
+.back3 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  line-height: 300px;
+  color:  #D27063;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 20px;
+  backface-visibility: hidden;
+  padding-top: 28px;
+}
+
 .textCard{
   color: #D27063;
   line-height: 2;
