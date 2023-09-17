@@ -700,7 +700,7 @@ background-color:#f8f8f8;}
   
  }
  
- .cta1:before, .cta2:before, .cta3:before, .cta4:before, .cta5:before, .cta6:before, .cta7:before, .cta8:before, .cta9:before, .cta10:before, .cta11:before, .cta12:before {
+ .cta1:before, .cta2:before, .cta3:before, .cta7:before, .cta8:before, .cta9:before {
   content: "";
   position: absolute;
   top: 0;
@@ -708,6 +708,18 @@ background-color:#f8f8f8;}
   display: block;
   border-radius: 50px;
   background: #D27063;
+  width: 45px;
+  height: 100%;
+  transition: all 0.3s ease;
+ }
+ .cta4:before, .cta5:before, .cta6:before, .cta10:before, .cta11:before, .cta12:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #DE8551;
   width: 45px;
   height: 100%;
   transition: all 0.3s ease;
@@ -736,15 +748,15 @@ background-color:#f8f8f8;}
  
 .cta1:hover:before{
   width: 90%;
-  background: #DE8551;
+  background: #D27063;
 }
 .cta2:hover:before{
   width: 75%;
-  background: #DE8551;
+  background: #D27063;
 }
 .cta3:hover:before{
   width: 60%;
-  background: #DE8551;
+  background: #D27063;
 }
 .cta4:hover:before{
   width: 47%;
@@ -760,15 +772,15 @@ background-color:#f8f8f8;}
 }
 .cta7:hover:before{
   width: 90%;
-  background: #DE8551;
+  background: #D27063;
 }
 .cta8:hover:before{
   width: 75%;
-  background: #DE8551;
+  background: #D27063;
 }
 .cta9:hover:before{
   width: 60%;
-  background: #DE8551;
+  background: #D27063;
 }
 .cta10:hover:before{
   width: 47%;
