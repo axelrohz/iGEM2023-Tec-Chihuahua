@@ -466,7 +466,7 @@ footer{
     
     width: 100%;
     height: fit-content;
-    top: 0vh;
+    top: -8vh;
     display: flex;
     justify-content: center;
     font-size: 5vw;
@@ -502,6 +502,7 @@ footer{
     font-size: 1.5rem;
     padding-top: 20px;
     padding-bottom: 20px;
+    text-align: justify;
 }
 /*b*/
 /* Button 1 */
@@ -512,6 +513,7 @@ footer{
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    margin-top: -235px;
     
 
 }
@@ -539,7 +541,7 @@ footer{
   .oporttext{
     width: 100%;
     height: 80vh;
-    top: 25vh;
+    top: -6vh;
     display: flex;
     justify-content: center;
     font-size: 5vw;
@@ -553,7 +555,7 @@ footer{
     
     color: white;
     position: absolute;
-    left: 0;
+    left: -108px;
     transition: 1s;
     transition-timing-function: cubic-bezier(.74,.17,.68,.93);
     z-index: 4;
@@ -595,29 +597,28 @@ footer{
     transition-delay: 1s;
 
   }
-  .oporttext2{
+  .oporttext2 {
     width: 100%;
     height: 80vh;
-    top: 25vh;
+    top: 17vh;
     display: flex;
     justify-content: center;
-    font-size: 5vw;
-    font-weight: 500;
+    font-size: 4vw;
+    font-weight: em;
     font-family: 'Roboto', sans-serif;
     transition: 1s;
     transition-timing-function: cubic-bezier(.55,-1,.29,.97);
     transition-delay: 1s;
-    
-    
     color: white;
     position: absolute;
     left: 0;
     transition: 1s;
+      transition-timing-function: ease;
+      transition-delay: 0s;
     transition-timing-function: cubic-bezier(.74,.17,.68,.93);
     z-index: 4;
     transform: translate(0,-50%) scale(1);
     transition-delay: 1s;
-
   }
   .parportu1{
     width: calc(50%);
@@ -631,26 +632,26 @@ footer{
     
 
   }
-  .parportu2{
-    width: calc(50%);
-    height: fit-content;
-    color:white;
-    font-size: 1.5rem;
-    padding-top: 246px;
-    padding-bottom: 40px;
-    position:relative;
-
-  }
-  .parportu3{
-    width: calc(50%);
+  .parportu2 {
+    width: calc(82%);
     height: fit-content;
     color: white;
     font-size: 1.5rem;
-    padding-top: 31px;
+    padding-top: 45px;
     padding-bottom: 40px;
     position: relative;
-    left: 97vh;
-
+    text-align: justify;
+  }
+  .parportu3 {
+    width: calc(75%);
+    height: fit-content;
+    color: white;
+    font-size: 1.5rem;
+    padding-top: 63px;
+    padding-bottom: 40px;
+    position: relative;
+    text-align: justify;
+    left: 28vh;
   }
   .parportu4{
     width: calc(50%);
@@ -724,32 +725,114 @@ footer{
     left: 25vh;
 
   }
-  .oporttext11{
+  .oporttext11 {
     width: 100%;
-    height: 108vh;
-    top: 1020vh;
+    height: 80vh;
+    top: -9vh;
     display: flex;
     justify-content: center;
-    font-size: 5vw;
-    font-weight: 500;
+    font-size: 4.2vw;
+    font-weight: 600;
     font-family: 'Roboto', sans-serif;
     transition: 1s;
     transition-timing-function: cubic-bezier(.55,-1,.29,.97);
     transition-delay: 1s;
-    
-    
+    width: 100%;
+    height: fit-content;
     color: white;
     position: absolute;
-    left: 0;
+    left: -24px;
     transition: 1s;
+      transition-timing-function: ease;
+      transition-delay: 0s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
     transition-timing-function: cubic-bezier(.74,.17,.68,.93);
     z-index: 4;
     transform: translate(0,-50%) scale(1);
     transition-delay: 1s;
-
+    text-align: center;
   }
-  /*css post it*/
 
+  
 
   
   
+  .ecosystem {
+      position:relative;
+      height:45em;
+    display:block;
+  }
+  .circle {
+   -webkit-backface-visibility: hidden;
+    display: block;
+    border-radius: 50%;
+    transition: all .2s ease-in-out;
+    position:absolute;
+  }
+  .circle span {
+    color: #FFFFFF;
+    display: block;
+    position: relative;
+    text-align: center;
+    top: 27%;
+    transform: translateY(-50%);
+    font-size: 22px;
+  }
+  .circle:nth-child(1){
+        background: rgb(197, 91, 117);
+        width: 22em;
+        height: 22em;
+        top: 20%;
+        left: 54%;
+  
+  }
+  .circle:nth-child(2) {
+    background: rgb(246, 174, 45);
+    width: 17.5em;
+    height: 17.5em;
+    top: 51%;
+    left: 32%;
+  }
+  .circle:nth-child(3) {
+    background: rgb(68, 125, 156);
+    width: 14.5em;
+    height: 14.5em;
+    top: 11%;
+    left: 29%;
+  }
+  
+  
+  .circle:nth-child(1):hover {
+      background:rgb(197, 91, 117);
+  }
+  .circle:nth-child(2):hover {
+      background:rgb(246, 174, 45);
+  }
+  .circle:nth-child(3):hover {
+      background:rgb(68, 125, 156);
+  }
+  .viñetas1 {
+    color: white;
+    display: block;
+    position: relative;
+    text-align: center;
+    top: 42%;
+    transform: translateY(-51%);
+    list-style-type: circle;
+    list-style-position: inside;
+    font-size: 11px;
+  }
+  .viñetas2 {
+    color: white;
+    display: block;
+    position: relative;
+    text-align: center;
+    top: 42%;
+    transform: translateY(-51%);
+    list-style-type: circle;
+    list-style-position: inside;
+    font-size: 9px;
+  }
