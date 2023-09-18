@@ -1,11 +1,11 @@
 .layout {
-	width: 100vw;
-	height: 100%;
-	display: flex;
-	flex-wrap: nowrap;
-}
-
-.welcomepage{
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+ }
+ 
+ .welcomepage{
   width: 100vw;
   height: 800px;
   margin-bottom: 1px;
@@ -15,17 +15,17 @@
   place-content: center;
   text-align: center;
   background: var(--bg-color);
-}
-
-
-/*cards overview*/
-
-.mkt-3dSlider{
+ }
+ 
+ 
+ /*cards overview*/
+ 
+ .mkt-3dSlider{
   height: 500px;
   width: 83vw;
-}
-
-.card1 {
+ }
+ 
+ .card1 {
   position: relative;
   top: 50%;
   left: 17%;
@@ -34,8 +34,8 @@
   margin: -150px;
   float: left;
   perspective: 500px;
-}
-.card2 {
+ }
+ .card2 {
   position: relative;
   top: 50%;
   left: 50%;
@@ -44,8 +44,8 @@
   margin: -150px;
   float: left;
   perspective: 500px;
-}
-.card3 {
+ }
+ .card3 {
   position: relative;
   top: 50%;
   left: 83%;
@@ -54,9 +54,9 @@
   margin: -150px;
   float: left;
   perspective: 500px;
-}
-
-.content {
+ }
+ 
+ .content {
   position: relative;
   width: 100%;
   height: 100%;
@@ -64,13 +64,13 @@
   transition: transform 1s;
   transform-style: preserve-3d;
   border-radius: 20px;
-}
-
-.card1:hover .content ,.card2:hover .content ,.card3:hover .content {
+ }
+ 
+ .card1:hover .content ,.card2:hover .content ,.card3:hover .content {
   transform: rotateY( 180deg ) ;
   transition: transform 0.5s;
-}
-.front {
+ }
+ .front {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -81,98 +81,68 @@
   font-size: 60px;
   border-radius: 20px;
   backface-visibility: hidden;
-}
-
-.back1, .back2, .back3 {
+ }
+ 
+ .back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  line-height: 300px;
+  color:  #D27063;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 20px;
+  backface-visibility: hidden;
+ }
+ .back {
   background: transparent;
   transform: rotateY( 180deg );
-}
-
-.back1 {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: white;
-  line-height: 300px;
-  color:  #D27063;
-  text-align: center;
-  font-size: 15px;
-  border-radius: 20px;
-  backface-visibility: hidden;
-}
-
-.back2 {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: white;
-  line-height: 300px;
-  color:  #D27063;
-  text-align: center;
-  font-size: 15px;
-  border-radius: 20px;
-  backface-visibility: hidden;
-  padding-top: 45px;
-}
-
-.back3 {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: white;
-  line-height: 300px;
-  color:  #D27063;
-  text-align: center;
-  font-size: 15px;
-  border-radius: 20px;
-  backface-visibility: hidden;
-  padding-top: 28px;
-}
-
-.textCard{
+ }
+ .textCard{
   color: #D27063;
   line-height: 2;
   font-size: 23px;
   padding-top: 28px;
-
-}
-/*index*/
-
-.sidebar { 
+ 
+ }
+ /*index*/
+ 
+ .sidebar {
     grid-area: sidebar;
     width: 400px;
-	margin-top: 1%;
-	height: 100%;
-}
-/*secciones*/
-.secciones { 
-  grid-area: body; 
-	margin-top: 1%;
-	width: 100%;
-	height:100%;
-}
-
-
-.sectionbox div{
+  margin-top: 1%;
+  height: 100%;
+ }
+ /*secciones*/
+ .secciones {
+  grid-area: body;
+  margin-top: 1%;
+  width: 100%;
+  height:100%;
+ }
+ 
+ 
+ .sectionbox div{
     height:400px;
-}
-
-/*italicas */
-.i {
+ }
+ 
+ /*italicas */
+ .i {
   letter-spacing: 0px;
   padding: 1cm 0cm 1cm 0cm;
   font-size: 14px;
   font-style: italic;
   transition: all .2s ease-in-out;
-}
-
-.i:hover {
+ }
+ 
+ .i:hover {
   transform: scale(1.0);
-}
-
-
-/*tooltips cosas */
-.tooltipSignificadoBox {
+ }
+ 
+ 
+ /*tooltips cosas */
+ .tooltipSignificadoBox {
   position: absolute;
   visibility: hidden;
   background-color: #493F4E; /* Cambiado el color de fondo predeterminado */
@@ -188,10 +158,10 @@
   bottom: 100%; /* Colocar por encima de la palabra */
   opacity: 0; /* Inicialmente oculto */
   transition: opacity 0.5s, visibility 0.5s;
-}
-
-/*flecha que conecta el bloque con el texto */
-.tooltipSignificadoBox::after {
+ }
+ 
+ /*flecha que conecta el bloque con el texto */
+ .tooltipSignificadoBox::after {
   content: "";
   visibility: hidden;
   border-top: 10px solid transparent;
@@ -202,35 +172,35 @@
   bottom: -7px;
   transform: translateX(-50%); /* Centrar la flecha horizontalmente */
   transition: 1s border-top;
-}
-.tooltipSignificado:hover .tooltipSignificadoBox::after{
+ }
+ .tooltipSignificado:hover .tooltipSignificadoBox::after{
   border-top: 10px solid #493F4E;
   transition-delay:0.6s;
   visibility: visible;
-}
-.tooltipSignificado:hover .tooltipSignificadoBox {
+ }
+ .tooltipSignificado:hover .tooltipSignificadoBox {
   opacity: 1; /* Mostrar en hover */
   visibility: visible;
   transition-delay: 0.2s;
   margin-bottom: 8px;
   opacity: 95%;
-}
-.tooltipSignificado
-{
+ }
+ .tooltipSignificado
+ {
   position:relative;
   color:#5BC5AB;
   text-decoration:none;
   font-family: "Quicksand";
   transition: 1s color;
-}
-.tooltipSignificado:hover{
+ }
+ .tooltipSignificado:hover{
     color: #fff;
     margin-left: 1px;
     margin-right: 1px;
     transition-delay: 0.5s;
-}
-.tooltipSignificado:before
-{
+ }
+ .tooltipSignificado:before
+ {
   content:'';
   position:absolute;
   bottom:0;
@@ -242,15 +212,15 @@
   transition-property:height,width;
   transition-delay:0.3s,0.3s;
   transition-duration:0.5s;
-}
-.tooltipSignificado:hover:before
-{
+ }
+ .tooltipSignificado:hover:before
+ {
   transition-property:width,height;
   width:0px;
   height:100%;
-}
-.tooltipSignificado:after
-{
+ }
+ .tooltipSignificado:after
+ {
   content:'';
   position:absolute;
   top:0;
@@ -264,64 +234,64 @@
   transition-delay:0s;
   transform-origin:left;
   z-index:-1;
-}
-.tooltipSignificado:hover:after
-{
+ }
+ .tooltipSignificado:hover:after
+ {
   transform:scaleX(1);
   transition-delay:0.8s;
-}
-/*botones */
-
-.botones-redireccion{
-	position: relative;
-	margin: 150px auto;
-}
-.botones-redireccion div{
+ }
+ /*botones */
+ 
+ .botones-redireccion{
+  position: relative;
+  margin: 150px auto;
+ }
+ .botones-redireccion div{
     height: 400px;
-}
-
-.contenedorBoton{
-	width: 30px;
-	margin: auto;
-	height: 30px;
-}
-
-.logocontainer{
-	background: transparent;
-	top: 187%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 650px;
-	height: 600px;
-	position: absolute;
-}
-
-
-@keyframes blink{
-	0% {transform: scaleX(1) scaleY(1)}
-
-	1%{transform: scaleX(1.3) scaleY(0.1)}
-
-	2% {transform: scaleX(1) scaleY(1)}
-
-	60% {transform: scaleX(1) scaleY(1)}
-	61% {transform: scaleX(1.3) scaleY(0.1)}
-
-	62% {transform: scaleX(1) scaleY(1)}
-
-	100% {transform: scaleX(1) scaleY(1)}
-}
-
-#taffy {
+ }
+ 
+ .contenedorBoton{
+  width: 30px;
+  margin: auto;
+  height: 30px;
+ }
+ 
+ .logocontainer{
+  background: transparent;
+  top: 187%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 650px;
+  height: 600px;
+  position: absolute;
+ }
+ 
+ 
+ @keyframes blink{
+  0% {transform: scaleX(1) scaleY(1)}
+ 
+  1%{transform: scaleX(1.3) scaleY(0.1)}
+ 
+  2% {transform: scaleX(1) scaleY(1)}
+ 
+  60% {transform: scaleX(1) scaleY(1)}
+  61% {transform: scaleX(1.3) scaleY(0.1)}
+ 
+  62% {transform: scaleX(1) scaleY(1)}
+ 
+  100% {transform: scaleX(1) scaleY(1)}
+ }
+ 
+ #taffy {
   position: absolute;
   top: 70%;
   left: 50%;
   width: 50%;
   transform: translate(-50%, -50%);
   z-index: -5;
-}
-
-#retina {
+ }
+ 
+ #retina {
   width: 50%;
   margin: 0;
   position: absolute;
@@ -329,18 +299,18 @@
   left: 49%;
   z-index: -4;
   transform: translate(-50%, -50%);
-}
-
-.button-container {
+ }
+ 
+ .button-container {
   display: inline-block;
   margin: 80px;
   width: 100vw;
   height: 607px;
   max-width: 900px;
-}
-
-/* Estilos para los botones en forma de div */
-.methods{
+ }
+ 
+ /* Estilos para los botones en forma de div */
+ .methods{
   width: 200px;
   height: 200px;
   left: 35%;
@@ -352,8 +322,8 @@
   position: relative;
   transition: background-color 0.5s, transform 0.5s;
   overflow: hidden;
-}
-.overview{
+ }
+ .overview{
   top: 50%;
   left: -12%;
   width: 200px;
@@ -365,8 +335,8 @@
   border-width: 30px;
   transition: background-color 0.5s, transform 0.5s;
   position: absolute;
-}
-.results{
+ }
+ .results{
   top: 50%;
   left: 80%;
   width: 200px;
@@ -378,9 +348,9 @@
   border-width: 30px;
   transition: background-color 0.5s, transform 0.5s;
   position: absolute;
-}
-
-.button-content {
+ }
+ 
+ .button-content {
   position: absolute;
   top: 50%;
   height: fit-content;
@@ -388,53 +358,53 @@
   transform: translate(-50%, -50%);
   text-align: center;
   width: 180px;
-}
-
-.overview:hover .button-content,
-.methods:hover .button-content,
-.results:hover .button-content{
+ }
+ 
+ .overview:hover .button-content,
+ .methods:hover .button-content,
+ .results:hover .button-content{
   height: fit-content;
   top: 40%;
-}
-
-
-/* Efecto de crecimiento y cambio de fondo al pasar el cursor sobre los div de los botones */
-.methods:hover {
+ }
+ 
+ 
+ /* Efecto de crecimiento y cambio de fondo al pasar el cursor sobre los div de los botones */
+ .methods:hover {
   border: none;
   background-color: #C55B75;
   transform: scale(1.5);
-}
-.overview:hover {
+ }
+ .overview:hover {
   border: none;
   background-color: #5BC5AB;
   transform: scale(1.5);
-}
-.results:hover {
+ }
+ .results:hover {
   border: none;
   background-color: #447D9C;
   transform: scale(1.5);
-}
-
-/* Estilo para el contenido de los div de los botones al pasar el cursor sobre ellos */
-.methods:hover .tituloBoton,
-.overview:hover .tituloBoton,
-.results:hover .tituloBoton {
+ }
+ 
+ /* Estilo para el contenido de los div de los botones al pasar el cursor sobre ellos */
+ .methods:hover .tituloBoton,
+ .overview:hover .tituloBoton,
+ .results:hover .tituloBoton {
   font-size: 18px;
-}
-
-.methods:hover .contentBoton,
-.overview:hover .contentBoton,
-.results:hover .contentBoton  {
+ }
+ 
+ .methods:hover .contentBoton,
+ .overview:hover .contentBoton,
+ .results:hover .contentBoton  {
   text-align: justify;
   color: white;
   display: block;
   max-width: 100%;
   max-height: 100%;
   padding-bottom: 10px;
-}
-
-/* Estilo para el botón "Learn More" al pasar el cursor sobre los div de los botones */
-.learnMore {
+ }
+ 
+ /* Estilo para el botón "Learn More" al pasar el cursor sobre los div de los botones */
+ .learnMore {
   background-color: transparent;
   border: 3px solid white;
   border-radius: 10px;
@@ -447,9 +417,9 @@
   transform: translateX(-50%);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   font-size: 10px;
-}
-
-.methods:hover .learnMore {
+ }
+ 
+ .methods:hover .learnMore {
   display: inline-block;
   width: 80px;
   background-color: #C55B75;
@@ -457,8 +427,8 @@
   bottom: -50px;
   left: 50%;
   transform: translateX(-50%);
-}
-.overview:hover .learnMore{
+ }
+ .overview:hover .learnMore{
   display: inline-block;
   width: 80px;
   background-color: #5BC5AB;
@@ -466,8 +436,8 @@
   bottom: -50px;
   left: 50%;
   transform: translateX(-50%);
-}
-.results:hover .learnMore{
+ }
+ .results:hover .learnMore{
   display: inline-block;
   width: 80px;
   background-color: #447D9C;
@@ -475,65 +445,65 @@
   bottom: -50px;
   left: 50%;
   transform: translateX(-50%);
-}
-/* Estilo para los títulos y contenido de los div de los botones */
-.tituloBoton {
+ }
+ /* Estilo para los títulos y contenido de los div de los botones */
+ .tituloBoton {
   font-size: 20px;
   font-weight: bold;
   align-items: center;
   margin: auto auto;
-}
-
-.contentBoton {
+ }
+ 
+ .contentBoton {
   font-size: 13px;
   display: none;
-}
-
-/* Efecto de sombra y transformación al pasar el cursor sobre los botones */
-.methods:hover .tituloBoton,
-.overview:hover .tituloBoton,
-.results:hover .tituloBoton,
-.methods:hover .contentBoton,
-.overview:hover .contentBoton,
-.results:hover .contentBoton {
+ }
+ 
+ /* Efecto de sombra y transformación al pasar el cursor sobre los botones */
+ .methods:hover .tituloBoton,
+ .overview:hover .tituloBoton,
+ .results:hover .tituloBoton,
+ .methods:hover .contentBoton,
+ .overview:hover .contentBoton,
+ .results:hover .contentBoton {
   color: white;
   max-width: 100%;
   max-height: 100%;
   display: contents;
   height: 139px;
   width: 175px;
-}
-
-
-/*introduccion*/
-.introduction{
+ }
+ 
+ 
+ /*introduccion*/
+ .introduction{
   text-align: center;
-}
-
-/*cosas del side bar index*/
-
-.index1, .index2, .index3{
+ }
+ 
+ /*cosas del side bar index*/
+ 
+ .index1, .index2, .index3{
   margin-left: 30px;
   width: 150px;
   text-align: center;
   height: fit-content;
   border-radius: 20px;
-}
-.index1{
+ }
+ .index1{
   background: linear-gradient(#9dcfc2,#5BC5AB);
-}
-.index2{
+ }
+ .index2{
   background: linear-gradient(#eab0be,#C55B75);
-}
-.index3{
+ }
+ .index3{
   background: linear-gradient(#65bfef,#447D9C);
-}
-
-.navigation li {
+ }
+ 
+ .navigation li {
   list-style: none;
-}
-
-.navigation li a {
+ }
+ 
+ .navigation li a {
   text-decoration: none;
   color: white;
   display: block;
@@ -542,32 +512,32 @@
   font-weight: 400;
   transition: all ease-out 250ms;
   border-radius: 10px;
-}
-
-.navigation li a:hover {
+ }
+ 
+ .navigation li a:hover {
   margin: 2px,5px,2px,5px;
   background-color: black;
   opacity: .4;
-}
-
-p{
-margin-left: 5%;
-margin-right: 5%;
-}
-h2::after, h2::before{
+ }
+ 
+ p{
+ margin-left: 5%;
+ margin-right: 5%;
+ }
+ h2::after, h2::before{
   content: " ";
   text-align: center;
   display: block;
   border: 2px solid #5BC5AB;
   background-color: #f8f8f8;
-}
-
-.subtitleO, .subtitleM, .subtitleR{
+ }
+ 
+ .subtitleO, .subtitleM, .subtitleR{
   text-align: center;
   font-family: 'Bricolage Grotesque';
-  font-size:3vw; 
-  font-weight:500; 
-  color:#302535;  
+  font-size:3vw;
+  font-weight:500;
+  color:#302535; 
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
   grid-template-rows: 16px 0;
@@ -575,104 +545,103 @@ h2::after, h2::before{
   align-items: center;
   max-width: 100%;
   padding-top: 100px;
-}
-
-.subtitleO:after, .subtitleO:before {
-content: " ";
-display: block;
-border: 2px solid #5BC5AB;
-background-color:#f8f8f8;}
-
-.subtitleM:after, .subtitleM:before {
+ }
+ 
+ .subtitleO:after, .subtitleO:before {
+ content: " ";
+ display: block;
+ border: 2px solid #5BC5AB;
+ background-color:#f8f8f8;}
+ 
+ .subtitleM:after, .subtitleM:before {
   content: " ";
   display: block;
   border: 2px solid #C55B75;
   background-color:#f8f8f8;}
-
-.subtitleR:after, .subtitleR:before {
+ 
+ .subtitleR:after, .subtitleR:before {
   content: " ";
   display: block;
   border: 2px solid #447D9C;
   background-color:#f8f8f8;}
-  
-:root {
+  :root {
   --bg-color: white;
   --typewriterSpeed: 1s;
   --typewriterCharacters: 5;
-}
-
-.Title{
+ }
+ 
+ .Title{
   font-family: "InterTight", sans-serif;
   font-weight:bold;
   letter-spacing: 4px;
   font-size:150px;
   z-index: 10;
-}
-
-.welcomepage {
+ }
+ 
+ .welcomepage {
   position:relative;
   text-align:center;
   background: linear-gradient(60deg, #5BC5AB 0%, rgba(0,172,193,1) 100%);
   color:white;
-}
-
-.inner-header {
+ }
+ 
+ .inner-header {
   height:65vh;
   width: 200vw;
   margin: 0;
   padding: 0;
-}
-
-.flex { /*Flexbox for containers*/
+ }
+ 
+ .flex { /*Flexbox for containers*/
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-.waves {
+ }
+ 
+ .waves {
   position:relative;
   width: 200vw;
   height:15vh;
   margin-top: -150px;
   min-height:442px;
   max-height:150px;
-}
-/* Animation */
-
-.parallax > use {
+ }
+ /* Animation */
+ 
+ .parallax > use {
   animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
-}
-.parallax > use:nth-child(1) {
+ }
+ .parallax > use:nth-child(1) {
   animation-delay: -2s;
   animation-duration: 7s;
-}
-.parallax > use:nth-child(2) {
+ }
+ .parallax > use:nth-child(2) {
   animation-delay: -3s;
   animation-duration: 10s;
-}
-.parallax > use:nth-child(3) {
+ }
+ .parallax > use:nth-child(3) {
   animation-delay: -4s;
   animation-duration: 13s;
-}
-.parallax > use:nth-child(4) {
+ }
+ .parallax > use:nth-child(4) {
   animation-delay: -5s;
   animation-duration: 20s;
-}
-@keyframes move-forever {
+ }
+ @keyframes move-forever {
   0% {
    transform: translate3d(-90px,0,0);
   }
-  100% { 
+  100% {
     transform: translate3d(85px,0,0);
   }
-}
-
-.tituloContenido{
+ }
+ 
+ .tituloContenido{
   margin-left:43px;
-}
-
-.contenido{
+ }
+ 
+ .contenido{
   text-align: justify;
   font-size: 1.2rem;
   font-weight: 500;
@@ -681,15 +650,15 @@ background-color:#f8f8f8;}
   line-height: 1.5;
   margin-left: 43px !important;
   color: black;
-}
-
-.Content{
+ }
+ 
+ .Content{
   margin-left: 10px;
   height: fit-content;
   margin-right: 10px;
-}
-/*animación al pasar el cursor encima de las preguntas*/
-.cta1, .cta2, .cta3, .cta4, .cta5, .cta6, .cta7, .cta8, .cta9, .cta10, .cta11, .cta12{
+ }
+ /*animación al pasar el cursor encima de las preguntas*/
+ .cta {
   position: relative;
   margin: span;
   padding: 8px 12px;
@@ -697,10 +666,8 @@ background-color:#f8f8f8;}
   border: none;
   background: none;
   margin-left: 43px !important;
-  
- }
- 
- .cta1:before, .cta2:before, .cta3:before, .cta7:before, .cta8:before, .cta9:before {
+  }
+ .cta:before {
   content: "";
   position: absolute;
   top: 0;
@@ -712,28 +679,14 @@ background-color:#f8f8f8;}
   height: 100%;
   transition: all 0.3s ease;
  }
- .cta4:before, .cta5:before, .cta6:before, .cta10:before, .cta11:before, .cta12:before{
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  border-radius: 50px;
-  background: #DE8551;
-  width: 45px;
-  height: 100%;
-  transition: all 0.3s ease;
- }
- 
- .cta1 span, .cta2 span, .cta3 span, .cta4 span, .cta5 span, .cta6 span, .cta7 span, .cta8 span, .cta9 span, .cta10 span, .cta11 span, .cta12 span{
+ .cta span {
   position: relative;
   font-family: 'Quicksand';
   font-size: 1.2rem;
   font-weight: 500;
   color: black;
  }
- 
- .cta1 svg, .cta2 svg, .cta3 svg, .cta4 svg, .cta5 svg, .cta6 svg, .cta7 svg, .cta8 svg, .cta9 svg, .cta10 svg, .cta11 svg, .cta12 svg{
+ .cta svg {
   position: relative;
   top: 0;
   margin-left: 10px;
@@ -745,126 +698,189 @@ background-color:#f8f8f8;}
   transform: translateX(-5px);
   transition: all 0.3s ease;
  }
- 
-.cta1:hover:before{
-  width: 90%;
-  background: #D27063;
-}
-.cta2:hover:before{
-  width: 75%;
-  background: #D27063;
-}
-.cta3:hover:before{
-  width: 60%;
-  background: #D27063;
-}
-.cta4:hover:before{
-  width: 47%;
+ .cta:hover:before {
+  width: 100%;
   background: #DE8551;
-}
-.cta5:hover:before{
-  width: 75%;
-  background: #DE8551;
-}
-.cta6:hover:before{
-  width: 60%;
-  background: #DE8551;
-}
-.cta7:hover:before{
-  width: 90%;
-  background: #D27063;
-}
-.cta8:hover:before{
-  width: 75%;
-  background: #D27063;
-}
-.cta9:hover:before{
-  width: 60%;
-  background: #D27063;
-}
-.cta10:hover:before{
-  width: 47%;
-  background: #DE8551;
-}
-.cta11:hover:before{
-  width: 75%;
-  background: #DE8551;
-}
-.cta12:hover:before{
-  width: 60%;
-  background: #DE8551;
-}
-
-.cta1:hover svg, .cta2:hover svg, .cta3:hover svg, .cta4:hover svg, .cta5:hover svg, .cta6:hover svg, .cta7:hover svg, .cta8:hover svg, .cta9:hover svg, .cta10:hover svg, .cta11:hover svg, .cta12:hover svg{
+ }
+ .cta:hover svg {
   transform: translateX(0);
  }
- 
- .cta1:active, .cta2:active, .cta3:active, .cta4:active, .cta5:active, .cta6:active, .cta7:active, .cta8:active, .cta9:active, .cta10:active, .cta11:active, .cta12:active{
+ .cta:active {
   transform: scale(0.95);
  }
  
-/*Tabla de las ecuaciones quimicas*/
-* {
+ .cta2 {
+  position: relative;
+  margin: span;
+  padding: 8px 12px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  margin-left: 43px !important;
+  }
+ .cta2:before {
+  content: "";
+  visibility: hidden;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #DE8551;
+  width: 45px;
+  height: 100%;
+  transition: all 0.3s ease;
+ }
+ .cta2 span {
+  position: relative;
+  font-family: 'Quicksand';
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: black;
+ }
+ .cta2 svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+ }
+ .cta2:hover:before {
+  width: 100%;
+  background: #F6AE2D;
+ }
+ .cta2:hover svg {
+  transform: translateX(0);
+ }
+ .cta2:active {
+  transform: scale(0.95);
+ }
+ 
+ 
+ /*Tabla de las ecuaciones quimicas*/
+ * {
   margin: 0;
   padding: 0;
-}
-
-.table-wrap {
+ }
+ 
+ .table-wrap {
   max-width: 1300;
   margin: 50;
   overflow-x: auto;
-}
-
-table, td, th {
-/*   border: 1px solid #ddd; */
+ }
+ 
+ table, td, th {
+ /*   border: 1px solid #ddd; */
   text-align: left;
   font-size:18px;
-}
-
-table thead tr{
+ }
+ 
+ table thead tr{
      background-color: #071665;
     color: #fff;
-}
-
-table {
+ }
+ 
+ table {
   border-collapse: collapse;
   width: 100%;
    border-radius: 16px 16px 0px 0px;
   overflow: hidden;
-}
-
-table tbody tr td{
+ }
+ 
+ table tbody tr td{
  border: 1px solid #ddd;
-}
-
-th, td {
+ }
+ 
+ th, td {
   padding: 15px;
   white-space: nowrap;
-}
-
-table tbody tr:nth-child(odd) {
+ }
+ 
+ table tbody tr:nth-child(odd) {
  background: #b4b4b442;
   color: #000;
   font-weight: 500;
-}
-
-.box-wrap {
+ }
+ 
+ .box-wrap {
   padding: 0px 16px;
-}
-
-table tbody tr td::last-child{
-background-color:red;
-}
-
-
-/*cosas del diagrama IPTG induction*/
-
-.diagramaIPTG{
+ }
+ 
+ table tbody tr td::last-child{
+ background-color:red;
+ }
+ 
+ /*Boton desplegable de referencias*/
+ .accordion {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+ }
+ .accordion-item {
+  background-color: #fff;
+  color: #111;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+ 
+ }
+ .accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-family: 'Bricolage Grotesque';
+  font-size: 1.5rem;
+ }
+ .accordion-item-header::after {
+  content: "\002B";
+  font-size: 1.5rem;
+  position: absolute;
+  right: 1rem;
+ }
+ .accordion-item-header.active::after {
+  content: "\2212";
+ }
+ .accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  padding-left: 20px;
+  padding-right: 20px;
+ }
+ .accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+  justify-content:center;
+  font-weight: 600;
+  font-family: 'Quicksand';
+  text-align: justify;
+  margin-left: 20px;
+  margin-right: 20px;
+ }
+ 
+ /*cosas del diagrama IPTG induction*/
+ 
+ .diagramaIPTG{
   position: relative;
   z-index: 1;
-}
-/*tooltips cosas */
-.tooltipSignificadoBoxDiagrama {
+ }
+ /*tooltips cosas */
+ .tooltipSignificadoBoxDiagrama {
   position: absolute;
   visibility: hidden;
   background-color: #C55B75; /* Cambiado el color de fondo predeterminado */
@@ -880,10 +896,10 @@ background-color:red;
   bottom: 100%; /* Colocar por encima de la palabra */
   opacity: 0; /* Inicialmente oculto */
   transition: opacity 0.5s, visibility 0.5s;
-}
-
-/*flecha que conecta el bloque con el texto */
-.tooltipSignificadoBoxDiagrama::after {
+ }
+ 
+ /*flecha que conecta el bloque con el texto */
+ .tooltipSignificadoBoxDiagrama::after {
   content: "";
   visibility: hidden;
   border-top: 10px solid transparent;
@@ -894,27 +910,27 @@ background-color:red;
   bottom: -7px;
   transform: translateX(-50%); /* Centrar la flecha horizontalmente */
   transition: 1s border-top;
-}
-.tooltipSignificadoDiagrama:hover .tooltipSignificadoBoxDiagrama::after{
+ }
+ .tooltipSignificadoDiagrama:hover .tooltipSignificadoBoxDiagrama::after{
   border-top: 10px solid #C55B75;
   transition-delay:0.6s;
   visibility: visible;
-}
-.tooltipSignificadoDiagrama:hover .tooltipSignificadoBoxDiagrama {
+ }
+ .tooltipSignificadoDiagrama:hover .tooltipSignificadoBoxDiagrama {
   opacity: 1; /* Mostrar en hover */
   visibility: visible;
   transition-delay: 0.8s;
   margin-bottom: 8px;
   opacity: 95%;
-}
-.tooltipSignificadoDiagrama
-{
+ }
+ .tooltipSignificadoDiagrama
+ {
   position:relative;
   color:transparent;
-}
-
-.tooltipSignificadoDiagrama:before
-{
+ }
+ 
+ .tooltipSignificadoDiagrama:before
+ {
   content:'';
   position:absolute;
   bottom:0;
@@ -925,15 +941,15 @@ background-color:red;
   transition-property:height,width;
   transition-delay:0.3s,0.3s;
   transition-duration:0.5s;
-}
-.tooltipSignificadoDiagrama:hover:before
-{
+ }
+ .tooltipSignificadoDiagrama:hover:before
+ {
   transition-property:width,height;
   width:0px;
   height:100%;
-}
-.tooltipSignificadoDiagrama:after
-{
+ }
+ .tooltipSignificadoDiagrama:after
+ {
   content:'';
   position:absolute;
   top:0;
@@ -946,35 +962,35 @@ background-color:red;
   transition-delay:0s;
   transform-origin:left;
   z-index:-1;
-}
-.tooltipSignificadoDiagrama:hover:after
-{
+ }
+ .tooltipSignificadoDiagrama:hover:after
+ {
   transform:scaleX(1);
   transition-delay:0.8s;
-}
-
-
-.imagenDiagrama{
+ }
+ 
+ 
+ .imagenDiagrama{
   opacity: 90%;
   margin-left: 140px;
   position: relative;
   z-index: 1;
-}
-/*cosas del 1*/
-.ciclo1{
+ }
+ /*cosas del 1*/
+ .ciclo1{
   position: absolute;
   z-index: 3;
   width: 10px;
   height: 18px;
   bottom: 270px;
   left: 453px;
-}
-
-.ciclo1:hover .azul1{
+ }
+ 
+ .ciclo1:hover .azul1{
   opacity: 300%;
-}
-
-.hilo_ondulante{
+ }
+ 
+ .hilo_ondulante{
   position: relative;
   bottom: 15px;
   z-index: 3;
@@ -984,10 +1000,10 @@ background-color:red;
   box-shadow: 0 0 15px red;
   border-radius: 20px;
   opacity: 0%;
-}
-
-
-.lacl_gene{
+ }
+ 
+ 
+ .lacl_gene{
   border: 20px;
   height: 27px;
   z-index: 3;
@@ -997,22 +1013,22 @@ background-color:red;
   right: 92px;
   box-shadow: 0 0 15px red;
   opacity: 0%;
-}
-
-/*cosas del 2*/
-.ciclo2{
+ }
+ 
+ /*cosas del 2*/
+ .ciclo2{
   position: absolute;
   width: 10px;
   height: 18px;
   bottom: 275px;
   left: 549px;
   z-index: 3;
-}
-.ciclo2:hover .azul2{
+ }
+ .ciclo2:hover .azul2{
   opacity: 300%;
-}
-
-.hilo_ondulante2{
+ }
+ 
+ .hilo_ondulante2{
   position: relative;
   bottom: 10px;
   height: 15px;
@@ -1021,9 +1037,9 @@ background-color:red;
   box-shadow: 0 0 15px red;
   opacity: 0%;
   border-radius: 20px;
-}
-
-.cosaAmarilla{
+ }
+ 
+ .cosaAmarilla{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
@@ -1032,21 +1048,21 @@ background-color:red;
   left: 30px;
   bottom: 29px;
   border-radius: 20px;
-}
-
-/*cosas del 3*/
-.ciclo3{
+ }
+ 
+ /*cosas del 3*/
+ .ciclo3{
   position: absolute;
   width: 10px;
   height: 18px;
   bottom: 274px;
   left: 627px;
   z-index: 3;
-}
-.ciclo3:hover .azul3{
+ }
+ .ciclo3:hover .azul3{
   opacity: 300%;
-}
-.cosaAmarilla2{
+ }
+ .cosaAmarilla2{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
@@ -1055,8 +1071,8 @@ background-color:red;
   right: 48px;
   top: -14px;
   border-radius: 20px;
-}
-.dosCosasAmarillas{
+ }
+ .dosCosasAmarillas{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
@@ -1065,21 +1081,21 @@ background-color:red;
   left: 47px;
   width: 25px;
   border-radius: 20px;
-}
-
-/*cosas del 4*/
-.ciclo4{
+ }
+ 
+ /*cosas del 4*/
+ .ciclo4{
   position: absolute;
   width: 10px;
   height: 18px;
   bottom: 274px;
   left: 738px;
   z-index: 3;
-}
-.ciclo4:hover .azul4{
+ }
+ .ciclo4:hover .azul4{
   opacity: 300%;
-}
-.dosCosasAmarillas2{
+ }
+ .dosCosasAmarillas2{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
@@ -1088,9 +1104,9 @@ background-color:red;
   right: 64px;
   width: 25px;
   border-radius: 20px;
-}
-
-.dosAmarillasRojas{
+ }
+ 
+ .dosAmarillasRojas{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
@@ -1099,21 +1115,21 @@ background-color:red;
   left: 57px;
   bottom: 57px;
   border-radius: 20px;
-}
-
-/*cosas del 5*/
-.ciclo5{
+ }
+ 
+ /*cosas del 5*/
+ .ciclo5{
   position: absolute;
   width: 10px;
   height: 18px;
   bottom: 234px;
   left: 645px;
   z-index: 3;
-}
-.ciclo5:hover .azul5{
+ }
+ .ciclo5:hover .azul5{
   opacity: 300%;
-}
-.dosCosasAmarillas3{
+ }
+ .dosCosasAmarillas3{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
@@ -1122,9 +1138,9 @@ background-color:red;
   left: 29px;
   width: 25px;
   border-radius: 20px;
-}
-
-.lacO1{
+ }
+ 
+ .lacO1{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
@@ -1132,9 +1148,9 @@ background-color:red;
   width: 67px;
   height: 21px;
   bottom: 35px;
-}
-
-.lacO2{
+ }
+ 
+ .lacO2{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
@@ -1143,32 +1159,32 @@ background-color:red;
   right: 38px;
   width: 65px;
   border-radius: 20px;
-}
-.lacO3{
+ }
+ .lacO3{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
-  height: 20px;   
+  height: 20px;  
   left: 25px;
   width: 65px;
   bottom: 78px;
-}
-
-
-/*cosas del 6*/
-.ciclo6{
+ }
+ 
+ 
+ /*cosas del 6*/
+ .ciclo6{
   position: absolute;
   width: 10px;
   height: 18px;
   bottom: 213px;
   left: 839px;
   z-index: 3;
-}
-.ciclo6:hover .azul6{
+ }
+ .ciclo6:hover .azul6{
   opacity: 300%;
-}
-
-.dosAmarillasRojas2{
+ }
+ 
+ .dosAmarillasRojas2{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
@@ -1177,9 +1193,9 @@ background-color:red;
   right: 45px;
   width: 25px;
   border-radius: 20px;
-}
-
-.lacO4{
+ }
+ 
+ .lacO4{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
@@ -1187,8 +1203,8 @@ background-color:red;
   right: 94px;
   width: 65px;
   bottom: 62px;
-}
-.lacO5{
+ }
+ .lacO5{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
@@ -1196,8 +1212,8 @@ background-color:red;
   left: 4px;
   width: 65px;
   bottom: 112px;
-}
-.lacO6Amarillos{
+ }
+ .lacO6Amarillos{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
@@ -1206,21 +1222,21 @@ background-color:red;
   width: 65px;
   border-radius: 20px;
   bottom: 79px;
-}
-/*cosas del ciclo 7*/
-.ciclo7{
+ }
+ /*cosas del ciclo 7*/
+ .ciclo7{
   position: absolute;
   width: 10px;
   height: 18px;
   bottom: 286px;
   left: 518px;
   z-index: 3;
-}
-.ciclo7:hover .azul7{
+ }
+ .ciclo7:hover .azul7{
   opacity: 300%;
-}
-
-.hilo_ondulante3{
+ }
+ 
+ .hilo_ondulante3{
   position: relative;
   top: 3px;
   height: 15px;
@@ -1229,8 +1245,8 @@ background-color:red;
   box-shadow: 0 0 15px red;
   border-radius: 20px;
   opacity: 0%;
-}
-.circuloTachado{
+ }
+ .circuloTachado{
   position: relative;
   bottom: 71px;
   height: 17px;
@@ -1239,22 +1255,22 @@ background-color:red;
   box-shadow: 0 0 15px red;
   border-radius: 20px;
   opacity: 0%;
-}
-
-/*cosas del ciclo 8*/
-.ciclo8{
+ }
+ 
+ /*cosas del ciclo 8*/
+ .ciclo8{
   position: absolute;
   width: 10px;
   height: 18px;
   bottom: 301px;
   left: 587px;
   z-index: 3;
-}
-.ciclo8:hover .azul8{
+ }
+ .ciclo8:hover .azul8{
   opacity: 300%;
-}
-
-.cosaAmarilla3{
+ }
+ 
+ .cosaAmarilla3{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
@@ -1263,9 +1279,9 @@ background-color:red;
   right: 8px;
   top: 12px;
   border-radius: 20px;
-}
-
-.circuloTachado2{
+ }
+ 
+ .circuloTachado2{
   position: relative;
   bottom: 86px;
   height: 17px;
@@ -1274,22 +1290,22 @@ background-color:red;
   box-shadow: 0 0 15px red;
   border-radius: 20px;
   opacity: 0%;
-}
-
-/*cosas del ciclo 8*/
-.ciclo9{
+ }
+ 
+ /*cosas del ciclo 8*/
+ .ciclo9{
   position: absolute;
   width: 10px;
   height: 18px;
   bottom: 296px;
   left: 708px;
   z-index: 3;
-}
-.ciclo9:hover .azul9{
+ }
+ .ciclo9:hover .azul9{
   opacity: 300%;
-}
-
-.circuloTachado3{
+ }
+ 
+ .circuloTachado3{
   position: relative;
   bottom: 82px;
   height: 17px;
@@ -1298,8 +1314,8 @@ background-color:red;
   box-shadow: 0 0 15px red;
   border-radius: 20px;
   opacity: 0%;
-}
-.dosCosasAmarillas4{
+ }
+ .dosCosasAmarillas4{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
@@ -1308,21 +1324,21 @@ background-color:red;
   top: 8px;
   width: 25px;
   border-radius: 20px;
-}
-
-.ciclo10{
+ }
+ 
+ .ciclo10{
   position: absolute;
   width: 10px;
   height: 18px;
   bottom: 296px;
   left: 825px;
   z-index: 3;
-}
-.ciclo10:hover .azul10{
+ }
+ .ciclo10:hover .azul10{
   opacity: 300%;
-}
-
-.circuloTachado4{
+ }
+ 
+ .circuloTachado4{
   position: relative;
   bottom: 99px;
   height: 17px;
@@ -1331,9 +1347,9 @@ background-color:red;
   box-shadow: 0 0 15px red;
   border-radius: 20px;
   opacity: 0%;
-}
-
-.dosAmarillasRojas3{
+ }
+ 
+ .dosAmarillasRojas3{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
@@ -1342,21 +1358,21 @@ background-color:red;
   right: 31px;
   width: 25px;
   border-radius: 20px;
-}
-
-.ciclo11{
+ }
+ 
+ .ciclo11{
   position: absolute;
   width: 10px;
   height: 18px;
   bottom: 86px;
   left: 245px;
   z-index: 3;
-}
-.ciclo11:hover .azul11{
+ }
+ .ciclo11:hover .azul11{
   opacity: 300%;
-}
-
-.tresBolasVerdes{
+ }
+ 
+ .tresBolasVerdes{
   position: relative;
   bottom: 3px;
   height: 41px;
@@ -1365,9 +1381,9 @@ background-color:red;
   box-shadow: 0 0 15px red;
   border-radius: 20px;
   opacity: 0%;
-}
-
-.muchasBolasVerdes{
+ }
+ 
+ .muchasBolasVerdes{
   position: relative;
   bottom: 85px;
   height: 92px;
@@ -1376,21 +1392,21 @@ background-color:red;
   box-shadow: 0 0 15px red;
   border-radius: 30px;
   opacity: 0%;
-}
-
-.ciclo12{
+ }
+ 
+ .ciclo12{
   position: absolute;
   width: 10px;
   height: 18px;
   bottom: 124px;
   left: 654px;
   z-index: 3;
-}
-.ciclo12:hover .azul12{
+ }
+ .ciclo12:hover .azul12{
   opacity: 300%;
-}
-
-.dosBolasVerdes{
+ }
+ 
+ .dosBolasVerdes{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
@@ -1399,9 +1415,9 @@ background-color:red;
   left: 20px;
   bottom: 18px;
   border-radius: 20px;
-}
-
-.dosBolasVerdes2{
+ }
+ 
+ .dosBolasVerdes2{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
@@ -1410,9 +1426,9 @@ background-color:red;
   left: -38px;
   bottom: 58px;
   border-radius: 20px;
-}
-
-.dosAmarillasDosBolas2{
+ }
+ 
+ .dosAmarillasDosBolas2{
   position: relative;
   bottom: 42px;
   height: 41px;
@@ -1421,9 +1437,9 @@ background-color:red;
   box-shadow: 0 0 15px red;
   border-radius: 20px;
   opacity: 0%;
-}
-
-.lacO7{
+ }
+ 
+ .lacO7{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
@@ -1432,21 +1448,21 @@ background-color:red;
   height: 39px;
   bottom: 197px;
   border-radius: 10px;
-}
-
-.ciclo13{
+ }
+ 
+ .ciclo13{
   position: absolute;
   width: 10px;
   height: 18px;
   bottom: 117px;
   left: 833px;
   z-index: 3;
-}
-.ciclo13:hover .azul13{
+ }
+ .ciclo13:hover .azul13{
   opacity: 300%;
-}
-
-.dosBolasVerdes3{
+ }
+ 
+ .dosBolasVerdes3{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
@@ -1455,9 +1471,9 @@ background-color:red;
   left: 17px;
   bottom: 17px;
   border-radius: 20px;
-}
-
-.dosBolasVerdes4{
+ }
+ 
+ .dosBolasVerdes4{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
@@ -1466,9 +1482,9 @@ background-color:red;
   left: -41px;
   bottom: 56px;
   border-radius: 20px;
-}
-
-.lacO8{
+ }
+ 
+ .lacO8{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
@@ -1476,9 +1492,9 @@ background-color:red;
   width: 67px;
   height: 21px;
   bottom: 37px;
-}
-
-.dosAmarillasRojasDosBolas{
+ }
+ 
+ .dosAmarillasRojasDosBolas{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
@@ -1487,9 +1503,9 @@ background-color:red;
   right: -17px;
   width: 39px;
   border-radius: 20px;
-}
-
-.lacO9Amarillos{
+ }
+ 
+ .lacO9Amarillos{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
@@ -1498,21 +1514,21 @@ background-color:red;
   width: 65px;
   border-radius: 20px;
   bottom: 245px;
-}
-
-.ciclo14{
+ }
+ 
+ .ciclo14{
   position: absolute;
   width: 10px;
   height: 18px;
   bottom: 318px;
   left: 636px;
   z-index: 3;
-}
-.ciclo14:hover .azul14{
+ }
+ .ciclo14:hover .azul14{
   opacity: 300%;
-}
-
-.dosBolasVerdes5{
+ }
+ 
+ .dosBolasVerdes5{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
@@ -1522,9 +1538,9 @@ background-color:red;
   bottom: 8px;
   border-radius: 20px;
   transform: rotate(-35deg);
-}
-
-.dosBolasVerdes6{
+ }
+ 
+ .dosBolasVerdes6{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
@@ -1534,9 +1550,9 @@ background-color:red;
   bottom: 74px;
   border-radius: 20px;
   transform: rotate(-25deg);
-}
-
-.dosCosasAmarillas5{
+ }
+ 
+ .dosCosasAmarillas5{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
@@ -1545,9 +1561,9 @@ background-color:red;
   left: 38px;
   width: 25px;
   border-radius: 20px;
-}
-
-.dosAmarillasDosBolas3{
+ }
+ 
+ .dosAmarillasDosBolas3{
   position: relative;
   bottom: 153px;
   height: 41px;
@@ -1556,21 +1572,21 @@ background-color:red;
   box-shadow: 0 0 15px red;
   border-radius: 20px;
   opacity: 0%;
-}
-
-.ciclo15{
+ }
+ 
+ .ciclo15{
   position: absolute;
   width: 10px;
   height: 18px;
   bottom: 330px;
   left: 758px;
   z-index: 3;
-}
-.ciclo15:hover .azul15{
+ }
+ .ciclo15:hover .azul15{
   opacity: 300%;
-}
-
-.dosBolasVerdes7{
+ }
+ 
+ .dosBolasVerdes7{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
@@ -1580,9 +1596,9 @@ background-color:red;
   bottom: 1px;
   border-radius: 20px;
   transform: rotate(-30deg);
-}
-
-.dosBolasVerdes8{
+ }
+ 
+ .dosBolasVerdes8{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
@@ -1592,9 +1608,9 @@ background-color:red;
   bottom: 67px;
   border-radius: 20px;
   transform: rotate(-30deg);
-}
-
-.dosAmarillasRojas4{
+ }
+ 
+ .dosAmarillasRojas4{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
@@ -1603,9 +1619,9 @@ background-color:red;
   right: -36px;
   width: 25px;
   border-radius: 20px;
-}
-
-.dosAmarillasRojasDosBolas2{
+ }
+ 
+ .dosAmarillasRojasDosBolas2{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
@@ -1614,21 +1630,21 @@ background-color:red;
   right: 9px;
   width: 39px;
   border-radius: 20px;
-}
-
-.ciclo16{
+ }
+ 
+ .ciclo16{
   position: absolute;
   width: 10px;
   height: 18px;
   bottom: 358px;
   left: 680px;
   z-index: 3;
-}
-.ciclo16:hover .azul16{
+ }
+ .ciclo16:hover .azul16{
   opacity: 300%;
-}
-
-.dosAmarillasDosBolas{
+ }
+ 
+ .dosAmarillasDosBolas{
   position: relative;
   bottom: 36px;
   height: 41px;
@@ -1637,9 +1653,9 @@ background-color:red;
   box-shadow: 0 0 15px red;
   border-radius: 20px;
   opacity: 0%;
-}
-
-.circuloTachado5{
+ }
+ 
+ .circuloTachado5{
   position: relative;
   bottom: 91px;
   height: 17px;
@@ -1648,21 +1664,21 @@ background-color:red;
   box-shadow: 0 0 15px red;
   border-radius: 20px;
   opacity: 0%;
-}
-
-.ciclo17{
+ }
+ 
+ .ciclo17{
   position: absolute;
   width: 10px;
   height: 18px;
   bottom: 366px;
   left: 805px;
   z-index: 3;
-}
-.ciclo17:hover .azul17{
+ }
+ .ciclo17:hover .azul17{
   opacity: 300%;
-}
-
-.dosAmarillasRojasDosBolas3{
+ }
+ 
+ .dosAmarillasRojasDosBolas3{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
@@ -1671,9 +1687,9 @@ background-color:red;
   right: 56px;
   width: 39px;
   border-radius: 20px;
-}
-
-.circuloTachado6{
+ }
+ 
+ .circuloTachado6{
   position: relative;
   bottom: 99px;
   height: 17px;
@@ -1682,21 +1698,21 @@ background-color:red;
   box-shadow: 0 0 15px red;
   border-radius: 20px;
   opacity: 0%;
-}
-
-.ciclo18{
+ }
+ 
+ .ciclo18{
   position: absolute;
   width: 10px;
   height: 18px;
   bottom: 138px;
   left: 443px;
   z-index: 3;
-}
-.ciclo18:hover .azul18{
+ }
+ .ciclo18:hover .azul18{
   opacity: 300%;
-}
-
-.hilo_ondulante4{
+ }
+ 
+ .hilo_ondulante4{
   position: relative;
   bottom: 3px;
   z-index: 3;
@@ -1707,9 +1723,9 @@ background-color:red;
   border-radius: 20px;
   opacity: 0%;
   transform: rotate(67deg);
-}
-
-.cadena{
+ }
+ 
+ .cadena{
   position: relative;
   box-shadow: 0 0 15px red;
   opacity: 0%;
@@ -1717,21 +1733,21 @@ background-color:red;
   width: 243px;
   height: 21px;
   bottom: 66px;
-}
-
-.ciclo19{
+ }
+ 
+ .ciclo19{
   position: absolute;
   width: 10px;
   height: 18px;
   bottom: 113px;
   left: 469px;
   z-index: 3;
-}
-.ciclo19:hover .azul19{
+ }
+ .ciclo19:hover .azul19{
   opacity: 300%;
-}
-
-.hilo_ondulante5{
+ }
+ 
+ .hilo_ondulante5{
   position: relative;
   bottom: 28px;
   z-index: 3;
@@ -1742,9 +1758,9 @@ background-color:red;
   border-radius: 20px;
   opacity: 0%;
   transform: rotate(67deg);
-}
-
-.cosaVerde{
+ }
+ 
+ .cosaVerde{
   position: relative;
   bottom: 34px;
   height: 44px;
@@ -1753,21 +1769,21 @@ background-color:red;
   box-shadow: 0 0 15px red;
   border-radius: 26px;
   opacity: 0%;
-}
-
-.ciclo20{
+ }
+ 
+ .ciclo20{
   position: absolute;
   width: 10px;
   height: 18px;
   bottom: 62px;
   left: 463px;
   z-index: 3;
-}
-.ciclo20:hover .azul20{
+ }
+ .ciclo20:hover .azul20{
   opacity: 300%;
-}
-
-.hilo_ondulante6{
+ }
+ 
+ .hilo_ondulante6{
   position: relative;
     bottom: 79px;
     z-index: 3;
@@ -1778,9 +1794,9 @@ background-color:red;
     border-radius: 20px;
     opacity: 0%;
     transform: rotate(67deg);
-}
-
-.circuloTachado7{
+ }
+ 
+ .circuloTachado7{
   position: relative;
   bottom: 9px;
   height: 17px;
@@ -1789,21 +1805,21 @@ background-color:red;
   box-shadow: 0 0 15px red;
   border-radius: 20px;
   opacity: 0%;
-}
-
-.ciclo21{
+ }
+ 
+ .ciclo21{
   position: absolute;
   width: 10px;
   height: 18px;
   bottom: 47px;
   left: 519px;
   z-index: 3;
-}
-.ciclo21:hover .azul21{
+ }
+ .ciclo21:hover .azul21{
   opacity: 300%;
-}
-
-.circuloTachado8{
+ }
+ 
+ .circuloTachado8{
   position: relative;
   bottom: -11px;
   height: 17px;
@@ -1812,9 +1828,9 @@ background-color:red;
   box-shadow: 0 0 15px red;
   border-radius: 20px;
   opacity: 0%;
-}
-
-.cosaVerde2{
+ }
+ 
+ .cosaVerde2{
   position: relative;
   bottom: 103px;
   height: 44px;
@@ -1823,4 +1839,6 @@ background-color:red;
   box-shadow: 0 0 15px red;
   border-radius: 26px;
   opacity: 0%;
-}
+ }
+ 
+ 

@@ -164,7 +164,7 @@ iGEM project.{% endblock %}
                 <div id="scrlS13">
                     <div class="circleCont">
                         <div class="CText">
-                            Design thinking: “We 
+                            We 
                             <a href="#" onclick="popInfo()" class="testEMP">empathized</a>  
                             with dairy cattle owners, defining that current solutions for mastitis were inadequate and costly, ideating the way to solve it through our product. We were able to prototype AureoBos, and test it in the lab through rigorous experiments, proposing to implement it as an effective and sustainable solution to combat mastitis in dairy cattle.
 
@@ -271,21 +271,35 @@ iGEM project.{% endblock %}
                     </div>
                     
                     
+                    
                 </div>
                 </div> 
                 <div id="scrlS22">
                     <div class="but">
-                        
-                        <a href="#scrlS31"><button class="Btn">Dairy Producers</button></a>
-                        <a href="scrlS32"><button class="Btn">Pains and unmet needs</button></a>
-                        <a href=""><button class="Btn">First Potential Customers</button></a>
-                        
-                        <button class="Btn">Existing solutions </button>
-                        <button class="Btn">Meeting the needs</button>
+                      <button onclick="showSection('scrlS31')" class="Btn">Dairy Producers</button>
+                      <button onclick="showSection('scrlS32')" class="Btn">Pains and unmet needs</button>
+                      <button onclick="showSection('scrlS33')" class="Btn">First Potential Customers</button>
+                      <button onclick="showSection('scrlS34')" class="Btn">Existing solutions</button>
+                      <button onclick="showSection('scrlS35')" class="Btn">Meeting the needs</button>
                     </div>
-                </div>
+                  </div>
             </div>
-            
+            <script>
+                    function showSection(sectionId) {
+                // Hide all sections
+                var sections = document.querySelectorAll('#scrlS3 > div');
+                sections.forEach(function(section) {
+                    section.style.display = 'none';
+                });
+
+                // Show the selected section
+                var selectedSection = document.getElementById(sectionId);
+                if (selectedSection) {
+                    selectedSection.style.display = 'block';
+                }
+                }
+
+            </script>
             
             <div id="scrlS3"> 
                 <div id="scrlS31">
@@ -294,107 +308,122 @@ iGEM project.{% endblock %}
                     </div>
                 
                     <div class="parportu2">
-                        In order to draft the first potential customers for AureoBos, it is necessary to identify who is directly affected by the consequences of mastitis. As stated in the previous section, the implications that integrate the cost of treating bovine mastitis are directly charged to dairy producers. Through our human practices we learned that they are the ones who face head-on the disease, deciding which treatment they are going to use based on the recommendations done from - the next important character- veterinary zootechnicians. 
-
+                        In order to draft the first potential customers for AureoBos, it is necessary to identify who is directly affected by the consequences of mastitis. As stated in the previous section, the implications that integrate the cost of treating bovine mastitis are directly charged to dairy producers. Through our human practices we learned that they are the ones who face head-on the disease, deciding which treatment they are going to use based on the recommendations done from - the next important character- veterinary zootechnicians. Although dairy farmers have the power of decision making and purchasing, the reality is that most of the time they are driven by the recommendations, diagnosis and intervention of veterinary zootechnicians, even though they interact differently depending on the scale of their production. To better understand these characteristics, check out the next figure.
+                        
                         
                     </div>
-                    <div class="parportu3">
-                        Although dairy farmers have the power of decision making and purchasing, the reality is that most of the time they are driven by the recommendations, diagnosis and intervention of veterinary zootechnicians, even though they interact differently depending on the scale of their production. To better understand these characteristics, check out the next figure.
-                    </div>
-                    <img src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/scale.png" alt="Texto alternativo de la imagen">
-                </div>    
+                    <br>
+                    <div class="ecosystem">
+                        <div class="circle">
+                            <span class="text-center">Large scale</span>
+                            <ol class="viñetas1">
+                                <li>Cattle heads: 500+ cows.</li>
+                                <li>
+                                    Always identify the microorganism that causes bovine mastitis.
+                                </li>
+                                <li>
+                                    Have a primary veterinary zootechnician that directly treats the sick cows.
+                                </li>
+                            </ol>
+                              
+                        </div>
+                        <div class="circle">
+                            <span class="text-center">Medium scale</span>
+                            <ol class="viñetas2">
+                                <li>Cattle heads: 100 to 500 cows.</li>
+                                <li>
+                                    Rarely identify the microorganism that causes bovine mastitis.
+                                </li>
+                                <li>
+                                    Contact the veterinary zootechnician when one of the cows is sick, but administers the treatment themselves.
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="circle">
+                            <span class="text-center">Small scale</span>
+                            <ol class="viñetas2">
+                                <li>Cattle heads: 1 to 100 cows</li>
+                                <li>
+                                    Do not identify the microorganism that causes bovine mastitis
+                                </li>
+                                <li>
+                                    Mostly rely on their knowledge when treating the sick cows, but sometimes do have contact with veterinary zootechnicians. 
+                                </li>
+                            </ol>
+                            
+                        </div>
+                        
+                      </div>
                     
-               
+                </div>
+                
                 <div id="scrlS32">
                     <div id="scrlS21">
-                        <div class="oporttext1">
-                            Understanding their pains and unmet needs
+                        <div class="oporttext11">   
+                            Understanding their pains <br> and unmet needs
+                            <!--First Potential Customers-->
                         </div>
-                    
-                        <div class="parportu1">
+                        <div class="parportu3">
                             Although small, medium and large scale producers have different characteristics in the way of managing their farm, as well as how they treat mastitis and their relationship with veterinary zootechnicians, we learned through our interviews and visits that their pains and current needs are the same. Understanding the unmet needs they have is essential for the successful development and implementation of AureoBos.
+                            <br>
+                            Our integrated human practices helped us learn that dairy producers and cattle owners need a treatment that effectively addresses bovine mastitis, without using antibiotics so milk isn’t discarded and their production isn’t reduced due to the milk withdrawal period. This treatment needs to be backed up by the recognition of veterinary zootechnicians and scientific evidence that compares and indicates how AureoBos is better than any other conventional treatment. They also communicated that they require a treatment that is easy to administer and integrate into their existing routines, ensuring minimal disruption to their operations. They require a product which doesn’t harm the cattle, doesn’t compromise the milk quality, and doesn’t pose health risks to either animals or humans. Finally, the treatment needs to be accessible in terms of availability and affordability in the geographical and economic situation. 
+                            <br>
+                            Having developed the above, you can find a visual representation of these needs through the following <a href="#" onclick="popInfo2()" class="testEMP1">empathized</a>
+                            <div class="infopo">
+                                <span id="close" onclick="this.parentNode.classList.remove('active');">x</span>
+                                testing
+                            </div>
                         </div>
-                        <div class="parportu4">
-                            Our integrated human practices helped us learn that dairy producers and cattle owners need a treatment that effectively addresses bovine mastitis, without using antibiotics so milk isn’t discarded and their production isn’t reduced due to the milk withdrawal period. This treatment needs to be backed up by the recognition of veterinary zootechnicians and scientific evidence that compares and indicates how AureoBos is better than any other conventional treatment. 
-                            
-                        </div>
-                        <div class="parportu5">
-                            They also communicated that they require a treatment that is easy to administer and integrate into their existing routines, ensuring minimal disruption to their operations. They require a product which doesn’t harm the cattle, doesn’t compromise the milk quality, and doesn’t pose health risks to either animals or humans. Finally, the treatment needs to be accessible in terms of availability and affordability in the geographical and economic situation. 
-
-                            Having developed the above, you can find a visual representation of these needs through the following empathy map. 
-                            
-                        </div>
-                        <div class="imgempre">
-                            <img src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/empathy-map.png" alt="Texto alternativo de la imagen">
-                        </div>
-
+                        
+                        
                     </div>
-                </div>
-                <div id="scrlS33">
-                    <div id="scrlS21">
-                        <div class="oporttext2">   
-                            First Potential Customers
-                        </div>
-                    </div>
-
+                    
                         
                     
-                        <div class="parportu6">
-                            Recognizing the presence of small, medium, and large-scale producers, as well as understanding how mastitis affects them, it becomes evident that these individuals, whether under the guidance of a veterinary zootechnician or not, are our ultimate end-users. However, after engaging with them and also with global veterinary pharmaceutical companies like MSD Animal Health and Zoetis, we discerned the existence of two distinct customer types.
-
-                            
-                            
-
-                        </div>
-                        <div class="paportu7">
-                            We refer to a division between large-scale producers and small to medium-sized producers. Initially, AureoBos would primarily supply to large-scale producers, whereas to reach small and medium-sized ones, an intermediary is required. Thus, the veterinary pharmaceutical providers in these regions would also become our clients, serving as the bridge to connect with the smaller producers.
-
-                            The following illustration demonstrates how AureoBos interacts with its clients in both scenarios. Further detailed explanations of these business models will be covered in the Development Plans section below. 
-                        </div>
-                    </div>
-                    
+                        
+                </div>
+                
                 
                 
                 <div id="scrlS33">
                     <div id="scrlS21">
-                        <div class="oporttext11">   
-                            Existing solutions
-                        </div>
+                        
                     </div>
 
                         
                     
                         <div class="parportu9">
-                            Through the visits and interviews done with our users, we identified the existing solutions that dairy cattle owners currently use. Having heard first-hand about the competition let us do a better analysis, which basically consists on the following benchmarking: 
+                            
                         </div>
                         
                     </div>
                 </div>
-                    
+                 
                 
             
             
             <div id="scrlS4"> 
                 <div id="scrlS41">
-                    Timeline milestones
+                    <!--Timeline milestones-->
+                    
                 </div> 
                 <div id="scrlS42">
-                    Business Model Canvas 
+                    <!--Timeline milestones--> 
                 </div> 
                 <div id="scrlS43">
-                    Business Plan 
+                    <!--Timeline milestones--> 
                 </div> 
                 <div id="scrlS44">
-                    Pitch Deck
+                    <!--Timeline milestones-->
                 </div> 
                 <div id="scrlS45">
-                    Next steps
+                    <!--Timeline milestones-->
                 </div> 
                 <div id="scrlS46">
-                    Intellectual Property 
+                    <!--Timeline milestones-->
                 </div> 
                 <div id="scrlS47">
-                    Financial Projection
+                    <!--Timeline milestones-->
                 </div> 
                 <div id="scrlS48">
                     
@@ -410,17 +439,17 @@ iGEM project.{% endblock %}
             
             <div id="scrlS5">
                 <div id="scrlS51">
-                    Skills & Capabilities to fulfill the product’s development  
+                    <!--Timeline milestones-->  
                 </div>
                 <div id="scrlS52">
-                    Relevant stakeholders 
+                    <!--Timeline milestones-->
                 </div>
             </div>
             
             
             <div id="scrlS6"> 
                 <div id="scrlS52">
-                    Positive & Negative impacts  
+                    <!--Timeline milestones--> 
                 </div>
             </div>
         </div>
@@ -686,6 +715,12 @@ iGEM project.{% endblock %}
     <script type="text/javascript">
         function popInfo(){
             var pop = document.querySelectorAll('.infopop');
+            
+            pop[0].classList.add('active');
+        }
+        function popInfo2(){
+            var pop = document.querySelectorAll('.infopo');
+            
             pop[0].classList.add('active');
         }
         
