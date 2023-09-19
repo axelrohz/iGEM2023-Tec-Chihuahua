@@ -45,6 +45,10 @@
   -webkit-background-clip: text;
   text-align: center;
 }
+
+.piedefig {
+
+}
   
 
     p {
@@ -1041,25 +1045,28 @@ input[type="checkbox"]{
 
 /*post it*/
 .note-contain {
+  padding: 50px;
   margin-top: 30px;
-  position: relative;
-  width: 150px;
-  height: 70px;
+  position: absolute;
+  width: 50%;
+  height: 600px;
   margin-right: auto;
   margin-left: auto;
 }
 
 .note {
-  color: black;
+  color: #302535;
   position: relative;
   width: 326px;
-  height: 252px;
+  height: 280px;
   padding: 20px;
   font-size: 1rem;
   box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
   display: block;
-  margin: -17px 0 0 0;
+  margin: auto;
   text-align: center;
+  line-height: 1;
+  font-family: 'Quicksand';
 }
 
 
