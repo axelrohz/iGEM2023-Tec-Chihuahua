@@ -47,7 +47,21 @@
 }
 
 .piedefig {
+  text-align: center;
+  font-size: 0.5rem;
+}
 
+.hipervinculoaqua {
+  font-family: 'Quicksand';
+  font-weight: 700;
+  color: #5BC5AB;
+}
+
+.hipervinculoaqua:hover {
+  font-family: 'Quicksand';
+  font-weight: 700;
+  color: #5BC5AB;
+  text-decoration: underline;
 }
   
 
@@ -464,11 +478,6 @@ img {
 }
 
 /*COMMONLY USED ANTIBIOTICS*/
-.linkredirec {
-  font-size: 1.5rem;
-  font-family: 'Quicksand';
-  color: #5BC5AB;
-}
 
 .antibioticscont {
   margin: auto;
@@ -945,13 +954,14 @@ input[type="checkbox"]{
 
 /*tooltips cosas */
 .tooltipSignificadoBox {
+  font-family: 'Quicksand';
   position: absolute;
   visibility: hidden;
   background-color: #493F4E; /* Cambiado el color de fondo predeterminado */
   color: white;
   border-radius: 5px;
   padding: 5px 10px;
-  font-size: 14px;
+  font-size: 0.8rem;
   z-index: 500;
   text-align: center;
   width: 300px; /* Ancho automático para ajustarse al contenido */
