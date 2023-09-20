@@ -674,13 +674,13 @@
   transition: all 0.2s ease;
   border: none;
   background: none;
-  margin-left: 43px !important;
+  margin-left: 130px !important;
   }
  .cta1:before, .cta2:before, .cta3:before, .cta4:before, .cta5:before, .cta6:before {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
+  left: -49px;
   display: block;
   border-radius: 50px;
   background: #D27063;
