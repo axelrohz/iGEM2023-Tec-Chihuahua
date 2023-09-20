@@ -587,7 +587,7 @@
  
  .inner-header {
   height:65vh;
-  width: 200vw;
+  width: 100vw;
   margin: 0;
   padding: 0;
  }
@@ -601,7 +601,7 @@
  
  .waves {
   position:relative;
-  width: 200vw;
+  width: 100vw;
   height:15vh;
   margin-top: -150px;
   min-height:442px;
@@ -812,6 +812,9 @@
  
  .box-wrap {
   padding: 0px 16px;
+  position: relative;
+  left: -14px;
+
  }
  
  table tbody tr td::last-child{
@@ -1845,4 +1848,14 @@
  .NumeroEcuacion{
    position: relative;
    bottom: 21px;
+}
+
+
+/*ajuste tabla y colores*/
+.tabla_chemicalReactios th, .tabla_chemicalReactios td{
+   border: 2px solid #D27063;
+}
+.tabla_chemicalReactios th{
+   background-color: #D27063;
+   color: #ffffff;
 }
