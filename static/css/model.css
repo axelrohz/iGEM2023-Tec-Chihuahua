@@ -1841,4 +1841,8 @@
   opacity: 0%;
  }
  
- 
+ /*ajuste de numero de las ecuaciones*/
+ .NumeroEcuacion{
+   position: relative;
+   bottom: 21px;
+ }
