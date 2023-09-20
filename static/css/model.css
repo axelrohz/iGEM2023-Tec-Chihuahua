@@ -909,17 +909,17 @@
   left: 50%; /* Centrar horizontalmente */
   bottom: -7px;
   transform: translateX(-50%); /* Centrar la flecha horizontalmente */
-  transition: 1s border-top;
+  transition: 0s border-top;
  }
  .tooltipSignificadoDiagrama:hover .tooltipSignificadoBoxDiagrama::after{
   border-top: 10px solid #C55B75;
-  transition-delay:0.6s;
+  transition-delay:0s;
   visibility: visible;
  }
  .tooltipSignificadoDiagrama:hover .tooltipSignificadoBoxDiagrama {
   opacity: 1; /* Mostrar en hover */
   visibility: visible;
-  transition-delay: 0.8s;
+  transition-delay: 0s;
   margin-bottom: 8px;
   opacity: 95%;
  }
@@ -939,8 +939,8 @@
   color: #fff;
   transform-style:linear;
   transition-property:height,width;
-  transition-delay:0.3s,0.3s;
-  transition-duration:0.5s;
+  transition-delay:0s,0s;
+  transition-duration:0s;
  }
  .tooltipSignificadoDiagrama:hover:before
  {
@@ -958,7 +958,7 @@
   height:100%;
   padding-left: 3px;
   transform:scaleX(0);
-  transition:0.5s;
+  transition:0s;
   transition-delay:0s;
   transform-origin:left;
   z-index:-1;
@@ -966,7 +966,7 @@
  .tooltipSignificadoDiagrama:hover:after
  {
   transform:scaleX(1);
-  transition-delay:0.8s;
+  transition-delay:0s;
  }
  
  
@@ -1845,4 +1845,4 @@
  .NumeroEcuacion{
    position: relative;
    bottom: 21px;
- }
+}
