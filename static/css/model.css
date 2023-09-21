@@ -13,7 +13,7 @@
   font-family: "InterTight", sans-serif;
   display: grid;
   place-content: center;
-  text-align: center;
+  text-align: center; 
   background: var(--bg-color);
  }
  
@@ -122,6 +122,7 @@
     width: 400px;
   margin-top: 1%;
   height: 100%;
+  position: sticky;
  }
  /*secciones*/
  .secciones {
@@ -497,6 +498,8 @@
   text-align: center;
   height: fit-content;
   border-radius: 20px;
+  position: sticky;
+  top:150px;
  }
  .index1{
   background: linear-gradient(#9dcfc2,#5BC5AB);
@@ -1834,3 +1837,4 @@
    background-color: #D27063;
    color: #ffffff;
 }
+
