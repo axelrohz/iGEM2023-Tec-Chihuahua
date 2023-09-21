@@ -13,7 +13,7 @@
   font-family: "InterTight", sans-serif;
   display: grid;
   place-content: center;
-  text-align: center;
+  text-align: center; 
   background: var(--bg-color);
  }
  
@@ -94,18 +94,27 @@
   font-size: 15px;
   border-radius: 20px;
   backface-visibility: hidden;
- }
- .back {
   background: transparent;
   transform: rotateY( 180deg );
  }
- .textCard{
+ .textCard1{
   color: #D27063;
   line-height: 2;
   font-size: 23px;
-  padding-top: 28px;
- 
+  padding-top: 32px;
  }
+ .textCard2{
+   color: #D27063;
+   line-height: 2;
+   font-size: 23px;
+   padding-top: 71px;
+  }
+  .textCard3{
+   color: #D27063;
+   line-height: 2;
+   font-size: 23px;
+   padding-top: 61px;
+  }
  /*index*/
  
  .sidebar {
@@ -113,6 +122,7 @@
     width: 400px;
   margin-top: 1%;
   height: 100%;
+  position: sticky;
  }
  /*secciones*/
  .secciones {
@@ -488,6 +498,8 @@
   text-align: center;
   height: fit-content;
   border-radius: 20px;
+  position: sticky;
+  top:150px;
  }
  .index1{
   background: linear-gradient(#9dcfc2,#5BC5AB);
@@ -587,7 +599,7 @@
  
  .inner-header {
   height:65vh;
-  width: 200vw;
+  width: 100vw;
   margin: 0;
   padding: 0;
  }
@@ -601,7 +613,7 @@
  
  .waves {
   position:relative;
-  width: 200vw;
+  width: 100vw;
   height:15vh;
   margin-top: -150px;
   min-height:442px;
@@ -658,20 +670,20 @@
   margin-right: 10px;
  }
  /*animación al pasar el cursor encima de las preguntas*/
- .cta {
+ .cta1, .cta2, .cta3, .cta4, .cta5, .cta6 {
   position: relative;
   margin: span;
   padding: 8px 12px;
   transition: all 0.2s ease;
   border: none;
   background: none;
-  margin-left: 43px !important;
+  margin-left: 130px !important;
   }
- .cta:before {
+ .cta1:before, .cta2:before, .cta3:before, .cta4:before, .cta5:before, .cta6:before {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
+  left: -49px;
   display: block;
   border-radius: 50px;
   background: #D27063;
@@ -679,14 +691,14 @@
   height: 100%;
   transition: all 0.3s ease;
  }
- .cta span {
+ .cta1 span, .cta2 span, .cta3 span, .cta4 span, .cta5 span, .cta6 span {
   position: relative;
   font-family: 'Quicksand';
   font-size: 1.2rem;
   font-weight: 500;
   color: black;
  }
- .cta svg {
+ .cta1 svg, .cta2 svg, .cta3 svg, .cta4 svg, .cta5 svg, .cta6 svg {
   position: relative;
   top: 0;
   margin-left: 10px;
@@ -698,71 +710,36 @@
   transform: translateX(-5px);
   transition: all 0.3s ease;
  }
- .cta:hover:before {
-  width: 100%;
-  background: #DE8551;
- }
- .cta:hover svg {
+ .cta1:hover svg, .cta2:hover svg, .cta3:hover svg, .cta4:hover svg, .cta5:hover svg, .cta6:hover svg {
   transform: translateX(0);
  }
- .cta:active {
+ .cta1:active, .cta2:active, .cta3:active, .cta4:active, .cta5:active, .cta6:active {
   transform: scale(0.95);
  }
- 
- .cta2 {
-  position: relative;
-  margin: span;
-  padding: 8px 12px;
-  transition: all 0.2s ease;
-  border: none;
-  background: none;
-  margin-left: 43px !important;
+ .cta1:hover:before{
+   width: 94%;
+   background: #DE8551;
   }
- .cta2:before {
-  content: "";
-  visibility: hidden;
-  border-top: 10px solid transparent;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  border-radius: 50px;
-  background: #DE8551;
-  width: 45px;
-  height: 100%;
-  transition: all 0.3s ease;
- }
- .cta2 span {
-  position: relative;
-  font-family: 'Quicksand';
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: black;
- }
- .cta2 svg {
-  position: relative;
-  top: 0;
-  margin-left: 10px;
-  fill: none;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke: #234567;
-  stroke-width: 2;
-  transform: translateX(-5px);
-  transition: all 0.3s ease;
- }
- .cta2:hover:before {
-  width: 100%;
-  background: #F6AE2D;
- }
- .cta2:hover svg {
-  transform: translateX(0);
- }
- .cta2:active {
-  transform: scale(0.95);
- }
+.cta2:hover:before{
+   width: 79%;
+   background: #DE8551;
+}
+.cta3:hover:before{
+   width: 64%;
+   background: #DE8551;
+}
+.cta4:hover:before{
+   width: 51%;
+   background: #DE8551;
+}
+.cta5:hover:before{
+   width: 79%;
+   background: #DE8551;
+}
+.cta6:hover:before{
+   width: 64%;
+   background: #DE8551;
+}
  
  
  /*Tabla de las ecuaciones quimicas*/
@@ -812,6 +789,9 @@
  
  .box-wrap {
   padding: 0px 16px;
+  position: relative;
+  left: -14px;
+
  }
  
  table tbody tr td::last-child{
@@ -909,17 +889,17 @@
   left: 50%; /* Centrar horizontalmente */
   bottom: -7px;
   transform: translateX(-50%); /* Centrar la flecha horizontalmente */
-  transition: 1s border-top;
+  transition: 0s border-top;
  }
  .tooltipSignificadoDiagrama:hover .tooltipSignificadoBoxDiagrama::after{
   border-top: 10px solid #C55B75;
-  transition-delay:0.6s;
+  transition-delay:0s;
   visibility: visible;
  }
  .tooltipSignificadoDiagrama:hover .tooltipSignificadoBoxDiagrama {
   opacity: 1; /* Mostrar en hover */
   visibility: visible;
-  transition-delay: 0.8s;
+  transition-delay: 0s;
   margin-bottom: 8px;
   opacity: 95%;
  }
@@ -939,8 +919,8 @@
   color: #fff;
   transform-style:linear;
   transition-property:height,width;
-  transition-delay:0.3s,0.3s;
-  transition-duration:0.5s;
+  transition-delay:0s,0s;
+  transition-duration:0s;
  }
  .tooltipSignificadoDiagrama:hover:before
  {
@@ -958,7 +938,7 @@
   height:100%;
   padding-left: 3px;
   transform:scaleX(0);
-  transition:0.5s;
+  transition:0s;
   transition-delay:0s;
   transform-origin:left;
   z-index:-1;
@@ -966,7 +946,7 @@
  .tooltipSignificadoDiagrama:hover:after
  {
   transform:scaleX(1);
-  transition-delay:0.8s;
+  transition-delay:0s;
  }
  
  
@@ -1841,4 +1821,24 @@
   opacity: 0%;
  }
  
- 
+ /*ajuste de numero de las ecuaciones*/
+ .NumeroEcuacion{
+   position: relative;
+   bottom: 21px;
+   left: -397px;
+}
+
+
+/*ajuste tabla y colores*/
+.tabla_chemicalReactios th, .tabla_chemicalReactios td{
+   border: 2px solid #D27063;
+}
+.tabla_chemicalReactios th{
+   background-color: #D27063;
+   color: #ffffff;
+}
+
+
+.INDEX{
+   display: none;
+}
