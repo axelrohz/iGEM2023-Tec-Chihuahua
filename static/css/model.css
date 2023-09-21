@@ -717,27 +717,27 @@
   transform: scale(0.95);
  }
  .cta1:hover:before{
-   width: 94%;
+   width: 80vw;
    background: #DE8551;
   }
 .cta2:hover:before{
-   width: 79%;
+   width: 70vw;
    background: #DE8551;
 }
 .cta3:hover:before{
-   width: 64%;
+   width: 57vw;
    background: #DE8551;
 }
 .cta4:hover:before{
-   width: 51%;
+   width: 45vw;
    background: #DE8551;
 }
 .cta5:hover:before{
-   width: 79%;
+   width: 70vw;
    background: #DE8551;
 }
 .cta6:hover:before{
-   width: 64%;
+   width: 55vw;
    background: #DE8551;
 }
  
