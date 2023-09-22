@@ -154,12 +154,10 @@
 
 
 /* Estilo para la lista */
-.slider-content ul {
+.vinniot{
     list-style-type: disc; /* Utiliza disc para viñetas */
     padding-left: 20px; /* Espacio a la izquierda de la lista */
   }
 
   /* Estilo para los elementos de la lista */
-  .slider-content li {
-    margin-bottom: 10px; /* Espacio entre los elementos de la lista */
-  }
+  
