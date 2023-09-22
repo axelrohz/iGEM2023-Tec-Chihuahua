@@ -5,14 +5,13 @@
     z-index: 1;
 }
 
-.slider-container{
+.slider-container {
     padding-bottom: 2%;
+
 }
 
 .sliders {
-    width: 80vw;
-    opacity: 1;
-    height: 10vh;
+    
 
     text-align: center !important;
     cursor: pointer !important;
@@ -26,26 +25,26 @@
 }
 
 .slider-content {
+
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+
     width: 100% !important;
     height: auto !important;
     background: white !important;
-    overflow-y: scroll !important;
-    max-height: 0;
-    transition: max-height 1s ease-in-out !important;
-    border-right: 1px solid rgba(0, 0, 0, 0.1) !important;
-    -webkit-box-shadow: 0px 27px 28px -12px rgba(0, 0, 0, 0.22);
-    -moz-box-shadow: 0px 27px 28px -12px rgba(0, 0, 0, 0.22);
-    box-shadow: 0px 27px 28px -12px rgba(0, 0, 0, 0.22);
+
+    box-shadow: 10px 10px 28px -12px rgba(0, 0, 0, 0.22), -10px 10px 28px -12px rgba(0, 0, 0, 0.22);
     border-radius: 10px;
-    border-top-left-radius: 0 !important;
-    border-top-right-radius: 0 !important;
+    text-align: center;
 }
 
 #March {
 
     border-left-width: 8px !important;
     border-left-style: solid !important;
-    border-left-color: rgb(0, 42, 255) !important;
+    border-left-color: #5BC5AB !important;
 }
 
 #March::before {
@@ -56,7 +55,7 @@
 
     border-left-width: 8px !important;
     border-left-style: solid !important;
-    border-left-color: rgb(0, 42, 255) !important;
+    border-left-color: #C55B75 !important;
 }
 
 #April::before {
@@ -67,7 +66,7 @@
 
     border-left-width: 8px !important;
     border-left-style: solid !important;
-    border-left-color: rgb(0, 42, 255) !important;
+    border-left-color: #447D9C !important;
 }
 
 #May::before {
@@ -78,7 +77,7 @@
 
     border-left-width: 8px !important;
     border-left-style: solid !important;
-    border-left-color: rgb(0, 42, 255) !important;
+    border-left-color: #A9BA6C !important;
 }
 
 #June::before {
@@ -89,7 +88,7 @@
 
     border-left-width: 8px !important;
     border-left-style: solid !important;
-    border-left-color: rgb(0, 42, 255) !important;
+    border-left-color: #5BC5AB !important;
 }
 
 #July::before {
@@ -100,7 +99,7 @@
 
     border-left-width: 8px !important;
     border-left-style: solid !important;
-    border-left-color: rgb(0, 42, 255) !important;
+    border-left-color: #C55B75 !important;
 }
 
 #August::before {
@@ -111,7 +110,7 @@
 
     border-left-width: 8px !important;
     border-left-style: solid !important;
-    border-left-color: rgb(0, 42, 255) !important;
+    border-left-color: #447D9C!important;
 }
 
 #September::before {
@@ -122,7 +121,7 @@
 
     border-left-width: 8px !important;
     border-left-style: solid !important;
-    border-left-color: rgb(0, 42, 255) !important;
+    border-left-color: #A9BA6C !important;
 }
 
 #October::before {
@@ -140,8 +139,15 @@
 }
 
 .sliders::after {
-    content: '\02795';
+    content: var(--after-content, '\02795');
     font-size: 1.5em !important;
     float: right !important;
     margin: 15px 20px !important;
+}
+
+.Inspirations{
+    padding-top: 3%;
+    text-align:center;
+    width: 30%;
+    margin: 0 auto;
 }
