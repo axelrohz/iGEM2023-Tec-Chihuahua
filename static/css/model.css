@@ -330,8 +330,8 @@
   top: 148%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 650px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   position: absolute;
   z-index:10;
  }
@@ -373,7 +373,6 @@
  
  .button-container {
   display: inline-block;
-  margin: 80px;
   width: 100vw;
   height: 607px;
   max-width: 900px;
@@ -381,8 +380,8 @@
  
  /* Estilos para los botones en forma de div */
  .methods{
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   left: 35%;
   color: #C55B75;
   background-color: transparent;
@@ -397,8 +396,8 @@
  .overview{
   top: 50%;
   left: -12%;
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   color: #5BC5AB;
   background-color: transparent;
   border: 5px solid #5BC5AB; /* Borde en los div de los botones */
@@ -410,8 +409,8 @@
  .results{
   top: 50%;
   left: 80%;
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   color: #447D9C;
   background-color: transparent;
   border: 5px solid #447D9C; /* Borde en los div de los botones */
@@ -629,7 +628,7 @@
   grid-gap: 22px;
   align-items: center;
   max-width: 100%;
-  padding-top: 100px;
+  padding-top: 10px;
  }
  
  .subtitleO:after, .subtitleO:before {
@@ -1935,4 +1934,8 @@ margin-left: 30%;
   border-radius: 25px;
   margin-left: 330px;
   margin-bottom: 45px;
+}
+
+.sectO, .sectM, .sectR{
+  display: none;
 }
