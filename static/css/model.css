@@ -53,7 +53,7 @@
  
  .Title::after {
    width: 0.125em;
-   background: black;
+   background: darkslategrey;
    animation: typewriter var(--typewriterSpeed)
        steps(var(--typewriterCharacters)) 1.5s forwards,
      blink 2.5s steps(var(--typewriterCharacters)) infinite;
@@ -81,6 +81,7 @@
  .mkt-3dSlider{
   height: 500px;
   width: 83vw;
+  margin-bottom: -120px;
  }
  
  .card1 {
@@ -1896,4 +1897,17 @@ margin-left: 30%;
 
 .INDEX{
    display: none;
+}
+
+.instructionDiagram{
+  background-color: #C55B75;
+  color: white;
+  width: fit-content;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 50px;
+  border-radius: 25px;
+  margin-left: 330px;
+  margin-bottom: 45px;
 }
