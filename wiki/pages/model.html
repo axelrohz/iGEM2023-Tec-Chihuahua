@@ -95,7 +95,7 @@
               	<br>
               	How We Did It
             	</p>
-            	<button class="learnMore">Learn More</button>
+            	<button onclick="showSection('sectionMethods')" class="learnMore">Learn More</button>
           	</div>
         	</div>
         	<div class="overview">
@@ -105,7 +105,7 @@
               	<br>
               	The Big Picture
             	</p>
-            	<button class="learnMore">Learn More</button>
+            	<button onclick="showSection('sectionOverview')" class="learnMore">Learn More</button>
           	</div>
         	</div>
         	<div class="results">
@@ -115,7 +115,7 @@
               	<br>
               	What We Found
             	</p>
-            	<button class="learnMore">Learn More</button>
+            	<button onclick="showSection('sectionResults')" class="learnMore">Learn More</button>
           	</div>
         	</div>
           	<svg id="retina" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -128,9 +128,28 @@
           	<img id="taffy" src="https://static.igem.wiki/teams/4607/wiki/project-description/project-description/taffysinojos.png">
       	</div>
   	</div>
+
+	<script>
+		function showSection(sectionId) {
+	// Hide all sections
+	var sections = document.querySelectorAll('#scrlS3 > div');
+	sections.forEach(function(section) {
+		section.style.display = 'none';
+	});
+
+	// Show the selected section
+	var selectedSection = document.getElementById(sectionId);
+	if (selectedSection) {
+		selectedSection.style.display = 'block';
+	}
+	}
+
+	</script>
 	</div>
   <!--seccion que ya sirve arriba-->
   <!--secciones-->
+  <div id="scrlS3"> <!--encapsula todos los divs-->
+	<div id="sectionOverview">
   <div class="secciones">
 	<div class="seccionOverview">
     	<p class="subtitleO">Overview</p>
@@ -327,35 +346,9 @@
   	</div>
 	</div>
   </div>
+	</div>
 
-
-  <script>
-	const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
- 
-  accordionItemHeaders.forEach(accordionItemHeader => {
-	accordionItemHeader.addEventListener("click", event => {
- 	 
-  	// Uncomment in case you only want to allow for the display of only one collapsed item at a time!
- 	 
-  	// const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
-  	// if(currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader!==accordionItemHeader) {
-  	//   currentlyActiveAccordionItemHeader.classList.toggle("active");
-  	//   currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
-  	// }
- 
-  	accordionItemHeader.classList.toggle("active");
-  	const accordionItemBody = accordionItemHeader.nextElementSibling;
-  	if(accordionItemHeader.classList.contains("active")) {
-    	accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
-  	}
-  	else {
-    	accordionItemBody.style.maxHeight = 0;
-  	}
- 	 
-	});
-  });
-  </script>
-
+  <div id="sectionMethods">
   <!--seccion Methods-->
   <div class="secciones">
 	<div class="seccionMethods">
@@ -1853,6 +1846,9 @@
 
   	</div>
   	</div>
+</div>
+
+  <div id="sectionResults">
 	<div class="secciones">
   	<div class="seccionResults">
       	<p class="subtitleR">Results</p>
@@ -1872,6 +1868,9 @@
     	<p>DENTRO DE ESTE DIV PONER LAS COSAS DE LAS SECCIONES</p>
   	</div>
 	</div>
+	</div>	
+  </div>
+  </div>
   </body>
 </html>
 {% endblock %}
