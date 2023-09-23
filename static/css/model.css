@@ -742,11 +742,11 @@
   background: none;
   margin-left: 130px !important;
   }
- .cta1:before, .cta2:before, .cta3:before, .cta4:before, .cta5:before, .cta6:before {
+ .cta1:before, .cta2:before, .cta3:before {
   content: "";
   position: absolute;
   top: 0;
-  left: -49px;
+  left: 0px;
   display: block;
   border-radius: 50px;
   background: #D27063;
@@ -754,6 +754,19 @@
   height: 100%;
   transition: all 0.3s ease;
  }
+ .cta4:before, .cta5:before, .cta6:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0px;
+  display: block;
+  border-radius: 50px;
+  background: #DE8551;
+  width: 45px;
+  height: 100%;
+  transition: all 0.3s ease;
+ }
+
  .cta1 span, .cta2 span, .cta3 span, .cta4 span, .cta5 span, .cta6 span {
   position: relative;
   font-family: 'Quicksand';
@@ -780,28 +793,28 @@
   transform: scale(0.95);
  }
  .cta1:hover:before{
-   width: 80vw;
+   width: 75vw;
    background: #DE8551;
   }
 .cta2:hover:before{
-   width: 70vw;
+   width: 62vw;
    background: #DE8551;
 }
 .cta3:hover:before{
-   width: 57vw;
+   width: 50vw;
    background: #DE8551;
 }
 .cta4:hover:before{
-   width: 45vw;
-   background: #DE8551;
+   width: 40vw;
+   background: #F6AE2D;
 }
 .cta5:hover:before{
-   width: 70vw;
-   background: #DE8551;
+   width: 62vw;
+   background: #F6AE2D;
 }
 .cta6:hover:before{
-   width: 55vw;
-   background: #DE8551;
+   width: 50vw;
+   background: #F6AE2D;
 }
  
 .table1{
