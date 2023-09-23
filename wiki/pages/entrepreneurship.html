@@ -166,10 +166,10 @@ iGEM project.{% endblock %}
                         <div class="CText">
                             We 
                             <a href="#" onclick="popInfo()" class="testEMP">empathized</a>  
-                            with dairy cattle owners, defining that current solutions for mastitis were inadequate and costly, ideating the way to solve it through our product. We were able to prototype AureoBos, and test it in the lab through rigorous experiments, proposing to implement it as an effective and sustainable solution to combat mastitis in dairy cattle.
-
+                            with dairy cattle owners, <a href="#" onclick="popInfo1()" class="testEMP1">defining</a> that current solutions for mastitis were inadequate and costly, <a href="#" onclick="popInfo2()" class="testEMP1">ideating</a> the way to solve it through our product. We were able to prototype AureoBos, and test it in the lab through rigorous experiments, proposing to implement it as an effective and sustainable solution to combat mastitis in dairy cattle.
+                            
                         </div>
-
+                        
 
                         <div class="circleDiagram">
                             <div class="whatCircle">
@@ -197,11 +197,27 @@ iGEM project.{% endblock %}
                         </div>
                         
                     </div>
+                    <div class="goldenpops"> 
+                        <div class="infopop">
+                            <span id="close" onclick="this.parentNode.classList.remove('active');">x</span>
+                            Through our interviews and visits to small, medium and large milk producers, as well as our interactions with different government agencies and diverse stakeholders we learned how mastitis impacts society. We were able to completely put ourselves in the shoes of the people who are facing the problematic. 
+                            If you want to know more about our interviews, visits and stakeholders, go to our human practices section. 
+                            
+                        </div>
+                        <div class="infopop1">
+                            <span id="close" onclick="this.parentNode.classList.remove('active');">x</span>
+                            Analyzing the information we gathered from our interviews, we identified several insights that played a major role in defining the next steps for AureoBos. Current solutions, such as antibiotics, are not only costly and unsustainable, but they also generate a resistance in cows and appear during the milk withdrawal period which translates in decreased milk production, increase of food waste and economic expenses, and potential environmental implications, such as contamination of soil and water, highlighting the inadequacies of these solutions.
 
-                    <div class="infopop">
-                        <span id="close" onclick="this.parentNode.classList.remove('active');">x</span>
-                        testing
-                    </div>
+                        </div>
+                        <div class="infopop2">
+                            <span id="close" onclick="this.parentNode.classList.remove('active');">x</span>
+                            All of these let us ideate the best way of approaching the unmet needs: AureoBos. Thanks to our insights we were able to set our goal: create an antibiotic-free treatment that specialized in four of the most prevalent microorganisms - Staphylococcus aureus, Streptococcus agalactiae, Streptococcus uberis, and Escherichia coli - that cause bovine mastitis. To achieve this goal, we initiated a research process focusing on alginate-chitosan nanoparticles. Our decision was driven by extensive consultations with experts and our end users, as part of our human practices investigations. This led us to conclude that the most effective application method would be through intramammary infusion.
+
+                        </div>
+                    </div> 
+                    
+                    
+                    
 
                     <div class="Cholder">
                         <div class="blobCHolder">
@@ -224,6 +240,7 @@ iGEM project.{% endblock %}
                     </div>                        
                     </div>
                 </div>
+                
             </div>
 
 
@@ -285,21 +302,22 @@ iGEM project.{% endblock %}
                   </div>
             </div>
             <script>
-                    function showSection(sectionId) {
-                // Hide all sections
-                var sections = document.querySelectorAll('#scrlS3 > div');
-                sections.forEach(function(section) {
-                    section.style.display = 'none';
-                });
-
-                // Show the selected section
-                var selectedSection = document.getElementById(sectionId);
-                if (selectedSection) {
-                    selectedSection.style.display = 'block';
+                function showSection(sectionId) {
+                    // Hide all sections
+                    var sections = document.querySelectorAll('#scrlS3 > div, #scrlS4 > div');
+                    sections.forEach(function (section) {
+                        section.style.display = 'none';
+                    });
+                
+                    // Show the selected section
+                    var selectedSection = document.getElementById(sectionId);
+                    if (selectedSection) {
+                        selectedSection.style.display = 'block';
+                    }
                 }
-                }
-
-            </script>
+                </script>
+                
+                  
             
             <div id="scrlS3"> 
                 <div id="scrlS31">
@@ -718,8 +736,13 @@ iGEM project.{% endblock %}
             
             pop[0].classList.add('active');
         }
+        function popInfo1(){
+            var pop = document.querySelectorAll('.infopop1');
+            
+            pop[0].classList.add('active');
+        }
         function popInfo2(){
-            var pop = document.querySelectorAll('.infopo');
+            var pop = document.querySelectorAll('.infopop2');
             
             pop[0].classList.add('active');
         }
@@ -727,6 +750,11 @@ iGEM project.{% endblock %}
     </script>
 
 </body>
-
+<style>
+    /* Ocultar las secciones por defecto */
+    #scrlS31, #scrlS32, #scrlS33, #scrlS34, #scrlS35 {
+      display: none;
+    }
+</style>
 
 {% endblock %}
