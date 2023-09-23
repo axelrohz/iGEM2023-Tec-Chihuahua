@@ -268,12 +268,13 @@
  
  .logocontainer{
   background: transparent;
-  top: 187%;
+  top: 148%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 650px;
   height: 600px;
   position: absolute;
+  z-index:10;
  }
  
  
@@ -332,6 +333,7 @@
   position: relative;
   transition: background-color 0.5s, transform 0.5s;
   overflow: hidden;
+  z-index:10;
  }
  .overview{
   top: 50%;
@@ -741,6 +743,12 @@
    background: #DE8551;
 }
  
+.table1{
+margin-left: 20%;
+}
+.table2{
+margin-left: 30%;
+}
  
  /*Tabla de las ecuaciones quimicas*/
  * {
@@ -761,8 +769,8 @@
  }
  
  table thead tr{
-     background-color: #071665;
-    color: #fff;
+   background-color: #071665;
+   color: #fff;
  }
  
  table {
@@ -790,7 +798,7 @@
  .box-wrap {
   padding: 0px 16px;
   position: relative;
-  left: -14px;
+  left: 21px;
 
  }
  
@@ -897,11 +905,10 @@
   visibility: visible;
  }
  .tooltipSignificadoDiagrama:hover .tooltipSignificadoBoxDiagrama {
-  opacity: 1; /* Mostrar en hover */
   visibility: visible;
   transition-delay: 0s;
   margin-bottom: 8px;
-  opacity: 95%;
+  opacity: 80%;
  }
  .tooltipSignificadoDiagrama
  {
@@ -1831,10 +1838,10 @@
 
 /*ajuste tabla y colores*/
 .tabla_chemicalReactios th, .tabla_chemicalReactios td{
-   border: 2px solid #D27063;
+   border: 2px solid #C55B75;
 }
 .tabla_chemicalReactios th{
-   background-color: #D27063;
+   background-color: #C55B75;
    color: #ffffff;
 }
 
