@@ -27,7 +27,7 @@
  .Title {
    font-size: clamp(1rem, 3vw + 1rem, 4rem);
    position: relative;
-   font-family: "Source Code Pro", monospace;
+   font-family: "Bricolage Grotesque", monospace;
    position: relative;
    width: max-content;
    top: 175px;
