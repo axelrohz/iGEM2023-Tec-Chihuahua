@@ -374,6 +374,7 @@
  .button-container {
   display: inline-block;
   width: 100vw;
+  margin-bottom: 80px;
   height: 607px;
   max-width: 900px;
  }
