@@ -358,13 +358,13 @@
 				<nav class="navigation">
 					<ul>
 						<li>
-							<a href="#upstream">Upstream</a>
+							<a href="#upstream">ODEs</a>
 							<ul>
-								<li><a href="#underlying_theory">Underlying theory</a></li>
-								<li><a href="#model_building">Model Building</a></li>
+								<li><a href="#underlying_theory">Monte Carlo simulation</a></li>
+								<li><a href="#model_building">Parameter estimation</a></li>
 							</ul>
 						</li>
-						<li><a href="#downstream">Downstream</a></li>
+						<li><a href="#downstream">RSM</a></li>
 						<li><a href="#referencesM">References</a></li>
 						</li>
 					</ul>
@@ -372,12 +372,12 @@
 			</div>
 			<div class="secciones">
 				<div class="tituloContenido">
-					<h3 id="upstream">Upstream</h3>
+					<h3 id="upstream">First model</h3>
 				</div>
 				<div class="tituloContenido">
 					<h4 id="underlying_theory">Underlying theory</h4>
 				</div>
-				<p class="contenido">The IPTG induction mechanism has 3 key elements: The operator (LacO),  lac repressor, and inductor (IPTG). These elements interact in a coordinated manner, as illustrated in Figure 1. The process unfolds as follows:</p>
+				<p class="contenido">The IPTG induction mechanism has 3 key elements: The operator (LacO),  lac repressor, and inductor (IPTG). These elements interact in a coordinated manner, as illustrated in <b>Figure 1.</b> The process unfolds as follows:</p>
 				<br>
 				<p class="instructionDiagram">Hover over the steps of this diagram and find more information!</p>
 				<div class="diagramaIPTG">
@@ -501,6 +501,8 @@
       	<div class="cosaVerde2 azul21"></div>
     	</div>
   	</div>
+	<br>
+	<p class="contenido" style="text-align:center"> <b>Figure 1.</b> IPTG induction steps when <em>Escherichia coli</em> is found under conditions with IPTG and no glucose. </p>
   	<br>
   	<br>
   	<div class="tituloContenido">
@@ -700,9 +702,9 @@
       	<h5>Input of IPTG. Step 11</h5>
     	</div>
     	<br>
-    	<p class="contenido">The entry of IPTG into <em>Escherichia coli</em> BL21 cells occurs through two potential mechanisms: simple diffusion and active transport facilitated by the lactose permease, encoded by the LacY gene. The active transport pathway has been reported to not be significant on <em>E.coli</em>, thus, we won't take it into account in our model.<sup>5</sup> As a result, we focus solely on the predominant method of IPTG entry, which is simple diffusion. In this process, IPTG molecules passively move across the cell membrane in response to the concentration gradient, without the need for energy expenditure or assistance from specific transporters.</p> 	 
+    	<p class="contenido">The entry of IPTG into <em>E. coli</em> BL21 cells occurs through two potential mechanisms: simple diffusion and active transport facilitated by the lactose permease, encoded by the LacY gene. The active transport pathway has been reported to not be significant on <em>E. coli</em>, thus, we won't take it into account in our model.<sup>5</sup> As a result, we focus solely on the predominant method of IPTG entry, which is simple diffusion. In this process, IPTG molecules passively move across the cell membrane in response to the concentration gradient, without the need for energy expenditure or assistance from specific transporters.</p> 	 
     	<br>
-    	<p class="contenido">We employ Fick's law of diffusion (Eq. 1) to characterize the process of simple diffusion. The equation takes into account 2 variables: IPTG concentration and absorption surface. Notably, in our model, we maintain the absorption surface as a constant, disregarding any membrane expansion during binary fission. This choice enables us to establish all our mathematical equations as dependent solely on IPTG concentration. In this context, where x denotes the membrane thickness, 'K' represents the diffusion constant, 'A' stands for the absorption surface, 'IPTG extracellular' signifies the IPTG concentration in the culture medium, and 'IPTG intratracellular' refers to the IPTG concentration within the bacterial cells.
+    	<p class="contenido">We employ Fick's law of diffusion (Eq. 1) to characterize the process of simple diffusion. The equation takes into account 2 variables: IPTG concentration and absorption surface. Notably, in our model, we maintain the absorption surface as a constant, disregarding any membrane expansion during binary fission. This choice enables us to establish all our mathematical equations as dependent solely on IPTG concentration. In this context, where Δx denotes the membrane thickness, 'K' represents the diffusion constant, 'A' stands for the absorption surface, 'IPTG<sub>E</sub> ' signifies the IPTG concentration in the culture medium, and 'IPTG<sub>I</sub>' refers to the IPTG concentration within the bacterial cells.
     	</p>
     	<math display='block'>
       	<mfrac>
@@ -710,7 +712,7 @@
         	<mi>&#x0394;</mi><mi>I</mi><mi>P</mi><mi>T</mi><msub>
          	<mi>G</mi>
          	<mrow>
-          	<mi>I</mi><mi>n</mi><mi>t</mi><mi>r</mi><mi>a</mi><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi><mi>u</mi><mi>l</mi><mi>a</mi><mi>r</mi></mrow>
+          	<mi>I</mi></mrow>
         	</msub>
         	</mrow>
        	<mrow>
@@ -721,24 +723,25 @@
         	<mi>&#x0394;</mi><mi>I</mi><mi>P</mi><mi>T</mi><msub>
          	<mi>G</mi>
          	<mrow>
-          	<mi>e</mi><mi>x</mi><mi>t</mi><mi>r</mi><mi>a</mi><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi><mi>u</mi><mi>l</mi><mi>a</mi><mi>r</mi></mrow>
+          	<mi>E</mi></mrow>
         	</msub>
         	</mrow>
        	<mrow>
         	<mi>&#x0394;</mi><mi>t</mi></mrow>
       	</mfrac>
      	</math>
-     	<p LIGN="right">(1)</p>
+     	<p ALIGN="right">(1)</p>
      	<div class="tituloContenido">
       	<h5>Formation of repressor-IPTG complex. Steps 12-15</h5>
     	</div>
     	<p class="contenido">Upon the introduction of IPTG into the system, it binds with the dimeric and tetrameric forms of the repressor protein. It’s important to note that each monomer within both the dimer and tetramer structure can accommodate a single IPTG molecule for binding. Upon binding, IPTG triggers an allosteric structural transformation in the tetrameric repressor, resulting to a decrease in its affinity for the operator.<sup>6</sup> Consequently, the monomeric repressor loses its capacity to effectively bind to the operator, allowing RNA polymerase’s access to the promoter. This, in turn, enables the transcription and subsequent production of the endolysins.</p>
-    	<br>
+		<br>
     	<p class="contenido">The formation of the IPTG-repressor complex can occur through two mechanisms:<sup>3</sup></p>
-    	<ol  class="contenido">
+		<ol  class="contenido">
       	<li  class="contenido">The repressor exists in a free state.</li>
       	<li  class="contenido">The repressor is part of the repressor-operator complex, where it is already bound to the operator sequence.</li>
     	</ol >
+	    
       	<p class="contenido">When the repressor is bound to the operator, the introduction of IPTG interferes with the repressor-operator complex, leading to its disruption. As a result, the extent of repressor inactivation is directly correlated with the number of binding sites occupied by IPTG. Interestingly, even with just two IPTG molecules bound to specific sites, the repressor can undergo effective inactivation.<sup>7</sup> <b>Figure 2</b> illustrates the different conformations that can exist.</p>
       	<br>
       	<br>
@@ -1155,7 +1158,7 @@
                     	<tr>
                         	<td>(1)</td>
                         	<td></td>
-                        	<td>Entrance of IPTG into <em>Escherichia coli</em> (Simple diffusion)</td>
+                        	<td>Entrance of IPTG into <em>E. coli</em> (Simple diffusion)</td>
                         	<td>
                           	<img src="https://static.igem.wiki/teams/4607/wiki/modelo/ecuaciones-representacion-esquematica/ecuacion-1-removebg-preview.png"   style="max-width:250px ;"/></td>
                     	</tr>
@@ -1189,7 +1192,7 @@
                           	</math>
                         	</td>
                         	<td>Production of the repressor mRNA.</td>
-                        	<td></td>
+                        	<td> <img src="https://static.igem.wiki/teams/4607/wiki/modelo/ecuaciones-representacion-esquematica/ecuacion-2.png" style="max-width:250px ;"> </td>
                     	</tr>
                     	<tr>
                         	<td>(ii)</td>
