@@ -242,200 +242,6 @@
                     </div>
                     
                     <br>
-                    
-                    <style>
-                      * { box-sizing: border-box; }
-                      body { font-family: 'Quicksand'; margin: 0; }
-                      .mySlides { display: none; }
-                      img { vertical-align: middle; }
-                      
-                      /* Slideshow container */
-                      .slideshow-container {
-                          max-width: 1000px;
-                          position: relative;
-                          margin: auto;
-                      }
-                      
-                      /* Next & previous buttons */
-                      .prev, .next {
-                          cursor: pointer;
-                          position: absolute;
-                          top: 50%;
-                          width: auto;
-                          padding: 16px;
-                          margin-top: -22px;
-                          color: white;
-                          font-weight: bold;
-                          font-size: 25px;
-                          transition: 0.6s ease;
-                          border-radius: 0 3px 3px 0;
-                          user-select: none;
-                      }
-                      
-                      /* Position the "next button" to the right */
-                      .next {
-                          right: 0;
-                          border-radius: 3px 0 0 3px;
-                      }
-                      
-                      /* On hover, add a black background color with a little bit see-through */
-                      .prev:hover, .next:hover {
-                          background-color: rgba(91, 197, 171, 0.8);
-                      }
-                      
-                      /* Caption text */
-                      .text {
-                          color: #f2f2f2;
-                          font-size: 1.5rem;
-                          font-weight: 400;
-                          padding: 8px 12px;
-                          position: absolute;
-                          bottom: 50px;
-                          width: 100%;
-                          text-align: center;
-                      }
-                      
-                      /* Number text (1/3 etc) */
-                      .numbertext {
-                          color: #f2f2f2;
-                          font-size: 12px;
-                          padding: 8px 12px;
-                          position: absolute;
-                          top: 0;
-                      }
-                      
-                      /* The dots/bullets/indicators */
-                      .dot {
-                          cursor: pointer;
-                          height: 15px;
-                          width: 15px;
-                          margin: 0 2px;
-                          background-color: #A7DCD3;
-                          border-radius: 50%;
-                          display:grid;
-                          transition: background-color 0.6s ease;
-                      }
-                      
-                      .active, .dot:hover {
-                          background-color: #5BC5AB;
-                      }
-                      
-                      /* Fading animation */
-                      .fade {
-                          animation-name: fade;
-                          animation-duration: 3.0s;
-                      }
-                      
-                      @keyframes fade {
-                          from { opacity: .4; } 
-                          to { opacity: 1; }
-                      }
-                      
-                      /* On smaller screens, decrease text size */
-                      @media only screen and (max-width: 300px) {
-                          .prev, .next, .text { font-size: 11px; }
-                      }
-                      /* ...otras reglas CSS ... */
-
-                      /* Position the "prev button" to the left */
-                      .prev {
-                          left: 0;
-                          border-radius: 3px 0 0 3px;
-                      }
-
-                      /* Position the "next button" to the right */
-                      .next {
-                          right: 0;
-                          border-radius: 0 3px 3px 0;
-                      }
-
-                  </style>
-              </head>
-              <body>
-                  <div class="slideshow-container">
-                      <div class="mySlides fade">
-                          <div class="numbertext">1 / 4</div>
-                          <img src="https://static.igem.wiki/teams/4607/wiki/project-description/mastitis-2.jpeg" style="width:100%">
-                          <div class="text">Udder with mastitis</div>
-                      </div>
-                      
-                      <div class="mySlides fade">
-                          <div class="numbertext">2 / 4</div>
-                          <img src="https://static.igem.wiki/teams/4607/wiki/project-description/no-mastitis-2.jpeg" style="width:100%">
-                          <div class="text">Udder without mastitis</div>
-                      </div>
-                      
-                      <div class="mySlides fade">
-                          <div class="numbertext">3 / 4</div>
-                          <img src="https://static.igem.wiki/teams/4607/wiki/project-description/mastitis.jpeg" style="width:100%">
-                          <div class="text">Udder with mastitis</div>
-                      </div>
-              
-                      <div class="mySlides fade">
-                          <div class="numbertext">4 / 4</div>
-                          <img src="https://static.igem.wiki/teams/4607/wiki/project-description/no-mastitis.jpeg" style="width:100%">
-                          <div class="text">Udder without mastitis</div>
-                      </div>
-                      
-                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                  </div>
-                  <br>
-                  
-                  <div style="text-align:center">
-                      <span class="dot" onclick="currentSlide(1)"></span> 
-                      <span class="dot" onclick="currentSlide(2)"></span> 
-                      <span class="dot" onclick="currentSlide(3)"></span>
-                      <span class="dot" onclick="currentSlide(4)"></span>  
-                  </div>
-                  
-                  <script>
-                      let slideIndex = 1;
-                      let slideInterval;
-              
-                      showSlides(slideIndex);
-              
-                      function plusSlides(n) {
-                          showSlides(slideIndex += n);
-                      }
-              
-                      function currentSlide(n) {
-                          showSlides(slideIndex = n);
-                      }
-              
-                      function showSlides(n) {
-                          let i;
-                          let slides = document.getElementsByClassName("mySlides");
-                          let dots = document.getElementsByClassName("dot");
-                          if (n > slides.length) { slideIndex = 1; }    
-                          if (n < 1) { slideIndex = slides.length; }
-                          for (i = 0; i < slides.length; i++) {
-                              slides[i].style.display = "none";  
-                          }
-                          for (i = 0; i < dots.length; i++) {
-                              dots[i].className = dots[i].className.replace(" active", "");
-                          }
-                          slides[slideIndex - 1].style.display = "block";  
-                          dots[slideIndex - 1].className += " active";
-                      }
-              
-                      function pauseSlides() {
-                          clearInterval(slideInterval);
-                      }
-              
-                      function resumeSlides() {
-                          slideInterval = setInterval(function() {
-                              plusSlides(1); // Cambiar a la siguiente diapositiva
-                          }, 3000); // 3000 milisegundos (3 segundos)
-                      }
-              
-                      // Iniciar intervalo de cambio automático
-                      resumeSlides();
-                  </script>
-              </body>
-                  <br>      
-
-
 
                     <p>
                       Specific contagious pathogens stand out as significant contributors, mainly <em>Staphylococcus aureus</em>, <em>Streptococcus agalactiae</em>, and <em>Streptococcus uberis</em> as show in <b>figure 2</b>,  microorganisms that causes damage on the milking tissue, causing irreversible damage to the cow’s milk peak production. 
@@ -448,7 +254,168 @@
                     <p align="justify">
                       On the other hand, <em>S. agalactiae</em> is adept at forming biofilms and resides in the bovine gastrointestinal tract.<sup>11</sup> Lastly, <em>S. uberis</em> is associated with clinical and sub-clinical infections. It was reported that α-casein and β-casein in milk induce production of biofilms, which help <em>S. uberis</em> to persist under environmental stress and resist antibiotic treatment.<sup>12</sup>
                     </p>
-                    <img src="https://static.igem.wiki/teams/4607/wiki/parts/project-description/images/project-description/diagrama-ubre-photoroom-png-photoroom.png">
+
+                    <div class="udderinfocont">
+                      <div class="uddercont">
+                        <div class="udderimgcont">
+                          <div id="ud1" class="udderimg"><img src="https://static.igem.wiki/teams/4607/wiki/project-description/saureus.png" alt=""></div>
+                          <div id="ud2" class="udderimg"><img src="https://static.igem.wiki/teams/4607/wiki/project-description/suberis.png" alt=""></div>
+                          <div id="ud3" class="udderimg"><img src="https://static.igem.wiki/teams/4607/wiki/project-description/sagalactiae.png" alt=""></div>
+                          <div id="ud4" class="udderimg"><img src="https://static.igem.wiki/teams/4607/wiki/project-description/ecoli.png" alt=""></div>
+                          <div id="ud5" class="udderimg active"><img src="https://static.igem.wiki/teams/4607/wiki/project-description/infectedudder.png" alt=""></div>
+                        </div>
+  
+                        <div class="udderbtncont">
+                          <div class="udderbtn1"  style="--gradient:linear-gradient(45deg, rgb(246, 174, 45), rgb(245, 209, 148))" onclick="img1()"> <em>Staphylococcus <br> aureus </em></div>
+                          <div class="udderbtn2"  style="--gradient:linear-gradient(45deg, rgb(68, 125, 156), rgb(156, 184, 203))" onclick="img2()"> <em>Streptococcus <br> uberis</em> </div>
+                          <div class="udderbtn3"  style="--gradient:linear-gradient(45deg, rgb(169, 186, 108), rgb(206, 215, 179))" onclick="img3()"> <em>Streptococcus <br> agalactiae</em> </div>
+                          <div class="udderbtn4"  style="--gradient:linear-gradient(45deg, rgb(197, 91, 117), rgb(215, 148, 168))" onclick="img4()"> <em>Escherichia <br> coli</em> </div>
+                        </div>
+                      </div>
+
+                      <div class="udderimgcont">
+                        <div id="udtxt1" class="uddertxt"><p><em>Staphylococcus aureus</em> is one of the pathogen most feared by dairy farmers. It produces toxins and enzymes that damage milking tissue for life.</p></div>
+                        <div id="udtxt2" class="uddertxt"><p><em>Streptococcus uberis </em> produces alpha and beta casein in milk. By proliferation, they induce the production of biofilms which allows the bacteria to resist antibiotics. It is also very harmful for the host.</p></div>
+                        <div id="udtxt3" class="uddertxt"><p><em>Streptococcus agalactiae</em> is adept at forming biofilms. As mentioned before, bacteria who form biofilms are prone to resist antibiotic treatment.</p></div>
+                        <div id="udtxt4" class="uddertxt"><p><em>Escherichia coli</em> is an environmental bacteria, and its entry to the udder depends on the season.  It has been proved that this microorganism is also very important in bovine mastitis, fact which was later confirmed by our <a>stakeholders</a> </p></div>
+                        <div id="udtxt5" class="uddertxt active"><p>The most common microorganisms known to cause bovine mastitis are three gram-positive bacteria and one gram-negative bacteria. These pathogens are considered of great importance in the dairy farming context because of the irreversible damage they cause on milking tissue.</p></div>
+                      </div>
+
+                      <script>
+                        function img1(){
+                          var ud1 = document.getElementById("ud1");
+                          var ud2 = document.getElementById("ud2");
+                          var ud3 = document.getElementById("ud3");
+                          var ud4 = document.getElementById("ud4");
+                          var ud5 = document.getElementById("ud5");
+                          
+                          ud1.classList.add("active");
+                          ud2.classList.remove("active");
+                          ud3.classList.remove("active");
+                          ud4.classList.remove("active");
+                          ud5.classList.remove("active");
+  
+                          var udtxt1 = document.getElementById("udtxt1");
+                          var udtxt2 = document.getElementById("udtxt2");
+                          var udtxt3 = document.getElementById("udtxt3");
+                          var udtxt4 = document.getElementById("udtxt4");
+                          var udtxt5 = document.getElementById("udtxt5");
+                          
+                          udtxt1.classList.add("active");
+                          udtxt2.classList.remove("active");
+                          udtxt3.classList.remove("active");
+                          udtxt4.classList.remove("active");
+                          udtxt5.classList.remove("active");
+                        }
+                        
+                        function img2(){
+                          var ud1 = document.getElementById("ud1");
+                          var ud2 = document.getElementById("ud2");
+                          var ud3 = document.getElementById("ud3");
+                          var ud4 = document.getElementById("ud4");
+                          var ud5 = document.getElementById("ud5");
+                          
+                          ud2.classList.add("active");
+                          ud1.classList.remove("active");
+                          ud3.classList.remove("active");
+                          ud4.classList.remove("active");
+                          ud5.classList.remove("active");
+                          
+                          var udtxt1 = document.getElementById("udtxt1");
+                          var udtxt2 = document.getElementById("udtxt2");
+                          var udtxt3 = document.getElementById("udtxt3");
+                          var udtxt4 = document.getElementById("udtxt4");
+                          var udtxt5 = document.getElementById("udtxt5");
+                          
+                          udtxt2.classList.add("active");
+                          udtxt1.classList.remove("active");
+                          udtxt3.classList.remove("active");
+                          udtxt4.classList.remove("active");
+                          udtxt5.classList.remove("active");
+                        }
+                        
+                        function img3(){
+                          var ud1 = document.getElementById("ud1");
+                          var ud2 = document.getElementById("ud2");
+                          var ud3 = document.getElementById("ud3");
+                          var ud4 = document.getElementById("ud4");
+                          var ud5 = document.getElementById("ud5");
+                          
+                          ud3.classList.add("active");
+                          ud2.classList.remove("active");
+                          ud1.classList.remove("active");
+                          ud4.classList.remove("active");
+                          ud5.classList.remove("active");
+                          
+                          var udtxt1 = document.getElementById("udtxt1");
+                          var udtxt2 = document.getElementById("udtxt2");
+                          var udtxt3 = document.getElementById("udtxt3");
+                          var udtxt4 = document.getElementById("udtxt4");
+                          var udtxt5 = document.getElementById("udtxt5");
+                          
+                          udtxt3.classList.add("active");
+                          udtxt2.classList.remove("active");
+                          udtxt1.classList.remove("active");
+                          udtxt4.classList.remove("active");
+                          udtxt5.classList.remove("active");
+                        }
+                        
+                        function img4(){
+                          var ud1 = document.getElementById("ud1");
+                          var ud2 = document.getElementById("ud2");
+                          var ud3 = document.getElementById("ud3");
+                          var ud4 = document.getElementById("ud4");
+                          var ud5 = document.getElementById("ud5");
+                          
+                          ud4.classList.add("active");
+                          ud2.classList.remove("active");
+                          ud3.classList.remove("active");
+                          ud1.classList.remove("active");
+                          ud5.classList.remove("active");
+                          
+                          var udtxt1 = document.getElementById("udtxt1");
+                          var udtxt2 = document.getElementById("udtxt2");
+                          var udtxt3 = document.getElementById("udtxt3");
+                          var udtxt4 = document.getElementById("udtxt4");
+                          var udtxt5 = document.getElementById("udtxt5");
+                          
+                          udtxt4.classList.add("active");
+                          udtxt2.classList.remove("active");
+                          udtxt3.classList.remove("active");
+                          udtxt1.classList.remove("active");
+                          udtxt5.classList.remove("active");
+                        }
+                        
+                        function img5(){
+                          var ud1 = document.getElementById("ud1");
+                          var ud2 = document.getElementById("ud2");
+                          var ud3 = document.getElementById("ud3");
+                          var ud4 = document.getElementById("ud4");
+                          var ud5 = document.getElementById("ud5");
+                          
+                          ud5.classList.add("active");
+                          ud2.classList.remove("active");
+                          ud3.classList.remove("active");
+                          ud4.classList.remove("active");
+                          ud1.classList.remove("active");
+                          
+                          var udtxt1 = document.getElementById("udtxt1");
+                          var udtxt2 = document.getElementById("udtxt2");
+                          var udtxt3 = document.getElementById("udtxt3");
+                          var udtxt4 = document.getElementById("udtxt4");
+                          var udtxt5 = document.getElementById("udtxt5");
+                          
+                          udtxt5.classList.add("active");
+                          udtxt2.classList.remove("active");
+                          udtxt3.classList.remove("active");
+                          udtxt4.classList.remove("active");
+                          udtxt1.classList.remove("active");
+                        }
+                      </script>
+
+                    </div>
+
+
                     
                     
                     <p class="piedefig"><b>Figure 3.</b> <em>S. agalactiae, S. aureus</em> and <em>S. uberis</em> in the mastitis infection.</p>
@@ -502,7 +469,7 @@
                     </p>
                     
                     <div class="note-contain">  
-                      <blockquote class="note pinup"><i>Did you know... <br> Of 7.888 billion of people, about 6.3104 billion consume milk and dairy</i>
+                      <blockquote class="note pinup"><p>Did you know... <br> Of 7.888 billion of people, about 6.3104 billion consume milk and dairy</p>
                         
                     </div>
                     <br>
@@ -520,7 +487,7 @@
 
                     <div class="antibioticscont">
                       <h1>Commonly used antibiotics</h1>
-                      <h3>according to our <a class= "hipervinculoaqua" href="https://2023.igem.wiki/tec-chihuahua/human">stakeholders</a></h3>
+                      <h3>According to our <a class= "hipervinculoaqua" href="https://2023.igem.wiki/tec-chihuahua/human">stakeholders</a></h3>
                       <span class="antibioticsdot"><p>Penicilin</p>
                           <img src="https://static.igem.wiki/teams/4607/wiki/project-description/penicilin.png" alt="Penicilin">
                           <div class="antibioticstxt"> Imelda Ramos Guevara, Karen Mingura, Adrian sandoval, and Jose Alfredo, small scale producers and veterinay zootechnicians, stated that penicilin is the most common treatment.</div>
@@ -551,8 +518,8 @@
                     
 
                     <div class="treatmentscont">
-                      <h1>Avaible tratments</h1>
-                      <h3>according to our <a class= "hipervinculoaqua" href="https://2023.igem.wiki/tec-chihuahua/entrepreneurship">market study</a></h3>
+                      <h1>Avaible treatments</h1>
+                      <h3>According to our <a class= "hipervinculoaqua" href="https://2023.igem.wiki/tec-chihuahua/entrepreneurship">Market Study</a></h3>
                       <span class="treatmentssdot">
                           <img src="https://static.igem.wiki/teams/4607/wiki/project-description/aspiration.png" alt="Intramammary Infusion">
                           <div class="treatmentstxt"><b>Intramammary infusion</b> involves the direct introduction of antibiotics into the udder through the teat canal.</div>
@@ -614,6 +581,129 @@
                     <p>
                       The most efficient antimicrobial agents come from submicroscopic entities: bacteriophages. Endolysins, which are enzymes present in bacteriophages' double-stranded DNA, capable of breaking down peptidoglycan in bacterial cell walls that lead to the bursting of bacterial cells, facilitating the release of new viral particles. These endolysins demonstrate notable potential as an alternative to antibiotics, displaying specific antimicrobial effects on gram-positive bacteria, even in the presence of antibiotic-resistant strains. AureoBos emerged from the realization that externally applying endolysins to bacterial cell walls leads to peptidoglycan degradation and swift bacterial cell lysis.<sup>28</sup>
                     </p>
+
+                    <div class="endoinfocont">
+
+
+                      <div class="mechcont">
+                      
+                          <div class="mechimgcont">
+                              <div id="mech1" class="mechimg"><img src="https://static.igem.wiki/teams/4607/wiki/project-description/lysss.png" alt=""></div>
+                              <div id="mech2" class="mechimg"><img src="https://static.igem.wiki/teams/4607/wiki/project-description/lyscsa13.png" alt=""></div>
+                              <div id="mech3" class="mechimg"><img src="https://static.igem.wiki/teams/4607/wiki/project-description/lysk.png" alt=""></div>
+                              <div id="mech4" class="mechimg active"><img src="https://static.igem.wiki/teams/4607/wiki/project-description/mech.png" alt=""></div>
+                          </div>
+                      
+                          <div class="udderbtncont">
+                              <div class="mechbtn1"  style="--gradient:linear-gradient(45deg, rgb(91, 197, 171), rgb(167, 220, 211))" onclick="eimg1()"> <em>LysSS </em> </div>
+                              <div class="mechbtn2"  style="--gradient:linear-gradient(45deg, rgb(91, 197, 171), rgb(167, 220, 211))" onclick="eimg2()"> <em>LysCSA13</em> </div>
+                              <div class="mechbtn3"  style="--gradient:linear-gradient(45deg, rgb(91, 197, 171), rgb(167, 220, 211))" onclick="eimg3()"> <em>LysK</em> </div>
+                          </div>
+                      
+                          <script>
+                            function eimg1(){
+                              var mech1 = document.getElementById("mech1");
+                              var mech2 = document.getElementById("mech2");
+                              var mech3 = document.getElementById("mech3");
+                              var mech4 = document.getElementById("mech4");
+                              
+                              mech1.classList.add("active");
+                              mech2.classList.remove("active");
+                              mech3.classList.remove("active");
+                              mech4.classList.remove("active");
+                              
+                              var mechtxt1 = document.getElementById("mechtxt1");
+                              var mechtxt2 = document.getElementById("mechtxt2");
+                              var mechtxt3 = document.getElementById("mechtxt3");
+                              var mechtxt4 = document.getElementById("mechtxt4");
+                              
+                              mechtxt1.classList.add("active");
+                              mechtxt2.classList.remove("active");
+                              mechtxt3.classList.remove("active");
+                              mechtxt4.classList.remove("active");
+                            }
+                            
+                            function eimg2(){
+                              var mech1 = document.getElementById("mech1");
+                              var mech2 = document.getElementById("mech2");
+                              var mech3 = document.getElementById("mech3");
+                              var mech4 = document.getElementById("mech4");
+                              
+                              mech2.classList.add("active");
+                              mech1.classList.remove("active");
+                              mech3.classList.remove("active");
+                              mech4.classList.remove("active");
+                              
+                              var mechtxt1 = document.getElementById("mechtxt1");
+                              var mechtxt2 = document.getElementById("mechtxt2");
+                              var mechtxt3 = document.getElementById("mechtxt3");
+                              var mechtxt4 = document.getElementById("mechtxt4");
+                              
+                              mechtxt2.classList.add("active");
+                              mechtxt1.classList.remove("active");
+                              mechtxt3.classList.remove("active");
+                              mechtxt4.classList.remove("active");
+                            }
+                            
+                            function eimg3(){
+                              var mech1 = document.getElementById("mech1");
+                              var mech2 = document.getElementById("mech2");
+                              var mech3 = document.getElementById("mech3");
+                              var mech4 = document.getElementById("mech4");
+                              
+                              mech3.classList.add("active");
+                              mech2.classList.remove("active");
+                              mech1.classList.remove("active");
+                              mech4.classList.remove("active");
+                              
+                              var mechtxt1 = document.getElementById("mechtxt1");
+                              var mechtxt2 = document.getElementById("mechtxt2");
+                              var mechtxt3 = document.getElementById("mechtxt3");
+                              var mechtxt4 = document.getElementById("mechtxt4");
+                              
+                              mechtxt3.classList.add("active");
+                              mechtxt2.classList.remove("active");
+                              mechtxt1.classList.remove("active");
+                              mechtxt4.classList.remove("active");
+                            }
+                            
+                            function eimg4(){
+                              var mech1 = document.getElementById("mech1");
+                              var mech2 = document.getElementById("mech2");
+                              var mech3 = document.getElementById("mech3");
+                              var mech4 = document.getElementById("mech4");
+                              
+                              mech4.classList.add("active");
+                              mech2.classList.remove("active");
+                              mech3.classList.remove("active");
+                              mech1.classList.remove("active");
+                              
+                              var mechtxt1 = document.getElementById("mechtxt1");
+                              var mechtxt2 = document.getElementById("mechtxt2");
+                              var mechtxt3 = document.getElementById("mechtxt3");
+                              var mechtxt4 = document.getElementById("mechtxt4");
+                              
+                              mechtxt4.classList.add("active");
+                              mechtxt2.classList.remove("active");
+                              mechtxt3.classList.remove("active");
+                              mechtxt1.classList.remove("active");
+                            }
+                            
+                            </script>
+
+  
+                      </div>
+                      
+                          <div class="mechimgcont">
+                              <div id="mechtxt1" class="mechtxt"><p>LysSS cuts the bond between N-acetylmuramic acid and  N-glucosamine. In our case, we fused this endolysin into an artilysin for it to be capable of weakening the outer membrane of gran-negative bacteria, as <em> Escherichia coli </em></p></div>
+                              <div id="mechtxt2" class="mechtxt"><p>LysCSA13 has an amidase domain, which allows it to cut the bond between N-acetylmuramico acid and L-ala, mainly attacking <em>Staphylococcus aureus</em> </p></div>
+                              <div id="mechtxt3" class="mechtxt"><p>Lys K has two active  lysis domain  amidase and endopeptidase ( is essential to attack <em>Streptococci</em>) which allows it to cover a wide group of microorganisms.The SH3b cell wall binding domain is known to bind to the pentaglycine bridge </p></div>
+                              <div id="mechtxt4" class="mechtxt active"><p> Peptidoglycan is composed of the repeat polymer of the amino sugars N-acetylglucos-amine and N-acetylmuramic acid, linked together by Î²-I,4 glycosidic bonds, and tetrapeptide side chains attached to the lactyl group of the muramic acid by amide bonds. Endolysins bind to carbohydrate sequences that make up teichoic acids, proteins, glycan sequences of peptidoglycan, and choline.In the case of gram-negatives, endolysin have to pass through the cell wall to reach the peptidoglycan layer. Our artilisin has the ability to break through thanks to the incorporated policationic nonapeptide, whose function is to destabilize the cell membrane.</p></div>
+                          </div>
+                      
+                      </div>
+                      
+                      
                     <br>
                     <h2>Design</h2>
                     <br>
@@ -643,9 +733,6 @@
                     </p>
                     <br>
                     <h2>Methodology</h2>
-                    <br>
-                    <br>
-                    <br>
                     <br>
                     <div>
                     <div class="blog-card">
@@ -739,26 +826,7 @@
                     </div>
                     </div>
                     <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
+        
                     <h2>
                       The World in Our Project
                     </h2>
@@ -773,7 +841,7 @@
                       We embarked on this journey by immersing ourselves in the world of mastitis, actively engaging with stakeholders who shape and are impacted by our project. This field research has become the bedrock of our <a class="hipervinculoaqua" href="https://2023.igem.wiki/tec-chihuahua/Lab">laboratory</a> work, providing us with invaluable insights that by mathematical modeling the lifecyle of our solution guides our path to success. Each step we took was enhanced by the concerns, needs, and knowledge shared by our stakeholders. We envision our treatment transcending as a startup. We offer a solution that addresses the multifaceted challenges faced by local, national, and international dairy farmers, making a meaningful contribution to their well-being and sustainability.
   
                     </p>
-                    <img src="https://static.igem.wiki/teams/4607/wiki/project-description/images/caminoaureobos-1-photoroom-png-photoroom.png"></img>
+                    <img style="height: 500px; width: auto; margin-left:15%;" src="https://static.igem.wiki/teams/4607/wiki/project-description/images/caminoaureobos-1-photoroom-png-photoroom.png"></img>
                     
                     <p>
                       Aureobos’ mission aligns with an anti-waste focus, acknowledging the importance of Sustainable Development Goal 2: Zero Hunger<sup>39</sup>, helping through the collection of safe and nutritious milk. Our responsibility to preserve Chihuahua's culture fuels our commitment to effect positive and sustainable changes both locally and beyond. Our project exemplifies how synthetic biology, an unfamiliar field to many, can significantly contribute to community well-being. Through genetic engineering and biotechnological tools, we aim to combat bovine mastitis, benefiting local industries and advancing scientific knowledge. Aureobos showcases how synthetic biology can propel wellness progress. The team draws inspiration from our stakeholders’ contributions and strives to create a brighter, healthier future for the dairy industry and the global community.
