@@ -108,14 +108,14 @@
 	background: linear-gradient(to right, var(--c1) var(--stop), var(--c2) var(--stop));
 }
 
-h3 {
+.listh3 {
 	display: flex;
 	align-items: baseline;
 	margin: 0 0 1rem;
 	color: rgb(70 70 70);
 }
 
-h3::before {
+.listh3::before {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -131,17 +131,17 @@ h3::before {
 }
 
 @media (min-width: 40em) {
-	li {
+	.listli {
 		margin: 3rem auto;
 		padding: 3rem 2rem 2rem;
 	}
 	
-	h3 {
+	.listh3 {
 		font-size: 2.25rem;
 		margin: 0 0 2rem;
 	}
 	
-	h3::before {
+	.listh3::before {
 		margin-right: 1.5rem;
 	}
 }
