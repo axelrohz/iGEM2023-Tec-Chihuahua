@@ -38,7 +38,7 @@
 .uno h1 {
   font-family: 'Bricolage Grotesque';
   font-size: 7rem;
-  font-weight: 700;
+  font-weight: bold;
   background-image: linear-gradient(#C55B75,#D27063,#DE8551);
   color: transparent;
   background-clip: text;
@@ -48,7 +48,7 @@
 
 .piedefig {
   text-align: center;
-  font-size: 0.5rem;
+  font-size: 1rem;
 }
 
 .hipervinculoaqua {
@@ -108,8 +108,8 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 80vh;
-  margin: 0;
+  height: auto;
+  margin: 30px;
   background-color: transparent
 }
 
@@ -237,8 +237,8 @@ h10 {
 
 
 /*cards */
-.container {
-  height: 100vh;
+.topcardscontainer {
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -261,11 +261,22 @@ h10 {
   border-radius: 5px 5px 0 0;
 }
 
-.card-item img {
-  max-width: 100px;
+.card-item h3 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: bold;
 }
 
-.card-item h3 {
+.card-item h4 {
+  font-family: 'Bricolage Grotesque';
+  color: #5BC5AB;
+  font-size: 1.2rem;
+}
+
+.card-item:hover h3 {
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 8px;
@@ -278,40 +289,33 @@ h10 {
   padding: 15px 10px;
   text-align: justify;
   position: absolute;
-  /* left: -50000000000%; */
   visibility: hidden;
   opacity: 0;
-  transition: 1s;
+  transition: 1s ease-in-out;
 }
 
 .card-text p {
   margin-bottom: 30px;
-  padding-left: 45px;
-}
-
-.card-text a {
-  text-decoration: none;
-  border: 1px solid gray;
-  padding: 5px 10px;
-  color: black;
-  transition: 0.4s;
-}
-
-.card-text a:hover {
-  background-color: rgb(58, 55, 55);
-  color: white;
+  font-size: 1rem;
+  text-align: center;
+  transition: 1s ease-in-out;
+  margin: 10px;
 }
 
 .card:hover {
   height: 420px;
-  overflow: visible;
+  overflow: auto;
 }
 
 .card:hover .card-item {
   background-color: #5BC5AB;
   color: white;
-  height: 210px;
+  height: 300px;
   width: 300px;
+  padding: 10px 0;
+  border-radius: 5px 5px 0 0;
+
+
 }
 
 .card:hover .card-text {
@@ -321,22 +325,18 @@ h10 {
   bottom: 0;
   visibility: visible;
   opacity: 1;
+  padding: 10px 0;
+  border-radius: 5px 5px 0 0;
+  transition: 1.2s ease-in-out;
 }
 /*empire*/
 .empirecont {
-  margin: 0 auto;
-  width: 500px;
-  position: relative;
+  margin-top: 0;
+  width: 350px;
+  position: absolute;
   border-radius: 5px;
   align-items: center;
-
-}
-
-.empirecont h1 {
-  font-family: 'Bricolage Grotesque';
-  font-size:4rem ;
-  color: #302535;
-  text-align: center;
+  margin-left: 15%;
 
 }
 
@@ -351,8 +351,8 @@ img {
   top:50%;
   left:50%;
   transform:translate(-50%,-50%);
-  width:400px;
-  height:400px;
+  width:250px;
+  height:250px;
   background:#302535;
   box-shadow:0 0 0 0.5px #302535;
   border-radius:50%;
@@ -412,9 +412,8 @@ img {
   color: #302535;
   text-align: center;
   font-family: 'Bricolage Grotesque';
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.5;
-  padding-left: 10%;
 
 }
 .accordion {
@@ -721,15 +720,98 @@ img {
 .treatmentssdot:hover .treatmentstxt{
   visibility: visible;
 }
-
-
-.frase {
-  font-size: 2rem;
-  font-family: 'Bricolage Grotesque';
-  font-weight: 200;
-  color: #302535;
-  text-align: left;
+/*Causes*/
+.cause h1 {
+  margin: auto;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Quicksand";
 }
+
+.causetxt p {
+  font-size: 1rem;
+  font-family: 'Quicksand';
+  text-align: center;
+  color: #302535;
+  text-align: center;
+}
+
+.contcauses {
+  max-height: 800px;
+  width: 100%;
+  padding: 100px;
+  display: flex; 
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  background-color: #A7DCD3;
+}
+
+.contcauses h5 {
+  font-size: 2rem;
+  font-family: 'Quicksand';
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.cause {
+  display: flex;
+  height: 120px;
+  width: 300px;
+  justify-content: center;
+  overflow:hidden;
+}
+
+
+.causetxt {
+  align-self: center;
+  text-align: center;
+  font-family: 'Quicksand';
+  font-weight: 500;
+}
+
+
+.contpapa {
+  height: 120px;
+  width: 300px;
+  overflow:hidden;
+  background: var(--gradient);
+  transition: 1s;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contpapa:hover {
+  height: 300px;
+}
+
+
+
+/*frase*/
+.containerFrase{
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  width: 110%;
+
+}
+.pfrase p {
+  font-size: 1.5rem;
+  font-family: 'Quicksand';
+  font-weight: 00;
+  color: #302535;
+  text-align: center;
+  line-height: 1.5;
+}
+
+
 .frase:before {
   visibility: hidden;
 }
@@ -738,9 +820,14 @@ img {
   visibility: visible;
 
 }
-.containerFrase{
-  text-align: center; /* Centra el contenido horizontalmente dentro del contenedor */
+
+.pfrase h5 {
+  color: #C55B75;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: lighter;
 }
+
 /*aqui va scroll texo*/
 .scroll-anime-translateY {
 	-moz-transform: translateY(100px);
@@ -909,48 +996,6 @@ input[type="checkbox"]{
   width: 100%;
 }
 
-/*Diagrama Vaca */
-
-#Vaca {
-  align-items: center;
-  max-width: 50%;
-  height: 30%;
-  position: relative;
-  left: 25%;
-  margin-bottom: -5%;
-  margin-top: -10%;
-}
-
-
-
-#CLICK{
-  width: 8%;
-  display:relative;
-  margin-top: -60%;
-  margin-left: 80%;
-  
-  
-}
-
-
-
-
-#Diagrama {
-  display: none;
-  position: relative;
-  width: 50%;
-  left: -10%;
-  margin-top: -70%;
-  padding-bottom: 20%;
-}
-
-#cow {
-  position: relative;
-  display: flex;
-  left: 15%;
-  bottom: 25%;
-  margin-top: -5%;
-}
 
 /*tooltips cosas */
 .tooltipSignificadoBox {
