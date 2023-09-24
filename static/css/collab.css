@@ -440,3 +440,12 @@ button b { font-size:50px; font-weight:800; padding:0; line-height:2em; padding:
   border-radius: 5px 5px 0 0;
   transition: 1.2s ease-in-out;
 }
+.image--cover {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 20px;
+
+  object-fit: cover;
+  object-position: center right;
+}
