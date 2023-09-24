@@ -72,13 +72,13 @@
 	line-height: 1.6;
 }
 
-ol {
+.listol {
 	list-style: none;
 	counter-reset: list;
 	padding: 0 1rem;
 }
 
-li {
+.listli {
 	--stop: calc(100% / var(--length) * var(--i));
 	--l: 62%;
 	--l2: 88%;
@@ -97,7 +97,7 @@ li {
 	background-color: white;
 }
 
-li::before {
+.listli::before {
 	content: '';
 	display: block;
 	width: 100%;
