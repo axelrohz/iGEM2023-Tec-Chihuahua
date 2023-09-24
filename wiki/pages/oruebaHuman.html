@@ -1,495 +1,1228 @@
-<div class="dadHome">
-    <link rel="stylesheet" href="../../static/css/home.css" />
-    <link href="{{ url_for('static', filename = 'css/home.css') }}" rel="stylesheet">
+{% extends "layout.html" %}
+
+{% block title %}Human Pr prueba{% endblock %}
+{% block lead %}We ask every team to think deeply and creatively about whether their project is responsible and good for
+the world. Consider how the world affects your work and how your work affects the world.{% endblock %}
+
+{% block page_content %}
+{% block page_content %}
+<head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+
+<link href="{{ url_for('static', filename='css/pruebas.css') }}" rel="stylesheet">
+<header>
+  <section class="HUMANPRACTICES">
+    <h1 class="animate__animated animate__pulse">HUMAN PRACTICES</h1>
+  </section>
+  <div class="wave"style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-5.60,71.55 C182.73,158.40 442.82,-54.75 504.48,113.01 L500.00,150.00 L-10.08,154.45 Z" style="stroke: none; fill: #FFFF;"></path></svg></div>
+</header>
+<main>
+  <section class="our beginnings">
+    <h2 class="titulo1">OUR BEGINNINGS</h2>
+    <div class="TAFFY">
+      <img class="imagen-taffy" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/taffy-1.png" alt="" width="330" height="400">
+      <div class="texto" >
+        <p>
+          <p>Everything starts with a necessity, only initiative is required <br>to make a change. Since the beginning of our project, <br> we had our sights set on working with cows, these <br> beautiful animals that provide us with milk,<br>  a highly nutritious food for many (Morales-Ubaldo et al.,2023) <br>
+            While investigating current issues in our community, we<br>came across mastitis, a highly common infection in dairy <br> cows. This is when our journey begins. <br>
+            Aureobos a non-antibiotic treatment for mastitis, strives to <br> minimize the necessity for milk withdrawal during <br> treatment, In this way, food waste and economic losses <br> suffered by milk producers would be reduced. <br> Our goal is to address the challenges of today s world, <br> which encompass nutritional, economic, and health-related issues. 
+          </p>
+      </div>
+    </div>
+    
+    
+  </section>
+  <div>
+    <img class="animate__animated animate__pulse globo"  src="https://static.igem.wiki/teams/4607/wiki/human-2-0/glacial-indifference-34-removebg-preview.png" alt="" width="230" height="300" class="imagen-taffy"> 
+</main>
+<div> 
+  <img class="ODS2" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/ods2.jpeg" width="150" height="150">
+</div>
+<div> 
+  <img class="ODS3" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/ods3.png" width="150" height="150">
+</div>
+
+<h1 class="Titulo2">Addressing a global problem</h1>
+<p> Milk is a staple food worldwide, during the development of our project we noticed how important cows and their products are, not only for the community we live in, but for the world in general. In a world where 8 billion people live, a concerning issue comes to light the high demand for milk. In the year 2022, 366.800 million kilograms of milk found their place, and as we gaze to 2028, projections point to the consumption of 435.000 million kilograms (Orús, 2023) 2.  Having addressed the magnitude of the people with whom we share this staple food, we can emphasize on the problem we face.
+</p>
+
+<a href="#" class="ov-btn-slide-left boton" >Mastitis is estimated to cost<br>the global dairy industry $19.7B-32B USD CENTRAR<br>annually  </a>
+<p>This infection affects between 15% and 20% of the cattle population each year (Tomanić et al., 2023). 4 and so is a common and costly disease that influences dairy cattle, reducing milk quality and quantity.
+  We are getting closer to our local community! But first, let's talk about the importance of dairy in Mexico.
+  </p>
+
+<!-- POSTIT-->
+  
+  <!-- TEXTO-->
+<p>Considering the impact of the industry on the Mexican economy, and its importance in the production of the basic Mexican food basket, milk is one of the essentials in the diet of manyranking México as the 8th largest milk consumer  (Statista) 2. 
+</p>
+<h1>At home</h1>
+<p>In our hometown, Chihuahua the main livestock activity developed is the production of bovine milk, representing a high economic importance since it occupies the fourth place nationally in total milk production.</p>
+
+<!-- GRAFICOS 1-->
+<div class="grafico1"> 
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+  </script>
+  <!DOCTYPE html>
+  <html>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <body>
+
+  <canvas id="myChart" style="width:50%;max-width:300px"></canvas>
+
+  <script class="Jalisco">
+  var xValues = ["20.7", ""];
+  var yValues = [20.7, 79.3];
+  var barColors = [
+    "#5BC5AB",
+    "#C4C4C4",
+    
+  ];
+
+  new Chart("myChart", {
+    type: "doughnut",
+    data: {
+      labels: xValues,
+      datasets: [{
+        backgroundColor: barColors,
+        data: yValues
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: "Jalisco"
+      }
+    }
+  });
+  </script>
+</div>
+
+<!-- GRAFICOS 2-->
+<div class="grafico2">
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+    <!DOCTYPE html>
+    <html>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <body>
+  <canvas id="myChart2" style="width:50%;max-width:300px"></canvas>
+
+  <script class="Coahuila">
+  var xValues = ["11.8", ""];
+  var yValues = [11.8, 88.2];
+  var barColors = [
+    "#5BC5AB",
+    "#C4C4C4",
+    
+  ];
+
+  new Chart("myChart2", {
+    type: "doughnut",
+    data: {
+      labels: xValues,
+      datasets: [{
+        backgroundColor: barColors,
+        data: yValues
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: "Coahuila"
+      }
+    }
+  });
+  </script>
+</div>
+
+<!-- GRAFICOS 3-->
+<div class="grafico3">
+  <canvas id="myChart3" style="width:50%;max-width:300px"></canvas>
+
+  <script class="Durango">
+  var xValues = ["11.6", ""];
+  var yValues = [11.6, 88.4];
+  var barColors = [
+    "#5BC5AB",
+    "#C4C4C4",
+    
+  ];
+
+  new Chart("myChart3", {
+    type: "doughnut",
+    data: {
+      labels: xValues,
+      datasets: [{
+        backgroundColor: barColors,
+        data: yValues
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: "Durango"
+      }
+    }
+  });
+  </script>
+</div>
+</body>
+</html>
+<p>Consulting this information we noticed how important this problem was for our community. Here is when we started mapping people involved in the milking process, we wanted to listen with our own ears and see with our own eyes, how the industry and small-scale producers dealt with mastitis.
+</p>
+<h1>Where it all started
+</h1>
+<p>To gain a true understanding of the issue, we decided to experience it firsthand. We had a brainstorming session with our team, in which we identified the parties involved in the process and evaluated whether they were being positively or negatively affected. We came up with a value chain that goes from the treatments and the people involved in their development, to the public approval, or us, milk consumers. This approach played a significant role in shaping our project's success as it offered us valuable insights, identified needs, and outlined requirements for addressing the mastitis problem.
+</p>
+
+<div>
+  <img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/vacas-lecheras-1.png" style="float: inline-end;"  width="800" height="200">
+  <p>Before we aboard what we learned from each stakeholder, we want to address the importance each of them has in the development of our project.
+  </p>
+</div>
+<div>
+  <img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/what-is-the-importance-of-our-stakeholders-through-our-value-chain-4.png" style="float: inline-end;" width="800" height="400">
+</div>
+
+<!-- descripcion de stakeholders-->
+<!--treatment-->
+<div>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #BC3E5D;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #BC3E5D transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+</style>
+</head>
+<body style="text-align:left">
+
+
+
+<div class="popup" onclick="myFunction()" > <button class="boton1">TREATMENT</button>
+  <span class="popuptext" id="myPopup">They play an essential role in health care, due to their significant influence in decision making and success in treatment strategies.</span>
+</div>
+
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
+
+<!--MILK PROCESS-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport1" content="width=device-width, initial-scale=1">
+<style>
+/* Popup container - can be anything you want */
+.popup1 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup1 .popuptext1 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #B86277;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup1 .popuptext1::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #B86277 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup1 .show1 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+</style>
+</head>
+<body style="text-align:center">
+
+
+
+<div class="popup1" onclick="myFunction1()"> <button class="boton2">MILKING PROCESS</button>
+  <span class="popuptext1" id="myPopup1">Provide specialized knowledge and skills that are essential for effective management and prevention of this condition. Including clinical diagnosis, treatmente guidance, and facility and milking equipment design.  </span>
+</div>
+
+<script>
+// When the user clicks on div, open the popup
+function myFunction1() {
+  var popup = document.getElementById("myPopup1");
+  popup.classList.toggle("show1");
+}
+</script>
+
+</body>
+</html>
+
+<!--TRANSPORTATION-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport2" content="width=device-width, initial-scale=1">
+<style>
+/* Popup container - can be anything you want */
+.popup2 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup2 .popuptext2 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #BA796C;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup2 .popuptext2::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #BA796C transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup2 .show2 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+</style>
+</head>
+<body style="text-align:center">
+
+
+
+<div class="popup2" onclick="myFunction2()"><button class="boton3">TRANSPORTATION</button>
+  <span class="popuptext2" id="myPopup2">Ensure that milk from cows affected by mastitis is appropriately handled and segregated to prevent contamination. Record data related to milk volume, quality, and farm conditions during their visits.   </span>
+</div>
+
+<script>
+// When the user clicks on div, open the popup
+function myFunction2() {
+  var popup = document.getElementById("myPopup2");
+  popup.classList.toggle("show2");
+}
+</script>
+
+</body>
+</html>
+
+<!--DIAGNOSTIC-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport4" content="width=device-width, initial-scale=1">
+<style>
+/* Popup container - can be anything you want */
+.popup4 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup4 .popuptext4 {
+  visibility: hidden;
+  width: 160px;
+  background-color:#C88C63;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup4 .popuptext4::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #C88C63 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup4 .show4 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+</style>
+</head>
+<body style="text-align:center">
+
+
+
+<div class="popup4" onclick="myFunction4()"><button class="boton4">DIAGNOSTIC</button>
+  <span class="popuptext4" id="myPopup4">Provide accurate identification of the specific microorganisms involved. Explore new treatment strategies to combat microbial resistance and limit its spread. Deliver monitoring treatment progress through follow-up testing.   </span>
+</div>
+
+<script>
+// When the user clicks on div, open the popup
+function myFunction4() {
+  var popup = document.getElementById("myPopup4");
+  popup.classList.toggle("show4");
+}
+</script>
+
+</body>
+</html>
+<!--MILK PROCESING-->
+<br>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport5" content="width=device-width, initial-scale=1">
+<style>
+/* Popup container - can be anything you want */
+.popup5 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup5 .popuptext5 {
+  visibility: hidden;
+  width: 160px;
+  background-color:#F6AE2D;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup5 .popuptext5::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #F6AE2D transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup5 .show5 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+</style>
+</head>
+<body style="text-align:center">
+
+
+
+<div class="popup5" onclick="myFunction5()"><button class="boton5">MILK PROCESING</button>
+  <span class="popuptext5" id="myPopup5">They design and optimize the processing steps involved in turning raw milk into various dairy products, as well as the data collection on mastitis prevalence, allowing for monitoring of regional trends and the identification of potential outbreaks.
+    Segregate milk contaminated with mastitis.    </span>
+</div>
+
+<script>
+// When the user clicks on div, open the popup
+function myFunction5() {
+  var popup = document.getElementById("myPopup5");
+  popup.classList.toggle("show5");
+}
+</script>
+
+</body>
+</html>
+<!--QUALITY-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport6" content="width=device-width, initial-scale=1">
+<style>
+/* Popup container - can be anything you want */
+.popup6 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup6 .popuptext6 {
+  visibility: hidden;
+  width: 160px;
+  background-color:#AABA6D;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup6 .popuptext6::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #AABA6D transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup6 .show6 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+</style>
+</head>
+<body style="text-align:center">
+
+
+
+<div class="popup6" onclick="myFunction6()"><button class="boton6">QUALITY</button>
+  <span class="popuptext6" id="myPopup6">TImplement processes that ensure the safety and quality aspects that affect consumers health.
+    Analyze milk samples for quality and potential signs of mastitis. 
+     as well as the Design and implementation processes that ensure the safety and quality of dairy products.Maintain strict quality control standards.    </span>
+</div>
+
+<script>
+// When the user clicks on div, open the popup
+function myFunction6() {
+  var popup = document.getElementById("myPopup6");
+  popup.classList.toggle("show6");
+}
+</script>
+
+</body>
+</html>
+<!--NORMATIVITY-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport7" content="width=device-width, initial-scale=1">
+<style>
+/* Popup container - can be anything you want */
+.popup7 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup7 .popuptext7 {
+  visibility: hidden;
+  width: 160px;
+  background-color:#5BC6AB;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup7 .popuptext7::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #5BC6AB transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup7 .show7 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+</style>
+</head>
+<body style="text-align:center">
+
+
+
+<div class="popup7" onclick="myFunction7()"><button class="boton7">NORMATIVITY</button>
+  <span class="popuptext7" id="myPopup7">Establish the standards and values that guide our judgments and actions. We are trying to solve a problem that has important implications for human and animal welfare, environmental sustainability, and economic efficiency.    </span>
+</div>
+
+<script>
+// When the user clicks on div, open the popup
+function myFunction7() {
+  var popup = document.getElementById("myPopup7");
+  popup.classList.toggle("show7");
+}
+</script>
+
+</body>
+</html>
+<!--PUBLIC APPROVAL-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport8" content="width=device-width, initial-scale=1">
+<style>
+/* Popup container - can be anything you want */
+.popup8 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup8 .popuptext8 {
+  visibility: hidden;
+  width: 160px;
+  background-color:#5CE1E6;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup8 .popuptext8::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #5CE1E6 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup8 .show8 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+</style>
+</head>
+<body style="text-align:center">
+
+
+
+<div class="popup8" onclick="myFunction8()"><button class="boton8">PUBLIC APPROVAL</button>
+  <span class="popuptext8" id="myPopup8">We surveyed dairy consumers
+    to understand their awareness, perception, and acceptance of non-antibiotic alternative for treating mastitis. Additionally, we aimed to determine the level of knowledge about the mastitis issue in the community.   </span>
+</div>
+
+<script>
+// When the user clicks on div, open the popup
+function myFunction8() {
+  var popup = document.getElementById("myPopup8");
+  popup.classList.toggle("show8");
+}
+</script>
+
+</body>
+</html>
+</br>
+<div>
+
+
+  <H1>From the root</H1>
+  <img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/8c4fe1d6-384b-4618-a8fb-98eddae7652d-1-105-c.jpeg" style="float: inline-end;"  width="700" height="500">
+  <p>Since the very beginning we established contact with DELMAR´s zootechnical veterinary doctor Alfredo Arroyo, a cow shed in Delicias, Chihuahua. that supplies Alpura, one of the biggest dairy industries of the country. We could say this was actually our first encounter with the industry, in which we learned that good hygiene practices must be taken into account during the milking process.    
+  This interview was really important as it marks the start of our first objective, understanding the problem. 
     
 
+  </p>
+</div>
 
-    <div class="videoHolder">
-        <video class="videoHome" autoplay muted loop src="../../static/igemVideo.mp4">
-        </video>
-
-        <div class="scrollBTNHome"> V</div>
-    </div>
-
-
-
-    <div id="show1" class="homeUsContainer">
-        <div class="firstUS">
-            <div class="homeUsTitle"> Intro o algo </div>
-            <img class="homeUsIMG" src="https://seastreak.com/wp-content/themes/seastreak/build/images/2022-whale.jpg" alt="iGEM US">
-        </div>
-        <div class="secondUS">
-            <img class="homeUsIMG2" src="https://seastreak.com/wp-content/themes/seastreak/build/images/hp-nyc-brunch.jpg" alt="iGEM US">
-            <p class="homeUsText">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel massa a risus ornare dapibus. In iaculis urna at luctus condimentum. Nulla pellentesque consectetur pellentesque. Donec lectus quam, porttitor sed sem at, tristique maximus neque. In viverra et nisl non placerat. Cras sem sapien, auctor quis luctus sit amet, semper non arcu. Aliquam in turpis turpis. Nullam luctus tincidunt orci at laoreet. Nunc dapibus gravida elit. <br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel massa a risus ornare dapibus. In iaculis urna at luctus condimentum. Nulla pellentesque consectetur pellentesque. Donec lectus quam, porttitor sed sem at, tristique maximus neque. In viverra et nisl non placerat. Cras sem sapien, auctor quis luctus sit amet, semper non arcu. Aliquam in turpis turpis. Nullam luctus tincidunt orci at laoreet. Nunc dapibus gravida elit. 
+<p> 
+  <img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/oswald-1.png" align="left" width="750" height="500"> Let's talk about the milking process stakeholders, the process followed to obtain the milk, but also according to the interviews, this is usually the primary starting point where the problem develops. The milking process from which we interviewed 20 people, including Veterinary Zootechnicians, small, medium, and large producers, and dairy industries. During our path, we identified 4 main problems that they all had in common, high treatment costs, milk withdrawal, antibiotic resistance, and food waste.
+</p>
+<!--popup 1 -->
+<p><button class="boton10"><a href="#popup">HIGH TREATMENT COSTS</a></p></button> 
+<div id="popup" class="overlay">
+  <div id="popupBody">
+      <h2>Título de la ventana</h2>
+      <a id="cerrar" href="#">&times;</a>
+      <div class="popupContent">
+          <p><img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/99dbe4ac-afd1-439a-aa67-92923cc17713-1-105-c.jpeg" align="CENTRAR" width="450" height="300"> This is the milking parlor of Felipe, a small-scale producer in Delicias, when we first arrived we had a shock of reality, cows were being milked in a small concrete room in which only four cows could be milked at the same time. Felipe mentioned that instead of using a seal to clean the cow's nipples he used chlorine, it proved effective for him and was also cheaper.</p>
+          <br>
+          <p>Many small-scale producers do not have access to conventional treatments, because of the elevated prices at the market, they even use everyday supplies to ensure good hygiene in their sheds. On the other hand, we have the dairy industry, which has a full stock of antibiotics when needed.<br> However, mastitis incurs significant financial losses in the global dairy industry, amounting to an estimated 4.7B to 7.68B USD in veterinary fees and drug expenses (Behind The Bench Staff, 2022b) 3.
+          Veterinary zootechnicians who manage dairy cow sheds, <br>pointed out that mastitis represents the greatest expense in relation to cattle diseases, so no matter how expensive the treatments are, <br>both sectors are affected economically. 
+          Feel free to visit our <br>Entrepreneurship page to see the market and Aureobos comparison!
             </p>
-        </div>
-    </div>
+            <img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/465fba4f-5c3d-4fc1-95d3-e70d380494cb-1-105-c.jpeg" align="CENTRAR" width="450" height="300">
 
-
-    <div id="whyUs" class="whyUsHomeContainer">
-        <div class="whyUsTitle"> Why Us? </div>
-        <div class="whyUsText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel massa a risus ornare dapibus. In iaculis urna at luctus condimentum. Nulla pellentesque consectetur pellentesque. Donec lectus quam, porttitor sed sem at, tristique maximus neque. In viverra et nisl non placerat. Cras sem sapien, auctor quis luctus sit amet, semper non arcu. Aliquam in turpis turpis. Nullam luctus tincidunt orci at laoreet. Nunc dapibus gravida elit.</div>
-
-        <div class="whyUsFact">
-            <div class="whyUsNumber"> ##% </div>
-            <div class="whyUsNumText"> Number facts without us</div>
-        </div>
-                <div class="whyUsFact">
-            <div class="whyUsNumber"> ##% </div>
-            <div class="whyUsNumText"> Number facts with us </div>
-        </div>
-    </div>
-<svg id="visual" viewBox="0 0 1920 400" width="1920" height="400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><rect x="0" y="0" width="1920" height="400" fill="#16171d"></rect><path d="M0 239L40 221.3C80 203.7 160 168.3 240 170C320 171.7 400 210.3 480 208.5C560 206.7 640 164.3 720 137.8C800 111.3 880 100.7 960 118.2C1040 135.7 1120 181.3 1200 186.8C1280 192.3 1360 157.7 1440 139.2C1520 120.7 1600 118.3 1680 135.5C1760 152.7 1840 189.3 1880 207.7L1920 226L1920 401L1880 401C1840 401 1760 401 1680 401C1600 401 1520 401 1440 401C1360 401 1280 401 1200 401C1120 401 1040 401 960 401C880 401 800 401 720 401C640 401 560 401 480 401C400 401 320 401 240 401C160 401 80 401 40 401L0 401Z" fill="#ffffff" stroke-linecap="round" stroke-linejoin="miter"></path></svg>
-
-
-
-<div id="howUs" class="howWeDoItContainer">
-    <div class="howWeDoItTitle"> How we do it? </div>
-    <div class="howWeDoItText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel massa a risus ornare dapibus. In iaculis urna at luctus condimentum. Nulla pellentesque consectetur pellentesque. Donec lectus quam, porttitor sed sem at, tristique maximus neque. In viverra et nisl non placerat. Cras sem sapien, auctor quis luctus sit amet, semper non arcu. Aliquam in turpis turpis. Nullam luctus tincidunt orci at laoreet. Nunc dapibus gravida elit.</div>
-
-   
-    <div class="howWeDoItCard">
-        <div class="howWeDoItCardTitle"> Lorem ipsum.</div>
-        <img class="howWeDoItCardIMG" src="" alt="Card image cap"/>
-        <div class="howWeDoItCardText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel massa arisus ornare dapibus. </div>
-        <a href="#" class="howWeDoItBTN" > Learn More </a>
-    </div>
-    <div class="howWeDoItCard">
-        <div class="howWeDoItCardTitle"> Lorem ipsum.</div>
-        <img class="howWeDoItCardIMG" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq5NApsNnBQDf_EGyEvs5amE2iI62XM5eAGQ&usqp=CAU" alt="Card image cap"/>
-        <div class="howWeDoItCardText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel massa arisus ornare dapibus. </div>
-        <a href="#" class="howWeDoItBTN" > Learn More </a>
-    </div>
-    <div class="howWeDoItCard">
-        <div class="howWeDoItCardTitle"> Lorem ipsum.</div>
-        <img class="howWeDoItCardIMG" src="https://5183438.fs1.hubspotusercontent-na1.net/hub/5183438/hubfs/2021-03-20%20Intro%20to%20Biotech%20%233.jpeg?quality=low&width=600&name=2021-03-20%20Intro%20to%20Biotech%20%233.jpeg" alt="Card image cap"/>
-        <div class="howWeDoItCardText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel massa arisus ornare dapibus. </div>
-        <a href="#" class="howWeDoItBTN" > Learn More </a>
-    </div>
-
+      </div>
+  </div>
 </div>
+<link href="pruebas.css" rel="stylesheet" type="text/css" />
+<!--popup 2  no aparece toda la info, supongo que por que es muy pequeño el popup, no supe como meter un scroll down al texto dentro del pop up, asi tambien con el de arriba y los que faltan-->
+<p><button class="boton11"><a href="#popup1">MILK WITHDRAWAL</a></p></button> 
+<div id="popup1" class="overlay1">
+  <div id="popupBody1">
+      <h2>Título de la ventana</h2>
+      <a id="cerrar" href="#">&times;</a>
+      <div class="popupContent">
+          <p><img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/5749628d-71a1-4aea-973b-d40b61caaf89-1-105-c.jpeg" align="CENTRAR" width="450" height="300"> During our visit to the Zaragoza industry in Delicias, we had the opportunity to see a newborn calf. This sparked our curiosity and led us to ask ¿what it s done with the milk from sick cows? <br> They mentioned that, when mastitis is first detected at the parlor, the cow must be milked in a separate room, and the milk obtained during the infection and treatment was used in male calves, otherwise, it went to waste.
+            .</p>
+          <br>
+          <p>Once antibiotics are administered during the sickness, they are excreted through pee, excrement, and most importantly in milk.<br> During our interviews, the most mentioned antibiotics employed for treating mastitis were Ceftiofur, Mastex, Cefavet, Mastijet, Enromastic, and Pencivet. <br>The withdrawal period that every antibiotic requires reduces the overall milk production per dairy, contributing to economic losses for the producer. <br>As we can see in Fig.8, the most common antibiotics on the market require long milk withdrawal periods except for Ceftiofur. This is really concerning not only because of the economic losses but for the food that is going to waste during the process.
+            </p>
+            <img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/465fba4f-5c3d-4fc1-95d3-e70d380494cb-1-105-c.jpeg" align="CENTRAR" width="450" height="300">
+            <!-- AQUI VA grafica milk withrawal-->
 
-
-
-
-    <div class="homeCardsContainer">
-
-        <svg class="cardBackHome reverse" id="visual" viewBox="0 0 1920 768" width="1920" height="768"
-            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-            <path
-                d="M0 198L45.7 219.2C91.3 240.3 182.7 282.7 274.2 265.3C365.7 248 457.3 171 548.8 141.3C640.3 111.7 731.7 129.3 823 160.7C914.3"
-                fill="none" stroke="#52a595" stroke-width="40" stroke-linecap="round" stroke-linejoin="miter"></path>
-        </svg>
-        <svg class="cardBackHome" id="visual" viewBox="0 0 1920 768" width="1920" height="768"
-            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-            <path
-                d="M0 654L45.7 653.5C91.3 653 182.7 652 274.2 622C365.7 592 457.3 533 548.8 529.7C640.3 526.3 731.7 578.7 823 591.8C914.3 605 1005.7"
-                fill="none" stroke="#52a595" stroke-width="40" stroke-linecap="round" stroke-linejoin="miter"></path>
-        </svg>
-
-
-        <div id="cardContain5" class="cardContain">
-            <div class="cardText ">
-                <a href="#" class="cardHomeText">Link de Vacas</a>
-                <a href="#" class="cardHomeTitle">Cosas de Vacas aca todas turbias, datos para dar click</a>
-
-            </div>
-            <div class="cardHome">
-                <div onclick="selectCard0()" class="cardPos" style="--rotate:rotate(6deg);">
-                    <img class="cardHomeIMG"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4J_BhMKQjBg1CWy055K1nSRXCGR-zjsqkBw&usqp=CAU"
-                        alt="Card image cap">
-                </div>
-            </div>
-        </div>
-
-        <div id="cardContain4" class="cardContain">
-            <div class="cardText ">
-                <a href="#" class="cardHomeText">Link de Vacas</a>
-                <a href="#" class="cardHomeTitle">Cosas de Vacas aca todas turbias, datos para dar click</a>
-
-            </div>
-            <div class="cardHome">
-                <div onclick="selectCard5()" class="cardPos" style="--rotate:rotate(-4deg);">
-                    <img class="cardHomeIMG"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4J_BhMKQjBg1CWy055K1nSRXCGR-zjsqkBw&usqp=CAU"
-                        alt="Card image cap">
-                </div>
-            </div>
-        </div>
-
-
-        <div id="cardContain3" class="cardContain">
-            <div class="cardText ">
-                <a href="#" class="cardHomeText">Link de Vacas</a>
-                <a href="#" class="cardHomeTitle">Cosas de Vacas aca todas turbias, datos para dar click</a>
-
-            </div>
-            <div class="cardHome">
-                <div onclick="selectCard4()" class="cardPos" style="--rotate:rotate(-1deg);">
-                    <img class="cardHomeIMG"
-                        src="https://media-cldnry.s-nbcnews.com/image/upload/t_social_share_1200x630_center,f_auto,q_auto:best/streams/2013/June/130603/6C7700728-redditphoto.jpg"
-                        alt="Card image cap">
-                </div>
-            </div>
-        </div>
-
-
-        <div id="cardContain2" class="cardContain">
-            <div class="cardText ">
-                <a href="#" class="cardHomeText">Link de Vacas</a>
-                <a href="#" class="cardHomeTitle">Cosas de Vacas aca todas turbias, datos para dar click</a>
-
-            </div>
-            <div class="cardHome">
-                <div onclick="selectCard3()" class="cardPos" style="--rotate:rotate(2deg);">
-                    <img class="cardHomeIMG"
-                        src="data:image/jpeg;base64,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"
-                        alt="Card image cap">
-                </div>
-            </div>
-        </div>
-
-        <div id="cardContain1" class="cardContain">
-            <div class="cardText ">
-                <a href="#" class="cardHomeText">Link de Vacas</a>
-                <a href="#" class="cardHomeTitle">Cosas de Vacas aca todas turbias, datos para dar click</a>
-
-            </div>
-            <div class="cardHome">
-                <div onclick="selectCard2()" class="cardPos" style="--rotate:rotate(2deg);">
-                    <img class="cardHomeIMG"
-                        src="https://img.freepik.com/free-vector/cute-illustration-cow_53876-32701.jpg?w=2000"
-                        alt="Card image cap">
-                </div>
-            </div>
-        </div>
-
-
-        <div id="cardContain0" class="cardContain active" >
-            <div class="cardText">
-                <a href="#" class="cardHomeText">Link de Vacas</a>
-                <a href="#" class="cardHomeTitle">Cosas de Vacas aca todas turbias, datos para dar click</a>
-                <div class="cardSub"><< Use Arrows Or Click >></div>
-
-            </div>
-            <div class="cardHome">
-                <div onclick="selectCard1()" class="cardPos" style="--rotate:rotate(5deg);">
-                    <img class="cardHomeIMG"
-                        src="https://cdn.britannica.com/55/174255-050-526314B6/brown-Guernsey-cow.jpg"
-                        alt="Card image cap">
-                        <div class="arrowSub">  -> </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="homeSectionSelectorContainer">
-
-
-        <div class="homeSectionSelector active" id="selectSec1">
-            <div onclick="selectCard0()" class="homeSectionSelectorText">Project Description</div>
-        </div>
-
-        <div class="homeSectionSelector" id="selectSec2">
-            <div onclick="selectCard1()" class="homeSectionSelectorText">Human Practice</div>
-        </div>
-
-        <div class="homeSectionSelector" id="selectSec3">
-            <div onclick="selectCard2()" class="homeSectionSelectorText">Team</div>
-        </div>
-
-        <div class="homeSectionSelector" id="selectSec4">
-            <div onclick="selectCard3()" class="homeSectionSelectorText">Entrepreneurship</div>
-        </div>
-
-        <div class="homeSectionSelector" id="selectSec5">
-            <div onclick="selectCard4()" class="homeSectionSelectorText">Model</div>
-        </div>
-
-        <div class="homeSectionSelector" id="selectSec6">
-            <div onclick="selectCard5()" class="homeSectionSelectorText">Lab</div>
-        </div>
-
-    </div>
-
-    <script type="text/javascript">
-        let cardNumber = 0;
-        let cardContain0 = document.getElementById('cardContain0');
-        let cardContain1 = document.getElementById('cardContain1');
-        let cardContain2 = document.getElementById('cardContain2');
-        let cardContain3 = document.getElementById('cardContain3');
-        let cardContain4 = document.getElementById('cardContain4');
-        let cardContain5 = document.getElementById('cardContain5');
-        let select0 = document.getElementById('selectSec1');
-        let select1 = document.getElementById('selectSec2');
-        let select2 = document.getElementById('selectSec3');
-        let select3 = document.getElementById('selectSec4');
-        let select4 = document.getElementById('selectSec5');
-        let select5 = document.getElementById('selectSec6');
-
-
-        document.addEventListener('keyup', (e) =>{
-            if (e.code === "ArrowRight") cardNumber++;
-            else if (e.code === "ArrowLeft") cardNumber--;
-
-            if (cardNumber < 0) cardNumber = 0;
-            if (cardNumber > 5) cardNumber = 5;
-
-
-
-            switch(cardNumber){
-                case 0:
-                    cardContain0.classList.add('active');
-                    cardContain1.classList.remove('active');
-                    cardContain2.classList.remove('active');
-                    cardContain3.classList.remove('active');
-                    cardContain4.classList.remove('active');
-                    cardContain5.classList.remove('active');
-                    cardContain0.classList.remove('hidden');
-                    select0.classList.add('active');
-                    select1.classList.remove('active');
-                    break;
-                case 1:
-                    cardContain0.classList.remove('active');
-                    cardContain1.classList.add('active');
-                    cardContain2.classList.remove('active');
-                    cardContain3.classList.remove('active');
-                    cardContain4.classList.remove('active');
-                    cardContain5.classList.remove('active');
-                    cardContain1.classList.remove('hidden');
-                    cardContain0.classList.add('hidden');
-                    select1.classList.add('active');
-                    select0.classList.remove('active');
-                    select2.classList.remove('active');
-                    break;
-                case 2:
-                    cardContain0.classList.remove('active');
-                    cardContain1.classList.remove('active');
-                    cardContain2.classList.add('active');
-                    cardContain3.classList.remove('active');
-                    cardContain4.classList.remove('active');
-                    cardContain5.classList.remove('active');
-                    cardContain2.classList.remove('hidden');
-                    cardContain1.classList.add('hidden');
-                    select2.classList.add('active');
-                    select1.classList.remove('active');
-                    select3.classList.remove('active');
-                    break;
-                case 3:
-                    cardContain0.classList.remove('active');
-                    cardContain1.classList.remove('active');
-                    cardContain2.classList.remove('active');
-                    cardContain3.classList.add('active');
-                    cardContain4.classList.remove('active');
-                    cardContain5.classList.remove('active');
-                    cardContain3.classList.remove('hidden');
-                    cardContain2.classList.add('hidden');
-                    select3.classList.add('active');
-                    select2.classList.remove('active');
-                    select4.classList.remove('active');
-                    break;
-                case 4:
-                    cardContain0.classList.remove('active');
-                    cardContain1.classList.remove('active');
-                    cardContain2.classList.remove('active');
-                    cardContain3.classList.remove('active');
-                    cardContain4.classList.add('active');
-                    cardContain5.classList.remove('active');
-                    cardContain4.classList.remove('hidden');
-                    cardContain3.classList.add('hidden');
-                    select4.classList.add('active');
-                    select3.classList.remove('active');
-                    select5.classList.remove('active');
-                    break;
-                case 5:
-                    cardContain0.classList.remove('active');
-                    cardContain1.classList.remove('active');
-                    cardContain2.classList.remove('active');
-                    cardContain3.classList.remove('active');
-                    cardContain4.classList.remove('active');
-                    cardContain5.classList.add('active');
-                    cardContain5.classList.remove('hidden');
-                    cardContain4.classList.add('hidden');
-                    select5.classList.add('active');
-                    select4.classList.remove('active');
-                    break;
-            }
-
-
-        });
-
-
-        function selectCard0(){
-            cardNumber = 0;
-            cardContain0.classList.add('active');
-            cardContain1.classList.remove('active');
-            cardContain2.classList.remove('active');
-            cardContain3.classList.remove('active');
-            cardContain4.classList.remove('active');
-            cardContain5.classList.remove('active');
-            cardContain0.classList.remove('hidden');
-            cardContain1.classList.remove('hidden');
-            cardContain2.classList.remove('hidden');
-            cardContain3.classList.remove('hidden');
-            cardContain4.classList.remove('hidden');
-            cardContain5.classList.remove('hidden');
-            select0.classList.add('active');
-            select1.classList.remove('active');
-            select2.classList.remove('active');
-            select3.classList.remove('active');
-            select4.classList.remove('active');
-            select5.classList.remove('active');
-        }
-
-        function selectCard1(){
-            cardNumber = 1;
-            cardContain0.classList.remove('active');
-            cardContain1.classList.add('active');
-            cardContain2.classList.remove('active');
-            cardContain3.classList.remove('active');
-            cardContain4.classList.remove('active');
-            cardContain5.classList.remove('active');
-            cardContain1.classList.remove('hidden');
-            cardContain0.classList.add('hidden');
-            cardContain2.classList.remove('hidden');
-            cardContain3.classList.remove('hidden');
-            cardContain4.classList.remove('hidden');
-            cardContain5.classList.remove('hidden');
-            select1.classList.add('active');
-            select0.classList.remove('active');
-            select2.classList.remove('active');
-            select3.classList.remove('active');
-            select4.classList.remove('active');
-            select5.classList.remove('active');
-        }
-
-        function selectCard2(){
-            cardNumber = 2;
-            cardContain0.classList.remove('active');
-            cardContain1.classList.remove('active');
-            cardContain2.classList.add('active');
-            cardContain3.classList.remove('active');
-            cardContain4.classList.remove('active');
-            cardContain5.classList.remove('active');
-            cardContain2.classList.remove('hidden');
-            cardContain1.classList.add('hidden');
-            cardContain0.classList.add('hidden');
-            cardContain3.classList.remove('hidden');
-            cardContain4.classList.remove('hidden');
-            cardContain5.classList.remove('hidden');
-            select2.classList.add('active');
-            select1.classList.remove('active');
-            select0.classList.remove('active');
-            select3.classList.remove('active');
-            select4.classList.remove('active');
-            select5.classList.remove('active');
-        }
-
-        function selectCard3(){
-            cardNumber = 3;
-            cardContain0.classList.remove('active');
-            cardContain1.classList.remove('active');
-            cardContain2.classList.remove('active');
-            cardContain3.classList.add('active');
-            cardContain4.classList.remove('active');
-            cardContain5.classList.remove('active');
-            cardContain3.classList.remove('hidden');
-            cardContain2.classList.add('hidden');
-            cardContain1.classList.add('hidden');
-            cardContain0.classList.add('hidden');
-            cardContain4.classList.remove('hidden');
-            cardContain5.classList.remove('hidden');
-            select3.classList.add('active');
-            select2.classList.remove('active');
-            select1.classList.remove('active');
-            select0.classList.remove('active');
-            select4.classList.remove('active');
-            select5.classList.remove('active');
-        }
-
-        function selectCard4(){
-            cardNumber = 4;
-            cardContain0.classList.remove('active');
-            cardContain1.classList.remove('active');
-            cardContain2.classList.remove('active');
-            cardContain3.classList.remove('active');
-            cardContain4.classList.add('active');
-            cardContain5.classList.remove('active');
-            cardContain4.classList.remove('hidden');
-            cardContain3.classList.add('hidden');
-            cardContain2.classList.add('hidden');
-            cardContain1.classList.add('hidden');
-            cardContain0.classList.add('hidden');
-            cardContain5.classList.remove('hidden');
-            select4.classList.add('active');
-            select3.classList.remove('active');
-            select2.classList.remove('active');
-            select1.classList.remove('active');
-            select0.classList.remove('active');
-            select5.classList.remove('active');
-        }
-
-        function selectCard5(){
-            cardNumber = 5;
-            cardContain0.classList.remove('active');
-            cardContain1.classList.remove('active');
-            cardContain2.classList.remove('active');
-            cardContain3.classList.remove('active');
-            cardContain4.classList.remove('active');
-            cardContain5.classList.add('active');
-            cardContain5.classList.remove('hidden');
-            cardContain4.classList.add('hidden');
-            cardContain3.classList.add('hidden');
-            cardContain2.classList.add('hidden');
-            cardContain1.classList.add('hidden');
-            cardContain0.classList.add('hidden');
-            select5.classList.add('active');
-            select4.classList.remove('active');
-            select3.classList.remove('active');
-            select2.classList.remove('active');
-            select1.classList.remove('active');
-            select0.classList.remove('active');
-        }
-
-
-    </script>
-
-    <script type="text/javascript">
-        window.addEventListener('scroll',reveal);
-
-        function reveal(){
-            let homeUsContainer = document.getElementById('show1');
-            let whyUs = document.getElementById('whyUs');
-            let howUs = document.getElementById('howUs');
-
-            let revealUs = homeUsContainer.getBoundingClientRect().top;
-            let revealWhy = whyUs.getBoundingClientRect().top;
-            let revealHow = howUs.getBoundingClientRect().top;
-
-            if (revealHow < 440){
-                howUs.classList.add('active');
-            }
-            else{
-                howUs.classList.remove('active');
-            }
-            if(revealWhy < 340){
-                whyUs.classList.add('active');
-            }
-            else{
-                whyUs.classList.remove('active');
-            }
-
-            if(revealUs < 200){
-                homeUsContainer.classList.add('active');
-            }
-            else{
-                homeUsContainer.classList.remove('active');
-            }
-        }
-
-    </script>
-
+      </div>
+  </div>
 </div>
+<link href="pruebas.css" rel="stylesheet" type="text/css" />
+ <!--grafica milk withrawal-->
+<body>
+  <div class="board">
+      <div class="titulo_grafica">
+          <h3 class="t_grafica">MILK WITHDRAWAL</h3>
+      </div>
+      <div class="sub_board">
+          <div class="sep_board"></div>
+          <div class="cont_board">
+              <div class="graf_board">
+                  <div class="barra">
+                      <div class="sub_barra b1">
+                          <div class="tag_g">90%</div>
+                          <div class="tag_leyenda">MASTEX</div>
+                      </div>
+                  </div>
+                  <div class="barra">
+                      <div class="sub_barra b2">
+                          <div class="tag_g">90%</div>
+                          <div class="tag_leyenda">MASTIJET</div>
+                      </div>
+                  </div>
+                  <div class="barra">
+                      <div class="sub_barra b3">
+                          <div class="tag_g">80%</div>
+                          <div class="tag_leyenda">CEFAVET</div>
+                      </div>
+                  </div>
+                  <div class="barra">
+                      <div class="sub_barra b4">
+                          <div class="tag_g">73%</div>
+                          <div class="tag_leyenda">PENCIVET</div>
+                      </div>
+                  </div>
+                  <div class="barra">
+                      <div class="sub_barra b5">
+                          <div class="tag_g">0%</div>
+                          <div class="tag_leyenda">CEFTIOFUR</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="tag_board">
+                  <div class="sub_tag_board">
+                      <div>100</div>
+                      <div>90</div>
+                      <div>80</div>
+                      <div>70</div>
+                      <div>60</div>
+                      <div>50</div>
+                      <div>40</div>
+                      <div>30</div>
+                      <div>20</div>
+                      <div>10</div>
+                  </div>
+              </div>
+         </div> 
+          <div class="sep_board"></div>
+     </div>    
+  </div>
+
+</body>
+<!--popup 3 -->
+<p><button class="boton12"><a href="#popup3">ANTIBIOTIC RESISTANCE</a></p></button> 
+<div id="popup3" class="overlay3">
+  <div id="popupBody3">
+      <h2>Título de la ventana</h2>
+      <a id="cerrar" href="#">&times;</a>
+      <div class="popupContent">
+          <p><img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/73772815-a643-4247-a5ae-0ef57b50eb03-1-105-c.jpeg" align="CENTRAR" width="450" height="300">
+          <p>13 of 20 small producers and Veterinary Zootecnitians mentioned antibiotic resistance as an actual or potential future problem for them, this was very concerning.
+            </p>
+      </div>
+  </div>
+</div>
+<link href="pruebas.css" rel="stylesheet" type="text/css" />
+<!-- seccion 2-->
+<p> 
+  <img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/2.png" align="left" width="300" height="250"> We've arrived at the second section of our value chain, the milk processing and diagnostic areas, which were fundamental in the development of our project and a complete understanding of the problem we are facing. Milk collection and dairy industry provided us with regulations and requirements that they ask for when a pipe of milk arrives at the center. This place processes milk from small producers and assures good quality milk. Mastitis is directly reflected in the number of somatic cells present in milk, which makes it a crucial reference to determine its acceptability in collection centers or for companies that process milk-derived foods
+  
+</p>
+<img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/f9092f74-238c-4659-a6eb-b0bc53dd8037-1-105-c.jpeg" align="left" width="750" height="500">
+<p>From the collection center LICONSA in Delicias, we learned that somatic cells are an important component present in milk and in the udder that indicates health and well-being for the cow. However high SCC is associated with, an alteration in milk composition, bacteriological problems in milk, and modifications of dairy products characteristics. Therefore the higher the somatic cell count in the milk, the lower the payment to the producers since this indicates a lower quality of the product.<br>There is a variety of detection methods used for SCC, during the interviews with our stakeholders they mentioned three really important methods, California Test, Wisconsin Test, and milk conductivity.
+</p>
+<!--popup 4-->
+<p><button class="boton13"><a href="#popup4">CALIFORNIA TEST</a></p></button> 
+<div id="popup4" class="overlay4">
+  <div id="popupBody4">
+      <h2>Título de la ventana</h2>
+      <a id="cerrar" href="#">&times;</a>
+      <div class="popupContent4">
+          
+          <p>This test is the most commonly used in the industry for subclinical mastitis detection. It is a qualitative measurement that involves a reactant (Sodium Lauryl sulfate 2%, Crystal violet 0.0033%, Aqueous vehicle q.s., reagent in solution) 11
+            and a blast of milk. In our attempt to understand the problem, we had the opportunity to milk firsthand at CBTa 90 in Cuauhtemoc, Chih. In which they showed the team from start to finish the milking routine to obtain the delicious milk!, if you want to know more about this feel free to read the box below! 
+            </p>
+      </div>
+  </div>
+</div>
+<link href="pruebas.css" rel="stylesheet" type="text/css" />
+<!--popup 5-->
+<p><button class="boton14"><a href="#popup5">WISCONSIN TEST</a></p></button> 
+<div id="popup5" class="overlay5">
+  <div id="popupBody5">
+      <h2>Título de la ventana</h2>
+      <a id="cerrar" href="#">&times;</a>
+      <div class="popupContent5">
+          <p>We also had an interview with Gabriela Mapes, a stakeholder in the pharmaceutical area, as she works with Zoetis a well-known global animal health company that specializes in the development and manufacturing of veterinary pharmaceuticals, vaccines, diagnostics, and various other products and services related to animal health and well-being. During our interview, she mentioned the use of WMT test for SC, so we delved into finding out what it consisted.
+           </p>
+          <p><img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/captura-de-pantalla-2023-09-10-a-la-s-22-33-29.png" align="CENTRAR" width="450" height="300">
+            <p>The Wisconsin Mastitis Test (WMT) was created with laboratories in mind, and it's like a detective tool for milk quality. It helps us figure out the amount of somatic cells present in fresh blended milk,<br>milk from chilling tanks, and even milk from individual cows. It is similar to the California Test (CMT) in terms of the solution it uses. But here's the cool part: instead of just giving a qualitative result like the CMT, the WMT gives us a quantitative result, that is detailed on the numbers based on how thick the milk becomes. It's like having a precise measurement to understand the milk's health.<br>
+            WMT consists of using a millimeter-marked tube into which you place 2 ml of milk, along with a mixture of 2 ml of CMT reagent and distilled water in equal parts, which is then mixed.<br>
+            The results are linked to the milliliter markings on the tube and what they tell us about somatic cells. <br>We've got this handy chart that helps us understand what it all means. So, if a herd scores low, for example between 3 and 12, it's doing pretty well—no major worries. But if the score is above 12, it signifies a great concern, and we've got to jump into action right away (BEDOLLA CEDEÑO) 12.
+              
+            </p>   
+      </div>
+  </div>
+</div>
+<link href="pruebas.css" rel="stylesheet" type="text/css" />
+<!--popup 6-->
+<p><button class="boton15"><a href="#popup6">MILK CONDUCTIVITY</a></p></button> 
+<div id="popup6" class="overlay6">
+  <div id="popupBody6">
+      <h2>Título de la ventana</h2>
+      <a id="cerrar" href="#">&times;</a>
+      <div class="popupContent4">
+          
+          <p>Measurement of electrical conductivity (EC) is a method frequently used in dairy cows during milking in milking parlors, but especially in robotic milking as a low-cost mastitis detection method. Therefore conductivity of milk seems to hold promise as an indicator of subclinical mastitis (Fernando et al., 1982; Uhrinčať et al., 2019) 13,14.
+            </p>
+      </div>
+  </div>
+</div>
+<link href="pruebas.css" rel="stylesheet" type="text/css" />
+<!-- seccion 3-->
+<p aling="left" > 
+  <img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/3.png" align="LEFT" width="600" height="450"> Every interview we conducted within this part of our value chain contributed to improving our project's design.<br> It helped us gain a deeper understanding of the problem, and hands-on experience helped us appreciate all the work involved in the milking process. Now, we are moving on to explore some of the more technical aspects of our value chain.<br>Finally we, milk consumers, what do we know and think about this problem?, and how can we contribute? <br>This is why we interviewed 24 milk consumers in order to measure their level of knowledge and concerns regarding mastitis.  
+</p>
+<p aling="left">Now you know our stakeholders and how important they are to us, and how addressing these challenges is of utmost importance to safeguard both animal and human health while ensuring sustainable dairy production practices.<br>  Developing alternative treatment approaches and promoting prudent antibiotic use are critical steps in mitigating the impact of mastitis on the dairy industry.
+</p>
+<H1>
+  Values of Aureobos
+</H1>
+<p aling="left">
+  Since the beginning of our project, we decided that we wanted a project based on and aligned with positive values. <br> We've prioritized values that address the concerns of our stakeholders, particularly dairy farmers who directly experience the problem of mastitis. <br> Our values are chosen carefully to reflect our responsibility to the world, the broader population, and the environment.
+</p>
+<br> 
+<p aling="left">These values are central to our commitment to developing a project that positively impacts our community and the world. <br>We have made several key commitments, including focusing on our stakeholders to effectively solve the problem, respecting their privacy, using collected information solely for academic and research purposes, maintaining our integrity and moral values at all times,<br> ensuring the safe development of the project both inside and outside the laboratory, and utilizing synthetic biology to reduce food waste and prevent future health issues in our community and beyond. </p>
+<br>
+<p aling="left">Hover over the values to learn how the value relates to Aureobos and how we implement it. 
+</p>
+
+<!--milking process NO VA AQUI, pero en el documento viene donde va, solo que lo tuve que poner aqui por que se me olvido hacelo y pues ya lo puse aqui-->
+<!--popup7-->
+<p><button class="boton16"><a href="#popup7">PRESEAL APPLICATION</a></p></button> 
+<div id="popup7" class="overlay7">
+  <div id="popupBody7">
+      <h2>Título de la ventana</h2>
+      <a id="cerrar" href="#">&times;</a>
+      <div class="popupContent7">
+          <p>The udders are cleaned with an iodine or chlorine solution to eliminate dirt and microorganisms outside.
+           </p>
+          <p><img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/a5e880af-915f-4c3a-8078-ebc51b8b72ba-1-105-c.jpeg" align="CENTRAR" width="450" height="300">  
+      </div>
+  </div>
+</div>
+<link href="pruebas.css" rel="stylesheet" type="text/css" />
+<!--popup8-->
+<p><button class="boton17"><a href="#popup8">TEAT DRYING</a></p></button> 
+<div id="popup8" class="overlay8">
+  <div id="popupBody8">
+      <h2>Título de la ventana</h2>
+      <a id="cerrar" href="#">&times;</a>
+      <div class="popupContent8">
+          <p>Dry the teat with a paper/cloth towel, to retire the solution excess from the preseal application.
+           </p>
+          <p><img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/captura-de-pantalla-2023-09-10-a-la-s-23-09-51.png" align="CENTRAR" width="450" height="300">  
+      </div>
+  </div>
+</div>
+<link href="pruebas.css" rel="stylesheet" type="text/css" />
+<!--popup9-->
+<p><button class="boton18"><a href="#popup9">TEAT DRYING</a></p></button> 
+<div id="popup9" class="overlay9">
+  <div id="popupBody9">
+      <h2>Título de la ventana</h2>
+      <a id="cerrar" href="#">&times;</a>
+      <div class="popupContent9">
+          <p>This step is crucial for detection in milk changes, teat drying, and attachment of the cluster unit that performs the milking.
+           </p>
+          <p><img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/eb1a73bc-671f-4aa9-8390-1e6d3729bae8-1-105-c.jpeg" align="CENTRAR" width="450" height="300">  
+      </div>
+  </div>
+</div>
+<link href="pruebas.css" rel="stylesheet" type="text/css" />
+<!--popup10-->
+<p><button class="boton19"><a href="#popup10">ATTACHMENT OF THE CLUSTER UNIT</a></p></button> 
+<div id="popup10" class="overlay10">
+  <div id="popupBody10">
+      <h2>Título de la ventana</h2>
+      <a id="cerrar" href="#">&times;</a>
+      <div class="popupContent9">
+          <p>Milking perform, the machine must suck slowly, so as not to hurt the udder. Usually imitates the calves sucking.
+           </p>
+          <p><img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/8920e377-55c3-49ec-be75-22d8d3d6c7b9-1-105-c.jpeg" align="CENTRAR" width="450" height="300">  
+      </div>
+  </div>
+</div>
+<link href="pruebas.css" rel="stylesheet" type="text/css" />
+<!--popup11-->
+<p><button class="boton20"><a href="#popup11">POST MILKING TEAT SEAL</a></p></button> 
+<div id="popup11" class="overlay11">
+  <div id="popupBody11">
+      <h2>Título de la ventana</h2>
+      <a id="cerrar" href="#">&times;</a>
+      <div class="popupContent9">
+          <p>It's crucial to protect the udder because teat closure occurs within half to an hour, and during this time, microorganisms could enter.
+           </p>
+          <p><img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/b3d22dac-7bfe-4ec0-885c-a2b7d34beb1d-1-105-c.jpeg" align="CENTRAR" width="450" height="300">  
+      </div>
+  </div>
+</div>
+<link href="pruebas.css" rel="stylesheet" type="text/css" />
+
+<!--valores, esto va abajo de la info de valores, no supe como hacer que el boton tuviera forma de circulo, pero aqui deje el codigo de como se hace un circulo-->
+</p><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+     width="120" height="120" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="50"
+          fill="aqua" />
+</svg>
+<!--valores, esto va abajo de la info de valores, solo quiero q el pop up sea un circulo-->
+<!--popup12-->
+<p><button class="boton21"><a href="#popup12">PUBLIC HEALTH</a></p></button> 
+<div id="popup12" class="overlay12">
+  <div id="popupBody12">
+      <a id="cerrar" href="#">&times;</a>
+      <div class="popupContent12"
+          <p><img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/public-health-1.png" align="CENTRAR" width="450" height="300">  
+      </div>
+  </div>
+</div>
+<link href="pruebas.css" rel="stylesheet" type="text/css" />
+<!--popup13-->
+<p><button class="boton22"><a href="#popup13">ANTIWASTE</a></p></button> 
+<div id="popup13" class="overlay13">
+  <div id="popupBody13">
+      <a id="cerrar" href="#">&times;</a>
+      <div class="popupContent13"
+          <p><img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/public-health-4.png" align="CENTRAR" width="450" height="300">  
+      </div>
+  </div>
+</div>
+<link href="pruebas.css" rel="stylesheet" type="text/css" />
+
+<!--popup14-->
+<p><button class="boton23"><a href="#popup14">INTEGRITY</a></p></button> 
+<div id="popup14" class="overlay14">
+  <div id="popupBody14">
+      <a id="cerrar" href="#">&times;</a>
+      <div class="popupContent14"
+          <p><img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/public-health-5.png" align="CENTRAR" width="450" height="300">  
+      </div>
+  </div>
+</div>
+<link href="pruebas.css" rel="stylesheet" type="text/css" />
+<!--popup15-->
+<p><button class="boton24"><a href="#popup15">PRIVACY</a></p></button> 
+<div id="popup15" class="overlay15">
+  <div id="popupBody15">
+      <a id="cerrar" href="#">&times;</a>
+      <div class="popupContent15"
+          <p><img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/public-health-6.png" align="CENTRAR" width="450" height="300">  
+      </div>
+  </div>
+</div>
+<link href="pruebas.css" rel="stylesheet" type="text/css" />
+<!--popup16-->
+<p><button class="boton25"><a href="#popup16">SUSTAINTABILITY</a></p></button> 
+<div id="popup16" class="overlay16">
+  <div id="popupBody16">
+      <a id="cerrar" href="#">&times;</a>
+      <div class="popupContent16"
+          <p><img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/public-health-8.png" align="CENTRAR" width="450" height="300">  
+      </div>
+  </div>
+</div>
+<link href="pruebas.css" rel="stylesheet" type="text/css" />
+<p>Our project is aimed at addressing a critical issue in the dairy industry: the excessive waste of milk caused by antibiotic treatments for mastitis in dairy cows. To address this issue, our project proposes a non-antibiotic alternative that is effective, safe, and sustainable.<br> This approach also contributes to fighting antibiotic resistance, a major public health concern, by reducing antibiotic use in dairy farming.<br> Additionally, the project focuses on environmental friendliness, minimizing the negative impact of dairy farming by reducing antibiotic residues in the soil and water.<br> It prioritizes animal welfare, providing a non-invasive and painless treatment for dairy cows, allowing them to maintain normal lactation. For dairy farmers, this solution offers economic benefits, cutting losses related to mastitis and increasing consumer trust and satisfaction. <br>In this way, we ensure that our project is not only responsible and beneficial for the world but also addresses key challenges in the dairy industry, benefiting animals, farmers, and the environment while contributing to public health. </p>
+<img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/captura-de-pantalla-2023-09-11-a-la-s-0-13-40.png" align="CENTRAR" width="300" height="300">  
+<p>
+  As we listened to people facing this challenge on a daily basis, it became evident that we have the opportunity to offer them a practical solution in the form of a product—an alternative to existing remedies. <br> We have strategically chosen to adopt an intramammary infusion presentation for AureoBos. This decision is rooted in the advantages of a more direct application, as well as eliminating the need for thorough operator training. <br>  To expand our project, we aim to transform it into a startup and embrace an entrepreneurial mindset where we visualize our project being implemented and used as a cream formulated for intramammary infusion, administered through the affected teat of the cow, by those who are currently facing the challenge of mastitis — dairy cattle owners influenced by veterinarian zootechnicians,<br>  which is thoroughly explained in our entrepreneurship section. 
+Besides our end users, we envision AureoBos becoming a precedent in synthetic biology for innovative and technological solutions to other agricultural and medical challenges.<br> As the world has been evolving, a series of complex challenges have emerged.<br>  More than ever, being able to impact the world through a multifaceted approach has become indispensable. After having heard the different consequences of mastitis through our stakeholders during our visits and interviews, with AureoBos we aim to have a meaningful impact on multiple levels which are listed below.<br>  We have learned through our fieldwork, mostly that contaminated milk which is withdrawn from cows that suffer from mastitis goes directly to waste or in some cases, in small communities, it is sold for a lower price.<br>  With this we will also be impacting on the reduction and mitigation of milk waste, as well as securing proper nutrition without the possibility of a transmission of a zoonotic disease.
+</p>
+<img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/impacto-en-a-reas-1.png" align="CENTRAR" width="800" height="600">  
+<p>
+</p>
+<img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/impacto-en-a-reas-2.png" align="CENTRAR" width="850" height="600">  
+<p>
+  <p>
+    As any scientific emerging project, there is potential for it to be misused or generate unintended consequences. While we aim to develop AureoBos as an alternative treatment for bovine mastitis in a responsible and beneficial way, it is important to consider certain risks in order to plan how to manage them. <br>Inside the lab, while developing our project, the team has received proper training in order to work in a safe and responsible environment, following a series of measures and guidelines further explained in the safety section. On the other hand, some of the risks we visualize outside the lab are; the possible unregulated use of AureoBos which, without proper guidance, could lead to ineffective treatment or unintended side effects;<br> the overreliance on it, which is important to remember that different cases of mastitis may require different approaches, and a balanced approach to treatment is necessary; an unauthorized distribution that could lead to uncontrolled use and potential safety issues; and, an environmental negative impact where AureoBos is not disposed correctly.<br> Each of these risks, as well as some other legal considerations that directly impact the development of our product, is further detailed and addressed in our legal strategy which you can find on our entrepreneurship section.
+
+  </p>
+  <br>
+  <p>
+    Mastitis knows no borders—it's a challenge uniting dairy farmers worldwide. With our project, we aim to break these boundaries and make a global impact.<br> Successfully implementing our solution will empower farmers and transform dairy enterprises across the globe, one cow at a time.
+  </p>
+  <br>
+  <p>
+    Reflection & conclusion
+Since the start of iGEM we have been motivated by the purpose of developing a project that will revolutionize our community & the world, while always adhering to our core values. To make this possible, at the beginning we mapped out the areas and stakeholders involved in the problem, to have a broader perspective of it. .<br>We explored the best way to connect with all the involved parts, to deeply understand how they experience the problem and how it affects them. We conducted interviews helping us detect the insights of the problem that aren t perceptible by outside, and also validating the way that was intended to approach it..<br> Through these interactions, the detailed analysis, and the literature research, we were able to understand the problem in a better way, and develop a meaningful solution for it.
+  </p>
+  <!--La info de este aun no esta terminada-->
+  <p>
+    Click on the circles in the diagram below to explore how our value chain impacts the implementation of our project, <br>providing a summary of the potential and challenges associated with the development of our project, <br>depending on our stakeholder’s areas.
+
+  </p>
+
+{% endblock %}
