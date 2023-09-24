@@ -96,9 +96,8 @@ body {
   }
   
   #header .logo img {
-    padding: 0;
-    margin: 0;
-    max-height: 40px;
+    max-height: 50px;
+
   }
   
   @media (max-width: 768px) {

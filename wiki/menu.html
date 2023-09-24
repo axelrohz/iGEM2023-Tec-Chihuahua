@@ -14,7 +14,7 @@
   <div class="container d-flex">
 
     <div class="logo mr-auto">
-      <h1 class="text-light", style="font-family: 'Oswald';"><a href=""><span>AureoBos</span></a></h1>
+      <h1 class="text-light", style="font-family: 'Oswald';"><a href=""><span> <img class="logomenu" src="https://static.igem.wiki/teams/4607/wiki/fonts/aureobos.png" alt=""></span></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
     </div>
@@ -23,14 +23,14 @@
 
     <nav class="nav-menu d-none d-lg-block">
       <ul>
-        <li><a class="active" href="{{ url_for('pages', page='home') }}">Home</a></li>
+        <li><a href="{{ url_for('pages', page='home') }}">Home</a></li>
         
             
         <li class="drop-down"><a href="">Project</a>
           <ul>
             
             
-            <li><a href="{{ url_for('pages', page='description') }}">Description</a></li>
+            <li><a class ="hipervinculoaqua" href="{{ url_for('pages', page='description') }}">Description</a></li>
             <li><a href="{{ url_for('pages', page='contribution') }}">Contributions</a></li>
             <li><a href="{{ url_for('pages', page='safety') }}">Safety</a></li>
             <li><a href="{{ url_for('pages', page='engineering') }}">Engineering</a></li>
@@ -41,7 +41,7 @@
         </li>
        
           
-          <li><a class=active href="{{ url_for('pages', page='human-practices') }}">human practice</a></li>
+          <li><a href="{{ url_for('pages', page='human-practices') }}">Human Practices</a></li>
             
          
         
@@ -101,4 +101,17 @@
   .text-light {
     font-family: 'Oswald';
   }
+
+  .hipervinculoaqua {
+  font-family: 'Quicksand';
+  font-weight: 700;
+  color: #5BC5AB;
+}
+
+.hipervinculoaqua:hover {
+  font-family: 'Quicksand';
+  font-weight: 700;
+  color: #5BC5AB;
+  text-decoration: underline;
+}
 </style>

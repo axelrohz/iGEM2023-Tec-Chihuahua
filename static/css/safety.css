@@ -1,0 +1,84 @@
+.fra h1 {
+    font-family: 'Bricolage Grotesque';
+    font-size: 3rem;
+    font-weight: bold;
+    background-image: linear-gradient(#C55B75,#D27063,#DE8551);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+  }
+
+.hipervinculoaqua {
+    font-family: 'Quicksand';
+    font-weight: 700;
+    color: #5BC5AB;
+  }
+  
+  .hipervinculoaqua:hover {
+    font-family: 'Quicksand';
+    font-weight: 700;
+    color: #5BC5AB;
+    text-decoration: underline;
+  }
+    
+  
+      p {
+          align-content: center;
+          justify-content: center;
+          font-size: 1.2rem;
+          margin:30px;
+          font-weight: 500;
+          font-family: 'Quicksand';
+          text-align: justify;
+          line-height: 1.5;
+          color: black;
+      }
+      .wavtit h2 {
+        text-align: center;
+        font-family: 'Bricolage Grotesque';
+        font-size:5rem; 
+        font-weight:500; 
+        color:#F3F3FA;  
+        display: grid;
+        align-items: center;
+        max-width: 100%;
+    }
+
+
+    .uno h1 {
+        font-family: 'Bricolage Grotesque';
+        font-size: 7rem;
+        font-weight: bold;
+        background-image: linear-gradient(#C55B75,#D27063,#DE8551);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        text-align: center;
+      }
+      
+      .piedefig {
+        text-align: center;
+        font-size: 1rem;
+      }
+      
+          h2 {
+            text-align: center;
+            font-family: 'Bricolage Grotesque';
+            font-size:3vw; 
+            font-weight:500; 
+            color:#302535;  
+            display: grid;
+            grid-template-columns: 1fr max-content 1fr;
+            grid-template-rows: 16px 0;
+            grid-gap: 22px;
+            align-items: center;
+            max-width: 100%;
+            padding-top: 100px;
+        }
+         h2:after, h2:before {
+          content: " ";
+          display: block;
+          border: 2px solid #5BC5AB;
+          background-color:#f8f8f8;
+      }

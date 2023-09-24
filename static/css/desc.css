@@ -110,7 +110,8 @@
   align-items: center;
   height: auto;
   margin: 30px;
-  background-color: transparent
+  background-color: transparent;
+  margin-top:100px;
 }
 
 
@@ -417,9 +418,10 @@ img {
 
 }
 .accordion {
-  width: 90%;
+  width: 0%;
   max-width: 1000px;
   margin: 2rem auto;
+  justify-self: center;
 }
 .accordion-item {
   background-color: #fff;
@@ -427,6 +429,8 @@ img {
   margin: 1rem 0;
   border-radius: 0.5rem;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+  width: 90%;
+  justify-self: center;
 
 }
 .accordion-item-header {
@@ -482,7 +486,7 @@ img {
   margin: auto;
   align-items: center;
   max-height: 900px;
-  max-width: 800px;
+  max-width: 900px;
   padding-bottom: 50px;
   padding-top: 30px;
   gap: 20px;
@@ -501,8 +505,7 @@ img {
   font-weight: 500;
   font-size: 1.3rem;
   justify-self: center;
-  margin-top: 10px;
-  margin-left: 50px;
+
 }
 
 .antibioticstxt {
@@ -533,7 +536,7 @@ img {
   padding-right: 100px;
 }
 
-.antibioticscont, h3 {
+.antibioticscont h3 {
   font-size: 1.2rem;
   font-family: 'Quicksand';
   color: #302535;
@@ -647,7 +650,6 @@ img {
 .treatmentscont h1 {
   font-size: 2.2rem;
   font-family: 'Quicksand';
-  text-transform:capitalize;
   color: #302535;
   text-align: center;
   margin-top: 10px;
@@ -872,7 +874,7 @@ img {
 /*tabla methodology */
 
 .blog-card{
-  position: absolute;
+  position: relative;
   height: 370px;
   width: 95%;
   max-width: 850px;
@@ -1119,7 +1121,7 @@ input[type="checkbox"]{
   box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
   display: block;
   margin: auto;
-  text-align: center;
+  align-content: center;
   line-height: 1;
   font-family: 'Quicksand';
 }
@@ -1127,13 +1129,253 @@ input[type="checkbox"]{
 
 .pinup {
   background :#5BC5AB;
-  -webkit-transform: rotate(3.5deg);
-  -moz-transform: rotate(3.5deg);
-  -o-transform: rotate(3.5deg);
-  -ms-transform: rotate(3.5deg);
-  transform: rotate(3.5deg);
+  -webkit-transform: rotate(7deg);
+  -moz-transform: rotate(7deg);
+  -o-transform: rotate(7deg);
+  -ms-transform: rotate(7deg);
+  transform: rotate(7deg);
+}
+.note, .pinup p{
+  font-family: 'Bricolage Grotesque';
+  font-size: 1.3rem;
+  letter-spacing: 3px;
+  margin: 30px;
+  text-align: center;
+
 }
 
 .referencia{
   color:#447D9C
+}
+
+/*INFECTED UDDER*/
+.udderinfocont{
+  margin: auto;
+  position: relative;
+  height: 700px;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  align-self: center;
+  justify-self: center;
+}
+
+.uddercont {
+  position: relative;
+  height: 500px;
+  width: 700px;
+  background-color: transparent;
+  border-radius: 5px;
+  align-items: center;
+
+}
+
+.udderimgcont {
+  position: relative;
+  height: 500px;
+  width: 700px;
+}
+
+.udderbtncont{
+  height: 15%;
+  width: 100%;
+  background-color: #f9f5f5;
+  display: flex;
+  flex-wrap: wrap;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.uddertxt {
+  font-family: 'Quicksand';
+  font-weight: 500;
+  color: #302535;
+  display: none;
+  font-size: 1.2rem;
+  line-height: 1.5;
+
+}
+
+.uddertxt.active {
+  display: block;
+}
+
+.udderimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: fit-content;
+  width: fit-content;
+  border-radius:5px;
+  display: none;
+}
+
+.udderimg.active{
+  display: block;
+}
+
+.udderbtn1, .udderbtn2, .udderbtn3, .udderbtn4, .udderbtn5 {
+  background: var(--gradient);
+  border: 0;
+  border-radius: 5px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.8rem;
+  outline: transparent;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  height: 60px;
+  margin: 7px;
+  width:150px ;
+
+}
+
+.udderbtn1:not([disabled]):focus{
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(197, 140, 47, 0.5);
+}
+
+.udderbtn1:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(197, 140, 47, 0.5);
+}
+
+.udderbtn2:not([disabled]):focus{
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(58, 81, 105, 0.5);
+}
+
+.udderbtn2:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(58, 81, 105, 0.5);
+}
+
+.udderbtn3:not([disabled]):focus{
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(139, 149, 95, 0.5);
+}
+
+.udderbtn3:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(139, 149, 95, 0.5);
+}
+
+
+.udderbtn4:not([disabled]):focus{
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5);
+}
+
+.udderbtn4:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5);
+}
+
+.endoinfocont{
+  margin: auto;
+  position: relative;
+  height: 700px;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  align-self: center;
+  justify-self: center;
+}
+
+.mechcont {
+  position: relative;
+  height: 450px;
+  width: 700px;
+  background-color: white;
+  border-radius: 5px;
+  align-items: center;
+
+}
+
+.mechimgcont {
+  position: relative;
+  height: 500px;
+  width: 700px;
+}
+
+.mechtxt {
+  font-family: 'Quicksand';
+  font-weight: 500;
+  color: #302535;
+  display: none;
+  font-size: 1.2rem;
+  line-height: 1.5;
+
+}
+
+.mechtxt.active {
+  display: block;
+}
+
+.mechimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: fit-content;
+  width: fit-content;
+  border-radius:5px;
+  display: none;
+}
+
+.mechimg.active{
+  display: block;
+}
+
+.mechbtn1, .mechbtn2, .mechbtn3{
+  background: var(--gradient);
+  border: 0;
+  border-radius: 5px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  outline: transparent;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  height: 60px;
+  width:150px ;
+  margin:10px
+
+}
+
+.mechbtn1:not([disabled]):focus{
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(197, 140, 47, 0.5);
+}
+
+.mechbtn1:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(197, 140, 47, 0.5);
+}
+
+.mechbtn2:not([disabled]):focus{
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(58, 81, 105, 0.5);
+}
+
+.mechbtn2:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(58, 81, 105, 0.5);
+}
+
+.mechbtn3:not([disabled]):focus{
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(139, 149, 95, 0.5);
+}
+
+.mechbtn3:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(139, 149, 95, 0.5);
 }
