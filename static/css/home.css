@@ -1,0 +1,495 @@
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+    -ms-overflow-style: none !important;  /* IE and Edge */
+    scrollbar-width: none !important;  
+}
+
+body::-webkit-scrollbar {
+    display: none !important;  /* Safari and Chrome */
+}
+
+#header{
+    background-color:#0000003b !important;
+    color: white   !important;
+}
+
+#header .logo h1 a{
+    color: white !important;
+} 
+
+.nav-menu a{
+    color: white !important;
+}
+
+.dadHome{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.videoHolder{
+    width: 100vw;
+    aspect-ratio: 16/9;
+    max-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.videoHome{
+    width: 100vw;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.scrollBTNHome{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    z-index: 100;
+    background-color: rgb(74, 182, 167);
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.homeCardsContainer{
+    width: 100vw;
+    height: 40vw;
+    margin-top: 110px;
+    padding-left: 180px;
+    
+}
+
+.cardContain{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.cardText{
+    width: 35vw;
+    height: fit-content;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    gap: 2px;
+    margin-right: 20px;
+    margin-top: 13%;
+    z-index: 100;
+    transition: 0.3s;
+    opacity: 0;
+    transition-delay: 0;
+}
+
+.cardContain.active .cardText{
+    opacity: 1;
+    transition-delay: 0.3s;
+
+    
+}
+
+.cardSub{
+    width: 35vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 15px;
+    font-weight: 600;
+
+}
+
+.arrowSub{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: end;
+    color: white;
+    font-size: 2rem;
+    padding: 10px 20px;
+    animation: arrow 2.5s infinite;
+}
+
+@keyframes arrow{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-10px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.cardHomeTitle{
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 4rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: black;
+}
+
+.cardHomeText{
+    font-size: 1rem;
+    line-height: 1.031;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: black;
+}
+
+.cardHomeTitle:hover, .cardHomeText:hover{
+    color: black;
+}
+
+
+.cardHome{
+    width: 40vw;
+    height: 40vw;
+    display: flex;
+    align-items: center;
+    padding-left:20px ;
+    position: relative;
+}
+
+.cardPos{
+    width: 78%;
+    height: 78%;
+    transform: var(--rotate);
+    transition: 0.5s;
+    transition-delay: 0;
+}
+
+.cardContain.active .cardHome .cardPos{
+    transform: rotate(0deg);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    z-index: 1000;
+}
+
+.cardContain.hidden .cardHome .cardPos{
+    transform: translateX(1200px) rotate(0);
+    transition-delay: 0;
+    z-index: 999;
+}
+
+.cardHomeIMG{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardBackHome{
+    width: 100vw;
+    height: 40vw;
+    position: absolute;
+    left: 0;
+    z-index: -55;
+}
+
+.cardBackHome.reverse{
+transform: scaleX(-1);
+}
+
+
+.whyUsHomeContainer{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(22, 23, 29);
+    color: white;
+    padding: 50px 0;
+    padding-bottom: 30px;
+}
+
+.whyUsTitle, .whyUsFact, .whyUsText{
+    opacity: 0;
+    transform: translateY(120px);
+    transition: 0.6s;
+}
+
+.whyUsHomeContainer.active .whyUsTitle, .whyUsHomeContainer.active .whyUsFact, .whyUsHomeContainer.active .whyUsText {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.howWeDoItText, .howWeDoItTitle, .howWeDoItCard{
+    opacity: 0;
+    transform: translateY(120px);
+    transition: 0.6s;
+}
+
+.howWeDoItContainer.active .howWeDoItText, .howWeDoItContainer.active .howWeDoItTitle, .howWeDoItContainer.active .howWeDoItCard {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.whyUsTitle{
+    width: 100%;
+    text-align: center;
+    font-size: 9rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+    line-height: 9rem;
+}
+
+.whyUsText{
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 20px 14%;
+}
+
+.whyUsFact{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.whyUsNumber{
+    width: 100%;
+    text-align: center;
+    font-size: 9rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    line-height: 9rem;
+}
+
+.whyUsNumText{
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 20px 14%;
+}
+
+.homeUsContainer{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 40px;
+    padding: 50px 0;
+    padding-top: 80px;
+}
+
+.firstUS, .secondUS{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    opacity: 0;
+}
+
+.firstUS{
+    width: 27%;
+    transform: translateX(-20vw);
+    
+
+}
+
+.secondUS{
+    width: 39.5%;
+    transform: translateX(20vw);
+
+}
+
+.homeUsContainer.active .firstUS, .homeUsContainer.active .secondUS{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.homeUsIMG{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    margin-top: 40px;
+}
+
+.homeUsIMG2{
+    width: 100%;
+    height: 540px;
+    object-fit: cover;
+}
+
+.homeUsTitle{
+    width: 100%;
+    font-size: 2.7rem;
+    margin-top: 2px;
+    padding: 0;
+    color: #272729;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.homeUsText{
+    width: 100%;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    padding: 0;
+    padding: 25px 3%;
+    color: #272729;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.homeUsContainer.active .firstUS .homeUsTitle, .homeUsContainer.active .secondUS .homeUsText{
+    opacity: 1;
+    transition-delay: 1s;
+}
+
+.howWeDoItContainer{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.howWeDoItTitle{
+    width: 100%;
+    text-align: center;
+    font-size: 9rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    line-height: 9rem;
+}
+
+.howWeDoItText{
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 20px 14%;
+    margin-bottom: 40px;
+}
+
+.howWeDoItCard{
+    width: 350px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    display: flex;  
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.howWeDoItCardTitle{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    padding: 0;
+    color: #272729;
+
+}
+
+.howWeDoItCardIMG{
+    width: 280px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.howWeDoItCardText{
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 10px;
+    padding: 0;
+    padding: 25px 3%;
+    color: #272729;
+
+}
+
+
+.howWeDoItBTN{
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 15px;
+    padding: 10px 25px;
+    color: #272729;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    color: white;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.homeSectionSelectorContainer{
+    width: 100vw;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: end;
+    background-color: rgb(255, 255, 255);
+    height: 200px;
+    margin-bottom: 110px;
+}
+
+.homeSectionSelector{
+    width: 97%;
+    height: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    transition: 0.5s;
+}
+
+.homeSectionSelector.active{
+    width: 115%;
+    height: 200px;
+
+}
+
+.homeSectionSelectorText{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.45);
+    font-size: 1.8rem;
+    font-weight: 600;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr5KDl3_TeEiOzzKc7Z2guRYzgRudImme-MQ&usqp=CAU');
+    background-size: cover;
+
+}
