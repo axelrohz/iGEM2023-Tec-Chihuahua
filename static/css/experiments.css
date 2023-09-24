@@ -66,8 +66,10 @@
 }
 
 .listp {
-	margin: 0;
-	line-height: 1.6;
+	display: flex;
+	align-items: baseline;
+	margin: 0 0 1rem;
+	color: rgb(70 70 70);
 }
 
 .listol {
