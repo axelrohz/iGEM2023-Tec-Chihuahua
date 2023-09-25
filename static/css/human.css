@@ -1937,3 +1937,98 @@
   .sectM, .sectR{
     display: none;
   }
+  
+
+
+.topcardscontainer {
+  height: 393px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card {
+  text-align: center;
+  width: 300px;
+  height: 200px;
+  box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: 0.7s;
+  overflow: hidden;
+}
+
+.card-item {
+  background-color: transparent;
+  color: rgb(206, 206, 206);
+  padding: 10px 0;
+  border-radius: 5px 5px 0 0;
+}
+
+.card-item h3 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: bold;
+}
+
+.card-item h4 {
+  font-family: 'Bricolage Grotesque';
+  color: #5BC5AB;
+  font-size: 1.2rem;
+}
+
+.card-item:hover h3 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.card-text {
+  background-color: #fff;
+  padding: 15px 10px;
+  text-align: justify;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.card-text p {
+  margin-bottom: 30px;
+  font-size: 1rem;
+  text-align: center;
+  transition: 1s ease-in-out;
+  margin: 10px;
+}
+
+.card:hover {
+  height: 420px;
+  overflow: auto;
+}
+
+.card:hover .card-item {
+  background-color: #5BC5AB;
+  color: white;
+  height: 300px;
+  width: 300px;
+  padding: 10px 0;
+  border-radius: 5px 5px 0 0;
+
+
+}
+
+.card:hover .card-text {
+  height: 200px;
+  left: 0;
+  /* top: 40%; */
+  bottom: 0;
+  visibility: visible;
+  opacity: 1;
+  padding: 10px 0;
+  border-radius: 5px 5px 0 0;
+  transition: 1.2s ease-in-out;
+}
