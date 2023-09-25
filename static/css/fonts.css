@@ -1,30 +1,42 @@
 @font-face {
     font-family: 'Bricolage Grotesque';
-    src: url('../fonts/BricolageGrotesque.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    src: url('../fonts/BricolageGrotesque/BricolageGrotesque.ttf') format('truetype');
+    font-weight: 200 800;
+    font-stretch: 25% 100%;
+}
+
+@font-face {
+    font-family: 'BricolageGrotesque-Bold';
+    src: url('../fonts/BricolageGrotesque/BricolageGrotesque-Bold.ttf') format('truetype');
+    font-weight: 700;
 }
 
 @font-face {
     font-family: 'Quicksand';
-    src: url('../fonts/Quicksand.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    src: url('../fonts/Quicksand/Quicksand.ttf') format('truetype');
+    font-weight: 300 700;
+    font-stretch: 25% 100%;
+}
+
+@font-face {
+    font-family: 'Quicksand-Bold';
+    src: url('../fonts/Quicksand/Quicksand-Bold.ttf') format('truetype');
+    font-weight: 700;
 }
 
 body{
-    font-family: Quicksand;
+    font-family: 'Quicksand';
 }
 
-h1{
+body b {
+    font-family: 'Quicksand-Bold';
+}
+
+h1,h2,h3 {
     font-family: 'Bricolage Grotesque';
 }
 
-h2{
-    font-family: 'Bricolage Grotesque';
-}
-
-h3{
-    font-family: 'Bricolage Grotesque';
+h1 b, h2 b, h3 b {
+    font-family: 'BricolageGrotesque-Bold';
 }
 
