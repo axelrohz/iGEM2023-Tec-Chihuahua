@@ -2032,3 +2032,14 @@
   border-radius: 5px 5px 0 0;
   transition: 1.2s ease-in-out;
 }
+
+.ODS2{
+  background: transparent;
+  top: 129%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  z-index:10;
+ }
