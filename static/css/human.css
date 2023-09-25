@@ -2033,11 +2033,11 @@
 
  .post_it_1{
   background: transparent;
-  top: 328%;
-  left: 60%;
+  top: 423%;
+  left: 24%;
   transform: translate(-50%, -50%);
-  width: 200px;
-  height: 200px;
+  width: 270px;
+  height: 270px;
   position: absolute;
   z-index: 10;
  }
