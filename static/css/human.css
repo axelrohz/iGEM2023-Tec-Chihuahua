@@ -2036,7 +2036,7 @@
 .ODS2{
   background: transparent;
   top: 306%;
-  left: 50%;
+  left: 40%;
   transform: translate(-50%, -50%);
   width: 150px;
   height: 150px;
@@ -2047,7 +2047,7 @@
  .ODS3{
   background: transparent;
   top: 306%;
-  left: 90%;
+  left: 60%;
   transform: translate(-50%, -50%);
   width: 150px;
   height: 150px;
