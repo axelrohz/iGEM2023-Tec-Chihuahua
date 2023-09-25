@@ -2011,14 +2011,15 @@
 
 .ODS2{
   background: transparent;
-  top: 321%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  width: 200px;
-  height: 200px;
+  width: 50%;
+  max-width: 217px;
+  height: auto;
   position: absolute;
+  top: 267%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 10;
- }
+  }
 
  .ODS3{
   background: transparent;
