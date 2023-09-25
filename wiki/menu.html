@@ -14,7 +14,7 @@
   <div class="container d-flex">
 
     <div class="logo mr-auto">
-      <h1 class="text-light", style="font-family: 'Oswald';"><a href=""><span> <img class="logomenu" src="https://static.igem.wiki/teams/4607/wiki/fonts/aureobos.png" alt=""></span></a></h1>
+      <h1 class="text-light", style="font-family: 'Oswald';"><a href=""><span> <img class="logomenu" src="https://static.igem.wiki/teams/4607/wiki/fonts/logopeqcut.png" alt=""></span></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
     </div>
@@ -26,13 +26,13 @@
         <li><a href="{{ url_for('pages', page='home') }}">Home</a></li>
         
             
-        <li class="drop-down"><a href="">Project</a>
+        <li class="drop-down"><a class ="hipervinculoaqua" href="">Project</a>
           <ul>
             
             
-            <li><a class ="hipervinculoaqua" href="{{ url_for('pages', page='description') }}">Description</a></li>
-            <li><a href="{{ url_for('pages', page='contribution') }}">Contributions</a></li>
+            <li><a href="{{ url_for('pages', page='description') }}">Description</a></li>
             <li><a href="{{ url_for('pages', page='safety') }}">Safety</a></li>
+            <li><a href="{{ url_for('pages', page='contribution') }}">Contributions</a></li>
             <li><a href="{{ url_for('pages', page='engineering') }}">Engineering</a></li>
             
           
@@ -102,7 +102,7 @@
     font-family: 'Oswald';
   }
 
-  .hipervinculoaqua {
+.hipervinculoaqua {
   font-family: 'Quicksand';
   font-weight: 700;
   color: #5BC5AB;
