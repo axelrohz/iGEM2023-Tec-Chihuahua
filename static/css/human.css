@@ -53,7 +53,7 @@
    
    .Title::after {
      width: 0.125em;
-     background: darkslategrey;
+     background: white;
      animation: typewriter var(--typewriterSpeed)
          steps(var(--typewriterCharacters)) 1.5s forwards,
        blink 2.5s steps(var(--typewriterCharacters)) infinite;
