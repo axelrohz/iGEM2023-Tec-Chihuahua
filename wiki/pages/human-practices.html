@@ -10,6 +10,7 @@
    	 <meta charset="UTF-8">
    	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
    	 <link rel="stylesheet" href="../../static/css/human.css">
+	<link rel="stylesheet" href="../../static/css/collab.css">
    	 <link href="{{ url_for('static', filename = 'css/human.css') }}" rel="stylesheet">
    	 <script type=”text/javascript” src=”http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML”></script>
     </head>
@@ -96,7 +97,7 @@
    						 <br>
    						 How We Did It
    					 </p>
-   					 <button onclick="showSection('sectionMethods')" class="learnMore">Learn More</button>
+   					 <button onclick="showSection('sectionMethods')" class="learnMore">Go to section</button>
    				 </div>
    			 </div>
    			 <div class="overview">
@@ -106,7 +107,7 @@
    						 <br>
    						 The Big Picture
    					 </p>
-   					 <button onclick="showSection('sectionOverview')" class="learnMore">Learn More</button>
+   					 <button onclick="showSection('sectionOverview')" class="learnMore">Go to section</button>
    				 </div>
    			 </div>
    			 <div class="results">
@@ -116,7 +117,7 @@
    						 <br>
    						 What We Found
    					 </p>
-   					 <button onclick="showSection('sectionResults')" class="learnMore">Learn More</button>
+   					 <button onclick="showSection('sectionResults')" class="learnMore">Go to section</button>
    				 </div>
    			 </div>
    			 <svg id="retina" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -169,38 +170,47 @@
    		 <div class="Content">
    		 <div class="mkt-3dSlider py-6">
 
-   			 <div class="card1">
-   			 <div class="content">
-   				 <div class="front">
-   				 <p>How?</p>
-   				 </div>
-   				 <div class="back">
-   				 <p class="textCard1">Stochastic analysis of induction system, steady-state equations for purification and analysis of dose-mediated endolysin bactericidal effects.</p>
-   				 </div>
-   			 </div>
-   			 </div>
+			<div class="topcardscontainer">
+				<div class="card">
+				  <div class="card-item">
+					  <img src="" alt="">
+					  <h3>Exchange ideas</h3>
+					  <h4><b>How?</b></h4>
+				  </div>
+				  <div class="card-text" >
+					  <p>
+						Discussing the project and problems with different teams
+					  </p>
+				  </div>
+				</div>
 
-   			 <div class="card2">
-   			 <div class="content">
-   				 <div class="front">
-   				 <p>What?</p>
-   				 </div>
-   				 <div class="back">
-   				 <p class="textCard2">Analyze complex systems through sub-model integration of all stages of the project.</p>
-   				 </div>
-   			 </div>
-   			 </div>
+				<div class="card">
+				  <div class="card-item">
+					<img src="" alt="">
+					<h3>Connecting with the world</h3>
+					<h4><b>What?</b></h4>
+				  </div>
+				  <div class="card-text">
+				  <p>
+					We gave feedback and they gave us feedback on our project with other teams
+				  </p>
+				  </div>
+				</div>
 
-   			 <div class="card3">
-   			 <div class="content">
-   				 <div class="front">
-   				 <p>Why?</p>
-   				 </div>
-   				 <div class="back">
-   				 <p class="textCard3">Understand and optimize the production and effectiveness of endolysins as a promising alternative to antibiotics.</p>
-   				 </div>
-   			 </div>
-   			 </div>
+				<div class="card" style="display: flex; justify-content: center;">
+				  <div class="card-item">
+					  <img src="" alt="">
+					  <h3 style="text-align: center;">Vision for the world</h3>
+					  <h4><b>Why?</b></h4>
+				  </div>
+				  <div class="card-text">
+					  <p>
+						We create alliances in different parts of the world 
+					  </p>
+				  </div>
+				</div>
+			  </div>
+	
 
    		 </div>
 
