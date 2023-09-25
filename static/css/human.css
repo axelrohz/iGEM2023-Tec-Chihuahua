@@ -2044,12 +2044,14 @@
  .post_it_2{
   background: transparent;
   top: 423%;
-  left: 24%;
+  left: 46%;
   transform: translate(-50%, -50%);
   width: 270px;
   height: 270px;
   position: absolute;
   z-index: 10;
- }
+}
+
+ 
  
  
