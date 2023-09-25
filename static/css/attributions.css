@@ -4,9 +4,16 @@
 
  
 object {
-  width: 90%;
-  height: 100vh;
-  overflow: scroll;
-  align-self: center;
-  justify-self: center;
+  width: 95%;
+  height: 1990vh;
+  display: block;
+  margin: auto;
+}
+
+#Tabla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  
 }
