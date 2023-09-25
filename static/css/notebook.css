@@ -40,6 +40,17 @@
     text-align: center;
 }
 
+#February {
+
+    border-left-width: 8px !important;
+    border-left-style: solid !important;
+    border-left-color: #A9BA6C !important;
+}
+
+#February::before {
+    content: "February";
+}
+
 #March {
 
     border-left-width: 8px !important;
