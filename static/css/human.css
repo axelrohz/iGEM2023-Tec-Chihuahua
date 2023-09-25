@@ -352,8 +352,8 @@
    #taffy {
     position: absolute;
     top: 70%;
-    left: 50%;
-    width: 50%;
+    left: 61%;
+    width: 69%;
     transform: translate(-50%, -50%);
     z-index: -5;
    }
@@ -2030,5 +2030,17 @@
   position: absolute;
   z-index: 10;
  }
+
+ .post_it_1{
+  background: transparent;
+  top: 328%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  z-index: 10;
+ }
+ 
  
  
