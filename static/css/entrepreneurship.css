@@ -24,8 +24,11 @@ body::-webkit-scrollbar {
 }
 
 #header{
-    background-color:#31565900 !important;
-    color: white   !important;
+  background-color: var(--colorENT) !important;
+  color: white   !important;
+}
+.drop-down ul{
+    background-color: var(--colorENT) !important;
 }
 
 #header .logo h1 a{
