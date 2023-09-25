@@ -553,7 +553,10 @@
     height: 139px;
     width: 175px;
    }
-   
+    /*figuras*/
+    .pie_de_figura{
+      text-align: center;
+     }
    
    /*introduccion*/
    .introduction{
@@ -562,6 +565,7 @@
    .introduction2{
     text-align: center;
    }
+
    /*cosas del side bar index*/
    
    .index1, .index2, .index3{
