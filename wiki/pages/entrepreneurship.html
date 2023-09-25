@@ -412,8 +412,8 @@ iGEM project.{% endblock %}
                             <br>
                             Our integrated human practices helped us learn that dairy producers and cattle owners need a treatment that effectively addresses bovine mastitis, without using antibiotics so milk isn’t discarded and their production isn’t reduced due to the milk withdrawal period. This treatment needs to be backed up by the recognition of veterinary zootechnicians and scientific evidence that compares and indicates how AureoBos is better than any other conventional treatment. They also communicated that they require a treatment that is easy to administer and integrate into their existing routines, ensuring minimal disruption to their operations. They require a product which doesn’t harm the cattle, doesn’t compromise the milk quality, and doesn’t pose health risks to either animals or humans. Finally, the treatment needs to be accessible in terms of availability and affordability in the geographical and economic situation. 
                             <br>
-                            Having developed the above, you can find a visual representation of these needs through the following <a href="#" onclick="popInfo2()" class="testEMP1">empathized</a>
-                            <div class="infopo">
+                            Having developed the above, you can find a visual representation of these needs through the following <a href="#" onclick="popInfo6()" class="testEMP1">empathized</a>
+                            <div class="infopop6">
                                 <span id="close" onclick="this.parentNode.classList.remove('active');">x</span>
                                 testing
                             </div>
@@ -784,6 +784,11 @@ iGEM project.{% endblock %}
         }
         function popInfo5(){
             var pop = document.querySelectorAll('.infopop5');
+            
+            pop[0].classList.add('active');
+        }
+        function popInfo6(){
+            var pop = document.querySelectorAll('.infopop6');
             
             pop[0].classList.add('active');
         }
