@@ -38,7 +38,7 @@
 .uno h1 {
   font-family: 'Bricolage Grotesque';
   font-size: 7rem;
-  font-weight: bold;
+  font-weight: 700;
   background-image: linear-gradient(#C55B75,#D27063,#DE8551);
   color: transparent;
   background-clip: text;
@@ -433,11 +433,27 @@ img {
   justify-self: center;
 
 }
+
+.accordion-item {
+  justify-self: center;
+  background-color: #ffffff;
+  color: #111;
+  margin: auto;
+  border-radius: 3px;
+  box-shadow: 7px 7px #5BC5AB ;
+  width: 80%;
+  margin-bottom: 20px;
+  border: solid 0.5px #EBEBF1;
+
+}
+
+
 .accordion-item-header {
+  min-height: 60px;
+  font-size: 1.2rem;
   padding: 0.5rem 3rem 0.5rem 1rem;
-  min-height: 3.5rem;
-  line-height: 1.25rem;
-  font-weight: bold;
+  line-height: 1.5;
+  font-weight: 500;
   display: flex;
   align-items: center;
   position: relative;
@@ -460,6 +476,7 @@ img {
   transition: max-height 0.2s ease-out;
   padding-left: 20px;
   padding-right: 20px;
+  0 2px 5px 0 rgba(0,0,0,0.25)
 }
 .accordion-item-body-content {
   padding: 1rem;
