@@ -34,11 +34,11 @@
           line-height: 1.5;
           color: black;
       }
-      .wavtit h2 {
+      .wavtit h {
         text-align: center;
         font-family: 'Bricolage Grotesque';
-        font-size:5rem; 
-        font-weight:500; 
+        font-size:6rem; 
+        font-weight:600; 
         color:#F3F3FA;  
         display: grid;
         align-items: center;
@@ -61,6 +61,7 @@
         text-align: center;
         font-size: 1rem;
       }
+
       
           h2 {
             text-align: center;
@@ -79,6 +80,6 @@
          h2:after, h2:before {
           content: " ";
           display: block;
-          border: 2px solid #5BC5AB;
+          border: 2px solid #C55B75;
           background-color:#f8f8f8;
       }
