@@ -2015,7 +2015,7 @@
   max-width: 217px;
   height: auto;
   position: absolute;
-  top: 323%;
+  top: 321%;
   left: 41%;
   transform: translate(-50%, -50%);
   z-index: 10;
@@ -2023,7 +2023,7 @@
 
 .ODS3 {
   background: transparent;
-  top: 323%; /* Center vertically */
+  top: 321%; /* Center vertically */
   left: 62%; /* Center horizontally */
   transform: translate(-50%, -50%);
   width: 50vw; /* 50% of viewport width */
@@ -2056,7 +2056,30 @@
   position: absolute;
   z-index: 10;
 }
+.post_it_3{
+  background: transparent;
+  top: 423%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  max-width: 217px;
+  height: auto;
+  position: absolute;
+  z-index: 10;
+}
 
+
+.graficas{
+  background: transparent;
+  top: 423%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  max-width: 217px;
+  height: auto;
+  position: absolute;
+  z-index: 10;
+}
  
  
  
