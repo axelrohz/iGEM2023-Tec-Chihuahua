@@ -531,7 +531,9 @@
   font-weight: bold;
   align-items: center;
   margin: auto auto;
- }
+  text-align: center;
+}
+
  
  .contentBoton {
   font-size: 13px;

@@ -14,7 +14,7 @@ iGEM project.{% endblock %}
     <link rel="stylesheet" href="../../static/css/sectionsENT.css" />
     <link rel="stylesheet" href="../../static/css/model.css">
     <link href="{{ url_for('static', filename = 'css/model.css') }}" rel="stylesheet">
-
+    <link href="{{ url_for('static', filename = 'css/home.css') }}" rel="stylesheet">
 
     <link href="{{ url_for('static', filename = 'css/circleDiagramENT.css') }}" rel="stylesheet">
     <link href="{{ url_for('static', filename = 'css/fillDiagram.css') }}" rel="stylesheet">
@@ -494,222 +494,571 @@ iGEM project.{% endblock %}
             
             
             <div id="scrlS4"> 
-                                 <!--Seccion que ya sirve, no mover-->
-   	 <div class="button-container">
-        <div class="logocontainer">
-            <div class="methods">
-                <div class="button-content">
-                    <p class="tituloBoton">Solution</p>
-                    <p class="contentBoton">
-                        <br>
-                        What We are doing
-                    </p>
-                    <button onclick="showSection('sectionMethods')" class="learnMore">Go to section</button>
-                </div>
-            </div>
-            <div class="overview">
-                <div class="button-content">
-                    <p class="tituloBoton">Development Plans</p>
-                    <p class="contentBoton">
-                        <br>
-                        How we're doing it
-                    </p>
-                    <button onclick="showSection('sectionOverview')" class="learnMore">Go to section</button>
-                </div>
-            </div>
-            <div class="results">
-                <div class="button-content">
-                    <p class="tituloBoton">Skills, Capabilities and Stakeholders</p>
-                    <p class="contentBoton">
-                        <br>
-                        What We need
-                    </p>
-                    <button onclick="showSection('sectionResults')" class="learnMore"> Go to section</button>
-                </div>
-            </div>
-            
-            <svg id="retina" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
-                <path id="Retina2" class="st9" d="M222,186.3l-5.1,4.9l2.1-6.7c-0.7-0.2-1.3-0.3-2.1-0.3c-3.9,0-7.1,3.2-7.1,7.1
-            c0,3.9,3.2,7.1,7.1,7.1c3.9,0,7.1-3.2,7.1-7.1C224,189.2,223.3,187.5,222,186.3z"/>
-                <path id="Retina1" class="st9" d="M281.6,186.3l-5.1,4.9l2.1-6.7c-0.7-0.2-1.3-0.3-2.1-0.3c-3.9,0-7.1,3.2-7.1,7.1
-            c0,3.9,3.2,7.1,7.1,7.1c3.9,0,7.1-3.2,7.1-7.1C283.5,189.2,282.8,187.5,281.6,186.3z"/>
-            </svg>
-            <img id="taffy" src="https://static.igem.wiki/teams/4607/wiki/project-description/project-description/taffysinojos.png">
-        </div>
-    </div>
-    <!--seccion que ya sirve arriba-->
-
-    <!--secciones-->
-    <div id="scrlS3"> <!--encapsula todos los divs-->
-        <div id="sectionOverview" class="sectO"><!--seccion de overview-->
-    <div class="seccionesTituolo">
-        <div class="seccionOverview">
-            <p class="subtitleO">Overview</p>
-        </div>
-    </div>
-    <div class="layout">
-        <!--cosas del index-->
-        <div class="index1">
-        <nav class="navigation">
-            <ul>
-            <li><a class="introduction" href="#introduction">Introduction</a></li>
-            <li><a class="conclusion" href="#conclusion">Conclusion</a></li>
-            <li><a class="references" href="#referencesO">References</a></li>
-            </ul>
-        </nav>
-        </div>
-        <div class="secciones">
+                <div class="button-container">
+                    <div class="logocontainer">
+                        <div class="methods">
+                            <div class="button-content">
+                                <p class="tituloBoton">Solution</p>
+                                <p class="contentBoton">
+                                    <br>
+                                    How We Did It
+                                </p>
+                                <button onclick="showSection('sectionMethods')" class="learnMore">Learn More</button>
+                            </div>
+                        </div>
+                        <div class="overview">
+                            <div class="button-content">
+                                <p class="tituloBoton">Overview</p>
+                                <p class="contentBoton">
+                                    <br>
+                                    The Big Picture
+                                </p>
+                                <button onclick="showSection('sectionOverview')" class="learnMore">Learn More</button>
+                            </div>
+                        </div>
+                        <div class="results">
+                            <div class="button-content">
+                                <p class="tituloBoton">Skills, capabilities and stakeholders</p>
+                                <p class="contentBoton">
+                                    <br>
+                                    What We Found
+                                </p>
+                                <button onclick="showSection('sectionResults')" class="learnMore">Learn More</button>
+                            </div>
+                        </div>
+                        <svg id="retina" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+                            <path id="Retina2" class="st9" d="M222,186.3l-5.1,4.9l2.1-6.7c-0.7-0.2-1.3-0.3-2.1-0.3c-3.9,0-7.1,3.2-7.1,7.1
+                        c0,3.9,3.2,7.1,7.1,7.1c3.9,0,7.1-3.2,7.1-7.1C224,189.2,223.3,187.5,222,186.3z"/>
+                            <path id="Retina1" class="st9" d="M281.6,186.3l-5.1,4.9l2.1-6.7c-0.7-0.2-1.3-0.3-2.1-0.3c-3.9,0-7.1,3.2-7.1,7.1
+                        c0,3.9,3.2,7.1,7.1,7.1c3.9,0,7.1-3.2,7.1-7.1C283.5,189.2,282.8,187.5,281.6,186.3z"/>
+                        </svg>
+                        <img id="taffy" src="https://static.igem.wiki/teams/4607/wiki/project-description/project-description/taffysinojos.png">
+                    </div>
         
-
-
-        <div class="tituloContenido">
-            <h3 id="introduction"><br><br><br><br>Introduction</h3>
-        </div>
-        <div>
-            <p class="contenido">
-            Biological systems are highly dynamic and complex, and as we dive deeper into their intricacies, inherent variability and random fluctuations emerge. In this context, mathematical models offer a valuable tool for rigorous analysis and play a crucial role in research.<sup>1</sup> Thus, effectively bridging the gap between theory and practice to unlock the true potential of understanding these complex systems. Mathematical models use observation and manipulation in the same way as experiments, bypassing challenges such as high costs, time consumption, and risks.
-            <br>
-            <br>
-            To systematically integrate all the stages of <a href="https://2023.igem.wiki/tec-chihuahua/description">AureoBos</a>, from recombinant protein production to practical application, our model adopts an
-            <b class="tooltipSignificado">end-to-end
-                <span class="tooltipSignificadoBox">
-                Strategy that encompasses the entire process, aiming to simulate and analyze relevant stages, components, and interactions involved.
-                </span>
-            </b>
-            viewpoint. In our approach, two sequential models are used, the first represents the
-            <b class="tooltipSignificado">upstream
-                <span class="tooltipSignificadoBox">
-                Describes the initial stages of the process.
-                </span>
-            </b>
-            (induction system) and
-            <b class="tooltipSignificado">downstream
-                <span class="tooltipSignificadoBox">
-                Models the subsequent stages and the final outcome.
-                </span>
-            </b>
-            (purification process) together, while the second accounts for the
-            <b class="tooltipSignificado">implementation
-                <span class="tooltipSignificadoBox">
-                <b class="i">In vitro</b> endolysin performance.
-                </span>  
-            </b>  
-            (endolysin evaluation over target bacteria)
-            </p>
-            <br>
-            <p class="contenido">
-            Initially, we use a
-            <b class="tooltipSignificado">first principle
-                <span class="tooltipSignificadoBox">
-                First principle models are built on a fundamental understanding of underlying
-                <b class="i">ab initio</b>
-                physio-chemical phenomena such as mass transfer, heat transfer and mass flow.
-                </span>
-            </b>  
-            model to capture the mechanism’s behavior responsible for inducing the production of our target endolysins, we utilized isopropyl β-D-1-thiogalactopyranoside (IPTG) as an inducer, triggering the protein expression system. However, this mechanism raised important questions:
-            <br>
-            </p>
-            <p class="cta1">
-            <span>What are the specific conditions that yield the best quantitative and qualitative results in our production process?</span>
-            </p>
-                <br>
-            <p class="cta2">
-                <span>How does the system behave under various conditions, and what factors affect its efficiency?</span>
-            </p>
-            <br>
-            <p class="cta3">
-                <span>How robust is the system when changing the above-mentioned conditions?</sp>
-            </p>
-            <br>
-            <p class="contenido">
-            The model's construction and evaluation rely on a fusion of empirical data, existing literature, and mechanistic insights. By considering multiple parameters, such as dynamic interactions among system components (kinetic coefficients/interactions), system heterogeneities, and uncertainties. We employed stochastic analysis to simulate the system's responses under various scenarios, thereby establishing a range of conditions where protein expression is most favorable. Experimental data, such as IPTG concentration and endolysin production rates, contributed to parameter estimation and model calibration.
-            <br>
-            <br>
-            Our model consists of a system representation through 13 ordinary differential equations (ODEs), enabling us to predict protein expression. To address the stochastic nature of the system, where behavior is influenced by probabilities<sup>2</sup> and achieve robust/realistic results, we account the uncertainty sources into our model by a Monte Carlo simulation to identify the model's parameters range and assess the sensitivity to changes. The quantification of specific endolysin yield was achieved through a
-            <b class="tooltipSignificado">grey-box
-                <span class="tooltipSignificadoBox">
-                Flexible and pragmatic method that acknowledges the practical limitations of accessing full internal system details while utilizing the available knowledge to create effective and efficient solutions.
-                </span>  
-            </b>
-            surrogate model, incorporating equations derived from literature for steady-state behavior. This model was centered around the purification stage, offering a foundation for the downstream process
-            <br>
-            <br>
-            Additionally, we present a combined SDS–PAGE gel electrophoresis with banding pattern recognition to enable rapid protein distribution examination. The acceleration in detection not only significantly reduces experimental costs but is also pivotal as biological system studies increasingly embrace quantitative methods, emphasizing the growing role of mathematical analysis.<sup>3,4</sup>
-            This phase of our methodology aims to identify potential interventions or enhancements in a forward-engineering framework, advocating for the integration of a mathematical model at the conceptual design stage<sup>5,6</sup>
-            and serves as a foundation for the (re-)design, construction, characterization, and testing of the envisioned system.
-            <br>
-            <br>
-            Nevertheless, a key challenge lies in accurately calibrating these models, addressing the parameter estimation problem associated with unknown rate constants for each interaction in a network.<sup>7</sup>
-            Here, allowed to determine the unknown parameters, adjusting the model to best align with experimental data, even for parameters not directly measurable, thus enhancing the model's overall fit with experimental results. Parameter robustness is crucial in modeling, as even minor variations can significantly impact the model's behavior and performance.
-            <br>
-            <br>
-            Moreover, having taken these crucial aspects into consideration, our focus expanded towards considering the subsequent steps required to develop a viable alternative to antibiotic therapy. This included the use of steady-state equations for purification and quantifying the endolysin concentrations, thus, the pivotal phase of our study unfolded:
-            </p>
-            <br>
-            <p class="cta4">
-            <span>How effective is the endolysin in killing the target bacteria?</span>
-            </p>
-            <br>
-            <p class="cta5">
-                <span>Is there a dose-response relationship between endolysin concentration and bacterial kill rate?</span>
-            </p>
-            <br>
-            <p class="cta6">
-                <span>Are there synergistic or antagonistic interactions between the endolysins?</sp>
-            </p>
-            </p>
-            <br>
-            <p class="contenido">
-            In the culmination of our study, we sought to understand how the endolysin's mechanism interacts with various bacterial strains. This investigation was carried out using a design of experiments (DoE) approach inspired by a checkerboard assay. This approach helped us determine if the efficacy of the endolysin is influenced by synergic or antagonistic interactions. For the analysis, we utilized a
-            <b class="tooltipSignificado">response surface
-                <span class="tooltipSignificadoBox">
-                Technique used to analyze the relationship between input variables and a response variable, allowing for an optimization of the response by adjusting the inputs.
-                </span>
-            </b>
-            method (RSM) as a statistical tool in our product development work. RSM led to the identification of factor settings that collectively optimized multiple variables that align with desired responses and specifications. In our quest for optimization within our bactericidal system, RSM enabled us to make informed trade-offs between responses.
-            </p>
-        </div>
-        <div class="tituloContenido">
-            <h3 id="conclusion"><br><br><br><br>Conclusion</h3>
-        </div>
-        <div>
-        <!--aquí irá la conclusión-->
-        </div>
-        <div class="accordion-item">
-            <div class="accordion-item-header">
-                <h3 id="referencesO">References</h3>
-            </div>
-            <div class="accordion-item-body">
-                <div class="accordion-item-body-content">
-                    <p class="contenido">
-                        (1)	Banwarth-Kuhn, M.; Sindi, S. How and Why to Build a Mathematical Model: A Case Study Using Prion Aggregation. <em>J. Biol. Chem.</em> <b>2020</b>, <em>295</em> (15), 5022–5035. https://doi.org/10.1074/jbc.REV119.009851.
-                    </p>
-                    <p>
-                        (2)	Karlebach, G.; Shamir, R. Modelling and Analysis of Gene Regulatory Networks. <em>Nat. Rev. Mol. Cell Biol.</em> <b>2008</b>, <em>9</em> (10), 770–780. https://doi.org/10.1038/nrm2503.
-                    </p>
-                    <p>
-                        (3)	O’Neill, M. A.; Denos, M.; Reed, D. Using SDS–PAGE Gel Fingerprinting to Identify Soft‐bodied Wood‐boring Insect Larvae to Species. <em>Pest Manag. Sci.</em> <b>2018</b>, <em>74</em> (3), 705–714. https://doi.org/10.1002/ps.4766.
-                    </p>
-                    <p>
-                        (4)	<em>Mathematical Modelling and Machine Learning Methods for Bioinformatics and Data Science Applications</em>; Bianchini, M., Samponi, M. L., Eds.; MDPI: Switzerland, 2022. https://doi.org/10.3390/books978-3-0365-2841-0.
-                    </p>
-                    <p>
-                        (5)	Gábor, A.; Banga, J. R. Robust and Efficient Parameter Estimation in Dynamic Models of Biological Systems. <em>BMC Syst. Biol.</em> <b>2015</b>, <em>9</em> (1), 74. https://doi.org/10.1186/s12918-015-0219-2.
-                    </p>
-                    <p>
-                        (6)	Arpino, J. A. J.; Hancock, E. J.; Anderson, J.; Barahona, M.; Stan, G.-B. V.; Papachristodoulou, A.; Polizzi, K. Tuning the Dials of Synthetic Biology. <em>Microbiology</em> <b>2013</b>, <em>159</em> (Pt_7), 1236–1253. https://doi.org/10.1099/mic.0.067975-0.
-                    </p>
-                    <p>
-                        (7)	Mitra, E. D.; Hlavacek, W. S. Parameter Estimation and Uncertainty Quantification for Systems Biology Models. <em>Curr. Opin. Syst. Biol.</em> <b>2019</b>, <em>18</em>, 9–18. https://doi.org/10.1016/j.coisb.2019.10.006.
-                    </p>
+                <script>
+                    function showSection(sectionId) {
+                // Hide all sections
+                var sections = document.querySelectorAll('#scrlS3 > div');
+                sections.forEach(function(section) {
+                    section.style.display = 'none';
+                });
+        
+                // Show the selected section
+                var selectedSection = document.getElementById(sectionId);
+                if (selectedSection) {
+                    selectedSection.style.display = 'block';
+                }
+                }
+        
+                </script>
+                </div>
+                <!--seccion que ya sirve arriba-->
+        
+                <!--secciones-->
+                <div id="scrlS3"> <!--encapsula todos los divs-->
+                    <div id="sectionOverview" class="sectO"><!--seccion de overview-->
+                <div class="seccionesTituolo">
+                    <div class="seccionOverview">
+                        
+                    </div>
+                </div>
+                <div class="layout">
+                    <!--cosas del index-->
+                    <div class="index1">
+                    <nav class="navigation">
+                        <ul>
+                        <li><a class="introduction" href="#introduction">Introduction</a></li>
+                        <li><a class="conclusion" href="#conclusion">Conclusion</a></li>
+                        <li><a class="references" href="#referencesO">References</a></li>
+                        </ul>
+                    </nav>
+                    </div>
+                    <div class="secciones">
+                    <div class="mkt-3dSlider py-6">
+        
+                       
+        
+                    </div>
+        
+        
+                    <div class="tituloContenido">
+                        <h3 id="introduction"><br><br><br><br>Introduction</h3>
+                    </div>
+                    <div>
+                        <p class="contenido">
+                        Biological systems are highly dynamic and complex, and as we dive deeper into their intricacies, inherent variability and random fluctuations emerge. In this context, mathematical models offer a valuable tool for rigorous analysis and play a crucial role in research.<sup>1</sup> Thus, effectively bridging the gap between theory and practice to unlock the true potential of understanding these complex systems. Mathematical models use observation and manipulation in the same way as experiments, bypassing challenges such as high costs, time consumption, and risks.
+                        <br>
+                        <br>
+                        To systematically integrate all the stages of <a href="https://2023.igem.wiki/tec-chihuahua/description">AureoBos</a>, from recombinant protein production to practical application, our model adopts an
+                        <b class="tooltipSignificado">end-to-end
+                            <span class="tooltipSignificadoBox">
+                            Strategy that encompasses the entire process, aiming to simulate and analyze relevant stages, components, and interactions involved.
+                            </span>
+                        </b>
+                        viewpoint. In our approach, two sequential models are used, the first represents the
+                        <b class="tooltipSignificado">upstream
+                            <span class="tooltipSignificadoBox">
+                            Describes the initial stages of the process.
+                            </span>
+                        </b>
+                        (induction system) and
+                        <b class="tooltipSignificado">downstream
+                            <span class="tooltipSignificadoBox">
+                            Models the subsequent stages and the final outcome.
+                            </span>
+                        </b>
+                        (purification process) together, while the second accounts for the
+                        <b class="tooltipSignificado">implementation
+                            <span class="tooltipSignificadoBox">
+                            <b class="i">In vitro</b> endolysin performance.
+                            </span>  
+                        </b>  
+                        (endolysin evaluation over target bacteria)
+                        </p>
+                        <br>
+                        <p class="contenido">
+                        Initially, we use a
+                        <b class="tooltipSignificado">first principle
+                            <span class="tooltipSignificadoBox">
+                            First principle models are built on a fundamental understanding of underlying
+                            <b class="i">ab initio</b>
+                            physio-chemical phenomena such as mass transfer, heat transfer and mass flow.
+                            </span>
+                        </b>  
+                        model to capture the mechanism’s behavior responsible for inducing the production of our target endolysins, we utilized isopropyl β-D-1-thiogalactopyranoside (IPTG) as an inducer, triggering the protein expression system. However, this mechanism raised important questions:
+                        <br>
+                        </p>
+                        <p class="cta1">
+                        <span>What are the specific conditions that yield the best quantitative and qualitative results in our production process?</span>
+                        </p>
+                            <br>
+                        <p class="cta2">
+                            <span>How does the system behave under various conditions, and what factors affect its efficiency?</span>
+                        </p>
+                        <br>
+                        <p class="cta3">
+                            <span>How robust is the system when changing the above-mentioned conditions?</sp>
+                        </p>
+                        <br>
+                        <p class="contenido">
+                        The model's construction and evaluation rely on a fusion of empirical data, existing literature, and mechanistic insights. By considering multiple parameters, such as dynamic interactions among system components (kinetic coefficients/interactions), system heterogeneities, and uncertainties. We employed stochastic analysis to simulate the system's responses under various scenarios, thereby establishing a range of conditions where protein expression is most favorable. Experimental data, such as IPTG concentration and endolysin production rates, contributed to parameter estimation and model calibration.
+                        <br>
+                        <br>
+                        Our model consists of a system representation through 13 ordinary differential equations (ODEs), enabling us to predict protein expression. To address the stochastic nature of the system, where behavior is influenced by probabilities<sup>2</sup> and achieve robust/realistic results, we account the uncertainty sources into our model by a Monte Carlo simulation to identify the model's parameters range and assess the sensitivity to changes. The quantification of specific endolysin yield was achieved through a
+                        <b class="tooltipSignificado">grey-box
+                            <span class="tooltipSignificadoBox">
+                            Flexible and pragmatic method that acknowledges the practical limitations of accessing full internal system details while utilizing the available knowledge to create effective and efficient solutions.
+                            </span>  
+                        </b>
+                        surrogate model, incorporating equations derived from literature for steady-state behavior. This model was centered around the purification stage, offering a foundation for the downstream process
+                        <br>
+                        <br>
+                        Additionally, we present a combined SDS–PAGE gel electrophoresis with banding pattern recognition to enable rapid protein distribution examination. The acceleration in detection not only significantly reduces experimental costs but is also pivotal as biological system studies increasingly embrace quantitative methods, emphasizing the growing role of mathematical analysis.<sup>3,4</sup>
+                        This phase of our methodology aims to identify potential interventions or enhancements in a forward-engineering framework, advocating for the integration of a mathematical model at the conceptual design stage<sup>5,6</sup>
+                        and serves as a foundation for the (re-)design, construction, characterization, and testing of the envisioned system.
+                        <br>
+                        <br>
+                        Nevertheless, a key challenge lies in accurately calibrating these models, addressing the parameter estimation problem associated with unknown rate constants for each interaction in a network.<sup>7</sup>
+                        Here, allowed to determine the unknown parameters, adjusting the model to best align with experimental data, even for parameters not directly measurable, thus enhancing the model's overall fit with experimental results. Parameter robustness is crucial in modeling, as even minor variations can significantly impact the model's behavior and performance.
+                        <br>
+                        <br>
+                        Moreover, having taken these crucial aspects into consideration, our focus expanded towards considering the subsequent steps required to develop a viable alternative to antibiotic therapy. This included the use of steady-state equations for purification and quantifying the endolysin concentrations, thus, the pivotal phase of our study unfolded:
+                        </p>
+                        <br>
+                        <p class="cta4">
+                        <span>How effective is the endolysin in killing the target bacteria?</span>
+                        </p>
+                        <br>
+                        <p class="cta5">
+                            <span>Is there a dose-response relationship between endolysin concentration and bacterial kill rate?</span>
+                        </p>
+                        <br>
+                        <p class="cta6">
+                            <span>Are there synergistic or antagonistic interactions between the endolysins?</sp>
+                        </p>
+                        </p>
+                        <br>
+                        <p class="contenido">
+                        In the culmination of our study, we sought to understand how the endolysin's mechanism interacts with various bacterial strains. This investigation was carried out using a design of experiments (DoE) approach inspired by a checkerboard assay. This approach helped us determine if the efficacy of the endolysin is influenced by synergic or antagonistic interactions. For the analysis, we utilized a
+                        <b class="tooltipSignificado">response surface
+                            <span class="tooltipSignificadoBox">
+                            Technique used to analyze the relationship between input variables and a response variable, allowing for an optimization of the response by adjusting the inputs.
+                            </span>
+                        </b>
+                        method (RSM) as a statistical tool in our product development work. RSM led to the identification of factor settings that collectively optimized multiple variables that align with desired responses and specifications. In our quest for optimization within our bactericidal system, RSM enabled us to make informed trade-offs between responses.
+                        </p>
+                    </div>
+                    <div class="tituloContenido">
+                        <h3 id="conclusion"><br><br><br><br>Conclusion</h3>
+                    </div>
+                    <div>
+                    <!--aquí irá la conclusión-->
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-item-header">
+                            <h3 id="referencesO">References</h3>
+                        </div>
+                        <div class="accordion-item-body">
+                            <div class="accordion-item-body-content">
+                                <p class="contenido">
+                                    (1)	Banwarth-Kuhn, M.; Sindi, S. How and Why to Build a Mathematical Model: A Case Study Using Prion Aggregation. <em>J. Biol. Chem.</em> <b>2020</b>, <em>295</em> (15), 5022–5035. https://doi.org/10.1074/jbc.REV119.009851.
+                                </p>
+                                <p>
+                                    (2)	Karlebach, G.; Shamir, R. Modelling and Analysis of Gene Regulatory Networks. <em>Nat. Rev. Mol. Cell Biol.</em> <b>2008</b>, <em>9</em> (10), 770–780. https://doi.org/10.1038/nrm2503.
+                                </p>
+                                <p>
+                                    (3)	O’Neill, M. A.; Denos, M.; Reed, D. Using SDS–PAGE Gel Fingerprinting to Identify Soft‐bodied Wood‐boring Insect Larvae to Species. <em>Pest Manag. Sci.</em> <b>2018</b>, <em>74</em> (3), 705–714. https://doi.org/10.1002/ps.4766.
+                                </p>
+                                <p>
+                                    (4)	<em>Mathematical Modelling and Machine Learning Methods for Bioinformatics and Data Science Applications</em>; Bianchini, M., Samponi, M. L., Eds.; MDPI: Switzerland, 2022. https://doi.org/10.3390/books978-3-0365-2841-0.
+                                </p>
+                                <p>
+                                    (5)	Gábor, A.; Banga, J. R. Robust and Efficient Parameter Estimation in Dynamic Models of Biological Systems. <em>BMC Syst. Biol.</em> <b>2015</b>, <em>9</em> (1), 74. https://doi.org/10.1186/s12918-015-0219-2.
+                                </p>
+                                <p>
+                                    (6)	Arpino, J. A. J.; Hancock, E. J.; Anderson, J.; Barahona, M.; Stan, G.-B. V.; Papachristodoulou, A.; Polizzi, K. Tuning the Dials of Synthetic Biology. <em>Microbiology</em> <b>2013</b>, <em>159</em> (Pt_7), 1236–1253. https://doi.org/10.1099/mic.0.067975-0.
+                                </p>
+                                <p>
+                                    (7)	Mitra, E. D.; Hlavacek, W. S. Parameter Estimation and Uncertainty Quantification for Systems Biology Models. <em>Curr. Opin. Syst. Biol.</em> <b>2019</b>, <em>18</em>, 9–18. https://doi.org/10.1016/j.coisb.2019.10.006.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-</div>
+                <div id="sectionMethods" class="sectM">
+                <!--seccion Methods-->
+                    <div class="secciones">
+                        
+                    </div>
+                    <div class="layout">
+                    <!--cosas del index-->
+                    <div class="index2">
+                        <nav class="navigation">
+                            <ul>
+                                <li>
+                                    <a href="#upstream">ODEs</a>
+                                    <ul>
+                                        <li><a href="#underlying_theory">Monte Carlo simulation</a></li>
+                                        <li><a href="#model_building">Parameter estimation</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#downstream">RSM</a></li>
+                                <li><a href="#referencesM">References</a></li>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="secciones">
+                        <div class="tituloContenido">
+                            <h3 id="upstream">Possible</h3>
+                        </div>
+                        
+                        <p class="contenido">AureoBos is set to become a groundbreaking treatment that revolutionizes, completely, mastitis treatment. As shown above, we've meticulously outlined a mockup that serves as our Minimum Viable Product, precisely mirroring the strict regulatory framework of Mexico in the development and registration of veterinary products, as well as gathering the most important feedback form our different stakeholders. Our proof of concept shows that</p>
+                        <img src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/solution.png">
+                        <p class="contenido" style="text-align:center"> <b>Figure.</b> AureoBos MVP</p>
+                        <br>
+                        <div class="tituloContenido">
+                            <h5>To learn more about the technology behind, click below.</h5>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                <h3 id="referencesO">Technology</h3>
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p class="contenido">
+                                        AureoBos takes a pioneering approach to mastitis treatment. Leveraging synthetic biology, we harness Escherichia coli (E. coli) to produce specific proteins originating from bacteriophages. These proteins, known as endolysins, play a crucial role in bacteriophages' life cycle by infecting and exterminating bacteria. Through genetic modification, we enhance E. coli's capacity to produce these endolysins.
+                                        Endolysins, once extracted from E. coli, serve as the cornerstone for our mastitis treatment in dairy cattle. These remarkable proteins target the cell walls of mastitis-causing bacteria. Upon binding, they create breaches in the cell wall, causing the bacteria to disintegrate and perish. Notably, endolysins remain effective even against antibiotic-resistant bacterial strains, underscoring their potential as a groundbreaking solution.
+                                    
+                                       </p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                
+               
+                 
+               
+            
+            
+              
+              
+              
+                 
+                <div class="tituloContenido">
+                  <h5>Scalable</h5>
+                </div>
+                <p class="contenido">Here is scalable</p>
+                <div class="tituloContenido">
+                    <h5>Inventive</h5>
+                  </div>
+                  <p class="contenido">Here is Inventive</p>
+                      
+                     
+                
+        
+        
+    
+                   
+                            
+        
+        
+        
                   
+        
+                  
+                  
+        
+                
+               
+        
+        
+        
+              </div>
+              </div>
+        </div>
+        
+          <div id="sectionResults" class="sectR">
+            <div class="secciones">
+              
+            <div class="layout">
+              <!--cosas del index-->
+              <div class="index3">
+                <nav class="navigation">
+                  <ul>
+                    <li>
+                      <a href="#referencesR">References</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="secciones">
+                <p>DENTRO DE ESTE DIV PONER LAS COSAS DE LAS SECCIONES</p>
+                <div class="tituloContenido">
+                    
+                  <p class="contenido">Outlining the required skills, capabilities, and stakeholders is of prime importance for AureoBos’ success. Behind AureoBos is a team of students majoring in Biotechnology, Law, and Computer Technologies, where our unique differences and expertise, stemming from our diverse academic backgrounds and lifetime experiences, provide the foundation for the successful and integrated development of our startup, AureoBos. We are catalysts for change, a group of young individuals completely aware of the challenges our world faces. Our determination knows no bounds as we strive to make a difference in our society and we know that through synthetic biology, with AureoBos, our impact will extend beyond cost reduction and improved food safety; we will be revolutionizing mastitis treatment.
+                    Supported by a diverse group of advisors and instructors, we have harnessed our collective potential to drive our project forward. Furthermore, our university, the Monterrey Institute of Technology and Higher Education, has provided unwavering support throughout our journey. Renowned globally for its exceptional undergraduate entrepreneurship programs and ecosystems, it recently achieved the impressive ranking of fourth place in The Princeton Review's 2023 evaluation 5. Our connection to the entrepreneurial ecosystem played a pivotal role in our journey. It facilitated crucial networking opportunities with both business and technical experts, allowing us to thoroughly validate our business idea. Their invaluable feedback has significantly fortified our proposal, making it more robust and promising. 
+                    After comprehensively outlining our primary stakeholders and their roles in the Integrated Human Practices section, we've taken the next strategic step. We've identified those stakeholders who are not just crucial but indispensable to the development of AureoBos as a startup. Here, we present a snapshot of these key stakeholders, their areas of expertise, affiliations, and the invaluable insights gained from our interactions with them.</p>
+                
+                
+                <div class="homeCardsContainer">
+
+                    <svg class="cardBackHome reverse" id="visual" viewBox="0 0 1920 768" width="1920" height="768"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                        <path
+                            d="M0 198L45.7 219.2C91.3 240.3 182.7 282.7 274.2 265.3C365.7 248 457.3 171 548.8 141.3C640.3 111.7 731.7 129.3 823 160.7C914.3"
+                            fill="none" stroke="#52a595" stroke-width="40" stroke-linecap="round" stroke-linejoin="miter"></path>
+                    </svg>
+                    <svg class="cardBackHome" id="visual" viewBox="0 0 1920 768" width="1920" height="768"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                        <path
+                            d="M0 654L45.7 653.5C91.3 653 182.7 652 274.2 622C365.7 592 457.3 533 548.8 529.7C640.3 526.3 731.7 578.7 823 591.8C914.3 605 1005.7"
+                            fill="none" stroke="#52a595" stroke-width="40" stroke-linecap="round" stroke-linejoin="miter"></path>
+                    </svg>
+                    <div id="cardContain11" class="cardContain">
+                        <div class="cardText ">
+                            <p class="cardHomeText">Víctor, as a member of Startup Chihuahua - an initiative driven by Chihuahua Futura to promote entrepreneurship, science, technology, and innovation strategies to strengthen regional competitiveness - played a pivotal role in facilitating our connections with various entrepreneurs. Through these connections, we were able to validate AureoBos by participating in several pitch events. Moreover, he significantly contributed to refining our business model and pitch.</p>
+                            <p  class="cardHomeTitle">Víctor Calzadillas</p>
+            
+                        </div>
+                        <div class="cardHome">
+                            <div onclick="selectCard12()" class="cardPos" style="--rotate:rotate(6deg);">
+                                <img class="cardHomeIMG"
+                                    src=https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/victor.png
+                                    alt="victor">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cardContain10" class="cardContain">
+                        <div class="cardText ">
+                            <p class="cardHomeText">The Panamerican University played a pivotal role in our project as they were the official organizers of the UPIA 2023 competition, in which we were finalists in the validated idea category. This competition allowed us to demonstrate the feasibility and scalability of our project, as well as receive feedback from various experts and entrepreneurs to strengthen our business model through a live pitch presented in Mexico City.</p>
+                            <p  class="cardHomeTitle">Panamerican University</p>
+            
+                        </div>
+                        <div class="cardHome">
+                            <div onclick="selectCard11()" class="cardPos" style="--rotate:rotate(2deg);">
+                                <img class="cardHomeIMG"
+                                    src=https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/upia.png
+                                    alt="upia">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cardContain9" class="cardContain">
+                        <div class="cardText ">
+                            <p class="cardHomeText">Startup Mexico, a leading organization in Mexico and Latin America founded by entrepreneur Marcus Dantus, served as a mentor and advisor through two intensive training sessions aimed at improving our pitch and strengthening our business model. Undoubtedly, their mentorship has allowed us to grow as a team.</p>
+                            <p  class="cardHomeTitle">Startup Mexico</p>
+            
+                        </div>
+                        <div class="cardHome">
+                            <div onclick="selectCard10()" class="cardPos" style="--rotate:rotate(6deg);">
+                                <img class="cardHomeIMG"
+                                    src=https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/smexico.png
+                                    alt="smexico">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cardContain8" class="cardContain">
+                        <div class="cardText ">
+                            <p class="cardHomeText">Juan Carlos Flores, Manager of the Livestock Unit at the Secretary of Rural Development in our state, welcomed us to a session where we had the opportunity to discuss our project and receive validation. During the conversation, he provided us with valuable recommendations regarding the commercialization of our product and the most effective ways to reach our customers. Additionally, he assisted us in connecting with farms interested in our project for future testing on their affected livestock.</p>
+                            <p  class="cardHomeTitle">Juan Carlos Flores</p>
+            
+                        </div>
+                        <div class="cardHome">
+                            <div onclick="selectCard9()" class="cardPos" style="--rotate:rotate(deg);">
+                                <img class="cardHomeIMG"
+                                    src=https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/sedr.png
+                                    alt="SEDR">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cardContain7" class="cardContain">
+                        <div class="cardText ">
+                            <p class="cardHomeText">The Orion Technology Park, the entrepreneurship ecosystem at our university served as a guide in our project's development and growth process as both a project and a startup. Through sessions with experts and entrepreneurs, we received valuable feedback to enhance various aspects, including our pitch, business model, sales projections, validation, and more.</p>
+                            <p  class="cardHomeTitle">Orion Technology Park</p>
+            
+                        </div>
+                        <div class="cardHome">
+                            <div onclick="selectCard8()" class="cardPos" style="--rotate:rotate(6deg);">
+                                <img class="cardHomeIMG"
+                                    src=https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/pto.png
+                                    alt="PTO">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cardContain6" class="cardContain">
+                        <div class="cardText ">
+                            <p class="cardHomeText">José Oropeza, National Key Account Manager at MSD Animal Health, one of the world's leading animal pharmaceutical companies, provided validation for our project, particularly in terms of commercialization. During our conversation, he not only explained the process of acquiring new external products at MSD but also suggested that we approach local pharmaceutical laboratories, as the process for acquiring new patents can be somewhat more challenging in multinational companies.</p>
+                            <p  class="cardHomeTitle">José Oropeza</p>
+            
+                        </div>
+                        <div class="cardHome">
+                            <div onclick="selectCard7()" class="cardPos" style="--rotate:rotate(6deg);">
+                                <img class="cardHomeIMG"
+                                    src=https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/jose.png
+                                    alt="Jose Oropeza">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cardContain5" class="cardContain">
+                        <div class="cardText ">
+                            <p class="cardHomeText">iGEM Startups organized a Summer School, which primarily entailed a two-day workshop. During this workshop, we gained foundational knowledge in entrepreneurship, had the opportunity to engage with experts in intellectual property, pitching, and business models. Additionally, we connected with several other teams participating in iGEM to gain insights into their projects.</p>
+                            <p  class="cardHomeTitle">iGEM Startups</p>
+            
+                        </div>
+                        <div class="cardHome">
+                            <div onclick="selectCard6()" class="cardPos" style="--rotate:rotate(6deg);">
+                                <img class="cardHomeIMG"
+                                    src=https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/startups.png
+                                    alt="iGEM Startups">
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div id="cardContain4" class="cardContain">
+                        <div class="cardText ">
+                            <p class="cardHomeText">Ana Sofía, the leader of the Stella Orión technological pre-incubation program within the entrepreneurship ecosystem of the Orion Technology Park, played a pivotal role in facilitating our participation in the program. Her support has been instrumental in helping us create, validate, and strengthen our business model. Furthermore, she is also responsible for the TechXcelerate program, where she identified us as one of the top 10 projects at the national level to participate in the technological acceleration initiative.  </p>
+                            <p  class="cardHomeTitle">Ana Sofía Contreras</p>
+            
+                        </div>
+                        <div class="cardHome">
+                            <div onclick="selectCard5()" class="cardPos" style="--rotate:rotate(-4deg);">
+                                <img class="cardHomeIMG"
+                                    src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/anasof.png"
+                                    alt="Ana Sofia Contreras">
+                            </div>
+                        </div>
+                    </div>
+            
+            
+                    <div id="cardContain3" class="cardContain">
+                        <div class="cardText ">
+                            <p class="cardHomeText">Julia Estrada, Manager of Sanitary Promotion within the State Commission for the Protection against Sanitary Risks, facilitated a session for us. She was joined by the heads of the Food Program, Zoonotic Diseases, and the General Director of the Commission. During this session, we had the opportunity to discuss and validate the significant impact of mastitis on society. Furthermore, we were directed to the relevant authorities for the correctly registration of AureoBos.</p>
+                            <p  class="cardHomeTitle">Julia Estrada</p>
+            
+                        </div>
+                        <div class="cardHome">
+                            <div onclick="selectCard4()" class="cardPos" style="--rotate:rotate(-1deg);">
+                                <img class="cardHomeIMG"
+                                    src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/coespris.png"
+                                    alt="COESPRIS">
+                            </div>
+                        </div>
+                    </div>
+            
+            
+                    <div id="cardContain2" class="cardContain">
+                        <div class="cardText ">
+                            <p class="cardHomeText">Feli Sandoval, a member of the Entrepreneurship Ecosystem and the Technology Transfer Office at our university, provided us with invaluable guidance on various aspects related to patenting our project. She helped us navigate the challenges and limitations involved in the patenting process and provided insights into the steps required for proper registration with the relevant authorities. Feli's expertise has been instrumental in ensuring the effective protection of our intellectual property.</p>
+                            <p  class="cardHomeTitle">Felisia Sandoval</p>
+            
+                        </div>
+                        <div class="cardHome">
+                            <div onclick="selectCard3()" class="cardPos" style="--rotate:rotate(2deg);">
+                                <img class="cardHomeIMG"
+                                    src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/feli.png"
+                                    alt="Card image cap">
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div id="cardContain1" class="cardContain">
+                        <div class="cardText ">
+                            <p class="cardHomeText">DVM Gabriela Mapes, Dairy Cattle Technical Manager at Zoetis, the world's largest animal health company, played a pivotal role in guiding us on the optimal route to commercialize our product. Her expertise also proved invaluable in shaping our exit strategy, shedding light on the intricacies of patent acquisition within trasnational corporations. DVM Gabriela provided us with a valuable industry perspective, instrumental in refining our business model.</p>
+                            <p  class="cardHomeTitle">Gabriela Mapes</p>
+            
+                        </div>
+                        <div class="cardHome">
+                            <div onclick="selectCard2()" class="cardPos" style="--rotate:rotate(2deg);">
+                                <img class="cardHomeIMG"
+                                    src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/gabriela.png"
+                                    alt="Card image cap">
+                            </div>
+                        </div>
+                   
+                    
+            
+                    <div id="cardContain0" class="cardContain active" >
+                        <div class="cardText">
+                            <p class="cardHomeText">Ilum Ventures, a private equity firm, played a pivotal role in showcasing and validating our business model. We had the opportunity to pitch our project, AureoBos, during a pitch night event attended by local investors and entrepreneurs. Their feedback proved invaluable, enabling us to make enhancements and establish valuable connections to scale our startup effectively.</p>
+                            <p  class="cardHomeTitle">Ilum Ventures</p>
+                            <div class="cardSub"><< Use Arrows Or Click >></div>
+            
+                        </div>
+                        <div class="cardHome">
+                            <div onclick="selectCard1()" class="cardPos" style="--rotate:rotate(5deg);">
+                                <img class="cardHomeIMG"
+                                    src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/ilum.png"
+                                    alt="Card image cap">
+                                    <div class="arrowSub">  -> </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            
+                
+            
+                </div>
+              </div>
+            </div>
+            </div>    
+          </div>
+          </div>
+          </body>
+        </html>
+                            
                 
                 <div id="scrlS42">
    
@@ -1079,5 +1428,952 @@ iGEM project.{% endblock %}
       display: none;
     }
 </style>
+<script>
+    const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+  
+  accordionItemHeaders.forEach(accordionItemHeader => {
+    accordionItemHeader.addEventListener("click", event => {
+      
+      // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
+      
+      // const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
+      // if(currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader!==accordionItemHeader) {
+      //   currentlyActiveAccordionItemHeader.classList.toggle("active");
+      //   currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+      // }
+  
+      accordionItemHeader.classList.toggle("active");
+      const accordionItemBody = accordionItemHeader.nextElementSibling;
+      if(accordionItemHeader.classList.contains("active")) {
+        accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+      }
+      else {
+        accordionItemBody.style.maxHeight = 0;
+      }
+      
+    });
+  });
+  </script>
+   <script type="text/javascript">
+    let cardNumber = 0;
+    let cardContain0 = document.getElementById('cardContain0');
+    let cardContain1 = document.getElementById('cardContain1');
+    let cardContain2 = document.getElementById('cardContain2');
+    let cardContain3 = document.getElementById('cardContain3');
+    let cardContain4 = document.getElementById('cardContain4');
+    let cardContain5 = document.getElementById('cardContain5');
+    let cardContain6 = document.getElementById('cardContain6')
+    let cardContain7 = document.getElementById('cardContain7')
+    let cardContain8 = document.getElementById('cardContain8')
+    let cardContain9 = document.getElementById('cardContain9')
+    let cardContain10 = document.getElementById('cardContain10')
+    let cardContain11 = document.getElementById('cardContain11')
+    let cardContain12 = document.getElementById('cardContain12')
 
+    let select0 = document.getElementById('selectSec1');
+    let select1 = document.getElementById('selectSec2');
+    let select2 = document.getElementById('selectSec3');
+    let select3 = document.getElementById('selectSec4');
+    let select4 = document.getElementById('selectSec5');
+    let select5 = document.getElementById('selectSec6');
+    let select6 = document.getElementById('selectSec7');
+    let select7 = document.getElementById('selectSec8');
+    let select8 = document.getElementById('selectSec9');
+    let select9 = document.getElementById('selectSec10');
+    let select10 = document.getElementById('selectSec11');
+    let select11 = document.getElementById('selectSec12');
+    let select12 = document.getElementById('selectSec13');
+
+
+
+    document.addEventListener('keyup', (e) =>{
+        if (e.code === "ArrowRight") cardNumber++;
+        else if (e.code === "ArrowLeft") cardNumber--;
+
+        if (cardNumber < 0) cardNumber = 0;
+        if (cardNumber > 12) cardNumber = 12;
+
+
+
+        switch(cardNumber){
+            case 0:
+                cardContain0.classList.add('active');
+                cardContain1.classList.remove('active');
+                cardContain2.classList.remove('active');
+                cardContain3.classList.remove('active');
+                cardContain4.classList.remove('active');
+                cardContain5.classList.remove('active');
+                cardContain6.classList.remove('active');
+                cardContain7.classList.remove('active');
+                cardContain8.classList.remove('active');
+                cardContain9.classList.remove('active');
+                cardContain10.classList.remove('active');
+                cardContain11.classList.remove('active');
+                cardContain12.classList.remove('active');
+                cardContain0.classList.remove('hidden');
+                select0.classList.add('active');
+                select1.classList.remove('active');
+                break;
+            case 1:
+                cardContain0.classList.remove('active');
+                cardContain1.classList.add('active');
+                cardContain2.classList.remove('active');
+                cardContain3.classList.remove('active');
+                cardContain4.classList.remove('active');
+                cardContain5.classList.remove('active');
+                cardContain6.classList.remove('active');
+                cardContain7.classList.remove('active');
+                cardContain8.classList.remove('active');
+                cardContain9.classList.remove('active');
+                cardContain10.classList.remove('active');
+                cardContain11.classList.remove('active');
+                cardContain12.classList.remove('active');
+                cardContain1.classList.remove('hidden');
+                cardContain0.classList.add('hidden');
+                select1.classList.add('active');
+                select0.classList.remove('active');
+                select2.classList.remove('active');
+                break;
+            case 2:
+                cardContain0.classList.remove('active');
+                cardContain1.classList.remove('active');
+                cardContain2.classList.add('active');
+                cardContain3.classList.remove('active');
+                cardContain4.classList.remove('active');
+                cardContain5.classList.remove('active');
+                cardContain6.classList.remove('active');
+                cardContain7.classList.remove('active');
+                cardContain8.classList.remove('active');
+                cardContain9.classList.remove('active');
+                cardContain10.classList.remove('active');
+                cardContain11.classList.remove('active');
+                cardContain12.classList.remove('active');
+                cardContain2.classList.remove('hidden');
+                cardContain1.classList.add('hidden');
+                cardContain0.classList.remove('hidden');
+                select2.classList.add('active');
+                select1.classList.remove('active');
+                select3.classList.remove('active');
+                break;
+            case 3:
+                cardContain0.classList.remove('active');
+                cardContain1.classList.remove('active');
+                cardContain2.classList.remove('active');
+                cardContain3.classList.add('active');
+                cardContain4.classList.remove('active');
+                cardContain5.classList.remove('active');
+                cardContain6.classList.remove('active');
+                cardContain7.classList.remove('active');
+                cardContain8.classList.remove('active');
+                cardContain9.classList.remove('active');
+                cardContain10.classList.remove('active');
+                cardContain11.classList.remove('active');
+                cardContain12.classList.remove('active');
+                cardContain3.classList.remove('hidden');
+                cardContain2.classList.add('hidden');
+                cardContain1.classList.remove('hidden');
+                cardContain0.classList.remove('hidden');
+                select3.classList.add('active');
+                select2.classList.remove('active');
+                select4.classList.remove('active');
+                break;
+            case 4:
+                cardContain0.classList.remove('active');
+                cardContain1.classList.remove('active');
+                cardContain2.classList.remove('active');
+                cardContain3.classList.remove('active');
+                cardContain4.classList.add('active');
+                cardContain5.classList.remove('active');
+                cardContain6.classList.remove('active');
+                cardContain7.classList.remove('active');
+                cardContain8.classList.remove('active');
+                cardContain9.classList.remove('active');
+                cardContain10.classList.remove('active');
+                cardContain11.classList.remove('active');
+                cardContain12.classList.remove('active');
+                cardContain4.classList.remove('hidden');
+                cardContain3.classList.add('hidden');
+                cardContain2.classList.remove('hidden');
+                cardContain1.classList.remove('hidden');
+                cardContain0.classList.remove('hidden');
+                select4.classList.add('active');
+                select3.classList.remove('active');
+                select5.classList.remove('active');
+                break;
+            case 5:
+                cardContain0.classList.remove('active');
+                cardContain1.classList.remove('active');
+                cardContain2.classList.remove('active');
+                cardContain3.classList.remove('active');
+                cardContain4.classList.remove('active');
+                cardContain5.classList.add('active');
+                cardContain6.classList.remove('active');
+                cardContain7.classList.remove('active');
+                cardContain8.classList.remove('active');
+                cardContain9.classList.remove('active');
+                cardContain10.classList.remove('active');
+                cardContain11.classList.remove('active');
+                cardContain12.classList.remove('active');
+                cardContain5.classList.remove('hidden');
+                cardContain4.classList.add('hidden');
+                cardContain3.classList.remove('hidden');
+                cardContain2.classList.remove('hidden');
+                cardContain1.classList.remove('hidden');
+                cardContain0.classList.remove('hidden');
+                select5.classList.add('active');
+                select4.classList.remove('active');
+                select6.classList.remove('active');
+                break;
+            case 6:
+                cardContain0.classList.remove('active');
+                cardContain1.classList.remove('active');
+                cardContain2.classList.remove('active');
+                cardContain3.classList.remove('active');
+                cardContain4.classList.remove('active');
+                cardContain5.classList.remove('active');
+                cardContain6.classList.add('active');
+                cardContain7.classList.remove('active');
+                cardContain8.classList.remove('active');
+                cardContain9.classList.remove('active');
+                cardContain10.classList.remove('active');
+                cardContain11.classList.remove('active');
+                cardContain12.classList.remove('active');
+                cardContain6.classList.remove('hidden');
+                cardContain5.classList.add('hidden');
+                cardContain4.classList.remove('hidden');
+                cardContain3.classList.remove('hidden');
+                cardContain2.classList.remove('hidden');
+                cardContain1.classList.remove('hidden');
+                cardContain0.classList.remove('hidden');
+                select6.classList.add('active');
+                select5.classList.remove('active');
+                select7.classList.remove('active');
+                break;
+            case 7:
+                cardContain0.classList.remove('active');
+                cardContain1.classList.remove('active');
+                cardContain2.classList.remove('active');
+                cardContain3.classList.remove('active');
+                cardContain4.classList.remove('active');
+                cardContain5.classList.remove('active');
+                cardContain6.classList.remove('active');
+                cardContain7.classList.add('active');
+                cardContain8.classList.remove('active');
+                cardContain9.classList.remove('active');
+                cardContain10.classList.remove('active');
+                cardContain11.classList.remove('active');
+                cardContain12.classList.remove('active');
+                cardContain7.classList.remove('hidden');
+                cardContain6.classList.add('hidden');
+                cardContain5.classList.remove('hidden');
+                cardContain4.classList.remove('hidden');
+                cardContain3.classList.remove('hidden');
+                cardContain2.classList.remove('hidden');
+                cardContain1.classList.remove('hidden');
+                cardContain0.classList.remove('hidden');
+                select7.classList.add('active');
+                select6.classList.remove('active');
+                select8.classList.remove('active');
+
+                break;
+            case 8:
+                cardContain0.classList.remove('active');
+                cardContain1.classList.remove('active');
+                cardContain2.classList.remove('active');
+                cardContain3.classList.remove('active');
+                cardContain4.classList.remove('active');
+                cardContain5.classList.remove('active');
+                cardContain6.classList.remove('active');
+                cardContain7.classList.remove('active');
+                cardContain8.classList.add('active');
+                cardContain9.classList.remove('active');
+                cardContain10.classList.remove('active');
+                cardContain11.classList.remove('active');
+                cardContain12.classList.remove('active');
+                cardContain8.classList.remove('hidden');
+                cardContain7.classList.add('hidden');
+                cardContain6.classList.remove('hidden');
+                cardContain5.classList.remove('hidden');
+                cardContain4.classList.remove('hidden');
+                cardContain3.classList.remove('hidden');
+                cardContain2.classList.remove('hidden');
+                cardContain1.classList.remove('hidden');
+                cardContain0.classList.remove('hidden');
+                select8.classList.add('active');
+                select7.classList.remove('active');
+                select9.classList.remove('active');
+                break;
+            case 9:
+                cardContain0.classList.remove('active');
+                cardContain1.classList.remove('active');
+                cardContain2.classList.remove('active');
+                cardContain3.classList.remove('active');
+                cardContain4.classList.remove('active');
+                cardContain5.classList.remove('active');
+                cardContain6.classList.remove('active');
+                cardContain7.classList.remove('active');
+                cardContain8.classList.remove('active');
+                cardContain9.classList.add('active');
+                cardContain10.classList.remove('active');
+                cardContain11.classList.remove('active');
+                cardContain12.classList.remove('active');
+                cardContain9.classList.remove('hidden');
+                cardContain8.classList.add('hidden');
+                cardContain7.classList.remove('hidden');
+                cardContain6.classList.remove('hidden');
+                cardContain5.classList.remove('hidden');
+                cardContain4.classList.remove('hidden');
+                cardContain3.classList.remove('hidden');
+                cardContain2.classList.remove('hidden');
+                cardContain1.classList.remove('hidden');
+                cardContain0.classList.remove('hidden');
+                select9.classList.add('active');
+                select8.classList.remove('active');
+                select10.classList.remove('active');
+                break;
+            case 10:
+                cardContain0.classList.remove('active');
+                cardContain1.classList.remove('active');
+                cardContain2.classList.remove('active');
+                cardContain3.classList.remove('active');
+                cardContain4.classList.remove('active');
+                cardContain5.classList.remove('active');
+                cardContain6.classList.remove('active');
+                cardContain7.classList.remove('active');
+                cardContain8.classList.remove('active');
+                cardContain9.classList.remove('active');
+                cardContain10.classList.add('active');
+                cardContain11.classList.remove('active');
+                cardContain12.classList.remove('active');
+                cardContain10.classList.remove('hidden');
+                cardContain9.classList.add('hidden');
+                cardContain8.classList.remove('hidden');
+                cardContain7.classList.remove('hidden');
+                cardContain6.classList.remove('hidden');
+                cardContain5.classList.remove('hidden');
+                cardContain4.classList.remove('hidden');
+                cardContain3.classList.remove('hidden');
+                cardContain2.classList.remove('hidden');
+                cardContain1.classList.remove('hidden');
+                cardContain0.classList.remove('hidden');
+                select11.classList.add('active');
+                select10.classList.remove('active');
+                select12.classList.remove('active');
+
+
+                break;
+            case 11:
+                cardContain0.classList.remove('active');
+                cardContain1.classList.remove('active');
+                cardContain2.classList.remove('active');
+                cardContain3.classList.remove('active');
+                cardContain4.classList.remove('active');
+                cardContain5.classList.remove('active');
+                cardContain6.classList.remove('active');
+                cardContain7.classList.remove('active');
+                cardContain8.classList.remove('active');
+                cardContain9.classList.remove('active');
+                cardContain10.classList.remove('active');
+                cardContain11.classList.add('active');
+                cardContain12.classList.remove('active');
+                cardContain11.classList.remove('hidden');
+                cardContain10.classList.add('hidden');
+                cardContain9.classList.remove('hidden');
+                cardContain8.classList.remove('hidden');
+                cardContain7.classList.remove('hidden');
+                cardContain6.classList.remove('hidden');
+                cardContain5.classList.remove('hidden');
+                cardContain4.classList.remove('hidden');
+                cardContain3.classList.remove('hidden');
+                cardContain2.classList.remove('hidden');
+                cardContain1.classList.remove('hidden');
+                cardContain0.classList.remove('hidden');
+                select12.classList.add('active');
+                select11.classList.remove('active');
+                select13.classList.remove('active');
+
+                break;
+            case 12:
+                cardContain0.classList.remove('active');
+                cardContain1.classList.remove('active');
+                cardContain2.classList.remove('active');
+                cardContain3.classList.remove('active');
+                cardContain4.classList.remove('active');
+                cardContain5.classList.remove('active');
+                cardContain6.classList.remove('active');
+                cardContain7.classList.remove('active');
+                cardContain8.classList.remove('active');
+                cardContain9.classList.remove('active');
+                cardContain10.classList.remove('active');
+                cardContain11.classList.remove('active');
+                cardContain12.classList.add('active');
+                cardContain12.classList.remove('hidden');
+                cardContain11.classList.add('hidden');
+                cardContain10.classList.remove('hidden');
+                cardContain9.classList.remove('hidden');
+                cardContain8.classList.remove('hidden');
+                cardContain7.classList.remove('hidden');
+                cardContain6.classList.remove('hidden');
+                cardContain5.classList.remove('hidden');
+                cardContain4.classList.remove('hidden');
+                cardContain3.classList.remove('hidden');
+                cardContain2.classList.remove('hidden');
+                cardContain1.classList.remove('hidden');
+                cardContain0.classList.remove('hidden');
+                select12.classList.add('active');
+                select11.classList.remove('active');
+                break;
+
+        }
+
+
+    });
+
+
+    function selectCard0(){
+        cardNumber = 0;
+        cardContain0.classList.add('active');
+        cardContain1.classList.remove('active');
+        cardContain2.classList.remove('active');
+        cardContain3.classList.remove('active');
+        cardContain4.classList.remove('active');
+        cardContain5.classList.remove('active');
+        cardContain6.classList.remove('active');
+        cardContain7.classList.remove('active');
+        cardContain8.classList.remove('active');
+        cardContain9.classList.remove('active');
+        cardContain10.classList.remove('active');
+        cardContain11.classList.remove('active');
+        cardContain12.classList.remove('active');
+        cardContain0.classList.remove('hidden');
+        cardContain1.classList.remove('hidden');
+        cardContain2.classList.remove('hidden');
+        cardContain3.classList.remove('hidden');
+        cardContain4.classList.remove('hidden');
+        cardContain5.classList.remove('hidden');
+        cardContain6.classList.remove('hidden');
+        cardContain7.classList.remove('hidden');
+        cardContain8.classList.remove('hidden');
+        cardContain9.classList.remove('hidden');
+        cardContain10.classList.remove('hidden');
+        cardContain11.classList.remove('hidden');
+        cardContain12.classList.remove('hidden');
+        select0.classList.add('active');
+        select1.classList.remove('active');
+        select2.classList.remove('active');
+        select3.classList.remove('active');
+        select4.classList.remove('active');
+        select5.classList.remove('active');
+        select6.classList.remove('active');
+        select7.classList.remove('active');
+        select8.classList.remove('active');
+        select9.classList.remove('active');
+        select10.classList.remove('active');
+        select11.classList.remove('active');
+        select12.classList.remove('active');
+    }
+
+    function selectCard1(){
+        cardNumber = 1;
+        cardContain0.classList.remove('active');
+        cardContain1.classList.add('active');
+        cardContain2.classList.remove('active');
+        cardContain3.classList.remove('active');
+        cardContain4.classList.remove('active');
+        cardContain5.classList.remove('active');
+        cardContain6.classList.remove('active');
+        cardContain7.classList.remove('active');
+        cardContain8.classList.remove('active');
+        cardContain9.classList.remove('active');
+        cardContain10.classList.remove('active');
+        cardContain11.classList.remove('active');
+        cardContain12.classList.remove('active');
+        cardContain1.classList.remove('hidden');
+        cardContain0.classList.add('hidden');
+        cardContain2.classList.remove('hidden');
+        cardContain3.classList.remove('hidden');
+        cardContain4.classList.remove('hidden');
+        cardContain5.classList.remove('hidden');
+        cardContain6.classList.remove('hidden');
+        cardContain7.classList.remove('hidden');
+        cardContain8.classList.remove('hidden');
+        cardContain9.classList.remove('hidden');
+        cardContain10.classList.remove('hidden');
+        cardContain11.classList.remove('hidden');
+        cardContain12.classList.remove('hidden');
+        select1.classList.add('active');
+        select0.classList.remove('active');
+        select2.classList.remove('active');
+        select3.classList.remove('active');
+        select4.classList.remove('active');
+        select5.classList.remove('active');
+        select6.classList.remove('active');
+        select7.classList.remove('active');
+        select8.classList.remove('active');
+        select9.classList.remove('active');
+        select10.classList.remove('active');
+        select11.classList.remove('active');
+        select12.classList.remove('active');
+    }
+
+    function selectCard2(){
+        cardNumber = 2;
+        cardContain0.classList.remove('active');
+        cardContain1.classList.remove('active');
+        cardContain2.classList.add('active');
+        cardContain3.classList.remove('active');
+        cardContain4.classList.remove('active');
+        cardContain5.classList.remove('active');
+        cardContain6.classList.remove('active');
+        cardContain7.classList.remove('active');
+        cardContain8.classList.remove('active');
+        cardContain9.classList.remove('active');
+        cardContain10.classList.remove('active');
+        cardContain11.classList.remove('active');
+        cardContain12.classList.remove('active');
+        cardContain2.classList.remove('hidden');
+        cardContain1.classList.add('hidden');
+        cardContain0.classList.add('hidden');
+        cardContain3.classList.remove('hidden');
+        cardContain4.classList.remove('hidden');
+        cardContain5.classList.remove('hidden');
+        cardContain6.classList.remove('hidden');
+        cardContain7.classList.remove('hidden');
+        cardContain8.classList.remove('hidden');
+        cardContain9.classList.remove('hidden');
+        cardContain10.classList.remove('hidden');
+        cardContain11.classList.remove('hidden');
+        cardContain12.classList.remove('hidden');
+        select2.classList.add('active');
+        select1.classList.remove('active');
+        select0.classList.remove('active');
+        select3.classList.remove('active');
+        select4.classList.remove('active');
+        select5.classList.remove('active');
+        select6.classList.remove('active');
+        select7.classList.remove('active');
+        select8.classList.remove('active');
+        select9.classList.remove('active');
+        select10.classList.remove('active');
+        select11.classList.remove('active');
+        select12.classList.remove('active');
+    }
+
+    function selectCard3(){
+        cardNumber = 3;
+        cardContain0.classList.remove('active');
+        cardContain1.classList.remove('active');
+        cardContain2.classList.remove('active');
+        cardContain3.classList.add('active');
+        cardContain4.classList.remove('active');
+        cardContain5.classList.remove('active');
+        cardContain6.classList.remove('active');
+        cardContain7.classList.remove('active');
+        cardContain8.classList.remove('active');
+        cardContain9.classList.remove('active');
+        cardContain10.classList.remove('active');
+        cardContain11.classList.remove('active');
+        cardContain12.classList.remove('active');
+        cardContain3.classList.remove('hidden');
+        cardContain2.classList.add('hidden');
+        cardContain1.classList.add('hidden');
+        cardContain0.classList.add('hidden');
+        cardContain4.classList.remove('hidden');
+        cardContain5.classList.remove('hidden');
+        cardContain6.classList.remove('hidden');
+        cardContain7.classList.remove('hidden');
+        cardContain8.classList.remove('hidden');
+        cardContain9.classList.remove('hidden');
+        cardContain10.classList.remove('hidden');
+        cardContain11.classList.remove('hidden');
+        cardContain12.classList.remove('hidden');
+        select3.classList.add('active');
+        select2.classList.remove('active');
+        select1.classList.remove('active');
+        select0.classList.remove('active');
+        select4.classList.remove('active');
+        select5.classList.remove('active');
+        select6.classList.remove('active');
+        select7.classList.remove('active');
+        select8.classList.remove('active');
+        select9.classList.remove('active');
+        select10.classList.remove('active');
+        select11.classList.remove('active');
+        select12.classList.remove('active');
+    }
+
+    function selectCard4(){
+        cardNumber = 4;
+        cardContain0.classList.remove('active');
+        cardContain1.classList.remove('active');
+        cardContain2.classList.remove('active');
+        cardContain3.classList.remove('active');
+        cardContain4.classList.add('active');
+        cardContain5.classList.remove('active');
+        cardContain6.classList.remove('active');
+        cardContain7.classList.remove('active');
+        cardContain8.classList.remove('active');
+        cardContain9.classList.remove('active');
+        cardContain10.classList.remove('active');
+        cardContain11.classList.remove('active');
+        cardContain12.classList.remove('active');
+        cardContain4.classList.remove('hidden');
+        cardContain3.classList.add('hidden');
+        cardContain2.classList.add('hidden');
+        cardContain1.classList.add('hidden');
+        cardContain0.classList.add('hidden');
+        cardContain5.classList.remove('hidden');
+        select4.classList.add('active');
+        select3.classList.remove('active');
+        select2.classList.remove('active');
+        select1.classList.remove('active');
+        select0.classList.remove('active');
+        select5.classList.remove('active');
+        select6.classList.remove('active');
+        select7.classList.remove('active');
+        select8.classList.remove('active');
+        select9.classList.remove('active');
+        select10.classList.remove('active');
+        select11.classList.remove('active');
+        select12.classList.remove('active');
+    }
+
+    function selectCard5(){
+        cardNumber = 5;
+        cardContain0.classList.remove('active');
+        cardContain1.classList.remove('active');
+        cardContain2.classList.remove('active');
+        cardContain3.classList.remove('active');
+        cardContain4.classList.remove('active');
+        cardContain5.classList.add('active');
+        cardContain6.classList.remove('active');
+        cardContain7.classList.remove('active');
+        cardContain8.classList.remove('active');
+        cardContain9.classList.remove('active');
+        cardContain10.classList.remove('active');
+        cardContain11.classList.remove('active');
+        cardContain12.classList.remove('active');
+        cardContain5.classList.remove('hidden');
+        cardContain4.classList.add('hidden');
+        cardContain3.classList.add('hidden');
+        cardContain2.classList.add('hidden');
+        cardContain1.classList.add('hidden');
+        cardContain0.classList.add('hidden');
+        cardContain6.classList.remove('hidden');
+        cardContain7.classList.remove('hidden');
+        cardContain8.classList.remove('hidden');
+        cardContain9.classList.remove('hidden');
+        cardContain10.classList.remove('hidden');
+        cardContain11.classList.remove('hidden');
+        cardContain12.classList.remove('hidden');
+        select5.classList.add('active');
+        select4.classList.remove('active');
+        select3.classList.remove('active');
+        select2.classList.remove('active');
+        select1.classList.remove('active');
+        select0.classList.remove('active');
+        select6.classList.remove('active');
+        select8.classList.remove('active');
+        select9.classList.remove('active');
+        select10.classList.remove('active');
+        select11.classList.remove('active');
+        select12.classList.remove('active');
+    }
+    function selectCard6(){
+        cardNumber = 6;
+        cardContain0.classList.remove('active');
+        cardContain1.classList.remove('active');
+        cardContain2.classList.remove('active');
+        cardContain3.classList.remove('active');
+        cardContain4.classList.remove('active');
+        cardContain5.classList.remove('active');
+        cardContain6.classList.add('active');
+        cardContain7.classList.remove('active');
+        cardContain8.classList.remove('active');
+        cardContain9.classList.remove('active');
+        cardContain10.classList.remove('active');
+        cardContain11.classList.remove('active');
+        cardContain12.classList.remove('active');
+        cardContain6.classList.remove('hidden');
+        cardContain5.classList.add('hidden');
+        cardContain4.classList.add('hidden');
+        cardContain3.classList.add('hidden');
+        cardContain2.classList.add('hidden');
+        cardContain1.classList.add('hidden');
+        cardContain0.classList.add('hidden');
+        cardContain7.classList.remove('hidden');
+        cardContain8.classList.remove('hidden');
+        cardContain9.classList.remove('hidden');
+        cardContain10.classList.remove('hidden');
+        cardContain11.classList.remove('hidden');
+        cardContain12.classList.remove('hidden');
+        select6.classList.add('active');
+        select5.classList.remove('active');
+        select4.classList.remove('active');
+        select3.classList.remove('active');
+        select2.classList.remove('active');
+        select1.classList.remove('active');
+        select0.classList.remove('active');
+        select7.classList.remove('active');
+        select8.classList.remove('active');
+        select9.classList.remove('active');
+        select10.classList.remove('active');
+        select11.classList.remove('active');
+        select12.classList.remove('active');
+    }
+
+    function selectCard7(){
+        cardNumber = 7;
+        cardContain0.classList.remove('active');
+        cardContain1.classList.remove('active');
+        cardContain2.classList.remove('active');
+        cardContain3.classList.remove('active');
+        cardContain4.classList.remove('active');
+        cardContain5.classList.remove('active');
+        cardContain6.classList.remove('active');
+        cardContain7.classList.add('active');
+        cardContain8.classList.remove('active');
+        cardContain9.classList.remove('active');
+        cardContain10.classList.remove('active');
+        cardContain11.classList.remove('active');
+        cardContain12.classList.remove('active');
+        cardContain7.classList.remove('hidden');
+        cardContain6.classList.add('hidden');
+        cardContain5.classList.add('hidden');
+        cardContain4.classList.add('hidden');
+        cardContain3.classList.add('hidden');
+        cardContain2.classList.add('hidden');
+        cardContain1.classList.add('hidden');
+        cardContain0.classList.add('hidden');
+        cardContain8.classList.remove('hidden');
+        cardContain9.classList.remove('hidden');
+        cardContain10.classList.remove('hidden');
+        cardContain11.classList.remove('hidden');
+        cardContain12.classList.remove('hidden');
+        select7.classList.add('active');
+        select6.classList.remove('active');
+        select5.classList.remove('active');
+        select4.classList.remove('active');
+        select3.classList.remove('active');
+        select2.classList.remove('active');
+        select1.classList.remove('active');
+        select0.classList.remove('active');
+        select8.classList.remove('active');
+        select9.classList.remove('active');
+        select10.classList.remove('active');
+        select11.classList.remove('active');
+        select12.classList.remove('active');
+    }
+    function selectCard8(){
+        cardNumber = 8;
+        cardContain0.classList.remove('active');
+        cardContain1.classList.remove('active');
+        cardContain2.classList.remove('active');
+        cardContain3.classList.remove('active');
+        cardContain4.classList.remove('active');
+        cardContain5.classList.remove('active');
+        cardContain6.classList.remove('active');
+        cardContain7.classList.remove('active');
+        cardContain8.classList.add('active');
+        cardContain9.classList.remove('active');
+        cardContain10.classList.remove('active');
+        cardContain11.classList.remove('active');
+        cardContain12.classList.remove('active');
+        cardContain8.classList.remove('hidden');
+        cardContain7.classList.add('hidden');
+        cardContain6.classList.add('hidden');
+        cardContain5.classList.add('hidden');
+        cardContain4.classList.add('hidden');
+        cardContain3.classList.add('hidden');
+        cardContain2.classList.add('hidden');
+        cardContain1.classList.add('hidden');
+        cardContain0.classList.add('hidden');
+        cardContain9.classList.remove('hidden');
+        cardContain10.classList.remove('hidden');
+        cardContain11.classList.remove('hidden');
+        cardContain12.classList.remove('hidden');
+        select8.classList.remove('active');
+        select7.classList.remove('active');
+        select6.classList.remove('active');
+        select5.classList.remove('active');
+        select4.classList.remove('active');
+        select3.classList.remove('active');
+        select2.classList.remove('active');
+        select1.classList.remove('active');
+        select0.classList.remove('active');
+        select9.classList.remove('active');
+        select10.classList.remove('active');
+        select11.classList.remove('active');
+        select12.classList.remove('active');
+    }
+    function selectCard9(){
+        cardNumber = 9;
+        cardContain0.classList.remove('active');
+        cardContain1.classList.remove('active');
+        cardContain2.classList.remove('active');
+        cardContain3.classList.remove('active');
+        cardContain4.classList.remove('active');
+        cardContain5.classList.remove('active');
+        cardContain6.classList.remove('active');
+        cardContain7.classList.remove('active');
+        cardContain8.classList.remove('active');
+        cardContain9.classList.add('active');
+        cardContain10.classList.remove('active');
+        cardContain11.classList.remove('active');
+        cardContain12.classList.remove('active');
+        cardContain9.classList.remove('hidden');
+        cardContain8.classList.add('hidden');
+        cardContain7.classList.add('hidden');
+        cardContain6.classList.add('hidden');
+        cardContain5.classList.add('hidden');
+        cardContain4.classList.add('hidden');
+        cardContain3.classList.add('hidden');
+        cardContain2.classList.add('hidden');
+        cardContain1.classList.add('hidden');
+        cardContain0.classList.add('hidden');
+        cardContain10.classList.remove('hidden');
+        cardContain11.classList.remove('hidden');
+        cardContain12.classList.remove('hidden');
+        select9.classList.add('active');
+        select8.classList.remove('active');
+        select7.classList.remove('active');
+        select6.classList.remove('active');
+        select5.classList.remove('active');
+        select4.classList.remove('active');
+        select3.classList.remove('active');
+        select2.classList.remove('active');
+        select1.classList.remove('active');
+        select0.classList.remove('active');
+        select10.classList.remove('active');
+        select11.classList.remove('active');
+        select12.classList.remove('active');
+    }
+    function selectCard10(){
+        cardNumber = 10;
+        cardContain0.classList.remove('active');
+        cardContain1.classList.remove('active');
+        cardContain2.classList.remove('active');
+        cardContain3.classList.remove('active');
+        cardContain4.classList.remove('active');
+        cardContain5.classList.remove('active');
+        cardContain6.classList.remove('active');
+        cardContain7.classList.remove('active');
+        cardContain8.classList.remove('active');
+        cardContain9.classList.remove('active');
+        cardContain10.classList.add('active');
+        cardContain11.classList.remove('active');
+        cardContain12.classList.remove('active');
+        cardContain10.classList.remove('hidden');
+        cardContain9.classList.add('hidden');
+        cardContain8.classList.add('hidden');
+        cardContain7.classList.add('hidden');
+        cardContain6.classList.add('hidden');
+        cardContain5.classList.add('hidden');
+        cardContain4.classList.add('hidden');
+        cardContain3.classList.add('hidden');
+        cardContain2.classList.add('hidden');
+        cardContain1.classList.add('hidden');
+        cardContain0.classList.add('hidden');
+        cardContain11.classList.remove('hidden');
+        cardContain12.classList.remove('hidden');
+        select10.classList.add('active');
+        select9.classList.remove('active');
+        select8.classList.remove('active');
+        select7.classList.remove('active');
+        select6.classList.remove('active');
+        select5.classList.remove('active');
+        select4.classList.remove('active');
+        select3.classList.remove('active');
+        select2.classList.remove('active');
+        select1.classList.remove('active');
+        select0.classList.remove('active');
+        select11.classList.remove('active');
+        select12.classList.remove('active');
+    }
+    function selectCard11(){
+        cardNumber = 11;
+        cardContain0.classList.remove('active');
+        cardContain1.classList.remove('active');
+        cardContain2.classList.remove('active');
+        cardContain3.classList.remove('active');
+        cardContain4.classList.remove('active');
+        cardContain5.classList.remove('active');
+        cardContain6.classList.remove('active');
+        cardContain7.classList.remove('active');
+        cardContain8.classList.remove('active');
+        cardContain9.classList.remove('active');
+        cardContain10.classList.remove('active');
+        cardContain11.classList.add('active');
+        cardContain12.classList.remove('active');
+        cardContain11.classList.remove('hidden');
+        cardContain10.classList.add('hidden');
+        cardContain9.classList.add('hidden');
+        cardContain8.classList.add('hidden');
+        cardContain7.classList.add('hidden');
+        cardContain6.classList.add('hidden');
+        cardContain5.classList.add('hidden');
+        cardContain4.classList.add('hidden');
+        cardContain3.classList.add('hidden');
+        cardContain2.classList.add('hidden');
+        cardContain1.classList.add('hidden');
+        cardContain0.classList.add('hidden');
+        cardContain12.classList.remove('hidden');
+        select11.classList.add('active');
+        select10.classList.remove('active');
+        select9.classList.remove('active');
+        select8.classList.remove('active');
+        select7.classList.remove('active');
+        select6.classList.remove('active');
+        select5.classList.remove('active');
+        select4.classList.remove('active');
+        select3.classList.remove('active');
+        select2.classList.remove('active');
+        select1.classList.remove('active');
+        select0.classList.remove('active');
+        select12.classList.remove('active');
+    }
+
+    function selectCard12(){
+        cardNumber = 12;
+        cardContain0.classList.remove('active');
+        cardContain1.classList.remove('active');
+        cardContain2.classList.remove('active');
+        cardContain3.classList.remove('active');
+        cardContain4.classList.remove('active');
+        cardContain5.classList.remove('active');
+        cardContain6.classList.remove('active');
+        cardContain7.classList.remove('active');
+        cardContain8.classList.remove('active');
+        cardContain9.classList.remove('active');
+        cardContain10.classList.remove('active');
+        cardContain11.classList.remove('active');
+        cardContain12.classList.add('active');
+        cardContain12.classList.remove('hidden');
+        cardContain11.classList.add('hidden');
+        cardContain10.classList.add('hidden');
+        cardContain9.classList.add('hidden');
+        cardContain8.classList.add('hidden');
+        cardContain7.classList.add('hidden');
+        cardContain6.classList.add('hidden');
+        cardContain5.classList.add('hidden');
+        cardContain4.classList.add('hidden');
+        cardContain3.classList.add('hidden');
+        cardContain2.classList.add('hidden');
+        cardContain1.classList.add('hidden');
+        cardContain0.classList.add('hidden');
+        select12.classList.add('active');
+        select11.classList.remove('active');
+        select10.classList.remove('active');
+        select9.classList.remove('active');
+        select8.classList.remove('active');
+        select7.classList.remove('active');
+        select6.classList.remove('active');
+        select5.classList.remove('active');
+        select4.classList.remove('active');
+        select3.classList.remove('active');
+        select2.classList.remove('active');
+        select1.classList.remove('active');
+        select0.classList.remove('active');
+    }
+</script>
 {% endblock %}
