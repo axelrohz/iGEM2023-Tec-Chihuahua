@@ -4,1223 +4,1918 @@
 {% block lead %}We ask every team to think deeply and creatively about whether their project is responsible and good for the world. Consider how the world affects your work and how your work affects the world.{% endblock %}
 
 {% block page_content %}
-<head>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-</head>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+   	 <meta charset="UTF-8">
+   	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   	 <link rel="stylesheet" href="../../static/css/human.css">
+   	 <link href="{{ url_for('static', filename = 'css/human.css') }}" rel="stylesheet">
+   	 <script type=”text/javascript” src=”http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML”></script>
+    </head>
+    <body>
+   	 <div class="dad">
+   	 <div class="parallax-team">
+   			 <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+   			 <link rel="stylesheet" href="static/css/parts.css">
+				
+   			 <link rel="stylesheet" href="static/css/waveHead.css">
+   			 
+   		 
+   			 <div class="headParts">
+				<div class="headingParts">
+					<div class="typewriter">
+						<h1 class="Title">Human Practices</h1>
+					</div>   				 
+				</div>
+          
+   					 <svg class="waveParts" id="visual" viewBox="0 0 960 540" xmlns="http://www.w3.org/2000/svg"
+   							 xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+   							 <g>
+   									 <path id="wave11"
+   											 d="M0 335L20 326.2C40 317.3 80 299.7 120 292.3C160 285 200 288 240 301.8C280 315.7 320 340.3 360 348.3C400 356.3 440 347.7 480 337.2C520 326.7 560 314.3 600 311C640 307.7 680 313.3 720 321.2C760 329 800 339 840 332.2C880 325.3 920 301.7 940 289.8L960 278L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
+   											 fill="#A7DCD3"></path>
+   									 <path id="wave12"
+   											 d="M0 384L20 379.2C40 374.3 80 364.7 120 373.8C160 383 200 411 240 424C280 437 320 435 360 424.5C400 414 440 395 480 391.3C520 387.7 560 399.3 600 398.2C640 397 680 383 720 374.2C760 365.3 800 361.7 840 358.3C880 355 920 352 940 350.5L960 349L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
+   											 fill="#81D1BF"></path>
+   									 <path id="wave13"
+   											 d="M0 483L20 480.8C40 478.7 80 474.3 120 475.8C160 477.3 200 484.7 240 488.5C280 492.3 320 492.7 360 486.7C400 480.7 440 468.3 480 464.3C520 460.3 560 464.7 600 471C640 477.3 680 485.7 720 480.3C760 475 800 456 840 450.8C880 445.7 920 454.3 940 458.7L960 463L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
+   											 fill="#5BC5AB"></path>
+   							 </g>
+   							 <g style="visibility: hidden">
+   									 <path id="wave21"
+   											 d="M0 315L20 324.2C40 333.3 80 351.7 120 354.3C160 357 200 344 240 333.3C280 322.7 320 314.3 360 324C400 333.7 440 361.3 480 358.8C520 356.3 560 323.7 600 311.8C640 300 680 309 720 321.7C760 334.3 800 350.7 840 344.2C880 337.7 920 308.3 940 293.7L960 279L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
+   											 fill="#A7DCD3"></path>
+   									 <path id="wave22"
+   											 d="M0 387L20 390.3C40 393.7 80 400.3 120 394.8C160 389.3 200 371.7 240 376.2C280 380.7 320 407.3 360 421.2C400 435 440 436 480 433.7C520 431.3 560 425.7 600 414.7C640 403.7 680 387.3 720 382.7C760 378 800 385 840 384.5C880 384 920 376 940 372L960 368L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
+   											 fill="#81D1BF"></path>
+   									 <path id="wave23"
+   											 d="M0 485L20 486.7C40 488.3 80 491.7 120 490.5C160 489.3 200 483.7 240 479.5C280 475.3 320 472.7 360 466.8C400 461 440 452 480 449.5C520 447 560 451 600 458.2C640 465.3 680 475.7 720 478.3C760 481 800 476 840 469C880 462 920 453 940 448.5L960 444L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
+   											 fill="#5BC5AB"></path>
+   							 </g>
+   			 
+   			 
+   					 </svg>
+   			 
+   					 <script>
+   							 const tween = KUTE.fromTo(
+   									 '#wave11',
+   									 { path: '#wave11' },
+   									 { path: '#wave21' },
+   									 { repeat: 999, duration: 5000, yoyo: true }
+   							 ).start();
+   					 </script>
+   					 <script>
+   							 const tween2 = KUTE.fromTo(
+   									 '#wave12',
+   									 { path: '#wave12' },
+   									 { path: '#wave22' },
+   									 { repeat: 999, duration: 4000, yoyo: true }
+   							 ).start();
+   					 </script>
+   					 <script>
+   							 const tween3 = KUTE.fromTo(
+   									 '#wave13',
+   									 { path: '#wave13' },
+   									 { path: '#wave23' },
+   									 { repeat: 999, duration: 3000, yoyo: true }
+   							 ).start();
+   					 </script>
+   			 
+   			 
+   			 </div>
+   		 </div>
+   	 </div>
+   	 <!--Seccion que ya sirve, no mover-->
+   	 <div class="button-container">
+   		 <div class="logocontainer">
+   			 <div class="methods">
+   				 <div class="button-content">
+   					 <p class="tituloBoton">Silver</p>
+   					 <p class="contentBoton">
+   						 <br>
+   						 How We Did It
+   					 </p>
+   					 <button onclick="showSection('sectionMethods')" class="learnMore">Go to section</button>
+   				 </div>
+   			 </div>
+   			 <div class="overview">
+   				 <div class="button-content">
+   					 <p class="tituloBoton">Overview</p>
+   					 <p class="contentBoton">
+   						 <br>
+   						 The Big Picture
+   					 </p>
+   					 <button onclick="showSection('sectionOverview')" class="learnMore">Go to section</button>
+   				 </div>
+   			 </div>
+   			 <div class="results">
+   				 <div class="button-content">
+   					 <p class="tituloBoton">Gold</p>
+   					 <p class="contentBoton">
+   						 <br>
+   						 What We Found
+   					 </p>
+   					 <button onclick="showSection('sectionResults')" class="learnMore">Go to section</button>
+   				 </div>
+   			 </div>
+   			 <svg id="retina" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   			 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+   				 <path id="Retina2" class="st9" d="M222,186.3l-5.1,4.9l2.1-6.7c-0.7-0.2-1.3-0.3-2.1-0.3c-3.9,0-7.1,3.2-7.1,7.1
+   			 c0,3.9,3.2,7.1,7.1,7.1c3.9,0,7.1-3.2,7.1-7.1C224,189.2,223.3,187.5,222,186.3z"/>
+   				 <path id="Retina1" class="st9" d="M281.6,186.3l-5.1,4.9l2.1-6.7c-0.7-0.2-1.3-0.3-2.1-0.3c-3.9,0-7.1,3.2-7.1,7.1
+   			 c0,3.9,3.2,7.1,7.1,7.1c3.9,0,7.1-3.2,7.1-7.1C283.5,189.2,282.8,187.5,281.6,186.3z"/>
+   			 </svg>'
+   			 <img id="taffy" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/glacial-indifference-photoroom-png-photoroom.png">
+   		 </div>
 
-<link href="{{ url_for('static', filename='css/pruebas.css') }}" rel="stylesheet">
-<header>
-  <section class="HUMANPRACTICES">
-    <h1 class="animate__animated animate__pulse">HUMAN PRACTICES</h1>
-  </section>
-  <div class="wave"style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-5.60,71.55 C182.73,158.40 442.82,-54.75 504.48,113.01 L500.00,150.00 L-10.08,154.45 Z" style="stroke: none; fill: #FFFF;"></path></svg></div>
-</header>
-<main>
-  <section class="our beginnings">
-    <h2 class="titulo1">OUR BEGINNINGS</h2>
-    <div class="TAFFY">
-      <img class="imagen-taffy" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/taffy-1.png" alt="" width="330" height="400">
-      <div class="texto" >
-        <p>
-          <p>Everything starts with a necessity, only initiative is required <br>to make a change. Since the beginning of our project, <br> we had our sights set on working with cows, these <br> beautiful animals that provide us with milk,<br>  a highly nutritious food for many (Morales-Ubaldo et al.,2023) <br>
-            While investigating current issues in our community, we<br>came across mastitis, a highly common infection in dairy <br> cows. This is when our journey begins. <br>
-            Aureobos a non-antibiotic treatment for mastitis, strives to <br> minimize the necessity for milk withdrawal during <br> treatment, In this way, food waste and economic losses <br> suffered by milk producers would be reduced. <br> Our goal is to address the challenges of today s world, <br> which encompass nutritional, economic, and health-related issues. 
-          </p>
+   	 <script>
+   		 function showSection(sectionId) {
+   	 // Hide all sections
+   	 var sections = document.querySelectorAll('#scrlS3 > div');
+   	 sections.forEach(function(section) {
+   		 section.style.display = 'none';
+   	 });
+
+   	 // Show the selected section
+   	 var selectedSection = document.getElementById(sectionId);
+   	 if (selectedSection) {
+   		 selectedSection.style.display = 'block';
+   	 }
+   	 }
+
+   	 </script>
+   	 </div>
+   	 <!--seccion que ya sirve arriba-->
+   	 <!--secciones-->
+   	 <div id="scrlS3"> <!--encapsula todos los divs-->
+   		 <div id="sectionOverview" class="sectO">
+   	 <div class="secciones">
+   		 <div class="seccionOverview">
+   			 <p class="subtitleO">Overview</p>
+   		 </div>
+   	 </div>
+   	 <div class="layout">
+   		 <!--cosas del index-->
+   		 <div class="index1">
+   		 <nav class="navigation">
+   			 <ul>
+   			 <li><a class="introduction" href="#introduction">Introduction</a></li>
+   			 <li><a class="conclusion" href="#conclusion">Conclusion</a></li>
+   			 <li><a class="references" href="#referencesO">References</a></li>
+   			 </ul>
+   		 </nav>
+   		 </div>
+   		 <div class="Content">
+   		 <div class="mkt-3dSlider py-6">
+
+			<div class="topcardscontainer">
+				<div class="card">
+				  <div class="card-item">
+					  <img src="" alt="">
+					  <h3>Exchange ideas</h3>
+					  <h4><b>How?</b></h4>
+				  </div>
+				  <div class="card-text" >
+					  <p>
+						Discussing the project and problems with different teams
+					  </p>
+				  </div>
+				</div>
+
+				<div class="card">
+				  <div class="card-item">
+					<img src="" alt="">
+					<h3>Connecting with the world</h3>
+					<h4><b>What?</b></h4>
+				  </div>
+				  <div class="card-text">
+				  <p>
+					We gave feedback and they gave us feedback on our project with other teams
+				  </p>
+				  </div>
+				</div>
+
+				<div class="card" style="display: flex; justify-content: center;">
+				  <div class="card-item">
+					  <img src="" alt="">
+					  <h3 style="text-align: center;">Vision for the world</h3>
+					  <h4><b>Why?</b></h4>
+				  </div>
+				  <div class="card-text">
+					  <p>
+						We create alliances in different parts of the world 
+					  </p>
+				  </div>
+				</div>
+			  </div>
+	
+
+   		 </div>
+
+
+   		 <div class="tituloContenido">
+   			 <h3 id="introduction"><br><br><br><br>Overview</h3>
+   		 </div>
+   		 <div>
+   			 <p class="contenido">
+   			 Everything starts with a necessity, only initiative is required to make a change. Since the beginning of our project, we had our sights set on working with cows, these beautiful animals that provide us with milk, a highly nutritious food for many (Morales-Ubaldo et al.,2023).While investigating current issues in our community, we came across 
+				<b class="tooltipSignificado">mastitis
+   				 <span class="tooltipSignificadoBox">
+   				 a bacterial infection that results in swelling and pain, affecting the cow's udder.Dairy mastitis is a significant concern,as it leads to decreased milk production,changes in milk quality, andeconomic losses for dairy farmers.
+   				 </span>
+   			    </b>
+			    ,a highly common infection in dairy cows. This is when our journey begins.
+   			 <br>
+   			 <br>
+				<b>Aureobos</b> a non-antibiotic treatment for mastitis, strives to minimize the necessity for milk withdrawal during treatment, In this way, <b>food waste</b> and <b>economic losses</b> suffered by milk producers would be reduced. Our goal is to address the challenges of today’s world, which encompass <b>nutritional, economic, and health-related issues.</b>
+				
+   			 </p>
+			<br>
+   			<br>
+				<section>
+					<p>
+					<img class=ODS2 src="https://static.igem.wiki/teams/4607/wiki/human-2-0/ods2zerohunger.gif" alt="ODS2">	
+				</section>
+				<section>
+                    <p>
+                    <img class=ODS3 src="https://static.igem.wiki/teams/4607/wiki/human-2-0/odsgoodhealth.gif" alt="ODS3">   
+                </section>
+				<div class="pie_de_figura">
+					<p id="pie_de_figura"><br><br><br><br><em>Fig. 1</em> SDG 2 (Zero Hunger) & SDG 3 (Good health and well-being)</p>
+				</div>
+   			 
+			<div class="tituloContenido">
+				<h3 id="introduction"><br><br><br><br>Addressing a global problem</h3>
+			</div>
+			
+
+   			 <p class="contenido">
+   			 Milk is a staple food worldwide, during the development of our project we noticed the importance of dairy cow health for producing high-quality milk, affecting both the community we live in and the world, where <b>8 billion</b> people live, a concerning issue comes to light the high demand for milk. In the year 2022, <b>366.800 million</b>  kilograms of milk found their place, and as we gaze to 2028, projections point to the consumption of <b>435.000 million</b>  kilograms (Orús, 2023) 2.  Having addressed the magnitude of the people with whom we share this staple food, we can emphasize on the problem we face.
+   			 </p>
+   			 <p class="cta1">
+   			 <span>Mastitis is estimated to cost the <b>global</b> dairy industry <b>$19.7B-32B USD</b>annually </span>
+   			 </p>
+			 
+   			 <br>
+   			 <p class="contenido">
+   			 This infection affects between 15% and 20% of the cattle population each year (Tomanić et al., 2023). 4 and so is a common and costly disease that influences dairy cattle, reducing milk  <b>quality </b>and <b>quantity</b>.We are getting closer to our local community! But first, let's talk about the importance of dairy in <b>Mexico</b>.
+   			 <br>
+   			 <br>
+			 <br>
+   			 <br>
+			 <br>
+   			 <br>
+			 <!--postits-->
+				<section>
+					<p>
+					<img class=post_it_1 src="https://static.igem.wiki/teams/4607/wiki/human-2-0/postit1.gif" alt="post_it_1">	
+				</section>
+				<section>
+					<p>
+					<img class=post_it_2 src="https://static.igem.wiki/teams/4607/wiki/human-2-0/postit2.gif" alt="post_it_2">	
+				</section>
+				<section>
+					<p>
+					<img class=post_it_3 src="https://static.igem.wiki/teams/4607/wiki/human-2-0/postit3.gif" alt="post_it_3">	
+				</section>
+
+			<p class="contenido">
+				Considering the impact of the industry on the Mexican economy, and its importance in the production of the 
+			<b class="tooltipSignificado">basic Mexican food basket
+   				 <span class="tooltipSignificadoBox">
+   				 The term basic basket, in the economic field, refers to the set of products and services considered essential for the subsistence and well-being of the members of a family.
+   				 </span>
+   			</b>
+				,milk is one of the essentials in the diet of many, ranking México as the <b>8th largest milk consumer</b>  (Statista) 2.
+					
+			</p>
+			
+			<div class="tituloContenido">
+				<h3 id="introduction"><br><br><br><br>At Home</h3>
+			</div>
+			<p class="contenido">
+				In our hometown, Chihuahua the main livestock activity developed is the production of bovine milk, representing a high economic importance since it occupies the fourth place nationally in total milk production.
+			</p>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<!--diagrama de graficas-->
+			<section>
+				<p>
+				<img class=graficas src="https://static.igem.wiki/teams/4607/wiki/human-2-0/graficas2.gif" alt="graficas">	
+			</section>
+
+			<p class="contenido">
+				Consulting this information we noticed how important this problem was for our community. Here is when we started mapping people involved in the milking process, we wanted to listen with our own ears and see with our own eyes, how the industry and small-scale producers dealt with mastitis.
+			</p>
+			<div class="tituloContenido">
+				<h3 id="introduction"><br><br><br><br>Where it all started</h3>
+			</div>
+			<p class="contenido">
+				To gain a true understanding of the issue, we decided to experience it firsthand. We had a brainstorming session with our team, in which we identified the parties involved in the process and evaluated whether they were being positively or negatively affected. We came up with a value chain that goes from the treatments and the people involved in their development, to the public approval, or us, milk consumers. This approach played a significant role in shaping our project's success as it offered us valuable insights, identified needs, and outlined requirements for addressing the mastitis problem.
+			</p>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<section>
+				<p>
+				<img class=cadena_de_valor src="https://static.igem.wiki/teams/4607/wiki/human-2-0/cadenavalor3.gif" alt="cadena_de_valor">	
+			</section>
+			<p class="contenido">
+				Before we aboard what we learned from each stakeholder, we want to address the importance each of them has in the development of our project.
+			</p>
+			<!--card1-->
+			<section>
+				<p>
+				<img class=card1 src="https://static.igem.wiki/teams/4607/wiki/human-2-0/1.png" alt="card1">	
+			</section>
+			
+			 <!--cosas del index-->
+		
+   			 Our model consists of a system representation through 13 ordinary differential equations (ODEs), enabling us to predict protein expression. To address the stochastic nature of the system, where behavior is influenced by probabilities<sup>2</sup> and achieve robust/realistic results, we account the uncertainty sources into our model by a Monte Carlo simulation to identify the model's parameters range and assess the sensitivity to changes. The quantification of specific endolysin yield was achieved through a
+   			 <b class="tooltipSignificado">grey-box
+   				 <span class="tooltipSignificadoBox">
+   				 Flexible and pragmatic method that acknowledges the practical limitations of accessing full internal system details while utilizing the available knowledge to create effective and efficient solutions.
+   				 </span>  
+   			 </b>
+   			 surrogate model, incorporating equations derived from literature for steady-state behavior. This model was centered around the purification stage, offering a foundation for the downstream process
+   			 <br>
+   			 <br>
+   			 Additionally, we present a combined SDS–PAGE gel electrophoresis with banding pattern recognition to enable rapid protein distribution examination. The acceleration in detection not only significantly reduces experimental costs but is also pivotal as biological system studies increasingly embrace quantitative methods, emphasizing the growing role of mathematical analysis.<sup>3,4</sup>
+   			 This phase of our methodology aims to identify potential interventions or enhancements in a forward-engineering framework, advocating for the integration of a mathematical model at the conceptual design stage<sup>5,6</sup>
+   			 and serves as a foundation for the (re-)design, construction, characterization, and testing of the envisioned system.
+   			 <br>
+   			 <br>
+   			 Nevertheless, a key challenge lies in accurately calibrating these models, addressing the parameter estimation problem associated with unknown rate constants for each interaction in a network.<sup>7</sup>
+   			 Here, allowed to determine the unknown parameters, adjusting the model to best align with experimental data, even for parameters not directly measurable, thus enhancing the model's overall fit with experimental results. Parameter robustness is crucial in modeling, as even minor variations can significantly impact the model's behavior and performance.
+   			 <br>
+   			 <br>
+   			 Moreover, having taken these crucial aspects into consideration, our focus expanded towards considering the subsequent steps required to develop a viable alternative to antibiotic therapy. This included the use of steady-state equations for purification and quantifying the endolysin concentrations, thus, the pivotal phase of our study unfolded:
+   			 </p>
+   			 <br>
+   			 <p class="cta4">
+   			 <span>How effective is the endolysin in killing the target bacteria?</span>
+   			 </p>
+   			 <br>
+   			 <p class="cta5">
+   				 <span>Is there a dose-response relationship between endolysin concentration and bacterial kill rate?</span>
+   			 </p>
+   			 <br>
+   			 <p class="cta6">
+   				 <span>Are there synergistic or antagonistic interactions between the endolysins?</sp>
+   			 </p>
+   			 </p>
+   			 <br>
+   			 <p class="contenido">
+   			 In the culmination of our study, we sought to understand how the endolysin's mechanism interacts with various bacterial strains. This investigation was carried out using a design of experiments (DoE) approach inspired by a checkerboard assay. This approach helped us determine if the efficacy of the endolysin is influenced by synergic or antagonistic interactions. For the analysis, we utilized a
+   			 <b class="tooltipSignificado">response surface
+   				 <span class="tooltipSignificadoBox">
+   				 Technique used to analyze the relationship between input variables and a response variable, allowing for an optimization of the response by adjusting the inputs.
+   				 </span>
+   			 </b>
+   			 method (RSM) as a statistical tool in our product development work. RSM led to the identification of factor settings that collectively optimized multiple variables that align with desired responses and specifications. In our quest for optimization within our bactericidal system, RSM enabled us to make informed trade-offs between responses.
+   			 </p>
+   		 </div>
+   		 <div class="tituloContenido">
+   			 <h3 id="conclusion"><br><br><br><br>Conclusion</h3>
+   		 </div>
+   		 <div>
+   			 <!--aquí irá la conclusión-->
+   		 </div>
+   		 <div class="tituloContenido">
+   			 <div class="accordion-item">
+   			 <div class="accordion-item-header">
+   				 <h3 id="referencesO">References</h3>
+   			 </div>
+   			 <div class="accordion-item-body">
+   				 <div class="accordion-item-body-content">
+   				 <p class="contenido">
+   				 (1)	Banwarth-Kuhn, M.; Sindi, S. How and Why to Build a Mathematical Model: A Case Study Using Prion Aggregation. <em>J. Biol. Chem.</em> <b>2020</b>, <em>295</em> (15), 5022–5035. https://doi.org/10.1074/jbc.REV119.009851.
+   				 <br>
+   				 (2)	Karlebach, G.; Shamir, R. Modelling and Analysis of Gene Regulatory Networks. <em>Nat. Rev. Mol. Cell Biol.</em> <b>2008</b>, <em>9</em> (10), 770–780. https://doi.org/10.1038/nrm2503.
+   				 <br>
+   				 (3)	O’Neill, M. A.; Denos, M.; Reed, D. Using SDS–PAGE Gel Fingerprinting to Identify Soft‐bodied Wood‐boring Insect Larvae to Species. <em>Pest Manag. Sci.</em> <b>2018</b>, <em>74</em> (3), 705–714. https://doi.org/10.1002/ps.4766.
+   				 <br>
+   				 (4)	<em>Mathematical Modelling and Machine Learning Methods for Bioinformatics and Data Science Applications</em>; Bianchini, M., Samponi, M. L., Eds.; MDPI: Switzerland, 2022. https://doi.org/10.3390/books978-3-0365-2841-0.
+   				 <br>
+   				 (5)	Gábor, A.; Banga, J. R. Robust and Efficient Parameter Estimation in Dynamic Models of Biological Systems. <em>BMC Syst. Biol.</em> <b>2015</b>, <em>9</em> (1), 74. https://doi.org/10.1186/s12918-015-0219-2.
+   				 <br>
+   				 (6)	Arpino, J. A. J.; Hancock, E. J.; Anderson, J.; Barahona, M.; Stan, G.-B. V.; Papachristodoulou, A.; Polizzi, K. Tuning the Dials of Synthetic Biology. <em>Microbiology</em> <b>2013</b>, <em>159</em> (Pt_7), 1236–1253. https://doi.org/10.1099/mic.0.067975-0.
+   				 <br>
+   				 (7)	Mitra, E. D.; Hlavacek, W. S. Parameter Estimation and Uncertainty Quantification for Systems Biology Models. <em>Curr. Opin. Syst. Biol.</em> <b>2019</b>, <em>18</em>, 9–18. https://doi.org/10.1016/j.coisb.2019.10.006.
+   				 </p>
+   				 </div>
+   			 </div>
+   			 </div>
+   		 </div>
+   		 </div>
+   	 </div>
+   		 </div>
+   	 <div id="sectionMethods" class="sectM">
+   	 <!--seccion Methods-->
+   		 <div class="secciones">
+   			 <div class="seccionMethods">
+   				 <p class="subtitleM">Methods</p>
+   			 </div>
+   		 </div>
+   		 <div class="layout">
+   		 <!--cosas del index-->
+   		 <div class="index2">
+   			 <nav class="navigation">
+   				 <ul>
+   					 <li>
+   						 <a href="#upstream">ODEs</a>
+   						 <ul>
+   							 <li><a href="#underlying_theory">Monte Carlo simulation</a></li>
+   							 <li><a href="#model_building">Parameter estimation</a></li>
+   						 </ul>
+   					 </li>
+   					 <li><a href="#downstream">RSM</a></li>
+   					 <li><a href="#referencesM">References</a></li>
+   					 </li>
+   				 </ul>
+   			 </nav>
+   		 </div>
+   		 <div class="secciones">
+   			 <div class="tituloContenido">
+   				 <h3 id="upstream">First model</h3>
+   			 </div>
+   			 <div class="tituloContenido">
+   				 <h4 id="underlying_theory">Underlying theory</h4>
+   			 </div>
+   			 <p class="contenido">The IPTG induction mechanism has 3 key elements: The operator (LacO),  lac repressor, and inductor (IPTG). These elements interact in a coordinated manner, as illustrated in <b>figure 1.</b> The process unfolds as follows:</p>
+   			 <br>
+   			 <p class="instructionDiagram">Hover over the steps of this diagram to find more information!</p>
+   			 <div class="diagramaIPTG">
+   				 <img class="imagenDiagrama" src="https://static.igem.wiki/teams/4607/wiki/modelo/ecuaciones-representacion-esquematica/modelo/iptg-induction.png" alt="imagen pasos">
+   				 <div class="ciclo1">
+   					 <b class="tooltipSignificadoDiagrama">1<span class="tooltipSignificadoBoxDiagrama">Transcription of the LacI gene.</span></b>
+   					 <div class="hilo_ondulante azul1"></div>
+   					 <div class="lacl_gene azul1"></div>
+   				 </div>
+   				 <div class="ciclo2">
+   					 <b class="tooltipSignificadoDiagrama">2<span class="tooltipSignificadoBoxDiagrama">Translation of the mRNA (formation of the repressor monomer).</span></b>
+   					 <div class="hilo_ondulante2 azul2"></div>
+   					 <div class="cosaAmarilla azul2"></div>
+   				 </div>
+   				 <div class="ciclo3">
+   					 <b class="tooltipSignificadoDiagrama">3<span class="tooltipSignificadoBoxDiagrama">Formation of the repressor dimer.</span></b>
+   					 <div class="cosaAmarilla2 azul3"></div>
+   					 <div class="dosCosasAmarillas azul3"></div>
+   				 </div>
+   				 <div class="ciclo4">
+   					 <b class="tooltipSignificadoDiagrama">4<span class="tooltipSignificadoBoxDiagrama">Formation of the repressor tetramer.</span></b>
+   					 <div class="dosCosasAmarillas2 azul4"></div>
+   					 <div class="dosAmarillasRojas azul4"></div>
+   				 </div>
+   				 <div class="ciclo5">
+   					 <b class="tooltipSignificadoDiagrama">5<span class="tooltipSignificadoBoxDiagrama">The dimer binds to the LacO site (dimer-LacO complex).</span></b>
+   					 <div class="dosCosasAmarillas3 azul5"></div>
+   					 <div class="lacO1 azul5"></div>
+   					 <div class="lacO2 azul5"></div>
+   					 <div class="lacO3 azul5"></div>
+   				 </div>
+   				 <div class="ciclo6">
+   					 <b class="tooltipSignificadoDiagrama">6<span class="tooltipSignificadoBoxDiagrama">The tetramer binds to the LacO site (tetraSmer-LacO complex).</span></b>
+   					 <div class="dosAmarillasRojas2 azul6"></div>
+   					 <div class="lacO4 azul6"></div>
+   					 <div class="lacO5 azul6"></div>
+   					 <div class="lacO6Amarillos azul6"></div>
+   				 </div>
+   				 <div class="ciclo7">
+   					 <b class="tooltipSignificadoDiagrama">7<span class="tooltipSignificadoBoxDiagrama"> Degradation of the mRNA (repressor).</span></b>
+   					 <div class="hilo_ondulante3 azul7"></div>
+   					 <div class="circuloTachado azul7"></div>
+   				 </div>
+   				 <div class="ciclo8">
+   					 <b class="tooltipSignificadoDiagrama">8<span class="tooltipSignificadoBoxDiagrama">Degradation of the repressor monomer.</span></b>
+   					 <div class="cosaAmarilla3 azul8"></div>
+   					 <div class="circuloTachado2 azul8"></div>
+   				 </div>
+   				 <div class="ciclo9">
+   					 <b class="tooltipSignificadoDiagrama">9<span class="tooltipSignificadoBoxDiagrama">Degradation of the repressor dimer.</span></b>
+   					 <div class="dosCosasAmarillas4 azul9"></div>
+   					 <div class="circuloTachado3 azul9"></div>
+   				 </div>
+   				 <div class="ciclo10">
+ 		 <b class="tooltipSignificadoDiagrama">10<span class="tooltipSignificadoBoxDiagrama">Degradation of the repressor tetramer.</span></b>
+ 		 <div class="dosAmarillasRojas3 azul10"></div>
+ 		 <div class="circuloTachado4 azul10"></div>
+   	 </div>
+   	 <div class="ciclo11">
+ 		 <b class="tooltipSignificadoDiagrama">11<span class="tooltipSignificadoBoxDiagrama">Input of IPTG.</span></b>
+ 		 <div class="tresBolasVerdes azul11"></div>
+ 		 <div class="muchasBolasVerdes azul11"></div>
+   	 </div>
+   	 <div class="ciclo12">
+ 		 <b class="tooltipSignificadoDiagrama">12<span class="tooltipSignificadoBoxDiagrama">Dissociation of dimer-LacO complex and formation of dimer-IPTG complex.</span></b>
+ 		 <div class="dosBolasVerdes azul12"></div>
+ 		 <div class="dosBolasVerdes2 azul12"></div>
+ 		 <div class="dosAmarillasDosBolas2 azul12"></div>
+ 		 <div class="lacO7 azul12"></div>
+   	 </div>
+   	 <div class="ciclo13">
+ 		 <b class="tooltipSignificadoDiagrama">13<span class="tooltipSignificadoBoxDiagrama">Dissociation of tetramer-LacO complex and formation of tetramer-IPTG complex.</span></b>
+ 		 <div class="dosBolasVerdes3 azul13"></div>
+ 		 <div class="dosBolasVerdes4 azul13"></div>
+ 		 <div class="lacO8 azul13"></div>
+ 		 <div class="dosAmarillasRojasDosBolas azul13"></div>
+ 		 <div class="lacO9Amarillos azul13"></div>
+   	 </div>
+   	 <div class="ciclo14">
+ 		 <b class="tooltipSignificadoDiagrama">14<span class="tooltipSignificadoBoxDiagrama">Formation of dimer-IPTG complex.</span></b>
+ 		 <div class="dosBolasVerdes5 azul14"></div>
+ 		 <div class="dosBolasVerdes6 azul14"></div>
+ 		 <div class="dosAmarillasDosBolas3 azul14"></div>
+ 		 <div class="dosCosasAmarillas5 azul14"></div>
+   	 </div>
+   	 <div class="ciclo15">
+ 		 <b class="tooltipSignificadoDiagrama">15<span class="tooltipSignificadoBoxDiagrama">Formation of tetramer-IPTG complex.</span></b>
+ 		 <div class="dosBolasVerdes7 azul15"></div>
+ 		 <div class="dosBolasVerdes8 azul15"></div>
+ 		 <div class="dosAmarillasRojasDosBolas2 azul15"></div>
+ 		 <div class="dosAmarillasRojas4 azul15"></div>
+   	 </div>
+   	 <div class="ciclo16">
+ 		 <b class="tooltipSignificadoDiagrama">16<span class="tooltipSignificadoBoxDiagrama">Degradation of the dimer-IPTG complex.</span></b>
+ 		 <div class="dosAmarillasDosBolas azul16"></div>
+ 		 <div class="circuloTachado5 azul16"></div>
+   	 </div>
+   	 <div class="ciclo17">
+ 		 <b class="tooltipSignificadoDiagrama">17<span class="tooltipSignificadoBoxDiagrama">Degradation of the tetramer-IPTG complex.</span></b>
+ 		 <div class="dosAmarillasRojasDosBolas3 azul17"></div>
+ 		 <div class="circuloTachado6 azul17"></div>
+   	 </div>
+   	 <div class="ciclo18">
+ 		 <b class="tooltipSignificadoDiagrama">18<span class="tooltipSignificadoBoxDiagrama">Transcription of the endolysin gene.</span></b>
+ 		 <div class="hilo_ondulante4 azul18"></div>
+ 		 <div class="cadena azul18"></div>
+   	 </div>
+   	 <div class="ciclo19">
+ 		 <b class="tooltipSignificadoDiagrama">19<span class="tooltipSignificadoBoxDiagrama">Translation of the mRNA (formation of endolysin).</span></b>
+ 		 <div class="hilo_ondulante5 azul19"></div>
+ 		 <div class="cosaVerde azul19"></div>
+   	 </div>
+   	 <div class="ciclo20">
+ 		 <b class="tooltipSignificadoDiagrama">20<span class="tooltipSignificadoBoxDiagrama">Degradation of the mRNA (endolysin).</span></b>
+ 		 <div class="hilo_ondulante6 azul20"></div>
+ 		 <div class="circuloTachado7 azul20"></div>
+   	 </div>
+   	 <div class="ciclo21">
+ 		 <b class="tooltipSignificadoDiagrama">21<span class="tooltipSignificadoBoxDiagrama">Degradation of the endolysin. </span></b>
+ 		 <div class="circuloTachado8 azul21"></div>
+ 		 <div class="cosaVerde2 azul21"></div>
+   	 </div>
+      </div>
+    <br>
+    <p class="contenido" style="text-align:center"> <b>Figure 1.</b> IPTG induction steps when <em>Escherichia coli</em> is found under conditions with IPTG and no glucose. </p>
+      <br>
+      <br>
+      <div class="tituloContenido">
+   	 <h5>Production of Lac repressor. Steps 1-4</h5>
+      </div>
+      <br>
+      <br>
+      <p class="contenido">The system's dynamics are under the influence of the Lac repressor, which is a regulatory molecule encoded by the LacI regulatory gene (G). This protein exhibits constitutive expression, forming monomers (R<sub>M</sub>), dimers (R<sub>D</sub>), and tetramers (R<sub>T</sub>) through subunit bonding.<sup>3</sup> The chemical reaction for modeling the repressor mRNA production is assumed to be governed by the sole dependence on the quantity of the LacI gene. Additionally,  the  production of monomer is dependent on the mRNA of repressor (M<sub>LI</sub>) concentration. The favored formation is Tetramers over dimers over monomers.</p>
+   		<math display='block'>
+   		 <mi>G</mi><mover>
+    		 <mo>&#x2192;</mo>
+    		 <mrow>
+     		 <msub>
+      		 <mi>k</mi>
+      		 <mn>1</mn>
+     		 </msub>
+     		 </mrow>
+   		 </mover>
+   		 <msub>
+    		 <mi>M</mi>
+    		 <mrow>
+     		 <mi>L</mi><mi>I</mi></mrow>
+   		 </msub>
+   		 </math>
+		 <p ALIGN="right" class="NumeroEcuacion">(i)</p>
+   		 <math display='block'>
+   		 <msub>
+    		 <mi>M</mi>
+    		 <mrow>
+     		 <mi>L</mi><mi>I</mi></mrow>
+   		 </msub>
+   		 <mover>
+    		 <mo>&#x2192;</mo>
+    		 <mrow>
+     		 <msub>
+      		 <mi>k</mi>
+      		 <mn>2</mn>
+     		 </msub>
+     		 </mrow>
+   		 </mover>
+   		 <msub>
+    		 <mi>M</mi>
+    		 <mrow>
+     		 <mi>L</mi><mi>I</mi></mrow>
+   		 </msub>
+   		 <mo>+</mo><msub>
+    		 <mi>R</mi>
+    		 <mrow>
+     		 <mi>M</mi></mrow>
+   		 </msub>
+  		 </math>
+		   <p ALIGN="right" class="NumeroEcuacion">(ii)</p>
+   		 <math display='block'>
+   		 <mn>2</mn><msub>
+    		 <mi>R</mi>
+    		 <mi>M</mi>
+   		 </msub>
+   		 <munderover>
+    		 <mo>&#x21C4;</mo>
+    		 <mrow>
+     		 <msub>
+      		 <mi>k</mi>
+      		 <mn>4</mn>
+     		 </msub>
+     		 </mrow>
+    		 <mrow>
+     		 <msub>
+      		 <mi>k</mi>
+      		 <mn>3</mn>
+     		 </msub>
+     		 </mrow>
+   		 </munderover>
+   		 <msub>
+    		 <mi>R</mi>
+    		 <mi>D</mi>
+   		 </msub>
+  		 </math>
+ 		 <p ALIGN="right" class="NumeroEcuacion">(iii,iv)</p>
+   		 <math display='block'>
+   		 <mn>2</mn><msub>
+    		 <mi>R</mi>
+    		 <mi>D</mi>
+   		 </msub>
+   		 <munderover>
+    		 <mo>&#x21C4;</mo>
+    		 <mrow>
+     		 <msub>
+      		 <mi>k</mi>
+      		 <mn>6</mn>
+     		 </msub>
+     		 </mrow>
+    		 <mrow>
+     		 <msub>
+      		 <mi>k</mi>
+      		 <mn>5</mn>
+     		 </msub>
+     		 </mrow>
+   		 </munderover>
+   		 <msub>
+    		 <mi>R</mi>
+    		 <mi>T</mi>
+   		 </msub>
+  		 </math>
+		 <p ALIGN="right" class="NumeroEcuacion">(v,vi)</p>
+   	 <div class="tituloContenido">
+ 		 <h5>Formation of repressor-Operator complex. Steps 5-6</h5>
+   	 </div>
+   	 <p class="contenido">In its tetrameric and dimeric configurations, the repressor exhibits strong affinity for the operator (O). This binding event effectively obstructs RNA polymerase’s access to the promoter region, resulting in the inhibition of endolysin gene transcription. Consequently, The repressor in its tetrameric and dimeric form, displays a strong affinity for the operator (O). When the repressor binds to the operator, it effectively blocks RNA polymerase from accessing the promoter, leading to the inhibition of endolysin gene transcription. Consequently, in the absence of other factors, endolysin production is low or absent (leak transcript). On the contrary, the monomeric form of the lac repressor demonstrates a reduced affinity for the operator and lacks the capability to effectively bind to it.<sup>4</sup> </p>
+     		 <math display='block'>
+       		 <msub>
+       		 <mi>R</mi>
+       		 <mi>D</mi>
+       		 </msub>
+       		 <mo>+</mo><mi>O</mi><munderover>
+       		 <mo>&#x21C4;</mo>
+       		 <mrow>
+         		 <msub>
+         		 <mi>k</mi>
+         		 <mn>8</mn>
+         		 </msub>
+         		 </mrow>
+       		 <mrow>
+         		 <msub>
+         		 <mi>k</mi>
+         		 <mn>7</mn>
+         		 </msub>
+         		 </mrow>
+       		 </munderover>
+       		 <msub>
+       		 <mi>R</mi>
+       		 <mi>D</mi>
+       		 </msub>
+       		 <mi>O</mi>
+     		 </math>
+			 <p ALIGN="right" class="NumeroEcuacion">(vii,viii)</p>
+       		 <math display='block'>
+         		 <msub>
+         		 <mi>R</mi>
+         		 <mi>T</mi>
+         		 </msub>
+         		 <mo>+</mo><mi>O</mi><munderover>
+         		 <mo>&#x21C4;</mo>
+         		 <mrow>
+           		 <msub>
+           		 <mi>k</mi>
+           		 <mrow>
+             		 <mn>10</mn></mrow>
+           		 </msub>
+           		 </mrow>
+         		 <mrow>
+           		 <msub>
+           		 <mi>k</mi>
+           		 <mn>9</mn>
+           		 </msub>
+           		 </mrow>
+         		 </munderover>
+         		 <msub>
+         		 <mi>R</mi>
+         		 <mi>D</mi>
+         		 </msub>
+         		 <mi>O</mi>
+       		 </math>
+			 <p ALIGN="right" class="NumeroEcuacion">(ix,x)</td>    
+   	 <div class="tituloContenido">
+ 		 <h5>Input of IPTG. Step 11</h5>
+   	 </div>
+   	 <br>
+   	 <p class="contenido">The entry of IPTG into <em>E. coli</em> BL21 cells occurs through two potential mechanisms: simple diffusion and active transport facilitated by the lactose permease, encoded by the LacY gene. The active transport pathway has been reported to not be significant on <em>E. coli</em>, thus, we won't take it into account in our model.<sup>5</sup> As a result, we focus solely on the predominant method of IPTG entry, which is simple diffusion. In this process, IPTG molecules passively move across the cell membrane in response to the concentration gradient, without the need for energy expenditure or assistance from specific transporters.</p>     
+   	 <br>
+   	 <p class="contenido">We employ Fick's law of diffusion (Eq. 1) to characterize the process of simple diffusion. The equation takes into account 2 variables: IPTG concentration and absorption surface. Notably, in our model, we maintain the absorption surface as a constant, disregarding any membrane expansion during binary fission. This choice enables us to establish all our mathematical equations as dependent solely on IPTG concentration. In this context, where Δx denotes the membrane thickness, 'K' represents the diffusion constant, 'A' stands for the absorption surface, 'IPTG<sub>E</sub> ' signifies the IPTG concentration in the culture medium, and 'IPTG<sub>I</sub>' refers to the IPTG concentration within the bacterial cells.
+   	 </p>
+   	 <math display='block'>
+ 		 <mfrac>
+  		 <mrow>
+   		 <mi>&#x0394;</mi><mi>I</mi><mi>P</mi><mi>T</mi><msub>
+    		 <mi>G</mi>
+    		 <mrow>
+     		 <mi>I</mi></mrow>
+   		 </msub>
+   		 </mrow>
+  		 <mrow>
+   		 <mi>&#x0394;</mi><mi>t</mi></mrow>
+ 		 </mfrac>
+ 		 <mo>=</mo><mi>K</mi><mi>A</mi><mfrac>
+  		 <mrow>
+   		 <mi>&#x0394;</mi><mi>I</mi><mi>P</mi><mi>T</mi><msub>
+    		 <mi>G</mi>
+    		 <mrow>
+     		 <mi>E</mi></mrow>
+   		 </msub>
+   		 </mrow>
+  		 <mrow>
+   		 <mi>&#x0394;</mi><mi>t</mi></mrow>
+ 		 </mfrac>
+		 </math>
+		 <p ALIGN="right">(1)</p>
+		 <div class="tituloContenido">
+ 		 <h5>Formation of repressor-IPTG complex. Steps 12-15</h5>
+   	 </div>
+   	 <p class="contenido">Upon the introduction of IPTG into the system, it binds with the dimeric and tetrameric forms of the repressor protein. It’s important to note that each monomer within both the dimer and tetramer structure can accommodate a single IPTG molecule for binding. Upon binding, IPTG triggers an allosteric structural transformation in the tetrameric repressor, resulting to a decrease in its affinity for the operator.<sup>6</sup> Consequently, the monomeric repressor loses its capacity to effectively bind to the operator, allowing RNA polymerase’s access to the promoter. This, in turn, enables the transcription and subsequent production of the endolysins.</p>
+   	 <br>
+   	 <p class="contenido">The formation of the IPTG-repressor complex can occur through two mechanisms:<sup>3</sup></p>
+   	 <ol  class="contenido">
+ 		 <li  class="contenido">The repressor exists in a free state.</li>
+ 		 <li  class="contenido">The repressor is part of the repressor-operator complex, where it is already bound to the operator sequence.</li>
+   	 </ol >
+ 		 <p class="contenido">When the repressor is bound to the operator, the introduction of IPTG interferes with the repressor-operator complex, leading to its disruption. As a result, the extent of repressor inactivation is directly correlated with the number of binding sites occupied by IPTG. Interestingly, even with just two IPTG molecules bound to specific sites, the repressor can undergo effective inactivation.<sup>7</sup> <b>Figure 2</b> illustrates the different conformations that can exist.</p>
+ 		 <br>
+ 		 <br>
+ 		 <br>
+   	 <p class="contenido">We are considering these distinct conformations to deactivate the tetramer repressor, which requires a Hill coefficient of 2-3. However, it's noteworthy that only two IPTG molecules are required to inactivate the dimeric repressor.</p>
+   	 <math display='block'>
+ 		 <mn>2</mn><mi>I</mi><mo>+</mo><msub>
+  		 <mi>R</mi>
+  		 <mi>D</mi>
+ 		 </msub>
+ 		 <munderover>
+  		 <mo>&#x21C4;</mo>
+  		 <mrow>
+   		 <msub>
+    		 <mi>k</mi>
+    		 <mrow>
+     		 <mn>12</mn></mrow>
+   		 </msub>
+   		 </mrow>
+  		 <mrow>
+   		 <msub>
+    		 <mi>k</mi>
+    		 <mrow>
+     		 <mn>11</mn></mrow>
+   		 </msub>
+   		 </mrow>
+ 		 </munderover>
+ 		 <msub>
+  		 <mi>I</mi>
+  		 <mn>2</mn>
+ 		 </msub>
+ 		 <msub>
+  		 <mi>R</mi>
+  		 <mi>D</mi>
+ 		 </msub>
+		 </math>
+		 <p ALIGN="right" class="NumeroEcuacion">(xi,xii)</p>
+		 <math display='block'>
+ 		 <mn>2</mn><mi>I</mi><mo>+</mo><msub>
+  		 <mi>R</mi>
+  		 <mi>D</mi>
+ 		 </msub>
+ 		 <mi>O</mi><munderover>
+  		 <mo>&#x21C4;</mo>
+  		 <mrow>
+   		 <msub>
+    		 <mi>k</mi>
+    		 <mrow>
+     		 <mn>14</mn></mrow>
+   		 </msub>
+   		 </mrow>
+  		 <mrow>
+   		 <msub>
+    		 <mi>k</mi>
+    		 <mrow>
+     		 <mn>13</mn></mrow>
+   		 </msub>
+   		 </mrow>
+ 		 </munderover>
+ 		 <msub>
+  		 <mi>I</mi>
+  		 <mn>2</mn>
+ 		 </msub>
+ 		 <msub>
+  		 <mi>R</mi>
+  		 <mi>D</mi>
+ 		 </msub>
+ 		 <mo>+</mo><mi>O</mi>
+		 </math>
+		 <p ALIGN="right" class="NumeroEcuacion">(xiii,xiv)</p>
+		 <math display='block'>
+ 		 <mi>n</mi><mi>I</mi><mo>+</mo><msub>
+  		 <mi>R</mi>
+  		 <mi>T</mi>
+ 		 </msub>
+ 		 <munderover>
+  		 <mo>&#x21C4;</mo>
+  		 <mrow>
+   		 <msub>
+    		 <mi>k</mi>
+    		 <mrow>
+     		 <mn>16</mn></mrow>
+   		 </msub>
+   		 </mrow>
+  		 <mrow>
+   		 <msub>
+    		 <mi>k</mi>
+    		 <mrow>
+     		 <mn>15</mn></mrow>
+   		 </msub>
+   		 </mrow>
+ 		 </munderover>
+ 		 <msub>
+  		 <mi>I</mi>
+  		 <mi>n</mi>
+ 		 </msub>
+ 		 <msub>
+  		 <mi>R</mi>
+  		 <mi>T</mi>
+ 		 </msub>
+		 </math>
+		 <p  ALIGN="right" class="NumeroEcuacion">(xv,xvi)</p>
+		 <math display='block'>
+ 		 <mi>n</mi><mi>I</mi><mo>+</mo><msub>
+  		 <mi>R</mi>
+  		 <mi>T</mi>
+ 		 </msub>
+ 		 <mi>O</mi><munderover>
+  		 <mo>&#x21C4;</mo>
+  		 <mrow>
+   		 <msub>
+    		 <mi>k</mi>
+    		 <mrow>
+     		 <mn>18</mn></mrow>
+   		 </msub>
+   		 </mrow>
+  		 <mrow>
+   		 <msub>
+    		 <mi>k</mi>
+    		 <mrow>
+     		 <mn>17</mn></mrow>
+   		 </msub>
+   		 </mrow>
+ 		 </munderover>
+ 		 <msub>
+  		 <mi>I</mi>
+  		 <mi>n</mi>
+ 		 </msub>
+ 		 <msub>
+  		 <mi>R</mi>
+  		 <mi>T</mi>
+ 		 </msub>
+ 		 <mo>+</mo><mi>O</mi>
+		 </math>
+		 <p  ALIGN="right" class="NumeroEcuacion">(xvii,xviii)</p>
+		 <div class="tituloContenido">
+ 		 <h5>Protein production. Steps 18-19</h5>
+   	 </div>
+   	 <p class="contenido">As the operator becomes unoccupied due to the inactivation of the lac repressor through IPTG binding, RNA polymerase gains the ability to initiate transcription of the endolysin gene. In our model, the transcription of endolysin is solely contingent on the concentration of free operator sites.</p>
+   	 <br>
+   	 <p class="contenido"><em>E. coli</em>recombinant expression systems that utilize lac operon control elements to modulate gene expression, low levels expression are produced during bacterial growth prior to induction, known as leakage. This leaking limits cell growth when toxic proteins for <em>E. coli</em> are produced and cause instability in the pET expression system.<sup>8</sup></p>
+   	 <br>
+   	 <p class="contenido">The concentration of recombinant proteins in bacterial cells is crucial for large-scale production, as high levels can be toxic, reducing yields. However, for the sake of model simplicity and tractability, we have omitted toxicity considerations.</p>
+   	 <math display='block'>
+ 		 <mi>O</mi><mover>
+  		 <mo>&#x2192;</mo>
+  		 <mrow>
+   		 <msub>
+    		 <mi>k</mi>
+    		 <mrow>
+     		 <mn>19</mn></mrow>
+   		 </msub>
+   		 </mrow>
+ 		 </mover>
+ 		 <mi>O</mi><mo>+</mo><msub>
+  		 <mi>M</mi>
+  		 <mi>E</mi>
+ 		 </msub>
+		 </math>
+		 <p ALIGN="right" class="NumeroEcuacion">(xix)</p>
+		 <math display='block'>
+ 		 <msub>
+  		 <mi>R</mi>
+  		 <mi>D</mi>
+ 		 </msub>
+ 		 <mi>O</mi><mover>
+  		 <mo>&#x2192;</mo>
+  		 <mrow>
+   		 <msub>
+    		 <mi>k</mi>
+    		 <mrow>
+     		 <mn>20</mn></mrow>
+   		 </msub>
+   		 </mrow>
+ 		 </mover>
+ 		 <msub>
+  		 <mi>R</mi>
+  		 <mi>D</mi>
+ 		 </msub>
+ 		 <mi>O</mi><mo>+</mo><msub>
+  		 <mi>M</mi>
+  		 <mi>E</mi>
+ 		 </msub>
+		 </math>
+		 <p  ALIGN="right" class="NumeroEcuacion">(xx)</p>
+		 <math display='block'>
+ 		 <msub>
+  		 <mi>R</mi>
+  		 <mi>T</mi>
+ 		 </msub>
+ 		 <mi>O</mi><mover>
+  		 <mo>&#x2192;</mo>
+  		 <mrow>
+   		 <msub>
+    		 <mi>k</mi>
+    		 <mrow>
+     		 <mn>21</mn></mrow>
+   		 </msub>
+   		 </mrow>
+ 		 </mover>
+ 		 <msub>
+  		 <mi>R</mi>
+  		 <mi>T</mi>
+ 		 </msub>
+ 		 <mi>O</mi><mo>+</mo><msub>
+  		 <mi>M</mi>
+  		 <mi>E</mi>
+ 		 </msub>
+		 </math>
+		 <p  ALIGN="right" class="NumeroEcuacion">(xxi)</p>
+		 <math display='block'>
+ 		 <msub>
+  		 <mi>M</mi>
+  		 <mi>E</mi>
+ 		 </msub>
+ 		 <mover>
+  		 <mo>&#x2192;</mo>
+  		 <mrow>
+   		 <msub>
+    		 <mi>k</mi>
+    		 <mrow>
+     		 <mn>22</mn></mrow>
+   		 </msub>
+   		 </mrow>
+ 		 </mover>
+ 		 <msub>
+  		 <mi>M</mi>
+  		 <mi>E</mi>
+ 		 </msub>
+ 		 <mo>+</mo><mi>E</mi>
+		 </math>
+ 		 <p  ALIGN="right" class="NumeroEcuacion">(xxii)</p>   	 
+		 <div class="tituloContenido">
+ 		 <h5>Degradation of mRNA and protein compounds. Steps 7-10, 16-17, 20-21</h5>
+   	 </div>
+   	 <p class="contenido">The non-hydrolyzable chemical bond in IPTG, specifically involving the sulfur (S) atom, is a critical aspect of its mechanism of action within the cell. This unique characteristic prevents IPTG from being metabolized or degraded by cellular machinery. In our model, we take into account this specific feature, making an important assumption that the compounds that form complexes with IPTG are subject to degradation, leaving behind the free IPTG molecules that were involved in the complex formation.</p>
+   	 <p class="contenido">It is worth noting that when the lac repressor exists in its dimeric or tetrameric form and is bound to the operator, it is rendered non-degradable. This is because these bound repressor complexes are part of the regulatory mechanism that inhibits the transcription of the endolysin gene. As such, the bound dimers and tetramers are not subject to degradation in the model.</p>
+   	 <math display='block'>
+ 		 <msub>
+  		 <mi>M</mi>
+  		 <mrow>
+   		 <mi>L</mi><mi>I</mi></mrow>
+ 		 </msub>
+ 		 <mover>
+  		 <mo>&#x2192;</mo>
+ 		 
+  		 <mrow>
+   		 <msub>
+    		 <mi>k</mi>
+    		 <mrow>
+     		 <mn>23</mn></mrow>
+   		 </msub>
+   		 </mrow>
+ 		 </mover>
+ 		 <mo>&#x2205;</mo>
+		 </math>
+ 		 <p ALIGN="right" class="NumeroEcuacion">(xxiii)</p>
+ 		 <math display='block'>
+   		 <msub>
+    		 <mi>R</mi>
+    		 <mi>M</mi>
+   		 </msub>
+   		 <mover>
+    		 <mo>&#x2192;</mo>
+    		 <mrow>
+     		 <msub>
+      		 <mi>k</mi>
+      		 <mrow>
+       		 <mn>24</mn></mrow>
+     		 </msub>
+     		 </mrow>
+   		 </mover>
+   		 <mo>&#x2205;</mo>
+  		 </math>
+  		 <p  ALIGN="right" class="NumeroEcuacion">(xxiv)</p>
+  		 <math display='block'>
+   		 <msub>
+    		 <mi>R</mi>
+    		 <mi>D</mi>
+   		 </msub>
+   		 <mover>
+    		 <mo>&#x2192;</mo>
+    		 <mrow>
+     		 <msub>
+      		 <mi>k</mi>
+      		 <mrow>
+       		 <mn>25</mn></mrow>
+     		 </msub>
+     		 </mrow>
+   		 </mover>
+   		 <mo>&#x2205;</mo>
+  		 </math>
+  		 <p  ALIGN="right" class="NumeroEcuacion">(xxv)</p>
+  		 <math display='block'>
+   		 <msub>
+    		 <mi>R</mi>
+    		 <mi>T</mi>
+   		 </msub>
+   		 <mover>
+    		 <mo>&#x2192;</mo>
+    		 <mrow>
+     		 <msub>
+      		 <mi>k</mi>
+      		 <mrow>
+       		 <mn>26</mn></mrow>
+     		 </msub>
+     		 </mrow>
+   		 </mover>
+   		 <mo>&#x2205;</mo>
+  		 </math>
+  		 <p  ALIGN="right" class="NumeroEcuacion">(xxvi)</p>
+  		 <math display='block'>
+   		 <msub>
+    		 <mi>I</mi>
+    		 <mn>2</mn>
+   		 </msub>
+   		 <msub>
+    		 <mi>R</mi>
+    		 <mi>D</mi>
+   		 </msub>
+   		 <mover>
+    		 <mo>&#x2192;</mo>
+    		 <mrow>
+     		 <msub>
+      		 <mi>k</mi>
+      		 <mrow>
+       		 <mn>27</mn></mrow>
+     		 </msub>
+     		 </mrow>
+   		 </mover>
+   		 <mo>&#x2205;</mo>
+  		 </math>
+  		 <p  ALIGN="right" class="NumeroEcuacion">(xxvii)</p>
+  		 <math display='block'>
+   		 <msub>
+    		 <mi>I</mi>
+    		 <mi>n</mi>
+   		 </msub>
+   		 <msub>
+    		 <mi>R</mi>
+    		 <mi>T</mi>
+   		 </msub>
+   		 <mover>
+    		 <mo>&#x2192;</mo>
+    		 <mrow>
+     		 <msub>
+      		 <mi>k</mi>
+      		 <mrow>
+       		 <mn>28</mn></mrow>
+     		 </msub>
+     		 </mrow>
+   		 </mover>
+   		 <mo>&#x2205;</mo>
+  		 </math>
+  		 <p  ALIGN="right" class="NumeroEcuacion">(xxviii)</p>
+  		 <math display='block'>
+   		 <msub>
+    		 <mi>M</mi>
+    		 <mi>E</mi>
+   		 </msub>
+   		 <mover>
+    		 <mo>&#x2192;</mo>
+    		 <mrow>
+     		 <msub>
+      		 <mi>k</mi>
+      		 <mrow>
+       		 <mn>29</mn></mrow>
+     		 </msub>
+     		 </mrow>
+   		 </mover>
+   		 <mo>&#x2205;</mo>
+  		 </math>
+  		 <p  ALIGN="right" class="NumeroEcuacion">(xxix)</p>
+  		 <math display='block'>
+   		 <mi>E</mi><mover>
+    		 <mo>&#x2192;</mo>
+    		 <mrow>
+     		 <msub>
+      		 <mi>k</mi>
+      		 <mrow>
+       		 <mn>30</mn></mrow>
+     		 </msub>
+     		 </mrow>
+   		 </mover>
+   		 <mo>&#x2205;</mo>
+  		 </math>
+  		 <p  ALIGN="right" class="NumeroEcuacion">(xxx)</p>
+  		 <div class="tituloContenido">
+   		 <h4 id="model_building">Model building</h4>
+ 		 </div>
+ 		 <div class="tituloContenido">
+   		 <h5>Chemical reactions</h5>
+ 		 </div>
+ 		 <p class="contenido">Drawing from the available literature, we have acquired the essential chemical reactions governing our system's behavior. These reactions laid the groundwork for formulating our ODEs.</p>
+
+ 		 <div class="box-wrap">
+   		 <div class="table-wrap">
+       		 <table class="tabla_chemicalReactios">
+         		 <p style="
+         		 height: 6px;
+         		 left: -28px;
+         		 position: relative;"><b>Table 1.</b> Chemical reactions on the IPTG induction model.</p>
+           		 <thead>
+               		 <tr>
+                   		 <th>Number</th>
+                   		 <th>Chemical reactions</th>
+                   		 <th>Meaning</th>
+                   		 <th>Schematic representation</th>
+               		 </tr>
+           		 </thead>
+           		 <tbody>
+               		 <tr>
+                   		 <td>(1)</td>
+                   		 <td></td>
+                   		 <td>Entrance of IPTG into <em>E. coli</em> (Simple diffusion)</td>
+                   		 <td>
+                     		 <img src="https://static.igem.wiki/teams/4607/wiki/modelo/ecuaciones-representacion-esquematica/ecuacion-1-removebg-preview.png"   style="max-width:250px ;"/></td>
+               		 </tr>
+               		 <tr>
+                   		 <td>(i)</td>
+                   		 <td>
+                     		 <math class="contenido">
+                       		 <msub>
+                        		 <mi>M</mi>
+                        		 <mrow>
+                         		 <mi>L</mi><mi>I</mi></mrow>
+                       		 </msub>
+                       		 <mover>
+                        		 <mo>&#x2192;</mo>
+                        		 <mrow>
+                         		 <msub>
+                          		 <mi>k</mi>
+                          		 <mn>2</mn>
+                         		 </msub>
+                         		 </mrow>
+                       		 </mover>
+                       		 <msub>
+                        		 <mi>M</mi>
+                        		 <mrow>
+                         		 <mi>L</mi><mi>I</mi></mrow>
+                       		 </msub>
+                       		 <mo>+</mo><msub>
+                        		 <mi>R</mi>
+                        		 <mi>M</mi>
+                       		 </msub>
+                     		 </math>
+                   		 </td>
+                   		 <td>Production of the repressor mRNA.</td>
+                   		 <td> <img src="https://static.igem.wiki/teams/4607/wiki/modelo/ecuaciones-representacion-esquematica/ecuacion-2.png" style="max-width:250px ;"> </td>
+               		 </tr>
+               		 <tr>
+                   		 <td>(ii)</td>
+                   		 <td>
+                     		 <math  class="contenido">
+                       		 <msub>
+                        		 <mi>M</mi>
+                        		 <mrow>
+                         		 <mi>L</mi><mi>I</mi></mrow>
+                       		 </msub>
+                       		 <mover>
+                        		 <mo>&#x2192;</mo>
+                        		 <mrow>
+                         		 <msub>
+                          		 <mi>k</mi>
+                          		 <mn>2</mn>
+                         		 </msub>
+                         		 </mrow>
+                       		 </mover>
+                       		 <msub>
+                        		 <mi>M</mi>
+                        		 <mrow>
+                         		 <mi>L</mi><mi>I</mi></mrow>
+                       		 </msub>
+                       		 <mo>+</mo><msub>
+                        		 <mi>R</mi>
+                        		 <mi>M</mi>
+                       		 </msub>
+                      		 </math>                                                		 
+                   		 </td>
+                   		 <td>Translation of the repressor mRNA (monomer formation)</td>
+                   		 <td>
+                     		 <img src="https://static.igem.wiki/teams/4607/wiki/modelo/ecuaciones-representacion-esquematica/ecuacion-3-removebg-preview.png" style="max-width:250px ;"/>
+                   		 </td>
+               		 </tr>
+               		 <tr>
+                   		 <td>(iii,iv)</td>
+                   		 <td>
+                     		 <math class="contenido">
+                       		 <mn>2</mn><msub>
+                        		 <mi>R</mi>
+                        		 <mi>M</mi>
+                       		 </msub>
+                       		 <munderover>
+                        		 <mo>&#x21C4;</mo>
+                        		 <mrow>
+                         		 <msub>
+                          		 <mi>k</mi>
+                          		 <mn>4</mn>
+                         		 </msub>
+                         		 </mrow>
+                        		 <mrow>
+                         		 <msub>
+                          		 <mi>k</mi>
+                          		 <mn>3</mn>
+                         		 </msub>
+                         		 </mrow>
+                       		 </munderover>
+                       		 <msub>
+                        		 <mi>R</mi>
+                        		 <mi>D</mi>
+                       		 </msub>
+                      		 </math>
+                   		 </td>
+                   		 <td>Formation of dimers (repressor).</td>
+                   		 <td>
+                     		 <img src="https://static.igem.wiki/teams/4607/wiki/modelo/ecuaciones-representacion-esquematica/ecuacion-4-5-removebg-preview.png" style="max-width:250px ;"/>
+                   		 </td>
+               		 </tr>
+               		 <tr>
+                   		 <td>(v,vi)</td>
+                   		 <td>
+                     		 <math class="contenido">
+                     		 <mn>2</mn><msub>
+                      		 <mi>R</mi>
+                      		 <mi>D</mi>
+                     		 </msub>
+                     		 <munderover>
+                      		 <mo>&#x21C4;</mo>
+                      		 <mrow>
+                       		 <msub>
+                        		 <mi>k</mi>
+                        		 <mn>6</mn>
+                       		 </msub>
+                       		 </mrow>
+                      		 <mrow>
+                       		 <msub>
+                        		 <mi>k</mi>
+                        		 <mn>5</mn>
+                       		 </msub>
+                       		 </mrow>
+                     		 </munderover>
+                     		 <msub>
+                      		 <mi>R</mi>
+                      		 <mi>T</mi>
+                     		 </msub>
+                    		 </math>
+                    		 </td>
+                   		 <td>Formation of tetramers (repressor).</td>
+                   		 <td><img src="https://static.igem.wiki/teams/4607/wiki/modelo/ecuaciones-representacion-esquematica/ecuacion-6-7-removebg-preview.png"style="max-width:250px ;"/>
+                      	</td>
+               		 </tr>
+               		 <tr>
+                   		 <td>(vii,viii)</td>
+                   		 <td>
+                     		 <math class="contenido">
+                       		 <msub>
+                        		 <mi>R</mi>
+                        		 <mi>D</mi>
+                       		 </msub>
+                       		 <mo>+</mo><mi>O</mi><munderover>
+                        		 <mo>&#x21C4;</mo>
+                        		 <mrow>
+                         		 <msub>
+                          		 <mi>k</mi>
+                          		 <mn>8</mn>
+                         		 </msub>
+                         		 </mrow>
+                        		 <mrow>
+                         		 <msub>
+                          		 <mi>k</mi>
+                          		 <mn>7</mn>
+                         		 </msub>
+                         		 </mrow>
+                       		 </munderover>
+                       		 <msub>
+                        		 <mi>R</mi>
+                        		 <mi>D</mi>
+                       		 </msub>
+                       		 <mi>O</mi>
+                      		 </math>
+                   		 </td>
+                   		 <td>Binding of the dimer to LacO (operator).</td>
+                   		 <td>
+                        	<img src="https://static.igem.wiki/teams/4607/wiki/modelo/ecuaciones-representacion-esquematica/ecuacion-8-9-removebg-preview.png" style="max-width:250px ;"/>
+                      	</td>
+               		 </tr>
+               		 <tr>
+                   		 <td>(ix,x)</td>
+                   		 <td>
+                     		 <math class="contenido">
+                     		 <msub>
+                      		 <mi>R</mi>
+                      		 <mi>T</mi>
+                     		 </msub>
+                     		 <mo>+</mo><mi>O</mi><munderover>
+                      		 <mo>&#x21C4;</mo>
+                      		 <mrow>
+                       		 <msub>
+                        		 <mi>k</mi>
+                        		 <mrow>
+                         		 <mn>10</mn></mrow>
+                       		 </msub>
+                       		 </mrow>
+                      		 <mrow>
+                       		 <msub>
+                        		 <mi>k</mi>
+                        		 <mn>9</mn>
+                       		 </msub>
+                       		 </mrow>
+                     		 </munderover>
+                     		 <msub>
+                      		 <mi>R</mi>
+                      		 <mi>T</mi>
+                     		 </msub>
+                     		 <mi>O</mi>
+                    		 </math>
+                    		 </td>
+                   		 <td>Binding of the tetramer to operator.</td>
+                   		 <td><img src="https://static.igem.wiki/teams/4607/wiki/modelo/ecuaciones-representacion-esquematica/ecuacion-10-11-removebg-preview.png"style="max-width:250px ;"/>
+                      	</td>
+               		 </tr>
+               		 <tr>
+                   		 <td>(xi,xii)</td>
+                   		 <td>
+                     		 <math class="contenido">
+                       		 <mn>2</mn><mi>I</mi><mo>+</mo><msub>
+                        		 <mi>R</mi>
+                        		 <mi>D</mi>
+                       		 </msub>
+                       		 <munderover>
+                        		 <mo>&#x21C4;</mo>
+                        		 <mrow>
+                         		 <msub>
+                          		 <mi>k</mi>
+                          		 <mrow>
+                           		 <mn>12</mn></mrow>
+                         		 </msub>
+                         		 </mrow>
+                        		 <mrow>
+                         		 <msub>
+                          		 <mi>k</mi>
+                          		 <mrow>
+                           		 <mn>11</mn></mrow>
+                         		 </msub>
+                         		 </mrow>
+                       		 </munderover>
+                       		 <msub>
+                        		 <mi>I</mi>
+                        		 <mn>2</mn>
+                       		 </msub>
+                       		 <msub>
+                        		 <mi>R</mi>
+                        		 <mi>D</mi>
+                       		 </msub>
+                      		 </math>
+                   		 </td>
+                   		 <td>Binding of IPTG to the dimer.</td>
+                   		 <td><img src="https://static.igem.wiki/teams/4607/wiki/modelo/ecuaciones-representacion-esquematica/ecuacion-12-13-removebg-preview.png"style="max-width:250px ;"/> </td>
+               		 </tr>
+               		 <tr>
+                   		 <td>(xiii,xiv)</td>
+                   		 <td>
+                     		 <math class="contenido">
+                       		 <mn>2</mn><mi>I</mi><mo>+</mo><msub>
+                        		 <mi>R</mi>
+                        		 <mi>D</mi>
+                       		 </msub>
+                       		 <mi>O</mi><munderover>
+                        		 <mo>&#x21C4;</mo>
+                        		 <mrow>
+                         		 <msub>
+                          		 <mi>k</mi>
+                          		 <mrow>
+                           		 <mn>14</mn></mrow>
+                         		 </msub>
+                         		 </mrow>
+                        		 <mrow>
+                         		 <msub>
+                          		 <mi>k</mi>
+                          		 <mrow>
+                           		 <mn>13</mn></mrow>
+                         		 </msub>
+                         		 </mrow>
+                       		 </munderover>
+                       		 <msub>
+                        		 <mi>I</mi>
+                        		 <mn>2</mn>
+                       		 </msub>
+                       		 <msub>
+                        		 <mi>R</mi>
+                        		 <mi>D</mi>
+                       		 </msub>
+                       		 <mo>+</mo><mi>O</mi>
+                      		 </math>                     		 
+                   		 </td>
+                   		 <td>Binding of IPTG to the dimer-operator complex.</td>
+                   		 <td><img src="https://static.igem.wiki/teams/4607/wiki/modelo/ecuaciones-representacion-esquematica/ecuacion-14-15-removebg-preview.png"style="max-width:250px ;"/> </td>
+               		 </tr>
+             		 <tr>
+                   		 <td>(xv,xvi)</td>
+                   		 <td>
+                     		 <math class="contenido">
+                       		 <mi>n</mi><mi>I</mi><mo>+</mo><msub>
+                        		 <mi>R</mi>
+                        		 <mi>T</mi>
+                       		 </msub>
+                       		 <munderover>
+                        		 <mo>&#x21C4;</mo>
+                        		 <mrow>
+                         		 <msub>
+                          		 <mi>k</mi>
+                          		 <mrow>
+                           		 <mn>16</mn></mrow>
+                         		 </msub>
+                         		 </mrow>
+                        		 <mrow>
+                         		 <msub>
+                          		 <mi>k</mi>
+                          		 <mrow>
+                           		 <mn>15</mn></mrow>
+                         		 </msub>
+                         		 </mrow>
+                       		 </munderover>
+                       		 <msub>
+                        		 <mi>I</mi>
+                        		 <mi>n</mi>
+                       		 </msub>
+                       		 <msub>
+                        		 <mi>R</mi>
+                        		 <mi>T</mi>
+                       		 </msub>
+                      		 </math>                     		 
+                   		 </td>
+                   		 <td>Binding of IPTG to tetramer.</td>
+                   		 <td><img src="https://static.igem.wiki/teams/4607/wiki/modelo/ecuaciones-representacion-esquematica/ecuacion-16-17-removebg-preview.png"style="max-width:250px ;"/> </td>
+               		 </tr>
+               		 <tr>
+                 		 <td>(xvii,xviii)</td>
+                 		 <td>
+                   		 <math  class="contenido">
+                     		 <mi>n</mi><mi>I</mi><mo>+</mo><msub>
+                      		 <mi>R</mi>
+                      		 <mi>T</mi>
+                     		 </msub>
+                     		 <mi>O</mi><munderover>
+                      		 <mo>&#x21C4;</mo>
+                      		 <mrow>
+                       		 <msub>
+                        		 <mi>k</mi>
+                        		 <mrow>
+                         		 <mn>18</mn></mrow>
+                       		 </msub>
+                       		 </mrow>
+                      		 <mrow>
+                       		 <msub>
+                        		 <mi>k</mi>
+                        		 <mrow>
+                         		 <mn>17</mn></mrow>
+                       		 </msub>
+                       		 </mrow>
+                     		 </munderover>
+                     		 <msub>
+                      		 <mi>I</mi>
+                      		 <mi>n</mi>
+                     		 </msub>
+                     		 <msub>
+                      		 <mi>R</mi>
+                      		 <mi>T</mi>
+                     		 </msub>
+                     		 <mo>+</mo><mi>O</mi>
+                    		 </math>                   		 
+                 		 </td>
+                 		 <td>Binding of IPTG to the tetramer-operator complex.</td>
+                 		 <td><img src="https://static.igem.wiki/teams/4607/wiki/modelo/ecuaciones-representacion-esquematica/ecuacion-18-19-removebg-preview.png"style="max-width:250px ;"/> </td>
+             		 </tr>
+             		 <tr>
+               		 <td>(xix)</td>
+               		 <td>
+                 		 <math class="contenido">
+                   		 <mi>O</mi><mover>
+                    		 <mo>&#x2192;</mo>
+                    		 <mrow>
+                     		 <msub>
+                      		 <mi>k</mi>
+                      		 <mrow>
+                       		 <mn>19</mn></mrow>
+                     		 </msub>
+                     		 </mrow>
+                   		 </mover>
+                   		 <mi>O</mi><mo>+</mo><msub>
+                    		 <mi>M</mi>
+                    		 <mi>E</mi>
+                   		 </msub>
+                  		 </math>
+               		 </td>
+               		 <td>Transcription of endolysin.</td>
+               		 <td><img src="https://static.igem.wiki/teams/4607/wiki/modelo/ecuaciones-representacion-esquematica/ecuaci-n-20-removebg-preview.png"style="max-width:250px ;"/> </td>
+           		 </tr>
+           		 <tr>
+               		 <td>(xx)</td>
+               		 <td>
+                 		 <math class="contenido"'>
+                   		 <msub>
+                    		 <mi>R</mi>
+                    		 <mi>D</mi>
+                   		 </msub>
+                   		 <mi>O</mi><mover>
+                    		 <mo>&#x2192;</mo>
+                    		 <mrow>
+                     		 <msub>
+                      		 <mi>k</mi>
+                      		 <mrow>
+                       		 <mn>20</mn></mrow>
+                     		 </msub>
+                     		 </mrow>
+                   		 </mover>
+                   		 <msub>
+                    		 <mi>R</mi>
+                    		 <mi>D</mi>
+                   		 </msub>
+                   		 <mi>O</mi><mo>+</mo><msub>
+                    		 <mi>M</mi>
+                    		 <mi>E</mi>
+                   		 </msub>
+                  		 </math>                  		 
+               		 </td>
+               		 <td>Transcript leak from endolysin in dimers.</td>
+               		 <td><img src="https://static.igem.wiki/teams/4607/wiki/modelo/ecuaciones-representacion-esquematica/ecuacion-21-removebg-preview.png"style="max-width:250px ;"/> </td>
+           		 </tr>
+           		 <tr>
+               		 <td>(xxi)</td>
+               		 <td>
+                 		 <math class="contenido">
+                   		 <msub>
+                    		 <mi>R</mi>
+                    		 <mi>T</mi>
+                   		 </msub>
+                   		 <mi>O</mi><mover>
+                    		 <mo>&#x2192;</mo>
+                    		 <mrow>
+                     		 <msub>
+                      		 <mi>k</mi>
+                      		 <mrow>
+                       		 <mn>21</mn></mrow>
+                     		 </msub>
+                     		 </mrow>
+                   		 </mover>
+                   		 <msub>
+                    		 <mi>R</mi>
+                    		 <mi>T</mi>
+                   		 </msub>
+                   		 <mi>O</mi><mo>+</mo><msub>
+                    		 <mi>M</mi>
+                    		 <mi>E</mi>
+                   		 </msub>
+                  		 </math>                 		 
+               		 </td>
+               		 <td>Transcript leak from endolysin in tetramers.</td>
+               		 <td><img src="https://static.igem.wiki/teams/4607/wiki/modelo/ecuaciones-representacion-esquematica/ecuacion-22-removebg-preview.png"style="max-width:250px ;"/> </td>
+           		 </tr>
+           		 <tr>
+               		 <td>(xxii)</td>
+               		 <td>
+                 		 <math class="contenido">
+                   		 <msub>
+                    		 <mi>M</mi>
+                    		 <mi>E</mi>
+                   		 </msub>
+                   		 <mover>
+                    		 <mo>&#x2192;</mo>
+                    		 <mrow>
+                     		 <msub>
+                      		 <mi>k</mi>
+                      		 <mrow>
+                       		 <mn>22</mn></mrow>
+                     		 </msub>
+                     		 </mrow>
+                   		 </mover>
+                   		 <msub>
+                    		 <mi>M</mi>
+                    		 <mi>E</mi>
+                   		 </msub>
+                   		 <mo>+</mo><mi>E</mi>
+                  		 </math>
+               		 </td>
+               		 <td>Translation of the endolysin.</td>
+               		 <td><img src="https://static.igem.wiki/teams/4607/wiki/modelo/ecuaciones-representacion-esquematica/ecuacion-23-removebg-preview.png"style="max-width:250px ;"/> </td>
+           		 </tr>
+           		 <tr>
+               		 <td>(xxiii)</td>
+               		 <td>
+                 		 <math class="contenido">
+                   		 <msub>
+                    		 <mi>M</mi>
+                    		 <mrow>
+                     		 <mi>L</mi><mi>I</mi></mrow>
+                   		 </msub>
+                   		 <mover>
+                    		 <mo>&#x2192;</mo>
+                    		 <mrow>
+                     		 <msub>
+                      		 <mi>k</mi>
+                      		 <mrow>
+                       		 <mn>23</mn></mrow>
+                     		 </msub>
+                     		 </mrow>
+                   		 </mover>
+                   		 <mo>&#x2205;</mo>
+                  		 </math>                 		 
+               		 </td>
+               		 <td>Degradation of the repressor mRNA.</td>
+               		 <td><img src="https://static.igem.wiki/teams/4607/wiki/modelo/ecuaciones-representacion-esquematica/ecuacion-24-removebg-preview.png"style="max-width:250px ;"/> </td>
+           		 </tr>
+           		 <tr>
+               		 <td>(xxiv)</td>
+               		 <td>
+                 		 <math class="contenido">
+                   		 <msub>
+                    		 <mi>R</mi>
+                    		 <mi>M</mi>
+                   		 </msub>
+                   		 <mover>
+                    		 <mo>&#x2192;</mo>
+                    		 <mrow>
+                     		 <msub>
+                      		 <mi>k</mi>
+                      		 <mrow>
+                       		 <mn>24</mn></mrow>
+                     		 </msub>
+                     		 </mrow>
+                   		 </mover>
+                   		 <mo>&#x2205;</mo>
+                  		 </math>
+               		 </td>
+               		 <td>Degradation of the repressor monomers.</td>
+               		 <td><img src="https://static.igem.wiki/teams/4607/wiki/modelo/ecuaciones-representacion-esquematica/ecuacion-25-removebg-preview.png"style="max-width:250px ;"/> </td>
+           		 </tr>
+           		 <tr>
+               		 <td>(xxv)</td>
+               		 <td>
+                 		 <math class="contenido">
+                   		 <msub>
+                    		 <mi>R</mi>
+                    		 <mi>D</mi>
+                   		 </msub>
+                   		 <mover>
+                    		 <mo>&#x2192;</mo>
+                    		 <mrow>
+                     		 <msub>
+                      		 <mi>k</mi>
+                      		 <mrow>
+                       		 <mn>25</mn></mrow>
+                     		 </msub>
+                     		 </mrow>
+                   		 </mover>
+                   		 <mo>&#x2205;</mo>
+                  		 </math>                   		 
+               		 </td>
+               		 <td>Degradation of the repressor dimers.</td>
+               		 <td><img src="https://static.igem.wiki/teams/4607/wiki/modelo/ecuaciones-representacion-esquematica/ecuacion-26-removebg-preview.png"style="max-width:250px ;"/> </td>
+           		 </tr>
+           		 <tr>
+               		 <td>(xxvi)</td>
+               		 <td>
+                 		 <math class="contenido">
+                   		 <msub>
+                    		 <mi>R</mi>
+                    		 <mi>T</mi>
+                   		 </msub>
+                   		 <mover>
+                    		 <mo>&#x2192;</mo>
+                    		 <mrow>
+                     		 <msub>
+                      		 <mi>k</mi>
+                      		 <mrow>
+                       		 <mn>26</mn></mrow>
+                     		 </msub>
+                     		 </mrow>
+                   		 </mover>
+                   		 <mo>&#x2205;</mo>
+                  		 </math>                                         		 
+               		 </td>
+               		 <td>Degradation of the repressor tetramers</td>
+               		 <td><img src="https://static.igem.wiki/teams/4607/wiki/modelo/ecuaciones-representacion-esquematica/ecuacion-27-removebg-preview.png"style="max-width:250px ;"/> </td>
+           		 </tr>
+            		 <tr>
+               		 <td>(xxvii)</td>
+               		 <td>
+                 		 <math class="contenido">
+                   		 <msub>
+                    		 <mi>I</mi>
+                    		 <mn>2</mn>
+                   		 </msub>
+                   		 <msub>
+                    		 <mi>R</mi>
+                    		 <mi>D</mi>
+                   		 </msub>
+                   		 <mover>
+                    		 <mo>&#x2192;</mo>
+                    		 <mrow>
+                     		 <msub>
+                      		 <mi>k</mi>
+                      		 <mrow>
+                       		 <mn>27</mn></mrow>
+                     		 </msub>
+                     		 </mrow>
+                   		 </mover>
+                   		 <mo>&#x2205;</mo>
+                  		 </math>                 		 
+               		 </td>
+               		 <td>Degradation of the dimer-IPTG complex.</td>
+               		 <td><img src="https://static.igem.wiki/teams/4607/wiki/modelo/ecuaciones-representacion-esquematica/ecuacion-28-removebg-preview.png"style="max-width:250px ;"/> </td>
+           		 </tr>
+           		 <tr>
+             		 <td>(xxviii)</td>
+             		 <td>
+               		 <math class="contenido">
+                 		 <msub>
+                  		 <mi>I</mi>
+                  		 <mi>n</mi>
+                 		 </msub>
+                 		 <msub>
+                  		 <mi>R</mi>
+                  		 <mi>T</mi>
+                 		 </msub>
+                 		 <mover>
+                  		 <mo>&#x2192;</mo>
+                  		 <mrow>
+                   		 <msub>
+                    		 <mi>k</mi>
+                    		 <mrow>
+                     		 <mn>28</mn></mrow>
+                   		 </msub>
+                   		 </mrow>
+                 		 </mover>
+                 		 <mo>&#x2205;</mo>
+                		 </math>                		 
+             		 </td>
+             		 <td>Degradation of the tetramer-IPTG complex.</td>
+             		 <td><img src="https://static.igem.wiki/teams/4607/wiki/modelo/ecuaciones-representacion-esquematica/ecuacion-29-removebg-preview.png"style="max-width:250px ;"/> </td>
+           		 </tr>
+           		 <tr>
+             		 <td>(xxix)</td>
+             		 <td>
+               		 <math class="contenido">
+                 		 <msub>
+                  		 <mi>M</mi>
+                  		 <mi>E</mi>
+                 		 </msub>
+                 		 <mover>
+                  		 <mo>&#x2192;</mo>
+                  		 <mrow>
+                   		 <msub>
+                    		 <mi>k</mi>
+                    		 <mrow>
+                     		 <mn>29</mn></mrow>
+                   		 </msub>
+                   		 </mrow>
+                 		 </mover>
+                 		 <mo>&#x2205;</mo>
+                		 </math>   
+             		 </td>
+             		 <td>Degradation of the endolysin mRNA.</td>
+             		 <td><img src="https://static.igem.wiki/teams/4607/wiki/modelo/ecuaciones-representacion-esquematica/ecuacion-30-removebg-preview.png"style="max-width:250px ;"/> </td>
+         		 </tr>
+         		 <tr>
+             		 <td>(xxx)</td>
+             		 <td>
+               		 <math class="contenido">
+                 		 <mi>E</mi><mover>
+                  		 <mo>&#x2192;</mo>
+                  		 <mrow>
+                   		 <msub>
+                    		 <mi>k</mi>
+                    		 <mrow>
+                     		 <mn>30</mn></mrow>
+                   		 </msub>
+                   		 </mrow>
+                 		 </mover>
+                 		 <mo>&#x2205;</mo>
+                		 </math>               		 
+             		 </td>
+             		 <td>Degradation of the endolysin.</td>
+             		 <td><img src="https://static.igem.wiki/teams/4607/wiki/modelo/ecuaciones-representacion-esquematica/ecuacion-31-removebg-preview.png"style="max-width:250px ;"/> </td>
+         		 </tr>
+           		 </tbody>
+       		 </table>
+   		 </div>
+   	 </div>
+
+
+
+
+ 		 
+
+ 		 
+ 		 
+
+   	 
+  	 
+
+
+
+      </div>
+      </div>
+</div>
+
+  <div id="sectionResults" class="sectR">
+    <div class="secciones">
+      <div class="seccionResults">
+ 		 <p class="subtitleR">Results</p>
+      </div>
+    <div class="layout">
+      <!--cosas del index-->
+      <div class="index3">
+   	 <nav class="navigation">
+ 		 <ul>
+   		 <li>
+     		 <a href="#referencesR">References</a>
+   		 </li>
+ 		 </ul>
+   	 </nav>
+      </div>
+      <div class="secciones">
+   	 <p>DENTRO DE ESTE DIV PONER LAS COSAS DE LAS SECCIONES</p>
       </div>
     </div>
-    
-    
-  </section>
-  <div>
-    <img class="animate__animated animate__pulse globo"  src="https://static.igem.wiki/teams/4607/wiki/human-2-0/glacial-indifference-34-removebg-preview.png" alt="" width="230" height="300" class="imagen-taffy"> 
-</main>
-<div> 
-  <img class="ODS2" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/ods2.jpeg" width="150" height="150">
-</div>
-<div> 
-  <img class="ODS3" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/ods3.png" width="150" height="150">
-</div>
-
-<h1 class="Titulo2">Addressing a global problem</h1>
-<p> Milk is a staple food worldwide, during the development of our project we noticed how important cows and their products are, not only for the community we live in, but for the world in general. In a world where 8 billion people live, a concerning issue comes to light the high demand for milk. In the year 2022, 366.800 million kilograms of milk found their place, and as we gaze to 2028, projections point to the consumption of 435.000 million kilograms (Orús, 2023) 2.  Having addressed the magnitude of the people with whom we share this staple food, we can emphasize on the problem we face.
-</p>
-
-<a href="#" class="ov-btn-slide-left boton" >Mastitis is estimated to cost<br>the global dairy industry $19.7B-32B USD CENTRAR<br>annually  </a>
-<p>This infection affects between 15% and 20% of the cattle population each year (Tomanić et al., 2023). 4 and so is a common and costly disease that influences dairy cattle, reducing milk quality and quantity.
-  We are getting closer to our local community! But first, let's talk about the importance of dairy in Mexico.
-  </p>
-
-<!-- POSTIT-->
-  
-  <!-- TEXTO-->
-<p>Considering the impact of the industry on the Mexican economy, and its importance in the production of the basic Mexican food basket, milk is one of the essentials in the diet of manyranking México as the 8th largest milk consumer  (Statista) 2. 
-</p>
-<h1>At home</h1>
-<p>In our hometown, Chihuahua the main livestock activity developed is the production of bovine milk, representing a high economic importance since it occupies the fourth place nationally in total milk production.</p>
-
-<!-- GRAFICOS 1-->
-<div class="grafico1"> 
-  <script
-  src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
-  </script>
-  <!DOCTYPE html>
-  <html>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-  <body>
-
-  <canvas id="myChart" style="width:50%;max-width:300px"></canvas>
-
-  <script class="Jalisco">
-  var xValues = ["20.7", ""];
-  var yValues = [20.7, 79.3];
-  var barColors = [
-    "#5BC5AB",
-    "#C4C4C4",
-    
-  ];
-
-  new Chart("myChart", {
-    type: "doughnut",
-    data: {
-      labels: xValues,
-      datasets: [{
-        backgroundColor: barColors,
-        data: yValues
-      }]
-    },
-    options: {
-      title: {
-        display: true,
-        text: "Jalisco"
-      }
-    }
-  });
-  </script>
-</div>
-
-<!-- GRAFICOS 2-->
-<div class="grafico2">
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
-    </script>
-    <!DOCTYPE html>
-    <html>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-    <body>
-  <canvas id="myChart2" style="width:50%;max-width:300px"></canvas>
-
-  <script class="Coahuila">
-  var xValues = ["11.8", ""];
-  var yValues = [11.8, 88.2];
-  var barColors = [
-    "#5BC5AB",
-    "#C4C4C4",
-    
-  ];
-
-  new Chart("myChart2", {
-    type: "doughnut",
-    data: {
-      labels: xValues,
-      datasets: [{
-        backgroundColor: barColors,
-        data: yValues
-      }]
-    },
-    options: {
-      title: {
-        display: true,
-        text: "Coahuila"
-      }
-    }
-  });
-  </script>
-</div>
-
-<!-- GRAFICOS 3-->
-<div class="grafico3">
-  <canvas id="myChart3" style="width:50%;max-width:300px"></canvas>
-
-  <script class="Durango">
-  var xValues = ["11.6", ""];
-  var yValues = [11.6, 88.4];
-  var barColors = [
-    "#5BC5AB",
-    "#C4C4C4",
-    
-  ];
-
-  new Chart("myChart3", {
-    type: "doughnut",
-    data: {
-      labels: xValues,
-      datasets: [{
-        backgroundColor: barColors,
-        data: yValues
-      }]
-    },
-    options: {
-      title: {
-        display: true,
-        text: "Durango"
-      }
-    }
-  });
-  </script>
-</div>
-</body>
+    </div>    
+  </div>
+  </div>
+  </body>
 </html>
-<p>Consulting this information we noticed how important this problem was for our community. Here is when we started mapping people involved in the milking process, we wanted to listen with our own ears and see with our own eyes, how the industry and small-scale producers dealt with mastitis.
-</p>
-<h1>Where it all started
-</h1>
-<p>To gain a true understanding of the issue, we decided to experience it firsthand. We had a brainstorming session with our team, in which we identified the parties involved in the process and evaluated whether they were being positively or negatively affected. We came up with a value chain that goes from the treatments and the people involved in their development, to the public approval, or us, milk consumers. This approach played a significant role in shaping our project's success as it offered us valuable insights, identified needs, and outlined requirements for addressing the mastitis problem.
-</p>
-
-<div>
-  <img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/vacas-lecheras-1.png" style="float: inline-end;"  width="800" height="200">
-  <p>Before we aboard what we learned from each stakeholder, we want to address the importance each of them has in the development of our project.
-  </p>
-</div>
-<div>
-  <img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/what-is-the-importance-of-our-stakeholders-through-our-value-chain-4.png" style="float: inline-end;" width="800" height="400">
-</div>
-
-<!-- descripcion de stakeholders-->
-<!--treatment-->
-<div>
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-/* Popup container - can be anything you want */
-.popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* The actual popup */
-.popup .popuptext {
-  visibility: hidden;
-  width: 160px;
-  background-color: #BC3E5D;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
-}
-
-/* Popup arrow */
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #BC3E5D transparent transparent transparent;
-}
-
-/* Toggle this class - hide and show the popup */
-.popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;} 
-  to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-}
-</style>
-</head>
-<body style="text-align:left">
-
-
-
-<div class="popup" onclick="myFunction()" > <button class="boton1">TREATMENT</button>
-  <span class="popuptext" id="myPopup">They play an essential role in health care, due to their significant influence in decision making and success in treatment strategies.</span>
-</div>
-
-<script>
-// When the user clicks on div, open the popup
-function myFunction() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
-}
-</script>
-
-</body>
-</html>
-
-<!--MILK PROCESS-->
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport1" content="width=device-width, initial-scale=1">
-<style>
-/* Popup container - can be anything you want */
-.popup1 {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* The actual popup */
-.popup1 .popuptext1 {
-  visibility: hidden;
-  width: 160px;
-  background-color: #B86277;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
-}
-
-/* Popup arrow */
-.popup1 .popuptext1::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #B86277 transparent transparent transparent;
-}
-
-/* Toggle this class - hide and show the popup */
-.popup1 .show1 {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;} 
-  to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-}
-</style>
-</head>
-<body style="text-align:center">
-
-
-
-<div class="popup1" onclick="myFunction1()"> <button class="boton2">MILKING PROCESS</button>
-  <span class="popuptext1" id="myPopup1">Provide specialized knowledge and skills that are essential for effective management and prevention of this condition. Including clinical diagnosis, treatmente guidance, and facility and milking equipment design.  </span>
-</div>
-
-<script>
-// When the user clicks on div, open the popup
-function myFunction1() {
-  var popup = document.getElementById("myPopup1");
-  popup.classList.toggle("show1");
-}
-</script>
-
-</body>
-</html>
-
-<!--TRANSPORTATION-->
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport2" content="width=device-width, initial-scale=1">
-<style>
-/* Popup container - can be anything you want */
-.popup2 {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* The actual popup */
-.popup2 .popuptext2 {
-  visibility: hidden;
-  width: 160px;
-  background-color: #BA796C;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
-}
-
-/* Popup arrow */
-.popup2 .popuptext2::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #BA796C transparent transparent transparent;
-}
-
-/* Toggle this class - hide and show the popup */
-.popup2 .show2 {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;} 
-  to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-}
-</style>
-</head>
-<body style="text-align:center">
-
-
-
-<div class="popup2" onclick="myFunction2()"><button class="boton3">TRANSPORTATION</button>
-  <span class="popuptext2" id="myPopup2">Ensure that milk from cows affected by mastitis is appropriately handled and segregated to prevent contamination. Record data related to milk volume, quality, and farm conditions during their visits.   </span>
-</div>
-
-<script>
-// When the user clicks on div, open the popup
-function myFunction2() {
-  var popup = document.getElementById("myPopup2");
-  popup.classList.toggle("show2");
-}
-</script>
-
-</body>
-</html>
-
-<!--DIAGNOSTIC-->
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport4" content="width=device-width, initial-scale=1">
-<style>
-/* Popup container - can be anything you want */
-.popup4 {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* The actual popup */
-.popup4 .popuptext4 {
-  visibility: hidden;
-  width: 160px;
-  background-color:#C88C63;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
-}
-
-/* Popup arrow */
-.popup4 .popuptext4::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #C88C63 transparent transparent transparent;
-}
-
-/* Toggle this class - hide and show the popup */
-.popup4 .show4 {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;} 
-  to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-}
-</style>
-</head>
-<body style="text-align:center">
-
-
-
-<div class="popup4" onclick="myFunction4()"><button class="boton4">DIAGNOSTIC</button>
-  <span class="popuptext4" id="myPopup4">Provide accurate identification of the specific microorganisms involved. Explore new treatment strategies to combat microbial resistance and limit its spread. Deliver monitoring treatment progress through follow-up testing.   </span>
-</div>
-
-<script>
-// When the user clicks on div, open the popup
-function myFunction4() {
-  var popup = document.getElementById("myPopup4");
-  popup.classList.toggle("show4");
-}
-</script>
-
-</body>
-</html>
-<!--MILK PROCESING-->
-<br>
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport5" content="width=device-width, initial-scale=1">
-<style>
-/* Popup container - can be anything you want */
-.popup5 {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* The actual popup */
-.popup5 .popuptext5 {
-  visibility: hidden;
-  width: 160px;
-  background-color:#F6AE2D;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
-}
-
-/* Popup arrow */
-.popup5 .popuptext5::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #F6AE2D transparent transparent transparent;
-}
-
-/* Toggle this class - hide and show the popup */
-.popup5 .show5 {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;} 
-  to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-}
-</style>
-</head>
-<body style="text-align:center">
-
-
-
-<div class="popup5" onclick="myFunction5()"><button class="boton5">MILK PROCESING</button>
-  <span class="popuptext5" id="myPopup5">They design and optimize the processing steps involved in turning raw milk into various dairy products, as well as the data collection on mastitis prevalence, allowing for monitoring of regional trends and the identification of potential outbreaks.
-    Segregate milk contaminated with mastitis.    </span>
-</div>
-
-<script>
-// When the user clicks on div, open the popup
-function myFunction5() {
-  var popup = document.getElementById("myPopup5");
-  popup.classList.toggle("show5");
-}
-</script>
-
-</body>
-</html>
-<!--QUALITY-->
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport6" content="width=device-width, initial-scale=1">
-<style>
-/* Popup container - can be anything you want */
-.popup6 {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* The actual popup */
-.popup6 .popuptext6 {
-  visibility: hidden;
-  width: 160px;
-  background-color:#AABA6D;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
-}
-
-/* Popup arrow */
-.popup6 .popuptext6::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #AABA6D transparent transparent transparent;
-}
-
-/* Toggle this class - hide and show the popup */
-.popup6 .show6 {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;} 
-  to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-}
-</style>
-</head>
-<body style="text-align:center">
-
-
-
-<div class="popup6" onclick="myFunction6()"><button class="boton6">QUALITY</button>
-  <span class="popuptext6" id="myPopup6">TImplement processes that ensure the safety and quality aspects that affect consumers health.
-    Analyze milk samples for quality and potential signs of mastitis. 
-     as well as the Design and implementation processes that ensure the safety and quality of dairy products.Maintain strict quality control standards.    </span>
-</div>
-
-<script>
-// When the user clicks on div, open the popup
-function myFunction6() {
-  var popup = document.getElementById("myPopup6");
-  popup.classList.toggle("show6");
-}
-</script>
-
-</body>
-</html>
-<!--NORMATIVITY-->
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport7" content="width=device-width, initial-scale=1">
-<style>
-/* Popup container - can be anything you want */
-.popup7 {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* The actual popup */
-.popup7 .popuptext7 {
-  visibility: hidden;
-  width: 160px;
-  background-color:#5BC6AB;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
-}
-
-/* Popup arrow */
-.popup7 .popuptext7::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #5BC6AB transparent transparent transparent;
-}
-
-/* Toggle this class - hide and show the popup */
-.popup7 .show7 {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;} 
-  to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-}
-</style>
-</head>
-<body style="text-align:center">
-
-
-
-<div class="popup7" onclick="myFunction7()"><button class="boton7">NORMATIVITY</button>
-  <span class="popuptext7" id="myPopup7">Establish the standards and values that guide our judgments and actions. We are trying to solve a problem that has important implications for human and animal welfare, environmental sustainability, and economic efficiency.    </span>
-</div>
-
-<script>
-// When the user clicks on div, open the popup
-function myFunction7() {
-  var popup = document.getElementById("myPopup7");
-  popup.classList.toggle("show7");
-}
-</script>
-
-</body>
-</html>
-<!--PUBLIC APPROVAL-->
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport8" content="width=device-width, initial-scale=1">
-<style>
-/* Popup container - can be anything you want */
-.popup8 {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* The actual popup */
-.popup8 .popuptext8 {
-  visibility: hidden;
-  width: 160px;
-  background-color:#5CE1E6;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
-}
-
-/* Popup arrow */
-.popup8 .popuptext8::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #5CE1E6 transparent transparent transparent;
-}
-
-/* Toggle this class - hide and show the popup */
-.popup8 .show8 {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;} 
-  to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-}
-</style>
-</head>
-<body style="text-align:center">
-
-
-
-<div class="popup8" onclick="myFunction8()"><button class="boton8">PUBLIC APPROVAL</button>
-  <span class="popuptext8" id="myPopup8">We surveyed dairy consumers
-    to understand their awareness, perception, and acceptance of non-antibiotic alternative for treating mastitis. Additionally, we aimed to determine the level of knowledge about the mastitis issue in the community.   </span>
-</div>
-
-<script>
-// When the user clicks on div, open the popup
-function myFunction8() {
-  var popup = document.getElementById("myPopup8");
-  popup.classList.toggle("show8");
-}
-</script>
-
-</body>
-</html>
-</br>
-<div>
-
-
-  <H1>From the root</H1>
-  <img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/8c4fe1d6-384b-4618-a8fb-98eddae7652d-1-105-c.jpeg" style="float: inline-end;"  width="700" height="500">
-  <p>Since the very beginning we established contact with DELMAR´s zootechnical veterinary doctor Alfredo Arroyo, a cow shed in Delicias, Chihuahua. that supplies Alpura, one of the biggest dairy industries of the country. We could say this was actually our first encounter with the industry, in which we learned that good hygiene practices must be taken into account during the milking process.    
-  This interview was really important as it marks the start of our first objective, understanding the problem. 
-    
-
-  </p>
-</div>
-
-<p> 
-  <img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/oswald-1.png" align="left" width="750" height="500"> Let's talk about the milking process stakeholders, the process followed to obtain the milk, but also according to the interviews, this is usually the primary starting point where the problem develops. The milking process from which we interviewed 20 people, including Veterinary Zootechnicians, small, medium, and large producers, and dairy industries. During our path, we identified 4 main problems that they all had in common, high treatment costs, milk withdrawal, antibiotic resistance, and food waste.
-</p>
-<!--popup 1 -->
-<p><button class="boton10"><a href="#popup">HIGH TREATMENT COSTS</a></p></button> 
-<div id="popup" class="overlay">
-  <div id="popupBody">
-      <h2>Título de la ventana</h2>
-      <a id="cerrar" href="#">&times;</a>
-      <div class="popupContent">
-          <p><img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/99dbe4ac-afd1-439a-aa67-92923cc17713-1-105-c.jpeg" align="CENTRAR" width="450" height="300"> This is the milking parlor of Felipe, a small-scale producer in Delicias, when we first arrived we had a shock of reality, cows were being milked in a small concrete room in which only four cows could be milked at the same time. Felipe mentioned that instead of using a seal to clean the cow's nipples he used chlorine, it proved effective for him and was also cheaper.</p>
-          <br>
-          <p>Many small-scale producers do not have access to conventional treatments, because of the elevated prices at the market, they even use everyday supplies to ensure good hygiene in their sheds. On the other hand, we have the dairy industry, which has a full stock of antibiotics when needed.<br> However, mastitis incurs significant financial losses in the global dairy industry, amounting to an estimated 4.7B to 7.68B USD in veterinary fees and drug expenses (Behind The Bench Staff, 2022b) 3.
-          Veterinary zootechnicians who manage dairy cow sheds, <br>pointed out that mastitis represents the greatest expense in relation to cattle diseases, so no matter how expensive the treatments are, <br>both sectors are affected economically. 
-          Feel free to visit our <br>Entrepreneurship page to see the market and Aureobos comparison!
-            </p>
-            <img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/465fba4f-5c3d-4fc1-95d3-e70d380494cb-1-105-c.jpeg" align="CENTRAR" width="450" height="300">
-
-      </div>
-  </div>
-</div>
-<link href="pruebas.css" rel="stylesheet" type="text/css" />
-<!--popup 2  no aparece toda la info, supongo que por que es muy pequeño el popup, no supe como meter un scroll down al texto dentro del pop up, asi tambien con el de arriba y los que faltan-->
-<p><button class="boton11"><a href="#popup1">MILK WITHDRAWAL</a></p></button> 
-<div id="popup1" class="overlay1">
-  <div id="popupBody1">
-      <h2>Título de la ventana</h2>
-      <a id="cerrar" href="#">&times;</a>
-      <div class="popupContent">
-          <p><img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/5749628d-71a1-4aea-973b-d40b61caaf89-1-105-c.jpeg" align="CENTRAR" width="450" height="300"> During our visit to the Zaragoza industry in Delicias, we had the opportunity to see a newborn calf. This sparked our curiosity and led us to ask ¿what it s done with the milk from sick cows? <br> They mentioned that, when mastitis is first detected at the parlor, the cow must be milked in a separate room, and the milk obtained during the infection and treatment was used in male calves, otherwise, it went to waste.
-            .</p>
-          <br>
-          <p>Once antibiotics are administered during the sickness, they are excreted through pee, excrement, and most importantly in milk.<br> During our interviews, the most mentioned antibiotics employed for treating mastitis were Ceftiofur, Mastex, Cefavet, Mastijet, Enromastic, and Pencivet. <br>The withdrawal period that every antibiotic requires reduces the overall milk production per dairy, contributing to economic losses for the producer. <br>As we can see in Fig.8, the most common antibiotics on the market require long milk withdrawal periods except for Ceftiofur. This is really concerning not only because of the economic losses but for the food that is going to waste during the process.
-            </p>
-            <img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/465fba4f-5c3d-4fc1-95d3-e70d380494cb-1-105-c.jpeg" align="CENTRAR" width="450" height="300">
-            <!-- AQUI VA grafica milk withrawal-->
-
-      </div>
-  </div>
-</div>
-<link href="pruebas.css" rel="stylesheet" type="text/css" />
- <!--grafica milk withrawal-->
-<body>
-  <div class="board">
-      <div class="titulo_grafica">
-          <h3 class="t_grafica">MILK WITHDRAWAL</h3>
-      </div>
-      <div class="sub_board">
-          <div class="sep_board"></div>
-          <div class="cont_board">
-              <div class="graf_board">
-                  <div class="barra">
-                      <div class="sub_barra b1">
-                          <div class="tag_g">90%</div>
-                          <div class="tag_leyenda">MASTEX</div>
-                      </div>
-                  </div>
-                  <div class="barra">
-                      <div class="sub_barra b2">
-                          <div class="tag_g">90%</div>
-                          <div class="tag_leyenda">MASTIJET</div>
-                      </div>
-                  </div>
-                  <div class="barra">
-                      <div class="sub_barra b3">
-                          <div class="tag_g">80%</div>
-                          <div class="tag_leyenda">CEFAVET</div>
-                      </div>
-                  </div>
-                  <div class="barra">
-                      <div class="sub_barra b4">
-                          <div class="tag_g">73%</div>
-                          <div class="tag_leyenda">PENCIVET</div>
-                      </div>
-                  </div>
-                  <div class="barra">
-                      <div class="sub_barra b5">
-                          <div class="tag_g">0%</div>
-                          <div class="tag_leyenda">CEFTIOFUR</div>
-                      </div>
-                  </div>
-              </div>
-              <div class="tag_board">
-                  <div class="sub_tag_board">
-                      <div>100</div>
-                      <div>90</div>
-                      <div>80</div>
-                      <div>70</div>
-                      <div>60</div>
-                      <div>50</div>
-                      <div>40</div>
-                      <div>30</div>
-                      <div>20</div>
-                      <div>10</div>
-                  </div>
-              </div>
-         </div> 
-          <div class="sep_board"></div>
-     </div>    
-  </div>
-
-</body>
-<!--popup 3 -->
-<p><button class="boton12"><a href="#popup3">ANTIBIOTIC RESISTANCE</a></p></button> 
-<div id="popup3" class="overlay3">
-  <div id="popupBody3">
-      <h2>Título de la ventana</h2>
-      <a id="cerrar" href="#">&times;</a>
-      <div class="popupContent">
-          <p><img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/73772815-a643-4247-a5ae-0ef57b50eb03-1-105-c.jpeg" align="CENTRAR" width="450" height="300">
-          <p>13 of 20 small producers and Veterinary Zootecnitians mentioned antibiotic resistance as an actual or potential future problem for them, this was very concerning.
-            </p>
-      </div>
-  </div>
-</div>
-<link href="pruebas.css" rel="stylesheet" type="text/css" />
-<!-- seccion 2-->
-<p> 
-  <img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/2.png" align="left" width="300" height="250"> We've arrived at the second section of our value chain, the milk processing and diagnostic areas, which were fundamental in the development of our project and a complete understanding of the problem we are facing. Milk collection and dairy industry provided us with regulations and requirements that they ask for when a pipe of milk arrives at the center. This place processes milk from small producers and assures good quality milk. Mastitis is directly reflected in the number of somatic cells present in milk, which makes it a crucial reference to determine its acceptability in collection centers or for companies that process milk-derived foods
-  
-</p>
-<img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/f9092f74-238c-4659-a6eb-b0bc53dd8037-1-105-c.jpeg" align="left" width="750" height="500">
-<p>From the collection center LICONSA in Delicias, we learned that somatic cells are an important component present in milk and in the udder that indicates health and well-being for the cow. However high SCC is associated with, an alteration in milk composition, bacteriological problems in milk, and modifications of dairy products characteristics. Therefore the higher the somatic cell count in the milk, the lower the payment to the producers since this indicates a lower quality of the product.<br>There is a variety of detection methods used for SCC, during the interviews with our stakeholders they mentioned three really important methods, California Test, Wisconsin Test, and milk conductivity.
-</p>
-<!--popup 4-->
-<p><button class="boton13"><a href="#popup4">CALIFORNIA TEST</a></p></button> 
-<div id="popup4" class="overlay4">
-  <div id="popupBody4">
-      <h2>Título de la ventana</h2>
-      <a id="cerrar" href="#">&times;</a>
-      <div class="popupContent4">
-          
-          <p>This test is the most commonly used in the industry for subclinical mastitis detection. It is a qualitative measurement that involves a reactant (Sodium Lauryl sulfate 2%, Crystal violet 0.0033%, Aqueous vehicle q.s., reagent in solution) 11
-            and a blast of milk. In our attempt to understand the problem, we had the opportunity to milk firsthand at CBTa 90 in Cuauhtemoc, Chih. In which they showed the team from start to finish the milking routine to obtain the delicious milk!, if you want to know more about this feel free to read the box below! 
-            </p>
-      </div>
-  </div>
-</div>
-<link href="pruebas.css" rel="stylesheet" type="text/css" />
-<!--popup 5-->
-<p><button class="boton14"><a href="#popup5">WISCONSIN TEST</a></p></button> 
-<div id="popup5" class="overlay5">
-  <div id="popupBody5">
-      <h2>Título de la ventana</h2>
-      <a id="cerrar" href="#">&times;</a>
-      <div class="popupContent5">
-          <p>We also had an interview with Gabriela Mapes, a stakeholder in the pharmaceutical area, as she works with Zoetis a well-known global animal health company that specializes in the development and manufacturing of veterinary pharmaceuticals, vaccines, diagnostics, and various other products and services related to animal health and well-being. During our interview, she mentioned the use of WMT test for SC, so we delved into finding out what it consisted.
-           </p>
-          <p><img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/captura-de-pantalla-2023-09-10-a-la-s-22-33-29.png" align="CENTRAR" width="450" height="300">
-            <p>The Wisconsin Mastitis Test (WMT) was created with laboratories in mind, and it's like a detective tool for milk quality. It helps us figure out the amount of somatic cells present in fresh blended milk,<br>milk from chilling tanks, and even milk from individual cows. It is similar to the California Test (CMT) in terms of the solution it uses. But here's the cool part: instead of just giving a qualitative result like the CMT, the WMT gives us a quantitative result, that is detailed on the numbers based on how thick the milk becomes. It's like having a precise measurement to understand the milk's health.<br>
-            WMT consists of using a millimeter-marked tube into which you place 2 ml of milk, along with a mixture of 2 ml of CMT reagent and distilled water in equal parts, which is then mixed.<br>
-            The results are linked to the milliliter markings on the tube and what they tell us about somatic cells. <br>We've got this handy chart that helps us understand what it all means. So, if a herd scores low, for example between 3 and 12, it's doing pretty well—no major worries. But if the score is above 12, it signifies a great concern, and we've got to jump into action right away (BEDOLLA CEDEÑO) 12.
-              
-            </p>   
-      </div>
-  </div>
-</div>
-<link href="pruebas.css" rel="stylesheet" type="text/css" />
-<!--popup 6-->
-<p><button class="boton15"><a href="#popup6">MILK CONDUCTIVITY</a></p></button> 
-<div id="popup6" class="overlay6">
-  <div id="popupBody6">
-      <h2>Título de la ventana</h2>
-      <a id="cerrar" href="#">&times;</a>
-      <div class="popupContent4">
-          
-          <p>Measurement of electrical conductivity (EC) is a method frequently used in dairy cows during milking in milking parlors, but especially in robotic milking as a low-cost mastitis detection method. Therefore conductivity of milk seems to hold promise as an indicator of subclinical mastitis (Fernando et al., 1982; Uhrinčať et al., 2019) 13,14.
-            </p>
-      </div>
-  </div>
-</div>
-<link href="pruebas.css" rel="stylesheet" type="text/css" />
-<!-- seccion 3-->
-<p aling="left" > 
-  <img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/3.png" align="LEFT" width="600" height="450"> Every interview we conducted within this part of our value chain contributed to improving our project's design.<br> It helped us gain a deeper understanding of the problem, and hands-on experience helped us appreciate all the work involved in the milking process. Now, we are moving on to explore some of the more technical aspects of our value chain.<br>Finally we, milk consumers, what do we know and think about this problem?, and how can we contribute? <br>This is why we interviewed 24 milk consumers in order to measure their level of knowledge and concerns regarding mastitis.  
-</p>
-<p aling="left">Now you know our stakeholders and how important they are to us, and how addressing these challenges is of utmost importance to safeguard both animal and human health while ensuring sustainable dairy production practices.<br>  Developing alternative treatment approaches and promoting prudent antibiotic use are critical steps in mitigating the impact of mastitis on the dairy industry.
-</p>
-<H1>
-  Values of Aureobos
-</H1>
-<p aling="left">
-  Since the beginning of our project, we decided that we wanted a project based on and aligned with positive values. <br> We've prioritized values that address the concerns of our stakeholders, particularly dairy farmers who directly experience the problem of mastitis. <br> Our values are chosen carefully to reflect our responsibility to the world, the broader population, and the environment.
-</p>
-<br> 
-<p aling="left">These values are central to our commitment to developing a project that positively impacts our community and the world. <br>We have made several key commitments, including focusing on our stakeholders to effectively solve the problem, respecting their privacy, using collected information solely for academic and research purposes, maintaining our integrity and moral values at all times,<br> ensuring the safe development of the project both inside and outside the laboratory, and utilizing synthetic biology to reduce food waste and prevent future health issues in our community and beyond. </p>
-<br>
-<p aling="left">Hover over the values to learn how the value relates to Aureobos and how we implement it. 
-</p>
-
-<!--milking process NO VA AQUI, pero en el documento viene donde va, solo que lo tuve que poner aqui por que se me olvido hacelo y pues ya lo puse aqui-->
-<!--popup7-->
-<p><button class="boton16"><a href="#popup7">PRESEAL APPLICATION</a></p></button> 
-<div id="popup7" class="overlay7">
-  <div id="popupBody7">
-      <h2>Título de la ventana</h2>
-      <a id="cerrar" href="#">&times;</a>
-      <div class="popupContent7">
-          <p>The udders are cleaned with an iodine or chlorine solution to eliminate dirt and microorganisms outside.
-           </p>
-          <p><img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/a5e880af-915f-4c3a-8078-ebc51b8b72ba-1-105-c.jpeg" align="CENTRAR" width="450" height="300">  
-      </div>
-  </div>
-</div>
-<link href="pruebas.css" rel="stylesheet" type="text/css" />
-<!--popup8-->
-<p><button class="boton17"><a href="#popup8">TEAT DRYING</a></p></button> 
-<div id="popup8" class="overlay8">
-  <div id="popupBody8">
-      <h2>Título de la ventana</h2>
-      <a id="cerrar" href="#">&times;</a>
-      <div class="popupContent8">
-          <p>Dry the teat with a paper/cloth towel, to retire the solution excess from the preseal application.
-           </p>
-          <p><img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/captura-de-pantalla-2023-09-10-a-la-s-23-09-51.png" align="CENTRAR" width="450" height="300">  
-      </div>
-  </div>
-</div>
-<link href="pruebas.css" rel="stylesheet" type="text/css" />
-<!--popup9-->
-<p><button class="boton18"><a href="#popup9">TEAT DRYING</a></p></button> 
-<div id="popup9" class="overlay9">
-  <div id="popupBody9">
-      <h2>Título de la ventana</h2>
-      <a id="cerrar" href="#">&times;</a>
-      <div class="popupContent9">
-          <p>This step is crucial for detection in milk changes, teat drying, and attachment of the cluster unit that performs the milking.
-           </p>
-          <p><img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/eb1a73bc-671f-4aa9-8390-1e6d3729bae8-1-105-c.jpeg" align="CENTRAR" width="450" height="300">  
-      </div>
-  </div>
-</div>
-<link href="pruebas.css" rel="stylesheet" type="text/css" />
-<!--popup10-->
-<p><button class="boton19"><a href="#popup10">ATTACHMENT OF THE CLUSTER UNIT</a></p></button> 
-<div id="popup10" class="overlay10">
-  <div id="popupBody10">
-      <h2>Título de la ventana</h2>
-      <a id="cerrar" href="#">&times;</a>
-      <div class="popupContent9">
-          <p>Milking perform, the machine must suck slowly, so as not to hurt the udder. Usually imitates the calves sucking.
-           </p>
-          <p><img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/8920e377-55c3-49ec-be75-22d8d3d6c7b9-1-105-c.jpeg" align="CENTRAR" width="450" height="300">  
-      </div>
-  </div>
-</div>
-<link href="pruebas.css" rel="stylesheet" type="text/css" />
-<!--popup11-->
-<p><button class="boton20"><a href="#popup11">POST MILKING TEAT SEAL</a></p></button> 
-<div id="popup11" class="overlay11">
-  <div id="popupBody11">
-      <h2>Título de la ventana</h2>
-      <a id="cerrar" href="#">&times;</a>
-      <div class="popupContent9">
-          <p>It's crucial to protect the udder because teat closure occurs within half to an hour, and during this time, microorganisms could enter.
-           </p>
-          <p><img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/b3d22dac-7bfe-4ec0-885c-a2b7d34beb1d-1-105-c.jpeg" align="CENTRAR" width="450" height="300">  
-      </div>
-  </div>
-</div>
-<link href="pruebas.css" rel="stylesheet" type="text/css" />
-
-<!--valores, esto va abajo de la info de valores, no supe como hacer que el boton tuviera forma de circulo, pero aqui deje el codigo de como se hace un circulo-->
-</p><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-     width="120" height="120" viewBox="0 0 120 120">
-  <circle cx="60" cy="60" r="50"
-          fill="aqua" />
-</svg>
-<!--valores, esto va abajo de la info de valores, solo quiero q el pop up sea un circulo-->
-<!--popup12-->
-<p><button class="boton21"><a href="#popup12">PUBLIC HEALTH</a></p></button> 
-<div id="popup12" class="overlay12">
-  <div id="popupBody12">
-      <a id="cerrar" href="#">&times;</a>
-      <div class="popupContent12"
-          <p><img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/public-health-1.png" align="CENTRAR" width="450" height="300">  
-      </div>
-  </div>
-</div>
-<link href="pruebas.css" rel="stylesheet" type="text/css" />
-<!--popup13-->
-<p><button class="boton22"><a href="#popup13">ANTIWASTE</a></p></button> 
-<div id="popup13" class="overlay13">
-  <div id="popupBody13">
-      <a id="cerrar" href="#">&times;</a>
-      <div class="popupContent13"
-          <p><img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/public-health-4.png" align="CENTRAR" width="450" height="300">  
-      </div>
-  </div>
-</div>
-<link href="pruebas.css" rel="stylesheet" type="text/css" />
-
-<!--popup14-->
-<p><button class="boton23"><a href="#popup14">INTEGRITY</a></p></button> 
-<div id="popup14" class="overlay14">
-  <div id="popupBody14">
-      <a id="cerrar" href="#">&times;</a>
-      <div class="popupContent14"
-          <p><img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/public-health-5.png" align="CENTRAR" width="450" height="300">  
-      </div>
-  </div>
-</div>
-<link href="pruebas.css" rel="stylesheet" type="text/css" />
-<!--popup15-->
-<p><button class="boton24"><a href="#popup15">PRIVACY</a></p></button> 
-<div id="popup15" class="overlay15">
-  <div id="popupBody15">
-      <a id="cerrar" href="#">&times;</a>
-      <div class="popupContent15"
-          <p><img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/public-health-6.png" align="CENTRAR" width="450" height="300">  
-      </div>
-  </div>
-</div>
-<link href="pruebas.css" rel="stylesheet" type="text/css" />
-<!--popup16-->
-<p><button class="boton25"><a href="#popup16">SUSTAINTABILITY</a></p></button> 
-<div id="popup16" class="overlay16">
-  <div id="popupBody16">
-      <a id="cerrar" href="#">&times;</a>
-      <div class="popupContent16"
-          <p><img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/public-health-8.png" align="CENTRAR" width="450" height="300">  
-      </div>
-  </div>
-</div>
-<link href="pruebas.css" rel="stylesheet" type="text/css" />
-<p>Our project is aimed at addressing a critical issue in the dairy industry: the excessive waste of milk caused by antibiotic treatments for mastitis in dairy cows. To address this issue, our project proposes a non-antibiotic alternative that is effective, safe, and sustainable.<br> This approach also contributes to fighting antibiotic resistance, a major public health concern, by reducing antibiotic use in dairy farming.<br> Additionally, the project focuses on environmental friendliness, minimizing the negative impact of dairy farming by reducing antibiotic residues in the soil and water.<br> It prioritizes animal welfare, providing a non-invasive and painless treatment for dairy cows, allowing them to maintain normal lactation. For dairy farmers, this solution offers economic benefits, cutting losses related to mastitis and increasing consumer trust and satisfaction. <br>In this way, we ensure that our project is not only responsible and beneficial for the world but also addresses key challenges in the dairy industry, benefiting animals, farmers, and the environment while contributing to public health. </p>
-<img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/captura-de-pantalla-2023-09-11-a-la-s-0-13-40.png" align="CENTRAR" width="300" height="300">  
-<p>
-  As we listened to people facing this challenge on a daily basis, it became evident that we have the opportunity to offer them a practical solution in the form of a product—an alternative to existing remedies. <br> We have strategically chosen to adopt an intramammary infusion presentation for AureoBos. This decision is rooted in the advantages of a more direct application, as well as eliminating the need for thorough operator training. <br>  To expand our project, we aim to transform it into a startup and embrace an entrepreneurial mindset where we visualize our project being implemented and used as a cream formulated for intramammary infusion, administered through the affected teat of the cow, by those who are currently facing the challenge of mastitis — dairy cattle owners influenced by veterinarian zootechnicians,<br>  which is thoroughly explained in our entrepreneurship section. 
-Besides our end users, we envision AureoBos becoming a precedent in synthetic biology for innovative and technological solutions to other agricultural and medical challenges.<br> As the world has been evolving, a series of complex challenges have emerged.<br>  More than ever, being able to impact the world through a multifaceted approach has become indispensable. After having heard the different consequences of mastitis through our stakeholders during our visits and interviews, with AureoBos we aim to have a meaningful impact on multiple levels which are listed below.<br>  We have learned through our fieldwork, mostly that contaminated milk which is withdrawn from cows that suffer from mastitis goes directly to waste or in some cases, in small communities, it is sold for a lower price.<br>  With this we will also be impacting on the reduction and mitigation of milk waste, as well as securing proper nutrition without the possibility of a transmission of a zoonotic disease.
-</p>
-<img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/impacto-en-a-reas-1.png" align="CENTRAR" width="800" height="600">  
-<p>
-</p>
-<img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/impacto-en-a-reas-2.png" align="CENTRAR" width="850" height="600">  
-<p>
-  <p>
-    As any scientific emerging project, there is potential for it to be misused or generate unintended consequences. While we aim to develop AureoBos as an alternative treatment for bovine mastitis in a responsible and beneficial way, it is important to consider certain risks in order to plan how to manage them. <br>Inside the lab, while developing our project, the team has received proper training in order to work in a safe and responsible environment, following a series of measures and guidelines further explained in the safety section. On the other hand, some of the risks we visualize outside the lab are; the possible unregulated use of AureoBos which, without proper guidance, could lead to ineffective treatment or unintended side effects;<br> the overreliance on it, which is important to remember that different cases of mastitis may require different approaches, and a balanced approach to treatment is necessary; an unauthorized distribution that could lead to uncontrolled use and potential safety issues; and, an environmental negative impact where AureoBos is not disposed correctly.<br> Each of these risks, as well as some other legal considerations that directly impact the development of our product, is further detailed and addressed in our legal strategy which you can find on our entrepreneurship section.
-
-  </p>
-  <br>
-  <p>
-    Mastitis knows no borders—it's a challenge uniting dairy farmers worldwide. With our project, we aim to break these boundaries and make a global impact.<br> Successfully implementing our solution will empower farmers and transform dairy enterprises across the globe, one cow at a time.
-  </p>
-  <br>
-  <p>
-    Reflection & conclusion
-Since the start of iGEM we have been motivated by the purpose of developing a project that will revolutionize our community & the world, while always adhering to our core values. To make this possible, at the beginning we mapped out the areas and stakeholders involved in the problem, to have a broader perspective of it. .<br>We explored the best way to connect with all the involved parts, to deeply understand how they experience the problem and how it affects them. We conducted interviews helping us detect the insights of the problem that aren t perceptible by outside, and also validating the way that was intended to approach it..<br> Through these interactions, the detailed analysis, and the literature research, we were able to understand the problem in a better way, and develop a meaningful solution for it.
-  </p>
-  <!--La info de este aun no esta terminada-->
-  <p>
-    Click on the circles in the diagram below to explore how our value chain impacts the implementation of our project, <br>providing a summary of the potential and challenges associated with the development of our project, <br>depending on our stakeholder’s areas.
-
-  </p>
-
 {% endblock %}

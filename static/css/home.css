@@ -13,6 +13,10 @@ body::-webkit-scrollbar {
     background-color:#0000003b !important;
     color: white   !important;
 }
+.drop-down ul{
+    background-color: #0000003b !important;
+    color: white !important;
+}
 
 #header .logo h1 a{
     color: white !important;
@@ -67,6 +71,8 @@ body::-webkit-scrollbar {
     
 }
 
+
+
 .cardContain{
     width: 100%;
     height: 100%;
@@ -99,6 +105,8 @@ body::-webkit-scrollbar {
     
 }
 
+
+
 .cardSub{
     width: 35vw;
     flex-wrap: wrap;
@@ -109,6 +117,7 @@ body::-webkit-scrollbar {
     font-weight: 600;
 
 }
+
 
 .arrowSub{
     width: 100%;
@@ -205,6 +214,88 @@ body::-webkit-scrollbar {
 transform: scaleX(-1);
 }
 
+@media (max-width: 768px) {
+    .homeCardsContainer{
+      padding-left: 0;
+      height: 720px;
+    }
+    .cardContain{
+      width: 100%;
+      height: 720px;
+      
+    }
+    .cardText{
+      width: 100%;
+      margin-right: 0;
+      margin-top: 0;
+      padding: 0 20px;
+    }
+    .cardSub{
+      width: 100%;
+      padding-top: 0;
+    }
+    .cardHomeTitle{
+      font-size: 2rem;
+        line-height: 2rem;
+    }
+    .cardHomeText{
+      font-size: 1rem;
+    }
+    .cardHome{
+      width: 80vw;
+      height: 80vw;
+      padding-left: 0;
+      display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1250px) {
+    .cardHomeTitle{
+      font-size: 3rem;
+        line-height: 3rem;
+    }    
+}
+
+@media (max-width: 500px) {
+    .homeCardsContainer{
+      padding-left: 0;
+      height: 520px;
+    }
+    .cardContain{
+      width: 100%;
+      height: 520px;
+      
+    }
+    .cardText{
+      width: 100%;
+      margin-right: 0;
+      margin-top: 0;
+      padding: 0 20px;
+    }
+    .cardSub{
+      width: 100%;
+      padding-top: 0;
+    }
+    .cardHomeTitle{
+      font-size: 2rem;
+        line-height: 2rem;
+    }
+    .cardHomeText{
+      font-size: 1rem;
+    }
+    .cardHome{
+      width: 100vw;
+      height: 100vw;
+      padding-left: 0;
+      display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 
 .whyUsHomeContainer{
     width: 100vw;
@@ -251,6 +342,7 @@ transform: scaleX(-1);
     line-height: 9rem;
 }
 
+    
 .whyUsText{
     width: 100%;
     text-align: center;
@@ -288,6 +380,32 @@ transform: scaleX(-1);
     padding: 20px 14%;
 }
 
+@media (max-width: 768px) {
+    .whyUsTitle{
+      font-size: 6rem;
+    }
+    .whyUsNumber{
+      font-size: 6rem;
+    }
+    .whyUsFact{
+      width: 100%;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .whyUsTitle{
+      font-size: 4rem;
+    }
+    .whyUsNumber{
+      font-size: 4rem;
+    }
+    .whyUsFact{
+      width: 100%;
+    }
+
+}
+
 .homeUsContainer{
     width: 100vw;
     display: flex;
@@ -308,6 +426,7 @@ transform: scaleX(-1);
     opacity: 0;
 }
 
+
 .firstUS{
     width: 27%;
     transform: translateX(-20vw);
@@ -319,6 +438,14 @@ transform: scaleX(-1);
     width: 39.5%;
     transform: translateX(20vw);
 
+}
+
+
+@media (max-width: 768px) {
+    .firstUS, .secondUS{
+      width: 100vw;
+      padding: 20px 10px;
+    }
 }
 
 .homeUsContainer.active .firstUS, .homeUsContainer.active .secondUS{
@@ -450,6 +577,28 @@ transform: scaleX(-1);
     transition: 0.5s;
 }
 
+
+@media (max-width: 500px) {
+    .howWeDoItTitle{
+      font-size: 6rem;
+    }
+    .howWeDoItCard{
+      width: 85%;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+    .howWeDoItCardIMG{
+      width: 95%;
+      height: 200px;
+    }
+}
+
+@media (max-width: 500px) {
+    .howWeDoItTitle{
+      font-size: 4rem;
+    }
+}
+
 .homeSectionSelectorContainer{
     width: 100vw;
     display: flex;
@@ -459,6 +608,12 @@ transform: scaleX(-1);
     background-color: rgb(255, 255, 255);
     height: 200px;
     margin-bottom: 110px;
+}
+
+@media (max-width: 768px) {
+    .homeSectionSelectorContainer{
+      display: none;
+    }
 }
 
 .homeSectionSelector{
