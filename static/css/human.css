@@ -2015,7 +2015,7 @@
   max-width: 217px;
   height: auto;
   position: absolute;
-  top: 331%;
+  top: 323%;
   left: 41%;
   transform: translate(-50%, -50%);
   z-index: 10;
@@ -2023,7 +2023,7 @@
 
 .ODS3 {
   background: transparent;
-  top: 331%; /* Center vertically */
+  top: 323%; /* Center vertically */
   left: 62%; /* Center horizontally */
   transform: translate(-50%, -50%);
   width: 50vw; /* 50% of viewport width */
