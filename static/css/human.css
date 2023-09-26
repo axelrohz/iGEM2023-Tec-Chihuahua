@@ -2068,6 +2068,18 @@
   z-index: 10;
 }
 
+.cadena_de_valor{
+  background: transparent;
+  top: 321%; /* Center vertically */
+  left: 62%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  width: 50vw; /* 50% of viewport width */
+  max-width: 217px; /* Maximum width for larger screens */
+  height: auto; /* Maintain aspect ratio */
+  position: absolute;
+  z-index: 10;
+  }
+
 
  
  
