@@ -1915,7 +1915,6 @@ margin-left: 30%;
    left: 5px;
 }
 
-
 /*ajuste tabla y colores*/
 .tabla_chemicalReactios th, .tabla_chemicalReactios td{
    border: 2px solid #C55B75;
@@ -1924,7 +1923,6 @@ margin-left: 30%;
    background-color: #C55B75;
    color: #ffffff;
 }
-
 
 .INDEX{
    display: none;
