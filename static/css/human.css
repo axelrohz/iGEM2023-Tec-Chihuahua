@@ -796,6 +796,64 @@ margin-left: 20%;
 margin-left: 30%;
 }
  
+/*animación de metodos de deteccion*/
+.cta2{
+  position: relative;
+  margin: span;
+  padding: 8px 12px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  margin-left: 130px !important;
+  }
+ .cta2:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0px;
+  display: block;
+  border-radius: 50px;
+  background: #e5715f;
+  width: 45px;
+  height: 100%;
+  transition: all 0.3s ease;
+ }
+ .cta2 span{
+  position: relative;
+  font-family: 'Quicksand';
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: black;
+ }
+ .cta2 svg{
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+ }
+ .cta2:hover svg{
+  transform: translateX(0);
+ }
+ .cta2:active{
+  transform: scale(0.95);
+ }
+ .cta2:hover:before{
+   width: 75vw;
+   background: #e5715f;
+  }
+ 
+.table1{
+margin-left: 20%;
+}
+.table2{
+margin-left: 30%;
+}
  /*Tabla de las ecuaciones quimicas*/
  * {
   margin: 0;
