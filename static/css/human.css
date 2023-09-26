@@ -2090,6 +2090,17 @@
   z-index: 10;
 }
 
+.card1{
+  background: transparent;
+  top: 628%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  max-width: 1000px;
+  height: auto;
+  position: absolute;
+  z-index: 10;
+}
+
 
 
  
