@@ -79,38 +79,35 @@
  /*cards overview*/
  
  .mkt-3dSlider{
-  height: 500px;
+  height: 33vw;
   width: 83vw;
   margin-bottom: -120px;
  }
  
  .card1 {
   position: relative;
-  top: 50%;
-  left: 17%;
-  width: 350px;
-  height: 300px;
-  margin: -150px;
+  top: 6%;
+  left: 6%;
+  width: 27%;
+  height: 60%;
   float: left;
   perspective: 500px;
  }
  .card2 {
   position: relative;
-  top: 50%;
-  left: 50%;
-  width: 350px;
-  height: 300px;
-  margin: -150px;
+  top: 6%;
+  left: 10%;
+  width: 27%;
+  height: 60%;
   float: left;
   perspective: 500px;
  }
  .card3 {
   position: relative;
-  top: 50%;
-  left: 83%;
-  width: 350px;
-  height: 300px;
-  margin: -150px;
+  top: 6%;
+  left: 15%;
+  width: 27%;
+  height: 60%;
   float: left;
   perspective: 500px;
  }
@@ -134,10 +131,10 @@
   height: 100%;
   width: 100%;
   background:linear-gradient(#D19152,#D27063);
-  line-height: 300px;
+  line-height: 20vw;
   color: white;
   text-align: center;
-  font-size: 60px;
+  font-size: 5vw;
   border-radius: 20px;
   backface-visibility: hidden;
  }
@@ -155,24 +152,24 @@
   backface-visibility: hidden;
   background: transparent;
   transform: rotateY( 180deg );
- }
- .textCard1{
+}
+.textCard1{
   color: #D27063;
   line-height: 2;
-  font-size: 23px;
-  padding-top: 12px;
+  font-size: 1.4vw;
+  padding-top: 1.5vw;
  }
  .textCard2{
    color: #D27063;
    line-height: 2;
-   font-size: 23px;
-   padding-top: 60px;
+   font-size: 1.4vw;
+   padding-top: 4.5vw;
   }
   .textCard3{
    color: #D27063;
    line-height: 2;
-   font-size: 23px;
-   padding-top: 40px;
+   font-size: 1.5vw;
+   padding-top: 3vw;
   }
  /*index*/
  
@@ -566,7 +563,8 @@
  
  .index1, .index2, .index3{
   margin-left: 30px;
-  width: 7vw;
+  width: 7%;
+  min-width: 7%;
   text-align: center;
   height: fit-content;
   border-radius: 20px;
@@ -739,7 +737,7 @@
   transition: all 0.2s ease;
   border: none;
   background: none;
-  margin-left: 130px !important;
+  margin-left: 8% !important;
   }
  .cta1:before, .cta2:before, .cta3:before {
   content: "";
@@ -830,9 +828,8 @@ margin-left: 30%;
  }
  
  .table-wrap {
-  max-width: 1300;
-  margin: 50;
-  overflow-x: auto;
+  max-width: fit-content;
+  margin: auto;
  }
  
  table, td, th {
@@ -1940,7 +1937,7 @@ margin-left: 30%;
   padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  height: 50px;
+  height: 3%;
   border-radius: 25px;
   margin-left: 330px;
   margin-bottom: 45px;
