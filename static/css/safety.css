@@ -1,158 +1,260 @@
 .fra h1 {
-    font-family: 'Bricolage Grotesque';
-    font-size: 3rem;
-    font-weight: bold;
-    background-image: linear-gradient(#C55B75,#D27063,#DE8551);
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    text-align: center;
-  }
+  font-family: 'Bricolage Grotesque';
+  font-size: 3rem;
+  font-weight: bold;
+  background-image: linear-gradient(#C55B75, #D27063, #DE8551);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-align: center;
+}
 
 .hipervinculoaqua {
-    font-family: 'Quicksand';
-    font-weight: 700;
-    color: #5BC5AB;
-  }
+  font-family: 'Quicksand';
+  font-weight: 700;
+  color: #5BC5AB;
+}
+
+.hipervinculoaqua:hover {
+  font-family: 'Quicksand';
+  font-weight: 700;
+  color: #5BC5AB;
+  text-decoration: underline;
+}
+
+
+p {
+  align-content: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  margin: 30px;
+  font-weight: 500;
+  font-family: 'Quicksand';
+  text-align: justify;
+  line-height: 1.5;
+  color: black;
+}
+
+.wavtit h {
+  text-align: center;
+  font-family: 'Bricolage Grotesque';
+  font-size: 6rem;
+  font-weight: 600;
+  color: #F3F3FA;
+  display: grid;
+  align-items: center;
+  max-width: 100%;
+}
+
+
+.uno h1 {
+  font-family: 'Bricolage Grotesque';
+  font-size: 7rem;
+  font-weight: bold;
+  background-image: linear-gradient(#C55B75, #D27063, #DE8551);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-align: center;
+}
+
+.piedefig {
+  text-align: center;
+  font-size: 1rem;
+}
+
+
+h2 {
+  text-align: center;
+  font-family: 'Bricolage Grotesque';
+  font-size: 3vw;
+  font-weight: 500;
+  color: #302535;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows: 16px 0;
+  grid-gap: 22px;
+  align-items: center;
+  max-width: 100%;
+  padding-top: 100px;
+}
+
+h2:after,
+h2:before {
+  content: " ";
+  display: block;
+  border: 2px solid #C55B75;
+  background-color: #f8f8f8;
+}
+
+.accordion {
+  width: 0%;
+  max-width: 1000px;
+  margin: 2rem auto;
+  justify-self: center;
+}
+
+.accordion-item {
+  background-color: #fff;
+  color: #111;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+  width: 90%;
+  justify-self: center;
+
+}
+
+.accordion-item {
+  justify-self: center;
+  background-color: #ffffff;
+  color: #111;
+  margin: auto;
+  border-radius: 3px;
+  box-shadow: 7px 7px #5BC5AB;
+  width: 80%;
+  margin-bottom: 20px;
+  border: solid 0.5px #EBEBF1;
+
+}
+
+
+.accordion-item-header {
+  min-height: 60px;
+  font-size: 1.2rem;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  line-height: 1.5;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-family: 'Bricolage Grotesque';
+  font-size: 1.5rem;
+}
+
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 1.5rem;
+  position: absolute;
+  right: 1rem;
+}
+
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  padding-left: 20px;
+  padding-right: 20px;
   
-  .hipervinculoaqua:hover {
-    font-family: 'Quicksand';
-    font-weight: 700;
-    color: #5BC5AB;
-    text-decoration: underline;
-  }
-    
-  
-      p {
-          align-content: center;
-          justify-content: center;
-          font-size: 1.2rem;
-          margin:30px;
-          font-weight: 500;
-          font-family: 'Quicksand';
-          text-align: justify;
-          line-height: 1.5;
-          color: black;
-      }
-      .wavtit h {
-        text-align: center;
-        font-family: 'Bricolage Grotesque';
-        font-size:6rem; 
-        font-weight:600; 
-        color:#F3F3FA;  
-        display: grid;
-        align-items: center;
-        max-width: 100%;
-    }
+}
 
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+  justify-content: center;
+  font-weight: 600;
+  font-family: 'Quicksand';
+  text-align: justify;
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
-    .uno h1 {
-        font-family: 'Bricolage Grotesque';
-        font-size: 7rem;
-        font-weight: bold;
-        background-image: linear-gradient(#C55B75,#D27063,#DE8551);
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        text-align: center;
-      }
-      
-      .piedefig {
-        text-align: center;
-        font-size: 1rem;
-      }
+/*Carrusel*/
 
-      
-          h2 {
-            text-align: center;
-            font-family: 'Bricolage Grotesque';
-            font-size:3vw; 
-            font-weight:500; 
-            color:#302535;  
-            display: grid;
-            grid-template-columns: 1fr max-content 1fr;
-            grid-template-rows: 16px 0;
-            grid-gap: 22px;
-            align-items: center;
-            max-width: 100%;
-            padding-top: 100px;
-        }
-         h2:after, h2:before {
-          content: " ";
-          display: block;
-          border: 2px solid #C55B75;
-          background-color:#f8f8f8;
-      }
-      .accordion {
-        width: 0%;
-        max-width: 1000px;
-        margin: 2rem auto;
-        justify-self: center;
-      }
-      .accordion-item {
-        background-color: #fff;
-        color: #111;
-        margin: 1rem 0;
-        border-radius: 0.5rem;
-        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
-        width: 90%;
-        justify-self: center;
-      
-      }
-      
-      .accordion-item {
-        justify-self: center;
-        background-color: #ffffff;
-        color: #111;
-        margin: auto;
-        border-radius: 3px;
-        box-shadow: 7px 7px #5BC5AB ;
-        width: 80%;
-        margin-bottom: 20px;
-        border: solid 0.5px #EBEBF1;
-      
-      }
-      
-      
-      .accordion-item-header {
-        min-height: 60px;
-        font-size: 1.2rem;
-        padding: 0.5rem 3rem 0.5rem 1rem;
-        line-height: 1.5;
-        font-weight: 500;
-        display: flex;
-        align-items: center;
-        position: relative;
-        cursor: pointer;
-        font-family: 'Bricolage Grotesque';
-        font-size: 1.5rem;
-      }
-      .accordion-item-header::after {
-        content: "\002B";
-        font-size: 1.5rem;
-        position: absolute;
-        right: 1rem;
-      }
-      .accordion-item-header.active::after {
-        content: "\2212";
-      }
-      .accordion-item-body {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.2s ease-out;
-        padding-left: 20px;
-        padding-right: 20px;
-        0 2px 5px 0 rgba(0,0,0,0.25)
-      }
-      .accordion-item-body-content {
-        padding: 1rem;
-        line-height: 1.5rem;
-        border-top: 1px solid;
-        border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
-        justify-content:center;
-        font-weight: 600;
-        font-family: 'Quicksand';
-        text-align: justify;
-        margin-left: 20px;
-        margin-right: 20px;
-      }
+.Carrusel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  white-space: nowrap;
+}
+
+input {
+  position: absolute;
+}
+
+input:focus~.keys {
+  opacity: 0.8;
+}
+
+input:nth-of-type(1):checked~label:nth-of-type(1),
+input:nth-of-type(2):checked~label:nth-of-type(2),
+input:nth-of-type(3):checked~label:nth-of-type(3),
+input:nth-of-type(4):checked~label:nth-of-type(4) {
+  z-index: 0;
+}
+
+input:nth-of-type(1):checked~label {
+  transform: translate3d(0, 0, 0);
+}
+
+input:nth-of-type(2):checked~label {
+  transform: translate3d(-100%, 0, 0);
+}
+
+input:nth-of-type(3):checked~label {
+  transform: translate3d(-200%, 0, 0);
+}
+
+input:nth-of-type(4):checked~label {
+  transform: translate3d(-300%, 0, 0);
+}
+
+label {
+  background: #444;
+  color: #fff;
+  transition: transform 400ms ease-out;
+  display: inline-block;
+  text-align: center;
+  line-height: 100vh;
+}
+
+label:before,
+label:after {
+  color: white;
+  display: block;
+  background: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  padding: 1rem;
+  font-size: 3rem;
+  height: 10rem;
+  vertical-align: middle;
+  line-height: 10rem;
+  top: 50%;
+  transform: translate3d(0, -50%, 0);
+  cursor: pointer;
+}
+
+label:before {
+  content: "\276D";
+  right: 100%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+label:after {
+  content: "\276C";
+  left: 100%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 0.2;
+}
+
+label {
+  background-size: cover;
+  font-size: 3rem;
+}
