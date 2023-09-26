@@ -2021,17 +2021,18 @@
   z-index: 10;
   }
 
-.ODS3{
+.ODS3 {
   background: transparent;
-  width: 50%;
-  max-width: 217px;
-  height: auto;
-  position: absolute;
-  top: 267%;
-  left: 60%;
+  top: 267%; /* Center vertically */
+  left: 50%; /* Center horizontally */
   transform: translate(-50%, -50%);
+  width: 50vw; /* 50% of viewport width */
+  max-width: 217px; /* Maximum width for larger screens */
+  height: auto; /* Maintain aspect ratio */
+  position: absolute;
   z-index: 10;
   }
+  
 
  .post_it_1{
   background: transparent;
