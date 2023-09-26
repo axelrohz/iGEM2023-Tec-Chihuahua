@@ -1,6 +1,6 @@
 
 .layout {
-  width: 100vw;
+  width: 98vw;
   height: 100%;
   display: flex;
   flex-wrap: nowrap;
@@ -184,7 +184,7 @@
  .secciones {
   grid-area: body;
   margin-top: 1%;
-  width: 83vw;
+  width: 82vw;
   height:100%;
  }
  .seccionesTitulo{
@@ -794,23 +794,23 @@
    background: #DE8551;
   }
 .cta2:hover:before{
-   width: 62vw;
+   width: 70vw;
    background: #DE8551;
 }
 .cta3:hover:before{
-   width: 50vw;
+   width: 72vw;
    background: #DE8551;
 }
 .cta4:hover:before{
-   width: 40vw;
+   width: 70vw;
    background: #F6AE2D;
 }
 .cta5:hover:before{
-   width: 62vw;
+   width: 70vw;
    background: #F6AE2D;
 }
 .cta6:hover:before{
-   width: 50vw;
+   width: 70vw;
    background: #F6AE2D;
 }
  
