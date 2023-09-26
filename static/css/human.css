@@ -2069,17 +2069,6 @@
 }
 
 
-.graficas{
-  background: transparent;
-  top: 423%;
-  left: 46%;
-  transform: translate(-50%, -50%);
-  width: 50vw;
-  max-width: 217px;
-  height: auto;
-  position: absolute;
-  z-index: 10;
-}
  
  
  
