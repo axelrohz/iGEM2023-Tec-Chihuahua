@@ -64,7 +64,6 @@ h1 {
   transition: max-height 0.2s ease-out;
   padding-left: 20px;
   padding-right: 20px;
-  0 2px 5px 0 rgba(0,0,0,0.25)
 }
 .accordion-item-body-content {
   padding: 1rem;
@@ -81,7 +80,7 @@ h1 {
 
  /*cosas del side bar index*/
  
- .layout {
+ .layout{
   width: 98vw;
   height: 100%;
   display: flex;
