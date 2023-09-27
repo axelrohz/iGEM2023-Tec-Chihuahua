@@ -23,6 +23,8 @@
   
   <script src="{{ url_for('static', filename='assets/js/team.js') }}"></script>
   <script src="{{ url_for('static', filename='assets/js/desc.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/js/eng.js')}}"></script>
+
 </head>
 <body class="mybody">
   <img class="parallax-team" src="https://static.igem.wiki/teams/4607/wiki/contribution/parts.jpeg">
@@ -53,9 +55,157 @@
             <h2>Overview</h2>
 
             <p>
-              This page takes you along our journey by capturing the trial and error occured during the project and how we solved the challenges that came up through iterations of the engineering cycle. Our path through the development of <b>AureoBos</b> was, in many ways, diverse, complex, and defiant, hence now we can guarantee our product considers every possibility to its creation; from the <em>in silico</em> designing to the bactericidal assays. By applying the Engineering cycle, we take care of all the stakeholders’ suggestions, incorporating their <b>feedback as the nucleus</b> of AureBos of the same way that we have <b>optimized</b> our original ideas by <b>identifying our drawbacks</b> to obtain an intein product that responses at the world necessities.
-
+              This page takes you along our journey by capturing the trial and error occured during the project and how we solved the challenges that came up through iterations of the engineering cycle. Our path through the development of <b>AureoBos</b> was, in many ways, diverse, complex, and defiant, hence now we can guarantee our product considers every possibility to its creation; from the <em>in silico</em> designing to the bactericidal assays. By applying the Engineering cycle, we take care of all the stakeholders’ suggestions, incorporating their <b>feedback as the nucleus</b> of AureBos of the same way that we have <b>optimized</b> our original ideas by <b>identifying our drawbacks</b> to obtain an intein product that responses at the world's necessities.
             </p>
+
+            <h2>Introduction</h2>
+            <p>Any engineering project, especially synthetic biology, involves things that do not go right the first time, and while this can be daunting, you can learn and adjust details to make it work based on mistakes or blind spots. Our biosynthetic product has been developed by <b>three great cycles</b>, <b>ten semi-cycles</b>, and <b>xx iterations</b>to become Aureobos; </p>
+            <p>To identify and perform our Engineering cycle we considered the <b><em>iGEM Engineering Cycle</em></b> that is composed of four phases: <b>Design</b>, <b>Build</b>, <b>Test</b>, and <b>Learn</b>. Through these sections, we are capable of:</p> <br>
+            <p class="cta1">
+              <span>Design</span>
+            </p>
+            <p style="margin-left: 10%; margin-right: 10%;">Using Engineering principles to describe with specificity a biological system in an intended model, to improve our initial design, or its posterior modifications, favoring the product development. We considered what the system should or should not do, and what's vital to the successful product usage.</p>
+
+            <p class="cta2">
+              <span>Build</span>
+            </p>
+            <p style="margin-left: 10%; margin-right: 10%;"> We described the process that was previously proposed, highlighting its qualities and requirements. This stage usually includes model considerations, and prototype simulation to pre-aboard testing.</p>
+
+            <p class="cta3">
+              <span>Test</span>
+            </p>
+            <p style="margin-left: 10%; margin-right: 10%;"> In this stage we got to test the design built to analyze its results and compare all of them with the simulated expected outcome.</p>
+
+            <p class="cta4">
+              <span>Learn</span>
+            </p>
+            <p style="margin-left: 10%; margin-right: 10%;">We identified  the main issues and discrepancies between the expected results and the real evidence, denoting the bottleneck and focusing on the main mistakes. <br>To complete the circle, we have added a fifth iteration stage: </p>
+            
+            <p class="cta5">
+              <span>Reflection</span>
+            </p>
+            <p style="margin-left: 10%; margin-right: 10%;"> The stage which closes the cycle. Facilitate the <b>iteration’s overview</b> encompassing all the previous stages to identify the main issues and favoring the new design proposal. This stage represents the way to apply the knowledge acquired during all the process, associating it with a complete new iteration cycle. It must formulate a <b>new question</b> to address, along with the corresponding <b>method to resolve it</b>. In the same way, the reflection stage makes possible the extrapolation of knowledge acquired in similar experimental phases, to prevent mistakes.</p>
+
+            <p>AureoBos optimizes the production of endolysins as an alternative treatment for bovine mastitis by designing constructs with new and existing parts and assembling them with the Golden Gate method. Our treatment is based on the use of endolysins to reduce losses in cattle and milk production, and the effects of antibiotic resistance. </p>
+            <p>During the development of our project we learned that even when something does not go as planned, it does not mean that time is wasted, but rather that it is possible to deeply understand how something works and what factors affect the results.</p>
+
+            <h2>First Cycle: Golden Gate Assembly</h2>
+            <p>Our product is composed of three fusion-endolysins: LysCSA13, LysK, and LysSS. To know more about their qualities, you could visit our <a class="hipervinculoaqua" href= “https://2023.igem.wiki/tec-chihuahua/parts”>Parts Page</a>. The aim of the Golden Gate Assembly cycle was to obtain our expression constructs, in which each endolysin codifying sequence was cloned in the <a class="hipervinculoaqua" href= “http://parts.igem.org/Part:BBa_J435330”>high copy pUC </a>acceptor backbone by the Golden Assembly method.</p>
+
+            <p><b>First sub-cycle:</b> Chemocompetent cell’s Production and heat shock transformation.</p>
+            
+            <p><b>1st iteration:</b> </P>
+              <p class="cta1">
+                <span>Design</span>
+              </p>
+              <p style="margin-left: 10%; margin-right: 10%;">Through a sponsorship from New England Biolabs we received <em>Escherichia coli 5-alpha</em> competent cells, when we used all the cryovials given from them, we performed a bacterial reactivation to conserve the cell strain. This strain belongs to the cloning <em>E. coli</em> cell group and was very useful for us in the Golden Gate Assembly phase. We performed a chemocompetent cell’s production to transform our <em>E. coli</em> strains (5-alpha, and BL21(DE3)) for the storage of our constructs, and its posterior expression, after the chemocompetent cell’s production of  <em>E. coli BL21 (DE3)</em>.  The <em>E. coli BL21 (DE3)</em> strain was already present in our lab storage.</p>
+              <p style="margin-left: 10%; margin-right: 10%;">After inoculating the <em>Escherichia coli 5-alpha</em> strain in a LB agar plate, its competent ability got lost, to use them in the transformation we followed the protocol for chemically competent cells described in the <a class="hipervinculoaqua" href= “https://2022.igem.wiki/tec-chihuahua/experiments”>Experiments Page</a> of the Tec-Chihuahua 2022 Team.  To continue, we followed the transformation protocol described in the same page. </p>
+              <br>
+
+              <p class="cta2">
+                <span>Build</span>
+              </p>
+              <p style="margin-left: 10%; margin-right: 10%;">An individual colony from the agar plate with <em>E. coli 5-alpha</em> cells was used to inoculate 10 mL of LB culture medium. The inoculum for the cells was made in an Erlenmeyer flask of 100 mL that had 40 mL of LB and 10 mL of the inoculum of <em>E. coli</em> cells. Once the OD 600 nm reached 0.6 to 0.8, we transferred the content into a conic tube of 50 mL and incubated for 20 min. Later, we centrifuged at 4 500 x g for 10 minutes at 4°C, and we discarded the supernatant and resuspended the cell pellet in 12.5 mL of cold 50 mM CaCl2. After that, we incubated on ice for 10 minutes, and centrifuged at 4 500 x g for 10 minutes at 4°C. Finally, we discarded the supernatant and resuspended the cell pellet in 2.5 mL of cold 100 mM CaCl2. In addition we store some aliquots at -80°C.</p>
+              <p style="margin-left: 10%; margin-right: 10%;">To continue with the transformation process, we made 50 uL aliquots to add 5 µL of the Golden Gate Assembly plasmid DNA, and  mixed by inverting 5 times. After that, we incubated the cells on ice for 30 minutes, and we performed a heat shock on the cells for 30 seconds in a water bath at 42°C. Later, we incubated the cells on ice for 5 minutes, and added 950 µL of room temperature SOC medium. Continuing, we placed the tube at 37°C for 30 minutes, and shaked the tube at 225 rpm. In the next step we preheated the selection plates at 37°C, and we performed a streaking of the transformed cells with 50-100 µL on the selection media, and finally, we incubated overnight at 37°C.</p>
+
+              <br>
+              <p class="cta3">
+                <span>Test</span>
+              </p>
+
+              <p style="margin-left: 10%; margin-right: 10%;">The <em>E. coli 5-alpha</em> chemically competent cells were transformed with a control plasmid, pUC19, to prove that there was a good transformation efficiency. But nothing meaningful has grown. In the same way, the reaching of the optical density was much longer than that we expected, about nine times more than the 30 minutes described in the protocol. We knew that cells survived the heat shock of the transformation process, because our competent cell control showed cell growth, but we couldn’t know if the complication was in the competent cell protocol or in the transformation one.  </p>
+
+
+              <p class="cta4">
+                <span>Learn</span>
+              </p>
+
+              <p style="margin-left: 10%; margin-right: 10%;">The efficiency of transformation was very low. We assumed that it might be due to rough manipulation of the cells, that the CaCl2 for the cells was not very cold and that the OD was barely between the appropriate range of 0.6 to 0.8. Besides, we considered that could be related to the heat shock temperature, because of the poor water bath thermostat definition. </p>
+
+              <p class="cta5">
+                <span>Reflection</span>
+              </p>
+              <p style="margin-left: 10%; margin-right: 10%;">We have evaluated the learning stage, consequently we identify that the apparent issues were about the cells manipulation. The new question was related to the temperature required in the process, and how we could be completely assured of their values. In the same way, we have evaluated the incubation times, where we decided to increase their lapses. We conducted an in deep-analysis of the entire process, and discovered that the shaking step wasn't as efficient as it should be. To solve these problems, we decided to analyze the original protocols and suggestions of the NEB website, and review troubleshooting data sheets.</p>
+
+              <p><b>2nd iteration:</b><p></p>
+
+              <p class="cta1">
+                <span>Design</span>
+              </p>
+              <p style="margin-left: 10%; margin-right: 10%;">Considering our past observations, we found that some of the most common complications in the cell transformation are related to the heat shock temperature, in which an unstable control of the ranges hinder the process. In the same way, the cold temperatures are very important in the cell competent protocol, including the material and consumables used. We also considered the option of using our -80°C stored cryovials.</p>
+              <br>
+
+              <p class="cta2">
+                <span>Build</span>
+              </p>
+              <p style="margin-left: 10%; margin-right: 10%;"> To perform our second iteration we modified the chemocompetent protocol described in the <a ref= “https://2022.igem.wiki/tec-chihuahua/experiments”>Experiments Page</a> of the Tec-Chihuahua 2022 Team, assuring that all the equipment required was at 4°C, and all the material and consumables were previously put on ice. In the same way, we have ensured that our water bath was at 42°C by double-checking the temperature with an additional termometer. Finally, we increased the incubation time up to 2 hours, realizing that Eppendorfs position was actually allowing the culture movement. </p>
+              <br>
+
+              <p class="cta3">
+                <span>Test</span>
+              </p>
+              <p style="margin-left: 10%; margin-right: 10%;"> Our results were increased in comparison to our first iteration, but they were still lower in comparison between NEB cell competent colony forming units. At this time we have positive results to our transformation protocol as well as our cell competent control, but no meaningful result has been achieved for the cryovials samples.</p>
+              <br>
+
+              <p class="cta4">
+                <span>Learn</span>
+              </p>
+              <p style="margin-left: 10%; margin-right: 10%;"> We actually increased the colony forming units of our transformation protocol, in which we assumed that was related to the assuring of the temperature of the water bath in the transformation protocol, as well as the constancy in the cold temperature of the entire chemocompetent cell process. We also achieved that zero transformation efficiency was obtained from the cryovials previously made, hence we considered that it is crucial to perform a new chemocompetent cells protocol by the time that transformation is required. Although we improved our results by using the Engineering cycle, we considered that these results were not good enough to try with our Golden Gate Assembly construct. </p>
+              <br>
+
+              <p class="cta5">
+                <span>Reflection</span>
+              </p>
+              <p style="margin-left: 10%; margin-right: 10%;"> We realized that by using the Engineering Cycle was possible to upgrade our results in the number of colony forming units of our transformation protocol, however, we weren’t safe enough to take the risk trying cells' transformation with our Golden Gate Assembly construct, because is well-know that transforming with a generic positive control achieve better yields that which are obtained with other samples. 
+
+                To continue improving our results we analyzed every step of the previously mentioned protocols, evaluating the possibility to increase the cell concentration plated over the agar plate without risking the absorption of bacteria, besides considering the optimization of the times’ process. The next question was related to the optimization of our process, and the solution was planned to appear by investigating the past iGEM Teams’ protocols.</p>
+              <br>
+              <br>
+              <p><b>3rd iteration: </b></p>
+              <br>
+              <p class="cta1">
+                <span>Design</span>
+              </p>
+              <p style="margin-left: 10%; margin-right: 10%;"> Evaluating the reflection of the past iteration we found the following options to optimize the efficiency and time of the process. By increasing the available gas exchange surface we could shorten the period to reach optimal density, thanks to its effect on accelerating cell duplication. While it is possible to increase the efficiency of the transformation by considering the concentration of cells plated on the agar medium, where it is possible to increase the total number of cells by harvesting the pellet of transforming cells, and resuspending it in a smaller volume.
+              </p>
+              <br>
+
+
+              <p class="cta2">
+                <span>Build</span>
+              </p>
+              <p style="margin-left: 10%; margin-right: 10%;"> To perform our third iteration we modified the chemocompetent protocol described in the <a class="hipervinculoaqua" href= “https://2022.igem.wiki/tec-chihuahua/experiments”>Experiments Page</a> of the Tec-Chihuahua 2022 Team, applying the changes described in the second iteration, and using a 250 mL Erlenmeyer flask instead a 100 mL one. In addition, its iteration includes the harvest of the total transforming cells incubated for two hours, and resuspending it into 100 uL SOC medium, to plated the total volume into preheated plates.</p>
+              <br>
+
+              <p class="cta3">
+                <span>Test</span>
+              </p>
+              <p style="margin-left: 10%; margin-right: 10%;"> Our results were up to the NEB cell competent efficiency, where the positive pUC-19 control reached uncountable colony forming units. At the same time, the lapse to achieve the optical density required for the competent cell protocol was shortened to ninety minutes.</p>
+              <br>
+
+              <p class="cta4">
+                <span>Learn</span>
+              </p>
+              <p style="margin-left: 10%; margin-right: 10%;"> We reached the NEB cell competent efficiency by incorporating all the modifications which optimized the process, it was good enough to transform our Golden Gate Assembly constructs. Our final protocols to the chemocompetent cell’s production, and heat-shock transformation are available in our 
+                <a class="hipervinculoaqua" href= “https://2023.igem.wiki/tec-chihuahua/experiments”>Experiments Page</a>
+                </p>
+              <br>
+
+
+              <p class="cta6">
+                <span>Success</span>
+              </p>
+              <p style="margin-left: 10%; margin-right: 10%;"> We actually achieved good enough results, and obtained the standardization of our protocols to continue with the process!</p>
+              <br>
+
+
+
+
+
+
+
+
+
 
 
             </div>
