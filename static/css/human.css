@@ -2091,46 +2091,46 @@ transition: 1.2s ease-in-out;
 
 .post_it_1{
 background: transparent;
-top: 423%;
-left: 24%;
+top: 10vw;
+left: 22vw;
 transform: translate(-50%, -50%);
 width: 50vw;
 max-width: 300px;
 height: auto;
-position: absolute;
+position: relative;
 z-index: 10;
 }
 .post_it_2{
 background: transparent;
-top: 423%;
-left: 46%;
+top: 10vw;
+left: 21vw;
 transform: translate(-50%, -50%);
 width: 50vw;
 max-width: 300px;
 height: auto;
-position: absolute;
+position: relative;
 z-index: 10;
 }
 .post_it_3{
 background: transparent;
-top: 423%;
-left: 71%;
+top: 10vw;
+left: 20vw;
 transform: translate(-50%, -50%);
 width: 50vw;
 max-width: 300px;
 height: auto;
-position: absolute;
+position: relative;
 z-index: 10;
 }
 
 .graficas{
 background: transparent;
-top: 534%;
+top: 2vw;
 left: 54%;
 transform: translate(-50%, -50%);
 max-width: 1000px;
 height: auto;
-position: absolute;
+position: relative;
 z-index: 10;
 }
 
