@@ -77,8 +77,16 @@
    			 </div>
    		 </div>
    	 </div>
+	 <div class="fraseInicio">
+		<div class="fraseAcomodo">
+			<h3 class="reveal-text fraseTexto">Aqui va la frase super chida que nos dijo topi pero</h3>
+			<h3 class="reveal-text fraseTexto">Aqui va la seugnda poarte para que se vea mas chido todo</h3>
+			<h3 class="reveal-text fraseTexto">Aqui la tercera parte, ponerla en rengoles</h3>
+		</div>
+	 </div>
    	 <!--Seccion que ya sirve, no mover-->
    	 <div class="button-container">
+		<p class="instructionDiagram2">Click "Learn More" to change between sections</p>
    		 <div class="logocontainer">
    			 <div class="methods">
    				 <div class="button-content">
@@ -223,7 +231,7 @@
    				 Models the subsequent stages and the final outcome.
    				 </span>
    			 </b>
-   			 (purification process) together, while the second accounts for the
+   			 (quasi-quantification process) together, while the second accounts for the
    			 <b class="tooltipSignificado">implementation
    				 <span class="tooltipSignificadoBox">
    				 <b class="i">In vitro</b> endolysin performance.
@@ -260,16 +268,16 @@
    			 The model's construction and evaluation rely on a fusion of empirical data, existing literature, and mechanistic insights. By considering multiple parameters, such as dynamic interactions among system components (kinetic coefficients/interactions), system heterogeneities, and uncertainties. We employed stochastic analysis to simulate the system's responses under various scenarios, thereby establishing a range of conditions where protein expression is most favorable. Experimental data, such as IPTG concentration and endolysin production rates, contributed to parameter estimation and model calibration.
    			 <br>
    			 <br>
-   			 Our model consists of a system representation through 13 ordinary differential equations (ODEs), enabling us to predict protein expression. To address the stochastic nature of the system, where behavior is influenced by probabilities<sup>2</sup> and achieve robust/realistic results, we account the uncertainty sources into our model by a Monte Carlo simulation to identify the model's parameters range and assess the sensitivity to changes. The quantification of specific endolysin yield was achieved through a
+   			 Our model consists of a system representation through 13 ordinary differential equations (ODEs), enabling us to predict protein expression. To address the stochastic nature of the system, where behavior is influenced by probabilities<sup>2</sup> and achieve robust/realistic results, we account the uncertainty sources into our model by a Monte Carlo simulation to identify the model's parameters range and assess the sensitivity to changes. The quasi-quantification of specific endolysin yield was achieved through a
    			 <b class="tooltipSignificado">grey-box
    				 <span class="tooltipSignificadoBox">
    				 Flexible and pragmatic method that acknowledges the practical limitations of accessing full internal system details while utilizing the available knowledge to create effective and efficient solutions.
    				 </span>  
    			 </b>
-   			 surrogate model, incorporating equations derived from literature for steady-state behavior. This model was centered around the purification stage, offering a foundation for the downstream process
+   			 surrogate model, obtained combining a set of steady-state differential equations (IPTG induction mechanism), low-cost/effort lab measurements (protein distribution through SDS–PAGE) and parameter estimations of kinetic constants (Genetic Algorithm).
    			 <br>
    			 <br>
-   			 Additionally, we present a combined SDS–PAGE gel electrophoresis with banding pattern recognition to enable rapid protein distribution examination. The acceleration in detection not only significantly reduces experimental costs but is also pivotal as biological system studies increasingly embrace quantitative methods, emphasizing the growing role of mathematical analysis.<sup>3,4</sup>
+   			 As mentioned, we present a combined SDS–PAGE gel electrophoresis with banding pattern recognition to enable rapid protein distribution examination. The acceleration in detection not only significantly reduces experimental costs but is also pivotal as biological system studies increasingly embrace quantitative methods, emphasizing the growing role of mathematical analysis.<sup>3,4</sup>
    			 This phase of our methodology aims to identify potential interventions or enhancements in a forward-engineering framework, advocating for the integration of a mathematical model at the conceptual design stage<sup>5,6</sup>
    			 and serves as a foundation for the (re-)design, construction, characterization, and testing of the envisioned system.
    			 <br>
@@ -3038,7 +3046,7 @@
 			  <p style="
 			  height: 6px;
 			  left: -28px;
-			  position: relative;"><b>Table 1.</b> Constants on the IPTG induction model</p>
+			  position: relative;"><b>Table 2.</b> Constants on the IPTG induction model</p>
 					<tr>
 						<th>Constant</th>
 						<th>Meaning</th>
@@ -3549,7 +3557,6 @@
 
 				</tbody>
 			</table>
-   		 </div>
    	 </div>
 
 

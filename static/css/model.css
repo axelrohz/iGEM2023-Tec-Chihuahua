@@ -1,3 +1,11 @@
+:root {
+  --bg-color: #5BC5AB;
+  --typewriterSpeed: 1.7s;
+  --typewriterCharacters: 5;
+  --delay: 0;
+	--duration: 6s;
+	--iterations: 1;
+}
 
 .layout {
   width: 98vw;
@@ -19,11 +27,7 @@
  }
  
  /*title model*/
-:root {
-   --bg-color: #5BC5AB;
-   --typewriterSpeed: 1.7s;
-   --typewriterCharacters: 5;
- }
+
  .Title {
    font-size: clamp(1rem, 3vw + 1rem, 4rem);
    position: relative;
@@ -323,12 +327,12 @@
  
  .logocontainer{
   background: transparent;
-  top: 148%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 500px;
   height: 500px;
-  position: absolute;
+  position: relative;
   z-index:10;
  }
  
@@ -369,10 +373,9 @@
  
  .button-container {
   display: inline-block;
-  width: 100vw;
-  margin-bottom: 140px;
+  width: 98vw;
+  margin-bottom: 2vw;
   height: 607px;
-  max-width: 900px;
  }
  
  /* Estilos para los botones en forma de div */
@@ -1937,12 +1940,106 @@ margin-left: 30%;
   padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  height: 3%;
+  height: 3vw;
   border-radius: 25px;
   margin-left: 330px;
   margin-bottom: 45px;
 }
 
+.instructionDiagram2{
+  background:linear-gradient(to right, #447D9C, #5BC5AB);
+  color: white;
+  width: fit-content;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 3vw;
+  font-size: 1vw;
+  border-radius: 25px;
+  margin: auto;
+}
+
 .sectM, .sectR{
   display: none;
+}
+
+/*frase del inicio despues del welcome page*/
+.fraseInicio{
+  height: 200px;
+  background: linear-gradient(rgb(168, 165, 165));
+
+}
+.fraseAcomodo{
+  margin: 5vw auto;
+  width: fit-content;
+}
+.fraseTexto{
+  height: 3vw;
+}
+.reveal-text,
+.reveal-text::after {
+	animation-delay: var(--animation-delay, 10s);
+	animation-iteration-count: var(--iterations, 1);
+	animation-duration: var(--duration, 10s);
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.reveal-text {
+	--animation-delay: var(--delay, 10s);
+	--animation-duration: var(--duration, 10s);
+	--animation-iterations: var(--iterations, 1);
+	position: relative;
+	font-size: 2vw;
+	animation-name: clip-text;
+	color: #000;
+	white-space: nowrap;
+	cursor: default;
+	
+	&::after {
+		content: "";
+		position: absolute;
+		z-index: 999;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(to right,#447D9C,#5BC5AB,#C55B75);
+		transform: scaleX(0.5);
+		transform-origin: 0 50%;
+		pointer-events: none;
+		animation-name: text-revealer;
+	}
+	
+}
+
+
+@keyframes clip-text {
+	from {
+		clip-path: inset(0 100% 0 0);
+	}
+	to {
+		clip-path: inset(0 0 0 0);
+	}
+}
+
+
+@keyframes text-revealer {
+	
+	0%, 50% {
+		transform-origin: 0 50%;
+	}
+	
+	60%, 100% {
+		transform-origin: 100% 50%;		
+	}
+
+	
+	60% {
+		transform: scaleX(1);
+	}
+	
+	100% {
+		transform: scaleX(0);
+	}
 }
