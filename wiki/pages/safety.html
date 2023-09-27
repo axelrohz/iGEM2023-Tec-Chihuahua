@@ -165,16 +165,51 @@
         removing nitrile gloves once their work in the laboratory is completed. This procedure follows the steps below:
       </p>
 
-      <div class="Carrusel">
-          <form>
-            <input type="radio" name="fancy" autofocus value="clubs" id="clubs" />
-            <input type="radio" name="fancy" value="hearts" id="hearts" />
-            <input type="radio" name="fancy" value="spades" id="spades" />
-            <input type="radio" name="fancy" value="diamonds" id="diamonds" />
-            <label for="clubs">&#9827; Clubs</label><label for="hearts">&#9829; Hearts</label><label for="spades">&#9824;
-              Spades</label><label for="diamonds">&#9830; Diamonds</label>
-          </form>
-      </div>
+        <div class="Carrusel-container">
+          <section class="carousel" aria-label="Gallery">
+            <ol class="carousel__viewport">
+              <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper">
+                  <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
+                  <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+                </div>
+              </li>
+              <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+              </li>
+              <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
+              </li>
+              <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+              </li>
+            </ol>
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+                </li>
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+                </li>
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
+                </li>
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
+                </li>
+              </ol>
+            </aside>
+          </section>
+        
+        </div>
+      
       
 
       <br>
