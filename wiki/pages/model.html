@@ -79,9 +79,27 @@
    	 </div>
 	 <div class="fraseInicio">
 		<div class="fraseAcomodo">
-			<h3 class="reveal-text fraseTexto">Aqui va la frase super chida que nos dijo topi pero</h3>
-			<h3 class="reveal-text fraseTexto">Aqui va la seugnda poarte para que se vea mas chido todo</h3>
-			<h3 class="reveal-text fraseTexto">Aqui la tercera parte, ponerla en rengoles</h3>
+			<div class="phrase">
+        <p class = "fraseModel" id="frase">"Precision in every projection, excellence in every decision." - Topi Rivera </p>
+    	</div>
+			<script>
+				var text = document.getElementById('frase');
+        var newDom = '';
+        var animationDelay = 15;
+
+        for(let i = 0; i < text.innerText.length; i++)
+        {
+            newDom += '<span class="char">' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i])+ '</span>';
+        }
+
+        text.innerHTML = newDom;
+        var length = text.children.length;
+
+        for(let i = 0; i < length; i++)
+        {
+            text.children[i].style['animation-delay'] = animationDelay * i + 'ms';
+        }
+			</script>
 		</div>
 	 </div>
    	 <!--Seccion que ya sirve, no mover-->
