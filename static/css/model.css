@@ -85,7 +85,7 @@
  .mkt-3dSlider{
   height: 33vw;
   width: 83vw;
-  margin-bottom: -120px;
+  margin-bottom: -193px;
  }
  
  .card1 {
@@ -575,6 +575,7 @@
   border-radius: 20px;
   position: sticky;
   top:150px;
+  font-size: 1vw;
  }
  .index1{
   background: linear-gradient(#9dcfc2,#5BC5AB);
