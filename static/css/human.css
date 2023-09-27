@@ -323,16 +323,15 @@
  
  .logocontainer{
   background: transparent;
-  top: 129%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 500px;
   height: 500px;
-  position: absolute;
+  position: relative;
   z-index:10;
  }
- 
- 
+
  @keyframes blink{
   0% {transform: scaleX(1) scaleY(1)}
  
@@ -369,10 +368,9 @@
  
  .button-container {
   display: inline-block;
-  width: 100vw;
-  margin-bottom: 140px;
+  width: 98vw;
+  margin-bottom: 2vw;
   height: 607px;
-  max-width: 900px;
  }
  
  /* Estilos para los botones en forma de div */
@@ -527,7 +525,7 @@
  }
  /* Estilo para los títulos y contenido de los div de los botones */
  .tituloBoton {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   align-items: center;
   margin: auto auto;
@@ -551,14 +549,14 @@
   display: contents;
   height: 139px;
   width: 175px;
- }
+}
   /*figuras*/
   .pie_de_figura{
-    text-align: center;
-   }
- 
- /*introduccion*/
- .introduction{
+    height: fit-content;
+}
+
+/*introduccion*/
+.introduction{
   text-align: center;
  }
  .introduction2{
@@ -2047,7 +2045,7 @@ overflow: auto;
 background-color: #5BC5AB;
 color: white;
 height: 300px;
-width: 300px;
+width: 100%;
 padding: 10px 0;
 border-radius: 5px 5px 0 0;
 
@@ -2071,22 +2069,22 @@ transition: 1.2s ease-in-out;
   width: 50%;
   max-width: 217px;
   height: auto;
-  position: absolute;
-  top: 407%;
-  left: 45%;
+  position: relative;
+  top: 7vw;
+  left: 23vw;
   transform: translate(-50%, -50%);
   z-index: 10;
 }
 
 .ODS3 {
   background: transparent;
-  top: 407%;
-  left: 75%;
+  top: 7vw;
+  left: 45%;
   transform: translate(-50%, -50%);
   width: 50vw;
   max-width: 217px;
   height: auto;
-  position: absolute;
+  position: relative;
   z-index: 10;
 }
 
