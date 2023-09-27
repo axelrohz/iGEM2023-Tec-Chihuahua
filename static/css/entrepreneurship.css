@@ -513,17 +513,29 @@ footer{
 }
 /*b*/
 /* Button 1 */
-.but{
-    width: 100vw;
-    height: fit-content;
+.but {
+    width: 100%;
+    max-width: 600px; /* Establece un ancho máximo para evitar que el elemento se vuelva demasiado ancho en pantallas grandes */
+    height: auto; /* Usa "auto" en lugar de "fit-content" para que la altura se ajuste automáticamente al contenido */
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap; /* Cambia a "wrap" para permitir que los elementos se envuelvan en múltiples líneas en pantallas pequeñas */
     justify-content: center;
     align-items: center;
-    margin-top: -235px;
-    
-
+    margin: 20px auto; /* Margen centrado en todas las direcciones para espacio adicional en pantallas pequeñas */
+    top: -357px; /* Ajusta esta propiedad para mover los botones hacia arriba o hacia abajo */
+    position: relative;
 }
+
+
+/* Consulta de medios para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .but {
+        max-width: 100%; /* Cambia el ancho máximo al 100% en pantallas más pequeñas */
+        margin: 10px auto; /* Ajusta el margen para pantallas más pequeñas */
+        top: -20px; /* Ajusta la posición para pantallas más pequeñas si es necesario */
+    }
+}
+
 .Btn {
     width: 150px;
     height: 50px;
@@ -570,6 +582,16 @@ footer{
     transition-delay: 1s;
 
   }
+  @media screen and (max-width: 768px) {
+    .oporttext {
+        /* Ajustes específicos para pantallas pequeñas */
+        width: 100%; /* Hacer que el ancho sea del 100% del contenedor en pantallas pequeñas */
+        height: auto; /* Permitir que la altura se ajuste automáticamente al contenido */
+        top: 0; /* Puedes restablecer la propiedad "top" si no deseas un desplazamiento hacia arriba en pantallas pequeñas */
+        left: 0; /* Restablecer la propiedad "left" si es necesario */
+        font-size: 4vw; /* Ajustar el tamaño de fuente para pantallas pequeñas */
+    }
+}
   .parportu{
     width: calc(50%);
     height: fit-content;
