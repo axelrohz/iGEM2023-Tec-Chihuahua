@@ -349,7 +349,11 @@ footer{
 }
 
 .titleENT.active .bubENT .buble{
-   }
+    opacity: 0;
+    top: -100vh;
+    animation: bubble 10s infinite;
+    transition-delay: 0s;
+}
 
 @keyframes bubble{
     0%{
@@ -780,31 +784,31 @@ footer{
     display: block;
     position: relative;
     text-align: center;
-    top: 27%;
+    top: 23%;
     transform: translateY(-50%);
-    font-size: 22px;
+    font-size: 25px;
   }
   .circle:nth-child(1){
         background: rgb(197, 91, 117);
-        width: 22em;
-        height: 22em;
-        top: 20%;
-        left: 54%;
+        width: 17.5em;
+        height: 17.5em;
+        top: 15%;
+        left: 62%;
   
   }
   .circle:nth-child(2) {
     background: rgb(246, 174, 45);
     width: 17.5em;
     height: 17.5em;
-    top: 51%;
-    left: 32%;
+    top: 15%;
+    left: 41%;
   }
   .circle:nth-child(3) {
     background: rgb(68, 125, 156);
-    width: 14.5em;
-    height: 14.5em;
-    top: 11%;
-    left: 29%;
+    width: 17.5em;
+    height: 17.5em;
+    top: 15%;
+    left: 20%;
   }
   
   
@@ -826,7 +830,7 @@ footer{
     transform: translateY(-51%);
     list-style-type: circle;
     list-style-position: inside;
-    font-size: 11px;
+    font-size: 12px;
   }
   .viñetas2 {
     color: white;
@@ -837,7 +841,7 @@ footer{
     transform: translateY(-51%);
     list-style-type: circle;
     list-style-position: inside;
-    font-size: 9px;
+    font-size: 12px;
   }
   .dad{
     margin: 0;
@@ -1220,4 +1224,3 @@ footer{
     bottom: -3px;
 }
 /**/
-
