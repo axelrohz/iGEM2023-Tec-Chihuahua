@@ -78,3 +78,20 @@ h1 {
   margin-left: 20px;
   margin-right: 20px;
 }
+
+ /*cosas del side bar index*/
+ 
+ .index1, .index2, .index3{
+  margin-left: 30px;
+  width: 7%;
+  min-width: 7%;
+  text-align: center;
+  height: fit-content;
+  border-radius: 20px;
+  position: sticky;
+  top:150px;
+  font-size: 1vw;
+ }
+ .index1{
+  background: linear-gradient(#9dcfc2,#5BC5AB);
+ }
