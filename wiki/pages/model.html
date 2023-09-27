@@ -533,7 +533,6 @@
    	 <h5>Production of Lac repressor. Steps 1-4</h5>
       </div>
       <br>
-      <br>
       <p class="contenido">The system's dynamics are under the influence of the Lac repressor, which is a regulatory molecule encoded by the LacI regulatory gene (G). This protein exhibits constitutive expression, forming monomers (R<sub>M</sub>), dimers (R<sub>D</sub>), and tetramers (R<sub>T</sub>) through subunit bonding.<sup>3</sup> The chemical reaction for modeling the repressor mRNA production is assumed to be governed by the sole dependence on the quantity of the LacI gene. Additionally,  the  production of monomer is dependent on the mRNA of repressor (M<sub>LI</sub>) concentration. The favored formation is Tetramers over dimers over monomers.</p>
    		<math display='block'>
    		 <mi>G</mi><mover>
@@ -634,6 +633,7 @@
    	 <div class="tituloContenido">
  		 <h5>Formation of repressor-Operator complex. Steps 5-6</h5>
    	 </div>
+			<br>
    	 <p class="contenido">In its tetrameric and dimeric configurations, the repressor exhibits strong affinity for the operator (O). This binding event effectively obstructs RNA polymerase’s access to the promoter region, resulting in the inhibition of endolysin gene transcription. Consequently, The repressor in its tetrameric and dimeric form, displays a strong affinity for the operator (O). When the repressor binds to the operator, it effectively blocks RNA polymerase from accessing the promoter, leading to the inhibition of endolysin gene transcription. Consequently, in the absence of other factors, endolysin production is low or absent (leak transcript). On the contrary, the monomeric form of the lac repressor demonstrates a reduced affinity for the operator and lacks the capability to effectively bind to it.<sup>4</sup> </p>
      		 <math display='block'>
        		 <msub>
@@ -726,6 +726,7 @@
 		 <div class="tituloContenido">
  		 <h5>Formation of repressor-IPTG complex. Steps 12-15</h5>
    	 </div>
+		 <br>
    	 <p class="contenido">Upon the introduction of IPTG into the system, it binds with the dimeric and tetrameric forms of the repressor protein. It’s important to note that each monomer within both the dimer and tetramer structure can accommodate a single IPTG molecule for binding. Upon binding, IPTG triggers an allosteric structural transformation in the tetrameric repressor, resulting to a decrease in its affinity for the operator.<sup>6</sup> Consequently, the monomeric repressor loses its capacity to effectively bind to the operator, allowing RNA polymerase’s access to the promoter. This, in turn, enables the transcription and subsequent production of the endolysins.</p>
    	 <br>
    	 <p class="contenido">The formation of the IPTG-repressor complex can occur through two mechanisms:<sup>3</sup></p>
@@ -875,6 +876,7 @@
 		 <div class="tituloContenido">
  		 <h5 class="titulosP">Protein production. Steps 18-19</h5>
    	 </div>
+		<br>
    	 <p class="contenido">As the operator becomes unoccupied due to the inactivation of the lac repressor through IPTG binding, RNA polymerase gains the ability to initiate transcription of the endolysin gene. In our model, the transcription of endolysin is solely contingent on the concentration of free operator sites.</p>
    	 <br>
    	 <p class="contenido"><em>E. coli</em>recombinant expression systems that utilize lac operon control elements to modulate gene expression, low levels expression are produced during bacterial growth prior to induction, known as leakage. This leaking limits cell growth when toxic proteins for <em>E. coli</em> are produced and cause instability in the pET expression system.<sup>8</sup></p>
@@ -972,6 +974,7 @@
 		 <div class="tituloContenido">
  		 <h5>Degradation of mRNA and protein compounds. Steps 7-10, 16-17, 20-21</h5>
    	 </div>
+			<br>
    	 <p class="contenido">The non-hydrolyzable chemical bond in IPTG, specifically involving the sulfur (S) atom, is a critical aspect of its mechanism of action within the cell. This unique characteristic prevents IPTG from being metabolized or degraded by cellular machinery. In our model, we take into account this specific feature, making an important assumption that the compounds that form complexes with IPTG are subject to degradation, leaving behind the free IPTG molecules that were involved in the complex formation.</p>
    	 <p class="contenido">It is worth noting that when the lac repressor exists in its dimeric or tetrameric form and is bound to the operator, it is rendered non-degradable. This is because these bound repressor complexes are part of the regulatory mechanism that inhibits the transcription of the endolysin gene. As such, the bound dimers and tetramers are not subject to degradation in the model.</p>
    	 <math display='block'>
@@ -1130,6 +1133,7 @@
  		 <div class="tituloContenido">
    		 <h5>Chemical reactions</h5>
  		 </div>
+			<br>
  		 <p class="contenido">Drawing from the available literature, we have acquired the essential chemical reactions governing our system's behavior. These reactions laid the groundwork for formulating our ODEs.</p>
 
 
@@ -1830,8 +1834,10 @@
 						
 
 		<div  class="tituloContenido">
+			<br>
 		  <h5>Ordinary Differential Equations</h5>
 		</div>
+		<br>
 		<p class="contenido">The biochemical reactions in the system were captured through the development of an ODEs model. All reactions within this model were defined using the law of mass action, offering a dynamic and quantitative description of the system. The ODEs express how the system's temporal concentrations change with time, providing a framework to analyze and predict its behavior.</p>
 		<br>
 		<p class="contenido">The model was implemented in MATLAB with the ODE15s solver.			</p>
