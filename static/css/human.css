@@ -1,5 +1,5 @@
 .layout {
-  width: 100vw;
+  width: 98fcovw;
   height: 100%;
   display: flex;
   flex-wrap: nowrap;
@@ -553,6 +553,7 @@
   /*figuras*/
   .pie_de_figura{
     height: fit-content;
+    margin-top: 2vw;
 }
 
 /*introduccion*/
@@ -950,6 +951,7 @@ margin-left: 30%;
   transition: max-height 0.2s ease-out;
   padding-left: 20px;
   padding-right: 20px;
+  0 2px 5px 0 rgba(0,0,0,0.25)
  }
  .accordion-item-body-content {
   padding: 1rem;
@@ -2145,7 +2147,7 @@ background: transparent;
 left: 54%;
 transform: translate(-50%, -50%);
 max-width: 1000px;
-top:9vw;
+top: 7vw;
 height: auto;
 position: relative;
 z-index: 10;
@@ -2173,6 +2175,11 @@ z-index: 10;
 .foto_delmar{
   margin-left: 14vw;
   max-width: 50vw;
+}
+.foto_collection{
+  margin-left: 14vw;
+  max-width: 50vw;
+
 }
 .cause h1 {
   margin: auto;
@@ -2235,7 +2242,7 @@ z-index: 10;
   width: 300px;
   overflow:hidden;
   margin-left: 28vw;
-  background: linear-gradient(#447D9C,);
+  background: linear-gradient(#447D9C,#5BC5AB);
   transition: 1s;
   border-radius: 10px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
@@ -2243,4 +2250,5 @@ z-index: 10;
 
 .contpapa:hover {
   height: 30vw;
+  padding-bottom: 2vw;
 }
