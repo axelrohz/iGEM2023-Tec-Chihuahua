@@ -34,46 +34,7 @@
    margin: auto;
  }
  
- .Title::before,
- .Title::after {
-   content: "";
-   position: absolute;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
- }
- 
- .Title::before {
-   background: var(--bg-color);
-   animation: typewriter var(--typewriterSpeed)
-     steps(var(--typewriterCharacters)) 1.5s forwards;
- }
- 
- .Title::after {
-   width: 0.125em;
-   background: white;
-   animation: typewriter var(--typewriterSpeed)
-       steps(var(--typewriterCharacters)) 1.5s forwards,
-     blink 2.5s steps(var(--typewriterCharacters)) infinite;
- }
- @keyframes typewriter {
-   to {
-     left: 100%;
-   }
- }
- 
- @keyframes blink {
-   to {
-     background: transparent;
-   }
- }
- @keyframes fadeInUp {
-   to {
-     opacity: 1;
-     transform: translateY(0);
-   }
-} 
+
  
  /*cards overview*/
  
@@ -797,6 +758,7 @@ margin-left: 30%;
 }
  
 /*animación de metodos de deteccion*/
+
 .cta2{
   position: relative;
   margin: span;
@@ -847,7 +809,60 @@ margin-left: 30%;
    width: 75vw;
    background: #e5715f;
   }
- 
+
+/*cta3 cosas*/
+.cta3{
+  position: relative;
+  margin: span;
+  padding: 8px 12px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  margin-left: 130px !important;
+  }
+ .cta3:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0px;
+  display: block;
+  border-radius: 50px;
+  background: #447D9C;
+  width: 45px;
+  height: 100%;
+  transition: all 0.3s ease;
+ }
+ .cta3 span{
+  position: relative;
+  font-family: 'Quicksand';
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: black;
+ }
+ .cta3 svg{
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #447D9C;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+ }
+ .cta3:hover svg{
+  transform: translateX(0);
+ }
+ .cta3:active{
+  transform: scale(0.95);
+ }
+ .cta3:hover:before{
+   width: 75vw;
+   background: #447D9C;
+  }
+
+
 .table1{
 margin-left: 20%;
 }
@@ -2179,7 +2194,10 @@ z-index: 10;
 .foto_collection{
   margin-left: 14vw;
   max-width: 50vw;
-
+}
+.foto_zoetis{
+  margin-left: 14vw;
+  max-width: 50vw;
 }
 .cause h1 {
   margin: auto;
@@ -2251,4 +2269,8 @@ z-index: 10;
 .contpapa:hover {
   height: 30vw;
   padding-bottom: 2vw;
+}
+
+.subtitulo{
+  margin-left:3vw;
 }
