@@ -1,107 +1,122 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&display=swap');
 
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Bricolage Grotesque';
-    user-select: text;
-    
-  }
-  body {
-    user-select: text; /* Esto habilitará la selección de texto en todo el cuerpo de la página */
-    margin: 0;
-    padding: 0;
-    font-family: 'Quicksand', sans-serif;
-    background-color: #f7f8fa;
-    display: block !important;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bricolage Grotesque';
+  user-select: text;
+
+}
+
+body {
+  user-select: text;
+  /* Esto habilitará la selección de texto en todo el cuerpo de la página */
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f7f8fa;
+  display: block !important;
 }
 
 .mybody {
-	font-size: 14px;
-	font-family: "Bricolage Grotesque";
-	background-color: #f3f5f9;
-    font-weight: 500;
-    line-height: 1.42em;
-    color:#302535;
+  font-size: 14px;
+  font-family: "Bricolage Grotesque";
+  background-color: #f3f5f9;
+  font-weight: 500;
+  line-height: 1.42em;
+  color: #302535;
+}
+
+.title {
+  font-size: 8rem;
+  font-weight: 800;
+  width: 100%;
+  height: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2e2e2e88;
+  color: #F3F3FA;
+  text-shadow: 2px 2px 4px #302535;
+  position: relative;
+  display: none;
+}
+
+.title2 {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  display: flex;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  background: #30253500;
+  opacity: 0.3;
+  align-self: center;
+  width: 100%;
+  position: relative;
+  margin-bottom: 2rem;
+  box-shadow: #302535 0px 0px 10px 0px;
+  font-family: 'Bricolage Grotesque';
+}
+
+
+
+.title2 h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #F3F3FA;
+  font-family: 'Bricolage Grotesque';
+
+}
+
+@media (max-width: 660px) {
+
+  /* Estilos para dispositivos móviles */
+  .title2 {
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
   }
 
-  .title{
-    font-size: 8rem;
-    font-weight: 800;
-    width: 100%;
-    height: 12rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #2e2e2e88;
-    color: #F3F3FA;
-    text-shadow: 2px 2px 4px #302535;
-    position: relative;
-    display: none;
-  }
-
-  .title2{
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    display: flex;
-    height: fit-content;
-    justify-content: center;
-    align-items: center;
-    background: #30253500;
-    opacity: 0.3;
-    align-self: center;
-    width: 100%;
-    position: relative;
-    margin-bottom: 2rem;
-    box-shadow: #302535 0px 0px 10px 0px;
-    font-family: 'Bricolage Grotesque';
-  }
-
-
-
-  .title2 h1{
-    font-size: 5rem;
+  .title2 h1 {
+    font-size: 3.7rem;
     font-weight: 700;
     color: #F3F3FA;
     font-family: 'Bricolage Grotesque';
 
   }
-
-  @media (max-width: 660px) {
-    /* Estilos para dispositivos móviles */
-    .title2{
-      padding-top: 1.5vh;
-      padding-bottom: 1.5vh;
-    }
-    .title2 h1{
-      font-size: 3.7rem;
-      font-weight: 700;
-      color: #F3F3FA;
-      font-family: 'Bricolage Grotesque';
-  
-    }
 }
+
 .wrap {
   display: flex;
   flex-direction: column;
 }
 
-  @media (max-width: 660px) {
-    .header-grad {
-        width: 100%;
-        height: 60px;
-        background-size: 300% 300%;
-    }
-    .header-grad h1 {
-      color: #F3F3FA;
-      font-weight: 800;
-      text-shadow: 2px 2px 4px #302535;
-      position: relative;
-      font-family: 'Bricolage Grotesque'; 
-      font-size: 1.5rem;
-    }
-    
+@media (max-width: 660px) {
+  .header-grad {
+    width: 100%;
+    height: 60px;
+    background-size: 300% 300%;
   }
+
+  .header-grad h1 {
+    color: #F3F3FA;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px #302535;
+    position: relative;
+    font-family: 'Bricolage Grotesque';
+    font-size: 1.5rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .uno h1 {
+    font-size: 5rem;
+  }
+
+  .navigation {
+    display: none;
+  }
+}
