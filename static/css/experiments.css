@@ -107,6 +107,11 @@
 	background: linear-gradient(to right, var(--c1) var(--stop), var(--c2) var(--stop));
 }
 
+.listh3{
+text-align: center;
+font-size: 1.7rem;
+font-family: 'Quicksand'
+}
 
 .listh3::before {
 	display: flex;
