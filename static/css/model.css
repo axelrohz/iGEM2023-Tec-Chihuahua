@@ -883,12 +883,12 @@ margin-left: 30%;
  }
  
  /*Boton desplegable de referencias*/
-
- .accordion {
+.accordion {
   width: 0%;
   max-width: 1000px;
   margin: 2rem auto;
   justify-self: center;
+  z-index: 20;
 }
 .accordion-item {
   background-color: #fff;
@@ -898,28 +898,48 @@ margin-left: 30%;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
   width: 90%;
   justify-self: center;
+  z-index: 20;
 
 }
+
+.accordion-item {
+  justify-self: center;
+  background-color: #ffffff;
+  color: #111;
+  margin: auto;
+  border-radius: 3px;
+  box-shadow: 7px 7px #5BC5AB ;
+  width: 80%;
+  margin-bottom: 20px;
+  border: solid 0.5px #EBEBF1;
+  z-index: 20;
+}
+
+
 .accordion-item-header {
+  min-height: 60px;
+  font-size: 1.2rem;
   padding: 0.5rem 3rem 0.5rem 1rem;
-  min-height: 3.5rem;
-  line-height: 1.25rem;
-  font-weight: bold;
+  line-height: 1.5;
+  font-weight: 500;
   display: flex;
   align-items: center;
   position: relative;
   cursor: pointer;
   font-family: 'Bricolage Grotesque';
   font-size: 1.5rem;
+  z-index: 20;
 }
 .accordion-item-header::after {
   content: "\002B";
   font-size: 1.5rem;
   position: absolute;
   right: 1rem;
+  z-index: 20;
 }
 .accordion-item-header.active::after {
   content: "\2212";
+  z-index: 20;
 }
 .accordion-item-body {
   max-height: 0;
@@ -927,6 +947,8 @@ margin-left: 30%;
   transition: max-height 0.2s ease-out;
   padding-left: 20px;
   padding-right: 20px;
+  z-index: 20;
+  0 2px 5px 0 rgba(0,0,0,0.25)
 }
 .accordion-item-body-content {
   padding: 1rem;
@@ -938,6 +960,7 @@ margin-left: 30%;
   font-family: 'Quicksand';
   text-align: justify;
   margin-left: 20px;
+  z-index: 20;
   margin-right: 20px;
 }
 @media(max-width:767px) {

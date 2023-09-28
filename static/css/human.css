@@ -819,7 +819,7 @@ margin-left: 30%;
  .cta2 span{
   position: relative;
   font-family: 'Quicksand';
-  font-size: 1.2rem;
+  font-size: 2.2rem;
   font-weight: 500;
   color: black;
  }
@@ -2125,23 +2125,28 @@ z-index: 10;
 
 .graficas{
 background: transparent;
-top: 2vw;
-left: 54%;
+top: 14vw;
+left: 50%;
 transform: translate(-50%, -50%);
 max-width: 1000px;
 height: auto;
 position: relative;
 z-index: 10;
 }
-
+.graficasDiagrama{
+  height: 25vw;
+}
+.diagramaCadenaValor{
+  height: 24vw;
+}
 .cadena_de_valor{
 background: transparent;
-top: 628%;
 left: 54%;
 transform: translate(-50%, -50%);
 max-width: 1000px;
+top:9vw;
 height: auto;
-position: absolute;
+position: relative;
 z-index: 10;
 }
 
@@ -2154,5 +2159,81 @@ max-width: 1000px;
 height: auto;
 position: absolute;
 z-index: 10;
+}
 
+.foto_pequeño_productor{
+  margin-left: 14vw;
+  max-width: 50vw;
+}
+
+
+.cause h1 {
+  margin: auto;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Quicksand";
+}
+
+.causetxt p {
+  font-size: 1rem;
+  font-family: 'Quicksand';
+  text-align: center;
+  color: #302535;
+  text-align: center;
+}
+
+.contcauses {
+  max-height: 800px;
+  width: 100%;
+  padding: 100px;
+  display: flex; 
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  background-color: #A7DCD3;
+}
+
+.contcauses h5 {
+  font-size: 2rem;
+  font-family: 'Quicksand';
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.cause {
+  display: flex;
+  height: 120px;
+  width: 300px;
+  justify-content: center;
+  overflow:hidden;
+}
+
+
+.causetxt {
+  align-self: center;
+  text-align: center;
+  font-family: 'Quicksand';
+  font-weight: 500;
+}
+
+.contpapa {
+  height: 120px;
+  width: 300px;
+  overflow:hidden;
+  margin-left: 28vw;
+  background: var(--gradient);
+  transition: 1s;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contpapa:hover {
+  height: 30vw;
 }
