@@ -522,7 +522,7 @@ footer{
     justify-content: center;
     align-items: center;
     margin: 20px auto; /* Margen centrado en todas las direcciones para espacio adicional en pantallas pequeñas */
-    top: -357px; /* Ajusta esta propiedad para mover los botones hacia arriba o hacia abajo */
+    top: -178px; /* Ajusta esta propiedad para mover los botones hacia arriba o hacia abajo */
     position: relative;
 }
 
@@ -560,7 +560,7 @@ footer{
   .oporttext{
     width: 100%;
     height: 80vh;
-    top: -6vh;
+    top: -11vh;
     display: flex;
     justify-content: center;
     font-size: 5vw;
@@ -666,7 +666,7 @@ footer{
     height: fit-content;
     color: white;
     font-size: 1.5rem;
-    padding-top: 45px;
+    padding-top: 10vh;
     padding-bottom: 40px;
     position: relative;
     text-align: justify;
@@ -1252,3 +1252,520 @@ footer{
     margin-bottom: 2vw;
     height: 607px;
    }
+   /*botones */
+ 
+ .botones-redireccion{
+    position: relative;
+    margin: 150px auto;
+   }
+   .botones-redireccion div{
+      height: 400px;
+   }
+   
+   .contenedorBoton{
+    width: 30px;
+    margin: auto;
+    height: 30px;
+   }
+   
+   .logocontainer{
+    background: transparent;
+    top: 118vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    position: relative;
+    z-index:10;
+   }
+   
+   
+   @keyframes blink{
+    0% {transform: scaleX(1) scaleY(1)}
+   
+    1%{transform: scaleX(1.3) scaleY(0.1)}
+   
+    2% {transform: scaleX(1) scaleY(1)}
+   
+    60% {transform: scaleX(1) scaleY(1)}
+    61% {transform: scaleX(1.3) scaleY(0.1)}
+   
+    62% {transform: scaleX(1) scaleY(1)}
+   
+    100% {transform: scaleX(1) scaleY(1)}
+   }
+   
+   #taffy {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -5;
+   }
+   
+   #retina {
+    width: 50%;
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 49%;
+    z-index: -4;
+    transform: translate(-50%, -50%);
+   }
+   
+   .button-container {
+    display: inline-block;
+    width: 98vw;
+    margin-bottom: 2vw;
+    height: 607px;
+   }
+   
+   /* Estilos para los botones en forma de div */
+   .methods{
+    width: 180px;
+    height: 180px;
+    left: 35%;
+    color: #C55B75;
+    background-color: transparent;
+    border: 5px solid #C55B75;
+    border-radius: 50%;
+    border-width: 30px;
+    position: relative;
+    transition: background-color 0.5s, transform 0.5s;
+    overflow: hidden;
+    z-index:10;
+   }
+   .overview{
+    top: 50%;
+    left: -12%;
+    width: 180px;
+    height: 180px;
+    color: #5BC5AB;
+    background-color: transparent;
+    border: 5px solid #5BC5AB; /* Borde en los div de los botones */
+    border-radius: 50%; /* Hace que los div de los botones sean circulares */
+    border-width: 30px;
+    transition: background-color 0.5s, transform 0.5s;
+    position: absolute;
+   }
+   .results{
+    top: 50%;
+    left: 80%;
+    width: 180px;
+    height: 180px;
+    color: #447D9C;
+    background-color: transparent;
+    border: 5px solid #447D9C; /* Borde en los div de los botones */
+    border-radius: 50%; /* Hace que los div de los botones sean circulares */
+    border-width: 30px;
+    transition: background-color 0.5s, transform 0.5s;
+    position: absolute;
+   }
+   
+   .button-content {
+    position: absolute;
+    top: 50%;
+    height: fit-content;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 180px;
+   }
+   
+   .overview:hover .button-content,
+   .methods:hover .button-content,
+   .results:hover .button-content{
+    height: fit-content;
+    top: 40%;
+   }
+   
+   
+   /* Efecto de crecimiento y cambio de fondo al pasar el cursor sobre los div de los botones */
+   .methods:hover {
+    border: none;
+    background-color: #C55B75;
+    transform: scale(1.5);
+   }
+   .overview:hover {
+    border: none;
+    background-color: #5BC5AB;
+    transform: scale(1.5);
+   }
+   .results:hover {
+    border: none;
+    background-color: #447D9C;
+    transform: scale(1.5);
+   }
+   
+   /* Estilo para el contenido de los div de los botones al pasar el cursor sobre ellos */
+   .methods:hover .tituloBoton,
+   .overview:hover .tituloBoton,
+   .results:hover .tituloBoton {
+    font-size: 18px;
+   }
+   
+   .methods:hover .contentBoton,
+   .overview:hover .contentBoton,
+   .results:hover .contentBoton  {
+    text-align: justify;
+    color: white;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    padding-bottom: 10px;
+   }
+   
+   /* Estilo para el botón "Learn More" al pasar el cursor sobre los div de los botones */
+   .learnMore {
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    font-size: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+   }
+  
+  .learnMore:active{
+    margin-top: 3px;
+    margin-left: 3px;
+    box-shadow: none;
+  }
+  
+  .learnMore:focus{
+    outline: none;
+  }
+   
+   .methods:hover .learnMore {
+    display: inline-block;
+    width: 80px;
+    background-color: #C55B75;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+   }
+   .overview:hover .learnMore{
+    display: inline-block;
+    width: 80px;
+    background-color: #5BC5AB;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+   }
+   .results:hover .learnMore{
+    display: inline-block;
+    width: 80px;
+    background-color: #447D9C;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+   }
+   /* Estilo para los títulos y contenido de los div de los botones */
+   .tituloBoton {
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    margin: auto auto;
+    text-align: center;
+  }
+  
+   
+   .contentBoton {
+    font-size: 13px;
+    display: none;
+   }
+   
+   /* Efecto de sombra y transformación al pasar el cursor sobre los botones */
+   .methods:hover .tituloBoton,
+   .overview:hover .tituloBoton,
+   .results:hover .tituloBoton,
+   .methods:hover .contentBoton,
+   .overview:hover .contentBoton,
+   .results:hover .contentBoton {
+    color: white;
+    max-width: 100%;
+    max-height: 100%;
+    display: contents;
+    height: 139px;
+    width: 175px;
+   }
+   
+   
+   /*introduccion*/
+   .introduction{
+    text-align: center;
+   }
+  /*cosas del side bar index*/
+ 
+  .index1, .index2, .index3{
+    margin-left: 30px;
+    width: 7%;
+    min-width: 7%;
+    text-align: center;
+    height: fit-content;
+    border-radius: 20px;
+    position: sticky;
+    top:150px;
+    font-size: 1vw;
+   }
+   .index1{
+    background: linear-gradient(#9dcfc2,#5BC5AB);
+   }
+   .index2{
+    background: linear-gradient(#eab0be,#C55B75);
+   }
+   .index3{
+    background: linear-gradient(#65bfef,#447D9C);
+   }
+   
+   .navigation li {
+    list-style: none;
+   }
+   
+   .navigation li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 10px;
+    margin: 10px 0px 10px 0px;
+    font-weight: 400;
+    transition: all ease-out 250ms;
+    border-radius: 10px;
+   }
+   
+   .navigation li a:hover {
+    margin: 2px,5px,2px,5px;
+    background-color: black;
+    opacity: .4;
+   }
+   
+   p{
+   margin-left: 5%;
+   margin-right: 5%;
+   }
+   h2::after, h2::before{
+    content: " ";
+    text-align: center;
+    display: block;
+    border: 2px solid #5BC5AB;
+    background-color: #f8f8f8;
+   }
+   
+   .subtitleO, .subtitleM, .subtitleR{
+    text-align: center;
+    font-family: 'Bricolage Grotesque';
+    font-size:3vw;
+    font-weight:500;
+    color:#302535; 
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 16px 0;
+    grid-gap: 22px;
+    align-items: center;
+    max-width: 100%;
+    padding-top: 10px;
+   }
+   
+   .subtitleO:after, .subtitleO:before {
+   content: " ";
+   display: block;
+   border: 2px solid #5BC5AB;
+   background-color:#f8f8f8;}
+   
+   .subtitleM:after, .subtitleM:before {
+    content: " ";
+    display: block;
+    border: 2px solid #C55B75;
+    background-color:#f8f8f8;}
+   
+   .subtitleR:after, .subtitleR:before {
+    content: " ";
+    display: block;
+    border: 2px solid #447D9C;
+    background-color:#f8f8f8;
+  }
+  
+  
+   
+   .welcomepage {
+    position:relative;
+    text-align:center;
+    background: linear-gradient(60deg, #5BC5AB 0%, rgba(0,172,193,1) 100%);
+    color:white;
+   }
+   
+   .inner-header {
+    height:65vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+   }
+   
+   .flex { /*Flexbox for containers*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   }
+   
+   .waves {
+    position:relative;
+    width: 100vw;
+    height:15vh;
+    margin-top: -150px;
+    min-height:442px;
+    max-height:150px;
+   }
+   /* Animation */
+   
+   .parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+   }
+   .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+   }
+   .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+   }
+   .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+   }
+   .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+   }
+   @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% {
+      transform: translate3d(85px,0,0);
+    }
+   }
+   
+   .tituloContenido{
+    margin-left:43px;
+   }
+   
+   .contenido{
+    text-align: justify;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Quicksand';
+    text-align: justify;
+    line-height: 1.5;
+    margin-left: 43px !important;
+    color: black;
+   }
+   
+   .Content{
+    margin-left: 10px;
+    height: fit-content;
+    margin-right: 10px;
+   }
+   /*animación al pasar el cursor encima de las preguntas*/
+   .cta1, .cta2, .cta3, .cta4, .cta5, .cta6 {
+    position: relative;
+    margin: span;
+    padding: 8px 12px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    margin-left: 8% !important;
+    }
+   .cta1:before, .cta2:before, .cta3:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    display: block;
+    border-radius: 50px;
+    background: #D27063;
+    width: 45px;
+    height: 100%;
+    transition: all 0.3s ease;
+   }
+   .cta4:before, .cta5:before, .cta6:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    display: block;
+    border-radius: 50px;
+    background: #DE8551;
+    width: 45px;
+    height: 100%;
+    transition: all 0.3s ease;
+   }
+  
+   .cta1 span, .cta2 span, .cta3 span, .cta4 span, .cta5 span, .cta6 span {
+    position: relative;
+    font-family: 'Quicksand';
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
+   }
+   .cta1 svg, .cta2 svg, .cta3 svg, .cta4 svg, .cta5 svg, .cta6 svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+   }
+   .cta1:hover svg, .cta2:hover svg, .cta3:hover svg, .cta4:hover svg, .cta5:hover svg, .cta6:hover svg {
+    transform: translateX(0);
+   }
+   .cta1:active, .cta2:active, .cta3:active, .cta4:active, .cta5:active, .cta6:active {
+    transform: scale(0.95);
+   }
+   .cta1:hover:before{
+     width: 75vw;
+     background: #DE8551;
+    }
+  .cta2:hover:before{
+     width: 70vw;
+     background: #DE8551;
+  }
+  .cta3:hover:before{
+     width: 72vw;
+     background: #DE8551;
+  }
+  .cta4:hover:before{
+     width: 70vw;
+     background: #F6AE2D;
+  }
+  .cta5:hover:before{
+     width: 70vw;
+     background: #F6AE2D;
+  }
+  .cta6:hover:before{
+     width: 70vw;
+     background: #F6AE2D;
+  }
+   
+  .table1{
+  margin-left: 20%;
+  }
+  .table2{
+  margin-left: 30%;
+  }
+     
