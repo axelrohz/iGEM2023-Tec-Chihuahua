@@ -735,6 +735,7 @@
   height: fit-content;
   margin-right: 10px;
  }
+
  /*animación al pasar el cursor encima de las preguntas*/
  .cta1{
   position: relative;
@@ -2165,8 +2166,14 @@ z-index: 10;
   margin-left: 14vw;
   max-width: 50vw;
 }
-
-
+.foto_medicinas{
+  margin-left: 14vw;
+  max-width: 50vw;
+}
+.foto_delmar{
+  margin-left: 14vw;
+  max-width: 50vw;
+}
 .cause h1 {
   margin: auto;
   align-self: center;
@@ -2228,7 +2235,7 @@ z-index: 10;
   width: 300px;
   overflow:hidden;
   margin-left: 28vw;
-  background: var(--gradient);
+  background: linear-gradient(#447D9C,);
   transition: 1s;
   border-radius: 10px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
