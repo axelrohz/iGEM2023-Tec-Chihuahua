@@ -1245,4 +1245,10 @@ footer{
 .h--timeline-line li:nth-child(odd) .h--timeline-date--selected::before{
     bottom: -3px;
 }
-/**/
+/*button circulos vaquita*/
+.button-container1{
+    display: inline-block;
+    width: 98vw;
+    margin-bottom: 2vw;
+    height: 607px;
+   }
