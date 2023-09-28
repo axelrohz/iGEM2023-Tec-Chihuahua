@@ -46,6 +46,21 @@
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .uno h1 {
+    font-size: 5rem;
+  }
+  .navigation{
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .uno h1 {
+    font-size: 3rem;
+  }
+}
+
 .piedefig {
   text-align: center;
   font-size: 1rem;
@@ -476,7 +491,7 @@ img {
   transition: max-height 0.2s ease-out;
   padding-left: 20px;
   padding-right: 20px;
-  0 2px 5px 0 rgba(0,0,0,0.25)
+
 }
 .accordion-item-body-content {
   padding: 1rem;
