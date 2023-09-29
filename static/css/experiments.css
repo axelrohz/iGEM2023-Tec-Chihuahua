@@ -494,3 +494,9 @@ h2:before {
  .teamScroll{
   overflow: visible !important;
  }
+
+ /*ImagenesResponsivas*/
+ .responsive {
+  max-width: 100%;
+  height: auto;
+}
