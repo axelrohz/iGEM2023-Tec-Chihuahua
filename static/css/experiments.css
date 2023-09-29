@@ -383,7 +383,7 @@ h2:before {
   height:auto; 
   width: auto; 
   justify-content: center;
-  margin: 100px;
+  margin: auto;
   align-items: center;
 }
 .accordion {
