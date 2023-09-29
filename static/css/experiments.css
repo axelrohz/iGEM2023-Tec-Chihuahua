@@ -497,6 +497,7 @@ h2:before {
 
  /*ImagenesResponsivas*/
  .responsive {
-  max-width: 100%;
+  width: 100%;
+  max-width: 400px;
   height: auto;
 }
