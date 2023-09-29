@@ -380,10 +380,10 @@ h2:before {
 
 .expdes {
   display: flex;
-  height:500px; 
+  height:auto; 
   width: auto; 
   justify-content: center;
-  margin: 100px;
+  margin: auto;
   align-items: center;
 }
 .accordion {
@@ -494,3 +494,13 @@ h2:before {
  .teamScroll{
   overflow: visible !important;
  }
+
+ /*ImagenesResponsivas*/
+ .responsive {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  align-items: center;
+  display: block;
+  margin: auto;
+}
