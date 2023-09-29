@@ -1436,6 +1436,19 @@ footer{
     transition: background-color 0.5s, transform 0.5s;
     position: absolute;
    }
+   .ext{
+        top: 57vh;
+        left: 17vh;
+        width: 180px;
+        height: 180px;
+        color: #DE8551;
+        background-color: transparent;
+        border: 5px solid #DE8551;
+        border-radius: 50%;
+        border-width: 30px;
+        transition: background-color 0.5s, transform 0.5s;
+        position: absolute;
+    }
    
    .button-content {
     position: absolute;
@@ -1449,7 +1462,8 @@ footer{
    
    .overview:hover .button-content,
    .methods:hover .button-content,
-   .results:hover .button-content{
+   .results:hover .button-content,
+   .ext:hover .button-content{
     height: fit-content;
     top: 40%;
    }
@@ -1471,17 +1485,24 @@ footer{
     background-color: #447D9C;
     transform: scale(1.5);
    }
+   .ext:hover {
+    border: none;
+    background-color: #447D9C;
+    transform: scale(1.5);
+   }
    
    /* Estilo para el contenido de los div de los botones al pasar el cursor sobre ellos */
    .methods:hover .tituloBoton,
    .overview:hover .tituloBoton,
-   .results:hover .tituloBoton {
+   .results:hover .tituloBoton,
+   .ext:hover .tituloBoton {
     font-size: 18px;
    }
    
    .methods:hover .contentBoton,
    .overview:hover .contentBoton,
-   .results:hover .contentBoton  {
+   .results:hover .contentBoton ,
+   .ext:hover .contentBoton {
     text-align: justify;
     color: white;
     display: block;
@@ -1545,6 +1566,15 @@ footer{
     left: 50%;
     transform: translateX(-50%);
    }
+   .ext:hover .learnMore{
+    display: inline-block;
+    width: 80px;
+    background-color: #447D9C;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+   }
    /* Estilo para los títulos y contenido de los div de los botones */
    .tituloBoton {
     font-size: 20px;
@@ -1564,9 +1594,11 @@ footer{
    .methods:hover .tituloBoton,
    .overview:hover .tituloBoton,
    .results:hover .tituloBoton,
+   .ext:hover .tituloBoton,
    .methods:hover .contentBoton,
    .overview:hover .contentBoton,
-   .results:hover .contentBoton {
+   .results:hover .contentBoton,
+   .ext:hover .contentBoton {
     color: white;
     max-width: 100%;
     max-height: 100%;
