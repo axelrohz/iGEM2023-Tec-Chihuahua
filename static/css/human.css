@@ -2290,3 +2290,282 @@ z-index: 10;
   margin-left: 20vw;
   margin-bottom: 45px;
 }
+
+.barChart{
+  background: #fff;
+  box-shadow: 0 0 7px rgba(0,0,0,0.5);
+  padding-left: 7%;
+  padding-top: 2%;
+  max-width: 500px;
+  height: 375px;
+  border-radius: 50px;
+}
+.graphTitle {
+	font-size: 2vw;
+  font-weight: normal;
+  line-height: 10%;
+  margin: 0 0 20px 0;
+  color: #249081;
+  padding-left: 100px;
+}
+.antibiotic{
+  color:#309B8D;
+}
+/* Graph */
+/* Containers */
+#wrapper {
+	min-width: 55%;
+  margin-left: 16%;
+  position: relative;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+#figure {
+	height: 380px;
+	position: relative;
+}
+#figure ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.graph {
+	height: 283px;
+	position: relative;
+}
+
+/* Bar Graph Vertical */
+.bar-graph .year {
+  -webkit-animation: fade-in-text 2.2s 0.1s forwards;
+  -moz-animation: fade-in-text 2.2s 0.1s forwards;
+  animation: fade-in-text 2.2s 0.1s forwards;
+}
+
+.bar-graph-vertical {
+  margin-top: 55px;
+  max-width: 770px;
+}
+
+.bar-graph-vertical .bar-container {
+  float: left;
+  height: 150px;
+  margin-right: 30px;
+  position: relative;
+  text-align: center;
+  width: 10%;
+}
+
+.bar-graph-vertical .bar {
+  border-radius: 3px;
+  bottom: 40px;
+  position: absolute;
+  width: 45px;
+}
+
+.bar-graph-two .bar::after {
+  -webkit-animation: fade-in-text 2.2s 0.1s forwards;
+  -moz-animation: fade-in-text 2.2s 0.1s forwards;
+  animation: fade-in-text 2.2s 0.1s forwards;
+  color: #fff;
+  content: attr(data-percentage);
+  font-weight: 700;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  text-align: left;
+  top: 24px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.bar-graph-two .bar-one .bar {
+  background-color: #61D3C4;
+  -webkit-animation: show-bar-one-vertical 1.2s 0.1s forwards;
+  -moz-animation: show-bar-one-vertical 1.2s 0.1s forwards;
+  animation: show-bar-one-vertical 1.2s 0.1s forwards;
+}
+
+.bar-graph-two .bar-two .bar {
+  background-color: #5DC4B6;
+  -webkit-animation: show-bar-two-vertical 1.2s 0.2s forwards;
+  -moz-animation: show-bar-two-vertical 1.2s 0.2s forwards;
+  animation: show-bar-two-vertical 1.2s 0.2s forwards;
+}
+
+.bar-graph-two .bar-three .bar {
+  background-color: #4DBBAD;
+  -webkit-animation: show-bar-three-vertical 1.2s 0.3s forwards;
+  -moz-animation: show-bar-three-vertical 1.2s 0.3s forwards;
+  animation: show-bar-three-vertical 1.2s 0.3s forwards;
+}
+
+.bar-graph-two .bar-four .bar {
+  background-color: #38B5A6;
+  -webkit-animation: show-bar-four-vertical 1.2s 0.4s forwards;
+  -moz-animation: show-bar-four-vertical 1.2s 0.4s forwards;
+  animation: show-bar-four-vertical 1.2s 0.4s forwards;
+}
+
+.bar-graph-two .bar-five .bar {
+  background-color: #38B5A6;
+  -webkit-animation: show-bar-five-vertical 1.2s 0.4s forwards;
+  -moz-animation: show-bar-five-vertical 1.2s 0.4s forwards;
+  animation: show-bar-five-vertical 1.2s 0.4s forwards;
+}
+
+.bar-graph-two .bar-six .bar {
+  background-color: #38B5A6;
+  -webkit-animation: show-bar-six-vertical 1.2s 0.4s forwards;
+  -moz-animation: show-bar-six-vertical 1.2s 0.4s forwards;
+  animation: show-bar-six-vertical 1.2s 0.4s forwards;
+}
+
+/* Bar Graph Vertical Animations */
+@-webkit-keyframes show-bar-one-vertical {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 95%;
+  }
+}
+
+@-webkit-keyframes show-bar-two-vertical {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 95%;
+  }
+}
+
+@-webkit-keyframes show-bar-three-vertical {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80%;
+  }
+}
+
+@-webkit-keyframes show-bar-four-vertical {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 70%;
+  }
+}
+
+@-webkit-keyframes show-bar-five-vertical {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 70%;
+  }
+}
+
+@-webkit-keyframes show-bar-six-vertical {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 1%;
+  }
+}
+
+@-webkit-keyframes fade-in-text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.Yaxis-title {
+  float: left;
+  font-size: 18px;
+  position: relative;
+  text-align: center;
+  transform: rotate(-90deg) translate(-110px,-110px);
+  width: 240px;
+  font-weight: bold;
+  color: #309B8D;
+  left: -12%;
+}
+
+.Xaxis-title {
+  float: left;
+  font-size: 18px;
+  position: relative;
+  text-align: center;
+  transform: translate(-35%,1077%);
+  width: 240px;
+  font-weight: bold;
+  color: #309B8D;
+}
+.x-axis {
+	bottom: 0;
+  color: #309B8D;
+  position: absolute;
+  width: 100%;
+  top: 90%;
+  left: 0px;
+}
+.hr_70 {
+  color: transparent;
+  position: absolute;
+  margin-top: -25px;
+  left: -17px;
+}
+
+.bar:hover .hr_70 {
+  color: #309b8d; 
+}
+
+.hr_80 {
+  color: transparent;
+  position: absolute;
+  margin-top: -26px;
+  left: -17px;
+}
+
+.bar:hover .hr_80 {
+  color: #309b8d;
+}
+
+.hr_95 {
+  color: transparent;
+  position: absolute;
+  margin-top: -38px;
+  left: -17px;
+}
+
+.bar:hover .hr_95 {
+  color: #309b8d;
+}
+
+.bar_0 {
+  color: #309b8d; 
+  position: relative; 
+  margin-top: 80px;
+  left: -12px;
+}
+.instr{
+  background: #309b8d;
+  color: white;
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 25%;
+  margin-top: 5%;
+  max-width: fit-content;
+}
