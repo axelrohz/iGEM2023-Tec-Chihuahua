@@ -1,107 +1,129 @@
 {% extends "layoutIndex.html" %}
 
-
 {% block title %}Results{% endblock %}
-{% block lead %}You can describe the results of your project and your future plans here.{% endblock %}
+{% block lead %}You can describe the results of your project and your future
+plans here.{% endblock %}
 
 {% block page_content %}
 
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../static/css/body.css">
-  <link rel="stylesheet" href="../../static/css/desc.css">
-  <link rel="stylesheet" href="../../static/css/parallax.css">
-  <link rel="stylesheet" href="../../static/css/parallaxFull.css">
-  <link rel="stylesheet" href="../../static/css/tables.css">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/body.css">
+    <link rel="stylesheet" href="../../static/css/desc.css">
+    <link rel="stylesheet" href="../../static/css/parallax.css">
+    <link rel="stylesheet" href="../../static/css/parallaxFull.css">
+    <link rel="stylesheet" href="../../static/css/tables.css">
 
-  <link href="{{ url_for('static', filename='css/desc.css') }}" rel="stylesheet">
-  <link href="{{ url_for('static', filename='css/body.css') }}" rel="stylesheet">
-  <script src="{{ url_for('static', filename='assets/js/team.js') }}"></script>
-  <link href="{{ url_for('static', filename='css/results.css') }}" rel="stylesheet">
-  <link href="{{ url_for('static', filename = 'css/parallax.css') }}" rel="stylesheet">
-  <link href="{{ url_for('static', filename = 'css/parallaxFull.css') }}" rel="stylesheet">
-  <link href="{{ url_for('static', filename = 'css/tables.css') }}" rel="stylesheet">
-</head>
+    <link href="{{ url_for('static', filename='css/desc.css') }}"
+      rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/body.css') }}"
+      rel="stylesheet">
+    <script src="{{ url_for('static', filename='assets/js/team.js') }}"></script>
+    <link href="{{ url_for('static', filename='css/results.css') }}"
+      rel="stylesheet">
+    <link href="{{ url_for('static', filename = 'css/parallax.css') }}"
+      rel="stylesheet">
+    <link href="{{ url_for('static', filename = 'css/parallaxFull.css') }}"
+      rel="stylesheet">
+    <link href="{{ url_for('static', filename = 'css/tables.css') }}"
+      rel="stylesheet">
+  </head>
 
-<body class="mybody">
-  <img class="parallax-team"
-    src="https://static.igem.wiki/teams/4607/wiki/project-description/whatsapp-image-2023-08-27-at-15-34-55.jpeg">
-  <div class="image-space">
-    <h1 class="title"> Team </h1>
-  </div>
-  <div class="parallax-content">
-    <div class="teamBody">
-      <div class="stickhead">
-        <div class="teamHead">
-          <div class="teamTxt">
-            <h1 class="head" style="justify-self: center; align-items: center; text-align: center;">Results</h1>
+  <body class="mybody">
+    <img class="parallax-team"
+      src="https://static.igem.wiki/teams/4607/wiki/project-description/whatsapp-image-2023-08-27-at-15-34-55.jpeg">
+    <div class="image-space">
+      <h1 class="title"> Team </h1>
+    </div>
+    <div class="parallax-content">
+      <div class="teamBody">
+        <div class="stickhead">
+          <div class="teamHead">
+            <div class="teamTxt">
+              <h1 class="head"
+                style="justify-self: center; align-items: center; text-align: center;">Results</h1>
+            </div>
+            <svg id="visual" class="wave" viewBox="0 0 450 900"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+              <path
+                d="M334 900L337.8 878.5C341.7 857 349.3 814 354.5 771.2C359.7 728.3 362.3 685.7 354.3 642.8C346.3 600 327.7 557 319.8 514.2C312 471.3 315 428.7 324.3 385.8C333.7 343 349.3 300 351.3 257.2C353.3 214.3 341.7 171.7 343 128.8C344.3 86 358.7 43 365.8 21.5L373 0L450 0L450 21.5C450 43 450 86 450 128.8C450 171.7 450 214.3 450 257.2C450 300 450 343 450 385.8C450 428.7 450 471.3 450 514.2C450 557 450 600 450 642.8C450 685.7 450 728.3 450 771.2C450 814 450 857 450 878.5L450 900Z"
+                fill="#dbdbdb"></path>
+              <path
+                d="M414 900L406.5 878.5C399 857 384 814 380 771.2C376 728.3 383 685.7 388.8 642.8C394.7 600 399.3 557 397.3 514.2C395.3 471.3 386.7 428.7 384.8 385.8C383 343 388 300 393.5 257.2C399 214.3 405 171.7 403.3 128.8C401.7 86 392.3 43 387.7 21.5L383 0L450 0L450 21.5C450 43 450 86 450 128.8C450 171.7 450 214.3 450 257.2C450 300 450 343 450 385.8C450 428.7 450 471.3 450 514.2C450 557 450 600 450 642.8C450 685.7 450 728.3 450 771.2C450 814 450 857 450 878.5L450 900Z"
+                fill="#f3f5f9"></path>
+            </svg>
           </div>
-          <svg id="visual" class="wave" viewBox="0 0 450 900" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-            <path
-              d="M334 900L337.8 878.5C341.7 857 349.3 814 354.5 771.2C359.7 728.3 362.3 685.7 354.3 642.8C346.3 600 327.7 557 319.8 514.2C312 471.3 315 428.7 324.3 385.8C333.7 343 349.3 300 351.3 257.2C353.3 214.3 341.7 171.7 343 128.8C344.3 86 358.7 43 365.8 21.5L373 0L450 0L450 21.5C450 43 450 86 450 128.8C450 171.7 450 214.3 450 257.2C450 300 450 343 450 385.8C450 428.7 450 471.3 450 514.2C450 557 450 600 450 642.8C450 685.7 450 728.3 450 771.2C450 814 450 857 450 878.5L450 900Z"
-              fill="#dbdbdb"></path>
-            <path
-              d="M414 900L406.5 878.5C399 857 384 814 380 771.2C376 728.3 383 685.7 388.8 642.8C394.7 600 399.3 557 397.3 514.2C395.3 471.3 386.7 428.7 384.8 385.8C383 343 388 300 393.5 257.2C399 214.3 405 171.7 403.3 128.8C401.7 86 392.3 43 387.7 21.5L383 0L450 0L450 21.5C450 43 450 86 450 128.8C450 171.7 450 214.3 450 257.2C450 300 450 343 450 385.8C450 428.7 450 471.3 450 514.2C450 557 450 600 450 642.8C450 685.7 450 728.3 450 771.2C450 814 450 857 450 878.5L450 900Z"
-              fill="#f3f5f9"></path>
-          </svg>
         </div>
-      </div>
-      <div class="teamScroll">
-        <div class="wrap" id="sec1">
-          <div class="uno">
-            <h1>"There is no science without results"</h1>
-          </div>
-          <div class="texthide">
-            <h2>Overview</h2>
-            <p align="justify">
-              AureoBos's general purpose is to develop a novel solution for bovine mastitis by approaching it from an
-              unexplored side in Mexico: synthetic biology. Hence, our project's path starts in functional BioBricks. By
-              analyzing various molecular mechanisms existing in nature, endolysins caught our attention because of
-              their mechanism and specificity.
-              By mimicking the endolysin's mechanism, our lab developed antimicrobial fusion proteins that fight four of
-              the main microorganisms known to cause bovine mastitis: <em>Staphylococcus aureus, Streptococcus uberis,
-                Streptococcus agalactiae</em>. and <em>Escherichia coli</em>. Throughout this page you can find the
-              bioparts used and designed to construct the expression cassettes that paved the way of this project.</p>
+        <div class="teamScroll">
+          <div class="wrap" id="sec1">
+            <div class="uno">
+              <h1>"There is no science without results"</h1>
+            </div>
+            <div class="texthide">
+              <h2>Overview</h2>
+              <p align="justify">
+                AureoBos's general purpose is to develop a novel solution for
+                bovine mastitis by approaching it from an
+                unexplored side in Mexico: synthetic biology. Hence, our project's
+                path starts in functional BioBricks. By
+                analyzing various molecular mechanisms existing in nature,
+                endolysins caught our attention because of
+                their mechanism and specificity.
+                By mimicking the endolysin's mechanism, our lab developed
+                antimicrobial fusion proteins that fight four of
+                the main microorganisms known to cause bovine mastitis: <em>Staphylococcus
+                  aureus, Streptococcus uberis,
+                  Streptococcus agalactiae</em>. and <em>Escherichia coli</em>.
+                Throughout this page you can find the
+                bioparts used and designed to construct the expression cassettes
+                that paved the way of this project.</p>
             </p>
           </div>
 
           <div class="texthide">
             <h2>Achievements</h2>
             <p align="justify">
-              The first achievement was the registry of eight new basic parts, and three new composite parts that were
-              modified by Golden Gate assembly. To see all our new parts visit the <a
+              The first achievement was the registry of eight new basic parts,
+              and three new composite parts that were
+              modified by Golden Gate assembly. To see all our new parts visit
+              the <a
                 href="https://2023.igem.wiki/tec-chihuahua/parts">Parts' page</a>.</p>
             <p align="justify">
               Our experimental phase was classified into four different rounds:</p>
             <p align="center">
-            <ul>
-              <li>Building and analysis of the constructs.</li>
-              <li>Golden Gate assembly and identification of the constructs.</li>
-              <li>Induction and purification of endolysins.</li>
-              <li>Protein characterization and enzymatic assays</li>
+              <ul>
+                <li>Building and analysis of the constructs.</li>
+                <li>Golden Gate assembly and identification of the constructs.</li>
+                <li>Induction and purification of endolysins.</li>
+                <li>Protein characterization and enzymatic assays</li>
               </p>
             </ul>
-            </p>
-          </div>
-          <div class="texthide">
-            <h2>1st round: Building and analysis of the constructs</h2>
-            <p align="justify">
-              The initial round of experimentation encompassed the in silico design of our plasmids, their synthesis,
-              assembly, transformation, and analysis of the constructs. This comprehensive phase integrates
-              computational design with practical implementation, culminating in the evaluation of the resulting
-              constructs.
-              To design our endolysins coding sequences, we conducted an in-depth protein analysis. This helped us to
-              identify the crucial domains required to produce highly effective and catalytically specific endolysins.
-              The resulting sequences encode the following intein-fusion proteins:<br>
-            </p>
-          </div>
-          <h3 style="text-align: center;">Composite parts</h3>
-          <p>
+          </p>
+        </div>
+        <div class="texthide">
+          <h2>1st round: Building and analysis of the constructs</h2>
+          <p align="justify">
+            The initial round of experimentation encompassed the in silico
+            design of our plasmids, their synthesis,
+            assembly, transformation, and analysis of the constructs. This
+            comprehensive phase integrates
+            computational design with practical implementation, culminating in
+            the evaluation of the resulting
+            constructs.
+            To design our endolysins coding sequences, we conducted an in-depth
+            protein analysis. This helped us to
+            identify the crucial domains required to produce highly effective
+            and catalytically specific endolysins.
+            The resulting sequences encode the following intein-fusion proteins:<br>
+          </p>
+        </div>
+        <h3 style="text-align: center;">Composite parts</h3>
+        <p>
           <div class="accordion">
             <div class="accordion-item">
               <div class="accordion-item-header">
@@ -111,22 +133,33 @@
                 <div class="accordion-item-body-content">
 
                   <p align="justify">
-                    <strong>Fusion endolysin against <em>S. aureus</em> bacteria who causes bovine mastitis.</strong>
-                    <img src="https://static.igem.wiki/teams/4607/wiki/parts/lyscsa13ut-bio-2.png"
+                    <strong>Fusion endolysin against <em>S. aureus</em> bacteria
+                      who causes bovine mastitis.</strong>
+                    <img
+                      src="https://static.igem.wiki/teams/4607/wiki/parts/lyscsa13ut-bio-2.png"
                       alt="LysCSA13-ABD protein">
-                  <p align="center"> <small>
-                      <em><strong>Figure 11.</strong></em> LysCSA13-ABD protein diagram.
-                  </p> </small>
-                  <p>
-                    This part contains the linear sequence of the LysCSA13-ABD (<a
-                      href=”http://parts.igem.org/Part:BBa_K4607000”>BBa_K4607000</a>) nucleotide optimized for <em>E.
-                      coli</em>. It incorporates some of the most efficient biobricks as described below: the T7
-                    promoter with LacO regulations BBa_J435350, the medium strength RBS BBa_Z0262, and the triple
-                    terminator BBa_J435371. For our plasmid construction, we used the high copy pUC ori /Kan R backbone
-                    BBa_J435330. It also contains the BBa_K4607000 that codifies for a fusion protein based on the
-                    endolysin Lys from Staphylococcus aureus virulent bacteriophage CSA13, which have the ability to
-                    lyse S. aureus with very specific targeting and an excellent catalytic activity.<sup>1,2,3</sup>
-                  </p>
+                    <p align="center"> <small>
+                        <em><strong>Figure 11.</strong></em> LysCSA13-ABD
+                        protein diagram.
+                      </p> </small>
+                    <p>
+                      This part contains the linear sequence of the LysCSA13-ABD
+                      (<a
+                        href=”http://parts.igem.org/Part:BBa_K4607000”>BBa_K4607000</a>)
+                      nucleotide optimized for <em>E.
+                        coli</em>. It incorporates some of the most efficient
+                      biobricks as described below: the T7
+                      promoter with LacO regulations BBa_J435350, the medium
+                      strength RBS BBa_Z0262, and the triple
+                      terminator BBa_J435371. For our plasmid construction, we
+                      used the high copy pUC ori /Kan R backbone
+                      BBa_J435330. It also contains the BBa_K4607000 that
+                      codifies for a fusion protein based on the
+                      endolysin Lys from Staphylococcus aureus virulent
+                      bacteriophage CSA13, which have the ability to
+                      lyse S. aureus with very specific targeting and an
+                      excellent catalytic activity.<sup>1,2,3</sup>
+                    </p>
                   </p>
                 </div>
               </div>
@@ -140,22 +173,32 @@
                 <div class="accordion-item-body-content">
 
                   <p align="justify">
-                    <strong>Fusion endolysin against <em>S. aureus</em> bacteria who causes bovine mastitis.</strong>
-                    <img src="https://static.igem.wiki/teams/4607/wiki/parts/lyscsa13ut-bio-2.png"
+                    <strong>Fusion endolysin against <em>S. aureus</em> bacteria
+                      who causes bovine mastitis.</strong>
+                    <img
+                      src="https://static.igem.wiki/teams/4607/wiki/parts/lyscsa13ut-bio-2.png"
                       alt="LysCSA13-ABD protein">
-                  <p align="justify"> <small>
-                      <em><strong>Figure 12.</strong></em> LysCSA13-ABD protein diagram.
-                  </p> </small>
-                  <p>
-                    This part contains the linear sequence of the LysK-ABD-SH3B30 (<a
-                      href=”http://parts.igem.org/Part:BBa_K4607001”>BBa_K4607001</a>) nucleotide optimized for <em>E.
-                      coli</em>. It incorporates some of the most efficient biobricks as described below: the T7
-                    promoter with LacO regulations BBa_J435350, the medium strength RBS BBa_Z0262, the triple terminator
-                    BBa_J435371, and the high copy pUC ori/Kan R backbone BBa_J435330. It also contains the BBa_K4607001
-                    that codifies for a fusion of the CHAP domain from the Lys of the bacteriophage K, with the ability
-                    to degrade the cell wall of antibiotic-resistant strains of <em>Staphylococcus aureus</em>, as well
-                    as, <em>S. agalactiae</em> and <em>S. uberis</em>. <sup>4,5,6,2</sup>
-                  </p>
+                    <p align="justify"> <small>
+                        <em><strong>Figure 12.</strong></em> LysCSA13-ABD
+                        protein diagram.
+                      </p> </small>
+                    <p>
+                      This part contains the linear sequence of the
+                      LysK-ABD-SH3B30 (<a
+                        href=”http://parts.igem.org/Part:BBa_K4607001”>BBa_K4607001</a>)
+                      nucleotide optimized for <em>E.
+                        coli</em>. It incorporates some of the most efficient
+                      biobricks as described below: the T7
+                      promoter with LacO regulations BBa_J435350, the medium
+                      strength RBS BBa_Z0262, the triple terminator
+                      BBa_J435371, and the high copy pUC ori/Kan R backbone
+                      BBa_J435330. It also contains the BBa_K4607001
+                      that codifies for a fusion of the CHAP domain from the Lys
+                      of the bacteriophage K, with the ability
+                      to degrade the cell wall of antibiotic-resistant strains
+                      of <em>Staphylococcus aureus</em>, as well
+                      as, <em>S. agalactiae</em> and <em>S. uberis</em>. <sup>4,5,6,2</sup>
+                    </p>
                   </p>
                 </div>
               </div>
@@ -173,255 +216,376 @@
                     <img
                       src="https://static.igem.wiki/teams/4607/wiki/parts/new-parts-e-coli/parts/900-px-composite-part-lysss-biorender-1.jpg"
                       alt="PCNP-CecA-LysSS">
-                  <p align="justify"> <small>
-                      <em><strong>Figure 13.</strong></em> PCNP-CecA-LysSS expression cassette diagram.
-                  </p> </small>
-                  <p>
-                    This part contains the linear sequence of the PCNP-CecA-LysSS nucleotide optimized for <em>E.
-                      coli</em>. It incorporates some of the most efficient biobricks as described below: the T7
-                    promoter with LacO regulation, the medium strength RBS, and the triple terminator. For our plasmid
-                    construction, we used the high copy pUC ori /Kan R backbone. It also contains a fusion protein based
-                    on three main parts: the polycationic nonapeptide (PCNP), Cecropin A peptide, and the LysSS protein,
-                    all integrated with flexible linkers that assure its functionality.<sup>7,8,9</sup>
-                  </p>
+                    <p align="justify"> <small>
+                        <em><strong>Figure 13.</strong></em> PCNP-CecA-LysSS
+                        expression cassette diagram.
+                      </p> </small>
+                    <p>
+                      This part contains the linear sequence of the
+                      PCNP-CecA-LysSS nucleotide optimized for <em>E.
+                        coli</em>. It incorporates some of the most efficient
+                      biobricks as described below: the T7
+                      promoter with LacO regulation, the medium strength RBS,
+                      and the triple terminator. For our plasmid
+                      construction, we used the high copy pUC ori /Kan R
+                      backbone. It also contains a fusion protein based
+                      on three main parts: the polycationic nonapeptide (PCNP),
+                      Cecropin A peptide, and the LysSS protein,
+                      all integrated with flexible linkers that assure its
+                      functionality.<sup>7,8,9</sup>
+                    </p>
                   </p>
                 </div>
               </div>
             </div>
           </div>
+        </p>
+        <div class="texthide">
+          <p align="justify">
+            The coding sequence (CDS) of the three recombinant intein-fusion
+            proteins (LysK endolysin, LysCSA13, and
+            LysSS)
+            was <em> in silico</em> edited to incorporate BsaI enzyme
+            recognition sites at the ends of the sequence.
+            In
+            the same way, each CDS design has been evaluated through the protein
+            structural model analysis tool, Alpha
+            Fold 2, to identify the original functional protein structures and
+            compare them with our final designs,
+            ensuring their enzymatic activity (Figure 1 - 3). The best
+            LysCSA13-ABD option was developed by
+            identifying
+            that the presence of 6x HisTag (c) affects the functional protein
+            domains (Figure 1) in comparison to the
+            original LysCSA13 (a) and LysCSA13-ABD (b) structures. To solve this
+            problem, we added a TEV site to its
+            posterior removal (d). In the case of LysK-ABD-SH3B30 (Figure 2), we
+            realized that the addition of the X6
+            HisTag (c) didn’t affect the protein’s functionality, and in
+            comparison between the original LysK (a) and
+            LysK-ABD-SH3B0 (d) sequences, no issue was encountered. Finally,
+            (Figure 3) LysSS demonstrated that using
+            short flexible linkers, any of the original peptide sequences (a),
+            (b), or LysSS original protein sequence
+            (c) would have been affected, so the final design (d) conserved its
+            enzymatic activity. Additionally, we
+            assured that all our final intein-fusion proteins kept the original
+            proteins’ distribution with functional
+            domains.
           </p>
-          <div class="texthide">
-            <p align="justify">
-              The coding sequence (CDS) of the three recombinant intein-fusion proteins (LysK endolysin, LysCSA13, and
-              LysSS)
-              was <em> in silico</em> edited to incorporate BsaI enzyme recognition sites at the ends of the sequence.
-              In
-              the same way, each CDS design has been evaluated through the protein structural model analysis tool, Alpha
-              Fold 2, to identify the original functional protein structures and compare them with our final designs,
-              ensuring their enzymatic activity (Figure 1 - 3). The best LysCSA13-ABD option was developed by
-              identifying
-              that the presence of 6x HisTag (c) affects the functional protein domains (Figure 1) in comparison to the
-              original LysCSA13 (a) and LysCSA13-ABD (b) structures. To solve this problem, we added a TEV site to its
-              posterior removal (d). In the case of LysK-ABD-SH3B30 (Figure 2), we realized that the addition of the X6
-              HisTag (c) didn’t affect the protein’s functionality, and in comparison between the original LysK (a) and
-              LysK-ABD-SH3B0 (d) sequences, no issue was encountered. Finally, (Figure 3) LysSS demonstrated that using
-              short flexible linkers, any of the original peptide sequences (a), (b), or LysSS original protein sequence
-              (c) would have been affected, so the final design (d) conserved its enzymatic activity. Additionally, we
-              assured that all our final intein-fusion proteins kept the original proteins’ distribution with functional
-              domains.
-            </p>
-            <br>
-            <img class="responsive"
-              src="https://static.igem.wiki/teams/4607/wiki/parts/900-px-todas-las-proteinas-de-lyscsa13-alphafold.jpg">
-            <br>
-            <p><b>Figure 1.</b> Alpha Fold 2’s LysCSA13-ABD protein folding analysis.
-              (a) Original folding from LysCSA13 . (b) Folding of LysCSA13-ABD (c)
-              LysCSA13-ABD-6X HisTag’s folding. (d) LysCSA13-ABD-TEV Site-X6 HisTag’s folding.</p>
-            <img class="responsive"
-              src="https://static.igem.wiki/teams/4607/wiki/parts/900-px-todas-las-proteinas-de-lysk-alpha-fold.jpg">
-            <br>
-            <p><b>Figure 2.</b> Alpha Fold 2’s LysK-ABD-SH3B30 protein folding analysis.
-              (a) Original folding from LysK . (b) LysK-ABD-SH3B30-TEV Site-6X HisTag’s
-              folding (c) LysK-ABD-SH3B30-X6 HisTag’s folding. (d) LysK-ABD-SH3B30’s folding.</p>
-            <img class="responsive"
-              src="https://static.igem.wiki/teams/4607/wiki/parts/900-px-todas-las-proteinas-de-lysss-en-alpha-fold.jpg">
-            <br>
-            <p><b>Figure 3.</b> Alpha Fold 2’s PCNP-CecA-LysSS protein folding analysis.
-              (a) Folding from the PCNP fused with OBPgp279 protein. (b) CecA-Lys10-24
-              protein’s folding (c) Original LysSS’s folding. (d) PCNP-CecA-LysSS-6X HisTag’s folding.</p>
-            <p align="justify">
-              The selected components for the construction of the transcriptional units were:
+          <br>
+          <img class="responsive"
+            src="https://static.igem.wiki/teams/4607/wiki/parts/900-px-todas-las-proteinas-de-lyscsa13-alphafold.jpg">
+          <br>
+          <p><b>Figure 1.</b> Alpha Fold 2’s LysCSA13-ABD protein folding
+            analysis.
+            (a) Original folding from LysCSA13 . (b) Folding of LysCSA13-ABD (c)
+            LysCSA13-ABD-6X HisTag’s folding. (d) LysCSA13-ABD-TEV Site-X6
+            HisTag’s folding.</p>
+          <img class="responsive"
+            src="https://static.igem.wiki/teams/4607/wiki/parts/900-px-todas-las-proteinas-de-lysk-alpha-fold.jpg">
+          <br>
+          <p><b>Figure 2.</b> Alpha Fold 2’s LysK-ABD-SH3B30 protein folding
+            analysis.
+            (a) Original folding from LysK . (b) LysK-ABD-SH3B30-TEV Site-6X
+            HisTag’s
+            folding (c) LysK-ABD-SH3B30-X6 HisTag’s folding. (d)
+            LysK-ABD-SH3B30’s folding.</p>
+          <img class="responsive"
+            src="https://static.igem.wiki/teams/4607/wiki/parts/900-px-todas-las-proteinas-de-lysss-en-alpha-fold.jpg">
+          <br>
+          <p><b>Figure 3.</b> Alpha Fold 2’s PCNP-CecA-LysSS protein folding
+            analysis.
+            (a) Folding from the PCNP fused with OBPgp279 protein. (b)
+            CecA-Lys10-24
+            protein’s folding (c) Original LysSS’s folding. (d)
+            PCNP-CecA-LysSS-6X HisTag’s folding.</p>
+          <p align="justify">
+            The selected components for the construction of the transcriptional
+            units were:
             <ul>
               <li>Promoter: BBa_J435350</li>
               <li>RBS: BBa_Z0262</li>
               <li>Terminator: BBa_J435371</li>
               <li>Backbone: BBa_J435330</li>
             </ul>
-            </p>
-            <p align="justify">
-              Our parts were assembled in SnapGene® software using the Golden Gate method, employing the type IIS
-              restriction enzyme BsaI.
-              The transcriptional units (TUs) of each of our endolysins (TU LysK, TU LysCSA13, and TU LysSS) were
-              synthesized by Twist Bioscience, making this possible by the sponsorship of 10 kb of FREE Twist Gene
-              Fragments for iGEM teams. This genetic material was delivered lyophilized with a total of 1000 ng per
-              tube, which were resuspended in 100 µL of TE to achieve a final concentration of 10 ng/mL for each of the
-              transcriptional units. Subsequently, aliquots of each TU were prepared to proceed with the Golden Gate
-              assembly reaction.
-            </p>
-          </div>
-          <div class="texthide">
-            <h2>2nd round: Golden Gate Assembly and identificaton</h2>
+          </p>
+          <p align="justify">
+            Our parts were assembled in SnapGene® software using the Golden Gate
+            method, employing the type IIS
+            restriction enzyme BsaI.
+            The transcriptional units (TUs) of each of our endolysins (TU LysK,
+            TU LysCSA13, and TU LysSS) were
+            synthesized by Twist Bioscience, making this possible by the
+            sponsorship of 10 kb of FREE Twist Gene
+            Fragments for iGEM teams. This genetic material was delivered
+            lyophilized with a total of 1000 ng per
+            tube, which were resuspended in 100 µL of TE to achieve a final
+            concentration of 10 ng/mL for each of the
+            transcriptional units. Subsequently, aliquots of each TU were
+            prepared to proceed with the Golden Gate
+            assembly reaction.
+          </p>
+        </div>
+        <div class="texthide">
+          <h2>2nd round: Golden Gate Assembly and identificaton</h2>
+          <br>
+          <br>
+          <h3 style="text-align: center;">Golden Gate Assembly Reaction</h3>
+          <br>
+          <p align="justify">
+            From the iGem 2023 plate, the BioBrick™ BBa_J435330 (plate 2, well
+            A15) was resuspended, which was
+            transformed into <em>E. coli 5-alpha</em> by heat shock, and
+            subsequently extracted and purified with the
+            PureLink™ Quick Plasmid Miniprep Kit (Invitrogen™, Lot #01260760).
+            This part was chosen as the backbone
+            due to its high replication origin, dual antibiotic resistance
+            (kanamycin and ampicillin), and
+            compatibility with the Golden Gate assembly method. Once the
+            BBa_J435330 backbone was extracted and
+            purified, Golden Gate assembly reactions were performed using the
+            BsaI enzyme (NEB E1601, Lot #10182427)
+            to insert each of the transcriptional units into the BBa_J435330
+            backbone.
+          </p>
+          <br>
+          <p align="justify">
+            After the Golden Gate assembly reaction, a bacterial transformation
+            into <em>E. coli 5-alpha</em> was
+            performed, followed by plating on LB agar with kanamycin (50 µg/mL).
+            However, colonies were obtained both
+            on the plates seeded with the transformation and in the negative
+            controls. This led us to suspect that the
+            plates from the Golden Gate reaction might contain a mixture of
+            colonies transformed with the target
+            construct and others transformed with the backbone alone, making
+            them indistinguishable by visual
+            inspection.
+          </p>
+          <br>
+          <p align="justify">
+            To confirm this, re-plating of several colonies from the same plate
+            was conducted onto other plates with
+            kanamycin and ampicillin. This was done in order to take advantage
+            of the dual antibiotic resistance
+            feature present in the used backbone. A colony from the
+            reaction-seeded plate was selected and then plated
+            onto two separate plates: one with kanamycin (50 µg/mL) and another
+            with ampicillin (100 µg/mL). The same
+            identifying number was assigned to both antibiotics. The next day,
+            observation revealed that some colonies
+            grew on both antibiotics, while specific colonies only grew on
+            kanamycin (50 µg/mL) and on ampicillin
+            there wasn't any growth (100 µg/mL). This suggested that these
+            colonies might have been transformed with a
+            construct carrying resistance only to kanamycin (50 µg/mL) and not
+            to ampicillin. This led us to suspect
+            that our construct might indeed be present in these colonies.
+          </p>
+          <br>
+          <p align="justify">
+            To verify this, a colony that exhibited only kanamycin resistance
+            (50 µg/mL) was selected. DNA plasmid
+            extraction and purification were performed using the PureLink™ Quick
+            Plasmid Miniprep Kit (Invitrogen™,
+            Lot #01260760). Subsequently, enzymatic digestion was carried out to
+            linearize the DNA, followed by
+            agarose gel electrophoresis for result visualization.
+          </p>
+          <br>
+          <h3 style="text-align: center;">Evaluation of the resulting constructs</h3>
+          <br>
+          <br>
+          <p align="justify">
+            Using SnapGene® software, a simulation of enzymatic digestion was
+            conducted on the constructs to identify
+            potential enzymes for linearization. Subsequently, in the
+            laboratory, the digestion reaction of the three
+            constructs LysK, LysCSA13, and LysSS was performed using SmaI and
+            EcoRI restriction enzymes. LysK was
+            linearized by the SmaI enzyme, while both LysCSA13 and LysSS were
+            linearized by EcoRI (Figure 5).
             <br>
             <br>
-            <h3 style="text-align: center;">Golden Gate Assembly Reaction</h3>
-            <br>
-            <p align="justify">
-              From the iGem 2023 plate, the BioBrick™ BBa_J435330 (plate 2, well A15) was resuspended, which was
-              transformed into <em>E. coli 5-alpha</em> by heat shock, and subsequently extracted and purified with the
-              PureLink™ Quick Plasmid Miniprep Kit (Invitrogen™, Lot #01260760). This part was chosen as the backbone
-              due to its high replication origin, dual antibiotic resistance (kanamycin and ampicillin), and
-              compatibility with the Golden Gate assembly method. Once the BBa_J435330 backbone was extracted and
-              purified, Golden Gate assembly reactions were performed using the BsaI enzyme (NEB E1601, Lot #10182427)
-              to insert each of the transcriptional units into the BBa_J435330 backbone.
-            </p>
-            <br>
-            <p align="justify">
-              After the Golden Gate assembly reaction, a bacterial transformation into <em>E. coli 5-alpha</em> was
-              performed, followed by plating on LB agar with kanamycin (50 µg/mL). However, colonies were obtained both
-              on the plates seeded with the transformation and in the negative controls. This led us to suspect that the
-              plates from the Golden Gate reaction might contain a mixture of colonies transformed with the target
-              construct and others transformed with the backbone alone, making them indistinguishable by visual
-              inspection.
-            </p>
-            <br>
-            <p align="justify">
-              To confirm this, re-plating of several colonies from the same plate was conducted onto other plates with
-              kanamycin and ampicillin. This was done in order to take advantage of the dual antibiotic resistance
-              feature present in the used backbone. A colony from the reaction-seeded plate was selected and then plated
-              onto two separate plates: one with kanamycin (50 µg/mL) and another with ampicillin (100 µg/mL). The same
-              identifying number was assigned to both antibiotics. The next day, observation revealed that some colonies
-              grew on both antibiotics, while specific colonies only grew on kanamycin (50 µg/mL) and on ampicillin
-              there wasn't any growth (100 µg/mL). This suggested that these colonies might have been transformed with a
-              construct carrying resistance only to kanamycin (50 µg/mL) and not to ampicillin. This led us to suspect
-              that our construct might indeed be present in these colonies.
-            </p>
-            <br>
-            <p align="justify">
-              To verify this, a colony that exhibited only kanamycin resistance (50 µg/mL) was selected. DNA plasmid
-              extraction and purification were performed using the PureLink™ Quick Plasmid Miniprep Kit (Invitrogen™,
-              Lot #01260760). Subsequently, enzymatic digestion was carried out to linearize the DNA, followed by
-              agarose gel electrophoresis for result visualization.
-            </p>
-            <br>
-            <h3 style="text-align: center;">Evaluation of the resulting constructs</h3>
+            <img class="responsive"
+              src="https://static.igem.wiki/teams/4607/wiki/parts/agarosas/todas-las-agarosas.jpg">
             <br>
             <br>
-            <p align="justify">
-              Using SnapGene® software, a simulation of enzymatic digestion was conducted on the constructs to identify
-              potential enzymes for linearization. Subsequently, in the laboratory, the digestion reaction of the three
-              constructs LysK, LysCSA13, and LysSS was performed using SmaI and EcoRI restriction enzymes. LysK was
-              linearized by the SmaI enzyme, while both LysCSA13 and LysSS were linearized by EcoRI (Figure 5).
-              <br>
-              <br>
-              <img class="responsive"
-                src="https://static.igem.wiki/teams/4607/wiki/parts/agarosas/todas-las-agarosas.jpg">
-              <br>
-              <br>
-              <b>Figure 5.</b> pDNA agarose gel electrophoresis (1%). (a) Lane 1. Quick-Load® Purple 1 kb Plus DNA
-              Ladder. Lane 2. LysK digested with single-cut enzyme SmaI (2997 bp) pDNA. Lane 3. Negative control LysK
-              digestion (2997 bp) pDNA. (b) Lane 4. Quick-Load® Purple 1 kb Plus DNA Ladder. Lane 5. LysCSA13 digested
-              with single-cut enzyme EcoRI. Lane 6. Negative control LysCSA13 digestion (3159 bp) pDNA. (c) Lane 7.
-              LysSS digested with single-cut enzyme EcoRI (2892 bp). Lane 8. Negative control LysSS digestion (2892 bp)
-              pDNA. Lane 9. Quick-Load® Purple 1 kb Plus DNA Ladder.
-              <br>
-            </p>
-          </div>
-          <div class="texthide">
-            <h2>3rd round: Induction and purification of endolysins</h2>
+            <b>Figure 5.</b> pDNA agarose gel electrophoresis (1%). (a) Lane 1.
+            Quick-Load® Purple 1 kb Plus DNA
+            Ladder. Lane 2. LysK digested with single-cut enzyme SmaI (2997 bp)
+            pDNA. Lane 3. Negative control LysK
+            digestion (2997 bp) pDNA. (b) Lane 4. Quick-Load® Purple 1 kb Plus
+            DNA Ladder. Lane 5. LysCSA13 digested
+            with single-cut enzyme EcoRI. Lane 6. Negative control LysCSA13
+            digestion (3159 bp) pDNA. (c) Lane 7.
+            LysSS digested with single-cut enzyme EcoRI (2892 bp). Lane 8.
+            Negative control LysSS digestion (2892 bp)
+            pDNA. Lane 9. Quick-Load® Purple 1 kb Plus DNA Ladder.
             <br>
-            <p align="justify">
-              The next step of our recombinant protein production process was grouped into the third round of
-              experimentation. All the selection, optimization, and standardization of our protein induction protocols
-              were performed as follows:
-            </p>
-            <br>
-            <h3 style="text-align: center;">Protein production</h3>
-            <br>
-            <p align="justify">
-              Our constructs contain the biobrick BBa_J435350, a T7 promoter with LacO regulation regions. It was chosen
-              because of its high transcription levels, and regulation activity. To induce the protein production of
-              our <em>E. coli</em> BL21 (DE3) transformants, isopropyl β-D-1 thiogalactopyranoside (IPTG) was used as
-              inducer for the LacO regulation regions, then the reagent makes the transformants available to synthetize
-              our endolysins.
-            </p>
-            <br>
-            <h3 style="text-align: center;">Protein induction kinetics</h3>
-            <br>
-            <p align="justify">
-              To identify the best protein induction parameters, protein induction
-              kinetics were performed. Based on previous studies, we identified that
-              the optimal temperature and time conditions were about 6 hours at 37° C.
-              Related to the IPTG concentration, the experiments were performed at 0.2 mM,
-              0.5 mM, and 1 mM, for all of our transformants. The inductions were performed
-              with the <em>E. coli</em> BL21 (DE3) transformed with the expression plasmids
-              obtained from the Golden Gate Assembly. <br><br> Protein induction kinetics were
-              performed at 37° C, for 6 hours at maximum agitation in an orbital shaker.
-              Five treatments were included for each endolysin: Negative control with <em>E.
-              coli</em> BL21 (DE3), negative control with <em>E. coli</em> BL21 (DE3) transformed
-              with the endolysin without IPTG induction, and three <em>E. coli</em> BL21 (DE3) transformed
-              with the endolysin induced at three different concentrations of IPTG, 0.2 mM, 0.5 mM, and 1 mM.
-              The samples were collected by hour, obtaining 200 μL, by each treatment. <br><br> To
-              identify the best induction parameters, a SDS-PAGE was performed. Considering that the
-              molecular weight of LysCSA13-ABD was 35.098 kDa, and LysK-ABD-SH3B30 weights 28.437 kDa.
-              The concentrations of the SDS-PAGE phases were 12% and 6%, for separator and concentrator
-              phases respectively. The best parameters were IPTG at 0.2 mM and 5 hours for LysCSA13-ABD,
-              while LysK-ABD-SH3B30 requires 6 hours at the same IPTG concentration, results can be seen in Figures 6 &
-              7.
-            </p>
-              <img class="responsive" src="https://static.igem.wiki/teams/4607/wiki/parts/lyscsa13-abd-kinetic-sds.jpg">
-            <p>
-              <b>Figure 6. LysCSA13-ABD 0.2 mM IPTG protein induction kinetic.</b> <em> A) ColorBurst protein ladder. B)
-              E. coli BL21 (DE3). C) E. coli BL21 (DE3)- LysCSA13-ABD non-inducted, fourth hour. D) E. coli BL21
-              (DE3)- LysCSA13-ABD inducted at 0.2 mM IPTG, fourth hour. E) E. coli BL21 (DE3)- LysCSA13-ABD
-              non-inducted, fifth hour. F) E. coli BL21 (DE3)- LysCSA13-ABD inducted at 0.2 mM IPTG, fifth hour. G) E.
-              coli BL21 (DE3)- LysCSA13-ABD non-inducted, sixth hour. H) E. coli BL21 (DE3)- LysCSA13-ABD inducted at
+          </p>
+        </div>
+        <div class="texthide">
+          <h2>3rd round: Induction and purification of endolysins</h2>
+          <br>
+          <p align="justify">
+            The next step of our recombinant protein production process was
+            grouped into the third round of
+            experimentation. All the selection, optimization, and
+            standardization of our protein induction protocols
+            were performed as follows:
+          </p>
+          <br>
+          <h3 style="text-align: center;">Protein production</h3>
+          <br>
+          <p align="justify">
+            Our constructs contain the biobrick BBa_J435350, a T7 promoter with
+            LacO regulation regions. It was chosen
+            because of its high transcription levels, and regulation activity.
+            To induce the protein production of
+            our <em>E. coli</em> BL21 (DE3) transformants, isopropyl β-D-1
+            thiogalactopyranoside (IPTG) was used as
+            inducer for the LacO regulation regions, then the reagent makes the
+            transformants available to synthetize
+            our endolysins.
+          </p>
+          <br>
+          <h3 style="text-align: center;">Protein induction kinetics</h3>
+          <br>
+          <p align="justify">
+            To identify the best protein induction parameters, protein induction
+            kinetics were performed. Based on previous studies, we identified
+            that
+            the optimal temperature and time conditions were about 6 hours at
+            37° C.
+            Related to the IPTG concentration, the experiments were performed at
+            0.2 mM,
+            0.5 mM, and 1 mM, for all of our transformants. The inductions were
+            performed
+            with the <em>E. coli</em> BL21 (DE3) transformed with the expression
+            plasmids
+            obtained from the Golden Gate Assembly. <br><br> Protein induction
+            kinetics were
+            performed at 37° C, for 6 hours at maximum agitation in an orbital
+            shaker.
+            Five treatments were included for each endolysin: Negative control
+            with <em>E.
+              coli</em> BL21 (DE3), negative control with <em>E. coli</em> BL21
+            (DE3) transformed
+            with the endolysin without IPTG induction, and three <em>E. coli</em>
+            BL21 (DE3) transformed
+            with the endolysin induced at three different concentrations of
+            IPTG, 0.2 mM, 0.5 mM, and 1 mM.
+            The samples were collected by hour, obtaining 200 μL, by each
+            treatment. <br><br> To
+            identify the best induction parameters, a SDS-PAGE was performed.
+            Considering that the
+            molecular weight of LysCSA13-ABD was 35.098 kDa, and LysK-ABD-SH3B30
+            weights 28.437 kDa.
+            The concentrations of the SDS-PAGE phases were 12% and 6%, for
+            separator and concentrator
+            phases respectively. The best parameters were IPTG at 0.2 mM and 5
+            hours for LysCSA13-ABD,
+            while LysK-ABD-SH3B30 requires 6 hours at the same IPTG
+            concentration, results can be seen in Figures 6 &
+            7.
+          </p>
+          <img class="responsive"
+            src="https://static.igem.wiki/teams/4607/wiki/parts/lyscsa13-abd-kinetic-sds.jpg">
+          <p>
+            <b>Figure 6. LysCSA13-ABD 0.2 mM IPTG protein induction kinetic.</b>
+            <em> A) ColorBurst protein ladder. B)
+              E. coli BL21 (DE3). C) E. coli BL21 (DE3)- LysCSA13-ABD
+              non-inducted, fourth hour. D) E. coli BL21
+              (DE3)- LysCSA13-ABD inducted at 0.2 mM IPTG, fourth hour. E) E.
+              coli BL21 (DE3)- LysCSA13-ABD
+              non-inducted, fifth hour. F) E. coli BL21 (DE3)- LysCSA13-ABD
+              inducted at 0.2 mM IPTG, fifth hour. G) E.
+              coli BL21 (DE3)- LysCSA13-ABD non-inducted, sixth hour. H) E. coli
+              BL21 (DE3)- LysCSA13-ABD inducted at
               0.2 mM IPTG, sixth hour. I) E. coli BL21 (DE3), first hour.</em>
+          </p>
+          <img class="responsive"
+            src="https://static.igem.wiki/teams/4607/wiki/parts/sds/lysk-abd-sh3b30-kinetic-sds.jpg">
+          <p>
+            <b>Figure 7. LysK-ABD-SH3B30 0.2 mM IPTG protein induction kinetic.</b>
+            <em> A) ColorBurst protein ladder.
+              B) E. coli BL21 (DE3). C) E. coli BL21 (DE3)- LysK-ABD-SH3B30
+              non-inducted, fourth hour. D) E. coli BL21
+              (DE3)- LysK-ABD-SH3B30 inducted at 0.2 mM IPTG, fourth hour. E) E.
+              coli BL21 (DE3)- LysK-ABD-SH3B30
+              non-inducted, fifth hour. F) E. coli BL21 (DE3)- LysK-ABD-SH3B30
+              inducted at 0.2 mM IPTG, fifth hour. G)
+              E. coli BL21 (DE3)- LysK-ABD-SH3B30 non-inducted, sixth hour. H)
+              E. coli BL21 (DE3)- LysK-ABD-SH3B30
+              inducted at 0.2 mM IPTG, sixth hour. I) E. coli BL21 (DE3), first
+              hour.</em>
+          </p>
+          <br>
+          <h3 style="text-align: center;">Insouble and soluble protein fractions</h3>
+          <br>
+          <p>
+            Once the best protein induction parameters were established, a new
+            SDS-PAGE was performed to assess the
+            protein expression site in the cell. Our endolysins were induced at
+            0.2 mM IPTG, for 5 (LysK-ABD-SH3B30)
+            and 6 (LysCSA13-ABD) hours at 37° C. We obtained a massive protein
+            expression after pellets were
+            harvested. To evaluate the expression site, the reagent B-PER
+            extracted the intracellular proteins,
+            liberating the soluble and insoluble proteins. For the LysCSA13-ABD
+            an insoluble fraction has been
+            demonstrated (Figure 8). On the other hand, LysK-ABD-SH3B30 yielded
+            typical results of a soluble protein
+            (Figure 9).
+            <img class="responsive"
+              src="https://static.igem.wiki/teams/4607/wiki/parts/lyscsa13-abd-kinetic-sds.jpg">
+            <p>
+              <b>Figure 8. LysCSA13-ABD soluble (A) and insoluble (B) fractions.</b>
+              <em> A) Both gels presented the
+                same distribution of wells, each one corresponding to the
+                fraction (soluble or insoluble) assigned. A)
+                MWM (for gel A: Precision Plus Protein Dual Color Standards
+                (10–250 kD), for gel B: PageRuler™ Plus
+                Prestained Protein Ladder, 10 to 250 kDa). B) E. coli BL21
+                (DE3). C) E. coli BL21 (DE3)- LysCSA13-ABD
+                non-induced. D) E. coli BL21 (DE3)- LysCSA13-ABD induced at 0.2
+                mM IPTG, 2 μL. E) E. coli BL21 (DE3)-
+                LysCSA13-ABD induced at 0.2 mM IPTG, 4 μL. F) E. coli BL21
+                (DE3)- LysCSA13-ABD induced at 0.2 mM IPTG, 6
+                μL. G) E. coli BL21 (DE3)- LysCSA13-ABD induced at 0.2 mM IPTG,
+                8 μL. H) E. coli BL21 (DE3)-
+                LysCSA13-ABD induced at 0.2 mM IPTG, 10 μL. I) E. coli BL21
+                (DE3)- LysCSA13-ABD induced at 0.2 mM IPTG,
+                15 μL. J) E. coli BL21 (DE3)- LysCSA13-ABD induced at 0.2 mM
+                IPTG, 20 μL.</em>
             </p>
-              <img class="responsive"
-                src="https://static.igem.wiki/teams/4607/wiki/parts/sds/lysk-abd-sh3b30-kinetic-sds.jpg">
-            <p style="margin: auto;">
-              <b>Figure 7. LysK-ABD-SH3B30 0.2 mM IPTG protein induction kinetic.</b> <em> A) ColorBurst protein ladder.
-              B) E. coli BL21 (DE3). C) E. coli BL21 (DE3)- LysK-ABD-SH3B30 non-inducted, fourth hour. D) E. coli BL21
-              (DE3)- LysK-ABD-SH3B30 inducted at 0.2 mM IPTG, fourth hour. E) E. coli BL21 (DE3)- LysK-ABD-SH3B30
-              non-inducted, fifth hour. F) E. coli BL21 (DE3)- LysK-ABD-SH3B30 inducted at 0.2 mM IPTG, fifth hour. G)
-              E. coli BL21 (DE3)- LysK-ABD-SH3B30 non-inducted, sixth hour. H) E. coli BL21 (DE3)- LysK-ABD-SH3B30
-              inducted at 0.2 mM IPTG, sixth hour. I) E. coli BL21 (DE3), first hour.</em>
-            </p>
-            <br>
-            <h3>Insouble and soluble protein fractions</h3>
-            <br>
-            <p align="justify">
-              Once the best protein induction parameters were established, a new SDS-PAGE was performed to assess the
-              protein expression site in the cell. Our endolysins were induced at 0.2 mM IPTG, for 5 (LysK-ABD-SH3B30)
-              and 6 (LysCSA13-ABD) hours at 37° C. We obtained a massive protein expression after pellets were
-              harvested. To evaluate the expression site, the reagent B-PER extracted the intracellular proteins,
-              liberating the soluble and insoluble proteins. For the LysCSA13-ABD an insoluble fraction has been
-              demonstrated (Figure 8). On the other hand, LysK-ABD-SH3B30 yielded typical results of a soluble protein
-              (Figure 9).
-              <br>
-              <br>
-              <img class="responsive" src="https://static.igem.wiki/teams/4607/wiki/parts/lyscsa13-abd-kinetic-sds.jpg">
-              <br>
-              <br>
-              <b>Figure 8. LysCSA13-ABD soluble (A) and insoluble (B) fractions.</b> <em> A) Both gels presented the
-                same distribution of wells, each one corresponding to the fraction (soluble or insoluble) assigned. A)
-                MWM (for gel A: Precision Plus Protein Dual Color Standards (10–250 kD), for gel B: PageRuler™ Plus
-                Prestained Protein Ladder, 10 to 250 kDa). B) E. coli BL21 (DE3). C) E. coli BL21 (DE3)- LysCSA13-ABD
-                non-induced. D) E. coli BL21 (DE3)- LysCSA13-ABD induced at 0.2 mM IPTG, 2 μL. E) E. coli BL21 (DE3)-
-                LysCSA13-ABD induced at 0.2 mM IPTG, 4 μL. F) E. coli BL21 (DE3)- LysCSA13-ABD induced at 0.2 mM IPTG, 6
-                μL. G) E. coli BL21 (DE3)- LysCSA13-ABD induced at 0.2 mM IPTG, 8 μL. H) E. coli BL21 (DE3)-
-                LysCSA13-ABD induced at 0.2 mM IPTG, 10 μL. I) E. coli BL21 (DE3)- LysCSA13-ABD induced at 0.2 mM IPTG,
-                15 μL. J) E. coli BL21 (DE3)- LysCSA13-ABD induced at 0.2 mM IPTG, 20 μL.</em>
-              <br>
-              <br>
-              <br>
-              <img class="responsive"
-                src="https://static.igem.wiki/teams/4607/wiki/parts/900-px-lyscsa13-abb-insol-and-sol.jpg">
-              <br>
-              <br>
-              <b>Figure 9. LysK-ABD-SH3B30 soluble (A) and insoluble (B) fractions. </b> <em> Both gels presented the
-                same distribution of wells, each one corresponding to the fraction (soluble or insoluble) assigned. A)
-                MWM (for gel A: Precision Plus Protein Dual Color Standards (10–250 kD), for gel B: PageRuler™ Plus
-                Prestained Protein Ladder, 10 to 250 kDa). B) E. coli BL21 (DE3). C) E. coli BL21 (DE3)- LysK-ABD-SH3B30
-                non-induced. D) E. coli BL21 (DE3)- LysK-ABD-SH3B30 induced at 0.2 mM IPTG, 2 μL. E) E. coli BL21 (DE3)-
-                LysK-ABD-SH3B30 induced at 0.2 mM IPTG, 4 μL. F) E. coli BL21 (DE3)-LysK-ABD-SH3B30 induced at 0.2 mM
-                IPTG, 6 μL. G) E. coli BL21 (DE3)- LysK-ABD-SH3B30 induced at 0.2 mM IPTG, 8 μL. H) E. coli BL21 (DE3)-
-                LysK-ABD-SH3B30 induced at 0.2 mM IPTG, 10 μL. I) E. coli BL21 (DE3)- LysK-ABD-SH3B30 induced at 0.2 mM
-                IPTG, 15 μL. J) E. coli BL21 (DE3)-LysK-ABD-SH3B30 induced at 0.2 mM IPTG, 20 μL.
-              </em>
+            <img class="responsive"
+              src="https://static.igem.wiki/teams/4607/wiki/parts/900-px-lyscsa13-abb-insol-and-sol.jpg">
+            <p>
+              <b>Figure 9. LysK-ABD-SH3B30 soluble (A) and insoluble (B)
+                fractions. </b> <em> Both gels presented the
+                same distribution of wells, each one corresponding to the
+                fraction (soluble or insoluble) assigned. A)
+                MWM (for gel A: Precision Plus Protein Dual Color Standards
+                (10–250 kD), for gel B: PageRuler™ Plus
+                Prestained Protein Ladder, 10 to 250 kDa). B) E. coli BL21
+                (DE3). C) E. coli BL21 (DE3)- LysK-ABD-SH3B30
+                non-induced. D) E. coli BL21 (DE3)- LysK-ABD-SH3B30 induced at
+                0.2 mM IPTG, 2 μL. E) E. coli BL21 (DE3)-
+                LysK-ABD-SH3B30 induced at 0.2 mM IPTG, 4 μL. F) E. coli BL21
+                (DE3)-LysK-ABD-SH3B30 induced at 0.2 mM
+                IPTG, 6 μL. G) E. coli BL21 (DE3)- LysK-ABD-SH3B30 induced at
+                0.2 mM IPTG, 8 μL. H) E. coli BL21 (DE3)-
+                LysK-ABD-SH3B30 induced at 0.2 mM IPTG, 10 μL. I) E. coli BL21
+                (DE3)- LysK-ABD-SH3B30 induced at 0.2 mM
+                IPTG, 15 μL. J) E. coli BL21 (DE3)-LysK-ABD-SH3B30 induced at
+                0.2 mM IPTG, 20 μL.</em>
               <br>
             </p>
           </div>
+
           <div class="texthide">
             <h2>4th round: Protein characterization and enzymatic assays</h2>
             <p align="justify">
@@ -436,37 +600,63 @@
                   <div class="accordion-item-body-content">
 
                     <p align="justify">
-                      1. Cha, Y.; Son, B.; Ryu, S. Effective Removal of Staphylococcal Biofilms on Various Food Contact
-                      Surfaces by Staphylococcus Aureus Phage Endolysin LysCSA13. Food Microbiol. 2019, 84, 103245.
+                      1. Cha, Y.; Son, B.; Ryu, S. Effective Removal of
+                      Staphylococcal Biofilms on Various Food Contact
+                      Surfaces by Staphylococcus Aureus Phage Endolysin
+                      LysCSA13. Food Microbiol. 2019, 84, 103245.
                       https://doi.org/10.1016/j.fm.2019.103245. <br>
-                      2. Jarábková, V. SH3 BINDING DOMAINS FROM PHAGE ENDOLYSINS: HOW TO USE THEM FOR DETECTION OF
-                      GRAM-POSITIVE PATHOGENS. J. Microbiol. Biotechnol. Food Sci. 2020, 9 (6), 1215–1220.
+                      2. Jarábková, V. SH3 BINDING DOMAINS FROM PHAGE
+                      ENDOLYSINS: HOW TO USE THEM FOR DETECTION OF
+                      GRAM-POSITIVE PATHOGENS. J. Microbiol. Biotechnol. Food
+                      Sci. 2020, 9 (6), 1215–1220.
                       https://doi.org/10.15414/jmbfs.2020.9.6.1215-1220. <br>
-                      3. Seijsing, J.; Sobieraj, A. M.; Keller, N.; Shen, Y.; Zinkernagel, A. S.; Loessner, M. J.;
-                      Schmelcher, M. Improved Biodistribution and Extended Serum Half-Life of a Bacteriophage Endolysin
-                      by Albumin Binding Domain Fusion. Front. Microbiol. 2018, 9, 2927.
+                      3. Seijsing, J.; Sobieraj, A. M.; Keller, N.; Shen, Y.;
+                      Zinkernagel, A. S.; Loessner, M. J.;
+                      Schmelcher, M. Improved Biodistribution and Extended Serum
+                      Half-Life of a Bacteriophage Endolysin
+                      by Albumin Binding Domain Fusion. Front. Microbiol. 2018,
+                      9, 2927.
                       https://doi.org/10.3389/fmicb.2018.02927.<br>
-                      4. Haddad Kashani, H.; Schmelcher, M.; Sabzalipoor, H.; Seyed Hosseini, E.; Moniri, R. Recombinant
-                      Endolysins as Potential Therapeutics against Antibiotic-Resistant Staphylococcus Aureus: Current
-                      Status of Research and Novel Delivery Strategies. Clin. Microbiol. Rev. 2018, 31 (1), e00071-17.
+                      4. Haddad Kashani, H.; Schmelcher, M.; Sabzalipoor, H.;
+                      Seyed Hosseini, E.; Moniri, R. Recombinant
+                      Endolysins as Potential Therapeutics against
+                      Antibiotic-Resistant Staphylococcus Aureus: Current
+                      Status of Research and Novel Delivery Strategies. Clin.
+                      Microbiol. Rev. 2018, 31 (1), e00071-17.
                       https://doi.org/10.1128/CMR.00071-17.<br>
-                      5. Filatova, L. Y.; Donovan, D. M.; Ishnazarova, N. T.; Foster-Frey, J. A.; Becker, S. C.;
-                      Pugachev, V. G.; Balabushevich, N. G.; Dmitrieva, N. F.; Klyachko, N. L. A Chimeric
-                      LysK-Lysostaphin Fusion Enzyme Lysing Staphylococcus Aureus Cells: A Study of Both Kinetics of
-                      Inactivation and Specifics of Interaction with Anionic Polymers. Appl. Biochem. Biotechnol. 2016,
-                      180 (3), 544–557. https://doi.org/10.1007/s12010-016-2115-7.<br>
-                      6. Lade, H.; Kim, J.-S. Bacterial Targets of Antibiotics in Methicillin-Resistant Staphylococcus
-                      Aureus. Antibiotics 2021, 10 (4), 398. https://doi.org/10.3390/antibiotics10040398.<br>
-                      7. Briers, Y.; Walmagh, M.; Van Puyenbroeck, V.; Cornelissen, A.; Cenens, W.; Aertsen, A.;
-                      Oliveira, H.; Azeredo, J.; Verween, G.; Pirnay, J.-P.; Miller, S.; Volckaert, G.; Lavigne, R.
-                      Engineered Endolysin-Based “Artilysins” To Combat Multidrug-Resistant Gram-Negative Pathogens.
-                      mBio 2014, 5 (4), e01379-14. https://doi.org/10.1128/mBio.01379-14. <br>
-                      8. Jeong, T.-H.; Hong, H.-W.; Kim, M. S.; Song, M.; Myung, H. Characterization of Three Different
-                      Endolysins Effective against Gram-Negative Bacteria. Viruses 2023, 15 (3), 679.
+                      5. Filatova, L. Y.; Donovan, D. M.; Ishnazarova, N. T.;
+                      Foster-Frey, J. A.; Becker, S. C.;
+                      Pugachev, V. G.; Balabushevich, N. G.; Dmitrieva, N. F.;
+                      Klyachko, N. L. A Chimeric
+                      LysK-Lysostaphin Fusion Enzyme Lysing Staphylococcus
+                      Aureus Cells: A Study of Both Kinetics of
+                      Inactivation and Specifics of Interaction with Anionic
+                      Polymers. Appl. Biochem. Biotechnol. 2016,
+                      180 (3), 544–557.
+                      https://doi.org/10.1007/s12010-016-2115-7.<br>
+                      6. Lade, H.; Kim, J.-S. Bacterial Targets of Antibiotics
+                      in Methicillin-Resistant Staphylococcus
+                      Aureus. Antibiotics 2021, 10 (4), 398.
+                      https://doi.org/10.3390/antibiotics10040398.<br>
+                      7. Briers, Y.; Walmagh, M.; Van Puyenbroeck, V.;
+                      Cornelissen, A.; Cenens, W.; Aertsen, A.;
+                      Oliveira, H.; Azeredo, J.; Verween, G.; Pirnay, J.-P.;
+                      Miller, S.; Volckaert, G.; Lavigne, R.
+                      Engineered Endolysin-Based “Artilysins” To Combat
+                      Multidrug-Resistant Gram-Negative Pathogens.
+                      mBio 2014, 5 (4), e01379-14.
+                      https://doi.org/10.1128/mBio.01379-14. <br>
+                      8. Jeong, T.-H.; Hong, H.-W.; Kim, M. S.; Song, M.; Myung,
+                      H. Characterization of Three Different
+                      Endolysins Effective against Gram-Negative Bacteria.
+                      Viruses 2023, 15 (3), 679.
                       https://doi.org/10.3390/v15030679. <br>
-                      9. Kim, S.; Lee, D.-W.; Jin, J.-S.; Kim, J. Antimicrobial Activity of LysSS, a Novel Phage
-                      Endolysin, against Acinetobacter Baumannii and Pseudomonas Aeruginosa. J. Glob. Antimicrob.
-                      Resist. 2020, 22, 32–39. https://doi.org/10.1016/j.jgar.2020.01.005<br>
+                      9. Kim, S.; Lee, D.-W.; Jin, J.-S.; Kim, J. Antimicrobial
+                      Activity of LysSS, a Novel Phage
+                      Endolysin, against Acinetobacter Baumannii and Pseudomonas
+                      Aeruginosa. J. Glob. Antimicrob.
+                      Resist. 2020, 22, 32–39.
+                      https://doi.org/10.1016/j.jgar.2020.01.005<br>
                     </p>
 
                   </div>
@@ -476,13 +666,8 @@
             <br>
           </div>
 
-
-
-
-
-
-
-          <svg class="waveParts" id="visual" viewBox="0 0 960 540" xmlns="http://www.w3.org/2000/svg"
+          <svg class="waveParts" id="visual" viewBox="0 0 960 540"
+            xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
             <g>
               <path id="wave11"
@@ -506,7 +691,6 @@
                 d="M0 485L20 486.7C40 488.3 80 491.7 120 490.5C160 489.3 200 483.7 240 479.5C280 475.3 320 472.7 360 466.8C400 461 440 452 480 449.5C520 447 560 451 600 458.2C640 465.3 680 475.7 720 478.3C760 481 800 476 840 469C880 462 920 453 940 448.5L960 444L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
                 fill="#5BC5AB"></path>
             </g>
-
 
           </svg>
 
@@ -563,7 +747,5 @@
 
         </div>
       </div>
-
-
 
       {% endblock %}
