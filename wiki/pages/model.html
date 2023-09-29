@@ -1138,7 +1138,7 @@
  		 <p class="contenido">Drawing from the available literature, we have acquired the essential chemical reactions governing our system's behavior. These reactions laid the groundwork for formulating our ODEs.</p>
 
 
-							<div class="box-wrap">
+		<div class="box-wrap">
 								<div class="table-wrap">
 									<table class="tabla_chemicalReactios">
 										<p style="
@@ -1831,9 +1831,7 @@
 										</tbody>
 									</table>
 								</div>
-							</div>
-						
-
+		</div>
 		<div  class="tituloContenido">
 			<br>
 		  <h5>Ordinary Differential Equations</h5>
@@ -3581,11 +3579,255 @@
 						<td></td>
 						<td></td>	   
 					</tr>
-
-
-
 				</tbody>
 			</table>
+			<br>
+			<div  class="tituloContenido">
+				<br>
+			  <h5>Initial conditions</h5>
+			</div>
+			<br>
+			<table class="tabla_chemicalReactios">
+				<p style="
+				height: 6px;
+				left: -28px;
+				position: relative;"><b>Table 3.</b> Initial conditions on the IPTG induction model.</p>
+					  <tr>
+						  <th>Variable</th>
+						  <th>Meaning</th>
+						  <th>Representation</th>
+						  <th>Value</th>
+						  <th>Unit</th>
+					  </tr>
+				  <tbody>
+					  <tr>
+						  <td><math display='block'>
+							<mi>I</mi>
+						   </math>
+						   </td>
+						   <td>Free IPTG inside the cell</td>
+						   <td><img src="https://static.igem.wiki/teams/4607/wiki/modelo/especies/ii-removebg-preview.png"  style="max-width:12vh;max-height:8vh;"></td>
+						  <td>0</td>
+						  <td><math display='block'>
+							<mi>n</mi><mi>M</mi>
+						   </math>
+					 </tr>
+					 <tr>
+						<td><math display='block'>
+							<msub>
+							 <mi>I</mi>
+							 <mrow>
+							  <mi>e</mi><mi>x</mi><mi>t</mi></mrow>
+							</msub>
+						   </math>
+						   </td>
+						<td>Extracelular IPTG</td>
+						<td><img src="https://static.igem.wiki/teams/4607/wiki/modelo/especies/ie.png"  style="max-width:12vh;max-height:8vh;"></td>
+						<td>1</td>
+						<td><math display='block'>
+							<mi>n</mi><mi>M</mi>
+						   </math></td>
+					</tr>
+					<tr>
+						<td><math display='block'>
+							<mi>O</mi>
+						   </math>
+						</td>
+						<td>Free operator</td>
+						<td><img src="https://static.igem.wiki/teams/4607/wiki/modelo/especies/o-removebg-preview.png"  style="max-width:12vh;max-height:12vh;"></td>
+						<td>0</td>
+						<td><math display='block'>
+							<mi>n</mi><mi>M</mi>
+						   </math></td>
+					</tr>
+					<tr>
+						<td><math display='block'>
+							<mi>G</mi>
+						   </math>
+						   </td>
+						<td>Gene of the repressor</td>
+						<td><img src="https://static.igem.wiki/teams/4607/wiki/modelo/especies/laci-removebg-preview.png"  style="max-width:12vh;max-height:12vh;"></td>
+						<td></td>
+						<td><math display='block'>
+							<mi>n</mi><mi>M</mi>
+						   </math></td>
+					</tr>
+					<tr>
+						<td><math display='block'>
+							<msub>
+							 <mi>M</mi>
+							 <mrow>
+							  <mi>L</mi><mi>I</mi></mrow>
+							</msub>
+						   </math>
+						   </td>
+						<td>mRNA of the repressor </td>
+						<td><img src="https://static.igem.wiki/teams/4607/wiki/modelo/especies/mr-removebg-preview.png"  style="max-width:12vh;max-height:12vh;"></td>
+						<td></td>
+						<td><math display='block'>
+							<mi>n</mi><mi>M</mi>
+						   </math></td>
+					</tr>
+					<tr>
+						<td><math display='block'>
+							<msub>
+							 <mi>R</mi>
+							 <mi>M</mi>
+							</msub>
+						   </math>
+						   </td>
+						<td>Monomer of the repressor</td>
+						<td><img src="https://static.igem.wiki/teams/4607/wiki/modelo/especies/rm-removebg-preview.png" style="max-width:12vh;max-height:8vh;"></td>
+						<td></td>
+						<td><math display='block'>
+							<mi>n</mi><mi>M</mi>
+						   </math></td>
+					</tr>
+					<tr>
+						<td><math display='block'>
+							<msub>
+							 <mi>R</mi>
+							 <mi>D</mi>
+							</msub>
+						   </math>
+						   </td>
+						<td>Dimer of the repressor</td>
+						<td><img src="https://static.igem.wiki/teams/4607/wiki/modelo/especies/rd-removebg-preview.png" style="max-width:12vh;max-height:8vh;"></td>
+						<td></td>
+						<td><math display='block'>
+							<mi>n</mi><mi>M</mi>
+						   </math></td>
+					</tr>
+					<tr>
+						<td><math display='block'>
+							<msub>
+							 <mi>R</mi>
+							 <mi>T</mi>
+							</msub>
+						   </math>
+						   </td>
+						<td>Tetramer of the repressor</td>
+						<td><img src="https://static.igem.wiki/teams/4607/wiki/modelo/especies/rt-removebg-preview.png" style="max-width:12vh;max-height:8vh;"></td>
+						<td>30<sup>14</sup></td>
+						<td><math display='block'>
+							<mi>n</mi><mi>M</mi>
+						   </math></td>
+					</tr>
+					<tr>
+						<td><math display='block'>
+							<msub>
+							 <mi>R</mi>
+							 <mi>D</mi>
+							</msub>
+							<mi>O</mi>
+						   </math>
+						   </td>
+						<td>Dimer-operator complex</td>
+						<td><img src="https://static.igem.wiki/teams/4607/wiki/modelo/especies/rdo-removebg-preview.png" style="max-width:12vh;max-height:8vh;"></td>
+						<td></td>
+						<td><math display='block'>
+							<mi>n</mi><mi>M</mi>
+						   </math></td>
+					</tr>
+					<tr>
+						<td><math display='block'>
+							<msub>
+							 <mi>I</mi>
+							 <mn>2</mn>
+							</msub>
+							<msub>
+							 <mi>R</mi>
+							 <mi>D</mi>
+							</msub>
+						   </math>
+						   </td>
+						<td>Dimer-IPTG complex</td>
+						<td><img src="https://static.igem.wiki/teams/4607/wiki/modelo/especies/ird-removebg-preview-1.png" style="max-width:12vh;max-height:8vh;"></td>
+						<td>0</td>
+						<td><math display='block'>
+							<mi>n</mi><mi>M</mi>
+						   </math></td>
+					</tr>
+					<tr>
+						<td><math display='block'>
+							<msub>
+							 <mi>R</mi>
+							 <mi>T</mi>
+							</msub>
+							<mi>O</mi>
+						   </math>
+						   </td>
+						<td>Tetramer-operator complex</td>
+						<td><img src="https://static.igem.wiki/teams/4607/wiki/modelo/especies/rto-removebg-preview.png" style="max-width:12vh;max-height:8vh;"></td>
+						<td></td>
+						<td><math display='block'>
+							<mi>n</mi><mi>M</mi>
+						   </math></td>
+					</tr>
+					<tr>
+						<td><math display='block'>
+							<msub>
+							 <mi>I</mi>
+							 <mi>n</mi>
+							</msub>
+							<msub>
+							 <mi>R</mi>
+							 <mi>T</mi>
+							</msub>
+						   </math>
+						   </td>
+						<td>Tetramer-IPTG complex</td>
+						<td><img src="https://static.igem.wiki/teams/4607/wiki/modelo/especies/irt-removebg-preview.png" style="max-width:12vh;max-height:8vh;"></td>
+						<td>0</td>
+						<td><math display='block'>
+							<mi>n</mi><mi>M</mi>
+						   </math></td>
+					</tr>
+					<tr>
+						<td><math display='block'>
+							<msub>
+							 <mi>M</mi>
+							 <mi>E</mi>
+							</msub>
+						   </math>
+						   </td>
+						<td>Endolysin mRNA</td>
+						<td><img src="https://static.igem.wiki/teams/4607/wiki/modelo/especies/me-removebg-preview.png" style="max-width:12vh;max-height:8vh;"></td>
+						<td>0</td>
+						<td><math display='block'>
+							<mi>n</mi><mi>M</mi>
+						   </math></td>
+					</tr>
+					<tr>
+						<td><math display='block'>
+							<mi>E</mi>
+						   </math>
+						   </td>
+						<td>Endolysin</td>
+						<td><img src="https://static.igem.wiki/teams/4607/wiki/modelo/especies/e-removebg-preview.png" style="max-width:12vh;max-height:8vh;"></td>
+						<td>0</td>
+						<td><math display='block'>
+							<mi>n</mi><mi>M</mi>
+						   </math></td>
+					</tr>
+					<tr>
+						<td><math display='block'>
+							<mo>&#x2205;</mo>
+						   </math>
+						   </td>
+						<td>Degradation</td>
+						<td><img src="https://static.igem.wiki/teams/4607/wiki/modelo/especies/nulo-removebg-preview.png" style="max-width:12vh;max-height:8vh;"></td>
+						<td></td>
+						<td><math display='block'>
+							<mi>n</mi><mi>M</mi>
+						   </math></td>
+					</tr>
+					 </tbody>
+					 </table>
+
+
+
+
    	 </div>
 
 
