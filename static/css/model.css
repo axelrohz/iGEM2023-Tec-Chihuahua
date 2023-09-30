@@ -1987,6 +1987,7 @@ margin-left: 30%;
   display: none;
 }
 
+
 /*frase del inicio despues del welcome page*/
 .fraseInicio{
   background: linear-gradient(#F2F2FAff,white);
@@ -2036,15 +2037,19 @@ margin-left: 30%;
     transform: perspective(500px) translate3d(0, 0, 0);
   }
 }
-/*imagen figuara dos 2 IPGT*/
+
+/*imagen figuara dos 2 IPGT*/  
+
 .imagenDos{
   margin-left: 27vw;
 }
+
 .textoFigura2{
   width: 26vw;
   font-size: 0.5vw;
   margin-left: 27vw;
 }
+
 h5{
   font-size: 2rem;
 }

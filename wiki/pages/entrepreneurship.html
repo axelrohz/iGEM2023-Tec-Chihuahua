@@ -281,43 +281,44 @@ iGEM project.{% endblock %}
                     </div>
                     <div class="pieholder">
                    
-                    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-                    <script type="text/javascript">
-                      google.charts.load("current", {packages:["corechart"]});
-                      google.charts.setOnLoadCallback(drawChart);
-                      function drawChart() {
-                        var data = google.visualization.arrayToDataTable([
-                          ['Implication', 'Percentage'],
-                          ['Milk production loss',     33.5],
-                          ['Veterinary fees and drug costs',  24  ],
-                          ['Loss due to discarded milk',  18],
-                          ['Cost due to excess labor demand', 4],
-                          ['Loss due to premature culling', 23]
-                          
-                          
+                        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                        <script type="text/javascript">
+                        google.charts.load("current", {packages:["corechart"]});
+                        google.charts.setOnLoadCallback(drawChart);
+                        function drawChart() {
+                            var data = google.visualization.arrayToDataTable([
+                            ['Implication', 'Percentage'],
+                            ['Milk production loss',     33.5],
+                            ['Veterinary fees and drug costs',  24  ],
+                            ['Loss due to discarded milk',  18],
+                            ['Cost due to excess labor demand', 4],
+                            ['Loss due to premature culling', 23]
+                            
+                            
 
-                        ]);
-                        
-                
-                        var options = {
-                          title: 'Cost of Mastitis',
-                          is3D: true,
-                          backgroundColor: "transparent",
-                          colors: ["#5BC5AB", "#C55B75", "#D27063", "#447D9C", "#DE8551"],
-                        };
-                
-                        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
-                        chart.draw(data, options);
-                      }
-                    </script>
-                    <div id="piechart_3d" style="width: 600px; height: 500px;"></div>
+                            ]);
+                            
                     
-                    <div class="parrafoder">
-                        Mastitis is the major infectious disease problem in dairy cows. Based on a global dairy cow population of 271 million dairy cows, it has been estimated that treating it costs the dairy industry around $19.7B–32B (USD) billion dollars per year<sup>1</sup>. These costs consist of several consequences that are triggered by this disease<sup></sup>. A visual representation of these implications can be visualized in Figure 1.
-                    </div>
+                            var options = {
+                            title: 'Cost of Mastitis',
+                            is3D: true,
+                            backgroundColor: "transparent",
+                            colors: ["#5BC5AB", "#C55B75", "#D27063", "#447D9C", "#DE8551"],
+                            };
+                    
+                            var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+                            chart.draw(data, options);
+                        }
+                        </script>
+                        <div id="piechart_3d" style="width: 600px; height: 500px;">
+                        </div>
+                        
+                        <div class="parrafoder">
+                            Mastitis is the major infectious disease problem in dairy cows. Based on a global dairy cow population of 271 million dairy cows, it has been estimated that treating it costs the dairy industry around $19.7B–32B (USD) billion dollars per year<sup>1</sup>. These costs consist of several consequences that are triggered by this disease<sup></sup>. A visual representation of these implications can be visualized in Figure 1.
+                        </div>
                    
                     
-                </div>
+                    </div>
                 
                 </div> 
                 <div class="container10">
@@ -368,7 +369,7 @@ iGEM project.{% endblock %}
                         }
                     }
                 </script>
-                
+            </div>    
                   
             
             <div id="scrlS3"> 
@@ -423,7 +424,7 @@ iGEM project.{% endblock %}
                             
                         </div>
                         
-                      </div>
+                    </div>
                     
                 </div>
                 
@@ -475,24 +476,26 @@ iGEM project.{% endblock %}
 
                         </div>
                         
-                    </div>
+                        
+                </div>
                 
                 <div id="scrlS34">
+                    
                     <div id="scrlS21">
                         <div class="oporttext16">   
                             Existing Solutions
-                           
+                            
                         </div>
                         <div class="parportu20">
                             Through the visits and interviews done with our users, we identified the existing solutions that dairy cattle owners currently use. Having heard first-hand about the competition let us do a better analysis, which basically consists on the following <a href="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/empathy-map-1.png" class="testEMP1">benchmarking</a>
                             The common factor among current treatments is that those falling under the antibiotic category leave residues in milk, requiring a withdrawal period of at least 3 days. This translates to wasted liters of milk and economic losses due to the discarded milk produced during those days. Moreover, the concerning issue of antibiotic resistance, stemming from their excessive use, adds to the complexity. Even the World Health Organization has underlined the impending risks associated with this and the urgent need to adopt alternative measures and treatments4. Furthermore, homeopathic treatments like oregano prove ineffective against the disease and, akin to antibiotics, leave residues in milk.
-
+    
                         </div> 
                     </div>
-
+                   
                        
                        
-                    </div>
+                </div>
                 <div id="scrlS35">
                     <div id="scrlS21">
                         <div class="oporttext14">   
@@ -509,9 +512,9 @@ iGEM project.{% endblock %}
 
                         </div>
                         
-                    </div>
                 </div>
-                </div>  
+            </div>
+                  
                 
             
             
@@ -525,7 +528,7 @@ iGEM project.{% endblock %}
                                     <br>
                                     What we're doing
                                 </p>
-                                <button onclick="showSection('sectionMethods')" class="learnMore">Learn More</button>
+                                <button onclick="showSectionVaca('sectionMethods')" class="learnMore">Learn More</button>
                             </div>
                         </div>
                         <div class="overview">
@@ -535,7 +538,7 @@ iGEM project.{% endblock %}
                                     <br>
                                     How we're doing it
                                 </p>
-                                <button onclick="showSection('sectionOverview')" class="learnMore">Learn More</button>
+                                <button onclick="showSectionVaca('sectionOverview')" class="learnMore">Learn More</button>
                             </div>
                         </div>
                         <div class="results">
@@ -545,7 +548,17 @@ iGEM project.{% endblock %}
                                     <br>
                                     What we need
                                 </p>
-                                <button onclick="showSection('sectionResults')" class="learnMore">Learn More</button>
+                                <button onclick="showSectionVaca('sectionResults')" class="learnMore">Learn More</button>
+                            </div>
+                        </div>
+                        <div class="ext">
+                            <div class="button-content">
+                                <p class="tituloBoton">Long-Term Impacts</p>
+                                <p class="contentBoton">
+                                    <br>
+                                    blba
+                                </p>
+                                <button onclick="showSectionVaca('sectionLong')" class="learnMore">Learn More</button>
                             </div>
                         </div>
                         <svg id="retina" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -557,288 +570,471 @@ iGEM project.{% endblock %}
                         </svg>
                         <img id="taffy" src="https://static.igem.wiki/teams/4607/wiki/project-description/project-description/taffysinojos.png">
                     </div>
-        
-                <script>
-                    function showSection(sectionId) {
-                // Hide all sections
-                var sections = document.querySelectorAll('#scrlS3 > div');
-                sections.forEach(function(section) {
-                    section.style.display = 'none';
-                });
-        
-                // Show the selected section
-                var selectedSection = document.getElementById(sectionId);
-                if (selectedSection) {
-                    selectedSection.style.display = 'block';
-                }
-                }
-        
-                </script>
                 </div>
+            
+                    
+                
                 <!--seccion que ya sirve arriba-->
-        
+            
                 <!--secciones-->
-                <div id="scrlS3"> <!--encapsula todos los divs-->
-                    <div id="sectionOverview" class="sectO"><!--seccion de overview-->
+                
+            <div id="sectionOverview" class="sectO"><!--seccion de overview-->
                 <div class="seccionesTituolo">
                     <div class="seccionOverview">
-                        
                     </div>
                 </div>
                 <div class="layout">
-                    <!--cosas del index-->
+                            <!--cosas del index-->
                     <div class="index1">
-                    <nav class="navigation">
-                        <ul>
-                        <li><a class="introduction" href="#">Business Model</a></li>
-                        <li><a class="conclusion" href="#">Time-Line</a></li>
-                        <li><a class="references" href="#">Financial Projection</a></li>
-                        <li><a class="references" href="#">Intellectual Property</a></li>
-                        <li><a class="references" href="#">Business Documents</a></li>
-                        <li><a class="references" href="">Legal Considerations</a></li>
-                        </ul>
-                    </nav>
+                            <nav class="navigation">
+                                <ul>
+                                <li><a class="introduction" href="#">Business Model</a></li>
+                                <li><a class="conclusion" href="#">Time-Line</a></li>
+                                <li><a class="references" href="#">Financial Projection</a></li>
+                                <li><a class="references" href="#">Intellectual Property</a></li>
+                                <li><a class="references" href="#">Business Documents</a></li>
+                                <li><a class="references" href="">Legal Considerations</a></li>
+                                </ul>
+                            </nav>
                     </div>
                     <div class="secciones">
-                    <div class="mkt-3dSlider py-6">
-        
-                       
-        
-                    </div>
-        
-        
-                    <div class="tituloContenido">
-                        <h3 id="introduction"><br><br><br><br>Bussines Model Canva</h3>
-                    </div>
-                    <div>
-                        <p class="contenido">
-                            Drafting a Business Model Canvas is crucial as it provides a structured framework to analyze, plan, and refine your startup's strategy. With AureoBos, we've used this powerful tool to clearly define how we create, deliver, and capture value in our innovative approach to tackling bovine mastitis.
-                            <img src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/business-model-canvas-planning-whiteboard-in-navy-yellow-purple-simple-colorful-style.png">
-                            To learn more about each step of our Business Model, click below. 
-                        </p>
-                        <div class="accordion-item">
-                            <div class="accordion-item-header">
-                                <h3 id="referencesO">Detailed Business Model</h3>
+                            <div class="mkt-3dSlider py-6">
+                
+                            
+                
                             </div>
-                            <div class="accordion-item-body">
-                                <div class="accordion-item-body-content">
-                                    <p class="contenido">
-                                        AureoBos 
+                
+                
+                            <div class="tituloContenido">
+                                <h3 id="introduction"><br><br><br><br>Bussines Model</h3>
+                            </div>
+                            <div>
+                                <p class="contenido">
+                                    We understand the problem we are addressing and have a clear vision of what we aim to achieve. Now, let's delve into the 'how' and explore the entire developmental process. In this section, you will find a comprehensive overview of the tools and development plans we have put in place to transform our project into a startup and take it through to the commercialization phase. It's worth noting that everything described here has been meticulously crafted and planned with the guidance and expertise of a diverse group of professionals in the field of entrepreneurship, ranging from experienced entrepreneurs to technical and business mentors from incubation programs, investors, and industry professionals.
+                                    <br>
+                                    <br>
+                                    <b> Business Model Canvas</b>
+                                    <br>
+                                    <br>
+                                    Drafting a Business Model Canvas is crucial as it provides a structured framework to analyze, plan, and refine your startup's strategy. With AureoBos, we've used this powerful tool to clearly define how we create, deliver, and capture value in our innovative approach to tackling bovine mastitis.
+                                    <img src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/business-model-canvas-planning-whiteboard-in-navy-yellow-purple-simple-colorful-style.png">
+                                    To learn more about each step of our Business Model, click below. 
+                                </p>
+                                <div class="accordion-item">
+                                    <div class="accordion-item-header">
+                                        <h3 id="referencesO">Detailed Business Model</h3>
+                                        
+                                    </div>
+                                    <div class="accordion-item-body">
+                                        <div class="accordion-item-body-content">
+                                            <p class="contenido">
+                                                <b> Value Proposition:</b>
+                                        AureoBos offers a revolutionary recombinant protein intramammary infusion therapy, designed to empower dairy cattle owners. Our innovative solution minimizes economic losses caused by mastitis infections by eliminating the milk withdrawal period. Unlike conventional antibiotic treatments, our therapy allows dairy producers to effectively treat mastitis without the costly disposal of milk. This not only ensures healthier cattle and high-quality milk but also contributes to reducing food waste and environmental contamination. AureoBos is not just a treatment; it's a sustainable and economically sound choice for the future of dairy farming.
+                                        <br>
+                                        <br>
+                                        <b> Customer Segments:</b>
+                                        Recalling that our end users are dairy cattle owners whose cows are affected by mastitis caused by one of the four microorganisms we are targeting, it's crucial to note that we have two distinct client segments. This distinction arises from the scale of production among our end users. Through interviews, we discovered that the way large-scale producers acquire their current treatments differs significantly from how medium and small-scale producers do.
+                                        As a result, we've identified these two segments. The first caters to large dairy producers who source their treatments directly from suppliers, while the second focuses on local pharmacies in the region where small and medium-scale producers typically find and purchase medications.
+                                        Recognizing the existence of these two different customer types enables us to plan realistically and strategically for how we can reach both effectively. It's also important to emphasize that while veterinary zootechnicians are not our ultimate customers, their recommendations to our clients and users hold significant weight in their decision-making process. Therefore, our marketing strategy to promote our product must consider them as a crucial part of the equation.
+                                        <br>
+                                        <br>
+                                        <b> Channels:</b>
+                                        In crafting our path to reach our Customer Segments and deliver our compelling Value Proposition, AureoBos recognizes the pivotal role of our stakeholders and the significance of personalized distribution. Our approach to reaching our market is multifaceted, designed to cater to the diverse needs and preferences of our customers.
+                                        First and foremost, we must underscore the profound influence of veterinary zootechnicians in our ecosystem. As previously highlighted, these professionals wield tremendous authority when it comes to treatment recommendations. They are our vital partners in educating and introducing AureoBos to the market. By engaging with them as an essential stakeholder, we aim to not only explain the science and efficacy behind AureoBos but also provide concrete evidence of its effectiveness. This engagement is fundamental, as veterinary zootechnicians often play a role in guiding treatment decisions through recommendations and hearsay among dairy cattle owners.
+                                        Secondly, our distribution strategy entails a physical channel wherein we, as the supplier, directly distribute AureoBos to our clients every time they place an order. This direct distribution approach is particularly significant for large dairy producers who acquire our product directly. However, it's important to note that this channel also extends to veterinary pharmacies, which are both our clients and channels. These pharmacies, while purchasing from us, act as intermediaries for smaller and medium-sized dairy producers.
+                                        In essence, our strategy combines personalized engagement and direct distribution to effectively reach both our large-scale dairy producers and the veterinary pharmacies that serve as conduits to the broader market. By recognizing the unique roles and influences of each stakeholder, we ensure that AureoBos permeates the market efficiently and successfully
+                                        <br>
+                                        <br>
+                                        <b> Customer Relationships:</b>
+                                        At AureoBos, our approach to customers is a fundamental pillar of our growth strategy. We've meticulously devised a three-fold strategy that encompasses our efforts to Get, Keep, and Grow our valued clients.
+                                        Firstly, our 'Get' strategy is designed to initiate relationships with our customers. To accomplish this, we are actively engaging with local cattle farms in our region, fostering collaborations within the veterinary community to secure recommendations for AureoBos. Concurrently, we are establishing connections with local pharmacies to introduce and make AureoBos readily available to small and medium-sized producers. This multi-pronged approach ensures that our innovative solution is accessible to a diverse range of customers.
+                                        Secondly, our 'Keep' strategy revolves around maintaining strong, enduring relationships with our customers. We believe in the power of personalized engagement. We are committed to providing ongoing guidance and support to our customers, ensuring they fully comprehend the correct usage and benefits of AureoBos. Additionally, our relationship with veterinary pharmacies is of special significance. We plan to cultivate close partnerships, delivering exceptional care and attention to aid in the expansion of our sales efforts.
+                                        Lastly, our 'Grow' strategy is geared towards fostering organic growth by leveraging the influence of user referrals within our target regions. Recognizing that this guild places significant weight on recommendations and word-of-mouth, we are strategically encouraging existing users to refer new customers to AureoBos. This approach not only increases our customer base but also reaffirms the trust and confidence our clients have in our product.
+                                        Our three-pronged strategy aligns seamlessly with our commitment to providing effective mastitis treatment while cementing strong customer relationships. This holistic approach encompasses customer acquisition, retention, and growth, reflecting our dedication to success in the market.
+                                        <br>
+                                        <br>
+                                        <b> Revenue Streams:</b>
+                                        At AureoBos, our revenue streams primarily derive from the direct sale of our innovative product. Extensive market analysis and a thorough evaluation of our competitors have led us to offer AureoBos in a convenient presentation format – boxes containing 20 syringes, each with a 10 mL capacity. This presentation is designed to cater to the immediate needs of our customers while providing flexibility for adjustments based on the response and preferences of our initial customer base. Our commitment to adaptability and customer-centricity allows us to fine-tune our product offerings to best serve the evolving demands of the marke
+                                        <br>
+                                        <br>
+                                        <b> Key Activities:</b>
+                                        There are several key activities that constitute the backbone of AureoBos's development:
+                                        Acquisition of Funding: Securing adequate funding is imperative to advance AureoBos through its various developmental stages, right up to the point of commercialization. This necessitates active participation in a range of funding opportunities and investor pitches to secure the necessary financial resources.
+                                        Technical Development of the Treatment: This encompasses a spectrum of essential experiments and tests aimed at validating the efficacy of AureoBos. These activities go from establishing the initial proof of concept to conducting the requisite tests for regulatory approval by the National Service of Health, Safety, and Agri-Food Quality.
+                                        Trademark and Company Registration: The process of registering AureoBos as a trademark and establishing our company's legal entity are foundational steps for its eventual commercialization. Further details can be found in the documents below. 
+                                        Product Registration: In order to bring AureoBos to market, it is imperative to obtain regulatory approval from the National Service of Health, Safety, and Agri-Food Quality. To achieve this, we have meticulously outlined a step-by-step guide in our legal plan document.
+                                        Establishment of Contact with Dairy Farms in the Region: Building relationships with local dairy farms is crucial for creating a comprehensive client database, thereby ensuring targeted outreach and effective engagement.
+                                        Establishment of Contact with Pharmaceutical Laboratories: This activity backs up our exit strategy, as elaborated in the document below. It involves forging strategic partnerships with pharmaceutical laboratories to facilitate the commercialization of AureoBos through a Merge and Acquisition. 
+                                        Upscaling Process; Scaling up production is really important to meet market demand effectively. This process ensures that we can consistently supply AureoBos to our target audience.
+                                        AureoBos Marketing: Following the successful registration of our product and the execution of upscaling, our marketing strategy for AureoBos comes into play. This strategy encompasses various facets, including raising awareness in society, establishing client engagement approaches, and implementing a robust distribution network.
+                                        <br>
+                                        <br>
+                                        <b> Key Resources:</b>
+                                        Identifying and visualizing key resources is a pivotal aspect of the successful execution of AureoBos. Through a comprehensive analysis, we've determined several key resources:
+                                        Knowledge: The collective knowledge of each team member, advisor, instructor, and external experts has been the bedrock of AureoBos's development. This wealth of knowledge, spanning scientific expertise, entrepreneurial insights, and domain-specific guidance, has been instrumental in shaping our product.
+                                        Facilities: Adequate laboratory facilities are indispensable for the research, development, and testing phases of AureoBos. These facilities provide the physical space and infrastructure required to carry out experiments, analyze results, and refine our product.
+                                        Suppliers: Establishing relationships with reliable suppliers of reagents and laboratory equipment is essential. These suppliers ensure a consistent and timely provision of the materials necessary for our research and development processes.
+                                        Client Partnerships: Collaboration with dairy farms willing to allow us to conduct tests on their cows afflicted with mastitis is invaluable. These partnerships provide real-world testing scenarios, facilitating the refinement and validation of AureoBos.
+                                        Funding: Securing funding through a variety of sources, including company grants and investments from open calls, is essential for sustaining the ongoing development of AureoBos. These financial resources enable us to progress through critical developmental phases.
+                                        University Support: Our university, including its robust entrepreneurial ecosystem, serves as a foundational resource. The institutional support and access to mentors, facilities, and networks within the university ecosystem are instrumental in accelerating our progress and achieving tangible results
+                                        Patent Registration: Given the advanced technology employed in the development of AureoBos, it is imperative that we secure our invention through the patenting registration with the relevant authority in Mexico. This step is of utmost importance as it serves to safeguard our intellectual property rights when we embark on the commercialization of our innovative treatment.
+                                        <br>
+                                        <br>
+                                        <b> Key Partners:</b>
+                                        It is of utmost importance to recognize and highlight the pivotal role played by our key partners in the development and success of AureoBos. Foremost among them is the Orion Technology Park, an integral part of our university's entrepreneurship ecosystem. The Orion Technology Park has been, and will continue to be, a valuable ally in our startup journey. This partnership has afforded us unparalleled access to a network of entrepreneurs and experts in various fields, including intellectual property, finance, trademark registration, product registration, and more. Through this collaboration, we have had the privilege of participating in the esteemed pre-incubation program, Stella Orion, and have been exclusively invited to join the TechXcelerate program.
+                                        Equally significant are our regulatory partners, the Mexican Secretariat of Agriculture and Rural Development, and the National Service of Health, Safety, and Agri-Food Quality. These governmental bodies are pivotal in guiding us through the necessary regulatory processes, ensuring that AureoBos complies with all relevant standards and requirements for its registration and commercialization. 
+                                        Additionally, our dairy producer community, as well as industry and pharmaceutical companies, are key stakeholders in the development and commercialization of AureoBos. Their collaboration and support are integral to our mission of delivering an innovative and effective solution to the market. Together with these valued partners, we will make a meaningful impact on the dairy industry.
+                                        <br>
+                                        <br>
+                                        <b> Cost: </b>
+                                        The cost structure of AureoBos encompasses several key elements that contribute to the development and production of our innovative product. To begin, we've allocated resources for extensive research and development activities, which encompassed conducting proof of concept studies and the necessary tests required for the proper registration of our product with the relevant regulatory authority in Mexico, the National Service of Health, Safety and Agri-Food Quality.
+                                        Furthermore, it's vital to underscore that our cost structure also accounts for the essential processes of upscaling production. This includes investments in scaling up our production capabilities to meet growing demand effectively. Within the production phase, costs are further categorized into fixed and variable components, each playing a pivotal role in determining our overall cost efficiency and operational effectiveness.
+ 
+                                            
+                                            </p>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 id="introduction"><br><br><br><br>Timeline</h3>
+                                <p class="contenido">
+                                    Highlighting AureoBos's milestones to date and laying out our future steps through a timeline is pivotal because it not only showcases our journey of progress but also serves as a roadmap for our stakeholders, guiding us towards our shared vision of revolutionizing mastitis treatment.
+                                    <br>
+                                    <br>
+                                    Explore the interactive timeline below to trace AureoBos's crucial development milestones and gain insights into our upcoming endeavors
                                     
-                                       </p>
-                                   
+                                </p>
+                                <br>
+                                <section class="h--timeline js-h--timeline">
+                                    <div class="h--timeline-container">
+                                    <div class="h--timeline-dates">
+                                        <div class="h--timeline-line">
+                                        <ol>
+                                            <li><a href="#0" data-date="16/01/2014" class="h--timeline-date h--timeline-date--selected">2014</a></li>
+                                            <li><a href="#0" data-date="28/02/2013" class="h--timeline-date">2013</a></li>
+                                            <li><a href="#0" data-date="20/04/2013" class="h--timeline-date">2013</a></li>
+                                            <li><a href="#0" data-date="20/05/2012" class="h--timeline-date">2012</a></li>
+                                            <li><a href="#0" data-date="09/07/2011" class="h--timeline-date">2011</a></li>
+                                            <li><a href="#0" data-date="30/08/2007" class="h--timeline-date">2007</a></li>
+                                            <li><a href="#0" data-date="15/09/2001" class="h--timeline-date">2001</a></li>
+                                            <li><a href="#0" data-date="01/11/1997" class="h--timeline-date">1997</a></li>
+                                            <li><a href="#0" data-date="10/12/1994" class="h--timeline-date">1994</a></li>
+                                            <li><a href="#0" data-date="19/01/1991" class="h--timeline-date">1991</a></li>
+                                            <li><a href="#0" data-date="03/03/1988" class="h--timeline-date">1988</a></li>
+                                        </ol>
+                                    
+                                        <span class="h--timeline-filling-line" aria-hidden="true"></span>
+                                        </div> <!-- .h--timeline-line -->
+                                    </div> <!-- .h--timeline-dates -->
+                                    
+                                    <nav class="h--timeline-navigation-container">
+                                        <ul>
+                                            <li><a href="#0" class="text-replace h--timeline-navigation h--timeline-navigation--prev h--timeline-navigation--inactive">Prev</a></li>
+                                            <li><a href="#0" class="text-replace h--timeline-navigation h--timeline-navigation--next">Next</a></li>
+                                        </ul>
+                                    </nav>
+                                    </div> <!-- .h--timeline-container -->
+                                    
+                                    <div class="h--timeline-events">
+                                    <ol>
+                                        <li class="h--timeline-event h--timeline-event--selected text-component">
+                                        <div class="h--timeline-event-content container">
+                                            <h2 class="h--timeline-event-title">Horizontal Timeline</h2>
+                                            <em class="h--timeline-event-date">January 16th, 2014</em>
+                                            <p class="h--timeline-event-description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                                            </p>
+                                        </div>
+                                        </li>
+                                    
+                                        <li class="h--timeline-event text-component">
+                                        <div class="h--timeline-event-content container">
+                                            <h2 class="h--timeline-event-title">Event title here</h2>
+                                            <em class="h--timeline-event-date">February 28th, 2013</em>
+                                            <p class="h--timeline-event-description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                                            </p>
+                                        </div>
+                                        </li>
+                                    
+                                        <li class="h--timeline-event text-component">
+                                        <div class="h--timeline-event-content container">
+                                            <h2 class="h--timeline-event-title">Event title here</h2>
+                                            <em class="h--timeline-event-date">March 20th, 2013</em>
+                                            <p class="h--timeline-event-description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                                            </p>
+                                        </div>
+                                        </li>
+                                    
+                                        <li class="h--timeline-event text-component">
+                                        <div class="h--timeline-event-content container">
+                                            <h2 class="h--timeline-event-title">Event title here</h2>
+                                            <em class="h--timeline-event-date">May 20th, 2012</em>
+                                            <p class="h--timeline-event-description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                                            </p>
+                                        </div>
+                                        </li>
+                                    
+                                        <li class="h--timeline-event text-component">
+                                        <div class="h--timeline-event-content container">
+                                            <h2 class="h--timeline-event-title">Event title here</h2>
+                                            <em class="h--timeline-event-date">July 9th, 2011</em>
+                                            <p class="h--timeline-event-description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                                            </p>
+                                        </div>
+                                        </li>
+                                    
+                                        <li class="h--timeline-event text-component">
+                                        <div class="h--timeline-event-content container">
+                                            <h2 class="h--timeline-event-title">Event title here</h2>
+                                            <em class="h--timeline-event-date">August 30th, 2007</em>
+                                            <p class="h--timeline-event-description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                                            </p>
+                                        </div>
+                                        </li>
+                                    
+                                        <li class="h--timeline-event text-component">
+                                        <div class="h--timeline-event-content container">
+                                            <h2 class="h--timeline-event-title">Event title here</h2>
+                                            <em class="h--timeline-event-date">September 15th, 2001</em>
+                                            <p class="h--timeline-event-description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                                            </p>
+                                        </div>
+                                        </li>
+                                    
+                                        <li class="h--timeline-event text-component">
+                                        <div class="h--timeline-event-content container">
+                                            <h2 class="h--timeline-event-title">Event title here</h2>
+                                            <em class="h--timeline-event-date">November 1st, 1997</em>
+                                            <p class="h--timeline-event-description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                                            </p>
+                                        </div>
+                                        </li>
+                                    
+                                        <li class="h--timeline-event text-component">
+                                        <div class="h--timeline-event-content container">
+                                            <h2 class="h--timeline-event-title">Event title here</h2>
+                                            <em class="h--timeline-event-date">December 10th, 1994</em>
+                                            <p class="h--timeline-event-description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                                            </p>
+                                        </div>
+                                        </li>
+                                    
+                                        <li class="h--timeline-event text-component">
+                                        <div class="h--timeline-event-content container">
+                                            <h2 class="h--timeline-event-title">Event title here</h2>
+                                            <em class="h--timeline-event-date">January 29th, 1991</em>
+                                            <p class="h--timeline-event-description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                                            </p>
+                                        </div>
+                                        </li>
+                                    
+                                        <li class="h--timeline-event text-component">
+                                        <div class="h--timeline-event-content container">
+                                            <h2 class="h--timeline-event-title">Event title here</h2>
+                                            <em class="h--timeline-event-date">March 3rd, 1988</em>
+                                            <p class="h--timeline-event-description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                                            </p>
+                                        </div>
+                                        </li>
+                                    </ol>
+                                    </div> <!-- .h--timeline-events -->
+                                </section>
+                                <h3 id="introduction"><br><br><br><br>Financial Projections</h3>
+                                <p class="contenido">
+                                    Let's delve into AureoBos's financial projections and understand why they are pivotal for our growth and sustainability.                        
+                                <br>
+                                <br>
+                                Insertar tablas
+                                <br>
+                                <br>
+                                <h3 id="introduction"><br><br><br><br>Intellectual Property</h3>
+                                Discover the intellectual property landscape of AureoBos and grasp its significance in safeguarding our innovation and market position
+                                <br>
+                                <br>
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                     <h3 id="referencesO">Intellectual Property</h3>
+                                        
+                                </div>
+                                <div class="accordion-item-body">
+                                    <div class="accordion-item-body-content">
+                                        <p class="contenido">
+                                    Regarding intellectual property, we had the opportunity to hold a session with Felisia Sandoval, a member of our university's entrepreneurship ecosystem and technology transfer office at the Monterrey Institute of Technology and Higher Education. During this session, she provided valuable insights regarding the possibility of patenting AureoBos. In her evaluation, she emphasized the importance of reviewing the institution's policy, as our work is conducted within the university, and there could be a case of joint ownership that needs to be addressed before initiating the application process. Additionally, she recommended conducting a thorough search of patents registered on platforms such as WIPO (World Intellectual Property Organization).
+                                    It's important to note that although we haven't yet submitted the application to the patent office, following our session with this expert, we performed the patent search and outlined the subsequent steps and ideal timelines for submitting our patent to the competent authority in Mexico, which is the Mexican Institute of Industrial Property (Instituto Mexicano de la Propiedad Industrial). Below, you can visualize the estimated timeline for this process.
+                                         </p>
+                                    
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <p class="contenido">
-                            Highlighting AureoBos's milestones to date and laying out our future steps through a timeline is pivotal because it not only showcases our journey of progress but also serves as a roadmap for our stakeholders, guiding us towards our shared vision of revolutionizing mastitis treatment.
-                            Explore the interactive timeline below to trace AureoBos's crucial development milestones and gain insights into our upcoming endeavors
-                        </p>
-                        <br>
-                        <section class="h--timeline js-h--timeline">
-                            <div class="h--timeline-container">
-                              <div class="h--timeline-dates">
-                                <div class="h--timeline-line">
-                                  <ol>
-                                    <li><a href="#0" data-date="16/01/2014" class="h--timeline-date h--timeline-date--selected">2014</a></li>
-                                    <li><a href="#0" data-date="28/02/2013" class="h--timeline-date">2013</a></li>
-                                    <li><a href="#0" data-date="20/04/2013" class="h--timeline-date">2013</a></li>
-                                    <li><a href="#0" data-date="20/05/2012" class="h--timeline-date">2012</a></li>
-                                    <li><a href="#0" data-date="09/07/2011" class="h--timeline-date">2011</a></li>
-                                    <li><a href="#0" data-date="30/08/2007" class="h--timeline-date">2007</a></li>
-                                    <li><a href="#0" data-date="15/09/2001" class="h--timeline-date">2001</a></li>
-                                    <li><a href="#0" data-date="01/11/1997" class="h--timeline-date">1997</a></li>
-                                    <li><a href="#0" data-date="10/12/1994" class="h--timeline-date">1994</a></li>
-                                    <li><a href="#0" data-date="19/01/1991" class="h--timeline-date">1991</a></li>
-                                    <li><a href="#0" data-date="03/03/1988" class="h--timeline-date">1988</a></li>
-                                  </ol>
-                            
-                                  <span class="h--timeline-filling-line" aria-hidden="true"></span>
-                                </div> <!-- .h--timeline-line -->
-                              </div> <!-- .h--timeline-dates -->
-                            
-                              <nav class="h--timeline-navigation-container">
-                                  <ul>
-                                    <li><a href="#0" class="text-replace h--timeline-navigation h--timeline-navigation--prev h--timeline-navigation--inactive">Prev</a></li>
-                                    <li><a href="#0" class="text-replace h--timeline-navigation h--timeline-navigation--next">Next</a></li>
-                                  </ul>
-                              </nav>
-                            </div> <!-- .h--timeline-container -->
-                            
-                            <div class="h--timeline-events">
-                              <ol>
-                                <li class="h--timeline-event h--timeline-event--selected text-component">
-                                  <div class="h--timeline-event-content container">
-                                    <h2 class="h--timeline-event-title">Horizontal Timeline</h2>
-                                    <em class="h--timeline-event-date">January 16th, 2014</em>
-                                    <p class="h--timeline-event-description">
-                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                                    </p>
-                                  </div>
-                                </li>
-                            
-                                <li class="h--timeline-event text-component">
-                                  <div class="h--timeline-event-content container">
-                                    <h2 class="h--timeline-event-title">Event title here</h2>
-                                    <em class="h--timeline-event-date">February 28th, 2013</em>
-                                    <p class="h--timeline-event-description">
-                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                                    </p>
-                                  </div>
-                                </li>
-                            
-                                <li class="h--timeline-event text-component">
-                                  <div class="h--timeline-event-content container">
-                                    <h2 class="h--timeline-event-title">Event title here</h2>
-                                    <em class="h--timeline-event-date">March 20th, 2013</em>
-                                    <p class="h--timeline-event-description">
-                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                                    </p>
-                                  </div>
-                                </li>
-                            
-                                <li class="h--timeline-event text-component">
-                                  <div class="h--timeline-event-content container">
-                                    <h2 class="h--timeline-event-title">Event title here</h2>
-                                    <em class="h--timeline-event-date">May 20th, 2012</em>
-                                    <p class="h--timeline-event-description">
-                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                                    </p>
-                                  </div>
-                                </li>
-                            
-                                <li class="h--timeline-event text-component">
-                                  <div class="h--timeline-event-content container">
-                                    <h2 class="h--timeline-event-title">Event title here</h2>
-                                    <em class="h--timeline-event-date">July 9th, 2011</em>
-                                    <p class="h--timeline-event-description">
-                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                                    </p>
-                                  </div>
-                                </li>
-                            
-                                <li class="h--timeline-event text-component">
-                                  <div class="h--timeline-event-content container">
-                                    <h2 class="h--timeline-event-title">Event title here</h2>
-                                    <em class="h--timeline-event-date">August 30th, 2007</em>
-                                    <p class="h--timeline-event-description">
-                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                                    </p>
-                                  </div>
-                                </li>
-                            
-                                <li class="h--timeline-event text-component">
-                                  <div class="h--timeline-event-content container">
-                                    <h2 class="h--timeline-event-title">Event title here</h2>
-                                    <em class="h--timeline-event-date">September 15th, 2001</em>
-                                    <p class="h--timeline-event-description">
-                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                                    </p>
-                                  </div>
-                                </li>
-                            
-                                <li class="h--timeline-event text-component">
-                                  <div class="h--timeline-event-content container">
-                                    <h2 class="h--timeline-event-title">Event title here</h2>
-                                    <em class="h--timeline-event-date">November 1st, 1997</em>
-                                    <p class="h--timeline-event-description">
-                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                                    </p>
-                                  </div>
-                                </li>
-                            
-                                <li class="h--timeline-event text-component">
-                                  <div class="h--timeline-event-content container">
-                                    <h2 class="h--timeline-event-title">Event title here</h2>
-                                    <em class="h--timeline-event-date">December 10th, 1994</em>
-                                    <p class="h--timeline-event-description">
-                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                                    </p>
-                                  </div>
-                                </li>
-                            
-                                <li class="h--timeline-event text-component">
-                                  <div class="h--timeline-event-content container">
-                                    <h2 class="h--timeline-event-title">Event title here</h2>
-                                    <em class="h--timeline-event-date">January 29th, 1991</em>
-                                    <p class="h--timeline-event-description">
-                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                                    </p>
-                                  </div>
-                                </li>
-                            
-                                <li class="h--timeline-event text-component">
-                                  <div class="h--timeline-event-content container">
-                                    <h2 class="h--timeline-event-title">Event title here</h2>
-                                    <em class="h--timeline-event-date">March 3rd, 1988</em>
-                                    <p class="h--timeline-event-description">
-                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                                    </p>
-                                  </div>
-                                </li>
-                              </ol>
-                            </div> <!-- .h--timeline-events -->
-                            </section>
-                        <p class="contenido">
-                            Let's delve into AureoBos's financial projections and understand why they are pivotal for our growth and sustainability.                        <br>
-                        <br>
-                        Insertar tablas
-                        <br>
-                        <br>
-                        Discover the intellectual property landscape of AureoBos and grasp its significance in safeguarding our innovation and market position
-                        <br>
-                        <br>
-                        Every startup requires a solid foundation for its scalable and secure growth. In pursuit of this, we have prepared a series of documents that will drive the development of AureoBos.
-                        <br>
-                        <br> 
-                        Last but certainly not least, it is crucial to meticulously address all regulatory and legal aspects to ensure the proper establishment, development, and commercialization of AureoBos. Below, you will find our legal plan.
-                        
-    
-                    <div class="tituloContenido">
-                        <h3 id="conclusion"><br><br><br><br>Conclusion</h3>
-                    </div>
-                    <div>
-                    <!--aquí irá la conclusión-->
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-item-header">
-                            <h3 id="referencesO">References</h3>
-                        </div>
-                        <div class="accordion-item-body">
-                            <div class="accordion-item-body-content">
-                                <p class="contenido">
-                                    (1)	Banwarth-Kuhn, M.; Sindi, S. How and Why to Build a Mathematical Model: A Case Study Using Prion Aggregation. <em>J. Biol. Chem.</em> <b>2020</b>, <em>295</em> (15), 5022–5035. https://doi.org/10.1074/jbc.REV119.009851.
+                                <h3 id="introduction"><br><br><br><br>Business Documents</h3>
+                                Every startup requires a solid foundation for its scalable and secure growth. In pursuit of this, we have prepared a series of documents that will drive the development of AureoBos.
+                                <div class="ag-format-container">
+                                    <div class="ag-courses_box">
+        
+        
+                                        <div class="ag-courses_item">
+                                            <a href=""
+                                                class="ag-courses-item_link" target="_blank">
+                                                <div class="ag-courses-item_bg"></div>
+        
+                                                <div class="ag-courses-item_title">
+                                                    Business Plan
+                                                </div>
+        
+                                                <div class="ag-courses-item_content">
+        
+        
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ag-format-container">
+                                    <div class="ag-courses_box">
+        
+        
+                                        <div class="ag-courses_item">
+                                            <a href=""
+                                                class="ag-courses-item_link" target="_blank">
+                                                <div class="ag-courses-item_bg"></div>
+        
+                                                <div class="ag-courses-item_title">
+                                                    Pitch Deck
+                                                </div>
+        
+                                                <div class="ag-courses-item_content">
+        
+        
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ag-format-container">
+                                    <div class="ag-courses_box">
+        
+        
+                                        <div class="ag-courses_item">
+                                            <a href="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/pdfs/risk-assessment-management-docx.pdf"
+                                                class="ag-courses-item_link" target="_blank">
+                                                <div class="ag-courses-item_bg"></div>
+        
+                                                <div class="ag-courses-item_title">
+                                                    Risk Assessment
+                                                </div>
+        
+                                                <div class="ag-courses-item_content">
+        
+        
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <br> 
+                                <h3 id="introduction"><br><br><br><br>Legal Considerations</h3>
+                                Last but certainly not least, it is crucial to meticulously address all regulatory and legal aspects to ensure the proper establishment, development, and commercialization of AureoBos. Below, you will find our legal plan.
                                 </p>
-                                <p>
-                                    (2)	Karlebach, G.; Shamir, R. Modelling and Analysis of Gene Regulatory Networks. <em>Nat. Rev. Mol. Cell Biol.</em> <b>2008</b>, <em>9</em> (10), 770–780. https://doi.org/10.1038/nrm2503.
-                                </p>
-                                <p>
-                                    (3)	O’Neill, M. A.; Denos, M.; Reed, D. Using SDS–PAGE Gel Fingerprinting to Identify Soft‐bodied Wood‐boring Insect Larvae to Species. <em>Pest Manag. Sci.</em> <b>2018</b>, <em>74</em> (3), 705–714. https://doi.org/10.1002/ps.4766.
-                                </p>
-                                <p>
-                                    (4)	<em>Mathematical Modelling and Machine Learning Methods for Bioinformatics and Data Science Applications</em>; Bianchini, M., Samponi, M. L., Eds.; MDPI: Switzerland, 2022. https://doi.org/10.3390/books978-3-0365-2841-0.
-                                </p>
-                                <p>
-                                    (5)	Gábor, A.; Banga, J. R. Robust and Efficient Parameter Estimation in Dynamic Models of Biological Systems. <em>BMC Syst. Biol.</em> <b>2015</b>, <em>9</em> (1), 74. https://doi.org/10.1186/s12918-015-0219-2.
-                                </p>
-                                <p>
-                                    (6)	Arpino, J. A. J.; Hancock, E. J.; Anderson, J.; Barahona, M.; Stan, G.-B. V.; Papachristodoulou, A.; Polizzi, K. Tuning the Dials of Synthetic Biology. <em>Microbiology</em> <b>2013</b>, <em>159</em> (Pt_7), 1236–1253. https://doi.org/10.1099/mic.0.067975-0.
-                                </p>
-                                <p>
-                                    (7)	Mitra, E. D.; Hlavacek, W. S. Parameter Estimation and Uncertainty Quantification for Systems Biology Models. <em>Curr. Opin. Syst. Biol.</em> <b>2019</b>, <em>18</em>, 9–18. https://doi.org/10.1016/j.coisb.2019.10.006.
-                                </p>
+                                <div class="ag-format-container">
+                                    <div class="ag-courses_box">
+        
+        
+                                        <div class="ag-courses_item">
+                                            <a href="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/pdfs/legal-plan-docx.pdf"
+                                                class="ag-courses-item_link" target="_blank">
+                                                <div class="ag-courses-item_bg"></div>
+        
+                                                <div class="ag-courses-item_title">
+                                                    Legal Plan
+                                                </div>
+        
+                                                <div class="ag-courses-item_content">
+        
+        
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ag-format-container">
+                                    <div class="ag-courses_box">
+        
+        
+                                        <div class="ag-courses_item">
+                                            <a href="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/pdfs/aureobos-trademark-report.pdf"
+                                                class="ag-courses-item_link" target="_blank">
+                                                <div class="ag-courses-item_bg"></div>
+        
+                                                <div class="ag-courses-item_title">
+                                                    Trademark Report
+                                                </div>
+        
+                                                <div class="ag-courses-item_content">
+        
+        
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            <div class="tituloContenido">
+                                <h3 id="conclusion"><br><br><br><br>Conclusion</h3>
+                            </div>
+                            <div>
+                            <!--aquí irá la conclusión-->
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    <h3 id="referencesO">References</h3>
+                                </div>
+                                <div class="accordion-item-body">
+                                    <div class="accordion-item-body-content">
+                                        <p class="contenido">
+                                            (1)	Banwarth-Kuhn, M.; Sindi, S. How and Why to Build a Mathematical Model: A Case Study Using Prion Aggregation. <em>J. Biol. Chem.</em> <b>2020</b>, <em>295</em> (15), 5022–5035. https://doi.org/10.1074/jbc.REV119.009851.
+                                        </p>
+                                        <p>
+                                            (2)	Karlebach, G.; Shamir, R. Modelling and Analysis of Gene Regulatory Networks. <em>Nat. Rev. Mol. Cell Biol.</em> <b>2008</b>, <em>9</em> (10), 770–780. https://doi.org/10.1038/nrm2503.
+                                        </p>
+                                        <p>
+                                            (3)	O’Neill, M. A.; Denos, M.; Reed, D. Using SDS–PAGE Gel Fingerprinting to Identify Soft‐bodied Wood‐boring Insect Larvae to Species. <em>Pest Manag. Sci.</em> <b>2018</b>, <em>74</em> (3), 705–714. https://doi.org/10.1002/ps.4766.
+                                        </p>
+                                        <p>
+                                            (4)	<em>Mathematical Modelling and Machine Learning Methods for Bioinformatics and Data Science Applications</em>; Bianchini, M., Samponi, M. L., Eds.; MDPI: Switzerland, 2022. https://doi.org/10.3390/books978-3-0365-2841-0.
+                                        </p>
+                                        <p>
+                                            (5)	Gábor, A.; Banga, J. R. Robust and Efficient Parameter Estimation in Dynamic Models of Biological Systems. <em>BMC Syst. Biol.</em> <b>2015</b>, <em>9</em> (1), 74. https://doi.org/10.1186/s12918-015-0219-2.
+                                        </p>
+                                        <p>
+                                            (6)	Arpino, J. A. J.; Hancock, E. J.; Anderson, J.; Barahona, M.; Stan, G.-B. V.; Papachristodoulou, A.; Polizzi, K. Tuning the Dials of Synthetic Biology. <em>Microbiology</em> <b>2013</b>, <em>159</em> (Pt_7), 1236–1253. https://doi.org/10.1099/mic.0.067975-0.
+                                        </p>
+                                        <p>
+                                            (7)	Mitra, E. D.; Hlavacek, W. S. Parameter Estimation and Uncertainty Quantification for Systems Biology Models. <em>Curr. Opin. Syst. Biol.</em> <b>2019</b>, <em>18</em>, 9–18. https://doi.org/10.1016/j.coisb.2019.10.006.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-                <div id="sectionMethods" class="sectM">
+            <div id="sectionMethods" class="sectM">
                 <!--seccion Methods-->
-                    <div class="secciones">
-                        
-                    </div>
-                    <div class="layout">
+                <div class="secciones">
+                      
+                </div>
+                <div class="layout">
                     <!--cosas del index-->
                     <div class="index2">
                         <nav class="navigation">
@@ -875,292 +1071,268 @@ iGEM project.{% endblock %}
                                         AureoBos takes a pioneering approach to mastitis treatment. Leveraging synthetic biology, we harness Escherichia coli (E. coli) to produce specific proteins originating from bacteriophages. These proteins, known as endolysins, play a crucial role in bacteriophages' life cycle by infecting and exterminating bacteria. Through genetic modification, we enhance E. coli's capacity to produce these endolysins.
                                         Endolysins, once extracted from E. coli, serve as the cornerstone for our mastitis treatment in dairy cattle. These remarkable proteins target the cell walls of mastitis-causing bacteria. Upon binding, they create breaches in the cell wall, causing the bacteria to disintegrate and perish. Notably, endolysins remain effective even against antibiotic-resistant bacterial strains, underscoring their potential as a groundbreaking solution.
                                     
-                                       </p>
+                                    </p>
                                    
                                 </div>
                             </div>
                         </div>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                
-               
-                 
-               
-            
-            
-              
-              
-              
-                 
-                <div class="tituloContenido">
-                  <h5>Scalable</h5>
+                        <br>
+                        <br>
+                        <h3 id="upstream">Scalable</h3>                        
+                        <p class="contenido">Scaling up a lab experiment holds tremendous potential for refining a production process prior to committing to larger-scale implementation. This cost-effective and expedient approach empowers researchers to detect and mitigate potential issues at an early stage. In preparation for elevating the scale of E. coli transformation experimentation, securing a dedicated workspace compliant with rigorous lab safety regulations becomes paramount. Seek out a facility equipped with bioreactor capabilities and an environment conducive to experimental precision.
+                            With a suitable workspace in your grasp, embark on the journey of actualizing your production process. The inaugural step entails the transformation of E. coli. Diverse methods may be employed for this purpose, and in our case, we harnessed chimio-competence to render our E. coli cells competent. Elevating E. coli transformation necessitates the introduction of the desired DNA into these competent cells. Following DNA integration, the cells must undergo incubation under carefully controlled conditions that catalyze the transformation process. Once transformation is achieved, the next step involves plating the cells onto LB agar plates infused with antibiotics. These antibiotics act as a culling agent, eliminating cells that failed to undergo successful transformation.
+                            To ensure the procedure's reliability, it is imperative to incorporate both negative and positive controls into the transformation experiment. The negative control should exclude any DNA, whereas the positive control should contain DNA known to successfully transform E. coli. After the E. coli colonies have flourished on the LB agar plates, the final task is the selection of antibiotic-resistant colonies. These colonies house E. coli cells that have undergone successful transformation and are actively expressing the introduced DNA.
+                            In the next phase of our production journey, we are embarking on the strategic upscaling of three crucial endolysins, specifically tailored for the treatment of mastitis. This endeavor begins with a keen focus on determining the essential quantity required to effectively combat mastitis within the cattle population of Chihuahua, Mexico.
+                            Our approach in quantifying this requirement is rooted in careful analysis, drawing upon historical data up to the year 2022. This historical perspective forms the bedrock of our predictive methodology, which is particularly pertinent as we anticipate our product's readiness for market entry in 2024.                    
+                            Foreseeing the need to estimate cattle numbers for these crucial years, we meticulously leverage insights gleaned from prior years. These pivotal milestones align perfectly with our product's anticipated market release. The predictive analysis takes into account trends and historical data up to 2022, enabling us to arrive at a dependable estimate of the cattle population for 2023 and 2024. This foresight is instrumental in shaping our production planning with precision, ensuring that we are well-prepared to meet the exacting demands of mastitis treatment for the cattle population in Chihuahua.
+                            The foundation for this calculation lies in a comprehensive global cattle census (Graph 1) and the percentage of cattle residing in Mexico. With the understanding that mastitis affects 20% of all cattle worldwide (ref de 20%) , our analysis reveals that Chihuahua hosts a cattle population of 290,925, with 12,454 suffering from mastitis. This specific number of cows becomes our initial focal point as we embark on our scaling endeavor. 
+                            <br>
+                            <br>
+                            tabla
+                            <br>
+                            <br>
+                            Armed with a deep understanding of the minimum inhibitory concentrations for each endolysin currently in production, coupled with our achieved concentration levels, we have conducted a meticulous evaluation to determine the necessary quantities of each endolysin within our therapeutic formulation. This comprehensive assessment reveals that for LysSS, we require a 20 L bioreactor, capable of yielding 18.3 L monthly. In the case of LysK, a 5 L bioreactor is the chosen vessel, proficiently producing 2.5 L per month. Finally, LysCSA13 calls for a dedicated 1 L bioreactor, reliably delivering 250 mL per month.
+                            This level of precision underscores our unwavering commitment to aligning our production process with the exacting demands of mastitis treatment in Chihuahua. Our meticulous approach optimizes resource utilization and ensures the effective and tailored delivery of treatment to the afflicted cattle population.
+                            As with any scaling process, we begin with our Serviceable Obtainable Market (SOM). However, as we progress, our aim is to expand our project to address the Total Addressable Market (TAM). Furthermore, it's important to note that, in addition to the aforementioned, which demonstrates our scalability in the process, our business model - elaborated upon in the Development Plans section - by proposing a potential exit strategy, enhances the possibility of our project reaching the commercialization stage through patent licensing, regardless of whether we manufacture it ourselves. 
+                        </p>
+                        <br>
+                        <br>
+                        <h3 id="upstream">Inventive</h3>
+                        <p class="contenido">While several treatments and solutions for bovine mastitis exist, AureoBos stands out for its innovative approach. Through our research and interactions with clients, we've identified a gap in the market - there isn't yet an affordable solution that utilizes synthetic biology and recombinant proteins to treat this infection. The numerous benefits of our product have generated considerable demand among those affected by this issue, underscoring the inventiveness that sets it apart.
+                        </p>
+                    </div>    
+        
                 </div>
-                <p class="contenido">Here is scalable</p>
-                <div class="tituloContenido">
-                    <h5>Inventive</h5>
-                  </div>
-                  <p class="contenido">Here is Inventive</p>
-                      
-                     
-                
-        
-        
-    
-                   
-                            
-        
-        
-        
-                  
-        
-                  
-                  
-        
-                
-               
-        
-        
-        
-              </div>
-              </div>
-        </div>
-        
-          <div id="sectionResults" class="sectR">
-            <div class="secciones">
-              
-            <div class="layout">
-              <!--cosas del index-->
-              <div class="index3">
-                <nav class="navigation">
-                  <ul>
-                    <li>
-                      <a href="#">Skills & Capabilities</a>
-                      <a href="#">Stakeholders</a>
-
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-              <div class="secciones">
-                <div class="tituloContenido">
-                    
-                  <p class="contenido">Outlining the required skills, capabilities, and stakeholders is of prime importance for AureoBos’ success. Behind AureoBos is a team of students majoring in Biotechnology, Law, and Computer Technologies, where our unique differences and expertise, stemming from our diverse academic backgrounds and lifetime experiences, provide the foundation for the successful and integrated development of our startup, AureoBos. We are catalysts for change, a group of young individuals completely aware of the challenges our world faces. Our determination knows no bounds as we strive to make a difference in our society and we know that through synthetic biology, with AureoBos, our impact will extend beyond cost reduction and improved food safety; we will be revolutionizing mastitis treatment.
-                    Supported by a diverse group of advisors and instructors, we have harnessed our collective potential to drive our project forward. Furthermore, our university, the Monterrey Institute of Technology and Higher Education, has provided unwavering support throughout our journey. Renowned globally for its exceptional undergraduate entrepreneurship programs and ecosystems, it recently achieved the impressive ranking of fourth place in The Princeton Review's 2023 evaluation 5. Our connection to the entrepreneurial ecosystem played a pivotal role in our journey. It facilitated crucial networking opportunities with both business and technical experts, allowing us to thoroughly validate our business idea. Their invaluable feedback has significantly fortified our proposal, making it more robust and promising. 
-                    After comprehensively outlining our primary stakeholders and their roles in the Integrated Human Practices section, we've taken the next strategic step. We've identified those stakeholders who are not just crucial but indispensable to the development of AureoBos as a startup. Here, we present a snapshot of these key stakeholders, their areas of expertise, affiliations, and the invaluable insights gained from our interactions with them.</p>
-                
-                
-                <div class="homeCardsContainer">
-
-                    <svg class="cardBackHome reverse" id="visual" viewBox="0 0 1920 768" width="1920" height="768"
-                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                        <path
-                            d="M0 198L45.7 219.2C91.3 240.3 182.7 282.7 274.2 265.3C365.7 248 457.3 171 548.8 141.3C640.3 111.7 731.7 129.3 823 160.7C914.3"
-                            fill="none" stroke="#52a595" stroke-width="40" stroke-linecap="round" stroke-linejoin="miter"></path>
-                    </svg>
-                    <svg class="cardBackHome" id="visual" viewBox="0 0 1920 768" width="1920" height="768"
-                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                        <path
-                            d="M0 654L45.7 653.5C91.3 653 182.7 652 274.2 622C365.7 592 457.3 533 548.8 529.7C640.3 526.3 731.7 578.7 823 591.8C914.3 605 1005.7"
-                            fill="none" stroke="#52a595" stroke-width="40" stroke-linecap="round" stroke-linejoin="miter"></path>
-                    </svg>
-                    <div id="cardContain11" class="cardContain">
-                        <div class="cardText ">
-                            <p class="cardHomeText">Víctor, as a member of Startup Chihuahua - an initiative driven by Chihuahua Futura to promote entrepreneurship, science, technology, and innovation strategies to strengthen regional competitiveness - played a pivotal role in facilitating our connections with various entrepreneurs. Through these connections, we were able to validate AureoBos by participating in several pitch events. Moreover, he significantly contributed to refining our business model and pitch.</p>
-                            <p  class="cardHomeTitle">Víctor Calzadillas</p>
-            
-                        </div>
-                        <div class="cardHome">
-                            <div onclick="selectCard12()" class="cardPos" style="--rotate:rotate(6deg);">
-                                <img class="cardHomeIMG"
-                                    src=https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/victor.png
-                                    alt="victor">
-                            </div>
-                        </div>
-                    </div>
-                    <div id="cardContain10" class="cardContain">
-                        <div class="cardText ">
-                            <p class="cardHomeText">The Panamerican University played a pivotal role in our project as they were the official organizers of the UPIA 2023 competition, in which we were finalists in the validated idea category. This competition allowed us to demonstrate the feasibility and scalability of our project, as well as receive feedback from various experts and entrepreneurs to strengthen our business model through a live pitch presented in Mexico City.</p>
-                            <p  class="cardHomeTitle">Panamerican University</p>
-            
-                        </div>
-                        <div class="cardHome">
-                            <div onclick="selectCard11()" class="cardPos" style="--rotate:rotate(2deg);">
-                                <img class="cardHomeIMG"
-                                    src=https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/upia.png
-                                    alt="upia">
-                            </div>
-                        </div>
-                    </div>
-                    <div id="cardContain9" class="cardContain">
-                        <div class="cardText ">
-                            <p class="cardHomeText">Startup Mexico, a leading organization in Mexico and Latin America founded by entrepreneur Marcus Dantus, served as a mentor and advisor through two intensive training sessions aimed at improving our pitch and strengthening our business model. Undoubtedly, their mentorship has allowed us to grow as a team.</p>
-                            <p  class="cardHomeTitle">Startup Mexico</p>
-            
-                        </div>
-                        <div class="cardHome">
-                            <div onclick="selectCard10()" class="cardPos" style="--rotate:rotate(6deg);">
-                                <img class="cardHomeIMG"
-                                    src=https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/smexico.png
-                                    alt="smexico">
-                            </div>
-                        </div>
-                    </div>
-                    <div id="cardContain8" class="cardContain">
-                        <div class="cardText ">
-                            <p class="cardHomeText">Juan Carlos Flores, Manager of the Livestock Unit at the Secretary of Rural Development in our state, welcomed us to a session where we had the opportunity to discuss our project and receive validation. During the conversation, he provided us with valuable recommendations regarding the commercialization of our product and the most effective ways to reach our customers. Additionally, he assisted us in connecting with farms interested in our project for future testing on their affected livestock.</p>
-                            <p  class="cardHomeTitle">Juan Carlos Flores</p>
-            
-                        </div>
-                        <div class="cardHome">
-                            <div onclick="selectCard9()" class="cardPos" style="--rotate:rotate(deg);">
-                                <img class="cardHomeIMG"
-                                    src=https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/sedr.png
-                                    alt="SEDR">
-                            </div>
-                        </div>
-                    </div>
-                    <div id="cardContain7" class="cardContain">
-                        <div class="cardText ">
-                            <p class="cardHomeText">The Orion Technology Park, the entrepreneurship ecosystem at our university served as a guide in our project's development and growth process as both a project and a startup. Through sessions with experts and entrepreneurs, we received valuable feedback to enhance various aspects, including our pitch, business model, sales projections, validation, and more.</p>
-                            <p  class="cardHomeTitle">Orion Technology Park</p>
-            
-                        </div>
-                        <div class="cardHome">
-                            <div onclick="selectCard8()" class="cardPos" style="--rotate:rotate(6deg);">
-                                <img class="cardHomeIMG"
-                                    src=https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/pto.png
-                                    alt="PTO">
-                            </div>
-                        </div>
-                    </div>
-                    <div id="cardContain6" class="cardContain">
-                        <div class="cardText ">
-                            <p class="cardHomeText">José Oropeza, National Key Account Manager at MSD Animal Health, one of the world's leading animal pharmaceutical companies, provided validation for our project, particularly in terms of commercialization. During our conversation, he not only explained the process of acquiring new external products at MSD but also suggested that we approach local pharmaceutical laboratories, as the process for acquiring new patents can be somewhat more challenging in multinational companies.</p>
-                            <p  class="cardHomeTitle">José Oropeza</p>
-            
-                        </div>
-                        <div class="cardHome">
-                            <div onclick="selectCard7()" class="cardPos" style="--rotate:rotate(6deg);">
-                                <img class="cardHomeIMG"
-                                    src=https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/jose.png
-                                    alt="Jose Oropeza">
-                            </div>
-                        </div>
-                    </div>
-                    <div id="cardContain5" class="cardContain">
-                        <div class="cardText ">
-                            <p class="cardHomeText">iGEM Startups organized a Summer School, which primarily entailed a two-day workshop. During this workshop, we gained foundational knowledge in entrepreneurship, had the opportunity to engage with experts in intellectual property, pitching, and business models. Additionally, we connected with several other teams participating in iGEM to gain insights into their projects.</p>
-                            <p  class="cardHomeTitle">iGEM Startups</p>
-            
-                        </div>
-                        <div class="cardHome">
-                            <div onclick="selectCard6()" class="cardPos" style="--rotate:rotate(6deg);">
-                                <img class="cardHomeIMG"
-                                    src=https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/startups.png
-                                    alt="iGEM Startups">
-                            </div>
-                        </div>
-                    </div>
-            
-                    <div id="cardContain4" class="cardContain">
-                        <div class="cardText ">
-                            <p class="cardHomeText">Ana Sofía, the leader of the Stella Orión technological pre-incubation program within the entrepreneurship ecosystem of the Orion Technology Park, played a pivotal role in facilitating our participation in the program. Her support has been instrumental in helping us create, validate, and strengthen our business model. Furthermore, she is also responsible for the TechXcelerate program, where she identified us as one of the top 10 projects at the national level to participate in the technological acceleration initiative.  </p>
-                            <p  class="cardHomeTitle">Ana Sofía Contreras</p>
-            
-                        </div>
-                        <div class="cardHome">
-                            <div onclick="selectCard5()" class="cardPos" style="--rotate:rotate(-4deg);">
-                                <img class="cardHomeIMG"
-                                    src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/anasof.png"
-                                    alt="Ana Sofia Contreras">
-                            </div>
-                        </div>
-                    </div>
-            
-            
-                    <div id="cardContain3" class="cardContain">
-                        <div class="cardText ">
-                            <p class="cardHomeText">Julia Estrada, Manager of Sanitary Promotion within the State Commission for the Protection against Sanitary Risks, facilitated a session for us. She was joined by the heads of the Food Program, Zoonotic Diseases, and the General Director of the Commission. During this session, we had the opportunity to discuss and validate the significant impact of mastitis on society. Furthermore, we were directed to the relevant authorities for the correctly registration of AureoBos.</p>
-                            <p  class="cardHomeTitle">Julia Estrada</p>
-            
-                        </div>
-                        <div class="cardHome">
-                            <div onclick="selectCard4()" class="cardPos" style="--rotate:rotate(-1deg);">
-                                <img class="cardHomeIMG"
-                                    src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/coespris.png"
-                                    alt="COESPRIS">
-                            </div>
-                        </div>
-                    </div>
-            
-            
-                    <div id="cardContain2" class="cardContain">
-                        <div class="cardText ">
-                            <p class="cardHomeText">Feli Sandoval, a member of the Entrepreneurship Ecosystem and the Technology Transfer Office at our university, provided us with invaluable guidance on various aspects related to patenting our project. She helped us navigate the challenges and limitations involved in the patenting process and provided insights into the steps required for proper registration with the relevant authorities. Feli's expertise has been instrumental in ensuring the effective protection of our intellectual property.</p>
-                            <p  class="cardHomeTitle">Felisia Sandoval</p>
-            
-                        </div>
-                        <div class="cardHome">
-                            <div onclick="selectCard3()" class="cardPos" style="--rotate:rotate(2deg);">
-                                <img class="cardHomeIMG"
-                                    src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/feli.png"
-                                    alt="Card image cap">
-                            </div>
-                        </div>
-                    </div>
-            
-                    <div id="cardContain1" class="cardContain">
-                        <div class="cardText ">
-                            <p class="cardHomeText">DVM Gabriela Mapes, Dairy Cattle Technical Manager at Zoetis, the world's largest animal health company, played a pivotal role in guiding us on the optimal route to commercialize our product. Her expertise also proved invaluable in shaping our exit strategy, shedding light on the intricacies of patent acquisition within trasnational corporations. DVM Gabriela provided us with a valuable industry perspective, instrumental in refining our business model.</p>
-                            <p  class="cardHomeTitle">Gabriela Mapes</p>
-            
-                        </div>
-                        <div class="cardHome">
-                            <div onclick="selectCard2()" class="cardPos" style="--rotate:rotate(2deg);">
-                                <img class="cardHomeIMG"
-                                    src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/gabriela.png"
-                                    alt="Card image cap">
-                            </div>
-                        </div>
-                   
-                    
-            
-                    <div id="cardContain0" class="cardContain active" >
-                        <div class="cardText">
-                            <p class="cardHomeText">Ilum Ventures, a private equity firm, played a pivotal role in showcasing and validating our business model. We had the opportunity to pitch our project, AureoBos, during a pitch night event attended by local investors and entrepreneurs. Their feedback proved invaluable, enabling us to make enhancements and establish valuable connections to scale our startup effectively.</p>
-                            <p  class="cardHomeTitle">Ilum Ventures</p>
-                            <div class="cardSub"><< Use Arrows Or Click >></div>
-            
-                        </div>
-                        <div class="cardHome">
-                            <div onclick="selectCard1()" class="cardPos" style="--rotate:rotate(5deg);">
-                                <img class="cardHomeIMG"
-                                    src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/ilum.png"
-                                    alt="Card image cap">
-                                    <div class="arrowSub">  -> </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            
-                
-            
-                </div>
-              </div>
             </div>
-            </div>    
-          </div>
-          </div>
-          </body>
-        </html>
+    
+        
+            <div id="sectionResults" class="sectR">
+                <div class="secciones">
+                    
+                    <div class="layout">
+                                                        <!--cosas del index-->
+                        <div class="index3">
+                            <nav class="navigation">
+                                <ul>
+                                    <li>
+                                        <a href="#">Skills & Capabilities</a>
+                                        <a href="#">Stakeholders</a>
+
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="secciones">
+                            <div class="tituloContenido">
+                                
+                                <p class="contenido">Outlining the required skills, capabilities, and stakeholders is of prime importance for AureoBos’ success. Behind AureoBos is a team of students majoring in Biotechnology, Law, and Computer Technologies, where our unique differences and expertise, stemming from our diverse academic backgrounds and lifetime experiences, provide the foundation for the successful and integrated development of our startup, AureoBos. We are catalysts for change, a group of young individuals completely aware of the challenges our world faces. Our determination knows no bounds as we strive to make a difference in our society and we know that through synthetic biology, with AureoBos, our impact will extend beyond cost reduction and improved food safety; we will be revolutionizing mastitis treatment.
+                                    Supported by a diverse group of advisors and instructors, we have harnessed our collective potential to drive our project forward. Furthermore, our university, the Monterrey Institute of Technology and Higher Education, has provided unwavering support throughout our journey. Renowned globally for its exceptional undergraduate entrepreneurship programs and ecosystems, it recently achieved the impressive ranking of fourth place in The Princeton Review's 2023 evaluation 5. Our connection to the entrepreneurial ecosystem played a pivotal role in our journey. It facilitated crucial networking opportunities with both business and technical experts, allowing us to thoroughly validate our business idea. Their invaluable feedback has significantly fortified our proposal, making it more robust and promising. 
+                                    After comprehensively outlining our primary stakeholders and their roles in the Integrated Human Practices section, we've taken the next strategic step. We've identified those stakeholders who are not just crucial but indispensable to the development of AureoBos as a startup. Here, we present a snapshot of these key stakeholders, their areas of expertise, affiliations, and the invaluable insights gained from our interactions with them.
+                                </p>
+                                
+                                
+                                <div class="homeCardsContainer">
+
+                                        <svg class="cardBackHome reverse" id="visual" viewBox="0 0 1920 768" width="1920" height="768"
+                                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                                            <path
+                                                d="M0 198L45.7 219.2C91.3 240.3 182.7 282.7 274.2 265.3C365.7 248 457.3 171 548.8 141.3C640.3 111.7 731.7 129.3 823 160.7C914.3"
+                                                fill="none" stroke="#52a595" stroke-width="40" stroke-linecap="round" stroke-linejoin="miter"></path>
+                                        </svg>
+                                        <svg class="cardBackHome" id="visual" viewBox="0 0 1920 768" width="1920" height="768"
+                                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                                            <path
+                                                d="M0 654L45.7 653.5C91.3 653 182.7 652 274.2 622C365.7 592 457.3 533 548.8 529.7C640.3 526.3 731.7 578.7 823 591.8C914.3 605 1005.7"
+                                                fill="none" stroke="#52a595" stroke-width="40" stroke-linecap="round" stroke-linejoin="miter"></path>
+                                        </svg>
+                                        <div id="cardContain11" class="cardContain">
+                                            <div class="cardText ">
+                                                <p class="cardHomeText">Víctor, as a member of Startup Chihuahua - an initiative driven by Chihuahua Futura to promote entrepreneurship, science, technology, and innovation strategies to strengthen regional competitiveness - played a pivotal role in facilitating our connections with various entrepreneurs. Through these connections, we were able to validate AureoBos by participating in several pitch events. Moreover, he significantly contributed to refining our business model and pitch.</p>
+                                                <p  class="cardHomeTitle">Víctor Calzadillas</p>
+                                
+                                            </div>
+                                            <div class="cardHome">
+                                                <div onclick="selectCard12()" class="cardPos" style="--rotate:rotate(6deg);">
+                                                    <img class="cardHomeIMG"
+                                                        src=https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/victor.png
+                                                        alt="victor">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="cardContain10" class="cardContain">
+                                            <div class="cardText ">
+                                                <p class="cardHomeText">The Panamerican University played a pivotal role in our project as they were the official organizers of the UPIA 2023 competition, in which we were finalists in the validated idea category. This competition allowed us to demonstrate the feasibility and scalability of our project, as well as receive feedback from various experts and entrepreneurs to strengthen our business model through a live pitch presented in Mexico City.</p>
+                                                <p  class="cardHomeTitle">Panamerican University</p>
+                                
+                                            </div>
+                                            <div class="cardHome">
+                                                <div onclick="selectCard11()" class="cardPos" style="--rotate:rotate(2deg);">
+                                                    <img class="cardHomeIMG"
+                                                        src=https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/upia.png
+                                                        alt="upia">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="cardContain9" class="cardContain">
+                                            <div class="cardText ">
+                                                <p class="cardHomeText">Startup Mexico, a leading organization in Mexico and Latin America founded by entrepreneur Marcus Dantus, served as a mentor and advisor through two intensive training sessions aimed at improving our pitch and strengthening our business model. Undoubtedly, their mentorship has allowed us to grow as a team.</p>
+                                                <p  class="cardHomeTitle">Startup Mexico</p>
+                                
+                                            </div>
+                                            <div class="cardHome">
+                                                <div onclick="selectCard10()" class="cardPos" style="--rotate:rotate(6deg);">
+                                                    <img class="cardHomeIMG"
+                                                        src=https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/smexico.png
+                                                        alt="smexico">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="cardContain8" class="cardContain">
+                                            <div class="cardText ">
+                                                <p class="cardHomeText">Juan Carlos Flores, Manager of the Livestock Unit at the Secretary of Rural Development in our state, welcomed us to a session where we had the opportunity to discuss our project and receive validation. During the conversation, he provided us with valuable recommendations regarding the commercialization of our product and the most effective ways to reach our customers. Additionally, he assisted us in connecting with farms interested in our project for future testing on their affected livestock.</p>
+                                                <p  class="cardHomeTitle">Juan Carlos Flores</p>
+                                
+                                            </div>
+                                            <div class="cardHome">
+                                                <div onclick="selectCard9()" class="cardPos" style="--rotate:rotate(deg);">
+                                                    <img class="cardHomeIMG"
+                                                        src=https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/sedr.png
+                                                        alt="SEDR">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="cardContain7" class="cardContain">
+                                            <div class="cardText ">
+                                                <p class="cardHomeText">The Orion Technology Park, the entrepreneurship ecosystem at our university served as a guide in our project's development and growth process as both a project and a startup. Through sessions with experts and entrepreneurs, we received valuable feedback to enhance various aspects, including our pitch, business model, sales projections, validation, and more.</p>
+                                                <p  class="cardHomeTitle">Orion Technology Park</p>
+                                
+                                            </div>
+                                            <div class="cardHome">
+                                                <div onclick="selectCard8()" class="cardPos" style="--rotate:rotate(6deg);">
+                                                    <img class="cardHomeIMG"
+                                                        src=https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/pto.png
+                                                        alt="PTO">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="cardContain6" class="cardContain">
+                                            <div class="cardText ">
+                                                <p class="cardHomeText">José Oropeza, National Key Account Manager at MSD Animal Health, one of the world's leading animal pharmaceutical companies, provided validation for our project, particularly in terms of commercialization. During our conversation, he not only explained the process of acquiring new external products at MSD but also suggested that we approach local pharmaceutical laboratories, as the process for acquiring new patents can be somewhat more challenging in multinational companies.</p>
+                                                <p  class="cardHomeTitle">José Oropeza</p>
+                                
+                                            </div>
+                                            <div class="cardHome">
+                                                <div onclick="selectCard7()" class="cardPos" style="--rotate:rotate(6deg);">
+                                                    <img class="cardHomeIMG"
+                                                        src=https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/jose.png
+                                                        alt="Jose Oropeza">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="cardContain5" class="cardContain">
+                                            <div class="cardText ">
+                                                <p class="cardHomeText">iGEM Startups organized a Summer School, which primarily entailed a two-day workshop. During this workshop, we gained foundational knowledge in entrepreneurship, had the opportunity to engage with experts in intellectual property, pitching, and business models. Additionally, we connected with several other teams participating in iGEM to gain insights into their projects.</p>
+                                                <p  class="cardHomeTitle">iGEM Startups</p>
+                                
+                                            </div>
+                                            <div class="cardHome">
+                                                <div onclick="selectCard6()" class="cardPos" style="--rotate:rotate(6deg);">
+                                                    <img class="cardHomeIMG"
+                                                        src=https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/startups.png
+                                                        alt="iGEM Startups">
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div id="cardContain4" class="cardContain">
+                                            <div class="cardText ">
+                                                <p class="cardHomeText">Ana Sofía, the leader of the Stella Orión technological pre-incubation program within the entrepreneurship ecosystem of the Orion Technology Park, played a pivotal role in facilitating our participation in the program. Her support has been instrumental in helping us create, validate, and strengthen our business model. Furthermore, she is also responsible for the TechXcelerate program, where she identified us as one of the top 10 projects at the national level to participate in the technological acceleration initiative.  </p>
+                                                <p  class="cardHomeTitle">Ana Sofía Contreras</p>
+                                
+                                            </div>
+                                            <div class="cardHome">
+                                                <div onclick="selectCard5()" class="cardPos" style="--rotate:rotate(-4deg);">
+                                                    <img class="cardHomeIMG"
+                                                        src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/anasof.png"
+                                                        alt="Ana Sofia Contreras">
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                            
+                                        <div id="cardContain3" class="cardContain">
+                                            <div class="cardText ">
+                                                <p class="cardHomeText">Julia Estrada, Manager of Sanitary Promotion within the State Commission for the Protection against Sanitary Risks, facilitated a session for us. She was joined by the heads of the Food Program, Zoonotic Diseases, and the General Director of the Commission. During this session, we had the opportunity to discuss and validate the significant impact of mastitis on society. Furthermore, we were directed to the relevant authorities for the correctly registration of AureoBos.</p>
+                                                <p  class="cardHomeTitle">Julia Estrada</p>
+                                
+                                            </div>
+                                            <div class="cardHome">
+                                                <div onclick="selectCard4()" class="cardPos" style="--rotate:rotate(-1deg);">
+                                                    <img class="cardHomeIMG"
+                                                        src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/coespris.png"
+                                                        alt="COESPRIS">
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                            
+                                        <div id="cardContain2" class="cardContain">
+                                            <div class="cardText ">
+                                                <p class="cardHomeText">Feli Sandoval, a member of the Entrepreneurship Ecosystem and the Technology Transfer Office at our university, provided us with invaluable guidance on various aspects related to patenting our project. She helped us navigate the challenges and limitations involved in the patenting process and provided insights into the steps required for proper registration with the relevant authorities. Feli's expertise has been instrumental in ensuring the effective protection of our intellectual property.</p>
+                                                <p  class="cardHomeTitle">Felisia Sandoval</p>
+                                
+                                            </div>
+                                            <div class="cardHome">
+                                                <div onclick="selectCard3()" class="cardPos" style="--rotate:rotate(2deg);">
+                                                    <img class="cardHomeIMG"
+                                                        src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/feli.png"
+                                                        alt="Card image cap">
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div id="cardContain1" class="cardContain">
+                                            <div class="cardText ">
+                                                <p class="cardHomeText">DVM Gabriela Mapes, Dairy Cattle Technical Manager at Zoetis, the world's largest animal health company, played a pivotal role in guiding us on the optimal route to commercialize our product. Her expertise also proved invaluable in shaping our exit strategy, shedding light on the intricacies of patent acquisition within trasnational corporations. DVM Gabriela provided us with a valuable industry perspective, instrumental in refining our business model.</p>
+                                                <p  class="cardHomeTitle">Gabriela Mapes</p>
+                                
+                                            </div>
+                                            <div class="cardHome">
+                                                <div onclick="selectCard2()" class="cardPos" style="--rotate:rotate(2deg);">
+                                                    <img class="cardHomeIMG"
+                                                        src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/sec5/gabriela.png"
+                                                        alt="Card image cap">
+                                                </div>
+                                            </div>
+                                    
+                                        </div>
+                            
+                                        <div id="cardContain0" class="cardContain active" >
+                                            <div class="cardText">
+                                                <a href="#" class="cardHomeText">Link de Vacas</a>
+                                                <a href="#" class="cardHomeTitle">Cosas de Vacas aca todas turbias, datos para dar click</a>
+                                                <div class="cardSub"><< Use Arrows Or Click >></div>
+                                
+                                            </div>
+                                            <div class="cardHome">
+                                                <div onclick="selectCard1()" class="cardPos" style="--rotate:rotate(5deg);">
+                                                    <img class="cardHomeIMG"
+                                                        src="https://cdn.britannica.com/55/174255-050-526314B6/brown-Guernsey-cow.jpg"
+                                                        alt="Card image cap">
+                                                        <div class="arrowSub">  -> 
+
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+</body>
                             
                 
                 <div id="scrlS42">
@@ -1508,22 +1680,7 @@ iGEM project.{% endblock %}
         }
         
     </script>
-    <script>
-        function showSection(sectionId) {
-    // Hide all sections
-    var sections = document.querySelectorAll('#scrlS3 > div');
-    sections.forEach(function(section) {
-        section.style.display = 'none';
-    });
-
-    // Show the selected section
-    var selectedSection = document.getElementById(sectionId);
-    if (selectedSection) {
-        selectedSection.style.display = 'block';
-    }
-    }
-
-    </script>
+    
 </body>
 
 <style>
@@ -3071,4 +3228,28 @@ Math.easeInOutQuad = function (t, b, c, d) {
 	}
 }());
 </script>
+<script type="text/javascript">
+    function showSectionVaca(sectionId) {
+        // Ocultar todas las secciones
+        var sectionOverview = document.getElementById("sectionOverview");
+        var sectionResults = document.getElementById("sectionResults");
+        var sectionMethods = document.getElementById("sectionMethods");
+        if (sectionOverview) {
+            sectionOverview.style.display = 'none';
+        }
+        if (sectionResults) {
+            sectionResults.style.display = 'none';
+        }
+        if (sectionMethods) {
+            sectionMethods.style.display = 'none';
+        }
+        
+        // Mostrar la sección seleccionada
+        var selectedSection = document.getElementById(sectionId);
+        if (selectedSection) {
+            selectedSection.style.display = 'block';
+        }
+    }
+</script>
+
 {% endblock %}

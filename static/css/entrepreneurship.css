@@ -586,7 +586,7 @@ footer{
   .oporttext14 {
     width: 100%;
     height: 80vh;
-    top: -11vh;
+    top: -5vh;
     display: flex;
     justify-content: center;
     font-size: 4.2vw;
@@ -613,36 +613,7 @@ footer{
     transition-delay: 1s;
     text-align: center;
 }
-.oporttext14 {
-    width: 100%;
-    height: 80vh;
-    top: -16vh;
-    display: flex;
-    justify-content: center;
-    font-size: 4.2vw;
-    font-weight: 600;
-    font-family: 'Bricolage Grotesque';
-    transition: 1s;
-    transition-timing-function: cubic-bezier(.55,-1,.29,.97);
-    transition-delay: 1s;
-    width: 100%;
-    height: fit-content;
-    color: white;
-    position: absolute;
-    left: -24px;
-    transition: 1s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-    transition-timing-function: cubic-bezier(.74,.17,.68,.93);
-    z-index: 4;
-    transform: translate(0,-50%) scale(1);
-    transition-delay: 1s;
-    text-align: center;
-}
+
   @media screen and (max-width: 768px) {
     .oporttext {
         /* Ajustes específicos para pantallas pequeñas */
@@ -663,7 +634,7 @@ footer{
 
   }
   .parportu10{
-    width: calc(75%);
+    width: calc(79%);
     height: fit-content;
     color: white;
     font-size: 1.5rem;
@@ -672,6 +643,7 @@ footer{
     position: relative;
     text-align: justify;
     left: 17vh;
+    margin-top: -11vh;
 }
   .oporttext1{
     width: 100%;
@@ -799,14 +771,15 @@ footer{
 
     }
     .parportu20 {
-        width: calc(50%);
+        width: calc(78%);
         height: fit-content;
         color: white;
         font-size: 1.5rem;
-        padding-top: -1vh;
+        padding-top: -9vh;
         padding-bottom: 40px;
         position: relative;
         left: 25vh;
+        margin-top: -25vh;
     }
   .imgempre{
     padding-top: 31px;
@@ -829,7 +802,7 @@ footer{
   .oporttext11 {
     width: 100%;
     height: 80vh;
-    top: -9vh;
+    top: -10vh;
     display: flex;
     justify-content: center;
     font-size: 4.2vw;
@@ -856,10 +829,10 @@ footer{
     transition-delay: 1s;
     text-align: center;
   }
-  .oporttext16{
+  .oporttext16 {
     width: 100%;
     height: 80vh;
-    top: -37vh;
+    top: -11vh;
     display: flex;
     justify-content: center;
     font-size: 4.2vw;
@@ -1463,6 +1436,19 @@ footer{
     transition: background-color 0.5s, transform 0.5s;
     position: absolute;
    }
+   .ext{
+        top: 57vh;
+        left: 17vh;
+        width: 180px;
+        height: 180px;
+        color: #DE8551;
+        background-color: transparent;
+        border: 5px solid #DE8551;
+        border-radius: 50%;
+        border-width: 30px;
+        transition: background-color 0.5s, transform 0.5s;
+        position: absolute;
+    }
    
    .button-content {
     position: absolute;
@@ -1476,7 +1462,8 @@ footer{
    
    .overview:hover .button-content,
    .methods:hover .button-content,
-   .results:hover .button-content{
+   .results:hover .button-content,
+   .ext:hover .button-content{
     height: fit-content;
     top: 40%;
    }
@@ -1498,17 +1485,24 @@ footer{
     background-color: #447D9C;
     transform: scale(1.5);
    }
+   .ext:hover {
+    border: none;
+    background-color: #447D9C;
+    transform: scale(1.5);
+   }
    
    /* Estilo para el contenido de los div de los botones al pasar el cursor sobre ellos */
    .methods:hover .tituloBoton,
    .overview:hover .tituloBoton,
-   .results:hover .tituloBoton {
+   .results:hover .tituloBoton,
+   .ext:hover .tituloBoton {
     font-size: 18px;
    }
    
    .methods:hover .contentBoton,
    .overview:hover .contentBoton,
-   .results:hover .contentBoton  {
+   .results:hover .contentBoton ,
+   .ext:hover .contentBoton {
     text-align: justify;
     color: white;
     display: block;
@@ -1572,6 +1566,15 @@ footer{
     left: 50%;
     transform: translateX(-50%);
    }
+   .ext:hover .learnMore{
+    display: inline-block;
+    width: 80px;
+    background-color: #447D9C;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+   }
    /* Estilo para los títulos y contenido de los div de los botones */
    .tituloBoton {
     font-size: 20px;
@@ -1591,9 +1594,11 @@ footer{
    .methods:hover .tituloBoton,
    .overview:hover .tituloBoton,
    .results:hover .tituloBoton,
+   .ext:hover .tituloBoton,
    .methods:hover .contentBoton,
    .overview:hover .contentBoton,
-   .results:hover .contentBoton {
+   .results:hover .contentBoton,
+   .ext:hover .contentBoton {
     color: white;
     max-width: 100%;
     max-height: 100%;
@@ -1938,3 +1943,96 @@ footer{
         transform: translateY(4.8rem) scale(0.5);
    }
 }
+.ag-format-container {
+    width: 1142px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  
+  
+  
+  .ag-courses_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  
+    padding: 50px 0;
+  }
+  
+  .ag-courses_item {
+    -ms-flex-preferred-size: calc(33.33333% - 30px);
+    flex-basis: calc(33.33333% - 30px);
+  
+    margin: 0 15px 30px;
+  
+    overflow: hidden;
+  
+    border-radius: 28px;
+  }
+  
+  .ag-courses-item_link {
+    display: block;
+    padding: 30px 20px;
+    background-color: #dbdbe0;
+  
+    overflow: hidden;
+  
+    position: relative;
+  }
+  
+  .ag-courses-item_link:hover,
+  .ag-courses-item_link:hover .ag-courses-item_date {
+    text-decoration: none;
+    color: #FFF;
+  }
+  
+  .ag-courses-item_link:hover .ag-courses-item_bg {
+    -webkit-transform: scale(10);
+    -ms-transform: scale(10);
+    transform: scale(10);
+  }
+  
+  .ag-courses-item_title {
+    margin: 0 0 25px;
+    font-family: 'Bricolage Grotesque';
+    overflow: hidden;
+    font-weight: 400;
+    font-size: 23px;
+    color: #000000;
+    line-height: 1.15;
+    z-index: 2;
+    position: relative;
+  }
+  
+  .ag-courses-item_content {
+    font-family: 'Quicksand';
+    font-size: 12px;
+    color: #000000;
+    font-weight: 400;
+  }
+  
+  .ag-courses-item_bg {
+    height: 128px;
+    width: 128px;
+  
+    z-index: 1;
+    position: absolute;
+    top: -75px;
+    right: -75px;
+  
+    border-radius: 50%;
+  
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  .ag-courses_item:nth-child(-n+7) .ag-courses-item_bg {
+    background-color: #447D9C;
+  
+  }
