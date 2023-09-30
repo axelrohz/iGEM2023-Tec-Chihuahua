@@ -9,6 +9,7 @@ margin: auto;
 }
 
 .foot {
+text-align: justify;
 width: 100%;
 max-width: 1000px;
 height: auto;
