@@ -86,7 +86,7 @@ overflow: visible !important;
   margin: 40px 0;
 }
 
-.containerTrj .cardTrj {
+.containerTrj .card {
   position: relative;
   min-width: 230px;
   height: 440px;
@@ -98,23 +98,23 @@ overflow: visible !important;
   transition: 0.5s;
 }
 
-.containerTrj .cardTrj:nth-child(1) .box .content a {
+.containerTrj .card:nth-child(1) .box .content a {
   background: #2196f3;
 }
 
-.containerTrj .cardTrj:nth-child(2) .box .content a {
+.containerTrj .card:nth-child(2) .box .content a {
   background: #e91e63;
 }
 
-.containerTrj .cardTrj:nth-child(3) .box .content a {
+.containerTrj .card:nth-child(3) .box .content a {
   background: #23c186;
 }
 
-.containerTrj .cardTrj:nth-child(4) .box .content a {
+.containerTrj .card:nth-child(4) .box .content a {
     background: #8abf0e;
 }
 
-.containerTrj .cardTrj .box {
+.containerTrj .card .box {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -129,11 +129,11 @@ overflow: visible !important;
   transition: 0.5s;
 }
 
-.containerTrj .cardTrj .box:hover {
+.containerTrj .card .box:hover {
   transform: translateY(-50px);
 }
 
-.containerTrj .cardTrj .box:before {
+.containerTrj .card .box:before {
   content: "";
   position: absolute;
   top: 0;
@@ -143,12 +143,12 @@ overflow: visible !important;
   background: rgba(255, 255, 255, 0.03);
 }
 
-.containerTrj .cardTrj .box .content {
+.containerTrj .card .box .content {
   padding: 20px;
   text-align: center;
 }
 
-.containerTrj .cardTrj .box .content h2 {
+.containerTrj .card .box .content h2 {
   position: absolute;
   top: -10px;
   right: 30px;
@@ -156,7 +156,7 @@ overflow: visible !important;
   color: rgba(255, 255, 255, 0.1);
 }
 
-.containerTrj .cardTrj .box .content h3 {
+.containerTrj .card .box .content h3 {
   font-size: 1.8rem;
   color: #fff;
   z-index: 1;
@@ -164,7 +164,7 @@ overflow: visible !important;
   margin-bottom: 15px;
 }
 
-.containerTrj .cardTrj .box .content p {
+.containerTrj .card .box .content p {
   font-size: 1rem;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.9);
@@ -172,7 +172,7 @@ overflow: visible !important;
   transition: 0.5s;
 }
 
-.containerTrj .cardTrj .box .content a {
+.containerTrj .card .box .content a {
   position: relative;
   display: inline-block;
   padding: 8px 20px;
@@ -184,7 +184,7 @@ overflow: visible !important;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   transition: 0.5s;
 }
-.containerTrj .cardTrj .box .content a:hover {
+.containerTrj .card .box .content a:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
   background: #fff;
   color: #000;
