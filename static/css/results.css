@@ -81,7 +81,7 @@ overflow: visible !important;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   max-width: 1536px;
   margin: 40px 0;
 }
