@@ -75,12 +75,12 @@ overflow: visible !important;
 }
 
 /*Tarjetas de achievements*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand";
 }
 
 body {
@@ -93,7 +93,7 @@ body {
 }
 
 body .container {
-  display: flex;    
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
