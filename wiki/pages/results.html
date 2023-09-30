@@ -680,6 +680,56 @@ plans here.{% endblock %}
               <br>
             </div>
 
+            <script>
+              const tween = KUTE.fromTo(
+                '#wave11',
+                { path: '#wave11' },
+                { path: '#wave21' },
+                { repeat: 999, duration: 5000, yoyo: true }
+              ).start();
+            </script>
+            <script>
+              const tween2 = KUTE.fromTo(
+                '#wave12',
+                { path: '#wave12' },
+                { path: '#wave22' },
+                { repeat: 999, duration: 4000, yoyo: true }
+              ).start();
+            </script>
+            <script>
+              const tween3 = KUTE.fromTo(
+                '#wave13',
+                { path: '#wave13' },
+                { path: '#wave23' },
+                { repeat: 999, duration: 3000, yoyo: true }
+              ).start();
+            </script>
+            <script>
+              const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+
+              accordionItemHeaders.forEach(accordionItemHeader => {
+                accordionItemHeader.addEventListener("click", event => {
+
+                  // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
+
+                  // const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
+                  // if(currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader!==accordionItemHeader) {
+                  //   currentlyActiveAccordionItemHeader.classList.toggle("active");
+                  //   currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+                  // }
+
+                  accordionItemHeader.classList.toggle("active");
+                  const accordionItemBody = accordionItemHeader.nextElementSibling;
+                  if (accordionItemHeader.classList.contains("active")) {
+                    accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+                  }
+                  else {
+                    accordionItemBody.style.maxHeight = 0;
+                  }
+
+                });
+              });
+            </script>
 
           </div>
         </div>
