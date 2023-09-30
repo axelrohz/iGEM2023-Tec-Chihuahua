@@ -103,7 +103,7 @@ body .container {
 
 body .container .card {
   position: relative;
-  min-width: 320px;
+  min-width: 280px;
   height: 440px;
   box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
     inset -5px -5px 15px rgba(255, 255, 255, 0.1),
@@ -123,6 +123,10 @@ body .container .card:nth-child(2) .box .content a {
 
 body .container .card:nth-child(3) .box .content a {
   background: #23c186;
+}
+
+body .container .card:nth-child(4) .box .content a {
+    background: #8abf0e;
 }
 
 body .container .card .box {
