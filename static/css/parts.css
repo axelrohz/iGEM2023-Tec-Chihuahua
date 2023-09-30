@@ -126,4 +126,12 @@ h1 {
   overflow: visible !important;
  }
 
- 
+  /*ImagenesResponsivas*/
+  .responsive {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    align-items: center;
+    display: block;
+    margin: auto;
+  }
