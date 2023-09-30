@@ -99,19 +99,23 @@ overflow: visible !important;
 }
 
 .containerTrj .card:nth-child(1) .box .content a {
-  background: #2196f3;
+  background: #447D9C;
 }
 
 .containerTrj .card:nth-child(2) .box .content a {
-  background: #e91e63;
+  background: #DE8551;
 }
 
 .containerTrj .card:nth-child(3) .box .content a {
-  background: #23c186;
+  background: #D27063;
 }
 
 .containerTrj .card:nth-child(4) .box .content a {
-    background: #8abf0e;
+    background: #C55B75;
+}
+
+.containerTrj .card:nth-child(5) .box .content a {
+    background: #5BC5AB;
 }
 
 .containerTrj .card .box {
