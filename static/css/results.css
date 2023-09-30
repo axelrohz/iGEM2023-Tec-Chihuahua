@@ -1,5 +1,5 @@
   /*ImagenesResponsivas*/
-.responsiveResults {
+.responsiveResults { /*Esta cosa sirve para hacer responsivas las imagenes*/
 width: 100%;
 max-width: 1000px;
 height: auto;
@@ -8,7 +8,7 @@ display: block;
 margin: auto;
 }
 
-.footImageResults {
+.footImageResults { /*Esta cosa sirve para poner un pie de pagina que se ajuste a la responsividad del formato de la instruccion de arriba*/
 width: 100%;
 max-width: 1000px;
 height: auto;
@@ -22,7 +22,7 @@ text-indent: 0;
 color: gray;
 }
 
-.divBorderResults {
+.divBorderResults { /*Esta cosa sirve para poner un borde en la parte de abajo a los divs que mide 3 veces lo que la font (sirve para no usar tanto <br>*/
     margin-bottom: 3rem;
 }
 
