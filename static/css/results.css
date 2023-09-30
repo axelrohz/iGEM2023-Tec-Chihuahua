@@ -8,6 +8,19 @@ display: block;
 margin: auto;
 }
 
+.foot {
+width: 100%;
+max-width: 1000px;
+height: auto;
+align-items: center;
+display: block;
+margin: auto;
+text-align: center;
+font-style: italic;
+font-size: smaller;
+text-indent: 0;
+}
+
 .images {
     margin-bottom: 3rem;
 }
