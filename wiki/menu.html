@@ -29,7 +29,7 @@
         <li class="drop-down"><a class ="hipervinculoaqua" href="">Project</a>
           <ul>
             
-            
+            <li><a href="{{ url_for('pages', page='notebook') }}">Notebook</a></li>
             <li><a href="{{ url_for('pages', page='description') }}">Description</a></li>
             <li><a href="{{ url_for('pages', page='safety') }}">Safety</a></li>
             <li><a href="{{ url_for('pages', page='contribution') }}">Contributions</a></li>
@@ -63,7 +63,7 @@
           <ul>
             
             <li><a href="{{ url_for('pages', page='experiments') }}">Experiments</a></li>
-            <li><a href="{{ url_for('pages', page='notebook') }}">Notebook</a></li>
+            
             <li><a href="{{ url_for('pages', page='results') }}">Results</a></li>
             <li><a href="{{ url_for('pages', page='parts') }}">Parts</a></li>
             <li><a href="{{ url_for('pages', page='proof') }}">Proof of Concept</a></li>
