@@ -14,544 +14,764 @@
 <link href="{{ url_for('static', filename = 'css/parallax.css') }}" rel="stylesheet">
 
 
-<script src= "{{ url_for('static', filename = 'assets/js/team.js') }}"></script>
+<script src="{{ url_for('static', filename = 'assets/js/team.js') }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
 
 
 
+<body class="mybody">
 
-    <body class="mybody">
-    
-      <img class="parallax-team" src="https://static.igem.wiki/teams/4607/wiki/members/2-2.png">
-      <div class="image-space"><h1 class="title"> Team </h1>
-      </div>
-      
-    
-    
-    <div class="parallax-content">
-    
+  <div class="teamBanner image-space">
+    <div class="waveTeam">
+      <svg id="visual" viewBox="0 0 1920 1080" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+        <g>
+          <path id="wave11"
+            d="M0 685L45.7 686.8C91.3 688.7 182.7 692.3 274.2 659.5C365.7 626.7 457.3 557.3 548.8 563.2C640.3 569 731.7 650 823 655.2C914.3 660.3 1005.7 589.7 1097 550.3C1188.3 511 1279.7 503 1371.2 524.7C1462.7 546.3 1554.3 597.7 1645.8 635.2C1737.3 672.7 1828.7 696.3 1874.3 708.2L1920 720L1920 1081L1874.3 1081C1828.7 1081 1737.3 1081 1645.8 1081C1554.3 1081 1462.7 1081 1371.2 1081C1279.7 1081 1188.3 1081 1097 1081C1005.7 1081 914.3 1081 823 1081C731.7 1081 640.3 1081 548.8 1081C457.3 1081 365.7 1081 274.2 1081C182.7 1081 91.3 1081 45.7 1081L0 1081Z"
+            fill="#85dec5"></path>
+          <path id="wave12"
+            d="M0 743L45.7 734C91.3 725 182.7 707 274.2 717.7C365.7 728.3 457.3 767.7 548.8 766C640.3 764.3 731.7 721.7 823 695C914.3 668.3 1005.7 657.7 1097 676.8C1188.3 696 1279.7 745 1371.2 753.5C1462.7 762 1554.3 730 1645.8 741C1737.3 752 1828.7 806 1874.3 833L1920 860L1920 1081L1874.3 1081C1828.7 1081 1737.3 1081 1645.8 1081C1554.3 1081 1462.7 1081 1371.2 1081C1279.7 1081 1188.3 1081 1097 1081C1005.7 1081 914.3 1081 823 1081C731.7 1081 640.3 1081 548.8 1081C457.3 1081 365.7 1081 274.2 1081C182.7 1081 91.3 1081 45.7 1081L0 1081Z"
+            fill="#A7DCD3"></path>
+          <path id="wave13"
+            d="M0 898L45.7 899C91.3 900 182.7 902 274.2 896.8C365.7 891.7 457.3 879.3 548.8 882.8C640.3 886.3 731.7 905.7 823 911.5C914.3 917.3 1005.7 909.7 1097 898C1188.3 886.3 1279.7 870.7 1371.2 875.2C1462.7 879.7 1554.3 904.3 1645.8 900C1737.3 895.7 1828.7 862.3 1874.3 845.7L1920 829L1920 1081L1874.3 1081C1828.7 1081 1737.3 1081 1645.8 1081C1554.3 1081 1462.7 1081 1371.2 1081C1279.7 1081 1188.3 1081 1097 1081C1005.7 1081 914.3 1081 823 1081C731.7 1081 640.3 1081 548.8 1081C457.3 1081 365.7 1081 274.2 1081C182.7 1081 91.3 1081 45.7 1081L0 1081Z"
+            fill="#f3f5f9"></path>
 
-    
-    <div class="teamBody">
-      <div class="stickhead">
-      <div class="teamHead"> 
+        </g>
+        <g style="visibility: hidden;">
+          <path id="wave21"
+            d="M0 719L45.7 722.3C91.3 725.7 182.7 732.3 274.2 700.8C365.7 669.3 457.3 599.7 548.8 558.5C640.3 517.3 731.7 504.7 823 533.7C914.3 562.7 1005.7 633.3 1097 666.2C1188.3 699 1279.7 694 1371.2 696.3C1462.7 698.7 1554.3 708.3 1645.8 691.3C1737.3 674.3 1828.7 630.7 1874.3 608.8L1920 587L1920 1081L1874.3 1081C1828.7 1081 1737.3 1081 1645.8 1081C1554.3 1081 1462.7 1081 1371.2 1081C1279.7 1081 1188.3 1081 1097 1081C1005.7 1081 914.3 1081 823 1081C731.7 1081 640.3 1081 548.8 1081C457.3 1081 365.7 1081 274.2 1081C182.7 1081 91.3 1081 45.7 1081L0 1081Z"
+            fill="#4da491"></path>
+          <path id="wave22"
+            d="M0 766L45.7 771.8C91.3 777.7 182.7 789.3 274.2 782.7C365.7 776 457.3 751 548.8 757.8C640.3 764.7 731.7 803.3 823 813.5C914.3 823.7 1005.7 805.3 1097 781.5C1188.3 757.7 1279.7 728.3 1371.2 736.7C1462.7 745 1554.3 791 1645.8 802C1737.3 813 1828.7 789 1874.3 777L1920 765L1920 1081L1874.3 1081C1828.7 1081 1737.3 1081 1645.8 1081C1554.3 1081 1462.7 1081 1371.2 1081C1279.7 1081 1188.3 1081 1097 1081C1005.7 1081 914.3 1081 823 1081C731.7 1081 640.3 1081 548.8 1081C457.3 1081 365.7 1081 274.2 1081C182.7 1081 91.3 1081 45.7 1081L0 1081Z"
+            fill="#a9d1c7"></path>
+          <path id="wave23"
+            d="M0 924L45.7 924.2C91.3 924.3 182.7 924.7 274.2 907.2C365.7 889.7 457.3 854.3 548.8 861C640.3 867.7 731.7 916.3 823 928.5C914.3 940.7 1005.7 916.3 1097 897C1188.3 877.7 1279.7 863.3 1371.2 848.2C1462.7 833 1554.3 817 1645.8 823.5C1737.3 830 1828.7 859 1874.3 873.5L1920 888L1920 1081L1874.3 1081C1828.7 1081 1737.3 1081 1645.8 1081C1554.3 1081 1462.7 1081 1371.2 1081C1279.7 1081 1188.3 1081 1097 1081C1005.7 1081 914.3 1081 823 1081C731.7 1081 640.3 1081 548.8 1081C457.3 1081 365.7 1081 274.2 1081C182.7 1081 91.3 1081 45.7 1081L0 1081Z"
+            fill="#ffffff"></path>
+        </g>
+      </svg>
 
-        <div class="teamTxt">
-          <h1 class="head" style="margin-top: 10%;">Meet our Team!</h1>
-          <div class="teamList">
-          <a>Members</a>
-          <br>
-          <a>Advisors</a>
-          <br>
-          <a>Instructors</a>
-          <br>
-          <a>PIs</a>
+      <script>
+        const tween = KUTE.fromTo(
+          '#wave11',
+          { path: '#wave11' },
+          { path: '#wave21' },
+          { repeat: 999, duration: 7000, yoyo: true }
+        ).start();
+      </script>
+      <script>
+        const tween2 = KUTE.fromTo(
+          '#wave12',
+          { path: '#wave12' },
+          { path: '#wave22' },
+          { repeat: 999, duration: 6000, yoyo: true }
+        ).start();
+      </script>
+      <script>
+        const tween3 = KUTE.fromTo(
+          '#wave13',
+          { path: '#wave13' },
+          { path: '#wave23' },
+          { repeat: 999, duration: 6500, yoyo: true }
+        ).start();
+      </script>
+    </div>
+    <div class="teamBannerContent">
+      <h1 class="teamBannerTitle">Meet our team!</h1>
+      <p class="teamBannerText">Recuerden poner una frase o algo aqui.</p>
+    </div>
+    <img loading="lazy" class="teamBannerImg" src="../../static/css/teamImg.png" />
+  </div>
+
+
+  <div class="parallax-content">
+
+    <div class="scrollIndexContain">
+      <div class="stickyIndex">
+        <div class="lineIndex"></div>
+        <div class="indexDots">
+          <div onclick="goTo('1')" class="dotIndex" id="dot1">
+            <div class="dotText">Members</div>
+          </div>
+          <div class="dotIndex" id="dot2" onclick="goTo('2')">
+            <div class="dotText">Advisors</div>
+          </div>
+          <div class="dotIndex" id="dot3" onclick="goTo('3')">
+            <div class="dotText">Instructors</div>
+          </div>
+          <div class="dotIndex" id="dot4" onclick="goTo('4')">
+            <div class="dotText">PIs</div>
+          </div>
         </div>
-        </div>
 
-          <svg id="visual" class="wave" viewBox="0 0 450 900"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M334 900L337.8 878.5C341.7 857 349.3 814 354.5 771.2C359.7 728.3 362.3 685.7 354.3 642.8C346.3 600 327.7 557 319.8 514.2C312 471.3 315 428.7 324.3 385.8C333.7 343 349.3 300 351.3 257.2C353.3 214.3 341.7 171.7 343 128.8C344.3 86 358.7 43 365.8 21.5L373 0L450 0L450 21.5C450 43 450 86 450 128.8C450 171.7 450 214.3 450 257.2C450 300 450 343 450 385.8C450 428.7 450 471.3 450 514.2C450 557 450 600 450 642.8C450 685.7 450 728.3 450 771.2C450 814 450 857 450 878.5L450 900Z" fill="#dbdbdb"></path><path d="M414 900L406.5 878.5C399 857 384 814 380 771.2C376 728.3 383 685.7 388.8 642.8C394.7 600 399.3 557 397.3 514.2C395.3 471.3 386.7 428.7 384.8 385.8C383 343 388 300 393.5 257.2C399 214.3 405 171.7 403.3 128.8C401.7 86 392.3 43 387.7 21.5L383 0L450 0L450 21.5C450 43 450 86 450 128.8C450 171.7 450 214.3 450 257.2C450 300 450 343 450 385.8C450 428.7 450 471.3 450 514.2C450 557 450 600 450 642.8C450 685.7 450 728.3 450 771.2C450 814 450 857 450 878.5L450 900Z" fill="#f3f5f9"></path></svg>
       </div>
     </div>
-    
-      <div class="teamScroll">
-        
 
-        <div class="wrap" id="sec1">
-          <header class="TeamHeader"> 
-              <h1>Members</h1>
-          </header>
-      </div>
-    
 
-    
-      <div class="teamContainer">
-    
-        
-    
-        
-        <div class="teamCar">
-          <div class="image" style="--gradient:linear-gradient(45deg, rgba(68, 125, 156, 1), rgba(91, 197, 171, 1))">
-            <img class="img" src="https://static.igem.wiki/teams/4607/wiki/members/adolfe.png" alt="1">
-            <div class="tag" style="--ccolor:rgb(68, 125, 156)">Wet Lab</div>
-            <div class="tag2">Leader</div>
-            
-          </div>
-    
-          <div class="content">
-            <h1 style="color:rgb(68, 125, 156)">Adolfo</h1>
-            <p>Wet lab is led by this witty nerd. Interested in the small details in nature and with previous work in mechanics, he knew his path was in science. His meticulousness keeps our work clean. He’s sure he would be an <em>Acidithiobacillus ferrooxidans</em> His favorite dairy product is chocolate milk. <br> “Now I am become endolysin, the destroyer of bacteria”   </p>
-            
-          </div>
-        </div>
-        <div class="teamCar">
-          <div class="image" style="--gradient:linear-gradient(45deg, rgba(68, 125, 156, 1), rgba(91, 197, 171, 1))">
-            <img class="img" src="https://static.igem.wiki/teams/4607/wiki/images/members/lupita.png" alt="1">
-            <div class="tag" >Human Practices</div>
-            <div class="tag2" >Wet Lab</div>
-            <div class="tag" style="--ccolor:rgb(68, 125, 156)">Wet Lab</div>
-          </div>
-    
-          <div class="content">
-            <h1 style="color:rgb(68, 125, 156)">Lupita</h1>
-            <p>Empathetic to death, she always knows how to comfort any of us. This animal lover trusts that her life path resides in science and her passion keeps our team moving. She sees herself in <em>Pseudomonas aeruginosa </em>. Her favorite dairy product is ice cream. <br> “La de chambear no te la sabes <sup>3</sup>”</p>
-            <a href="https://www.linkedin.com/in/mar%C3%ADa-guadalupe-marmolejo-4a2335276/" title="LinkedIn"><svg role="img" viewBox="0 0 540 540"><path d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z"/></svg></a>
-          </div>
-        </div>
-    
-    
-        <div class="teamCar">
-          <div class="image" style="--gradient:linear-gradient(45deg, rgba(68, 125, 156, 1), rgba(91, 197, 171, 1))">
-            <img class="img" src="https://static.igem.wiki/teams/4607/wiki/images/members/axel.png" alt="1">
-            <div class="tag" style="--ccolor:rgb(68, 125, 156)">Wet Lab</div>
-          </div>
-    
-          <div class="content">
-            <h1 style="color:rgb(68, 125, 156)">Axel</h1>
-            <p>Our team’s problem solving relies on him, one of our most diplomatic members. This sensitive person acts as a change agent and has no problem in showing vulnerability. He would be an <em>Agrobacterium tumefaciens </em>(he thinks it’s poetic). His favorite dairy product is Greek yogurt. <br> “Why’s everything going so smooth? This seems suspicious” </p>
-            <a href="https://www.linkedin.com/in/axelrojero/" title="LinkedIn"><svg role="img" viewBox="0 0 540 540"><path d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z"/></svg></a>
-          </div>
-        </div>
-    
-        
-        
-    
-        <div class="teamCar">
-          <div class="image" style="--gradient:linear-gradient(45deg, rgba(91, 197, 171,0.8), rgba(169, 186, 108,1))">
-            <img class="img" src="https://static.igem.wiki/teams/4607/wiki/images/members/topi.png">
-            <div class="tag" style="--ccolor:#5BC5AB">Model</div>
-            <div class="tag2" >Leader</div>
-          </div>
-    
-          <div class="content">
-            <h1 style="color:#5BC5AB">Topi</h1>
-            <p> The team’s sportiest member embodies the definition of discipline and motivates our team constantly. Her curiosity and eagerness to learn made her a perfect candidate for her area. She would definitely be a <em> Milnesium tardigradum</em> Her favorite dairy product is also greek yogurt. <br> “Project’s written with j, not with y!” </p>
-            <a href="https://www.linkedin.com/in/annarivag/" title="LinkedIn"><svg role="img" viewBox="0 0 540 540"><path d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z"/></svg></a>
-          </div>
-        </div>
-    
-        <div class="teamCar">
-          <div class="image" style="--gradient:linear-gradient(45deg, rgba(91, 197, 171,0.8), rgba(169, 186, 108,1))">
-            <img class="img" src="https://static.igem.wiki/teams/4607/wiki/images/members/vane.png">
-            <div class="tag" style="--ccolor:#5BC5AB">Model</div>
-          </div>
-    
-          <div class="content">
-            <h1 style="color:#5BC5AB">Vanessa</h1>
-            <p>Having history in the International chemistry olympiad, our most calm member knows her way through a mathematical model. This important member likes calculus and keeps our environment chill. She identifies herself with <em>Lactobacillus acidophilus</em>. Her favorite dairy product is ice cream.  <br> “Actually, I had thought about that”</p>
-            <a href="https://www.linkedin.com/in/vanessa-montoya-585282252/" title="LinkedIn"><svg role="img" viewBox="0 0 540 540"><path d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z"/></svg></a>
-          </div>
-        </div>
-    
-    
-    
-        <div class="teamCar">
-          <div class="image" style="--gradient:linear-gradient(45deg, rgba(246, 174, 45, 0.8), rgba(169,186, 108,1))">
-            <img class="img" src="https://static.igem.wiki/teams/4607/wiki/members/giuliana-photoroom-png-photoroom.png">
-            <div class="tag" style="--ccolor:rgb(169, 186, 108)">Wiki</div>
-            <div class="tag2">Leader</div>
-            
-          </div>
-    
-          <div class="content">
-            <h1 style="color:rgb(169, 186, 108)">Giuliana</h1>
-            <p>This software engineering student leads the wiki team using her knowledge to communicate our project to the world. Her hyperactivity maintains the team energized and she’s always speaking her mind. If she was a microorganism, she would be a microchip.  Her favorite dairy product is cheese. <br> “I can’t do lab, how you live without ctrl-Z?” </p>
-            <a href="https://www.linkedin.com/in/giulianaherrera/" title="LinkedIn"><svg role="img" viewBox="0 0 540 540"><path d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z"/></svg></a>
-          </div>
-        </div>
-    
-        <div class="teamCar">
-          <div class="image" style="--gradient:linear-gradient(45deg, rgba(246, 174, 45, 0.8), rgba(169,186, 108,1))">
-            <img class="img" src="https://static.igem.wiki/teams/4607/wiki/images/members/seychelle.png">
-            <div class="tag" style="--ccolor:rgb(169, 186, 108)">Wiki</div>
-          </div>
-    
-          <div class="content">
-            <h1 style="color:rgb(169, 186, 108)">Seychelle</h1>
-            <p>Our iconic capibara-like member always has something to feed us with and  lends a helping hand when needed. Her love for science comes from her curiosity (she’s always asking “But, why?). Her life aspiration is to be like <em>Deinococcus radiodurans</em>. Her favorite dairy product is goat cheese (Really?). <br>“What were we doing?”</p>
-            <a href="https://www.linkedin.com/in/seychelle-osuna-56363527a/" title="LinkedIn"><svg role="img" viewBox="0 0 540 540"><path d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z"/></svg></a>
-          </div>
-        </div>
-    
-    
-        
-        <div class="teamCar">
-          <div class="image" style="--gradient:linear-gradient(45deg, rgba(246, 174, 45,0.8), rgba(222, 133, 181, 1))">
-            <img class="img" src="https://static.igem.wiki/teams/4607/wiki/images/members/arely.png" alt="1">
-            <div class="tag" style="--ccolor:rgb(246, 174, 45)">Entrepreneurship</div>
-            <div class="tag2">Leader</div>
-            
-          </div>
-    
-          <div class="content">
-            <h1 style="color:rgb(246, 174, 45)">Arely</h1>
-            <p>This determined law student is best known for her entrepreneurship abilities, which lead this area in our project. Feeling passion for technology, she knew this was her place. When asked about what microorganism she would be, she just said “<em>Jurisprudencia <sup>2</sup></em>”. Her favorite dairy product is yogurt.  <br> “Sorry, I’m a Lic” <sup>2</sup> </p>
-            <a href="https://www.linkedin.com/in/arelyjim/" title="LinkedIn"><svg role="img" viewBox="0 0 540 540"><path d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z"/></svg></a>
-          </div>
-        </div>
-        <div class="teamCar">
-          <div class="image" style="--gradient:linear-gradient(45deg, rgba(246, 174, 45,0.8), rgba(222, 133, 181, 1))">
-            <img class="img" src="https://static.igem.wiki/teams/4607/wiki/images/members/pau.png">
-            <div class="tag2" style="--ccolor:rgb(246, 174, 45)">Entrepreneurship</div>
-            <div class="tag" style="--ccolor:#5BC5AB">Model</div>
-          </div>
-    
-          <div class="content">
-            <h1 style="color:rgb(246, 174, 45)">Pau</h1>
-            <p>Our zesty member always knows how to crack a joke that makes us laugh. Her love for science begun in math and physics, which made her choose her area. If she were a microorganism, she would be <em>Staphylococcus aureus</em>. Her favorite dairy product is frozen yogurt. <br> "Aren't you craving (insert any type of food)?" </p>
-            <a href="www.linkedin.com/in/PaulinaBaeza10" title="LinkedIn"><svg role="img" viewBox="0 0 540 540"><path d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z"/></svg></a>
-          </div>
-        </div>
-    
-        
-    
-    
-        <div class="teamCar">
-          <div class="image" style="--gradient:linear-gradient(45deg, rgba(197, 91, 117,1), rgba(246, 174, 45, 1))">
-            <img class="img" src="https://static.igem.wiki/teams/4607/wiki/images/members/alexa.png" alt="1">
-            <div class="tag">Leader</div>
-            <div class="tag2" style="--ccolor:rgb(197, 91, 117)">Human Practices</div>
-          </div>
-    
-          <div class="content">
-            <h1 style="color:rgb(197, 91, 117)">Alexa</h1>
-            <p>Our creative human practices leader stands as a very active person. She never runs out of style and her love for human practices stands in her passion’s roots: inspiring people who nurtured her love for science.  She’s definitely <em>Saccharomyces cerevisiae</em>. Her favorite dairy product is ice cream. <br> “Bombastic side eye” </p>
-            <a href="" title="LinkedIn"><svg role="img" viewBox="0 0 540 540"><path d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z"/></svg></a>
-          </div>
-        </div>
-    
-        
-        <div class="teamCar">
-          <div class="image" style="--gradient:linear-gradient(45deg, rgba(197, 91, 117,1), rgba(246, 174, 45, 1))">
-            <img class="img" src="https://static.igem.wiki/teams/4607/wiki/images/members/sofi.png" alt="1">
-            <div class="tag2">Team Leader</div>
-            <div class="tag" style="--ccolor:rgb(197, 91, 117)">Human Practices</div>
-          </div>
-    
-          <div class="content">
-            <h1 style="color:rgb(197, 91, 117)">Sofi</h1>
-            <p>Our bold leader is in charge of opening the way of our team through her love for learning and spending time with people. She needs to be constantly moving and her kindness gives us peace of mind. <em>Pichia pastoris</em> sticks with her. Her favorite dairy product is yogurt. <br> “ I NEED candy” </p>
-            <a href="https://www.linkedin.com/in/maria-sofia-lopez-vargas-97b1a6268/" title="LinkedIn"><svg role="img" viewBox="0 0 540 540"><path d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z"/></svg></a>
-            
-          </div>
-        </div>
-      </div>
-    
-    
-      <div class="wrap" id="sec2">
-        <header class="TeamHeader">
-            <br>
-            <br>
-            <h1>Advisors</h1>
-            <br>
-        </header>
+    <div class="wrap" id="sec1">
+      <header class="TeamHeader">
+        <h1>Members</h1>
+      </header>
     </div>
-    
-      <div class="teamContainer">
-    
-        <div class="teamCar">
-          <div class="image" style="--gradient:linear-gradient(45deg, rgba(68, 125, 156, 1), rgba(91, 197, 171, 1))">
-            <img class="img" src="https://static.igem.wiki/teams/4607/wiki/members/caro.png" alt="1">
-          </div>
-    
-          <div class="content">
-            <h1 style="color:rgb(68, 125, 156)">Caro</h1>
-            <p>After saying yes to science, this 2019 determined member knows her way through the lab. Our dear advisor helps our lab team in any doubt we have. Her favorite microorganism is <em> Phaeodactylum tricornutum </em>. Her favorite dairy product is panela cheese.  <br> “Kind people are my kind of people” </p>
-            <a href="https://www.linkedin.com/in/carolina-g-7b0094246" title="LinkedIn"><svg role="img" viewBox="0 0 540 540"><path d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z"/></svg></a>
-          </div>
-        </div>
 
-        <div class="teamCar">
-          <div class="image" style="--gradient:linear-gradient(45deg, rgba(91, 197, 171,0.8), rgba(169, 186, 108,1))">
-            <img class="img" src="https://static.igem.wiki/teams/4607/wiki/members/liz-photoroom-png-photoroom.png">
-          </div>
-    
-          <div class="content">
-            <h1 style="color:#5BC5AB">Liz</h1>
-            <p>Our committed advisor, also a 2022 team member, helps us find our way through multiple areas of our team. Her journey in science begins with her effort to make a change in her habits.Her favorite microorganism is <em>Ideonella sakaiensis</em>. Her favorite dairy product is cheese.  
-              <br> “The more we know, the more we realize there is to know”</p>
-              <a href="https://mx.linkedin.com/in/elizabeth-mercado-flores" title="LinkedIn"><svg role="img" viewBox="0 0 540 540"><path d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z"/></svg></a>
-            </div>
-        </div>
-    
-        <div class="teamCar">
-          <div class="image" style="--gradient:linear-gradient(45deg, rgba(246, 174, 45, 0.8), rgba(169,186, 108,1))">
-            <img class="img" src="https://static.igem.wiki/teams/4607/wiki/members/rojo.png">
-          </div>
-    
-          <div class="content">
-            <h1 style="color:rgb(169, 186, 108)">Rojo</h1>
-            <p>This 2022 wiki leader guides us, mainly, through math model and wiki. This daring individual encourages us to keep trying our best. His favorite microorganism is <em>Toxoplasma gondii </em>. His favorite dairy product is the classical thing: milk.  <br> “You're not gonna believe this because it usually never happens, but I made a mistake” </p>
-            <a href="https://www.linkedin.com/in/alejandro-rojo-moreno/" title="LinkedIn"><svg role="img" viewBox="0 0 540 540"><path d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z"/></svg></a>
-          </div>
-        </div>
-    
-        <div class="teamCar">
-          <div class="image" style="--gradient:linear-gradient(45deg, rgba(246, 174, 45,0.8), rgba(222, 133, 181, 1))">
-            <img class="img" src="https://static.igem.wiki/teams/4607/wiki/members/denisse.png" alt="1">
-          </div>
-    
-          <div class="content">
-            <h1 style="color:rgb(246, 174, 45)">Denisse</h1>
-            <p>Our 2022 Student Leader believes that science becomes truly satisfying when sharing knowledge. Her kind reviews and guidance had made our whole team more efficient. Her favorite microorganism is <em>Paramecium aurelia </em>. Her favorite dairy product is strawberry yogurt.  <br>“What if we make an Excel?” </br></p>
-            <a href="www.linkedin.com/in/denisse-chacon218" title="LinkedIn"><svg role="img" viewBox="0 0 540 540"><path d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z"/></svg></a>
-          </div>
-        </div>
-    
-    
-        <div class="teamCar">
-          <div class="image" style="--gradient:linear-gradient(45deg, rgba(197, 91, 117,1), rgba(246, 174, 45, 1))">
-            <img class="img" src="https://static.igem.wiki/teams/4607/wiki/members/judith-photoroom-png-photoroom.png" alt="1">
-          </div>
-    
-          <div class="content">
-            <h1 style="color:rgb(197, 91, 117)">Judith</h1>
-            <p>2022 was a great year, and of course our Human Practices leader couldn’t miss. This energetic and resilient person guides our human and entrepreneurship areas, giving us amazing advice. Her favorite microorganism is <em> Shewanella oneidensis</em>. Her favorite dairy product is Yakult. “Con pan las penas son menos” <sup> 4</sup></p>
-            <a href="https://www.linkedin.com/in/judith-garcía-mata/" title="LinkedIn"><svg role="img" viewBox="0 0 540 540"><path d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z"/></svg></a>
-          </div>
-
-        </div>
-
-        <div class="teamCar">
-          <div class="image" style="--gradient:linear-gradient(45deg, rgba(197, 91, 117,1), rgba(246, 174, 45, 1))">
-            <img class="img" src="https://static.igem.wiki/teams/4607/wiki/members/arleeenbien-photoroom-png-photoroom.png" alt="1">
-          </div>
-          <div class="content">
-            <h1 style="color:rgb(68, 125, 156)">Arlen</h1>
-            <p> Our creative advisor also stands as a 2022 team member. Her guidance through entrepreneurship and human practices has been invaluable. Her favorite microorganism is <em> Trichoderma viride </em>. Her favorite dairy product is milk (with coffee).  <br>“Let’s just go to sleep” </p>
-            <a href="" title="LinkedIn"><svg role="img" viewBox="0 0 540 540"><path d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z"/></svg></a>
-          </div>
-
-        </div>
-    
-      </div>
-
-      <div class="wrap" id="sec3">
-        <header class="TeamHeader">
-            <br>
-            <br>
-            <h1>Instructors</h1>
-            <br>
-        </header>
-        </div>
-        
-    
     <div class="teamContainer">
-      <div class="teamCar">
-        <div class="image" style="--gradient:linear-gradient(45deg, rgba(197, 91, 117,1), rgba(246, 174, 45, 1))">
-          <img class="img" src="https://static.igem.wiki/teams/4607/wiki/members/carmen.png" alt="1">
-        </div>
-    
-        <div class="content">
-          <h1 style="color:rgb(197, 91, 117)">Carmen</h1>
-          <p>Our energetic and beaming instructor is in charge of our team’s administrative areas. She loves to motivate and share things with us. She’s definitely fungi, but loves micro algae.</p>
-          <a href="https://www.linkedin.com/in/carmen-maldonado-930812229" title="LinkedIn"><svg role="img" viewBox="0 0 540 540"><path d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z"/></svg></a>
-        </div>
-      </div>
-    
-    </div> 
-    <div class="teamContainer">
+
+
+
 
       <div class="teamCar">
         <div class="image" style="--gradient:linear-gradient(45deg, rgba(68, 125, 156, 1), rgba(91, 197, 171, 1))">
-          <img class="img" src="https://static.igem.wiki/teams/4607/wiki/members/joanbien-photoroom-png-photoroom.png" alt="1">
+          <img loading="lazy" class="img" src="https://static.igem.wiki/teams/4607/wiki/members/adolfe.png" alt="1">
+          <div class="tag" style="--ccolor:rgb(68, 125, 156)">Wet Lab</div>
+          <div class="tag2">Leader</div>
+
         </div>
-  
+
         <div class="content">
-          <h1 style="color:rgb(68, 125, 156)">Joan</h1>
-          <p> This funny instructor has always worked with live organisms. His favorite microorganisms are any kind of prokaryotes. His favorite dairy product is cheese. 
-            <br> “With no laboratories, scientists are like soldiers with no weapons”</p>
-            
-          </div>
+          <h1 style="color:rgb(68, 125, 156)">Adolfo</h1>
+          <p>Wet lab is led by this witty nerd. Interested in the small details in nature and with previous work in
+            mechanics, he knew his path was in science. His meticulousness keeps our work clean. He’s sure he would be
+            an <em>Acidithiobacillus ferrooxidans</em> His favorite dairy product is chocolate milk. <br> “Now I am
+            become endolysin, the destroyer of bacteria” </p>
+
+        </div>
       </div>
+      <div class="teamCar">
+        <div class="image" style="--gradient:linear-gradient(45deg, rgba(68, 125, 156, 1), rgba(91, 197, 171, 1))">
+          <img loading="lazy" class="img" src="https://static.igem.wiki/teams/4607/wiki/images/members/lupita.png"
+            alt="1">
+          <div class="tag">Human Practices</div>
+          <div class="tag2">Wet Lab</div>
+          <div class="tag" style="--ccolor:rgb(68, 125, 156)">Wet Lab</div>
+        </div>
+
+        <div class="content">
+          <h1 style="color:rgb(68, 125, 156)">Lupita</h1>
+          <p>Empathetic to death, she always knows how to comfort any of us. This animal lover trusts that her life path
+            resides in science and her passion keeps our team moving. She sees herself in <em>Pseudomonas aeruginosa
+            </em>. Her favorite dairy product is ice cream. <br> “La de chambear no te la sabes <sup>3</sup>”</p>
+          <a href="https://www.linkedin.com/in/mar%C3%ADa-guadalupe-marmolejo-4a2335276/" title="LinkedIn"><svg
+              role="img" viewBox="0 0 540 540">
+              <path
+                d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z" />
+            </svg></a>
+        </div>
+      </div>
+
 
       <div class="teamCar">
         <div class="image" style="--gradient:linear-gradient(45deg, rgba(68, 125, 156, 1), rgba(91, 197, 171, 1))">
-          <img class="img" src="https://static.igem.wiki/teams/4607/wiki/members/antonia-photoroom-png-photoroom.png" alt="1">
+          <img loading="lazy" class="img" src="https://static.igem.wiki/teams/4607/wiki/images/members/axel.png"
+            alt="1">
+          <div class="tag" style="--ccolor:rgb(68, 125, 156)">Wet Lab</div>
         </div>
-  
+
         <div class="content">
-          <h1 style="color:rgb(68, 125, 156)">Antonia</h1>
-          <p> Antonia is our sistematic advisor who guides us through our project management. Her favorite microorganisms are sulfate-reducing bacteria. Her favorite dairy product is yogurt- 
-            <br> “With no laboratories, scientists are like soldiers with no weapons”</p>
-           
+          <h1 style="color:rgb(68, 125, 156)">Axel</h1>
+          <p>Our team’s problem solving relies on him, one of our most diplomatic members. This sensitive person acts as
+            a change agent and has no problem in showing vulnerability. He would be an <em>Agrobacterium tumefaciens
+            </em>(he thinks it’s poetic). His favorite dairy product is Greek yogurt. <br> “Why’s everything going so
+            smooth? This seems suspicious” </p>
+          <a href="https://www.linkedin.com/in/axelrojero/" title="LinkedIn"><svg role="img" viewBox="0 0 540 540">
+              <path
+                d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z" />
+            </svg></a>
         </div>
       </div>
-    
-      
-  
+
+
+
+
       <div class="teamCar">
         <div class="image" style="--gradient:linear-gradient(45deg, rgba(91, 197, 171,0.8), rgba(169, 186, 108,1))">
-          <img class="img" src="https://static.igem.wiki/teams/4607/wiki/members/anavicbien-photoroom-png-photoroom.png">
+          <img loading="lazy" class="img" src="https://static.igem.wiki/teams/4607/wiki/images/members/topi.png">
+          <div class="tag" style="--ccolor:#5BC5AB">Model</div>
+          <div class="tag2">Leader</div>
         </div>
-  
+
         <div class="content">
-          <h1 style="color:#5BC5AB">Ana Vic</h1>
-          <p> Another past member that helps to make out our best work in entrepreneurship and human practices. Her favorite microorganisms are microalgae. <br>“Multitasking doesn’t exist, it’s your parents” </p>
-          <a href="https://www.linkedin.com/in/carmen-maldonado-930812229" title="LinkedIn"><svg role="img" viewBox="0 0 540 540"><path d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z"/></svg></a>
+          <h1 style="color:#5BC5AB">Topi</h1>
+          <p> The team’s sportiest member embodies the definition of discipline and motivates our team constantly. Her
+            curiosity and eagerness to learn made her a perfect candidate for her area. She would definitely be a <em>
+              Milnesium tardigradum</em> Her favorite dairy product is also greek yogurt. <br> “Project’s written with
+            j, not with y!” </p>
+          <a href="https://www.linkedin.com/in/annarivag/" title="LinkedIn"><svg role="img" viewBox="0 0 540 540">
+              <path
+                d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z" />
+            </svg></a>
         </div>
       </div>
-  
+
+      <div class="teamCar">
+        <div class="image" style="--gradient:linear-gradient(45deg, rgba(91, 197, 171,0.8), rgba(169, 186, 108,1))">
+          <img loading="lazy" class="img" src="https://static.igem.wiki/teams/4607/wiki/images/members/vane.png">
+          <div class="tag" style="--ccolor:#5BC5AB">Model</div>
+        </div>
+
+        <div class="content">
+          <h1 style="color:#5BC5AB">Vanessa</h1>
+          <p>Having history in the International chemistry olympiad, our most calm member knows her way through a
+            mathematical model. This important member likes calculus and keeps our environment chill. She identifies
+            herself with <em>Lactobacillus acidophilus</em>. Her favorite dairy product is ice cream. <br> “Actually, I
+            had thought about that”</p>
+          <a href="https://www.linkedin.com/in/vanessa-montoya-585282252/" title="LinkedIn"><svg role="img"
+              viewBox="0 0 540 540">
+              <path
+                d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z" />
+            </svg></a>
+        </div>
+      </div>
+
+
+
       <div class="teamCar">
         <div class="image" style="--gradient:linear-gradient(45deg, rgba(246, 174, 45, 0.8), rgba(169,186, 108,1))">
-          <img class="img" src="https://static.igem.wiki/teams/4607/wiki/members/danibien-photoroom-png-photoroom.png">
+          <img loading="lazy" class="img"
+            src="https://static.igem.wiki/teams/4607/wiki/members/giuliana-photoroom-png-photoroom.png">
+          <div class="tag" style="--ccolor:rgb(169, 186, 108)">Wiki</div>
+          <div class="tag2">Leader</div>
+
         </div>
-  
+
         <div class="content">
-          <h1 style="color:rgb(169, 186, 108)">Dani</h1>
-          <p> Also a past member. Specifically, 2018. This cheerful advisor offers her valuable help in areas like wet lab and math model. Her objective is to work in projects with great impact in science and society. Her favorite microorganism is <em>Pseudomonas aeruginosa</em>. Her favorite dairy product is greek yogurt. <br>“I don’t want to be an adult anymore” </p>
-          <a href="https://www.linkedin.com/in/danielaolono" title="LinkedIn"><svg role="img" viewBox="0 0 540 540"><path d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z"/></svg></a>
+          <h1 style="color:rgb(169, 186, 108)">Giuliana</h1>
+          <p>This software engineering student leads the wiki team using her knowledge to communicate our project to the
+            world. Her hyperactivity maintains the team energized and she’s always speaking her mind. If she was a
+            microorganism, she would be a microchip. Her favorite dairy product is cheese. <br> “I can’t do lab, how you
+            live without ctrl-Z?” </p>
+          <a href="https://www.linkedin.com/in/giulianaherrera/" title="LinkedIn"><svg role="img" viewBox="0 0 540 540">
+              <path
+                d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z" />
+            </svg></a>
         </div>
       </div>
-  
-  
+
       <div class="teamCar">
-        <div class="image" style="--gradient:linear-gradient(45deg, rgba(197, 91, 117,1), rgba(246, 174, 45, 1))">
-          <img class="img" src="https://static.igem.wiki/teams/4607/wiki/members/sergio-photoroom-png-photoroom.png" alt="1">
+        <div class="image" style="--gradient:linear-gradient(45deg, rgba(246, 174, 45, 0.8), rgba(169,186, 108,1))">
+          <img loading="lazy" class="img" src="https://static.igem.wiki/teams/4607/wiki/images/members/seychelle.png">
+          <div class="tag" style="--ccolor:rgb(169, 186, 108)">Wiki</div>
         </div>
-  
+
         <div class="content">
-          <h1 style="color:rgb(197, 91, 117)">Sergio</h1>
-          <p> This expert shares his knowledge on mathematical models to nurture our project. His favorite dairy product is cheese.Our math model instructor loves to rediscover the world through his students’ eyes
-            <br>“Kinkis <sup> 5</sup>” </p>
-            <a href="https://www.linkedin.com/in/sergio-armando-medina-gonz%C3%A1lez-phd-8b319463" title="LinkedIn"><svg role="img" viewBox="0 0 540 540"><path d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z"/></svg></a>
-          </div>
+          <h1 style="color:rgb(169, 186, 108)">Seychelle</h1>
+          <p>Our iconic capibara-like member always has something to feed us with and lends a helping hand when needed.
+            Her love for science comes from her curiosity (she’s always asking “But, why?). Her life aspiration is to be
+            like <em>Deinococcus radiodurans</em>. Her favorite dairy product is goat cheese (Really?). <br>“What were
+            we doing?”</p>
+          <a href="https://www.linkedin.com/in/seychelle-osuna-56363527a/" title="LinkedIn"><svg role="img"
+              viewBox="0 0 540 540">
+              <path
+                d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z" />
+            </svg></a>
+        </div>
       </div>
-      
+
+
+
       <div class="teamCar">
         <div class="image" style="--gradient:linear-gradient(45deg, rgba(246, 174, 45,0.8), rgba(222, 133, 181, 1))">
-          <img class="img" src="https://static.igem.wiki/teams/4607/wiki/members/raul-photoroom-png-photoroom.png" alt="1">
-          <div class="tag2" style="--ccolor:rgb(246, 174, 45)">Entrepreneurship</div>
-          
-          
+          <img loading="lazy" class="img" src="https://static.igem.wiki/teams/4607/wiki/images/members/arely.png"
+            alt="1">
+          <div class="tag" style="--ccolor:rgb(246, 174, 45)">Entrepreneurship</div>
+          <div class="tag2">Leader</div>
+
         </div>
-  
+
         <div class="content">
-          <h1 style="color:rgb(246, 174, 45)">Raúl</h1>
-          
-          <p> Our persistent instructor leads entrepreneurship because he knows how we can change the world through solutions with low impact in our environment. His favorite dairy product is milk.</p>
-          <a href="https://www.linkedin.com/in/raullizarraras" title="LinkedIn"><svg role="img" viewBox="0 0 540 540"><path d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z"/></svg></a>
+          <h1 style="color:rgb(246, 174, 45)">Arely</h1>
+          <p>This determined law student is best known for her entrepreneurship abilities, which lead this area in our
+            project. Feeling passion for technology, she knew this was her place. When asked about what microorganism
+            she would be, she just said “<em>Jurisprudencia <sup>2</sup></em>”. Her favorite dairy product is yogurt.
+            <br> “Sorry, I’m a Lic” <sup>2</sup>
+          </p>
+          <a href="https://www.linkedin.com/in/arelyjim/" title="LinkedIn"><svg role="img" viewBox="0 0 540 540">
+              <path
+                d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z" />
+            </svg></a>
+        </div>
+      </div>
+      <div class="teamCar">
+        <div class="image" style="--gradient:linear-gradient(45deg, rgba(246, 174, 45,0.8), rgba(222, 133, 181, 1))">
+          <img loading="lazy" class="img" src="https://static.igem.wiki/teams/4607/wiki/images/members/pau.png">
+          <div class="tag2" style="--ccolor:rgb(246, 174, 45)">Entrepreneurship</div>
+          <div class="tag" style="--ccolor:#5BC5AB">Model</div>
+        </div>
+
+        <div class="content">
+          <h1 style="color:rgb(246, 174, 45)">Pau</h1>
+          <p>Our zesty member always knows how to crack a joke that makes us laugh. Her love for science begun in math
+            and physics, which made her choose her area. If she were a microorganism, she would be <em>Staphylococcus
+              aureus</em>. Her favorite dairy product is frozen yogurt. <br> "Aren't you craving (insert any type of
+            food)?" </p>
+          <a href="www.linkedin.com/in/PaulinaBaeza10" title="LinkedIn"><svg role="img" viewBox="0 0 540 540">
+              <path
+                d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z" />
+            </svg></a>
+        </div>
+      </div>
+
+
+
+
+      <div class="teamCar">
+        <div class="image" style="--gradient:linear-gradient(45deg, rgba(197, 91, 117,1), rgba(246, 174, 45, 1))">
+          <img loading="lazy" class="img" src="https://static.igem.wiki/teams/4607/wiki/images/members/alexa.png"
+            alt="1">
+          <div class="tag">Leader</div>
+          <div class="tag2" style="--ccolor:rgb(197, 91, 117)">Human Practices</div>
+        </div>
+
+        <div class="content">
+          <h1 style="color:rgb(197, 91, 117)">Alexa</h1>
+          <p>Our creative human practices leader stands as a very active person. She never runs out of style and her
+            love for human practices stands in her passion’s roots: inspiring people who nurtured her love for science.
+            She’s definitely <em>Saccharomyces cerevisiae</em>. Her favorite dairy product is ice cream. <br> “Bombastic
+            side eye” </p>
+          <a href="" title="LinkedIn"><svg role="img" viewBox="0 0 540 540">
+              <path
+                d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z" />
+            </svg></a>
+        </div>
+      </div>
+
+
+      <div class="teamCar">
+        <div class="image" style="--gradient:linear-gradient(45deg, rgba(197, 91, 117,1), rgba(246, 174, 45, 1))">
+          <img loading="lazy" class="img" src="https://static.igem.wiki/teams/4607/wiki/images/members/sofi.png"
+            alt="1">
+          <div class="tag2">Team Leader</div>
+          <div class="tag" style="--ccolor:rgb(197, 91, 117)">Human Practices</div>
+        </div>
+
+        <div class="content">
+          <h1 style="color:rgb(197, 91, 117)">Sofi</h1>
+          <p>Our bold leader is in charge of opening the way of our team through her love for learning and spending time
+            with people. She needs to be constantly moving and her kindness gives us peace of mind. <em>Pichia
+              pastoris</em> sticks with her. Her favorite dairy product is yogurt. <br> “ I NEED candy” </p>
+          <a href="https://www.linkedin.com/in/maria-sofia-lopez-vargas-97b1a6268/" title="LinkedIn"><svg role="img"
+              viewBox="0 0 540 540">
+              <path
+                d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z" />
+            </svg></a>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="wrap" id="sec2">
+      <header class="TeamHeader">
+        <br>
+        <br>
+        <h1>Advisors</h1>
+        <br>
+      </header>
+    </div>
+
+    <div class="teamContainer">
+
+      <div class="teamCar">
+        <div class="image" style="--gradient:linear-gradient(45deg, rgba(68, 125, 156, 1), rgba(91, 197, 171, 1))">
+          <img loading="lazy" class="img" src="https://static.igem.wiki/teams/4607/wiki/members/caro.png" alt="1">
+        </div>
+
+        <div class="content">
+          <h1 style="color:rgb(68, 125, 156)">Caro</h1>
+          <p>After saying yes to science, this 2019 determined member knows her way through the lab. Our dear advisor
+            helps our lab team in any doubt we have. Her favorite microorganism is <em> Phaeodactylum tricornutum </em>.
+            Her favorite dairy product is panela cheese. <br> “Kind people are my kind of people” </p>
+          <a href="https://www.linkedin.com/in/carolina-g-7b0094246" title="LinkedIn"><svg role="img"
+              viewBox="0 0 540 540">
+              <path
+                d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z" />
+            </svg></a>
+        </div>
+      </div>
+
+      <div class="teamCar">
+        <div class="image" style="--gradient:linear-gradient(45deg, rgba(91, 197, 171,0.8), rgba(169, 186, 108,1))">
+          <img loading="lazy" class="img"
+            src="https://static.igem.wiki/teams/4607/wiki/members/liz-photoroom-png-photoroom.png">
+        </div>
+
+        <div class="content">
+          <h1 style="color:#5BC5AB">Liz</h1>
+          <p>Our committed advisor, also a 2022 team member, helps us find our way through multiple areas of our team.
+            Her journey in science begins with her effort to make a change in her habits.Her favorite microorganism is
+            <em>Ideonella sakaiensis</em>. Her favorite dairy product is cheese.
+            <br> “The more we know, the more we realize there is to know”
+          </p>
+          <a href="https://mx.linkedin.com/in/elizabeth-mercado-flores" title="LinkedIn"><svg role="img"
+              viewBox="0 0 540 540">
+              <path
+                d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z" />
+            </svg></a>
+        </div>
+      </div>
+
+      <div class="teamCar">
+        <div class="image" style="--gradient:linear-gradient(45deg, rgba(246, 174, 45, 0.8), rgba(169,186, 108,1))">
+          <img loading="lazy" class="img" src="https://static.igem.wiki/teams/4607/wiki/members/rojo.png">
+        </div>
+
+        <div class="content">
+          <h1 style="color:rgb(169, 186, 108)">Rojo</h1>
+          <p>This 2022 wiki leader guides us, mainly, through math model and wiki. This daring individual encourages us
+            to keep trying our best. His favorite microorganism is <em>Toxoplasma gondii </em>. His favorite dairy
+            product is the classical thing: milk. <br> “You're not gonna believe this because it usually never happens,
+            but I made a mistake” </p>
+          <a href="https://www.linkedin.com/in/alejandro-rojo-moreno/" title="LinkedIn"><svg role="img"
+              viewBox="0 0 540 540">
+              <path
+                d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z" />
+            </svg></a>
+        </div>
+      </div>
+
+      <div class="teamCar">
+        <div class="image" style="--gradient:linear-gradient(45deg, rgba(246, 174, 45,0.8), rgba(222, 133, 181, 1))">
+          <img loading="lazy" class="img" src="https://static.igem.wiki/teams/4607/wiki/members/denisse.png" alt="1">
+        </div>
+
+        <div class="content">
+          <h1 style="color:rgb(246, 174, 45)">Denisse</h1>
+          <p>Our 2022 Student Leader believes that science becomes truly satisfying when sharing knowledge. Her kind
+            reviews and guidance had made our whole team more efficient. Her favorite microorganism is <em>Paramecium
+              aurelia </em>. Her favorite dairy product is strawberry yogurt. <br>“What if we make an Excel?” </br></p>
+          <a href="www.linkedin.com/in/denisse-chacon218" title="LinkedIn"><svg role="img" viewBox="0 0 540 540">
+              <path
+                d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z" />
+            </svg></a>
+        </div>
+      </div>
+
+
+      <div class="teamCar">
+        <div class="image" style="--gradient:linear-gradient(45deg, rgba(197, 91, 117,1), rgba(246, 174, 45, 1))">
+          <img loading="lazy" class="img"
+            src="https://static.igem.wiki/teams/4607/wiki/members/judith-photoroom-png-photoroom.png" alt="1">
+        </div>
+
+        <div class="content">
+          <h1 style="color:rgb(197, 91, 117)">Judith</h1>
+          <p>2022 was a great year, and of course our Human Practices leader couldn’t miss. This energetic and resilient
+            person guides our human and entrepreneurship areas, giving us amazing advice. Her favorite microorganism is
+            <em> Shewanella oneidensis</em>. Her favorite dairy product is Yakult. “Con pan las penas son menos” <sup>
+              4</sup>
+          </p>
+          <a href="https://www.linkedin.com/in/judith-garcía-mata/" title="LinkedIn"><svg role="img"
+              viewBox="0 0 540 540">
+              <path
+                d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z" />
+            </svg></a>
         </div>
 
       </div>
-      
-        <div class="teamCar">
-          <div class="image" style="--gradient:linear-gradient(45deg, rgba(246, 174, 45, 0.8), rgba(169,186, 108,1))">
-            <img class="img" src="https://static.igem.wiki/teams/4607/wiki/members/whatsapp-image-2023-09-06-at-11-12-59-photoroom-png-photoroom.png">
-          </div>
-  
-          <div class="content">
-            <h1 style="color:#5BC5AB">Alberto</h1>
-            <p>This software expert guides our wiki team in their way. His favorite microorganism is <em> Propionibacterium freudenreichii </em>. His favorite dairy product is lactose-free milk.<br>“Patience is the mother of all virtues”</p>
-            <a href="https://www.linkedin.com/in/alberto-aguilar-gonzalez-89967955/" title="LinkedIn"><svg role="img" viewBox="0 0 540 540"><path d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z"/></svg></a>
-          </div>
+
+      <div class="teamCar">
+        <div class="image" style="--gradient:linear-gradient(45deg, rgba(197, 91, 117,1), rgba(246, 174, 45, 1))">
+          <img loading="lazy" class="img"
+            src="https://static.igem.wiki/teams/4607/wiki/members/arleeenbien-photoroom-png-photoroom.png" alt="1">
         </div>
+        <div class="content">
+          <h1 style="color:rgb(68, 125, 156)">Arlen</h1>
+          <p> Our creative advisor also stands as a 2022 team member. Her guidance through entrepreneurship and human
+            practices has been invaluable. Her favorite microorganism is <em> Trichoderma viride </em>. Her favorite
+            dairy product is milk (with coffee). <br>“Let’s just go to sleep” </p>
+          <a href="" title="LinkedIn"><svg role="img" viewBox="0 0 540 540">
+              <path
+                d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z" />
+            </svg></a>
+        </div>
+
+      </div>
+
     </div>
- 
 
-      
-
-    
-    
-    
-    
-    
-    
-    <div class="wrap" id="sec4">
+    <div class="wrap" id="sec3">
       <header class="TeamHeader">
-          <br>
-          <br>
-          <h1>PIs</h1>
-          <br>
+        <br>
+        <br>
+        <h1>Instructors</h1>
+        <br>
       </header>
-  </div>
-    
+    </div>
+
+
     <div class="teamContainer">
       <div class="teamCar">
         <div class="image" style="--gradient:linear-gradient(45deg, rgba(197, 91, 117,1), rgba(246, 174, 45, 1))">
-          <img class="img" src="https://static.igem.wiki/teams/4607/wiki/members/cynthia.png" alt="1">
+          <img loading="lazy" class="img" src="https://static.igem.wiki/teams/4607/wiki/members/carmen.png" alt="1">
         </div>
-    
+
         <div class="content">
-          <h1 style="color:rgb(197, 91, 117)">Cynthia</h1>
-          <p> Our perfectionist Primary Instructor loves to see every member of the team evolve into something different. Her favorite microorganism is <em> Thermus aquaticus </em>. Her favorite dairy product is butter.  </p>
-          <a href="https://www.linkedin.com/in/cynthia-lizeth-gonzalez-trevizo-872135184/" title="LinkedIn"><svg role="img" viewBox="0 0 540 540"><path d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z"/></svg></a>
+          <h1 style="color:rgb(197, 91, 117)">Carmen</h1>
+          <p>Our energetic and beaming instructor is in charge of our team’s administrative areas. She loves to motivate
+            and share things with us. She’s definitely fungi, but loves micro algae.</p>
+          <a href="https://www.linkedin.com/in/carmen-maldonado-930812229" title="LinkedIn"><svg role="img"
+              viewBox="0 0 540 540">
+              <path
+                d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z" />
+            </svg></a>
         </div>
       </div>
-    
+
+      <div class="teamCar">
+        <div class="image" style="--gradient:linear-gradient(45deg, rgba(68, 125, 156, 1), rgba(91, 197, 171, 1))">
+          <img loading="lazy" class="img"
+            src="https://static.igem.wiki/teams/4607/wiki/members/joanbien-photoroom-png-photoroom.png" alt="1">
+        </div>
+
+        <div class="content">
+          <h1 style="color:rgb(68, 125, 156)">Joan</h1>
+          <p> This funny instructor has always worked with live organisms. His favorite microorganisms are any kind of
+            prokaryotes. His favorite dairy product is cheese.
+            <br> “With no laboratories, scientists are like soldiers with no weapons”
+          </p>
+
+        </div>
+      </div>
+
+      <div class="teamCar">
+        <div class="image" style="--gradient:linear-gradient(45deg, rgba(68, 125, 156, 1), rgba(91, 197, 171, 1))">
+          <img loading="lazy" class="img"
+            src="https://static.igem.wiki/teams/4607/wiki/members/instructora-photoroom-png-photoroom.png" alt="1">
+        </div>
+
+        <div class="content">
+          <h1 style="color:rgb(68, 125, 156)">Antonia</h1>
+          <p> Antonia is our sistematic advisor who guides us through our project management. Her favorite
+            microorganisms are sulfate-reducing bacteria. Her favorite dairy product is yogurt-
+            <br> “With no laboratories, scientists are like soldiers with no weapons”
+          </p>
+
+        </div>
+      </div>
+
+
+
+      <div class="teamCar">
+        <div class="image" style="--gradient:linear-gradient(45deg, rgba(91, 197, 171,0.8), rgba(169, 186, 108,1))">
+          <img loading="lazy" class="img"
+            src="https://static.igem.wiki/teams/4607/wiki/members/anavicbien-photoroom-png-photoroom.png">
+        </div>
+
+        <div class="content">
+          <h1 style="color:#5BC5AB">Ana Vic</h1>
+          <p> Another past member that helps to make out our best work in entrepreneurship and human practices. Her
+            favorite microorganisms are microalgae. <br>“Multitasking doesn’t exist, it’s your parents” </p>
+          <a href="https://www.linkedin.com/in/carmen-maldonado-930812229" title="LinkedIn"><svg role="img"
+              viewBox="0 0 540 540">
+              <path
+                d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z" />
+            </svg></a>
+        </div>
+      </div>
+
+      <div class="teamCar">
+        <div class="image" style="--gradient:linear-gradient(45deg, rgba(246, 174, 45, 0.8), rgba(169,186, 108,1))">
+          <img loading="lazy" class="img"
+            src="https://static.igem.wiki/teams/4607/wiki/members/danibien-photoroom-png-photoroom.png">
+        </div>
+
+        <div class="content">
+          <h1 style="color:rgb(169, 186, 108)">Dani</h1>
+          <p> Also a past member. Specifically, 2018. This cheerful advisor offers her valuable help in areas like wet
+            lab and math model. Her objective is to work in projects with great impact in science and society. Her
+            favorite microorganism is <em>Pseudomonas aeruginosa</em>. Her favorite dairy product is greek yogurt.
+            <br>“I don’t want to be an adult anymore”
+          </p>
+          <a href="https://www.linkedin.com/in/danielaolono" title="LinkedIn"><svg role="img" viewBox="0 0 540 540">
+              <path
+                d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z" />
+            </svg></a>
+        </div>
+      </div>
+
+
       <div class="teamCar">
         <div class="image" style="--gradient:linear-gradient(45deg, rgba(197, 91, 117,1), rgba(246, 174, 45, 1))">
-          <img class="img" src="https://static.igem.wiki/teams/4607/wiki/members/gladysbien-photoroom-png-photoroom.png" alt="1">
+          <img loading="lazy" class="img"
+            src="https://static.igem.wiki/teams/4607/wiki/members/sergio-photoroom-png-photoroom.png" alt="1">
         </div>
-    
+
         <div class="content">
-          <h1 style="color:rgb(197, 91, 117)">Gladys</h1>
-          <p>This perseverant expert in proteins lights our path through our lab development. Her favorite microorganism is <em> Mycobacterium tuberculosis </em>. Her favorite dairy product is ice cream. <br> “In theory... ”</p>
-          <a href="https://www.linkedin.com/in/gladys-guadalupe-lopez-avalos-93b893113/" title="LinkedIn"><svg role="img" viewBox="0 0 540 540"><path d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z"/></svg></a>
+          <h1 style="color:rgb(197, 91, 117)">Sergio</h1>
+          <p> This expert shares his knowledge on mathematical models to nurture our project. His favorite dairy product
+            is cheese.Our math model instructor loves to rediscover the world through his students’ eyes
+            <br>“Kinkis <sup> 5</sup>”
+          </p>
+          <a href="https://www.linkedin.com/in/sergio-armando-medina-gonz%C3%A1lez-phd-8b319463" title="LinkedIn"><svg
+              role="img" viewBox="0 0 540 540">
+              <path
+                d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z" />
+            </svg></a>
         </div>
       </div>
-    </div> 
-  
-    
-    </div>
-    </div>
-    </div>
+
+      <div class="teamCar">
+        <div class="image" style="--gradient:linear-gradient(45deg, rgba(246, 174, 45,0.8), rgba(222, 133, 181, 1))">
+          <img loading="lazy" class="img"
+            src="https://static.igem.wiki/teams/4607/wiki/members/raul-photoroom-png-photoroom.png" alt="1">
+          <div class="tag2" style="--ccolor:rgb(246, 174, 45)">Entrepreneurship</div>
+
+
+        </div>
+
+        <div class="content">
+          <h1 style="color:rgb(246, 174, 45)">Raúl</h1>
+
+          <p> Our persistent instructor leads entrepreneurship because he knows how we can change the world through
+            solutions with low impact in our environment. His favorite dairy product is milk.</p>
+          <a href="https://www.linkedin.com/in/raullizarraras" title="LinkedIn"><svg role="img" viewBox="0 0 540 540">
+              <path
+                d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z" />
+            </svg></a>
+        </div>
+
+      </div>
+
+      <div class="teamCar">
+        <div class="image" style="--gradient:linear-gradient(45deg, rgba(246, 174, 45, 0.8), rgba(169,186, 108,1))">
+          <img loading="lazy" class="img"
+            src="https://static.igem.wiki/teams/4607/wiki/members/whatsapp-image-2023-09-06-at-11-12-59-photoroom-png-photoroom.png">
+        </div>
+
+        <div class="content">
+          <h1 style="color:#5BC5AB">Alberto</h1>
+          <p>This software expert guides our wiki team in their way. His favorite microorganism is <em>
+              Propionibacterium freudenreichii </em>. His favorite dairy product is lactose-free milk.<br>“Patience is
+            the mother of all virtues”</p>
+          <a href="https://www.linkedin.com/in/alberto-aguilar-gonzalez-89967955/" title="LinkedIn"><svg role="img"
+              viewBox="0 0 540 540">
+              <path
+                d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z" />
+            </svg></a>
+        </div>
+      </div>
     </div>
 
-    <script type="text/javascript">
-window.addEventListener('scroll',teamColor);
-function teamColor(){
+
+
+    <div class="wrap" id="sec4">
+      <header class="TeamHeader">
+        <br>
+        <br>
+        <h1>PIs</h1>
+        <br>
+      </header>
+    </div>
+
+    <div class="teamContainer">
+      <div class="teamCar">
+        <div class="image" style="--gradient:linear-gradient(45deg, rgba(197, 91, 117,1), rgba(246, 174, 45, 1))">
+          <img loading="lazy" class="img" src="https://static.igem.wiki/teams/4607/wiki/members/cynthia.png" alt="1">
+        </div>
+
+        <div class="content">
+          <h1 style="color:rgb(197, 91, 117)">Cynthia</h1>
+          <p> Our perfectionist Primary Instructor loves to see every member of the team evolve into something
+            different. Her favorite microorganism is <em> Thermus aquaticus </em>. Her favorite dairy product is butter.
+          </p>
+          <a href="https://www.linkedin.com/in/cynthia-lizeth-gonzalez-trevizo-872135184/" title="LinkedIn"><svg
+              role="img" viewBox="0 0 540 540">
+              <path
+                d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z" />
+            </svg></a>
+        </div>
+      </div>
+
+      <div class="teamCar">
+        <div class="image" style="--gradient:linear-gradient(45deg, rgba(197, 91, 117,1), rgba(246, 174, 45, 1))">
+          <img loading="lazy" class="img"
+            src="https://static.igem.wiki/teams/4607/wiki/members/gladysbien-photoroom-png-photoroom.png" alt="1">
+        </div>
+
+        <div class="content">
+          <h1 style="color:rgb(197, 91, 117)">Gladys</h1>
+          <p>This perseverant expert in proteins lights our path through our lab development. Her favorite microorganism
+            is <em> Mycobacterium tuberculosis </em>. Her favorite dairy product is ice cream. <br> “In theory... ”</p>
+          <a href="https://www.linkedin.com/in/gladys-guadalupe-lopez-avalos-93b893113/" title="LinkedIn"><svg
+              role="img" viewBox="0 0 540 540">
+              <path
+                d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z" />
+            </svg></a>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  </div>
+
+  <script type="text/javascript">
+    var dot1 = document.getElementById('dot1');
+    var dot2 = document.getElementById('dot2');
+    var dot3 = document.getElementById('dot3');
+    var dot4 = document.getElementById('dot4');
+
+    function goTo(scrollID) {
+      dot1.classList.remove('active');
+      dot2.classList.remove('active');
+      dot3.classList.remove('active');
+      dot4.classList.remove('active');
+      var dot = document.getElementById('dot' + scrollID);
+      dot.classList.add('active');
+      var element = document.getElementById('sec' + scrollID);
+      element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+    }
+  </script>
+
+  <script type="text/javascript">
     var sect1 = document.getElementById('sec1');
     var sect2 = document.getElementById('sec2');
     var sect3 = document.getElementById('sec3');
     var sect4 = document.getElementById('sec4');
 
-    var sect1Top = sect1.getBoundingClientRect().top;
-    var sect2Top = sect2.getBoundingClientRect().top;
-    var sect3Top = sect3.getBoundingClientRect().top;
-    var sect4Top = sect4.getBoundingClientRect().top;
-    
-    var body = document.querySelectorAll('.teamBody');
-    var bodyTop = body[0].getBoundingClientRect().top;
-    
-    var windowheight = window.innerHeight;
-    var ofset = 50
+    var dot1 = document.getElementById('dot1');
+    var dot2 = document.getElementById('dot2');
+    var dot3 = document.getElementById('dot3');
+    var dot4 = document.getElementById('dot4');
 
-    var stickhead = document.querySelectorAll('.teamHead')[0];
-  
-    
-    if(sect4Top < windowheight/2 + ofset){
-      stickhead.classList.add('s4');
-      stickhead.classList.remove('s3');
-      stickhead.classList.remove('s2');
-      stickhead.classList.remove('s1');
-        
-    } else{
-      if (sect3Top < windowheight/2 + ofset){
-        stickhead.classList.add('s3');
-        stickhead.classList.remove('s4');
-        stickhead.classList.remove('s2');
-        stickhead.classList.remove('s1');
-
-      } else{
-        if (sect2Top < windowheight/2 + ofset){
-          stickhead.classList.add('s2');
-          stickhead.classList.remove('s4');
-          stickhead.classList.remove('s1');
-          stickhead.classList.remove('s3');
-          
-        } else{ 
-          stickhead.classList.add('s1');
-          stickhead.classList.remove('s4');
-          stickhead.classList.remove('s2');
-          stickhead.classList.remove('s3');
-        }
+    window.addEventListener('scroll', function () {
+      var sect1top = sect1.getBoundingClientRect().top;
+      var sect2top = sect2.getBoundingClientRect().top;
+      var sect3top = sect3.getBoundingClientRect().top;
+      var sect4top = sect4.getBoundingClientRect().top;
+      var topPad = 200;
+      if (sect4top - topPad <= topPad) {
+        dot1.classList.remove('active');
+        dot2.classList.remove('active');
+        dot3.classList.remove('active');
+        dot4.classList.add('active');
+      } else if (sect3top - topPad <= topPad) {
+        dot1.classList.remove('active');
+        dot2.classList.remove('active');
+        dot3.classList.add('active');
+        dot4.classList.remove('active');
+      } else if (sect2top - topPad <= topPad) {
+        dot1.classList.remove('active');
+        dot2.classList.add('active');
+        dot3.classList.remove('active');
+        dot4.classList.remove('active');
+      } else if (sect1top - topPad <= topPad) {
+        dot1.classList.add('active');
+        dot2.classList.remove('active');
+        dot3.classList.remove('active');
+        dot4.classList.remove('active');
+      } else {
+        dot1.classList.remove('active');
+        dot2.classList.remove('active');
+        dot3.classList.remove('active');
+        dot4.classList.remove('active');
       }
-    }
 
-    
-}
-    </script>
-    
-    </body>
+
+
+
+    }); 
+  </script>
+
+</body>
 
 
 

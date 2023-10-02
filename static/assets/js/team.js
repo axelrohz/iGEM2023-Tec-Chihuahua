@@ -7,6 +7,7 @@ function reveal(){
   var image = document.querySelectorAll('.image-space');
   var hideTop = image[0].getBoundingClientRect().top;
   var revealpoint = -20;
+  console.log(revealBottom);
   if(revealBottom < 80){
     reveals[0].classList.add('active');
   }
