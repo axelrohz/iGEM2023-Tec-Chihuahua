@@ -1332,7 +1332,29 @@ iGEM project.{% endblock %}
                     </div>    
                 </div>
             </div>
-</body>
+
+            <div id="sectionext" class="sectE">
+                <div class="secciones">
+                    
+                    <div class="layout">
+                                                        <!--cosas del index-->
+                        <div class="index3">
+                            <nav class="navigation">
+                                <ul>
+                                    <li>
+                                        <a href="#">Skills & Capabilities</a>
+                                        <a href="#">Stakeholders</a>
+
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        
+                    </div>    
+                </div>
+            </div>
+
+        </body>
                             
                 
                 <div id="scrlS42">
@@ -1689,6 +1711,7 @@ iGEM project.{% endblock %}
       display: none;
     }
 </style>
+
 <script>
     const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
   
@@ -3234,6 +3257,12 @@ Math.easeInOutQuad = function (t, b, c, d) {
         var sectionOverview = document.getElementById("sectionOverview");
         var sectionResults = document.getElementById("sectionResults");
         var sectionMethods = document.getElementById("sectionMethods");
+        var sectionext = document.getElementById("sectionext");
+
+        
+       
+        
+
         if (sectionOverview) {
             sectionOverview.style.display = 'none';
         }
@@ -3243,7 +3272,9 @@ Math.easeInOutQuad = function (t, b, c, d) {
         if (sectionMethods) {
             sectionMethods.style.display = 'none';
         }
-        
+        if (sectionext) {
+            sectionext.style.display = 'none';
+        }
         // Mostrar la sección seleccionada
         var selectedSection = document.getElementById(sectionId);
         if (selectedSection) {
@@ -3251,5 +3282,10 @@ Math.easeInOutQuad = function (t, b, c, d) {
         }
     }
 </script>
-
+<style>
+    /* Ocultar las secciones por defecto */
+    #sectionResults, #sectionMethods, #sectionext {
+      display: none;
+    }
+</style>
 {% endblock %}
