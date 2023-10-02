@@ -2057,3 +2057,13 @@ footer{
     background-color: #447D9C;
   
   }
+  /*gif prototipo */
+  .prototype {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    top: 28vh;
+    left: 23vh;
+    z-index: 500;
+    overflow: hidden;
+}
