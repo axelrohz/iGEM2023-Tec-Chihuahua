@@ -177,7 +177,6 @@
 			<nav class="navigation">
 				<ul>
 				<li><a class="introduction" href="#introduction">Introduction</a></li>
-				<li><a class="conclusion" href="#conclusion">Conclusion</a></li>
 				<li><a class="references" href="#referencesO">References</a></li>
 				</ul>
    		 	</nav>
@@ -324,12 +323,7 @@
 				method (RSM) as a statistical tool in our product development work. RSM led to the identification of factor settings that collectively optimized multiple variables that align with desired responses and specifications. In our quest for optimization within our bactericidal system, RSM enabled us to make informed trade-offs between responses.
 				</p>
 			</div>
-			<div class="tituloContenido">
-				<h3 id="conclusion"><br><br><br><br>Conclusion</h3>
-			</div>
-			<div>
-				<!--aquí irá la conclusión-->
-			</div>
+			<br><br><br><br>
 			<div class="accordion-item">
 				<div class="accordion-item-header">
 					<h3 id="referencesO">References</h3>
@@ -369,16 +363,11 @@
    		 <div class="index2">
    			 <nav class="navigation">
    				 <ul>
-   					 <li>
-   						 <a href="#upstream">ODEs</a>
-   						 <ul>
-   							 <li><a href="#underlying_theory">Monte Carlo simulation</a></li>
-   							 <li><a href="#model_building">Parameter estimation</a></li>
-   						 </ul>
-   					 </li>
-   					 <li><a href="#downstream">RSM</a></li>
+   					 <li><a href="#underlying_theory">Underlying theory</a></li>
+   					 <li><a href="#model_building">Model building</a></li>
+   					 <li><a href="#monte_carlo">Monte Carlo Simulation</a></li>
+   					 <li><a href="#parameter_estimation">Parameter Estimation</a></li>
    					 <li><a href="#referencesM">References</a></li>
-   					 </li>
    				 </ul>
    			 </nav>
    		 </div>
@@ -387,7 +376,7 @@
    				 <h3 id="upstream">First model</h3>
    			 </div>
    			 <div class="tituloContenido">
-   				 <h4 id="underlying_theory">Underlying theory</h4>
+   				 <h4 id="underlying_theory"><br><br>Underlying theory</h4>
    			 </div>
    			 <p class="contenido">The IPTG induction mechanism has 3 key elements: The operator (LacO),  lac repressor, and inductor (IPTG). These elements interact in a coordinated manner, as illustrated in <b>figure 1.</b> The process unfolds as follows:</p>
    			 <br>
@@ -1116,7 +1105,7 @@
   		 </math>
   		 <p  ALIGN="right" class="NumeroEcuacion">(xxx)</p>
   		 <div class="tituloContenido">
-   		 <h4 id="model_building">Model building</h4>
+   		 <h4 id="model_building"><br><br>Model building</h4>
  		 </div>
  		 <div class="tituloContenido">
    		 <h5>Chemical reactions</h5>
@@ -3816,7 +3805,7 @@
    	       </div>
 			<br>
 		   <div class="tituloContenido">
-				<h4 id="underlying_theory">Monte Carlo Simulation</h4>
+				<h4 id="monte_carlo"><br><br>Monte Carlo Simulation</h4>
 			</div>
 			<br>
 			<p  class="contenido"">Precise predictions of biological processes rely on understanding intricate networks. Nonetheless, this understanting is hindered by the lack of data concerning numerous model parameters, especially reaction kinetics. In our system of ODEs, we encountered a shorfall of associated parameters for some of the reaction kinetics presented in <b>Table 2.</b> Selecting the suitable -range of- values presented a challenge as it should encompass a broad spectrum to ensure the experimental results are representative, detailed enough to capture essential information, but not overly extensive that it becomes too complex and time-consuming due to limitations in computational resources. </p>
@@ -3825,7 +3814,7 @@
 			<br>
 			<p  class="contenido">Through this approach, a diverse and extensive array of potential parameter sets is generated, facilitating a probabilistic exploration of the parameter space. Subsequently, we leverage the established range of viable kinetic constant values obtained from the MC simulation as an input for a machine-learning-based parameter estimation algorithm, aiming to narrow down said parameter range.</p>
 			<div class="tituloContenido">
-				<h4 id="underlying_theory">Parameter estimation</h4>
+				<h4 id="parameter_estimation"><br><br>Parameter estimation</h4>
 			</div>
 			<br>
 			<p class="contenido">Subsequently, employing the collected data set of sampled parameters, we proceed to estimate the specific parameters tied to the kinetic aspects of the system. We present a computational approach for the estimation of kinetic constants, focusing on the induction phase of protein expression, through the application of a Genetic Algorithm (GA).</p>
@@ -3836,7 +3825,7 @@
 			
 			<div class="accordion-item">
 				<div class="accordion-item-header">
-					<h3 id="referencesO">References</h3>
+					<h3 id="referencesM"><br><br><br><br>References</h3>
 				</div>
 				<div class="accordion-item-body">
 					<div class="accordion-item-body-content">
