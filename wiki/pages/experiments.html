@@ -98,19 +98,27 @@ your iGEM project.{% endblock %}
                                 </div>
                                 <div class="dotIndex" id="dot2"
                                     onclick="goTo('2')">
-                                    <div class="dotText">Advisors</div>
+                                    <div class="dotText">Round zero</div>
                                 </div>
                                 <div class="dotIndex" id="dot3"
                                     onclick="goTo('3')">
-                                    <div class="dotText">Instructors</div>
+                                    <div class="dotText">First round</div>
                                 </div>
                                 <div class="dotIndex" id="dot4"
                                     onclick="goTo('4')">
-                                    <div class="dotText">PIs</div>
+                                    <div class="dotText">Second round</div>
                                 </div>
                                 <div class="dotIndex" id="dot5"
                                     onclick="goTo('5')">
-                                    <div class="dotText">Prueba</div>
+                                    <div class="dotText">Third round</div>
+                                </div>
+                                <div class="dotIndex" id="dot6"
+                                    onclick="goTo('6')">
+                                    <div class="dotText">Fourth round</div>
+                                </div>
+                                <div class="dotIndex" id="dot7"
+                                    onclick="goTo('7')">
+                                    <div class="dotText">References</div>
                                 </div>
                             </div>
 
@@ -145,7 +153,7 @@ your iGEM project.{% endblock %}
 
                         <br>
 
-                        <p id="roundZero" class="subtitleF1">Round Zero: Plasmid
+                        <p id="sec2" class="subtitleF1">Round Zero: Plasmid
                             Construction and Analysis</p>
                         <img
                             src="https://static.igem.wiki/teams/4607/wiki/experiments/zero.png"
@@ -232,7 +240,7 @@ your iGEM project.{% endblock %}
                                 FREE Twist Gene Fragments for iGEM teams.</p>
                         </p>
 
-                        <p id="firstRound" class="subtitleF1">First Round:
+                        <p id="sec3" class="subtitleF1">First Round:
                             Golden Gate Assembly</p>
                         <img class="responsive"
                             src="https://static.igem.wiki/teams/4607/wiki/experiments/first.png"
@@ -320,7 +328,7 @@ your iGEM project.{% endblock %}
                                 <br>
                             </p>
 
-                            <p id="secondRound" class="subtitleF2">Second Round:
+                            <p id="sec4" class="subtitleF2">Second Round:
                                 Protein Expression</p>
                             <img class="responsive"
                                 src="https://static.igem.wiki/teams/4607/wiki/experiments/second.png"
@@ -407,7 +415,7 @@ your iGEM project.{% endblock %}
                             </p>
                             <br>
                             <br>
-                            <p id="thirdRound" class="subtitleF3">Third Round:
+                            <p id="sec4" class="subtitleF3">Third Round:
                                 Protein Purification</p>
                             <img class="responsive"
                                 src="https://static.igem.wiki/teams/4607/wiki/experiments/third.png"
@@ -454,13 +462,13 @@ your iGEM project.{% endblock %}
                             <br>
                             <br>
 
-                            <p id="fourthRound" class="subtitleF4">Fourth Round:
+                            <p id="sec5" class="subtitleF4">Fourth Round:
                                 Bactericidal Assays</p>
                             <img class="responsive"
                                 src="https://static.igem.wiki/teams/4607/wiki/experiments/fourth.png"
                                 alt="Fourth Round: Bactericidal Assays Diagram">
 
-                            <p id="protocols" class="subtitleF4">Protocols</p>
+                            <p id="sec6" class="subtitleF4">Protocols</p>
                             <div>
                                 <!--https://docs.google.com/document/d/11uCDS7MXz4AeLz2jDPTZTSwt6BhzBj6CVe-KyLJl2LU/edit-->
                                 <!--https://codepen.io/wikyware-net/pen/dyKPRxQ-->
@@ -785,7 +793,7 @@ your iGEM project.{% endblock %}
                             <br>
                             <br>
 
-                            <p id="references" class="subtitleF4">References</p>
+                            <p id="sec7" class="subtitleF4">References</p>
                             <p>
                                 Addgene (2016). Addgene: Pouring LB Agar Plates.
                                 [online] Addgene.org. Available at:
@@ -845,6 +853,9 @@ your iGEM project.{% endblock %}
                 var dot2 = document.getElementById('dot2');
                 var dot3 = document.getElementById('dot3');
                 var dot4 = document.getElementById('dot4');
+                var dot5 = document.getElementById('dot5');
+                var dot6 = document.getElementById('dot6');
+                var dot7 = document.getElementById('dot7');
             
                 function goTo(scrollID) {
                   dot1.classList.remove('active');
@@ -863,17 +874,26 @@ your iGEM project.{% endblock %}
                 var sect2 = document.getElementById('sec2');
                 var sect3 = document.getElementById('sec3');
                 var sect4 = document.getElementById('sec4');
+                var sect5 = document.getElementById('sec5');
+                var sect6 = document.getElementById('sec6');
+                var sect7 = document.getElementById('sec7');
             
                 var dot1 = document.getElementById('dot1');
                 var dot2 = document.getElementById('dot2');
                 var dot3 = document.getElementById('dot3');
                 var dot4 = document.getElementById('dot4');
+                var dot5 = document.getElementById('dot5');
+                var dot6 = document.getElementById('dot6');
+                var dot7 = document.getElementById('dot7');
             
                 window.addEventListener('scroll', function () {
                   var sect1top = sect1.getBoundingClientRect().top;
                   var sect2top = sect2.getBoundingClientRect().top;
                   var sect3top = sect3.getBoundingClientRect().top;
                   var sect4top = sect4.getBoundingClientRect().top;
+                  var sect5top = sect5.getBoundingClientRect().top;
+                  var sect6top = sect6.getBoundingClientRect().top;
+                  var sect7top = sect7.getBoundingClientRect().top;
                   var topPad = 200;
                   if (sect4top - topPad <= topPad) {
                     dot1.classList.remove('active');
