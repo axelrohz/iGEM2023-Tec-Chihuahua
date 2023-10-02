@@ -107,6 +107,7 @@ the world. Consider how the world affects your work and how your work affects th
 					<button onclick="showSection('sectionResults')" class="learnMore">Go to section</button>
 				</div>
 			</div>
+			
 			<svg id="retina" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 				x="0px" y="0px" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
 				<path id="Retina2" class="st9" d="M222,186.3l-5.1,4.9l2.1-6.7c-0.7-0.2-1.3-0.3-2.1-0.3c-3.9,0-7.1,3.2-7.1,7.1
@@ -149,14 +150,36 @@ the world. Consider how the world affects your work and how your work affects th
 			</div>
 			<div class="layout">
 				<!--cosas del index-->
-				<div class="index1">
-					<nav class="navigation">
-						<ul>
-							<li><a class="introduction" href="#ourBeginnings">Our beginnings</a></li>
-							<li><a class="references" href="#referencesO">References</a></li>
-						</ul>
-					</nav>
+				<div class="scrollIndexContain">
+					<div class="stickyIndex">
+					  <div class="lineIndex"></div>
+					  <div class="indexDots">
+						<div onclick="goTo('1')" class="dotIndex" id="dot1">
+						  <div class="dotText">Our beginnings</div>
+						</div>
+						<div class="dotIndex" id="dot2" onclick="goTo('2')">
+						  <div class="dotText">References</div>
+						</div>
+						
+					  </div>
+			  
+					</div>
 				</div>
+				<script type="text/javascript">
+					var dot1 = document.getElementById('dot1');
+					var dot2 = document.getElementById('dot2');
+					
+				
+					function goTo(scrollID) {
+					  dot1.classList.remove('active');
+					  dot2.classList.remove('active');
+					  
+					  var dot = document.getElementById('dot' + scrollID);
+					  dot.classList.add('active');
+					  var element = document.getElementById('sec' + scrollID);
+					  element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+					}
+				  </script>
 				<div class="secciones">
 					<div class="mkt-3dSlider py-6">
 						<div class="topcardscontainer">
@@ -1455,7 +1478,48 @@ the world. Consider how the world affects your work and how your work affects th
   });
 
   setTimeout(function() { toggleOptions('.selector'); }, 100);
-</script>		  
+</script>
+<script type="text/javascript">
+    var sect1 = document.getElementById('sectionOverview');
+    var sect2 = document.getElementById('referencesO');
+ 
+
+    var dot1 = document.getElementById('dot1');
+    var dot2 = document.getElementById('dot2');
+    
+
+    window.addEventListener('scroll', function () {
+      var sect1top = sect1.getBoundingClientRect().top;
+      var sect2top = sect2.getBoundingClientRect().top;
+      
+      var topPad = 200;
+      if (sect4top - topPad <= topPad) {
+        dot1.classList.remove('active');
+        dot2.classList.remove('active');
+      
+      } else if (sect3top - topPad <= topPad) {
+        dot1.classList.remove('active');
+        dot2.classList.remove('active');
+        
+      } else if (sect2top - topPad <= topPad) {
+        dot1.classList.remove('active');
+        dot2.classList.add('active');
+        
+      } else if (sect1top - topPad <= topPad) {
+        dot1.classList.add('active');
+        dot2.classList.remove('active');
+        
+      } else {
+        dot1.classList.remove('active');
+        dot2.classList.remove('active');
+       
+      }
+
+
+
+
+    }); 
+  </script>		  
 </body>
 
 </html>
