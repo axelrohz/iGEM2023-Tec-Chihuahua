@@ -1955,6 +1955,255 @@ margin-left: 30%;
 }
 
 
+/*COSAS DEL DIAGRAMA DE VALORES*/
+.valores_diagrama{
+  height: 35vw;
+  width: 80%;
+  margin-left: 15vw;
+  margin-bottom: 2vw;
+}
+
+.title_circulo{
+  position: relative;
+  top:3vw;
+  margin-left: 1.5vw;
+}
+
+/*cosas de los circulos de valores*/
+
+
+.public_health{
+  background-color: aqua;
+  border-radius: 50%;
+  width: 10vw;
+  height: 10vw;
+  top:7vw;
+  left: 1vw;
+  position: relative;
+}
+
+.public_health:hover{
+  transform: scale(3);
+  position: relative;
+  top:9vw;
+  z-index: 3;
+  left: 10vw;
+}
+
+/*para que el titulo del boton no se vea en hover*/
+.public_health:hover .title_circulo{
+  visibility:hidden;
+}
+
+
+/*para que el texto no se vea y el titulo sin que este en hover*/
+.relation{
+  visibility: hidden;
+}
+.public_health:hover .relation{
+  visibility: visible;
+}
+
+/*acomodar titulo y texto de relacion  */
+
+.titulo_relation{
+  position: relative;
+  left: 3vw;
+  bottom: 1.5vw;
+  font-size: 5px;
+  width: fit-content;
+}
+.descripcionR{
+  font-size: 4.5px;
+  position: relative;
+  bottom: 1.7vw;
+  right: 0.5vw;
+  width: 8vw;
+}
+
+/*para que el texto no se vea y el titulo sin que este en hover*/
+.implementation{
+  visibility: hidden;
+}
+.public_health:hover .implementation{
+  visibility: visible;
+}
+
+/*para acomodar el titulo y texto de implementacion*/
+.titulo_implementation{
+  position: relative;
+  left: 3.5vw;
+  bottom: 2.5vw;
+  width: fit-content;
+  font-size: 5px;
+}
+.descripcionI{
+  font-size: 4.5px;
+  position: relative;
+  bottom: 3vw;
+  right: 0.5vw;
+  width: 8vw;
+}
+
+
+
+
+
+
+
+
+
+/*cosas del valor de anti waste*/
+
+.anti_waste{
+  background-color: aqua;
+  border-radius: 50%;
+  width: 10vw;
+  height: 10vw;
+  position: relative;
+  left: 10vw;
+  bottom: 3vw;
+}
+
+.anti_waste:hover{
+  transform: scale(3.5);
+  position: relative;
+  left: 15vw;
+  z-index: 3;
+}
+/*para que el titulo del boton no se vea en hover*/
+.anti_waste:hover .title_circulo{
+  visibility:hidden;
+}
+
+/*para que se cambie a visible las cosas */
+.anti_waste:hover .relation{
+  visibility: visible;
+}
+.anti_waste:hover .implementation{
+  visibility: visible;
+}
+
+/*cosas del boton integrity*/
+
+.integrity{
+  background-color: aqua;
+  border-radius: 50%;
+  width: 10vw;
+  height: 10vw;
+  position: relative;
+  left: 19vw;
+  bottom: 13vw;
+}
+
+.integrity:hover{
+  transform: scale(3);
+  position: relative;
+  left: 20vw;
+  z-index: 3;
+}
+/*para que el titulo del boton no se vea en hover*/
+.integrity:hover .title_circulo{
+  visibility:hidden;
+}
+/*para que se cambie a visible las cosas */
+.integrity:hover .relation{
+  visibility: visible;
+}
+.integrity:hover .implementation{
+  visibility: visible;
+}
+
+/*cosas del boton privaci*/
+
+.privacy{
+  background-color: aqua;
+  border-radius: 50%;
+  width: 10vw;
+  height: 10vw;
+  position: relative;
+  left: 27vw;
+  bottom: 23vw;
+}
+
+.privacy:hover{
+  transform: scale(3);
+  position: relative;
+  left: 25vw;
+  z-index: 3;
+}
+/*para que se cambie a visible las cosas */
+.privacy:hover .relation{
+  visibility: visible;
+}
+.privacy:hover .implementation{
+  visibility: visible;
+}
+
+/*para que el titulo del boton no se vea en hover*/
+.privacy:hover .title_circulo{
+  visibility:hidden;
+}
+
+/*cosas del boton sustainability*/
+
+.sustainability{
+  background-color: aqua;
+  border-radius: 50%;
+  width: 10vw;
+  height: 10vw;
+  position: relative;
+  left: 34vw;
+  bottom: 33vw;
+}
+
+.sustainability:hover{
+  transform: scale(3);
+  position: relative;
+  left: 30vw;
+  z-index: 3;
+}
+/*para que el titulo del boton no se vea en hover*/
+.sustainability:hover .title_circulo{
+  visibility:hidden;
+}
+/*para que se cambie a visible las cosas */
+.sustainability:hover .relation{
+  visibility: visible;
+}
+.sustainability:hover .implementation{
+  visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*ajuste tabla y colores*/
 .tabla_chemicalReactios th, .tabla_chemicalReactios td{
    border: 2px solid #C55B75;
@@ -1966,7 +2215,7 @@ margin-left: 30%;
 
 
 .INDEX{
-   display: none;
+  display: none;
 }
 
 .instructionDiagram{
