@@ -59,31 +59,56 @@ plans here.{% endblock %}
             </svg>
           </div>
         </div>
-        <div class="teamScroll">
 
-          <div class="indexdad">
-            <div class="index1">
-              <nav class="navigation">
-                <ul>
-                  <li><a class="overview" href="#overview">Overview</a></li>
-                  <li><a class="achievements" href="#achievements">Achievements</a></li>
-                  <li><a class="roundZero" href="#roundZero">Round Zero</a></li>
-                  <li><a class="firstRound" href="#firstRound">First Round</a></li>
-                  <li><a class="secondRound" href="#secondRound">Second Round</a></li>
-                  <li><a class="thirdRound" href="#thirdRound">Third Round</a></li>
-                  <li><a class="fourthRound" href="#fourthRound">Fourth Round</a></li>
-                  <li><a class="references" href="#references">References</a></li>
-                </ul>
-              </nav>
+        <div style="margin-left: 2.1%;" class="teamScroll">
+
+          <div class="scrollIndexContain">
+            <div class="stickyIndex">
+              <div class="lineIndex"></div>
+              <div class="indexDots">
+                <div onclick="goTo('1')" class="dotIndex"
+                  id="dot1">
+                  <div class="dotText">Overview</div>
+                </div>
+                <div class="dotIndex" id="dot2"
+                  onclick="goTo('2')">
+                  <div class="dotText">Achievements</div>
+                </div>
+                <div class="dotIndex" id="dot3"
+                  onclick="goTo('3')">
+                  <div class="dotText">Round Zero</div>
+                </div>
+                <div class="dotIndex" id="dot4"
+                  onclick="goTo('4')">
+                  <div class="dotText">First Round</div>
+                </div>
+                <div class="dotIndex" id="dot5"
+                  onclick="goTo('5')">
+                  <div class="dotText">Second Round</div>
+                </div>
+                <div class="dotIndex" id="dot6"
+                  onclick="goTo('6')">
+                  <div class="dotText">Third Round</div>
+                </div>
+                <div class="dotIndex" id="dot7"
+                  onclick="goTo('7')">
+                  <div class="dotText">Fourth Round</div>
+                </div>
+                <div class="dotIndex" id="dot8"
+                  onclick="goTo('8')">
+                  <div class="dotText">References</div>
+                </div>
+              </div>
+
             </div>
           </div>
 
-          <div class="wrap" id="sec1">
+          <div class="wrap">
             <div class="uno">
               <h1>"There is no science without results"</h1>
             </div>
             <div class="texthide">
-              <h2 id="overview">Overview</h2>
+              <h2 id="sec1">Overview</h2>
               <p>
                 AureoBos's general purpose is to develop a novel solution for
                 bovine mastitis by approaching it from an
@@ -105,7 +130,7 @@ plans here.{% endblock %}
           </div>
 
           <div class="texthide">
-            <h2 id="achievements">Achievements</h2>
+            <h2 id="sec2">Achievements</h2>
 
             <!--Tarjetas de Achievements-->
             <div class="containerTrj">
@@ -183,7 +208,7 @@ plans here.{% endblock %}
 
           </div>
           <div class="texthide">
-            <h2 class="texthide" id="roundZero">Round Zero: Plasmid Construction
+            <h2 class="texthide" id="sec3">Round Zero: Plasmid Construction
               and Analysis</h2>
             <p>
               The initial round of experimentation encompassed the <em>in silico</em>
@@ -425,7 +450,7 @@ plans here.{% endblock %}
           </div>
 
           <div class="texthide">
-            <h2 class="texthide" id="firstRound">First Round: Golden Gate
+            <h2 class="texthide" id="sec4">First Round: Golden Gate
               Assembly</h2>
             <h3 class="texthide" style="text-align: center;">Golden Gate
               Assembly Reaction</h3>
@@ -535,7 +560,7 @@ plans here.{% endblock %}
             </p>
           </div>
           <div class="texthide">
-            <h2 id="secondRound">Second Round: Protein Expression</h2>
+            <h2 id="sec5">Second Round: Protein Expression</h2>
             <br>
             <p>
               The next step of our recombinant protein production process was
@@ -736,7 +761,7 @@ plans here.{% endblock %}
           </div>
 
           <div class="texthide">
-            <h2 class="texthide id="thirdRound">Third Round: Protein
+            <h2 class="texthide" id="sec6">Third Round: Protein
               Purification</h2>
             <p>
               ---
@@ -744,7 +769,7 @@ plans here.{% endblock %}
           </div>
 
           <div class="texthide">
-            <h2 class="texthide" id="fourthRound">Fourth Round: Bactericidal
+            <h2 class="texthide" id="sec7">Fourth Round: Bactericidal
               Assays</h2>
             <p>
               ---
@@ -753,7 +778,7 @@ plans here.{% endblock %}
 
           <div class="accordion">
             <div class="accordion-item">
-              <div id="references" class="accordion-item-header">
+              <div id="sec8" class="accordion-item-header">
                 References
               </div>
               <div class="accordion-item-body">
@@ -824,58 +849,204 @@ plans here.{% endblock %}
             </div>
           </div>
 
-          <script>
-            const tween = KUTE.fromTo(
-              '#wave11',
-              { path: '#wave11' },
-              { path: '#wave21' },
-              { repeat: 999, duration: 5000, yoyo: true }
-            ).start();
-          </script>
-          <script>
-            const tween2 = KUTE.fromTo(
-              '#wave12',
-              { path: '#wave12' },
-              { path: '#wave22' },
-              { repeat: 999, duration: 4000, yoyo: true }
-            ).start();
-          </script>
-          <script>
-            const tween3 = KUTE.fromTo(
-              '#wave13',
-              { path: '#wave13' },
-              { path: '#wave23' },
-              { repeat: 999, duration: 3000, yoyo: true }
-            ).start();
-          </script>
-          <script>
-            const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
-
-            accordionItemHeaders.forEach(accordionItemHeader => {
-              accordionItemHeader.addEventListener("click", event => {
-
-                // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
-
-                // const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
-                // if(currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader!==accordionItemHeader) {
-                //   currentlyActiveAccordionItemHeader.classList.toggle("active");
-                //   currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
-                // }
-
-                accordionItemHeader.classList.toggle("active");
-                const accordionItemBody = accordionItemHeader.nextElementSibling;
-                if (accordionItemHeader.classList.contains("active")) {
-                  accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
-                }
-                else {
-                  accordionItemBody.style.maxHeight = 0;
-                }
-
-              });
-            });
-          </script>
-
         </div>
       </div>
+    </div>
 
-      {% endblock %}
+    <script>
+          const tween = KUTE.fromTo(
+          '#wave11',
+          { path: '#wave11' },
+          { path: '#wave21' },
+          { repeat: 999, duration: 5000, yoyo: true }
+          ).start();
+          </script>
+    <script>
+          const tween2 = KUTE.fromTo(
+          '#wave12',
+          { path: '#wave12' },
+          { path: '#wave22' },
+          { repeat: 999, duration: 4000, yoyo: true }
+          ).start();
+          </script>
+    <script>
+          const tween3 = KUTE.fromTo(
+          '#wave13',
+          { path: '#wave13' },
+          { path: '#wave23' },
+          { repeat: 999, duration: 3000, yoyo: true }
+          ).start();
+          </script>
+    <script>
+          const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+
+          accordionItemHeaders.forEach(accordionItemHeader => {
+          accordionItemHeader.addEventListener("click", event => {
+
+          // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
+
+          // const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
+          // if(currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader!==accordionItemHeader) {
+          //   currentlyActiveAccordionItemHeader.classList.toggle("active");
+          //   currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+          // }
+
+          accordionItemHeader.classList.toggle("active");
+          const accordionItemBody = accordionItemHeader.nextElementSibling;
+          if (accordionItemHeader.classList.contains("active")) {
+          accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+          }
+          else {
+          accordionItemBody.style.maxHeight = 0;
+          }
+
+          });
+          });
+          </script>
+
+    <script type="text/javascript">
+          var dot1 = document.getElementById('dot1');
+          var dot2 = document.getElementById('dot2');
+          var dot3 = document.getElementById('dot3');
+          var dot4 = document.getElementById('dot4');
+          var dot5 = document.getElementById('dot5');
+          var dot6 = document.getElementById('dot6');
+          var dot7 = document.getElementById('dot7');
+          var dot8 = document.getElementById('dot8');
+      
+          function goTo(scrollID) {
+            dot1.classList.remove('active');
+            dot2.classList.remove('active');
+            dot3.classList.remove('active');
+            dot4.classList.remove('active');
+            dot5.classList.remove('active');
+            dot6.classList.remove('active');
+            dot7.classList.remove('active');
+            dot8.classList.remove('active');
+            var dot = document.getElementById('dot' + scrollID);
+            dot.classList.add('active');
+            var element = document.getElementById('sec' + scrollID);
+            element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+          }
+          </script>
+
+    <script type="text/javascript">
+        var sect1 = document.getElementById('sec1');
+        var sect2 = document.getElementById('sec2');
+        var sect3 = document.getElementById('sec3');
+        var sect4 = document.getElementById('sec4');
+        var sect5 = document.getElementById('sec5');
+        var sect6 = document.getElementById('sec6');
+        var sect7 = document.getElementById('sec7');
+        var sect8 = document.getElementById('sec8');
+    
+        var dot1 = document.getElementById('dot1');
+        var dot2 = document.getElementById('dot2');
+        var dot3 = document.getElementById('dot3');
+        var dot4 = document.getElementById('dot4');
+        var dot5 = document.getElementById('dot5');
+        var dot6 = document.getElementById('dot6');
+        var dot7 = document.getElementById('dot7');
+        var dot8 = document.getElementById('dot8');
+    
+        window.addEventListener('scroll', function () {
+          var sect1top = sect1.getBoundingClientRect().top;
+          var sect2top = sect2.getBoundingClientRect().top;
+          var sect3top = sect3.getBoundingClientRect().top;
+          var sect4top = sect4.getBoundingClientRect().top;
+          var sect5top = sect5.getBoundingClientRect().top;
+          var sect6top = sect6.getBoundingClientRect().top;
+          var sect7top = sect7.getBoundingClientRect().top;
+          var sect8top = sect8.getBoundingClientRect().top;
+          var topPad = 200;
+          if (sect8top - topPad <= topPad) {
+            dot1.classList.remove('active');
+            dot2.classList.remove('active');
+            dot3.classList.remove('active');
+            dot4.classList.remove('active');
+            dot5.classList.remove('active');
+            dot6.classList.remove('active');
+            dot7.classList.remove('active');
+            dot8.classList.add('active');
+          }  else if (sect7top - topPad <= topPad) {
+            dot1.classList.remove('active');
+            dot2.classList.remove('active');
+            dot3.classList.remove('active');
+            dot4.classList.remove('active');
+            dot5.classList.remove('active');
+            dot6.classList.remove('active');
+            dot7.classList.add('active');
+            dot8.classList.remove('active');
+          }  else if (sect6top - topPad <= topPad) {
+            dot1.classList.remove('active');
+            dot2.classList.remove('active');
+            dot3.classList.remove('active');
+            dot4.classList.remove('active');
+            dot5.classList.remove('active');
+            dot6.classList.add('active');
+            dot7.classList.remove('active');
+            dot8.classList.remove('active');
+          }  else if (sect5top - topPad <= topPad) {
+            dot1.classList.remove('active');
+            dot2.classList.remove('active');
+            dot3.classList.remove('active');
+            dot4.classList.remove('active');
+            dot5.classList.add('active');
+            dot6.classList.remove('active');
+            dot7.classList.remove('active');
+            dot8.classList.remove('active');
+          }  else if (sect4top - topPad <= topPad) {
+            dot1.classList.remove('active');
+            dot2.classList.remove('active');
+            dot3.classList.remove('active');
+            dot4.classList.add('active');
+            dot5.classList.remove('active');
+            dot6.classList.remove('active');
+            dot7.classList.remove('active');
+            dot8.classList.remove('active');
+          } else if (sect3top - topPad <= topPad) {
+            dot1.classList.remove('active');
+            dot2.classList.remove('active');
+            dot3.classList.add('active');
+            dot4.classList.remove('active');
+            dot5.classList.remove('active');
+            dot6.classList.remove('active');
+            dot7.classList.remove('active');
+            dot8.classList.remove('active');
+          } else if (sect2top - topPad <= topPad) {
+            dot1.classList.remove('active');
+            dot2.classList.add('active');
+            dot3.classList.remove('active');
+            dot4.classList.remove('active');
+            dot5.classList.remove('active');
+            dot6.classList.remove('active');
+            dot7.classList.remove('active');
+            dot8.classList.remove('active');
+          } else if (sect1top - topPad <= topPad) {
+            dot1.classList.add('active');
+            dot2.classList.remove('active');
+            dot3.classList.remove('active');
+            dot4.classList.remove('active');
+            dot5.classList.remove('active');
+            dot6.classList.remove('active');
+            dot7.classList.remove('active');
+            dot8.classList.remove('active');
+          } else {
+            dot1.classList.remove('active');
+            dot2.classList.remove('active');
+            dot3.classList.remove('active');
+            dot4.classList.remove('active');
+            dot5.classList.remove('active');
+            dot6.classList.remove('active');
+            dot7.classList.remove('active');
+            dot8.classList.remove('active');
+          }
+    
+    
+        }); 
+            </script>
+
+  </body>
+</html>
+
+{% endblock %}
