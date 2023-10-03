@@ -31,8 +31,8 @@ plans here.{% endblock %}
       rel="stylesheet">
     <link href="{{ url_for('static', filename = 'css/tables.css') }}"
       rel="stylesheet">
-      <script src="{{ url_for('static', filename = 'assets/js/team.js') }}"></script>
-        <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+    <script src="{{ url_for('static', filename = 'assets/js/team.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
   </head>
 
   <body class="mybody">
@@ -850,11 +850,10 @@ plans here.{% endblock %}
             </div>
           </div>
         </div>
-        </div>
       </div>
     </div>
 
-          <script>
+    <script>
             const tween = KUTE.fromTo(
               '#wave11',
               { path: '#wave11' },
@@ -862,7 +861,7 @@ plans here.{% endblock %}
               { repeat: 999, duration: 5000, yoyo: true }
             ).start();
           </script>
-          <script>
+    <script>
             const tween2 = KUTE.fromTo(
               '#wave12',
               { path: '#wave12' },
@@ -870,7 +869,7 @@ plans here.{% endblock %}
               { repeat: 999, duration: 4000, yoyo: true }
             ).start();
           </script>
-          <script>
+    <script>
             const tween3 = KUTE.fromTo(
               '#wave13',
               { path: '#wave13' },
@@ -878,7 +877,7 @@ plans here.{% endblock %}
               { repeat: 999, duration: 3000, yoyo: true }
             ).start();
           </script>
-          <script>
+    <script>
             const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
 
             accordionItemHeaders.forEach(accordionItemHeader => {
@@ -905,10 +904,7 @@ plans here.{% endblock %}
             });
           </script>
 
-        </div>
-      </div>
-
-      <script type="text/javascript">
+    <script type="text/javascript">
         var dot1 = document.getElementById('dot1');
         var dot2 = document.getElementById('dot2');
         var dot3 = document.getElementById('dot3');
@@ -934,7 +930,7 @@ plans here.{% endblock %}
         }
       </script>
 
-      <script type="text/javascript">
+    <script type="text/javascript">
         var sect1 = document.getElementById('sec1');
         var sect2 = document.getElementById('sec2');
         var sect3 = document.getElementById('sec3');
@@ -1053,4 +1049,4 @@ plans here.{% endblock %}
   </body>
 </html>
 
-  {% endblock %}
+{% endblock %}
