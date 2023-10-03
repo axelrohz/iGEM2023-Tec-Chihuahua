@@ -1,0 +1,298 @@
+{% extends "layout.html" %}
+
+{% block title %}Lab Notebook{% endblock %}
+{% block lead %}Prueba{% endblock %}
+
+{% block page_content %}
+
+<head>
+  <link rel="stylesheet" href="../../static/css/labNotebook.css">
+  <link href="{{ url_for('static', filename = 'css/labNotebook.css') }}"
+    rel="stylesheet">
+  <link rel="stylesheet" href="static/css/waveHead.css">
+  <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+  <script src="../../static/assets/js/labNotebook.js"></script>
+  <script src="{{ url_for('static', filename = 'assets/js/labNotebook.js') }}"></script>
+</head>
+
+<body>
+  <div class="parallax-team">
+
+    <div class="headParts">
+      <div class="headingParts">
+        <div class="textParts">
+          <h1>Lab Notebook</h1>
+          <h3>Chronological Notes of our Lab Team's Work</h3>
+        </div>
+      </div>
+
+      <svg class="waveParts" id="visual" viewBox="0 0 960 540"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+        <g>
+          <path id="wave11"
+            d="M0 335L20 326.2C40 317.3 80 299.7 120 292.3C160 285 200 288 240 301.8C280 315.7 320 340.3 360 348.3C400 356.3 440 347.7 480 337.2C520 326.7 560 314.3 600 311C640 307.7 680 313.3 720 321.2C760 329 800 339 840 332.2C880 325.3 920 301.7 940 289.8L960 278L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
+            fill="#A7DCD3"></path>
+          <path id="wave12"
+            d="M0 384L20 379.2C40 374.3 80 364.7 120 373.8C160 383 200 411 240 424C280 437 320 435 360 424.5C400 414 440 395 480 391.3C520 387.7 560 399.3 600 398.2C640 397 680 383 720 374.2C760 365.3 800 361.7 840 358.3C880 355 920 352 940 350.5L960 349L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
+            fill="#81D1BF"></path>
+          <path id="wave13"
+            d="M0 483L20 480.8C40 478.7 80 474.3 120 475.8C160 477.3 200 484.7 240 488.5C280 492.3 320 492.7 360 486.7C400 480.7 440 468.3 480 464.3C520 460.3 560 464.7 600 471C640 477.3 680 485.7 720 480.3C760 475 800 456 840 450.8C880 445.7 920 454.3 940 458.7L960 463L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
+            fill="#5BC5AB"></path>
+        </g>
+        <g style="visibility: hidden">
+          <path id="wave21"
+            d="M0 315L20 324.2C40 333.3 80 351.7 120 354.3C160 357 200 344 240 333.3C280 322.7 320 314.3 360 324C400 333.7 440 361.3 480 358.8C520 356.3 560 323.7 600 311.8C640 300 680 309 720 321.7C760 334.3 800 350.7 840 344.2C880 337.7 920 308.3 940 293.7L960 279L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
+            fill="#A7DCD3"></path>
+          <path id="wave22"
+            d="M0 387L20 390.3C40 393.7 80 400.3 120 394.8C160 389.3 200 371.7 240 376.2C280 380.7 320 407.3 360 421.2C400 435 440 436 480 433.7C520 431.3 560 425.7 600 414.7C640 403.7 680 387.3 720 382.7C760 378 800 385 840 384.5C880 384 920 376 940 372L960 368L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
+            fill="#81D1BF"></path>
+          <path id="wave23"
+            d="M0 485L20 486.7C40 488.3 80 491.7 120 490.5C160 489.3 200 483.7 240 479.5C280 475.3 320 472.7 360 466.8C400 461 440 452 480 449.5C520 447 560 451 600 458.2C640 465.3 680 475.7 720 478.3C760 481 800 476 840 469C880 462 920 453 940 448.5L960 444L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
+            fill="#5BC5AB"></path>
+        </g>
+
+      </svg>
+
+      <script>
+        const tween = KUTE.fromTo(
+          '#wave11',
+          { path: '#wave11' },
+          { path: '#wave21' },
+          { repeat: 999, duration: 5000, yoyo: true }
+        ).start();
+      </script>
+      <script>
+        const tween2 = KUTE.fromTo(
+          '#wave12',
+          { path: '#wave12' },
+          { path: '#wave22' },
+          { repeat: 999, duration: 4000, yoyo: true }
+        ).start();
+      </script>
+      <script>
+        const tween3 = KUTE.fromTo(
+          '#wave13',
+          { path: '#wave13' },
+          { path: '#wave23' },
+          { repeat: 999, duration: 3000, yoyo: true }
+        ).start();
+      </script>
+    </div>
+  </div>
+
+  <div class="month-container">
+
+    <div class="slider-container">
+      <div id="February" class="sliders"></div>
+      <div class="slider-content">
+        <ul class="vinniot">
+          <li><b>13th:</b> The paperwork of those interested in being part of
+            the iGEM Tec-Chihuahua 2023 team began to be received.</li>
+          <li><b>17th:</b> The call to join the team was closed.</li>
+          <li><b>20th:</b> The pre-selection results were published.</li>
+          <li><b>21st, 2nd, and 23rd:</b> Interviews were conducted with each of
+            the preselection candidates.</li>
+          <li><b>28th:</b> The final list of those selected to make up the iGem
+            Tec-Chihuahua 2023 team was published.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="slider-container">
+      <div id="March" class="sliders"></div>
+      <div class="slider-content">
+        <ul class="vinniot">
+          <li><b>1st:</b> The team members were called to take the official
+            photo.</li>
+          <li><b>6th:</b> Friendly meeting in a restaurant in the city where the
+            team members introduced themselves with each other.</li>
+          <li><b>7th:</b> First official meeting of the team together with PI,
+            advisors, and collaborators. The official start of activities took
+            place.</li>
+          <li><b>17th:</b> Generalities of the competition and the team were
+            described. The logistics of the upcoming events were agreed upon and
+            4 teams were assembled to present the first ideas of possible
+            projects to compete in iGem 2023.</li>
+          <li><b>24th:</b> The team met to prepare for the first fundraising
+            activity. The creation of posters. </li>
+          <li><b>25th:</b> Fundraising activities began. <br> Adolfo, Arely,
+            Vannessa and Giuliana attended the SEDENA event (by its acronym in
+            Spanish: Secretariat of National Defense) representing the iGEM
+            project in Chihuahua.</li>
+          <li><b>31st:</b> The first feedback session was held on the proposals
+            made by each of the 4 teams. </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="slider-container">
+      <div id="April" class="sliders"></div>
+      <div class="slider-content">
+        <ul class="vinniot">
+          <li><b>9th:</b> Baking brownies in one of the members' house for the
+            later sale as a fundraising activity.</li>
+          <li><b>24th:</b> Charlottes were baked by Sofi and the following days
+            they were sold by the team members as a fundraising activity.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="slider-container">
+      <div id="May" class="sliders"></div>
+      <div class="slider-content">
+        <ul class="vinniot">
+          <li><b>6th:</b> Team members met to select area leaders and team
+            leader.</li>
+          <li><b>12th:</b> The final presentation of proposals was made to
+            experts and voting was carried out selecting 1 of the four projects.
+            The selected proposal would be the one that will be developed to
+            compete in iGem 2023.</li>
+          <li><b>18th:</b>The team was informed of the chosen proposal and the
+            initial formation of the team leader and leaders of each area:
+            laboratory, human, entrepreneurship and mathematical model.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="slider-container">
+      <div id="June" class="sliders"></div>
+      <div class="slider-content">
+        <ul class="vinniot">
+          <li><b>7th:</b> The project to be developed for iGem was changed to
+            the second proposed option.</li>
+          <li><b>22nd: </b> The initial version of the Safety form was uploaded.</li>
+          <li><b>24th: </b> Creation and update of the lab notebook.</li>
+          <li><b>28th:</b> The team decided the village selection.</li>
+          <li><b>29th:</b> A draft version of project description was uploaded
+            in the team wiki.</li>
+          <li><b>30th:</b> Interview with José Manuel Oropeza.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="slider-container">
+      <div id="July" class="sliders"></div>
+      <div class="slider-content">
+        <ul class="vinniot">
+          <li><b>2nd:</b> The context of the problem of mastitis was thoroughly
+            investigated.</li>
+          <li><b>3rd:</b> Zoom interview with Imelda Ramos.</li>
+          <li><b>5th</b> Visit to DELMAR.</li>
+          <li><b>7th:</b> The human, entrepreneurship and wiki team visited the
+            Zaragoza dairy farm.</li>
+          <li><b>10th:</b> In silico simulation of constructs in agarose gel
+            electrophoresis. <br> Resuspension of LysCSA13 and LysK DNA from
+            Twist. <br> The impact grant call was reviewed. <br> CBTa 90 was
+            visited in Cuauhtemoc to learn the milking process. <br> Class
+            taught by Adrian Sandoval on mastitis.</li>
+          <li><b>11th:</b> Production of chemocompetent 5-alpha cells. <br>
+            Transformation of pUC19 with chemocompetent cells. <br> Start
+            competitor analysis for AureoBos. <br> The sponsorship document was
+            sent to Los Pinos.</li>
+          <li><b>13th:</b> Surveys were conducted with dairy consumers in our
+            community and an informative brochure was distributed to them.</li>
+          <li><b>15th:</b> The interview was carried out with the UACJ (for its
+            acronym in English, Autonomous University of Ciudad Juarez). </li>
+          <li><b>15th and 16th:</b> Attend the iGEM Entrepreneurship Summer
+            School.</li>
+          <li><b>17th:</b> Visit to Establo 1967 in Meoqui, Chihuahua, Mexico.
+            <br> Visit to the cowshed called 1967.</li>
+          <li><b>18th:</b> Golden Gate assembly of LysCSA13 and LysK
+            transcriptional units. <br> Visit to Cesar Loya's small cowshed.</li>
+          <li><b>19th:</b> Interview with Eng. Betty Castro.</li>
+          <li><b>24th:</b> Register AureoBos in Stella Orion. <br> Sponsorships
+            were requested to local and national laboratories.</li>
+          <li><b>27th:</b> Writing of Manual 101 (contribution by
+            entrepreneurship).</li>
+          <li><b>28th:</b> Visit to Mennonite Dairy.</li>
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="slider-container">
+      <div id="August" class="sliders"></div>
+      <div class="slider-content">
+        <ul class="vinniot">
+          <li><b>2nd:</b> SDS-PAGE run of LysCSA13 and LysK. <br> LysCSA13 and
+            LysK protein induction kinetics. <br> Interview with ECSG (for its
+            acronym in English for School of Social Sciences and Government).</li>
+          <li><b>4th:</b> Interview with Veterinary Pharmaceutical called
+            Zoetis. <br> Reactivation of <em>S. aureus</em>.</li>
+          <li><b>7th:</b> Collaboration with the iGEM niSkin team from Virginia.</li>
+          <li><b>10th:</b> The AureoBos product was classified as biological.</li>
+          <li><b>14th:</b> Resuspension of LysSS DNA from Twist.</li>
+          <li><b>16th:</b> Interview with Dr. Francisca Villanueva.</li>
+          <li><b>19th:</b> LysSS protein induction kinetics. <br> Digestion of
+            LysK, LysCSA13 and LysSS with SmaI enzyme.</li>
+          <li><b>22nd:</b> One of the team members, Ana Elisa made the decision
+            to leave the team.</li>
+          <li><b>25th:</b> The team went to take a group photo at the DELMAR
+            farm in Delcias, Chihuahua, Mexico.</li>
+          <li><b>28th:</b> Zoom meeting with the animal health pharmaceutical
+            MSD specifically with Pepé. Where we validated our way of
+            commercializing. <br> Digestion of LysK, LysCSA13 and LysSS with
+            EcoRI enzyme.</li>
+          <li><b>30th:</b> Leopoldo Escarcega, an entrepreneurship intern, was
+            added to attributions.</li>
+          <li><b>31st: </b> The team bought the Grand Jamboree tickets. <br>The
+            results of the Innovation Awards by Universidad Panamericana (UPIA)
+            were announced. <br> The congress called expoagro was attended.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="slider-container">
+      <div id="September" class="sliders"></div>
+      <div class="slider-content">
+        <ul class="vinniot">
+          <li><b>5th:</b> Arely met with the director of our Tec-Chihuahua
+            campus, Armando Bahena to explain our project.</li>
+          <li><b>6th:</b> Intellectual Property Session with Feli Sandoval, a
+            member of the Entrepreneurship Ecosystem and the Technology Transfer
+            Office at our university. <br> Reactivation of <em>S. agalactiae</em>
+            donated by the National School of Biological Sciences.</li>
+          <li><b>7th:</b> First pitch at Startup Chihuahua at the conference
+            “Making the Invisible Visible”.</li>
+          <li><b>8th:</b> The team roaster was modified. <br>The summary and
+            title of the project were added to the iGem page.</li>
+          <li><b>9th:</b> Working sessions with team to reflect progress on
+            wiki.</li>
+          <li><b>12th:</b> Second pitch in the framework of Semana Tec. <br>Visit
+            to Rancho La Campera.</li>
+          <li><b>13th</b> The team's project promotion video was uploaded.</li>
+          <li><b>14th:</b> Team rosters freeze. <br>Pitch feedback session with
+            entrepreneurship ecosystem. <br>Meditation session with the team.</li>
+          <li><b>15th:</b> CONECTA meeting note.</li>
+          <li><b>20th</b> Attendance at DIGAL (for its acronym in Spanish:
+            International Dairy Farmer's Day) in Delcias, Chihuahua</li>
+          <li><b>21st:</b> Final Project Safety form was uploaded. <br>Pitch
+            Night Ilum.</li>
+          <li><b>22nd</b> Attendance at DIGAL (for its acronym in Spanish:
+            International Dairy Farmer's Day) in Delicias, Chihuahua</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="slider-container">
+      <div id="October" class="sliders"></div>
+      <div class="slider-content">
+        <ul class="vinniot">
+          <li><b>5th: Project Selection:</b> After several feedback from
+            different experts the project was selected.
+          </li>
+          <li>Elemento 2</li>
+          <li>Elemento 3</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <br>
+  <br>
+
+</body>
+
+{% endblock %}
