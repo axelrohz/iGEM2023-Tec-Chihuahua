@@ -29,7 +29,7 @@ margin-bottom: 3rem;
 /*NuevoIndexBonito*/
 .teamScroll{
 overflow: visible !important;
-margin-left: 2.1%;
+margin-left: 2.1% !important;
 }
 
 .scrollIndexContain{
