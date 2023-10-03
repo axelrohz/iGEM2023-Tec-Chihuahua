@@ -42,6 +42,7 @@
   height: 500px;
   width: 83vw;
   margin-bottom: -120px;
+  margin-left: 8%;
  }
  
  .card1 {
@@ -329,9 +330,10 @@
  
  .button-container {
   display: inline-block;
-  width: 98vw;
+  width: 100vw;
   margin-bottom: 2vw;
   height: 607px;
+  background: linear-gradient(#F2F2FAff,white);
  }
  
  /* Estilos para los botones en forma de div */
@@ -690,6 +692,7 @@
   line-height: 1.5;
   margin-left: 43px !important;
   color: black;
+  max-width: 90%;
  }
  
  .Content{
@@ -2296,10 +2299,10 @@ transition: 1s ease-in-out;
 
 .card-text p {
 margin-bottom: 30px;
-font-size: 1rem;
+font-size: 1.4rem;
 text-align: center;
 transition: 1s ease-in-out;
-margin: 10px;
+margin: 31px;
 }
 
 .card:hover {
@@ -3342,3 +3345,6 @@ transform: scaleX(-1);
     transition: 0.25s;
   }
   
+  .contOurBeg, .tituloOurBeg{
+    margin-left: 11%;
+  }
