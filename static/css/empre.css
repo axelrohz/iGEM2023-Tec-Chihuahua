@@ -69,8 +69,8 @@
    
    /* Estilos para los botones en forma de div */
    .methods {
-    width: 180px;
-    height: 180px;
+    width: 198px;
+    height: 199px;
     left: 35%;
     color: #C55B75;
     background-color: transparent;
@@ -81,7 +81,7 @@
     transition: background-color 0.5s, transform 0.5s;
     overflow: hidden;
     z-index: 10;
-    top: 37vh;
+    top: 38vh;
 }
 .overview {
     top: 50%;
@@ -97,8 +97,8 @@
     position: absolute;
 }
 .results {
-    top: 64%;
-    left: 95%;
+    top: 70%;
+    left: 82%;
     width: 226px;
     height: 223px;
     color: #447D9C;
@@ -110,10 +110,10 @@
     position: absolute;
 }
 .Unmet {
-    top: 18%;
-    left: 142%;
-    width: 226px;
-    height: 223px;
+    top: 70%;
+    left: 137%;
+    width: 232px;
+    height: 233px;
     color: #D27063;
     background-color: transparent;
     border: 5px solid #D27063;
@@ -123,10 +123,10 @@
     position: absolute;
 }
 .Long {
-    top: 18%;
+    top: 77%;
     left: -54%;
-    width: 175px;
-    height: 175px;
+    width: 168px;
+    height: 168px;
     color: #F6AE2D;
     background-color: transparent;
     border: 5px solid #F6AE2D;
@@ -313,10 +313,10 @@
    /*gif prototipo */
    .prototype {
     max-width: 100%;
-    height: 75%;
+    height: 81%;
     position: relative;
-    top: 28vh;
-    left: 82vh;
+    top: -24vh;
+    left: 19vh;
     z-index: 500;
     overflow: hidden;
 }
@@ -1069,4 +1069,33 @@
 .h--timeline-line li:nth-child(odd) .h--timeline-date--selected::before{
     bottom: -3px;
 }
-/**/
+/*diagrama circulito*/
+.CText {
+    width: 100%;
+    color: black;
+    padding-top: -7px;
+    padding-left: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+/* Media query para pantallas más pequeñas (como teléfonos móviles) */
+@media screen and (max-width: 768px) {
+    .CText {
+        padding-top: 10px;
+        padding-left: 10px;
+        font-size: 1.8rem; /* Reducimos aún más el tamaño de fuente para dispositivos móviles */
+    }
+}
+.fraseemprende {
+    text-align: justify;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Quicksand';
+    text-align: justify;
+    line-height: 1.5;
+    margin-left: 43px !important;
+    color: black;
+    padding-top: -12vh;
+    width: 131%;
+}
