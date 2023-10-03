@@ -2051,13 +2051,6 @@ margin-left: 30%;
 }
 
 
-
-
-
-
-
-
-
 /*cosas del valor de anti waste*/
 
 .anti_waste{
@@ -2191,7 +2184,195 @@ margin-left: 30%;
 
 
 
+/*DIAGRAMA GOTAS*/
+.diagrama_gotas{
+  position:relative;
+  margin-left: 23vw;
+  max-height: 550px;
+}
 
+
+.titulo_gota{
+  position: relative;
+  rotate: -45deg;
+  font-size: 0.6vw;
+  right: 0.4vw;
+  margin: 0;
+}
+.texto_gota{
+  position: relative;
+  font-size: 0.4vw;
+  top: 1vw;
+  left: 2vw;
+  width: 4vw;
+  rotate: -45deg;
+  margin: 0;
+}
+
+
+.gota1{
+  background-color: lightblue;
+  position: relative;
+  z-index: 2;
+  width: 7vw;
+  bottom: 26vw;
+  left: 2vw;
+  z-index: 2;
+  height: 7vw;
+  border-radius: 0% 50% 50% 50%;
+  transform: rotate(45deg);
+  transform-origin: left;
+}
+
+.gota1:hover{
+  transform: scale(2);
+  rotate: 45deg;
+  z-index: 3;
+  transform-origin: left;
+}
+
+.gota2{
+  background-color: lightblue;
+  position: relative;
+  z-index: 2;
+  width: 7vw;
+  bottom: 31vw;
+  left: 8.5vw;
+  height: 7vw;
+  border-radius: 0% 50% 50% 50%;
+  transform: rotate(45deg);
+  transform-origin: left;
+}
+
+.gota2:hover{
+  transform: scale(2);
+  rotate: 45deg;
+  transform-origin: left;
+  z-index: 3;
+}
+
+
+
+.gota3{
+  background-color: lightblue;
+  position: relative;
+  z-index: 2;
+  width: 7vw;
+  bottom: 40vw;
+  left: 16.5vw;
+  height: 7vw;
+  border-radius: 0% 50% 50% 50%;
+  transform: rotate(45deg);
+  transform-origin: left;
+}
+
+.gota3:hover{
+  transform: scale(2);
+  rotate: 45deg;
+  transform-origin: left;
+  z-index: 3;
+}
+
+.gota4{
+  background-color: lightblue;
+  position: relative;
+  z-index: 2;
+  width: 7vw;
+  bottom: 45vw;
+  left: 23.5vw;
+  height: 7vw;
+  border-radius: 0% 50% 50% 50%;
+  transform: rotate(45deg);
+  transform-origin: left;
+}
+
+.gota4:hover{
+  transform: scale(2);
+  rotate: 45deg;
+  transform-origin: left;
+  z-index: 3;
+}
+
+
+.gota5{
+  background-color: lightblue;
+  position: relative;
+  z-index: 2;
+  width: 7vw;
+  bottom: 44vw;
+  left: 2vw;
+  height: 7vw;
+  border-radius: 0% 50% 50% 50%;
+  transform: rotate(45deg);
+  transform-origin: left;
+}
+
+.gota5:hover{
+  transform: scale(2);
+  rotate: 45deg;
+  transform-origin: left;
+  z-index: 3;
+}
+
+.gota6{
+  background-color: lightblue;
+  position: relative;
+  z-index: 2;
+  width: 7vw;
+  bottom: 47vw;
+  left: 8.5vw;
+  height: 7vw;
+  border-radius: 0% 50% 50% 50%;
+  transform: rotate(45deg);
+  transform-origin: left;
+}
+
+.gota6:hover{
+  transform: scale(2);
+  rotate: 45deg;
+  transform-origin: left;
+  z-index: 3;
+}
+
+.gota7{
+  background-color: lightblue;
+  position: relative;
+  z-index: 2;
+  width: 7vw;
+  bottom: 58vw;
+  left: 16.5vw;
+  height: 7vw;
+  border-radius: 0% 50% 50% 50%;
+  transform: rotate(45deg);
+  transform-origin: left;
+}
+
+.gota7:hover{
+  transform: scale(2);
+  rotate: 45deg;
+  transform-origin: left;
+  z-index: 3;
+}
+
+.gota8{
+  background-color: lightblue;
+  position: relative;
+  z-index: 2;
+  width: 7vw;
+  bottom: 61vw;
+  left: 23.5vw;
+  height: 7vw;
+  border-radius: 0% 50% 50% 50%;
+  transform: rotate(45deg);
+  transform-origin: left;
+}
+
+.gota8:hover{
+  transform: scale(2);
+  rotate: 45deg;
+  transform-origin: left;
+  z-index: 3;
+}
 
 
 
