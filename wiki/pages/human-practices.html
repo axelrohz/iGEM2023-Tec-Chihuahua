@@ -150,36 +150,7 @@ the world. Consider how the world affects your work and how your work affects th
 			</div>
 			<div class="layout">
 				<!--cosas del index-->
-				<div class="scrollIndexContain">
-					<div class="stickyIndex">
-					  <div class="lineIndex"></div>
-					  <div class="indexDots">
-						<div onclick="goTo('1')" class="dotIndex" id="dot1">
-						  <div class="dotText">Our beginnings</div>
-						</div>
-						<div class="dotIndex" id="dot2" onclick="goTo('2')">
-						  <div class="dotText">References</div>
-						</div>
-						
-					  </div>
-			  
-					</div>
-				</div>
-				<script type="text/javascript">
-					var dot1 = document.getElementById('dot1');
-					var dot2 = document.getElementById('dot2');
-					
 				
-					function goTo(scrollID) {
-					  dot1.classList.remove('active');
-					  dot2.classList.remove('active');
-					  
-					  var dot = document.getElementById('dot' + scrollID);
-					  dot.classList.add('active');
-					  var element = document.getElementById('sec' + scrollID);
-					  element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-					}
-				  </script>
 				<div class="secciones">
 					<div class="mkt-3dSlider py-6">
 						<div class="topcardscontainer">
@@ -222,9 +193,9 @@ the world. Consider how the world affects your work and how your work affects th
 						</div>
 					</div>
 					<div class="tituloContenido">
-						<h3 id="ourBeginnings"><br><br><br><br>Our beginnings</h3>
+						<h3 class = "tituloOurBeg" id="ourBeginnings"><br>Our beginnings</h3>
 					</div>
-					<div>
+					<div class = "contOurBeg">
 						<p class="contenido">
 							Everything starts with a necessity, only initiative is required to make a change. Since the
 							beginning of our project, we had our sights set on working with cows, these beautiful
