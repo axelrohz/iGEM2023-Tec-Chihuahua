@@ -1,3 +1,8 @@
+.teamBody .active .teamScroll {
+    width: 100%;
+    margin-left: 2.1%;
+  }
+
 /*ImagenesResponsivas*/
 .responsiveResults { /*Esta cosa sirve para hacer responsivas las imagenes*/
 width: 100%;
