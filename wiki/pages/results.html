@@ -855,84 +855,84 @@ plans here.{% endblock %}
     </div>
   </div>
 
-    <script>
-            const tween = KUTE.fromTo(
-              '#wave11',
-              { path: '#wave11' },
-              { path: '#wave21' },
-              { repeat: 999, duration: 5000, yoyo: true }
-            ).start();
+        <script>
+          const tween = KUTE.fromTo(
+          '#wave11',
+          { path: '#wave11' },
+          { path: '#wave21' },
+          { repeat: 999, duration: 5000, yoyo: true }
+          ).start();
           </script>
-    <script>
-            const tween2 = KUTE.fromTo(
-              '#wave12',
-              { path: '#wave12' },
-              { path: '#wave22' },
-              { repeat: 999, duration: 4000, yoyo: true }
-            ).start();
+        <script>
+          const tween2 = KUTE.fromTo(
+          '#wave12',
+          { path: '#wave12' },
+          { path: '#wave22' },
+          { repeat: 999, duration: 4000, yoyo: true }
+          ).start();
           </script>
-    <script>
-            const tween3 = KUTE.fromTo(
-              '#wave13',
-              { path: '#wave13' },
-              { path: '#wave23' },
-              { repeat: 999, duration: 3000, yoyo: true }
-            ).start();
+        <script>
+          const tween3 = KUTE.fromTo(
+          '#wave13',
+          { path: '#wave13' },
+          { path: '#wave23' },
+          { repeat: 999, duration: 3000, yoyo: true }
+          ).start();
           </script>
-    <script>
-            const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+        <script>
+          const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
 
-            accordionItemHeaders.forEach(accordionItemHeader => {
-              accordionItemHeader.addEventListener("click", event => {
+          accordionItemHeaders.forEach(accordionItemHeader => {
+          accordionItemHeader.addEventListener("click", event => {
 
-                // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
+          // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
 
-                // const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
-                // if(currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader!==accordionItemHeader) {
-                //   currentlyActiveAccordionItemHeader.classList.toggle("active");
-                //   currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
-                // }
+          // const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
+          // if(currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader!==accordionItemHeader) {
+          //   currentlyActiveAccordionItemHeader.classList.toggle("active");
+          //   currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+          // }
 
-                accordionItemHeader.classList.toggle("active");
-                const accordionItemBody = accordionItemHeader.nextElementSibling;
-                if (accordionItemHeader.classList.contains("active")) {
-                  accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
-                }
-                else {
-                  accordionItemBody.style.maxHeight = 0;
-                }
+          accordionItemHeader.classList.toggle("active");
+          const accordionItemBody = accordionItemHeader.nextElementSibling;
+          if (accordionItemHeader.classList.contains("active")) {
+          accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+          }
+          else {
+          accordionItemBody.style.maxHeight = 0;
+          }
 
-              });
-            });
+          });
+          });
           </script>
 
-    <script type="text/javascript">
-        var dot1 = document.getElementById('dot1');
-        var dot2 = document.getElementById('dot2');
-        var dot3 = document.getElementById('dot3');
-        var dot4 = document.getElementById('dot4');
-        var dot5 = document.getElementById('dot5');
-        var dot6 = document.getElementById('dot6');
-        var dot7 = document.getElementById('dot7');
-        var dot8 = document.getElementById('dot8');
-    
-        function goTo(scrollID) {
-          dot1.classList.remove('active');
-          dot2.classList.remove('active');
-          dot3.classList.remove('active');
-          dot4.classList.remove('active');
-          dot5.classList.remove('active');
-          dot6.classList.remove('active');
-          dot7.classList.remove('active');
-          dot8.classList.remove('active');
-          var dot = document.getElementById('dot' + scrollID);
-          dot.classList.add('active');
-          var element = document.getElementById('sec' + scrollID);
-          element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-        }
-      </script>
+        <script type="text/javascript">
+          var dot1 = document.getElementById('dot1');
+          var dot2 = document.getElementById('dot2');
+          var dot3 = document.getElementById('dot3');
+          var dot4 = document.getElementById('dot4');
+          var dot5 = document.getElementById('dot5');
+          var dot6 = document.getElementById('dot6');
+          var dot7 = document.getElementById('dot7');
+          var dot8 = document.getElementById('dot8');
+      
+          function goTo(scrollID) {
+            dot1.classList.remove('active');
+            dot2.classList.remove('active');
+            dot3.classList.remove('active');
+            dot4.classList.remove('active');
+            dot5.classList.remove('active');
+            dot6.classList.remove('active');
+            dot7.classList.remove('active');
+            dot8.classList.remove('active');
+            var dot = document.getElementById('dot' + scrollID);
+            dot.classList.add('active');
+            var element = document.getElementById('sec' + scrollID);
+            element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+          }
+          </script>
 
-    <script type="text/javascript">
+        <script type="text/javascript">
         var sect1 = document.getElementById('sec1');
         var sect2 = document.getElementById('sec2');
         var sect3 = document.getElementById('sec3');
@@ -1046,7 +1046,7 @@ plans here.{% endblock %}
     
     
         }); 
-      </script>
+            </script>
 
   </body>
 </html>
