@@ -1,0 +1,50 @@
+@media (max-width: 768px) {
+    .uno h1 {
+        font-size: 3rem;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .topcardscontainer {
+        height: 40%;
+        flex-direction: column;
+    }
+
+    #piechart_3d {
+        margin: 0;
+        margin-left: -45%;
+    }
+
+    h2 {
+        font-size: 1rem !important;
+        justify-content: center;
+    }
+
+    .empirecont {
+
+        margin-left: 2%;
+    }
+
+    #TextoLeche {
+        margin-left: 0 !important;
+        margin-top: 95% !important;
+    }
+
+    .contcauses {
+        max-height: 50%;
+    }
+
+    .cause h1 {
+        margin-left: -36% !important;
+        font-size: 145%;
+        margin: 0;
+    }
+
+    .contpapa:hover {
+        height: 50%;
+    }
+
+
+}

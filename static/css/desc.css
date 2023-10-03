@@ -46,20 +46,7 @@
   text-align: center;
 }
 
-@media (max-width: 768px) {
-  .uno h1 {
-    font-size: 5rem;
-  }
-  .navigation{
-    display: none;
-  }
-}
 
-@media (max-width: 480px) {
-  .uno h1 {
-    font-size: 3rem;
-  }
-}
 
 .piedefig {
   text-align: center;
@@ -1410,4 +1397,8 @@ input[type="checkbox"]{
 
 .mechbtn3:not([disabled]):hover {
   box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(139, 149, 95, 0.5);
+}
+
+#piechart_3d{
+  margin: auto;
 }
