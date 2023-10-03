@@ -78,12 +78,54 @@ plans here.{% endblock %}
             </div>
           </div>
 
-          <div class="wrap" id="sec1">
+          <div class="scrollIndexContain">
+            <div class="stickyIndex">
+                <div class="lineIndex"></div>
+                <div class="indexDots">
+                    <div onclick="goTo('1')" class="dotIndex"
+                        id="dot1">
+                        <div class="dotText">Overview</div>
+                    </div>
+                    <div class="dotIndex" id="dot2"
+                        onclick="goTo('2')">
+                        <div class="dotText">Achievements</div>
+                    </div>
+                    <div class="dotIndex" id="dot3"
+                        onclick="goTo('3')">
+                        <div class="dotText">Round Zero</div>
+                    </div>
+                    <div class="dotIndex" id="dot4"
+                        onclick="goTo('4')">
+                        <div class="dotText">First Round</div>
+                    </div>
+                    <div class="dotIndex" id="dot5"
+                        onclick="goTo('5')">
+                        <div class="dotText">Second Round</div>
+                    </div>
+                    <div class="dotIndex" id="dot6"
+                        onclick="goTo('6')">
+                        <div class="dotText">Third Round</div>
+                    </div>
+                    <div class="dotIndex" id="dot7"
+                        onclick="goTo('7')">
+                        <div class="dotText">Fourth Round</div>
+                    </div>
+                    <div class="dotIndex" id="dot8"
+                        onclick="goTo('8')">
+                        <div class="dotText">References</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+          <div class="wrap">
             <div class="uno">
               <h1>"There is no science without results"</h1>
             </div>
             <div class="texthide">
-              <h2 id="overview">Overview</h2>
+              <h2 id="sec1">Overview</h2>
               <p>
                 AureoBos's general purpose is to develop a novel solution for
                 bovine mastitis by approaching it from an
@@ -105,7 +147,7 @@ plans here.{% endblock %}
           </div>
 
           <div class="texthide">
-            <h2 id="achievements">Achievements</h2>
+            <h2 id="sec2">Achievements</h2>
 
             <!--Tarjetas de Achievements-->
             <div class="containerTrj">
@@ -183,7 +225,7 @@ plans here.{% endblock %}
 
           </div>
           <div class="texthide">
-            <h2 class="texthide" id="roundZero">Round Zero: Plasmid Construction
+            <h2 class="texthide" id="sec3">Round Zero: Plasmid Construction
               and Analysis</h2>
             <p>
               The initial round of experimentation encompassed the <em>in silico</em>
@@ -425,7 +467,7 @@ plans here.{% endblock %}
           </div>
 
           <div class="texthide">
-            <h2 class="texthide" id="firstRound">First Round: Golden Gate
+            <h2 class="texthide" id="sec4">First Round: Golden Gate
               Assembly</h2>
             <h3 class="texthide" style="text-align: center;">Golden Gate
               Assembly Reaction</h3>
@@ -535,7 +577,7 @@ plans here.{% endblock %}
             </p>
           </div>
           <div class="texthide">
-            <h2 id="secondRound">Second Round: Protein Expression</h2>
+            <h2 id="sec5">Second Round: Protein Expression</h2>
             <br>
             <p>
               The next step of our recombinant protein production process was
@@ -736,7 +778,7 @@ plans here.{% endblock %}
           </div>
 
           <div class="texthide">
-            <h2 class="texthide id="thirdRound">Third Round: Protein
+            <h2 class="texthide id="sec6">Third Round: Protein
               Purification</h2>
             <p>
               ---
@@ -744,7 +786,7 @@ plans here.{% endblock %}
           </div>
 
           <div class="texthide">
-            <h2 class="texthide" id="fourthRound">Fourth Round: Bactericidal
+            <h2 class="texthide" id="sec7">Fourth Round: Bactericidal
               Assays</h2>
             <p>
               ---
@@ -753,7 +795,7 @@ plans here.{% endblock %}
 
           <div class="accordion">
             <div class="accordion-item">
-              <div id="references" class="accordion-item-header">
+              <div id="sec8" class="accordion-item-header">
                 References
               </div>
               <div class="accordion-item-body">
