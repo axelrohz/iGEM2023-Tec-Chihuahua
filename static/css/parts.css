@@ -1,137 +1,246 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&family=Oswald:wght@200;300;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 p {
-  margin: 30px;
+margin: 30px;
 }
 
 h1 {
-    font-family: 'Bricolage Grotesque';
-    color: #F3F3FA;
-    text-align: center;
-    margin: 2rem 0;
-    font-size: 2.5rem;
+font-family: 'Bricolage Grotesque';
+color: #F3F3FA;
+text-align: center;
+margin: 2rem 0;
+font-size: 2.5rem;
 }
 .dad{
-    margin: 0;
-    padding: 0;
-    background-color: #F3F3FA;
+margin: 0;
+padding: 0;
+background-color: #F3F3FA;
 }
 
 .accordion {
-  width: 90%;
-  max-width: 1000px;
-  margin: 2rem auto;
+width: 90%;
+max-width: 1000px;
+margin: 2rem auto;
 }
 .accordion-item {
-  justify-self: center;
-  background-color: #ffffff;
-  color: #111;
-  margin: auto;
-  border-radius: 3px;
-  box-shadow: 7px 7px #5BC5AB ;
-  width: 80%;
-  margin-bottom: 20px;
-  border: solid 0.5px #EBEBF1;
+justify-self: center;
+background-color: #ffffff;
+color: #111;
+margin: auto;
+border-radius: 3px;
+box-shadow: 7px 7px #5BC5AB ;
+width: 80%;
+margin-bottom: 20px;
+border: solid 0.5px #EBEBF1;
 
 }
 
 
 .accordion-item-header {
-  min-height: 60px;
-  font-size: 1.2rem;
-  padding: 0.5rem 3rem 0.5rem 1rem;
-  line-height: 1.5;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  position: relative;
-  cursor: pointer;
-  font-family: 'Bricolage Grotesque';
-  font-size: 1.5rem;
+min-height: 60px;
+font-size: 1.2rem;
+padding: 0.5rem 3rem 0.5rem 1rem;
+line-height: 1.5;
+font-weight: 500;
+display: flex;
+align-items: center;
+position: relative;
+cursor: pointer;
+font-family: 'Bricolage Grotesque';
+font-size: 1.5rem;
 }
 .accordion-item-header::after {
-  content: "\002B";
-  font-size: 1.5rem;
-  position: absolute;
-  right: 1rem;
+content: "\002B";
+font-size: 1.5rem;
+position: absolute;
+right: 1rem;
 }
 .accordion-item-header.active::after {
-  content: "\2212";
+content: "\2212";
 }
 .accordion-item-body {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  padding-left: 20px;
-  padding-right: 20px;
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.2s ease-out;
+padding-left: 20px;
+padding-right: 20px;
 }
 .accordion-item-body-content {
-  padding: 1rem;
-  line-height: 1.5rem;
-  border-top: 1px solid;
-  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
-  justify-content:center;
-  font-weight: 600;
-  font-family: 'Quicksand';
-  text-align: justify;
-  margin-left: 20px;
-  margin-right: 20px;
+padding: 1rem;
+line-height: 1.5rem;
+border-top: 1px solid;
+border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+justify-content:center;
+font-weight: 600;
+font-family: 'Quicksand';
+text-align: justify;
+margin-left: 20px;
+margin-right: 20px;
 }
 
- /*cosas del side bar index*/
- 
- .indexdad{
-  width: fit-content;
-  height: calc(100% - 200px);
-  position: absolute;
- }
+/*cosas del side bar index*/
 
- .index1{
-  margin-left: 7px;
-  width: 175px;
-  min-width: 7%;
-  text-align: center;
-  height: fit-content;
-  border-radius: 20px;
-  position: sticky;
-  top: 175px;
-  font-size: 1vw;
- }
- .index1{
-  background: linear-gradient(#9dcfc2,#5BC5AB);
- }
+.indexdad{
+width: fit-content;
+height: calc(100% - 200px);
+position: absolute;
+}
 
- .navigation li {
-  list-style: none;
- }
- 
- .navigation li a {
-  text-decoration: none;
-  color: white;
-  display: block;
-  padding: 10px 10px;
-  margin: 10px 0px 10px 0px;
-  font-weight: 400;
-  transition: all ease-out 250ms;
-  border-radius: 10px;
- }
- 
- .navigation li a:hover {
-  margin: 2px,5px,2px,5px;
-  background-color: black;
-  opacity: .4;
- }
+.index1{
+margin-left: 7px;
+width: 175px;
+min-width: 7%;
+text-align: center;
+height: fit-content;
+border-radius: 20px;
+position: sticky;
+top: 175px;
+font-size: 1vw;
+}
+.index1{
+background: linear-gradient(#9dcfc2,#5BC5AB);
+}
 
- .teamScroll{
-  overflow: visible !important;
- }
+.navigation li {
+list-style: none;
+}
 
-  /*ImagenesResponsivas*/
-  .responsive {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    align-items: center;
-    display: block;
-    margin: auto;
-  }
+.navigation li a {
+text-decoration: none;
+color: white;
+display: block;
+padding: 10px 10px;
+margin: 10px 0px 10px 0px;
+font-weight: 400;
+transition: all ease-out 250ms;
+border-radius: 10px;
+}
+
+.navigation li a:hover {
+margin: 2px,5px,2px,5px;
+background-color: black;
+opacity: .4;
+}
+
+.teamScroll{
+overflow: visible !important;
+}
+
+/*ImagenesResponsivas*/
+.responsive {
+width: 100%;
+max-width: 800px;
+height: auto;
+align-items: center;
+display: block;
+margin: auto;
+}
+
+/*NuevoIndexBonitoo*/
+.teamScroll{
+overflow: visible !important;
+}
+
+.scrollIndexContain{
+position: absolute;
+height: calc(100% - 150px);
+z-index: 1;
+
+}
+
+.stickyIndex{
+position: sticky;
+top: 15vh;
+width: fit-content;
+height: 75vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.lineIndex{
+position: absolute;
+width: 2px;
+height: 100%;
+background: #00b9b0;
+top: 0;
+left: 50%;
+transform: translate(-50%, 0);
+}
+
+.indexDots{
+position: absolute;
+width: 20px;
+height: 100%;
+top: 0;
+z-index: 2;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
+
+.dotIndex{
+width: 10px;
+height: 10px;
+border-radius: 50%;
+background: #00b9b0;
+cursor: pointer;
+transition: 0.3s;
+position: relative;
+} 
+
+.dotIndex:hover{
+width: 20px;
+height: 20px;
+}
+
+.dotIndex.active{
+width: 20px;
+height: 20px;
+}
+.dotIndex::before{
+content: '';
+position: absolute;
+width: 0px;
+height: 0px;
+border-radius: 50%;
+transform: translate(-50%, -50%);
+background: #ffffff;
+top: 50%;
+left: 50%;
+transition: 0.5s;
+}
+
+.dotIndex.active::before{
+width: 10px;
+height: 10px;
+}
+
+.dotText{
+position: absolute;
+font-size: 1.2rem;
+font-weight: 500;
+transition: 0.5s;
+opacity: 1;
+color: rgba(15, 14, 15, 0.788);
+top: 50%;
+transform: translate(0, -50%);
+left: 22px;
+opacity: 0;
+}
+
+.dotIndex.active .dotText{
+opacity: 1;
+transition-delay: 0.3s;
+}
+
+.dotIndex.active:hover .dotText{
+opacity: 1;
+transition-delay: 0.3s;
+}
+
+.dotIndex:hover .dotText{
+opacity: 0.5;
+transition: 0.25s;
+}

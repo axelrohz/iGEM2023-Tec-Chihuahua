@@ -1,0 +1,160 @@
+@media (max-width: 768px) {
+    .uno h1 {
+        font-size: 3rem;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .topcardscontainer {
+        height: 40%;
+        flex-direction: column;
+    }
+
+    #piechart_3d {
+        margin: 0;
+        margin-left: -45%;
+    }
+
+    h2 {
+        font-size: 1rem !important;
+        justify-content: center;
+    }
+
+    .empirecont {
+
+        margin-left: 2%;
+    }
+
+    #TextoLeche {
+        margin-left: 0 !important;
+        margin-top: 95% !important;
+    }
+
+    .contcauses {
+        max-height: 50%;
+    }
+
+    .cause h1 {
+        margin-left: -36% !important;
+        font-size: 145%;
+        margin: 0;
+    }
+
+    .contpapa:hover {
+        height: 50%;
+    }
+
+    .udderinfocont {
+        display: none;
+    }
+
+    .hovcont {
+        flex-direction: column;
+    }
+
+    .hovcont h10 {
+        font-size: 200%;
+    }
+
+    .note,
+    .pinup p {
+        display: none;
+    }
+
+    #Bovine {
+        margin-left: 8% !important;
+    }
+
+    #InMexico {
+        padding-top: 120%;
+    }
+
+    #InMexico2 {
+        padding-top: 200%;
+    }
+
+    .endoinfocont {
+        margin: auto;
+        position: relative;
+        height: 733px;
+        width: 100%;
+        background-color: transparent;
+        border-radius: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        align-self: center;
+        justify-self: center;
+        justify-content: center;
+        align-content: center;
+        padding-bottom: 170%;
+        padding-top: 80%;
+    }
+
+
+    .mechcont {
+        position: relative;
+        height: auto;
+        width: 100%;
+        background-color: white;
+        border-radius: 5px;
+        align-items: center;
+    }
+
+    .mechimgcont {
+        position: relative;
+        height: 203px;
+        width: 100%;
+    }
+
+    .udderbtncont {
+
+        background-color: #ffffff;
+
+    }
+
+    .mechimgcont {
+        padding-top: 12%;
+    }
+
+    .blog-card {
+        margin: 10px 10px 10px 8px;
+        height: 719px;
+    }
+
+    .img .imgmethodology {
+        height: auto;
+        width: 40%;
+        margin-top: 10%;
+        margin-left: 42%;
+    }
+
+    #tap-1:checked~.inner-part .content-methodology-1,
+    #tap-2:checked~.inner-part .content-methodology-2,
+    #tap-3:checked~.inner-part .content-methodology-3,
+    #tap-4:checked~.inner-part .content-methodology-4,
+    #tap-5:checked~.inner-part .content-methodology-5,
+    #tap-6:checked~.inner-part .content-methodology-6 {
+        opacity: 1;
+        margin-left: -254px;
+        z-index: 10;
+        transition-delay: .3s;
+        width: 95%;
+        margin-top: 130%;
+    }
+
+    #Taffy{
+        height: auto !important;
+        width: auto !important;
+        margin-left: 0 !important;
+    }
+
+    #pieDiagrama{
+        display: none !important;
+    }
+
+
+
+
+}
