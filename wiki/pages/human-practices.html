@@ -1263,55 +1263,7 @@ the world. Consider how the world affects your work and how your work affects th
 						project, depending on our stakeholder’s areas.
 
 					</p>
-				</div>	
-			</div>
-		</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<div id="sectionResults" class="sectR">
-		<div class="secciones">
-			<div class="seccionResults">
-				<p class="subtitleR">Results</p>
-			</div>
-			
-			  
-			  
-			<div class="layout">
-				<!--cosas del index-->
-				<div class="index3">
-					<nav class="navigation">
-						<ul>
-							<li>
-								<a href="#referencesR">References</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-				<div class="secciones">
+					<p class="instr_selector">Click the AureoBos Logo to see more information.</p>
 					<div class='selector'>
 						<ul>
 						  <li>
@@ -1463,88 +1415,135 @@ the world. Consider how the world affects your work and how your work affects th
 						  </li>
 						</ul>
 						<button></button>
+						<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+						<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>		  
+						<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+						<script>
+							var angleStart = -360;
+
+							// jquery rotate animation
+							function rotate(li, d) {
+								$({ d: angleStart }).animate({ d: d }, {
+									step: function(now) {
+										$(li)
+											.css({ transform: 'rotate(' + now + 'deg)' })
+											.find('label')
+											.css({ transform: 'rotate(' + (-now) + 'deg)' });
+									}, duration: 0
+								});
+							}
+
+							// show / hide the options
+							function toggleOptions(s) {
+								$(s).toggleClass('open');
+								var li = $(s).find('li');
+								var deg = $(s).hasClass('half') ? 180 / (li.length - 1) : 360 / li.length;
+								for (var i = 0; i < li.length; i++) {
+									var d = $(s).hasClass('half') ? (i * deg) - 90 : i * deg;
+									$(s).hasClass('open') ? rotate(li[i], d) : rotate(li[i], angleStart);
+								}
+							}
+
+							$('.selector button').click(function(e) {
+								toggleOptions($(this).parent());
+							});
+
+							setTimeout(function() { toggleOptions('.selector'); }, 100);
+						</script>
+						<script type="text/javascript">
+								var sect1 = document.getElementById('sectionOverview');
+								var sect2 = document.getElementById('referencesO');
+						
+
+								var dot1 = document.getElementById('dot1');
+								var dot2 = document.getElementById('dot2');
+								
+
+								window.addEventListener('scroll', function () {
+									var sect1top = sect1.getBoundingClientRect().top;
+									var sect2top = sect2.getBoundingClientRect().top;
+									
+									var topPad = 200;
+									if (sect4top - topPad <= topPad) {
+										dot1.classList.remove('active');
+										dot2.classList.remove('active');
+									
+									} else if (sect3top - topPad <= topPad) {
+										dot1.classList.remove('active');
+										dot2.classList.remove('active');
+										
+									} else if (sect2top - topPad <= topPad) {
+										dot1.classList.remove('active');
+										dot2.classList.add('active');
+										
+									} else if (sect1top - topPad <= topPad) {
+										dot1.classList.add('active');
+										dot2.classList.remove('active');
+										
+									} else {
+										dot1.classList.remove('active');
+										dot2.classList.remove('active');
+									
+									}
+
+
+
+
+								}); 
+							</script>		  
 					</div>
+				</div>	
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div id="sectionResults" class="sectR">
+		<div class="secciones">
+			<div class="seccionResults">
+				<p class="subtitleR">Results</p>
+			</div>
+			
+			  
+			  
+			<div class="layout">
+				<!--cosas del index-->
+				<div class="index3">
+					<nav class="navigation">
+						<ul>
+							<li>
+								<a href="#referencesR">References</a>
+							</li>
+						</ul>
+					</nav>
 				</div>
 			</div>
 		</div>
 	</div>
 	</div>
-	<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-	<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>		  
-	<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script>
-  var angleStart = -360;
-
-  // jquery rotate animation
-  function rotate(li, d) {
-    $({ d: angleStart }).animate({ d: d }, {
-      step: function(now) {
-        $(li)
-          .css({ transform: 'rotate(' + now + 'deg)' })
-          .find('label')
-          .css({ transform: 'rotate(' + (-now) + 'deg)' });
-      }, duration: 0
-    });
-  }
-
-  // show / hide the options
-  function toggleOptions(s) {
-    $(s).toggleClass('open');
-    var li = $(s).find('li');
-    var deg = $(s).hasClass('half') ? 180 / (li.length - 1) : 360 / li.length;
-    for (var i = 0; i < li.length; i++) {
-      var d = $(s).hasClass('half') ? (i * deg) - 90 : i * deg;
-      $(s).hasClass('open') ? rotate(li[i], d) : rotate(li[i], angleStart);
-    }
-  }
-
-  $('.selector button').click(function(e) {
-    toggleOptions($(this).parent());
-  });
-
-  setTimeout(function() { toggleOptions('.selector'); }, 100);
-</script>
-<script type="text/javascript">
-    var sect1 = document.getElementById('sectionOverview');
-    var sect2 = document.getElementById('referencesO');
- 
-
-    var dot1 = document.getElementById('dot1');
-    var dot2 = document.getElementById('dot2');
-    
-
-    window.addEventListener('scroll', function () {
-      var sect1top = sect1.getBoundingClientRect().top;
-      var sect2top = sect2.getBoundingClientRect().top;
-      
-      var topPad = 200;
-      if (sect4top - topPad <= topPad) {
-        dot1.classList.remove('active');
-        dot2.classList.remove('active');
-      
-      } else if (sect3top - topPad <= topPad) {
-        dot1.classList.remove('active');
-        dot2.classList.remove('active');
-        
-      } else if (sect2top - topPad <= topPad) {
-        dot1.classList.remove('active');
-        dot2.classList.add('active');
-        
-      } else if (sect1top - topPad <= topPad) {
-        dot1.classList.add('active');
-        dot2.classList.remove('active');
-        
-      } else {
-        dot1.classList.remove('active');
-        dot2.classList.remove('active');
-       
-      }
-
-
-
-
-    }); 
-  </script>		  
 </body>
 
 </html>

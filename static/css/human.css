@@ -1962,7 +1962,7 @@ margin-left: 30%;
 .valores_diagrama{
   height: 35vw;
   width: 80%;
-  margin-left: 15vw;
+  margin-left: 19vw;
   margin-bottom: 2vw;
 }
 
@@ -1976,13 +1976,15 @@ margin-left: 30%;
 
 
 .public_health{
-  background-color: aqua;
+  background-color: #459e89;
   border-radius: 50%;
   width: 10vw;
   height: 10vw;
   top:7vw;
   left: 1vw;
   position: relative;
+  color: black;
+  font-weight: bold;
 }
 
 .public_health:hover{
@@ -2059,13 +2061,15 @@ margin-left: 30%;
 /*cosas del valor de anti waste*/
 
 .anti_waste{
-  background-color: aqua;
+  background-color: rgb(89, 185, 162);
   border-radius: 50%;
   width: 10vw;
   height: 10vw;
   position: relative;
   left: 10vw;
   bottom: 3vw;
+  color: black;
+  font-weight: bold;
 }
 
 .anti_waste:hover{
@@ -2090,13 +2094,15 @@ margin-left: 30%;
 /*cosas del boton integrity*/
 
 .integrity{
-  background-color: aqua;
+  background-color: rgb(91, 197, 171);
   border-radius: 50%;
   width: 10vw;
   height: 10vw;
   position: relative;
   left: 19vw;
   bottom: 13vw;
+  color: black;
+  font-weight: bold;
 }
 
 .integrity:hover{
@@ -2120,13 +2126,15 @@ margin-left: 30%;
 /*cosas del boton privaci*/
 
 .privacy{
-  background-color: aqua;
+  background-color: rgb(129, 209, 191);
   border-radius: 50%;
   width: 10vw;
   height: 10vw;
   position: relative;
   left: 27vw;
   bottom: 23vw;
+  color: black;
+  font-weight: bold;
 }
 
 .privacy:hover{
@@ -2151,13 +2159,15 @@ margin-left: 30%;
 /*cosas del boton sustainability*/
 
 .sustainability{
-  background-color: aqua;
+  background-color: rgb(167, 220, 211);
   border-radius: 50%;
   width: 10vw;
   height: 10vw;
   position: relative;
   left: 34vw;
   bottom: 33vw;
+  color: black;
+  font-weight: bold;
 }
 
 .sustainability:hover{
@@ -2230,7 +2240,7 @@ margin-left: 30%;
   padding-right: 20px;
   height: 50px;
   border-radius: 25px;
-  margin-left: 330px;
+  margin-left: 18vw;
   margin-bottom: 45px;
 }
 
@@ -3347,4 +3357,17 @@ transform: scaleX(-1);
   
   .contOurBeg, .tituloOurBeg{
     margin-left: 11%;
+  }
+
+  .instr_selector{
+    background: #309b8d;
+    color: white;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 25%;
+    margin-top: 5%;
+    max-width: fit-content;
   }
