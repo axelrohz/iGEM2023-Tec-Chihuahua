@@ -69,8 +69,8 @@
    
    /* Estilos para los botones en forma de div */
    .methods {
-    width: 198px;
-    height: 199px;
+    width: 170px;
+    height: 170px;
     left: 35%;
     color: #C55B75;
     background-color: transparent;
@@ -81,13 +81,13 @@
     transition: background-color 0.5s, transform 0.5s;
     overflow: hidden;
     z-index: 10;
-    top: 38vh;
+    top: 77%;
 }
 .overview {
-    top: 50%;
-    left: -17%;
-    width: 180px;
-    height: 180px;
+    top: 77%;
+    left: -10%;
+    width: 170px;
+    height: 170px;
     color: #5BC5AB;
     background-color: transparent;
     border: 5px solid #5BC5AB;
@@ -97,10 +97,10 @@
     position: absolute;
 }
 .results {
-    top: 70%;
+    top: 77%;
     left: 82%;
-    width: 226px;
-    height: 223px;
+    width: 170px;
+    height: 170px;
     color: #447D9C;
     background-color: transparent;
     border: 5px solid #447D9C;
@@ -110,10 +110,10 @@
     position: absolute;
 }
 .Unmet {
-    top: 70%;
-    left: 137%;
-    width: 232px;
-    height: 233px;
+    top: 77%;
+    left: 129%;
+    width: 170px;
+    height: 170px;
     color: #D27063;
     background-color: transparent;
     border: 5px solid #D27063;
@@ -125,8 +125,8 @@
 .Long {
     top: 77%;
     left: -54%;
-    width: 168px;
-    height: 168px;
+    width: 170px;
+    height: 170px;
     color: #F6AE2D;
     background-color: transparent;
     border: 5px solid #F6AE2D;
@@ -279,12 +279,12 @@
    }
    /* Estilo para los títulos y contenido de los div de los botones */
    .tituloBoton {
-    font-size: 20px;
+    font-size: 12px;
     font-weight: bold;
     align-items: center;
     margin: auto auto;
     text-align: center;
-  }
+}
   
    
    .contentBoton {
@@ -1092,10 +1092,13 @@
     font-size: 1.2rem;
     font-weight: 500;
     font-family: 'Quicksand';
-    text-align: justify;
+    text-align: center;
     line-height: 1.5;
     margin-left: 43px !important;
     color: black;
     padding-top: -12vh;
-    width: 131%;
+    width: 140%;
+    height: 32%;
+    margin-left: -14%!important;
+    top: 10px!important;
 }
