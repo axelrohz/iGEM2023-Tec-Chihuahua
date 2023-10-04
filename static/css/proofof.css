@@ -327,3 +327,54 @@ label {
   -ms-flex-align: center;
   align-items: center;
 }
+
+/*SUBTÍTULOS DE COLORES*/
+.subtitleF1,
+.subtitleF2,
+.subtitleF3,
+.subtitleF4 {
+  text-align: center;
+  font-family: 'Bricolage Grotesque';
+  font-size: 3vw;
+  font-weight: 500;
+  color: #302535;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows: 16px 0;
+  grid-gap: 22px;
+  align-items: center;
+  max-width: 100%;
+  padding-top: 100px;
+}
+
+.subtitleF1:after,
+.subtitleF1:before {
+  content: " ";
+  display: block;
+  border: 2px solid #447D9C;
+  background-color: #f8f8f8;
+}
+
+.subtitleF2:after,
+.subtitleF2:before {
+  content: " ";
+  display: block;
+  border: 2px solid #C55B75;
+  background-color: #f8f8f8;
+}
+
+.subtitleF3:after,
+.subtitleF3:before {
+  content: " ";
+  display: block;
+  border: 2px solid #A9BA6C;
+  background-color: #f8f8f8;
+}
+
+.subtitleF4:after,
+.subtitleF4:before {
+  content: " ";
+  display: block;
+  border: 2px solid #F6AE2D;
+  background-color: #f8f8f8;
+}
