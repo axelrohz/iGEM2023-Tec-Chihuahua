@@ -309,14 +309,14 @@
   100% {transform: scaleX(1) scaleY(1)}
  }
  
- #taffy {
-  position: absolute;
-  top: 70%;
-  left: 61%;
-  width: 69%;
+ #taffy1 {
+  position: relative;
+  top: 37%;
+  left: 50%;
+  width: 49%;
   transform: translate(-50%, -50%);
   z-index: -5;
- }
+}
  
  #retina {
   width: 50%;
@@ -3741,6 +3741,11 @@ transform: scaleX(-1);
   
   .contOurBeg, .tituloOurBeg{
     margin-left: 11%;
+    
+  }
+  .contOurBeg1{
+    margin-left: 11%;
+    margin-top: -28%;
   }
 
   .instr_selector{
