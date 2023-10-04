@@ -44,6 +44,10 @@
   .teamBody .teamScroll .wrap .texthide {
     opacity: 1;
   }
+  .teamBody .teamScroll .wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .teamHead .wave {

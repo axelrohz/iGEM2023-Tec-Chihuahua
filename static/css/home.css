@@ -33,17 +33,21 @@ body::-webkit-scrollbar {
     position: relative;
     overflow: hidden;
 }
-
+.homeVideo{
+    width: 100vw;
+    max-height: 100vh;
+    overflow: clip;
+ }
+ 
 .videoHolder{
     width: 100vw;
     aspect-ratio: 16/9;
-    max-height: 100vh;
     position: relative;
     overflow: hidden;
 }
 
 .videoHome{
-    width: 100vw;
+    width: 100.1vw;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
