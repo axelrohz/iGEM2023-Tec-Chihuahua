@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="../../static/css/human.css">
 	<link href="{{ url_for('static', filename = 'css/human.css') }}" rel="stylesheet">
 	<link href="{{ url_for('static', filename = 'css/empre.css') }}" rel="stylesheet">
+
 	<link href="{{ url_for('static', filename = 'css/experiments.css') }}" rel="stylesheet">
 	<link href="{{ url_for('static', filename = 'css/timeline.css') }}" rel="stylesheet">
 	
@@ -114,13 +115,13 @@
 			</div>
 			<div class="Unmet">
 				<div class="button-content">
-					<p class="tituloBoton">Long Term Impacts</p>
+					<p class="tituloBoton">Unmet</p>
 					<button onclick="showSection('sectionUnmet')" class="learnMore">Go to section</button>
 				</div>
 			</div>
 			<div class="Long">
 				<div class="button-content">
-					<p class="tituloBoton">Unmet Needs</p>
+					<p class="tituloBoton">Long Term Impacts</p>
 					<button onclick="showSection('sectionLong')" class="learnMore">Go to section</button>
 				</div>
 			</div>
@@ -165,9 +166,6 @@
 				<b class="tooltipSignificado">implement    
 					<span class="tooltipSignificadoBox">
 						Through the development of AureoBos and the proven lab-level functionality, we will implement the treatment with every small, medium and big milk producer we interacted with during our interviews.
-
-
-
 					</span>
 				</b>
 				it as an effective and sustainable solution to tackle mastitis in dairy cattle.
@@ -229,79 +227,38 @@
 		<div id="sectionOverview" class="sectO">
 			<div class="secciones">
 				<div class="seccionOverview">
-					<p class="subtitleO">Our beginnings</p>
+					<p class="subtitleO">Solution</p>
 				</div>
 			</div>
 			<div class="layout">
 				<!--cosas del index-->
-				<div class="scrollIndexContain">
-					<div class="stickyIndex">
-					  <div class="lineIndex"></div>
-					  <div class="indexDots">
-						<div onclick="goTo('1')" class="dotIndex" id="dot1">
-						  <div class="dotText">Our beginnings</div>
-						</div>
-						<div class="dotIndex" id="dot2" onclick="goTo('2')">
-						  <div class="dotText">References</div>
-						</div>
-						
-					  </div>
-			  
-					</div>
-				</div>
-				<script type="text/javascript">
-					var dot1 = document.getElementById('dot1');
-					var dot2 = document.getElementById('dot2');
-					
 				
-					function goTo(scrollID) {
-					  dot1.classList.remove('active');
-					  dot2.classList.remove('active');
-					  
-					  var dot = document.getElementById('dot' + scrollID);
-					  dot.classList.add('active');
-					  var element = document.getElementById('sec' + scrollID);
-					  element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-					}
-				  </script>
+				
 				<div class="secciones">
 					<div class="mkt-3dSlider py-6">
-						<div class="topcardscontainer">
-							<div class="card">
-								<div class="card-item">
-									<img src="" alt="">
-									<h3>Exchange ideas</h3>
-									<h4><b>How?</b></h4>
-								</div>
-								<div class="card-text">
-									<p>
-										Discussing the project and problems with different teams
-									</p>
-								</div>
+						<div class="fraseInicio">
+							<div class="fraseAcomodo">
+								<div class="phrase">
+							<p class = "fraseModel" id="frase">"It would be treating mastitis whithout antibiotics, the dream of every milk producer" - DVM Rodolfo Jaquez. </p>
 							</div>
-							<div class="card">
-								<div class="card-item">
-									<img src="" alt="">
-									<h3>Connecting with the world</h3>
-									<h4><b>What?</b></h4>
-								</div>
-								<div class="card-text">
-									<p>
-										We gave feedback and they gave us feedback on our project with other teams
-									</p>
-								</div>
-							</div>
-							<div class="card" style="display: flex; justify-content: center;">
-								<div class="card-item">
-									<img src="" alt="">
-									<h3 style="text-align: center;">Vision for the world</h3>
-									<h4><b>Why?</b></h4>
-								</div>
-								<div class="card-text">
-									<p>
-										We create alliances in different parts of the world
-									</p>
-								</div>
+								<script>
+									var text = document.getElementById('frase');
+							var newDom = '';
+							var animationDelay = 15;
+					
+							for(let i = 0; i < text.innerText.length; i++)
+							{
+								newDom += '<span class="char">' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i])+ '</span>';
+							}
+					
+							text.innerHTML = newDom;
+							var length = text.children.length;
+					
+							for(let i = 0; i < length; i++)
+							{
+								text.children[i].style['animation-delay'] = animationDelay * i + 'ms';
+							}
+								</script>
 							</div>
 						</div>
 					</div>
@@ -310,89 +267,54 @@
 					</div>
 					<div>
 						<p class="contenido">
-							Everything starts with a necessity, only initiative is required to make a change. Since the
-							beginning of our project, we had our sights set on working with cows, these beautiful
-							animals that provide us with milk, a highly nutritious food for many (Morales-Ubaldo et
-							al.,2023)<sup>1</sup>.While investigating current issues in our community, we came across
-							<b class="tooltipSignificado">mastitis
-								<span class="tooltipSignificadoBox">
-									a bacterial infection that results in swelling and pain, affecting the cow's
-									udder.Dairy mastitis is a significant concern,as it leads to decreased milk
-									production,changes in milk quality, andeconomic losses for dairy farmers.
-								</span>
-							</b>
-							,a highly common infection in dairy cows. This is when our journey begins.
+							<img class="eti"src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/jeringa-intramamaria-5.png">
 							<br>
+							AureoBos is set to become a groundbreaking treatment that revolutionizes, completely, mastitis treatment. As shown above, we've meticulously outlined a mockup that serves as our Minimum Viable Product (MVP), precisely mirroring the strict regulatory framework of Mexico in the development and registration of veterinary products, as well as gathering the most important feedback form our different stakeholders. Our proof of concept shows that
 							<br>
-							<b>Aureobos</b> a non-antibiotic treatment for mastitis, strives to minimize the necessity
-							for milk withdrawal during treatment, In this way, <b>food waste</b> and <b>economic
-								losses</b> suffered by milk producers would be reduced. Our goal is to address the
-							challenges of today’s world, which encompass <b>nutritional, economic, and health-related
-								issues.</b>
+							To learn more about the technology behind, click below. 	
 						</p>
 						<br>
 						<br>
-						<div>
-							<img class=ODS2 src="https://static.igem.wiki/teams/4607/wiki/human-2-0/ods2zerohunger.gif"
-								alt="ODS2">
-							<img class=ODS3 src="https://static.igem.wiki/teams/4607/wiki/human-2-0/odsgoodhealth.gif"
-								alt="ODS3">
-							<p class="pie_de_figura"><em>Fig. 1</em> SDG 2 (Zero Hunger) & SDG 3 (Good health and
-								well-being)</p>
-						</div>
+						
 					</div>
 					<div class="accordion refer">
 						<div class="accordion-item">
 							<div class="accordion-item-header">
-								<h3 id="referencesO">References</h3>
+								<h3 id="referencesO">Aureobos Technology</h3>
 							</div>
 							<div class="accordion-item-body">
 								<div class="accordion-item-body-content">
 									<p class="contenido">
-										(1) Banwarth-Kuhn, M.; Sindi, S. How and Why to Build a Mathematical Model: A
-										Case Study Using Prion Aggregation. <em>J. Biol. Chem.</em> <b>2020</b>,
-										<em>295</em> (15), 5022–5035. https://doi.org/10.1074/jbc.REV119.009851.
+										AureoBos takes a pioneering approach to mastitis treatment. Leveraging synthetic biology, we harness Escherichia coli (E. coli) to produce specific proteins originating from bacteriophages. These proteins, known as endolysins, play a crucial role in bacteriophages' life cycle by infecting and exterminating bacteria. Through genetic modification, we enhance E. coli's capacity to produce these endolysins.
 									</p>
-									<p>
-										(2) Karlebach, G.; Shamir, R. Modelling and Analysis of Gene Regulatory
-										Networks. <em>Nat. Rev. Mol. Cell Biol.</em> <b>2008</b>, <em>9</em> (10),
-										770–780. https://doi.org/10.1038/nrm2503.
+									<br>
+									<p class="contenido">
+										Endolysins, once extracted from E. coli, serve as the cornerstone for our mastitis treatment in dairy cattle. These remarkable proteins target the cell walls of mastitis-causing bacteria. Upon binding, they create breaches in the cell wall, causing the bacteria to disintegrate and perish. Notably, endolysins remain effective even against antibiotic-resistant bacterial strains, underscoring their potential as a groundbreaking solution. If you are interested in learning more about the technicalities of AureoBos, delve into the project description section.
+
 									</p>
-									<p>
-										(3) O’Neill, M. A.; Denos, M.; Reed, D. Using SDS–PAGE Gel Fingerprinting to
-										Identify Soft‐bodied Wood‐boring Insect Larvae to Species. <em>Pest Manag.
-											Sci.</em> <b>2018</b>, <em>74</em> (3), 705–714.
-										https://doi.org/10.1002/ps.4766.
-									</p>
-									<p>
-										(4) <em>Mathematical Modelling and Machine Learning Methods for Bioinformatics
-											and Data Science Applications</em>; Bianchini, M., Samponi, M. L., Eds.;
-										MDPI: Switzerland, 2022. https://doi.org/10.3390/books978-3-0365-2841-0.
-									</p>
-									<p>
-										(5) Gábor, A.; Banga, J. R. Robust and Efficient Parameter Estimation in Dynamic
-										Models of Biological Systems. <em>BMC Syst. Biol.</em> <b>2015</b>, <em>9</em>
-										(1), 74. https://doi.org/10.1186/s12918-015-0219-2.
-									</p>
-									<p>
-										(6) Arpino, J. A. J.; Hancock, E. J.; Anderson, J.; Barahona, M.; Stan, G.-B.
-										V.; Papachristodoulou, A.; Polizzi, K. Tuning the Dials of Synthetic Biology.
-										<em>Microbiology</em> <b>2013</b>, <em>159</em> (Pt_7), 1236–1253.
-										https://doi.org/10.1099/mic.0.067975-0.
-									</p>
-									<p>
-										(7) Mitra, E. D.; Hlavacek, W. S. Parameter Estimation and Uncertainty
-										Quantification for Systems Biology Models. <em>Curr. Opin. Syst. Biol.</em>
-										<b>2019</b>, <em>18</em>, 9–18. https://doi.org/10.1016/j.coisb.2019.10.006.
-									</p>
+									
+									
+									
+									
+									
 								</div>
 							</div>
 						</div>
 					</div>
+					<div class="tituloContenido">
+						<h3 id="introduction"><br>Scalable </h3>
+					</div>
+					<br>
+					<div class="tituloContenido">
+						<h3 id="introduction"><br>Inventive </h3>
+					</div>
+					<p class="contenido">
+						While several treatments and solutions for bovine mastitis exist, AureoBos stands out for its innovative approach. Through our research and interactions with clients, we've identified a gap in the market - there isn't yet an affordable solution that utilizes synthetic biology and recombinant proteins to treat this infection. The numerous benefits of our product have generated considerable demand among those affected by this issue, underscoring the inventiveness that sets it apart.
+					</p>
 				</div>
 			</div>
 		</div>
-
+		
 
 
 
@@ -642,7 +564,7 @@
 
 							It's important to note that although we haven't yet submitted the application to the patent office, following our session with this expert, we performed the patent search and outlined the subsequent steps and ideal timelines for submitting our patent to the competent authority in Mexico, which is the Mexican Institute of Industrial Property (Instituto Mexicano de la Propiedad Industrial). Below, you can visualize the estimated timeline for this process.
 							<br>
-							<img src="https://static.igem.wiki/teams/4607/wiki/images/4.png">
+							<img src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/aureobos-intellectualproperty.png">
   
 						  </div>
 						</div>
@@ -673,7 +595,7 @@
 						  </div>
 					  
 						  <div class="ag-courses_item">
-							<a href="#" class="ag-courses-item_link">
+							<a href="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/pdfs/pitch-deck-aureobos-igem-2023-compressed.pdf" class="ag-courses-item_link">
 							  <div class="ag-courses-item_bg"></div>
 					  
 							  <div class="ag-courses-item_title">
@@ -734,58 +656,203 @@
 							<div class="ag-courses-item_title">
 								Trademark Registration
 							</div>
-					
 							
 							</a>
 						</div>
-
-						
-					
-						
-					
-						
-					
-						
-					
 						</div>
-					</div> 
-					
-					
-					
-					
-					
-					
-					
-
-					
-					
-					
-
-					
-							
-					
-					
-					
-					
-					
-					
-
-					
-					
-					
-   
-
-
-
-					
-				
-
-					
-					
-					
-				
-				
+					</div> 	
 				</div>	
+			</div>
+		</div>
+
+		<div id="sectionUnmet" class="sectR">
+			<div class="secciones">
+				<div class="sectionUnmet">
+					<p class="subtitleR">Unmet Needs</p>
+				</div>
+				
+				  
+				  
+				<div class="layout">
+					<!--cosas del index-->
+					<div class="index3">
+						<nav class="navigation">
+							<ul>
+								<li>
+									<a href="#referencesR">References</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="secciones">
+						<div class="tituloContenido">
+							<h3 id="introduction"><br>Problem Statement </h3>
+						</div>
+						<p class="contenido">
+							Mastitis is the major infectious disease problem in dairy cows. Based on a global dairy cow population of 271 million dairy cows, it has been estimated that treating it costs the dairy industry around $19.7B–32B (USD) billion dollars per year1. These costs consist of several consequences that are triggered by this disease2. A visual representation of these implications can be visualized in Figure 1.
+						</p>
+						<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                    	<script type="text/javascript">
+                      	google.charts.load("current", {packages:["corechart"]});
+                      	google.charts.setOnLoadCallback(drawChart);
+                      	function drawChart() {
+							var data = google.visualization.arrayToDataTable([
+							['Task', 'Hours per Day'],
+							['Protein',     3.28],
+							['Total lipid (fat)',    3.2],
+							['Carbohydrate',  4.67],
+							['Sugar', 4.81],
+							['Minerals', 0.424411002],
+							['Vitamins', 0.01821007194],
+							['Fatty acids (monounsaturated)', 0.688],
+							['Fatty acids (polyunsaturated)', 0.108],
+							
+							
+
+                        ]);
+                        
+                
+                        var options = {
+                          title: 'Milk nutrients (100g)',
+                          is3D: true,
+                          backgroundColor: "transparent",
+                          colors: ["#5BC5AB", "#C55B75", "#D27063", "#447D9C", "#DE8551"],
+                        };
+                
+                        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+                        chart.draw(data, options);
+                      }
+                    </script>
+					<div id="piechart_3d" style="width: 900px; height: 500px;"></div>
+                    <p class="piedefig"><b>Figure 1.</b> Nutrients of whole milk, excluding water.<sup>3</sup></p>
+                    <br>
+                    <br>
+					<p class="contenido">
+						Currently, mastitis is being treated by different types of antibiotics and natural solutions which are applied through systemic administrations or intramammary infusions3. However, through our integrated human practices, we have learned that even though these solutions exist, milk is still being discarded in large quantities due to the fact that milk with antibiotics’ residue can’t be consumed, impacting the growing amount of global food waste, in addition to the fact that the cost of treating mastitis is significantly high as stated before, and antibiotic resistance has become a real problem in tackling this challenge in a sustainable and safe way.
+
+					</p>
+					<br>
+					<div class="tituloContenido">
+						
+						<div class="accordion-item">
+							<div class="accordion-item-header">
+								Dairy Producers
+							</div>
+							<div class="accordion-item-body">
+							  <div class="accordion-item-body-content">
+								In order to draft the first potential customers for AureoBos, it is necessary to identify who is directly affected by the consequences of mastitis. As stated in the previous section, the implications that integrate the cost of treating bovine mastitis are directly charged to dairy producers. Through our human practices we learned that they are the ones who face head-on the disease, deciding which treatment they are going to use based on the recommendations done from - the next important character- veterinary zootechnicians. Although dairy farmers have the power of decision making and purchasing, the reality is that most of the time they are driven by the recommendations, diagnosis and intervention of veterinary zootechnicians, even though they interact differently depending on the scale of their production. To better understand these characteristics, check out the next figure.
+								<img class="dairy" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/wiki-design-4-entrepreneurship.png">
+	  
+							  </div>
+							</div>
+							<br>
+							
+						</div>
+						<br>
+						<div class="accordion-item">
+							<div class="accordion-item-header">
+								Understanding their pains and unmet needs
+							</div>
+							<div class="accordion-item-body">
+							  <div class="accordion-item-body-content">
+								Although small, medium and large scale producers have different characteristics in the way of managing their farm, as well as how they treat mastitis and their relationship with veterinary zootechnicians, we learned through our interviews and visits that their pains and current needs are the same. Understanding the unmet needs they have is essential for the successful development and implementation of AureoBos.
+								<br>
+								Our integrated human practices helped us learn that dairy producers and cattle owners need a treatment that effectively addresses bovine mastitis, without using antibiotics so milk isn’t discarded and their production isn’t reduced due to the milk withdrawal period. This treatment needs to be backed up by the recognition of veterinary zootechnicians and scientific evidence that compares and indicates how AureoBos is better than any other conventional treatment. They also communicated that they require a treatment that is easy to administer and integrate into their existing routines, ensuring minimal disruption to their operations. They require a product which doesn’t harm the cattle, doesn’t compromise the milk quality, and doesn’t pose health risks to either animals or humans. Finally, the treatment needs to be accessible in terms of availability and affordability in the geographical and economic situation. 
+								Having developed the above, you can find a visual representation of these needs through the following empathy map.
+								<img class="dairy" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/empathy-map.png">
+							  </div>
+							</div>
+							<br>
+							
+						</div>
+						<br>
+						<div class="accordion-item">
+							<div class="accordion-item-header">
+								
+								First Potential Customers
+
+							</div>
+							<div class="accordion-item-body">
+							  <div class="accordion-item-body-content">
+								Recognizing the presence of small, medium, and large-scale producers, as well as understanding how mastitis affects them, it becomes evident that these individuals, whether under the guidance of a veterinary zootechnician or not, are our ultimate end-users. However, after engaging with them and also with global veterinary pharmaceutical companies like MSD Animal Health and Zoetis, we discerned the existence of two distinct customer types.
+
+								<br>
+								We refer to a division between large-scale producers and small to medium-sized producers. Initially, AureoBos would primarily supply to large-scale producers, whereas to reach small and medium-sized ones, an intermediary is required. Thus, the veterinary pharmaceutical providers in these regions would also become our clients, serving as the bridge to connect with the smaller producers.
+								<br>
+								The following illustration demonstrates how AureoBos interacts with its clients in both scenarios. Further detailed explanations of these business models will be covered in the Development Plans section below.
+								<img class="dairy" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/wiki-design-4-entrepreneurship-1.png">
+								<img class="dairy" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/wiki-design-4-entrepreneurship-2.png">
+							  </div>
+							</div>
+							<br>
+							
+						</div>
+						<br>
+						<div class="accordion-item">
+							<div class="accordion-item-header">
+								
+								Existing solutions 
+
+
+							</div>
+							<div class="accordion-item-body">
+							  <div class="accordion-item-body-content">
+								Through the visits and interviews done with our users, we identified the existing solutions that dairy cattle owners currently use. Having heard first-hand about the competition let us do a better analysis, which basically consists on the following benchmarking: 
+								<img class="dairy"src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/benchmarkingofi.png">
+								<br>
+								The common factor among current treatments is that those falling under the antibiotic category leave residues in milk, requiring a withdrawal period of at least 3 days. This translates to wasted liters of milk and economic losses due to the discarded milk produced during those days. Moreover, the concerning issue of antibiotic resistance, stemming from their excessive use, adds to the complexity. Even the World Health Organization has underlined the impending risks associated with this and the urgent need to adopt alternative measures and treatments4. Furthermore, homeopathic treatments like oregano prove ineffective against the disease and, akin to antibiotics, leave residues in milk.
+								
+							  </div>
+							</div>
+							<br>
+							
+						</div>
+						<br>
+						<div class="accordion-item">
+							<div class="accordion-item-header">
+								
+								Meeting the needs through AureoBos 
+
+
+							</div>
+							<div class="accordion-item-body">
+							  <div class="accordion-item-body-content">
+								Through our integrated human practices, we learned that the best and wanted method of administration for our product is an intramammary infusion. This is because, as stated from several veterinary zootechnicians, intramammary infusions deliver the treatment directly into the affected udder quarters, ensuring the medication reaches the infection site precisely. It also allows for a high concentration of the treatment to be delivered into the infection site, becoming particularly important for combating bacterial infections effectively. Besides this, this method is something our users are already familiarized with, so it does not require complicated or highly specialized training. Intramammary infusions can reduce the risk of unintended side effects on the cow’s overall health since the treatment remains localized within the udder. It gives a quicker response time and the possibility of treating and varying the levels of it depending on the quarter of the udder affected and the severity of its infection. 
+								<br>
+								Given these advantages, the intramammary infusion method aligns well with the goal of treating bovine mastitis effectively while considering factors like animal health, milk quality, and antibiotic resistance mitigation. 
+							  </div>
+							</div>
+							<br>
+							
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="sectionResults" class="sectR">
+			<div class="secciones">
+				<div class="sectionResults">
+					<p class="subtitleR">Skilss</p>
+				</div>
+				
+				  
+				  
+				<div class="layout">
+					<!--cosas del index-->
+					<div class="index3">
+						<nav class="navigation">
+							<ul>
+								<li>
+									<a href="#referencesR">References</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="secciones">
+						
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -806,20 +873,23 @@
 
 
 
+	
 
 
 
 
 
 
-
-
-	<div id="sectionResults" class="sectR">
+	<div id="sectionLong" class="sectR">
 		<div class="secciones">
-			<div class="seccionResults">
-				<p class="subtitleR">Results</p>
+			<div class="sectionUnmet">
+				<p class="subtitleR">Long term impact</p>
 			</div>
-			
+			<p class="contenido">
+				
+				Visualizing the long-term positive and negative impacts of AureoBos is crucial because it allows informed decision-making, responsible product management, and the creation of a more resilient and successful market presence for AureoBos. To facilitate your understanding of these long-term impacts, we invite you to engage with the diagram below.
+
+			</p>
 			  
 			  
 			<div class="layout">
@@ -838,153 +908,93 @@
 						<ul>
 						  <li>
 							<input id='1' type='checkbox'>
-							<label for='1'>Treatment</label>
+							<label for='1'>1</label>
 							<div class="description1">
-							  <b>Potential:</b>
+							  <b>Antibiotic Resistance:</b>
 							  <p>
-								- Aureobos offers a treatment for bovine mastitis that does not cause antimicrobial resistance.
+								- Using AureoBos will impact on the imminent battle against antibiotic resistance, by reducing the usage in dairy cattle. 
 							  </p>
-							  <p>
-								- Currently there is a lack of non-antibiotic treatments, leaving only a few options to treat Bovine Mastitis.
-							  </p>
-							  <p>
-								- Its application method is easy and practical, without the need for specialized training or difficult procedures.
-							  </p>
-							  <p>
-								- Aureobos uses innovative technology through the use of recombinant endolysins.
-							  </p>
-							  <b>Challenges:</b>
-							  <p>
-								- AureoBos is a product that still requires experimentation in dairy cattle, and experimental tests to its release.
-							  </p>
-							  <p>
-								- To release a new treatment through a pharmaceutical company requires many tests, regulations, and time.
-							  </p>
+							  
 							</div>
 						  </li>
 						  <li>
 							<input id='2' type='checkbox'>
-							<label for='2'>Quality</label>
+							<label for='2'>2</label>
 							<div class="description2">
-								<b>Potential: </b>
+								<b>Animal Welfare:</b>
 								<p>
-								- Bovine Mastitis causes milk changes that are reflected on the milk properties and quality.
-							  </p>
-							  <p>
-								- One of the main problems of antibiotic treatments is that they are eliminated through milk, and this is not permitted to use the milk for consumption.
-							  </p>
-							  <b>Challenges:</b>
+								- AureoBos will enhance animal welfare and well-being by significantly reducing the incidence of mastitis cases.
+
+							  
 							</div>
 						  </li>
 						  <li>
 							<input id='3' type='checkbox'>
-							<label for='3'>Normativity</label>
+							<label for='3'>3</label>
 							<div class="description3">
-							  <b>Potential:</b>
+							  <b>Economic Savings: </b>
 							  <p>
-								- La adquisición de los productos veterinarios no es tan dificil
+								- The adoption of AureoBos will have a direct impact on the economic expenditures of dairy farmers by lowering treatment costs derived from existing solutions and boosting milk production.
 							  </p>
-							  <p>
-								- El emprendimiento en base tecnológica se esta incentivando cada vez más.
-							  </p>
-							  <b>Challenges:</b>
-							  <p>
-								- The regulations for veterinary treatments are deficient.
-							  </p>
-							  <p>
-								- The treatments produced through Synthetic Biology or biotechnology processes, do not belong to any of the existent categories of normativity and regulations.
-							  </p>
-							  <p>
-								- Cualquier proceso para registro del producto es costoso y tardado.
-							  </p>
+							  
 							</div>
 						  </li>
 						  <li>
 							<input id='4' type='checkbox'>
 							<label for='4'>
-							  Public Approval
+							  4
 							</label>
 							<div class="description4">
-							  <b>Potential:</b>
+							  <b>Environmental Friendly:</b>
 							  <p>
-								- Milk is one of the staple foods in the daily diet of every family, and basic for a good nutrition.
+								-AureoBos will directly impact the environment by potentially reducing the contamination associated with antibiotic residues.
 							  </p>
-							  <p>
-								- Aureobos is an innovative solution that helps to keep milk free of antibiotics while treating Mastitis, ensuring that the milk produced does not have negative repercussions on human health.
-							  </p>
-							  <p>
-								- Wastage of milk leads to an increase in the price of milk, making it less accessible.
-							  </p>
-							  <p>
-								- Antibiotics treatment causes antimicrobial resistance, and even can cause damages on soil.
-							  </p>
-							  <b>Challenges:</b>
-							  <p>
-								- The lack of information among the Mexican population makes it difficult to accept non-conventional products such as Aureobos.
-							  </p>
-							  <p>
-								- The general public is not very aware of the problem.
-							  </p>
+							  
 							</div>
 						  </li>
 						  <li>
 							<input id='5' type='checkbox'>
 							<label for='5'>
-							  Milking Process
+							  5
 							</label>
 							<div class="description5">
-							  <b>Potential:</b>
-							  <p>- Bovine Mastitis causes a decrease in milk production about 20-40 % of the total production per cow.
-							  </p>
-							  <p>- AureoBos provides a solution to avoid milk withdrawal, something that causes important milk wastage and economic losses to dairy producers.
-							  </p>
-							  <p>- The conventional treatments for Bovine Mastitis contribute to antimicrobial resistance, so the products stop working, and lose its efficacy. AureoBos is a revolutionary treatment for Bovine Mastitis that does not cause any antimicrobial resistance.
-							  </p>
-							  <p>- AureoBos is an intramammary infusion, the preferred application method for veterinary zootechnicians, and dairy cattle owners due to its easy use and practicality.
-							  </p>
-							  <p>- S. aureus is the most difficult microorganism to fight against, and can cause cows to be sent to the slaughterhouse.
-							  </p>
-							  <p>- The Dairy Cattle owners are willing to try a product that does not cause milk withdrawal.
-							  </p>
-							  <b>Challenges:</b>
-							  <p>- Make them more informed of Synthetic Biology, without having stereotypes about science and Synthetic Biology products.
-							  </p>
-							  <p>- Treatments based on endolysins are not very known.
+							  
+								<b>Quality and Safety:</b>
+							  <p>
+								- AureoBos will contribute to the enhancement of quality and safety of dairy products for consumers.
 							  </p>
 							</div>
 						  </li>
 						  <li>
 							<input id='6' type='checkbox'>
 							<label for='6'>
-							  Milk Processing
+							  6
 							</label>
 							<div class="description6">
-							  <b>Potential:</b>
-							  <p>
-								- The main concern for the milk industry is the presence of antibiotics in milk at the time to acquire it to process it. 
-							  </p>
-							  <p>
-								- Bovine Mastitis affects the optimal conditions and quality of milk. Milk that exhibits these changes cannot be used to produce other dairy products or be consumed.
-							  </p>
-							  <p>
-								- Bovine Mastitis leads to significant economic losses in the milk industry.
-							  </p>
-							  <b>Challenges:</b>
+								<b>Production:</b>
+								<p>
+								  -If biosafety standards are not followed during production, the use of microorganisms can cause harm to human health.
+								  ⭐We aim to counter this impact by taking biosafety courses and following good practices within the laboratory.
+								  
+							  
+								  </p>
+							 
 							</div>
 						  </li>
 						  <li>
 							<input id='7' type='checkbox'>
-							<label for='7'>Diagnostic</label>
+							<label for='7'>7</label>
 							<div class="description7">
-							  <b>Potential</b>
+							  <b>Emissions:</b>
 							  <p>
-								- AureoBos fights against the most common microorganisms that are responsible for bovine mastitis.
+								- he production of AureoBos requires cold storage, leading to increased energy consumption and operational costs. Emissions can also be produced by the transportation and disposal of the product. 
+								⭐We aim to counter this impact by using energy-efficient refrigeration systems and temperature control measures in cold storage facilities as well as exploring newable energy sources like solar energy to power the cold storage, reducing carbon emissions in the near future. 
+								
 							  </p>
-							  <b>Challenges:</b>
+							  
 							</div>
 						  </li>
 						</ul>
-						<button></button>
 					</div>
 				</div>
 			</div>
