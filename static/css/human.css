@@ -2186,20 +2186,26 @@ margin-left: 30%;
 
 /*DIAGRAMA GOTAS*/
 .diagrama_gotas{
-  position:relative;
-  margin-left: 23vw;
-  max-height: 550px;
+  position: relative;
+  margin-left: 3vw;
+  max-height: 700px;
+  transform: scale(0.5);
+  margin-top: -8vw;
+  margin-bottom: 5vw;
 }
 
 
-.titulo_gota{
+.titulo_gota1, .titulo_gota2, .titulo_gota3, .titulo_gota4, .titulo_gota5, .titulo_gota6, .titulo_gota7, .titulo_gota8{
   position: relative;
   rotate: -45deg;
-  font-size: 0.6vw;
+  font-size: 15px;
   right: 0.4vw;
   margin: 0;
+  color: white;
+  text-align: center;
 }
-.texto_gota{
+.texto_gota1, .texto_gota2, .texto_gota3, .texto_gota4, .texto_gota5, .texto_gota6, .texto_gota7, .texto_gota8 {
+  display: none;
   position: relative;
   font-size: 0.4vw;
   top: 1vw;
@@ -2211,167 +2217,213 @@ margin-left: 30%;
 
 
 .gota1{
-  background-color: lightblue;
+  background-color: #BC3F5C;
   position: relative;
   z-index: 2;
   width: 7vw;
-  bottom: 26vw;
-  left: 2vw;
+  bottom: 7vw;
+  left: -9vw;
   z-index: 2;
   height: 7vw;
   border-radius: 0% 50% 50% 50%;
-  transform: rotate(45deg);
   transform-origin: left;
+  transform: rotate(45deg) scale(2);
 }
 
 .gota1:hover{
-  transform: scale(2);
+  transform: scale(5);
   rotate: 45deg;
   z-index: 3;
   transform-origin: left;
 }
 
+.gota1:hover .texto_gota1{
+  display: contents;
+  rotate: 45deg;
+}
+
 .gota2{
-  background-color: lightblue;
+  background-color: #B76277;
   position: relative;
   z-index: 2;
-  width: 7vw;
-  bottom: 31vw;
-  left: 8.5vw;
+  width: 7vw;    
+  bottom: 7vw;
+  left: 15.5vw;
   height: 7vw;
   border-radius: 0% 50% 50% 50%;
-  transform: rotate(45deg);
+  transform: rotate(45deg) scale(2);
   transform-origin: left;
 }
 
 .gota2:hover{
-  transform: scale(2);
+  display: contents;
+  transform: scale(5);
   rotate: 45deg;
   transform-origin: left;
   z-index: 3;
+}
+
+.gota2:hover .texto_gota2{
+  display: contents;
+  rotate: 45deg;
 }
 
 
 
 .gota3{
-  background-color: lightblue;
+  background-color: #BA796C;
   position: relative;
   z-index: 2;
   width: 7vw;
-  bottom: 40vw;
-  left: 16.5vw;
+  bottom: 21vw;
+  left: 46.5vw;
   height: 7vw;
   border-radius: 0% 50% 50% 50%;
   transform: rotate(45deg);
   transform-origin: left;
+  transform: rotate(45deg) scale(2);
 }
 
 .gota3:hover{
-  transform: scale(2);
+  transform: scale(5);
   rotate: 45deg;
   transform-origin: left;
   z-index: 3;
+}
+
+.gota3:hover .texto_gota3{
+  display: contents;
+  rotate: 45deg;
 }
 
 .gota4{
-  background-color: lightblue;
+  background-color: #C98A64;
   position: relative;
   z-index: 2;
   width: 7vw;
-  bottom: 45vw;
-  left: 23.5vw;
+  bottom: 23vw;
+  left: 76.5vw;
   height: 7vw;
   border-radius: 0% 50% 50% 50%;
   transform: rotate(45deg);
   transform-origin: left;
+  transform: rotate(45deg) scale(2);
 }
 
 .gota4:hover{
-  transform: scale(2);
+  transform: scale(5);
   rotate: 45deg;
   transform-origin: left;
   z-index: 3;
 }
 
+.gota4:hover .texto_gota4{
+  display: contents;
+  rotate: 45deg;
+}
 
 .gota5{
-  background-color: lightblue;
+  background-color: #F6AE2D;
   position: relative;
   z-index: 2;
   width: 7vw;
-  bottom: 44vw;
-  left: 2vw;
+  bottom: 1vw;
+  left: -10vw;
   height: 7vw;
   border-radius: 0% 50% 50% 50%;
   transform: rotate(45deg);
   transform-origin: left;
+  transform: rotate(45deg) scale(2);
 }
 
 .gota5:hover{
-  transform: scale(2);
+  transform: scale(5);
   rotate: 45deg;
   transform-origin: left;
   z-index: 3;
+}
+
+.gota5:hover .texto_gota5{
+  display: contents;
+  rotate: 45deg;
 }
 
 .gota6{
-  background-color: lightblue;
+  background-color: #ABBA6D;
   position: relative;
   z-index: 2;
   width: 7vw;
-  bottom: 47vw;
-  left: 8.5vw;
+  bottom: 1vw;
+  left: 15.5vw;
   height: 7vw;
   border-radius: 0% 50% 50% 50%;
   transform: rotate(45deg);
   transform-origin: left;
+  transform: rotate(45deg) scale(2);
 }
 
 .gota6:hover{
-  transform: scale(2);
+  transform: scale(5);
   rotate: 45deg;
   transform-origin: left;
   z-index: 3;
+}
+
+.gota6:hover .texto_gota6{
+  display: contents;
+  rotate: 45deg;
 }
 
 .gota7{
-  background-color: lightblue;
+  background-color: #5BC5AA;
   position: relative;
   z-index: 2;
   width: 7vw;
-  bottom: 58vw;
-  left: 16.5vw;
+  bottom: 15vw;
+  left: 46.5vw;
   height: 7vw;
   border-radius: 0% 50% 50% 50%;
   transform: rotate(45deg);
   transform-origin: left;
+  transform: rotate(45deg) scale(2);
 }
 
 .gota7:hover{
-  transform: scale(2);
+  transform: scale(5);
   rotate: 45deg;
   transform-origin: left;
   z-index: 3;
 }
 
+.gota7:hover .texto_gota7{
+  display: contents;
+  rotate: 45deg;
+}
+
 .gota8{
-  background-color: lightblue;
+  background-color: #5BE1E6;
   position: relative;
   z-index: 2;
   width: 7vw;
-  bottom: 61vw;
-  left: 23.5vw;
+  bottom: 15vw;
+  left: 76.5vw;
   height: 7vw;
   border-radius: 0% 50% 50% 50%;
   transform: rotate(45deg);
   transform-origin: left;
+  transform: rotate(45deg) scale(2);
 }
 
 .gota8:hover{
-  transform: scale(2);
+  transform: scale(5);
   rotate: 45deg;
   transform-origin: left;
   z-index: 3;
+}
+
+.gota8:hover .texto_gota8{
+  display: contents;
+  rotate: 45deg;
 }
 
 
@@ -3551,4 +3603,9 @@ transform: scaleX(-1);
     margin-left: 25%;
     margin-top: 5%;
     max-width: fit-content;
+  }
+
+  .gotas{
+    margin-left: -10%;
+    margin-top: 10%;
   }
