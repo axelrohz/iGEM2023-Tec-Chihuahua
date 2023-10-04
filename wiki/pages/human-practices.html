@@ -92,19 +92,19 @@ the world. Consider how the world affects your work and how your work affects th
 			<div class="methods">
 				<div class="button-content">
 					<p class="tituloBoton">Silver</p>
-					<button onclick="showSection('sectionMethods')" class="learnMore">Go to section</button>
+					<button onclick="showSection('sectionMethods'),document.getElementById('titulo_silver').scrollIntoView();" class="learnMore">Go to section</button>
 				</div>
 			</div>
 			<div class="overview">
 				<div class="button-content">
 					<p class="tituloBoton">Our beginnings</p>
-					<button onclick="showSection('sectionOverview')" class="learnMore">Go to section</button>
+					<button onclick="showSection('sectionOverview'),document.getElementById('titulo_OB').scrollIntoView();" class="learnMore">Go to section</button>
 				</div>
 			</div>
 			<div class="results">
 				<div class="button-content">
 					<p class="tituloBoton">Gold</p>
-					<button onclick="showSection('sectionResults')" class="learnMore">Go to section</button>
+					<button onclick="showSection('sectionResults'),document.getElementById('titulo_gold').scrollIntoView();" class="learnMore">Go to section</button>
 				</div>
 			</div>
 			
@@ -145,7 +145,7 @@ the world. Consider how the world affects your work and how your work affects th
 		<div id="sectionOverview" class="sectO">
 			<div class="secciones">
 				<div class="seccionOverview">
-					<p class="subtitleO">Our beginnings</p>
+					<p class="subtitleO" id="titulo_OB">Our beginnings</p>
 				</div>
 			</div>
 			<div class="layout">
@@ -286,7 +286,7 @@ the world. Consider how the world affects your work and how your work affects th
 			<!--seccion Methods-->
 			<div class="secciones">
 				<div class="seccionMethods">
-					<p class="subtitleM">Silver</p>
+					<p class="subtitleM" id="titulo_silver">Silver</p>
 				</div>
 			</div>
 			<div class="layout">
@@ -356,8 +356,8 @@ the world. Consider how the world affects your work and how your work affects th
 						<h3 id="atHome"><br><br><br>At Home</h3>
 					</div>
 					<p class="contenido">
-						In our hometown, Chihuahua the main livestock activity developed is the production of bovine
-						milk, representing a high economic importance since it occupies the fourth place nationally in
+						In our hometown, <b>Chihuahua</b> the main livestock activity developed is the production of bovine
+						milk, representing a high economic importance since it occupies the <b>fourth place nationally</b> in
 						total milk production.
 					</p>
 					<div class="graficasDiagrama">
@@ -378,13 +378,13 @@ the world. Consider how the world affects your work and how your work affects th
 					<br>
 					<br>
 					<div class="tituloContenido">
-						<h3 id="whereItAllStarted"><br><br><br>Where it all started</h3>
+						<h3 id="whereItAllStarted" class = "title_whereStarted"><br><br><br>Where it all started</h3>
 					</div>
 					<p class="contenido">
 						To gain a true understanding of the issue, we decided to experience it firsthand. We had a
 						brainstorming session with our team, in which we identified the parties involved in the process
-						and evaluated whether they were being positively or negatively affected. We came up with a value
-						chain that goes from the treatments and the people involved in their development, to the public
+						and evaluated whether they were being positively or negatively affected. We came up with a <b>value chain</b>
+						that goes from the treatments and the people involved in their development, to the public
 						approval, or us, milk consumers. This approach played a significant role in shaping our
 						project's success as it offered us valuable insights, identified needs, and outlined
 						requirements for addressing the mastitis problem.
@@ -509,7 +509,7 @@ the world. Consider how the world affects your work and how your work affects th
 						both sectors are affected economically.
 					</p>
 					<p class="contenido">
-						Feel free to visit our Entrepreneurship page to see the market and Aureobos comparison!
+						Feel free to visit our <a class = "hipervinculoEntre" onclick="location.href='https://2023.igem.wiki/tec-chihuahua/entre'">Entrepreneurship</a> page to see the market and Aureobos comparison!
 					</p>
 					<div>
 						<img class="foto_medicinas"
@@ -556,7 +556,7 @@ the world. Consider how the world affects your work and how your work affects th
 						antibiotic requires reduces the overall milk production per dairy, contributing to economic
 						losses for the producer. As we can see in Fig.8, the most common antibiotics on the market
 						require long milk withdrawal periods except for Ceftiofur. This is really concerning not only
-						because of the economic losses but for the food that is going to waste during the process.
+						because of the economic losses but for the <b>food that is going to waste</b> during the process.
 					</p>
 
 					<!--grafico de milk withrawal!-->
@@ -620,7 +620,7 @@ the world. Consider how the world affects your work and how your work affects th
 					<br>
 					<br>
 					<p class="contenido">
-						13 of 20 small producers and Veterinary Zootecnitians mentioned antibiotic resistance as an
+						<b>13 of 20</b> small producers and Veterinary Zootecnitians mentioned antibiotic resistance as an
 						actual or potential future problem for them, this was very concerning.
 					</p>
 
@@ -636,7 +636,7 @@ the world. Consider how the world affects your work and how your work affects th
 					<p class="contenido">
 						We've arrived at the second section of our value chain, the milk processing and diagnostic
 						areas, which were fundamental in the development of our project and a complete understanding of
-						the problem we are facing. Milk collection and dairy industry provided us with regulations and
+						the problem we are facing. <b>Milk collection and dairy industry</b> provided us with regulations and
 						requirements that they ask for when a pipe of milk arrives at the center. This place processes
 						milk from small producers and assures good quality milk. Mastitis is directly reflected in the
 						number of somatic cells present in milk, which makes it a crucial reference to determine its
@@ -1034,8 +1034,8 @@ the world. Consider how the world affects your work and how your work affects th
 					<br>
 
 					<p class="contenido">
-						Here is a quick video of when we learned how to carry out a CMT test in a cow suspected of
-						mastitis. <a href=”https://drive.google.com/file/d/1T9LoNx_ped0DkXR97HKYCraZgLGvNWDY/view?usp”>mastitis video</a>
+						Here is a <a class = "hipervinculoEntre" onclick="location.href='https://drive.google.com/file/d/1T9LoNx_ped0DkXR97HKYCraZgLGvNWDY/view'">quick video</a>
+						 of when we learned how to carry out a CMT test in a cow suspected of mastitis.
 					</p>
 					<br>
 					<br>
@@ -1211,7 +1211,7 @@ the world. Consider how the world affects your work and how your work affects th
 					<p class="contenido">
 						Our project is aimed at addressing a critical issue in the dairy industry: the excessive waste
 						of milk caused by antibiotic treatments for mastitis in dairy cows. To address this issue, our
-						project proposes a non-antibiotic alternative that is effective, safe, and sustainable. This
+						project proposes a non-antibiotic alternative that is <b>effective, safe, and sustainable</b>. This
 						approach also contributes to fighting antibiotic resistance, a major public health concern, by
 						reducing antibiotic use in dairy farming. Additionally, the project focuses on environmental
 						friendliness, minimizing the negative impact of dairy farming by reducing antibiotic residues in
@@ -1235,7 +1235,7 @@ the world. Consider how the world affects your work and how your work affects th
 						implemented and used as a cream formulated for intramammary infusion, administered through the
 						affected teat of the cow, by those who are currently facing the challenge of mastitis — dairy
 						cattle owners influenced by veterinarian zootechnicians, which is thoroughly explained in our
-						entrepreneurship section.
+						<a class = "hipervinculoEntre" onclick="location.href='https://2023.igem.wiki/tec-chihuahua/entre'">entrepreneurship section</a>.
 					</p>
 					<p class="contenido">
 						Besides our end users, we envision AureoBos becoming a precedent in synthetic biology for
@@ -1259,7 +1259,9 @@ the world. Consider how the world affects your work and how your work affects th
 						mastitis in a responsible and beneficial way, it is important to consider certain risks in order
 						to plan how to manage them. Inside the lab, while developing our project, the team has received
 						proper training in order to work in a safe and responsible environment, following a series of
-						measures and guidelines further explained in the safety section. On the other hand, some of the
+						measures and guidelines further explained in the 
+						<a class = "hipervinculoEntre" onclick="location.href='https://2023.igem.wiki/tec-chihuahua/safety'">safety section</a>. 
+						On the other hand, some of the
 						risks we visualize outside the lab are; the possible unregulated use of AureoBos which, without
 						proper guidance, could lead to ineffective treatment or unintended side effects; the
 						overreliance on it, which is important to remember that different cases of mastitis may require
@@ -1267,8 +1269,9 @@ the world. Consider how the world affects your work and how your work affects th
 						distribution that could lead to uncontrolled use and potential safety issues; and, an
 						environmental negative impact where AureoBos is not disposed correctly. Each of these risks, as
 						well as some other legal considerations that directly impact the development of our product, is
-						further detailed and addressed in our legal strategy which you can find on our entrepreneurship
-						section.
+						further detailed and addressed in our legal strategy which you can find on our 
+						<a class = "hipervinculoEntre" onclick="location.href='https://2023.igem.wiki/tec-chihuahua/entre'">entrepreneurship
+							section.</a>
 					</p>
 					<p class="contenido">
 						Mastitis knows no borders—it's a challenge uniting dairy farmers worldwide. With our project, we
