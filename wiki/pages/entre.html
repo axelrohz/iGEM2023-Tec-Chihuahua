@@ -26,17 +26,54 @@
 </head>
 
 <body>
-	<div class="dad">
-		<div class="parallax-team">
-			<script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
-			<link rel="stylesheet" href="static/css/parts.css">
-			<link rel="stylesheet" href="static/css/waveHead.css">
+
+	<script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+	<link rel="stylesheet" href="static/css/parts.css">
+	<link rel="stylesheet" href="static/css/waveHead.css">
+	<div class="titleCont">
+                
+		<div id="enttT" class="titleENT active">
+			<div class="entText">
+				<div class="letter" style="--timeL:2s; --degL:rotate(180DEG);">A</div>
+				<div class="letter" style="--timeL:2.3s; --degL:rotate(-180DEG);">u</div>
+				<div class="letter" style="--timeL:1.5s; --degL:rotate(200DEG);">r</div>
+				<div class="letter" style="--timeL:2.5s; --degL:rotate(120DEG);">e</div>
+				<div class="letter" style="--timeL:3s; --degL:rotate(40DEG);">o</div>
+				<div class="letter" style="--timeL:3.1s; --degL:rotate(-90deg);">B</div>
+				<div class="letter" style="--timeL:1.9s; --degL:rotate(-180DEG);">o</div>
+				<div class="letter" style="--timeL:2.3s; --degL:rotate(180DEG);">s</div>
+			</div>
+			<div class="enterp">
+				<div class="topdown">Entrepreneurship </div>
+			</div>
+	
+			<div class="shake">
+				<svg class="bubENT" id="visual" viewBox="0 0 1920 1080" width="1920" height="1080"
+					xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+					<g fill="#7fd7c1">
+						<circle class="buble" r="135" cx="410" cy="398"></circle>
+						<circle class="buble" r="17" cx="465" cy="815"></circle>
+						<circle class="buble" r="99" cx="1364" cy="568"></circle>
+						<circle class="buble" r="36" cx="939" cy="723"></circle>
+						<circle class="buble" r="129" cx="213" cy="214"></circle>
+						<circle class="buble" r="80" cx="1617" cy="162"></circle>
+						<circle class="buble" r="70" cx="1235" cy="328"></circle>
+						<circle class="buble" r="30" cx="1669" cy="490"></circle>
+						<circle class="buble" r="32" cx="713" cy="436"></circle>
+						<circle class="buble" r="102" cx="1627" cy="867"></circle>
+						<circle class="buble" r="81" cx="220" cy="700"></circle>
+						<circle class="buble" r="26" cx="1256" cy="884"></circle>
+						<circle class="buble" r="18" cx="969" cy="243"></circle>
+						<circle class="buble" r="86" cx="729" cy="915"></circle>
+						<circle class="buble" r="66" cx="672" cy="159"></circle>
+					</g>
+				</svg>
+			</div>
+		</div>
+	</div>
+
 			<div class="headParts">
-				<div class="headingParts">
-					<div class="typewriter">
-						<h1 class="Title">Entrepreneurship</h1>
-					</div>
-				</div>
+				
 				<svg class="waveParts" id="visual" viewBox="0 0 960 540" xmlns="http://www.w3.org/2000/svg"
 					xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
 					<g>
@@ -86,9 +123,16 @@
 						{ repeat: 999, duration: 3000, yoyo: true }
 					).start();
 				</script>
+				<script>
+					window.onload = function() {
+						console.log("loaded");
+					var ent = document.getElementById('enttT');
+					console.log(ent);
+					ent.classList.remove('active');
+					console.log(ent.classList);
+					};
+				</script>
 			</div>
-		</div>
-	</div>
 
 
 	<!--Seccion que ya sirve, no mover-->
@@ -1130,6 +1174,7 @@
   setTimeout(function() { toggleOptions('.selector'); }, 100);
 </script>
 <script type="text/javascript">
+	/*
     var sect1 = document.getElementById('sectionOverview');
     var sect2 = document.getElementById('referencesO');
  
@@ -1166,9 +1211,7 @@
       }
 
 
-
-
-    }); 
+    }); */
   </script>	
   <script>
     const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
