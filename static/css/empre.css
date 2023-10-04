@@ -1102,3 +1102,60 @@
     margin-left: -14%!important;
     top: 10px!important;
 }
+.eti {
+    width: 84%;
+    align-content: center;
+    margin-left: 28vh;
+}
+/*frase del inicio despues del welcome page*/
+.fraseInicio{
+    
+    height: 24vw;
+    margin-bottom: 2vw;
+    padding-top: 1vw;
+    color: #447D9C;
+    font-weight: bold;
+  }
+  .fraseAcomodo{
+    margin: 5vw auto;
+    width: fit-content;
+  }
+  
+  .phrase{
+    position: relative;
+    width: 100%;
+    height: 3vw;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fraseModel {
+    margin: 5vw auto;
+    position: relative;
+    width: 51.5%;
+    font-size: 40px;
+    display: block;
+    text-align: center;
+    font-family: "Bricolage Grotesque", monospace;
+}
+  
+  .char{
+    font-size: 40px;
+    height: 40px;
+    animation: an 1s ease-out 1 both;
+    display: inline-block;
+  }
+  
+  @keyframes an{
+    from{
+      opacity: 0;
+      transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+    }
+    to{
+      opacity: 1;
+      transform: perspective(500px) translate3d(0, 0, 0);
+    }
+  }
+  .dairy{
+    width: 100%;
+  }
