@@ -564,13 +564,25 @@ background: #5BC5AB;
 .dotspan {
 position:relative;
 text-align:center;
+max-width: 100%;
 width:900px;
-height:250px;
+height:fit-content;
 margin-left: auto;
 margin-right: auto;
 display: flex;
 flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+margin-bottom: 40px;
 }
+
+@media screen and (max-width: 900px) {
+.dotspan {
+width: 100%;
+}
+    
+}
+
 
 .dotd {
 display: flex;
@@ -642,7 +654,6 @@ text-align: center;
 }
 
 .contdiagrama {
-max-height: 1000px;
 width: 100%;
 display: flex; 
 flex-wrap: wrap;
@@ -667,6 +678,7 @@ height: 400px;
 width: 500px;
 justify-content: center;
 overflow:hidden;
+max-width: 100%;
 }
 
 .contenido img{
@@ -691,13 +703,16 @@ align-self: center;
 text-align: center;
 font-family: 'Quicksand';
 font-weight: 500;
+width: 100%;
+transition: 2s;
+overflow: hidden;
+max-height: 0;
 }
 
 
 .contpapa {
 height: 400px;
 width: 500px;
-overflow:hidden;
 background: var(--gradient);
 transition: 1s;
 border-radius: 10px;
@@ -707,6 +722,10 @@ overflow: auto;
 
 .contpapa:hover {
 height: 700px;
+}
+
+.contpapa:hover .contenidotxt{
+    max-height: 2000px;
 }
 
 /*Tabla*/
@@ -721,7 +740,7 @@ margin-bottom: 70px;
 .background::after {
 content: '';
 background: #2c3238;
-background: -moz-linear-gradient(top,  #5BC5AB 0%,#447D9C 100%));
+background: -moz-linear-gradient(top,  #5BC5AB 0%,#447D9C 100%);
 background: -webkit-linear-gradient(top,#5BC5AB 0%,#447D9C 100%);
 background: linear-gradient(to bottom, #5BC5AB 0%,#447D9C 100%);
 height: 850px;
@@ -730,6 +749,7 @@ position: absolute;
 top: 0;
 width: 100%;
 z-index: 1;
+min-height: 100%;
 }
 
 @media (min-width: 900px) {
