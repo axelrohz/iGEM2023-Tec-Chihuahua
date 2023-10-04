@@ -2794,7 +2794,7 @@ max-width: 850px;
 top: 7vw;
 height: auto;
 position: relative;
-z-index: 10;
+z-index: -1;
 }
 
 .card1 {
@@ -2813,6 +2813,11 @@ z-index: 10;
 }
 
 .foto_pequeño_productor{
+  margin-left: 14vw;
+  max-width: 50vw;
+}
+
+.foto_leche{
   margin-left: 14vw;
   max-width: 50vw;
 }
@@ -2836,6 +2841,16 @@ z-index: 10;
   margin-left: 14vw;
   max-width: 50vw;
 }
+.foto_impact{
+  margin-left: 10vw;
+  max-width: 30vw;
+}
+.flecha_1{
+  margin-left: 10vw;
+  max-width: 30vw;
+}
+
+
 .cause h1 {
   margin: auto;
   align-self: center;
@@ -2983,7 +2998,7 @@ z-index: 10;
 
 
 .homeCardsContainer{
-  width: 98%;
+  width: 100vw;
   height: 40vw;
   padding-left: 6vw;
   
@@ -3744,3 +3759,13 @@ transform: scaleX(-1);
     margin-left: -10%;
     margin-top: 10%;
   }
+
+  .title_whereStarted{
+    margin-top: -5vw;
+  }
+
+  .hipervinculoEntre{
+    color: #5BC5AB !important;
+    text-decoration: underline !important;
+  }
+  

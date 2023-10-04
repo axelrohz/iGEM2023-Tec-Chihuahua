@@ -2039,14 +2039,9 @@ margin-left: 30%;
 
 /*imagen figuara dos 2 IPGT*/  
 
-.imagenDos{
-  margin-left: 27vw;
-}
 
 .textoFigura2{
-  width: 26vw;
   font-size: 0.5vw;
-  margin-left: 27vw;
 }
 
 h5{
@@ -2117,7 +2112,8 @@ h4{
 
 .table1-responsive {
   display: block;
-  width: -webkit-fill-available;
+  max-width: 100% ;
+  width: -webkit-fil-available;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch
 }
@@ -2138,6 +2134,7 @@ h4{
 }
 .TABLA1 th, .TABLA1 td {
   padding: 12px;
+  max-width: 30%;
   text-align: left;
   border: 1px solid #D27063;
   transition: background-color 0.3s, transform 0.3s;
@@ -2146,10 +2143,12 @@ h4{
 .TABLA1 th {
   background-color: #D27063;
   color: #ffffff;
+  max-width: 30%;
 }
 
 .TABLA1 th h1 {
   margin: auto;
+  max-width: 30%;
   font-size: 1.5rem;
   text-align: center;
   justify-self: center;
@@ -2158,14 +2157,16 @@ h4{
 .TABLA1 td {
   background-color: #f5f5f5;
   color: #302535;
+  max-width: 30%;
 }
 
 
 .TABLA1 td:hover {
-  background-color: #5BC5AB;
+  background-color: #d05182;
   color: #ffffff;
   transform: translate(4px, -4px);
   box-shadow: 0 6px 6px -6px #ffffff;
+  max-width: 30%;
 }
 
 
@@ -2174,7 +2175,57 @@ h4{
       color: #ffffff;
       transform: translate(4px, -4px);
       box-shadow: 0 6px 6px -6px #ffffff;
+      max-width: 30%;
   }
+
+/* Arriba esta el las caracteristicas de tablas*/
+ /*Poner la imagen a la derecha debajo*/  
+ .mt-5 {
+  margin-bottom: 3rem !important;
+}
+
+.row > * {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) * -.5);
+  margin-left: calc(var(--bs-gutter-x) * -.5);
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) * -.5);
+  margin-left: calc(var(--bs-gutter-x) * -.5);
+}
+
+.col-lg-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+}
+
+#bbdesign {
+  top: -25px;
+  position: relative;
+}
+
+.ms-auto {
+  margin-left: auto !important;
+}
+
+.align-self-center {
+  align-self: center !important;
+}
+.col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+}
+
 
 
 
