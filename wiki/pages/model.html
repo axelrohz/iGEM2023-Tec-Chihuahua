@@ -701,23 +701,26 @@
 	<div class="tituloContenido">
  		<h5>Formation of repressor-IPTG complex. Steps 12-15</h5>
    	</div>
-		<br>
-   	<p class="contenido">Upon the introduction of IPTG into the system, it binds with the dimeric and tetrameric forms of the repressor protein. It’s important to note that each monomer within both the dimer and tetramer structure can accommodate a single IPTG molecule for binding. Upon binding, IPTG triggers an allosteric structural transformation in the tetrameric repressor, resulting to a decrease in its affinity for the operator.<sup>6</sup> Consequently, the monomeric repressor loses its capacity to effectively bind to the operator, allowing RNA polymerase’s access to the promoter. This, in turn, enables the transcription and subsequent production of the endolysins.</p>
-   	<br>
-   	<p class="contenido">The formation of the IPTG-repressor complex can occur through two mechanisms:<sup>3</sup></p>
-   	<ol  class="contenido">
- 		<li  class="contenido">The repressor exists in a free state.</li>
- 		<li  class="contenido">The repressor is part of the repressor-operator complex, where it is already bound to the operator sequence.</li>
-   	</ol >
- 	<p class="contenido">When the repressor is bound to the operator, the introduction of IPTG interferes with the repressor-operator complex, leading to its disruption. As a result, the extent of repressor inactivation is directly correlated with the number of binding sites occupied by IPTG. Interestingly, even with just two IPTG molecules bound to specific sites, the repressor can undergo effective inactivation.<sup>7</sup> <b>Figure 2</b> illustrates the different conformations that can exist.</p>
-	<div>
-		<img src="https://static.igem.wiki/teams/4607/wiki/modelo/ecuaciones-representacion-esquematica/modelo/modelo/modelo/figura2model.png" alt="different conformations that can exist." class="imagenDos">
-		<p class="textoFigura2"><strong>Figure 2.</strong> Configurations of the interaction of the tetramer with 2 IPTG molecules. The individual dimers are colored in red and brown.  a.  The repressor tetramer is not completely inactivated, so it is able to bind again to the LacO operator. b. The repressor tetramer is completely inactivated, since the dimers are not able to bind to LacO.</p>
-	</div>
- 		 <br>
- 		 <br>
- 		 <br>
-   	<p class="contenido">We are considering these distinct conformations to deactivate the tetramer repressor, which requires a Hill coefficient of 2-3. However, it's noteworthy that only two IPTG molecules are required to inactivate the dimeric repressor.</p>
+		<div class="row mt-5">
+			<div class="col-lg-8">
+				<p class="contenido">Upon the introduction of IPTG into the system, it binds with the dimeric and tetrameric forms of the repressor protein. It’s important to note that each monomer within both the dimer and tetramer structure can accommodate a single IPTG molecule for binding. Upon binding, IPTG triggers an allosteric structural transformation in the tetrameric repressor, resulting to a decrease in its affinity for the operator.<sup>6</sup> Consequently, the monomeric repressor loses its capacity to effectively bind to the operator, allowing RNA polymerase’s access to the promoter. This, in turn, enables the transcription and subsequent production of the endolysins.</p>
+				<br>
+				<p class="contenido">The formation of the IPTG-repressor complex can occur through two mechanisms:<sup>3</sup></p>
+				<ol  class="contenido">
+				  <li  class="contenido">The repressor exists in a free state.</li>
+				  <li  class="contenido">The repressor is part of the repressor-operator complex, where it is already bound to the operator sequence.</li>
+				</ol >
+			</div>
+			<div id="bbdesign" class="col-lg-4 align-self-center ms-auto">
+				<figure>
+					<img  margin-right: 5vw; src="https://static.igem.wiki/teams/4607/wiki/modelo/ecuaciones-representacion-esquematica/modelo/modelo/modelo/figura2model.png" alt="different conformations that can exist." height="auto" width=90%  >
+					<p class="textoFigura2"><strong>Figure 2.</strong> Configurations of the interaction of the tetramer with 2 IPTG molecules. The individual dimers are colored in red and brown.  a.  The repressor tetramer is not completely inactivated, so it is able to bind again to the LacO operator. b. The repressor tetramer is completely inactivated, since the dimers are not able to bind to LacO.</p>
+				</figure>
+			</div>
+		</div>
+	<p class="contenido">When the repressor is bound to the operator, the introduction of IPTG interferes with the repressor-operator complex, leading to its disruption. As a result, the extent of repressor inactivation is directly correlated with the number of binding sites occupied by IPTG. Interestingly, even with just two IPTG molecules bound to specific sites, the repressor can undergo effective inactivation.<sup>7</sup> <b>Figure 2</b> illustrates the different conformations that can exist.</p>		 
+	<br>
+	<p class="contenido">We are considering these distinct conformations to deactivate the tetramer repressor, which requires a Hill coefficient of 2-3. However, it's noteworthy that only two IPTG molecules are required to inactivate the dimeric repressor.</p>
    	<math display='block'>
  		 <mn>2</mn><mi>I</mi><mo>+</mo><msub>
   		 <mi>R</mi>
@@ -1124,10 +1127,10 @@
 									position: relative;"><b>Table 1.</b> Chemical reactions on the IPTG induction model.</p>
 									<thead>
 										<tr>
-											<th >Number</th>
-											<th>Chemical reactions</th>
-											<th>Meaning</th>
-											<th>Schematic representation</th>
+											<th width="15%" >Number</th>
+											<th width="20%">Chemical reactions</th>
+											<th width="20%">Meaning</th>
+											<th width="45%">Schematic representation</th>
 										</tr>
 									</thead>
 									<tbody>
@@ -3828,7 +3831,6 @@
 			  <h5>Initial conditions</h5>
 			</div>
 			<br>
-
 		<div class="accordion-item">
 				<div class="accordion-item-header">
 					<h3 id="referencesO">Initial conditions</h3>
@@ -4077,7 +4079,6 @@
 					</div>
 				</div>
 		</div>
-		
 			<br>
 		   <div class="tituloContenido">
 				<h4 id="monte_carlo"><br><br>Monte Carlo Simulation</h4>
