@@ -2685,6 +2685,7 @@ margin: 31px;
 
 .card:hover {
 height: 420px;
+width: 21vw;
 overflow: auto;
 }
 

@@ -1990,7 +1990,7 @@ margin-left: 30%;
 /*frase del inicio despues del welcome page*/
 .fraseInicio{
   background: linear-gradient(#F2F2FAff,white);
-  height: 24vw;
+  height: 20vw;
   margin-bottom: 2vw;
   padding-top: 1vw;
   color: #447D9C;
@@ -2010,7 +2010,7 @@ margin-left: 30%;
 }
 
 .fraseModel{
-  margin: 5vw auto;
+  margin: 2vw;
   position: relative;
   width: 41.5%;;
   font-size: 40px;
@@ -2020,10 +2020,9 @@ margin-left: 30%;
 }
 
 .char{
-  font-size: 40px;
+  font-size: 3vw;
   height: 40px;
   animation: an 1s ease-out 1 both;
-  display: inline-block;
 }
 
 @keyframes an{
