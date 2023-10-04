@@ -3758,3 +3758,9 @@ transform: scaleX(-1);
     color: #5BC5AB !important;
     text-decoration: underline !important;
   }
+  .flecha_1{
+    top: 14vw;
+    left: 50%;
+    position: relative; 
+    max-width: fit-content;
+  }
