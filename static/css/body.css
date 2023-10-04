@@ -114,9 +114,14 @@ body {
 @media (max-width: 768px) {
   .uno h1 {
     font-size: 3rem;
+    padding: 0;
   }
 
   .navigation {
     display: none;
+  }
+ 
+  #sec1, #sec2, #sec4{
+    padding-top: 0;
   }
 }

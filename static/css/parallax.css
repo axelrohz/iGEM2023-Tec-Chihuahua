@@ -41,6 +41,7 @@
     width: 100%;
     flex-wrap: row;
     position: relative;
+    overflow-x: clip;
   }
   
   .stickhead{
@@ -183,7 +184,6 @@
       /* Estilos para dispositivos móviles */
       /* Quiero quitar el flex y q todo se vea en la pantalla */
       .teamBody{
-        display: block;
         position: relative;
       }
       .stickhead{
@@ -236,8 +236,15 @@
       
     .teamBody .teamScroll{
       width: 100%;
+    }  
     }
-  
-  
-  
-    }
+
+.scrollIndexContain{
+  opacity: 0;
+  transition: 1s;
+}
+
+.teamBody.active .teamScroll .scrollIndexContain{
+  opacity: 1;
+  transition-delay: 2.3s;
+}

@@ -311,3 +311,22 @@ transition: 0.25s;
   margin-left: 20px;
   margin-right: 20px;
   }
+
+  .refer{
+    max-width: 100%;
+}
+
+.refer .accordion-item{
+    width: 100%;
+    box-shadow: 7px 7px #447d9c;
+}
+
+@media screen and (max-width: 780px){
+    .accordion-item-body-content p{
+        margin: 0;
+    }    
+    .accordion-item {
+        width: 100%;
+        }
+}
+
