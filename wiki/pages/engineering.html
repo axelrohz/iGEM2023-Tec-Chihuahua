@@ -18,12 +18,9 @@ engineering design cycle.{% endblock %}
 
   <link href="{{ url_for('static', filename='css/eng.css') }}" rel="stylesheet">
   <link href="{{ url_for('static', filename='css/body.css') }}" rel="stylesheet">
-  <link href="{{ url_for('static', filename = 'css/parallax.css') }}"
-    rel="stylesheet">
-  <link href="{{ url_for('static', filename = 'css/engieneering.css') }}"
-    rel="stylesheet">
-  <link href="{{ url_for('static', filename = 'css/parallaxFull.css') }}"
-    rel="stylesheet">
+  <link href="{{ url_for('static', filename = 'css/parallax.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename = 'css/engieneering.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename = 'css/parallaxFull.css') }}" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <script src="{{ url_for('static', filename='assets/js/team.js') }}"></script>
@@ -33,8 +30,7 @@ engineering design cycle.{% endblock %}
 </head>
 
 <body class="mybody">
-  <img class="parallax-team"
-    src="https://static.igem.wiki/teams/4607/wiki/contribution/parts.jpeg">
+  <img class="parallax-team" src="https://static.igem.wiki/teams/4607/wiki/contribution/parts.jpeg">
   <div class="image-space"></div>
   <div class="parallax-content">
     <div class="teamBody">
@@ -82,6 +78,62 @@ engineering design cycle.{% endblock %}
             spots. Our biosynthetic product has been developed by <b>three great cycles</b>, <b>ten semi-cycles</b>, and
             <b>xx iterations</b> to become Aureobos;
           </p>
+
+          <div class="selectorcontainer">
+
+            <div class='selector'>
+
+              <ul>
+                <li>
+                  <input id='1' type='checkbox'>
+                  <label for='1'> Part Assembly</label>
+                  <div class="description1">
+                    <b>Three sub-cycles, three iterations:</b>
+                    <p>
+                      - Chemcompetent Cells’ production and Heat shock Cell’s transformation
+                    </p>
+                    <p>
+                      - Golden Gate Assembly
+                    </p>
+                    <p>
+                      - pDNA Extraction
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <input id='2' type='checkbox'>
+                  <label for='2'>Protein Induction</label>
+                  <div class="description2">
+                    <b>Five semi-cycles: </b>
+                    <p>
+                      - Induction Math Model <br>
+                      - Protein Induction Kinetics <br>
+                      - Protein’s Purification Math Model <br>
+                      - Protein’s Purification <br>
+                      - Protein’s Quantification
+                    </p>
+                </li>
+                <li>
+                  <input id='3' type='checkbox'>
+                  <label for='3'>Bactericidal Assays</label>
+                  <div class="description3">
+                    <b>Two semi-cycles:</b>
+                    <p>
+                      - Bactericidal Math Model <br>
+                      - Bactericidal Assays
+                    </p>
+
+                  </div>
+                </li>
+                <li>
+              </ul>
+              <button> <img style="width: 100px; height: auto;"
+                  src="https://static.igem.wiki/teams/4607/wiki/eng/star.png" alt=""></button>
+            </div>
+
+
+          </div>
 
           <div class="panel safety-table">
 
@@ -172,171 +224,7 @@ engineering design cycle.{% endblock %}
 
           <h2>First Cycle: Golden Gate Assembly</h2>
 
-          <div class="selectorcontainer">
 
-            <div class='selector'>
-
-              <ul>
-                <li>
-                  <input id='1' type='checkbox'>
-                  <label for='1'> Part Assembly</label>
-                  <div class="description1">
-                    <b>Three sub-cycles, three iterations:</b>
-                    <p>
-                      - Chemcompetent Cells’ production and Heat shock Cell’s transformation
-                    </p>
-                    <p>
-                      - Golden Gate Assembly
-                    </p>
-                    <p>
-                      - pDNA Extraction
-                    </p>
-                  </div>
-                </li>
-
-                <li>
-                  <input id='2' type='checkbox'>
-                  <label for='2'>Protein Induction</label>
-                  <div class="description2">
-                    <b>Potential: </b>
-                    <p>
-                      - Bovine Mastitis causes milk changes that are reflected on the milk properties and quality.
-                    </p>
-                    <p>
-                      - One of the main problems of antibiotic treatments is that they are eliminated through milk, and
-                      this is not permitted to use the milk for consumption.
-                    </p>
-                    <b>Challenges:</b>
-                  </div>
-                </li>
-                <li>
-                  <input id='3' type='checkbox'>
-                  <label for='3'>Normativity</label>
-                  <div class="description3">
-                    <b>Potential:</b>
-                    <p>
-                      - La adquisición de los productos veterinarios no es tan dificil
-                    </p>
-                    <p>
-                      - El emprendimiento en base tecnológica se esta incentivando cada vez más.
-                    </p>
-                    <b>Challenges:</b>
-                    <p>
-                      - The regulations for veterinary treatments are deficient.
-                    </p>
-                    <p>
-                      - The treatments produced through Synthetic Biology or biotechnology processes, do not belong to
-                      any of the existent categories of normativity and regulations.
-                    </p>
-                    <p>
-                      - Cualquier proceso para registro del producto es costoso y tardado.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <input id='4' type='checkbox'>
-                  <label for='4'>
-                    Public Approval
-                  </label>
-                  <div class="description4">
-                    <b>Potential:</b>
-                    <p>
-                      - Milk is one of the staple foods in the daily diet of every family, and basic for a good
-                      nutrition.
-                    </p>
-                    <p>
-                      - Aureobos is an innovative solution that helps to keep milk free of antibiotics while treating
-                      Mastitis, ensuring that the milk produced does not have negative repercussions on human health.
-                    </p>
-                    <p>
-                      - Wastage of milk leads to an increase in the price of milk, making it less accessible.
-                    </p>
-                    <p>
-                      - Antibiotics treatment causes antimicrobial resistance, and even can cause damages on soil.
-                    </p>
-                    <b>Challenges:</b>
-                    <p>
-                      - The lack of information among the Mexican population makes it difficult to accept
-                      non-conventional products such as Aureobos.
-                    </p>
-                    <p>
-                      - The general public is not very aware of the problem.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <input id='5' type='checkbox'>
-                  <label for='5'>
-                    Milking Process
-                  </label>
-                  <div class="description5">
-                    <b>Potential:</b>
-                    <p>- Bovine Mastitis causes a decrease in milk production about 20-40 % of the total production per
-                      cow.
-                    </p>
-                    <p>- AureoBos provides a solution to avoid milk withdrawal, something that causes important milk
-                      wastage and economic losses to dairy producers.
-                    </p>
-                    <p>- The conventional treatments for Bovine Mastitis contribute to antimicrobial resistance, so the
-                      products stop working, and lose its efficacy. AureoBos is a revolutionary treatment for Bovine
-                      Mastitis that does not cause any antimicrobial resistance.
-                    </p>
-                    <p>- AureoBos is an intramammary infusion, the preferred application method for veterinary
-                      zootechnicians, and dairy cattle owners due to its easy use and practicality.
-                    </p>
-                    <p>- S. aureus is the most difficult microorganism to fight against, and can cause cows to be sent
-                      to the slaughterhouse.
-                    </p>
-                    <p>- The Dairy Cattle owners are willing to try a product that does not cause milk withdrawal.
-                    </p>
-                    <b>Challenges:</b>
-                    <p>- Make them more informed of Synthetic Biology, without having stereotypes about science and
-                      Synthetic Biology products.
-                    </p>
-                    <p>- Treatments based on endolysins are not very known.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <input id='6' type='checkbox'>
-                  <label for='6'>
-                    Milk Processing
-                  </label>
-                  <div class="description6">
-                    <b>Potential:</b>
-                    <p>
-                      - The main concern for the milk industry is the presence of antibiotics in milk at the time to
-                      acquire it to process it.
-                    </p>
-                    <p>
-                      - Bovine Mastitis affects the optimal conditions and quality of milk. Milk that exhibits these
-                      changes cannot be used to produce other dairy products or be consumed.
-                    </p>
-                    <p>
-                      - Bovine Mastitis leads to significant economic losses in the milk industry.
-                    </p>
-                    <b>Challenges:</b>
-                  </div>
-                </li>
-                <li>
-                  <input id='7' type='checkbox'>
-                  <label for='7'>Diagnostic</label>
-                  <div class="description7">
-                    <b>Potential</b>
-                    <p>
-                      - AureoBos fights against the most common microorganisms that are responsible for bovine mastitis.
-                    </p>
-                    <b>Challenges:</b>
-                  </div>
-                </li>
-              </ul>
-              <button> <img style="width: 100px; height: auto;"
-                  src="https://static.igem.wiki/teams/4607/wiki/eng/star.png" alt=""></button>
-            </div>
-
-
-          </div>
-        </div>
 
           <p>LysCSA13, LysK, and LysSS are the three fusion-endolysins that make up our product. You can check out our
             <a class="hipervinculoaqua" href="https://2023.igem.wiki/tec-chihuahua/parts">Parts Page</a> to learn
@@ -427,7 +315,8 @@ engineering design cycle.{% endblock %}
           </p>
           <p style="margin-left: 10%; margin-right: 10%;"> To perform our second iteration we modified the
             chemocompetent protocol described in the <a
-              ref=“https://2022.igem.wiki/tec-chihuahua/experiments”>Experiments Page</a> of the Tec-Chihuahua 2022
+              ref=“https://2022.igem.wiki/tec-chihuahua/experiments”>Experiments
+              Page</a> of the Tec-Chihuahua 2022
             Team, assuring that all the equipment required was at 4°C, and all the material and consumables were
             previously put on ice. In the same way, we have ensured that our water bath was at 42°C by double-checking
             the temperature with an additional termometer. Finally, we increased the incubation time up to 2 hours,
@@ -675,7 +564,8 @@ engineering design cycle.{% endblock %}
           </p>
           <p style="margin-left: 10%; margin-right: 10%;"> After the plasmids digestion, we performed an 1% agarose gel
             electrophoresis as is described in our <a
-              href=“https://2023.igem.wiki/tec-chihuahua/experiments”>Experiments Page</a>, to analyze the plasmid
+              href=“https://2023.igem.wiki/tec-chihuahua/experiments”>Experiments
+              Page</a>, to analyze the plasmid
             identity of the LysK and LysCSA13 fusion-endolysin constructs. </p>
           <br>
 
@@ -768,19 +658,615 @@ engineering design cycle.{% endblock %}
 
           <b>1st iteration:</b>
 
+          <p class="cta1">
+            <span>Design</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> To obtain our constructs we designed the codifying sequences
+            for each endolysin as a result of an extensive bibliographic search. After an in-depth research, we designed
+            the endolysins that will be expressed, LysCSA13 and LysK, with some modifications: an ABD and the cell-wall
+            binding domain (CBD) of SH3B30. The ABD increases the <em>in vivo</em> half-life from 20 minutes to 30 hours
+            2
+            and the CBD makes the endolysin specific for <em>Staphylococcus aureus</em>, <em>Streptococcus
+              agalactiae</em>
+            and <em>Streptococcus uberis</em> 3 4. A third endolysin (PCNP-CecA-LysSS) was added as the way to
+            incorporate
+            the stakeholders’ suggestions.
 
+            Both enzymes were modeled in AlphaFold 2, to verify the proper folding of the protein. In the case of the
+            LysK
+            endolysin, the cleavage site was not necessary since the addition of the histidine tag did not interfere
+            with
+            the folding of the enzyme. </p>
+          <br>
 
+          <p class="cta2">
+            <span>Build</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> To perform the Golden Gate Assembly cloning method we
+            followed
+            the NEB’s protocol, attending all the advice from the reagent’s trading company. All the process is
+            described
+            in our <a ref=“https://2023.igem.wiki/tec-chihuahua/experiments”>Experiments Page</a>. We resuspended the
+            DNA
+            of the backbone from the plate with nuclease-free water. The DNA was transformed into E. coli DH5α from NEB
+            and extracted with the Miniprep protocol.
 
+            When we received the DNA of the transcriptional units from TWIST, we resuspended and stored it. The Golden
+            Gate assembly was performed with enzyme BsaI, the backbone, and the synthesized transcriptional unit. Three
+            mixes of the reaction were made, one for each transcriptional unit, LysK, LysCSA13, and LysSS. A negative
+            control was made for each reaction. Posterior to the transformation with our constructs, we planed the
+            plasmid
+            DNA extraction resulting of a Miniprep reaction, and finally, evaluating the plasmid concentration, plasmid
+            topology, and weight to compare with our <em>in silico</em> digestions, to assured that we had our endolysin
+            constructs.
+          </p>
+          <br>
 
+          <p class="cta3">
+            <span>Test</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> The constructs were transformed into <em>E. coli 5-alpha</em>
+            by heat shock and inoculated in kanamycin plates. We obtained individual colonies in every plate, including
+            the negative controls, in which nothing should have grown. </p>
+          <br>
 
+          <p class="cta4">
+            <span>Learn</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;">
+            When analyzing our results, we remember that (Figure 4) the chosen backbone contains two resistances to
+            antibiotics (kanamycin and ampicillin), after being cut in the Golden Gate reaction, it only retains the
+            resistance to kanamycin.1 However, We realized that there was no way to have 100% efficiency in the cloning
+            stage, and considering that we didn't add any fluorescence or color reporter genes, we were in a hard
+            situation. In other words, we could not differentiate which colonies were transformed with our endolysin
+            constructs, and which colonies were transformed with the original backbone with both resistances.
+          </p>
+          <br>
 
+          <p class="cta5">
+            <span>Reflection</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> Evaluating the situation, we planned to identify our
+            constructs
+            by using all the information about our current plasmids. The new challenge was to find the way to counteract
+            the reporter gene absence, with the knowledge of having two resistance genes in the undigested acceptor
+            backbone, and only one resistance in our interest plasmids. We also confirmed that the transformation
+            efficiency was very positive. </p>
+          <br>
 
+          <b>2nd iteration</b>
+          <p class="cta1">
+            <span>Design</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> After reflecting on our mistakes, we realized that it was
+            possible to identify endolysin constructs by inoculating the same colony onto kanamycin and ampicillin
+            plates.
+            We reached almost 90 transformed colonies and considered 25 colonies to be significant to increase the
+            chances
+            of choosing the right transformant. </p>
+          <br>
 
+          <p class="cta2">
+            <span>Build</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> We chose 25 different colonies from every endolysin to
+            inoculate in kanamycin and ampicillin plates. Later, we designed the work plan in which we divided each
+            plate
+            into four quadrants, in the same way, all the labeling was made to duplicate, one by each antibiotic. After
+            all the experiment was correctly labeled, we performed four different cross-striations by each plate,
+            identifying every colony by a number, which was the same for each antibiotic. Finally, we incubated all the
+            plates at 37°C for 18 hours. To confirm that our endolysin constructions were in our plates, we expected
+            that
+            the growth would appear only in the kanamycin plates, but nothing in the ampicillin ones. While the growth
+            on
+            both of the plates would reveal an acceptor backbone transformant. </p>
+          <br>
 
+          <p class="cta3">
+            <span>Test</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> We showed bacterial growth in both plates for the majority of
+            the colonies, but some of the colony samples appeared only in the kanamycin plates </p>
+          <br>
+
+          <p class="cta4">
+            <span>Learn</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> We found our endolysin constructs!
+            The antibiotic screening made possible the identification of our endolysin constructions, confirmed by the
+            growth of the transformed bacteria only in the kanamycin plates. We also have growth of some of the colonies
+            in both of the plates, which corresponded to the acceptor backbone transformants. Any of the colonies grow
+            only in the ampicillin plates, which coincided with our expectations.
+          </p>
+          <br>
+
+          <p class="cta5">
+            <span>Reflection</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> We assumed the Golden Gate reaction was done correctly, due
+            to
+            the fact that growth was only present on the kanamycin agar plates for some of the replated colonies.
+            Otherwise, it would have grown in the presence of both antibiotics, kanamycin and ampicillin, meaning that
+            the
+            backbone was still intact. </p>
+          <br>
+
+          <b style="font-family: 'Bricolage Grotesque'; font-size: 1.3rem; margin-left: 10%; margin-right: 10%;"> Third
+            sub-cycle </b>
+
+          <p> The next sub-cycle had the objective to demonstrate our constructs identity to be completely assured that
+            we
+            were obtaining the endolysins expression constructs, before performing the protein inductions. In the same
+            way, we had to extract the plasmids to their posterior heat shock transformation in the <em>E. coli BL21
+              (DE3)</em> strain, which is feasible after the standardization of the protocols as we did in the previous
+            semi-cycles. </p>
+          <p class="cta1">
+            <span>Design</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> To continue with the experimentation, we planned to perform a
+            plasmid DNA extraction for each of the three endolysins’ constructs that compounds the AureBos treatment.
+            Performing a plasmid DNA extraction was possible after following the Miniprep PureLinkTm Quick protocol,
+            which
+            is also included in the Experiments Page. In the same way, an agarose electrophoresis was required for its
+            semi-cycle. </p>
+          <br>
+
+          <p class="cta2">
+            <span>Build</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> The building up of this stage was prepared considering all
+            the
+            steps described above, but now taking special care of all the temperature steps, as we reflect in our
+            previous
+            semi-cycle iterations. For the plasmid analysis we performed an <em>in silico</em> digestion on the SnapGene
+            software, taking into account our fusion-ensolysins constructs, and the specific enzyme cuts: SmaI. </p>
+          <br>
+
+          <p class="cta3">
+            <span>Test</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> After the plasmids digestion, we performed an 1% agarose gel
+            electrophoresis as is described in our <a ref=“https://2023.igem.wiki/tec-chihuahua/experiments”>Experiments
+              Page</a>, to analyze the plasmid identity of the LysK and LysCSA13 fusion-endolysin constructs. </p>
+          <br>
+
+          <p class="cta4">
+            <span>Learn</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> We realized that the gel's appearance was not the best, not
+            only because of the undesired spots, but also because the sample bands were not aligned to the DNA marker.
+            In
+            addition, an unexpected double digestion was revealed for Ladder 6. After analyzing the entire
+            experimentation, we found that everything was according to the protocol, the DNA sequences were correctly
+            reviewed, and no problem was found in the <em>in silico</em> results. Evaluating the situation, we concluded
+            that there was a problem with the reagents because of their expiration date. To confirm our hypothesis, we
+            repeated the experiment, but nothing changed. </p>
+          <br>
+
+          <p class="cta5">
+            <span>Reflection</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> To apply the learning from this iteration, we realized that
+            some of our lab reagents were not in good enough condition to be used for experimentation. Initially, we
+            thought that this situation would apply to the agarose, the staining gel’s SYBR Safe, but after looking for
+            troubleshooting sheets, we realized that the unexpected gel stains could be an incorrect manipulation while
+            preparing it. In the same way, we evaluated the possibility of having star activity as a consequence of
+            rough
+            manipulation, but it could only occur during long incubation periods, which was not the case. Our new
+            question
+            was related to finding a way to correctly evaluate the plasmids' identity with a high level of confidence.
+            To
+            solve this problem, we consider the option of using other enzymes and take into account the troubleshooting
+            data sheets for obtaining better agarose gels. </p>
+          <br>
+
+          <b>2nd iteration:</b>
+
+          <p class="cta1">
+            <span>Design</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> After reflecting on our learnings we intended an analysis of
+            the most common troubleshooting data sheets related to the plasmid identification techniques, in which we
+            realized that we could improve our results by taking care of the agarose dissolving steps. In the same way,
+            we
+            recognized another enzyme currently in our lab, which also produces plasmid linearizations, hence we decided
+            to repeat the experiment by using EcoRI for LysCSA13 and LysSS instead of SmaI, which corresponded to the
+            failed results. Finally, our new ladder arrived just in time to try again, considering that some of the
+            possible causes of the non alignment between the DNA ladder and our samples could be because of the previous
+            uses of this shared lab reagent. </p>
+          <br>
+
+          <p class="cta2">
+            <span>Build</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> To perform this iteration we followed the current protocol
+            described in our Experiments Page, in which we consider a long time and less temperature to the dissolution
+            process of the agarose. Besides, we chose the EcoRI enzyme because it was also useful for our plasmids in
+            producing pDNA linearized. To be assured that it was a correct selection, we performed an <em>in silico</em>
+            digestion through SnapGene. At the same time, we incorporated the new Quick-Load Purple 1 kb Plus DNA
+            ladder.
+          </p>
+          <br>
+
+          <p class="cta3">
+            <span>Test</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> After running our 1% agarose electrophoresis we showed that
+            our
+            digestions coincided with the <em>in silico</em> results expected </p>
+          <br>
+
+          <p class="cta4">
+            <span>Learn</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> Once we analyzed our results, we discovered that using the
+            enzyme EcoRI, it was possible to linearize our plasmids, which gave us the possibility to compare our
+            results
+            with the expected bands. In fact, we verified that our constructs were correctly assembled, besides, we
+            improved the agarose gel’s quality so that unwanted spots didn’t appear. </p>
+          <br>
+
+          <p class="cta5">
+            <span>Reflection</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> The overall knowledge acquired for this iteration was related
+            to the reagents' usage. Through our first iteration, we faced a challenge because some of our plasmids
+            weren’t
+            correctly digested, instead, a double digestion occurred, which had no relation to our designing or assembly
+            method; We confirmed it once our constructions were digested with another enzyme. The only variation between
+            our constructions was the codifying sequences, and considering that the restriction site was in the acceptor
+            backbone, no change should have shown between the plasmids’ digestions, but only the LysK plasmid aligned
+            its
+            results with the expected ones. After performing the same experiment but using the EcoRI enzyme, all the
+            results coincided with the <em>in silico</em> simulation. Evaluating the situation and taking into account
+            that the 1 kb DNA ladder condition was not the best, we concluded that the obstacle was a consequence of
+            non-ideal storage conditions. </p>
+          <br>
+
+          <h2> Second Cycle: Protein induction</h2>
+          <br>
+          <b style="font-family: 'Bricolage Grotesque'; font-size: 1.3rem; margin-left: 10%; margin-right: 10%;"> First
+            sub-cycle </b>
+          <b>1st iteration:</b>
+          <p class="cta1">
+            <span>Design</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> Once we finalized the first cycle, we aimed to establish the
+            conditions that would be most favorable for protein induction. The gene expression system in E. coli
+            BL21(DE3)
+            is inducible by isopropyl β-D-1-thiogalactopyranoside (IPTG), so our objective was to predict the protein
+            yield based on different initial IPTG concentrations and analyze how the system behaves while accounting for
+            stochasticity. </p>
+          <br>
+
+          <p class="cta2">
+            <span>Build</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> The model was constructed by integrating the biochemical
+            reactions within the cell, encompassing the introduction of IPTG via simple diffusion. A representation of
+            each binding interaction was diagrammed, culminating in the development of a systematic set of Ordinary
+            Differential Equations (ODEs). The equations were derived in accordance with the Law of Mass Action,
+            ensuring
+            a foundation for the subsequent analyses conducted in the model. Additionally, we incorporated a range of
+            parameters obtained from literature, accompanied by the necessary assumptions to ensure model´s
+            tractability.
+          </p>
+          <br>
+
+          <p class="cta3">
+            <span>Test</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> In addressing the system ́s behavior, we utilized a two-fold
+            approach: solving the ODEs set and perfoming a Monte Carlo simulation. The simulation was executed by
+            incorporating a defined normal distribution of known parameters, enabling an assessment of the stochasticity
+            of biomolecular mechanisms. However, it was not feasible to simultaneously plot each scenario. </p>
+          <br>
+
+          <p class="cta4">
+            <span>Learn</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> During the analysis of this conflict, we identified a key
+            factor to the numerical solver we employed in MATLAB, the ODE15s. This solver dynamically adjusted steps to
+            accurately approximate the solutions based on the system´s evolving requirements. However, this led to
+            varying
+            matrix sizes for each scenario, presenting a challenge in attempting to graph all scenarios simultaneously
+            due
+            to these differing dimensions. </p>
+          <br>
+
+          <p class="cta5">
+            <span>Reflection</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> This insight shed light on a significant aspect influencing
+            our
+            visualization approach. In essence, this realization prompted us to reevaluate and fine-tune our strategy to
+            accommodate this variability effectively while ensuring the integrity and clarity of our results. </p>
+          <br>
+
+          <b> 2nd iteration</b>
+          <p class="cta1">
+            <span>Design</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> The primary objective was to optimize computer memory usage
+            without compromising data integrity. We employed strategies to streamline storage while dynamically adapting
+            to changing matrix sizes, by creating n copies of a matrix while adjusting the row and column dimensions
+            accodingly. </p>
+          <br>
+
+          <p class="cta2">
+            <span>Build</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> Incorporated into the Monte Carlo code, we developed an
+            algorithm to address this challenge. The algorithm compared matrices, identifying the required adjustments
+            for
+            each one without the need for data discarding. When discrepancies in sizes were detected, the algorithm
+            seamlessly utilized the last obtained data from each scenario and repeated it as necessary until all
+            matrices
+            were equal in size. </p>
+          <br>
+
+          <p class="cta3">
+            <span>Test</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> After implementing the algorithm, we were able to
+            successfully
+            run the code and achieve our primary objective of plotting each scenario. Nevertheless, upon comparison, the
+            simulation results did not align cohesively with the experimental results, which prompted an examination of
+            the model´s parameters. </p>
+          <br>
+
+          <p class="cta4">
+            <span>Learn</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> The unexpected and unusual behaviors observed in the system
+            led
+            us to a critical realization - certain parameters were inadequate. We couldn´t find these parameters in the
+            literature, and upon reviewing our approach, we identified that the established ranges for the equations
+            constants were not sufficiently robust. This insight caused us to reevaluate and refine them to ensure
+            accuracy and reliability in our model, so our instructor, Ph.D. Segio Medina, advised for parameter
+            estimation. </p>
+          <br>
+
+          <p class="cta5">
+            <span>Reflection</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> We emphasize the iterative nature of the DBTL cycle and the
+            importance of adaptability. Uncovered complexities and a disconnect between simulation and experimental
+            results, reveals the crucial role of accurate parameters in modeling. Though, we only had qualitative data
+            of
+            the SDS-PAGE gel electrophoresis images, depicting inductions at different concentrations and varying times
+            for each sample. </p>
+          <br>
+
+          <b> Third Iteration</b>
+          <p class="cta1">
+            <span>Design</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> To analyze protein distribution comprehensively, we
+            integrated
+            quasi-quatitative data extracted from ImageJ, an image analysis program. This data was coupled with a
+            heuristic algorithm designed to estimate the unknown kinetic parameters. </p>
+          <br>
+
+          <p class="cta2">
+            <span>Build</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> The process consisted of defining protein bands and
+            extracting
+            concentration data across the different gel lanes. Each gel lane corresponded to the same initial
+            concentration, differing only in terms of induction time points within the same sample. Additionally,
+            assumptions were established to streamline the calculation of endolysin concentration from total protein.
+            The
+            data analyzed formed the basis for creating an objective function in a Genetic Algorithm (GA) to calculate
+            and
+            minimize the error between experimental results and our model. The GA iteratively optimized kinetic
+            parameters
+            of the ODEs system by comparing simulated protein concentrations with experimental data. </p>
+          <br>
+
+          <p class="cta3">
+            <span>Test</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> Utilizing the ODE15 solver in MATLAB to conduct the
+            simulation
+            based on the established model. The simulation was run for each initial IPTG concentration. The primary
+            evaluation criterion was the convergence of the algorithm to a stable point, indicating that the GA
+            effectively minimized the error between simulated protein concentrations and the experimental data. Another
+            critical measure of success was the consistency in the converged point across several generations of
+            iterations </p>
+          <br>
+
+          <p class="cta4">
+            <span>Learn</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> We observed consistent patterns in the graphs generated
+            during
+            the simulation, consistently displaying three lines corresponding to the different induction concentrations.
+            Notably, each graph consistently stabilized at a non-zero point, suggesting that our solution space might be
+            overly complex or potentially suffering from overfitting. However, this was not a major concern as the
+            coefficients effectively described protein production under varying conditions.
+          </p>
+          <br>
+
+          <p class="cta5">
+            <span>Reflection</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> Across some of the graphs, several generations of iterations
+            appeared as though the optimization did not show apparent improvement. This observation hinted at the
+            possibility that the coordinates leading to the optimum for each line, specifically the minimum value,
+            remained consistent. The convergence to the same point in parameter estimation suggested a stable and
+            optimal
+            solution for each line, indicating a robust and reliable estimation process. </p>
+          <br>
+
+          <b style="font-family: 'Bricolage Grotesque'; font-size: 1.3rem; margin-left: 10%; margin-right: 10%;"> Second
+            sub-cycle </b>
+
+          <b>First iteration</b>
+          <p class="cta1">
+            <span>Design</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> We planned to perform the protein synthesis by inducing our
+            transformed <em>E. coli</em> BL21(DE3) strains which contain the three plasmid constructions previously
+            identified. </p>
+          <br>
+
+          <p class="cta2">
+            <span>Build</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> The experiment was performed as described on our Experiments
+            Page. Through this protocol, we induced each endolysin once the inoculums reached 0.4–0.5 OD (600 nm) at 0.2
+            mM, 0.5 mM, and 1 mM IPTG. Two controls were added: the <em>E. coli BL21(DE3)</em> non-modified, and the
+            <em>E. coli BL21(DE3)</em> transformed non-induced. All of them were incubated for 6 hours. To determine the
+            optimal IPTG concentration to reach the highest level of protein production, each hour's samples were
+            harvested and lysed for their posterior SDS-PAGE analysis. In the same way, we separated the soluble and
+            insoluble fractions by centrifugation. Taking into account the proteins’ weight, our polyacrylamide gels
+            were
+            prepared at 6% and 12% for the concentrator and separator phases, respectively.
+          </p>
+          <br>
+
+          <p class="cta3">
+            <span>Test</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> Our results didn't show the LysCSA13-ABD and the
+            PCNP-CecA-LysSS proteins , but the LysK appeared successfully , and the protein soluble fraction was
+            identified (Figure 14). </p>
+          <br>
+
+          <p class="cta4">
+            <span>Learn</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> appear in the SDS-PAGE, while others did. All the processes
+            were prepared and performed in the same way. In the first place, we could see that, for LysK-ABD-SH3B30 the
+            proper bands appeared, in which we could identify that the best IPTG concentration was 0.2 mM for 5 hours
+            and
+            the protein was in the soluble fraction. Roughly speaking, we confirmed that our construction was correctly
+            designed. On the other hand, LysCSA13-ABD didn’t show bands for any of the samples, but we know the gel was
+            correctly run because of the protein ladder appearance. In addition, the PCNP-CecA-LysSS only showed results
+            in the negative controls (non-induced, and non-transformed strains). </p>
+          <br>
+
+          <p class="cta5">
+            <span>Reflection</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> While it is true that the results for this iteration included
+            good news in the development of the product, the obstacles were really challenging. To analyze the
+            situation,
+            we actually know that all the processes were the same for each of the samples, but the results were
+            completely
+            different for each one. Knowing that LysK-ABD-SH3B30 achieved the expected results, we can be assured that
+            our
+            protocols work correctly. Taking into account that for LysCSA13-ABD none of the samples showed bands, we
+            assumed that the problem was on the lysis step since we are completely sure that the cell growth was the
+            same
+            for each of the samples, as was verified through the optical density. In that case, our first question for
+            the
+            second iteration was: “Was the lysis exactly the same for each sample? How can we improve the lysis
+            efficiency?” Considering that the process depends completely on temperature, we know how to counteract this
+            kind of issue. To solve this problem, we needed to prolong the incubation time. In the case of the
+            PCNP-CecA-LysSS, the challenge looked harder. Evaluating that only the transformed strains showed no bands,
+            we
+            were completely confident that something about our protein was affecting cell growth, but it also confirmed
+            that our construction worked. Our main hypothesis was that our protein, which lyses <em>E. coli</em>
+            strains,
+            was currently toxic for our host. In the background research, we didn’t find anything about killing the
+            specific <em>E. coli BL21(DE3)</em> strain by expressing each of the parts that compound our
+            fusion-endolysin,
+            but results demonstrated that it could be occurring. The main question to solve is: “Was our protein lysing
+            the bacteria? What can we do to prevent it?” To be assured that our results were right, we planned to repeat
+            the experiment before assuming that our hypothesis could be true.</p>
+          <br>
+
+          <b> 2nd iteration</b>
+          <p class="cta1">
+            <span>Design</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> Before evaluating the first iteration of this semi-cycle, we
+            decided to check our hypothesis by changing the lysis incubation. Considering that the LysK protein revealed
+            that the process worked, and as a consequence of researching other ways to lysate without using additional
+            reagents, we concluded that extending the incubation time from 5 min up to 10 min and adding a posterior
+            step in boiling water for 5 min, there was no way of having unlysed cells in the SDS-PAGE wells. </p>
+          <br>
+
+          <p class="cta2">
+            <span>Build</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> We performed the protocol for the protein induction kinetics
+            as described in our Experiments Page, taking into account the lysis incubation changes. We induced both
+            endolysins once the inoculums reached 0.4–0.5 OD (600 nm) at 0.2 mM, 0.5 mM, and 1 mM IPTG. Two controls
+            were added: the <em>E. coli BL21(DE3)</em> non-modified, and the <em>E. coli BL21(DE3)</em> transformed
+            non-induced. All of them were incubated for 6 hours. To determine the optimal IPTG concentration to reach
+            the highest level of protein production, each hour's samples were harvested and heat-lysed for their
+            posterior SDS-PAGE analysis. In the same way, we separated the soluble and insoluble fractions by
+            centrifugation. Taking into account the proteins’ weight, our polyacrylamide gels were prepared at 6% and
+            12% for the concentrator and separator phases, respectively. </p>
+          <br>
+
+          <p class="cta3">
+            <span>Test</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> After the induction and SDS-PAGE electrophoresis we
+            identified the expected LysCSA13-ABD bands, as well as its optimal conditions at 0.2 mM for 6 hours. In
+            addition, we identified that this protein was in the insoluble fraction. On the other hand, PCNP-CecA-LysSS
+            notice better bands, but only for the negative controls.</p>
+          <br>
+
+          <p class="cta4">
+            <span>Learn</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> As shown in the test stage, increasing the incubation time
+            and incorporating a posterior phase in boiling water improved the lysis method. For this iteration, the
+            protein LysCSA13-ABD appeared and matched the expected band weight. We identified that the optimal
+            conditions were induction at 0.2 mM IPTG with an incubation period of 6 hours. In the same way, we confirmed
+            that it’s an insoluble protein. Unfortunately, the modification only improved the lysis phase, and for the
+            PCNP-CecA-LysSS protein, the problem still appears. </p>
+          <br>
+
+          <p class="cta5">
+            <span>Reflection</span>
+          </p>
+          <p style="margin-left: 10%; margin-right: 10%;"> By using the engineering cycle, one of our current problems
+            was solved. In the same way, we verified that the PCNP-CecA-LysSS issues were not related to the lysis
+            phase. Our hypothesis about the toxicity of our protein was more accurate. In fact, it confirms that our
+            protein was correctly designed and possesses functional enzymatic activity. The new question was about how
+            we could prevent the early death of our cell host and effectively produce our third endolysin. </p>
+          <br>
+
+          <b style="font-family: 'Bricolage Grotesque'; font-size: 1.3rem; margin-left: 10%; margin-right: 10%;">Second
+            Sub-cycle Protein: Purification Math Model </b>
+          <b> To be continued...</b>
 
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
     </div>
+  </div>
 
   </div>
 

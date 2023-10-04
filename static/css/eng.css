@@ -333,7 +333,7 @@
       width: 150px;
       height: 150px;
       line-height: 100px;
-      margin-left: -40px;
+      margin-left: -100px;
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
       font-size: 14px;
       color:white;
@@ -368,11 +368,11 @@
       .description1, .description2, .description3, .description4, .description5, .description6, .description7 {
         display: none;
         position: relative;
-        top: -200%;
+        top: -100%;
         left: 0%;
         padding: 10px;
-        background-color: rgba(0, 0, 0, 0.7);
-        color: white;
+        background-color: #F3F3FA;
+        color: #302535;
         border-radius: 5px;
         width: 500px;
       }
@@ -384,14 +384,15 @@
       }
        .selector.open li:nth-child(2):hover .description2 {
         display: inline-block;
-        transform: rotate(-52deg);
-        margin-top: -50px;
+        transform: rotate(-90deg);
+        margin-top: -500px;
         margin-left:-50px;
+
       }
         .selector.open li:nth-child(3):hover .description3 {
         display: inline-block;
-        transform: rotate(-103deg);
-        margin-top: -170px;
+        transform: rotate(180deg);
+        margin-top: -500px;
         margin-left:-300px;
           
       }
