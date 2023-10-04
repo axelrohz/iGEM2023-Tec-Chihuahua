@@ -17,6 +17,7 @@ padding: 0;
 background-color: #F3F3FA;
 }
 
+/*Para los desplegables (p. ej. las referencias)*/
 .accordion {
 width: 90%;
 max-width: 1000px;
@@ -34,8 +35,6 @@ margin-bottom: 20px;
 border: solid 0.5px #EBEBF1;
 
 }
-
-
 .accordion-item-header {
 min-height: 60px;
 font-size: 1.2rem;
@@ -244,3 +243,22 @@ transition-delay: 0.3s;
 opacity: 0.5;
 transition: 0.25s;
 }
+
+.refer{
+    max-width: 100%;
+}
+
+.refer .accordion-item{
+    width: 100%;
+    box-shadow: 7px 7px #447d9c;
+}
+
+@media screen and (max-width: 780px){
+    .accordion-item-body-content p{
+        margin: 0;
+    }    
+    .accordion-item {
+        width: 100%;
+        }
+}
+

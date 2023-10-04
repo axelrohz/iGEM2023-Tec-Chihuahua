@@ -69,8 +69,8 @@
    
    /* Estilos para los botones en forma de div */
    .methods {
-    width: 180px;
-    height: 180px;
+    width: 170px;
+    height: 170px;
     left: 35%;
     color: #C55B75;
     background-color: transparent;
@@ -81,13 +81,13 @@
     transition: background-color 0.5s, transform 0.5s;
     overflow: hidden;
     z-index: 10;
-    top: 37vh;
+    top: 77%;
 }
 .overview {
-    top: 50%;
-    left: -17%;
-    width: 180px;
-    height: 180px;
+    top: 77%;
+    left: -10%;
+    width: 170px;
+    height: 170px;
     color: #5BC5AB;
     background-color: transparent;
     border: 5px solid #5BC5AB;
@@ -97,10 +97,10 @@
     position: absolute;
 }
 .results {
-    top: 64%;
-    left: 95%;
-    width: 226px;
-    height: 223px;
+    top: 77%;
+    left: 82%;
+    width: 170px;
+    height: 170px;
     color: #447D9C;
     background-color: transparent;
     border: 5px solid #447D9C;
@@ -110,10 +110,10 @@
     position: absolute;
 }
 .Unmet {
-    top: 18%;
-    left: 142%;
-    width: 226px;
-    height: 223px;
+    top: 77%;
+    left: 129%;
+    width: 170px;
+    height: 170px;
     color: #D27063;
     background-color: transparent;
     border: 5px solid #D27063;
@@ -123,10 +123,10 @@
     position: absolute;
 }
 .Long {
-    top: 18%;
+    top: 77%;
     left: -54%;
-    width: 175px;
-    height: 175px;
+    width: 170px;
+    height: 170px;
     color: #F6AE2D;
     background-color: transparent;
     border: 5px solid #F6AE2D;
@@ -279,12 +279,12 @@
    }
    /* Estilo para los títulos y contenido de los div de los botones */
    .tituloBoton {
-    font-size: 20px;
+    font-size: 12px;
     font-weight: bold;
     align-items: center;
     margin: auto auto;
     text-align: center;
-  }
+}
   
    
    .contentBoton {
@@ -313,10 +313,10 @@
    /*gif prototipo */
    .prototype {
     max-width: 100%;
-    height: 75%;
+    height: 81%;
     position: relative;
-    top: 28vh;
-    left: 82vh;
+    top: -24vh;
+    left: 19vh;
     z-index: 500;
     overflow: hidden;
 }
@@ -1069,4 +1069,93 @@
 .h--timeline-line li:nth-child(odd) .h--timeline-date--selected::before{
     bottom: -3px;
 }
-/**/
+/*diagrama circulito*/
+.CText {
+    width: 100%;
+    color: black;
+    padding-top: -7px;
+    padding-left: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+/* Media query para pantallas más pequeñas (como teléfonos móviles) */
+@media screen and (max-width: 768px) {
+    .CText {
+        padding-top: 10px;
+        padding-left: 10px;
+        font-size: 1.8rem; /* Reducimos aún más el tamaño de fuente para dispositivos móviles */
+    }
+}
+.fraseemprende {
+    text-align: justify;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Quicksand';
+    text-align: center;
+    line-height: 1.5;
+    margin-left: 43px !important;
+    color: black;
+    padding-top: -12vh;
+    width: 140%;
+    height: 32%;
+    margin-left: -14%!important;
+    top: 10px!important;
+}
+.eti {
+    width: 84%;
+    align-content: center;
+    margin-left: 28vh;
+}
+/*frase del inicio despues del welcome page*/
+.fraseInicio{
+    
+    height: 24vw;
+    margin-bottom: 2vw;
+    padding-top: 1vw;
+    color: #447D9C;
+    font-weight: bold;
+  }
+  .fraseAcomodo{
+    margin: 5vw auto;
+    width: fit-content;
+  }
+  
+  .phrase{
+    position: relative;
+    width: 100%;
+    height: 3vw;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fraseModel {
+    margin: 5vw auto;
+    position: relative;
+    width: 51.5%;
+    font-size: 40px;
+    display: block;
+    text-align: center;
+    font-family: "Bricolage Grotesque", monospace;
+}
+  
+  .char{
+    font-size: 40px;
+    height: 40px;
+    animation: an 1s ease-out 1 both;
+    display: inline-block;
+  }
+  
+  @keyframes an{
+    from{
+      opacity: 0;
+      transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+    }
+    to{
+      opacity: 1;
+      transform: perspective(500px) translate3d(0, 0, 0);
+    }
+  }
+  .dairy{
+    width: 100%;
+  }

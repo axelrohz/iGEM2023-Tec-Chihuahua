@@ -42,6 +42,7 @@
   height: 500px;
   width: 83vw;
   margin-bottom: -120px;
+  margin-left: 8%;
  }
  
  .card1 {
@@ -329,9 +330,10 @@
  
  .button-container {
   display: inline-block;
-  width: 98vw;
+  width: 100vw;
   margin-bottom: 2vw;
   height: 607px;
+  background: linear-gradient(#F2F2FAff,white);
  }
  
  /* Estilos para los botones en forma de div */
@@ -690,6 +692,7 @@
   line-height: 1.5;
   margin-left: 43px !important;
   color: black;
+  max-width: 90%;
  }
  
  .Content{
@@ -1955,6 +1958,633 @@ margin-left: 30%;
 }
 
 
+/*COSAS DEL DIAGRAMA DE VALORES*/
+.valores_diagrama{
+  height: 35vw;
+  width: 80%;
+  margin-left: 19vw;
+  margin-bottom: 2vw;
+}
+
+.title_circulo{
+  position: relative;
+  top:3vw;
+  margin-left: 1.5vw;
+}
+
+/*cosas de los circulos de valores*/
+
+
+.public_health{
+  background-color: #459e89;
+  border-radius: 50%;
+  width: 10vw;
+  height: 10vw;
+  top:7vw;
+  left: 1vw;
+  position: relative;
+  color: black;
+  font-weight: bold;
+}
+
+.public_health:hover{
+  transform: scale(3);
+  position: relative;
+  top:9vw;
+  z-index: 3;
+  left: 10vw;
+}
+
+/*para que el titulo del boton no se vea en hover*/
+.public_health:hover .title_circulo{
+  visibility:hidden;
+}
+
+
+/*para que el texto no se vea y el titulo sin que este en hover*/
+.relation{
+  visibility: hidden;
+}
+.public_health:hover .relation{
+  visibility: visible;
+}
+
+/*acomodar titulo y texto de relacion  */
+
+.titulo_relation{
+  position: relative;
+  left: 3vw;
+  bottom: 1.5vw;
+  font-size: 5px;
+  width: fit-content;
+}
+.descripcionR{
+  font-size: 4.5px;
+  position: relative;
+  bottom: 1.7vw;
+  right: 0.5vw;
+  width: 8vw;
+}
+
+/*para que el texto no se vea y el titulo sin que este en hover*/
+.implementation{
+  visibility: hidden;
+}
+.public_health:hover .implementation{
+  visibility: visible;
+}
+
+/*para acomodar el titulo y texto de implementacion*/
+.titulo_implementation{
+  position: relative;
+  left: 3.5vw;
+  bottom: 2.5vw;
+  width: fit-content;
+  font-size: 5px;
+}
+.descripcionI{
+  font-size: 4.5px;
+  position: relative;
+  bottom: 3vw;
+  right: 0.5vw;
+  width: 8vw;
+}
+
+
+/*cosas del valor de anti waste*/
+
+.anti_waste{
+  background-color: rgb(89, 185, 162);
+  border-radius: 50%;
+  width: 10vw;
+  height: 10vw;
+  position: relative;
+  left: 10vw;
+  bottom: 3vw;
+  color: black;
+  font-weight: bold;
+}
+
+.anti_waste:hover{
+  transform: scale(3.5);
+  position: relative;
+  left: 15vw;
+  z-index: 3;
+}
+/*para que el titulo del boton no se vea en hover*/
+.anti_waste:hover .title_circulo{
+  visibility:hidden;
+}
+
+/*para que se cambie a visible las cosas */
+.anti_waste:hover .relation{
+  visibility: visible;
+}
+.anti_waste:hover .implementation{
+  visibility: visible;
+}
+
+/*cosas del boton integrity*/
+
+.integrity{
+  background-color: rgb(91, 197, 171);
+  border-radius: 50%;
+  width: 10vw;
+  height: 10vw;
+  position: relative;
+  left: 19vw;
+  bottom: 13vw;
+  color: black;
+  font-weight: bold;
+}
+
+.integrity:hover{
+  transform: scale(3);
+  position: relative;
+  left: 20vw;
+  z-index: 3;
+}
+/*para que el titulo del boton no se vea en hover*/
+.integrity:hover .title_circulo{
+  visibility:hidden;
+}
+/*para que se cambie a visible las cosas */
+.integrity:hover .relation{
+  visibility: visible;
+}
+.integrity:hover .implementation{
+  visibility: visible;
+}
+
+/*cosas del boton privaci*/
+
+.privacy{
+  background-color: rgb(129, 209, 191);
+  border-radius: 50%;
+  width: 10vw;
+  height: 10vw;
+  position: relative;
+  left: 27vw;
+  bottom: 23vw;
+  color: black;
+  font-weight: bold;
+}
+
+.privacy:hover{
+  transform: scale(3);
+  position: relative;
+  left: 25vw;
+  z-index: 3;
+}
+/*para que se cambie a visible las cosas */
+.privacy:hover .relation{
+  visibility: visible;
+}
+.privacy:hover .implementation{
+  visibility: visible;
+}
+
+/*para que el titulo del boton no se vea en hover*/
+.privacy:hover .title_circulo{
+  visibility:hidden;
+}
+
+/*cosas del boton sustainability*/
+
+.sustainability{
+  background-color: rgb(167, 220, 211);
+  border-radius: 50%;
+  width: 10vw;
+  height: 10vw;
+  position: relative;
+  left: 34vw;
+  bottom: 33vw;
+  color: black;
+  font-weight: bold;
+}
+
+.sustainability:hover{
+  transform: scale(3);
+  position: relative;
+  left: 30vw;
+  z-index: 3;
+}
+/*para que el titulo del boton no se vea en hover*/
+.sustainability:hover .title_circulo{
+  visibility:hidden;
+}
+/*para que se cambie a visible las cosas */
+.sustainability:hover .relation{
+  visibility: visible;
+}
+.sustainability:hover .implementation{
+  visibility: visible;
+}
+
+
+
+
+/*DIAGRAMA GOTAS*/
+.diagrama_gotas{
+  position: relative;
+  margin-left: 3vw;
+  max-height: 700px;
+  transform: scale(0.5);
+  margin-top: -8vw;
+  margin-bottom: 5vw;
+}
+
+
+.titulo_gota1, .titulo_gota2, .titulo_gota3, .titulo_gota4, .titulo_gota5, .titulo_gota6, .titulo_gota7, .titulo_gota8{
+  position: relative;
+  rotate: -45deg;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+}
+
+.titulo_gota1{
+  margin-left: -9px;
+  margin-bottom: 66px;
+  margin-top: 10px;
+  padding-top: 34px;
+}
+
+.titulo_gota2{
+  margin-left: 7px;
+  margin-bottom: 66px;
+  margin-top: 12px;
+  padding-top: 27px;
+}
+.titulo_gota3{
+  margin-left: -15px;
+  margin-bottom: 66px;
+  margin-top: 10px;
+  padding-top: 45px;
+}
+
+.titulo_gota4{
+  margin-left: -9px;
+  margin-bottom: 66px;
+  margin-top: 10px;
+  padding-top: 34px;
+}
+
+.titulo_gota5{
+  margin-left: -2px;
+  margin-bottom: 66px;
+  margin-top: 10px;
+  padding-top: 34px;
+}
+
+.titulo_gota6{
+  margin-left: 2px;
+  margin-bottom: 66px;
+  margin-top: 10px;
+  padding-top: 45px;
+}
+
+.titulo_gota7{
+  margin-left: -5px;
+  margin-bottom: 66px;
+  margin-top: 10px;
+  padding-top: 44px;
+}
+
+.titulo_gota8{
+  margin-left: -9px;
+  margin-bottom: 66px;
+  margin-top: 10px;
+  padding-top: 34px;
+}
+
+.texto_gota1, .texto_gota2, .texto_gota3, .texto_gota4, .texto_gota5, .texto_gota6, .texto_gota7, .texto_gota8 {
+  display: none;
+  position: relative;
+  font-size: 0.4vw;
+  top: 1vw;
+  left: 2vw;
+  width: 4vw;
+  rotate: -45deg;
+}
+
+
+.gota1{
+  background-color: #BC3F5C;
+  position: relative;
+  z-index: 2;
+  width: 7vw;
+  bottom: 7vw;
+  left: -9vw;
+  z-index: 2;
+  height: 7vw;
+  border-radius: 0% 50% 50% 50%;
+  transform-origin: left;
+  transform: rotate(45deg) scale(3);
+}
+
+.gota1:hover{
+  transform: scale(5);
+  rotate: 45deg;
+  z-index: 3;
+  transform-origin: left;
+}
+
+.gota1:hover .texto_gota1{
+  display: grid;
+  rotate: 314deg;
+  width: 5.3vw;
+  margin-left: -1.4vw;
+  margin-top: -2.5vw;
+  font-size: 0.4vw;
+  text-align: center;
+  padding-top: 15px;
+  color: white;
+}
+
+.gota1:hover .titulo_gota1{
+  display: none;
+}
+
+.gota2{
+  background-color: #B76277;
+  position: relative;
+  z-index: 2;
+  width: 7vw;
+  bottom: 7vw;
+  left: 18vw;
+  z-index: 2;
+  height: 7vw;
+  border-radius: 0% 50% 50% 50%;
+  transform-origin: left;
+  transform: rotate(45deg) scale(3);
+}
+
+.gota2:hover{
+  display: contents;
+  transform: scale(5);
+  rotate: 45deg;
+  transform-origin: left;
+  z-index: 3;
+}
+
+.gota2:hover .texto_gota2{
+  display: grid;
+  rotate: 314deg;
+  width: 5.3vw;
+  margin-left: -1.2vw;
+  margin-top: -2.5vw;
+  font-size: 0.4vw;
+  text-align: center;
+  color: white;
+}
+
+.gota2:hover .titulo_gota2{
+  display: none;
+}
+
+
+.gota3{
+  background-color: #BA796C;
+  position: relative;
+  z-index: 2;
+  width: 7vw;
+  bottom: 21vw;
+  left: 46.5vw;
+  height: 7vw;
+  border-radius: 0% 50% 50% 50%;
+  transform: rotate(45deg);
+  transform-origin: left;
+  transform: rotate(45deg) scale(3);
+}
+
+.gota3:hover{
+  transform: scale(5);
+  rotate: 45deg;
+  transform-origin: left;
+  z-index: 3;
+}
+
+.gota3:hover .texto_gota3{
+  display: grid;
+  rotate: 314deg;
+  width: 5.3vw;
+  margin-left: -1.2vw;
+  margin-top: -2.5vw;
+  font-size: 0.4vw;
+  text-align: center;
+  color: white;
+}
+
+.gota3:hover .titulo_gota3{
+  display: none;
+}
+
+.gota4{
+  background-color: #C98A64;
+  position: relative;
+  z-index: 2;
+  width: 7vw;
+  bottom: 23vw;
+  left: 76.5vw;
+  height: 7vw;
+  border-radius: 0% 50% 50% 50%;
+  transform: rotate(45deg);
+  transform-origin: left;
+  transform: rotate(45deg) scale(3);
+}
+
+.gota4:hover{
+  transform: scale(5);
+  rotate: 45deg;
+  transform-origin: left;
+  z-index: 3;
+}
+
+.gota4:hover .texto_gota4{
+  display: grid;
+  rotate: 314deg;
+  width: 5.3vw;
+  margin-left: -1.2vw;
+  margin-top: -2.5vw;
+  font-size: 0.4vw;
+  text-align: center;
+  color: white;
+}
+
+.gota4:hover .titulo_gota4{
+  display: none;
+}
+
+.gota5{
+  background-color: #F6AE2D;
+  position: relative;
+  z-index: 2;
+  width: 7vw;
+  bottom: 1vw;
+  left: -10vw;
+  height: 7vw;
+  border-radius: 0% 50% 50% 50%;
+  transform: rotate(45deg);
+  transform-origin: left;
+  transform: rotate(45deg) scale(3);
+}
+
+.gota5:hover{
+  transform: scale(5);
+  rotate: 45deg;
+  transform-origin: left;
+  z-index: 3;
+}
+
+.gota5:hover .texto_gota5{
+  display: grid;
+  rotate: 314deg;
+  width: 6.2vw;
+  margin-left: -1.5vw;
+  margin-top: -2.5vw;
+  font-size: 0.365vw;
+  text-align: center;
+  color: white;
+}
+
+.gota5:hover .titulo_gota5{
+  display: none;
+}
+
+.gota6{
+  background-color: #ABBA6D;
+  position: relative;
+  z-index: 2;
+  width: 7vw;
+  bottom: 1vw;
+  left: 15.5vw;
+  height: 7vw;
+  border-radius: 0% 50% 50% 50%;
+  transform: rotate(45deg);
+  transform-origin: left;
+  transform: rotate(45deg) scale(3);
+}
+
+.gota6:hover{
+  transform: scale(5);
+  rotate: 45deg;
+  transform-origin: left;
+  z-index: 3;
+}
+
+.gota6:hover .texto_gota6{
+  display: grid;
+  rotate: 314deg;
+  width: 5.3vw;
+  margin-left: -0.9vw;
+  margin-top: -2.5vw;
+  font-size: 0.35vw;
+  text-align: center;
+  color: white;
+  padding-top: 0.4vw;
+}
+
+.gota6:hover .titulo_gota6{
+  display: none;
+}
+
+.gota7{
+  background-color: #5BC5AA;
+  position: relative;
+  z-index: 2;
+  width: 7vw;
+  bottom: 15vw;
+  left: 46.5vw;
+  height: 7vw;
+  border-radius: 0% 50% 50% 50%;
+  transform: rotate(45deg);
+  transform-origin: left;
+  transform: rotate(45deg) scale(3);
+}
+
+.gota7:hover{
+  transform: scale(5);
+  rotate: 45deg;
+  transform-origin: left;
+  z-index: 3;
+}
+
+.gota7:hover .texto_gota7{
+  display: grid;
+  rotate: 314deg;
+  width: 6.1vw;
+  margin-left: -1.3vw;
+  margin-top: -2.5vw;
+  font-size: 0.4vw;
+  text-align: center;
+  color: white;
+  padding-top: 0.4vw;
+}
+
+.gota7:hover .titulo_gota7{
+  display: none;
+}
+
+.gota8{
+  background-color: #5BE1E6;
+  position: relative;
+  z-index: 2;
+  width: 7vw;
+  bottom: 15vw;
+  left: 76.5vw;
+  height: 7vw;
+  border-radius: 0% 50% 50% 50%;
+  transform: rotate(45deg);
+  transform-origin: left;
+  transform: rotate(45deg) scale(3);
+}
+
+.gota8:hover{
+  transform: scale(5);
+  rotate: 45deg;
+  transform-origin: left;
+  z-index: 3;
+}
+
+.gota8:hover .texto_gota8{
+  display: grid;
+  rotate: 314deg;
+  width: 5.6vw;
+  margin-left: -0.9vw;
+  margin-top: -2.5vw;
+  font-size: 0.4vw;
+  text-align: center;
+  color: white;
+  padding-top: 0.2vw;
+}
+
+.gota8:hover .titulo_gota8{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*ajuste tabla y colores*/
 .tabla_chemicalReactios th, .tabla_chemicalReactios td{
    border: 2px solid #C55B75;
@@ -1966,7 +2596,7 @@ margin-left: 30%;
 
 
 .INDEX{
-   display: none;
+  display: none;
 }
 
 .instructionDiagram{
@@ -1978,7 +2608,7 @@ margin-left: 30%;
   padding-right: 20px;
   height: 50px;
   border-radius: 25px;
-  margin-left: 330px;
+  margin-left: 18vw;
   margin-bottom: 45px;
 }
 
@@ -2047,10 +2677,10 @@ transition: 1s ease-in-out;
 
 .card-text p {
 margin-bottom: 30px;
-font-size: 1rem;
+font-size: 1.4rem;
 text-align: center;
 transition: 1s ease-in-out;
-margin: 10px;
+margin: 31px;
 }
 
 .card:hover {
@@ -2164,7 +2794,7 @@ max-width: 850px;
 top: 7vw;
 height: auto;
 position: relative;
-z-index: 10;
+z-index: -1;
 }
 
 .card1 {
@@ -2183,6 +2813,11 @@ z-index: 10;
 }
 
 .foto_pequeño_productor{
+  margin-left: 14vw;
+  max-width: 50vw;
+}
+
+.foto_leche{
   margin-left: 14vw;
   max-width: 50vw;
 }
@@ -2206,6 +2841,16 @@ z-index: 10;
   margin-left: 14vw;
   max-width: 50vw;
 }
+.foto_impact{
+  margin-left: 10vw;
+  max-width: 30vw;
+}
+.flecha_1{
+  margin-left: 10vw;
+  max-width: 30vw;
+}
+
+
 .cause h1 {
   margin: auto;
   align-self: center;
@@ -2353,7 +2998,7 @@ z-index: 10;
 
 
 .homeCardsContainer{
-  width: 98%;
+  width: 100vw;
   height: 40vw;
   padding-left: 6vw;
   
@@ -3091,5 +3736,36 @@ transform: scaleX(-1);
   .dotIndex:hover .dotText{
     opacity: 0.5;
     transition: 0.25s;
+  }
+  
+  .contOurBeg, .tituloOurBeg{
+    margin-left: 11%;
+  }
+
+  .instr_selector{
+    background: #309b8d;
+    color: white;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 30%;
+    margin-top: 5%;
+    max-width: fit-content;
+  }
+
+  .gotas{
+    margin-left: -10%;
+    margin-top: 10%;
+  }
+
+  .title_whereStarted{
+    margin-top: -5vw;
+  }
+
+  .hipervinculoEntre{
+    color: #5BC5AB !important;
+    text-decoration: underline !important;
   }
   

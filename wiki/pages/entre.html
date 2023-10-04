@@ -5,33 +5,38 @@
 
 {% block page_content %}
 
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="../../static/css/model.css">
-		<link href="{{ url_for('static', filename = 'css/model.css') }}" rel="stylesheet">
-		<link href="{{ url_for('static', filename = 'css/empre.css') }}" rel="stylesheet">
-		<script type=”text/javascript” src=”http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML”></script>
-	</head>
-	<body>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../static/css/human.css">
+	<link href="{{ url_for('static', filename = 'css/human.css') }}" rel="stylesheet">
+	<link href="{{ url_for('static', filename = 'css/empre.css') }}" rel="stylesheet">
+
+	<link href="{{ url_for('static', filename = 'css/experiments.css') }}" rel="stylesheet">
+	<link href="{{ url_for('static', filename = 'css/timeline.css') }}" rel="stylesheet">
+	
+	<link href="{{ url_for('static', filename = 'css/circleDiagramENT.css') }}" rel="stylesheet">
+	<script type=”text/javascript”
+		src=”http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML”></script>
+	<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+</head>
+
+<body>
+	<div class="dad">
 		<div class="parallax-team">
 			<script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
 			<link rel="stylesheet" href="static/css/parts.css">
 			<link rel="stylesheet" href="static/css/waveHead.css">
-			
-		  
 			<div class="headParts">
 				<div class="headingParts">
-					<div class="textParts">
-						<h1>Entrepreneurship</h1>
-						
+					<div class="typewriter">
+						<h1 class="Title">Entrepreneurship</h1>
 					</div>
-					<img  class="prototype" src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/mockup-gif-1-unscreen.gif">
 				</div>
-			
 				<svg class="waveParts" id="visual" viewBox="0 0 960 540" xmlns="http://www.w3.org/2000/svg"
 					xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
 					<g>
@@ -56,10 +61,7 @@
 							d="M0 485L20 486.7C40 488.3 80 491.7 120 490.5C160 489.3 200 483.7 240 479.5C280 475.3 320 472.7 360 466.8C400 461 440 452 480 449.5C520 447 560 451 600 458.2C640 465.3 680 475.7 720 478.3C760 481 800 476 840 469C880 462 920 453 940 448.5L960 444L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
 							fill="#5BC5AB"></path>
 					</g>
-			
-			
 				</svg>
-			
 				<script>
 					const tween = KUTE.fromTo(
 						'#wave11',
@@ -84,1060 +86,1024 @@
 						{ repeat: 999, duration: 3000, yoyo: true }
 					).start();
 				</script>
-			
-			
-			</div> 
-	
-   	 <!--Seccion que ya sirve, no mover-->
-   	 <div class="button-container">
+			</div>
+		</div>
+	</div>
+
+
+	<!--Seccion que ya sirve, no mover-->
+	<div class="button-container">
 		
-   		 <div class="logocontainer">
-   			 <div class="methods">
-   				 <div class="button-content">
-   					 <p class="tituloBoton">Solution</p>
-   					 <p class="contentBoton">
-   						 <br>
-   						 How We Did It
-   					 </p>
-   					 <button onclick="showSection('sectionMethods')" class="learnMore">Go to section</button>
-   				 </div>
-   			 </div>
-   			 <div class="overview">
-   				 <div class="button-content">
-   					 <p class="tituloBoton">Development Plans</p>
-   					 <p class="contentBoton">
-   						 <br>
-   						 The Big Picture
-   					 </p>
-   					 <button onclick="showSection('sectionOverview')" class="learnMore">Go to section</button>
-   				 </div>
-   			 </div>
-   			 <div class="results">
-   				 <div class="button-content">
-   					 <p class="tituloBoton">Skills, capabilities and stakeholders</p>
-   					 <p class="contentBoton">
-   						 <br>
-   						 What We Found
-   					 </p>
-   					 <button onclick="showSection('sectionResults')" class="learnMore">Go to section</button>
-   				 </div>
-   			 </div>
+		<div class="logocontainer">
+			<div class="methods">
+				<div class="button-content">
+					<p class="tituloBoton">Development Plans</p>
+					<button onclick="showSection('sectionMethods')" class="learnMore">Go to section</button>
+				</div>
+			</div>
+			<div class="overview">
+				<div class="button-content">
+					<p class="tituloBoton">Solution</p>
+					<button onclick="showSection('sectionOverview')" class="learnMore">Go to section</button>
+				</div>
+			</div>
+			<div class="results">
+				<div class="button-content">
+					<p class="tituloBoton">Skills, Capabilities & Stakeholders</p>
+					<button onclick="showSection('sectionResults')" class="learnMore">Go to section</button>
+				</div>
+			</div>
 			<div class="Unmet">
 				<div class="button-content">
 					<p class="tituloBoton">Unmet Needs</p>
-					<p class="contentBoton">
-						<br>
-						What We Found
-					</p>
 					<button onclick="showSection('sectionUnmet')" class="learnMore">Go to section</button>
 				</div>
 			</div>
 			<div class="Long">
 				<div class="button-content">
-					<p class="tituloBoton">Long Term Impacts</p>
-					<p class="contentBoton">
-						<br>
-						What We Found
-					</p>
+					<p class="tituloBoton">Long-term Impacts</p>
 					<button onclick="showSection('sectionLong')" class="learnMore">Go to section</button>
 				</div>
 			</div>
-   			 
-   		 </div>
+			<p class="fraseemprende">
+				We 
+				<b class="tooltipSignificado">empathized
+					<span class="tooltipSignificadoBox">
+						Through our interviews and visits to small, medium and large milk producers, as well as our interactions with different government agencies and diverse stakeholders we learned how mastitis impacts society. We were able to completely put ourselves in the shoes of the people who are facing the problematic. 
+						If you want to know more about our interviews, visits and stakeholders, go to our human practices section. 
 
-   	<script>
-   		 function showSection(sectionId) {
-   	 // Hide all sections
-   	 var sections = document.querySelectorAll('#scrlS3 > div');
-   	 sections.forEach(function(section) {
-   		 section.style.display = 'none';
-   	 });
+					</span>
+				</b>
+				with dairy cattle owners,
+				<b class="tooltipSignificado">defining 
+					<span class="tooltipSignificadoBox">
+						Analyzing the information we gathered from our interviews, we identified several insights that played a major role in defining the next steps for AureoBos. Current solutions, such as antibiotics, are not only costly and unsustainable, but they also generate a resistance in cows and appear during the milk withdrawal period which translates in decreased milk production, increase of food waste and economic expenses, and potential environmental implications, such as contamination of soil and water, highlighting the inadequacies of these solutions.
 
-   	 // Show the selected section
-   	 var selectedSection = document.getElementById(sectionId);
-   	 if (selectedSection) {
-   		 selectedSection.style.display = 'block';
-   	 }
-   	 }
+					</span>
+				</b>
+				that current solutions for mastitis were inadequate and costly,
+				<b class="tooltipSignificado">ideating  
+					<span class="tooltipSignificadoBox">
+						All of these let us ideate the best way of approaching the unmet needs: AureoBos. Thanks to our insights we were able to set our goal: create an antibiotic-free treatment that specialized in four of the most prevalent microorganisms - Staphylococcus aureus, Streptococcus agalactiae, Streptococcus uberis, and Escherichia coli - that cause bovine mastitis. To achieve this goal, we initiated a research process focusing on alginate-chitosan nanoparticles. Our decision was driven by extensive consultations with experts and our end users, as part of our human practices investigations. This led us to conclude that the most effective application method would be through intramammary infusion.
+					</span>
+				</b>
+				the way to solve it through our product. We were able to
+				<b class="tooltipSignificado">prototype   
+					<span class="tooltipSignificadoBox">
+						In order to have our Minimum Viable Product, we researched and drafted the legal regulations and requirements we had to follow in order to design the most realistic prototype. In this section you will find our legal plan, risk assessment and management plan, as well as the technical data sheet and the Minimum Viable Product we prototyped. 
 
-   	</script>
-   	</div>
-   	 <!--seccion que ya sirve arriba-->
+					</span>
+				</b>
+				AureoBos, and
+				<b class="tooltipSignificado">test   
+					<span class="tooltipSignificadoBox">
+						Tests have been conducted in the laboratory, demonstrating that our product effectively targets the specific microorganisms associated with mastitis.  In addition to this, it is worth mentioning that we received at least 5 offers from small, medium, and large scale dairy producers whom we interviewed, to test our product on their infected cows.Through this test we could be able to visualize how our product would make a positive impact on the world and serve as a means to attract our first potential clients.
 
-   	 <!--secciones-->
-   	<div id="scrlS3"> <!--encapsula todos los divs-->
-   		<div id="sectionOverview" class="sectO"><!--seccion de overview-->
-   	    <div class="seccionesTituolo">
-   		    <div class="seccionOverview">
-   			 <p class="subtitleO">Development Plans</p>
-   		    </div>
-   	    </div>
-   	    <div class="layout">
-   		 <!--cosas del index-->
-   		<div class="index1">
-			<nav class="navigation">
-				<ul>
-				<li><a class="introduction" href="#introduction">Introduction</a></li>
-				<li><a class="references" href="#referencesO">References</a></li>
-				</ul>
-   		 	</nav>
-   		</div>
-		
-   		<div class="secciones">
-			
-			
-			
-			<div class="tituloContenido">
-				<h3 id="upstream">Business Model Canva</h3>	
-			</div>
-			<p class="contenido">
-				We understand the problem we are addressing and have a clear vision of what we aim to achieve. Now, let's delve into the 'how' and explore the entire developmental process. In this section, you will find a comprehensive overview of the tools and development plans we have put in place to transform our project into a startup and take it through to the commercialization phase. It's worth noting that everything described here has been meticulously crafted and planned with the guidance and expertise of a diverse group of professionals in the field of entrepreneurship, ranging from experienced entrepreneurs to technical and business mentors from incubation programs, investors, and industry professionals.
-				<img class="tableBus" src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/business-model-canvas-planning-whiteboard-in-navy-yellow-purple-simple-colorful-style.png">   
+
+					</span>
+				</b>
+				it in the lab through rigorous experiments, proposing to 
+				<b class="tooltipSignificado">implement    
+					<span class="tooltipSignificadoBox">
+						Through the development of AureoBos and the proven lab-level functionality, we will implement the treatment with every small, medium and big milk producer we interacted with during our interviews.
+					</span>
+				</b>
+				it as an effective and sustainable solution to tackle mastitis in dairy cattle.
 			</p>
-			<br>
-			<p class="contenido">
-				<b>To learn more about each step of our Business Model, click below. </b>
-			</p>
-				
-			<div class="accordion-item">
-				<div class="accordion-item-header">
-					<h3 id="referencesO">Detailed Business Model</h3>
+			<div class="circleDiagram">
+				<div class="whatCircle">
+					<div class="circleText">
+						<h3>What?</h3>
+						<p> Enzybiotic treatment for <em>S. aureus</em>, <em>S. agalactiae</em>, <em>S. uberis</em>, and <em>E. coli</em> that cause bovine
+							mastitis
+						</p>
+					</div>
 				</div>
-				<div class="accordion-item-body">
-					<div class="accordion-item-body-content">
-						<p class="contenido">
-							<b> Value Proposition:</b>
-							AureoBos offers a revolutionary recombinant protein intramammary infusion therapy, designed to empower dairy cattle owners. Our innovative solution minimizes economic losses caused by mastitis infections by eliminating the milk withdrawal period. Unlike conventional antibiotic treatments, our therapy allows dairy producers to effectively treat mastitis without the costly disposal of milk. This not only ensures healthier cattle and high-quality milk but also contributes to reducing food waste and environmental contamination. AureoBos is not just a treatment; it's a sustainable and economically sound choice for the future of dairy farming.
-						</p>
-						<p class="contenido">
-							<b> Customer Segments:</b>
-							Recalling that our end users are dairy cattle owners whose cows are affected by mastitis caused by one of the four microorganisms we are targeting, it's crucial to note that we have two distinct client segments. This distinction arises from the scale of production among our end users. Through interviews, we discovered that the way large-scale producers acquire their current treatments differs significantly from how medium and small-scale producers do.
-							As a result, we've identified these two segments. The first caters to large dairy producers who source their treatments directly from suppliers, while the second focuses on local pharmacies in the region where small and medium-scale producers typically find and purchase medications.
-							Recognizing the existence of these two different customer types enables us to plan realistically and strategically for how we can reach both effectively. It's also important to emphasize that while veterinary zootechnicians are not our ultimate customers, their recommendations to our clients and users hold significant weight in their decision-making process. Therefore, our marketing strategy to promote our product must consider them as a crucial part of the equation.
-						</p>	
-						<p class="contenido">
-							<b> Channels:</b>
-							In crafting our path to reach our Customer Segments and deliver our compelling Value Proposition, AureoBos recognizes the pivotal role of our stakeholders and the significance of personalized distribution. Our approach to reaching our market is multifaceted, designed to cater to the diverse needs and preferences of our customers.
-							First and foremost, we must underscore the profound influence of veterinary zootechnicians in our ecosystem. As previously highlighted, these professionals wield tremendous authority when it comes to treatment recommendations. They are our vital partners in educating and introducing AureoBos to the market. By engaging with them as an essential stakeholder, we aim to not only explain the science and efficacy behind AureoBos but also provide concrete evidence of its effectiveness. This engagement is fundamental, as veterinary zootechnicians often play a role in guiding treatment decisions through recommendations and hearsay among dairy cattle owners.
-							Secondly, our distribution strategy entails a physical channel wherein we, as the supplier, directly distribute AureoBos to our clients every time they place an order. This direct distribution approach is particularly significant for large dairy producers who acquire our product directly. However, it's important to note that this channel also extends to veterinary pharmacies, which are both our clients and channels. These pharmacies, while purchasing from us, act as intermediaries for smaller and medium-sized dairy producers.
-							In essence, our strategy combines personalized engagement and direct distribution to effectively reach both our large-scale dairy producers and the veterinary pharmacies that serve as conduits to the broader market. By recognizing the unique roles and influences of each stakeholder, we ensure that AureoBos permeates the market efficiently and successfully
-						</p>	
-						<p class="contenido">
-							<b> Customer Relationships:</b>
-							At AureoBos, our approach to customers is a fundamental pillar of our growth strategy. We've meticulously devised a three-fold strategy that encompasses our efforts to Get, Keep, and Grow our valued clients.
-							Firstly, our 'Get' strategy is designed to initiate relationships with our customers. To accomplish this, we are actively engaging with local cattle farms in our region, fostering collaborations within the veterinary community to secure recommendations for AureoBos. Concurrently, we are establishing connections with local pharmacies to introduce and make AureoBos readily available to small and medium-sized producers. This multi-pronged approach ensures that our innovative solution is accessible to a diverse range of customers.
-							Secondly, our 'Keep' strategy revolves around maintaining strong, enduring relationships with our customers. We believe in the power of personalized engagement. We are committed to providing ongoing guidance and support to our customers, ensuring they fully comprehend the correct usage and benefits of AureoBos. Additionally, our relationship with veterinary pharmacies is of special significance. We plan to cultivate close partnerships, delivering exceptional care and attention to aid in the expansion of our sales efforts.
-							Lastly, our 'Grow' strategy is geared towards fostering organic growth by leveraging the influence of user referrals within our target regions. Recognizing that this guild places significant weight on recommendations and word-of-mouth, we are strategically encouraging existing users to refer new customers to AureoBos. This approach not only increases our customer base but also reaffirms the trust and confidence our clients have in our product.
-							Our three-pronged strategy aligns seamlessly with our commitment to providing effective mastitis treatment while cementing strong customer relationships. This holistic approach encompasses customer acquisition, retention, and growth, reflecting our dedication to success in the market.
-						</p>	
-						<p class="contenido">
-							<b> Revenue Streams:</b>
-							At AureoBos, our revenue streams primarily derive from the direct sale of our innovative product. Extensive market analysis and a thorough evaluation of our competitors have led us to offer AureoBos in a convenient presentation format – boxes containing 20 syringes, each with a 10 mL capacity. This presentation is designed to cater to the immediate needs of our customers while providing flexibility for adjustments based on the response and preferences of our initial customer base. Our commitment to adaptability and customer-centricity allows us to fine-tune our product offerings to best serve the evolving demands of the marke.
-							
-						</p>
-						<p class="contenido">
-							<b> Key Activities:</b>
-							There are several key activities that constitute the backbone of AureoBos's development:
-							Acquisition of Funding: Securing adequate funding is imperative to advance AureoBos through its various developmental stages, right up to the point of commercialization. This necessitates active participation in a range of funding opportunities and investor pitches to secure the necessary financial resources.
-							Technical Development of the Treatment: This encompasses a spectrum of essential experiments and tests aimed at validating the efficacy of AureoBos. These activities go from establishing the initial proof of concept to conducting the requisite tests for regulatory approval by the National Service of Health, Safety, and Agri-Food Quality.
-							Trademark and Company Registration: The process of registering AureoBos as a trademark and establishing our company's legal entity are foundational steps for its eventual commercialization. Further details can be found in the documents below. 
-							Product Registration: In order to bring AureoBos to market, it is imperative to obtain regulatory approval from the National Service of Health, Safety, and Agri-Food Quality. To achieve this, we have meticulously outlined a step-by-step guide in our legal plan document.
-							Establishment of Contact with Dairy Farms in the Region: Building relationships with local dairy farms is crucial for creating a comprehensive client database, thereby ensuring targeted outreach and effective engagement.
-							Establishment of Contact with Pharmaceutical Laboratories: This activity backs up our exit strategy, as elaborated in the document below. It involves forging strategic partnerships with pharmaceutical laboratories to facilitate the commercialization of AureoBos through a Merge and Acquisition. 
-							Upscaling Process; Scaling up production is really important to meet market demand effectively. This process ensures that we can consistently supply AureoBos to our target audience.
-							AureoBos Marketing: Following the successful registration of our product and the execution of upscaling, our marketing strategy for AureoBos comes into play. This strategy encompasses various facets, including raising awareness in society, establishing client engagement approaches, and implementing a robust distribution network.
-						</p>	
-						<p class="contenido">
-							<b> Key Resources:</b>
-							Identifying and visualizing key resources is a pivotal aspect of the successful execution of AureoBos. Through a comprehensive analysis, we've determined several key resources:
-							Knowledge: The collective knowledge of each team member, advisor, instructor, and external experts has been the bedrock of AureoBos's development. This wealth of knowledge, spanning scientific expertise, entrepreneurial insights, and domain-specific guidance, has been instrumental in shaping our product.
-							Facilities: Adequate laboratory facilities are indispensable for the research, development, and testing phases of AureoBos. These facilities provide the physical space and infrastructure required to carry out experiments, analyze results, and refine our product.
-							Suppliers: Establishing relationships with reliable suppliers of reagents and laboratory equipment is essential. These suppliers ensure a consistent and timely provision of the materials necessary for our research and development processes.
-							Client Partnerships: Collaboration with dairy farms willing to allow us to conduct tests on their cows afflicted with mastitis is invaluable. These partnerships provide real-world testing scenarios, facilitating the refinement and validation of AureoBos.
-							Funding: Securing funding through a variety of sources, including company grants and investments from open calls, is essential for sustaining the ongoing development of AureoBos. These financial resources enable us to progress through critical developmental phases.
-							University Support: Our university, including its robust entrepreneurial ecosystem, serves as a foundational resource. The institutional support and access to mentors, facilities, and networks within the university ecosystem are instrumental in accelerating our progress and achieving tangible results
-							Patent Registration: Given the advanced technology employed in the development of AureoBos, it is imperative that we secure our invention through the patenting registration with the relevant authority in Mexico. This step is of utmost importance as it serves to safeguard our intellectual property rights when we embark on the commercialization of our innovative treatment.
-							
-						</p>
-						<p class="contenido">
-							<b> Key Partners:</b>
-								It is of utmost importance to recognize and highlight the pivotal role played by our key partners in the development and success of AureoBos. Foremost among them is the Orion Technology Park, an integral part of our university's entrepreneurship ecosystem. The Orion Technology Park has been, and will continue to be, a valuable ally in our startup journey. This partnership has afforded us unparalleled access to a network of entrepreneurs and experts in various fields, including intellectual property, finance, trademark registration, product registration, and more. Through this collaboration, we have had the privilege of participating in the esteemed pre-incubation program, Stella Orion, and have been exclusively invited to join the TechXcelerate program.
-								Equally significant are our regulatory partners, the Mexican Secretariat of Agriculture and Rural Development, and the National Service of Health, Safety, and Agri-Food Quality. These governmental bodies are pivotal in guiding us through the necessary regulatory processes, ensuring that AureoBos complies with all relevant standards and requirements for its registration and commercialization. 
-								Additionally, our dairy producer community, as well as industry and pharmaceutical companies, are key stakeholders in the development and commercialization of AureoBos. Their collaboration and support are integral to our mission of delivering an innovative and effective solution to the market. Together with these valued partners, we will make a meaningful impact on the dairy industry.
-								
-						</p>
-						<p class="contenido">
-							<b> Cost: </b>
-							The cost structure of AureoBos encompasses several key elements that contribute to the development and production of our innovative product. To begin, we've allocated resources for extensive research and development activities, which encompassed conducting proof of concept studies and the necessary tests required for the proper registration of our product with the relevant regulatory authority in Mexico, the National Service of Health, Safety and Agri-Food Quality.
-							Furthermore, it's vital to underscore that our cost structure also accounts for the essential processes of upscaling production. This includes investments in scaling up our production capabilities to meet growing demand effectively. Within the production phase, costs are further categorized into fixed and variable components, each playing a pivotal role in determining our overall cost efficiency and operational effectiveness.
+				<div class="howCircle">
+					<div class="circleText">
+						<h3>How?</h3>
+						<p>Biosynthesizing recombinant proteins within prokaryotic cells</p>
+					</div>
+				</div>
+				<div class="whyCircle">
+					<div class="circleText">
+						<h3>Why?</h3>
+						<p>To reduce milk waste, mitigate the economic impact of mastitis, improve the quality of life of
+							the
+							dairy producers, and leave a positive impact on the environment.</p>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			
+			
+		</div>
 
-						</p>	
-						<br>	
+		<script>
+			function showSection(sectionId) {
+				// Hide all sections
+				var sections = document.querySelectorAll('#scrlS3 > div');
+				sections.forEach(function (section) {
+					section.style.display = 'none';
+				});
+
+				// Show the selected section
+				var selectedSection = document.getElementById(sectionId);
+				if (selectedSection) {
+					selectedSection.style.display = 'block';
+				}
+			}
+
+		</script>
+	</div>
+	<!--seccion que ya sirve arriba-->
+
+
+
+	<!--secciones-->
+	<div id="scrlS3"> <!--encapsula todos los divs-->
+		<div id="sectionOverview" class="sectO">
+			<div class="secciones">
+				<div class="seccionOverview">
+					<p class="subtitleO">Solution</p>
+				</div>
+			</div>
+			<div class="layout">
+				<!--cosas del index-->
+				
+				
+				<div class="secciones">
+					<div class="mkt-3dSlider py-6">
+						<div class="fraseInicio">
+							<div class="fraseAcomodo">
+								<div class="phrase">
+							<p class = "fraseModel" id="frase">"It would be treating mastitis whithout antibiotics, the dream of every milk producer" - DVM Rodolfo Jaquez. </p>
+							</div>
+								<script>
+									var text = document.getElementById('frase');
+							var newDom = '';
+							var animationDelay = 15;
+					
+							for(let i = 0; i < text.innerText.length; i++)
+							{
+								newDom += '<span class="char">' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i])+ '</span>';
+							}
+					
+							text.innerHTML = newDom;
+							var length = text.children.length;
+					
+							for(let i = 0; i < length; i++)
+							{
+								text.children[i].style['animation-delay'] = animationDelay * i + 'ms';
+							}
+								</script>
+							</div>
+						</div>
+					</div>
+					
+					<div>
+						<p class="contenido">
+							<img class="eti"src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/jeringa-intramamaria-5.png">
+							<br>
+							AureoBos is set to become a groundbreaking treatment that revolutionizes, completely, mastitis treatment. As shown above, we've meticulously outlined a mockup that serves as our Minimum Viable Product (MVP), precisely mirroring the strict regulatory framework of Mexico in the development and registration of veterinary products, as well as gathering the most important feedback form our different stakeholders. Our proof of concept shows that
+							<br>
+							To learn more about the technology behind, click below. 	
+						</p>
+						<br>
+						<br>
+						
+					</div>
+					<div class="accordion refer">
+						<div class="accordion-item">
+							<div class="accordion-item-header">
+								<h3 id="referencesO">Aureobos Technology</h3>
+							</div>
+							<div class="accordion-item-body">
+								<div class="accordion-item-body-content">
+									<p class="contenido">
+										AureoBos takes a pioneering approach to mastitis treatment. Leveraging synthetic biology, we harness Escherichia coli (E. coli) to produce specific proteins originating from bacteriophages. These proteins, known as endolysins, play a crucial role in bacteriophages' life cycle by infecting and exterminating bacteria. Through genetic modification, we enhance E. coli's capacity to produce these endolysins.
+									</p>
+									<br>
+									<p class="contenido">
+										Endolysins, once extracted from E. coli, serve as the cornerstone for our mastitis treatment in dairy cattle. These remarkable proteins target the cell walls of mastitis-causing bacteria. Upon binding, they create breaches in the cell wall, causing the bacteria to disintegrate and perish. Notably, endolysins remain effective even against antibiotic-resistant bacterial strains, underscoring their potential as a groundbreaking solution. If you are interested in learning more about the technicalities of AureoBos, delve into the project description section.
+
+									</p>
+									
+									
+									
+									
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tituloContenido">
+						<h3 id="introduction"><br>Scalable </h3>
+					</div>
+					<br>
+					<div class="tituloContenido">
+						<h3 id="introduction"><br>Inventive </h3>
+					</div>
+					<p class="contenido">
+						While several treatments and solutions for bovine mastitis exist, AureoBos stands out for its innovative approach. Through our research and interactions with clients, we've identified a gap in the market - there isn't yet an affordable solution that utilizes synthetic biology and recombinant proteins to treat this infection. The numerous benefits of our product have generated considerable demand among those affected by this issue, underscoring the inventiveness that sets it apart.
+					</p>
+				</div>
+			</div>
+		</div>
+		
+
+
+
+		<div id="sectionMethods" class="sectM">
+			<!--seccion Methods-->
+			<div class="secciones">
+				<div class="seccionMethods">
+					<p class="subtitleM">Development Plans</p>
+				</div>
+			</div>
+			<div class="layout">
+				<!--cosas del index-->
+				<div class="index2">
+					<nav class="navigation">
+						<ul>
+							<li>
+								<a href="#upstream">ODEs</a>
+								<ul>
+									<li><a href="#underlying_theory">Monte Carlo simulation</a></li>
+									<li><a href="#model_building">Parameter estimation</a></li>
+								</ul>
+							</li>
+							<li><a href="#downstream">RSM</a></li>
+							<li><a href="#referencesM">References</a></li>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="secciones">
+					<p class="contenido">
+						We understand the problem we are addressing and have a clear vision of what we aim to achieve. Now, let's delve into the 'how' and explore the entire developmental process. In this section, you will find a comprehensive overview of the tools and development plans we have put in place to transform our project into a startup and take it through to the commercialization phase. It's worth noting that everything described here has been meticulously crafted and planned with the guidance and expertise of a diverse group of professionals in the field of entrepreneurship, ranging from experienced entrepreneurs to technical and business mentors from incubation programs, investors, and industry professionals.
+
+					</p>
+					<div class="tituloContenido">
+						<h3 id="introduction"><br>Business Model </h3>
+					</div>
+					<p class="contenido">
+						Drafting a Business Model Canvas is crucial as it provides a structured framework to analyze, plan, and refine a startup's strategy. With AureoBos, we've used this powerful tool to clearly define how we create, deliver, and capture value in our innovative approach to tackling bovine mastitis.
+						<img class="tableBus" src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/bmc-1.png">   
+					</p>
+					<p class="contenido">
+						<b>To learn more about each step of our Business Model, click below. </b>
+					</p>
+					<div class="accordion-item">
+						<div class="accordion-item-header">
+							<h3 id="referencesO">Detailed Business Model</h3>
+						</div>
+						<div class="accordion-item-body">
+							<div class="accordion-item-body-content">
+								<p class="contenido">
+									<b> Value Proposition:</b>
+									AureoBos offers a revolutionary recombinant protein intramammary infusion therapy, designed to empower dairy cattle owners. Our innovative solution minimizes economic losses caused by mastitis infections by eliminating the milk withdrawal period. Unlike conventional antibiotic treatments, our therapy allows dairy producers to effectively treat mastitis without the costly disposal of milk. This not only ensures healthier cattle and high-quality milk but also contributes to reducing food waste and environmental contamination. AureoBos is not just a treatment; it's a sustainable and economically sound choice for the future of dairy farming.
+								</p>
+								<p class="contenido">
+									<b> Customer Segments:</b>
+									Recalling that our end users are dairy cattle owners whose cows are affected by mastitis caused by one of the four microorganisms we are targeting, it's crucial to note that we have two distinct client segments. This distinction arises from the scale of production among our end users. Through interviews, we discovered that the way large-scale producers acquire their current treatments differs significantly from how medium and small-scale producers do.
+									As a result, we've identified these two segments. The first caters to large dairy producers who source their treatments directly from suppliers, while the second focuses on local pharmacies in the region where small and medium-scale producers typically find and purchase medications.
+									Recognizing the existence of these two different customer types enables us to plan realistically and strategically for how we can reach both effectively. It's also important to emphasize that while veterinary zootechnicians are not our ultimate customers, their recommendations to our clients and users hold significant weight in their decision-making process. Therefore, our marketing strategy to promote our product must consider them as a crucial part of the equation.
+								</p>	
+								<p class="contenido">
+									<b> Channels:</b>
+									In crafting our path to reach our Customer Segments and deliver our compelling Value Proposition, AureoBos recognizes the pivotal role of our stakeholders and the significance of personalized distribution. Our approach to reaching our market is multifaceted, designed to cater to the diverse needs and preferences of our customers.
+									First and foremost, we must underscore the profound influence of veterinary zootechnicians in our ecosystem. As previously highlighted, these professionals wield tremendous authority when it comes to treatment recommendations. They are our vital partners in educating and introducing AureoBos to the market. By engaging with them as an essential stakeholder, we aim to not only explain the science and efficacy behind AureoBos but also provide concrete evidence of its effectiveness. This engagement is fundamental, as veterinary zootechnicians often play a role in guiding treatment decisions through recommendations and hearsay among dairy cattle owners.
+									Secondly, our distribution strategy entails a physical channel wherein we, as the supplier, directly distribute AureoBos to our clients every time they place an order. This direct distribution approach is particularly significant for large dairy producers who acquire our product directly. However, it's important to note that this channel also extends to veterinary pharmacies, which are both our clients and channels. These pharmacies, while purchasing from us, act as intermediaries for smaller and medium-sized dairy producers.
+									In essence, our strategy combines personalized engagement and direct distribution to effectively reach both our large-scale dairy producers and the veterinary pharmacies that serve as conduits to the broader market. By recognizing the unique roles and influences of each stakeholder, we ensure that AureoBos permeates the market efficiently and successfully
+								</p>	
+								<p class="contenido">
+									<b> Customer Relationships:</b>
+									At AureoBos, our approach to customers is a fundamental pillar of our growth strategy. We've meticulously devised a three-fold strategy that encompasses our efforts to Get, Keep, and Grow our valued clients.
+									Firstly, our 'Get' strategy is designed to initiate relationships with our customers. To accomplish this, we are actively engaging with local cattle farms in our region, fostering collaborations within the veterinary community to secure recommendations for AureoBos. Concurrently, we are establishing connections with local pharmacies to introduce and make AureoBos readily available to small and medium-sized producers. This multi-pronged approach ensures that our innovative solution is accessible to a diverse range of customers.
+									Secondly, our 'Keep' strategy revolves around maintaining strong, enduring relationships with our customers. We believe in the power of personalized engagement. We are committed to providing ongoing guidance and support to our customers, ensuring they fully comprehend the correct usage and benefits of AureoBos. Additionally, our relationship with veterinary pharmacies is of special significance. We plan to cultivate close partnerships, delivering exceptional care and attention to aid in the expansion of our sales efforts.
+									Lastly, our 'Grow' strategy is geared towards fostering organic growth by leveraging the influence of user referrals within our target regions. Recognizing that this guild places significant weight on recommendations and word-of-mouth, we are strategically encouraging existing users to refer new customers to AureoBos. This approach not only increases our customer base but also reaffirms the trust and confidence our clients have in our product.
+									Our three-pronged strategy aligns seamlessly with our commitment to providing effective mastitis treatment while cementing strong customer relationships. This holistic approach encompasses customer acquisition, retention, and growth, reflecting our dedication to success in the market.
+								</p>	
+								<p class="contenido">
+									<b> Revenue Streams:</b>
+									At AureoBos, our revenue streams primarily derive from the direct sale of our innovative product. Extensive market analysis and a thorough evaluation of our competitors have led us to offer AureoBos in a convenient presentation format – boxes containing 20 syringes, each with a 10 mL capacity. This presentation is designed to cater to the immediate needs of our customers while providing flexibility for adjustments based on the response and preferences of our initial customer base. Our commitment to adaptability and customer-centricity allows us to fine-tune our product offerings to best serve the evolving demands of the marke.
+									
+								</p>
+								<p class="contenido">
+									<b> Key Activities:</b>
+									There are several key activities that constitute the backbone of AureoBos's development:
+									Acquisition of Funding: Securing adequate funding is imperative to advance AureoBos through its various developmental stages, right up to the point of commercialization. This necessitates active participation in a range of funding opportunities and investor pitches to secure the necessary financial resources.
+									Technical Development of the Treatment: This encompasses a spectrum of essential experiments and tests aimed at validating the efficacy of AureoBos. These activities go from establishing the initial proof of concept to conducting the requisite tests for regulatory approval by the National Service of Health, Safety, and Agri-Food Quality.
+									Trademark and Company Registration: The process of registering AureoBos as a trademark and establishing our company's legal entity are foundational steps for its eventual commercialization. Further details can be found in the documents below. 
+									Product Registration: In order to bring AureoBos to market, it is imperative to obtain regulatory approval from the National Service of Health, Safety, and Agri-Food Quality. To achieve this, we have meticulously outlined a step-by-step guide in our legal plan document.
+									Establishment of Contact with Dairy Farms in the Region: Building relationships with local dairy farms is crucial for creating a comprehensive client database, thereby ensuring targeted outreach and effective engagement.
+									Establishment of Contact with Pharmaceutical Laboratories: This activity backs up our exit strategy, as elaborated in the document below. It involves forging strategic partnerships with pharmaceutical laboratories to facilitate the commercialization of AureoBos through a Merge and Acquisition. 
+									Upscaling Process; Scaling up production is really important to meet market demand effectively. This process ensures that we can consistently supply AureoBos to our target audience.
+									AureoBos Marketing: Following the successful registration of our product and the execution of upscaling, our marketing strategy for AureoBos comes into play. This strategy encompasses various facets, including raising awareness in society, establishing client engagement approaches, and implementing a robust distribution network.
+								</p>	
+								<p class="contenido">
+									<b> Key Resources:</b>
+									Identifying and visualizing key resources is a pivotal aspect of the successful execution of AureoBos. Through a comprehensive analysis, we've determined several key resources:
+									Knowledge: The collective knowledge of each team member, advisor, instructor, and external experts has been the bedrock of AureoBos's development. This wealth of knowledge, spanning scientific expertise, entrepreneurial insights, and domain-specific guidance, has been instrumental in shaping our product.
+									Facilities: Adequate laboratory facilities are indispensable for the research, development, and testing phases of AureoBos. These facilities provide the physical space and infrastructure required to carry out experiments, analyze results, and refine our product.
+									Suppliers: Establishing relationships with reliable suppliers of reagents and laboratory equipment is essential. These suppliers ensure a consistent and timely provision of the materials necessary for our research and development processes.
+									Client Partnerships: Collaboration with dairy farms willing to allow us to conduct tests on their cows afflicted with mastitis is invaluable. These partnerships provide real-world testing scenarios, facilitating the refinement and validation of AureoBos.
+									Funding: Securing funding through a variety of sources, including company grants and investments from open calls, is essential for sustaining the ongoing development of AureoBos. These financial resources enable us to progress through critical developmental phases.
+									University Support: Our university, including its robust entrepreneurial ecosystem, serves as a foundational resource. The institutional support and access to mentors, facilities, and networks within the university ecosystem are instrumental in accelerating our progress and achieving tangible results
+									Patent Registration: Given the advanced technology employed in the development of AureoBos, it is imperative that we secure our invention through the patenting registration with the relevant authority in Mexico. This step is of utmost importance as it serves to safeguard our intellectual property rights when we embark on the commercialization of our innovative treatment.
+									
+								</p>
+								<p class="contenido">
+									<b> Key Partners:</b>
+										It is of utmost importance to recognize and highlight the pivotal role played by our key partners in the development and success of AureoBos. Foremost among them is the Orion Technology Park, an integral part of our university's entrepreneurship ecosystem. The Orion Technology Park has been, and will continue to be, a valuable ally in our startup journey. This partnership has afforded us unparalleled access to a network of entrepreneurs and experts in various fields, including intellectual property, finance, trademark registration, product registration, and more. Through this collaboration, we have had the privilege of participating in the esteemed pre-incubation program, Stella Orion, and have been exclusively invited to join the TechXcelerate program.
+										Equally significant are our regulatory partners, the Mexican Secretariat of Agriculture and Rural Development, and the National Service of Health, Safety, and Agri-Food Quality. These governmental bodies are pivotal in guiding us through the necessary regulatory processes, ensuring that AureoBos complies with all relevant standards and requirements for its registration and commercialization. 
+										Additionally, our dairy producer community, as well as industry and pharmaceutical companies, are key stakeholders in the development and commercialization of AureoBos. Their collaboration and support are integral to our mission of delivering an innovative and effective solution to the market. Together with these valued partners, we will make a meaningful impact on the dairy industry.
+										
+								</p>
+								<p class="contenido">
+									<b> Cost: </b>
+									The cost structure of AureoBos encompasses several key elements that contribute to the development and production of our innovative product. To begin, we've allocated resources for extensive research and development activities, which encompassed conducting proof of concept studies and the necessary tests required for the proper registration of our product with the relevant regulatory authority in Mexico, the National Service of Health, Safety and Agri-Food Quality.
+									Furthermore, it's vital to underscore that our cost structure also accounts for the essential processes of upscaling production. This includes investments in scaling up our production capabilities to meet growing demand effectively. Within the production phase, costs are further categorized into fixed and variable components, each playing a pivotal role in determining our overall cost efficiency and operational effectiveness.
+			   
+								</p>	
+								<br>	
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="tituloContenido">
+						<h3 id="introduction"><br>Timeline</h3>
+					</div>
+					<p class="contenido">
+						Highlighting AureoBos's milestones to date and laying out our future steps through a timeline is pivotal because it not only showcases our journey of progress but also serves as a roadmap for our stakeholders, guiding us towards our shared vision of revolutionizing mastitis treatment.
+						<br>
+						Explore the interactive timeline below to trace AureoBos's crucial development milestones and gain insights into our upcoming endeavors
+
+					</p>
+					<br>
+					<div>
+					<div class="blog-card">
+						<input type="radio" name="select" id="tap-1" checked>
+						<input type="radio" name="select" id="tap-2">
+						<input type="radio" name="select" id="tap-3">
+						<input type="radio" name="select" id="tap-4">
+						<input type="radio" name="select" id="tap-5">
+						<input type="radio" name="select" id="tap-6">
+						<input type="checkbox" id="imgTap">
+				
+						<div class="sliders">
+						<label for="tap-1" class="tap tap-1"></label>
+						<label for="tap-2" class="tap tap-2"></label>
+						<label for="tap-3" class="tap tap-3"></label>
+						<label for="tap-4" class="tap tap-4"></label>
+						<label for="tap-5" class="tap tap-5"></label>
+						<label for="tap-6" class="tap tap-6"></label>
+						</div>
+				
+						<div class="inner-part">
+						<label for="imgTap" class="img">
+						<img class="img-1 imgmethodology" src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/menlo.jpg ">
+						</label>
+						<div class="content-methodology content-methodology-1">
+							<span class="titleMethodology">Pitch at Magistral Conference of Daniel Íñiguez: Making possible the impossible. </span>
+							<div class="textMethodology">
+								We had the opportunity to pitch our project during the magistral conference by Daniel Íñiguez, a distinguished entrepreneur in Mexico and around the world. During this presentation, we began to introduce AureoBos to the community of entrepreneurs and started building valuable connections within the entrepreneurial ecosystem.
+							</div>
+						</div>
+						</div>
+				
+						<div class="inner-part">
+						<label for="imgTap" class="img">
+						<img class="img-2 imgmethodology" src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/semanatec.jpg ">
+						</label>
+						<div class="content-methodology content-methodology-2">
+							<span class="titleMethodology">Pitch at the purpose-driven entrepreneurship week</span>
+							<div class="textMethodology">
+								During this presentation, we had the opportunity to engage with approximately 150 students from various disciplines at our university, introducing them to AureoBos and iGEM. We aimed to inspire them to venture into the field of synthetic biology, regardless of their studies, and motivate them to become part of the representative team.
+							</div>
+						</div>
+						</div>
+				
+						<div class="inner-part">
+						<label for="imgTap" class="img">
+						<img class="img-3 imgmethodology" src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/ilum-pitch.jpg">
+						</label>
+						<div class="content-methodology content-methodology-3">
+							<span class="titleMethodology">Ilum’s Pitch Night</span>
+							<div class="textMethodology">
+								At Ilum’s Pitch Night, we had the opportunity to pitch in front of investors and experts in the field of entrepreneurship. We answered their questions and received valuable feedback regarding our business model, financial projections, and scalability strategy. Additionally, we established valuable connections with missing stakeholders.
+							</div>
+						</div>
+						</div>
+				
+						<div class="inner-part">
+						<label for="imgTap" class="img">
+							<img class="img-4 imgmethodology" src="https://static.igem.wiki/teams/4607/wiki/project-description/project-description/iptg.png">
+						</label>
+						<div class="content-methodology content-methodology-4">
+							<span class="titleMethodology">Presence and validation at DIGAL 2023</span>
+							<div class="textMethodology">
+								The International Dairy Farmer's Day is celebrated in Delicias, a city in Chihuahua, through an event that brings together the key players in the dairy industry, from producers to pharmaceutical laboratories and dairy companies. During DIGAL, we had the opportunity to immerse ourselves in the industry, gaining first hand insights into our competition, potential customers, and validating our product through small encounters with the attendees.
+							</div>
+						</div>
+						</div>
+				
+						<div class="inner-part">
+						<label for="imgTap" class="img">
+							<img class="img-5 imgmethodology" src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/consejeros.jpg ">
+						</label>
+						<div class="content-methodology content-methodology-5">
+							<span class="titleMethodology">Pitch with our institution's Board of Directors</span>
+						<div class="textMethodology">
+							We had the opportunity to pitch in front of the board of directors of our institution. This board is composed of the most influential entrepreneurs in our state. During this presentation, we received feedback on our project and the impact that we, as students, are making on the institution through our participation in the iGEM competition.
+						</div>
+						</div>
+						</div>
+						<div class="inner-part">
+						<label for="imgTap" class="img">
+							<img class="img-6 imgmethodology" src="https://static.igem.wiki/teams/4607/wiki/project-description/project-description/bacterialtests.png">
+						</label>
+						<div class="content-methodology content-methodology-6">
+							<span class="titleMethodology" >UP Innovation Awards 2023</span>
+							<div class="textMethodology">
+								The UP Innovation Awards by Universidad Panamericana celebrate innovation's potential to transcend boundaries and improve human well-being. Supported by industry leaders, these awards recognize and promote novel products and services, encouraging participation from entrepreneurs and researchers, around the world, in eight thematic areas.
+								AureoBos has achieved a significant milestone by advancing as a finalist in the Health and Biotechnology category under the Validated Idea section. We will now compete in the live final event scheduled for October 5th in Mexico City where different experts will evaluate our project and we will be able to make important connections.
+							</div>
+						</div>
+						</div>
+					</div>
+					</div>
+					<br>
+					<br>
+					
+
+					<div class="tituloContenido">
+						<h3 id="introduction"><br>Financial projection</h3>
+					</div>
+					<p class="contenido">
+						Let's delve into AureoBos's financial projections and understand why they are pivotal for our growth and sustainability. 
+					</p>
+					<div class="tituloContenido">
+						<h3 id="introduction"><br>Intellectual Property</h3>
+					</div>
+					<p class="contenido">
+						To discover the intellectual property landscape of AureoBos and grasp its significance in safeguarding our innovation and market position, click below. 
+
+					</p>
+					<div class="accordion-item">
+						<div class="accordion-item-header">
+						  Intellectual property
+						</div>
+						<div class="accordion-item-body">
+						  <div class="accordion-item-body-content">
+							Regarding intellectual property, we had the opportunity to hold a session with Felisia Sandoval, a member of our university's entrepreneurship ecosystem and technology transfer office at the Monterrey Institute of Technology and Higher Education. During this session, she provided valuable insights regarding the possibility of patenting AureoBos. In her evaluation, she emphasized the importance of reviewing the institution's policy, as our work is conducted within the university, and there could be a case of joint ownership that needs to be addressed before initiating the application process. Additionally, she recommended conducting a thorough search of patents registered on platforms such as WIPO (World Intellectual Property Organization).
+
+							It's important to note that although we haven't yet submitted the application to the patent office, following our session with this expert, we performed the patent search and outlined the subsequent steps and ideal timelines for submitting our patent to the competent authority in Mexico, which is the Mexican Institute of Industrial Property (Instituto Mexicano de la Propiedad Industrial). Below, you can visualize the estimated timeline for this process.
+							<br>
+							<img src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/aureobos-intellectualproperty.png">
+  
+						  </div>
+						</div>
+					</div>
+					<div class="tituloContenido">
+						<h3 id="introduction"><br>Business Documents</h3>
+					</div>
+					
+
+					<p class="contenido">
+						Every startup requires a solid foundation for its scalable and secure growth. In pursuit of this, we have prepared a series of documents that will drive the development of AureoBos.
+
+					</p>
+					<br>
+					
+					<div class="ag-format-container">
+						<div class="ag-courses_box">
+						  <div class="ag-courses_item">
+							<a href="#" class="ag-courses-item_link">
+							  <div class="ag-courses-item_bg"></div>
+					  
+							  <div class="ag-courses-item_title">
+								Business Plan
+							  </div>
+					  
+							  
+							</a>
+						  </div>
+					  
+						  <div class="ag-courses_item">
+							<a href="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/pdfs/pitch-deck-aureobos-igem-2023-compressed.pdf" class="ag-courses-item_link">
+							  <div class="ag-courses-item_bg"></div>
+					  
+							  <div class="ag-courses-item_title">
+								Pitch Deck
+							  </div>
+					  
+							  
+							</a>
+						  </div>
+
+						  <div class="ag-courses_item">
+							<a href="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/pdfs/risk-assessment-management-docx.pdf" class="ag-courses-item_link">
+							  <div class="ag-courses-item_bg"></div>
+					  
+							  <div class="ag-courses-item_title">
+								Risk Assesment
+							  </div>
+					  
+							  
+							</a>
+						  </div>
+					  
+						  
+					  
+						  
+					  
+						  
+					  
+						</div>
+					</div>  
+					<br>
+					<div class="tituloContenido">
+						<h3 id="introduction"><br>Legal Considerations</h3>
+					</div>
+					
+
+						<p class="contenido">
+							Last but certainly not least, it is crucial to meticulously address all regulatory and legal aspects to ensure the proper establishment, development, and commercialization of AureoBos. Below, you will find our legal plan.
+						</p>
+					<div class="ag-format-container">
+						<div class="ag-courses_box">
+						<div class="ag-courses_item">
+							<a href="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/pdfs/legal-plan-docx.pdf" class="ag-courses-item_link">
+							<div class="ag-courses-item_bg"></div>
+					
+							<div class="ag-courses-item_title">
+								Legal Plan
+							</div>
+					
+							
+							</a>
+						</div>
+					
+						<div class="ag-courses_item">
+							<a href="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/pdfs/aureobos-trademark-report.pdf" class="ag-courses-item_link">
+							<div class="ag-courses-item_bg"></div>
+					
+							<div class="ag-courses-item_title">
+								Trademark Registration
+							</div>
+							
+							</a>
+						</div>
+						</div>
+					</div> 	
+				</div>	
+			</div>
+		</div>
+
+		<div id="sectionUnmet" class="sectR">
+			<div class="secciones">
+				<div class="sectionUnmet">
+					<p class="subtitleR">Unmet Needs</p>
+				</div>
+				
+				  
+				  
+				<div class="layout">
+					<!--cosas del index-->
+					<div class="index3">
+						<nav class="navigation">
+							<ul>
+								<li>
+									<a href="#referencesR">References</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="secciones">
+						<div class="tituloContenido">
+							<h3 id="introduction"><br>Problem Statement </h3>
+						</div>
+						<p class="contenido">
+							Mastitis is the major infectious disease problem in dairy cows. Based on a global dairy cow population of 271 million dairy cows, it has been estimated that treating it costs the dairy industry around $19.7B–32B (USD) billion dollars per year1. These costs consist of several consequences that are triggered by this disease2. A visual representation of these implications can be visualized in Figure 1.
+						</p>
+						<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                    	<script type="text/javascript">
+                      	google.charts.load("current", {packages:["corechart"]});
+                      	google.charts.setOnLoadCallback(drawChart);
+                      	function drawChart() {
+							var data = google.visualization.arrayToDataTable([
+							['Task', 'Hours per Day'],
+							['Protein',     3.28],
+							['Total lipid (fat)',    3.2],
+							['Carbohydrate',  4.67],
+							['Sugar', 4.81],
+							['Minerals', 0.424411002],
+							['Vitamins', 0.01821007194],
+							['Fatty acids (monounsaturated)', 0.688],
+							['Fatty acids (polyunsaturated)', 0.108],
+							
+							
+
+                        ]);
+                        
+                
+                        var options = {
+                          title: 'Milk nutrients (100g)',
+                          is3D: true,
+                          backgroundColor: "transparent",
+                          colors: ["#5BC5AB", "#C55B75", "#D27063", "#447D9C", "#DE8551"],
+                        };
+                
+                        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+                        chart.draw(data, options);
+                      }
+                    </script>
+					<div id="piechart_3d" style="width: 900px; height: 500px;"></div>
+                    <p class="piedefig"><b>Figure 1.</b> Nutrients of whole milk, excluding water.<sup>3</sup></p>
+                    <br>
+                    <br>
+					<p class="contenido">
+						Currently, mastitis is being treated by different types of antibiotics and natural solutions which are applied through systemic administrations or intramammary infusions3. However, through our integrated human practices, we have learned that even though these solutions exist, milk is still being discarded in large quantities due to the fact that milk with antibiotics’ residue can’t be consumed, impacting the growing amount of global food waste, in addition to the fact that the cost of treating mastitis is significantly high as stated before, and antibiotic resistance has become a real problem in tackling this challenge in a sustainable and safe way.
+
+					</p>
+					<br>
+					<div class="tituloContenido">
+						
+						<div class="accordion-item">
+							<div class="accordion-item-header">
+								Dairy Producers
+							</div>
+							<div class="accordion-item-body">
+							  <div class="accordion-item-body-content">
+								In order to draft the first potential customers for AureoBos, it is necessary to identify who is directly affected by the consequences of mastitis. As stated in the previous section, the implications that integrate the cost of treating bovine mastitis are directly charged to dairy producers. Through our human practices we learned that they are the ones who face head-on the disease, deciding which treatment they are going to use based on the recommendations done from - the next important character- veterinary zootechnicians. Although dairy farmers have the power of decision making and purchasing, the reality is that most of the time they are driven by the recommendations, diagnosis and intervention of veterinary zootechnicians, even though they interact differently depending on the scale of their production. To better understand these characteristics, check out the next figure.
+								<img class="dairy" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/wiki-design-4-entrepreneurship.png">
+	  
+							  </div>
+							</div>
+							<br>
+							
+						</div>
+						<br>
+						<div class="accordion-item">
+							<div class="accordion-item-header">
+								Understanding their pains and unmet needs
+							</div>
+							<div class="accordion-item-body">
+							  <div class="accordion-item-body-content">
+								Although small, medium and large scale producers have different characteristics in the way of managing their farm, as well as how they treat mastitis and their relationship with veterinary zootechnicians, we learned through our interviews and visits that their pains and current needs are the same. Understanding the unmet needs they have is essential for the successful development and implementation of AureoBos.
+								<br>
+								Our integrated human practices helped us learn that dairy producers and cattle owners need a treatment that effectively addresses bovine mastitis, without using antibiotics so milk isn’t discarded and their production isn’t reduced due to the milk withdrawal period. This treatment needs to be backed up by the recognition of veterinary zootechnicians and scientific evidence that compares and indicates how AureoBos is better than any other conventional treatment. They also communicated that they require a treatment that is easy to administer and integrate into their existing routines, ensuring minimal disruption to their operations. They require a product which doesn’t harm the cattle, doesn’t compromise the milk quality, and doesn’t pose health risks to either animals or humans. Finally, the treatment needs to be accessible in terms of availability and affordability in the geographical and economic situation. 
+								Having developed the above, you can find a visual representation of these needs through the following empathy map.
+								<img class="dairy" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/empathy-map.png">
+							  </div>
+							</div>
+							<br>
+							
+						</div>
+						<br>
+						<div class="accordion-item">
+							<div class="accordion-item-header">
+								
+								First Potential Customers
+
+							</div>
+							<div class="accordion-item-body">
+							  <div class="accordion-item-body-content">
+								Recognizing the presence of small, medium, and large-scale producers, as well as understanding how mastitis affects them, it becomes evident that these individuals, whether under the guidance of a veterinary zootechnician or not, are our ultimate end-users. However, after engaging with them and also with global veterinary pharmaceutical companies like MSD Animal Health and Zoetis, we discerned the existence of two distinct customer types.
+
+								<br>
+								We refer to a division between large-scale producers and small to medium-sized producers. Initially, AureoBos would primarily supply to large-scale producers, whereas to reach small and medium-sized ones, an intermediary is required. Thus, the veterinary pharmaceutical providers in these regions would also become our clients, serving as the bridge to connect with the smaller producers.
+								<br>
+								The following illustration demonstrates how AureoBos interacts with its clients in both scenarios. Further detailed explanations of these business models will be covered in the Development Plans section below.
+								<img class="dairy" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/wiki-design-4-entrepreneurship-1.png">
+								<img class="dairy" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/wiki-design-4-entrepreneurship-2.png">
+							  </div>
+							</div>
+							<br>
+							
+						</div>
+						<br>
+						<div class="accordion-item">
+							<div class="accordion-item-header">
+								
+								Existing solutions 
+
+
+							</div>
+							<div class="accordion-item-body">
+							  <div class="accordion-item-body-content">
+								Through the visits and interviews done with our users, we identified the existing solutions that dairy cattle owners currently use. Having heard first-hand about the competition let us do a better analysis, which basically consists on the following benchmarking: 
+								<img class="dairy"src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/benchmarkingofi.png">
+								<br>
+								The common factor among current treatments is that those falling under the antibiotic category leave residues in milk, requiring a withdrawal period of at least 3 days. This translates to wasted liters of milk and economic losses due to the discarded milk produced during those days. Moreover, the concerning issue of antibiotic resistance, stemming from their excessive use, adds to the complexity. Even the World Health Organization has underlined the impending risks associated with this and the urgent need to adopt alternative measures and treatments4. Furthermore, homeopathic treatments like oregano prove ineffective against the disease and, akin to antibiotics, leave residues in milk.
+								
+							  </div>
+							</div>
+							<br>
+							
+						</div>
+						<br>
+						<div class="accordion-item">
+							<div class="accordion-item-header">
+								
+								Meeting the needs through AureoBos 
+
+
+							</div>
+							<div class="accordion-item-body">
+							  <div class="accordion-item-body-content">
+								Through our integrated human practices, we learned that the best and wanted method of administration for our product is an intramammary infusion. This is because, as stated from several veterinary zootechnicians, intramammary infusions deliver the treatment directly into the affected udder quarters, ensuring the medication reaches the infection site precisely. It also allows for a high concentration of the treatment to be delivered into the infection site, becoming particularly important for combating bacterial infections effectively. Besides this, this method is something our users are already familiarized with, so it does not require complicated or highly specialized training. Intramammary infusions can reduce the risk of unintended side effects on the cow’s overall health since the treatment remains localized within the udder. It gives a quicker response time and the possibility of treating and varying the levels of it depending on the quarter of the udder affected and the severity of its infection. 
+								<br>
+								Given these advantages, the intramammary infusion method aligns well with the goal of treating bovine mastitis effectively while considering factors like animal health, milk quality, and antibiotic resistance mitigation. 
+							  </div>
+							</div>
+							<br>
+							
+						</div>
+					</div>
 					</div>
 				</div>
 			</div>
-			<div class="tituloContenido">
-				<h3 id="upstream">Timeline</h3>	
-			</div>
-			<section class="h--timeline js-h--timeline">
-				<div class="h--timeline-container">
-				  <div class="h--timeline-dates">
-					<div class="h--timeline-line">
-					  <ol>
-						<li><a href="#0" data-date="16/01/2014" class="h--timeline-date h--timeline-date--selected">2014</a></li>
-						<li><a href="#0" data-date="28/02/2013" class="h--timeline-date">2013</a></li>
-						<li><a href="#0" data-date="20/04/2013" class="h--timeline-date">2013</a></li>
-						<li><a href="#0" data-date="20/05/2012" class="h--timeline-date">2012</a></li>
-						<li><a href="#0" data-date="09/07/2011" class="h--timeline-date">2011</a></li>
-						<li><a href="#0" data-date="30/08/2007" class="h--timeline-date">2007</a></li>
-						<li><a href="#0" data-date="15/09/2001" class="h--timeline-date">2001</a></li>
-						<li><a href="#0" data-date="01/11/1997" class="h--timeline-date">1997</a></li>
-						<li><a href="#0" data-date="10/12/1994" class="h--timeline-date">1994</a></li>
-						<li><a href="#0" data-date="19/01/1991" class="h--timeline-date">1991</a></li>
-						<li><a href="#0" data-date="03/03/1988" class="h--timeline-date">1988</a></li>
-					  </ol>
-				
-					  <span class="h--timeline-filling-line" aria-hidden="true"></span>
-					</div> <!-- .h--timeline-line -->
-				  </div> <!-- .h--timeline-dates -->
-				
-				  <nav class="h--timeline-navigation-container">
-					  <ul>
-						<li><a href="#0" class="text-replace h--timeline-navigation h--timeline-navigation--prev h--timeline-navigation--inactive">Prev</a></li>
-						<li><a href="#0" class="text-replace h--timeline-navigation h--timeline-navigation--next">Next</a></li>
-					  </ul>
-				  </nav>
-				</div> <!-- .h--timeline-container -->
-				
-				<div class="h--timeline-events">
-				  <ol>
-					<li class="h--timeline-event h--timeline-event--selected text-component">
-					  <div class="h--timeline-event-content container">
-						<h2 class="h--timeline-event-title">Horizontal Timeline</h2>
-						<em class="h--timeline-event-date">January 16th, 2014</em>
-						<p class="h--timeline-event-description">
-						  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-						</p>
-					  </div>
-					</li>
-				
-					<li class="h--timeline-event text-component">
-					  <div class="h--timeline-event-content container">
-						<h2 class="h--timeline-event-title">Event title here</h2>
-						<em class="h--timeline-event-date">February 28th, 2013</em>
-						<p class="h--timeline-event-description">
-						  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-						</p>
-					  </div>
-					</li>
-				
-					<li class="h--timeline-event text-component">
-					  <div class="h--timeline-event-content container">
-						<h2 class="h--timeline-event-title">Event title here</h2>
-						<em class="h--timeline-event-date">March 20th, 2013</em>
-						<p class="h--timeline-event-description">
-						  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-						</p>
-					  </div>
-					</li>
-				
-					<li class="h--timeline-event text-component">
-					  <div class="h--timeline-event-content container">
-						<h2 class="h--timeline-event-title">Event title here</h2>
-						<em class="h--timeline-event-date">May 20th, 2012</em>
-						<p class="h--timeline-event-description">
-						  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-						</p>
-					  </div>
-					</li>
-				
-					<li class="h--timeline-event text-component">
-					  <div class="h--timeline-event-content container">
-						<h2 class="h--timeline-event-title">Event title here</h2>
-						<em class="h--timeline-event-date">July 9th, 2011</em>
-						<p class="h--timeline-event-description">
-						  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-						</p>
-					  </div>
-					</li>
-				
-					<li class="h--timeline-event text-component">
-					  <div class="h--timeline-event-content container">
-						<h2 class="h--timeline-event-title">Event title here</h2>
-						<em class="h--timeline-event-date">August 30th, 2007</em>
-						<p class="h--timeline-event-description">
-						  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-						</p>
-					  </div>
-					</li>
-				
-					<li class="h--timeline-event text-component">
-					  <div class="h--timeline-event-content container">
-						<h2 class="h--timeline-event-title">Event title here</h2>
-						<em class="h--timeline-event-date">September 15th, 2001</em>
-						<p class="h--timeline-event-description">
-						  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-						</p>
-					  </div>
-					</li>
-				
-					<li class="h--timeline-event text-component">
-					  <div class="h--timeline-event-content container">
-						<h2 class="h--timeline-event-title">Event title here</h2>
-						<em class="h--timeline-event-date">November 1st, 1997</em>
-						<p class="h--timeline-event-description">
-						  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-						</p>
-					  </div>
-					</li>
-				
-					<li class="h--timeline-event text-component">
-					  <div class="h--timeline-event-content container">
-						<h2 class="h--timeline-event-title">Event title here</h2>
-						<em class="h--timeline-event-date">December 10th, 1994</em>
-						<p class="h--timeline-event-description">
-						  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-						</p>
-					  </div>
-					</li>
-				
-					<li class="h--timeline-event text-component">
-					  <div class="h--timeline-event-content container">
-						<h2 class="h--timeline-event-title">Event title here</h2>
-						<em class="h--timeline-event-date">January 29th, 1991</em>
-						<p class="h--timeline-event-description">
-						  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-						</p>
-					  </div>
-					</li>
-				
-					<li class="h--timeline-event text-component">
-					  <div class="h--timeline-event-content container">
-						<h2 class="h--timeline-event-title">Event title here</h2>
-						<em class="h--timeline-event-date">March 3rd, 1988</em>
-						<p class="h--timeline-event-description">
-						  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-						</p>
-					  </div>
-					</li>
-				  </ol>
-				</div> <!-- .h--timeline-events -->
-			</section>
 		</div>
-	</div>
-</div>
-   	<div id="sectionMethods" class="sectM">
-				<!--seccion Methods-->
+		<div id="sectionResults" class="sectR">
 			<div class="secciones">
-				<div class="seccionesTitulo">
-					<p class="subtitleM">Solution</p>
+				<div class="sectionResults">
+					<p class="subtitleR">Skills, Capabilities & Stakeholders</p>
+				</div>
+				
+				  
+				  
+				<div class="layout">
+					<!--cosas del index-->
+					<div class="index3">
+						<nav class="navigation">
+							<ul>
+								<li>
+									<a href="#referencesR">References</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="secciones">
+						
+					</div>
 				</div>
 			</div>
-		<div class="layout">
-			<!--cosas del index-->
-			<div class="index2">
-				<nav class="navigation">
-					<ul>
-						<li><a href="#underlying_theory">Underlying theory</a></li>
-						<li><a href="#model_building">Model building</a></li>
-						<li><a href="#monte_carlo">Monte Carlo Simulation</a></li>
-						<li><a href="#parameter_estimation">Parameter Estimation</a></li>
-						<li><a href="#referencesM">References</a></li>
-					</ul>
-				</nav>
-			</div>
-			<div class="secciones">
-				<div class="tituloContenido">
-					<h3 id="upstream">Possible</h3>
-			</div>
-   		</div>	 
-    </div>
+		</div>
 
 
-  	<div id="sectionResults" class="sectR">
-		<div class="secciones">
-		<div class="seccionesTitulo">
-			<p class="subtitleR">Results</p>
-		</div>
-		<div class="layout">
-		<!--cosas del index-->
-		<div class="index3">
-		<nav class="navigation">
-			<ul>
-			<li>
-				<a href="#referencesR">References</a>
-			</li>
-			</ul>
-		</nav>
-		</div>
-		<div class="secciones">
-		   <p>DENTRO DE ESTE DIV PONER LAS COSAS DE LAS SECCIONES</p>
-		</div>
-	</div>
 
-	<div id="sectionUnmet" class="sectR">
-		<div class="secciones">
-		<div class="seccionesTitulo">
-			<p class="subtitleR">Unmet Needs</p>
-		</div>
-		<div class="layout">
-		<!--cosas del index-->
-		<div class="index3">
-		<nav class="navigation">
-			<ul>
-			<li>
-				<a href="#referencesR">References</a>
-			</li>
-			</ul>
-		</nav>
-		</div>
-		<div class="secciones">
-		   <p>DENTRO DE ESTE DIV PONER LAS COSAS DE LAS SECCIONES</p>
-		</div>
-	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
 
 	<div id="sectionLong" class="sectR">
 		<div class="secciones">
-		<div class="seccionesTitulo">
-			<p class="subtitleR">Long Term Impacts</p>
-		</div>
-		<div class="layout">
-		<!--cosas del index-->
-		<div class="index3">
-		<nav class="navigation">
-			<ul>
-			<li>
-				<a href="#referencesR">References</a>
-			</li>
-			</ul>
-		</nav>
-		</div>
-		<div class="secciones">
-		   <p>DENTRO DE ESTE DIV PONER LAS COSAS DE LAS SECCIONES</p>
+			<div class="sectionUnmet">
+				<p class="subtitleR">Long-term Impacts</p>
+			</div>
+			<p class="contenido">
+				
+				Visualizing the long-term positive and negative impacts of AureoBos is crucial because it allows informed decision-making, responsible product management, and the creation of a more resilient and successful market presence for AureoBos. To facilitate your understanding of these long-term impacts, we invite you to engage with the diagram below.
+
+			</p>
+			  
+			  
+			<div class="layout">
+				<!--cosas del index-->
+				<div class="index3">
+					<nav class="navigation">
+						<ul>
+							<li>
+								<a href="#referencesR">References</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="secciones">
+					<div class='selector'>
+						<ul>
+						  <li>
+							<input id='1' type='checkbox'>
+							<label for='1'>1</label>
+							<div class="description1">
+							  <b>Antibiotic Resistance:</b>
+							  <p>
+								- Using AureoBos will impact on the imminent battle against antibiotic resistance, by reducing the usage in dairy cattle. 
+							  </p>
+							  
+							</div>
+						  </li>
+						  <li>
+							<input id='2' type='checkbox'>
+							<label for='2'>2</label>
+							<div class="description2">
+								<b>Animal Welfare:</b>
+								<p>
+								- AureoBos will enhance animal welfare and well-being by significantly reducing the incidence of mastitis cases.
+
+							  
+							</div>
+						  </li>
+						  <li>
+							<input id='3' type='checkbox'>
+							<label for='3'>3</label>
+							<div class="description3">
+							  <b>Economic Savings: </b>
+							  <p>
+								- The adoption of AureoBos will have a direct impact on the economic expenditures of dairy farmers by lowering treatment costs derived from existing solutions and boosting milk production.
+							  </p>
+							  
+							</div>
+						  </li>
+						  <li>
+							<input id='4' type='checkbox'>
+							<label for='4'>
+							  4
+							</label>
+							<div class="description4">
+							  <b>Environmental Friendly:</b>
+							  <p>
+								-AureoBos will directly impact the environment by potentially reducing the contamination associated with antibiotic residues.
+							  </p>
+							  
+							</div>
+						  </li>
+						  <li>
+							<input id='5' type='checkbox'>
+							<label for='5'>
+							  5
+							</label>
+							<div class="description5">
+							  
+								<b>Quality and Safety:</b>
+							  <p>
+								- AureoBos will contribute to the enhancement of quality and safety of dairy products for consumers.
+							  </p>
+							</div>
+						  </li>
+						  <li>
+							<input id='6' type='checkbox'>
+							<label for='6'>
+							  6
+							</label>
+							<div class="description6">
+								<b>Production:</b>
+								<p>
+								  -If biosafety standards are not followed during production, the use of microorganisms can cause harm to human health.
+								  ⭐We aim to counter this impact by taking biosafety courses and following good practices within the laboratory.
+								  
+							  
+								  </p>
+							 
+							</div>
+						  </li>
+						  <li>
+							<input id='7' type='checkbox'>
+							<label for='7'>7</label>
+							<div class="description7">
+							  <b>Emissions:</b>
+							  <p>
+								- The production of AureoBos requires cold storage, leading to increased energy consumption and operational costs. Emissions can also be produced by the transportation and disposal of the product. 
+								⭐We aim to counter this impact by using energy-efficient refrigeration systems and temperature control measures in cold storage facilities as well as exploring newable energy sources like solar energy to power the cold storage, reducing carbon emissions in the near future. 
+								
+							  </p>
+							  
+							</div>
+						  </li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
+	</div>
+	<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>		  
+	<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script>
+  var angleStart = -360;
+
+  // jquery rotate animation
+  function rotate(li, d) {
+    $({ d: angleStart }).animate({ d: d }, {
+      step: function(now) {
+        $(li)
+          .css({ transform: 'rotate(' + now + 'deg)' })
+          .find('label')
+          .css({ transform: 'rotate(' + (-now) + 'deg)' });
+      }, duration: 0
+    });
+  }
+
+  // show / hide the options
+  function toggleOptions(s) {
+    $(s).toggleClass('open');
+    var li = $(s).find('li');
+    var deg = $(s).hasClass('half') ? 180 / (li.length - 1) : 360 / li.length;
+    for (var i = 0; i < li.length; i++) {
+      var d = $(s).hasClass('half') ? (i * deg) - 90 : i * deg;
+      $(s).hasClass('open') ? rotate(li[i], d) : rotate(li[i], angleStart);
+    }
+  }
+
+  $('.selector button').click(function(e) {
+    toggleOptions($(this).parent());
+  });
+
+  setTimeout(function() { toggleOptions('.selector'); }, 100);
+</script>
+<script type="text/javascript">
+    var sect1 = document.getElementById('sectionOverview');
+    var sect2 = document.getElementById('referencesO');
+ 
+
+    var dot1 = document.getElementById('dot1');
+    var dot2 = document.getElementById('dot2');
+    
+
+    window.addEventListener('scroll', function () {
+      var sect1top = sect1.getBoundingClientRect().top;
+      var sect2top = sect2.getBoundingClientRect().top;
+      
+      var topPad = 200;
+      if (sect4top - topPad <= topPad) {
+        dot1.classList.remove('active');
+        dot2.classList.remove('active');
+      
+      } else if (sect3top - topPad <= topPad) {
+        dot1.classList.remove('active');
+        dot2.classList.remove('active');
+        
+      } else if (sect2top - topPad <= topPad) {
+        dot1.classList.remove('active');
+        dot2.classList.add('active');
+        
+      } else if (sect1top - topPad <= topPad) {
+        dot1.classList.add('active');
+        dot2.classList.remove('active');
+        
+      } else {
+        dot1.classList.remove('active');
+        dot2.classList.remove('active');
+       
+      }
+
+
+
+
+    }); 
+  </script>	
+  <script>
+    const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+  
+  accordionItemHeaders.forEach(accordionItemHeader => {
+    accordionItemHeader.addEventListener("click", event => {
+      
+      // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
+      
+      // const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
+      // if(currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader!==accordionItemHeader) {
+      //   currentlyActiveAccordionItemHeader.classList.toggle("active");
+      //   currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+      // }
+  
+      accordionItemHeader.classList.toggle("active");
+      const accordionItemBody = accordionItemHeader.nextElementSibling;
+      if(accordionItemHeader.classList.contains("active")) {
+        accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+      }
+      else {
+        accordionItemBody.style.maxHeight = 0;
+      }
+      
+    });
+  });
+  </script>	  
 </body>
 
-	 <script>
-		const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
-	  
-	  accordionItemHeaders.forEach(accordionItemHeader => {
-		accordionItemHeader.addEventListener("click", event => {
-		  
-		  // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
-		  
-		  // const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
-		  // if(currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader!==accordionItemHeader) {
-		  //   currentlyActiveAccordionItemHeader.classList.toggle("active");
-		  //   currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
-		  // }
-	  
-		  accordionItemHeader.classList.toggle("active");
-		  const accordionItemBody = accordionItemHeader.nextElementSibling;
-		  if(accordionItemHeader.classList.contains("active")) {
-			accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
-		  }
-		  else {
-			accordionItemBody.style.maxHeight = 0;
-		  }
-		  
-		});
-	  });
-	  </script>
-	  <script>
-				(function() {
-			// Swipe Content Plugin - by CodyHouse.co
-			// https://codyhouse.co/ds/components/info/swipe-content
-			var SwipeContent = function(element) {
-				this.element = element;
-				this.delta = [false, false];
-				this.dragging = false;
-				this.intervalId = false;
-				initSwipeContent(this);
-			};
-
-			function initSwipeContent(content) {
-				content.element.addEventListener('mousedown', handleEvent.bind(content));
-				content.element.addEventListener('touchstart', handleEvent.bind(content));
-			};
-
-			function initDragging(content) {
-				//add event listeners
-				content.element.addEventListener('mousemove', handleEvent.bind(content));
-				content.element.addEventListener('touchmove', handleEvent.bind(content));
-				content.element.addEventListener('mouseup', handleEvent.bind(content));
-				content.element.addEventListener('mouseleave', handleEvent.bind(content));
-				content.element.addEventListener('touchend', handleEvent.bind(content));
-			};
-
-			function cancelDragging(content) {
-				//remove event listeners
-				if(content.intervalId) {
-					(!window.requestAnimationFrame) ? clearInterval(content.intervalId) : window.cancelAnimationFrame(content.intervalId);
-					content.intervalId = false;
-				}
-				content.element.removeEventListener('mousemove', handleEvent.bind(content));
-				content.element.removeEventListener('touchmove', handleEvent.bind(content));
-				content.element.removeEventListener('mouseup', handleEvent.bind(content));
-				content.element.removeEventListener('mouseleave', handleEvent.bind(content));
-				content.element.removeEventListener('touchend', handleEvent.bind(content));
-			};
-
-			function handleEvent(event) {
-				switch(event.type) {
-					case 'mousedown':
-					case 'touchstart':
-						startDrag(this, event);
-						break;
-					case 'mousemove':
-					case 'touchmove':
-						drag(this, event);
-						break;
-					case 'mouseup':
-					case 'mouseleave':
-					case 'touchend':
-						endDrag(this, event);
-						break;
-				}
-			};
-
-			function startDrag(content, event) {
-				content.dragging = true;
-				// listen to drag movements
-				initDragging(content);
-				content.delta = [parseInt(unify(event).clientX), parseInt(unify(event).clientY)];
-				// emit drag start event
-				emitSwipeEvents(content, 'dragStart', content.delta);
-			};
-
-			function endDrag(content, event) {
-				cancelDragging(content);
-				// credits: https://css-tricks.com/simple-swipe-with-vanilla-javascript/
-				var dx = parseInt(unify(event).clientX), 
-				dy = parseInt(unify(event).clientY);
-			
-			// check if there was a left/right swipe
-				if(content.delta && (content.delta[0] || content.delta[0] === 0)) {
-				var s = Math.sign(dx - content.delta[0]);
-					
-					if(Math.abs(dx - content.delta[0]) > 30) {
-						(s < 0) ? emitSwipeEvents(content, 'swipeLeft', [dx, dy]) : emitSwipeEvents(content, 'swipeRight', [dx, dy]);	
-					}
-				
-				content.delta[0] = false;
-			}
-				// check if there was a top/bottom swipe
-			if(content.delta && (content.delta[1] || content.delta[1] === 0)) {
-				var y = Math.sign(dy - content.delta[1]);
-
-				if(Math.abs(dy - content.delta[1]) > 30) {
-					(y < 0) ? emitSwipeEvents(content, 'swipeUp', [dx, dy]) : emitSwipeEvents(content, 'swipeDown', [dx, dy]);
-				}
-
-				content.delta[1] = false;
-			}
-				// emit drag end event
-			emitSwipeEvents(content, 'dragEnd', [dx, dy]);
-			content.dragging = false;
-			};
-
-			function drag(content, event) {
-				if(!content.dragging) return;
-				// emit dragging event with coordinates
-				(!window.requestAnimationFrame) 
-					? content.intervalId = setTimeout(function(){emitDrag.bind(content, event);}, 250) 
-					: content.intervalId = window.requestAnimationFrame(emitDrag.bind(content, event));
-			};
-
-			function emitDrag(event) {
-				emitSwipeEvents(this, 'dragging', [parseInt(unify(event).clientX), parseInt(unify(event).clientY)]);
-			};
-
-			function unify(event) { 
-				// unify mouse and touch events
-				return event.changedTouches ? event.changedTouches[0] : event; 
-			};
-
-			function emitSwipeEvents(content, eventName, detail) {
-				// emit event with coordinates
-				var event = new CustomEvent(eventName, {detail: {x: detail[0], y: detail[1]}});
-				content.element.dispatchEvent(event);
-			};
-
-			window.SwipeContent = SwipeContent;
-			
-			//initialize the SwipeContent objects
-			var swipe = document.getElementsByClassName('js-swipe-content');
-			if( swipe.length > 0 ) {
-				for( var i = 0; i < swipe.length; i++) {
-					(function(i){new SwipeContent(swipe[i]);})(i);
-				}
-			}
-		}());
-
-		// Utility function
-		function Util () {};
-
-		/*
-			class manipulation functions
-		*/
-		Util.hasClass = function(el, className) {
-			if (el.classList) return el.classList.contains(className);
-			else return !!el.className.match(new RegExp('(\\s|^)' + className + '(\\s|$)'));
-		};
-
-		Util.addClass = function(el, className) {
-			var classList = className.split(' ');
-			if (el.classList) el.classList.add(classList[0]);
-			else if (!Util.hasClass(el, classList[0])) el.className += " " + classList[0];
-			if (classList.length > 1) Util.addClass(el, classList.slice(1).join(' '));
-		};
-
-		Util.removeClass = function(el, className) {
-			var classList = className.split(' ');
-			if (el.classList) el.classList.remove(classList[0]);
-			else if(Util.hasClass(el, classList[0])) {
-				var reg = new RegExp('(\\s|^)' + classList[0] + '(\\s|$)');
-				el.className=el.className.replace(reg, ' ');
-			}
-			if (classList.length > 1) Util.removeClass(el, classList.slice(1).join(' '));
-		};
-
-		Util.toggleClass = function(el, className, bool) {
-			if(bool) Util.addClass(el, className);
-			else Util.removeClass(el, className);
-		};
-
-		Util.setAttributes = function(el, attrs) {
-		for(var key in attrs) {
-			el.setAttribute(key, attrs[key]);
-		}
-		};
-
-		/*
-		DOM manipulation
-		*/
-		Util.getChildrenByClassName = function(el, className) {
-		var children = el.children,
-			childrenByClass = [];
-		for (var i = 0; i < el.children.length; i++) {
-			if (Util.hasClass(el.children[i], className)) childrenByClass.push(el.children[i]);
-		}
-		return childrenByClass;
-		};
-
-		/*
-			Animate height of an element
-		*/
-		Util.setHeight = function(start, to, element, duration, cb) {
-			var change = to - start,
-				currentTime = null;
-
-		var animateHeight = function(timestamp){
-			if (!currentTime) currentTime = timestamp;
-			var progress = timestamp - currentTime;
-			var val = parseInt((progress/duration)*change + start);
-			element.setAttribute("style", "height:"+val+"px;");
-			if(progress < duration) {
-				window.requestAnimationFrame(animateHeight);
-			} else {
-				cb();
-			}
-		};
-
-		//set the height of the element before starting animation -> fix bug on Safari
-		element.setAttribute("style", "height:"+start+"px;");
-		window.requestAnimationFrame(animateHeight);
-		};
-
-		/*
-			Smooth Scroll
-		*/
-
-		Util.scrollTo = function(final, duration, cb) {
-		var start = window.scrollY || document.documentElement.scrollTop,
-			currentTime = null;
-
-		var animateScroll = function(timestamp){
-			if (!currentTime) currentTime = timestamp;
-			var progress = timestamp - currentTime;
-			if(progress > duration) progress = duration;
-			var val = Math.easeInOutQuad(progress, start, final-start, duration);
-			window.scrollTo(0, val);
-			if(progress < duration) {
-				window.requestAnimationFrame(animateScroll);
-			} else {
-			cb && cb();
-			}
-		};
-
-		window.requestAnimationFrame(animateScroll);
-		};
-
-		/*
-		Focus utility classes
-		*/
-
-		//Move focus to an element
-		Util.moveFocus = function (element) {
-		if( !element ) element = document.getElementsByTagName("body")[0];
-		element.focus();
-		if (document.activeElement !== element) {
-			element.setAttribute('tabindex','-1');
-			element.focus();
-		}
-		};
-
-		/*
-		Misc
-		*/
-
-		Util.getIndexInArray = function(array, el) {
-		return Array.prototype.indexOf.call(array, el);
-		};
-
-		Util.cssSupports = function(property, value) {
-		if('CSS' in window) {
-			return CSS.supports(property, value);
-		} else {
-			var jsProperty = property.replace(/-([a-z])/g, function (g) { return g[1].toUpperCase();});
-			return jsProperty in document.body.style;
-		}
-		};
-
-		/*
-			Polyfills
-		*/
-		//Closest() method
-		if (!Element.prototype.matches) {
-			Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector;
-		}
-
-		if (!Element.prototype.closest) {
-			Element.prototype.closest = function(s) {
-				var el = this;
-				if (!document.documentElement.contains(el)) return null;
-				do {
-					if (el.matches(s)) return el;
-					el = el.parentElement || el.parentNode;
-				} while (el !== null && el.nodeType === 1);
-				return null;
-			};
-		}
-
-		//Custom Event() constructor
-		if ( typeof window.CustomEvent !== "function" ) {
-
-		function CustomEvent ( event, params ) {
-			params = params || { bubbles: false, cancelable: false, detail: undefined };
-			var evt = document.createEvent( 'CustomEvent' );
-			evt.initCustomEvent( event, params.bubbles, params.cancelable, params.detail );
-			return evt;
-		}
-
-		CustomEvent.prototype = window.Event.prototype;
-
-		window.CustomEvent = CustomEvent;
-		}
-
-		/*
-			Animation curves
-		*/
-		Math.easeInOutQuad = function (t, b, c, d) {
-			t /= d/2;
-			if (t < 1) return c/2*t*t + b;
-			t--;
-			return -c/2 * (t*(t-2) - 1) + b;
-		};
-
-
-		/* Main js */
-		/* -----------------*/
-		(function() {
-		// Horizontal Timeline - by CodyHouse.co
-		var HorizontalTimeline = function(element) {
-				this.element = element;
-				this.datesContainer = this.element.getElementsByClassName('h--timeline-dates')[0];
-				this.line = this.datesContainer.getElementsByClassName('h--timeline-line')[0]; // grey line in the top timeline section
-				this.fillingLine = this.datesContainer.getElementsByClassName('h--timeline-filling-line')[0]; // green filling line in the top timeline section
-				this.date = this.line.getElementsByClassName('h--timeline-date');
-				this.selectedDate = this.line.getElementsByClassName('h--timeline-date--selected')[0];
-				this.dateValues = parseDate(this);
-				this.minLapse = calcMinLapse(this);
-				this.navigation = this.element.getElementsByClassName('h--timeline-navigation');
-				this.contentWrapper = this.element.getElementsByClassName('h--timeline-events')[0];
-				this.content = this.contentWrapper.getElementsByClassName('h--timeline-event');
-
-				this.eventsMinDistance = 80; // min distance between two consecutive events (in px)
-				this.eventsMaxDistance = 160; // max distance between two consecutive events (in px)
-				this.translate = 0; // this will be used to store the translate value of this.line
-				this.lineLength = 0; //total length of this.line
-
-				// store index of selected and previous selected dates
-				this.oldDateIndex = Util.getIndexInArray(this.date, this.selectedDate);
-				this.newDateIndex = this.oldDateIndex;
-
-				initTimeline(this);
-				initEvents(this);
-		};
-
-		function initTimeline(timeline) {
-			// set dates left position
-			var left = 0;
-				for (var i = 0; i < timeline.dateValues.length; i++) {
-					var j = (i == 0) ? 0 : i - 1;
-				var distance = daydiff(timeline.dateValues[j], timeline.dateValues[i]),
-					distanceNorm = (Math.round(distance/timeline.minLapse) + 2)*timeline.eventsMinDistance,
-					containerWidth = timeline.datesContainer.offsetWidth,
-					distanceCorrecture = 0;
-
-				if(distanceNorm < timeline.eventsMinDistance) {
-					distanceNorm = timeline.eventsMaxDistance;
-				} else if(distanceNorm > timeline.eventsMaxDistance) {
-					distanceNorm = timeline.eventsMinDistance;
-				}
-				left = left + distanceNorm;
-				timeline.date[i].setAttribute('style', 'left:' + left+'px');
-				}
-
-				// set line/filling line dimensions
-				timeline.line.style.width = (left + timeline.eventsMinDistance)+distanceCorrecture+'px';
-				timeline.lineLength = left + timeline.eventsMinDistance+distanceCorrecture;
-			
-				// add 100px more to line/filling line if container bigger then timeline lineLength
-				if(containerWidth > timeline.lineLength) {
-				timeline.line.style.width = (left + timeline.eventsMinDistance)+distanceCorrecture+'px';
-				timeline.lineLength = timeline.lineLength + distanceCorrecture;
-				}
-			
-				// reveal timeline
-				Util.addClass(timeline.element, 'h--timeline--loaded');
-				selectNewDate(timeline, timeline.selectedDate);
-				resetTimelinePosition(timeline, 'next');
-		};
-
-		function initEvents(timeline) {
-			var self = timeline;
-				// deaktivate the buttons
-				deaktivateNavigationButtons(self);
-			
-				// click on arrow navigation
-				self.navigation[0].addEventListener('click', function(event){
-					event.preventDefault();
-					translateTimeline(self, 'prev');
-					deaktivateNavigationButtons(self);
-				});
-				self.navigation[1].addEventListener('click', function(event){
-					event.preventDefault();
-					translateTimeline(self, 'next');
-					deaktivateNavigationButtons(self);
-				});
-
-				//swipe on timeline
-				new SwipeContent(self.datesContainer);
-				self.datesContainer.addEventListener('swipeLeft', function(event){
-					translateTimeline(self, 'next');
-				});
-				self.datesContainer.addEventListener('swipeRight', function(event){
-					translateTimeline(self, 'prev');
-				}); 
-
-				//select a new event
-				for(var i = 0; i < self.date.length; i++) {
-					(function(i){
-						self.date[i].addEventListener('click', function(event){
-							event.preventDefault();
-							selectNewDate(self, event.target);
-						});
-
-						self.content[i].addEventListener('animationend', function(event){
-							if( i == self.newDateIndex && self.newDateIndex != self.oldDateIndex) resetAnimation(self);
-						});
-					})(i);
-				}
-		};
-
-		function updateFilling(timeline) { // update fillingLine scale value
-				var dateStyle = window.getComputedStyle(timeline.selectedDate, null),
-					left = dateStyle.getPropertyValue("left"),
-					width = dateStyle.getPropertyValue("width");
-
-				left = Number(left.replace('px', '')) + Number(width.replace('px', ''))/2;
-				timeline.fillingLine.style.transform = 'scaleX('+(left/timeline.lineLength)+')';
-			};
-
-		function translateTimeline(timeline, direction) { // translate timeline (and date elements)
-			var containerWidth = timeline.datesContainer.offsetWidth;
-			if(direction) {
-				timeline.translate = (direction == 'next') ? timeline.translate - containerWidth + timeline.eventsMinDistance : timeline.translate + containerWidth - timeline.eventsMinDistance;
-			}
-			if( 0 - timeline.translate > timeline.lineLength - containerWidth ) timeline.translate = containerWidth - timeline.lineLength;
-			if( timeline.translate > 0 ) timeline.translate = 0;
-
-			timeline.line.style.transform = 'translateX('+timeline.translate+'px)';
-			// update the navigation items status (toggle inactive class)
-				(timeline.translate == 0 ) ? Util.addClass(timeline.navigation[0], 'h--timeline-navigation--inactive') : Util.removeClass(timeline.navigation[0], 'h--timeline-navigation--inactive');
-				(timeline.translate == containerWidth - timeline.lineLength ) ? Util.addClass(timeline.navigation[1], 'h--timeline-navigation--inactive') : Util.removeClass(timeline.navigation[1], 'h--timeline-navigation--inactive');
-		};
-			
-			function deaktivateNavigationButtons(timeline) {
-			var containerWidth = timeline.datesContainer.offsetWidth;
-			// deaktivate next button if container bigger then timeline lineLength
-			if(containerWidth >= timeline.lineLength) {
-					Util.addClass(timeline.navigation[0], 'h--timeline-navigation--inactive');
-					Util.addClass(timeline.navigation[1], 'h--timeline-navigation--inactive');
-				}
-			};
-
-			function selectNewDate(timeline, target) { // ned date has been selected -> update timeline
-				timeline.newDateIndex = Util.getIndexInArray(timeline.date, target);
-				timeline.oldDateIndex = Util.getIndexInArray(timeline.date, timeline.selectedDate);
-				Util.removeClass(timeline.selectedDate, 'h--timeline-date--selected');
-				Util.addClass(timeline.date[timeline.newDateIndex], 'h--timeline-date--selected');
-				timeline.selectedDate = timeline.date[timeline.newDateIndex];
-				updateOlderEvents(timeline);
-				updateVisibleContent(timeline);
-				updateFilling(timeline);
-			};
-
-			function updateOlderEvents(timeline) { // update older events style
-				for(var i = 0; i < timeline.date.length; i++) {
-					(i < timeline.newDateIndex) ? Util.addClass(timeline.date[i], 'h--timeline-date--older-event') : Util.removeClass(timeline.date[i], 'h--timeline-date--older-event');
-				}
-			};
-
-			function updateVisibleContent(timeline) { // show content of new selected date
-				if (timeline.newDateIndex > timeline.oldDateIndex) {
-					var classEntering = 'h--timeline-event--selected h--timeline-event--enter-right',
-						classLeaving = 'h--timeline-event--leave-left';
-				} else if(timeline.newDateIndex < timeline.oldDateIndex) {
-					var classEntering = 'h--timeline-event--selected h--timeline-event--enter-left',
-						classLeaving = 'h--timeline-event--leave-right';
-				} else {
-					var classEntering = 'h--timeline-event--selected',
-						classLeaving = '';
-				}
-
-				Util.addClass(timeline.content[timeline.newDateIndex], classEntering);
-				if (timeline.newDateIndex != timeline.oldDateIndex) {
-					Util.removeClass(timeline.content[timeline.oldDateIndex], 'h--timeline-event--selected');
-					Util.addClass(timeline.content[timeline.oldDateIndex], classLeaving);
-					//timeline.contentWrapper.style.height = timeline.content[timeline.newDateIndex].offsetHeight + 'px';
-				}
-			};
-
-			function resetAnimation(timeline) { // reset content classes when entering animation is over
-				//timeline.contentWrapper.style.height = null;
-				Util.removeClass(timeline.content[timeline.newDateIndex], 'h--timeline-event--enter-right h--timeline-event--enter-left');
-				Util.removeClass(timeline.content[timeline.oldDateIndex], 'h--timeline-event--leave-right h--timeline-event--leave-left');
-			};
-
-			function keyNavigateTimeline(timeline, direction) { // navigate the timeline using the keyboard
-				var newIndex = (direction == 'next') ? timeline.newDateIndex + 1 : timeline.newDateIndex - 1;
-				if(newIndex < 0 || newIndex >= timeline.date.length) return;
-				selectNewDate(timeline, timeline.date[newIndex]);
-				resetTimelinePosition(timeline, direction);
-			};
-
-			function resetTimelinePosition(timeline, direction) { //translate timeline according to new selected event position
-				var eventStyle = window.getComputedStyle(timeline.selectedDate, null),
-					eventLeft = Number(eventStyle.getPropertyValue('left').replace('px', '')),
-					timelineWidth = timeline.datesContainer.offsetWidth;
-
-			if( (direction == 'next' && eventLeft >= timelineWidth - timeline.translate) || (direction == 'prev' && eventLeft <= - timeline.translate) ) {
-				timeline.translate = timelineWidth/2 - eventLeft;
-				translateTimeline(timeline, false);
-			}
-		};
-
-		function parseDate(timeline) { // get timestamp value for each date
-				var dateArrays = [];
-				for(var i = 0; i < timeline.date.length; i++) {
-					var singleDate = timeline.date[i].getAttribute('data-date'),
-						dateComp = singleDate.split('T');
-
-					if( dateComp.length > 1 ) { //both DD/MM/YEAR and time are provided
-						var dayComp = dateComp[0].split('/'),
-							timeComp = dateComp[1].split(':');
-					} else if( dateComp[0].indexOf(':') >=0 ) { //only time is provide
-						var dayComp = ["2000", "0", "0"],
-							timeComp = dateComp[0].split(':');
-					} else { //only DD/MM/YEAR
-						var dayComp = dateComp[0].split('/'),
-							timeComp = ["0", "0"];
-					}
-					var	newDate = new Date(dayComp[2], dayComp[1]-1, dayComp[0], timeComp[0], timeComp[1]);
-					dateArrays.push(newDate);
-				}
-			return dateArrays;
-		};
-
-		function calcMinLapse(timeline) { // determine the minimum distance among events
-				var dateDistances = [];
-				for(var i = 1; i < timeline.dateValues.length; i++) {
-				var distance = daydiff(timeline.dateValues[i-1], timeline.dateValues[i]);
-				if(distance > 0) dateDistances.push(distance);
-				}
-
-				return (dateDistances.length > 0 ) ? Math.min.apply(null, dateDistances) : 86400000;
-			};
-
-			function daydiff(first, second) { // time distance between events
-				return Math.round((second-first));
-			};
-
-		window.HorizontalTimeline = HorizontalTimeline;
-
-		var horizontalTimeline = document.getElementsByClassName('js-h--timeline'),
-			horizontalTimelineTimelineArray = [];
-		if(horizontalTimeline.length > 0) {
-				for(var i = 0; i < horizontalTimeline.length; i++) {
-					horizontalTimelineTimelineArray.push(new HorizontalTimeline(horizontalTimeline[i]));
-				}
-				// navigate the timeline when inside the viewport using the keyboard
-				document.addEventListener('keydown', function(event){
-					if( (event.keyCode && event.keyCode == 39) || ( event.key && event.key.toLowerCase() == 'arrowright') ) {
-						updateHorizontalTimeline('next'); // move to next event
-					} else if((event.keyCode && event.keyCode == 37) || ( event.key && event.key.toLowerCase() == 'arrowleft')) {
-						updateHorizontalTimeline('prev'); // move to prev event
-					}
-				});
-		};
-
-		function updateHorizontalTimeline(direction) {
-				for(var i = 0; i < horizontalTimelineTimelineArray.length; i++) {
-					if(elementInViewport(horizontalTimeline[i])) keyNavigateTimeline(horizontalTimelineTimelineArray[i], direction);
-				}
-		};
-
-		/*
-				How to tell if a DOM element is visible in the current viewport?
-				http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
-			*/
-			function elementInViewport(el) {
-				var top = el.offsetTop;
-				var left = el.offsetLeft;
-				var width = el.offsetWidth;
-				var height = el.offsetHeight;
-
-				while(el.offsetParent) {
-					el = el.offsetParent;
-					top += el.offsetTop;
-					left += el.offsetLeft;
-				}
-
-				return (
-					top < (window.pageYOffset + window.innerHeight) &&
-					left < (window.pageXOffset + window.innerWidth) &&
-					(top + height) > window.pageYOffset &&
-					(left + width) > window.pageXOffset
-				);
-			}
-		}());
-
-
-
-	  </script>
 </html>
 
 

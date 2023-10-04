@@ -92,19 +92,19 @@ the world. Consider how the world affects your work and how your work affects th
 			<div class="methods">
 				<div class="button-content">
 					<p class="tituloBoton">Silver</p>
-					<button onclick="showSection('sectionMethods')" class="learnMore">Go to section</button>
+					<button onclick="showSection('sectionMethods'),document.getElementById('titulo_silver').scrollIntoView();" class="learnMore">Go to section</button>
 				</div>
 			</div>
 			<div class="overview">
 				<div class="button-content">
 					<p class="tituloBoton">Our beginnings</p>
-					<button onclick="showSection('sectionOverview')" class="learnMore">Go to section</button>
+					<button onclick="showSection('sectionOverview'),document.getElementById('titulo_OB').scrollIntoView();" class="learnMore">Go to section</button>
 				</div>
 			</div>
 			<div class="results">
 				<div class="button-content">
 					<p class="tituloBoton">Gold</p>
-					<button onclick="showSection('sectionResults')" class="learnMore">Go to section</button>
+					<button onclick="showSection('sectionResults'),document.getElementById('titulo_gold').scrollIntoView();" class="learnMore">Go to section</button>
 				</div>
 			</div>
 			
@@ -145,41 +145,12 @@ the world. Consider how the world affects your work and how your work affects th
 		<div id="sectionOverview" class="sectO">
 			<div class="secciones">
 				<div class="seccionOverview">
-					<p class="subtitleO">Our beginnings</p>
+					<p class="subtitleO" id="titulo_OB">Our beginnings</p>
 				</div>
 			</div>
 			<div class="layout">
 				<!--cosas del index-->
-				<div class="scrollIndexContain">
-					<div class="stickyIndex">
-					  <div class="lineIndex"></div>
-					  <div class="indexDots">
-						<div onclick="goTo('1')" class="dotIndex" id="dot1">
-						  <div class="dotText">Our beginnings</div>
-						</div>
-						<div class="dotIndex" id="dot2" onclick="goTo('2')">
-						  <div class="dotText">References</div>
-						</div>
-						
-					  </div>
-			  
-					</div>
-				</div>
-				<script type="text/javascript">
-					var dot1 = document.getElementById('dot1');
-					var dot2 = document.getElementById('dot2');
-					
 				
-					function goTo(scrollID) {
-					  dot1.classList.remove('active');
-					  dot2.classList.remove('active');
-					  
-					  var dot = document.getElementById('dot' + scrollID);
-					  dot.classList.add('active');
-					  var element = document.getElementById('sec' + scrollID);
-					  element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-					}
-				  </script>
 				<div class="secciones">
 					<div class="mkt-3dSlider py-6">
 						<div class="topcardscontainer">
@@ -222,14 +193,13 @@ the world. Consider how the world affects your work and how your work affects th
 						</div>
 					</div>
 					<div class="tituloContenido">
-						<h3 id="ourBeginnings"><br><br><br><br>Our beginnings</h3>
+						<h3 class = "tituloOurBeg" id="ourBeginnings"><br>Our beginnings</h3>
 					</div>
-					<div>
+					<div class = "contOurBeg">
 						<p class="contenido">
 							Everything starts with a necessity, only initiative is required to make a change. Since the
 							beginning of our project, we had our sights set on working with cows, these beautiful
-							animals that provide us with milk, a highly nutritious food for many (Morales-Ubaldo et
-							al.,2023)<sup>1</sup>.While investigating current issues in our community, we came across
+							animals that provide us with milk, a highly nutritious food for many<sup>1</sup>.While investigating current issues in our community, we came across
 							<b class="tooltipSignificado">mastitis
 								<span class="tooltipSignificadoBox">
 									a bacterial infection that results in swelling and pain, affecting the cow's
@@ -257,7 +227,7 @@ the world. Consider how the world affects your work and how your work affects th
 								well-being)</p>
 						</div>
 					</div>
-					<div class="accordion">
+					<div class="accordion refer">
 						<div class="accordion-item">
 							<div class="accordion-item-header">
 								<h3 id="referencesO">References</h3>
@@ -316,7 +286,7 @@ the world. Consider how the world affects your work and how your work affects th
 			<!--seccion Methods-->
 			<div class="secciones">
 				<div class="seccionMethods">
-					<p class="subtitleM">Silver</p>
+					<p class="subtitleM" id="titulo_silver">Silver</p>
 				</div>
 			</div>
 			<div class="layout">
@@ -325,14 +295,11 @@ the world. Consider how the world affects your work and how your work affects th
 					<nav class="navigation">
 						<ul>
 							<li>
-								<a href="#upstream">ODEs</a>
+								<a href="#atHome">At Home</a>
 								<ul>
-									<li><a href="#underlying_theory">Monte Carlo simulation</a></li>
-									<li><a href="#model_building">Parameter estimation</a></li>
+									<li><a href="#whereItAllStarted">Where It All Started</a></li>
+									<li><a href="#fromTheRoot">From The Root</a></li>
 								</ul>
-							</li>
-							<li><a href="#downstream">RSM</a></li>
-							<li><a href="#referencesM">References</a></li>
 							</li>
 						</ul>
 					</nav>
@@ -346,19 +313,17 @@ the world. Consider how the world affects your work and how your work affects th
 						of dairy cow health for producing high-quality milk, affecting both the community we live in and
 						the world, where <b>8 billion</b> people live, a concerning issue comes to light the high demand
 						for milk. In the year 2022, <b>366.800 million</b> kilograms of milk found their place, and as
-						we gaze to 2028, projections point to the consumption of <b>435.000 million</b> kilograms (Orús,
-						2023)<sup>1</sup>. Having addressed the magnitude of the people with whom we share this staple food, we
+						we gaze to 2028, projections point to the consumption of <b>435.000 million</b> kilograms<sup>1</sup>. Having addressed the magnitude of the people with whom we share this staple food, we
 						can emphasize on the problem we face.
 					</p>
 					<p class="cta1">
 						<span>Mastitis is estimated to cost the <b>global</b> dairy industry <b>$19.7B-32B
-								USD</b>annually  (Behind The Bench Staff, 2022)<sup>2</sup></span>
+								USD</b> annually <sup>2</sup></span>
 					</p>
 
 					<br>
 					<p class="contenido">
-						This infection affects between 15% and 20% of the cattle population each year (Tomanić et al.,
-						2023)<sup>3</sup>. 4 and so is a common and costly disease that influences dairy cattle, reducing milk
+						This infection affects between 15% and 20% of the cattle population each year <sup>3</sup>. 4 and so is a common and costly disease that influences dairy cattle, reducing milk
 						<b>quality </b>and <b>quantity</b>.We are getting closer to our local community! But first,
 						let's talk about the importance of dairy in <b>Mexico</b>.
 					</p>
@@ -383,16 +348,16 @@ the world. Consider how the world affects your work and how your work affects th
 							</span>
 						</b>
 						,milk is one of the essentials in the diet of many, ranking México as the <b>8th largest milk
-							consumer</b> (Statista)<sup>4</sup>.
+							consumer</b><sup>4</sup>.
 
 					</p>
 
 					<div class="tituloContenido">
-						<h3 id="introduction"><br>At Home</h3>
+						<h3 id="atHome"><br><br><br>At Home</h3>
 					</div>
 					<p class="contenido">
-						In our hometown, Chihuahua the main livestock activity developed is the production of bovine
-						milk, representing a high economic importance since it occupies the fourth place nationally in
+						In our hometown, <b>Chihuahua</b> the main livestock activity developed is the production of bovine
+						milk, representing a high economic importance since it occupies the <b>fourth place nationally</b> in
 						total milk production.
 					</p>
 					<div class="graficasDiagrama">
@@ -400,7 +365,7 @@ the world. Consider how the world affects your work and how your work affects th
 							alt="graficas">
 					</div>
 					<p class="contenido">
-						<b>Fig 2.</b>Biggest milk productors in México (Rubio & Pérez, 2012)<sup>5</sup>.
+						<b>Fig 2.</b>Biggest milk productors in México<sup>5</sup>.
 					</p>
 
 					<!--diagrama de graficas-->
@@ -413,13 +378,13 @@ the world. Consider how the world affects your work and how your work affects th
 					<br>
 					<br>
 					<div class="tituloContenido">
-						<h3 id="introduction">Where it all started</h3>
+						<h3 id="whereItAllStarted" class = "title_whereStarted"><br><br><br>Where it all started</h3>
 					</div>
 					<p class="contenido">
 						To gain a true understanding of the issue, we decided to experience it firsthand. We had a
 						brainstorming session with our team, in which we identified the parties involved in the process
-						and evaluated whether they were being positively or negatively affected. We came up with a value
-						chain that goes from the treatments and the people involved in their development, to the public
+						and evaluated whether they were being positively or negatively affected. We came up with a <b>value chain</b>
+						that goes from the treatments and the people involved in their development, to the public
 						approval, or us, milk consumers. This approach played a significant role in shaping our
 						project's success as it offered us valuable insights, identified needs, and outlined
 						requirements for addressing the mastitis problem.
@@ -427,15 +392,53 @@ the world. Consider how the world affects your work and how your work affects th
 					<br>
 					<div class="diagrmaCadenaValor">
 						<img class=cadena_de_valor
-							src="https://static.igem.wiki/teams/4607/wiki/human-2-0/cadenavalor3.gif"
+							src="https://static.igem.wiki/teams/4607/wiki/human-2-0/human.gif"
 							alt="cadena_de_valor">
 					</div>
 					<p class="contenido">
 						Before we aboard what we learned from each stakeholder, we want to address the importance each
 						of them has in the development of our project.
 					</p>
-					<div>
-						<p>diagrama tarjetas/gotas</p>
+					<div class="diagrama_gotas">
+						<img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/humandiagramagotaubre.png" alt="gotas_diagrama">
+						<div class = "gotas">
+							<div class="gota1">
+								<p class="titulo_gota1">Treatment</p>
+								<p class="texto_gota1">They play an essential role in health care, due to their significant influence in decision making and success in treatment strategies.</p>
+							</div>
+							<div class="gota2">
+								<p class="titulo_gota2">Milking Process</p>
+								<p class="texto_gota2">They play an essential role in health care, due to their significant influence in decision making and success in treatment strategies.</p>
+							</div>
+							<div class="gota3">
+								<p class="titulo_gota3">Transportation</p>
+								<p class="texto_gota3">Ensure that milk from cows affected by mastitis is appropriately handled and segregated to prevent contamination. Record data related to milk volume, quality, and farm conditions during their visits. </p>
+							</div>
+							<div class="gota4">
+								<p class="titulo_gota4">Diagnostic</p>
+								<p class="texto_gota4">Provide accurate identification of the specific microorganisms involved. Explore new treatment strategies to combat microbial resistance and limit its spread. Deliver monitoring treatment progress through follow-up testing.</p>
+							</div>
+							<div class="gota5">
+								<p class="titulo_gota5">Milk Processing</p>
+								<p class="texto_gota5">They design and optimize the processing steps involved in turning raw milk into various dairy products, as well as the data collection on mastitis prevalence, allowing for monitoring of regional trends and the identification of potential outbreaks.
+									Segregate milk contaminated with mastitis. </p>
+							</div>
+							<div class="gota6">
+								<p class="titulo_gota6">Quality</p>
+								<p class="texto_gota6">Implement processes that ensure the safety and quality aspects that affect consumers health.
+									Analyze milk samples for quality and potential signs of mastitis. 
+									 as well as the Design and implementation processes that ensure the safety and quality of dairy products. 
+									Maintain strict quality control standards.</p>
+							</div>
+							<div class="gota7">
+								<p class="titulo_gota7">Normativity</p>
+								<p class="texto_gota7">Establish the standards and values that guide our judgments and actions. We are trying to solve a problem that has important implications for human and animal welfare, environmental sustainability, and economic efficiency.</p>
+							</div>
+							<div class="gota8">
+								<p class="titulo_gota8">Public Aproval</p>
+								<p class="texto_gota8">We surveyed dairy consumers to understand their awareness, perception, and acceptance of non-antibiotic alternative for treating mastitis. Additionally, we aimed to determine the level of knowledge about the mastitis issue in the community.</p>
+							</div>
+						</div>
 					</div>
 					<!--diagrama tarjetas-->
 					<br>
@@ -444,11 +447,11 @@ the world. Consider how the world affects your work and how your work affects th
 					<!--foto DELMAR: https://static.igem.wiki/teams/4607/wiki/human-2-0/8c4fe1d6-384b-4618-a8fb-98eddae7652d-1-105-c.jpeg-->
 
 					<div class="tituloContenido">
-						<h3>Froom the root</h3>
+						<h3 id="fromTheRoot"><br><br><br>From the root</h3>
 					</div>
 					<div>
 						<img class="foto_delmar"
-							src="https://static.igem.wiki/teams/4607/wiki/human-2-0/8c4fe1d6-384b-4618-a8fb-98eddae7652d-1-105-c.jpeg"
+							src="https://static.igem.wiki/teams/4607/wiki/human-2-0/f87331bc-933a-47bf-b20a-0314e7b758a1-1-105-c.jpeg"
 							alt="foto_delmar">
 					</div>
 					<br>
@@ -456,20 +459,18 @@ the world. Consider how the world affects your work and how your work affects th
 					<p class="contenido">
 						Since the very beginning we established contact with DELMAR´s zootechnical veterinary doctor
 						Alfredo Arroyo, a cow shed in Delicias, Chihuahua. that supplies Alpura, one of the biggest
-						dairy industries of the country. We could say this was actually our first encounter with the
-						industry, in which we learned that good hygiene practices must be taken into account during the
+						dairy industries of the country, Alpura occupies second place as the best seller of milk and dairy products in the country<sup>6</sup>.. We could say this was actually our first encounter with a
+						big industry such as DELMAR, in which we learned that good hygiene practices must be taken into account during the
 						milking process. This interview was really important as it marks the start of our first
 						objective, <b>understanding the problem.</b>
 					</p>
 					<br>
-					<p class="contenido">
-						Let's talk about the milking process stakeholders, the process followed to obtain the milk, but
-						also according to the interviews, this is usually the primary starting point where the problem
-						develops. The milking process from which we interviewed 20 people, including Veterinary
-						Zootechnicians, small, medium, and large producers, and dairy industries. During our path, we
-						identified 4 main problems that they all had in common, high treatment costs, milk withdrawal,
-						antibiotic resistance, and food waste.
+					<p class="contenido"> 
+						<img class="flecha_1" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/444.png" align="left">Let's talk about the <b>milking process</b> stakeholders,according to the interviews, during this process is where the problem
+						develops. we interviewed several Veterinary Zootechnicians as well as small, medium, and large producers, and dairy industries to gain a better understanding of why mastitis was a recurent problem, and why it took place in the milking parlor, of the information we collect, we
+						identified 4 main problems that they all had in common, high treatment costs, milk withdrawal,antibiotic resistance, and food waste,which we will talk more specifically about below.
 					</p>
+				
 					<!--Diagrama de los highcost, milkwithdrawl-->
 					<!--problema 1-->
 					<br>
@@ -504,8 +505,7 @@ the world. Consider how the world affects your work and how your work affects th
 						elevated prices at the market, they even use everyday supplies to ensure good hygiene in their
 						sheds. On the other hand, we have the dairy industry, which has a full stock of antibiotics when
 						needed. However, mastitis incurs significant financial losses in the global dairy industry,
-						amounting to an estimated 4.7B to 7.68B USD in veterinary fees and drug expenses (Behind The
-						Bench Staff, 2022b) <sup>6</sup>
+						amounting to an estimated 4.7B to 7.68B USD in veterinary fees and drug expenses<sup>7</sup>
 					</p>
 					<p class="contenido">
 						Veterinary zootechnicians who manage dairy cow sheds, pointed out that mastitis represents the
@@ -513,7 +513,7 @@ the world. Consider how the world affects your work and how your work affects th
 						both sectors are affected economically.
 					</p>
 					<p class="contenido">
-						Feel free to visit our Entrepreneurship page to see the market and Aureobos comparison!
+						Feel free to visit our <a class = "hipervinculoEntre" onclick="location.href='https://2023.igem.wiki/tec-chihuahua/entre'">Entrepreneurship</a> page to see the market and Aureobos comparison!
 					</p>
 					<div>
 						<img class="foto_medicinas"
@@ -560,7 +560,7 @@ the world. Consider how the world affects your work and how your work affects th
 						antibiotic requires reduces the overall milk production per dairy, contributing to economic
 						losses for the producer. As we can see in Fig.8, the most common antibiotics on the market
 						require long milk withdrawal periods except for Ceftiofur. This is really concerning not only
-						because of the economic losses but for the food that is going to waste during the process.
+						because of the economic losses but for the <b>food that is going to waste</b> during the process.
 					</p>
 
 					<!--grafico de milk withrawal!-->
@@ -608,6 +608,9 @@ the world. Consider how the world affects your work and how your work affects th
 									</div>
 								</div>
 							</div>
+						<p class="contenido">
+							Fig 8. Milk Withdrawal period of the primary antibiotics used for treating mastitis.<sup>8</sup>
+						</p>
 							
 					<!--problema 3-->
 					<h3 class="cta2">
@@ -621,7 +624,7 @@ the world. Consider how the world affects your work and how your work affects th
 					<br>
 					<br>
 					<p class="contenido">
-						13 of 20 small producers and Veterinary Zootecnitians mentioned antibiotic resistance as an
+						<b>13 of 20</b> small producers and Veterinary Zootecnitians mentioned antibiotic resistance as an
 						actual or potential future problem for them, this was very concerning.
 					</p>
 
@@ -630,23 +633,43 @@ the world. Consider how the world affects your work and how your work affects th
 					<h3 class="cta2">
 						<span>Food waste</span>
 					</h3>
-					<p>FALTA FALTA FALTA</p>
-					<br>
-					<br>
-					<br>
 					<p class="contenido">
+						Cows produce 34 to 35 lts of milk per day, however mastitis decreases milk production with an average of two liters less per cow. This represents a very big concern, since in addition to generating economic losses, it contributes to food waste.
+					</p>
+					<div>
+						<img class="foto_leche"
+							src="https://static.igem.wiki/teams/4607/wiki/human-2-0/e46b80d3-4b8c-451d-a7ef-52157b554a69-1-105-c.jpeg"
+							alt="foto_leche">
+					</div>
+
+					<div class="contpapa"
+						style="--gradient:linear-gradient(45deg, rgb(197, 91, 117), rgb(215, 148, 168))">
+						<div class="cause">
+							<h1>Story Behind</h1>
+						</div>
+						<div class="causetxt">
+							<p>At DELMAR´s ranch the wotkers have the right to one liter of milk per day, making this really interesting considering that we are talking about food waste.</p>
+						</div>
+					</div>
+
+					<br>
+					<br>
+					<br>
+					<p class="contenido"> 
+						<img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/2222.png" align="left">
 						We've arrived at the second section of our value chain, the milk processing and diagnostic
 						areas, which were fundamental in the development of our project and a complete understanding of
-						the problem we are facing. Milk collection and dairy industry provided us with regulations and
+						the problem we are facing. <b>Milk collection and dairy industry</b> provided us with regulations and
 						requirements that they ask for when a pipe of milk arrives at the center. This place processes
 						milk from small producers and assures good quality milk. Mastitis is directly reflected in the
 						number of somatic cells present in milk, which makes it a crucial reference to determine its
 						acceptability in collection centers or for companies that process milk-derived foods
 					</p>
+					
 					<!--Foto collection center: https://static.igem.wiki/teams/4607/wiki/human-2-0/f9092f74-238c-4659-a6eb-b0bc53dd8037-1-105-c.jpeg-->
 					<div>
 						<img class="foto_collection"
-							src="https://static.igem.wiki/teams/4607/wiki/human-2-0/f9092f74-238c-4659-a6eb-b0bc53dd8037-1-105-c.jpeg"
+							src="https://static.igem.wiki/teams/4607/wiki/human-2-0/4d059124-49a7-4052-b411-daf8a1c65fda-1-105-c.jpeg"
 							alt="foto_collection">
 					</div>
 					<br>
@@ -679,7 +702,7 @@ the world. Consider how the world affects your work and how your work affects th
 					<p class="contenido">
 						This test is the most commonly used in the industry for subclinical mastitis detection. It is a
 						qualitative measurement that involves a reactant (Sodium Lauryl sulfate 2%, Crystal violet
-						0.0033%, Aqueous vehicle q.s., reagent in solution)<sup>11</sup> and a blast of milk. In our
+						0.0033%, Aqueous vehicle q.s., reagent in solution)<sup>9</sup> and a blast of milk. In our
 						attempt to understand the problem, we had the opportunity to milk firsthand at CBTa 90 in
 						Cuauhtemoc, Chih. In which they showed the team from start to finish the milking routine to
 						obtain the delicious milk!, if you want to know more about this feel free to read the box below!
@@ -1035,8 +1058,8 @@ the world. Consider how the world affects your work and how your work affects th
 					<br>
 
 					<p class="contenido">
-						Here is a quick video of when we learned how to carry out a CMT test in a cow suspected of
-						mastitis. <a href=”https://drive.google.com/file/d/1T9LoNx_ped0DkXR97HKYCraZgLGvNWDY/view?usp”>mastitis video</a>
+						Here is a <a class = "hipervinculoEntre" onclick="location.href='https://drive.google.com/file/d/1T9LoNx_ped0DkXR97HKYCraZgLGvNWDY/view'">quick video</a>
+						 of when we learned how to carry out a CMT test in a cow suspected of mastitis.
 					</p>
 					<br>
 					<br>
@@ -1086,7 +1109,7 @@ the world. Consider how the world affects your work and how your work affects th
 						somatic cells. We've got this handy chart that helps us understand what it all means. So, if a
 						herd scores low, for example between 3 and 12, it's doing pretty well—no major worries. But if
 						the score is above 12, it signifies a great concern, and we've got to jump into action right
-						away (BEDOLLA CEDEÑO) 12.
+						away<sup>10</sup>.
 					</p>
 
 					<!--Milk conductivity:-->
@@ -1097,25 +1120,24 @@ the world. Consider how the world affects your work and how your work affects th
 						Measurement of electrical conductivity (EC) is a method frequently used in dairy cows during
 						milking in milking parlors, but especially in robotic milking as a low-cost mastitis detection
 						method. Therefore conductivity of milk seems to hold promise as an indicator of subclinical
-						mastitis (Fernando et al., 1982; Uhrinčať et al., 2019) 13,14.
+						mastitis<sup>11</sup>.
 					</p>
 					<div>
-						<p>DIAGRAMA/FOTO DE TREATMENT, QUALITY, NORMATIVITY</p>
-						<p class="contenido">
-							Every interview we conducted within this part of our value chain contributed to improving
-							our project's design. It helped us gain a deeper understanding of the problem, and hands-on
-							experience helped us appreciate all the work involved in the milking process. Now, we are
-							moving on to explore some of the more technical aspects of our value chain.
-						</p>
+					<p class="contenido"> 
+						<img class="flecha_1" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/333.png" align="left">Every interview we conducted within this part of our value chain contributed to improving
+						our project's design. It helped us gain a deeper understanding of the problem, and hands-on
+						experience helped us appreciate all the work involved in the milking process. Now, we are
+						moving on to explore some of the more technical aspects of our value chain.
 					</div>
+					
+						
 					<div>
-						<p>DIAGRAMA/FOTO DE PUBLIC APROVAL</p>
-						<p class="contenido">
-							Finally we, milk consumers, what do we know and think about this problem?, and how can we
-							contribute? This is why we interviewed 24 milk consumers in order to measure their level of
-							knowledge and concerns regarding mastitis.
-						</p>
+						<p class="contenido"> 
+							<img class="flecha_1" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/555.png" align="left">Finally, we, milk consumers, what do we know and think about this problem? And how can we
+							contribute? This is why we conduct interviews with different age groups and social classes with the objective of
+							measure your level of Knowledge and concerns regarding mastitis and the consumption of dairy products
 					</div>
+					
 					<br>
 					<p class="contenido">
 						Now you know our stakeholders and how important they are to us, and how addressing these
@@ -1146,16 +1168,73 @@ the world. Consider how the world affects your work and how your work affects th
 						issues in our community and beyond.
 					</p>
 					<p class="instructionDiagram">
-						Hover over the values to learn how the value relates to Aureobos and how we implement it. /ver
-						si es un buen estilo o cambiarlo
+						Hover over the values to learn how the value relates to Aureobos and how we implement it.
 					</p>
-					<div>
-						<p>PONER AQUI EL DIAGRAMA DE LOS VALORES</p>
+					<div class="valores_diagrama">
+						<div class="public_health">
+							<p class="title_circulo">Public Health</p>
+							<div class="relation">
+								<h4 class="titulo_relation">Relation with Aureobos</h4>
+								<p class="descripcionR ">Another fundamental pillar of our project is to safeguard public health, since endolysin mastitis treatment represents an alternative to the use of antibiotics, therefore, reducing the incidence of antimicrobial resistance. This problem has a direct impact on human health, since we, as consumers of dairy products, are affected by it. If milk withdrawal times are not followed, antibiotic resistance can be transmitted to humans through ingestion of milk from animals treated with antibiotics.</p>
+							</div>
+							<div class="implementation">
+								<h4 class="titulo_implementation">Implementation</h4>
+								<p class="descripcionI">A non-antibiotic treatment for bovine mastitis to effectively reduce antimicrobial resistance within cows. This approach ensures that the milk intended for human consumption remains free from antibiotics.</p>
+							</div>
+						</div>
+						<div class="anti_waste">
+							<p class="title_circulo">Anti-waste</p>
+							<!--aqui poner los titulos y descripciones-->
+							<div class="relation">
+								<h4 class="titulo_relation">Relation with Aureobos</h4>
+								<p class="descripcionR">The main goal of AureoBos is to effectively tackle the issue of milk losses and wastage caused by bovine mastitis, condition that  can lead to significant production declines of up to 30 - 40% per affected cow [Karen Mingura]. Currently, milk from infected cows is either entirely discarded or redirected to male calves, resulting in the squandering of thousands of liters of milk on a daily basis. Our project endeavors to address these challenges and enhance milk production efficiency through strategic mitigation measures.	</p>
+							</div>
+							<div class="implementation">
+								<h4 class="titulo_implementation">Implementation</h4>
+								<p class="descripcionI">Aureobos is focused on advancing the development of a recombinant endolysin-based solution, a promising avenue to offer antibiotic-free treatment to effectively treat bovine mastitis. This innovative approach aims to address the condition without the need to withdraw the milk, consequently leading to reduced milk wastage.</p>
+							</div>
+						</div>
+						<div class="integrity">
+							<p class="title_circulo">Integrity</p>
+							<!--aqui poner los titulos y descripciones-->
+							<div class="relation">
+								<h4 class="titulo_relation">Relation with Aureobos</h4>
+								<p class="descripcionR">Anothe fundamental pollar of our project is to safeguard public health, since endolysim mastitis treatmenr represents an alternaitva to the use of antibiotics, therefore reducin the incidence of antimicrobial resistance, this problem has a direct impact on human health since we as consumers of diarity products are affected by ut. if milk wirhdreawl time are nor followed antiviotic resistance can be transmitted to humans throug ingestion of milk from animals treated with antibiotics</p>
+							</div>
+							<div class="implementation">
+								<h4 class="titulo_implementation">Implementation</h4>
+								<p class="descripcionI">A non-antibiiotic treatment for bovine mastitis to effectively reduce antimicrobial resistance within cows. this aproach ensueres that the milk intended for human consuption remains free from antibiotics</p>
+							</div>
+						</div>
+						<div class="privacy">
+							<p class="title_circulo">Privacy</p>
+							<!--aqui poner los titulos y descripciones-->
+							<div class="relation">
+								<h4 class="titulo_relation">Relation with Aureobos</h4>
+								<p class="descripcionR">One of the most important values during the development of our project, especially in the field of human practices, is privacy, because at every approach with our stakeholders we commit our efforts to safeguard the identity of all the people, companies, and agencies involved in our project, as well as the protection of the data provided.</p>
+							</div>
+							<div class="implementation">
+								<h4 class="titulo_implementation">Implementation</h4>
+								<p class="descripcionI">Throughout the development of Aureobos, we have consistently prioritized the safeguarding of our stakeholders' privacy. We have established a privacy notice that explicitly outlines that the use of information only would be for academic and research purposes. Furthermore, we ensure that the identities of contributors remain confidential, unless they openly opt for their information to be shared.</p>
+							</div>
+						</div>
+						<div class="sustainability">
+							<p class="title_circulo">Sustainability</p>
+							<!--aqui poner los titulos y descripciones-->
+							<div class="relation">
+								<h4 class="titulo_relation">Relation with Aureobos</h4>
+								<p class="descripcionR">Another core value embedded in our project is our commitment to environmental sustainability. We also place a strong emphasis on reducing the adverse impacts of dairy farming, particularly on minimizing antibiotic residues in soil and water. This problem stems from the biological waste produced by cows, including urine and manure. Our conscientious approach to offer a non-antibiotic treatment promotes a more environmentally friendly dairy industry.</p>
+							</div>
+							<div class="implementation">
+								<h4 class="titulo_implementation">Implementation</h4>
+								<p class="descripcionI">Presenting a treatment grounded in recombinant endolysins, which holds the potential to minimize the usage of antibiotics within the dairy sector. This strategic shift not only addresses the welfare of livestock but also mitigates the detrimental effects of antibiotics on soil and water ecosystems.</p>
+							</div>
+						</div>
 					</div>
 					<p class="contenido">
 						Our project is aimed at addressing a critical issue in the dairy industry: the excessive waste
 						of milk caused by antibiotic treatments for mastitis in dairy cows. To address this issue, our
-						project proposes a non-antibiotic alternative that is effective, safe, and sustainable. This
+						project proposes a non-antibiotic alternative that is <b>effective, safe, and sustainable</b>. This
 						approach also contributes to fighting antibiotic resistance, a major public health concern, by
 						reducing antibiotic use in dairy farming. Additionally, the project focuses on environmental
 						friendliness, minimizing the negative impact of dairy farming by reducing antibiotic residues in
@@ -1179,7 +1258,7 @@ the world. Consider how the world affects your work and how your work affects th
 						implemented and used as a cream formulated for intramammary infusion, administered through the
 						affected teat of the cow, by those who are currently facing the challenge of mastitis — dairy
 						cattle owners influenced by veterinarian zootechnicians, which is thoroughly explained in our
-						entrepreneurship section.
+						<a class = "hipervinculoEntre" onclick="location.href='https://2023.igem.wiki/tec-chihuahua/entre'">entrepreneurship section</a>.
 					</p>
 					<p class="contenido">
 						Besides our end users, we envision AureoBos becoming a precedent in synthetic biology for
@@ -1195,15 +1274,20 @@ the world. Consider how the world affects your work and how your work affects th
 						transmission of a zoonotic disease.
 					</p>
 					<div>
-						<p>AQUI VA LAS CARD DE LOS IMPACT</p>
+						<img class="foto_impact"
+							src="https://static.igem.wiki/teams/4607/wiki/human-2-0/impacto-en-a-reas-4.png"
+							alt="foto_impact">
 					</div>
+					
 					<p class="contenido">
 						As any scientific emerging project, there is potential for it to be misused or generate
 						unintended consequences. While we aim to develop AureoBos as an alternative treatment for bovine
 						mastitis in a responsible and beneficial way, it is important to consider certain risks in order
 						to plan how to manage them. Inside the lab, while developing our project, the team has received
 						proper training in order to work in a safe and responsible environment, following a series of
-						measures and guidelines further explained in the safety section. On the other hand, some of the
+						measures and guidelines further explained in the 
+						<a class = "hipervinculoEntre" onclick="location.href='https://2023.igem.wiki/tec-chihuahua/safety'">safety section</a>. 
+						On the other hand, some of the
 						risks we visualize outside the lab are; the possible unregulated use of AureoBos which, without
 						proper guidance, could lead to ineffective treatment or unintended side effects; the
 						overreliance on it, which is important to remember that different cases of mastitis may require
@@ -1211,8 +1295,9 @@ the world. Consider how the world affects your work and how your work affects th
 						distribution that could lead to uncontrolled use and potential safety issues; and, an
 						environmental negative impact where AureoBos is not disposed correctly. Each of these risks, as
 						well as some other legal considerations that directly impact the development of our product, is
-						further detailed and addressed in our legal strategy which you can find on our entrepreneurship
-						section.
+						further detailed and addressed in our legal strategy which you can find on our 
+						<a class = "hipervinculoEntre" onclick="location.href='https://2023.igem.wiki/tec-chihuahua/entre'">entrepreneurship
+							section.</a>
 					</p>
 					<p class="contenido">
 						Mastitis knows no borders—it's a challenge uniting dairy farmers worldwide. With our project, we
@@ -1238,6 +1323,220 @@ the world. Consider how the world affects your work and how your work affects th
 						project, depending on our stakeholder’s areas.
 
 					</p>
+					<p class="instr_selector">Click the AureoBos Logo to see more information.</p>
+					<div class='selector'>
+						<ul>
+						  <li>
+							<input id='1' type='checkbox'>
+							<label for='1'>Treatment</label>
+							<div class="description1">
+							  <b>Potential:</b>
+							  <p>
+								- Aureobos offers a treatment for bovine mastitis that does not cause antimicrobial resistance.
+							  </p>
+							  <p>
+								- Currently there is a lack of non-antibiotic treatments, leaving only a few options to treat Bovine Mastitis.
+							  </p>
+							  <p>
+								- Its application method is easy and practical, without the need for specialized training or difficult procedures.
+							  </p>
+	
+							  <b>Challenges:</b>
+							  <p>
+								- AureoBos is a product that still requires experimentation in dairy cattle, and experimental tests to its release.
+							  </p>
+							  <p>
+								- To release a new treatment through a pharmaceutical company requires many tests, regulations, and time.
+							  </p>
+							</div>
+						  </li>
+						  <li>
+							<input id='2' type='checkbox'>
+							<label for='2'>Quality</label>
+							<div class="description2">
+								<b>Potential: </b>
+								<p>
+								- Bovine Mastitis causes milk changes that are reflected on the milk properties and quality.
+							  </p>
+							  <b>Challenges:</b>
+							  <p>
+								- One of the main problems of antibiotic treatments is that they are eliminated through milk, and this is not permitted to use the milk for consumption.
+							  </p>
+							</div>
+						  </li>
+						  <li>
+							<input id='3' type='checkbox'>
+							<label for='3'>Normativity</label>
+							<div class="description3">
+							  <b>Potential:</b>
+							  <p>
+								-Acquiring veterinary products is not that difficult.
+							  </p>
+							  <b>Challenges:</b>
+							  <p>
+								- The regulations for veterinary treatments are deficient.
+							  </p>
+							  <p>
+								- Any process for product registration is expensive and time-consuming.
+							  </p>
+							</div>
+						  </li>
+						  <li>
+							<input id='4' type='checkbox'>
+							<label for='4'>
+							  Public Approval
+							</label>
+							<div class="description4">
+							  <b>Potential:</b>
+							  <p>
+								- Milk is one of the staple foods in the daily diet of every family, and basic for a good nutrition.
+							  </p>
+							  <p>
+								- Aureobos ensures that the milk produced does not have negative repercussions on human health.
+							  </p>
+							  <b>Challenges:</b>
+							  <p>
+								- The lack of information among the Mexican population makes it difficult to accept non-conventional products such as Aureobos.
+							  </p>
+							  <p>
+								- The general public is not very aware of the problem.
+							  </p>
+							</div>
+						  </li>
+						  <li>
+							<input id='5' type='checkbox'>
+							<label for='5'>
+							  Milking Process
+							</label>
+							<div class="description5">
+							  <b>Potential:</b>
+							  
+							  <p>- AureoBos provides a solution to avoid milk withdrawal, something that causes important milk wastage and economic losses to dairy producers.
+							  </p>
+							  <p>- S. aureus is the most difficult microorganism to fight against, and can cause cows to be sent to the slaughterhouse.
+							  </p>
+							  <p>- The Dairy Cattle owners are willing to try a product that does not cause milk withdrawal.
+							  </p>
+							  <b>Challenges:</b>
+							  <p>- Make them more informed of Synthetic Biology, without having stereotypes about science and Synthetic Biology products.
+							  </p>
+							  <p>- Treatments based on endolysins are not very known.
+							  </p>
+							</div>
+						  </li>
+						  <li>
+							<input id='6' type='checkbox'>
+							<label for='6'>
+							  Milk Processing
+							</label>
+							<div class="description6">
+							  <b>Potential:</b>
+							  <p>
+								- The main concern for the milk industry is the presence of antibiotics in milk at the time to acquire it to process it. 
+							  </p>
+							  <p>
+								- Milk that exhibits changes in composition cannot be used to produce other dairy products or be consumed.
+							  </p>
+
+							  <b>Challenges:</b>
+							  <p>
+								- Bovine Mastitis leads to significant economic losses in the milk industry.
+							  </p>
+							</div>
+						  </li>
+						  <li>
+							<input id='7' type='checkbox'>
+							<label for='7'>Diagnostic</label>
+							<div class="description7">
+							  <b>Potential</b>
+							  <p>
+								- AureoBos fights against the most common microorganisms that are responsible for bovine mastitis.
+							  </p>
+							  <b>Challenges:</b>
+							  <p>
+								- Small producers are not used to test their cows, that´s why they use antibiotic cocktails, contributing to antibiotic resistance.
+							  </p>
+							</div>
+						  </li>
+						</ul>
+						<button></button>
+						<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+						<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>		  
+						<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+						<script>
+							var angleStart = -360;
+
+							// jquery rotate animation
+							function rotate(li, d) {
+								$({ d: angleStart }).animate({ d: d }, {
+									step: function(now) {
+										$(li)
+											.css({ transform: 'rotate(' + now + 'deg)' })
+											.find('label')
+											.css({ transform: 'rotate(' + (-now) + 'deg)' });
+									}, duration: 0
+								});
+							}
+
+							// show / hide the options
+							function toggleOptions(s) {
+								$(s).toggleClass('open');
+								var li = $(s).find('li');
+								var deg = $(s).hasClass('half') ? 180 / (li.length - 1) : 360 / li.length;
+								for (var i = 0; i < li.length; i++) {
+									var d = $(s).hasClass('half') ? (i * deg) - 90 : i * deg;
+									$(s).hasClass('open') ? rotate(li[i], d) : rotate(li[i], angleStart);
+								}
+							}
+
+							$('.selector button').click(function(e) {
+								toggleOptions($(this).parent());
+							});
+
+							setTimeout(function() { toggleOptions('.selector'); }, 100);
+						</script>
+						<script type="text/javascript">
+								var sect1 = document.getElementById('sectionOverview');
+								var sect2 = document.getElementById('referencesO');
+						
+
+								var dot1 = document.getElementById('dot1');
+								var dot2 = document.getElementById('dot2');
+								
+
+								window.addEventListener('scroll', function () {
+									var sect1top = sect1.getBoundingClientRect().top;
+									var sect2top = sect2.getBoundingClientRect().top;
+									
+									var topPad = 200;
+									if (sect4top - topPad <= topPad) {
+										dot1.classList.remove('active');
+										dot2.classList.remove('active');
+									
+									} else if (sect3top - topPad <= topPad) {
+										dot1.classList.remove('active');
+										dot2.classList.remove('active');
+										
+									} else if (sect2top - topPad <= topPad) {
+										dot1.classList.remove('active');
+										dot2.classList.add('active');
+										
+									} else if (sect1top - topPad <= topPad) {
+										dot1.classList.add('active');
+										dot2.classList.remove('active');
+										
+									} else {
+										dot1.classList.remove('active');
+										dot2.classList.remove('active');
+									
+									}
+
+
+
+
+								}); 
+							</script>		  
+					</div>
 				</div>	
 			</div>
 		</div>
@@ -1286,240 +1585,10 @@ the world. Consider how the world affects your work and how your work affects th
 						</ul>
 					</nav>
 				</div>
-				<div class="secciones">
-					<div class='selector'>
-						<ul>
-						  <li>
-							<input id='1' type='checkbox'>
-							<label for='1'>Treatment</label>
-							<div class="description1">
-							  <b>Potential:</b>
-							  <p>
-								- Aureobos offers a treatment for bovine mastitis that does not cause antimicrobial resistance.
-							  </p>
-							  <p>
-								- Currently there is a lack of non-antibiotic treatments, leaving only a few options to treat Bovine Mastitis.
-							  </p>
-							  <p>
-								- Its application method is easy and practical, without the need for specialized training or difficult procedures.
-							  </p>
-							  <p>
-								- Aureobos uses innovative technology through the use of recombinant endolysins.
-							  </p>
-							  <b>Challenges:</b>
-							  <p>
-								- AureoBos is a product that still requires experimentation in dairy cattle, and experimental tests to its release.
-							  </p>
-							  <p>
-								- To release a new treatment through a pharmaceutical company requires many tests, regulations, and time.
-							  </p>
-							</div>
-						  </li>
-						  <li>
-							<input id='2' type='checkbox'>
-							<label for='2'>Quality</label>
-							<div class="description2">
-								<b>Potential: </b>
-								<p>
-								- Bovine Mastitis causes milk changes that are reflected on the milk properties and quality.
-							  </p>
-							  <p>
-								- One of the main problems of antibiotic treatments is that they are eliminated through milk, and this is not permitted to use the milk for consumption.
-							  </p>
-							  <b>Challenges:</b>
-							</div>
-						  </li>
-						  <li>
-							<input id='3' type='checkbox'>
-							<label for='3'>Normativity</label>
-							<div class="description3">
-							  <b>Potential:</b>
-							  <p>
-								- La adquisición de los productos veterinarios no es tan dificil
-							  </p>
-							  <p>
-								- El emprendimiento en base tecnológica se esta incentivando cada vez más.
-							  </p>
-							  <b>Challenges:</b>
-							  <p>
-								- The regulations for veterinary treatments are deficient.
-							  </p>
-							  <p>
-								- The treatments produced through Synthetic Biology or biotechnology processes, do not belong to any of the existent categories of normativity and regulations.
-							  </p>
-							  <p>
-								- Cualquier proceso para registro del producto es costoso y tardado.
-							  </p>
-							</div>
-						  </li>
-						  <li>
-							<input id='4' type='checkbox'>
-							<label for='4'>
-							  Public Approval
-							</label>
-							<div class="description4">
-							  <b>Potential:</b>
-							  <p>
-								- Milk is one of the staple foods in the daily diet of every family, and basic for a good nutrition.
-							  </p>
-							  <p>
-								- Aureobos is an innovative solution that helps to keep milk free of antibiotics while treating Mastitis, ensuring that the milk produced does not have negative repercussions on human health.
-							  </p>
-							  <p>
-								- Wastage of milk leads to an increase in the price of milk, making it less accessible.
-							  </p>
-							  <p>
-								- Antibiotics treatment causes antimicrobial resistance, and even can cause damages on soil.
-							  </p>
-							  <b>Challenges:</b>
-							  <p>
-								- The lack of information among the Mexican population makes it difficult to accept non-conventional products such as Aureobos.
-							  </p>
-							  <p>
-								- The general public is not very aware of the problem.
-							  </p>
-							</div>
-						  </li>
-						  <li>
-							<input id='5' type='checkbox'>
-							<label for='5'>
-							  Milking Process
-							</label>
-							<div class="description5">
-							  <b>Potential:</b>
-							  <p>- Bovine Mastitis causes a decrease in milk production about 20-40 % of the total production per cow.
-							  </p>
-							  <p>- AureoBos provides a solution to avoid milk withdrawal, something that causes important milk wastage and economic losses to dairy producers.
-							  </p>
-							  <p>- The conventional treatments for Bovine Mastitis contribute to antimicrobial resistance, so the products stop working, and lose its efficacy. AureoBos is a revolutionary treatment for Bovine Mastitis that does not cause any antimicrobial resistance.
-							  </p>
-							  <p>- AureoBos is an intramammary infusion, the preferred application method for veterinary zootechnicians, and dairy cattle owners due to its easy use and practicality.
-							  </p>
-							  <p>- S. aureus is the most difficult microorganism to fight against, and can cause cows to be sent to the slaughterhouse.
-							  </p>
-							  <p>- The Dairy Cattle owners are willing to try a product that does not cause milk withdrawal.
-							  </p>
-							  <b>Challenges:</b>
-							  <p>- Make them more informed of Synthetic Biology, without having stereotypes about science and Synthetic Biology products.
-							  </p>
-							  <p>- Treatments based on endolysins are not very known.
-							  </p>
-							</div>
-						  </li>
-						  <li>
-							<input id='6' type='checkbox'>
-							<label for='6'>
-							  Milk Processing
-							</label>
-							<div class="description6">
-							  <b>Potential:</b>
-							  <p>
-								- The main concern for the milk industry is the presence of antibiotics in milk at the time to acquire it to process it. 
-							  </p>
-							  <p>
-								- Bovine Mastitis affects the optimal conditions and quality of milk. Milk that exhibits these changes cannot be used to produce other dairy products or be consumed.
-							  </p>
-							  <p>
-								- Bovine Mastitis leads to significant economic losses in the milk industry.
-							  </p>
-							  <b>Challenges:</b>
-							</div>
-						  </li>
-						  <li>
-							<input id='7' type='checkbox'>
-							<label for='7'>Diagnostic</label>
-							<div class="description7">
-							  <b>Potential</b>
-							  <p>
-								- AureoBos fights against the most common microorganisms that are responsible for bovine mastitis.
-							  </p>
-							  <b>Challenges:</b>
-							</div>
-						  </li>
-						</ul>
-						<button></button>
-					</div>
-				</div>
 			</div>
 		</div>
 	</div>
 	</div>
-	<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-	<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>		  
-	<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script>
-  var angleStart = -360;
-
-  // jquery rotate animation
-  function rotate(li, d) {
-    $({ d: angleStart }).animate({ d: d }, {
-      step: function(now) {
-        $(li)
-          .css({ transform: 'rotate(' + now + 'deg)' })
-          .find('label')
-          .css({ transform: 'rotate(' + (-now) + 'deg)' });
-      }, duration: 0
-    });
-  }
-
-  // show / hide the options
-  function toggleOptions(s) {
-    $(s).toggleClass('open');
-    var li = $(s).find('li');
-    var deg = $(s).hasClass('half') ? 180 / (li.length - 1) : 360 / li.length;
-    for (var i = 0; i < li.length; i++) {
-      var d = $(s).hasClass('half') ? (i * deg) - 90 : i * deg;
-      $(s).hasClass('open') ? rotate(li[i], d) : rotate(li[i], angleStart);
-    }
-  }
-
-  $('.selector button').click(function(e) {
-    toggleOptions($(this).parent());
-  });
-
-  setTimeout(function() { toggleOptions('.selector'); }, 100);
-</script>
-<script type="text/javascript">
-    var sect1 = document.getElementById('sectionOverview');
-    var sect2 = document.getElementById('referencesO');
- 
-
-    var dot1 = document.getElementById('dot1');
-    var dot2 = document.getElementById('dot2');
-    
-
-    window.addEventListener('scroll', function () {
-      var sect1top = sect1.getBoundingClientRect().top;
-      var sect2top = sect2.getBoundingClientRect().top;
-      
-      var topPad = 200;
-      if (sect4top - topPad <= topPad) {
-        dot1.classList.remove('active');
-        dot2.classList.remove('active');
-      
-      } else if (sect3top - topPad <= topPad) {
-        dot1.classList.remove('active');
-        dot2.classList.remove('active');
-        
-      } else if (sect2top - topPad <= topPad) {
-        dot1.classList.remove('active');
-        dot2.classList.add('active');
-        
-      } else if (sect1top - topPad <= topPad) {
-        dot1.classList.add('active');
-        dot2.classList.remove('active');
-        
-      } else {
-        dot1.classList.remove('active');
-        dot2.classList.remove('active');
-       
-      }
-
-
-
-
-    }); 
-  </script>		  
 </body>
 
 </html>
