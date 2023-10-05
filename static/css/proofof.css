@@ -123,31 +123,6 @@
   align-items: center;
 }
 
-.icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: .5rem;
-}
-
-.battery {
-  width: .85rem;
-  height: .45rem;
-  background-color: black;
-}
-
-.network {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 6.8px 7.2px 6.8px;
-  border-color: transparent transparent black transparent;
-  -webkit-transform: rotate(135deg);
-  -ms-transform: rotate(135deg);
-  transform: rotate(135deg);
-  margin: .12rem .5rem;
-}
-
 /* Middle */
 .content {
   display: -webkit-box;
