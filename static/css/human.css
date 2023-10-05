@@ -2928,6 +2928,8 @@ z-index: 10;
   padding-bottom: 10px;
   margin-left: 17%;
   max-width: fit-content;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
 }
 
 .contpapa2_1 {
@@ -2937,32 +2939,32 @@ z-index: 10;
   width: 300px;
   overflow:hidden;
   margin-left: 11vw;
-  background: gray;
+  background: #5BC5AB;
   transition: 1s;
   border-radius: 10px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 .contpapa2_1:hover {
-  height: 23vw;
+  height: 23.5vw;
   padding-bottom: 2vw;
 }
 
 .contpapa2_2 {
   height: 120px;
-  bottom: 7.8vw;
+  bottom: 8.3vw;
   width: 300px;
   overflow:hidden;
   position: relative;
   left: 33vw;
-  background: gray;
+  background: #447D9C;
   transition: 1s;
   border-radius: 10px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 .contpapa2_2:hover {
-  height: 17vw;
+  height: 16vw;
   padding-bottom: 2vw;
 }
 
@@ -2971,16 +2973,16 @@ z-index: 10;
   width: 300px;
   position: relative;
   overflow:hidden;
-  background: gray;
+  background: #5BC5AB;
   left: 55vw;
-  bottom: 15.6vw;
+  bottom: 16.6vw;
   transition: 1s;
   border-radius: 10px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 .contpapa2_3:hover {
-  height: 20vw;
+  height: 19vw;
   padding-bottom: 2vw;
 }
 
@@ -2989,7 +2991,7 @@ z-index: 10;
   width: 300px;
   position: relative;
   overflow:hidden;
-  background: gray;
+  background: #447D9C;
   left: 11vw;
   bottom: 10.6vw;
   transition: 1s;
@@ -3007,9 +3009,9 @@ z-index: 10;
   width: 300px;
   position: relative;
   overflow:hidden;
-  background: gray;
+  background: #5BC5AB;
   left: 33vw;
-  bottom: 18.4vw;
+  bottom: 18.9vw;
   transition: 1s;
   border-radius: 10px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
@@ -3025,9 +3027,9 @@ z-index: 10;
   width: 300px;
   position: relative;
   overflow:hidden;
-  background: gray;
+  background: #447D9C;
   left: 55vw;
-  bottom: 26.2vw;
+  bottom: 27.25vw;
   transition: 1s;
   border-radius: 10px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
@@ -3036,6 +3038,10 @@ z-index: 10;
 .contpapa2_6:hover {
   height: 14vw;
   padding-bottom: 2vw;
+}
+
+.contpapa2_1:hover .causetxt, .contpapa2_2:hover .causetxt, .contpapa2_3:hover .causetxt, .contpapa2_4:hover .causetxt, .contpapa2_5:hover .causetxt, .contpapa2_6:hover .causetxt{
+  margin-top: -2vw;
 }
 
 
@@ -3056,7 +3062,7 @@ z-index: 10;
   font-size: 1rem;
   font-family: 'Quicksand';
   text-align: center;
-  color: #302535;
+  color: white;
   text-align: center;
 }
 
@@ -3108,6 +3114,9 @@ z-index: 10;
   text-align: center;
   font-family: 'Quicksand';
   font-weight: 500;
+  color: white;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
 }
 
 .contpapa {
