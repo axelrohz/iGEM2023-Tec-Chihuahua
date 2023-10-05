@@ -3328,6 +3328,7 @@ z-index: 10;
 
 .cardContain.hidden .cardHome .cardPos{
   transform: translateX(1200px) rotate(0);
+  display: none;
   transition-delay: 0;
   z-index: 999;
 }
