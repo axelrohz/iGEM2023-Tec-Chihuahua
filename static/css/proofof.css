@@ -60,19 +60,19 @@
 /*TarjetaValidacion*/
 /* GENERAL */
 
-.creditTrjt {
+.credit {
   position: fixed;
   right: 2rem;
   bottom: 2rem;
   color: white;
 }
 
-.creditTrjt a {
+.credit a {
   color: inherit;
 }
 
 /* Main Circle */
-.main-circleTrjt {
+.main-circle {
   width: 40rem;
   height: 40rem;
   border-radius: 100%;
@@ -86,7 +86,7 @@
 }
 
 /* Phone */
-.phoneTrjt {
+.phone {
   position: relative;
   z-index: 2;
   width: 18rem;
@@ -104,8 +104,10 @@
   flex-direction: column;
 }
 
+
+
 /* Top */
-.menuTrjt {
+.menu {
 /*   background-color: blue; */
   font-size: 80%;
   opacity: .4;
@@ -121,20 +123,20 @@
   align-items: center;
 }
 
-.iconsTrjt {
+.icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: .5rem;
 }
 
-.batteryTrjt {
+.battery {
   width: .85rem;
   height: .45rem;
   background-color: black;
 }
 
-.networkTrjt {
+.network {
   width: 0;
   height: 0;
   border-style: solid;
@@ -147,7 +149,7 @@
 }
 
 /* Middle */
-.contentTrjt {
+.content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,7 +165,7 @@
   transform: translateY(5%);
 }
 
-.circleTrjt {
+.circle {
   position: relative;
   border-radius: 100%;
   width: 8rem;
@@ -172,7 +174,7 @@
   margin: auto;
 }
 
-.crescentTrjt {
+.crescent {
   position: absolute;
   border-radius: 100%;
   right: 0;
@@ -191,7 +193,7 @@
   transition: transform .6s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform .6s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-label, .toggleTrjt {
+label, .toggle {
   height: 2.8rem;
   border-radius: 100px;
 }
@@ -205,7 +207,7 @@ label {
   cursor: pointer;
 }
 
-.toggleTrjt {
+.toggle {
   position: absolute;
   width: 50%;
   background-color: #fff;
@@ -217,7 +219,7 @@ label {
   transition: transform .3s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.namesTrjt {
+.names {
   font-size: 90%;
   font-weight: bolder;
   color: black;
@@ -237,16 +239,16 @@ label {
   user-select: none;
 }
 
-.darkTrjt {
+.dark {
   opacity: .5;
 }
 
-.markTrjt {
+.mark {
   border-radius: 100px;
   background-color: black;
 }
 
-.timeTrjt {
+.time {
   color: black;
 }
 /* -------- Switch Styles ------------*/
@@ -254,65 +256,65 @@ label {
   display: none;
 }
 /* Toggle */
-[type="checkbox"]:checked + .appTrjt .toggleTrjt {
+[type="checkbox"]:checked + .app .toggle {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
   background-color: #34323D;
 }
 
-[type="checkbox"]:checked + .appTrjt .darkTrjt {
+[type="checkbox"]:checked + .app .dark {
   opacity: 1;
   color: white;
 }
 
-[type="checkbox"]:checked + .appTrjt .lightTrjt {
+[type="checkbox"]:checked + .app .light {
   opacity: 1;
   color: white;
 }
 /* App */
-[type="checkbox"]:checked + .appTrjt .bodyTrjt {
+[type="checkbox"]:checked + .app .body {
   background-color: #26242E;
   color: white;
 }
 /* Circle */
-[type="checkbox"]:checked + .appTrjt .crescentTrjt {
+[type="checkbox"]:checked + .app .crescent {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
   background: #26242E;
 }
 
-[type="checkbox"]:checked + .appTrjt .circleTrjt {
+[type="checkbox"]:checked + .app .circle {
   background: linear-gradient(40deg, #8983F7, #A3DAFB 70%);
 }
 
-[type="checkbox"]:checked + .appTrjt .main-circleTrjt {
+[type="checkbox"]:checked + .app .main-circle {
   background: linear-gradient(40deg, #8983F7, #A3DAFB 70%);
 }
 
-[type="checkbox"]:checked + .timeTrjt {
+[type="checkbox"]:checked + .time {
   color: white;
 }
 
-[type="checkbox"]:checked + .appTrjt .bodyTrjt .phoneTrjt .menuTrjt .timeTrjt {
+[type="checkbox"]:checked + .app .body .phone .menu .time {
   color: white;
 }
 
-[type="checkbox"]:checked + .appTrjt .bodyTrjt .phoneTrjt .menuTrjt .iconsTrjt .networkTrjt {
+[type="checkbox"]:checked + .app .body .phone .menu .icons .network {
   border-color: transparent transparent white transparent;
 }
 
-[type="checkbox"]:checked + .appTrjt .bodyTrjt .phoneTrjt .menuTrjt .iconsTrjt .batteryTrjt {
+[type="checkbox"]:checked + .app .body .phone .menu .icons .battery {
   background-color: white;
 }
 
-[type="checkbox"]:checked + .appTrjt .bodyTrjt {
+[type="checkbox"]:checked + .app .body {
   border-radius: 40px;
   ;
 }
 
-.menuTrjt {
+.menu {
 /*   background-color: blue; */
   font-size: 80%;
   opacity: .4;
@@ -327,6 +329,7 @@ label {
   -ms-flex-align: center;
   align-items: center;
 }
+
 
 /*SUBTÍTULOS DE COLORES*/
 .subtitleF1,
