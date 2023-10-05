@@ -3062,8 +3062,9 @@ z-index: 10;
   font-size: 1rem;
   font-family: 'Quicksand';
   text-align: center;
-  color: white;
-  text-align: center;
+  color: black;
+  width: 17vw;
+  margin-left: 0.5vw;
 }
 
 .contcauses {
@@ -3119,7 +3120,7 @@ z-index: 10;
   padding-right: 1.5vw;
 }
 
-.contpapa {
+.contpapa, .contpapa_2, .contpapa_3, .contpapa_4 {
   height: 120px;
   width: 300px;
   overflow:hidden;
@@ -3132,6 +3133,21 @@ z-index: 10;
 
 .contpapa:hover {
   height: 30vw;
+  padding-bottom: 2vw;
+}
+
+.contpapa_2:hover {
+  height: 33vw;
+  padding-bottom: 2vw;
+}
+
+.contpapa_3:hover {
+  height: 19vw;
+  padding-bottom: 2vw;
+}
+
+.contpapa_4:hover {
+  height: 38vw;
   padding-bottom: 2vw;
 }
 
@@ -3681,12 +3697,12 @@ transform: scaleX(-1);
 /*diagrama de bolitas*/
 .selector {
   position: relative;
-  left: 64vh;
-  top: -17vh;
-  width: 140px;
-  height: 140px;
-  margin-top: 310px;
-  margin-left: -70px;
+  left: 37vw;
+  top: -8vw;
+  width: 9.7vw;
+  height: 10vw;
+  margin-top: 25vw;
+  margin-bottom: 8vw;
 }
 .selector button {
   position: relative;
@@ -3725,6 +3741,7 @@ transform: scaleX(-1);
   margin: 0 50%;
   -webkit-transform: rotate(-360deg);
   transition: all 0.8s ease-in-out;
+  color: white;
 }
 
 .selector li input {
