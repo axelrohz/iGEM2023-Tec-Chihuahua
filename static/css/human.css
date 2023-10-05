@@ -1967,14 +1967,39 @@ margin-left: 30%;
 .valores_diagrama{
   height: 35vw;
   width: 80%;
-  margin-left: 19vw;
-  margin-bottom: 2vw;
+  margin-left: 15vw;
+  margin-bottom: -4vw;
 }
 
-.title_circulo{
+.title_circulo1{
   position: relative;
-  top:3vw;
-  margin-left: 1.5vw;
+  top: 4vw;
+  margin-left: 3.5vw;
+  font-size: 2vw;
+}
+.title_circulo2{
+  position: relative;
+  top: 5.5vw;
+  margin-left: 1vw;
+  font-size: 2vw;
+}
+.title_circulo3{
+  position: relative;
+  top: 5.7vw;
+  margin-left: 3vw;
+  font-size: 2vw;
+}
+.title_circulo4{
+  position: relative;
+  top: 5.6vw;
+  margin-left: 3vw;
+  font-size: 2vw;
+}
+.title_circulo5{
+  position: relative;
+  top: 5.5vw;
+  margin-left: 1vw;
+  font-size: 2vw;
 }
 
 /*cosas de los circulos de valores*/
@@ -1983,34 +2008,33 @@ margin-left: 30%;
 .public_health{
   background-color: #459e89;
   border-radius: 50%;
-  width: 10vw;
-  height: 10vw;
-  top:7vw;
-  left: 1vw;
+  width: 15vw;
+  height: 15vw;
+  top: 7vw;
+  left: -2vw;
   position: relative;
   color: black;
   font-weight: bold;
 }
 
 .public_health:hover{
-  transform: scale(3);
+  transform: scale(2);
   position: relative;
-  top:9vw;
-  z-index: 3;
-  left: 10vw;
+  z-index: 1;
 }
 
 /*para que el titulo del boton no se vea en hover*/
-.public_health:hover .title_circulo{
+.public_health:hover .title_circulo1, .public_health:hover .title_circulo2, .public_health:hover .title_circulo3,
+.public_health:hover .title_circulo4, .public_health:hover .title_circulo5{
   visibility:hidden;
 }
 
 
 /*para que el texto no se vea y el titulo sin que este en hover*/
-.relation{
+.relation1, .relation2, .relation3, .relation4, .relation5{
   visibility: hidden;
 }
-.public_health:hover .relation{
+.public_health:hover .relation1{
   visibility: visible;
 }
 
@@ -2018,41 +2042,43 @@ margin-left: 30%;
 
 .titulo_relation{
   position: relative;
-  left: 3vw;
-  bottom: 1.5vw;
-  font-size: 5px;
+  left: 4vw;
+  bottom: 2vw;
+  font-size: 0.5vw;
   width: fit-content;
 }
 .descripcionR{
-  font-size: 4.5px;
+  font-size: 0.35vw;
   position: relative;
-  bottom: 1.7vw;
-  right: 0.5vw;
-  width: 8vw;
+  bottom: 2vw;
+  right: 0.2vw;
+  width: 10vw;
+  text-align: justify;
 }
 
 /*para que el texto no se vea y el titulo sin que este en hover*/
-.implementation{
+.implementation1, .implementation2, .implementation3, .implementation4, .implementation5{
   visibility: hidden;
 }
-.public_health:hover .implementation{
+.public_health:hover .implementation1{
   visibility: visible;
 }
 
 /*para acomodar el titulo y texto de implementacion*/
 .titulo_implementation{
   position: relative;
-  left: 3.5vw;
+  left: 5vw;
   bottom: 2.5vw;
   width: fit-content;
-  font-size: 5px;
+  font-size: 0.5vw;
 }
 .descripcionI{
-  font-size: 4.5px;
+  font-size: 0.35vw;
   position: relative;
-  bottom: 3vw;
-  right: 0.5vw;
-  width: 8vw;
+  bottom: 2.7vw;
+  right: 0.2vw;
+  width: 10.1vw;
+  text-align: justify;
 }
 
 
@@ -2061,31 +2087,31 @@ margin-left: 30%;
 .anti_waste{
   background-color: rgb(89, 185, 162);
   border-radius: 50%;
-  width: 10vw;
-  height: 10vw;
+  width: 15vw;
+  height: 15vw;
   position: relative;
   left: 10vw;
-  bottom: 3vw;
+  bottom: 8vw;
   color: black;
   font-weight: bold;
 }
 
 .anti_waste:hover{
-  transform: scale(3.5);
+  transform: scale(2);
   position: relative;
-  left: 15vw;
-  z-index: 3;
+  z-index: 1;
 }
 /*para que el titulo del boton no se vea en hover*/
-.anti_waste:hover .title_circulo{
+.anti_waste:hover .title_circulo1, .anti_waste:hover .title_circulo2, .anti_waste:hover .title_circulo3,
+.anti_waste:hover .title_circulo4, .anti_waste:hover .title_circulo5{
   visibility:hidden;
 }
 
 /*para que se cambie a visible las cosas */
-.anti_waste:hover .relation{
+.anti_waste:hover .relation2{
   visibility: visible;
 }
-.anti_waste:hover .implementation{
+.anti_waste:hover .implementation2{
   visibility: visible;
 }
 
@@ -2094,30 +2120,30 @@ margin-left: 30%;
 .integrity{
   background-color: rgb(91, 197, 171);
   border-radius: 50%;
-  width: 10vw;
-  height: 10vw;
+  width: 15vw;
+  height: 15vw;
   position: relative;
-  left: 19vw;
-  bottom: 13vw;
+  left: 22vw;
+  bottom: 23vw;
   color: black;
   font-weight: bold;
 }
 
 .integrity:hover{
-  transform: scale(3);
+  transform: scale(2);
   position: relative;
-  left: 20vw;
-  z-index: 3;
+  z-index: 1;
 }
 /*para que el titulo del boton no se vea en hover*/
-.integrity:hover .title_circulo{
+.integrity:hover .title_circulo1, .integrity:hover .title_circulo2, .integrity:hover .title_circulo3,
+.integrity:hover .title_circulo4, .integrity:hover .title_circulo5{
   visibility:hidden;
 }
 /*para que se cambie a visible las cosas */
-.integrity:hover .relation{
+.integrity:hover .relation3{
   visibility: visible;
 }
-.integrity:hover .implementation{
+.integrity:hover .implementation3{
   visibility: visible;
 }
 
@@ -2126,31 +2152,31 @@ margin-left: 30%;
 .privacy{
   background-color: rgb(129, 209, 191);
   border-radius: 50%;
-  width: 10vw;
-  height: 10vw;
+  width: 15vw;
+  height: 15vw;
   position: relative;
-  left: 27vw;
-  bottom: 23vw;
+  left: 34vw;
+  bottom: 38vw;
   color: black;
   font-weight: bold;
 }
 
 .privacy:hover{
-  transform: scale(3);
+  transform: scale(2);
   position: relative;
-  left: 25vw;
-  z-index: 3;
+  z-index: 1;
 }
 /*para que se cambie a visible las cosas */
-.privacy:hover .relation{
+.privacy:hover .relation4{
   visibility: visible;
 }
-.privacy:hover .implementation{
+.privacy:hover .implementation4{
   visibility: visible;
 }
 
 /*para que el titulo del boton no se vea en hover*/
-.privacy:hover .title_circulo{
+.privacy:hover .title_circulo1, .privacy:hover .title_circulo2, .privacy:hover .title_circulo3,
+.privacy:hover .title_circulo4, .privacy:hover .title_circulo5{
   visibility:hidden;
 }
 
@@ -2159,34 +2185,53 @@ margin-left: 30%;
 .sustainability{
   background-color: rgb(167, 220, 211);
   border-radius: 50%;
-  width: 10vw;
-  height: 10vw;
+  width: 15vw;
+  height: 15vw;
   position: relative;
-  left: 34vw;
-  bottom: 33vw;
+  left: 45vw;
+  bottom: 53vw;
   color: black;
   font-weight: bold;
 }
 
 .sustainability:hover{
-  transform: scale(3);
+  transform: scale(2);
   position: relative;
-  left: 30vw;
-  z-index: 3;
+  z-index: 1;
 }
 /*para que el titulo del boton no se vea en hover*/
-.sustainability:hover .title_circulo{
+.sustainability:hover .title_circulo1, .sustainability:hover .title_circulo2, .sustainability:hover .title_circulo3,
+.sustainability:hover .title_circulo4, .sustainability:hover .title_circulo5{
   visibility:hidden;
 }
 /*para que se cambie a visible las cosas */
-.sustainability:hover .relation{
+.sustainability:hover .relation5{
   visibility: visible;
 }
-.sustainability:hover .implementation{
+.sustainability:hover .implementation5{
   visibility: visible;
 }
 
-
+.implementation1, .relation1{
+  margin-left: 0.5vw;
+  margin-top: -2.5vw;
+  margin-bottom: 4vw;
+}
+.implementation2, .relation2{
+  margin-left: 0.5vw;
+  margin-top: -0.5vw;
+}
+.implementation3, .relation3{
+  margin-left: 0.6vw;
+}
+.implementation4, .relation4{
+  margin-left: 0.5vw;
+  margin-top: 0.4vw;
+}
+.implementation5, .relation5{
+  margin-left: 0.5vw;
+  margin-top: 0.4vw;
+}
 
 
 /*DIAGRAMA GOTAS*/
@@ -2617,10 +2662,11 @@ margin-left: 30%;
   padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  height: 50px;
+  height: 3vw;
   border-radius: 25px;
-  margin-left: 18vw;
-  margin-bottom: 45px;
+  margin-left: 20vw;
+  margin-bottom: 43px;
+  margin-top: 7vw;
 }
 
 .sectM, .sectR{
