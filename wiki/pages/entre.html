@@ -1,140 +1,105 @@
 {% extends "layout.html" %}
-
+  
 {% block title %}Entrepreneurship{% endblock %}
-{% block lead %}This award is designed to celebrate exemplary work done in plant
-synthetic biology.{% endblock %}
+{% block lead %}This award is designed to celebrate exemplary work done in plant synthetic biology.{% endblock %}
 
 {% block page_content %}
 
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="../../static/css/human.css">
-		<link href="{{ url_for('static', filename = 'css/human.css') }}"
-			rel="stylesheet">
-		<link href="{{ url_for('static', filename = 'css/empre.css') }}"
-			rel="stylesheet">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../static/css/human.css">
+	<link href="{{ url_for('static', filename = 'css/human.css') }}" rel="stylesheet">
+	<link href="{{ url_for('static', filename = 'css/empre.css') }}" rel="stylesheet">
 
-		<link href="{{ url_for('static', filename = 'css/experiments.css') }}"
-			rel="stylesheet">
-		<link href="{{ url_for('static', filename = 'css/timeline.css') }}"
-			rel="stylesheet">
-		<link href="{{ url_for('static', filename = 'css/home.css') }}"
-			rel="stylesheet">
-		<link href="{{ url_for('static', filename = 'css/circleDiagramENT.css') }}"
-			rel="stylesheet">
-		<script type=”text/javascript”
-			src=”http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML”></script>
-		<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<link href="{{ url_for('static', filename = 'css/experiments.css') }}" rel="stylesheet">
+	<link href="{{ url_for('static', filename = 'css/timeline.css') }}" rel="stylesheet">
+	<link href="{{ url_for('static', filename = 'css/home.css') }}" rel="stylesheet">
+	<link href="{{ url_for('static', filename = 'css/circleDiagramENT.css') }}" rel="stylesheet">
+	<script type=”text/javascript”
+		src=”http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML”></script>
+	<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-	</head>
+</head>
 
-	<body>
+<body>
 
-		<script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
-		<link rel="stylesheet" href="static/css/parts.css">
-		<link rel="stylesheet" href="static/css/waveHead.css">
-		<div class="titleCont">
-
-			<div id="enttT" class="titleENT active">
-				<div class="entText">
-					<div class="letter" style="--timeL:2s; --degL:rotate(180DEG);">A</div>
-					<div class="letter" style="--timeL:2.3s; --degL:rotate(-180DEG);">u</div>
-					<div class="letter" style="--timeL:1.5s; --degL:rotate(200DEG);">r</div>
-					<div class="letter" style="--timeL:2.5s; --degL:rotate(120DEG);">e</div>
-					<div class="letter" style="--timeL:3s; --degL:rotate(40DEG);">o</div>
-					<div class="letter" style="--timeL:3.1s; --degL:rotate(-90deg);">B</div>
-					<div class="letter" style="--timeL:1.9s; --degL:rotate(-180DEG);">o</div>
-					<div class="letter" style="--timeL:2.3s; --degL:rotate(180DEG);">s</div>
-				</div>
-				<div class="enterp">
-					<div class="topdown">Entrepreneurship </div>
-				</div>
-
-				<div class="shake">
-					<svg class="bubENT" id="visual" viewBox="0 0 1920 1080" width="1920"
-						height="1080"
-						xmlns="http://www.w3.org/2000/svg"
-						xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-						<g fill="#7fd7c1">
-							<circle class="buble" r="135" cx="410" cy="398"></circle>
-							<circle class="buble" r="17" cx="465" cy="815"></circle>
-							<circle class="buble" r="99" cx="1364" cy="568"></circle>
-							<circle class="buble" r="36" cx="939" cy="723"></circle>
-							<circle class="buble" r="129" cx="213" cy="214"></circle>
-							<circle class="buble" r="80" cx="1617" cy="162"></circle>
-							<circle class="buble" r="70" cx="1235" cy="328"></circle>
-							<circle class="buble" r="30" cx="1669" cy="490"></circle>
-							<circle class="buble" r="32" cx="713" cy="436"></circle>
-							<circle class="buble" r="102" cx="1627" cy="867"></circle>
-							<circle class="buble" r="81" cx="220" cy="700"></circle>
-							<circle class="buble" r="26" cx="1256" cy="884"></circle>
-							<circle class="buble" r="18" cx="969" cy="243"></circle>
-							<circle class="buble" r="86" cx="729" cy="915"></circle>
-							<circle class="buble" r="66" cx="672" cy="159"></circle>
-						</g>
-					</svg>
-				</div>
+	<script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+	<link rel="stylesheet" href="static/css/parts.css">
+	<link rel="stylesheet" href="static/css/waveHead.css">
+	<div class="titleCont">
+                
+		<div id="enttT" class="titleENT active">
+			<div class="entText">
+				<div class="letter" style="--timeL:2s; --degL:rotate(180DEG);">A</div>
+				<div class="letter" style="--timeL:2.3s; --degL:rotate(-180DEG);">u</div>
+				<div class="letter" style="--timeL:1.5s; --degL:rotate(200DEG);">r</div>
+				<div class="letter" style="--timeL:2.5s; --degL:rotate(120DEG);">e</div>
+				<div class="letter" style="--timeL:3s; --degL:rotate(40DEG);">o</div>
+				<div class="letter" style="--timeL:3.1s; --degL:rotate(-90deg);">B</div>
+				<div class="letter" style="--timeL:1.9s; --degL:rotate(-180DEG);">o</div>
+				<div class="letter" style="--timeL:2.3s; --degL:rotate(180DEG);">s</div>
+			</div>
+			<div class="enterp">
+				<div class="topdown">Entrepreneurship </div>
+			</div>
+	
+			<div class="shake">
+				<svg class="bubENT" id="visual" viewBox="0 0 1920 1080" width="1920" height="1080"
+					xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+					<g fill="#7fd7c1">
+						<circle class="buble" r="135" cx="410" cy="398"></circle>
+						<circle class="buble" r="17" cx="465" cy="815"></circle>
+						<circle class="buble" r="99" cx="1364" cy="568"></circle>
+						<circle class="buble" r="36" cx="939" cy="723"></circle>
+						<circle class="buble" r="129" cx="213" cy="214"></circle>
+						<circle class="buble" r="80" cx="1617" cy="162"></circle>
+						<circle class="buble" r="70" cx="1235" cy="328"></circle>
+						<circle class="buble" r="30" cx="1669" cy="490"></circle>
+						<circle class="buble" r="32" cx="713" cy="436"></circle>
+						<circle class="buble" r="102" cx="1627" cy="867"></circle>
+						<circle class="buble" r="81" cx="220" cy="700"></circle>
+						<circle class="buble" r="26" cx="1256" cy="884"></circle>
+						<circle class="buble" r="18" cx="969" cy="243"></circle>
+						<circle class="buble" r="86" cx="729" cy="915"></circle>
+						<circle class="buble" r="66" cx="672" cy="159"></circle>
+					</g>
+				</svg>
 			</div>
 		</div>
+	</div>
 
-		<div class="headParts">
-
-			<div style="margin-left: 2.1%;" class="scrollIndexContain">
-				<div class="stickyIndex">
-					<div class="lineIndex"></div>
-					<div class="indexDots">
-						<div onclick="goTo('1')" class="dotIndex"
-							id="dot1">
-							<div class="dotText">AureoBos</div>
-						</div>
-						<div class="dotIndex" id="dot2"
-							onclick="goTo('2')">
-							<div class="dotText">Solution</div>
-						</div>
-						<div class="dotIndex" id="dot3"
-							onclick="goTo('3')">
-							<div class="dotText">Scalable</div>
-						</div>
-						<div class="dotIndex" id="dot4"
-							onclick="goTo('4')">
-							<div class="dotText">Inventive</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-
-			<svg class="waveParts" id="visual" viewBox="0 0 960 540"
-				xmlns="http://www.w3.org/2000/svg"
-				xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-				<g>
-					<path id="wave11"
-						d="M0 335L20 326.2C40 317.3 80 299.7 120 292.3C160 285 200 288 240 301.8C280 315.7 320 340.3 360 348.3C400 356.3 440 347.7 480 337.2C520 326.7 560 314.3 600 311C640 307.7 680 313.3 720 321.2C760 329 800 339 840 332.2C880 325.3 920 301.7 940 289.8L960 278L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
-						fill="#A7DCD3"></path>
-					<path id="wave12"
-						d="M0 384L20 379.2C40 374.3 80 364.7 120 373.8C160 383 200 411 240 424C280 437 320 435 360 424.5C400 414 440 395 480 391.3C520 387.7 560 399.3 600 398.2C640 397 680 383 720 374.2C760 365.3 800 361.7 840 358.3C880 355 920 352 940 350.5L960 349L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
-						fill="#81D1BF"></path>
-					<path id="wave13"
-						d="M0 483L20 480.8C40 478.7 80 474.3 120 475.8C160 477.3 200 484.7 240 488.5C280 492.3 320 492.7 360 486.7C400 480.7 440 468.3 480 464.3C520 460.3 560 464.7 600 471C640 477.3 680 485.7 720 480.3C760 475 800 456 840 450.8C880 445.7 920 454.3 940 458.7L960 463L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
-						fill="#5BC5AB"></path>
-				</g>
-				<g style="visibility: hidden">
-					<path id="wave21"
-						d="M0 315L20 324.2C40 333.3 80 351.7 120 354.3C160 357 200 344 240 333.3C280 322.7 320 314.3 360 324C400 333.7 440 361.3 480 358.8C520 356.3 560 323.7 600 311.8C640 300 680 309 720 321.7C760 334.3 800 350.7 840 344.2C880 337.7 920 308.3 940 293.7L960 279L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
-						fill="#A7DCD3"></path>
-					<path id="wave22"
-						d="M0 387L20 390.3C40 393.7 80 400.3 120 394.8C160 389.3 200 371.7 240 376.2C280 380.7 320 407.3 360 421.2C400 435 440 436 480 433.7C520 431.3 560 425.7 600 414.7C640 403.7 680 387.3 720 382.7C760 378 800 385 840 384.5C880 384 920 376 940 372L960 368L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
-						fill="#81D1BF"></path>
-					<path id="wave23"
-						d="M0 485L20 486.7C40 488.3 80 491.7 120 490.5C160 489.3 200 483.7 240 479.5C280 475.3 320 472.7 360 466.8C400 461 440 452 480 449.5C520 447 560 451 600 458.2C640 465.3 680 475.7 720 478.3C760 481 800 476 840 469C880 462 920 453 940 448.5L960 444L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
-						fill="#5BC5AB"></path>
-				</g>
-			</svg>
-			<script>
+			<div class="headParts">
+				
+				<svg class="waveParts" id="visual" viewBox="0 0 960 540" xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+					<g>
+						<path id="wave11"
+							d="M0 335L20 326.2C40 317.3 80 299.7 120 292.3C160 285 200 288 240 301.8C280 315.7 320 340.3 360 348.3C400 356.3 440 347.7 480 337.2C520 326.7 560 314.3 600 311C640 307.7 680 313.3 720 321.2C760 329 800 339 840 332.2C880 325.3 920 301.7 940 289.8L960 278L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
+							fill="#A7DCD3"></path>
+						<path id="wave12"
+							d="M0 384L20 379.2C40 374.3 80 364.7 120 373.8C160 383 200 411 240 424C280 437 320 435 360 424.5C400 414 440 395 480 391.3C520 387.7 560 399.3 600 398.2C640 397 680 383 720 374.2C760 365.3 800 361.7 840 358.3C880 355 920 352 940 350.5L960 349L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
+							fill="#81D1BF"></path>
+						<path id="wave13"
+							d="M0 483L20 480.8C40 478.7 80 474.3 120 475.8C160 477.3 200 484.7 240 488.5C280 492.3 320 492.7 360 486.7C400 480.7 440 468.3 480 464.3C520 460.3 560 464.7 600 471C640 477.3 680 485.7 720 480.3C760 475 800 456 840 450.8C880 445.7 920 454.3 940 458.7L960 463L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
+							fill="#5BC5AB"></path>
+					</g>
+					<g style="visibility: hidden">
+						<path id="wave21"
+							d="M0 315L20 324.2C40 333.3 80 351.7 120 354.3C160 357 200 344 240 333.3C280 322.7 320 314.3 360 324C400 333.7 440 361.3 480 358.8C520 356.3 560 323.7 600 311.8C640 300 680 309 720 321.7C760 334.3 800 350.7 840 344.2C880 337.7 920 308.3 940 293.7L960 279L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
+							fill="#A7DCD3"></path>
+						<path id="wave22"
+							d="M0 387L20 390.3C40 393.7 80 400.3 120 394.8C160 389.3 200 371.7 240 376.2C280 380.7 320 407.3 360 421.2C400 435 440 436 480 433.7C520 431.3 560 425.7 600 414.7C640 403.7 680 387.3 720 382.7C760 378 800 385 840 384.5C880 384 920 376 940 372L960 368L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
+							fill="#81D1BF"></path>
+						<path id="wave23"
+							d="M0 485L20 486.7C40 488.3 80 491.7 120 490.5C160 489.3 200 483.7 240 479.5C280 475.3 320 472.7 360 466.8C400 461 440 452 480 449.5C520 447 560 451 600 458.2C640 465.3 680 475.7 720 478.3C760 481 800 476 840 469C880 462 920 453 940 448.5L960 444L960 541L940 541C920 541 880 541 840 541C800 541 760 541 720 541C680 541 640 541 600 541C560 541 520 541 480 541C440 541 400 541 360 541C320 541 280 541 240 541C200 541 160 541 120 541C80 541 40 541 20 541L0 541Z"
+							fill="#5BC5AB"></path>
+					</g>
+				</svg>
+				<script>
 					const tween = KUTE.fromTo(
 						'#wave11',
 						{ path: '#wave11' },
@@ -142,7 +107,7 @@ synthetic biology.{% endblock %}
 						{ repeat: 999, duration: 5000, yoyo: true }
 					).start();
 				</script>
-			<script>
+				<script>
 					const tween2 = KUTE.fromTo(
 						'#wave12',
 						{ path: '#wave12' },
@@ -150,7 +115,7 @@ synthetic biology.{% endblock %}
 						{ repeat: 999, duration: 4000, yoyo: true }
 					).start();
 				</script>
-			<script>
+				<script>
 					const tween3 = KUTE.fromTo(
 						'#wave13',
 						{ path: '#wave13' },
@@ -158,7 +123,7 @@ synthetic biology.{% endblock %}
 						{ repeat: 999, duration: 3000, yoyo: true }
 					).start();
 				</script>
-			<script>
+				<script>
 					window.onload = function() {
 						console.log("loaded");
 					var ent = document.getElementById('enttT');
@@ -167,157 +132,120 @@ synthetic biology.{% endblock %}
 					console.log(ent.classList);
 					};
 				</script>
-		</div>
-
-		<!--Seccion que ya sirve, no mover-->
-		<div class="button-container">
-			<div class="logocontainer">
-				<div class="methods">
-					<div class="button-content">
-						<p class="tituloBoton">Development Plans</p>
-						<button onclick="showSection('sectionMethods')" class="learnMore">Go to
-							section</button>
-					</div>
-				</div>
-				<div class="overview">
-					<div class="button-content">
-						<p class="tituloBoton">Solution</p>
-						<button onclick="showSection('sectionOverview')" class="learnMore">Go to
-							section</button>
-					</div>
-				</div>
-				<div class="results">
-					<div class="button-content">
-						<p class="tituloBoton">Skills, Capabilities & Stakeholders</p>
-						<button onclick="showSection('sectionResults')" class="learnMore">Go to
-							section</button>
-					</div>
-				</div>
-				<div class="Unmet">
-					<div class="button-content">
-						<p class="tituloBoton">Unmet Needs</p>
-						<button onclick="showSection('sectionUnmet')" class="learnMore">Go to
-							section</button>
-					</div>
-				</div>
-				<div class="Long">
-					<div class="button-content">
-						<p class="tituloBoton">Long-term Impacts</p>
-						<button onclick="showSection('sectionLong')" class="learnMore">Go to
-							section</button>
-					</div>
-				</div>
-				<p class="fraseemprende">
-					We
-					<b class="tooltipSignificado">empathized
-						<span class="tooltipSignificadoBox">
-							Through our interviews and visits to small, medium and large milk
-							producers, as well as our interactions with different government agencies
-							and diverse stakeholders we learned how mastitis impacts society. We were
-							able to completely put ourselves in the shoes of the people who are
-							facing the problematic.
-							If you want to know more about our interviews, visits and stakeholders,
-							go to our human practices section.
-
-						</span>
-					</b>
-					with dairy cattle owners,
-					<b class="tooltipSignificado">defining
-						<span class="tooltipSignificadoBox">
-							Analyzing the information we gathered from our interviews, we identified
-							several insights that played a major role in defining the next steps for
-							AureoBos. Current solutions, such as antibiotics, are not only costly and
-							unsustainable, but they also generate a resistance in cows and appear
-							during the milk withdrawal period which translates in decreased milk
-							production, increase of food waste and economic expenses, and potential
-							environmental implications, such as contamination of soil and water,
-							highlighting the inadequacies of these solutions.
-
-						</span>
-					</b>
-					that current solutions for mastitis were inadequate and costly,
-					<b class="tooltipSignificado">ideating
-						<span class="tooltipSignificadoBox">
-							All of these let us ideate the best way of approaching the unmet needs:
-							AureoBos. Thanks to our insights we were able to set our goal: create an
-							antibiotic-free treatment that specialized in four of the most prevalent
-							microorganisms - Staphylococcus aureus, Streptococcus agalactiae,
-							Streptococcus uberis, and Escherichia coli - that cause bovine mastitis.
-							To achieve this goal, we initiated a research process focusing on
-							alginate-chitosan nanoparticles. Our decision was driven by extensive
-							consultations with experts and our end users, as part of our human
-							practices investigations. This led us to conclude that the most effective
-							application method would be through intramammary infusion.
-						</span>
-					</b>
-					the way to solve it through our product. We were able to
-					<b class="tooltipSignificado">prototype
-						<span class="tooltipSignificadoBox">
-							In order to have our Minimum Viable Product, we researched and drafted
-							the legal regulations and requirements we had to follow in order to
-							design the most realistic prototype. In this section you will find our
-							legal plan, risk assessment and management plan, as well as the technical
-							data sheet and the Minimum Viable Product we prototyped.
-
-						</span>
-					</b>
-					AureoBos, and
-					<b class="tooltipSignificado">test
-						<span class="tooltipSignificadoBox">
-							Tests have been conducted in the laboratory, demonstrating that our
-							product effectively targets the specific microorganisms associated with
-							mastitis. In addition to this, it is worth mentioning that we received at
-							least 5 offers from small, medium, and large scale dairy producers whom
-							we interviewed, to test our product on their infected cows.Through this
-							test we could be able to visualize how our product would make a positive
-							impact on the world and serve as a means to attract our first potential
-							clients.
-
-						</span>
-					</b>
-					it in the lab through rigorous experiments, proposing to
-					<b class="tooltipSignificado">implement
-						<span class="tooltipSignificadoBox">
-							Through the development of AureoBos and the proven lab-level
-							functionality, we will implement the treatment with every small, medium
-							and big milk producer we interacted with during our interviews.
-						</span>
-					</b>
-					it as an effective and sustainable solution to tackle mastitis in dairy
-					cattle.
-				</p>
-				<div class="circleDiagram">
-					<div class="whatCircle">
-						<div class="circleText">
-							<h3>What?</h3>
-							<p> Enzybiotic treatment for <em>S. aureus</em>, <em>S. agalactiae</em>,
-								<em>S. uberis</em>, and <em>E. coli</em> that cause bovine
-								mastitis
-							</p>
-						</div>
-					</div>
-					<div class="howCircle">
-						<div class="circleText">
-							<h3>How?</h3>
-							<p>Biosynthesizing recombinant proteins within prokaryotic cells</p>
-						</div>
-					</div>
-					<div class="whyCircle">
-						<div class="circleText">
-							<h3>Why?</h3>
-							<p>To reduce milk waste, mitigate the economic impact of mastitis,
-								improve the quality of life of
-								the
-								dairy producers, and leave a positive impact on the environment.</p>
-						</div>
-
-					</div>
-
-				</div>
-
 			</div>
 
-			<script>
+
+	<!--Seccion que ya sirve, no mover-->
+	<div class="button-container">
+		
+		<div class="logocontainer">
+			<div class="methods">
+				<div class="button-content">
+					<p class="tituloBoton">Development Plans</p>
+					<button onclick="showSection('sectionMethods')" class="learnMore">Go to section</button>
+				</div>
+			</div>
+			<div class="overview">
+				<div class="button-content">
+					<p class="tituloBoton">Solution</p>
+					<button onclick="showSection('sectionOverview')" class="learnMore">Go to section</button>
+				</div>
+			</div>
+			<div class="results">
+				<div class="button-content">
+					<p class="tituloBoton">Skills, Capabilities & Stakeholders</p>
+					<button onclick="showSection('sectionResults')" class="learnMore">Go to section</button>
+				</div>
+			</div>
+			<div class="Unmet">
+				<div class="button-content">
+					<p class="tituloBoton">Unmet Needs</p>
+					<button onclick="showSection('sectionUnmet')" class="learnMore">Go to section</button>
+				</div>
+			</div>
+			<div class="Long">
+				<div class="button-content">
+					<p class="tituloBoton">Long-term Impacts</p>
+					<button onclick="showSection('sectionLong')" class="learnMore">Go to section</button>
+				</div>
+			</div>
+			<p class="fraseemprende">
+				We 
+				<b class="tooltipSignificado">empathized
+					<span class="tooltipSignificadoBox">
+						Through our interviews and visits to small, medium and large milk producers, as well as our interactions with different government agencies and diverse stakeholders we learned how mastitis impacts society. We were able to completely put ourselves in the shoes of the people who are facing the problematic. 
+						If you want to know more about our interviews, visits and stakeholders, go to our human practices section. 
+
+					</span>
+				</b>
+				with dairy cattle owners,
+				<b class="tooltipSignificado">defining 
+					<span class="tooltipSignificadoBox">
+						Analyzing the information we gathered from our interviews, we identified several insights that played a major role in defining the next steps for AureoBos. Current solutions, such as antibiotics, are not only costly and unsustainable, but they also generate a resistance in cows and appear during the milk withdrawal period which translates in decreased milk production, increase of food waste and economic expenses, and potential environmental implications, such as contamination of soil and water, highlighting the inadequacies of these solutions.
+
+					</span>
+				</b>
+				that current solutions for mastitis were inadequate and costly,
+				<b class="tooltipSignificado">ideating  
+					<span class="tooltipSignificadoBox">
+						All of these let us ideate the best way of approaching the unmet needs: AureoBos. Thanks to our insights we were able to set our goal: create an antibiotic-free treatment that specialized in four of the most prevalent microorganisms - Staphylococcus aureus, Streptococcus agalactiae, Streptococcus uberis, and Escherichia coli - that cause bovine mastitis. To achieve this goal, we initiated a research process focusing on alginate-chitosan nanoparticles. Our decision was driven by extensive consultations with experts and our end users, as part of our human practices investigations. This led us to conclude that the most effective application method would be through intramammary infusion.
+					</span>
+				</b>
+				the way to solve it through our product. We were able to
+				<b class="tooltipSignificado">prototype   
+					<span class="tooltipSignificadoBox">
+						In order to have our Minimum Viable Product, we researched and drafted the legal regulations and requirements we had to follow in order to design the most realistic prototype. In this section you will find our legal plan, risk assessment and management plan, as well as the technical data sheet and the Minimum Viable Product we prototyped. 
+
+					</span>
+				</b>
+				AureoBos, and
+				<b class="tooltipSignificado">test   
+					<span class="tooltipSignificadoBox">
+						Tests have been conducted in the laboratory, demonstrating that our product effectively targets the specific microorganisms associated with mastitis.  In addition to this, it is worth mentioning that we received at least 5 offers from small, medium, and large scale dairy producers whom we interviewed, to test our product on their infected cows.Through this test we could be able to visualize how our product would make a positive impact on the world and serve as a means to attract our first potential clients.
+
+
+					</span>
+				</b>
+				it in the lab through rigorous experiments, proposing to 
+				<b class="tooltipSignificado">implement    
+					<span class="tooltipSignificadoBox">
+						Through the development of AureoBos and the proven lab-level functionality, we will implement the treatment with every small, medium and big milk producer we interacted with during our interviews.
+					</span>
+				</b>
+				it as an effective and sustainable solution to tackle mastitis in dairy cattle.
+			</p>
+			<div class="circleDiagram">
+				<div class="whatCircle">
+					<div class="circleText">
+						<h3>What?</h3>
+						<p> Enzybiotic treatment for <em>S. aureus</em>, <em>S. agalactiae</em>, <em>S. uberis</em>, and <em>E. coli</em> that cause bovine
+							mastitis
+						</p>
+					</div>
+				</div>
+				<div class="howCircle">
+					<div class="circleText">
+						<h3>How?</h3>
+						<p>Biosynthesizing recombinant proteins within prokaryotic cells</p>
+					</div>
+				</div>
+				<div class="whyCircle">
+					<div class="circleText">
+						<h3>Why?</h3>
+						<p>To reduce milk waste, mitigate the economic impact of mastitis, improve the quality of life of
+							the
+							dairy producers, and leave a positive impact on the environment.</p>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<script>
 			function showSection(sectionId) {
 				// Hide all sections
 				var sections = document.querySelectorAll('#scrlS3 > div');
@@ -333,28 +261,31 @@ synthetic biology.{% endblock %}
 			}
 
 		</script>
-		</div>
-		<!--seccion que ya sirve arriba-->
-		<!--secciones-->
-		<div id="scrlS3"> <!--encapsula todos los divs-->
-			<div id="sectionOverview" class="sectO">
-				<div class="secciones">
-					<div class="seccionOverview">
-						<p id="sec2" class="subtitleO">Solution</p>
-					</div>
-				</div>
-				<div class="layout">
-					<!--cosas del index-->
+	</div>
+	<!--seccion que ya sirve arriba-->
 
-					<div class="secciones">
-						<div class="mkt-3dSlider py-6">
-							<div class="fraseInicio">
-								<div class="fraseAcomodo">
-									<div class="phrase">
-										<p class="fraseModel" id="frase">"It would be treating mastitis whithout antibiotics, the dream of every milk producer"
-											- DVM Rodolfo Jaquez. </p>
-									</div>
-									<script>
+
+
+	<!--secciones-->
+	<div id="scrlS3"> <!--encapsula todos los divs-->
+		<div id="sectionOverview" class="sectO">
+			<div class="secciones">
+				<div class="seccionOverview">
+					<p class="subtitleO">Solution</p>
+				</div>
+			</div>
+			<div class="layout">
+				<!--cosas del index-->
+				
+				
+				<div class="secciones">
+					<div class="mkt-3dSlider py-6">
+						<div class="fraseInicio">
+							<div class="fraseAcomodo">
+								<div class="phrase">
+							<p class = "fraseModel" id="frase">"It would be treating mastitis whithout antibiotics, the dream of every milk producer" - DVM Rodolfo Jaquez. </p>
+							</div>
+								<script>
 									var text = document.getElementById('frase');
 							var newDom = '';
 							var animationDelay = 15;
@@ -372,133 +303,99 @@ synthetic biology.{% endblock %}
 								text.children[i].style['animation-delay'] = animationDelay * i + 'ms';
 							}
 								</script>
-								</div>
 							</div>
 						</div>
-
-						<div>
-							<p class="contenido">
-								<img class="eti"
-									src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/jeringa-intramamaria-5.png">
-								<br>
-								AureoBos is set to become a groundbreaking treatment that
-								revolutionizes, completely, mastitis treatment. As shown above, we've
-								meticulously outlined a mockup that serves as our Minimum Viable Product
-								(MVP), precisely mirroring the strict regulatory framework of Mexico in
-								the development and registration of veterinary products, as well as
-								gathering the most important feedback form our different stakeholders.
-								Our proof of concept shows that
-								<br>
-								To learn more about the technology behind, click below.
-							</p>
-							<br>
-							<br>
-
-						</div>
-						<div class="accordion refer">
-							<div class="accordion-item">
-								<div class="accordion-item-header">
-									<h3 id="referencesO">Aureobos Technology</h3>
-								</div>
-								<div class="accordion-item-body">
-									<div class="accordion-item-body-content">
-										<p class="contenido">
-											AureoBos takes a pioneering approach to mastitis treatment.
-											Leveraging synthetic biology, we harness Escherichia coli (E. coli)
-											to produce specific proteins originating from bacteriophages. These
-											proteins, known as endolysins, play a crucial role in bacteriophages'
-											life cycle by infecting and exterminating bacteria. Through genetic
-											modification, we enhance E. coli's capacity to produce these
-											endolysins.
-										</p>
-										<br>
-										<p class="contenido">
-											Endolysins, once extracted from E. coli, serve as the cornerstone for
-											our mastitis treatment in dairy cattle. These remarkable proteins
-											target the cell walls of mastitis-causing bacteria. Upon binding,
-											they create breaches in the cell wall, causing the bacteria to
-											disintegrate and perish. Notably, endolysins remain effective even
-											against antibiotic-resistant bacterial strains, underscoring their
-											potential as a groundbreaking solution. If you are interested in
-											learning more about the technicalities of AureoBos, delve into the
-											project description section.
-
-										</p>
-
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="tituloContenido">
-							<h3 id="introduction"><br>Scalable </h3>
-						</div>
-						<br>
-						<div class="tituloContenido">
-							<h3 id="introduction"><br>Inventive </h3>
-						</div>
-						<p class="contenido">
-							While several treatments and solutions for bovine mastitis exist,
-							AureoBos stands out for its innovative approach. Through our research and
-							interactions with clients, we've identified a gap in the market - there
-							isn't yet an affordable solution that utilizes synthetic biology and
-							recombinant proteins to treat this infection. The numerous benefits of
-							our product have generated considerable demand among those affected by
-							this issue, underscoring the inventiveness that sets it apart.
-						</p>
 					</div>
+					
+					<div>
+						<p class="contenido">
+							<img class="eti"src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/jeringa-intramamaria-5.png">
+							<br>
+							AureoBos is set to become a groundbreaking treatment that revolutionizes, completely, mastitis treatment. As shown above, we've meticulously outlined a mockup that serves as our Minimum Viable Product (MVP), precisely mirroring the strict regulatory framework of Mexico in the development and registration of veterinary products, as well as gathering the most important feedback form our different stakeholders. Our proof of concept shows that
+							<br>
+							To learn more about the technology behind, click below. 	
+						</p>
+						<br>
+						<br>
+						
+					</div>
+					<div class="accordion refer">
+						<div class="accordion-item">
+							<div class="accordion-item-header">
+								<h3 id="referencesO">Aureobos Technology</h3>
+							</div>
+							<div class="accordion-item-body">
+								<div class="accordion-item-body-content">
+									<p class="contenido">
+										AureoBos takes a pioneering approach to mastitis treatment. Leveraging synthetic biology, we harness Escherichia coli (E. coli) to produce specific proteins originating from bacteriophages. These proteins, known as endolysins, play a crucial role in bacteriophages' life cycle by infecting and exterminating bacteria. Through genetic modification, we enhance E. coli's capacity to produce these endolysins.
+									</p>
+									<br>
+									<p class="contenido">
+										Endolysins, once extracted from E. coli, serve as the cornerstone for our mastitis treatment in dairy cattle. These remarkable proteins target the cell walls of mastitis-causing bacteria. Upon binding, they create breaches in the cell wall, causing the bacteria to disintegrate and perish. Notably, endolysins remain effective even against antibiotic-resistant bacterial strains, underscoring their potential as a groundbreaking solution. If you are interested in learning more about the technicalities of AureoBos, delve into the project description section.
+
+									</p>
+									
+									
+									
+									
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tituloContenido">
+						<h3 id="introduction"><br>Scalable </h3>
+					</div>
+					<br>
+					<div class="tituloContenido">
+						<h3 id="introduction"><br>Inventive </h3>
+					</div>
+					<p class="contenido">
+						While several treatments and solutions for bovine mastitis exist, AureoBos stands out for its innovative approach. Through our research and interactions with clients, we've identified a gap in the market - there isn't yet an affordable solution that utilizes synthetic biology and recombinant proteins to treat this infection. The numerous benefits of our product have generated considerable demand among those affected by this issue, underscoring the inventiveness that sets it apart.
+					</p>
 				</div>
 			</div>
+		</div>
+		
 
-			<div id="sectionMethods" class="sectM">
-				<!--seccion Methods-->
-				<div class="secciones">
-					<div class="seccionMethods">
-						<p class="subtitleM">Development Plans</p>
-					</div>
+
+
+		<div id="sectionMethods" class="sectM">
+			<!--seccion Methods-->
+			<div class="secciones">
+				<div class="seccionMethods">
+					<p class="subtitleM">Development Plans</p>
 				</div>
-				<div class="layout">
-					<!--cosas del index-->
-					<div class="index2">
-						<nav class="navigation">
-							<ul>
-								<li>
-									<a href="#upstream">ODEs</a>
-									<ul>
-										<li><a href="#underlying_theory">Monte Carlo simulation</a></li>
-										<li><a href="#model_building">Parameter estimation</a></li>
-									</ul>
-								</li>
-								<li><a href="#downstream">RSM</a></li>
-								<li><a href="#referencesM">References</a></li>
+			</div>
+			<div class="layout">
+				<!--cosas del index-->
+				<div class="index2">
+					<nav class="navigation">
+						<ul>
+							<li>
+								<a href="#upstream">ODEs</a>
+								<ul>
+									<li><a href="#underlying_theory">Monte Carlo simulation</a></li>
+									<li><a href="#model_building">Parameter estimation</a></li>
+								</ul>
+							</li>
+							<li><a href="#downstream">RSM</a></li>
+							<li><a href="#referencesM">References</a></li>
 							</li>
 						</ul>
 					</nav>
 				</div>
 				<div class="secciones">
 					<p class="contenido">
-						We understand the problem we are addressing and have a clear vision of
-						what we aim to achieve. Now, let's delve into the 'how' and explore the
-						entire developmental process. In this section, you will find a
-						comprehensive overview of the tools and development plans we have put in
-						place to transform our project into a startup and take it through to the
-						commercialization phase. It's worth noting that everything described here
-						has been meticulously crafted and planned with the guidance and expertise
-						of a diverse group of professionals in the field of entrepreneurship,
-						ranging from experienced entrepreneurs to technical and business mentors
-						from incubation programs, investors, and industry professionals.
+						We understand the problem we are addressing and have a clear vision of what we aim to achieve. Now, let's delve into the 'how' and explore the entire developmental process. In this section, you will find a comprehensive overview of the tools and development plans we have put in place to transform our project into a startup and take it through to the commercialization phase. It's worth noting that everything described here has been meticulously crafted and planned with the guidance and expertise of a diverse group of professionals in the field of entrepreneurship, ranging from experienced entrepreneurs to technical and business mentors from incubation programs, investors, and industry professionals.
 
 					</p>
 					<div class="tituloContenido">
 						<h3 id="introduction"><br>Business Model </h3>
 					</div>
 					<p class="contenido">
-						Drafting a Business Model Canvas is crucial as it provides a structured
-						framework to analyze, plan, and refine a startup's strategy. With
-						AureoBos, we've used this powerful tool to clearly define how we create,
-						deliver, and capture value in our innovative approach to tackling bovine
-						mastitis.
-						<img class="tableBus"
-							src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/bmc-1.png">
+						Drafting a Business Model Canvas is crucial as it provides a structured framework to analyze, plan, and refine a startup's strategy. With AureoBos, we've used this powerful tool to clearly define how we create, deliver, and capture value in our innovative approach to tackling bovine mastitis.
+						<img class="tableBus" src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/bmc-1.png">   
 					</p>
 					<p class="contenido">
 						<b>To learn more about each step of our Business Model, click below. </b>
@@ -511,245 +408,72 @@ synthetic biology.{% endblock %}
 							<div class="accordion-item-body-content">
 								<p class="contenido">
 									<b> Value Proposition:</b>
-									AureoBos offers a revolutionary recombinant protein intramammary
-									infusion therapy, designed to empower dairy cattle owners. Our
-									innovative solution minimizes economic losses caused by mastitis
-									infections by eliminating the milk withdrawal period. Unlike
-									conventional antibiotic treatments, our therapy allows dairy producers
-									to effectively treat mastitis without the costly disposal of milk. This
-									not only ensures healthier cattle and high-quality milk but also
-									contributes to reducing food waste and environmental contamination.
-									AureoBos is not just a treatment; it's a sustainable and economically
-									sound choice for the future of dairy farming.
+									AureoBos offers a revolutionary recombinant protein intramammary infusion therapy, designed to empower dairy cattle owners. Our innovative solution minimizes economic losses caused by mastitis infections by eliminating the milk withdrawal period. Unlike conventional antibiotic treatments, our therapy allows dairy producers to effectively treat mastitis without the costly disposal of milk. This not only ensures healthier cattle and high-quality milk but also contributes to reducing food waste and environmental contamination. AureoBos is not just a treatment; it's a sustainable and economically sound choice for the future of dairy farming.
 								</p>
 								<p class="contenido">
 									<b> Customer Segments:</b>
-									Recalling that our end users are dairy cattle owners whose cows are
-									affected by mastitis caused by one of the four microorganisms we are
-									targeting, it's crucial to note that we have two distinct client
-									segments. This distinction arises from the scale of production among
-									our end users. Through interviews, we discovered that the way
-									large-scale producers acquire their current treatments differs
-									significantly from how medium and small-scale producers do.
-									As a result, we've identified these two segments. The first caters to
-									large dairy producers who source their treatments directly from
-									suppliers, while the second focuses on local pharmacies in the region
-									where small and medium-scale producers typically find and purchase
-									medications.
-									Recognizing the existence of these two different customer types enables
-									us to plan realistically and strategically for how we can reach both
-									effectively. It's also important to emphasize that while veterinary
-									zootechnicians are not our ultimate customers, their recommendations to
-									our clients and users hold significant weight in their decision-making
-									process. Therefore, our marketing strategy to promote our product must
-									consider them as a crucial part of the equation.
-								</p>
+									Recalling that our end users are dairy cattle owners whose cows are affected by mastitis caused by one of the four microorganisms we are targeting, it's crucial to note that we have two distinct client segments. This distinction arises from the scale of production among our end users. Through interviews, we discovered that the way large-scale producers acquire their current treatments differs significantly from how medium and small-scale producers do.
+									As a result, we've identified these two segments. The first caters to large dairy producers who source their treatments directly from suppliers, while the second focuses on local pharmacies in the region where small and medium-scale producers typically find and purchase medications.
+									Recognizing the existence of these two different customer types enables us to plan realistically and strategically for how we can reach both effectively. It's also important to emphasize that while veterinary zootechnicians are not our ultimate customers, their recommendations to our clients and users hold significant weight in their decision-making process. Therefore, our marketing strategy to promote our product must consider them as a crucial part of the equation.
+								</p>	
 								<p class="contenido">
 									<b> Channels:</b>
-									In crafting our path to reach our Customer Segments and deliver our
-									compelling Value Proposition, AureoBos recognizes the pivotal role of
-									our stakeholders and the significance of personalized distribution. Our
-									approach to reaching our market is multifaceted, designed to cater to
-									the diverse needs and preferences of our customers.
-									First and foremost, we must underscore the profound influence of
-									veterinary zootechnicians in our ecosystem. As previously highlighted,
-									these professionals wield tremendous authority when it comes to
-									treatment recommendations. They are our vital partners in educating and
-									introducing AureoBos to the market. By engaging with them as an
-									essential stakeholder, we aim to not only explain the science and
-									efficacy behind AureoBos but also provide concrete evidence of its
-									effectiveness. This engagement is fundamental, as veterinary
-									zootechnicians often play a role in guiding treatment decisions through
-									recommendations and hearsay among dairy cattle owners.
-									Secondly, our distribution strategy entails a physical channel wherein
-									we, as the supplier, directly distribute AureoBos to our clients every
-									time they place an order. This direct distribution approach is
-									particularly significant for large dairy producers who acquire our
-									product directly. However, it's important to note that this channel
-									also extends to veterinary pharmacies, which are both our clients and
-									channels. These pharmacies, while purchasing from us, act as
-									intermediaries for smaller and medium-sized dairy producers.
-									In essence, our strategy combines personalized engagement and direct
-									distribution to effectively reach both our large-scale dairy producers
-									and the veterinary pharmacies that serve as conduits to the broader
-									market. By recognizing the unique roles and influences of each
-									stakeholder, we ensure that AureoBos permeates the market efficiently
-									and successfully
-								</p>
+									In crafting our path to reach our Customer Segments and deliver our compelling Value Proposition, AureoBos recognizes the pivotal role of our stakeholders and the significance of personalized distribution. Our approach to reaching our market is multifaceted, designed to cater to the diverse needs and preferences of our customers.
+									First and foremost, we must underscore the profound influence of veterinary zootechnicians in our ecosystem. As previously highlighted, these professionals wield tremendous authority when it comes to treatment recommendations. They are our vital partners in educating and introducing AureoBos to the market. By engaging with them as an essential stakeholder, we aim to not only explain the science and efficacy behind AureoBos but also provide concrete evidence of its effectiveness. This engagement is fundamental, as veterinary zootechnicians often play a role in guiding treatment decisions through recommendations and hearsay among dairy cattle owners.
+									Secondly, our distribution strategy entails a physical channel wherein we, as the supplier, directly distribute AureoBos to our clients every time they place an order. This direct distribution approach is particularly significant for large dairy producers who acquire our product directly. However, it's important to note that this channel also extends to veterinary pharmacies, which are both our clients and channels. These pharmacies, while purchasing from us, act as intermediaries for smaller and medium-sized dairy producers.
+									In essence, our strategy combines personalized engagement and direct distribution to effectively reach both our large-scale dairy producers and the veterinary pharmacies that serve as conduits to the broader market. By recognizing the unique roles and influences of each stakeholder, we ensure that AureoBos permeates the market efficiently and successfully
+								</p>	
 								<p class="contenido">
 									<b> Customer Relationships:</b>
-									At AureoBos, our approach to customers is a fundamental pillar of our
-									growth strategy. We've meticulously devised a three-fold strategy that
-									encompasses our efforts to Get, Keep, and Grow our valued clients.
-									Firstly, our 'Get' strategy is designed to initiate relationships with
-									our customers. To accomplish this, we are actively engaging with local
-									cattle farms in our region, fostering collaborations within the
-									veterinary community to secure recommendations for AureoBos.
-									Concurrently, we are establishing connections with local pharmacies to
-									introduce and make AureoBos readily available to small and medium-sized
-									producers. This multi-pronged approach ensures that our innovative
-									solution is accessible to a diverse range of customers.
-									Secondly, our 'Keep' strategy revolves around maintaining strong,
-									enduring relationships with our customers. We believe in the power of
-									personalized engagement. We are committed to providing ongoing guidance
-									and support to our customers, ensuring they fully comprehend the
-									correct usage and benefits of AureoBos. Additionally, our relationship
-									with veterinary pharmacies is of special significance. We plan to
-									cultivate close partnerships, delivering exceptional care and attention
-									to aid in the expansion of our sales efforts.
-									Lastly, our 'Grow' strategy is geared towards fostering organic growth
-									by leveraging the influence of user referrals within our target
-									regions. Recognizing that this guild places significant weight on
-									recommendations and word-of-mouth, we are strategically encouraging
-									existing users to refer new customers to AureoBos. This approach not
-									only increases our customer base but also reaffirms the trust and
-									confidence our clients have in our product.
-									Our three-pronged strategy aligns seamlessly with our commitment to
-									providing effective mastitis treatment while cementing strong customer
-									relationships. This holistic approach encompasses customer acquisition,
-									retention, and growth, reflecting our dedication to success in the
-									market.
-								</p>
+									At AureoBos, our approach to customers is a fundamental pillar of our growth strategy. We've meticulously devised a three-fold strategy that encompasses our efforts to Get, Keep, and Grow our valued clients.
+									Firstly, our 'Get' strategy is designed to initiate relationships with our customers. To accomplish this, we are actively engaging with local cattle farms in our region, fostering collaborations within the veterinary community to secure recommendations for AureoBos. Concurrently, we are establishing connections with local pharmacies to introduce and make AureoBos readily available to small and medium-sized producers. This multi-pronged approach ensures that our innovative solution is accessible to a diverse range of customers.
+									Secondly, our 'Keep' strategy revolves around maintaining strong, enduring relationships with our customers. We believe in the power of personalized engagement. We are committed to providing ongoing guidance and support to our customers, ensuring they fully comprehend the correct usage and benefits of AureoBos. Additionally, our relationship with veterinary pharmacies is of special significance. We plan to cultivate close partnerships, delivering exceptional care and attention to aid in the expansion of our sales efforts.
+									Lastly, our 'Grow' strategy is geared towards fostering organic growth by leveraging the influence of user referrals within our target regions. Recognizing that this guild places significant weight on recommendations and word-of-mouth, we are strategically encouraging existing users to refer new customers to AureoBos. This approach not only increases our customer base but also reaffirms the trust and confidence our clients have in our product.
+									Our three-pronged strategy aligns seamlessly with our commitment to providing effective mastitis treatment while cementing strong customer relationships. This holistic approach encompasses customer acquisition, retention, and growth, reflecting our dedication to success in the market.
+								</p>	
 								<p class="contenido">
 									<b> Revenue Streams:</b>
-									At AureoBos, our revenue streams primarily derive from the direct sale
-									of our innovative product. Extensive market analysis and a thorough
-									evaluation of our competitors have led us to offer AureoBos in a
-									convenient presentation format – boxes containing 20 syringes, each
-									with a 10 mL capacity. This presentation is designed to cater to the
-									immediate needs of our customers while providing flexibility for
-									adjustments based on the response and preferences of our initial
-									customer base. Our commitment to adaptability and customer-centricity
-									allows us to fine-tune our product offerings to best serve the evolving
-									demands of the marke.
-
+									At AureoBos, our revenue streams primarily derive from the direct sale of our innovative product. Extensive market analysis and a thorough evaluation of our competitors have led us to offer AureoBos in a convenient presentation format – boxes containing 20 syringes, each with a 10 mL capacity. This presentation is designed to cater to the immediate needs of our customers while providing flexibility for adjustments based on the response and preferences of our initial customer base. Our commitment to adaptability and customer-centricity allows us to fine-tune our product offerings to best serve the evolving demands of the marke.
+									
 								</p>
 								<p class="contenido">
 									<b> Key Activities:</b>
-									There are several key activities that constitute the backbone of
-									AureoBos's development:
-									Acquisition of Funding: Securing adequate funding is imperative to
-									advance AureoBos through its various developmental stages, right up to
-									the point of commercialization. This necessitates active participation
-									in a range of funding opportunities and investor pitches to secure the
-									necessary financial resources.
-									Technical Development of the Treatment: This encompasses a spectrum of
-									essential experiments and tests aimed at validating the efficacy of
-									AureoBos. These activities go from establishing the initial proof of
-									concept to conducting the requisite tests for regulatory approval by
-									the National Service of Health, Safety, and Agri-Food Quality.
-									Trademark and Company Registration: The process of registering AureoBos
-									as a trademark and establishing our company's legal entity are
-									foundational steps for its eventual commercialization. Further details
-									can be found in the documents below.
-									Product Registration: In order to bring AureoBos to market, it is
-									imperative to obtain regulatory approval from the National Service of
-									Health, Safety, and Agri-Food Quality. To achieve this, we have
-									meticulously outlined a step-by-step guide in our legal plan document.
-									Establishment of Contact with Dairy Farms in the Region: Building
-									relationships with local dairy farms is crucial for creating a
-									comprehensive client database, thereby ensuring targeted outreach and
-									effective engagement.
-									Establishment of Contact with Pharmaceutical Laboratories: This
-									activity backs up our exit strategy, as elaborated in the document
-									below. It involves forging strategic partnerships with pharmaceutical
-									laboratories to facilitate the commercialization of AureoBos through a
-									Merge and Acquisition.
-									Upscaling Process; Scaling up production is really important to meet
-									market demand effectively. This process ensures that we can
-									consistently supply AureoBos to our target audience.
-									AureoBos Marketing: Following the successful registration of our
-									product and the execution of upscaling, our marketing strategy for
-									AureoBos comes into play. This strategy encompasses various facets,
-									including raising awareness in society, establishing client engagement
-									approaches, and implementing a robust distribution network.
-								</p>
+									There are several key activities that constitute the backbone of AureoBos's development:
+									Acquisition of Funding: Securing adequate funding is imperative to advance AureoBos through its various developmental stages, right up to the point of commercialization. This necessitates active participation in a range of funding opportunities and investor pitches to secure the necessary financial resources.
+									Technical Development of the Treatment: This encompasses a spectrum of essential experiments and tests aimed at validating the efficacy of AureoBos. These activities go from establishing the initial proof of concept to conducting the requisite tests for regulatory approval by the National Service of Health, Safety, and Agri-Food Quality.
+									Trademark and Company Registration: The process of registering AureoBos as a trademark and establishing our company's legal entity are foundational steps for its eventual commercialization. Further details can be found in the documents below. 
+									Product Registration: In order to bring AureoBos to market, it is imperative to obtain regulatory approval from the National Service of Health, Safety, and Agri-Food Quality. To achieve this, we have meticulously outlined a step-by-step guide in our legal plan document.
+									Establishment of Contact with Dairy Farms in the Region: Building relationships with local dairy farms is crucial for creating a comprehensive client database, thereby ensuring targeted outreach and effective engagement.
+									Establishment of Contact with Pharmaceutical Laboratories: This activity backs up our exit strategy, as elaborated in the document below. It involves forging strategic partnerships with pharmaceutical laboratories to facilitate the commercialization of AureoBos through a Merge and Acquisition. 
+									Upscaling Process; Scaling up production is really important to meet market demand effectively. This process ensures that we can consistently supply AureoBos to our target audience.
+									AureoBos Marketing: Following the successful registration of our product and the execution of upscaling, our marketing strategy for AureoBos comes into play. This strategy encompasses various facets, including raising awareness in society, establishing client engagement approaches, and implementing a robust distribution network.
+								</p>	
 								<p class="contenido">
 									<b> Key Resources:</b>
-									Identifying and visualizing key resources is a pivotal aspect of the
-									successful execution of AureoBos. Through a comprehensive analysis, we've
-									determined several key resources:
-									Knowledge: The collective knowledge of each team member, advisor,
-									instructor, and external experts has been the bedrock of AureoBos's
-									development. This wealth of knowledge, spanning scientific expertise,
-									entrepreneurial insights, and domain-specific guidance, has been
-									instrumental in shaping our product.
-									Facilities: Adequate laboratory facilities are indispensable for the
-									research, development, and testing phases of AureoBos. These facilities
-									provide the physical space and infrastructure required to carry out
-									experiments, analyze results, and refine our product.
-									Suppliers: Establishing relationships with reliable suppliers of
-									reagents and laboratory equipment is essential. These suppliers ensure
-									a consistent and timely provision of the materials necessary for our
-									research and development processes.
-									Client Partnerships: Collaboration with dairy farms willing to allow us
-									to conduct tests on their cows afflicted with mastitis is invaluable.
-									These partnerships provide real-world testing scenarios, facilitating
-									the refinement and validation of AureoBos.
-									Funding: Securing funding through a variety of sources, including
-									company grants and investments from open calls, is essential for
-									sustaining the ongoing development of AureoBos. These financial
-									resources enable us to progress through critical developmental phases.
-									University Support: Our university, including its robust
-									entrepreneurial ecosystem, serves as a foundational resource. The
-									institutional support and access to mentors, facilities, and networks
-									within the university ecosystem are instrumental in accelerating our
-									progress and achieving tangible results
-									Patent Registration: Given the advanced technology employed in the
-									development of AureoBos, it is imperative that we secure our invention
-									through the patenting registration with the relevant authority in
-									Mexico. This step is of utmost importance as it serves to safeguard our
-									intellectual property rights when we embark on the commercialization of
-									our innovative treatment.
-
+									Identifying and visualizing key resources is a pivotal aspect of the successful execution of AureoBos. Through a comprehensive analysis, we've determined several key resources:
+									Knowledge: The collective knowledge of each team member, advisor, instructor, and external experts has been the bedrock of AureoBos's development. This wealth of knowledge, spanning scientific expertise, entrepreneurial insights, and domain-specific guidance, has been instrumental in shaping our product.
+									Facilities: Adequate laboratory facilities are indispensable for the research, development, and testing phases of AureoBos. These facilities provide the physical space and infrastructure required to carry out experiments, analyze results, and refine our product.
+									Suppliers: Establishing relationships with reliable suppliers of reagents and laboratory equipment is essential. These suppliers ensure a consistent and timely provision of the materials necessary for our research and development processes.
+									Client Partnerships: Collaboration with dairy farms willing to allow us to conduct tests on their cows afflicted with mastitis is invaluable. These partnerships provide real-world testing scenarios, facilitating the refinement and validation of AureoBos.
+									Funding: Securing funding through a variety of sources, including company grants and investments from open calls, is essential for sustaining the ongoing development of AureoBos. These financial resources enable us to progress through critical developmental phases.
+									University Support: Our university, including its robust entrepreneurial ecosystem, serves as a foundational resource. The institutional support and access to mentors, facilities, and networks within the university ecosystem are instrumental in accelerating our progress and achieving tangible results
+									Patent Registration: Given the advanced technology employed in the development of AureoBos, it is imperative that we secure our invention through the patenting registration with the relevant authority in Mexico. This step is of utmost importance as it serves to safeguard our intellectual property rights when we embark on the commercialization of our innovative treatment.
+									
 								</p>
 								<p class="contenido">
 									<b> Key Partners:</b>
-									It is of utmost importance to recognize and highlight the pivotal role
-									played by our key partners in the development and success of AureoBos.
-									Foremost among them is the Orion Technology Park, an integral part of
-									our university's entrepreneurship ecosystem. The Orion Technology Park
-									has been, and will continue to be, a valuable ally in our startup
-									journey. This partnership has afforded us unparalleled access to a
-									network of entrepreneurs and experts in various fields, including
-									intellectual property, finance, trademark registration, product
-									registration, and more. Through this collaboration, we have had the
-									privilege of participating in the esteemed pre-incubation program,
-									Stella Orion, and have been exclusively invited to join the
-									TechXcelerate program.
-									Equally significant are our regulatory partners, the Mexican
-									Secretariat of Agriculture and Rural Development, and the National
-									Service of Health, Safety, and Agri-Food Quality. These governmental
-									bodies are pivotal in guiding us through the necessary regulatory
-									processes, ensuring that AureoBos complies with all relevant standards
-									and requirements for its registration and commercialization.
-									Additionally, our dairy producer community, as well as industry and
-									pharmaceutical companies, are key stakeholders in the development and
-									commercialization of AureoBos. Their collaboration and support are
-									integral to our mission of delivering an innovative and effective
-									solution to the market. Together with these valued partners, we will
-									make a meaningful impact on the dairy industry.
-
+										It is of utmost importance to recognize and highlight the pivotal role played by our key partners in the development and success of AureoBos. Foremost among them is the Orion Technology Park, an integral part of our university's entrepreneurship ecosystem. The Orion Technology Park has been, and will continue to be, a valuable ally in our startup journey. This partnership has afforded us unparalleled access to a network of entrepreneurs and experts in various fields, including intellectual property, finance, trademark registration, product registration, and more. Through this collaboration, we have had the privilege of participating in the esteemed pre-incubation program, Stella Orion, and have been exclusively invited to join the TechXcelerate program.
+										Equally significant are our regulatory partners, the Mexican Secretariat of Agriculture and Rural Development, and the National Service of Health, Safety, and Agri-Food Quality. These governmental bodies are pivotal in guiding us through the necessary regulatory processes, ensuring that AureoBos complies with all relevant standards and requirements for its registration and commercialization. 
+										Additionally, our dairy producer community, as well as industry and pharmaceutical companies, are key stakeholders in the development and commercialization of AureoBos. Their collaboration and support are integral to our mission of delivering an innovative and effective solution to the market. Together with these valued partners, we will make a meaningful impact on the dairy industry.
+										
 								</p>
 								<p class="contenido">
 									<b> Cost: </b>
-									The cost structure of AureoBos encompasses several key elements that
-									contribute to the development and production of our innovative product.
-									To begin, we've allocated resources for extensive research and
-									development activities, which encompassed conducting proof of concept
-									studies and the necessary tests required for the proper registration of
-									our product with the relevant regulatory authority in Mexico, the
-									National Service of Health, Safety and Agri-Food Quality.
-									Furthermore, it's vital to underscore that our cost structure also
-									accounts for the essential processes of upscaling production. This
-									includes investments in scaling up our production capabilities to meet
-									growing demand effectively. Within the production phase, costs are
-									further categorized into fixed and variable components, each playing a
-									pivotal role in determining our overall cost efficiency and operational
-									effectiveness.
-
-								</p>
-								<br>
+									The cost structure of AureoBos encompasses several key elements that contribute to the development and production of our innovative product. To begin, we've allocated resources for extensive research and development activities, which encompassed conducting proof of concept studies and the necessary tests required for the proper registration of our product with the relevant regulatory authority in Mexico, the National Service of Health, Safety and Agri-Food Quality.
+									Furthermore, it's vital to underscore that our cost structure also accounts for the essential processes of upscaling production. This includes investments in scaling up our production capabilities to meet growing demand effectively. Within the production phase, costs are further categorized into fixed and variable components, each playing a pivotal role in determining our overall cost efficiency and operational effectiveness.
+			   
+								</p>	
+								<br>	
 							</div>
 						</div>
 					</div>
@@ -758,292 +482,229 @@ synthetic biology.{% endblock %}
 						<h3 id="introduction"><br>Timeline</h3>
 					</div>
 					<p class="contenido">
-						Highlighting AureoBos's milestones to date and laying out our future steps
-						through a timeline is pivotal because it not only showcases our journey of
-						progress but also serves as a roadmap for our stakeholders, guiding us
-						towards our shared vision of revolutionizing mastitis treatment.
+						Highlighting AureoBos's milestones to date and laying out our future steps through a timeline is pivotal because it not only showcases our journey of progress but also serves as a roadmap for our stakeholders, guiding us towards our shared vision of revolutionizing mastitis treatment.
 						<br>
-						Explore the interactive timeline below to trace AureoBos's crucial
-						development milestones and gain insights into our upcoming endeavors
+						Explore the interactive timeline below to trace AureoBos's crucial development milestones and gain insights into our upcoming endeavors
 
 					</p>
 					<br>
 					<div>
-						<div class="blog-card">
-							<input type="radio" name="select" id="tap-1" checked>
-							<input type="radio" name="select" id="tap-2">
-							<input type="radio" name="select" id="tap-3">
-							<input type="radio" name="select" id="tap-4">
-							<input type="radio" name="select" id="tap-5">
-							<input type="radio" name="select" id="tap-6">
-							<input type="checkbox" id="imgTap">
-
-							<div class="sliders">
-								<label for="tap-1" class="tap tap-1"></label>
-								<label for="tap-2" class="tap tap-2"></label>
-								<label for="tap-3" class="tap tap-3"></label>
-								<label for="tap-4" class="tap tap-4"></label>
-								<label for="tap-5" class="tap tap-5"></label>
-								<label for="tap-6" class="tap tap-6"></label>
-							</div>
-
-							<div class="inner-part">
-								<label for="imgTap" class="img">
-									<img class="img-1 imgmethodology"
-										src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/menlo.jpg ">
-								</label>
-								<div class="content-methodology content-methodology-1">
-									<span class="titleMethodology">Pitch at Magistral Conference of Daniel
-										Íñiguez: Making possible the impossible. </span>
-									<div class="textMethodology">
-										We had the opportunity to pitch our project during the magistral
-										conference by Daniel Íñiguez, a distinguished entrepreneur in Mexico
-										and around the world. During this presentation, we began to introduce
-										AureoBos to the community of entrepreneurs and started building
-										valuable connections within the entrepreneurial ecosystem.
-									</div>
-								</div>
-							</div>
-
-							<div class="inner-part">
-								<label for="imgTap" class="img">
-									<img class="img-2 imgmethodology"
-										src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/semanatec.jpg ">
-								</label>
-								<div class="content-methodology content-methodology-2">
-									<span class="titleMethodology">Pitch at the purpose-driven
-										entrepreneurship week</span>
-									<div class="textMethodology">
-										During this presentation, we had the opportunity to engage with
-										approximately 150 students from various disciplines at our university,
-										introducing them to AureoBos and iGEM. We aimed to inspire them to
-										venture into the field of synthetic biology, regardless of their
-										studies, and motivate them to become part of the representative team.
-									</div>
-								</div>
-							</div>
-
-							<div class="inner-part">
-								<label for="imgTap" class="img">
-									<img class="img-3 imgmethodology"
-										src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/ilum-pitch.jpg">
-								</label>
-								<div class="content-methodology content-methodology-3">
-									<span class="titleMethodology">Ilum’s Pitch Night</span>
-									<div class="textMethodology">
-										At Ilum’s Pitch Night, we had the opportunity to pitch in front of
-										investors and experts in the field of entrepreneurship. We answered
-										their questions and received valuable feedback regarding our business
-										model, financial projections, and scalability strategy. Additionally,
-										we established valuable connections with missing stakeholders.
-									</div>
-								</div>
-							</div>
-
-							<div class="inner-part">
-								<label for="imgTap" class="img">
-									<img class="img-4 imgmethodology" src>
-								</label>
-								<div class="content-methodology content-methodology-4">
-									<span class="titleMethodology">Presence and validation at DIGAL 2023</span>
-									<div class="textMethodology">
-										The International Dairy Farmer's Day is celebrated in Delicias, a city
-										in Chihuahua, through an event that brings together the key players in
-										the dairy industry, from producers to pharmaceutical laboratories and
-										dairy companies. During DIGAL, we had the opportunity to immerse
-										ourselves in the industry, gaining first hand insights into our
-										competition, potential customers, and validating our product through
-										small encounters with the attendees.
-									</div>
-								</div>
-							</div>
-
-							<div class="inner-part">
-								<label for="imgTap" class="img">
-									<img class="img-5 imgmethodology"
-										src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/consejeros.jpg ">
-								</label>
-								<div class="content-methodology content-methodology-5">
-									<span class="titleMethodology">Pitch with our institution's Board of
-										Directors</span>
-									<div class="textMethodology">
-										We had the opportunity to pitch in front of the board of directors of
-										our institution. This board is composed of the most influential
-										entrepreneurs in our state. During this presentation, we received
-										feedback on our project and the impact that we, as students, are
-										making on the institution through our participation in the iGEM
-										competition.
-									</div>
-								</div>
-							</div>
-							<div class="inner-part">
-								<label for="imgTap" class="img">
-									<img class="img-6 imgmethodology" src>
-								</label>
-								<div class="content-methodology content-methodology-6">
-									<span class="titleMethodology">UP Innovation Awards 2023</span>
-									<div class="textMethodology">
-										The UP Innovation Awards by Universidad Panamericana celebrate
-										innovation's potential to transcend boundaries and improve human
-										well-being. Supported by industry leaders, these awards recognize and
-										promote novel products and services, encouraging participation from
-										entrepreneurs and researchers, around the world, in eight thematic
-										areas.
-										AureoBos has achieved a significant milestone by advancing as a
-										finalist in the Health and Biotechnology category under the Validated
-										Idea section. We will now compete in the live final event scheduled
-										for October 5th in Mexico City where different experts will evaluate
-										our project and we will be able to make important connections.
-									</div>
-								</div>
+					<div class="blog-card">
+						<input type="radio" name="select" id="tap-1" checked>
+						<input type="radio" name="select" id="tap-2">
+						<input type="radio" name="select" id="tap-3">
+						<input type="radio" name="select" id="tap-4">
+						<input type="radio" name="select" id="tap-5">
+						<input type="radio" name="select" id="tap-6">
+						<input type="checkbox" id="imgTap">
+				
+						<div class="sliders">
+						<label for="tap-1" class="tap tap-1"></label>
+						<label for="tap-2" class="tap tap-2"></label>
+						<label for="tap-3" class="tap tap-3"></label>
+						<label for="tap-4" class="tap tap-4"></label>
+						<label for="tap-5" class="tap tap-5"></label>
+						<label for="tap-6" class="tap tap-6"></label>
+						</div>
+				
+						<div class="inner-part">
+						<label for="imgTap" class="img">
+						<img class="img-1 imgmethodology" src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/menlo.jpg ">
+						</label>
+						<div class="content-methodology content-methodology-1">
+							<span class="titleMethodology">Pitch at Magistral Conference of Daniel Íñiguez: Making possible the impossible. </span>
+							<div class="textMethodology">
+								We had the opportunity to pitch our project during the magistral conference by Daniel Íñiguez, a distinguished entrepreneur in Mexico and around the world. During this presentation, we began to introduce AureoBos to the community of entrepreneurs and started building valuable connections within the entrepreneurial ecosystem.
 							</div>
 						</div>
+						</div>
+				
+						<div class="inner-part">
+						<label for="imgTap" class="img">
+						<img class="img-2 imgmethodology" src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/semanatec.jpg ">
+						</label>
+						<div class="content-methodology content-methodology-2">
+							<span class="titleMethodology">Pitch at the purpose-driven entrepreneurship week</span>
+							<div class="textMethodology">
+								During this presentation, we had the opportunity to engage with approximately 150 students from various disciplines at our university, introducing them to AureoBos and iGEM. We aimed to inspire them to venture into the field of synthetic biology, regardless of their studies, and motivate them to become part of the representative team.
+							</div>
+						</div>
+						</div>
+				
+						<div class="inner-part">
+						<label for="imgTap" class="img">
+						<img class="img-3 imgmethodology" src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/ilum-pitch.jpg">
+						</label>
+						<div class="content-methodology content-methodology-3">
+							<span class="titleMethodology">Ilum’s Pitch Night</span>
+							<div class="textMethodology">
+								At Ilum’s Pitch Night, we had the opportunity to pitch in front of investors and experts in the field of entrepreneurship. We answered their questions and received valuable feedback regarding our business model, financial projections, and scalability strategy. Additionally, we established valuable connections with missing stakeholders.
+							</div>
+						</div>
+						</div>
+				
+						<div class="inner-part">
+						<label for="imgTap" class="img">
+							<img class="img-4 imgmethodology" src="">
+						</label>
+						<div class="content-methodology content-methodology-4">
+							<span class="titleMethodology">Presence and validation at DIGAL 2023</span>
+							<div class="textMethodology">
+								The International Dairy Farmer's Day is celebrated in Delicias, a city in Chihuahua, through an event that brings together the key players in the dairy industry, from producers to pharmaceutical laboratories and dairy companies. During DIGAL, we had the opportunity to immerse ourselves in the industry, gaining first hand insights into our competition, potential customers, and validating our product through small encounters with the attendees.
+							</div>
+						</div>
+						</div>
+				
+						<div class="inner-part">
+						<label for="imgTap" class="img">
+							<img class="img-5 imgmethodology" src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/consejeros.jpg ">
+						</label>
+						<div class="content-methodology content-methodology-5">
+							<span class="titleMethodology">Pitch with our institution's Board of Directors</span>
+						<div class="textMethodology">
+							We had the opportunity to pitch in front of the board of directors of our institution. This board is composed of the most influential entrepreneurs in our state. During this presentation, we received feedback on our project and the impact that we, as students, are making on the institution through our participation in the iGEM competition.
+						</div>
+						</div>
+						</div>
+						<div class="inner-part">
+						<label for="imgTap" class="img">
+							<img class="img-6 imgmethodology" src="">
+						</label>
+						<div class="content-methodology content-methodology-6">
+							<span class="titleMethodology" >UP Innovation Awards 2023</span>
+							<div class="textMethodology">
+								The UP Innovation Awards by Universidad Panamericana celebrate innovation's potential to transcend boundaries and improve human well-being. Supported by industry leaders, these awards recognize and promote novel products and services, encouraging participation from entrepreneurs and researchers, around the world, in eight thematic areas.
+								AureoBos has achieved a significant milestone by advancing as a finalist in the Health and Biotechnology category under the Validated Idea section. We will now compete in the live final event scheduled for October 5th in Mexico City where different experts will evaluate our project and we will be able to make important connections.
+							</div>
+						</div>
+						</div>
+					</div>
 					</div>
 					<br>
 					<br>
+					
 
 					<div class="tituloContenido">
 						<h3 id="introduction"><br>Financial projection</h3>
 					</div>
 					<p class="contenido">
-						Let's delve into AureoBos's financial projections and understand why they
-						are pivotal for our growth and sustainability.
+						Let's delve into AureoBos's financial projections and understand why they are pivotal for our growth and sustainability. 
 					</p>
 					<div class="tituloContenido">
 						<h3 id="introduction"><br>Intellectual Property</h3>
 					</div>
 					<p class="contenido">
-						To discover the intellectual property landscape of AureoBos and grasp its
-						significance in safeguarding our innovation and market position, click
-						below.
+						To discover the intellectual property landscape of AureoBos and grasp its significance in safeguarding our innovation and market position, click below. 
 
 					</p>
 					<div class="accordion-item">
 						<div class="accordion-item-header">
-							Intellectual property
+						  Intellectual property
 						</div>
 						<div class="accordion-item-body">
-							<div class="accordion-item-body-content">
-								Regarding intellectual property, we had the opportunity to hold a
-								session with Felisia Sandoval, a member of our university's
-								entrepreneurship ecosystem and technology transfer office at the
-								Monterrey Institute of Technology and Higher Education. During this
-								session, she provided valuable insights regarding the possibility of
-								patenting AureoBos. In her evaluation, she emphasized the importance of
-								reviewing the institution's policy, as our work is conducted within the
-								university, and there could be a case of joint ownership that needs to
-								be addressed before initiating the application process. Additionally,
-								she recommended conducting a thorough search of patents registered on
-								platforms such as WIPO (World Intellectual Property Organization).
+						  <div class="accordion-item-body-content">
+							Regarding intellectual property, we had the opportunity to hold a session with Felisia Sandoval, a member of our university's entrepreneurship ecosystem and technology transfer office at the Monterrey Institute of Technology and Higher Education. During this session, she provided valuable insights regarding the possibility of patenting AureoBos. In her evaluation, she emphasized the importance of reviewing the institution's policy, as our work is conducted within the university, and there could be a case of joint ownership that needs to be addressed before initiating the application process. Additionally, she recommended conducting a thorough search of patents registered on platforms such as WIPO (World Intellectual Property Organization).
 
-								It's important to note that although we haven't yet submitted the
-								application to the patent office, following our session with this
-								expert, we performed the patent search and outlined the subsequent steps
-								and ideal timelines for submitting our patent to the competent authority
-								in Mexico, which is the Mexican Institute of Industrial Property
-								(Instituto Mexicano de la Propiedad Industrial). Below, you can
-								visualize the estimated timeline for this process.
-								<br>
-								<img
-									src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/aureobos-intellectualproperty.png">
-
-							</div>
+							It's important to note that although we haven't yet submitted the application to the patent office, following our session with this expert, we performed the patent search and outlined the subsequent steps and ideal timelines for submitting our patent to the competent authority in Mexico, which is the Mexican Institute of Industrial Property (Instituto Mexicano de la Propiedad Industrial). Below, you can visualize the estimated timeline for this process.
+							<br>
+							<img src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/aureobos-intellectualproperty.png">
+  
+						  </div>
 						</div>
 					</div>
 					<div class="tituloContenido">
 						<h3 id="introduction"><br>Business Documents</h3>
 					</div>
+					
 
 					<p class="contenido">
-						Every startup requires a solid foundation for its scalable and secure
-						growth. In pursuit of this, we have prepared a series of documents that
-						will drive the development of AureoBos.
+						Every startup requires a solid foundation for its scalable and secure growth. In pursuit of this, we have prepared a series of documents that will drive the development of AureoBos.
 
 					</p>
 					<br>
-
+					
 					<div class="ag-format-container">
 						<div class="ag-courses_box">
-							<div class="ag-courses_item">
-								<a href="#" class="ag-courses-item_link">
-									<div class="ag-courses-item_bg"></div>
+						  <div class="ag-courses_item">
+							<a href="#" class="ag-courses-item_link">
+							  <div class="ag-courses-item_bg"></div>
+					  
+							  <div class="ag-courses-item_title">
+								Business Plan
+							  </div>
+					  
+							  
+							</a>
+						  </div>
+					  
+						  <div class="ag-courses_item">
+							<a href="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/pdfs/pitch-deck-aureobos-igem-2023-compressed.pdf" class="ag-courses-item_link">
+							  <div class="ag-courses-item_bg"></div>
+					  
+							  <div class="ag-courses-item_title">
+								Pitch Deck
+							  </div>
+					  
+							  
+							</a>
+						  </div>
 
-									<div class="ag-courses-item_title">
-										Business Plan
-									</div>
-
-								</a>
-							</div>
-
-							<div class="ag-courses_item">
-								<a
-									href="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/pdfs/pitch-deck-aureobos-igem-2023-compressed.pdf"
-									class="ag-courses-item_link">
-									<div class="ag-courses-item_bg"></div>
-
-									<div class="ag-courses-item_title">
-										Pitch Deck
-									</div>
-
-								</a>
-							</div>
-
-							<div class="ag-courses_item">
-								<a
-									href="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/pdfs/risk-assessment-management-docx.pdf"
-									class="ag-courses-item_link">
-									<div class="ag-courses-item_bg"></div>
-
-									<div class="ag-courses-item_title">
-										Risk Assesment
-									</div>
-
-								</a>
-							</div>
-
+						  <div class="ag-courses_item">
+							<a href="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/pdfs/risk-assessment-management-docx.pdf" class="ag-courses-item_link">
+							  <div class="ag-courses-item_bg"></div>
+					  
+							  <div class="ag-courses-item_title">
+								Risk Assesment
+							  </div>
+					  
+							  
+							</a>
+						  </div>
+					  
+						  
+					  
+						  
+					  
+						  
+					  
 						</div>
-					</div>
+					</div>  
 					<br>
 					<div class="tituloContenido">
 						<h3 id="introduction"><br>Legal Considerations</h3>
 					</div>
+					
 
-					<p class="contenido">
-						Last but certainly not least, it is crucial to meticulously address all
-						regulatory and legal aspects to ensure the proper establishment,
-						development, and commercialization of AureoBos. Below, you will find our
-						legal plan.
-					</p>
+						<p class="contenido">
+							Last but certainly not least, it is crucial to meticulously address all regulatory and legal aspects to ensure the proper establishment, development, and commercialization of AureoBos. Below, you will find our legal plan.
+						</p>
 					<div class="ag-format-container">
 						<div class="ag-courses_box">
-							<div class="ag-courses_item">
-								<a
-									href="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/pdfs/legal-plan-docx.pdf"
-									class="ag-courses-item_link">
-									<div class="ag-courses-item_bg"></div>
-
-									<div class="ag-courses-item_title">
-										Legal Plan
-									</div>
-
-								</a>
+						<div class="ag-courses_item">
+							<a href="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/pdfs/legal-plan-docx.pdf" class="ag-courses-item_link">
+							<div class="ag-courses-item_bg"></div>
+					
+							<div class="ag-courses-item_title">
+								Legal Plan
 							</div>
-
-							<div class="ag-courses_item">
-								<a
-									href="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/pdfs/aureobos-trademark-report.pdf"
-									class="ag-courses-item_link">
-									<div class="ag-courses-item_bg"></div>
-
-									<div class="ag-courses-item_title">
-										Trademark Registration
-									</div>
-
-								</a>
-							</div>
+					
+							
+							</a>
 						</div>
-					</div>
-				</div>
+					
+						<div class="ag-courses_item">
+							<a href="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/pdfs/aureobos-trademark-report.pdf" class="ag-courses-item_link">
+							<div class="ag-courses-item_bg"></div>
+					
+							<div class="ag-courses-item_title">
+								Trademark Registration
+							</div>
+							
+							</a>
+						</div>
+						</div>
+					</div> 	
+				</div>	
 			</div>
 		</div>
 
@@ -1052,7 +713,9 @@ synthetic biology.{% endblock %}
 				<div class="sectionUnmet">
 					<p class="subtitleR">Unmet Needs</p>
 				</div>
-
+				
+				  
+				  
 				<div class="layout">
 					<!--cosas del index-->
 					<div class="index3">
@@ -1069,16 +732,10 @@ synthetic biology.{% endblock %}
 							<h3 id="introduction"><br>Problem Statement </h3>
 						</div>
 						<p class="contenido">
-							Mastitis is the major infectious disease problem in dairy cows. Based on
-							a global dairy cow population of 271 million dairy cows, it has been
-							estimated that treating it costs the dairy industry around $19.7B–32B
-							(USD) billion dollars per year1. These costs consist of several
-							consequences that are triggered by this disease2. A visual representation
-							of these implications can be visualized in Figure 1.
+							Mastitis is the major infectious disease problem in dairy cows. Based on a global dairy cow population of 271 million dairy cows, it has been estimated that treating it costs the dairy industry around $19.7B–32B (USD) billion dollars per year1. These costs consist of several consequences that are triggered by this disease2. A visual representation of these implications can be visualized in Figure 1.
 						</p>
-						<script type="text/javascript"
-							src="https://www.gstatic.com/charts/loader.js"></script>
-						<script type="text/javascript">
+						<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                    	<script type="text/javascript">
                       	google.charts.load("current", {packages:["corechart"]});
                       	google.charts.setOnLoadCallback(drawChart);
                       	function drawChart() {
@@ -1109,199 +766,109 @@ synthetic biology.{% endblock %}
                         chart.draw(data, options);
                       }
                     </script>
-						<div id="piechart_3d" style="width: 900px; height: 500px;"></div>
-						<p class="piedefig"><b>Figure 1.</b> Nutrients of whole milk, excluding
-							water.<sup>3</sup></p>
-						<br>
-						<br>
-						<p class="contenido">
-							Currently, mastitis is being treated by different types of antibiotics
-							and natural solutions which are applied through systemic administrations
-							or intramammary infusions3. However, through our integrated human
-							practices, we have learned that even though these solutions exist, milk
-							is still being discarded in large quantities due to the fact that milk
-							with antibiotics’ residue can’t be consumed, impacting the growing amount
-							of global food waste, in addition to the fact that the cost of treating
-							mastitis is significantly high as stated before, and antibiotic
-							resistance has become a real problem in tackling this challenge in a
-							sustainable and safe way.
+					<div id="piechart_3d" style="width: 900px; height: 500px;"></div>
+                    <p class="piedefig"><b>Figure 1.</b> Nutrients of whole milk, excluding water.<sup>3</sup></p>
+                    <br>
+                    <br>
+					<p class="contenido">
+						Currently, mastitis is being treated by different types of antibiotics and natural solutions which are applied through systemic administrations or intramammary infusions3. However, through our integrated human practices, we have learned that even though these solutions exist, milk is still being discarded in large quantities due to the fact that milk with antibiotics’ residue can’t be consumed, impacting the growing amount of global food waste, in addition to the fact that the cost of treating mastitis is significantly high as stated before, and antibiotic resistance has become a real problem in tackling this challenge in a sustainable and safe way.
 
-						</p>
-						<br>
-						<div class="tituloContenido">
-
-							<div class="accordion-item">
-								<div class="accordion-item-header">
-									Dairy Producers
-								</div>
-								<div class="accordion-item-body">
-									<div class="accordion-item-body-content">
-										In order to draft the first potential customers for AureoBos, it is
-										necessary to identify who is directly affected by the consequences of
-										mastitis. As stated in the previous section, the implications that
-										integrate the cost of treating bovine mastitis are directly charged to
-										dairy producers. Through our human practices we learned that they are
-										the ones who face head-on the disease, deciding which treatment they
-										are going to use based on the recommendations done from - the next
-										important character- veterinary zootechnicians. Although dairy farmers
-										have the power of decision making and purchasing, the reality is that
-										most of the time they are driven by the recommendations, diagnosis and
-										intervention of veterinary zootechnicians, even though they interact
-										differently depending on the scale of their production. To better
-										understand these characteristics, check out the next figure.
-										<img class="dairy"
-											src="https://static.igem.wiki/teams/4607/wiki/human-2-0/wiki-design-4-entrepreneurship.png">
-
-									</div>
-								</div>
-								<br>
-
+					</p>
+					<br>
+					<div class="tituloContenido">
+						
+						<div class="accordion-item">
+							<div class="accordion-item-header">
+								Dairy Producers
+							</div>
+							<div class="accordion-item-body">
+							  <div class="accordion-item-body-content">
+								In order to draft the first potential customers for AureoBos, it is necessary to identify who is directly affected by the consequences of mastitis. As stated in the previous section, the implications that integrate the cost of treating bovine mastitis are directly charged to dairy producers. Through our human practices we learned that they are the ones who face head-on the disease, deciding which treatment they are going to use based on the recommendations done from - the next important character- veterinary zootechnicians. Although dairy farmers have the power of decision making and purchasing, the reality is that most of the time they are driven by the recommendations, diagnosis and intervention of veterinary zootechnicians, even though they interact differently depending on the scale of their production. To better understand these characteristics, check out the next figure.
+								<img class="dairy" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/wiki-design-4-entrepreneurship.png">
+	  
+							  </div>
 							</div>
 							<br>
-							<div class="accordion-item">
-								<div class="accordion-item-header">
-									Understanding their pains and unmet needs
-								</div>
-								<div class="accordion-item-body">
-									<div class="accordion-item-body-content">
-										Although small, medium and large scale producers have different
-										characteristics in the way of managing their farm, as well as how they
-										treat mastitis and their relationship with veterinary zootechnicians,
-										we learned through our interviews and visits that their pains and
-										current needs are the same. Understanding the unmet needs they have is
-										essential for the successful development and implementation of
-										AureoBos.
-										<br>
-										Our integrated human practices helped us learn that dairy producers
-										and cattle owners need a treatment that effectively addresses bovine
-										mastitis, without using antibiotics so milk isn’t discarded and their
-										production isn’t reduced due to the milk withdrawal period. This
-										treatment needs to be backed up by the recognition of veterinary
-										zootechnicians and scientific evidence that compares and indicates how
-										AureoBos is better than any other conventional treatment. They also
-										communicated that they require a treatment that is easy to administer
-										and integrate into their existing routines, ensuring minimal
-										disruption to their operations. They require a product which doesn’t
-										harm the cattle, doesn’t compromise the milk quality, and doesn’t pose
-										health risks to either animals or humans. Finally, the treatment needs
-										to be accessible in terms of availability and affordability in the
-										geographical and economic situation.
-										Having developed the above, you can find a visual representation of
-										these needs through the following empathy map.
-										<img class="dairy"
-											src="https://static.igem.wiki/teams/4607/wiki/human-2-0/empathy-map.png">
-									</div>
-								</div>
-								<br>
-
-							</div>
-							<br>
-							<div class="accordion-item">
-								<div class="accordion-item-header">
-
-									First Potential Customers
-
-								</div>
-								<div class="accordion-item-body">
-									<div class="accordion-item-body-content">
-										Recognizing the presence of small, medium, and large-scale producers,
-										as well as understanding how mastitis affects them, it becomes evident
-										that these individuals, whether under the guidance of a veterinary
-										zootechnician or not, are our ultimate end-users. However, after
-										engaging with them and also with global veterinary pharmaceutical
-										companies like MSD Animal Health and Zoetis, we discerned the
-										existence of two distinct customer types.
-
-										<br>
-										We refer to a division between large-scale producers and small to
-										medium-sized producers. Initially, AureoBos would primarily supply to
-										large-scale producers, whereas to reach small and medium-sized ones,
-										an intermediary is required. Thus, the veterinary pharmaceutical
-										providers in these regions would also become our clients, serving as
-										the bridge to connect with the smaller producers.
-										<br>
-										The following illustration demonstrates how AureoBos interacts with
-										its clients in both scenarios. Further detailed explanations of these
-										business models will be covered in the Development Plans section
-										below.
-										<img class="dairy"
-											src="https://static.igem.wiki/teams/4607/wiki/human-2-0/wiki-design-4-entrepreneurship-1.png">
-										<img class="dairy"
-											src="https://static.igem.wiki/teams/4607/wiki/human-2-0/wiki-design-4-entrepreneurship-2.png">
-									</div>
-								</div>
-								<br>
-
-							</div>
-							<br>
-							<div class="accordion-item">
-								<div class="accordion-item-header">
-
-									Existing solutions
-
-								</div>
-								<div class="accordion-item-body">
-									<div class="accordion-item-body-content">
-										Through the visits and interviews done with our users, we identified
-										the existing solutions that dairy cattle owners currently use. Having
-										heard first-hand about the competition let us do a better analysis,
-										which basically consists on the following benchmarking:
-										<img class="dairy"
-											src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/benchmarkingofi.png">
-										<br>
-										The common factor among current treatments is that those falling under
-										the antibiotic category leave residues in milk, requiring a withdrawal
-										period of at least 3 days. This translates to wasted liters of milk
-										and economic losses due to the discarded milk produced during those
-										days. Moreover, the concerning issue of antibiotic resistance,
-										stemming from their excessive use, adds to the complexity. Even the
-										World Health Organization has underlined the impending risks
-										associated with this and the urgent need to adopt alternative measures
-										and treatments4. Furthermore, homeopathic treatments like oregano
-										prove ineffective against the disease and, akin to antibiotics, leave
-										residues in milk.
-
-									</div>
-								</div>
-								<br>
-
-							</div>
-							<br>
-							<div class="accordion-item">
-								<div class="accordion-item-header">
-
-									Meeting the needs through AureoBos
-
-								</div>
-								<div class="accordion-item-body">
-									<div class="accordion-item-body-content">
-										Through our integrated human practices, we learned that the best and
-										wanted method of administration for our product is an intramammary
-										infusion. This is because, as stated from several veterinary
-										zootechnicians, intramammary infusions deliver the treatment directly
-										into the affected udder quarters, ensuring the medication reaches the
-										infection site precisely. It also allows for a high concentration of
-										the treatment to be delivered into the infection site, becoming
-										particularly important for combating bacterial infections effectively.
-										Besides this, this method is something our users are already
-										familiarized with, so it does not require complicated or highly
-										specialized training. Intramammary infusions can reduce the risk of
-										unintended side effects on the cow’s overall health since the
-										treatment remains localized within the udder. It gives a quicker
-										response time and the possibility of treating and varying the levels
-										of it depending on the quarter of the udder affected and the severity
-										of its infection.
-										<br>
-										Given these advantages, the intramammary infusion method aligns well
-										with the goal of treating bovine mastitis effectively while
-										considering factors like animal health, milk quality, and antibiotic
-										resistance mitigation.
-									</div>
-								</div>
-								<br>
-
-							</div>
+							
 						</div>
+						<br>
+						<div class="accordion-item">
+							<div class="accordion-item-header">
+								Understanding their pains and unmet needs
+							</div>
+							<div class="accordion-item-body">
+							  <div class="accordion-item-body-content">
+								Although small, medium and large scale producers have different characteristics in the way of managing their farm, as well as how they treat mastitis and their relationship with veterinary zootechnicians, we learned through our interviews and visits that their pains and current needs are the same. Understanding the unmet needs they have is essential for the successful development and implementation of AureoBos.
+								<br>
+								Our integrated human practices helped us learn that dairy producers and cattle owners need a treatment that effectively addresses bovine mastitis, without using antibiotics so milk isn’t discarded and their production isn’t reduced due to the milk withdrawal period. This treatment needs to be backed up by the recognition of veterinary zootechnicians and scientific evidence that compares and indicates how AureoBos is better than any other conventional treatment. They also communicated that they require a treatment that is easy to administer and integrate into their existing routines, ensuring minimal disruption to their operations. They require a product which doesn’t harm the cattle, doesn’t compromise the milk quality, and doesn’t pose health risks to either animals or humans. Finally, the treatment needs to be accessible in terms of availability and affordability in the geographical and economic situation. 
+								Having developed the above, you can find a visual representation of these needs through the following empathy map.
+								<img class="dairy" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/empathy-map.png">
+							  </div>
+							</div>
+							<br>
+							
+						</div>
+						<br>
+						<div class="accordion-item">
+							<div class="accordion-item-header">
+								
+								First Potential Customers
+
+							</div>
+							<div class="accordion-item-body">
+							  <div class="accordion-item-body-content">
+								Recognizing the presence of small, medium, and large-scale producers, as well as understanding how mastitis affects them, it becomes evident that these individuals, whether under the guidance of a veterinary zootechnician or not, are our ultimate end-users. However, after engaging with them and also with global veterinary pharmaceutical companies like MSD Animal Health and Zoetis, we discerned the existence of two distinct customer types.
+
+								<br>
+								We refer to a division between large-scale producers and small to medium-sized producers. Initially, AureoBos would primarily supply to large-scale producers, whereas to reach small and medium-sized ones, an intermediary is required. Thus, the veterinary pharmaceutical providers in these regions would also become our clients, serving as the bridge to connect with the smaller producers.
+								<br>
+								The following illustration demonstrates how AureoBos interacts with its clients in both scenarios. Further detailed explanations of these business models will be covered in the Development Plans section below.
+								<img class="dairy" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/wiki-design-4-entrepreneurship-1.png">
+								<img class="dairy" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/wiki-design-4-entrepreneurship-2.png">
+							  </div>
+							</div>
+							<br>
+							
+						</div>
+						<br>
+						<div class="accordion-item">
+							<div class="accordion-item-header">
+								
+								Existing solutions 
+
+
+							</div>
+							<div class="accordion-item-body">
+							  <div class="accordion-item-body-content">
+								Through the visits and interviews done with our users, we identified the existing solutions that dairy cattle owners currently use. Having heard first-hand about the competition let us do a better analysis, which basically consists on the following benchmarking: 
+								<img class="dairy"src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/benchmarkingofi.png">
+								<br>
+								The common factor among current treatments is that those falling under the antibiotic category leave residues in milk, requiring a withdrawal period of at least 3 days. This translates to wasted liters of milk and economic losses due to the discarded milk produced during those days. Moreover, the concerning issue of antibiotic resistance, stemming from their excessive use, adds to the complexity. Even the World Health Organization has underlined the impending risks associated with this and the urgent need to adopt alternative measures and treatments4. Furthermore, homeopathic treatments like oregano prove ineffective against the disease and, akin to antibiotics, leave residues in milk.
+								
+							  </div>
+							</div>
+							<br>
+							
+						</div>
+						<br>
+						<div class="accordion-item">
+							<div class="accordion-item-header">
+								
+								Meeting the needs through AureoBos 
+
+
+							</div>
+							<div class="accordion-item-body">
+							  <div class="accordion-item-body-content">
+								Through our integrated human practices, we learned that the best and wanted method of administration for our product is an intramammary infusion. This is because, as stated from several veterinary zootechnicians, intramammary infusions deliver the treatment directly into the affected udder quarters, ensuring the medication reaches the infection site precisely. It also allows for a high concentration of the treatment to be delivered into the infection site, becoming particularly important for combating bacterial infections effectively. Besides this, this method is something our users are already familiarized with, so it does not require complicated or highly specialized training. Intramammary infusions can reduce the risk of unintended side effects on the cow’s overall health since the treatment remains localized within the udder. It gives a quicker response time and the possibility of treating and varying the levels of it depending on the quarter of the udder affected and the severity of its infection. 
+								<br>
+								Given these advantages, the intramammary infusion method aligns well with the goal of treating bovine mastitis effectively while considering factors like animal health, milk quality, and antibiotic resistance mitigation. 
+							  </div>
+							</div>
+							<br>
+							
+						</div>
+					</div>
 					</div>
 				</div>
 			</div>
@@ -1312,128 +879,102 @@ synthetic biology.{% endblock %}
 					<p class="subtitleR">Skills, Capabilities & Stakeholders</p>
 				</div>
 				<p class="contenido">
-					Outlining the required skills, capabilities, and stakeholders is of prime
-					importance for AureoBos’ success. Behind AureoBos is a team of students
-					majoring in Biotechnology, Law, and Computer Technologies, where our unique
-					differences and expertise, stemming from our diverse academic backgrounds
-					and lifetime experiences, provide the foundation for the successful and
-					integrated development of our startup, AureoBos. We are catalysts for
-					change, a group of young individuals completely aware of the challenges our
-					world faces. Our determination knows no bounds as we strive to make a
-					difference in our society and we know that through synthetic biology, with
-					AureoBos, our impact will extend beyond cost reduction and improved food
-					safety; we will be revolutionizing mastitis treatment.
+					Outlining the required skills, capabilities, and stakeholders is of prime importance for AureoBos’ success. Behind AureoBos is a team of students majoring in Biotechnology, Law, and Computer Technologies, where our unique differences and expertise, stemming from our diverse academic backgrounds and lifetime experiences, provide the foundation for the successful and integrated development of our startup, AureoBos. We are catalysts for change, a group of young individuals completely aware of the challenges our world faces. Our determination knows no bounds as we strive to make a difference in our society and we know that through synthetic biology, with AureoBos, our impact will extend beyond cost reduction and improved food safety; we will be revolutionizing mastitis treatment.
 					<br>
-					Supported by a diverse group of advisors and instructors, we have harnessed
-					our collective potential to drive our project forward. Furthermore, our
-					university, the Monterrey Institute of Technology and Higher Education, has
-					provided unwavering support throughout our journey. Renowned globally for
-					its exceptional undergraduate entrepreneurship programs and ecosystems, it
-					recently achieved the impressive ranking of fourth place in The Princeton
-					Review's 2023 evaluation 5. Our connection to the entrepreneurial ecosystem
-					played a pivotal role in our journey. It facilitated crucial networking
-					opportunities with both business and technical experts, allowing us to
-					thoroughly validate our business idea. Their invaluable feedback has
-					significantly fortified our proposal, making it more robust and promising.
+					Supported by a diverse group of advisors and instructors, we have harnessed our collective potential to drive our project forward. Furthermore, our university, the Monterrey Institute of Technology and Higher Education, has provided unwavering support throughout our journey. Renowned globally for its exceptional undergraduate entrepreneurship programs and ecosystems, it recently achieved the impressive ranking of fourth place in The Princeton Review's 2023 evaluation 5. Our connection to the entrepreneurial ecosystem played a pivotal role in our journey. It facilitated crucial networking opportunities with both business and technical experts, allowing us to thoroughly validate our business idea. Their invaluable feedback has significantly fortified our proposal, making it more robust and promising. 
 					<br>
-					After comprehensively outlining our primary stakeholders and their roles in
-					the Integrated Human Practices section, we've taken the next strategic
-					step. We've identified those stakeholders who are not just crucial but
-					indispensable to the development of AureoBos as a startup. Here, we present
-					a snapshot of these key stakeholders, their areas of expertise,
-					affiliations, and the invaluable insights gained from our interactions with
-					them.
+					After comprehensively outlining our primary stakeholders and their roles in the Integrated Human Practices section, we've taken the next strategic step. We've identified those stakeholders who are not just crucial but indispensable to the development of AureoBos as a startup. Here, we present a snapshot of these key stakeholders, their areas of expertise, affiliations, and the invaluable insights gained from our interactions with them.
 
 				</p>
-
+				  
 				<div class="homeCardsContainer">
 
-					<svg class="cardBackHome reverse" id="visual" viewBox="0 0 1920 768"
-						width="1920" height="768"
-						xmlns="http://www.w3.org/2000/svg"
-						xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+					<svg class="cardBackHome reverse" id="visual" viewBox="0 0 1920 768" width="1920" height="768"
+						xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
 						<path
 							d="M0 198L45.7 219.2C91.3 240.3 182.7 282.7 274.2 265.3C365.7 248 457.3 171 548.8 141.3C640.3 111.7 731.7 129.3 823 160.7C914.3"
-							fill="none" stroke="#52a595" stroke-width="40" stroke-linecap="round"
-							stroke-linejoin="miter"></path>
+							fill="none" stroke="#52a595" stroke-width="40" stroke-linecap="round" stroke-linejoin="miter"></path>
 					</svg>
-					<svg class="cardBackHome" id="visual" viewBox="0 0 1920 768" width="1920"
-						height="768"
-						xmlns="http://www.w3.org/2000/svg"
-						xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+					<svg class="cardBackHome" id="visual" viewBox="0 0 1920 768" width="1920" height="768"
+						xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
 						<path
 							d="M0 654L45.7 653.5C91.3 653 182.7 652 274.2 622C365.7 592 457.3 533 548.8 529.7C640.3 526.3 731.7 578.7 823 591.8C914.3 605 1005.7"
-							fill="none" stroke="#52a595" stroke-width="40" stroke-linecap="round"
-							stroke-linejoin="miter"></path>
+							fill="none" stroke="#52a595" stroke-width="40" stroke-linecap="round" stroke-linejoin="miter"></path>
 					</svg>
-
+			
+			
 					<div id="cardContain5" class="cardContain">
 						<div class="cardText ">
 							<a href="#" class="cardHomeText">Gabriela Mapes</a>
 							<a href="#" class="cardHomeTitle"></a>
-
+			
 						</div>
 						<div class="cardHome">
-							<div onclick="selectCard0()" class="cardPos"
-								style="--rotate:rotate(6deg);">
+							<div onclick="selectCard0()" class="cardPos" style="--rotate:rotate(6deg);">
 								<img class="cardHomeIMG"
 									src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/gabrielamapes.jpeg"
 									alt="Card image cap">
 							</div>
 						</div>
 					</div>
-
+			
 					<div id="cardContain4" class="cardContain">
 						<div class="cardText ">
 							<a href="#" class="cardHomeText">Ana Sofia Contreras</a>
 							<a href="#" class="cardHomeTitle"></a>
-
+			
 						</div>
 						<div class="cardHome">
-							<div onclick="selectCard5()" class="cardPos"
-								style="--rotate:rotate(-4deg);">
+							<div onclick="selectCard5()" class="cardPos" style="--rotate:rotate(-4deg);">
 								<img class="cardHomeIMG"
 									src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/anasofiacontreras.jpeg"
 									alt="Card image cap">
 							</div>
 						</div>
 					</div>
-
+			
+			
 					<div id="cardContain3" class="cardContain">
 						<div class="cardText ">
 							<a href="#" class="cardHomeText">Coespris</a>
 							<a href="#" class="cardHomeTitle"></a>
-
+			
 						</div>
 						<div class="cardHome">
-							<div onclick="selectCard4()" class="cardPos"
-								style="--rotate:rotate(-1deg);">
+							<div onclick="selectCard4()" class="cardPos" style="--rotate:rotate(-1deg);">
 								<img class="cardHomeIMG"
 									src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/coespris.jpg"
 									alt="Card image cap">
 							</div>
 						</div>
 					</div>
-
-					<div id="cardContain0" class="cardContain active">
+			
+			
+					
+			
+					
+			
+			
+					<div id="cardContain0" class="cardContain active" >
 						<div class="cardText">
 							<a href="#" class="cardHomeText"></a>
 							<a href="#" class="cardHomeTitle"></a>
 							<div class="cardSub"><< Use Arrows Or Click >></div>
-
+			
 						</div>
 						<div class="cardHome">
-							<div onclick="selectCard1()" class="cardPos"
-								style="--rotate:rotate(5deg);">
+							<div onclick="selectCard1()" class="cardPos" style="--rotate:rotate(5deg);">
 								<img class="cardHomeIMG"
-									src
+									src=""
 									alt="Card image cap">
-								<div class="arrowSub"> -> </div>
+									<div class="arrowSub">  -> </div>
 							</div>
 						</div>
 					</div>
 				</div>
-
+			
+				
+				
 				<div class="layout">
 					<!--cosas del index-->
 					<div class="index3">
@@ -1446,152 +987,161 @@ synthetic biology.{% endblock %}
 						</nav>
 					</div>
 					<div class="secciones">
-
+						
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div id="sectionLong" class="sectR">
-			<div class="secciones">
-				<div class="sectionUnmet">
-					<p class="subtitleR">Long-term Impacts</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	<div id="sectionLong" class="sectR">
+		<div class="secciones">
+			<div class="sectionUnmet">
+				<p class="subtitleR">Long-term Impacts</p>
+			</div>
+			<p class="contenido">
+				
+				Visualizing the long-term positive and negative impacts of AureoBos is crucial because it allows informed decision-making, responsible product management, and the creation of a more resilient and successful market presence for AureoBos. To facilitate your understanding of these long-term impacts, we invite you to engage with the diagram below.
+
+			</p>
+			  
+			  
+			<div class="layout">
+				<!--cosas del index-->
+				<div class="index3">
+					<nav class="navigation">
+						<ul>
+							<li>
+								<a href="#referencesR">References</a>
+							</li>
+						</ul>
+					</nav>
 				</div>
-				<p class="contenido">
-
-					Visualizing the long-term positive and negative impacts of AureoBos is
-					crucial because it allows informed decision-making, responsible product
-					management, and the creation of a more resilient and successful market
-					presence for AureoBos. To facilitate your understanding of these long-term
-					impacts, we invite you to engage with the diagram below.
-
-				</p>
-
-				<div class="layout">
-					<!--cosas del index-->
-					<div class="index3">
-						<nav class="navigation">
-							<ul>
-								<li>
-									<a href="#referencesR">References</a>
-								</li>
-							</ul>
-						</nav>
-					</div>
-					<div class="secciones">
-						<div class='selector'>
-							<ul>
-								<li>
-									<input id='1' type='checkbox'>
-									<label for='1'>1</label>
-									<div class="description1">
-										<b>Antibiotic Resistance:</b>
-										<p>
-											- Using AureoBos will impact on the imminent battle against
-											antibiotic resistance, by reducing the usage in dairy cattle.
-										</p>
-
-									</div>
-								</li>
-								<li>
-									<input id='2' type='checkbox'>
-									<label for='2'>2</label>
-									<div class="description2">
-										<b>Animal Welfare:</b>
-										<p>
-											- AureoBos will enhance animal welfare and well-being by
-											significantly reducing the incidence of mastitis cases.
-
-										</div>
-									</li>
-									<li>
-										<input id='3' type='checkbox'>
-										<label for='3'>3</label>
-										<div class="description3">
-											<b>Economic Savings: </b>
-											<p>
-												- The adoption of AureoBos will have a direct impact on the economic
-												expenditures of dairy farmers by lowering treatment costs derived
-												from existing solutions and boosting milk production.
-											</p>
-
-										</div>
-									</li>
-									<li>
-										<input id='4' type='checkbox'>
-										<label for='4'>
-											4
-										</label>
-										<div class="description4">
-											<b>Environmental Friendly:</b>
-											<p>
-												-AureoBos will directly impact the environment by potentially
-												reducing the contamination associated with antibiotic residues.
-											</p>
-
-										</div>
-									</li>
-									<li>
-										<input id='5' type='checkbox'>
-										<label for='5'>
-											5
-										</label>
-										<div class="description5">
-
-											<b>Quality and Safety:</b>
-											<p>
-												- AureoBos will contribute to the enhancement of quality and safety
-												of dairy products for consumers.
-											</p>
-										</div>
-									</li>
-									<li>
-										<input id='6' type='checkbox'>
-										<label for='6'>
-											6
-										</label>
-										<div class="description6">
-											<b>Production:</b>
-											<p>
-												-If biosafety standards are not followed during production, the use
-												of microorganisms can cause harm to human health.
-												⭐We aim to counter this impact by taking biosafety courses and
-												following good practices within the laboratory.
-
-											</p>
-
-										</div>
-									</li>
-									<li>
-										<input id='7' type='checkbox'>
-										<label for='7'>7</label>
-										<div class="description7">
-											<b>Emissions:</b>
-											<p>
-												- The production of AureoBos requires cold storage, leading to
-												increased energy consumption and operational costs. Emissions can
-												also be produced by the transportation and disposal of the product.
-												⭐We aim to counter this impact by using energy-efficient
-												refrigeration systems and temperature control measures in cold
-												storage facilities as well as exploring newable energy sources like
-												solar energy to power the cold storage, reducing carbon emissions in
-												the near future.
-
-											</p>
-
-										</div>
-									</li>
-								</ul>
+				<div class="secciones">
+					<div class='selector'>
+						<ul>
+						  <li>
+							<input id='1' type='checkbox'>
+							<label for='1'>1</label>
+							<div class="description1">
+							  <b>Antibiotic Resistance:</b>
+							  <p>
+								- Using AureoBos will impact on the imminent battle against antibiotic resistance, by reducing the usage in dairy cattle. 
+							  </p>
+							  
 							</div>
-						</div>
+						  </li>
+						  <li>
+							<input id='2' type='checkbox'>
+							<label for='2'>2</label>
+							<div class="description2">
+								<b>Animal Welfare:</b>
+								<p>
+								- AureoBos will enhance animal welfare and well-being by significantly reducing the incidence of mastitis cases.
+
+							  
+							</div>
+						  </li>
+						  <li>
+							<input id='3' type='checkbox'>
+							<label for='3'>3</label>
+							<div class="description3">
+							  <b>Economic Savings: </b>
+							  <p>
+								- The adoption of AureoBos will have a direct impact on the economic expenditures of dairy farmers by lowering treatment costs derived from existing solutions and boosting milk production.
+							  </p>
+							  
+							</div>
+						  </li>
+						  <li>
+							<input id='4' type='checkbox'>
+							<label for='4'>
+							  4
+							</label>
+							<div class="description4">
+							  <b>Environmental Friendly:</b>
+							  <p>
+								-AureoBos will directly impact the environment by potentially reducing the contamination associated with antibiotic residues.
+							  </p>
+							  
+							</div>
+						  </li>
+						  <li>
+							<input id='5' type='checkbox'>
+							<label for='5'>
+							  5
+							</label>
+							<div class="description5">
+							  
+								<b>Quality and Safety:</b>
+							  <p>
+								- AureoBos will contribute to the enhancement of quality and safety of dairy products for consumers.
+							  </p>
+							</div>
+						  </li>
+						  <li>
+							<input id='6' type='checkbox'>
+							<label for='6'>
+							  6
+							</label>
+							<div class="description6">
+								<b>Production:</b>
+								<p>
+								  -If biosafety standards are not followed during production, the use of microorganisms can cause harm to human health.
+								  ⭐We aim to counter this impact by taking biosafety courses and following good practices within the laboratory.
+								  
+							  
+								  </p>
+							 
+							</div>
+						  </li>
+						  <li>
+							<input id='7' type='checkbox'>
+							<label for='7'>7</label>
+							<div class="description7">
+							  <b>Emissions:</b>
+							  <p>
+								- The production of AureoBos requires cold storage, leading to increased energy consumption and operational costs. Emissions can also be produced by the transportation and disposal of the product. 
+								⭐We aim to counter this impact by using energy-efficient refrigeration systems and temperature control measures in cold storage facilities as well as exploring newable energy sources like solar energy to power the cold storage, reducing carbon emissions in the near future. 
+								
+							  </p>
+							  
+							</div>
+						  </li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-		<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-		<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-		<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-		<script>
+	</div>
+	</div>
+	<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>		  
+	<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script>
   var angleStart = -360;
 
   // jquery rotate animation
@@ -1623,7 +1173,7 @@ synthetic biology.{% endblock %}
 
   setTimeout(function() { toggleOptions('.selector'); }, 100);
 </script>
-		<script type="text/javascript">
+<script type="text/javascript">
 	/*
     var sect1 = document.getElementById('sectionOverview');
     var sect2 = document.getElementById('referencesO');
@@ -1662,8 +1212,8 @@ synthetic biology.{% endblock %}
 
 
     }); */
-  </script>
-		<script>
+  </script>	
+  <script>
     const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
   
   accordionItemHeaders.forEach(accordionItemHeader => {
@@ -1688,8 +1238,8 @@ synthetic biology.{% endblock %}
       
     });
   });
-  </script>
-		<script type="text/javascript">
+  </script>	
+  <script type="text/javascript">
 	let cardNumber = 0;
 	let cardContain0 = document.getElementById('cardContain0');
 	let cardContain1 = document.getElementById('cardContain1');
@@ -1931,7 +1481,7 @@ synthetic biology.{% endblock %}
 
 </script>
 
-		<script type="text/javascript">
+<script type="text/javascript">
 	window.addEventListener('scroll',reveal);
 
 	function reveal(){
@@ -1966,8 +1516,9 @@ synthetic biology.{% endblock %}
 
 </script>
 
-	</body>
+</body>
 
 </html>
+
 
 {% endblock %}
