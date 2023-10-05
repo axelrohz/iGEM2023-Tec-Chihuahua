@@ -116,7 +116,7 @@
    						 <br>
    						 How We Did It
    					 </p>
-   					 <button onclick="showSection('sectionMethods')" class="learnMore">Learn More</button>
+   					 <button onclick="showSection('sectionMethods'),document.getElementById('titulo_methods').scrollIntoView();" class="learnMore">Learn More</button>
    				 </div>
    			 </div>
    			 <div class="overview">
@@ -126,7 +126,7 @@
    						 <br>
    						 The Big Picture
    					 </p>
-   					 <button onclick="showSection('sectionOverview')" class="learnMore">Learn More</button>
+   					 <button onclick="showSection('sectionOverview'),document.getElementById('titulo_overview').scrollIntoView();" class="learnMore">Learn More</button>
    				 </div>
    			 </div>
    			 <div class="results">
@@ -136,7 +136,7 @@
    						 <br>
    						 What We Found
    					 </p>
-   					 <button onclick="showSection('sectionResults')" class="learnMore">Learn More</button>
+   					 <button onclick="showSection('sectionResults'),document.getElementById('titulo_results').scrollIntoView();" class="learnMore">Learn More</button>
    				 </div>
    			 </div>
    			 <img id="taffy" src="https://static.igem.wiki/teams/4607/wiki/modelo/matemataffy.png">
@@ -165,6 +165,10 @@
    	<div id="scrlS3"> <!--encapsula todos los divs-->
    		<div id="sectionOverview" class="sectO"><!--seccion de overview-->
    	    <div class="seccionesTituolo">
+					<br id="titulo_overview">
+					<br>
+					<br>
+					<br>
    		    <div class="seccionOverview">
    			 <p class="subtitleO">Overview</p>
    		    </div>
@@ -352,6 +356,10 @@
    	 <div id="sectionMethods" class="sectM">
    	 <!--seccion Methods-->
    		 <div class="secciones">
+				<br id="titulo_methods">
+				<br>
+				<br>
+				<br>
    			 <div class="seccionesTitulo">
    				 <p class="subtitleM">Methods</p>
    			 </div>
@@ -4183,6 +4191,10 @@
 
   <div id="sectionResults" class="sectR">
     <div class="secciones">
+			<br id="titulo_results">
+			<br>
+			<br>
+			<br>
       <div class="seccionesTitulo">
  		 <p class="subtitleR">Results</p>
       </div>
