@@ -148,7 +148,94 @@
       }
   }
 
+.contenedorENTBody{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    padding-top: 40px;
+    overflow: hidden;
+}
+
+.sectionCirclesENT{
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-flow: column;
+    overflow-x: clip;
+
+}
+
+.layout{
+    width: 100% !important;
+}
+
+.tituloContenido{
+    margin: 0 !important;
+}
+
+.indexDad{
+    position: absolute;
+    width: fit-content;
+    height: 100%;
+    left: 0;
+}
+
       /*botones */ 
+
+.stickyButton{
+    width: 100%;
+    height: 250px;
+    position: sticky;
+    top: 0;
+    overflow-x: clip;
+
+}
+
+.movingContainer{
+    height: fit-content;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    gap: 1.5vh;
+    margin: 0;
+    width: 100%;
+    top:0;
+    transform: translate(0, 0);
+    padding: 25px;
+    right: 0;
+    transition: width 0s, top 0.5s, transform 0.5s, padding 0.5s, right 0.5s;
+}
+
+.movingContainer.active{
+    width: 15vh;
+    min-width: 8vw;
+    top: 50vh;
+    right: 0;
+    transform: translate(0, -50%);
+    padding: 0;
+    animation: leftonStart 0.5s;
+    animation-delay: 0.5s;
+    transition-delay: 0.9s, 0s, 0s, 0s, 0s;
+}
+
+@keyframes leftonStart{
+    0%{
+        transform: translate(0%, -50%);
+    }
+    50%{
+        transform: translate(-100px, -50%);
+    }
+    100%{
+        transform: translate(50%, -50%);
+    }
+}
+
  .botones-redireccion{
     position: relative;
     margin: 150px auto;
@@ -165,11 +252,12 @@
    
    .logocontainer{
     background: transparent;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 500px;
-    height: 500px;
+    top: 0 !important;
+    left: 0 !important;
+    transform: translate(0,0) !important;
+    width: 100% !important;
+    padding: 80px 15% !important;
+    height: fit-content;
     position: relative;
     z-index:10;
    }
@@ -216,21 +304,31 @@
     height: 607px;
    }
    
-   /* Estilos para los botones en forma de div */
-   .methods {
-    width: 170px;
-    height: 170px;
-    left: 35%;
-    color: #C55B75;
+   .circles {
+    width: 10vw;
+    height: 10vw;
+    min-width: 15vh;
+    min-height: 15vh;
+    color: var(--colorCirc);
     background-color: transparent;
-    border: 5px solid #C55B75;
+    border: 0px solid var(--colorCirc);
     border-radius: 50%;
-    border-width: 2vh;
+    border-width: 1vw;
     position: relative;
-    transition: background-color 0.5s, transform 0.5s;
+    transition: 1s;
     overflow: hidden;
     z-index: 10;
-    top: 77%;
+    cursor: pointer;
+
+}
+
+   /* Estilos para los botones en forma de div */
+   .movingContainer.active .circles {
+    width: 15vh;
+    min-width: 8vw;
+    min-height: 8vw;
+    height: 15vh;
+    border-width: 10px;
 }
 .overview {
     top: 77%;
@@ -287,30 +385,30 @@
    
    .button-content {
     position: absolute;
-    top: 50%;
     height: fit-content;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
-    width: 180px;
-   }
-   
-   .overview:hover .button-content,
-   .methods:hover .button-content,
-   .results:hover .button-content,
-   .Unmet:hover .button-content,
-   .Long:hover .button-content{
+    width: 12vh;
     height: fit-content;
-    top: 40%;
    }
    
    
    /* Efecto de crecimiento y cambio de fondo al pasar el cursor sobre los div de los botones */
-   .methods:hover {
-    border: none;
-    background-color: #C55B75;
-    transform: scale(1.5);
+   .circles:hover {
+    background-color: var(--colorHover);
    }
+
+   .circles.active{
+    background-color: var(--colorCirc);
+    animation: selectedStar 0.8s;
+
+   }
+
+   @keyframes selectedStar{
+    0% {transform: scale(1)}
+    30% {transform: scale(1.2)}
+    100% {transform: scale(1)}
+   }
+
    .overview:hover {
     border: none;
     background-color: #5BC5AB;
@@ -332,25 +430,14 @@
     transform: scale(1.5);
    }
    /* Estilo para el contenido de los div de los botones al pasar el cursor sobre ellos */
-   .methods:hover .tituloBoton,
-   .overview:hover .tituloBoton,
-   .results:hover .tituloBoton,
-   .Unmet:hover .tituloBoton,
-   .Long:hover .tituloBoton {
+   .circless:hover .tituloBoton{
     font-size: 18px;
    }
    
-   .methods:hover .contentBoton,
-   .overview:hover .contentBoton,
-   .results:hover .contentBoton,
-   .Unmet:hover .contentBoton,
-   .Long:hover .contentBoton {
+   .circles:hover .contentBoton, .circles.active .contentBoton{
     text-align: justify;
     color: white;
     display: block;
-    max-width: 100%;
-    max-height: 100%;
-    padding-bottom: 10px;
    }
    
    /* Estilo para el botón "Learn More" al pasar el cursor sobre los div de los botones */
@@ -381,7 +468,7 @@
     outline: none;
   }
    
-   .methods:hover .learnMore {
+   .circless:hover .learnMore {
     display: inline-block;
     width: 80px;
     background-color: #C55B75;
@@ -428,30 +515,32 @@
    }
    /* Estilo para los títulos y contenido de los div de los botones */
    .tituloBoton {
-    font-size: 12px;
+    font-size: 1.1rem;
     font-weight: bold;
     align-items: center;
     margin: auto auto;
     text-align: center;
+    transition: 1s;
 }
+
+.movingContainer.active .circles .button-content .tituloBoton{
+    font-size: 0.9rem;
+}
+
   
    
    .contentBoton {
     font-size: 13px;
     display: none;
+    transition: 1s;
+   }
+
+   .fraseemprende{
+    margin: 0;
    }
    
    /* Efecto de sombra y transformación al pasar el cursor sobre los botones */
-   .methods:hover .tituloBoton,
-   .overview:hover .tituloBoton,
-   .results:hover .tituloBoton,
-   .Long:hover .tituloBoton,
-   .Unmet:hover .tituloBoton,
-   .methods:hover .contentBoton,
-   .overview:hover .contentBoton,
-   .results:hover .contentBoton,
-   .Long:hover .contentBoton,
-   .Unmet:hover .contentBoton {
+   .circles:hover .tituloBoton, .circles.active .tituloBoton{
     color: white;
     max-width: 100%;
     max-height: 100%;
@@ -459,6 +548,7 @@
     height: 139px;
     width: 175px;
    }
+
    /*gif prototipo */
    .prototype {
     max-width: 100%;
@@ -1243,12 +1333,9 @@
     font-family: 'Quicksand';
     text-align: center;
     line-height: 1.5;
-    margin-left: 43px !important;
     color: black;
-    padding-top: -12vh;
-    width: 140%;
-    height: 32%;
-    margin-left: -14%!important;
+    width: 100%;
+    height: fit-content;
     top: 10px!important;
 }
 .eti {
