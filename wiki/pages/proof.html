@@ -97,6 +97,22 @@ endblock %}
 
         <div class="container relative con">
 
+            <div style="margin-left: 2.1%;" class="scrollIndexContain">
+                <div class="stickyIndex">
+                    <div class="lineIndex"></div>
+                    <div class="indexDots">
+                        <div onclick="goTo('1')" class="dotIndex"
+                            id="dot1">
+                            <div class="dotText">Overview</div>
+                        </div>
+                        <div class="dotIndex" id="dot2"
+                            onclick="goTo('2')">
+                            <div class="dotText">Round zero</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <p id="sec1" class="subtitleF1">Overview</p>
 
             <div class="row">
@@ -120,65 +136,111 @@ endblock %}
                     the challenges associated with antibiotic use in bovine
                     mastitis treatment./p>
 
-            </div>
+                </div>
 
-            <p id="sec2" class="subtitleF1">Validation</p>
+                <p id="sec2" class="subtitleF1">Validation</p>
 
-            <div class="row">
+                <div class="row">
 
-                <!--TarjetaDosPosiciones-->
-                <input id="switch" type="checkbox">
-                <div class="app">
-                    <div class="body">
-                        <div class="phone">
-                            <div class="menu">
-                                <div class="time"><b>Validation</b></div>
-                                <div class="icons">
-                                    <div class="network"></div>
-                                    <div class="battery"></div>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <div class="circle">
-                                    <div class="crescent"></div>
-                                </div>
-                                <label for="switch">
-                                    <div class="toggle"></div>
-                                    <div class="names">
-                                        <p class="light">by experts</p>
-                                        <p class="dark">in lab</p>
+                    <!--TarjetaDosPosiciones-->
+                    <input id="switch" type="checkbox">
+                    <div class="app">
+                        <div class="body">
+                            <div class="phone">
+                                <div class="menu">
+                                    <div class="time"><b>Validation</b></div>
+                                    <div class="icons">
+                                        <div class="network"></div>
+                                        <div class="battery"></div>
                                     </div>
-                                </label>
+                                </div>
+                                <div class="content">
+                                    <div class="circle">
+                                        <div class="crescent"></div>
+                                    </div>
+                                    <label for="switch">
+                                        <div class="toggle"></div>
+                                        <div class="names">
+                                            <p class="light">by experts</p>
+                                            <p class="dark">in lab</p>
+                                        </div>
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <p><br><br><b>Validation by experts: </b>
+                        Donec eget lacinia turpis. Vivamus viverra nulla a arcu
+                        sodales maximus. Aenean mollis est nec odio vestibulum,
+                        ac
+                        interdum lorem consequat. Cras nec maximus quam. Vivamus
+                        lorem nisi, mattis vitae fringilla at, vehicula nec
+                        risus.
+                        Proin faucibus vulputate scelerisque. Vestibulum sit
+                        amet
+                        purus consectetur, mattis nisl eu, dignissim justo.
+                        <br><br>
+                    </p>
+                    <p><b>Laboratory validation: </b>
+                        Curabitur nisi nunc, congue non mauris sed,
+                        lobortis lacinia felis. Suspendisse in dapibus nisl.
+                        Donec
+                        in sem sed nibh pretium congue vitae placerat nulla.
+                        Curabitur aliquet, arcu lacinia placerat fermentum, nunc
+                        urna rhoncus sem, ut interdum mauris felis vel dolor.
+                        Proin
+                        efficitur dignissim dui, ac finibus lacus bibendum eget.
+                        Ut
+                        nisi turpis, tincidunt vel magna at, tempor facilisis
+                        lectus. Aliquam eu rhoncus odio. Duis lacinia sit amet
+                        mauris at tempor.</p>
+
                 </div>
-
-                <p><br><br><b>Validation by experts: </b>
-                    Donec eget lacinia turpis. Vivamus viverra nulla a arcu
-                    sodales maximus. Aenean mollis est nec odio vestibulum, ac
-                    interdum lorem consequat. Cras nec maximus quam. Vivamus
-                    lorem nisi, mattis vitae fringilla at, vehicula nec risus.
-                    Proin faucibus vulputate scelerisque. Vestibulum sit amet
-                    purus consectetur, mattis nisl eu, dignissim justo.
-                    <br><br>
-                </p>
-                <p><b>Laboratory validation: </b>
-                    Curabitur nisi nunc, congue non mauris sed,
-                    lobortis lacinia felis. Suspendisse in dapibus nisl. Donec
-                    in sem sed nibh pretium congue vitae placerat nulla.
-                    Curabitur aliquet, arcu lacinia placerat fermentum, nunc
-                    urna rhoncus sem, ut interdum mauris felis vel dolor. Proin
-                    efficitur dignissim dui, ac finibus lacus bibendum eget. Ut
-                    nisi turpis, tincidunt vel magna at, tempor facilisis
-                    lectus. Aliquam eu rhoncus odio. Duis lacinia sit amet
-                    mauris at tempor.</p>
-
             </div>
-        </div>
 
-    </body>
+            <script type="text/javascript">
+                var dot1 = document.getElementById('dot1');
+                var dot2 = document.getElementById('dot2');
+            
+                function goTo(scrollID) {
+                  dot1.classList.remove('active');
+                  dot2.classList.remove('active');
+                  var dot = document.getElementById('dot' + scrollID);
+                  dot.classList.add('active');
+                  var element = document.getElementById('sec' + scrollID);
+                  element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+                }
+              </script>
 
-</html>
+            <script type="text/javascript">
+                var sect1 = document.getElementById('sec1');
+                var sect2 = document.getElementById('sec2');
+            
+                var dot1 = document.getElementById('dot1');
+                var dot2 = document.getElementById('dot2');
+            
+                window.addEventListener('scroll', function () {
+                  var sect1top = sect1.getBoundingClientRect().top;
+                  var sect2top = sect2.getBoundingClientRect().top;
+                  var topPad = 200;
+                  if (sect2top - topPad <= topPad) {
+                    dot1.classList.remove('active');
+                    dot2.classList.add('active');
+                  } else if (sect1top - topPad <= topPad) {
+                    dot1.classList.add('active');
+                    dot2.classList.remove('active');
+                  } else {
+                    dot1.classList.remove('active');
+                    dot2.classList.remove('active');
 
-{% endblock %}
+                  }
+            
+            
+                }); 
+              </script>
+
+        </body>
+    </html>
+
+    {% endblock %}
