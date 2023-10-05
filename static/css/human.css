@@ -148,11 +148,16 @@
  .secciones {
   grid-area: body;
   margin-top: 1%;
-  width: 100%;
+  width: 91vw;
   height:100%;
  }
  
- 
+ .lado{
+  position: relative;
+  left: 20vw;
+  width: 60vw;
+  bottom: 19vw;
+ }
  
  /*italicas */
  .i {
@@ -531,7 +536,7 @@
  
  .index1, .index2, .index3{
   margin-left: 30px;
-  width: 150px;
+  width: 7vw;
   text-align: center;
   height: fit-content;
   border-radius: 20px;
@@ -2831,7 +2836,7 @@ z-index: 10;
   max-width: 50vw;
 }
 .foto_collection{
-  margin-left: 14vw;
+  margin-left: 18vw;
   max-width: 50vw;
 }
 .foto_taffi_cartel{
@@ -2851,7 +2856,18 @@ z-index: 10;
   max-width: 30vw;
 }
 
-
+.lado2{
+  position: relative;
+  left: 25vw;
+  bottom: 22vw;
+  width: 57vw;
+}
+.lado3{
+  position: relative;
+  left: 26vw;
+  bottom: 10vw;
+  width: 57vw;
+}
 .cause h1 {
   margin: auto;
   align-self: center;
@@ -2923,7 +2939,7 @@ z-index: 10;
   height: 120px;
   width: 300px;
   overflow:hidden;
-  margin-left: 28vw;
+  margin-left: 32vw;
   background: linear-gradient(#447D9C,#5BC5AB);
   transition: 1s;
   border-radius: 10px;
