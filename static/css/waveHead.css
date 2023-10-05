@@ -2,7 +2,7 @@
     width: 100%;
     position: relative;
     z-index: 1;
-    height: 650px;
+    height: 280px;
 }
 
 .headParts .headingParts{
@@ -78,9 +78,9 @@
     z-index: -2;
 
 }
-@media(max-width:767px) {
+@media(max-width:799px) {
   .headParts{
-    height: 515px;
+    height: 150px;
 }
 
 }
