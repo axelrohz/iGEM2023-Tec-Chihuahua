@@ -250,6 +250,7 @@ label {
 
 .time {
   color: black;
+  font-size: 1rem;
 }
 /* -------- Switch Styles ------------*/
 [type="checkbox"] {
