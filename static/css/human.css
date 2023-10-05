@@ -3818,47 +3818,45 @@ transform: scaleX(-1);
   }
   .selector.open li:nth-child(1):hover .description1 {
     display: inline-block;
-    margin-left:-350px;
-    margin-top:-50px;
+    left: 12vw;
+    top: -8vw;
     width:750px;
   }
-   .selector.open li:nth-child(2):hover .description2 {
+.selector.open li:nth-child(2):hover .description2 {
     display: inline-block;
     transform: rotate(-52deg);
     margin-top: -50px;
     margin-left:-50px;
   }
-    .selector.open li:nth-child(3):hover .description3 {
+.selector.open li:nth-child(3):hover .description3 {
     display: inline-block;
     transform: rotate(-103deg);
     margin-top: -170px;
     margin-left:-300px;
       
   }
-     .selector.open li:nth-child(4):hover .description4 {
+.selector.open li:nth-child(4):hover .description4 {
     display: inline-block;
-    transform: rotate(-155deg);
-    margin-top:-140px;
-    margin-left:-140px;
+    transform: rotate(-154deg);
+    left: -50vw;
   }
-     .selector.open li:nth-child(5):hover .description5 {
+.selector.open li:nth-child(5):hover .description5 {
     display: inline-block;
     transform: rotate(154deg);
-    margin-top: -300px;
-    margin-left:-350px;
+    left: -48vw;
+    top: 7vw;
   }
-     .selector.open li:nth-child(6):hover .description6 {
+.selector.open li:nth-child(6):hover .description6 {
     display: inline-block;
     transform: rotate(103deg);
-    margin-top: -110px;
-    margin-left:-160px;
+    left: -24vw;
+    top:28vw;
   }
-     .selector.open li:nth-child(7):hover .description7 {
+.selector.open li:nth-child(7):hover .description7 {
     display: inline-block;
     transform: rotate(51deg);
-    margin-top:10px;
-    margin-left:-280px;   
-       
+    left: 2vw;
+    top: 24vw;
   }
   .stickyIndex{
     position: sticky;
