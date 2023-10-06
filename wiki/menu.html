@@ -48,12 +48,21 @@
 
             </ul>
           </li>
+          <li class="drop-down">Competition<a href></a>
+            <ul>
+              <li><a href="{{ url_for('pages', page='MedalCriteria') }}">Medal criteria</a></li>
+
+              <li><a href="{{ url_for('pages', page='judgingForm') }}">Judging form</a></li>
+              
+
+            </ul>
+          </li>
           
-          <li><a href="{{ url_for('pages', page='model') }}">Model</a></li>
+          
           <li><a href="{{ url_for('pages', page='entre') }}">Entrepreneurship</a></li>
           <li class="drop-down"><a href>Lab</a>
             <ul>
-
+              <li><a href="{{ url_for('pages', page='model') }}">Model</a></li>
               <li><a href="{{ url_for('pages', page='experiments') }}">Experiments</a></li>
               <li><a href="{{ url_for('pages', page='results') }}">Results</a></li>
               <li><a href="{{ url_for('pages', page='parts') }}">Parts</a></li>
