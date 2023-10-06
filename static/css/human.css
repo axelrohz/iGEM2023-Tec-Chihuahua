@@ -3121,7 +3121,7 @@ z-index: 10;
   font-family: 'Quicksand';
   font-weight: 500;
   color: white;
-  padding-left: 1.5vw;
+  padding-left: 1vw;
   padding-right: 1.5vw;
 }
 
@@ -3137,8 +3137,7 @@ z-index: 10;
 }
 
 .contpapa:hover {
-  height: 30vw;
-  padding-bottom: 2vw;
+  height: fit-content;
 }
 
 .contpapa_2:hover {
