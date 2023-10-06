@@ -3835,21 +3835,22 @@ transform: scaleX(-1);
 .selector.open li:nth-child(3):hover .description3 {
     display: inline-block;
     transform: rotate(-103deg);
-    margin-top: -170px;
-    margin-left:-300px;
-      
-  }
+    top:-31vw;
+    left: -22vw;
+}
+
 .selector.open li:nth-child(4):hover .description4 {
     display: inline-block;
     transform: rotate(-154deg);
-    left: -50vw;
-  }
+    left: -42vw;
+    top: -20vw;
+}
 .selector.open li:nth-child(5):hover .description5 {
     display: inline-block;
     transform: rotate(154deg);
-    left: -48vw;
+    left: -42vw;
     top: 7vw;
-  }
+}
 .selector.open li:nth-child(6):hover .description6 {
     display: inline-block;
     transform: rotate(103deg);
