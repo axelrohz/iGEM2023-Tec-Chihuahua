@@ -1183,10 +1183,10 @@ margin-left: 30%;
  /*cosas del 4*/
  .ciclo4{
   position: absolute;
-  width: 10px;
-  height: 18px;
-  bottom: 274px;
-  left: 738px;
+  width: 1vw;
+  height: 1.5vw;
+  bottom: 18.6vw;
+  left: 49.8vw;
   z-index: 3;
  }
  .ciclo4:hover .azul4{
@@ -1204,13 +1204,13 @@ margin-left: 30%;
  }
  
  .dosAmarillasRojas{
-  position: relative;
+  position: absolute;
   box-shadow: 0 0 15px red;
   opacity: 0%;
-  height: 48px;
-  width: 24px;
-  left: 57px;
-  bottom: 57px;
+  height: 3.4vw;
+  width: 1.7vw;
+  left: 3.85vw;
+  bottom: -1.6vw;
   border-radius: 20px;
  }
  
