@@ -984,7 +984,11 @@ ul.unol {
 }
 
 @media (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+
     .div {
         padding-top: 100%;
     }
-}
+}}
