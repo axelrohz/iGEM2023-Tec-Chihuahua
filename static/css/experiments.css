@@ -1,3 +1,16 @@
+.hipervinculoGeneral {
+  font-family: 'Quicksand';
+  font-weight: 700;
+  color: #5BC5AB;
+}
+
+.hipervinculoGeneral:hover {
+  font-family: 'Quicksand';
+  font-weight: 700;
+  color: #5BC5AB;
+  background: var(--code-background-inline);
+}
+
 .hipervinculoaqua {
   font-family: 'Quicksand';
   font-weight: 700;
