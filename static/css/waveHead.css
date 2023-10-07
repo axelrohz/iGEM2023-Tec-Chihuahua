@@ -3,6 +3,7 @@
     position: relative;
     z-index: 1;
     height: 280px;
+    padding-bottom: 40%;
 }
 
 .headParts .headingParts{
