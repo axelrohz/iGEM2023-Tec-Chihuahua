@@ -180,6 +180,13 @@ body {
     transition: ease all 0.3s;
     opacity: 0;
   }
+  @media (max-width: 768px) {
+    .drop-down ul{
+      top: calc(100% - 520px) !important;
+    }
+    
+    
+  }
   
   .drop-down ul li{
     display: none;
