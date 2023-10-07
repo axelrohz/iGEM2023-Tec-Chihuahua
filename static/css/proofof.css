@@ -174,6 +174,15 @@
   margin: auto;
 }
 
+.circle-textContent {
+  position: relative;
+  border-radius: 100%;
+  width: 8rem;
+  height: 8rem;
+  background: linear-gradient(40deg, #FF0080,#FF8C00 70%);
+  margin: auto;
+}
+
 .crescent {
   position: absolute;
   border-radius: 100%;
