@@ -961,3 +961,7 @@ transition-delay: 0.3s;
 opacity: 0.5;
 transition: 0.25s;
 }
+
+.div {
+    padding-top: 100%;
+}
