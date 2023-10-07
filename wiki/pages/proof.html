@@ -13,7 +13,7 @@ endblock %}
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="../../static/css/body.css">
+        <!--<link rel="stylesheet" href="../../static/css/body.css">
         <link rel="stylesheet" href="../../static/css/desc.css">
         <link rel="stylesheet" href="../../static/css/parallax.css">
         <link rel="stylesheet" href="../../static/css/parallaxFull.css">
@@ -26,11 +26,13 @@ endblock %}
             rel="stylesheet">
         <link href="{{ url_for('static', filename = 'css/parallaxFull.css') }}"
             rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
 
         <script
             src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
         <link rel="stylesheet" href="static/css/waveHead.css">
+        <link href="{{ url_for('static', filename='css/waveHead.css') }}"
+            rel="stylesheet">
         <link rel="stylesheet" href="static/css/proofof.css">
         <link href="{{ url_for('static', filename='css/proofof.css') }}"
             rel="stylesheet">
@@ -47,114 +49,6 @@ endblock %}
                         </div>
 
                         <h3>Let creativity dream beyond limits.</h3>
-                    </div>
-                </div>
-
-                <div class="container relative con">
-
-                    <p id="sec1" class="subtitleF1">Overview</p>
-
-                    <div class="row">
-                        <p style="align-items: center">
-
-                            In the iGem Tec-Chihuahua 2023 team, we have
-                            identified a
-                            critical issue in our state of Chihuahua, Mexico –
-                            the
-                            presence of mastitis disease, which significantly
-                            impacts
-                            the dairy industry, a cornerstone of the state's
-                            economy.
-                            Currently, the primary treatments involve
-                            antibiotics, which
-                            pose a health risk to consumers as these antibiotics
-                            can
-                            pass into the milk produced by cows undergoing
-                            mastitis
-                            treatment. Our product, AureoBos, offers a promising
-                            solution. By utilizing novel fusion proteins
-                            combining
-                            endolysins, albumin binding domains and cell wall
-                            binding
-                            domains, we aim to create a highly effective
-                            antimicrobial
-                            agent. Fusion proteins, a cutting-edge technology,
-                            hold
-                            immense potential in biopharmaceuticals, allowing
-                            proteins
-                            to target specific molecules or cells. Our product
-                            not only
-                            seeks to outperform current treatments but also
-                            addresses
-                            the challenges associated with antibiotic use in
-                            bovine
-                            mastitis treatment.</p>
-
-                    </div>
-
-                    <p id="sec2" class="subtitleF1">Validation</p>
-
-                    <div class="row">
-
-                        <!--TarjetaDosPosiciones-->
-                        <input id="switch" type="checkbox">
-                        <div class="app">
-                            <div class="body">
-                                <div class="phone">
-                                    <div class="menu">
-                                        <div class="time"><b>Validation</b></div>
-                                        <div class="icons">
-                                            <div class="network"></div>
-                                            <div class="battery"></div>
-                                        </div>
-                                    </div>
-                                    <div class="content">
-                                        <div class="circle">
-                                            <div class="crescent"></div>
-                                        </div>
-                                        <label for="switch">
-                                            <div class="toggle"></div>
-                                            <div class="names">
-                                                <p class="light">by experts</p>
-                                                <p class="dark">in lab</p>
-                                            </div>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p><br><br><b>Validation by experts: </b>
-                            Donec eget lacinia turpis. Vivamus viverra nulla a
-                            arcu
-                            sodales maximus. Aenean mollis est nec odio
-                            vestibulum, ac
-                            interdum lorem consequat. Cras nec maximus quam.
-                            Vivamus
-                            lorem nisi, mattis vitae fringilla at, vehicula nec
-                            risus.
-                            Proin faucibus vulputate scelerisque. Vestibulum sit
-                            amet
-                            purus consectetur, mattis nisl eu, dignissim justo.
-                            <br><br>
-                        </p>
-                        <p><b>Laboratory validation: </b>
-                            Curabitur nisi nunc, congue non mauris sed,
-                            lobortis lacinia felis. Suspendisse in dapibus nisl.
-                            Donec
-                            in sem sed nibh pretium congue vitae placerat nulla.
-                            Curabitur aliquet, arcu lacinia placerat fermentum,
-                            nunc
-                            urna rhoncus sem, ut interdum mauris felis vel
-                            dolor. Proin
-                            efficitur dignissim dui, ac finibus lacus bibendum
-                            eget. Ut
-                            nisi turpis, tincidunt vel magna at, tempor
-                            facilisis
-                            lectus. Aliquam eu rhoncus odio. Duis lacinia sit
-                            amet
-                            mauris at tempor.</p>
-
                     </div>
                 </div>
 
@@ -215,6 +109,88 @@ endblock %}
         </div>
 
         <script src="../../static/assets/js/main.js"></script>
+
+        <div class="container relative con">
+
+            <p id="sec1" class="subtitleF1">Overview</p>
+
+            <div class="row">
+                <p style="align-items: center">
+
+                    In the iGem Tec-Chihuahua 2023 team, we have identified a
+                    critical issue in our state of Chihuahua, Mexico – the
+                    presence of mastitis disease, which significantly impacts
+                    the dairy industry, a cornerstone of the state's economy.
+                    Currently, the primary treatments involve antibiotics, which
+                    pose a health risk to consumers as these antibiotics can
+                    pass into the milk produced by cows undergoing mastitis
+                    treatment. Our product, AureoBos, offers a promising
+                    solution. By utilizing novel fusion proteins combining
+                    endolysins, albumin binding domains and cell wall binding
+                    domains, we aim to create a highly effective antimicrobial
+                    agent. Fusion proteins, a cutting-edge technology, hold
+                    immense potential in biopharmaceuticals, allowing proteins
+                    to target specific molecules or cells. Our product not only
+                    seeks to outperform current treatments but also addresses
+                    the challenges associated with antibiotic use in bovine
+                    mastitis treatment.</p>
+
+            </div>
+
+            <p id="sec2" class="subtitleF1">Validation</p>
+
+            <div class="row">
+
+                <!--TarjetaDosPosiciones-->
+                <input id="switch" type="checkbox">
+                <div class="app">
+                    <div class="body">
+                        <div class="phone">
+                            <div class="menu">
+                                <div class="time"><b>Validation</b></div>
+                                <div class="icons">
+                                    <div class="network"></div>
+                                    <div class="battery"></div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="circle">
+                                    <div class="crescent"></div>
+                                </div>
+                                <label for="switch">
+                                    <div class="toggle"></div>
+                                    <div class="names">
+                                        <p class="light">by experts</p>
+                                        <p class="dark">in lab</p>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p><br><br><b>Validation by experts: </b>
+                    Donec eget lacinia turpis. Vivamus viverra nulla a arcu
+                    sodales maximus. Aenean mollis est nec odio vestibulum, ac
+                    interdum lorem consequat. Cras nec maximus quam. Vivamus
+                    lorem nisi, mattis vitae fringilla at, vehicula nec risus.
+                    Proin faucibus vulputate scelerisque. Vestibulum sit amet
+                    purus consectetur, mattis nisl eu, dignissim justo.
+                    <br><br>
+                </p>
+                <p><b>Laboratory validation: </b>
+                    Curabitur nisi nunc, congue non mauris sed,
+                    lobortis lacinia felis. Suspendisse in dapibus nisl. Donec
+                    in sem sed nibh pretium congue vitae placerat nulla.
+                    Curabitur aliquet, arcu lacinia placerat fermentum, nunc
+                    urna rhoncus sem, ut interdum mauris felis vel dolor. Proin
+                    efficitur dignissim dui, ac finibus lacus bibendum eget. Ut
+                    nisi turpis, tincidunt vel magna at, tempor facilisis
+                    lectus. Aliquam eu rhoncus odio. Duis lacinia sit amet
+                    mauris at tempor.</p>
+
+            </div>
+        </div>
 
     </body>
 
