@@ -1,98 +1,218 @@
-<menu>
 
-  <head>
+  <link rel="stylesheet" href="../static/css/menu.css">
 
-  </head>
-  <link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet">
+  <div class="navBar">
+    <div class="navBarItems">
+        <div class="navBarIcon">
+            <img src="https://static.igem.wiki/teams/4607/wiki/fonts/logopeqcut.png" height="100%" alt="logo" class="logo">
+        </div>
+        
+        <div class="navBarContent">
 
-  <header id="header" class="fixed-top">
-    <div class="container d-flex">
+            <a class="navBarContentItem" href="{{ url_for('pages', page='home') }}">
+                <div class="textNavbar"> Home</div>
+            </a>
+            <div class="navBarContentItem navExpand">
+                <div class="textNavbar expand"> Project</div>
+                <div class="expandBox">
+                    <div class="fullbox">
+                    <a href="{{ url_for('pages', page='notebook') }}" class="megaMenuItem">
+                        <div class="megaIcon">
+                            <img src="./notebook.png" height="100%" alt="logo" class="logo">
+                        </div>
+                        <div href="{{ url_for('pages', page='notebook') }}" class="megaContent">
+                            <div class="megaTitle">Notebook</div>
+                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                        </div>
+                    </a>    
+                    <a href="{{ url_for('pages', page='description') }}" class="megaMenuItem">
+                        <div class="megaIcon">
+                            <img src="./description.png" height="100%" alt="logo" class="logo">
+                        </div>
+                        <div class="megaContent">
+                            <div class="megaTitle">Description</div>
+                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                        </div>
+                    </a>    
+                    <a href="{{ url_for('pages', page='safety') }}" class="megaMenuItem">
+                        <div class="megaIcon">
+                            <img src="./safety.png" height="100%" alt="logo" class="logo">
+                        </div>
+                        <div class="megaContent">
+                            <div class="megaTitle">Safety</div>
+                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                        </div>
+                    </a>    
+                    <a href="{{ url_for('pages', page='contribution') }}" class="megaMenuItem">
+                        <div class="megaIcon">
+                            <img src="./contri.png" height="100%" alt="logo" class="logo">
+                        </div>
+                        <div class="megaContent">
+                            <div class="megaTitle">Contributions</div>
+                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                        </div>
+                    </a>
+                    <a href="{{ url_for('pages', page='engineering') }}" class="megaMenuItem">
+                        <div class="megaIcon">
+                            <img src="./engi.png" height="100%" alt="logo" class="logo">
+                        </div>
+                        <div class="megaContent">
+                            <div class="megaTitle">Engineering</div>
+                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                        </div>
+                    </a>
+                    <a href="{{ url_for('pages', page='engineering') }}" class="megaMenuItem">
+                        <div class="megaIcon">
+                            <img src="./model.png" height="100%" alt="logo" class="logo">
+                        </div>
+                        <div class="megaContent">
+                            <div class="megaTitle">Model</div>
+                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                        </div>
+                    </a>
 
-      <div class="logo mr-auto">
-        <h1 class="text-light" , style="font-family: 'Oswald';"><a href><span>
-              <img class="logomenu"
-                src="https://static.igem.wiki/teams/4607/wiki/fonts/logopeqcut.png"
-                alt></span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      </div>
 
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li><a href="{{ url_for('pages', page='home') }}">Home</a></li>
+                    <a href="{{ url_for('pages', page='engineering') }}" class="megaMenuItem">
+                        <div class="megaIcon">
+                            <img src="./model.png" height="100%" alt="logo" class="logo">
+                        </div>
+                        <div class="megaContent">
+                            <div class="megaTitle">1</div>
+                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                        </div>
+                    </a>
 
-          <li class="drop-down"><a class="hipervinculoaqua" href>Project</a>
-            <ul>
 
-              <li><a href="{{ url_for('pages', page='notebook') }}">Notebook</a></li>
-              <li><a href="{{ url_for('pages', page='description') }}">Description</a></li>
-              <li><a href="{{ url_for('pages', page='safety') }}">Safety</a></li>
-              <li><a href="{{ url_for('pages', page='contribution') }}">Contributions</a></li>
-              <li><a href="{{ url_for('pages', page='engineering') }}">Engineering</a></li>
-              <li><a href="{{ url_for('pages', page='model') }}">Model</a></li>
-            </ul>
-          </li>
 
-          <li><a href="{{ url_for('pages', page='human-practices') }}">Human
-              Practices</a></li>
+                    <a href="{{ url_for('pages', page='engineering') }}" class="megaMenuItem">
+                        <div class="megaIcon">
+                            <img src="./model.png" height="100%" alt="logo" class="logo">
+                        </div>
+                        <div class="megaContent">
+                            <div class="megaTitle">2</div>
+                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                        </div>
+                    </a>
+                </div>    
+                </div>
+            </div>
+            <a class="navBarContentItem" href="{{ url_for('pages', page='human-practices') }}">
+                <div class="textNavbar"> Human Practice</div>
+            </a>
+            <div class="navBarContentItem navExpand">
+                <div class="textNavbar expand"> Team</div>
+                <div class="expandBox">
+                    <div class="fullbox">
 
-          <li class="drop-down"><a href>Team</a>
-            <ul>
-              <li><a href="{{ url_for('pages', page='team') }}">Members</a></li>
+                    <a href="{{ url_for('pages', page='team') }}" class="megaMenuItem">
+                        <div class="megaIcon">
+                            <img src="./members.png" height="100%" alt="logo" class="logo">
+                        </div>
+                        <div class="megaContent">
+                            <div class="megaTitle">Members</div>
+                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                        </div>
+                    </a>    
+                    <a href="{{ url_for('pages', page='attributions') }}" class="megaMenuItem">
+                        <div class="megaIcon">
+                            <img src="./atribute.png" height="100%" alt="logo" class="logo">
+                        </div>
+                        <div class="megaContent">
+                            <div class="megaTitle">Attributions</div>
+                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                        </div>
+                    </a>    
+                    <a href="{{ url_for('pages', page='behind') }}" class="megaMenuItem">
+                        <div class="megaIcon">
+                            <img src="./bts.png" height="100%" alt="logo" class="logo">
+                        </div>
+                        <div class="megaContent">
+                            <div class="megaTitle">Behind the scenes</div>
+                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                        </div>
+                    </a>    
+                    <a href="{{ url_for('pages', page='sponsors') }}" class="megaMenuItem">
+                        <div class="megaIcon">
+                            <img src="./sponsor.png" height="100%" alt="logo" class="logo">
+                        </div>
+                        <div class="megaContent">
+                            <div class="megaTitle">Sponsors</div>
+                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                        </div>
+                    </a>
+                    <a href="{{ url_for('pages', page='collaborations') }}" class="megaMenuItem">
+                        <div class="megaIcon">
+                            <img src="./collab.png" height="100%" alt="logo" class="logo">
+                        </div>
+                        <div class="megaContent">
+                            <div class="megaTitle">Collaborations</div>
+                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                        </div>
+                    </a>
+                </div>    
+                </div>
+            </div>
+            <a href="{{ url_for('pages', page='entre') }}" class="navBarContentItem">
+                <div class="textNavbar"> Entrepuernuship</div>
+            </a>
+            <div class="navBarContentItem navExpand">
+                <div class="textNavbar expand"> Lab</div>
+                <div class="expandBox">
+                    <div class="fullbox">
+                    
+                    <a href="{{ url_for('pages', page='experiments') }}" class="megaMenuItem">
+                        <div class="megaIcon">
+                            <img src="./exper.png" height="100%" alt="logo" class="logo">
+                        </div>
+                        <div class="megaContent">
+                            <div class="megaTitle">Experiments</div>
+                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                        </div>
+                    </a>    
+                    <a href="{{ url_for('pages', page='results') }}" class="megaMenuItem">
+                        <div class="megaIcon">
+                            <img src="./results.png" height="100%" alt="logo" class="logo">
+                        </div>
+                        <div class="megaContent">
+                            <div class="megaTitle">Results</div>
+                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                        </div>
+                    </a>    
+                    <a href="{{ url_for('pages', page='parts') }}" class="megaMenuItem">
+                        <div class="megaIcon">
+                            <img src="./parts.png" height="100%" alt="logo" class="logo">
+                        </div>
+                        <div class="megaContent">
+                            <div class="megaTitle">Parts</div>
+                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                        </div>
+                    </a>    
+                    <a href="{{ url_for('pages', page='proof') }}" class="megaMenuItem">
+                        <div class="megaIcon">
+                            <img src="./proof.png" height="100%" alt="logo" class="logo">
+                        </div>
+                        <div class="megaContent">
+                            <div class="megaTitle">Proof of
+                                Concept</div>
+                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                        </div>
+                    </a>
+                    <a href="{{ url_for('pages', page='labnotebook') }}" class="megaMenuItem">
+                        <div class="megaIcon">
+                            <img src="./labNote.png" height="100%" alt="logo" class="logo">
+                        </div>
+                        <div class="megaContent">
+                            <div class="megaTitle">Lab
+                                Notebook</div>
+                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                        </div>
+                    </a>
+                </div>    
+                </div>
+            </div>
+        </div>
+    </div>
 
-              <li><a href="{{ url_for('pages', page='attributions') }}">Attributions</a></li>
-              <li><a href="{{ url_for('pages', page='behind') }}">Behind the
-                  scenes</a></li>
-              <li><a href="{{ url_for('pages', page='sponsors') }}">Sponsors</a></li>
-              <li><a href="{{ url_for('pages', page='collaborations') }}">Collaborations</a></li>
 
-            </ul>
-          </li>
-          
-          
-          
-          <li><a href="{{ url_for('pages', page='entre') }}">Entrepreneurship</a></li>
-          <li class="drop-down"><a href>Lab</a>
-            <ul>
-             
-              <li><a href="{{ url_for('pages', page='experiments') }}">Experiments</a></li>
-              <li><a href="{{ url_for('pages', page='results') }}">Results</a></li>
-              <li><a href="{{ url_for('pages', page='parts') }}">Parts</a></li>
-              <li><a href="{{ url_for('pages', page='proof') }}">Proof of
-                  Concept</a></li>
-              <li><a href="{{ url_for('pages', page='labnotebook') }}">Lab
-                  Notebook</a></li>
-            </ul>
-          </li>
+</div>
 
-        </ul>
-      </nav><!-- .nav-menu -->
-
-    </header><!-- End Header -->
-  </menu>
-
-  <style>
-  @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&family=Oswald:wght@200;300;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
-
-  .drop-down {
-    font-family: 'Quicksand';
-    font-weight: 400;
-  }
-
-  .text-light {
-    font-family: 'Oswald';
-  }
-
-.hipervinculoaqua {
-  font-family: 'Quicksand';
-  font-weight: 700;
-  color: #5BC5AB;
-}
-
-.hipervinculoaqua:hover {
-  font-family: 'Quicksand';
-  font-weight: 700;
-  color: #5BC5AB;
-  text-decoration: underline;
-}
-</style>
