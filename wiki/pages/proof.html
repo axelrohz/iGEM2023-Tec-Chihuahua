@@ -10,12 +10,27 @@ endblock %}
 <html lang="en">
 
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../../static/css/body.css">
+        <link rel="stylesheet" href="../../static/css/desc.css">
+        <link rel="stylesheet" href="../../static/css/parallax.css">
+        <link rel="stylesheet" href="../../static/css/parallaxFull.css">
+
+        <link href="{{ url_for('static', filename='css/desc.css') }}"
+            rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/body.css') }}"
+            rel="stylesheet">
+        <link href="{{ url_for('static', filename = 'css/parallax.css') }}"
+            rel="stylesheet">
+        <link href="{{ url_for('static', filename = 'css/parallaxFull.css') }}"
+            rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <script
             src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
         <link rel="stylesheet" href="static/css/waveHead.css">
-        <link rel="stylesheet" href="static/css/contribution.css">
-        <link href="{{ url_for('static', filename='css/contribution.css') }}"
-            rel="stylesheet">
         <link rel="stylesheet" href="static/css/proofof.css">
         <link href="{{ url_for('static', filename='css/proofof.css') }}"
             rel="stylesheet">
