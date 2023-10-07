@@ -968,8 +968,18 @@ margin-left: 30%;
 }
 
 }
- 
- /*cosas del diagrama IPTG induction*/
+
+
+.tablaODES{
+  font-size: 1vw;
+  width: fit-content;
+  margin: auto;
+}
+
+.formulaTablaODEs{
+  font-size: 1.2vw;
+}
+/*cosas del diagrama IPTG induction*/
  
  .diagramaIPTG{
   position: relative;
@@ -1939,8 +1949,8 @@ margin-left: 30%;
  /*ajuste de numero de las ecuaciones*/
  .NumeroEcuacion{
    position: relative;
-   bottom: 21px;
-   left: 5px;
+   bottom: 2vw;
+   margin: 0;
 }
 
 /*ajuste tabla y colores*/
