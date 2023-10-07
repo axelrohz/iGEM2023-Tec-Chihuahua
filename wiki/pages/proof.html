@@ -158,7 +158,7 @@ endblock %}
                                     <div class="crescent"></div>
                                 </div>
                                 <label for="switch">
-                                    <div class="toggle"></div>
+                                    <div id="button" class="toggle" onclick="change()"></div>
                                     <div class="names">
                                         <p class="light">by experts</p>
                                         <p class="dark">in lab</p>
@@ -198,8 +198,15 @@ endblock %}
                 </div>
             </div>
 
-        </body>
+            <script type="text/javascript">
+                function change() {
 
+                    console.log("Prueba de cambio")
+
+                }
+            </script>
+
+        </body>
     </html>
 
     {% endblock %}
