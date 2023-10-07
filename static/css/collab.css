@@ -201,6 +201,7 @@ button b { font-size:50px; font-weight:800; padding:0; line-height:2em; padding:
   z-index: 1;
   overflow: hidden;
   min-height: 334px;
+  min-height: -webkit-fill-available;
   transition: 0.7s;
 }
 
