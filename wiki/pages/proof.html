@@ -10,11 +10,28 @@ endblock %}
 <html lang="en">
 
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--<link rel="stylesheet" href="../../static/css/body.css">
+        <link rel="stylesheet" href="../../static/css/desc.css">
+        <link rel="stylesheet" href="../../static/css/parallax.css">
+        <link rel="stylesheet" href="../../static/css/parallaxFull.css">
+
+        <link href="{{ url_for('static', filename='css/desc.css') }}"
+            rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/body.css') }}"
+            rel="stylesheet">
+        <link href="{{ url_for('static', filename = 'css/parallax.css') }}"
+            rel="stylesheet">
+        <link href="{{ url_for('static', filename = 'css/parallaxFull.css') }}"
+            rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+
         <script
             src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
         <link rel="stylesheet" href="static/css/waveHead.css">
-        <link rel="stylesheet" href="static/css/contribution.css">
-        <link href="{{ url_for('static', filename='css/contribution.css') }}"
+        <link href="{{ url_for('static', filename='css/waveHead.css') }}"
             rel="stylesheet">
         <link rel="stylesheet" href="static/css/proofof.css">
         <link href="{{ url_for('static', filename='css/proofof.css') }}"
@@ -92,8 +109,6 @@ endblock %}
         </div>
 
         <script src="../../static/assets/js/main.js"></script>
-        <div class="wrap">
-        </div>
 
         <div class="container relative con">
 
@@ -134,8 +149,8 @@ endblock %}
                             <div class="menu">
                                 <div class="time"><b>Validation</b></div>
                                 <div class="icons">
-                                    <div class="network"></div>
-                                    <div class="battery"></div>
+                                    <!--<div class="network"></div>
+                                    <div class="battery"></div>-->
                                 </div>
                             </div>
                             <div class="content">
@@ -143,42 +158,47 @@ endblock %}
                                     <div class="crescent"></div>
                                 </div>
                                 <label for="switch">
-                                    <div class="toggle"></div>
+                                    <div id="button" class="toggle"></div>
                                     <div class="names">
                                         <p class="light">by experts</p>
                                         <p class="dark">in lab</p>
                                     </div>
                                 </label>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <p><br><br><b>Validation by experts: </b>
+                        Donec eget lacinia turpis. Vivamus viverra nulla a arcu
+                        sodales maximus. Aenean mollis est nec odio vestibulum,
+                        ac
+                        interdum lorem consequat. Cras nec maximus quam. Vivamus
+                        lorem nisi, mattis vitae fringilla at, vehicula nec
+                        risus.
+                        Proin faucibus vulputate scelerisque. Vestibulum sit
+                        amet
+                        purus consectetur, mattis nisl eu, dignissim justo.
+                        <br><br>
+                    </p>
+                    <p><b>Laboratory validation: </b>
+                        Curabitur nisi nunc, congue non mauris sed,
+                        lobortis lacinia felis. Suspendisse in dapibus nisl.
+                        Donec
+                        in sem sed nibh pretium congue vitae placerat nulla.
+                        Curabitur aliquet, arcu lacinia placerat fermentum, nunc
+                        urna rhoncus sem, ut interdum mauris felis vel dolor.
+                        Proin
+                        efficitur dignissim dui, ac finibus lacus bibendum eget.
+                        Ut
+                        nisi turpis, tincidunt vel magna at, tempor facilisis
+                        lectus. Aliquam eu rhoncus odio. Duis lacinia sit amet
+                        mauris at tempor.</p>
+
                 </div>
-
-                <p><br><br><b>Validation by experts: </b>
-                    Donec eget lacinia turpis. Vivamus viverra nulla a arcu
-                    sodales maximus. Aenean mollis est nec odio vestibulum, ac
-                    interdum lorem consequat. Cras nec maximus quam. Vivamus
-                    lorem nisi, mattis vitae fringilla at, vehicula nec risus.
-                    Proin faucibus vulputate scelerisque. Vestibulum sit amet
-                    purus consectetur, mattis nisl eu, dignissim justo.
-                    <br><br>
-                </p>
-                <p><b>Laboratory validation: </b>
-                    Curabitur nisi nunc, congue non mauris sed,
-                    lobortis lacinia felis. Suspendisse in dapibus nisl. Donec
-                    in sem sed nibh pretium congue vitae placerat nulla.
-                    Curabitur aliquet, arcu lacinia placerat fermentum, nunc
-                    urna rhoncus sem, ut interdum mauris felis vel dolor. Proin
-                    efficitur dignissim dui, ac finibus lacus bibendum eget. Ut
-                    nisi turpis, tincidunt vel magna at, tempor facilisis
-                    lectus. Aliquam eu rhoncus odio. Duis lacinia sit amet
-                    mauris at tempor.</p>
-
             </div>
-        </div>
 
-    </body>
+        </body>
+    </html>
 
-</html>
-
-{% endblock %}
+    {% endblock %}
