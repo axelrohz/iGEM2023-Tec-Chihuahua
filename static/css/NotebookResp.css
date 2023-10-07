@@ -1,0 +1,26 @@
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .month-container {
+
+        width: auto;
+        font-size: 60%;
+        padding-top: 100%;
+    }
+
+    .slider-content {
+        font-size: 150%;
+
+    }
+
+    .slider-content ul.vinniot {
+        margin-right: 3%;
+    }
+
+
+
+
+}
