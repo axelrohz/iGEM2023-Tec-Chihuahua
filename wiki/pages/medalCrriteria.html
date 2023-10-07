@@ -1,0 +1,937 @@
+{% extends "layoutIndex.html" %}
+
+{% block title %}Parts{% endblock %}
+{% block lead %}We ask every team to think deeply and creatively about whether
+their project is responsible and good for
+the world. Consider how the world affects your work and how your work affects
+the world.{% endblock %}
+
+{% block page_content %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../static/css/body.css">
+  <link rel="stylesheet" href="../../static/css/desc.css">
+  <link rel="stylesheet" href="../../static/css/parallax.css">
+  <link rel="stylesheet" href="../../static/css/parallaxFull.css">
+  <link rel="stylesheet" href="../../static/css/tables.css">
+  <link rel="stylesheet" href="../../static/css/parts.css">
+
+  <link href="{{ url_for('static', filename='bootstrap.min.css') }}" rel="stylesheet">
+  <script src="{{ url_for('static', filename='assets/js/bootstrap.bundle.min.js') }}"></script>
+
+  <script type=”text/javascript”
+    src=”http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML”></script>
+
+  <link href="{{ url_for('static', filename='css/desc.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/body.css') }}" rel="stylesheet">
+  <script src="{{ url_for('static', filename='assets/js/team.js') }}"></script>
+  <link href="{{ url_for('static', filename='css/parts.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename = 'css/parallax.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename = 'css/parallaxFull.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename = 'css/tables.css') }}" rel="stylesheet">
+</head>
+
+<body class="mybody">
+  <img class="parallax-team"
+    src="https://static.igem.wiki/teams/4607/wiki/project-description/whatsapp-image-2023-08-27-at-15-34-55.jpeg">
+  <div class="image-space">
+    <h1 class="title"> Team </h1>
+  </div>
+  <div class="parallax-content">
+    <div class="teamBody">
+      <div class="stickhead">
+        <div class="teamHead">
+          <div class="teamTxt">
+            <h1 class="head">Parts</h1>
+          </div>
+          <svg id="visual" class="wave" viewBox="0 0 450 900" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <path
+              d="M334 900L337.8 878.5C341.7 857 349.3 814 354.5 771.2C359.7 728.3 362.3 685.7 354.3 642.8C346.3 600 327.7 557 319.8 514.2C312 471.3 315 428.7 324.3 385.8C333.7 343 349.3 300 351.3 257.2C353.3 214.3 341.7 171.7 343 128.8C344.3 86 358.7 43 365.8 21.5L373 0L450 0L450 21.5C450 43 450 86 450 128.8C450 171.7 450 214.3 450 257.2C450 300 450 343 450 385.8C450 428.7 450 471.3 450 514.2C450 557 450 600 450 642.8C450 685.7 450 728.3 450 771.2C450 814 450 857 450 878.5L450 900Z"
+              fill="#dbdbdb"></path>
+            <path
+              d="M414 900L406.5 878.5C399 857 384 814 380 771.2C376 728.3 383 685.7 388.8 642.8C394.7 600 399.3 557 397.3 514.2C395.3 471.3 386.7 428.7 384.8 385.8C383 343 388 300 393.5 257.2C399 214.3 405 171.7 403.3 128.8C401.7 86 392.3 43 387.7 21.5L383 0L450 0L450 21.5C450 43 450 86 450 128.8C450 171.7 450 214.3 450 257.2C450 300 450 343 450 385.8C450 428.7 450 471.3 450 514.2C450 557 450 600 450 642.8C450 685.7 450 728.3 450 771.2C450 814 450 857 450 878.5L450 900Z"
+              fill="#f3f5f9"></path>
+          </svg>
+        </div>
+      </div>
+
+      <div class="teamScroll">
+
+        <!--Indez/Menu Bonito-->
+        <div style="margin-left: 2.1%;" class="scrollIndexContain">
+          <div class="stickyIndex">
+            <div class="lineIndex"></div>
+            <div class="indexDots">
+              <div onclick="goTo('1')" class="dotIndex" id="dot1">
+                <div class="dotText">Overview</div>
+              </div>
+              <div class="dotIndex" id="dot2" onclick="goTo('2')">
+                <div class="dotText">Existing Parts Used</div>
+              </div>
+              <div class="dotIndex" id="dot3" onclick="goTo('3')">
+                <div class="dotText">New basic parts</div>
+              </div>
+              <div class="dotIndex" id="dot4" onclick="goTo('4')">
+                <div class="dotText">New Composite Bioparts</div>
+              </div>
+              <div class="dotIndex" id="dot5" onclick="goTo('5')">
+                <div class="dotText">References</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="wrap">
+          <div class="uno">
+            <h1>Step by step, part by part</h1>
+          </div>
+
+          <div class="texthide">
+            
+            
+            
+            <h2 id="sec2">Bronze</h2>
+            <p align="justify">
+            <table class="table-responsive TABLA" align="justify">
+              <thead>
+                <tr>
+                  <th>
+                    <h1>Medal criteria</h1>
+                  </th>
+                  <th>
+                    <h1>Description</h1>
+                  </th>
+                  <th>
+                    <h1> Link</h1>
+                    
+                  </th>
+                 
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  
+                  <td>Competition Deliverables</td>
+                  <td>Complete the following Competition Deliverables: Wiki, Project Promotion Video, Presentation Video, Judging Form, and Judging Session.</td>
+                  <td>bla</td>
+                </tr>
+                  <td>Project Attibutions</td>
+                  <td>Describe what work your team members did and what other people did for your project using the standardized form.</td>
+                  <td>bla</td>
+                <tr>
+                  <td>Project description</td>
+                  <td>Describe how and why you chose your iGEM project.</td>
+                  <td>bla</td>
+               
+                  
+                </tr>
+                  <td>Contribution</td>
+                  <td>Make a useful contribution for future iGEM teams.</td>
+                  <td>bla</td>
+                <tr>
+                  
+                </tr>
+
+              </tbody>
+
+            </table>
+
+            </p>
+
+            <h2 id="sec3">Silver</h2>
+            <br>
+            <p align="justify">
+              <table class="table-responsive TABLA" align="justify">
+                <thead>
+                  <tr>
+                    <th>
+                      <h1>Medal criteria</h1>
+                    </th>
+                    <th>
+                      <h1>Description</h1>
+                    </th>
+                    <th>
+                      <h1> Link</h1>
+                      
+                    </th>
+                   
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    
+                    <td>Competition Deliverables</td>
+                    <td>bla</td>
+                    <td>bla</td>
+                  </tr>
+                  <tr>
+                    
+                    <td>Competition Deliverables</td>
+                    <td>bla</td>
+                    <td>bla</td>
+                  </tr>
+                   
+                    
+                  
+                    
+                  </tr>
+  
+                </tbody>
+  
+              </table>
+  
+            
+
+            </p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p align="justify">
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  LysCSA13-ABD
+                </div>
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    <img src="https://static.igem.wiki/teams/4607/wiki/parts/dn/lyscsa13-abd.png" alt="LysCSA13-ABD ">
+                    <p align="justify"> <small>
+                        <em><strong>Figure 1.</strong></em> LysCSA13-ABD
+                        protein diagram.
+                    </p> </small>
+                    <p align="justify">
+                      The biobrick consists of a fusion protein based on the
+                      endolysin Lys from <em>Staphylococcus aureus</em>
+                      virulent bacteriophage CSA13 which is composed of
+                      three domains: the CHAP domain, with excellent
+                      catalytic activity, up to 90%, degrading almost 15
+                      strains of Staphylococcus, including
+                      methicillin-resistant strains (MRSA) <sup>1</sup> the
+                      SH3 domain, which recognizes and binds to the highly
+                      specific glycine of the pentaglycine cross-bridge
+                      glycosidic bond in the heteropolymer of the S. aureus
+                      peptidoglycan, activating the catalytic domain;<sup>2</sup>
+                      and the albumin binding domain (ABD) from
+                      streptococcal protein G. The ABD is capable of
+                      increasing the antibody, protein, and enzyme
+                      lifetimes. For this to be possible, the ABD binds with
+                      high affinity to serum albumin, creating a large
+                      hydrodynamic volume complex that reduces its
+                      degradation. This section consists of an
+                      affinity-maturated variant of the streptococcal
+                      protein G which has been used for the expression of
+                      LysK in mice, with results of up to 34 hours in
+                      increasing the lifetime of the protein.3 The part is
+                      adapted to the Golden Gate cloning method. This part
+                      also contains a TEV cleavage site for the removal of
+                      the x6 HisTag after the protein purification process.
+                      The enzyme has a length of 316 amino acids and a
+                      molecular weight of 35.098 kDa. It keeps its stability
+                      in a range of 4 to 37 °C and a pH of 7 to 9, and it
+                      has extracellular protein expression. Other
+                      characteristics of the endolysin are that it requires
+                      the presence of calcium and manganese to reach its
+                      maximum catalytic activity. The average endolysin
+                      lifetime is about 30 hours <sup>3</sup>.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  LysK-ABD-SH3B30
+                </div>
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    <img src="https://static.igem.wiki/teams/4607/wiki/parts/dn/lysk-abd.png" alt="LysK-ABD-SH3B30">
+                    <p align="justify"> <small>
+                        <em><strong>Figure 2.</strong></em> LysK-ABD-SH3B30
+                        protein diagram.
+                    </p> </small>
+                    <p align="justify">
+                      The biobrick consists of a fusion of the CHAP domain
+                      from the Lys of the bacteriophage K, with the ability
+                      to degrade the cell wall of antibiotic-resistant
+                      strains of <em>Staphylococcus aureus</em>;<sup>4,5</sup>
+                      the albumin binding domain (ABD) from streptococcal
+                      protein G that is capable of increasing antibody,
+                      protein, and enzyme lifetimes; and the SH3 domain from
+                      the bacteriophage B30, which binds to the cell-wall of
+                      <em>Streptococcus agalactiae, Streptococcus uberis,</em>
+                      and <em>Staphylococcus aureus</em>. The ABD binds with
+                      high affinity to serum albumin, creating a large
+                      hydrodynamic volume complex that reduces its
+                      degradation. The domain consists of an
+                      affinity-maturated variant of the streptococcal
+                      protein G, which has been used for LysK expression
+                      with results of up to 34 hours in increasing the
+                      lifetime of the protein in mice.<sup>3</sup> The
+                      principle of the mechanism of the SH3B30 domain is to
+                      recognize and bind to the highly specific glycine of
+                      the pentaglycine cross-bridge glycosidic bond in the
+                      heteropolymer of the <em>S. aureus, S. agalactiae
+                      </em>and <em>S. uberis</em> peptidoglycan, activating
+                      the catalytic domain. <sup>2,6</sup> The enzyme has a
+                      length of 262 amino acids and a molecular weight of
+                      28.437 kDa. The average ABD- endolysin lifetime is 30
+                      hours.<sup>3</sup> The part is adapted to the Golden
+                      Gate cloning method. This part also contains a x6
+                      HisTag in the C-terminal site, to facilitate its
+                      purification process.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  Albumin binding domain (ABD)
+                </div>
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    <img src="https://static.igem.wiki/teams/4607/wiki/parts/dn/abd.png"
+                      alt="Albumin binding domain (ABD)">
+                    <p align="justify"> <small>
+                        <em><strong>Figure 3.</strong></em> Albumin binding
+                        domain diagram.
+                    </p> </small>
+                    <p align="justify">
+                      The biobrick consists of the albumin binding domain
+                      (ABD) from streptococcal protein G and is capable of
+                      increasing the lifetimes of antibodies, proteins, and
+                      enzymes. For this to be possible, the ABD binds with
+                      high affinity to serum albumin, creating a large
+                      hydrodynamic volume complex that reduces its
+                      degradation. This part consists of an
+                      affinity-maturated variant of the streptococcal
+                      protein G, which has been used for LysK expression
+                      with results of up to 34 hours in increasing the
+                      lifetime of the protein in mice.<sup>3</sup> The
+                      domain has a length of 29 amino acids and a molecular
+                      weight of 3.2388 kDa.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  SH3B30
+                </div>
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    <img src="https://static.igem.wiki/teams/4607/wiki/parts/dn/sh3b30.png" alt="SH3B30">
+                    <p align="justify"> <small>
+                        <em><strong>Figure 4.</strong></em> SH3 domain from
+                        the B30 bacteriophage diagram.
+                    </p> </small>
+                    <p align="justify">
+                      The biobrick consists of the SH3 domain from the
+                      bacteriophage B30, which is capable of recognizing and
+                      binding to the cell wall of <em>Streptococcus
+                        agalactiae, Streptococcus uberis,</em> and <em>Staphylococcus
+                        aureus</em>. For this to be possible, the SH3B30
+                      domain recognizes and binds to the highly specific
+                      glycine of the pentaglycine cross-bridge glycosidic
+                      bond in the heteropolymer of the <em>S. aureus, S.
+                        agalactiae</em> and <em>S. uberis </em>peptidoglycan,
+                      activating the catalytic domain. The enzyme has a
+                      length of 62 amino acids and a molecular weight of
+                      7.162 kDa. It keeps its stability at a range of 4 to
+                      37° C and pH from 7 to 8.2, <sup>6</sup>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  LysCSA13
+                </div>
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    <img src="https://static.igem.wiki/teams/4607/wiki/parts/dn/lyscsa13.png" alt="LysCSA13">
+                    <p align="justify"> <small>
+                        <em><strong>Figure 5.</strong></em> Lys from the
+                        CSA13 bacteriophage diagram.
+                    </p> </small>
+                    <p align="justify">
+                      The biobrick consists of the endolysin Lys from the
+                      <em>Staphylococcus aureus </em>virulent bacteriophage
+                      CSA13, and it is composed of two domains: the CHAP
+                      domain, with an excellent catalytic activity of up to
+                      90%, degrading almost 15 strains of Staphylococcus,
+                      including methicillin-resistant strains (MRSA)1, and
+                      the SH3 domain, which recognizes and binds to the
+                      highly specific glycine of the pentaglycine
+                      cross-bridge glycosidic bond in the heteropolymer of
+                      the <em>S. aureus</em> peptidoglycan, activating the
+                      catalytic domain.<sup>2</sup> The enzyme has a length
+                      of 250 amino acids and a molecular weight of 28.36
+                      kDa. It keeps its stability in a range of 4 to 37 °C
+                      and a pH of 7 to 9, and it has extracellular protein
+                      expression. The average endolysin lifetime is about 20
+                      minutes.<sup>3</sup> The part is adapted to the Golden
+                      Gate cloning method.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  CHAPK from LysK
+                </div>
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    <img src="https://static.igem.wiki/teams/4607/wiki/parts/dn/chapk.png" alt="CHAPK from LysK">
+                    <p align="justify"> <small>
+                        <em><strong>Figure 6.</strong>
+                        </em> CHAPk domain from the k bacteriophage diagram.
+                    </p> </small>
+                    <p align="justify">
+                      The biobrick consists of the CHAPk domain from the Lys
+                      of the bacteriophage K, with the ability to degrade
+                      the cell wall of antibiotic-resistant strains of <em>Staphylococcus
+                        aureus</em><sup>4,5</sup>. The domain expresses in a
+                      soluble fraction and has twice the catalytic activity
+                      of the original enzyme. The principle of its catalytic
+                      activity is the cleavage between the first glycine of
+                      the pentaglycine cross-bridge and D-alanine. The CHAPk
+                      domain contains 125 amino acids and a molecular weight
+                      of 18.6 kDa. It loses its activity at a temperature of
+                      42.5 °C, meaning it denatures, and works at a pH of
+                      6.5 to 7.5.<sup>7</sup>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  PCNP
+                </div>
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    <img src="https://static.igem.wiki/teams/4607/wiki/parts/dn/pcnp.png" alt="PCNP">
+                    <p align="justify"> <small>
+                        <em><strong>Figure 7.</strong>
+                        </em> PCNP peptide diagram.
+                    </p> </small>
+                    <p align="justify">
+                      The biobrick consists of a polycationic nonapeptide
+                      (PCNP) which is capable of destabilizing the
+                      lipopolysaccharide and binding to gram-negative
+                      bateria. The principle of the PCNP is related to the
+                      ionic interactions between the phosphate groups,
+                      divalent cations, and hydrophobic lipids' stacking,
+                      where the PCNP acts as a destabilizing agent. This
+                      part has been fused with endolysins in order to
+                      increase their capability to lyse gram-negative
+                      bacteria, demonstrating that the addition of the PCNP
+                      allows the endolysin introduction into the bacteria's
+                      cell membrane. It has been evaluated in <em>Escherichia
+                        coli</em>. The peptide has a length of nine amino
+                      acids and is adapted with an additional flexible
+                      linker sequence in order to increase its possibility
+                      of being incorporated into new codifying sequences
+                      without affecting the functionality of other parts or
+                      their domains' requirements.<sup> 8 </sup>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  CecA
+                </div>
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    <img src="https://static.igem.wiki/teams/4607/wiki/parts/dn/ceca.png" alt="CecA">
+                    <p align="justify"> <small>
+                        <em><strong>Figure 8.</strong>
+                        </em> CecA peptide diagram.
+                    </p> </small>
+                    <p align="justify">
+                      This biobrick consists of cecropin A (CecA), which was
+                      selected for its ability as an antimicrobial peptide.
+                      CecA has demonstrated excellent capacity for improving
+                      the endolysins antibacterial activity against
+                      gram-negative bacteria when it's incorporated in the
+                      N-terminal region. The principle behind CecA's
+                      antibacterial potential resides in its composition,
+                      which includes a cationic region that facilitates
+                      lipid interactions, favors a stronger ionic
+                      interaction, and finally degrades the cell wall by
+                      damaging bacterial inner membranes. CecA peptide has
+                      been evaluated in gram-negative bacteria as <em>Escherichia
+                        coli</em>. This part has a lenght of 41 amino acids.<sup>9</sup </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  LysSS
+                </div>
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    <img src="https://static.igem.wiki/teams/4607/wiki/parts/dn/lysss.png" alt="LysSS">
+                    <p align="justify"> <small>
+                        <em><strong>Figure 9.</strong>
+                        </em> LysSS protein diagram.
+                    </p> </small>
+                    <p align="justify">
+                      This biobrick consists of the endolysin LysSS from
+                      the bacteriophage SS3e from <em>Salmonella</em> that
+                      has demonstrated antibacterial activity against
+                      gram-negative bacteria as <em>Escherichia coli</em>,
+                      and gram-negative bacteria such as <em>Staphylococcus
+                        aureus</em> including methicillin-resistant
+                      strains. In comparison with other endolysins, LysSS
+                      contains positive charges at the C-terminal region
+                      that destabilize the gram-negative cell membrane.
+                      This part has a length of 173 amino acids and a
+                      molecular weight of 18.56 kDa. LysSS has
+                      intracellular and insoluble protein expression. The
+                      average endolysin lifetime is about 30 hours. The
+                      part is adapted to the Golden Gate cloning method.
+                      <sup>10</sup>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  PCNP-CecA-LysSS
+                </div>
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    <img src="https://static.igem.wiki/teams/4607/wiki/parts/dn/pcnp-ceca-lysss.png"
+                      alt="PCNP-CecA-LysSS">
+                    <p align="justify"> <small>
+                        <em><strong>Figure 10.</strong>
+                        </em> PCNP-CecA-LysSS fusion-protein diagram.
+                    </p> </small>
+                    <p align="justify">
+                      This biobrick consists of a fusion protein based on
+                      three main parts: the polycationic nonapeptide
+                      (PCNP), Cecropin A peptide, and the LysSS protein,
+                      all integrated with flexible linkers that assure its
+                      functionality.The first part, PCNP is capable of
+                      destabilizing the lipopolysaccharide and binding to
+                      gram-negative bacteria. The principle of the PCNP is
+                      related to the ionic interactions between the
+                      phosphate groups, divalent cations, and hydrophobic
+                      lipids' stacking, where the PCNP acts as a
+                      destabilizing agent. This part has been fused with
+                      endolysins in order to increase their capability to
+                      lyse gram-negative bacteria, demonstrating that the
+                      addition of the PCNP allows the endolysin
+                      introduction into the bacteria's cell membrane. It
+                      has been evaluated in <em>Escherichia coli</em>.<sup>8
+                      </sup>
+                      The second part is cecropin A (CecA), which was
+                      selected for its ability as an antimicrobial
+                      peptide. CecA has demonstrated excellent capacity
+                      for improving the endolysins antibacterial activity
+                      against gram-negative bacteria when it's
+                      incorporated in the N-terminal region. The principle
+                      behind CecA's antibacterial potential resides in its
+                      composition, which includes a cationic region that
+                      facilitates lipid interactions, favors a stronger
+                      ionic interaction, and finally degrades the cell
+                      wall by damaging bacterial inner membranes. CecA
+                      peptide has been evaluated in gram-negative bacteria
+                      as <em>Escherichia coli</em>.<sup>9 </sup>
+                      And finally, the endolysin LysSS from the
+                      bacteriophage SS3e from <em>Salmonella</em> that has
+                      demonstrated antibacterial activity against
+                      gram-negative bacteria such as <em>Escherichia coli</em>,
+                      and gram-negative bacteria such as <em>Staphylococcus
+                        aureus</em> including methicillin-resistant
+                      strains. In comparison with other endolysins, LysSS
+                      contains positive charges at the C-terminal region
+                      that destabilize the gram-negative cell membrane.
+                      LysSS has intracellular and insoluble protein
+                      expression. The fusion protein PCNP-CecA-LysSS has a
+                      lenght of 227 amino acids and a molecular weight of
+                      24.359 kDa. <sup>10 </sup>
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            </p>
+            <br>
+            <br>
+
+            <h2 id="sec4">New Composite Bioparts</h2>
+
+            <br>
+            <br>
+            <table class="table-responsive TABLA" align="justify">
+              <thead>
+                <tr>
+                  <th>
+                    <h1>Accession numbers</h1>
+                  </th>
+                  <th>
+                    <h1>Description</h1>
+                  </th>
+                  <th>
+                    <h1>Length (bp) </h1>
+                  </th>
+                  <th>
+                    <h1>Status</h1>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="http://parts.igem.org/Part:BBa_K4607006" class="colorTextoTabla">BBa_K4607006</a></td>
+                  <td><b class="arenarapida">Expression cassette for
+                      LysCSA13-ABD protein</b></td>
+                  <td>3172</td>
+                  <td>In progress</td>
+
+                </tr>
+                <tr>
+                  <td><a href="http://parts.igem.org/Part:BBa_K4607007" class="colorTextoTabla">BBa_K4607007</a></td>
+                  <td><b class="arenarapida">Expression cassette for
+                      LysK-ABD-SH3B30 protein</b></td>
+                  <td>3010</td>
+                  <td>In progress</td>
+                </tr>
+
+                <tr>
+                  <td><a href="http://parts.igem.org/Part:BBa_K4607013" class="colorTextoTabla">BBa_K4607011</a></td>
+                  <td><b class="arenarapida">Expression cassette for
+                      PCNP-CecA-LysSS</b></td>
+                  <td>2905</td>
+                  <td>In progress</td>
+                </tr>
+
+              </tbody>
+            </table>
+            <p>
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  Expression cassette for LysCSA13-ABD protein
+                </div>
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+
+                    <p style="text-align: center;">
+                      <b>Fusion endolysin against <em>S. aureus</em> and
+                        other bacteria who cause bovine mastitis.</b>
+                      <img src="https://static.igem.wiki/teams/4607/wiki/parts/dn/lyscsa13-cassette.png"
+                        alt="LysCSA13-ABD protein">
+                    <p align="center"> <small>
+                        <em><b>Figure 11.</b></em> LysCSA13-ABD protein
+                        diagram.
+                    </p> </small>
+                    <p>
+                      This part contains the linear sequence of the
+                      LysCSA13-ABD (<a href=”http://parts.igem.org/Part:BBa_K4607000”>BBa_K4607000</a>)
+                      nucleotide optimized for <em>E. coli</em>. It
+                      incorporates some of the most efficient biobricks
+                      as described below: the T7 promoter with LacO
+                      regulations BBa_J435350, the medium strength RBS
+                      BBa_Z0262, and the triple terminator BBa_J435371.
+                      For our plasmid construction, we used the high
+                      copy pUC ori /Kan R backbone BBa_J435330. It also
+                      contains the BBa_K4607000 that codifies for a
+                      fusion protein based on the endolysin Lys from
+                      Staphylococcus aureus virulent bacteriophage
+                      CSA13, which have the ability to lyse S. aureus
+                      with very specific targeting and an excellent
+                      catalytic activity.<sup>1,6,3</sup>
+                    </p>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  Expression cassette for LysK-ABD-SH3B30 protein
+                </div>
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+
+                    <p style="text-align: center;">
+                      <b>Fusion endolysin against <em>S. aureus</em>.</b>
+                      <img src="https://static.igem.wiki/teams/4607/wiki/parts/dn/lysk-cassette.png"
+                        alt="LysCSA13-ABD protein">
+                    <p align="justify"> <small>
+                        <em><b>Figure 12.</b></em> LysCSA13-ABD protein
+                        diagram.
+                    </p> </small>
+                    <p>
+                      This part contains the linear sequence of the
+                      LysK-ABD-SH3B30 (<a href=”http://parts.igem.org/Part:BBa_K4607001”>BBa_K4607001</a>)
+                      nucleotide optimized for <em>E. coli</em>. It
+                      incorporates some of the most efficient biobricks
+                      as described below: the T7 promoter with LacO
+                      regulations BBa_J435350, the medium strength RBS
+                      BBa_Z0262, the triple terminator BBa_J435371, and
+                      the high copy pUC ori/Kan R backbone BBa_J435330.
+                      It also contains the BBa_K4607001 that codifies
+                      for a fusion of the CHAP domain from the Lys of
+                      the bacteriophage K, with the ability to degrade
+                      the cell wall of antibiotic-resistant strains of
+                      <em>Staphylococcus aureus</em>, as well as, <em>S.
+                        agalactiae</em> and <em>S. uberis</em>. <sup>4,5,2,6</sup>
+                    </p>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  Expression cassette for PCNP-CecA-LysSS protein
+                </div>
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+
+                    <p style="text-align: center;">
+                      <b>Fusion artilysin against <em>E. coli</em></b>
+                      <img src="https://static.igem.wiki/teams/4607/wiki/parts/dn/lysss-cassette.png"
+                        alt="PCNP-CecA-LysSS">
+                    <p align="justify"> <small>
+                        <em><b>Figure 13.</b></em> PCNP-CecA-LysSS
+                        expression cassette diagram.
+                    </p> </small>
+                    <p>
+                      This part contains the linear sequence of the
+                      PCNP-CecA-LysSS nucleotide optimized for <em>E.
+                        coli</em>. It incorporates some of the most
+                      efficient biobricks as described below: the T7
+                      promoter with LacO regulation, the medium strength
+                      RBS, and the triple terminator. For our plasmid
+                      construction, we used the high copy pUC ori /Kan R
+                      backbone. It also contains a fusion protein based
+                      on three main parts: the polycationic nonapeptide
+                      (PCNP), Cecropin A peptide, and the LysSS protein,
+                      all integrated with flexible linkers that assure
+                      its functionality.
+                    </p>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </p>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="accordion refer">
+              <div class="accordion-item">
+                <div id="sec5" class="accordion-item-header" style="text-align: left;">
+                  References
+                </div>
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+
+                    <p style="text-align: justify;">
+                      1. Cha, Y.; Son, B.; Ryu, S. Effective Removal of
+                      Staphylococcal Biofilms on Various Food Contact
+                      Surfaces by Staphylococcus Aureus Phage Endolysin
+                      LysCSA13. <em>Food Microbiol.</em> <b>2019</b>, <em>84</em>,
+                      103245. https://doi.org/10.1016/j.fm.2019.103245. <br>
+                      2. Lade, H.; Kim, J.-S. Bacterial Targets of
+                      Antibiotics in Methicillin-Resistant Staphylococcus
+                      Aureus. <em>Antibiotics</em> <b>2021</b>, <em>10</em>
+                      (4), 398. https://doi.org/10.3390/antibiotics10040398.
+                      <br>
+                      3. Seijsing, J.; Sobieraj, A. M.; Keller, N.; Shen,
+                      Y.; Zinkernagel, A. S.; Loessner, M. J.; Schmelcher,
+                      M. Improved Biodistribution and Extended Serum
+                      Half-Life of a Bacteriophage Endolysin by Albumin
+                      Binding Domain Fusion.<em> Front. Microbiol. </em><b>2018</b>,
+                      <em>9</em>, 2927.
+                      https://doi.org/10.3389/fmicb.2018.02927.<br>
+                      4. Haddad Kashani, H.; Schmelcher, M.; Sabzalipoor,
+                      H.; Seyed Hosseini, E.; Moniri, R. Recombinant
+                      Endolysins as Potential Therapeutics against
+                      Antibiotic-Resistant Staphylococcus Aureus: Current
+                      Status of Research and Novel Delivery Strategies. <em>Clin.
+                        Microbiol. Rev. </em><b>2018</b>, <em>31</em> (1),
+                      e00071-17. https://doi.org/10.1128/CMR.00071-17.<br>
+                      5. Filatova, L. Y.; Donovan, D. M.; Ishnazarova, N.
+                      T.; Foster-Frey, J. A.; Becker, S. C.; Pugachev, V.
+                      G.; Balabushevich, N. G.; Dmitrieva, N. F.; Klyachko,
+                      N. L. A Chimeric LysK-Lysostaphin Fusion Enzyme Lysing
+                      Staphylococcus Aureus Cells: A Study of Both Kinetics
+                      of Inactivation and Specifics of Interaction with
+                      Anionic Polymers.<em> Appl. Biochem. Biotechnol.</em>
+                      <b>2016</b>, <em>180</em> (3), 544–557.
+                      https://doi.org/10.1007/s12010-016-2115-7. <br>
+                      6. Jarábková, V. SH3 BINDING DOMAINS FROM PHAGE
+                      ENDOLYSINS: HOW TO USE THEM FOR DETECTION OF
+                      GRAM-POSITIVE PATHOGENS. <em>J. Microbiol. Biotechnol.
+                        Food Sci</em>. <b>2020</b>, <em>9</em> (6),
+                      1215–1220.
+                      https://doi.org/10.15414/jmbfs.2020.9.6.1215-1220. <br>
+                      7. Sanz-Gaitero, M.; Keary, R.; Garcia-Doval, C.;
+                      Coffey, A.; Van Raaij, M. J. Crystallization of the
+                      CHAP Domain of the Endolysin from <em>Staphylococcus
+                        Aureus Bacteriophage</em> K. Acta <em>Crystallograph.
+                        Sect. F Struct. Biol. Cryst. Commun. </em> <b>2013</b>,
+                      <em>69</em> (12), 1393–1396.
+                      https://doi.org/10.1107/S1744309113030133. <br>
+                      8. Briers, Y.; Walmagh, M.; Van Puyenbroeck, V.;
+                      Cornelissen, A.; Cenens, W.; Aertsen, A.; Oliveira,
+                      H.; Azeredo, J.; Verween, G.; Pirnay, J.-P.; Miller,
+                      S.; Volckaert, G.; Lavigne, R. Engineered
+                      Endolysin-Based “Artilysins” To Combat
+                      Multidrug-Resistant Gram-Negative Pathogens. <em>mBio</em>
+                      <b>2014</b>, <em>5</em> (4), e01379-14.
+                      https://doi.org/10.1128/mBio.01379-14. <br>
+                      9. Jeong, T.-H.; Hong, H.-W.; Kim, M. S.; Song, M.;
+                      Myung, H. Characterization of Three Different
+                      Endolysins Effective against Gram-Negative Bacteria.
+                      <em>Viruses</em> <b>2023</b>, <em>15</em> (3), 679.
+                      https://doi.org/10.3390/v15030679. <br>
+                      10. Kim, S.; Lee, D.-W.; Jin, J.-S.; Kim, J.
+                      Antimicrobial Activity of LysSS, a Novel Phage
+                      Endolysin, against Acinetobacter Baumannii and
+                      Pseudomonas Aeruginosa. <em>J. Glob. Antimicrob.
+                        Resist.</em> <b>2020</b>, <em>22</em>, 32–39.
+                      https://doi.org/10.1016/j.jgar.2020.01.005. <br>
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <br>
+            <br>
+
+          </div>
+        </div>
+      </div>
+
+      <script type="text/javascript">
+        var dot1 = document.getElementById('dot1');
+        var dot2 = document.getElementById('dot2');
+        var dot3 = document.getElementById('dot3');
+        var dot4 = document.getElementById('dot4');
+        var dot5 = document.getElementById('dot5');
+
+        function goTo(scrollID) {
+          dot1.classList.remove('active');
+          dot2.classList.remove('active');
+          dot3.classList.remove('active');
+          dot4.classList.remove('active');
+          dot5.classList.remove('active');
+          var dot = document.getElementById('dot' + scrollID);
+          dot.classList.add('active');
+          var element = document.getElementById('sec' + scrollID);
+          element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        }
+      </script>
+
+      <script type="text/javascript">
+        var sect1 = document.getElementById('sec1');
+        var sect2 = document.getElementById('sec2');
+        var sect3 = document.getElementById('sec3');
+        var sect4 = document.getElementById('sec4');
+        var sect5 = document.getElementById('sec5');
+
+
+        var dot1 = document.getElementById('dot1');
+        var dot2 = document.getElementById('dot2');
+        var dot3 = document.getElementById('dot3');
+        var dot4 = document.getElementById('dot4');
+        var dot5 = document.getElementById('dot5');
+
+        window.addEventListener('scroll', function () {
+          var sect1top = sect1.getBoundingClientRect().top;
+          var sect2top = sect2.getBoundingClientRect().top;
+          var sect3top = sect3.getBoundingClientRect().top;
+          var sect4top = sect4.getBoundingClientRect().top;
+          var sect5top = sect5.getBoundingClientRect().top;
+          var topPad = 200;
+          if (sect5top - topPad <= topPad) {
+            dot1.classList.remove('active');
+            dot2.classList.remove('active');
+            dot3.classList.remove('active');
+            dot4.classList.remove('active');
+            dot5.classList.add('active');
+          } else if (sect4top - topPad <= topPad) {
+            dot1.classList.remove('active');
+            dot2.classList.remove('active');
+            dot3.classList.remove('active');
+            dot4.classList.add('active');
+            dot5.classList.remove('active');
+          } else if (sect3top - topPad <= topPad) {
+            dot1.classList.remove('active');
+            dot2.classList.remove('active');
+            dot3.classList.add('active');
+            dot4.classList.remove('active');
+            dot5.classList.remove('active');
+          } else if (sect2top - topPad <= topPad) {
+            dot1.classList.remove('active');
+            dot2.classList.add('active');
+            dot3.classList.remove('active');
+            dot4.classList.remove('active');
+            dot5.classList.remove('active');
+          } else if (sect1top - topPad <= topPad) {
+            dot1.classList.add('active');
+            dot2.classList.remove('active');
+            dot3.classList.remove('active');
+            dot4.classList.remove('active');
+            dot5.classList.remove('active');
+          } else {
+            dot1.classList.remove('active');
+            dot2.classList.remove('active');
+            dot3.classList.remove('active');
+            dot4.classList.remove('active');
+            dot5.classList.remove('active');
+          }
+
+        }); 
+      </script>
+
+</body>
+<script>
+  const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+  accordionItemHeaders.forEach(accordionItemHeader => {
+    accordionItemHeader.addEventListener("click", event => {
+
+      accordionItemHeader.classList.toggle("active");
+      const accordionItemBody = accordionItemHeader.nextElementSibling;
+      if (accordionItemHeader.classList.contains("active")) {
+        accordionItemBody.style.maxHeight = "max-content";
+      }
+      else {
+        accordionItemBody.style.maxHeight = 0;
+      }
+
+    });
+  });
+</script>
+<style>
+  .arenarapida {
+    font-family: "Quicksand";
+  }
+</style>
+
+</html>
+
+{% endblock %}
