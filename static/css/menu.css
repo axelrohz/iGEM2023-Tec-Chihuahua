@@ -1,0 +1,282 @@
+:root{
+    --colorENT: #3ad69a;
+    --colorWht: #ffffff;
+   }
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    overflow-x: clip;
+    box-sizing: border-box;
+}
+
+.navBar{
+    width: 100%;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    padding: 8px 0px  ;
+    z-index: 999999;
+    box-shadow: 0px 2px 19px #00000059;
+    transition: 0.4s;
+    
+}
+
+.navBar.colored{
+    background-color: var(--colorENT);
+}
+
+
+.navBarItems{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    padding-right: 20px;
+}
+
+.navBarIcon{
+    width: 200px;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navBarContent{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: calc(100% - 200px);
+    height: 100%;
+    gap: 20px;
+}
+
+.navBarContentItem{
+    height: 100%;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #121213;
+    padding: 0 15px;
+    min-width: 50px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+
+}
+
+.navBarContentItem::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #52b9b1;
+    bottom: 0;
+    left: 50%;
+    text-align: center;
+    text-justify: center;
+    transform: scaleX(0) translate(-50%,0);
+    transform-origin: left;
+    transition: 0.3s;
+}
+.navBar.colored .navBarContent .navBarContentItem{
+    color: var(--colorWht);
+}
+
+.navBar.colored .navBarContent .navBarContentItem:hover, .navBarContentItem:hover{
+    font-size: 16px;
+    color: #52b9b1;
+}
+
+
+.navBarContentItem:hover::after{
+    transform: scaleX(1) translate(-50%,0);
+}
+
+.textNavbar.expand::after{
+    content: "\ea99";
+    font-family: IcoFont;
+    padding-left: 4px;
+}
+
+.navBarContentItem.navExpand .expandBox{
+    position: fixed;
+    left: 50%;
+    top: 70px;
+    transform: translate(-50%,0%);
+    background-color: #ffffff;
+    width: 78vw;
+    height: fit-content;
+    opacity: 1;
+    cursor: default;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    min-height: 0px;
+    max-height: 0px;
+    overflow: hidden;    
+    overflow: clip;
+    z-index: 999998;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    transition: max-height 1.3s, z-index 0s;
+    box-shadow: -1px 15px 14px #00000036;
+
+}
+
+
+@media screen and (max-width: 1250px) {
+    .navBarContentItem.navExpand .expandBox{
+        width: 90vw;
+    }
+}
+
+.fullbox{
+    width: 100%;
+    padding: 10px;
+    height: min-content;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+
+.navBarContentItem.navExpand .expandBox::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #52b9b1;
+    bottom: 0;
+    left: 50%;
+    text-align: center;
+    text-justify: center;
+    transform: scaleX(0) translate(-50%,0);
+    transform-origin: left;
+    transition: 0.3s;
+    
+}
+
+.navBarContentItem.navExpand:hover .expandBox{
+    max-height: 500px;
+    z-index: 999999;
+}
+
+.navBarContentItem.navExpand:hover .expandBox::after{
+    transform: scaleX(1) translate(-50%,0);
+    transition-delay: 0.5s;
+}
+
+.megaMenuItem{
+    width: 45%;
+    max-width: 300px;
+    aspect-ratio: 3/1;
+    display: flex;
+    justify-content:  space-around;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    min-height: auto;
+}
+
+.megaIcon{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+
+.megaContent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    position: relative;
+    height: fit-content;
+}
+
+.megaTitle{
+    width: 100%;
+    height: fit-content;
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: 600;
+    color: #121213;
+    position: relative;
+    text-decoration: none;
+}
+
+.megaText{
+    width: 100%;
+    height: fit-content;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #4a4a4d;
+    position: relative;
+}
+
+.megaMenuItem .megaContent::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #52b9b1;
+    bottom: 0;
+    left: 50%;
+    text-align: center;
+    text-justify: center;
+    transform: scaleX(0) translate(-50%,0);
+    transform-origin: left;
+    transition: 0.3s;
+    
+}
+
+.megaMenuItem:hover .megaContent::after{
+    transform: scaleX(1) translate(-50%,0);
+}
+.navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox{
+    background-color: var(--colorENT);
+}
+
+.navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox .fullbox .megaMenuItem .megaContent .megaTitle, .navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox .fullbox .megaMenuItem .megaContent .megaText{
+    color: var(--colorWht);
+}
+
+
+.navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox .fullbox .megaMenuItem:hover .megaContent .megaTitle, .megaMenuItem:hover .megaContent .megaTitle{
+    color: #52b9b1;
+}
+
+.navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox .fullbox .megaMenuItem:hover .megaContent .megaText, .megaMenuItem:hover .megaContent .megaText{
+    color: #52b9b1;
+}
+
+.big{
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
