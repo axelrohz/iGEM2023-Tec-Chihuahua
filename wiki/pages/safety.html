@@ -594,6 +594,24 @@ function showSlides(n) {
         </div>
       </div>
 
+      <script>
+        const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+        accordionItemHeaders.forEach(accordionItemHeader => {
+          accordionItemHeader.addEventListener("click", event => {
+      
+            accordionItemHeader.classList.toggle("active");
+            const accordionItemBody = accordionItemHeader.nextElementSibling;
+            if (accordionItemHeader.classList.contains("active")) {
+              accordionItemBody.style.maxHeight = "max-content";
+            }
+            else {
+              accordionItemBody.style.maxHeight = 0;
+            }
+      
+          });
+        });
+      </script>
+
       <script type="text/javascript">
         var dot1 = document.getElementById('dot1');
         var dot2 = document.getElementById('dot2');
