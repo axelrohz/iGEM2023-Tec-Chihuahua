@@ -1,1036 +1,1429 @@
 {% extends "layoutIndex.html" %}
 
 
-  
+
 {% block title %}Project Description{% endblock %}
-{block lead}Use of bacteriophage endolysins to offer a nonantibiotic solution to contagious bovine mastitis caused by Staphylococcus aureus and Streptococcus agalactiae.
+{block lead}Use of bacteriophage endolysins to offer a nonantibiotic solution to contagious bovine mastitis caused by
+Staphylococcus aureus and Streptococcus agalactiae.
 {endblock}
 
 {% block page_content %}
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../static/css/body.css">
-    <link rel="stylesheet" href="../../static/css/desc.css">
-    <link rel="stylesheet" href="../../static/css/DescResp.css">
-    <link rel="stylesheet" href="../../static/css/parallax.css">
-    <link rel="stylesheet" href="../../static/css/parallaxFull.css">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../static/css/body.css">
+  <link rel="stylesheet" href="../../static/css/desc.css">
+  <link rel="stylesheet" href="../../static/css/DescResp.css">
+  <link rel="stylesheet" href="../../static/css/parallax.css">
+  <link rel="stylesheet" href="../../static/css/parallaxFull.css">
 
-    <link href="{{ url_for('static', filename='css/desc.css') }}" rel="stylesheet">
-    <link href="{{ url_for('static', filename='css/DescResp.css') }}" rel="stylesheet">
-    <link href="{{ url_for('static', filename='css/body.css') }}" rel="stylesheet">
-    <link href="{{ url_for('static', filename = 'css/parallax.css') }}" rel="stylesheet">
-    <link href="{{ url_for('static', filename = 'css/timeline.css') }}" rel="stylesheet">
-    <link href="{{ url_for('static', filename = 'css/parallaxFull.css') }}" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <script src="{{ url_for('static', filename='assets/js/team.js') }}"></script>
-    <script src="{{ url_for('static', filename='assets/js/desc.js') }}"></script>
+
+  <link href="{{ url_for('static', filename='css/desc.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/DescResp.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/body.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename = 'css/parallax.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename = 'css/timeline.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename = 'css/parallaxFull.css') }}" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="{{ url_for('static', filename='assets/js/team.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/js/desc.js') }}"></script>
 </head>
+
 <body class="mybody">
-    <img class="parallax-team" src="https://static.igem.wiki/teams/4607/wiki/project-description/dsc-0122-2.jpg">
-    <div class="image-space"><h1 class="title"> Team </h1></div>
-    <div class="parallax-content">
-        <div class="teamBody">
-            <div class="stickhead">
-                <div class="teamHead">
-                    <div class="teamTxt">
-                        <h1 class="head">Project Description</h1>
-                    </div>
-                    <svg id="visual" class="wave" viewBox="0 0 450 900" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                        <path d="M334 900L337.8 878.5C341.7 857 349.3 814 354.5 771.2C359.7 728.3 362.3 685.7 354.3 642.8C346.3 600 327.7 557 319.8 514.2C312 471.3 315 428.7 324.3 385.8C333.7 343 349.3 300 351.3 257.2C353.3 214.3 341.7 171.7 343 128.8C344.3 86 358.7 43 365.8 21.5L373 0L450 0L450 21.5C450 43 450 86 450 128.8C450 171.7 450 214.3 450 257.2C450 300 450 343 450 385.8C450 428.7 450 471.3 450 514.2C450 557 450 600 450 642.8C450 685.7 450 728.3 450 771.2C450 814 450 857 450 878.5L450 900Z"
-                            fill="#dbdbdb"></path>
-                        <path d="M414 900L406.5 878.5C399 857 384 814 380 771.2C376 728.3 383 685.7 388.8 642.8C394.7 600 399.3 557 397.3 514.2C395.3 471.3 386.7 428.7 384.8 385.8C383 343 388 300 393.5 257.2C399 214.3 405 171.7 403.3 128.8C401.7 86 392.3 43 387.7 21.5L383 0L450 0L450 21.5C450 43 450 86 450 128.8C450 171.7 450 214.3 450 257.2C450 300 450 343 450 385.8C450 428.7 450 471.3 450 514.2C450 557 450 600 450 642.8C450 685.7 450 728.3 450 771.2C450 814 450 857 450 878.5L450 900Z"
-                            fill="#f3f5f9"></path>
-                    </svg>
-                </div>
-            </div>
-            <div class="teamScroll">
-                <div class="wrap" id="sec1">
-                    <div class="uno">
-                        <h1>Food Safety Starts On The Farm</h1>
-                    </div>
-                    <br>
-                    <div class="containerFrase">
-                      <div class="pfrase">
-                          <p> We aim to contribute to our feeding’s foundation by offering a safe solution to one of the biggest problems of the milk production chain. With a shared commitment, we work in an attempt to reduce food waste and improve quality as well as <b>enhance food safety</b>. This way, AureoBos reveals a new possibility to revolutionize the dairy industry.</p>
-                          <br>
-                          <h5>This will make a difference for dairy farmers in Chihuahua and around the globe.</h5>
-                        </div>
-
-                  </head>
-                  
-                  
-                    <div class="topcardscontainer">
-                      <div class="card" style="text-align: center;">
-                        <div class="card-item">
-                            <img src="" alt="">
-                            <h3>Reduce Milk waste </h3>
-                            <h4><b>How?</b></h4>
-                        </div>
-                        <div class="card-text" >
-                            <p>
-                              We reduce milk waste by swiftly treating mastitis in dairy cattle, minimizing the need to discard milk due to infection or presence of antibiotic residues.
-
-                            </p>
-                        </div>
-                    </div>
-                      <div class="card">
-                  
-                        <div class="card-item">
-                          <img src="" alt="">
-                          <h3>Empower Dairy Farmers</h3>
-                          <h4><b>What?</b></h4>
-                        </div>
-                        <div class="card-text">
-
-                        <p>
-                          We empower dairy farmers by providing an effective and sustainable solution, which enhances animal health and productivity, while reducing production costs, ensuring their long-term success in the dairy industry.
-                        </p>
-                          
-                        </div>
-                  
-                      </div>
-                      <div class="card" style="display: flex; justify-content: center;">
-                        <div class="card-item">
-                            <img src="" alt="">
-                            <h3 style="text-align: center;">Enhance Food Safety</h3>
-                            <h4><b>Why?</b></h4>
-                        </div>
-                        <div class="card-text">
-                            <p>
-                              We enhance food safety to safeguard consumers by reducing antibiotic residues in dairy products and minimizing the risk of antibiotic-resistant pathogens, ensuring healthier and safer food.   
-                            </p>
-                        </div>
-                    </div>
-                    
-                    </div>
-                    <div class="texthide">
-                    <br>
-                    <br>
-                    <h2>AureoBos’ Origin</h2>
-                    <p align="justify" >
-                      In the biggest state of Mexico, Chihuahua, lies our tight-knit team, bound not only by our passion for science but also by our love for our community. One would say the way to someone’s heart is through their stomach, and we are certain about that. Our gastronomy is known worldwide and besides being delicious, it tells the story of the people living in our country. At least in Mexico, our kitchen wouldn’t be complete without a key ingredient: milk. Quesadillas, enchiladas, flan, jamoncillo and numerous delicacies come from this golden liquid. 
-                    </p>
-                    <br>
-                    <p align="justify">
-                      During the project's early stages, we found ourselves inspired by the story of our teammate Alexa. She told us about the challenges her godmother, a dairy farmer, faced daily. This is when we delved into her issues, specifically into 
-                      
-                      <b class="tooltipSignificado">mastitis
-                        <span class="tooltipSignificadoBox">Udder inflammation, characterized by swelling, increased warmth, alterations in milk appearance, and potential systemic illness, results in physiological and/or anatomical changes to the udder.</span>
-                      </b>
-                      
-                    : a common and prevalent disease in dairy cattle. This caught our attention due to its significant multifaceted impact on dairy owners. Motivated by Chihuahua's prominence in the Mexican dairy industry<sup><a href="#referencia1" class="referencias">1</a></sup>, we recognized the global significance of addressing this issue. We were also inspired by the work of previous iGEM teams, particularly the 2017 TU Delft and the 2021 IISER Kolkata teams, whose project focuses on the diagnosis of mastitis. This led us to choose a different path, focusing on developing a non-antibiotic treatment for mastitis.
-                    </p>
-                    <br>
-                    <p align="justify">
-                      Mastitis reduces the quality and quantity of milk produced. Current treatments to eradicate this infection include antibiotics, which force producers to withdraw the milk, affecting their incomes and decreasing even more the supply of this food. Over 6 billion people worldwide trust their nutrition on milk which is rich in high-quality protein and vital nutrients that are easily absorbed by our bodies. These nutrients include fats, fatty acids, carbohydrates, sugars, vitamins, and minerals<sup><a href="#referencia2" class="referencias">2</a></sup> as shown in <b>figure 1</b>.
-                    </p>
-                    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-                    <script type="text/javascript">
-                      google.charts.load("current", {packages:["corechart"]});
-                      google.charts.setOnLoadCallback(drawChart);
-                      function drawChart() {
-                        var data = google.visualization.arrayToDataTable([
-                          ['Task', 'Hours per Day'],
-                          ['Protein',     3.28],
-                          ['Total lipid (fat)',    3.2],
-                          ['Carbohydrate',  4.67],
-                          ['Sugar', 4.81],
-                          ['Minerals', 0.424411002],
-                          ['Vitamins', 0.01821007194],
-                          ['Fatty acids (monounsaturated)', 0.688],
-                          ['Fatty acids (polyunsaturated)', 0.108],
-                          ['Cholesterol', 0.012],
-                          
-
-                        ]);
-                        
-                
-                        var options = {
-                          title: 'Milk nutrients (100g)',
-                          is3D: true,
-                          backgroundColor: "transparent",
-                          colors: ["#5BC5AB", "#C55B75", "#D27063", "#447D9C", "#DE8551"],
-                        };
-                
-                        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
-                        chart.draw(data, options);
-                      }
-                    </script>
-                  </head>
-
-                    <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
-                    <p class="piedefig"><b>Figure 1.</b> Nutrients of whole milk, excluding water.<sup>3</sup></p>
-                    <br>
-                    <h2> Into the Udder: Impact of Bovine Mastitis</h2>
-                    <br>
-                
-                    <br>
-                    <div class="empirecont">
-                        <img src="https://static.igem.wiki/teams/4607/wiki/project-description/empirestate.png" alt="">
-                        <div class="circle">
-                            <div class="empwave"></div>
-                        </div>
-                        <div class="overlay-box">
-                            <p>The amount of milk produced <br> worldwide as of July of 2023 <br> weights as much as <br> 1508.21 Empire State Buildings</p>
-                        </div>    
-                    </div>
-                    <p id="TextoLeche" align="justify" style="margin-left: 50%;">
-                      When we think about milk, we immediately associate it with cows, and that is not very far from reality, although it can also be obtained from buffaloes, camels or  goats. 82% of total world milk is obtained from cattle.<sup>4</sup> About 150 million households worldwide are engaged in dairy farming.<sup>5</sup> In most developing countries, like Mexico, milk production is carried out by smallholders, exerting a significant impact on household livelihoods, food security and nutritional requirements. With an astonishing production of 550,498 thousand metric tons of milk worldwide as of July 2023,<sup>6</sup> the dairy industry stands a major employer worldwide, underscoring the critical importance of udder health. 
-                    </p>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-
-                    <div class="contcauses"> 
-
-                      <h5>Infection Sources</h5>
-                      <p class="piedefig">The limited access and high cost of milk are related to several reasons that contribute to mastitis, as seen below.<sup>7,8</sup></p>
-                      
-                      <div class="contpapa" style="--gradient:linear-gradient(45deg, rgb(197, 91, 117), rgb(215, 148, 168))">
-                        <div class="cause"> 
-                          <h1>Milking equipment</h1>
-                        </div>
-                        <div class="causetxt">
-                          <p> Malfunctioning milking machines can facilitate the reverse flow of bacteria into the udder. They are responsible for 40% of new infections. </p>
-                        </div> 
-                       </div>
-                      
-
-                       <div class="contpapa" style="--gradient:linear-gradient(45deg, rgb(197, 91, 117), rgb(215, 148, 168))">
-                        <div class="cause"> 
-                          <h1>Vectors</h1>
-                        </div>
-                        <div class="causetxt">
-                          <p> Flies transmit Contagious mastitis-causing pathogens as <em>S. Aureus and E. coli</em>. This problem intensifies especially in the summer. </p>
-                        </div> 
-                       </div>
-
-                       <div class="contpapa" style="--gradient:linear-gradient(45deg, rgb(197, 91, 117), rgb(215, 148, 168))">
-                        <div class="cause"> 
-                          <h1>Manual milking</h1>
-                        </div>
-                        <div class="causetxt">
-                          <p> The transfer of bacteria between cows is facilitated by non-disposable gloves and hands of dairy workers. Manual milking has a higher infection rate. </p>
-                        </div> 
-                       </div>
-
-                       <div class="contpapa" style="--gradient:linear-gradient(45deg, rgb(197, 91, 117), rgb(215, 148, 168))">
-                        <div class="cause"> 
-                          <h1>Cows</h1>
-                        </div>
-                        <div class="causetxt">
-                          <p> <em>S. aureus</em> infection is also associated with the purchase of new cows, which can introduce new pathogen strains to the herd.  </p>
-                        </div> 
-                       </div>
-
-                       <div class="contpapa" style="--gradient:linear-gradient(45deg, rgb(197, 91, 117), rgb(215, 148, 168))">
-                        <div class="cause"> 
-                          <h1>Bed material </h1>
-                        </div>
-                        <div class="causetxt">
-                          <p>Transmission of <em>S. uberis</em> can occur from bedding material (soil, sawdust, straw).</p>
-                        </div> 
-                      </div>
-                       
-
-
-                    </div>
-                    
-                    <br>
-
-                    <p>
-                      Specific contagious pathogens stand out as significant contributors, mainly <em>Staphylococcus aureus</em>, <em>Streptococcus agalactiae</em>, and <em>Streptococcus uberis</em> as shown in <b>figure 2</b>,  microorganisms that causes damage on the milking tissue, causing irreversible damage to the cow’s milk peak production. 
-                    </p
-                    <br>
-                    <p align="justify">
-                      <em>S. aureus</em>, the predominant pathogen responsible for bovine mastitis, produces harmful toxins and enzymes. These include protein A, which hinders  antibody recognition by neutrophils; β-lactamase inducing microabscess formation; and TSST-1 (toxic shock syndrome toxin-1), the major cause of toxic shock syndrome characterized by fever, rash and organ failure.<sup>9,10</sup>
-                    </p>
-                    <br>
-                    <p align="justify">
-                      On the other hand, <em>S. agalactiae</em> is adept at forming biofilms and resides in the bovine gastrointestinal tract.<sup>11</sup> Lastly, <em>S. uberis</em> is associated with clinical and sub-clinical infections. It was reported that α-casein and β-casein in milk induce production of biofilms, which help <em>S. uberis</em> to persist under environmental stress and resist antibiotic treatment.<sup>12</sup>
-                    </p>
-
-                    <div class="udderinfocont">
-                      <div class="uddercont">
-                        <div class="udderimgcont">
-                          <div id="ud1" class="udderimg"><img src="https://static.igem.wiki/teams/4607/wiki/project-description/saureus.png" alt=""></div>
-                          <div id="ud2" class="udderimg"><img src="https://static.igem.wiki/teams/4607/wiki/project-description/suberis.png" alt=""></div>
-                          <div id="ud3" class="udderimg"><img src="https://static.igem.wiki/teams/4607/wiki/project-description/sagalactiae.png" alt=""></div>
-                          <div id="ud4" class="udderimg"><img src="https://static.igem.wiki/teams/4607/wiki/project-description/ecoli.png" alt=""></div>
-                          <div id="ud5" class="udderimg active"><img src="https://static.igem.wiki/teams/4607/wiki/project-description/infectedudder.png" alt=""></div>
-                        </div>
-  
-                        <div class="udderbtncont">
-                          <div class="udderbtn1"  style="--gradient:linear-gradient(45deg, rgb(246, 174, 45), rgb(245, 209, 148))" onclick="img1()"> <em>Staphylococcus <br> aureus </em></div>
-                          <div class="udderbtn2"  style="--gradient:linear-gradient(45deg, rgb(68, 125, 156), rgb(156, 184, 203))" onclick="img2()"> <em>Streptococcus <br> uberis</em> </div>
-                          <div class="udderbtn3"  style="--gradient:linear-gradient(45deg, rgb(169, 186, 108), rgb(206, 215, 179))" onclick="img3()"> <em>Streptococcus <br> agalactiae</em> </div>
-                          <div class="udderbtn4"  style="--gradient:linear-gradient(45deg, rgb(197, 91, 117), rgb(215, 148, 168))" onclick="img4()"> <em>Escherichia <br> coli</em> </div>
-                        </div>
-                      </div>
-
-                      <div class="udderimgcont">
-                        <div id="udtxt1" class="uddertxt"><p><em>Staphylococcus aureus</em> is one of the pathogen most feared by dairy farmers. It produces toxins and enzymes that damage milking tissue for life.</p></div>
-                        <div id="udtxt2" class="uddertxt"><p><em>Streptococcus uberis </em> produces alpha and beta casein in milk. By proliferation, they induce the production of biofilms which allows the bacteria to resist antibiotics. It is also very harmful for the host.</p></div>
-                        <div id="udtxt3" class="uddertxt"><p><em>Streptococcus agalactiae</em> is adept at forming biofilms. As mentioned before, bacteria who form biofilms are prone to resist antibiotic treatment.</p></div>
-                        <div id="udtxt4" class="uddertxt"><p><em>Escherichia coli</em> is an environmental bacteria, and its entry to the udder depends on the season.  It has been proved that this microorganism is also very important in bovine mastitis, fact which was later confirmed by our <a>stakeholders</a> </p></div>
-                        <div id="udtxt5" class="uddertxt active"><p>The most common microorganisms known to cause bovine mastitis are three gram-positive bacteria and one gram-negative bacteria. These pathogens are considered of great importance in the dairy farming context because of the irreversible damage they cause on milking tissue.</p></div>
-                      </div>
-
-                      <script>
-                        function img1(){
-                          var ud1 = document.getElementById("ud1");
-                          var ud2 = document.getElementById("ud2");
-                          var ud3 = document.getElementById("ud3");
-                          var ud4 = document.getElementById("ud4");
-                          var ud5 = document.getElementById("ud5");
-                          
-                          ud1.classList.add("active");
-                          ud2.classList.remove("active");
-                          ud3.classList.remove("active");
-                          ud4.classList.remove("active");
-                          ud5.classList.remove("active");
-  
-                          var udtxt1 = document.getElementById("udtxt1");
-                          var udtxt2 = document.getElementById("udtxt2");
-                          var udtxt3 = document.getElementById("udtxt3");
-                          var udtxt4 = document.getElementById("udtxt4");
-                          var udtxt5 = document.getElementById("udtxt5");
-                          
-                          udtxt1.classList.add("active");
-                          udtxt2.classList.remove("active");
-                          udtxt3.classList.remove("active");
-                          udtxt4.classList.remove("active");
-                          udtxt5.classList.remove("active");
-                        }
-                        
-                        function img2(){
-                          var ud1 = document.getElementById("ud1");
-                          var ud2 = document.getElementById("ud2");
-                          var ud3 = document.getElementById("ud3");
-                          var ud4 = document.getElementById("ud4");
-                          var ud5 = document.getElementById("ud5");
-                          
-                          ud2.classList.add("active");
-                          ud1.classList.remove("active");
-                          ud3.classList.remove("active");
-                          ud4.classList.remove("active");
-                          ud5.classList.remove("active");
-                          
-                          var udtxt1 = document.getElementById("udtxt1");
-                          var udtxt2 = document.getElementById("udtxt2");
-                          var udtxt3 = document.getElementById("udtxt3");
-                          var udtxt4 = document.getElementById("udtxt4");
-                          var udtxt5 = document.getElementById("udtxt5");
-                          
-                          udtxt2.classList.add("active");
-                          udtxt1.classList.remove("active");
-                          udtxt3.classList.remove("active");
-                          udtxt4.classList.remove("active");
-                          udtxt5.classList.remove("active");
-                        }
-                        
-                        function img3(){
-                          var ud1 = document.getElementById("ud1");
-                          var ud2 = document.getElementById("ud2");
-                          var ud3 = document.getElementById("ud3");
-                          var ud4 = document.getElementById("ud4");
-                          var ud5 = document.getElementById("ud5");
-                          
-                          ud3.classList.add("active");
-                          ud2.classList.remove("active");
-                          ud1.classList.remove("active");
-                          ud4.classList.remove("active");
-                          ud5.classList.remove("active");
-                          
-                          var udtxt1 = document.getElementById("udtxt1");
-                          var udtxt2 = document.getElementById("udtxt2");
-                          var udtxt3 = document.getElementById("udtxt3");
-                          var udtxt4 = document.getElementById("udtxt4");
-                          var udtxt5 = document.getElementById("udtxt5");
-                          
-                          udtxt3.classList.add("active");
-                          udtxt2.classList.remove("active");
-                          udtxt1.classList.remove("active");
-                          udtxt4.classList.remove("active");
-                          udtxt5.classList.remove("active");
-                        }
-                        
-                        function img4(){
-                          var ud1 = document.getElementById("ud1");
-                          var ud2 = document.getElementById("ud2");
-                          var ud3 = document.getElementById("ud3");
-                          var ud4 = document.getElementById("ud4");
-                          var ud5 = document.getElementById("ud5");
-                          
-                          ud4.classList.add("active");
-                          ud2.classList.remove("active");
-                          ud3.classList.remove("active");
-                          ud1.classList.remove("active");
-                          ud5.classList.remove("active");
-                          
-                          var udtxt1 = document.getElementById("udtxt1");
-                          var udtxt2 = document.getElementById("udtxt2");
-                          var udtxt3 = document.getElementById("udtxt3");
-                          var udtxt4 = document.getElementById("udtxt4");
-                          var udtxt5 = document.getElementById("udtxt5");
-                          
-                          udtxt4.classList.add("active");
-                          udtxt2.classList.remove("active");
-                          udtxt3.classList.remove("active");
-                          udtxt1.classList.remove("active");
-                          udtxt5.classList.remove("active");
-                        }
-                        
-                        function img5(){
-                          var ud1 = document.getElementById("ud1");
-                          var ud2 = document.getElementById("ud2");
-                          var ud3 = document.getElementById("ud3");
-                          var ud4 = document.getElementById("ud4");
-                          var ud5 = document.getElementById("ud5");
-                          
-                          ud5.classList.add("active");
-                          ud2.classList.remove("active");
-                          ud3.classList.remove("active");
-                          ud4.classList.remove("active");
-                          ud1.classList.remove("active");
-                          
-                          var udtxt1 = document.getElementById("udtxt1");
-                          var udtxt2 = document.getElementById("udtxt2");
-                          var udtxt3 = document.getElementById("udtxt3");
-                          var udtxt4 = document.getElementById("udtxt4");
-                          var udtxt5 = document.getElementById("udtxt5");
-                          
-                          udtxt5.classList.add("active");
-                          udtxt2.classList.remove("active");
-                          udtxt3.classList.remove("active");
-                          udtxt4.classList.remove("active");
-                          udtxt1.classList.remove("active");
-                        }
-                      </script>
-
-                    </div>
-
-
-                    
-                    
-                    <p id="pieDiagrama" class="piedefig"><b>Figure 3.</b> <em>S. agalactiae, S. aureus</em> and <em>S. uberis</em> in the mastitis infection.</p>
-                    <br>
-                    
-                    
-                    <p align="justify">
-                      The impact of bovine mastitis extends beyond individual cows. When engaging with our <a class="hipervinculoaqua" href="https://2023.igem.wiki/tec-chihuahua/entrepreneurship">stakeholders</a>, we noticed that the absence of preventive measures such as proper hygiene in both the cowpens and the milking routine significantly raises the risk of infection. Mastitis infections manifest in three forms: subclinical level is when the infection isn't visibly noticeable, and no symptoms can be detected; clinical level is the state, where mastitis symptoms become noticeable, and the cow's milk production decreases; chronic mastitis: This refers to a condition where the infection keeps coming back, and symptoms of clinical level reappears as shown in <b>figure 4</b>. Subclinical mastitis, if not addressed, progresses to clinical stage. Untreated mastitis lowers milk production, increases financial losses, and can harm the cow's udder. Severe cases can even result in cow mortality.<sup>13</sup>
-
-                    </p>
-                    <div>
-                        <div class="hovcont">
-
-                            <div class="hover-card">
-                                <div class="face face1">
-                                    <h10>Chronic Mastitis</h10>
-                                </div>
-                                <div class="face face2">
-                                    <img src="https://static.igem.wiki/teams/4607/wiki/project-description/chronicn.png" alt="Image" class="responsiveimg">
-                                </div>
-                            </div>
-                        
-                            <div class="hover-card2">
-                              <div class="face-2 face1-2">
-                                  <h10>Clinic Mastitis</h10>
-                              </div>
-                              <div class="face-2 face2-2">
-                                  <img src="https://static.igem.wiki/teams/4607/wiki/project-description/clinicaln.png" alt="Image" class="responsiveimg">
-                              </div>
-                            </div>
-                        
-                            <div class="hover-card3">
-                              <div class="face-3 face1-3">
-                                  <h10>Subclinic Mastitis</h10>
-                              </div>
-                              <div class="face-3 face2-3">
-                                  <img src="https://static.igem.wiki/teams/4607/wiki/project-description/subclinicaln.png" alt="Image" class="responsiveimg">
-                              </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <p class="piedefig"> 
-                        <b> Figure 4.</b> Classification of mastitis according to symptoms and signs.
-                    </p>
-                    <br>
-                    <h2>Milk Is Money</h2>
-                    <br>
-                    <p align="justify">
-                      Milk is a valuable commodity worldwide. The global dairy market was valued at 893 billion  USD in 2022,<sup>14</sup> and milk production and consumption have been increasing in the last 5 years. As a result, at least 80% of the world's population consumes dairy products.<sup>15</sup>
-                    </p>
-                    
-                    <div class="note-contain">  
-                      <blockquote class="note pinup"><p>Did you know... <br> Of 7.888 billion of people, about 6.3104 billion consume milk and dairy</p>
-                        
-                    </div>
-                    <br>
-                    <br>
-                    <p id="Bovine" align="justify" style="margin-left: 50%;">
-                      Bovine mastitis  results in substantial expenses encompassing treatment, animal care, and compromised milk yield. Milk composition, quantity, and quality are adversely affected, with enduring consequences such as impaired udders hindering future milk production for affected cows.<sup>8</sup> For both the Mexican dairy sector and global economies, bovine mastitis stands as a leading cause of financial loss, estimated at $200 USD per cow each year.<sup>16</sup> The National Mastitis Council of the United States estimated that losses in this country amount to two billion dollars per year, and an average of 200 dollars per cow per year.<sup>17</sup>  With rising dairy cattle populations, the disease's prevalence is poised to escalate, projecting the bovine mastitis market size to significantly impact the global economy by 2027. According to the research from the University of Glasgow, mastitis is estimated to cost around 19.7 billion dollars to 30 billion USD worldwide; these costs include diagnostics, milk loss, veterinary services, labor, therapeutics, among others.<sup>18</sup>
-                    </p>
-
-                        
-                    <br>
-                    <h2>Conventional Treatments</h2>
-                    <p align="justify">
-                      Mastitis’ primary treatment consists of antibiotics, such as natural or synthetic penicillins. However, overuse of antibiotics in bovine mastitis can trigger resistance and non-response, raising costs and endangering public health.<sup>19</sup>
-                    </p>
-
-                    <div class="antibioticscont">
-                      <h1>Commonly used antibiotics</h1>
-                      <h3>According to our <a class= "hipervinculoaqua" href="https://2023.igem.wiki/tec-chihuahua/human">stakeholders</a></h3>
-                      <span class="antibioticsdot"><p>Penicilin</p>
-                          <img src="https://static.igem.wiki/teams/4607/wiki/project-description/penicilin.png" alt="Penicilin">
-                          <div class="antibioticstxt">  Interviewed small scale producers and veterinay zootechnicians stated that penicilin's use is unmeasured, since it is the most common treatment.</div>
-                      </span>
-                      
-                      <span class="antibioticsdot"><p>Cephalosporins</p>
-                          <img src="https://static.igem.wiki/teams/4607/wiki/project-description/cephalosporin-png.webp" alt="Florfenicol">
-                          <div class="antibioticstxt">  Veterinary Zootechnicians and small producers also mentioned Cephalosporins, which are used because testing doesn´t detect its residues in milk.</div>
-                      </span>
-                  
-                      <span class="antibioticsdot"><p>Ceftiofur</p>
-                        <img src="https://static.igem.wiki/teams/4607/wiki/project-description/ceftiofur-removebg-preview.png" alt="">
-                        <div class="antibioticstxt">Veterinary zootechnicians and small scale producers that mentioned the use of ceftiofur was really frecuent and even the first measure of treatment since it doesn´t require milkdrawal period.</div>
-                      </span>
-                  
-                      <span class="antibioticsdot"><p>Tetracycline</p>
-                        <img src="https://static.igem.wiki/teams/4607/wiki/project-description/tetracycline-removebg-preview.png" alt="">
-                          <div class="antibioticstxt"> Food engineers and veterinary zootchnicians mentioned the use of this antibiotic is avoided because of its milk withdrawal period and its use as infection inhibitor. </div>
-                      </span>
-                    </div>
-
-
-                    <p id="InMexico" align= "justify">
-                     
-                      In Mexico, a wide range of antibiotics as shown in <b>figure 5 </b> are approved by the government for treating mastitis. However, there are several alternative treatments which offer various options to dairy farmers such as intramammary infusion, dry cow therapy, vaccination, bacteriophages, probiotics and herbal remedies. 
-   
-                    </p>
-                    
-
-                    <div class="treatmentscont">
-                      <h1>Avaible treatments</h1>
-                      <h3>According to our <a class= "hipervinculoaqua" href="https://2023.igem.wiki/tec-chihuahua/entrepreneurship">Market Study</a></h3>
-                      <span class="treatmentssdot">
-                          <img src="https://static.igem.wiki/teams/4607/wiki/project-description/aspiration.png" alt="Intramammary Infusion">
-                          <div class="treatmentstxt"><b>Intramammary infusion</b> involves the direct introduction of antibiotics into the udder through the teat canal.</div>
-                      </span>
-
-                      <span class="treatmentssdot">
-                        <img src="https://static.igem.wiki/teams/4607/wiki/project-description/udder.png" alt="Dry cow therapy">
-                        <div class="treatmentstxt"> <b>Dry cow therapy</b> is a proactive approach taken during the dry period (when cows are not lactating). It involves infusing antibiotics into the udder to prevent new mastitis infections from occurring during the upcoming lactation period.</div>
-                      </span>
-
-                      <span class="treatmentssdot">
-                        <img src="https://static.igem.wiki/teams/4607/wiki/project-description/vaccine.png" alt="Vaccination">
-                        <div class="treatmentstxt"> <b>Vaccines</b> are developed to stimulate the cow's immune system to recognize and respond effectively to mastitis-causing pathogens. They aim to reduce the severity and incidence of mastitis over the long term by enhancing the cow's natural defenses</div>
-                      </span>
-
-                      <span class="treatmentssdot">
-                        <img src="https://static.igem.wiki/teams/4607/wiki/project-description/herbal.png" alt="Herbal remedies">
-                        <div class="treatmentstxt"><b>Herbal treatments</b> for mastitis often involve the use of plant-based extracts or compounds with known antimicrobial or anti-inflammatory properties.</div>
-                      </span>
-                      
-                      <span class="treatmentssdot">
-                        <img src="https://static.igem.wiki/teams/4607/wiki/project-description/probiotic.png" alt="Probiotics">
-                        <div class="treatmentstxt"> <b>Probiotics</b> involve the use of beneficial bacteria to restore a healthy microbial balance within the udder. These can outcompete mastitis-causing pathogens, reducing the risk of infection and inflammation.</div>
-                      </span>
-
-                     
-                 
-                    </div>
-                    <p id="InMexico2" align = "justify">
-                      Intramammary infusion of antibiotics is notable for effectively reducing the incidence of mastitis and improving milk quality. Antibiotics, although effective, have the disadvantage of requiring a withdrawal period after administration due to regulatory problems in many countries. This withdrawal period prohibits the collection of milk for human consumption, which leads to economic losses for farmers.<sup>20</sup> The economic impact of mastitis can be considerable. To learn more about the existing solutions as shown in <b>figure 6</b> and the comparison of treatments against AureoBosyou can check our analysis and benchmarking in the <a class="hipervinculoaqua" href="https://2023.igem.wiki/tec-chihuahua/entrepreneurship">entrepreneurship</a> section.  
-                    </p>
-                    <br>
-                    <h2>The Risk Beyond</h2>
-                    <br>
-                    <p align="justify">
-                      Due to their efficacy, antibiotics are still widely used by dairy cattle farmers. However, this widespread use leads to a significant release of antibiotics into milk, which poses a serious threat to human health.<sup>20</sup>
-                    </p>
-                    <p align="justify">
-                      Antibiotic resistance manifests itself innate or acquired, and plasmid-mediated resistance contributes significantly to its dissemination. In addition, bacterial biofilm growth offers protection against the effects of antibiotics, making inappropriate antibiotic stewardship counterproductive and increasing resistance.<sup>21</sup> Despite the inevitability of antimicrobial resistance, the current situation is due to disproportionate and erroneous use of antibiotics.<sup>22</sup>
-                      Alarmingly, about 4.95 million deaths in 2019 were related to bacterial resistance to antibiotics,<sup>23</sup> underscoring the urgency of raising awareness of antibiotic use in our food chain. WHO has declared that antimicrobial resistance is one of the top 10 public health threats facing humanity.<sup>24</sup>  
-                    </p>
-                    
-                    
-                    <br>
-                    <h2>The Landfill</h2>
-                    <br>
-                    <p align="justify">
-                      Discussing mastitis inevitably brings attention to the substantial issue of food wastage. The persistence of food waste remains a significant challenge within the food supply chain, with a staggering one-third of produced nourishment being discarded and approximately 735 million people facing hunger.<sup>25</sup>
-                    </p>
-                    <p align="justify">
-                      Addressing the issue of hunger, tackling dairy industry losses becomes a significant stride in the ongoing battle to eradicate health and nutrition inequality. In the past decade, dairy consumption has seen an increase, however, in our country, milk production is largely dominated by bigger producers, leading to inflated product prices.<sup>1</sup> In response, Aurebos introduces an innovative approach to curbing milk losses and enhancing the availability of dairy derivatives. 
-                    </p>
-                    <br>
-                    <h2>The New Antimicrobial Era: Endolysins</h2>
-                    <br>
-                    <p align="justify">
-                      As previously discussed, three main gram-positive bacteria are frequently linked with mastitis:<em>S. aureus</em>, <em>S. uberis</em>, and <em>S. agalactiae</em>.<sup>26</sup> The prevalence of multidrug-resistant strains, including methicillin-resistant <em>Staphylococcus aureus</em> (MRSA) among gram-positive bacteria is a significant healthcare concern. Consequently, there's a pressing need for new antimicrobial agents.<sup>27</sup> 
-                    </p>
-                    <p>
-                      The most efficient antimicrobial agents come from submicroscopic entities: bacteriophages. Endolysins, which are enzymes present in bacteriophages' double-stranded DNA, capable of breaking down peptidoglycan in bacterial cell walls that lead to the bursting of bacterial cells, facilitating the release of new viral particles. These endolysins demonstrate notable potential as an alternative to antibiotics, displaying specific antimicrobial effects on gram-positive bacteria, even in the presence of antibiotic-resistant strains. AureoBos emerged from the realization that externally applying endolysins to bacterial cell walls leads to peptidoglycan degradation and swift bacterial cell lysis.<sup>28</sup>
-                    </p>
-
-                    <div class="endoinfocont">
-
-
-                      <div class="mechcont">
-                      
-                          <div class="mechimgcont">
-                              <div id="mech1" class="mechimg"><img src="https://static.igem.wiki/teams/4607/wiki/project-description/lysss.png" alt=""></div>
-                              <div id="mech2" class="mechimg"><img src="https://static.igem.wiki/teams/4607/wiki/project-description/lyscsa13.png" alt=""></div>
-                              <div id="mech3" class="mechimg"><img src="https://static.igem.wiki/teams/4607/wiki/project-description/lysk.png" alt=""></div>
-                              <div id="mech4" class="mechimg active"><img src="https://static.igem.wiki/teams/4607/wiki/project-description/mech.png" alt=""></div>
-                          </div>
-                      
-                          <div class="udderbtncont">
-                              <div class="mechbtn1"  style="--gradient:linear-gradient(45deg, rgb(91, 197, 171), rgb(167, 220, 211))" onclick="eimg1()"> <em>LysSS </em> </div>
-                              <div class="mechbtn2"  style="--gradient:linear-gradient(45deg, rgb(91, 197, 171), rgb(167, 220, 211))" onclick="eimg2()"> <em>LysCSA13</em> </div>
-                              <div class="mechbtn3"  style="--gradient:linear-gradient(45deg, rgb(91, 197, 171), rgb(167, 220, 211))" onclick="eimg3()"> <em>LysK</em> </div>
-                          </div>
-                      
-                          <script>
-                            function eimg1(){
-                              var mech1 = document.getElementById("mech1");
-                              var mech2 = document.getElementById("mech2");
-                              var mech3 = document.getElementById("mech3");
-                              var mech4 = document.getElementById("mech4");
-                              
-                              mech1.classList.add("active");
-                              mech2.classList.remove("active");
-                              mech3.classList.remove("active");
-                              mech4.classList.remove("active");
-                              
-                              var mechtxt1 = document.getElementById("mechtxt1");
-                              var mechtxt2 = document.getElementById("mechtxt2");
-                              var mechtxt3 = document.getElementById("mechtxt3");
-                              var mechtxt4 = document.getElementById("mechtxt4");
-                              
-                              mechtxt1.classList.add("active");
-                              mechtxt2.classList.remove("active");
-                              mechtxt3.classList.remove("active");
-                              mechtxt4.classList.remove("active");
-                            }
-                            
-                            function eimg2(){
-                              var mech1 = document.getElementById("mech1");
-                              var mech2 = document.getElementById("mech2");
-                              var mech3 = document.getElementById("mech3");
-                              var mech4 = document.getElementById("mech4");
-                              
-                              mech2.classList.add("active");
-                              mech1.classList.remove("active");
-                              mech3.classList.remove("active");
-                              mech4.classList.remove("active");
-                              
-                              var mechtxt1 = document.getElementById("mechtxt1");
-                              var mechtxt2 = document.getElementById("mechtxt2");
-                              var mechtxt3 = document.getElementById("mechtxt3");
-                              var mechtxt4 = document.getElementById("mechtxt4");
-                              
-                              mechtxt2.classList.add("active");
-                              mechtxt1.classList.remove("active");
-                              mechtxt3.classList.remove("active");
-                              mechtxt4.classList.remove("active");
-                            }
-                            
-                            function eimg3(){
-                              var mech1 = document.getElementById("mech1");
-                              var mech2 = document.getElementById("mech2");
-                              var mech3 = document.getElementById("mech3");
-                              var mech4 = document.getElementById("mech4");
-                              
-                              mech3.classList.add("active");
-                              mech2.classList.remove("active");
-                              mech1.classList.remove("active");
-                              mech4.classList.remove("active");
-                              
-                              var mechtxt1 = document.getElementById("mechtxt1");
-                              var mechtxt2 = document.getElementById("mechtxt2");
-                              var mechtxt3 = document.getElementById("mechtxt3");
-                              var mechtxt4 = document.getElementById("mechtxt4");
-                              
-                              mechtxt3.classList.add("active");
-                              mechtxt2.classList.remove("active");
-                              mechtxt1.classList.remove("active");
-                              mechtxt4.classList.remove("active");
-                            }
-                            
-                            function eimg4(){
-                              var mech1 = document.getElementById("mech1");
-                              var mech2 = document.getElementById("mech2");
-                              var mech3 = document.getElementById("mech3");
-                              var mech4 = document.getElementById("mech4");
-                              
-                              mech4.classList.add("active");
-                              mech2.classList.remove("active");
-                              mech3.classList.remove("active");
-                              mech1.classList.remove("active");
-                              
-                              var mechtxt1 = document.getElementById("mechtxt1");
-                              var mechtxt2 = document.getElementById("mechtxt2");
-                              var mechtxt3 = document.getElementById("mechtxt3");
-                              var mechtxt4 = document.getElementById("mechtxt4");
-                              
-                              mechtxt4.classList.add("active");
-                              mechtxt2.classList.remove("active");
-                              mechtxt3.classList.remove("active");
-                              mechtxt1.classList.remove("active");
-                            }
-                            
-                            </script>
-
-  
-                      </div>
-                      
-                          <div class="mechimgcont">
-                              <div id="mechtxt1" class="mechtxt"><p>LysSS cuts the bond between N-acetylmuramic acid and  N-glucosamine. In our case, we fused this endolysin into an artilysin for it to be capable of weakening the outer membrane of gran-negative bacteria, as <em> Escherichia coli </em></p></div>
-                              <div id="mechtxt2" class="mechtxt"><p>LysCSA13 has an amidase domain, which allows it to cut the bond between N-acetylmuramico acid and L-ala, mainly attacking <em>Staphylococcus aureus</em> </p></div>
-                              <div id="mechtxt3" class="mechtxt"><p>Lys K has two active  lysis domain  amidase and endopeptidase ( is essential to attack <em>Streptococci</em>) which allows it to cover a wide group of microorganisms.The SH3b cell wall binding domain is known to bind to the pentaglycine bridge </p></div>
-                              <div id="mechtxt4" class="mechtxt active"><p> Peptidoglycan is composed of the repeat polymer of the amino sugars N-acetylglucos-amine and N-acetylmuramic acid, linked together by Î²-I,4 glycosidic bonds, and tetrapeptide side chains attached to the lactyl group of the muramic acid by amide bonds. Endolysins bind to carbohydrate sequences that make up teichoic acids, proteins, glycan sequences of peptidoglycan, and choline.In the case of gram-negatives, endolysin have to pass through the cell wall to reach the peptidoglycan layer. Our artilisin has the ability to break through thanks to the incorporated policationic nonapeptide, whose function is to destabilize the cell membrane.</p></div>
-                          </div>
-                      
-                      </div>
-                      
-                      
-                    <br>
-                    <h2>Design</h2>
-                    <br>
-                    <p align="justify">
-                      Grounded in the principles of synthetic biology, our project is fundamentally centered on the bioengineering of recombinant fusion proteins within prokaryotic cells. 
-                    </p>
-                    <p align="justify">
-                      Our approach involves the use of 
-                      
-                      <b class="tooltipSignificado">endolysins
-                        <span class="tooltipSignificadoBox">Bacteriophage-encoded lytic enzymes responsible for breaking down the peptidoglycan within the bacterial cell wall</span>
-                      </b>
-                      
-                      <sup>29</sup> and albumin binding domains, resulting as a product of novel fusion proteins with great antimicrobial potential. Fusion proteins are a novel technology that involve the genetic combination of two or more domains from proteins. This changes its properties according to each component added. One of its main applications is biopharmaceuticals, since the protein can acquire the ability to target specific molecules or cells.<sup>30 </sup>
-                    </p>
-                    <p align="justify">
-                      For gram-positive bacteria, we utilize two endolysins: LysCSA13 and LysK. These endolysins possess distinct components, including the N-terminal catalytic domain and the C-terminal cell wall binding domain, which confers bacterial specificity.<sup>31</sup>
-                    </p>
-                    <p align="justify">
-                      Nevertheless, gram-negative bacteria represent a challenge for endolysins due to the non-permeable lipopolysaccharide layer in their cell wall. Artilysins, endolysins fused with lipopolysaccharide destabilizer peptides, are able to disrupt and penetrate this layer, lysing cells in the process.<sup>32</sup> By fusing endolysin LysSS, polycationic nonapeptide and CeCA, an antimicrobial peptide, artilysins start forming part of our project.
-                    </p>
-                    <p align="justify">
-                      However, a significant limitation is the remarkably short <em>in vivo</em> half-life of these endolysins, lasting only 20 minutes.<sup>33</sup> This brief duration significantly impedes their potential to serve as effective active pharmaceutical agents: it is unfeasible to encompass the entire process of production, purification, distribution, storage, and other essential stages for successful application and market availability. Thus, we aim to extend its half-life by incorporating an albumin-binding domain,  thereby enhancing their viability and potential impact.<sup>34 </sup>
-                    </p>
-                    <p align="justify">
-                      All these enzymes will have a sole purpose: find mastitis causing pathogens in the udder. AureoBos’s mechanism is simple: an alginate chitosan gel solution encapsulating our three endolysins will be injected directly into the udder via intramammary infusion.<sup>35</sup>
-                    </p>
-                    <br>
-                    <h2>Methodology</h2>
-                    <br>
-                    <div>
-                    <div class="blog-card">
-                      <input type="radio" name="select" id="tap-1" checked>
-                      <input type="radio" name="select" id="tap-2">
-                      <input type="radio" name="select" id="tap-3">
-                      <input type="radio" name="select" id="tap-4">
-                      <input type="radio" name="select" id="tap-5">
-                      <input type="radio" name="select" id="tap-6">
-                      <input type="checkbox" id="imgTap">
-             
-                      <div class="sliders">
-                        <label for="tap-1" class="tap tap-1"></label>
-                        <label for="tap-2" class="tap tap-2"></label>
-                        <label for="tap-3" class="tap tap-3"></label>
-                        <label for="tap-4" class="tap tap-4"></label>
-                        <label for="tap-5" class="tap tap-5"></label>
-                        <label for="tap-6" class="tap tap-6"></label>
-                      </div>
-             
-                      <div class="inner-part">
-                        <label for="imgTap" class="img">
-                        <img class="img-1 imgmethodology" src="https://static.igem.wiki/teams/4607/wiki/project-description/solution.png">
-                        </label>
-                        <div class="content-methodology content-methodology-1">
-                          <span class="titleMethodology">Methodology</span>
-                          <div class="textMethodology">
-                            Our product, AureoBos aims to use three recombinant proteins as active ingredients to offer an effective treatment against mastitis and reduce both milk loss and microbial resistance of four of the main mastitis-causing strains. In order to make our project a reality, the following methodology was carried out.
-                          </div>
-                        </div>
-                      </div>
-             
-                      <div class="inner-part">
-                        <label for="imgTap" class="img">
-                        <img class="img-2 imgmethodology" src="https://static.igem.wiki/teams/4607/wiki/project-description/project-description/design-method-desc-prueba.png">
-                        </label>
-                        <div class="content-methodology content-methodology-2">
-                            <span class="titleMethodology">1. Design of our recombinant proteins</span>
-                            <div class="textMethodology">
-                              Three recombinant proteins were engineered for enhanced functionality and purification. Two proteins, LysK and LysCSA13, have lifespan-extending domains, while the third, LysSS, features two additional domains for improved antibacterial action and entry into Gram-negative bacteria. All three constructs contain essential components for accurate translation, purification, and proper folding.
-                            </div>
-                        </div>
-                      </div>
-             
-                      <div class="inner-part">
-                        <label for="imgTap" class="img">
-                        <img class="img-3 imgmethodology" src="https://static.igem.wiki/teams/4607/wiki/project-description/project-description/assembly-desc-methodology.png">
-                        </label>
-                        <div class="content-methodology content-methodology-3">
-                          <span class="titleMethodology">2. Assembly and Identification</span>
-                          <div class="textMethodology">
-                            The coding sequences (CDS) of three recombinant proteins underwent <em>in silico</em> modifications to introduce BsaI enzyme recognition sites. Various components, such as a promoter, RBS, terminator, and backbone, were assembled using SnapGene<sup>®</sup> with the Golden Gate method and BsaI enzyme. Experimental validation included bacterial transformation, antibiotic screening, enzymatic digestion, and electrophoresis to confirm the assembly.
-                          </div>
-                        </div>
-                      </div>
-             
-                      <div class="inner-part">
-                        <label for="imgTap" class="img">
-                          <img class="img-4 imgmethodology" src="https://static.igem.wiki/teams/4607/wiki/project-description/project-description/iptg.png">
-                        </label>
-                        <div class="content-methodology content-methodology-4">
-                          <span class="titleMethodology">3. IPTG Induction</span>
-                          <div class="textMethodology">
-                            After obtaining the constructs, we transformed them into E. coli BL21 (DE3) cells for IPTG induction. We performed induction kinetics at 0.2, 0.5, and 1.0 mM IPTG concentrations for 6 hours, with hourly sample collection. SDS-PAGE on a polyacrylamide gel was used to assess optimal induction conditions, including IPTG concentration and duration.
-                          </div>
-                        </div>
-                      </div>
-             
-                      <div class="inner-part">
-                        <label for="imgTap" class="img">
-                          <img class="img-5 imgmethodology" src="https://static.igem.wiki/teams/4607/wiki/project-description/project-description/purificacion.png">
-                        </label>
-                        <div class="content-methodology content-methodology-5">
-                          <span class="titleMethodology">4. Protein Purification</span>
-                        <div class="textMethodology">
-                          After identifying the optimal induction condition, each endolysin was induced accordingly, followed by metal-affinity chromatography purification, utilizing the 6xHis tags on the proteins for its purification.
-                        </div>
-                        </div>
-                      </div>
-                      <div class="inner-part">
-                        <label for="imgTap" class="img">
-                          <img class="img-6 imgmethodology" src="https://static.igem.wiki/teams/4607/wiki/project-description/project-description/bacterialtests.png">
-                        </label>
-                        <div class="content-methodology content-methodology-6">
-                          <span class="titleMethodology" >5. Bacterial Tests</span>
-                          <div class="textMethodology">
-                            Understanding that the enzymatically active domains of the endolysins target different bonds within the peptidoglycan suggests the potential for synergistic action<sup>36,37 </sup>against bovine mastitis-causing bacteria when used together. Our objective was to identify the most effective combinations and concentrations of endolysins for targeting specific bacteria and optimize these compositions.
-                          </div>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                    <br>
-        
-                    <h2>
-                      The World in Our Project
-                    </h2>
-                    <br>
-                    <p align="justify">
-                      Despite the challenge in quantifying milk loss due to mastitis accurately, our <a class="hipervinculoaqua" href="https://2023.igem.wiki/tec-chihuahua/entrepreneurship">stakeholders</a> emphasize its significant impact. We are dedicated to a noble mission: to pioneer a synthetic biology-based treatment of bovine mastitis using endolysins to counteract food waste and improve food safety. Aiming to minimize milk loss while also addressing the limitations and risks associated with antibiotic use, AureoBos primary goal is to offer an effective, safe alternative benefiting dairy farmers of all sizes. Our vision is simple yet profound: to showcase the antimicrobial potential of endolysins, remarkable proteins that combat antibiotic-resistant strains.<sup>38 </sup>
-                    </p>
-                    <div>
-                    
-                    </div>
-                    <p align="justify">
-                      We embarked on this journey by immersing ourselves in the world of mastitis, actively engaging with stakeholders who shape and are impacted by our project. This field research has become the bedrock of our <a class="hipervinculoaqua" href="https://2023.igem.wiki/tec-chihuahua/Lab">laboratory</a> work, providing us with invaluable insights that by mathematical modeling the lifecyle of our solution guides our path to success. Each step we took was enhanced by the concerns, needs, and knowledge shared by our stakeholders. We envision our treatment transcending as a startup. We offer a solution that addresses the multifaceted challenges faced by local, national, and international dairy farmers, making a meaningful contribution to their well-being and sustainability.
-  
-                    </p>
-                    <img id="Taffy" style="height: 500px; width: auto; margin-left:15%;" src="https://static.igem.wiki/teams/4607/wiki/project-description/images/caminoaureobos-1-photoroom-png-photoroom.png"></img>
-                    
-                    <p>
-                      Aureobos’ mission aligns with an anti-waste focus, acknowledging the importance of Sustainable Development Goal 2: Zero Hunger<sup>39</sup>, helping through the collection of safe and nutritious milk. Our responsibility to preserve Chihuahua's culture fuels our commitment to effect positive and sustainable changes both locally and beyond. Our project exemplifies how synthetic biology, an unfamiliar field to many, can significantly contribute to community well-being. Through genetic engineering and biotechnological tools, we aim to combat bovine mastitis, benefiting local industries and advancing scientific knowledge. Aureobos showcases how synthetic biology can propel wellness progress. The team draws inspiration from our stakeholders’ contributions and strives to create a brighter, healthier future for the dairy industry and the global community.
-                    </p>
-                    <br>
-                    <br>
-                    <div class="accordion-item">
-                      <div class="accordion-item-header">
-                        References
-                      </div>
-                      <div class="accordion-item-body">
-                        <div class="accordion-item-body-content">
-                          <p align="justify" id="referencia1">            
-                            (1)	SIAP. <em>Escenario Mensual de Productos Agroalimentarios</em>; Secretaría de Agricultura y Desarrollo Rural, 2022. https://www.gob.mx/cms/uploads/attachment/file/744355/Leche_de_bovino_Junio.pdf.
-                          </p>
-                          <p align="justify" id="referencia2">            
-                            (2)	Górska-Warsewicz, H.; Rejman, K.; Laskowski, W.; Czeczotko, M. Milk and Dairy Products and Their Nutritional Contribution to the Average Polish Diet. <em>Nutrients</em> <b>2019</b>, <em>11</em> (8), 1771. https://doi.org/10.3390/nu11081771.
-                          </p>
-                          <p align="justify">            
-                            (3)	FoodData Central; USDA. Milk, Whole, 2020. https://fdc.nal.usda.gov/fdc-app.html#/food-details/1097512/nutrients.
-                          </p>
-                          <p align="justify">            
-                            (4) Faccia, M.; D’Alessandro, A. G.; Summer, A.; Hailu, Y. Milk Products from Minor Dairy Species: A Review. <em>Animals</em> <b>2020</b>, <em>10</em> (8), 1260. https://doi.org/10.3390/ani10081260.
-
-                          </p>
-                          <p align="justify">            
-                            (5)	FAO. <em>Gateway to dairy production and products</em>. Food and Agriculture Organization of the United Nations. https://www.fao.org/dairy-production-products/production/en/ (accessed 2023-08-02).
-                          </p>
-                          <p align="justify">            
-                            (6)	Foreign Agricultural Service; USDA. <em>Dairy: World Markets and Trade</em>; Global Market Analysis; 2023. https://apps.fas.usda.gov/psdonline/circulars/dairy.pdf.
-                          </p>
-                          <p align="justify">            
-                            (7)	Adesogan, A. T.; Dahl, G. E. MILK Symposium Introduction: Dairy Production in Developing Countries. <em>Journal of Dairy Science</em> <b>2020</b>, <em>103</em> (11), 9677–9680. https://doi.org/10.3168/jds.2020-18313.
-
-                          </p>
-                          <p align="justify">            
-                            (8)	Sharun, K.; Dhama, K.; Tiwari, R.; Gugjoo, M. B.; Iqbal Yatoo, Mohd.; Patel, S. K.; Pathak, M.; Karthik, K.; Khurana, S. K.; Singh, R.; Puvvala, B.; Amarpal; Singh, R.; Singh, K. P.; Chaicumpa, W. Advances in Therapeutic and Managemental Approaches of Bovine Mastitis: A Comprehensive Review. <em>Veterinary Quarterly</em> <b>2021</b> ,<em>41</em> (1), 107–136. https://doi.org/10.1080/01652176.2021.1882713.
-
-                          </p>
-                          <p align="justify">            
-                            (9)	Algharib, S. A.; Dawood, A.; Xie, S. Nanoparticles for Treatment of Bovine Staphylococcus Aureus Mastitis. <em>Drug Delivery</em> <b>2020</b>, <em>27</em> (1), 292–308. https://doi.org/10.1080/10717544.2020.1724209.
-                          </p>
-                          <p align="justify">            
-                            (10) Babić, M.; Pajić, M.; Nikolić, A.; Teodorović, V.; Mirilović, M.; Milojević, L.; Velebit, B. Expression of Toxic Shock Syndrome Toxin-1 Gene of Staphylococcus Aureus in Milk: Proof of Concept. <em>Mljekarstvo</em> <b>2018</b>, 12–20. https://doi.org/10.15567/mljekarstvo.2018.0102.
-
-                          </p>
-                          <p align="justify">            
-                            (11)	Abd El-Aziz, N. K.; Ammar, A. M.; El-Naenaeey, E. Y. M.; El Damaty, H. M.; Elazazy, A. A.; Hefny, A. A.; Shaker, A.; Eldesoukey, I. E. Antimicrobial and Antibiofilm Potentials of Cinnamon Oil and Silver Nanoparticles against Streptococcus Agalactiae Isolated from Bovine Mastitis: New Avenues for Countering Resistance. <em>BMC Vet Res</em> <b>2021</b>, <em>17</em> (1), 136. https://doi.org/10.1186/s12917-021-02842-9.
-                          </p>
-                          <p align="justify">            
-                            (12)	Varhimo, E.; Varmanen, P.; Fallarero, A.; Skogman, M.; Pyörälä, S.; Iivanainen, A.; Sukura, A.; Vuorela, P.; Savijoki, K. Alpha- and β-Casein Components of Host Milk Induce Biofilm Formation in the Mastitis Bacterium Streptococcus Uberis. <em>Veterinary Microbiology</em> <b>2011</b>, <em>149</em> (3–4), 381–389. https://doi.org/10.1016/j.vetmic.2010.11.010.
-
-                          </p>
-                          <p align="justify">            
-                            (13)	Cheng, W. N.; Han, S. G. Bovine Mastitis: Risk Factors, Therapeutic Strategies, and Alternative Treatments - A Review. <em>Asian-Australas J Anim Sci</em> <b>2020</b>, <em>33</em> (11), 1699–1713. https://doi.org/10.5713/ajas.20.0156.
-                          </p>
-                          <p align="justify">            
-                            (14)	IMARC Group. <em>Global Dairy Market: Industry Trends, Share, Size, Growth, Opportunity and Forecast 2023-2028</em>; Market Research Report SR112023A703; IMARC Group, 2022. https://www.imarcgroup.com/global-dairy-market. 
-                          </p>
-                          <p align="justify">            
-                            (15)	FAO; GDP. <em>limate Change and the Global Dairy Cattle Sector – The Role of the Dairy Sector in a Low-Carbon Future</em>C; Rome, 2018; p 36 pp. https://www.fao.org/3/CA2929EN/ca2929en.pdf.
-                          </p>
-                          <p align="justify">            
-                            (16)	Quintana, A. <em>Impacto económico de la mastitis en la productividad del ganadero lechero</em>. BM Editores, SA de CV. https://bmeditores.mx/ganaderia/impacto-economico-de-la-mastitis-en-la-productividad-del-ganadero-lechero/ (accessed 2023-07-26).
-                          </p>
-                          <p align="justify">            
-                            (17)	Soca, M.; Suárez, Y.; Soca, M.; Pestano, M.; Puron, C. Evaluación Epizootiológica de La Mastitis Bovina En Dos Unidades Ganaderas de La Empresa Pecuaria “El Cangre.” <em>REDVET. Relectrónica de Veterinaria</em> <b>2005</b>, VI (8), 1–10.
-                          </p>
-                          <p align="justify">            
-                            (18)	Fortune Business Insights. <em>Bovine Mastitis Market Size, Share & COVID-19 Impact Analysis, By Type (Clinical, and Sub-Clinical), By Product (Antibiotics, and Others), By Route of Administration (Intra-Mammary, and Systemic), By Therapy (Lactating Period and Dry Period {Antibiotics , and Others}) and Regional Forecast, 2020–2027</em>; Bovine Mastitis Market; Market Research Report FBI103482; Fortune Business Insights: Global, 2020; p 150. https://www.fortunebusinessinsights.com/bovine-mastitis-market-103482.
-                          </p>
-                          <p align="justify">            
-                            (19)	Gomes, F.; Henriques, M. Control of Bovine Mastitis: Old and Recent Therapeutic Approaches. <em>Curr Microbiol</em> <b>2016</b>,<em>72</em> (4), 377–382. https://doi.org/10.1007/s00284-015-0958-8.
-                          </p>
-                          <p align="justify">            
-                            (20)	Sachi, S.; Ferdous, J.; Sikder, M. H.; Azizul Karim Hussani, S. M. Antibiotic Residues in Milk: Past, Present, and Future. <em>J Adv Vet Anim Res</em> <b>2019</b>, <em>6</em> (3), 315–332. https://doi.org/10.5455/javar.2019.f350.
-                          </p>
-                          <p align="justify">            
-                            (21)	Palma, E.; Tilocca, B.; Roncada, P. Antimicrobial Resistance in Veterinary Medicine: An Overview. <em>Int J Mol Sci</em> <b>2020</b>, <em>21</em> (6), 1914. https://doi.org/10.3390/ijms21061914.
-
-                          </p>
-                          <p align="justify">            
-                            (22)	Jonas, O.; Irwin, A.; Berthe, F.; Le Gall, F.; Marquez, P. <em>Drug-Resistant Infections : A Threat to Our Economic Future (Vol. 2) : Final Report</em>; Final Report 114679; World Bank, 2017. https://documents.worldbank.org/en/publication/documents-reports/documentdetail/323311493396993758/final-report.
-                          </p>
-                          <p align="justify">            
-                           (23)	Murray, C. J. L.; Ikuta, K. S.; Sharara, F.; Swetschinski, L.; Robles Aguilar, G.; Gray, A.; Han, C.; Bisignano, C.; Rao, P.; Wool, E.; Johnson, S. C.; Browne, A. J.; Chipeta, M. G.; Fell, F.; Hackett, S.; Haines-Woodhouse, G.; Kashef Hamadani, B. H.; Kumaran, E. A. P.; McManigal, B.; Achalapong, S.; Agarwal, R.; Akech, S.; Albertson, S.; Amuasi, J.; Andrews, J.; Aravkin, A.; Ashley, E.; Babin, F.-X.; Bailey, F.; Baker, S.; Basnyat, B.; Bekker, A.; Bender, R.; Berkley, J. A.; Bethou, A.; Bielicki, J.; Boonkasidecha, S.; Bukosia, J.; Carvalheiro, C.; Castañeda-Orjuela, C.; Chansamouth, V.; Chaurasia, S.; Chiurchiù, S.; Chowdhury, F.; Clotaire Donatien, R.; Cook, A. J.; Cooper, B.; Cressey, T. R.; Criollo-Mora, E.; Cunningham, M.; Darboe, S.; Day, N. P. J.; De Luca, M.; Dokova, K.; Dramowski, A.; Dunachie, S. J.; Duong Bich, T.; Eckmanns, T.; Eibach, D.; Emami, A.; Feasey, N.; Fisher-Pearson, N.; Forrest, K.; Garcia, C.; Garrett, D.; Gastmeier, P.; Giref, A. Z.; Greer, R. C.; Gupta, V.; Haller, S.; Haselbeck, A.; Hay, S. I.; Holm, M.; Hopkins, S.; Hsia, Y.; Iregbu, K. C.; Jacobs, J.; Jarovsky, D.; Javanmardi, F.; Jenney, A. W. J.; Khorana, M.; Khusuwan, S.; Kissoon, N.; Kobeissi, E.; Kostyanev, T.; Krapp, F.; Krumkamp, R.; Kumar, A.; Kyu, H. H.; Lim, C.; Lim, K.; Limmathurotsakul, D.; Loftus, M. J.; Lunn, M.; Ma, J.; Manoharan, A.; Marks, F.; May, J.; Mayxay, M.; Mturi, N.; Munera-Huertas, T.; Musicha, P.; Musila, L. A.; Mussi-Pinhata, M. M.; Naidu, R. N.; Nakamura, T.; Nanavati, R.; Nangia, S.; Newton, P.; Ngoun, C.; Novotney, A.; Nwakanma, D.; Obiero, C. W.; Ochoa, T. J.; Olivas-Martinez, A.; Olliaro, P.; Ooko, E.; Ortiz-Brizuela, E.; Ounchanum, P.; Pak, G. D.; Paredes, J. L.; Peleg, A. Y.; Perrone, C.; Phe, T.; Phommasone, K.; Plakkal, N.; Ponce-de-Leon, A.; Raad, M.; Ramdin, T.; Rattanavong, S.; Riddell, A.; Roberts, T.; Robotham, J. V.; Roca, A.; Rosenthal, V. D.; Rudd, K. E.; Russell, N.; Sader, H. S.; Saengchan, W.; Schnall, J.; Scott, J. A. G.; Seekaew, S.; Sharland, M.; Shivamallappa, M.; Sifuentes-Osornio, J.; Simpson, A. J.; Steenkeste, N.; Stewardson, A. J.; Stoeva, T.; Tasak, N.; Thaiprakong, A.; Thwaites, G.; Tigoi, C.; Turner, C.; Turner, P.; Van Doorn, H. R.; Velaphi, S.; Vongpradith, A.; Vongsouvath, M.; Vu, H.; Walsh, T.; Walson, J. L.; Waner, S.; Wangrangsimakul, T.; Wannapinij, P.; Wozniak, T.; Young Sharma, T. E. M. W.; Yu, K. C.; Zheng, P.; Sartorius, B.; Lopez, A. D.; Stergachis, A.; Moore, C.; Dolecek, C.; Naghavi, M. Global Burden of Bacterial Antimicrobial Resistance in 2019: A Systematic Analysis. <em>The Lancet</em> <b>2022</b>, <em>399</em>(10325), 629–655. https://doi.org/10.1016/S0140-6736(21)02724-0. 
-                          </p>
-                          <p align="justify">            
-                            (24)	WHO. <em>Resistencia a los antimicrobianos</em>. https://www.who.int/es/news-room/fact-sheets/detail/antimicrobial-resistance (accessed 2023-08-22).
-                          </p>
-                          <p align="justify">            
-                            (25)	FAO, I. <em>The State of Food Security and Nutrition in the World 2023: Urbanization, Agrifood Systems Transformation and Healthy Diets across the Rural–Urban Continuum</em>; The State of Food Security and Nutrition in the World (SOFI); FAO,  IFAD,  UNICEF,  WFP,  WHO: Rome, Italy, 2023. https://doi.org/10.4060/cc3017en.
-                          </p>
-                          <p align="justify">            
-                            (26)	Tomanić, D.; Samardžija, M.; Kovačević, Z. Alternatives to Antimicrobial Treatment in Bovine Mastitis Therapy: A Review. <em>Antibiotics</em> <b>2023</b>, <em>12</em> (4), 683. https://doi.org/10.3390/antibiotics12040683.
-                          </p>
-                          <p align="justify">            
-                            (27)	Liu, H.; Hu, Z.; Li, M.; Yang, Y.; Lu, S.; Rao, X. Therapeutic Potential of Bacteriophage Endolysins for Infections Caused by Gram-Positive Bacteria. <em>J Biomed Sci</em> <b>2023</b>, <em>30</em> (1), 29. https://doi.org/10.1186/s12929-023-00919-1.
-
-                          </p>
-                          <p align="justify">            
-                            (28)	Borysowski, J.; Weber-Dąbrowska, B.; Górski, A. Bacteriophage Endolysins as a Novel Class of Antibacterial Agents. <em>Exp Biol Med (Maywood)</em> <b>2006</b>, <em>231</em> (4), 366–377. https://doi.org/10.1177/153537020623100402.
-                          </p>
-                          <p align="justify">            
-                            (29)	Oliveira, H.; Azeredo, J.; Lavigne, R.; Kluskens, Leon. D. Bacteriophage Endolysins as a Response to Emerging Foodborne Pathogens. <em>Trends in Food Science & Technology</em> <b>2012</b>, <em>28</em> (2), 103–115. https://doi.org/10.1016/j.tifs.2012.06.016.
-                          </p>
-                          <p align="justify">            
-                            (30)	Taylor, R. J.; Geeson, M. B.; Journeaux, T.; Bernardes, G. J. L. Chemical and Enzymatic Methods for Post-Translational Protein–Protein Conjugation. <em>J. Am. Chem. Soc.</em> <b>2022</b>, <em>144</em> (32), 14404–14419. https://doi.org/10.1021/jacs.2c00129.
-                          </p>
-                          <p align="justify">            
-                            (31)	Fernández, L.; González, S.; Campelo, A. B.; Martínez, B.; Rodríguez, A.; García, P. Downregulation of Autolysin-Encoding Genes by Phage-Derived Lytic Proteins Inhibits Biofilm Formation in Staphylococcus Aureus. <em>Antimicrob Agents Chemother</em> <b>2017</b>, <em>61</em> (5), e02724-16. https://doi.org/10.1128/AAC.02724-16.
-                          </p>
-                          <p align="justify">            
-                            (32)	Briers, Y.; Walmagh, M.; Van Puyenbroeck, V.; Cornelissen, A.; Cenens, W.; Aertsen, A.; Oliveira, H.; Azeredo, J.; Verween, G.; Pirnay, J.-P.; Miller, S.; Volckaert, G.; Lavigne, R. Engineered Endolysin-Based “Artilysins” To Combat Multidrug-Resistant Gram-Negative Pathogens. <em>mBio </em><b>2014</b>, <em>5</em> (4), 10.1128/mbio.01379-14. https://doi.org/10.1128/mbio.01379-14.
-                          </p>
-                          <p align="justify">            
-                            (33)	Resch, G.; Moreillon, P.; Fischetti, V. A. PEGylating a Bacteriophage Endolysin Inhibits Its Bactericidal Activity. <em>AMB Express</em> <b>2011</b>, <em>1</em>, 29. https://doi.org/10.1186/2191-0855-1-29.
-                          </p>
-                          <p align="justify">            
-                            (34)	Seijsing, J.; Sobieraj, A. M.; Keller, N.; Shen, Y.; Zinkernagel, A. S.; Loessner, M. J.; Schmelcher, M. Improved Biodistribution and Extended Serum Half-Life of a Bacteriophage Endolysin by Albumin Binding Domain Fusion. <em>Front Microbiol</em> <b>2018</b>, <em>9</em>, 2927. https://doi.org/10.3389/fmicb.2018.02927.
-                          </p>
-                          <p align="justify">            
-                            (35)	Kaur, J.; Kour, A.; Panda, J. J.; Harjai, K.; Chhibber, S. Exploring Endolysin-Loaded Alginate-Chitosan Nanoparticles as Future Remedy for Staphylococcal Infections. <em>AAPS PharmSciTech</em> <b>2020</b>, <em>21</em> (6), 233. https://doi.org/10.1208/s12249-020-01763-4.
-
-                          </p>
-                          <p align="justify">            
-                            (36)	Schmelcher, M.; Powell, A. M.; Camp, M. J.; Pohl, C. S.; Donovan, D. M. Synergistic Streptococcal Phage ΛSA2 and B30 Endolysins Kill Streptococci in Cow Milk and in a Mouse Model of Mastitis. <em>Appl Microbiol Biotechnol</em> <b>2015</b>, <em>99</em> (20), 8475–8486. https://doi.org/10.1007/s00253-015-6579-0.
-
-                          </p>
-                          <p align="justify">            
-                            (37)	Loeffler, J. M.; Fischetti, V. A. Synergistic Lethal Effect of a Combination of Phage Lytic Enzymes with Different Activities on Penicillin-Sensitive and -Resistant <em>Streptococcus Pneumoniae Strains. Antimicrob Agents Chemother</em> <b>2003</b>, <em>47</em> (1), 375–377. https://doi.org/10.1128/AAC.47.1.375-377.2003.
-                          </p>
-                          <p align="justify">            
-                            (38)	Rahman, M. U.; Wang, W.; Sun, Q.; Shah, J. A.; Li, C.; Sun, Y.; Li, Y.; Zhang, B.; Chen, W.; Wang, S. Endolysin, a Promising Solution against Antimicrobial Resistance. <em>Antibiotics</em> <b>2021</b>, <em>10</em> (11), 1277. https://doi.org/10.3390/antibiotics10111277.
-                          </p>
-                          <p align="justify">            
-                            (39)	Martin. <em>Goal 2: Zero Hunger</em>. United Nations Sustainable Development. https://www.un.org/sustainabledevelopment/hunger/ (accessed 2023-08-16).
-                          </p>
-
-                        </div>
-                      </div>
-                    </div>
-                  
-                    
-                    <br>
-
-
-
-
-                </div>
-                <script>
-                  const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
-                
-                accordionItemHeaders.forEach(accordionItemHeader => {
-                  accordionItemHeader.addEventListener("click", event => {
-                    
-                    // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
-                    
-                    // const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
-                    // if(currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader!==accordionItemHeader) {
-                    //   currentlyActiveAccordionItemHeader.classList.toggle("active");
-                    //   currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
-                    // }
-                
-                    accordionItemHeader.classList.toggle("active");
-                    const accordionItemBody = accordionItemHeader.nextElementSibling;
-                    if(accordionItemHeader.classList.contains("active")) {
-                      accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
-                    }
-                    else {
-                      accordionItemBody.style.maxHeight = 0;
-                    }
-                    
-                  });
-                });
-                </script>
-                <br>
-                </div>
-            </div>
+  <img class="parallax-team" src="https://static.igem.wiki/teams/4607/wiki/project-description/dsc-0122-2.jpg">
+  <div class="image-space">
+    <h1 class="title"> Team </h1>
+  </div>
+  <div class="parallax-content">
+    <div class="teamBody">
+      <div class="stickhead">
+        <div class="teamHead">
+          <div class="teamTxt">
+            <h1 class="head">Project Description</h1>
+          </div>
+          <svg id="visual" class="wave" viewBox="0 0 450 900" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <path
+              d="M334 900L337.8 878.5C341.7 857 349.3 814 354.5 771.2C359.7 728.3 362.3 685.7 354.3 642.8C346.3 600 327.7 557 319.8 514.2C312 471.3 315 428.7 324.3 385.8C333.7 343 349.3 300 351.3 257.2C353.3 214.3 341.7 171.7 343 128.8C344.3 86 358.7 43 365.8 21.5L373 0L450 0L450 21.5C450 43 450 86 450 128.8C450 171.7 450 214.3 450 257.2C450 300 450 343 450 385.8C450 428.7 450 471.3 450 514.2C450 557 450 600 450 642.8C450 685.7 450 728.3 450 771.2C450 814 450 857 450 878.5L450 900Z"
+              fill="#dbdbdb"></path>
+            <path
+              d="M414 900L406.5 878.5C399 857 384 814 380 771.2C376 728.3 383 685.7 388.8 642.8C394.7 600 399.3 557 397.3 514.2C395.3 471.3 386.7 428.7 384.8 385.8C383 343 388 300 393.5 257.2C399 214.3 405 171.7 403.3 128.8C401.7 86 392.3 43 387.7 21.5L383 0L450 0L450 21.5C450 43 450 86 450 128.8C450 171.7 450 214.3 450 257.2C450 300 450 343 450 385.8C450 428.7 450 471.3 450 514.2C450 557 450 600 450 642.8C450 685.7 450 728.3 450 771.2C450 814 450 857 450 878.5L450 900Z"
+              fill="#f3f5f9"></path>
+          </svg>
         </div>
+      </div>
+      <div class="teamScroll">
+        <div class="wrap" id="sec1">
+          <div class="uno">
+            <h1>Food Safety Starts On The Farm</h1>
+          </div>
+          <br>
+          <div class="containerFrase">
+            <div class="pfrase">
+              <p> We aim to contribute to our feeding’s foundation by offering a safe solution to one of the biggest
+                problems of the milk production chain. With a shared commitment, we work in an attempt to reduce food
+                waste and improve quality as well as <b>enhance food safety</b>. This way, AureoBos reveals a new
+                possibility to revolutionize the dairy industry.</p>
+              <br>
+              <h5>This will make a difference for dairy farmers in Chihuahua and around the globe.</h5>
+            </div>
+
+            </head>
+
+
+            <div class="topcardscontainer">
+              <div class="card" style="text-align: center;">
+                <div class="card-item">
+                  <img src="" alt="">
+                  <h3>Reduce Milk waste </h3>
+                  <h4><b>How?</b></h4>
+                </div>
+                <div class="card-text">
+                  <p>
+                    We reduce milk waste by swiftly treating mastitis in dairy cattle, minimizing the need to discard
+                    milk due to infection or presence of antibiotic residues.
+
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+
+                <div class="card-item">
+                  <img src="" alt="">
+                  <h3>Empower Dairy Farmers</h3>
+                  <h4><b>What?</b></h4>
+                </div>
+                <div class="card-text">
+
+                  <p>
+                    We empower dairy farmers by providing an effective and sustainable solution, which enhances animal
+                    health and productivity, while reducing production costs, ensuring their long-term success in the
+                    dairy industry.
+                  </p>
+
+                </div>
+
+              </div>
+              <div class="card" style="display: flex; justify-content: center;">
+                <div class="card-item">
+                  <img src="" alt="">
+                  <h3 style="text-align: center;">Enhance Food Safety</h3>
+                  <h4><b>Why?</b></h4>
+                </div>
+                <div class="card-text">
+                  <p>
+                    We enhance food safety to safeguard consumers by reducing antibiotic residues in dairy products and
+                    minimizing the risk of antibiotic-resistant pathogens, ensuring healthier and safer food.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+            <div class="texthide">
+              <br>
+              <br>
+              <h2>AureoBos’ Origin</h2>
+              <p align="justify">
+                In the biggest state of Mexico, Chihuahua, lies our tight-knit team, bound not only by our passion for
+                science but also by our love for our community. One would say the way to someone’s heart is through
+                their stomach, and we are certain about that. Our gastronomy is known worldwide and besides being
+                delicious, it tells the story of the people living in our country. At least in Mexico, our kitchen
+                wouldn’t be complete without a key ingredient: milk. Quesadillas, enchiladas, flan, jamoncillo and
+                numerous delicacies come from this golden liquid.
+              </p>
+              <br>
+              <p align="justify">
+                During the project's early stages, we found ourselves inspired by the story of our teammate Alexa. She
+                told us about the challenges her godmother, a dairy farmer, faced daily. This is when we delved into her
+                issues, specifically into
+
+                <b class="tooltipSignificado">mastitis
+                  <span class="tooltipSignificadoBox">Udder inflammation, characterized by swelling, increased warmth,
+                    alterations in milk appearance, and potential systemic illness, results in physiological and/or
+                    anatomical changes to the udder.</span>
+                </b>
+
+                : a common and prevalent disease in dairy cattle. This caught our attention due to its significant
+                multifaceted impact on dairy owners. Motivated by Chihuahua's prominence in the Mexican dairy
+                industry<sup><a href="#referencia1" class="referencias">1</a></sup>, we recognized the global
+                significance of addressing this issue. We were also inspired by the work of previous iGEM teams,
+                particularly the 2017 TU Delft and the 2021 IISER Kolkata teams, whose project focuses on the diagnosis
+                of mastitis. This led us to choose a different path, focusing on developing a non-antibiotic treatment
+                for mastitis.
+              </p>
+              <br>
+              <p align="justify">
+                Mastitis reduces the quality and quantity of milk produced. Current treatments to eradicate this
+                infection include antibiotics, which force producers to withdraw the milk, affecting their incomes and
+                decreasing even more the supply of this food. Over 6 billion people worldwide trust their nutrition on
+                milk which is rich in high-quality protein and vital nutrients that are easily absorbed by our bodies.
+                These nutrients include fats, fatty acids, carbohydrates, sugars, vitamins, and minerals<sup><a
+                    href="#referencia2" class="referencias">2</a></sup> as shown in <b>figure 1</b>.
+              </p>
+              <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+              <script type="text/javascript">
+                google.charts.load("current", { packages: ["corechart"] });
+                google.charts.setOnLoadCallback(drawChart);
+                function drawChart() {
+                  var data = google.visualization.arrayToDataTable([
+                    ['Task', 'Hours per Day'],
+                    ['Protein', 3.28],
+                    ['Total lipid (fat)', 3.2],
+                    ['Carbohydrate', 4.67],
+                    ['Sugar', 4.81],
+                    ['Minerals', 0.424411002],
+                    ['Vitamins', 0.01821007194],
+                    ['Fatty acids (monounsaturated)', 0.688],
+                    ['Fatty acids (polyunsaturated)', 0.108],
+                    ['Cholesterol', 0.012],
+
+
+                  ]);
+
+
+                  var options = {
+                    title: 'Milk nutrients (100g)',
+                    is3D: true,
+                    backgroundColor: "transparent",
+                    colors: ["#5BC5AB", "#C55B75", "#D27063", "#447D9C", "#DE8551"],
+                  };
+
+                  var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+                  chart.draw(data, options);
+                }
+              </script>
+              </head>
+
+              <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
+              <p class="piedefig"><b>Figure 1.</b> Nutrients of whole milk, excluding water.<sup>3</sup></p>
+              <br>
+              <h2> Into the Udder: Impact of Bovine Mastitis</h2>
+              <br>
+
+              <br>
+              <div class="empirecont">
+                <img src="https://static.igem.wiki/teams/4607/wiki/project-description/empirestate.png" alt="">
+                <div class="circle">
+                  <div class="empwave"></div>
+                </div>
+                <div class="overlay-box">
+                  <p>The amount of milk produced <br> worldwide as of July of 2023 <br> weights as much as <br> 1508.21
+                    Empire State Buildings</p>
+                </div>
+              </div>
+              <p id="TextoLeche" align="justify" style="margin-left: 50%;">
+                When we think about milk, we immediately associate it with cows, and that is not very far from reality,
+                although it can also be obtained from buffaloes, camels or goats. 82% of total world milk is obtained
+                from cattle.<sup>4</sup> About 150 million households worldwide are engaged in dairy
+                farming.<sup>5</sup> In most developing countries, like Mexico, milk production is carried out by
+                smallholders, exerting a significant impact on household livelihoods, food security and nutritional
+                requirements. With an astonishing production of 550,498 thousand metric tons of milk worldwide as of
+                July 2023,<sup>6</sup> the dairy industry stands a major employer worldwide, underscoring the critical
+                importance of udder health.
+              </p>
+              <br>
+              <br>
+              <br>
+              <br>
+
+              <div class="contcauses">
+
+                <h5>Infection Sources</h5>
+                <p class="piedefig">The limited access and high cost of milk are related to several reasons that
+                  contribute to mastitis, as seen below.<sup>7,8</sup></p>
+
+                <div class="contpapa" style="--gradient:linear-gradient(45deg, rgb(197, 91, 117), rgb(215, 148, 168))">
+                  <div class="cause">
+                    <h1>Milking equipment</h1>
+                  </div>
+                  <div class="causetxt">
+                    <p> Malfunctioning milking machines can facilitate the reverse flow of bacteria into the udder. They
+                      are responsible for 40% of new infections. </p>
+                  </div>
+                </div>
+
+
+                <div class="contpapa" style="--gradient:linear-gradient(45deg, rgb(197, 91, 117), rgb(215, 148, 168))">
+                  <div class="cause">
+                    <h1>Vectors</h1>
+                  </div>
+                  <div class="causetxt">
+                    <p> Flies transmit Contagious mastitis-causing pathogens as <em>S. Aureus and E. coli</em>. This
+                      problem intensifies especially in the summer. </p>
+                  </div>
+                </div>
+
+                <div class="contpapa" style="--gradient:linear-gradient(45deg, rgb(197, 91, 117), rgb(215, 148, 168))">
+                  <div class="cause">
+                    <h1>Manual milking</h1>
+                  </div>
+                  <div class="causetxt">
+                    <p> The transfer of bacteria between cows is facilitated by non-disposable gloves and hands of dairy
+                      workers. Manual milking has a higher infection rate. </p>
+                  </div>
+                </div>
+
+                <div class="contpapa" style="--gradient:linear-gradient(45deg, rgb(197, 91, 117), rgb(215, 148, 168))">
+                  <div class="cause">
+                    <h1>Cows</h1>
+                  </div>
+                  <div class="causetxt">
+                    <p> <em>S. aureus</em> infection is also associated with the purchase of new cows, which can
+                      introduce new pathogen strains to the herd. </p>
+                  </div>
+                </div>
+
+                <div class="contpapa" style="--gradient:linear-gradient(45deg, rgb(197, 91, 117), rgb(215, 148, 168))">
+                  <div class="cause">
+                    <h1>Bed material </h1>
+                  </div>
+                  <div class="causetxt">
+                    <p>Transmission of <em>S. uberis</em> can occur from bedding material (soil, sawdust, straw).</p>
+                  </div>
+                </div>
+
+
+
+              </div>
+
+              <br>
+
+              <p>
+                Specific contagious pathogens stand out as significant contributors, mainly <em>Staphylococcus
+                  aureus</em>, <em>Streptococcus agalactiae</em>, and <em>Streptococcus uberis</em> as shown in
+                <b>figure 2</b>, microorganisms that causes damage on the milking tissue, causing irreversible damage to
+                the cow’s milk peak production.
+              </p <br>
+              <p align="justify">
+                <em>S. aureus</em>, the predominant pathogen responsible for bovine mastitis, produces harmful toxins
+                and enzymes. These include protein A, which hinders antibody recognition by neutrophils; β-lactamase
+                inducing microabscess formation; and TSST-1 (toxic shock syndrome toxin-1), the major cause of toxic
+                shock syndrome characterized by fever, rash and organ failure.<sup>9,10</sup>
+              </p>
+              <br>
+              <p align="justify">
+                On the other hand, <em>S. agalactiae</em> is adept at forming biofilms and resides in the bovine
+                gastrointestinal tract.<sup>11</sup> Lastly, <em>S. uberis</em> is associated with clinical and
+                sub-clinical infections. It was reported that α-casein and β-casein in milk induce production of
+                biofilms, which help <em>S. uberis</em> to persist under environmental stress and resist antibiotic
+                treatment.<sup>12</sup>
+              </p>
+
+              <div class="udderinfocont">
+                <div class="uddercont">
+                  <div class="udderimgcont">
+                    <div id="ud1" class="udderimg"><img
+                        src="https://static.igem.wiki/teams/4607/wiki/project-description/saureus.png" alt=""></div>
+                    <div id="ud2" class="udderimg"><img
+                        src="https://static.igem.wiki/teams/4607/wiki/project-description/suberis.png" alt=""></div>
+                    <div id="ud3" class="udderimg"><img
+                        src="https://static.igem.wiki/teams/4607/wiki/project-description/sagalactiae.png" alt=""></div>
+                    <div id="ud4" class="udderimg"><img
+                        src="https://static.igem.wiki/teams/4607/wiki/project-description/ecoli.png" alt=""></div>
+                    <div id="ud5" class="udderimg active"><img
+                        src="https://static.igem.wiki/teams/4607/wiki/project-description/infectedudder.png" alt="">
+                    </div>
+                  </div>
+
+                  <div class="udderbtncont">
+                    <div class="udderbtn1"
+                      style="--gradient:linear-gradient(45deg, rgb(246, 174, 45), rgb(245, 209, 148))" onclick="img1()">
+                      <em>Staphylococcus <br> aureus </em></div>
+                    <div class="udderbtn2"
+                      style="--gradient:linear-gradient(45deg, rgb(68, 125, 156), rgb(156, 184, 203))" onclick="img2()">
+                      <em>Streptococcus <br> uberis</em> </div>
+                    <div class="udderbtn3"
+                      style="--gradient:linear-gradient(45deg, rgb(169, 186, 108), rgb(206, 215, 179))"
+                      onclick="img3()"> <em>Streptococcus <br> agalactiae</em> </div>
+                    <div class="udderbtn4"
+                      style="--gradient:linear-gradient(45deg, rgb(197, 91, 117), rgb(215, 148, 168))" onclick="img4()">
+                      <em>Escherichia <br> coli</em> </div>
+                  </div>
+                </div>
+
+                <div class="udderimgcont">
+                  <div id="udtxt1" class="uddertxt">
+                    <p><em>Staphylococcus aureus</em> is one of the pathogen most feared by dairy farmers. It produces
+                      toxins and enzymes that damage milking tissue for life.</p>
+                  </div>
+                  <div id="udtxt2" class="uddertxt">
+                    <p><em>Streptococcus uberis </em> produces alpha and beta casein in milk. By proliferation, they
+                      induce the production of biofilms which allows the bacteria to resist antibiotics. It is also very
+                      harmful for the host.</p>
+                  </div>
+                  <div id="udtxt3" class="uddertxt">
+                    <p><em>Streptococcus agalactiae</em> is adept at forming biofilms. As mentioned before, bacteria who
+                      form biofilms are prone to resist antibiotic treatment.</p>
+                  </div>
+                  <div id="udtxt4" class="uddertxt">
+                    <p><em>Escherichia coli</em> is an environmental bacteria, and its entry to the udder depends on the
+                      season. It has been proved that this microorganism is also very important in bovine mastitis, fact
+                      which was later confirmed by our <a>stakeholders</a> </p>
+                  </div>
+                  <div id="udtxt5" class="uddertxt active">
+                    <p>The most common microorganisms known to cause bovine mastitis are three gram-positive bacteria
+                      and one gram-negative bacteria. These pathogens are considered of great importance in the dairy
+                      farming context because of the irreversible damage they cause on milking tissue.</p>
+                  </div>
+                </div>
+
+                <script>
+                  function img1() {
+                    var ud1 = document.getElementById("ud1");
+                    var ud2 = document.getElementById("ud2");
+                    var ud3 = document.getElementById("ud3");
+                    var ud4 = document.getElementById("ud4");
+                    var ud5 = document.getElementById("ud5");
+
+                    ud1.classList.add("active");
+                    ud2.classList.remove("active");
+                    ud3.classList.remove("active");
+                    ud4.classList.remove("active");
+                    ud5.classList.remove("active");
+
+                    var udtxt1 = document.getElementById("udtxt1");
+                    var udtxt2 = document.getElementById("udtxt2");
+                    var udtxt3 = document.getElementById("udtxt3");
+                    var udtxt4 = document.getElementById("udtxt4");
+                    var udtxt5 = document.getElementById("udtxt5");
+
+                    udtxt1.classList.add("active");
+                    udtxt2.classList.remove("active");
+                    udtxt3.classList.remove("active");
+                    udtxt4.classList.remove("active");
+                    udtxt5.classList.remove("active");
+                  }
+
+                  function img2() {
+                    var ud1 = document.getElementById("ud1");
+                    var ud2 = document.getElementById("ud2");
+                    var ud3 = document.getElementById("ud3");
+                    var ud4 = document.getElementById("ud4");
+                    var ud5 = document.getElementById("ud5");
+
+                    ud2.classList.add("active");
+                    ud1.classList.remove("active");
+                    ud3.classList.remove("active");
+                    ud4.classList.remove("active");
+                    ud5.classList.remove("active");
+
+                    var udtxt1 = document.getElementById("udtxt1");
+                    var udtxt2 = document.getElementById("udtxt2");
+                    var udtxt3 = document.getElementById("udtxt3");
+                    var udtxt4 = document.getElementById("udtxt4");
+                    var udtxt5 = document.getElementById("udtxt5");
+
+                    udtxt2.classList.add("active");
+                    udtxt1.classList.remove("active");
+                    udtxt3.classList.remove("active");
+                    udtxt4.classList.remove("active");
+                    udtxt5.classList.remove("active");
+                  }
+
+                  function img3() {
+                    var ud1 = document.getElementById("ud1");
+                    var ud2 = document.getElementById("ud2");
+                    var ud3 = document.getElementById("ud3");
+                    var ud4 = document.getElementById("ud4");
+                    var ud5 = document.getElementById("ud5");
+
+                    ud3.classList.add("active");
+                    ud2.classList.remove("active");
+                    ud1.classList.remove("active");
+                    ud4.classList.remove("active");
+                    ud5.classList.remove("active");
+
+                    var udtxt1 = document.getElementById("udtxt1");
+                    var udtxt2 = document.getElementById("udtxt2");
+                    var udtxt3 = document.getElementById("udtxt3");
+                    var udtxt4 = document.getElementById("udtxt4");
+                    var udtxt5 = document.getElementById("udtxt5");
+
+                    udtxt3.classList.add("active");
+                    udtxt2.classList.remove("active");
+                    udtxt1.classList.remove("active");
+                    udtxt4.classList.remove("active");
+                    udtxt5.classList.remove("active");
+                  }
+
+                  function img4() {
+                    var ud1 = document.getElementById("ud1");
+                    var ud2 = document.getElementById("ud2");
+                    var ud3 = document.getElementById("ud3");
+                    var ud4 = document.getElementById("ud4");
+                    var ud5 = document.getElementById("ud5");
+
+                    ud4.classList.add("active");
+                    ud2.classList.remove("active");
+                    ud3.classList.remove("active");
+                    ud1.classList.remove("active");
+                    ud5.classList.remove("active");
+
+                    var udtxt1 = document.getElementById("udtxt1");
+                    var udtxt2 = document.getElementById("udtxt2");
+                    var udtxt3 = document.getElementById("udtxt3");
+                    var udtxt4 = document.getElementById("udtxt4");
+                    var udtxt5 = document.getElementById("udtxt5");
+
+                    udtxt4.classList.add("active");
+                    udtxt2.classList.remove("active");
+                    udtxt3.classList.remove("active");
+                    udtxt1.classList.remove("active");
+                    udtxt5.classList.remove("active");
+                  }
+
+                  function img5() {
+                    var ud1 = document.getElementById("ud1");
+                    var ud2 = document.getElementById("ud2");
+                    var ud3 = document.getElementById("ud3");
+                    var ud4 = document.getElementById("ud4");
+                    var ud5 = document.getElementById("ud5");
+
+                    ud5.classList.add("active");
+                    ud2.classList.remove("active");
+                    ud3.classList.remove("active");
+                    ud4.classList.remove("active");
+                    ud1.classList.remove("active");
+
+                    var udtxt1 = document.getElementById("udtxt1");
+                    var udtxt2 = document.getElementById("udtxt2");
+                    var udtxt3 = document.getElementById("udtxt3");
+                    var udtxt4 = document.getElementById("udtxt4");
+                    var udtxt5 = document.getElementById("udtxt5");
+
+                    udtxt5.classList.add("active");
+                    udtxt2.classList.remove("active");
+                    udtxt3.classList.remove("active");
+                    udtxt4.classList.remove("active");
+                    udtxt1.classList.remove("active");
+                  }
+                </script>
+
+              </div>
+
+
+
+
+              <p id="pieDiagrama" class="piedefig"><b>Figure 3.</b> <em>S. agalactiae, S. aureus</em> and <em>S.
+                  uberis</em> in the mastitis infection.</p>
+              <br>
+
+
+              <p align="justify">
+                The impact of bovine mastitis extends beyond individual cows. When engaging with our <a
+                  class="hipervinculoaqua"
+                  href="https://2023.igem.wiki/tec-chihuahua/entrepreneurship">stakeholders</a>, we noticed that the
+                absence of preventive measures such as proper hygiene in both the cowpens and the milking routine
+                significantly raises the risk of infection. Mastitis infections manifest in three forms: subclinical
+                level is when the infection isn't visibly noticeable, and no symptoms can be detected; clinical level is
+                the state, where mastitis symptoms become noticeable, and the cow's milk production decreases; chronic
+                mastitis: This refers to a condition where the infection keeps coming back, and symptoms of clinical
+                level reappears as shown in <b>figure 4</b>. Subclinical mastitis, if not addressed, progresses to
+                clinical stage. Untreated mastitis lowers milk production, increases financial losses, and can harm the
+                cow's udder. Severe cases can even result in cow mortality.<sup>13</sup>
+
+              </p>
+              <div>
+                <div class="hovcont">
+
+                  <div class="hover-card">
+                    <div class="face face1">
+                      <h10>Chronic Mastitis</h10>
+                    </div>
+                    <div class="face face2">
+                      <img src="https://static.igem.wiki/teams/4607/wiki/project-description/chronicn.png" alt="Image"
+                        class="responsiveimg">
+                    </div>
+                  </div>
+
+                  <div class="hover-card2">
+                    <div class="face-2 face1-2">
+                      <h10>Clinic Mastitis</h10>
+                    </div>
+                    <div class="face-2 face2-2">
+                      <img src="https://static.igem.wiki/teams/4607/wiki/project-description/clinicaln.png" alt="Image"
+                        class="responsiveimg">
+                    </div>
+                  </div>
+
+                  <div class="hover-card3">
+                    <div class="face-3 face1-3">
+                      <h10>Subclinic Mastitis</h10>
+                    </div>
+                    <div class="face-3 face2-3">
+                      <img src="https://static.igem.wiki/teams/4607/wiki/project-description/subclinicaln.png"
+                        alt="Image" class="responsiveimg">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <p class="piedefig">
+                <b> Figure 4.</b> Classification of mastitis according to symptoms and signs.
+              </p>
+              <br>
+              <h2>Milk Is Money</h2>
+              <br>
+              <p align="justify">
+                Milk is a valuable commodity worldwide. The global dairy market was valued at 893 billion USD in
+                2022,<sup>14</sup> and milk production and consumption have been increasing in the last 5 years. As a
+                result, at least 80% of the world's population consumes dairy products.<sup>15</sup>
+              </p>
+
+              <div class="note-contain">
+                <blockquote class="note pinup">
+                  <p>Did you know... <br> Of 7.888 billion of people, about 6.3104 billion consume milk and dairy</p>
+
+              </div>
+              <br>
+              <br>
+              <p id="Bovine" align="justify" style="margin-left: 50%;">
+                Bovine mastitis results in substantial expenses encompassing treatment, animal care, and compromised
+                milk yield. Milk composition, quantity, and quality are adversely affected, with enduring consequences
+                such as impaired udders hindering future milk production for affected cows.<sup>8</sup> For both the
+                Mexican dairy sector and global economies, bovine mastitis stands as a leading cause of financial loss,
+                estimated at $200 USD per cow each year.<sup>16</sup> The National Mastitis Council of the United States
+                estimated that losses in this country amount to two billion dollars per year, and an average of 200
+                dollars per cow per year.<sup>17</sup> With rising dairy cattle populations, the disease's prevalence is
+                poised to escalate, projecting the bovine mastitis market size to significantly impact the global
+                economy by 2027. According to the research from the University of Glasgow, mastitis is estimated to cost
+                around 19.7 billion dollars to 30 billion USD worldwide; these costs include diagnostics, milk loss,
+                veterinary services, labor, therapeutics, among others.<sup>18</sup>
+              </p>
+
+
+              <br>
+              <h2>Conventional Treatments</h2>
+              <p align="justify">
+                Mastitis’ primary treatment consists of antibiotics, such as natural or synthetic penicillins. However,
+                overuse of antibiotics in bovine mastitis can trigger resistance and non-response, raising costs and
+                endangering public health.<sup>19</sup>
+              </p>
+
+              <div class="antibioticscont">
+                <h1>Commonly used antibiotics</h1>
+                <h3>According to our <a class="hipervinculoaqua"
+                    href="https://2023.igem.wiki/tec-chihuahua/human">stakeholders</a></h3>
+                <span class="antibioticsdot">
+                  <p>Penicilin</p>
+                  <img src="https://static.igem.wiki/teams/4607/wiki/project-description/penicilin.png" alt="Penicilin">
+                  <div class="antibioticstxt"> Interviewed small scale producers and veterinay zootechnicians stated
+                    that penicilin's use is unmeasured, since it is the most common treatment.</div>
+                </span>
+
+                <span class="antibioticsdot">
+                  <p>Cephalosporins</p>
+                  <img src="https://static.igem.wiki/teams/4607/wiki/project-description/cephalosporin-png.webp"
+                    alt="Florfenicol">
+                  <div class="antibioticstxt"> Veterinary Zootechnicians and small producers also mentioned
+                    Cephalosporins, which are used because testing doesn´t detect its residues in milk.</div>
+                </span>
+
+                <span class="antibioticsdot">
+                  <p>Ceftiofur</p>
+                  <img src="https://static.igem.wiki/teams/4607/wiki/project-description/ceftiofur-removebg-preview.png"
+                    alt="">
+                  <div class="antibioticstxt">Veterinary zootechnicians and small scale producers that mentioned the use
+                    of ceftiofur was really frecuent and even the first measure of treatment since it doesn´t require
+                    milkdrawal period.</div>
+                </span>
+
+                <span class="antibioticsdot">
+                  <p>Tetracycline</p>
+                  <img
+                    src="https://static.igem.wiki/teams/4607/wiki/project-description/tetracycline-removebg-preview.png"
+                    alt="">
+                  <div class="antibioticstxt"> Food engineers and veterinary zootchnicians mentioned the use of this
+                    antibiotic is avoided because of its milk withdrawal period and its use as infection inhibitor.
+                  </div>
+                </span>
+              </div>
+
+
+              <p id="InMexico" align="justify">
+
+                In Mexico, a wide range of antibiotics as shown in <b>figure 5 </b> are approved by the government for
+                treating mastitis. However, there are several alternative treatments which offer various options to
+                dairy farmers such as intramammary infusion, dry cow therapy, vaccination, bacteriophages, probiotics
+                and herbal remedies.
+
+              </p>
+
+
+              <div class="treatmentscont">
+                <h1>Avaible treatments</h1>
+                <h3>According to our <a class="hipervinculoaqua"
+                    href="https://2023.igem.wiki/tec-chihuahua/entrepreneurship">Market Study</a></h3>
+                <span class="treatmentssdot">
+                  <img src="https://static.igem.wiki/teams/4607/wiki/project-description/aspiration.png"
+                    alt="Intramammary Infusion">
+                  <div class="treatmentstxt"><b>Intramammary infusion</b> involves the direct introduction of
+                    antibiotics into the udder through the teat canal.</div>
+                </span>
+
+                <span class="treatmentssdot">
+                  <img src="https://static.igem.wiki/teams/4607/wiki/project-description/udder.png"
+                    alt="Dry cow therapy">
+                  <div class="treatmentstxt"> <b>Dry cow therapy</b> is a proactive approach taken during the dry period
+                    (when cows are not lactating). It involves infusing antibiotics into the udder to prevent new
+                    mastitis infections from occurring during the upcoming lactation period.</div>
+                </span>
+
+                <span class="treatmentssdot">
+                  <img src="https://static.igem.wiki/teams/4607/wiki/project-description/vaccine.png" alt="Vaccination">
+                  <div class="treatmentstxt"> <b>Vaccines</b> are developed to stimulate the cow's immune system to
+                    recognize and respond effectively to mastitis-causing pathogens. They aim to reduce the severity and
+                    incidence of mastitis over the long term by enhancing the cow's natural defenses</div>
+                </span>
+
+                <span class="treatmentssdot">
+                  <img src="https://static.igem.wiki/teams/4607/wiki/project-description/herbal.png"
+                    alt="Herbal remedies">
+                  <div class="treatmentstxt"><b>Herbal treatments</b> for mastitis often involve the use of plant-based
+                    extracts or compounds with known antimicrobial or anti-inflammatory properties.</div>
+                </span>
+
+                <span class="treatmentssdot">
+                  <img src="https://static.igem.wiki/teams/4607/wiki/project-description/probiotic.png"
+                    alt="Probiotics">
+                  <div class="treatmentstxt"> <b>Probiotics</b> involve the use of beneficial bacteria to restore a
+                    healthy microbial balance within the udder. These can outcompete mastitis-causing pathogens,
+                    reducing the risk of infection and inflammation.</div>
+                </span>
+
+
+
+              </div>
+              <p id="InMexico2" align="justify">
+                Intramammary infusion of antibiotics is notable for effectively reducing the incidence of mastitis and
+                improving milk quality. Antibiotics, although effective, have the disadvantage of requiring a withdrawal
+                period after administration due to regulatory problems in many countries. This withdrawal period
+                prohibits the collection of milk for human consumption, which leads to economic losses for
+                farmers.<sup>20</sup> The economic impact of mastitis can be considerable. To learn more about the
+                existing solutions as shown in <b>figure 6</b> and the comparison of treatments against AureoBosyou can
+                check our analysis and benchmarking in the <a class="hipervinculoaqua"
+                  href="https://2023.igem.wiki/tec-chihuahua/entrepreneurship">entrepreneurship</a> section.
+              </p>
+              <br>
+              <h2>The Risk Beyond</h2>
+              <br>
+              <p align="justify">
+                Due to their efficacy, antibiotics are still widely used by dairy cattle farmers. However, this
+                widespread use leads to a significant release of antibiotics into milk, which poses a serious threat to
+                human health.<sup>20</sup>
+              </p>
+              <p align="justify">
+                Antibiotic resistance manifests itself innate or acquired, and plasmid-mediated resistance contributes
+                significantly to its dissemination. In addition, bacterial biofilm growth offers protection against the
+                effects of antibiotics, making inappropriate antibiotic stewardship counterproductive and increasing
+                resistance.<sup>21</sup> Despite the inevitability of antimicrobial resistance, the current situation is
+                due to disproportionate and erroneous use of antibiotics.<sup>22</sup>
+                Alarmingly, about 4.95 million deaths in 2019 were related to bacterial resistance to
+                antibiotics,<sup>23</sup> underscoring the urgency of raising awareness of antibiotic use in our food
+                chain. WHO has declared that antimicrobial resistance is one of the top 10 public health threats facing
+                humanity.<sup>24</sup>
+              </p>
+
+
+              <br>
+              <h2>The Landfill</h2>
+              <br>
+              <p align="justify">
+                Discussing mastitis inevitably brings attention to the substantial issue of food wastage. The
+                persistence of food waste remains a significant challenge within the food supply chain, with a
+                staggering one-third of produced nourishment being discarded and approximately 735 million people facing
+                hunger.<sup>25</sup>
+              </p>
+              <p align="justify">
+                Addressing the issue of hunger, tackling dairy industry losses becomes a significant stride in the
+                ongoing battle to eradicate health and nutrition inequality. In the past decade, dairy consumption has
+                seen an increase, however, in our country, milk production is largely dominated by bigger producers,
+                leading to inflated product prices.<sup>1</sup> In response, Aurebos introduces an innovative approach
+                to curbing milk losses and enhancing the availability of dairy derivatives.
+              </p>
+              <br>
+              <h2>The New Antimicrobial Era: Endolysins</h2>
+              <br>
+              <p align="justify">
+                As previously discussed, three main gram-positive bacteria are frequently linked with mastitis:<em>S.
+                  aureus</em>, <em>S. uberis</em>, and <em>S. agalactiae</em>.<sup>26</sup> The prevalence of
+                multidrug-resistant strains, including methicillin-resistant <em>Staphylococcus aureus</em> (MRSA) among
+                gram-positive bacteria is a significant healthcare concern. Consequently, there's a pressing need for
+                new antimicrobial agents.<sup>27</sup>
+              </p>
+              <p>
+                The most efficient antimicrobial agents come from submicroscopic entities: bacteriophages. Endolysins,
+                which are enzymes present in bacteriophages' double-stranded DNA, capable of breaking down peptidoglycan
+                in bacterial cell walls that lead to the bursting of bacterial cells, facilitating the release of new
+                viral particles. These endolysins demonstrate notable potential as an alternative to antibiotics,
+                displaying specific antimicrobial effects on gram-positive bacteria, even in the presence of
+                antibiotic-resistant strains. AureoBos emerged from the realization that externally applying endolysins
+                to bacterial cell walls leads to peptidoglycan degradation and swift bacterial cell lysis.<sup>28</sup>
+              </p>
+
+              <div class="endoinfocont">
+
+
+                <div class="mechcont">
+
+                  <div class="mechimgcont">
+                    <div id="mech1" class="mechimg"><img
+                        src="https://static.igem.wiki/teams/4607/wiki/project-description/lysss.png" alt=""></div>
+                    <div id="mech2" class="mechimg"><img
+                        src="https://static.igem.wiki/teams/4607/wiki/project-description/lyscsa13.png" alt=""></div>
+                    <div id="mech3" class="mechimg"><img
+                        src="https://static.igem.wiki/teams/4607/wiki/project-description/lysk.png" alt=""></div>
+                    <div id="mech4" class="mechimg active"><img
+                        src="https://static.igem.wiki/teams/4607/wiki/project-description/mech.png" alt=""></div>
+                  </div>
+
+                  <div class="udderbtncont">
+                    <div class="mechbtn1"
+                      style="--gradient:linear-gradient(45deg, rgb(91, 197, 171), rgb(167, 220, 211))"
+                      onclick="eimg1()"> <em>LysSS </em> </div>
+                    <div class="mechbtn2"
+                      style="--gradient:linear-gradient(45deg, rgb(91, 197, 171), rgb(167, 220, 211))"
+                      onclick="eimg2()"> <em>LysCSA13</em> </div>
+                    <div class="mechbtn3"
+                      style="--gradient:linear-gradient(45deg, rgb(91, 197, 171), rgb(167, 220, 211))"
+                      onclick="eimg3()"> <em>LysK</em> </div>
+                  </div>
+
+                  <script>
+                    function eimg1() {
+                      var mech1 = document.getElementById("mech1");
+                      var mech2 = document.getElementById("mech2");
+                      var mech3 = document.getElementById("mech3");
+                      var mech4 = document.getElementById("mech4");
+
+                      mech1.classList.add("active");
+                      mech2.classList.remove("active");
+                      mech3.classList.remove("active");
+                      mech4.classList.remove("active");
+
+                      var mechtxt1 = document.getElementById("mechtxt1");
+                      var mechtxt2 = document.getElementById("mechtxt2");
+                      var mechtxt3 = document.getElementById("mechtxt3");
+                      var mechtxt4 = document.getElementById("mechtxt4");
+
+                      mechtxt1.classList.add("active");
+                      mechtxt2.classList.remove("active");
+                      mechtxt3.classList.remove("active");
+                      mechtxt4.classList.remove("active");
+                    }
+
+                    function eimg2() {
+                      var mech1 = document.getElementById("mech1");
+                      var mech2 = document.getElementById("mech2");
+                      var mech3 = document.getElementById("mech3");
+                      var mech4 = document.getElementById("mech4");
+
+                      mech2.classList.add("active");
+                      mech1.classList.remove("active");
+                      mech3.classList.remove("active");
+                      mech4.classList.remove("active");
+
+                      var mechtxt1 = document.getElementById("mechtxt1");
+                      var mechtxt2 = document.getElementById("mechtxt2");
+                      var mechtxt3 = document.getElementById("mechtxt3");
+                      var mechtxt4 = document.getElementById("mechtxt4");
+
+                      mechtxt2.classList.add("active");
+                      mechtxt1.classList.remove("active");
+                      mechtxt3.classList.remove("active");
+                      mechtxt4.classList.remove("active");
+                    }
+
+                    function eimg3() {
+                      var mech1 = document.getElementById("mech1");
+                      var mech2 = document.getElementById("mech2");
+                      var mech3 = document.getElementById("mech3");
+                      var mech4 = document.getElementById("mech4");
+
+                      mech3.classList.add("active");
+                      mech2.classList.remove("active");
+                      mech1.classList.remove("active");
+                      mech4.classList.remove("active");
+
+                      var mechtxt1 = document.getElementById("mechtxt1");
+                      var mechtxt2 = document.getElementById("mechtxt2");
+                      var mechtxt3 = document.getElementById("mechtxt3");
+                      var mechtxt4 = document.getElementById("mechtxt4");
+
+                      mechtxt3.classList.add("active");
+                      mechtxt2.classList.remove("active");
+                      mechtxt1.classList.remove("active");
+                      mechtxt4.classList.remove("active");
+                    }
+
+                    function eimg4() {
+                      var mech1 = document.getElementById("mech1");
+                      var mech2 = document.getElementById("mech2");
+                      var mech3 = document.getElementById("mech3");
+                      var mech4 = document.getElementById("mech4");
+
+                      mech4.classList.add("active");
+                      mech2.classList.remove("active");
+                      mech3.classList.remove("active");
+                      mech1.classList.remove("active");
+
+                      var mechtxt1 = document.getElementById("mechtxt1");
+                      var mechtxt2 = document.getElementById("mechtxt2");
+                      var mechtxt3 = document.getElementById("mechtxt3");
+                      var mechtxt4 = document.getElementById("mechtxt4");
+
+                      mechtxt4.classList.add("active");
+                      mechtxt2.classList.remove("active");
+                      mechtxt3.classList.remove("active");
+                      mechtxt1.classList.remove("active");
+                    }
+
+                  </script>
+
+
+                </div>
+
+                <div class="mechimgcont">
+                  <div id="mechtxt1" class="mechtxt">
+                    <p>LysSS cuts the bond between N-acetylmuramic acid and N-glucosamine. In our case, we fused this
+                      endolysin into an artilysin for it to be capable of weakening the outer membrane of gran-negative
+                      bacteria, as <em> Escherichia coli </em></p>
+                  </div>
+                  <div id="mechtxt2" class="mechtxt">
+                    <p>LysCSA13 has an amidase domain, which allows it to cut the bond between N-acetylmuramico acid and
+                      L-ala, mainly attacking <em>Staphylococcus aureus</em> </p>
+                  </div>
+                  <div id="mechtxt3" class="mechtxt">
+                    <p>Lys K has two active lysis domain amidase and endopeptidase ( is essential to attack
+                      <em>Streptococci</em>) which allows it to cover a wide group of microorganisms.The SH3b cell wall
+                      binding domain is known to bind to the pentaglycine bridge </p>
+                  </div>
+                  <div id="mechtxt4" class="mechtxt active">
+                    <p> Peptidoglycan is composed of the repeat polymer of the amino sugars N-acetylglucos-amine and
+                      N-acetylmuramic acid, linked together by Î²-I,4 glycosidic bonds, and tetrapeptide side chains
+                      attached to the lactyl group of the muramic acid by amide bonds. Endolysins bind to carbohydrate
+                      sequences that make up teichoic acids, proteins, glycan sequences of peptidoglycan, and choline.In
+                      the case of gram-negatives, endolysin have to pass through the cell wall to reach the
+                      peptidoglycan layer. Our artilisin has the ability to break through thanks to the incorporated
+                      policationic nonapeptide, whose function is to destabilize the cell membrane.</p>
+                  </div>
+                </div>
+
+              </div>
+
+
+              <br>
+              <h2>Design</h2>
+              <br>
+              <p align="justify">
+                Grounded in the principles of synthetic biology, our project is fundamentally centered on the
+                bioengineering of recombinant fusion proteins within prokaryotic cells.
+              </p>
+              <p align="justify">
+                Our approach involves the use of
+
+                <b class="tooltipSignificado">endolysins
+                  <span class="tooltipSignificadoBox">Bacteriophage-encoded lytic enzymes responsible for breaking down
+                    the peptidoglycan within the bacterial cell wall</span>
+                </b>
+
+                <sup>29</sup> and albumin binding domains, resulting as a product of novel fusion proteins with great
+                antimicrobial potential. Fusion proteins are a novel technology that involve the genetic combination of
+                two or more domains from proteins. This changes its properties according to each component added. One of
+                its main applications is biopharmaceuticals, since the protein can acquire the ability to target
+                specific molecules or cells.<sup>30 </sup>
+              </p>
+              <p align="justify">
+                For gram-positive bacteria, we utilize two endolysins: LysCSA13 and LysK. These endolysins possess
+                distinct components, including the N-terminal catalytic domain and the C-terminal cell wall binding
+                domain, which confers bacterial specificity.<sup>31</sup>
+              </p>
+              <p align="justify">
+                Nevertheless, gram-negative bacteria represent a challenge for endolysins due to the non-permeable
+                lipopolysaccharide layer in their cell wall. Artilysins, endolysins fused with lipopolysaccharide
+                destabilizer peptides, are able to disrupt and penetrate this layer, lysing cells in the
+                process.<sup>32</sup> By fusing endolysin LysSS, polycationic nonapeptide and CeCA, an antimicrobial
+                peptide, artilysins start forming part of our project.
+              </p>
+              <p align="justify">
+                However, a significant limitation is the remarkably short <em>in vivo</em> half-life of these
+                endolysins, lasting only 20 minutes.<sup>33</sup> This brief duration significantly impedes their
+                potential to serve as effective active pharmaceutical agents: it is unfeasible to encompass the entire
+                process of production, purification, distribution, storage, and other essential stages for successful
+                application and market availability. Thus, we aim to extend its half-life by incorporating an
+                albumin-binding domain, thereby enhancing their viability and potential impact.<sup>34 </sup>
+              </p>
+              <p align="justify">
+                All these enzymes will have a sole purpose: find mastitis causing pathogens in the udder. AureoBos’s
+                mechanism is simple: an alginate chitosan gel solution encapsulating our three endolysins will be
+                injected directly into the udder via intramammary infusion.<sup>35</sup>
+              </p>
+              <br>
+              <h2>Methodology</h2>
+              <br>
+              <div>
+                <div class="blog-card">
+                  <input type="radio" name="select" id="tap-1" checked>
+                  <input type="radio" name="select" id="tap-2">
+                  <input type="radio" name="select" id="tap-3">
+                  <input type="radio" name="select" id="tap-4">
+                  <input type="radio" name="select" id="tap-5">
+                  <input type="radio" name="select" id="tap-6">
+                  <input type="checkbox" id="imgTap">
+
+                  <div class="sliders">
+                    <label for="tap-1" class="tap tap-1"></label>
+                    <label for="tap-2" class="tap tap-2"></label>
+                    <label for="tap-3" class="tap tap-3"></label>
+                    <label for="tap-4" class="tap tap-4"></label>
+                    <label for="tap-5" class="tap tap-5"></label>
+                    <label for="tap-6" class="tap tap-6"></label>
+                  </div>
+
+                  <div class="inner-part">
+                    <label for="imgTap" class="img">
+                      <img class="img-1 imgmethodology"
+                        src="https://static.igem.wiki/teams/4607/wiki/project-description/solution.png">
+                    </label>
+                    <div class="content-methodology content-methodology-1">
+                      <span class="titleMethodology">Methodology</span>
+                      <div class="textMethodology">
+                        Our product, AureoBos aims to use three recombinant proteins as active ingredients to offer an
+                        effective treatment against mastitis and reduce both milk loss and microbial resistance of four
+                        of the main mastitis-causing strains. In order to make our project a reality, the following
+                        methodology was carried out.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="inner-part">
+                    <label for="imgTap" class="img">
+                      <img class="img-2 imgmethodology"
+                        src="https://static.igem.wiki/teams/4607/wiki/project-description/project-description/design-method-desc-prueba.png">
+                    </label>
+                    <div class="content-methodology content-methodology-2">
+                      <span class="titleMethodology">1. Design of our recombinant proteins</span>
+                      <div class="textMethodology">
+                        Three recombinant proteins were engineered for enhanced functionality and purification. Two
+                        proteins, LysK and LysCSA13, have lifespan-extending domains, while the third, LysSS, features
+                        two additional domains for improved antibacterial action and entry into Gram-negative bacteria.
+                        All three constructs contain essential components for accurate translation, purification, and
+                        proper folding.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="inner-part">
+                    <label for="imgTap" class="img">
+                      <img class="img-3 imgmethodology"
+                        src="https://static.igem.wiki/teams/4607/wiki/project-description/project-description/assembly-desc-methodology.png">
+                    </label>
+                    <div class="content-methodology content-methodology-3">
+                      <span class="titleMethodology">2. Assembly and Identification</span>
+                      <div class="textMethodology">
+                        The coding sequences (CDS) of three recombinant proteins underwent <em>in silico</em>
+                        modifications to introduce BsaI enzyme recognition sites. Various components, such as a
+                        promoter, RBS, terminator, and backbone, were assembled using SnapGene<sup>®</sup> with the
+                        Golden Gate method and BsaI enzyme. Experimental validation included bacterial transformation,
+                        antibiotic screening, enzymatic digestion, and electrophoresis to confirm the assembly.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="inner-part">
+                    <label for="imgTap" class="img">
+                      <img class="img-4 imgmethodology"
+                        src="https://static.igem.wiki/teams/4607/wiki/project-description/project-description/iptg.png">
+                    </label>
+                    <div class="content-methodology content-methodology-4">
+                      <span class="titleMethodology">3. IPTG Induction</span>
+                      <div class="textMethodology">
+                        After obtaining the constructs, we transformed them into E. coli BL21 (DE3) cells for IPTG
+                        induction. We performed induction kinetics at 0.2, 0.5, and 1.0 mM IPTG concentrations for 6
+                        hours, with hourly sample collection. SDS-PAGE on a polyacrylamide gel was used to assess
+                        optimal induction conditions, including IPTG concentration and duration.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="inner-part">
+                    <label for="imgTap" class="img">
+                      <img class="img-5 imgmethodology"
+                        src="https://static.igem.wiki/teams/4607/wiki/project-description/project-description/purificacion.png">
+                    </label>
+                    <div class="content-methodology content-methodology-5">
+                      <span class="titleMethodology">4. Protein Purification</span>
+                      <div class="textMethodology">
+                        After identifying the optimal induction condition, each endolysin was induced accordingly,
+                        followed by metal-affinity chromatography purification, utilizing the 6xHis tags on the proteins
+                        for its purification.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="inner-part">
+                    <label for="imgTap" class="img">
+                      <img class="img-6 imgmethodology"
+                        src="https://static.igem.wiki/teams/4607/wiki/project-description/project-description/bacterialtests.png">
+                    </label>
+                    <div class="content-methodology content-methodology-6">
+                      <span class="titleMethodology">5. Bacterial Tests</span>
+                      <div class="textMethodology">
+                        Understanding that the enzymatically active domains of the endolysins target different bonds
+                        within the peptidoglycan suggests the potential for synergistic action<sup>36,37 </sup>against
+                        bovine mastitis-causing bacteria when used together. Our objective was to identify the most
+                        effective combinations and concentrations of endolysins for targeting specific bacteria and
+                        optimize these compositions.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+
+              <h2>
+                The World in Our Project
+              </h2>
+              <br>
+              <p align="justify">
+                Despite the challenge in quantifying milk loss due to mastitis accurately, our <a
+                  class="hipervinculoaqua" href="https://2023.igem.wiki/tec-chihuahua/entrepreneurship">stakeholders</a>
+                emphasize its significant impact. We are dedicated to a noble mission: to pioneer a synthetic
+                biology-based treatment of bovine mastitis using endolysins to counteract food waste and improve food
+                safety. Aiming to minimize milk loss while also addressing the limitations and risks associated with
+                antibiotic use, AureoBos primary goal is to offer an effective, safe alternative benefiting dairy
+                farmers of all sizes. Our vision is simple yet profound: to showcase the antimicrobial potential of
+                endolysins, remarkable proteins that combat antibiotic-resistant strains.<sup>38 </sup>
+              </p>
+              <div>
+
+              </div>
+              <p align="justify">
+                We embarked on this journey by immersing ourselves in the world of mastitis, actively engaging with
+                stakeholders who shape and are impacted by our project. This field research has become the bedrock of
+                our <a class="hipervinculoaqua" href="https://2023.igem.wiki/tec-chihuahua/Lab">laboratory</a> work,
+                providing us with invaluable insights that by mathematical modeling the lifecyle of our solution guides
+                our path to success. Each step we took was enhanced by the concerns, needs, and knowledge shared by our
+                stakeholders. We envision our treatment transcending as a startup. We offer a solution that addresses
+                the multifaceted challenges faced by local, national, and international dairy farmers, making a
+                meaningful contribution to their well-being and sustainability.
+
+              </p>
+              <img id="Taffy" style="height: 500px; width: auto; margin-left:15%;"
+                src="https://static.igem.wiki/teams/4607/wiki/project-description/images/caminoaureobos-1-photoroom-png-photoroom.png"></img>
+
+              <p>
+                Aureobos’ mission aligns with an anti-waste focus, acknowledging the importance of Sustainable
+                Development Goal 2: Zero Hunger<sup>39</sup>, helping through the collection of safe and nutritious
+                milk. Our responsibility to preserve Chihuahua's culture fuels our commitment to effect positive and
+                sustainable changes both locally and beyond. Our project exemplifies how synthetic biology, an
+                unfamiliar field to many, can significantly contribute to community well-being. Through genetic
+                engineering and biotechnological tools, we aim to combat bovine mastitis, benefiting local industries
+                and advancing scientific knowledge. Aureobos showcases how synthetic biology can propel wellness
+                progress. The team draws inspiration from our stakeholders’ contributions and strives to create a
+                brighter, healthier future for the dairy industry and the global community.
+              </p>
+              <br>
+              <br>
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  References
+                </div>
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    <p align="justify" id="referencia1">
+                      (1) SIAP. <em>Escenario Mensual de Productos Agroalimentarios</em>; Secretaría de Agricultura y
+                      Desarrollo Rural, 2022.
+                      https://www.gob.mx/cms/uploads/attachment/file/744355/Leche_de_bovino_Junio.pdf.
+                    </p>
+                    <p align="justify" id="referencia2">
+                      (2) Górska-Warsewicz, H.; Rejman, K.; Laskowski, W.; Czeczotko, M. Milk and Dairy Products and
+                      Their Nutritional Contribution to the Average Polish Diet. <em>Nutrients</em> <b>2019</b>,
+                      <em>11</em> (8), 1771. https://doi.org/10.3390/nu11081771.
+                    </p>
+                    <p align="justify">
+                      (3) FoodData Central; USDA. Milk, Whole, 2020.
+                      https://fdc.nal.usda.gov/fdc-app.html#/food-details/1097512/nutrients.
+                    </p>
+                    <p align="justify">
+                      (4) Faccia, M.; D’Alessandro, A. G.; Summer, A.; Hailu, Y. Milk Products from Minor Dairy Species:
+                      A Review. <em>Animals</em> <b>2020</b>, <em>10</em> (8), 1260.
+                      https://doi.org/10.3390/ani10081260.
+
+                    </p>
+                    <p align="justify">
+                      (5) FAO. <em>Gateway to dairy production and products</em>. Food and Agriculture Organization of
+                      the United Nations. https://www.fao.org/dairy-production-products/production/en/ (accessed
+                      2023-08-02).
+                    </p>
+                    <p align="justify">
+                      (6) Foreign Agricultural Service; USDA. <em>Dairy: World Markets and Trade</em>; Global Market
+                      Analysis; 2023. https://apps.fas.usda.gov/psdonline/circulars/dairy.pdf.
+                    </p>
+                    <p align="justify">
+                      (7) Adesogan, A. T.; Dahl, G. E. MILK Symposium Introduction: Dairy Production in Developing
+                      Countries. <em>Journal of Dairy Science</em> <b>2020</b>, <em>103</em> (11), 9677–9680.
+                      https://doi.org/10.3168/jds.2020-18313.
+
+                    </p>
+                    <p align="justify">
+                      (8) Sharun, K.; Dhama, K.; Tiwari, R.; Gugjoo, M. B.; Iqbal Yatoo, Mohd.; Patel, S. K.; Pathak,
+                      M.; Karthik, K.; Khurana, S. K.; Singh, R.; Puvvala, B.; Amarpal; Singh, R.; Singh, K. P.;
+                      Chaicumpa, W. Advances in Therapeutic and Managemental Approaches of Bovine Mastitis: A
+                      Comprehensive Review. <em>Veterinary Quarterly</em> <b>2021</b> ,<em>41</em> (1), 107–136.
+                      https://doi.org/10.1080/01652176.2021.1882713.
+
+                    </p>
+                    <p align="justify">
+                      (9) Algharib, S. A.; Dawood, A.; Xie, S. Nanoparticles for Treatment of Bovine Staphylococcus
+                      Aureus Mastitis. <em>Drug Delivery</em> <b>2020</b>, <em>27</em> (1), 292–308.
+                      https://doi.org/10.1080/10717544.2020.1724209.
+                    </p>
+                    <p align="justify">
+                      (10) Babić, M.; Pajić, M.; Nikolić, A.; Teodorović, V.; Mirilović, M.; Milojević, L.; Velebit, B.
+                      Expression of Toxic Shock Syndrome Toxin-1 Gene of Staphylococcus Aureus in Milk: Proof of
+                      Concept. <em>Mljekarstvo</em> <b>2018</b>, 12–20. https://doi.org/10.15567/mljekarstvo.2018.0102.
+
+                    </p>
+                    <p align="justify">
+                      (11) Abd El-Aziz, N. K.; Ammar, A. M.; El-Naenaeey, E. Y. M.; El Damaty, H. M.; Elazazy, A. A.;
+                      Hefny, A. A.; Shaker, A.; Eldesoukey, I. E. Antimicrobial and Antibiofilm Potentials of Cinnamon
+                      Oil and Silver Nanoparticles against Streptococcus Agalactiae Isolated from Bovine Mastitis: New
+                      Avenues for Countering Resistance. <em>BMC Vet Res</em> <b>2021</b>, <em>17</em> (1), 136.
+                      https://doi.org/10.1186/s12917-021-02842-9.
+                    </p>
+                    <p align="justify">
+                      (12) Varhimo, E.; Varmanen, P.; Fallarero, A.; Skogman, M.; Pyörälä, S.; Iivanainen, A.; Sukura,
+                      A.; Vuorela, P.; Savijoki, K. Alpha- and β-Casein Components of Host Milk Induce Biofilm Formation
+                      in the Mastitis Bacterium Streptococcus Uberis. <em>Veterinary Microbiology</em> <b>2011</b>,
+                      <em>149</em> (3–4), 381–389. https://doi.org/10.1016/j.vetmic.2010.11.010.
+
+                    </p>
+                    <p align="justify">
+                      (13) Cheng, W. N.; Han, S. G. Bovine Mastitis: Risk Factors, Therapeutic Strategies, and
+                      Alternative Treatments - A Review. <em>Asian-Australas J Anim Sci</em> <b>2020</b>, <em>33</em>
+                      (11), 1699–1713. https://doi.org/10.5713/ajas.20.0156.
+                    </p>
+                    <p align="justify">
+                      (14) IMARC Group. <em>Global Dairy Market: Industry Trends, Share, Size, Growth, Opportunity and
+                        Forecast 2023-2028</em>; Market Research Report SR112023A703; IMARC Group, 2022.
+                      https://www.imarcgroup.com/global-dairy-market.
+                    </p>
+                    <p align="justify">
+                      (15) FAO; GDP. <em>limate Change and the Global Dairy Cattle Sector – The Role of the Dairy Sector
+                        in a Low-Carbon Future</em>C; Rome, 2018; p 36 pp. https://www.fao.org/3/CA2929EN/ca2929en.pdf.
+                    </p>
+                    <p align="justify">
+                      (16) Quintana, A. <em>Impacto económico de la mastitis en la productividad del ganadero
+                        lechero</em>. BM Editores, SA de CV.
+                      https://bmeditores.mx/ganaderia/impacto-economico-de-la-mastitis-en-la-productividad-del-ganadero-lechero/
+                      (accessed 2023-07-26).
+                    </p>
+                    <p align="justify">
+                      (17) Soca, M.; Suárez, Y.; Soca, M.; Pestano, M.; Puron, C. Evaluación Epizootiológica de La
+                      Mastitis Bovina En Dos Unidades Ganaderas de La Empresa Pecuaria “El Cangre.” <em>REDVET.
+                        Relectrónica de Veterinaria</em> <b>2005</b>, VI (8), 1–10.
+                    </p>
+                    <p align="justify">
+                      (18) Fortune Business Insights. <em>Bovine Mastitis Market Size, Share & COVID-19 Impact Analysis,
+                        By Type (Clinical, and Sub-Clinical), By Product (Antibiotics, and Others), By Route of
+                        Administration (Intra-Mammary, and Systemic), By Therapy (Lactating Period and Dry Period
+                        {Antibiotics , and Others}) and Regional Forecast, 2020–2027</em>; Bovine Mastitis Market;
+                      Market Research Report FBI103482; Fortune Business Insights: Global, 2020; p 150.
+                      https://www.fortunebusinessinsights.com/bovine-mastitis-market-103482.
+                    </p>
+                    <p align="justify">
+                      (19) Gomes, F.; Henriques, M. Control of Bovine Mastitis: Old and Recent Therapeutic Approaches.
+                      <em>Curr Microbiol</em> <b>2016</b>,<em>72</em> (4), 377–382.
+                      https://doi.org/10.1007/s00284-015-0958-8.
+                    </p>
+                    <p align="justify">
+                      (20) Sachi, S.; Ferdous, J.; Sikder, M. H.; Azizul Karim Hussani, S. M. Antibiotic Residues in
+                      Milk: Past, Present, and Future. <em>J Adv Vet Anim Res</em> <b>2019</b>, <em>6</em> (3), 315–332.
+                      https://doi.org/10.5455/javar.2019.f350.
+                    </p>
+                    <p align="justify">
+                      (21) Palma, E.; Tilocca, B.; Roncada, P. Antimicrobial Resistance in Veterinary Medicine: An
+                      Overview. <em>Int J Mol Sci</em> <b>2020</b>, <em>21</em> (6), 1914.
+                      https://doi.org/10.3390/ijms21061914.
+
+                    </p>
+                    <p align="justify">
+                      (22) Jonas, O.; Irwin, A.; Berthe, F.; Le Gall, F.; Marquez, P. <em>Drug-Resistant Infections : A
+                        Threat to Our Economic Future (Vol. 2) : Final Report</em>; Final Report 114679; World Bank,
+                      2017.
+                      https://documents.worldbank.org/en/publication/documents-reports/documentdetail/323311493396993758/final-report.
+                    </p>
+                    <p align="justify">
+                      (23) Murray, C. J. L.; Ikuta, K. S.; Sharara, F.; Swetschinski, L.; Robles Aguilar, G.; Gray, A.;
+                      Han, C.; Bisignano, C.; Rao, P.; Wool, E.; Johnson, S. C.; Browne, A. J.; Chipeta, M. G.; Fell,
+                      F.; Hackett, S.; Haines-Woodhouse, G.; Kashef Hamadani, B. H.; Kumaran, E. A. P.; McManigal, B.;
+                      Achalapong, S.; Agarwal, R.; Akech, S.; Albertson, S.; Amuasi, J.; Andrews, J.; Aravkin, A.;
+                      Ashley, E.; Babin, F.-X.; Bailey, F.; Baker, S.; Basnyat, B.; Bekker, A.; Bender, R.; Berkley, J.
+                      A.; Bethou, A.; Bielicki, J.; Boonkasidecha, S.; Bukosia, J.; Carvalheiro, C.; Castañeda-Orjuela,
+                      C.; Chansamouth, V.; Chaurasia, S.; Chiurchiù, S.; Chowdhury, F.; Clotaire Donatien, R.; Cook, A.
+                      J.; Cooper, B.; Cressey, T. R.; Criollo-Mora, E.; Cunningham, M.; Darboe, S.; Day, N. P. J.; De
+                      Luca, M.; Dokova, K.; Dramowski, A.; Dunachie, S. J.; Duong Bich, T.; Eckmanns, T.; Eibach, D.;
+                      Emami, A.; Feasey, N.; Fisher-Pearson, N.; Forrest, K.; Garcia, C.; Garrett, D.; Gastmeier, P.;
+                      Giref, A. Z.; Greer, R. C.; Gupta, V.; Haller, S.; Haselbeck, A.; Hay, S. I.; Holm, M.; Hopkins,
+                      S.; Hsia, Y.; Iregbu, K. C.; Jacobs, J.; Jarovsky, D.; Javanmardi, F.; Jenney, A. W. J.; Khorana,
+                      M.; Khusuwan, S.; Kissoon, N.; Kobeissi, E.; Kostyanev, T.; Krapp, F.; Krumkamp, R.; Kumar, A.;
+                      Kyu, H. H.; Lim, C.; Lim, K.; Limmathurotsakul, D.; Loftus, M. J.; Lunn, M.; Ma, J.; Manoharan,
+                      A.; Marks, F.; May, J.; Mayxay, M.; Mturi, N.; Munera-Huertas, T.; Musicha, P.; Musila, L. A.;
+                      Mussi-Pinhata, M. M.; Naidu, R. N.; Nakamura, T.; Nanavati, R.; Nangia, S.; Newton, P.; Ngoun, C.;
+                      Novotney, A.; Nwakanma, D.; Obiero, C. W.; Ochoa, T. J.; Olivas-Martinez, A.; Olliaro, P.; Ooko,
+                      E.; Ortiz-Brizuela, E.; Ounchanum, P.; Pak, G. D.; Paredes, J. L.; Peleg, A. Y.; Perrone, C.; Phe,
+                      T.; Phommasone, K.; Plakkal, N.; Ponce-de-Leon, A.; Raad, M.; Ramdin, T.; Rattanavong, S.;
+                      Riddell, A.; Roberts, T.; Robotham, J. V.; Roca, A.; Rosenthal, V. D.; Rudd, K. E.; Russell, N.;
+                      Sader, H. S.; Saengchan, W.; Schnall, J.; Scott, J. A. G.; Seekaew, S.; Sharland, M.;
+                      Shivamallappa, M.; Sifuentes-Osornio, J.; Simpson, A. J.; Steenkeste, N.; Stewardson, A. J.;
+                      Stoeva, T.; Tasak, N.; Thaiprakong, A.; Thwaites, G.; Tigoi, C.; Turner, C.; Turner, P.; Van
+                      Doorn, H. R.; Velaphi, S.; Vongpradith, A.; Vongsouvath, M.; Vu, H.; Walsh, T.; Walson, J. L.;
+                      Waner, S.; Wangrangsimakul, T.; Wannapinij, P.; Wozniak, T.; Young Sharma, T. E. M. W.; Yu, K. C.;
+                      Zheng, P.; Sartorius, B.; Lopez, A. D.; Stergachis, A.; Moore, C.; Dolecek, C.; Naghavi, M. Global
+                      Burden of Bacterial Antimicrobial Resistance in 2019: A Systematic Analysis. <em>The Lancet</em>
+                      <b>2022</b>, <em>399</em>(10325), 629–655. https://doi.org/10.1016/S0140-6736(21)02724-0.
+                    </p>
+                    <p align="justify">
+                      (24) WHO. <em>Resistencia a los antimicrobianos</em>.
+                      https://www.who.int/es/news-room/fact-sheets/detail/antimicrobial-resistance (accessed
+                      2023-08-22).
+                    </p>
+                    <p align="justify">
+                      (25) FAO, I. <em>The State of Food Security and Nutrition in the World 2023: Urbanization,
+                        Agrifood Systems Transformation and Healthy Diets across the Rural–Urban Continuum</em>; The
+                      State of Food Security and Nutrition in the World (SOFI); FAO, IFAD, UNICEF, WFP, WHO: Rome,
+                      Italy, 2023. https://doi.org/10.4060/cc3017en.
+                    </p>
+                    <p align="justify">
+                      (26) Tomanić, D.; Samardžija, M.; Kovačević, Z. Alternatives to Antimicrobial Treatment in Bovine
+                      Mastitis Therapy: A Review. <em>Antibiotics</em> <b>2023</b>, <em>12</em> (4), 683.
+                      https://doi.org/10.3390/antibiotics12040683.
+                    </p>
+                    <p align="justify">
+                      (27) Liu, H.; Hu, Z.; Li, M.; Yang, Y.; Lu, S.; Rao, X. Therapeutic Potential of Bacteriophage
+                      Endolysins for Infections Caused by Gram-Positive Bacteria. <em>J Biomed Sci</em> <b>2023</b>,
+                      <em>30</em> (1), 29. https://doi.org/10.1186/s12929-023-00919-1.
+
+                    </p>
+                    <p align="justify">
+                      (28) Borysowski, J.; Weber-Dąbrowska, B.; Górski, A. Bacteriophage Endolysins as a Novel Class of
+                      Antibacterial Agents. <em>Exp Biol Med (Maywood)</em> <b>2006</b>, <em>231</em> (4), 366–377.
+                      https://doi.org/10.1177/153537020623100402.
+                    </p>
+                    <p align="justify">
+                      (29) Oliveira, H.; Azeredo, J.; Lavigne, R.; Kluskens, Leon. D. Bacteriophage Endolysins as a
+                      Response to Emerging Foodborne Pathogens. <em>Trends in Food Science & Technology</em>
+                      <b>2012</b>, <em>28</em> (2), 103–115. https://doi.org/10.1016/j.tifs.2012.06.016.
+                    </p>
+                    <p align="justify">
+                      (30) Taylor, R. J.; Geeson, M. B.; Journeaux, T.; Bernardes, G. J. L. Chemical and Enzymatic
+                      Methods for Post-Translational Protein–Protein Conjugation. <em>J. Am. Chem. Soc.</em>
+                      <b>2022</b>, <em>144</em> (32), 14404–14419. https://doi.org/10.1021/jacs.2c00129.
+                    </p>
+                    <p align="justify">
+                      (31) Fernández, L.; González, S.; Campelo, A. B.; Martínez, B.; Rodríguez, A.; García, P.
+                      Downregulation of Autolysin-Encoding Genes by Phage-Derived Lytic Proteins Inhibits Biofilm
+                      Formation in Staphylococcus Aureus. <em>Antimicrob Agents Chemother</em> <b>2017</b>, <em>61</em>
+                      (5), e02724-16. https://doi.org/10.1128/AAC.02724-16.
+                    </p>
+                    <p align="justify">
+                      (32) Briers, Y.; Walmagh, M.; Van Puyenbroeck, V.; Cornelissen, A.; Cenens, W.; Aertsen, A.;
+                      Oliveira, H.; Azeredo, J.; Verween, G.; Pirnay, J.-P.; Miller, S.; Volckaert, G.; Lavigne, R.
+                      Engineered Endolysin-Based “Artilysins” To Combat Multidrug-Resistant Gram-Negative Pathogens.
+                      <em>mBio </em><b>2014</b>, <em>5</em> (4), 10.1128/mbio.01379-14.
+                      https://doi.org/10.1128/mbio.01379-14.
+                    </p>
+                    <p align="justify">
+                      (33) Resch, G.; Moreillon, P.; Fischetti, V. A. PEGylating a Bacteriophage Endolysin Inhibits Its
+                      Bactericidal Activity. <em>AMB Express</em> <b>2011</b>, <em>1</em>, 29.
+                      https://doi.org/10.1186/2191-0855-1-29.
+                    </p>
+                    <p align="justify">
+                      (34) Seijsing, J.; Sobieraj, A. M.; Keller, N.; Shen, Y.; Zinkernagel, A. S.; Loessner, M. J.;
+                      Schmelcher, M. Improved Biodistribution and Extended Serum Half-Life of a Bacteriophage Endolysin
+                      by Albumin Binding Domain Fusion. <em>Front Microbiol</em> <b>2018</b>, <em>9</em>, 2927.
+                      https://doi.org/10.3389/fmicb.2018.02927.
+                    </p>
+                    <p align="justify">
+                      (35) Kaur, J.; Kour, A.; Panda, J. J.; Harjai, K.; Chhibber, S. Exploring Endolysin-Loaded
+                      Alginate-Chitosan Nanoparticles as Future Remedy for Staphylococcal Infections. <em>AAPS
+                        PharmSciTech</em> <b>2020</b>, <em>21</em> (6), 233. https://doi.org/10.1208/s12249-020-01763-4.
+
+                    </p>
+                    <p align="justify">
+                      (36) Schmelcher, M.; Powell, A. M.; Camp, M. J.; Pohl, C. S.; Donovan, D. M. Synergistic
+                      Streptococcal Phage ΛSA2 and B30 Endolysins Kill Streptococci in Cow Milk and in a Mouse Model of
+                      Mastitis. <em>Appl Microbiol Biotechnol</em> <b>2015</b>, <em>99</em> (20), 8475–8486.
+                      https://doi.org/10.1007/s00253-015-6579-0.
+
+                    </p>
+                    <p align="justify">
+                      (37) Loeffler, J. M.; Fischetti, V. A. Synergistic Lethal Effect of a Combination of Phage Lytic
+                      Enzymes with Different Activities on Penicillin-Sensitive and -Resistant <em>Streptococcus
+                        Pneumoniae Strains. Antimicrob Agents Chemother</em> <b>2003</b>, <em>47</em> (1), 375–377.
+                      https://doi.org/10.1128/AAC.47.1.375-377.2003.
+                    </p>
+                    <p align="justify">
+                      (38) Rahman, M. U.; Wang, W.; Sun, Q.; Shah, J. A.; Li, C.; Sun, Y.; Li, Y.; Zhang, B.; Chen, W.;
+                      Wang, S. Endolysin, a Promising Solution against Antimicrobial Resistance. <em>Antibiotics</em>
+                      <b>2021</b>, <em>10</em> (11), 1277. https://doi.org/10.3390/antibiotics10111277.
+                    </p>
+                    <p align="justify">
+                      (39) Martin. <em>Goal 2: Zero Hunger</em>. United Nations Sustainable Development.
+                      https://www.un.org/sustainabledevelopment/hunger/ (accessed 2023-08-16).
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+
+
+              <br>
+
+
+
+
+            </div>
+            <script>
+              const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+
+              accordionItemHeaders.forEach(accordionItemHeader => {
+                accordionItemHeader.addEventListener("click", event => {
+
+                  // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
+
+                  // const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
+                  // if(currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader!==accordionItemHeader) {
+                  //   currentlyActiveAccordionItemHeader.classList.toggle("active");
+                  //   currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+                  // }
+
+                  accordionItemHeader.classList.toggle("active");
+                  const accordionItemBody = accordionItemHeader.nextElementSibling;
+                  if (accordionItemHeader.classList.contains("active")) {
+                    accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+                  }
+                  else {
+                    accordionItemBody.style.maxHeight = 0;
+                  }
+
+                });
+              });
+            </script>
+            <br>
+          </div>
+        </div>
+      </div>
     </div>
 </body>
+
 </html>
 
 
-    
-{% endblock %}
 
-    
+{% endblock %}
