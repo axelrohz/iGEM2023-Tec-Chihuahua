@@ -9,22 +9,40 @@ body::-webkit-scrollbar {
     display: none !important;  /* Safari and Chrome */
 }
 
-#header{
-    background-color:#0000003b !important;
-    color: white   !important;
-}
-.drop-down ul{
-    background-color: #0000003b !important;
-    color: white !important;
+:root{
+    --colorENT: #000000;
+    --colorWht: #ffffff;
+   }
+   .navBar.colored{
+    background-color: var(--colorENT) !important; 
 }
 
-#header .logo h1 a{
-    color: white !important;
-} 
-
-.nav-menu a{
-    color: white !important;
+.navBar.colored .navBarContent .navBarContentItem{
+    color: var(--colorWht) !important;
 }
+
+.navBar.colored .navBarContent .navBarContentItem:hover, .navBarContentItem:hover{
+    font-size: 16px !important;
+    color: #52b9b1 !important;
+}
+
+.navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox{
+    background-color: var(--colorENT) !important;
+}
+
+.navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox .fullbox .megaMenuItem .megaContent .megaTitle, .navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox .fullbox .megaMenuItem .megaContent .megaText{
+    color: var(--colorWht) !important;
+}
+
+
+.navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox .fullbox .megaMenuItem:hover .megaContent .megaTitle, .megaMenuItem:hover .megaContent .megaTitle{
+    color: #52b9b1 !important;
+}
+
+.navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox .fullbox .megaMenuItem:hover .megaContent .megaText, .megaMenuItem:hover .megaContent .megaText{
+    color: #52b9b1 !important;
+}
+
 
 .dadHome{
     width: 100%;
@@ -37,6 +55,8 @@ body::-webkit-scrollbar {
     width: 100vw;
     max-height: 100vh;
     overflow: clip;
+    top: -72px;
+    position: relative;
  }
  
 .videoHolder{

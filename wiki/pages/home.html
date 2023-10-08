@@ -11,7 +11,7 @@
     <link href="{{ url_for('static', filename = 'css/home.css') }}" rel="stylesheet">
     
 
-<div class="homeVideo">
+<div id="homeVideo" class="homeVideo">
         <div class="videoHolder">
             <video class="videoHome" autoplay muted loop src="https://video.igem.org/download/streaming-playlists/hls/videos/6fcf170f-12c7-482d-9fe6-9fd27d2d5627-1080-fragmented.mp4">
             </video>
@@ -497,6 +497,28 @@
             }
         }
 
+    </script>
+    <script>
+        let menus = document.getElementById('navBar');
+        window.onload = function(){
+            menus.classList.add('colored');
+        }
+    </script>
+    <script>
+        window.addEventListener('scroll',menuRev);
+        let menu = document.getElementById('navBar');
+        let video = document.getElementById('homeVideo');
+
+        function menuRev(){
+            let videoBottom = video.getBoundingClientRect().bottom;
+
+            if(videoBottom < 0){
+                menu.classList.remove('colored');
+            }
+            else{
+                menu.classList.add('colored');
+            }
+        }
     </script>
 
 </div>
