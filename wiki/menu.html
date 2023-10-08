@@ -8,7 +8,9 @@
   <div class="navBar" id="navBar" >
     <div class="navBarItems">
         <div class="navBarIcon">
+            <a class="navBarContentItem" href="{{ url_for('pages', page='home') }}">
             <img src="https://static.igem.wiki/teams/4607/wiki/fonts/logopeqcut.png" height="100%" alt="logo" class="logo">
+            </a>
         </div>
         
         <div class="navBarContent">
@@ -101,7 +103,7 @@
                 </div>
             </div>
             <a class="navBarContentItem" href="{{ url_for('pages', page='human-practices') }}">
-                <div class="textNavbar"> Human Practice</div>
+                <div class="textNavbar"> Human Practices</div>
             </a>
             <div class="navBarContentItem navExpand">
                 <div class="textNavbar expand"> Team</div>
@@ -157,7 +159,7 @@
                 </div>
             </div>
             <a href="{{ url_for('pages', page='entre') }}" class="navBarContentItem">
-                <div class="textNavbar"> Entrepuernuship</div>
+                <div class="textNavbar"> Entrepreneurship</div>
             </a>
             <div class="navBarContentItem navExpand">
                 <div class="textNavbar expand"> Lab</div>
