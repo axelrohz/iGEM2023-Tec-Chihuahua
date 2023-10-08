@@ -1,6 +1,48 @@
 :root{
     --colorENT: #5BC5AB;
+    --colorWht: #f3f3f3;
    }
+   .navBar.colored{
+    background-color: var(--colorENT) !important; 
+}
+
+.navBar.colored .navBarContent .navBarContentItem{
+    color: var(--colorWht) !important;
+}
+
+.navBar.colored .navBarContent .navBarContentItem:hover, .navBarContentItem:hover{
+    font-size: 16px !important;
+    color: #ffffff !important;
+}
+
+.navBar.colored .navBarContent .navBarContentItem::after{
+    background-color: aliceblue;
+}
+
+.navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox{
+    background-color: var(--colorENT) !important;
+}
+
+.navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox .fullbox .megaMenuItem .megaContent .megaTitle, .navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox .fullbox .megaMenuItem .megaContent .megaText{
+    color: var(--colorWht) !important;
+}
+
+.navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox::after{
+    background-color: aliceblue;
+}
+
+.navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox .fullbox .megaMenuItem:hover .megaContent .megaTitle, .navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox .fullbox .megaMenuItem:hover .megaContent .megaTitle{
+    color: #ffffff !important;
+}
+
+.navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox .fullbox .megaMenuItem:hover .megaContent .megaText, .navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox .fullbox .megaMenuItem:hover .megaContent .megaText{
+    color: #ffffff !important;
+}
+
+.navBar.colored .megaMenuItem .megaContent::after{
+    background-color: aliceblue;
+}
+
 
  .titleCont{
     width: 100%;
@@ -10,8 +52,16 @@
     z-index: 5;
     max-height: 100vh;
     overflow: clip;
+    top: -72px;
   }
   
+.headParts{
+    position: relative;
+    top: -72px;
+    padding-bottom: 0 !important;
+    height: 150px !important;
+}
+
   .titleENT{
       width: 100%;
         height: 100%;

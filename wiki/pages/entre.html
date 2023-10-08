@@ -12,12 +12,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../../static/css/human.css">
+	<link href="{{ url_for('static', filename = 'css/home.css') }}" rel="stylesheet">
 	<link href="{{ url_for('static', filename = 'css/human.css') }}" rel="stylesheet">
 	<link href="{{ url_for('static', filename = 'css/empre.css') }}" rel="stylesheet">
 
 	<link href="{{ url_for('static', filename = 'css/experiments.css') }}" rel="stylesheet">
 	<link href="{{ url_for('static', filename = 'css/timeline.css') }}" rel="stylesheet">
-	<link href="{{ url_for('static', filename = 'css/home.css') }}" rel="stylesheet">
+
 	<link href="{{ url_for('static', filename = 'css/circleDiagramENT.css') }}" rel="stylesheet">
 	<script type=”text/javascript”
 		src=”http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML”></script>
@@ -30,7 +31,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
 	<link rel="stylesheet" href="static/css/parts.css">
 	<link rel="stylesheet" href="static/css/waveHead.css">
-	<div class="titleCont">
+	<div class="titleCont" id="homeVideo">
 
 		<div id="enttT" class="titleENT active">
 			<div class="entText">
@@ -1870,6 +1871,27 @@
 			}
 		}
 	</script>
+
+<script>
+	let menus = document.getElementById('navBar');
+		menus.classList.add('colored');
+</script>
+<script>
+	window.addEventListener('scroll',menuRev);
+	let menu = document.getElementById('navBar');
+	let video = document.getElementById('homeVideo');
+
+	function menuRev(){
+		let videoBottom = video.getBoundingClientRect().bottom;
+
+		if(videoBottom < 0){
+			menu.classList.remove('colored');
+		}
+		else{
+			menu.classList.add('colored');
+		}
+	}
+</script>
 
 </body>
 

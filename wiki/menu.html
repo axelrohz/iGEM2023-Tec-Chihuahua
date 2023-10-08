@@ -1,9 +1,11 @@
 
   <link rel="stylesheet" href="../static/css/menu.css">
+  <link rel="stylesheet" href="../static/css/smallmenu.css">
   <link href="{{ url_for('static', filename = 'css/menu.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename = 'css/smallmenu.css') }}" rel="stylesheet">
 	
 
-  <div class="navBar">
+  <div class="navBar" id="navBar" >
     <div class="navBarItems">
         <div class="navBarIcon">
             <img src="https://static.igem.wiki/teams/4607/wiki/fonts/logopeqcut.png" height="100%" alt="logo" class="logo">
@@ -79,19 +81,19 @@
                             <img src="./model.png" height="100%" alt="logo" class="logo">
                         </div>
                         <div class="megaContent">
-                            <div class="megaTitle">Medal criteria</div>
+                            <div class="megaTitle">Medal Criteria</div>
                             <div class="megaText">Text text text Text text text Text text text Text text text </div>
                         </div>
                     </a>
 
 
 
-                    <a href="{{ url_for('pages', page='judgin-form') }}" class="megaMenuItem">
+                    <a href="{{ url_for('pages', page='judgingform') }}" class="megaMenuItem">
                         <div class="megaIcon">
                             <img src="./model.png" height="100%" alt="logo" class="logo">
                         </div>
                         <div class="megaContent">
-                            <div class="megaTitle">Judging form</div>
+                            <div class="megaTitle">Judging Form</div>
                             <div class="megaText">Text text text Text text text Text text text Text text text </div>
                         </div>
                     </a>
@@ -218,3 +220,105 @@
 
 </div>
 
+<div id="myNav" class="cellNav">
+    <div class="cellNavTop">
+        <img class="toplogo" src="https://static.igem.wiki/teams/4607/wiki/fonts/logopeqcut.png" height="100%" alt="logo" class="logo">
+        <div class="topclose" onclick="openNav()"> X </div>
+    </div>
+    <div class="cellNavLeft" onclick="openNav()"></div>   
+    <div class="openCloseNav">
+    <div class="cellNavRight">
+        <a href="{{ url_for('pages', page='home') }}" class="navLink"><div class="navText"> Home</div></a>
+        
+        <div id="navAbout" class="navLink expandNavMore" onclick="openOption('navAbout')"><div class="navText expandLink"> Project</div>
+        <div class="cellNavRight expandNav">
+            <div class="backNav" onclick="closeOption('navAbout')"> < Back</div>
+            
+            <a href="{{ url_for('pages', page='notebook') }}" class="navLink"><div class="navText secondNavText"> Notebook</div></a>
+            <a href="{{ url_for('pages', page='description') }}" class="navLink"><div class="navText secondNavText"> Description</div></a>
+            <a href="{{ url_for('pages', page='safety') }}" class="navLink"><div class="navText secondNavText"> Safety</div></a>
+            <a href="{{ url_for('pages', page='contribution') }}" class="navLink"><div class="navText secondNavText"> Contributions</div></a>
+            <a href="{{ url_for('pages', page='engineering') }}" class="navLink"><div class="navText secondNavText"> Engineering</div></a>
+            <a href="{{ url_for('pages', page='model') }}" class="navLink"><div class="navText secondNavText"> Model</div></a>
+            <a href="{{ url_for('pages', page='medal-criteria') }}" class="navLink"><div class="navText secondNavText"> Medal Criteria</div></a>
+            <a href="{{ url_for('pages', page='judgingform') }}" class="navLink"><div class="navText secondNavText"> Judging Form</div></a>
+            
+
+        </div>
+        </div>
+
+        <a href="{{ url_for('pages', page='human-practices') }}" class="navLink"><div class="navText"> Human Practice</div></a>
+
+
+        <div id="navTeam" class="navLink expandNavMore" onclick="openOption('navTeam')"><div class="navText expandLink"> Team</div>
+        <div class="cellNavRight expandNav">
+            <div class="backNav" onclick="closeOption('navTeam')"> < Back</div>
+            
+            <a href="{{ url_for('pages', page='team') }}" class="navLink"><div class="navText secondNavText"> Members</div></a>
+            <a href="{{ url_for('pages', page='attributions') }}" class="navLink"><div class="navText secondNavText"> Attributions</div></a>
+            <a href="{{ url_for('pages', page='behind') }}" class="navLink"><div class="navText secondNavText"> Behind the scenes</div></a>
+            <a href="{{ url_for('pages', page='sponsors') }}" class="navLink"><div class="navText secondNavText"> Sponsors</div></a>
+            <a href="{{ url_for('pages', page='collaborations') }}" class="navLink"><div class="navText secondNavText"> Collaborations</div></a>
+            
+
+        </div>
+        </div>
+        
+        
+        <a href="{{ url_for('pages', page='entre') }}" class="navLink"><div class="navText"> Entrepuernuship</div></a>
+
+        <div id="navLab" class="navLink expandNavMore" onclick="openOption('navLab')"><div class="navText expandLink"> Lab</div>
+        <div class="cellNavRight expandNav">
+            <div class="backNav" onclick="closeOption('navLab')"> < Back</div>
+            
+            <a href="{{ url_for('pages', page='experiments') }}" class="navLink"><div class="navText secondNavText"> Experiments</div></a>
+            <a href="{{ url_for('pages', page='results') }}" class="navLink"><div class="navText secondNavText"> Results</div></a>
+            <a href="{{ url_for('pages', page='parts') }}" class="navLink"><div class="navText secondNavText"> Parts</div></a>
+            <a href="{{ url_for('pages', page='proof') }}" class="navLink"><div class="navText secondNavText"> Proof of Concept</div></a>
+            <a href="{{ url_for('pages', page='labnotebook') }}" class="navLink"><div class="navText secondNavText"> Lab Notebook</div></a>
+            
+
+        </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<script>
+
+    function openNav() {
+        var myNav = document.getElementById("myNav");
+        var options = document.getElementsByClassName("expandNavMore");
+        if (myNav.classList.contains("active")) {
+            myNav.classList.remove("active");
+        } else{
+            myNav.classList.add("active");
+        }
+
+        for (var i = 0; i < options.length; i++) {
+            if (options[i].classList.contains("active")) {
+                options[i].classList.remove("active");
+            } 
+        }
+
+    }
+
+    function openOption(id) {
+        var myNav = document.getElementById(id);
+            if (myNav.classList.contains("close")) {
+                myNav.classList.remove("close");
+            } else{
+                myNav.classList.add("active");
+            }
+            
+
+    }
+
+    function closeOption(id) {
+        var myNav = document.getElementById(id);
+            myNav.classList.remove("active");
+            myNav.classList.add("close");
+    }
+
+</script>
