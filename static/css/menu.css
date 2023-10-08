@@ -2,20 +2,39 @@
     --colorENT: #3ad69a;
     --colorWht: #ffffff;
    }
+   .navBar.colored{
+    background-color: var(--colorENT) !important; 
+}
 
-body{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    background-color: #ffffff;
-    overflow-x: hidden;
-    overflow-x: clip;
-    box-sizing: border-box;
+.navBar.colored .navBarContent .navBarContentItem{
+    color: var(--colorWht) !important;
+}
+
+.navBar.colored .navBarContent .navBarContentItem:hover, .navBarContentItem:hover{
+    font-size: 16px !important;
+    color: #52b9b1 !important;
+}
+
+.navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox{
+    background-color: var(--colorENT) !important;
+}
+
+.navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox .fullbox .megaMenuItem .megaContent .megaTitle, .navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox .fullbox .megaMenuItem .megaContent .megaText{
+    color: var(--colorWht) !important;
+}
+
+
+.navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox .fullbox .megaMenuItem:hover .megaContent .megaTitle, .megaMenuItem:hover .megaContent .megaTitle{
+    color: #52b9b1 !important;
+}
+
+.navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox .fullbox .megaMenuItem:hover .megaContent .megaText, .megaMenuItem:hover .megaContent .megaText{
+    color: #52b9b1 !important;
 }
 
 .navBar{
     width: 100%;
-    height: 58px;
+    height: 72px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,9 +48,7 @@ body{
     
 }
 
-.navBar.colored{
-    background-color: var(--colorENT);
-}
+
 
 
 .navBarItems{
@@ -93,14 +110,6 @@ body{
     transform: scaleX(0) translate(-50%,0);
     transform-origin: left;
     transition: 0.3s;
-}
-.navBar.colored .navBarContent .navBarContentItem{
-    color: var(--colorWht);
-}
-
-.navBar.colored .navBarContent .navBarContentItem:hover, .navBarContentItem:hover{
-    font-size: 16px;
-    color: #52b9b1;
 }
 
 
@@ -255,22 +264,8 @@ body{
 .megaMenuItem:hover .megaContent::after{
     transform: scaleX(1) translate(-50%,0);
 }
-.navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox{
-    background-color: var(--colorENT);
-}
-
-.navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox .fullbox .megaMenuItem .megaContent .megaTitle, .navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox .fullbox .megaMenuItem .megaContent .megaText{
-    color: var(--colorWht);
-}
 
 
-.navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox .fullbox .megaMenuItem:hover .megaContent .megaTitle, .megaMenuItem:hover .megaContent .megaTitle{
-    color: #52b9b1;
-}
-
-.navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox .fullbox .megaMenuItem:hover .megaContent .megaText, .megaMenuItem:hover .megaContent .megaText{
-    color: #52b9b1;
-}
 
 .big{
     width: 100%;
@@ -280,3 +275,8 @@ body{
     align-items: center;
 }
 
+@media screen and (max-width: 700px) {
+    .navBar{
+        display: none;
+    }
+}
