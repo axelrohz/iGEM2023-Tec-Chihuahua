@@ -1,7 +1,9 @@
 @media (max-width: 768px) {
-    body{
+
+    body {
         overflow-x: hidden;
     }
+
     .uno h1 {
         font-size: 3rem;
     }
@@ -17,7 +19,14 @@
 
     #piechart_3d {
         margin: 0;
-        margin-left: -45%;
+        margin-left: -23%;
+        clip-path: inset(0 313px 0 0);
+        max-width: 766px;
+    }
+
+    .teamBody.active .teamScroll {
+        width: 100%;
+        overflow-x: hidden;
     }
 
     h2 {
@@ -122,7 +131,7 @@
     }
 
     .blog-card {
-        margin: 10px 10px 10px 8px !important; 
+        margin: 10px 10px 10px 8px !important;
         height: 719px !important;
     }
 
@@ -147,13 +156,13 @@
         margin-top: 130% !important;
     }
 
-    #Taffy{
+    #Taffy {
         height: auto !important;
         width: auto !important;
         margin-left: 0 !important;
     }
 
-    #pieDiagrama{
+    #pieDiagrama {
         display: none !important;
     }
 
