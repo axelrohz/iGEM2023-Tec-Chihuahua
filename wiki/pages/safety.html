@@ -80,7 +80,7 @@
     </div>
   </div>
 
-  <div>
+  <div class="div">
 
     <!--Index Bonito-->
     <div class="teamScroll">
@@ -570,10 +570,47 @@ function showSlides(n) {
                 </li>
               </ul>
             </div>
-
           </div>
         </div>
       </div>
+
+      <div class="accordion refer">
+        <div class="accordion-item">
+          <div id="sec5" class="accordion-item-header" style="text-align: left;">
+            References
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+
+              <p style="text-align: justify;">
+                1. Public Health Department. (2018). Laboratory Biosafety
+                and Biosecurity Courses. June 2019, de Government of
+                Canada Sitio web:
+                https://training-formation.phac-aspc.gc.ca/?lang=en
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+        accordionItemHeaders.forEach(accordionItemHeader => {
+          accordionItemHeader.addEventListener("click", event => {
+      
+            accordionItemHeader.classList.toggle("active");
+            const accordionItemBody = accordionItemHeader.nextElementSibling;
+            if (accordionItemHeader.classList.contains("active")) {
+              accordionItemBody.style.maxHeight = "max-content";
+            }
+            else {
+              accordionItemBody.style.maxHeight = 0;
+            }
+      
+          });
+        });
+      </script>
 
       <script type="text/javascript">
         var dot1 = document.getElementById('dot1');
@@ -726,20 +763,7 @@ function showSlides(n) {
 }
 </script>
 
-      <br>
-      <br>
-      <br>
-      <br>
+    </body>
+  </html>
 
-      <div class="accordion-item-body">
-        <div class="accordion-item-body-content">
-          <p>1. Public Health Department. (2018). Laboratory Biosafety and
-            Biosecurity Courses. June 2019, de Government
-            of Canada Sitio web:
-            https://training-formation.phac-aspc.gc.ca/?lang=en</p>
-        </div>
-      </div>
-
-    </div>
-
-    {% endblock %}
+  {% endblock %}

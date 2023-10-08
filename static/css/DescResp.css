@@ -1,4 +1,7 @@
 @media (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
     .uno h1 {
         font-size: 3rem;
     }
@@ -119,15 +122,15 @@
     }
 
     .blog-card {
-        margin: 10px 10px 10px 8px;
-        height: 719px;
+        margin: 10px 10px 10px 8px !important; 
+        height: 719px !important;
     }
 
     .img .imgmethodology {
-        height: auto;
-        width: 40%;
-        margin-top: 10%;
-        margin-left: 42%;
+        height: auto !important;
+        width: 40% !important;
+        margin-top: 10% !important;
+        margin-left: 42% !important;
     }
 
     #tap-1:checked~.inner-part .content-methodology-1,
@@ -136,12 +139,12 @@
     #tap-4:checked~.inner-part .content-methodology-4,
     #tap-5:checked~.inner-part .content-methodology-5,
     #tap-6:checked~.inner-part .content-methodology-6 {
-        opacity: 1;
-        margin-left: -254px;
-        z-index: 10;
-        transition-delay: .3s;
-        width: 95%;
-        margin-top: 130%;
+        opacity: 1 !important;
+        margin-left: -254px !important;
+        z-index: 10 !important;
+        transition-delay: .3s !important;
+        width: 95% !important;
+        margin-top: 130% !important;
     }
 
     #Taffy{

@@ -4108,7 +4108,7 @@
 			<div class="tituloContenido">
 				<h4 id="parameter_estimation"><br><br>Parameter estimation</h4>
 			</div>
-			<br>
+			<br id="closePopUp">
 			<p class="contenido">Subsequently, employing the collected data set of sampled parameters, we proceed to estimate the specific parameters tied to the kinetic aspects of the system. We present a computational approach for the estimation of kinetic constants, focusing on the induction phase of protein expression, through the application of a <a href="#popup-optin">Genetic Algorithm</a> (GA).</p>
 				<div class="bg-overlay" id="popup-optin">
 					<div class="subscribe-optin">
@@ -4120,7 +4120,7 @@
 						<hm>Optimization Cycle</hm>
 						<p3  max-hight="50vh" id="J" class="contenido">Belonging to the family of population-based algorithms, the GA operates by maintaining a population of solutions, utilizing the information gleaned from individuals within this population to continually enhance these solutions. This population consists of 12 genes, each representing a kinetic constant. The objective function evaluates the efficacy of each individual's proposed solution, which was compared to SDS-PAGE data. Each individual within the population undergoes evaluation aiming to minimize the error between the model's output and the available data. Subsequently, a random pair-wise tournament selection was employed to identify the best-evaluated individuals, forming the selected population for the next generation.</p3>
 						</div>
-						<a class="popup__close" href="#">X</a>
+						<a class="popup__close" href="#closePopUp">X</a>
 					</div>
 					</div>
 				</div>
@@ -4140,7 +4140,7 @@
 						  <hm>Image cuantification</hm>
 						  <p3  max-hight="50vh" id="J" class="contenido">Initially, a background subtraction operation using the “SubtractBackground” feature was performed on individual images, followed by an inversion of color intensities using the “Invert” function. The processed images were systematically organized in a designated folder. Utilizing the “ROI Manager” tool, regions of interest (ROIs) corresponding to total proteins and endolysin bands were selected in each SDS-PAGE gel image subject to analysis. To optimize visibility and precisely define the selection area for protein bands, the “Brightness/Contrast” function was employed. Subsequently, the “_BandPeakQuantification” plug-in was executed, configured to detect background in a 3-pixel area around the chosen region. The plugin outputted data in area units, instrumental for subsequent quantitative analysis. Finally, for parameter estimation, the endolysin content was evaluated as a percentage relative to the total proteins.</p3>
 						</div>
-						<a class="popup2__close" href="#">X</a>
+						<a class="popup2__close" href="#closePopUp">X</a>
 					</div>
 					</div>
 				</div>
