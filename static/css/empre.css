@@ -31,11 +31,11 @@
     background-color: aliceblue;
 }
 
-.navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox .fullbox .megaMenuItem:hover .megaContent .megaTitle, .megaMenuItem:hover .megaContent .megaTitle{
+.navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox .fullbox .megaMenuItem:hover .megaContent .megaTitle, .navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox .fullbox .megaMenuItem:hover .megaContent .megaTitle{
     color: #ffffff !important;
 }
 
-.navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox .fullbox .megaMenuItem:hover .megaContent .megaText, .megaMenuItem:hover .megaContent .megaText{
+.navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox .fullbox .megaMenuItem:hover .megaContent .megaText, .navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox .fullbox .megaMenuItem:hover .megaContent .megaText{
     color: #ffffff !important;
 }
 
