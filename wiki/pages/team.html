@@ -83,7 +83,7 @@
   </div>
 
 
-  <div class="parallax-content">
+  <div class="parallax-content teamBody">
 
     <div class="scrollIndexContain">
       <div class="stickyIndex">
@@ -728,14 +728,14 @@
         var dot2 = document.getElementById('dot2');
         var dot3 = document.getElementById('dot3');
         var dot4 = document.getElementById('dot4');
-        var dot5 = document.getElementById('dot5');
+
 
         function goTo(scrollID) {
           dot1.classList.remove('active');
           dot2.classList.remove('active');
           dot3.classList.remove('active');
           dot4.classList.remove('active');
-          dot5.classList.remove('active');
+
           var dot = document.getElementById('dot' + scrollID);
           dot.classList.add('active');
           var element = document.getElementById('sec' + scrollID);
@@ -755,7 +755,7 @@
         var dot2 = document.getElementById('dot2');
         var dot3 = document.getElementById('dot3');
         var dot4 = document.getElementById('dot4');
-        var dot5 = document.getElementById('dot5');
+
 
         window.addEventListener('scroll', function () {
           var sect1top = sect1.getBoundingClientRect().top;
@@ -769,37 +769,35 @@
             dot2.classList.remove('active');
             dot3.classList.remove('active');
             dot4.classList.remove('active');
-            dot5.classList.add('active');
+
           } else if (sect4top - topPad <= topPad) {
             dot1.classList.remove('active');
             dot2.classList.remove('active');
             dot3.classList.remove('active');
             dot4.classList.add('active');
-            dot5.classList.remove('active');
+
           } else if (sect3top - topPad <= topPad) {
             dot1.classList.remove('active');
             dot2.classList.remove('active');
             dot3.classList.add('active');
             dot4.classList.remove('active');
-            dot5.classList.remove('active');
           } else if (sect2top - topPad <= topPad) {
             dot1.classList.remove('active');
             dot2.classList.add('active');
             dot3.classList.remove('active');
             dot4.classList.remove('active');
-            dot5.classList.remove('active');
           } else if (sect1top - topPad <= topPad) {
             dot1.classList.add('active');
             dot2.classList.remove('active');
             dot3.classList.remove('active');
             dot4.classList.remove('active');
-            dot5.classList.remove('active');
+
           } else {
             dot1.classList.remove('active');
             dot2.classList.remove('active');
             dot3.classList.remove('active');
             dot4.classList.remove('active');
-            dot5.classList.remove('active');
+
           }
 
         }); 
