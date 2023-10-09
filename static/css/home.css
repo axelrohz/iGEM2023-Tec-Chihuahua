@@ -395,13 +395,43 @@ transform: scaleX(-1);
     line-height: 9rem;
 }
 
+.liters{
+    font-size: 7rem;
+    font-weight: 600;
+    line-height: 7rem;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .liters{
+        font-size: 6rem;
+        font-weight: 600;
+        line-height: 6rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .liters{
+        font-size: 4rem;
+        font-weight: 600;
+        line-height: 4rem;
+    }
+}
+    
+
+
 .whyUsNumText{
     width: 100%;
     text-align: center;
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 600;
     margin: 0;
     padding: 20px 14%;
+}
+
+.infomorewhy{
+    font-size: 1rem;
+    font-family: 400;
 }
 
 @media (max-width: 768px) {
