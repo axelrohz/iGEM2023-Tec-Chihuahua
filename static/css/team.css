@@ -595,3 +595,12 @@ svg {
   margin-left: 20px;
   margin-right: 20px;
   }
+
+  .teamBody{
+    display: block !important;
+  }
+
+  .teamBody.active .scrollIndexContain{
+    opacity: 1;
+
+  }
