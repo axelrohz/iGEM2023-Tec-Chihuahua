@@ -383,9 +383,9 @@ label {
 
 /*Tarjetas desplegables*/
 .accordion {
-  width: 90%;
-  max-width: 1000px;
-  margin: 2rem auto;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0.5rem;
 }
 
 .accordion-item {
