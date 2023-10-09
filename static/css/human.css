@@ -162,6 +162,11 @@
   width: 60vw;
   bottom: 19vw;
  }
+
+
+.ajuste_probelmas{
+  margin-left: 14vw !important;
+}
  
  /*italicas */
  .i {
@@ -176,7 +181,7 @@
   transform: scale(1.0);
  }
  
- 
+
  /*tooltips cosas */
  .tooltipSignificadoBox {
   position: absolute;
@@ -703,6 +708,19 @@
   color: black;
   max-width: 90%;
  }
+
+.contenido2{
+  text-align: justify;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: 'Quicksand';
+  text-align: justify;
+  line-height: 1.5;
+  margin-left: 14vw !important;
+  color: black;
+  max-width: 90%;
+ }
+ 
  
  .Content{
   margin-left: 10px;
@@ -778,7 +796,6 @@ margin-left: 30%;
   transition: all 0.2s ease;
   border: none;
   background: none;
-  margin-left: 130px !important;
   }
  .cta2:before{
   content: "";
@@ -937,6 +954,31 @@ margin-left: 30%;
  background-color:red;
  }
  
+
+
+/*diagrama de las 4 main problems*/
+.accordion2 {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+.accordion-item2 {
+  background-color: gray;
+  color: #111;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+.accordion-item-body2 {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  padding-left: 2vw;
+  padding-right: 2vw;
+ }
+
+
+
  /*Boton desplegable de referencias*/
  .accordion {
   width: 90%;
@@ -2881,7 +2923,7 @@ z-index: 10;
 }
 
 .foto_leche{
-  margin-left: 14vw;
+  margin-left: 12vw;
   max-width: 50vw;
 }
 .foto_medicinas{
@@ -3125,11 +3167,23 @@ z-index: 10;
   padding-right: 1.5vw;
 }
 
-.contpapa, .contpapa_2, .contpapa_3, .contpapa_4 {
+.contpapa, .contpapa_2, .contpapa_3 {
   height: 120px;
   width: 300px;
   overflow:hidden;
-  margin-left: 32vw;
+  margin-left: 27vw;
+  background: linear-gradient(#447D9C,#5BC5AB);
+  transition: 1s;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.contpapa_4{
+  height: 120px;
+  width: 300px;
+  overflow:hidden;
+  margin-left: 27vw;
   background: linear-gradient(#447D9C,#5BC5AB);
   transition: 1s;
   border-radius: 10px;
@@ -3141,7 +3195,7 @@ z-index: 10;
 }
 
 .contpapa_2:hover {
-  height: 33vw;
+  height: fit-content;
   padding-bottom: 2vw;
 }
 
@@ -3196,10 +3250,8 @@ z-index: 10;
 /* Containers */
 #wrapper {
 	min-width: 55%;
-  margin-left: 16%;
   position: relative;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin: 2vw auto;
 }
 #figure {
 	height: 380px;
