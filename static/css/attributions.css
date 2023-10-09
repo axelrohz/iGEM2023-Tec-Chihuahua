@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&display=swap');
 
+h {
+  text-align: center;
+  font-family: 'Bricolage Grotesque';
+  font-size: 6rem;
+  font-weight: 600;
+  color: #F3F3FA;
+  display: grid;
+  align-items: center;
+  max-width: 100%;
+}
 
- 
 object {
+  padding-top: 8%;
   width: 95%;
   height: 1990vh;
   display: block;
@@ -15,5 +25,15 @@ object {
   justify-content: center;
   align-items: center;
   height: auto;
+
+}
+
+@media (max-width: 768px) {
+  h{
+    font-size: 400%;
+  }
+  object{
+    padding-top: 105%;
+  }
   
 }
