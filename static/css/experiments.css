@@ -130,6 +130,7 @@ h2:before {
   margin: 0 auto;
   position: relative;
   z-index: 1;
+  max-width: 100%;
 }
 
 
@@ -148,14 +149,15 @@ h2:before {
 }
 
 .ag-courses_item {
-  -ms-flex-preferred-size: calc(33.33333% - 30px);
-  flex-basis: calc(33.33333% - 30px);
 
   margin: 0 15px 30px;
 
   overflow: hidden;
 
   border-radius: 28px;
+  width: 30%;
+  min-width: 300px;
+  max-width: 90vw;
 }
 
 .ag-courses-item_link {
