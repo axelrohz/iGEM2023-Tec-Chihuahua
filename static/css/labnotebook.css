@@ -40,55 +40,12 @@
     text-align: center;
 }
 
-#February {
-
-    border-left-width: 8px !important;
-    border-left-style: solid !important;
-    border-left-color: #A9BA6C !important;
-}
-
-#February::before {
-    content: "February";
-}
-
-#March {
-
-    border-left-width: 8px !important;
-    border-left-style: solid !important;
-    border-left-color: #5BC5AB !important;
-}
-
-#March::before {
-    content: "March";
-}
-
-#April {
-
-    border-left-width: 8px !important;
-    border-left-style: solid !important;
-    border-left-color: #C55B75 !important;
-}
-
-#April::before {
-    content: "April";
-}
-
-#May {
-
-    border-left-width: 8px !important;
-    border-left-style: solid !important;
-    border-left-color: #447D9C !important;
-}
-
-#May::before {
-    content: "May";
-}
-
 #June {
 
     border-left-width: 8px !important;
     border-left-style: solid !important;
     border-left-color: #A9BA6C !important;
+    font-family: "Quicksand";
 }
 
 #June::before {
@@ -100,6 +57,7 @@
     border-left-width: 8px !important;
     border-left-style: solid !important;
     border-left-color: #5BC5AB !important;
+    font-family: "Quicksand";
 }
 
 #July::before {
@@ -111,6 +69,7 @@
     border-left-width: 8px !important;
     border-left-style: solid !important;
     border-left-color: #C55B75 !important;
+    font-family: "Quicksand";
 }
 
 #August::before {
@@ -122,6 +81,7 @@
     border-left-width: 8px !important;
     border-left-style: solid !important;
     border-left-color: #447D9C!important;
+    font-family: "Quicksand";
 }
 
 #September::before {
@@ -133,6 +93,7 @@
     border-left-width: 8px !important;
     border-left-style: solid !important;
     border-left-color: #A9BA6C !important;
+    font-family: "Quicksand";
 }
 
 #October::before {

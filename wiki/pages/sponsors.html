@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 
-{% block title %}Human Practices{% endblock %}
+{% block title %}Sponsors{% endblock %}
 {% block lead %}We ask every team to think deeply and creatively about whether their project is responsible and good for
 the world. Consider how the world affects your work and how your work affects the world.{% endblock %}
 
@@ -15,6 +15,8 @@ the world. Consider how the world affects your work and how your work affects th
     
     <link rel="stylesheet" href="../../static/css/parallax.css">
     <link rel="stylesheet" href="../../static/css/parallaxFull.css">
+    <link rel="stylesheet" href="static/css/safety.css">
+
 
     
     <link href="{{ url_for('static', filename='css/body.css') }}" rel="stylesheet">
@@ -24,6 +26,7 @@ the world. Consider how the world affects your work and how your work affects th
     <link href="{{ url_for('static', filename = 'css/parallaxFull.css') }}" rel="stylesheet">
 </head>
 <body class="mybody">
+    <script src="../../static/assets/js/main.js"></script>
     <img class="parallax-team" src="https://static.igem.wiki/teams/4607/wiki/members/dsc-0093.jpg">
     <div class="image-space"><h1 class="title"> Team </h1></div>
     <div class="parallax-content">
@@ -51,19 +54,160 @@ the world. Consider how the world affects your work and how your work affects th
                     <div class="texthide">
                     <br>
 
-                    <div class="pfrase"><p>Total gratitude to our sponsors, who helped us raise our dream.</p></div>
+                    <div class="pfrase"><p>Total gratitude to our sponsors, who helped us raise our dream:</p></div>
 
 
-                    <div>
+                    <div id="txtsponsors">
                         <div id="sponsors" class="hid">
-                            <p>
-                            </p>
-                            <p><span id="txt"></span></p>
-                        </div>
+    
+                                <div class="contdiagrama">
+                                    <div class="contpapa"
+                                    style="--gradient:linear-gradient(45deg, rgb(91, 197, 171), rgb(169, 186, 108))">
+                                    <div class="contenido">
+                                        <img style="max-width: 90%;object-fit: contain;""
+                                        src="https://static.igem.wiki/teams/4607/wiki/footer/eic-tec-de-monterrey.png"
+                                        alt>
+                                    </div>
+                                    <div class="contenidotxt">
+                                        <p class="subsubtitle"><b>School of Engineering and Sciences of Tecnológico de Monterrey</b></p>
+                                        <p>A heartfelt thank you to the School of Engineering and Sciences at our institution for wholeheartedly supporting our journey to participate in the competition. Their unwavering support made it possible for us to bring our project to life by providing the essential facilities, materials, and covering the participation fees. We are truly grateful for their invaluable assistance.</p>                                    </div>
+                                    </div>
+
+                                    <div class="contpapa"
+                                    style="--gradient:linear-gradient(45deg, rgb(91, 197, 171), rgb(169, 186, 108))">
+                                    <div class="contenido">
+                                        <img style="max-width: 90%;object-fit: contain;"
+                                        src="https://static.igem.wiki/teams/4607/wiki/footer/logo-ichijuv.png"
+                                        alt>
+                                    </div>
+                                    <div class="contenidotxt">
+                                        <p class="subsubtitle"><b>Instituto Chihuahuense de la Juventud</b></p>
+                                        <p>We are grateful to the Instituto Chihuahuense de la Juventud, a government agency in our Mexican state, for awarding our team a grant. </p>
+                                    </div>
+                                    </div>
+                                    
+
+                                </div>
+
+                                <div class="contdiagrama">
+                                    <div class="contpapa"
+                                      style="--gradient:linear-gradient(45deg, rgb(169, 186, 108), rgb(246, 174, 45))">
+                                      <div class="contenido">
+                                        <img
+                                          style="max-width: 90%;object-fit: contain;"
+                                          src="https://static.igem.wiki/teams/4607/wiki/footer/neb.png"
+                                          alt>
+                                      </div>
+                                      <div class="contenidotxt">
+                                        <p class="subsubtitle"><b>New England Biolabs</b></p>
+                                        <p>Thanks to New England Biolabs for provided us with reagents and material lab to perform our experimental phase. </p>
+                                      </div>
+                                    </div>
+                            
+                                    <div class="contpapa"
+                                    style="--gradient:linear-gradient(45deg, rgb(169, 186, 108), rgb(246, 174, 45))">
+                                      <div class="contenido">
+                                        <img 
+                                        style="max-width: 90%;object-fit: contain;"
+                                        src="https://static.igem.wiki/teams/4607/wiki/footer/ctr-logo-png-bien.png" alt>
+                                      </div>
+                                      <div class="contenidotxt">
+                                        <p class="subsubtitle"><b>CTR Scientific</b></p>
+                                        <p>We extend our sincere gratitude to CTR Scientific for generously providing us with the essential reagents and lab coats needed for our experimental phase.
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
                         
 
-                        
-                    </div>
+                                    <div class="contdiagrama">
+                                        <div class="contpapa"
+                                        style="--gradient:linear-gradient(45deg, rgb(246, 174, 45), rgb(222, 133, 81))">
+                                        <div class="contenido">
+                                            <img
+                                            style="max-width: 90%;object-fit: contain;"
+                                            src="https://static.igem.wiki/teams/4607/wiki/footer/logo-idt.png"
+                                            alt>
+                                        </div>
+                                        <div class="contenidotxt">
+                                            <p class="subsubtitle"><b>IDT: Integrated DNA Technologies</b></p>
+                                            <p>A warm thank you to IDT for their invaluable contribution in synthesizing our DNA sequences.  </p>
+                                        </div>
+                                        </div>
+
+                                        <div class="contpapa"
+                                        style="--gradient:linear-gradient(45deg, rgb(246, 174, 45), rgb(222, 133, 81))">
+                                        <div class="contenido">
+                                            <img style="max-width: 90%;object-fit: contain;"
+                                            src="https://static.igem.wiki/teams/4607/wiki/footer/twist-logo.svg" alt>
+                                        </div>
+                                        <div class="contenidotxt">
+                                            <p class="subsubtitle"><b>Twist</b></p>
+                                            <p>A warm thank you to Twist for their invaluable contribution in synthesizing our DNA sequences. 
+                                            </p>
+                                        </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="contdiagrama">
+                                        <div class="contpapa"
+                                        style="--gradient:linear-gradient(45deg, rgb(222, 133, 81), rgb(210, 112, 99))">
+                                        <div class="contenido">
+                                            <img
+                                            style="max-width: 90%;object-fit: contain;"
+                                            src="https://static.igem.wiki/teams/4607/wiki/footer/rs-w-1240-cg-true.png"
+                                            alt>
+                                        </div>
+                                        <div class="contenidotxt">
+                                            <p class="subsubtitle"><b>QuimicaTech</b></p>
+                                            <p> We are thankful with QuimicaTech for providing us with lab material to perform our experimental phase. </p>
+                                        </div>
+                                        </div>
+
+                                        <div class="contpapa"
+                                        style="--gradient:linear-gradient(45deg, rgb(222, 133, 81), rgb(210, 112, 99))">
+                                        <div class="contenido">
+                                            <img style="max-width: 90%; object-fit: contain;"
+                                            src="https://static.igem.wiki/teams/4607/wiki/footer/logo-snapgene.png" alt>
+                                        </div>
+                                        <div class="contenidotxt">
+                                            <p class="subsubtitle"><b>Snapgene</b></p>
+                                            <p>A warm thank you to Snapgene for supporting us with licenses for their software during all the competition.
+                                            </p>
+                                        </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="contdiagrama">
+                                        <div class="contpapa"
+                                        style="--gradient:linear-gradient(45deg, rgb(210, 112, 99), rgb(197, 91, 117))">
+                                        <div class="contenido">
+                                            <img
+                                            style="max-width: 90%;object-fit: contain;"
+                                            src="https://static.igem.wiki/teams/4607/wiki/parts/bicisur-logobien.png"
+                                            alt>
+                                        </div>
+                                        <div class="contenidotxt">
+                                            <p class="subsubtitle"><b>Bicisur</b></p>
+                                            <p> We extend our gratitude to Bicisur for generously providing our team with shirts.</p>
+                                        </div>
+                                        </div>
+
+                                        <div class="contpapa"
+                                        style="--gradient:linear-gradient(45deg, rgb(210, 112, 99), rgb(197, 91, 117))">
+                                        <div class="contenido">
+                                            <img style="max-width: 90%;object-fit: contain;"
+                                            src="https://static.igem.wiki/teams/4607/wiki/footer/sispre-logo.png" alt>
+                                        </div>
+                                        <div class="contenidotxt">
+                                            <p class="subsubtitle"> <b>Sispre</b></p>
+                                            <p>Thank you to Sispre for providing us a grant to support our team.
+                                            </p>
+                                        </div>
+                                        </div>
+                                    </div>
+                            </div>
 
                     
                    

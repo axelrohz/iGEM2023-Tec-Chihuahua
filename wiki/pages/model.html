@@ -317,7 +317,7 @@
 				</p>
 				<br>
 				<p class="contenido">
-				In the culmination of our study, we sought to understand how the endolysin's mechanism interacts with various bacterial strains. This investigation was carried out using a design of experiments (DoE) approach inspired by a checkerboard assay. This approach helped us determine if the efficacy of the endolysin is influenced by synergic or antagonistic interactions. For the analysis, we utilized a
+				In the culmination of our study, we sought to understand how the endolysin's mechanism interacts with various bacterial strains. This approach helped us determine if the efficacy of the endolysin is influenced by synergic or antagonistic interactions. For the analysis, we utilized a
 				<b class="tooltipSignificado">response surface
 					<span class="tooltipSignificadoBox">
 					Technique used to analyze the relationship between input variables and a response variable, allowing for an optimization of the response by adjusting the inputs.
@@ -374,6 +374,7 @@
    					 <li><a href="#model_building">Model building</a></li>
    					 <li><a href="#monte_carlo">Monte Carlo Simulation</a></li>
    					 <li><a href="#parameter_estimation">Parameter Estimation</a></li>
+					 <li><a href="#RSM">Response Surface Method</a></li>
    					 <li><a href="#referencesM">References</a></li>
    				 </ul>
    			 </nav>
@@ -1838,7 +1839,7 @@
 			<div class="accordion-item-body">
 				<div class="accordion-item-body-content">
 					<p class="contenido">
-						<math display='block'>
+						<math display='block' class="formulaTablaODEs">
 							<mfrac>
 							 <mrow>
 							  <mi>d</mi><mfenced close="]" open="[">
@@ -1878,8 +1879,8 @@
 							  </mrow>
 							</mfenced>
 						</math>
-						   <p  ALIGN="right" class="NumeroEcuacion">(2)</p>
-						<math display='block'>
+						   <p  ALIGN="right" class="NumeroEcuacion tablaODESNumero">(2)</p>
+						<math display='block'  class="formulaTablaODEs">
 							<mfrac>
 							 <mrow>
 							  <mi>d</mi><mfenced close="]" open="[">
@@ -1961,8 +1962,8 @@
 							  </mrow>
 							</mfenced>
 						   </math>			   
-						   <p  ALIGN="right" class="NumeroEcuacion">(3)</p>
-						   <math display='block'>
+						   <p  ALIGN="right" class="NumeroEcuacion tablaODESNumero">(3)</p>
+						   <math display='block' class="formulaTablaODEs">
 							<mfrac>
 							 <mrow>
 							  <mi>d</mi><mfenced close="]" open="[">
@@ -2070,7 +2071,8 @@
 								<mi>[</mi>
 								<mi>O</mi>
 								<mi>]</mi>
-							  </mfenced><mo>&#x2212;</mo><msub>
+							  </mfenced><mo>&#x2212;</mo>
+							  <msub>
 							   <mi>k</mi>
 							   <mn>9</mn>
 							  </msub>
@@ -2085,7 +2087,10 @@
 							  </mfenced></mrow>
 							  <mi>]</mi>
 							  <mi>)</mi>
-							</mfenced><mo>&#x2212;</mo><mfenced>
+							</mfenced><mo>&#x2212;</mo>
+						   </math>
+							<math display='block' class="formulaTablaODEs">
+							<mfenced>
 								<mi>(</mi>
 							   <mrow>
 							  <msub>
@@ -2146,8 +2151,8 @@
 							  </mfenced></mrow>
 							</mfenced>
 						   </math>			   
-						   <p  ALIGN="right" class="NumeroEcuacion">(4)</p>
-						   <math display='block'>
+						   <p  ALIGN="right" class="NumeroEcuacion tablaODESNumero">(4)</p>
+						   <math display='block' class="formulaTablaODEs">
 							<mfrac>
 							 <mrow>
 							  <mi>d</mi><mfenced close="]" open="[">
@@ -2298,8 +2303,8 @@
 							  </mrow>
 							</mfenced>
 						   </math>			   
-						   <p  ALIGN="right" class="NumeroEcuacion">(5)</p>
-						   <math display='block' style="width: 55vw;">
+						   <p  ALIGN="right" class="NumeroEcuacion tablaODESNumero">(5)</p>
+						   <math display='block' style="width: 55vw;" class="formulaTablaODEs">
 							<mfrac>
 							 <mrow>
 							  <mi>d</mi><mfenced close="]" open="[">
@@ -2431,7 +2436,11 @@
 								<mi>]</mi>
 								<mi>)</mi>
 							  </mfenced></mrow>
-							</mfenced><mo>+</mo><mfenced>
+							</mfenced><mo>+</mo>
+							
+							</math>
+							<math display='block' class="formulaTablaODEs">
+							<mfenced>
 							 <mrow>
 								<mi>(</mi>
 							  <msub>
@@ -2483,8 +2492,8 @@
 							  </mfenced></mrow>
 							</mfenced>
 						   </math>			   
-						   <p  ALIGN="right" class="NumeroEcuacion">(6)</p>
-						   <math display='block'>
+						   <p  ALIGN="right" class="NumeroEcuacion tablaODESNumero">(6)</p>
+						   <math display='block' class="formulaTablaODEs">
 							<mfrac>
 							 <mrow>
 							  <mi>d</mi><mfenced close="]" open="[">
@@ -2586,8 +2595,8 @@
 									<mi>)</mi>
 								  </mfenced>
 						   </math>			   
-						   <p  ALIGN="right" class="NumeroEcuacion">(7)</p>
-						   <math display='block'>
+						   <p  ALIGN="right" class="NumeroEcuacion tablaODESNumero">(7)</p>
+						   <math display='block' class="formulaTablaODEs">
 							<mfrac>
 							 <mrow>
 							  <mi>d</mi><mfenced close="]" open="[">
@@ -2691,8 +2700,8 @@
 							  </mfenced>
 							</mfenced>
 						   </math>			   
-						   <p  ALIGN="right" class="NumeroEcuacion">(8)</p>
-						   <math display='block' style="font-size: 0.75vw;">
+						   <p  ALIGN="right" class="NumeroEcuacion tablaODESNumero">(8)</p>
+						   <math display='block' class="formulaTablaODEs">
 							<mfrac>
 							 <mrow>
 							  <mi>d</mi><mfenced close="]" open="[">
@@ -2797,7 +2806,8 @@
 									<mi>]</mi>
 									<mi>)</mi>
 								  </mfenced>
-							</mfenced><mo>&#x2212;</mo><mi>n</mi><mfenced>
+							</mfenced><mo>&#x2212;</mo><mi>n</mi>
+							<mfenced>
 								<mi>(</mi>
 								<mrow>
 								 <msub>
@@ -2843,7 +2853,11 @@
 								   <mi>]</mi>
 								   <mi>)</mi>
 								 </mfenced></mrow>
-							</mfenced><mo>&#x2212;</mo><mi>n</mi><mfenced>
+							</mfenced>
+
+						   </math>
+						   <math style="margin-left: 16vw;" class="formulaTablaODEs">
+							<mo>&#x2212;</mo><mi>n</mi><mfenced>
 								<mrow>
 									<mi>(</mi>
 								  <msub>
@@ -2931,8 +2945,8 @@
 							  </mrow>
 							</mfenced><mo>&#x00A0;</mo><mtext>&#x00A0;</mtext>
 						   </math>
-						   <p  ALIGN="right" class="NumeroEcuacion">(9)</p>
-						   <math display='block'>
+						   <p  ALIGN="right" class="NumeroEcuacion tablaODESNumero">(9)</p>
+						   <math display='block' class="formulaTablaODEs">
 							<mfrac>
 							 <mrow>
 							  <mi>d</mi><mfenced close="]" open="[">
@@ -3066,8 +3080,8 @@
 							  </mrow>
 							</mfenced>
 						   </math>			   
-						   <p  ALIGN="right" class="NumeroEcuacion">(10)</p>
-						   <math display='block'>
+						   <p  ALIGN="right" class="NumeroEcuacion tablaODESNumero">(10)</p>
+						   <math display='block' class="formulaTablaODEs">
 							<mfrac>
 							 <mrow>
 							  <mi>d</mi><mfenced close="]" open="[">
@@ -3203,8 +3217,8 @@
 							  </mrow>
 							</mfenced>
 						   </math>			   
-						   <p  ALIGN="right" class="NumeroEcuacion">(11)</p>
-						   <math display='block'>
+						   <p  ALIGN="right" class="NumeroEcuacion tablaODESNumero">(11)</p>
+						   <math display='block' class="formulaTablaODEs" >
 							<mfrac>
 							 <mrow>
 							  <mi>d</mi><mfenced close="]" open="[">
@@ -3273,8 +3287,8 @@
 							</mrow>
 							</mfenced>
 						   </math>			   
-						   <p  ALIGN="right" class="NumeroEcuacion">(12)</p>
-						   <math display='block'>
+						   <p  ALIGN="right" class="NumeroEcuacion tablaODESNumero">(12)</p>
+						   <math display='block' class="formulaTablaODEs">
 							<mfrac>
 							 <mrow>
 							  <mi>d</mi><mfenced close="]" open="[">
@@ -3309,7 +3323,7 @@
 							 <mi>]</mi>
 							</mfenced><mo>&#x00A0;</mo><mtext>&#x00A0;</mtext><mo>&#x00A0;</mo><mtext>&#x00A0;</mtext><mo>&#x00A0;</mo>
 						   </math>				  
-						   <p  ALIGN="right" class="NumeroEcuacion">(13)</p>
+						   <p  ALIGN="right" class="NumeroEcuacion tablaODESNumero">(13)</p>
 					</p>
 				</div>
 			</div>
@@ -4095,7 +4109,7 @@
 			<div class="tituloContenido">
 				<h4 id="parameter_estimation"><br><br>Parameter estimation</h4>
 			</div>
-			<br>
+			<br id="closePopUp">
 			<p class="contenido">Subsequently, employing the collected data set of sampled parameters, we proceed to estimate the specific parameters tied to the kinetic aspects of the system. We present a computational approach for the estimation of kinetic constants, focusing on the induction phase of protein expression, through the application of a <a href="#popup-optin">Genetic Algorithm</a> (GA).</p>
 				<div class="bg-overlay" id="popup-optin">
 					<div class="subscribe-optin">
@@ -4107,16 +4121,13 @@
 						<hm>Optimization Cycle</hm>
 						<p3  max-hight="50vh" id="J" class="contenido">Belonging to the family of population-based algorithms, the GA operates by maintaining a population of solutions, utilizing the information gleaned from individuals within this population to continually enhance these solutions. This population consists of 12 genes, each representing a kinetic constant. The objective function evaluates the efficacy of each individual's proposed solution, which was compared to SDS-PAGE data. Each individual within the population undergoes evaluation aiming to minimize the error between the model's output and the available data. Subsequently, a random pair-wise tournament selection was employed to identify the best-evaluated individuals, forming the selected population for the next generation.</p3>
 						</div>
-						<a class="popup__close" href="#">X</a>
+						<a class="popup__close" href="#closePopUp">X</a>
 					</div>
 					</div>
 				</div>
 			<br>
 			<p  class="contenido">Combining the range of parameters obtained through MC simulation with a GA -or any suitable parameter estimation algorithm- is essential when modeling systems characterized by indeterminate kinetic constants. The empirical data sourced from SDS-PAGE gel electrophoresis was analyzed through <a href="#popup2-optin">ImageJ</a>. The initial preprocessing phase involves the segmentation of gel lanes and accurate delineation of protein bands, extracting quasi-quantitative concentration data across different time points. This processed concentration data forms the foundation for constructing an objective function within the GA, to iteratively optimize the kinetic parameters.<sup>20</sup> The objective function evaluates the fitness of each parameter set by comparing simulated protein concentration profiles with the experimentally derived data. Employing a generational approach, the GA refines the kinetic parameter space, converging towards optimal or near-optimal solutions that exhibit the highest fidelity with observed protein distribution.</p>
 			<br>
-			<p  class="contenido">The primary evaluation criterion was the convergence of the algorithm to a stable point, indicating that the GA effectively minimized the error between simulated protein concentrations and the experimental data. Another critical measure of success was the consistency in the converged point across several generations of iterations.</p>
-
-
 				<div class="bg-overlay" id="popup2-optin">
 					<div class="subscribe-optin">
 					<div class="popup2-inner">
@@ -4127,10 +4138,378 @@
 						  <hm>Image cuantification</hm>
 						  <p3  max-hight="50vh" id="J" class="contenido">Initially, a background subtraction operation using the “SubtractBackground” feature was performed on individual images, followed by an inversion of color intensities using the “Invert” function. The processed images were systematically organized in a designated folder. Utilizing the “ROI Manager” tool, regions of interest (ROIs) corresponding to total proteins and endolysin bands were selected in each SDS-PAGE gel image subject to analysis. To optimize visibility and precisely define the selection area for protein bands, the “Brightness/Contrast” function was employed. Subsequently, the “_BandPeakQuantification” plug-in was executed, configured to detect background in a 3-pixel area around the chosen region. The plugin outputted data in area units, instrumental for subsequent quantitative analysis. Finally, for parameter estimation, the endolysin content was evaluated as a percentage relative to the total proteins.</p3>
 						</div>
-						<a class="popup2__close" href="#">X</a>
+						<a class="popup2__close" href="#closePopUp">X</a>
 					</div>
 					</div>
 				</div>
+			<div class="tituloContenido">
+   				 <h3 id="upstream">Second model</h3>
+   			</div>
+   			<div class="tituloContenido">
+   				<h4 id="RSM"><br><br>Surface Response Method</h4>
+   			</div>
+   			<p class="contenido">To address the preparation of an intramammary infusion composed of our three endolysins LysK-ABD-SH3B30, LysCSA13-ABD, and PCNP-CecA-LysSS (which will further be referred as LysK, LysCSA13 and LysSS), it was imperative to determine the optimal combination of concentrations for targeting each specific bacterium. Initially, experiments were envisioned utilizing purified recombinant proteins; however, challenges were encountered in the purification process. Consequently, a decision was made to conduct bactericidal assays using crude extracts of each endolysin. Despite this modification, the primary objective remains to attain the most effective formulation of AureoBos.
+				<br>
+				<br>
+				The presence of endolysins targeting different bonds within the peptidoglycan suggests a promising potential for a synergistic effect against their target bacteria when these enzymes are used in combination.<sup>20</sup> While one-factor-at-a-time approach is commonly used to optimize components and conditions, it is time-consuming and tends to overlook the interactions between independent variables.<sup>21</sup> To screen and analyze interactions between the endolysins, particularly focusing on their combined effect, we aim to analyze the potential synergistic impact, finding the optimum quickly and efficiently.
+				<br>
+				<br>
+				Response Surface Methodology (RSM) comprises a set of mathematical and statistical techniques valuable for construction models and analyzing scenarios where multiple independent variables or controllable factors influence a dependent variable or response. RSM efficiently extracts a wealth of information through minimal effort.<sup>22</sup> As such, we utilize RSM to estimate a response based on a combination of factor levels and determining the optimum concentratios to maximize the endolysins’ performance. The optimum concentrations were first determined by screening independent factors (protein concentrations of each construct) and selecting desired responses (bactericidal effect), followed by choosing the experimental design strategy and running the experiments to obtain the results. After that, the model is confirmed by utilizing response graphs and analysis of variance, and optimal conditions are determined in the end.
+				<br>
+				<br>
+				In our case, the three factors, namely LysK, LysCSA13, and LysSS, in three levels within 875-2625 µg mL<sup>-1</sup>, 500-1500 µg mL<sup>-1</sup>, 25-75 µg mL<sup>-1</sup> respectively, were assessed using 3-Level full factorial design, which assesses specific pre-set combinations of the independent variables and enables the optimization of the target response adapted to each bacteria. The concentration levels were determined based on total protein concentration in each crude extract, categorizing them as low, middle, and high boundaries. Our model operates under the assumption that the optimal conditions fall within the specified ranges. The focus was solely on assessing the efficacy of the endolysins, thus, we maintained constant temperature and pH conditions throughout the experiments. Each experiment was conducted in triplicate.
+			</p>
+			<div class="accordion-item">
+				<div class="accordion-item-header">
+					<h3 id="referencesO">Protein concentration values</h3>
+				</div>
+				<div class="accordion-item-body">
+					<div class="accordion-item-body-content">
+						<p class="contenido">
+							<table class="tabla1-responsive TABLA1">
+								<p style="
+								height: 6px;
+								left: -28px;
+								position: relative;"><b>Table 4.</b> Values of protein concentrations in µg/mL for each variable.</p>
+									<tr>
+										<th> </th>
+										<th> </th>
+										<th>Level</th>
+										<th></th>
+									</tr>
+								<tbody>
+									<tr>
+										<td>Variable</td>
+										<td>-1</td>
+										<td>0</td>
+										<td>1</td>
+									</tr>
+									</tr>
+										<td>LysK</td>
+										<td>875</td>
+										<td>1750</td>
+										<td>2625</td>
+									</tr>
+									</tr>
+										<td>LysCSA13</td>
+										<td>500</td>
+										<td>1000</td>
+										<td>1500</td>
+									</tr>
+									</tr>
+										<td>LysSS</td>
+										<td>25</td>
+										<td>50</td>
+										<td>75</td>
+									</tr>
+								</tbody>
+							</table>
+						</p>
+					</div>
+				</div>
+			</div>
+			<p class="contenido">
+				As previously mentioned, we examined combinations of varying levels of protein concentration in each crude extract. However, due to constraints, these combinations were tested against only three of the four target bacteria (<em>E. coli, S. aureus, S. agalactie</em>)). The bactericidal assay involved the addition of the combination crude extracts of LysK, LysCSA13, and LysSS to the respective bacteria. In all combinations, we employed resazurin to evaluate cell viability post-treatment with crude extracts, measuring fluorescence at 560 nm excitation and 590 nm emission. The full description of our methods can be found in the <a href="https://2023.igem.wiki/tec-chihuahua/experiments"> Experiments page</a>. Additionally, we established a correlation between the measured fluorescence and the population of viable cells, expressed through the following equation:
+			</p>
+
+			<div class="accordion-item">
+				<div class="accordion-item-header">
+					<h3 id="referencesO">Experimental design matrix</h3>
+				</div>
+				<div class="accordion-item-body">
+					<div class="accordion-item-body-content">
+						<p class="contenido">
+							<table class="tabla1-responsive TABLA1">
+								<p style="
+								height: 6px;
+								left: -28px;
+								position: relative;"><b>Table 5.</b> Actual and coded values of the variables.</p>
+									<tr>
+										<th> </th>
+										<th> </th>
+										<th>Actual</th>
+										<th> </th>
+										<th> </th>
+										<th>Coded</th>
+										<th> </th>
+									</tr>
+								<tbody>
+									<tr>
+										<td>Run*</td>
+										<td>LysK</td>
+										<td>LysCSA13</td>
+										<td>LysSS</td>
+										<td>LysK</td>
+										<td>LysCSA13</td>
+										<td>LysSS</td>
+									</tr>
+									</tr>
+										<td>1</td>
+										<td>875</td>
+										<td>1500</td>
+										<td>25</td>
+										<td>-1</td>
+										<td>1</td>
+										<td>-1</td>
+									</tr>
+									</tr>
+										<td>2</td>
+										<td>1750</td>
+										<td>1500</td>
+										<td>25</td>
+										<td>0</td>
+										<td>1</td>
+										<td>-1</td>
+									</tr>
+									</tr>
+										<td>3</td>
+										<td>2625</td>
+										<td>1500</td>
+										<td>25</td>
+										<td>1</td>
+										<td>1</td>
+										<td>-1</td>
+									</tr>
+									</tr>
+										<td>4</td>
+										<td>875</td>
+										<td>1500</td>
+										<td>50</td>
+										<td>-1</td>
+										<td>1</td>
+										<td>0</td>
+									</tr>
+									</tr>
+										<td>5</td>
+										<td>1750</td>
+										<td>1500</td>
+										<td>50</td>
+										<td>0</td>
+										<td>1</td>
+										<td>0</td>
+									</tr>
+									</tr>
+										<td>6</td>
+										<td>2625</td>
+										<td>1500</td>
+										<td>50</td>
+										<td>1</td>
+										<td>1</td>
+										<td>0</td>
+									</tr>
+									</tr>
+										<td>7</td>
+										<td>875</td>
+										<td>1500</td>
+										<td>75</td>
+										<td>-1</td>
+										<td>1</td>
+										<td>1</td>
+									</tr>
+									</tr>
+										<td>8</td>
+										<td>1750</td>
+										<td>1500</td>
+										<td>75</td>
+										<td>0</td>
+										<td>1</td>
+										<td>1</td>
+									</tr>
+									</tr>
+										<td>9</td>
+										<td>2625</td>
+										<td>1500</td>
+										<td>75</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+									</tr>
+									</tr>
+										<td>10</td>
+										<td>875</td>
+										<td>1000</td>
+										<td>25</td>
+										<td>-1</td>
+										<td>0</td>
+										<td>-1</td>
+									</tr>
+									</tr>
+										<td>11</td>
+										<td>1750</td>
+										<td>1000</td>
+										<td>25</td>
+										<td>0</td>
+										<td>0</td>
+										<td>-1</td>
+									</tr>
+									</tr>
+										<td>12</td>
+										<td>1750</td>
+										<td>1000</td>
+										<td>25</td>
+										<td>1</td>
+										<td>0</td>
+										<td>-1</td>
+									</tr>
+									</tr>
+										<td>12</td>
+										<td>2625</td>
+										<td>1000</td>
+										<td>25</td>
+										<td>1</td>
+										<td>0</td>
+										<td>-1</td>
+									</tr>
+									</tr>
+										<td>13</td>
+										<td>875</td>
+										<td>1000</td>
+										<td>50</td>
+										<td>-1</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									</tr>
+										<td>14</td>
+										<td>1750</td>
+										<td>1000</td>
+										<td>50</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									</tr>
+										<td>15</td>
+										<td>2625</td>
+										<td>1000</td>
+										<td>50</td>
+										<td>1</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									</tr>
+										<td>16</td>
+										<td>875</td>
+										<td>1000</td>
+										<td>75</td>
+										<td>-1</td>
+										<td>0</td>
+										<td>1</td>
+									</tr>
+									</tr>
+										<td>17</td>
+										<td>1750</td>
+										<td>1000</td>
+										<td>75</td>
+										<td>0</td>
+										<td>0</td>
+										<td>1</td>
+									</tr>
+									</tr>
+										<td>18</td>
+										<td>2625</td>
+										<td>1000</td>
+										<td>75</td>
+										<td>1</td>
+										<td>0</td>
+										<td>1</td>
+									</tr>
+									</tr>
+										<td>19</td>
+										<td>875</td>
+										<td>500</td>
+										<td>25</td>
+										<td>-1</td>
+										<td>-1</td>
+										<td>-1</td>
+									</tr>
+									</tr>
+										<td>20</td>
+										<td>1750</td>
+										<td>500</td>
+										<td>25</td>
+										<td>0</td>
+										<td>-1</td>
+										<td>-1</td>
+									</tr>
+									</tr>
+										<td>21</td>
+										<td>2625</td>
+										<td>500</td>
+										<td>25</td>
+										<td>1</td>
+										<td>-1</td>
+										<td>-1</td>
+									</tr>
+									</tr>
+										<td>22</td>
+										<td>875</td>
+										<td>500</td>
+										<td>50</td>
+										<td>-1</td>
+										<td>-1</td>
+										<td>-0</td>
+									</tr>
+									</tr>
+										<td>22</td>
+										<td>875</td>
+										<td>500</td>
+										<td>50</td>
+										<td>-1</td>
+										<td>-1</td>
+										<td>-0</td>
+									</tr>
+									</tr>
+										<td>23</td>
+										<td>1750</td>
+										<td>500</td>
+										<td>50</td>
+										<td>0</td>
+										<td>-1</td>
+										<td>-0</td>
+									</tr>
+									</tr>
+										<td>24</td>
+										<td>2625</td>
+										<td>500</td>
+										<td>50</td>
+										<td>1</td>
+										<td>-1</td>
+										<td>-0</td>
+									</tr>
+									</tr>
+										<td>25</td>
+										<td>875</td>
+										<td>500</td>
+										<td>75</td>
+										<td>-1</td>
+										<td>-1</td>
+										<td>-1</td>
+									</tr>
+									</tr>
+										<td>26</td>
+										<td>1750</td>
+										<td>500</td>
+										<td>75</td>
+										<td>0</td>
+										<td>-1</td>
+										<td>-1</td>
+									</tr>
+									</tr>
+										<td>27</td>
+										<td>2625</td>
+										<td>500</td>
+										<td>75</td>
+										<td>1</td>
+										<td>-1</td>
+										<td>-1</td>
+									</tr>
+								</tbody>
+							</table>
+						</p>
+					</div>
+				</div>
+			</div>
 
 			<div class="accordion-item">
 				<div class="accordion-item-header">
@@ -4175,9 +4554,15 @@
 							<br>
 							(18) Siu, N. A Monte Carlo Method for Multiple Parameter Estimation in the Presence of Uncertain Data. <em>Reliab. Eng. Syst. Saf.</em> <b>1990</b>, <em>28</em> (1), 59–98. https://doi.org/10.1016/0951-8320(90)90043-M.
 							<br>
-							(19) Ashyraliyev, M.; Fomekong-Nanfack, Y.; Kaandorp, J. A.; Blom, J. G. Systems Biology: Parameter Estimation for Biochemical Models: Parameter Estimation in Systems Biology. <em>FEBS J.</em> <b>2009</b>, <em>276</em> (4), 886–902. https://doi.org/10.1111/j.1742-4658.2008.06844.x.
+							(19) Vinnakota, K. C.; Bugenhagen, S. M. Optimization and Parameter Estimation, Genetic Algorithms. In <em>Encyclopedia of Systems Biology</em>; Dubitzky, W., Wolkenhauer, O., Cho, K.-H., Yokota, H., Eds.; Springer New York: New York, NY, 2013; pp 1600–1604. https://doi.org/10.1007/978-1-4419-9863-7_291.
 							<br>
-							(20) Vinnakota, K. C.; Bugenhagen, S. M. Optimization and Parameter Estimation, Genetic Algorithms. In <em>Encyclopedia of Systems Biology</em>; Dubitzky, W., Wolkenhauer, O., Cho, K.-H., Yokota, H., Eds.; Springer New York: New York, NY, 2013; pp 1600–1604. https://doi.org/10.1007/978-1-4419-9863-7_291.
+							(20) Schmelcher, M.; Powell, A. M.; Camp, M. J.; Pohl, C. S.; Donovan, D. M. Synergistic Streptococcal Phage λSA2 and B30 Endolysins Kill Streptococci in Cow Milk and in a Mouse Model of Mastitis. <em>Appl. Microbiol. Biotechnol.</em> <b>2015</b>, <em>99</em> (20), 8475–8486. https://doi.org/10.1007/s00253-015-6579-0.
+							<br>
+							(21) Abdel-Rahman, M. A.; Hassan, S. E. D.; El-Din, M. N.; Azab, M. S.; El-Belely, E. F.; Alrefaey, H. M. A.; Elsakhawy, T. One-Factor-at-a-Time and Response Surface Statistical Designs for Improved Lactic Acid Production from Beet Molasses by Enterococcus Hirae Ds10. <em>SN Appl. Sci</em>. <b>2020</b>, <em>2</em> (4), 573. https://doi.org/10.1007/s42452-020-2351-x.
+							<br>
+							(22) Geiger, E. O. Statistical Methods for Fermentation Optimization. In <em>Fermentation and Biochemical Engineering Handbook</em>; Elsevier, 2014; pp 415–422. https://doi.org/10.1016/B978-1-4557-2553-3.00021-0.
+							<br>
+							(23) Ashyraliyev, M.; Fomekong-Nanfack, Y.; Kaandorp, J. A.; Blom, J. G. Systems Biology: Parameter Estimation for Biochemical Models: Parameter Estimation in Systems Biology. <em>FEBS J</em>. <b>2009</b>, <em>276</em> (4), 886–902. https://doi.org/10.1111/j.1742-4658.2008.06844.x.
 						</p>
 					</div>
 				</div>

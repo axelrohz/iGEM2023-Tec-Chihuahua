@@ -411,6 +411,41 @@ overflow: hidden;
 transition-delay: 0.35s;
 }
 
+.teamContainer .teamCar .image .tag3
+{
+position: absolute;
+top : 130px;
+left: 220px;
+padding: 7px 8px;
+border-radius: 5px;
+font-size: 1rem;
+font-weight: 500;
+height: 0px;
+background-image: linear-gradient(45deg, rgb(197, 91, 117), rgb(197, 91, 117));
+color: #ffffff00;
+overflow: hidden;
+opacity: 0;
+text-overflow: "";
+text-align: center;
+white-space: nowrap;
+background-position: 50% 50%;
+background-repeat: no-repeat;
+background-size: 0% 100%;
+transition: background-size .2s, color .2s, height .1s, opacity .35s;
+}
+
+.teamContainer .teamCar:hover .image .tag3
+{
+position: absolute;
+height: 30px;
+border-radius: 5px;
+background-size: 100% 100%;
+color: #fff;
+opacity: 1;
+overflow: hidden;
+transition-delay: 0.35s;
+}
+
 .teamContainer .teamCar .content{
 position: absolute;
 top: 400px;
@@ -559,4 +594,13 @@ svg {
   text-align: justify;
   margin-left: 20px;
   margin-right: 20px;
+  }
+
+  .teamBody{
+    display: block !important;
+  }
+
+  .teamBody.active .scrollIndexContain{
+    opacity: 1;
+
   }

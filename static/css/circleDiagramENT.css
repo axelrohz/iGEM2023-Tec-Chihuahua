@@ -1,6 +1,8 @@
 .circleDiagram {
-    width: 300px;
-    height: 300px;
+    width: 50vw;
+    height: 50vw;
+    max-width: 50vh;
+    max-height: 50vh;
     position: relative;
     margin: auto;
     z-index: 10;

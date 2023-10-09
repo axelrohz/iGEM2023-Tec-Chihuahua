@@ -1,6 +1,48 @@
 :root{
     --colorENT: #5BC5AB;
+    --colorWht: #f3f3f3;
    }
+   .navBar.colored{
+    background-color: var(--colorENT) !important; 
+}
+
+.navBar.colored .navBarContent .navBarContentItem{
+    color: var(--colorWht) !important;
+}
+
+.navBar.colored .navBarContent .navBarContentItem:hover, .navBar.colored .navBarContent .navBarContentItem:hover{
+    font-size: 16px !important;
+    color: #ffffff !important;
+}
+
+.navBar.colored .navBarContent .navBarContentItem::after{
+    background-color: aliceblue;
+}
+
+.navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox{
+    background-color: var(--colorENT) !important;
+}
+
+.navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox .fullbox .megaMenuItem .megaContent .megaTitle, .navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox .fullbox .megaMenuItem .megaContent .megaText{
+    color: var(--colorWht) !important;
+}
+
+.navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox::after{
+    background-color: aliceblue;
+}
+
+.navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox .fullbox .megaMenuItem:hover .megaContent .megaTitle, .navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox .fullbox .megaMenuItem:hover .megaContent .megaTitle{
+    color: #ffffff !important;
+}
+
+.navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox .fullbox .megaMenuItem:hover .megaContent .megaText, .navBar.colored .navBarContent .navBarContentItem.navExpand .expandBox .fullbox .megaMenuItem:hover .megaContent .megaText{
+    color: #ffffff !important;
+}
+
+.navBar.colored .megaMenuItem .megaContent::after{
+    background-color: aliceblue;
+}
+
 
  .titleCont{
     width: 100%;
@@ -10,8 +52,16 @@
     z-index: 5;
     max-height: 100vh;
     overflow: clip;
+    top: -72px;
   }
   
+.headParts{
+    position: relative;
+    top: -72px;
+    padding-bottom: 0 !important;
+    height: 150px !important;
+}
+
   .titleENT{
       width: 100%;
         height: 100%;
@@ -155,7 +205,8 @@
     width: 100%;
     height: fit-content;
     padding-top: 40px;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 .sectionCirclesENT{
@@ -165,11 +216,38 @@
     flex-wrap: wrap;
     flex-flow: column;
     overflow-x: clip;
+    position: relative;
+
+}
+
+.sectionContainerOVER{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.seccionPaddingERR{
+    width: 100%;
+    height: fit-content;
+    padding: 0 10%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 65px;   
 
 }
 
 .layout{
     width: 100% !important;
+    height: fit-content !important;
+    display: flex !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
 }
 
 .tituloContenido{
@@ -187,11 +265,18 @@
 
 .stickyButton{
     width: 100%;
-    height: 250px;
+    height: 10vw;
+    min-height: 15vh;
     position: sticky;
     top: 0;
     overflow-x: clip;
+    margin-bottom: 40px;
+    z-index: 99999;
 
+}
+
+.containCirclesandCont{
+    overflow-y: clip;
 }
 
 .movingContainer{
@@ -211,6 +296,28 @@
     right: 0;
     transition: width 0s, top 0.5s, transform 0.5s, padding 0.5s, right 0.5s;
 }
+
+
+.index2, .index3{
+    width: 15vh;
+    min-width: 8vw;
+    max-width: 9vw;
+    margin-left: 10px;
+    z-index: 99999;
+}
+
+.secciones{
+    height: fit-content;
+    width: 100%;
+}
+
+.dadIndex{
+    width: fit-content;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
 
 .movingContainer.active{
     width: 15vh;
@@ -316,7 +423,6 @@
     border-width: 1vw;
     position: relative;
     transition: 1s;
-    overflow: hidden;
     z-index: 10;
     cursor: pointer;
 
@@ -325,11 +431,14 @@
    /* Estilos para los botones en forma de div */
    .movingContainer.active .circles {
     width: 15vh;
+    height: 15vh;
     min-width: 8vw;
     min-height: 8vw;
-    height: 15vh;
+    max-width: 10vw;
+    max-height: 10vw;
     border-width: 10px;
 }
+
 .overview {
     top: 77%;
     left: -10%;
@@ -521,10 +630,50 @@
     margin: auto auto;
     text-align: center;
     transition: 1s;
+    min-width: min-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .movingContainer.active .circles .button-content .tituloBoton{
-    font-size: 0.9rem;
+    font-size: 0.9vw;
+}
+
+
+@media screen and (max-width: 1250px){
+    .movingContainer.active .circles .button-content .tituloBoton{
+        font-size: 1.2vw;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .stickyButton{
+        position: relative;
+    }
+    .movingContainer.active{
+        width: 100%;
+        top:0;
+        transform: translate(0, 0);
+        padding: 25px;
+        right: 0;
+        transition: width 0s, top 0.5s, transform 0.5s, padding 0.5s, right 0.5s;
+        animation: leftonStart none;
+    
+    }
+    .movingContainer.active .circles {
+        width: 10vw;
+        height: 10vw;
+        min-width: 15vh;
+        min-height: 15vh;
+        border-width: 1vw;
+        max-width: 10vw;
+        max-height: 10vw;
+    }
+    .movingContainer.active .circles .button-content .tituloBoton{
+        font-size: 1.1rem;
+    }
 }
 
   
@@ -1338,42 +1487,57 @@
     height: fit-content;
     top: 10px!important;
 }
+.contenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .eti {
-    width: 84%;
+    width: 88%;
     align-content: center;
-    margin-left: 28vh;
 }
 /*frase del inicio despues del welcome page*/
 .fraseInicio{
-    
-    height: 24vw;
-    margin-bottom: 2vw;
-    padding-top: 1vw;
+    height: fit-content;
     color: #447D9C;
     font-weight: bold;
+    width: 60%;
   }
   .fraseAcomodo{
-    margin: 5vw auto;
-    width: fit-content;
+    height: fit-content;
+    width: 100%;
   }
   
   .phrase{
     position: relative;
     width: 100%;
-    height: 3vw;
+    height: fit-content;
     justify-content: center;
     align-items: center;
   }
   
   .fraseModel {
-    margin: 5vw auto;
     position: relative;
-    width: 51.5%;
     font-size: 40px;
-    display: block;
+    display: flex;
     text-align: center;
     font-family: "Bricolage Grotesque", monospace;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
+
+.mkt-3dSlider{
+    margin: 0;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
   
   .char{
     font-size: 40px;
@@ -1394,4 +1558,111 @@
   }
   .dairy{
     width: 100%;
+  }
+
+  .clickInfoVan{
+    margin: 0 auto;
+    width: fit-content;
+    /*blue green gradient*/
+    background: linear-gradient(90deg, #00C9FF 0%, #80e28a 100%);
+    border-radius: 20px;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.5s;
+    
+  }
+
+/* Cosas del skeleton Loading*/
+.skeleton-box {
+    display: inline-block;
+    height: 1em;
+    position: relative;
+    overflow: hidden;
+    background-color: #DDDBDD;
+  }
+  .skeleton-box::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0));
+    -webkit-animation: shimmer 2s infinite;
+            animation: shimmer 2s infinite;
+    content: "";
+  }
+  @-webkit-keyframes shimmer {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  @keyframes shimmer {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .blog-post__headline {
+    font-size: 1.25em;
+    font-weight: bold;
+  }
+  .blog-post__meta {
+    font-size: 0.85em;
+    color: #6b6b6b;
+  }
+  
+  .o-media {
+    display: flex;
+  }
+  .o-media__body {
+    flex-grow: 1;
+    margin-left: 1em;
+  }
+  
+  .o-vertical-spacing > * + * {
+    margin-top: 0.75em;
+  }
+  .o-vertical-spacing--l > * + * {
+    margin-top: 2em;
+  }
+
+  .sectionNone{
+    width: 70%;
+    margin: 200px auto;
+    margin-top: 50px;  
+  }
+
+  .clickMeCr{
+    position: absolute;
+    top: 50%;
+    left: -12px;
+    transform: translate(-100%, -50%);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+    animation: leftRight 2s ease infinite;
+    opacity: 0;
+    transition: opacity 0.8s, width 0s;
+    width: 0;
+  }
+
+    .clickMeCr.active{
+        opacity: 1;
+        transition-delay: 1.6s;
+        width: 120px;    
+    }
+
+  @keyframes leftRight{
+    0%{
+      left: -12px;
+    }
+    50%{
+      left: -20px;
+    }
+    100%{
+      left: -12px;
+    }
   }

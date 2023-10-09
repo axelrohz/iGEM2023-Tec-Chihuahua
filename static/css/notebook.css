@@ -3,6 +3,7 @@
     margin: 0 auto;
     position: relative;
     z-index: 1;
+    padding-top: 8%;
 }
 
 .slider-container {
@@ -45,6 +46,7 @@
     border-left-width: 8px !important;
     border-left-style: solid !important;
     border-left-color: #A9BA6C !important;
+    font-family: "Quicksand";
 }
 
 #February::before {
@@ -56,6 +58,7 @@
     border-left-width: 8px !important;
     border-left-style: solid !important;
     border-left-color: #5BC5AB !important;
+    font-family: "Quicksand";
 }
 
 #March::before {
@@ -67,6 +70,7 @@
     border-left-width: 8px !important;
     border-left-style: solid !important;
     border-left-color: #C55B75 !important;
+    font-family: "Quicksand";
 }
 
 #April::before {
@@ -78,6 +82,7 @@
     border-left-width: 8px !important;
     border-left-style: solid !important;
     border-left-color: #447D9C !important;
+    font-family: "Quicksand";
 }
 
 #May::before {
@@ -89,6 +94,7 @@
     border-left-width: 8px !important;
     border-left-style: solid !important;
     border-left-color: #A9BA6C !important;
+    font-family: "Quicksand";
 }
 
 #June::before {
@@ -100,6 +106,7 @@
     border-left-width: 8px !important;
     border-left-style: solid !important;
     border-left-color: #5BC5AB !important;
+    font-family: "Quicksand";
 }
 
 #July::before {
@@ -111,6 +118,7 @@
     border-left-width: 8px !important;
     border-left-style: solid !important;
     border-left-color: #C55B75 !important;
+    font-family: "Quicksand";
 }
 
 #August::before {
@@ -122,6 +130,7 @@
     border-left-width: 8px !important;
     border-left-style: solid !important;
     border-left-color: #447D9C!important;
+    font-family: "Quicksand";
 }
 
 #September::before {
@@ -133,6 +142,7 @@
     border-left-width: 8px !important;
     border-left-style: solid !important;
     border-left-color: #A9BA6C !important;
+    font-family: "Quicksand";
 }
 
 #October::before {

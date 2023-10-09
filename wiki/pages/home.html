@@ -11,7 +11,7 @@
     <link href="{{ url_for('static', filename = 'css/home.css') }}" rel="stylesheet">
     
 
-<div class="homeVideo">
+<div id="homeVideo" class="homeVideo">
         <div class="videoHolder">
             <video class="videoHome" autoplay muted loop src="https://video.igem.org/download/streaming-playlists/hls/videos/6fcf170f-12c7-482d-9fe6-9fd27d2d5627-1080-fragmented.mp4">
             </video>
@@ -36,16 +36,18 @@
 
     <div id="whyUs" class="whyUsHomeContainer">
        
-        <div class="whyUsTitle"> Why Us? </div>
-        <div class="whyUsText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel massa a risus ornare dapibus. In iaculis urna at luctus condimentum. Nulla pellentesque consectetur pellentesque. Donec lectus quam, porttitor sed sem at, tristique maximus neque. In viverra et nisl non placerat. Cras sem sapien, auctor quis luctus sit amet, semper non arcu. Aliquam in turpis turpis. Nullam luctus tincidunt orci at laoreet. Nunc dapibus gravida elit.</div>
+        <div class="whyUsTitle"> Why AureoBos? </div>
+        <div class="whyUsText"> AureoBos is set to revolutionize the dairy industry with its pioneering intramammary infusion treatment. By offering dairy producers an innovative solution for addressing bovine mastitis, caused by the four most common microorganisms - <i style="font-size: 1.2rem; letter-spacing: 0;">Staphylococcus aureus, Streptococcus agalactiae, Streptococcus uberis, <span> and </span> Escherichia coli</i> - we eliminate the reliance on antibiotics. Our mission is to drive substantial reductions in milk wastage, make a positive impact on the environment, and eliminate the costly milk withdrawal period, translating into significant economic gains for the industry.</div>
 
         <div class="whyUsFact">
-            <div class="whyUsNumber"> ##% </div>
-            <div class="whyUsNumText"> Number facts without us</div>
+            <div class="whyUsNumber"> 175 <span class="liters"> liters </span> </div>
+            <div class="whyUsNumText"> Discarded liters of milk per cow treated with a 5 day antibiotic* 
+                <span class="infomorewhy">*Information gathered from the interviews and visits conducted at Human Practices </span>
+                </div>
         </div>
                 <div class="whyUsFact">
-            <div class="whyUsNumber"> ##% </div>
-            <div class="whyUsNumText"> Number facts with us </div>
+            <div class="whyUsNumber"> <span id="valueGrow"> 175 </span> <span class="liters"> liters </span> </div>
+            <div class="whyUsNumText">Discarded liters of milk per cow treated with AureoBos</div>
         </div>
     </div>
 <svg id="visual" viewBox="0 0 1920 400" width="1920" height="400" style="min-width: 100vw;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><rect style="min-width: 100vw;" x="0" y="0" width="1920" height="400" fill="#16171d"></rect><path style="min-width: 100vw;" d="M0 239L40 221.3C80 203.7 160 168.3 240 170C320 171.7 400 210.3 480 208.5C560 206.7 640 164.3 720 137.8C800 111.3 880 100.7 960 118.2C1040 135.7 1120 181.3 1200 186.8C1280 192.3 1360 157.7 1440 139.2C1520 120.7 1600 118.3 1680 135.5C1760 152.7 1840 189.3 1880 207.7L1920 226L1920 401L1880 401C1840 401 1760 401 1680 401C1600 401 1520 401 1440 401C1360 401 1280 401 1200 401C1120 401 1040 401 960 401C880 401 800 401 720 401C640 401 560 401 480 401C400 401 320 401 240 401C160 401 80 401 40 401L0 401Z" fill="#ffffff" stroke-linecap="round" stroke-linejoin="miter"></path></svg>
@@ -496,6 +498,60 @@
                 homeUsContainer.classList.remove('active');
             }
         }
+
+    </script>
+    <script>
+        let menus = document.getElementById('navBar');
+        window.onload = function(){
+            menus.classList.add('colored');
+        }
+    </script>
+    <script>
+        window.addEventListener('scroll',menuRev);
+        let menu = document.getElementById('navBar');
+        let video = document.getElementById('homeVideo');
+
+        function menuRev(){
+            let videoBottom = video.getBoundingClientRect().bottom;
+
+            if(videoBottom < 0){
+                menu.classList.remove('colored');
+            }
+            else{
+                menu.classList.add('colored');
+            }
+        }
+    </script>
+
+    <script>
+     function animateValue(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    obj.innerHTML = Math.floor(progress * (end - start) + start);
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
+
+const obj = document.getElementById("valueGrow");
+window.addEventListener('scroll',reveal);
+
+function reveal(){
+    let objtop = obj.getBoundingClientRect().top;
+    let windoHeigth = window.innerHeight;
+    if(objtop < windoHeigth){
+        if (obj.innerHTML == 175){
+            animateValue(obj, 175, 0, 1650);
+        }
+    }
+    else{
+        animateValue(obj, 175, 175, 1650);
+    }
+}
 
     </script>
 

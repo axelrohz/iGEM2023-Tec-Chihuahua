@@ -83,7 +83,7 @@
   </div>
 
 
-  <div class="parallax-content">
+  <div class="parallax-content teamBody">
 
     <div class="scrollIndexContain">
       <div class="stickyIndex">
@@ -122,13 +122,14 @@
         <div class="image" style="--gradient:linear-gradient(45deg, rgba(68, 125, 156, 1), rgba(91, 197, 171, 1))">
           <img loading="lazy" class="img" src="https://static.igem.wiki/teams/4607/wiki/members/adolfe.png" alt="1">
           <div class="tag" style="--ccolor:rgb(68, 125, 156)">Wet Lab</div>
-          <div class="tag2">Leader</div>
+          <div class="tag2" style="--ccolor:rgb(169, 186, 108)">Wiki</div>
+          
 
         </div>
 
         <div class="content">
           <h1 style="color:rgb(68, 125, 156)">Adolfo</h1>
-          <p style="font-family: 'Quicksand'; text-align: center;">Wet lab is led by this witty nerd. Interested in the small details in nature and with previous work in
+          <p style="font-family: 'Quicksand'; text-align: center;">Interested in the small details in nature and with previous work in
             mechanics, he knew his path was in science. His meticulousness keeps our work clean. He’s sure he would be
             an <em>Acidithiobacillus ferrooxidans.</em> His favorite dairy product is chocolate milk. <br> “Now I am
             become endolysin, the destroyer of bacteria”</p>
@@ -162,6 +163,8 @@
         <div class="image" style="--gradient:linear-gradient(45deg, rgba(68, 125, 156, 1), rgba(91, 197, 171, 1))">
           <img loading="lazy" class="img" src="https://static.igem.wiki/teams/4607/wiki/images/members/axel.png"
             alt="1">
+          <div class="tag3">Team Supervisor</div>
+          <div class="tag2">Leader</div>
           <div class="tag" style="--ccolor:rgb(68, 125, 156)">Wet Lab</div>
         </div>
 
@@ -169,8 +172,7 @@
           <h1 style="color:rgb(68, 125, 156)">Axel</h1>
           <p style="font-family: 'Quicksand'; text-align: center;">Our team’s problem solving relies on him, one of our most diplomatic members. This sensitive person acts as
             a change agent and has no problem in showing vulnerability. He would be an <em>Agrobacterium tumefaciens
-            </em>(he thinks it’s poetic). His favorite dairy product is greek yogurt. <br> “Why’s everything going so
-            smooth? This seems suspicious” </p> <a href="https://www.linkedin.com/in/axelrojero/" title="LinkedIn"><svg
+            </em>(he thinks it’s poetic). His favorite dairy product is homemade yogurt. <br> “Everything's fine? How you been feeling lately?”</p> <a href="https://www.linkedin.com/in/axelrojero/" title="LinkedIn"><svg
               role="img" viewBox="0 0 540 540">
               <path
                 d="M500 0c22 0 40 18 40 40v460c0 22-18 40-40 40H40c-22 0-40-18-40-40V40C0 18 18 0 40 0h460ZM160 202H80v258h80V202Zm206-7c-42 0-69 27-77 43h-1v-36h-78v258h81V320c0-36 23-55 47-55s41 13 41 55v140h81V300c0-78-49-105-94-105ZM120 73a47 47 0 1 0 0 94 47 47 0 0 0 0-94Z" />
@@ -670,7 +672,7 @@
           <h1 style="color:rgb(197, 91, 117)">Cynthia</h1>
           <p style="font-family: 'Quicksand'; text-align: center;"> Our perfectionist Primary Instructor loves to see every member of the team evolve into something
             different. Her favorite microorganism is <em> Thermus aquaticus </em>. Her favorite dairy product is
-            butter.
+            butter.<br> “What about the music?”
           </p>
           <a href="https://www.linkedin.com/in/cynthia-lizeth-gonzalez-trevizo-872135184/" title="LinkedIn"><svg
               role="img" viewBox="0 0 540 540">
@@ -727,14 +729,14 @@
         var dot2 = document.getElementById('dot2');
         var dot3 = document.getElementById('dot3');
         var dot4 = document.getElementById('dot4');
-        var dot5 = document.getElementById('dot5');
+
 
         function goTo(scrollID) {
           dot1.classList.remove('active');
           dot2.classList.remove('active');
           dot3.classList.remove('active');
           dot4.classList.remove('active');
-          dot5.classList.remove('active');
+
           var dot = document.getElementById('dot' + scrollID);
           dot.classList.add('active');
           var element = document.getElementById('sec' + scrollID);
@@ -754,7 +756,7 @@
         var dot2 = document.getElementById('dot2');
         var dot3 = document.getElementById('dot3');
         var dot4 = document.getElementById('dot4');
-        var dot5 = document.getElementById('dot5');
+
 
         window.addEventListener('scroll', function () {
           var sect1top = sect1.getBoundingClientRect().top;
@@ -768,37 +770,35 @@
             dot2.classList.remove('active');
             dot3.classList.remove('active');
             dot4.classList.remove('active');
-            dot5.classList.add('active');
+
           } else if (sect4top - topPad <= topPad) {
             dot1.classList.remove('active');
             dot2.classList.remove('active');
             dot3.classList.remove('active');
             dot4.classList.add('active');
-            dot5.classList.remove('active');
+
           } else if (sect3top - topPad <= topPad) {
             dot1.classList.remove('active');
             dot2.classList.remove('active');
             dot3.classList.add('active');
             dot4.classList.remove('active');
-            dot5.classList.remove('active');
           } else if (sect2top - topPad <= topPad) {
             dot1.classList.remove('active');
             dot2.classList.add('active');
             dot3.classList.remove('active');
             dot4.classList.remove('active');
-            dot5.classList.remove('active');
           } else if (sect1top - topPad <= topPad) {
             dot1.classList.add('active');
             dot2.classList.remove('active');
             dot3.classList.remove('active');
             dot4.classList.remove('active');
-            dot5.classList.remove('active');
+
           } else {
             dot1.classList.remove('active');
             dot2.classList.remove('active');
             dot3.classList.remove('active');
             dot4.classList.remove('active');
-            dot5.classList.remove('active');
+
           }
 
         }); 

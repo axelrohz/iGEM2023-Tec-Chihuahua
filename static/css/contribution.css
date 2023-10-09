@@ -45,6 +45,14 @@
         max-width: 100%;
     }
 
+    @media (max-width: 768px) {
+        .wavtit h2 {
+            font-size: 400%;
+        }
+    }
+        
+    
+
 .ag-format-container {
     width: 1142px;
     margin: 0 auto;
