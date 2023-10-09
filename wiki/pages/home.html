@@ -37,16 +37,16 @@
     <div id="whyUs" class="whyUsHomeContainer">
        
         <div class="whyUsTitle"> Why AureoBos? </div>
-        <div class="whyUsText"> AureoBos is set to revolutionize the dairy industry with its pioneering intramammary infusion treatment. By offering dairy producers an innovative solution for addressing bovine mastitis, caused by the four most common microorganisms - <i style="font-size: 1.2rem;">Staphylococcus aureus, Streptococcus agalactiae, Streptococcus uberis, <span> and </span> Escherichia coli</i> - we eliminate the reliance on antibiotics. Our mission is to drive substantial reductions in milk wastage, make a positive impact on the environment, and eliminate the costly milk withdrawal period, translating into significant economic gains for the industry.</div>
+        <div class="whyUsText"> AureoBos is set to revolutionize the dairy industry with its pioneering intramammary infusion treatment. By offering dairy producers an innovative solution for addressing bovine mastitis, caused by the four most common microorganisms - <i style="font-size: 1.2rem; letter-spacing: 0;">Staphylococcus aureus, Streptococcus agalactiae, Streptococcus uberis, <span> and </span> Escherichia coli</i> - we eliminate the reliance on antibiotics. Our mission is to drive substantial reductions in milk wastage, make a positive impact on the environment, and eliminate the costly milk withdrawal period, translating into significant economic gains for the industry.</div>
 
         <div class="whyUsFact">
-            <div class="whyUsNumber"> <span id="valueGrow"> 175 </span> <span class="liters"> liters </span> </div>
+            <div class="whyUsNumber"> 175 <span class="liters"> liters </span> </div>
             <div class="whyUsNumText"> Discarded liters of milk per cow treated with a 5 day antibiotic* 
                 <span class="infomorewhy">*Information gathered from the interviews and visits conducted at Human Practices </span>
                 </div>
         </div>
                 <div class="whyUsFact">
-            <div class="whyUsNumber"> 0 <span class="liters"> liters </span> </div>
+            <div class="whyUsNumber"> <span id="valueGrow"> 175 </span> <span class="liters"> liters </span> </div>
             <div class="whyUsNumText">Discarded liters of milk per cow treated with AureoBos</div>
         </div>
     </div>
@@ -544,12 +544,12 @@ function reveal(){
     let objtop = obj.getBoundingClientRect().top;
     let windoHeigth = window.innerHeight;
     if(objtop < windoHeigth){
-        if (obj.innerHTML == 0){
-            animateValue(obj, 0, 175, 1650);
+        if (obj.innerHTML == 175){
+            animateValue(obj, 175, 0, 1650);
         }
     }
     else{
-        animateValue(obj, 0, 0, 1650);
+        animateValue(obj, 175, 175, 1650);
     }
 }
 
