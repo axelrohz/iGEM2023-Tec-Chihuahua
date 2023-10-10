@@ -3094,6 +3094,28 @@ table tbody tr td::last-child {
   position: relative;
   z-index: 10;
 }
+.ODS12 {
+  background: transparent;
+  width: 50%;
+  max-width: 217px;
+  height: auto;
+  position: relative;
+  top: 7vw;
+  left: 23vw;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.ODS15 {
+  background: transparent;
+  width: 50%;
+  max-width: 217px;
+  height: auto;
+  position: relative;
+  top: 7vw;
+  left: 23vw;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
 
 
 .post_it_1 {
