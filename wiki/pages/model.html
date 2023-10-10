@@ -223,7 +223,7 @@
 			</div>
 			<div>
 				<p class="contenido">
-				Biological systems are highly dynamic and complex, and as we dive deeper into their intricacies, inherent variability and random fluctuations emerge. In this context, mathematical models offer a valuable tool for rigorous analysis and play a crucial role in research.<sup>1</sup> Thus, effectively bridging the gap between theory and practice to unlock the true potential of understanding these complex systems. Mathematical models use observation and manipulation in the same way as experiments, bypassing challenges such as high costs, time consumption, and risks.
+				Biological systems are highly dynamic and complex, and as we dive deeper into their intricacies, inherent variability and random fluctuations emerge. In this context, mathematical models offer a valuable tool for rigorous analysis and play a crucial role in research.<sup><a href="#referenciaO1" class="referencias">1</a></sup> Thus, effectively bridging the gap between theory and practice to unlock the true potential of understanding these complex systems. Mathematical models use observation and manipulation in the same way as experiments, bypassing challenges such as high costs, time consumption, and risks.
 				<br>
 				<br>
 				
@@ -282,7 +282,7 @@
 				The model's construction and evaluation rely on a fusion of empirical data, existing literature, and mechanistic insights. By considering multiple parameters, such as dynamic interactions among system components (kinetic coefficients/interactions), system heterogeneities, and uncertainties. We employed stochastic analysis to simulate the system's responses under various scenarios, thereby establishing a range of conditions where protein expression is most favorable. Experimental data, such as IPTG concentration and endolysin production rates, contributed to parameter estimation and model calibration.
 				<br>
 				<br>
-				Our model consists of a system representation through 13 ordinary differential equations (ODEs), enabling us to predict protein expression. To address the stochastic nature of the system, where behavior is influenced by probabilities<sup>2</sup> and achieve robust/realistic results, we account the uncertainty sources into our model by a Monte Carlo simulation to identify the model's parameters range and assess the sensitivity to changes. The quasi-quantification of specific endolysin yield was achieved through a
+				Our model consists of a system representation through 13 ordinary differential equations (ODEs), enabling us to predict protein expression. To address the stochastic nature of the system, where behavior is influenced by probabilities<sup><a href="#referenciaO2" class="referencias">2</a></sup> and achieve robust/realistic results, we account the uncertainty sources into our model by a Monte Carlo simulation to identify the model's parameters range and assess the sensitivity to changes. The quasi-quantification of specific endolysin yield was achieved through a
 				<b class="tooltipSignificado">grey-box
 					<span class="tooltipSignificadoBox">
 					Flexible and pragmatic method that acknowledges the practical limitations of accessing full internal system details while utilizing the available knowledge to create effective and efficient solutions.
@@ -291,12 +291,12 @@
 				surrogate model, obtained combining a set of steady-state differential equations (IPTG induction mechanism), low-cost/effort lab measurements (protein distribution through SDS–PAGE) and parameter estimations of kinetic constants (Genetic Algorithm).
 				<br>
 				<br>
-				As mentioned, we present a combined SDS–PAGE gel electrophoresis with banding pattern recognition to enable rapid protein distribution examination. The acceleration in detection not only significantly reduces experimental costs but is also pivotal as biological system studies increasingly embrace quantitative methods, emphasizing the growing role of mathematical analysis.<sup>3,4</sup>
-				This phase of our methodology aims to identify potential interventions or enhancements in a forward-engineering framework, advocating for the integration of a mathematical model at the conceptual design stage<sup>5,6</sup>
+				As mentioned, we present a combined SDS–PAGE gel electrophoresis with banding pattern recognition to enable rapid protein distribution examination. The acceleration in detection not only significantly reduces experimental costs but is also pivotal as biological system studies increasingly embrace quantitative methods, emphasizing the growing role of mathematical analysis.<sup><a href="#referenciaO3" class="referencias">3, </a></sup><sup><a href="#referenciaO4" class="referencias">4</a></sup>
+				This phase of our methodology aims to identify potential interventions or enhancements in a forward-engineering framework, advocating for the integration of a mathematical model at the conceptual design stage<sup><a href="#referenciaO5" class="referencias">5, </a></sup><sup><a href="#referenciaO6" class="referencias">6</a></sup>
 				and serves as a foundation for the (re-)design, construction, characterization, and testing of the envisioned system.
 				<br>
 				<br>
-				Nevertheless, a key challenge lies in accurately calibrating these models, addressing the parameter estimation problem associated with unknown rate constants for each interaction in a network.<sup>7</sup>
+				Nevertheless, a key challenge lies in accurately calibrating these models, addressing the parameter estimation problem associated with unknown rate constants for each interaction in a network.<sup><a href="#referenciaO7" class="referencias">7</a></sup>
 				Here, allowed to determine the unknown parameters, adjusting the model to best align with experimental data, even for parameters not directly measurable, thus enhancing the model's overall fit with experimental results. Parameter robustness is crucial in modeling, as even minor variations can significantly impact the model's behavior and performance.
 				<br>
 				<br>
@@ -333,21 +333,14 @@
 				</div>
 				<div class="accordion-item-body">
 					<div class="accordion-item-body-content">
-						<p class="contenido">
-							(1)	Banwarth-Kuhn, M.; Sindi, S. How and Why to Build a Mathematical Model: A Case Study Using Prion Aggregation. <em>J. Biol. Chem.</em> <b>2020</b>, <em>295</em> (15), 5022–5035. https://doi.org/10.1074/jbc.REV119.009851.
-							<br>
-							(2)	Karlebach, G.; Shamir, R. Modelling and Analysis of Gene Regulatory Networks. <em>Nat. Rev. Mol. Cell Biol.</em> <b>2008</b>, <em>9</em> (10), 770–780. https://doi.org/10.1038/nrm2503.
-							<br>
-							(3)	O’Neill, M. A.; Denos, M.; Reed, D. Using SDS–PAGE Gel Fingerprinting to Identify Soft‐bodied Wood‐boring Insect Larvae to Species. <em>Pest Manag. Sci.</em> <b>2018</b>, <em>74</em> (3), 705–714. https://doi.org/10.1002/ps.4766.
-							<br>
-							(4)	<em>Mathematical Modelling and Machine Learning Methods for Bioinformatics and Data Science Applications</em>; Bianchini, M., Samponi, M. L., Eds.; MDPI: Switzerland, 2022. https://doi.org/10.3390/books978-3-0365-2841-0.
-							<br>
-							(5)	Gábor, A.; Banga, J. R. Robust and Efficient Parameter Estimation in Dynamic Models of Biological Systems. <em>BMC Syst. Biol.</em> <b>2015</b>, <em>9</em> (1), 74. https://doi.org/10.1186/s12918-015-0219-2.
-							<br>
-							(6)	Arpino, J. A. J.; Hancock, E. J.; Anderson, J.; Barahona, M.; Stan, G.-B. V.; Papachristodoulou, A.; Polizzi, K. Tuning the Dials of Synthetic Biology. <em>Microbiology</em> <b>2013</b>, <em>159</em> (Pt_7), 1236–1253. https://doi.org/10.1099/mic.0.067975-0.
-							<br>
-							(7)	Mitra, E. D.; Hlavacek, W. S. Parameter Estimation and Uncertainty Quantification for Systems Biology Models. <em>Curr. Opin. Syst. Biol.</em> <b>2019</b>, <em>18</em>, 9–18. https://doi.org/10.1016/j.coisb.2019.10.006.
-						</p>
+						<p class="reference" id = "referenciaO1">(1)	Banwarth-Kuhn, M.; Sindi, S. How and Why to Build a Mathematical Model: A Case Study Using Prion Aggregation. <em>J. Biol. Chem.</em> <b>2020</b>, <em>295</em> (15), 5022–5035. https://doi.org/10.1074/jbc.REV119.009851.</p>
+						<p class="reference" id = "referenciaO2">(2)	Karlebach, G.; Shamir, R. Modelling and Analysis of Gene Regulatory Networks. <em>Nat. Rev. Mol. Cell Biol.</em> <b>2008</b>, <em>9</em> (10), 770–780. https://doi.org/10.1038/nrm2503.</p>
+						<p class="reference" id = "referenciaO3">(3)	O’Neill, M. A.; Denos, M.; Reed, D. Using SDS–PAGE Gel Fingerprinting to Identify Soft‐bodied Wood‐boring Insect Larvae to Species. <em>Pest Manag. Sci.</em> <b>2018</b>, <em>74</em> (3), 705–714. https://doi.org/10.1002/ps.4766.</p>
+						<p class="reference" id = "referenciaO4">(4)	<em>Mathematical Modelling and Machine Learning Methods for Bioinformatics and Data Science Applications</em>; Bianchini, M., Samponi, M. L., Eds.; MDPI: Switzerland, 2022. https://doi.org/10.3390/books978-3-0365-2841-0.</p>
+						<p class="reference" id = "referenciaO5">(5)	Gábor, A.; Banga, J. R. Robust and Efficient Parameter Estimation in Dynamic Models of Biological Systems. <em>BMC Syst. Biol.</em> <b>2015</b>, <em>9</em> (1), 74. https://doi.org/10.1186/s12918-015-0219-2.</p>
+						<p class="reference" id = "referenciaO6">(6)	Arpino, J. A. J.; Hancock, E. J.; Anderson, J.; Barahona, M.; Stan, G.-B. V.; Papachristodoulou, A.; Polizzi, K. Tuning the Dials of Synthetic Biology. <em>Microbiology</em> <b>2013</b>, <em>159</em> (Pt_7), 1236–1253. https://doi.org/10.1099/mic.0.067975-0.</p>
+						<p class="reference" id = "referenciaO7">(7)	Mitra, E. D.; Hlavacek, W. S. Parameter Estimation and Uncertainty Quantification for Systems Biology Models. <em>Curr. Opin. Syst. Biol.</em> <b>2019</b>, <em>18</em>, 9–18. https://doi.org/10.1016/j.coisb.2019.10.006.</p>
+					
 					</div>
 				</div>
 			</div>
@@ -518,7 +511,7 @@
    	    <h5 class="ctaT"><span>Production of Lac repressor. Steps 1-4</span></h5>
         </div>
         <br>
-        <p class="contenido">The system's dynamics are under the influence of the Lac repressor, which is a regulatory molecule encoded by the LacI regulatory gene (G). This protein exhibits constitutive expression, forming monomers (R<sub>M</sub>), dimers (R<sub>D</sub>), and tetramers (R<sub>T</sub>) through subunit bonding.<sup>3</sup> The chemical reaction for modeling the repressor mRNA production is assumed to be governed by the sole dependence on the quantity of the LacI gene. Additionally,  the  production of monomer is dependent on the mRNA of repressor (M<sub>LI</sub>) concentration. The favored formation is Tetramers over dimers over monomers.</p>
+        <p class="contenido">The system's dynamics are under the influence of the Lac repressor, which is a regulatory molecule encoded by the LacI regulatory gene (G). This protein exhibits constitutive expression, forming monomers (R<sub>M</sub>), dimers (R<sub>D</sub>), and tetramers (R<sub>T</sub>) through subunit bonding.<sup><a href="#referenciaM3" class="referencias">3</a></sup> The chemical reaction for modeling the repressor mRNA production is assumed to be governed by the sole dependence on the quantity of the LacI gene. Additionally,  the  production of monomer is dependent on the mRNA of repressor (M<sub>LI</sub>) concentration. The favored formation is Tetramers over dimers over monomers.</p>
    		<math display='block'>
    		 <mi>G</mi><mover>
     		 <mo>&#x2192;</mo>
@@ -619,7 +612,7 @@
  		 <h5 class="ctaT"><span>Formation of repressor-Operator complex. Steps 5-6</span></h5>
    	</div>
 	<br>
-    <p class="contenido">In its tetrameric and dimeric configurations, the repressor exhibits strong affinity for the operator (O). This binding event effectively obstructs RNA polymerase’s access to the promoter region, resulting in the inhibition of endolysin gene transcription. Consequently, in the absence of other factors, endolysin production is low or absent (leak transcript). On the contrary, the monomeric form of the lac repressor demonstrates a reduced affinity for the operator and lacks the capability to effectively bind to it.<sup>4</sup> </p>
+    <p class="contenido">In its tetrameric and dimeric configurations, the repressor exhibits strong affinity for the operator (O). This binding event effectively obstructs RNA polymerase’s access to the promoter region, resulting in the inhibition of endolysin gene transcription. Consequently, in the absence of other factors, endolysin production is low or absent (leak transcript). On the contrary, the monomeric form of the lac repressor demonstrates a reduced affinity for the operator and lacks the capability to effectively bind to it.<sup><a href="#referenciaM4" class="referencias">4</a></sup> </p>
     <math display='block'>
        		 <msub>
        		 <mi>R</mi>
@@ -679,7 +672,7 @@
  		<h5 class="ctaT"><span>Input of IPTG. Step 11</span></h5>
    	</div>
    	<br>
-   	<p class="contenido">The entry of IPTG into <em>E. coli</em> BL21 cells occurs through two potential mechanisms: simple diffusion and active transport facilitated by the lactose permease, encoded by the LacY gene. The active transport pathway has been reported to not be significant on <em>E. coli</em>, thus, we won't take it into account in our model.<sup>5</sup> As a result, we focus solely on the predominant method of IPTG entry, which is simple diffusion. In this process, IPTG molecules passively move across the cell membrane in response to the concentration gradient, without the need for energy expenditure or assistance from specific transporters.</p>     
+   	<p class="contenido">The entry of IPTG into <em>E. coli</em> BL21 cells occurs through two potential mechanisms: simple diffusion and active transport facilitated by the lactose permease, encoded by the LacY gene. The active transport pathway has been reported to not be significant on <em>E. coli</em>, thus, we won't take it into account in our model.<sup><a href="#referenciaM5" class="referencias">5</a></sup> As a result, we focus solely on the predominant method of IPTG entry, which is simple diffusion. In this process, IPTG molecules passively move across the cell membrane in response to the concentration gradient, without the need for energy expenditure or assistance from specific transporters.</p>     
    	<br>
    	<p class="contenido">We employ Fick's law of diffusion (Eq. 1) to characterize the process of simple diffusion. The equation takes into account 2 variables: IPTG concentration and absorption surface. Notably, in our model, we maintain the absorption surface as a constant, disregarding any membrane expansion during binary fission. This choice enables us to establish all our mathematical equations as dependent solely on IPTG concentration. In this context, where Δx denotes the membrane thickness, 'K' represents the diffusion constant, 'A' stands for the absorption surface, 'IPTG<sub>E</sub> ' signifies the IPTG concentration in the culture medium, and 'IPTG<sub>I</sub>' refers to the IPTG concentration within the bacterial cells.
    	</p>
@@ -713,9 +706,9 @@
    	</div>
 		<div class="row mt-5">
 			<div class="col-lg-8">
-				<p class="contenido">Upon the introduction of IPTG into the system, it binds with the dimeric and tetrameric forms of the repressor protein. It’s important to note that each monomer within both the dimer and tetramer structure can accommodate a single IPTG molecule for binding. Upon binding, IPTG triggers an allosteric structural transformation in the tetrameric repressor, resulting to a decrease in its affinity for the operator.<sup>6</sup> Consequently, the monomeric repressor loses its capacity to effectively bind to the operator, allowing RNA polymerase’s access to the promoter. This, in turn, enables the transcription and subsequent production of the endolysins.</p>
+				<p class="contenido">Upon the introduction of IPTG into the system, it binds with the dimeric and tetrameric forms of the repressor protein. It’s important to note that each monomer within both the dimer and tetramer structure can accommodate a single IPTG molecule for binding. Upon binding, IPTG triggers an allosteric structural transformation in the tetrameric repressor, resulting to a decrease in its affinity for the operator.<sup><a href="#referenciaM6" class="referencias">6</a></sup> Consequently, the monomeric repressor loses its capacity to effectively bind to the operator, allowing RNA polymerase’s access to the promoter. This, in turn, enables the transcription and subsequent production of the endolysins.</p>
 				<br>
-				<p class="contenido">The formation of the IPTG-repressor complex can occur through two mechanisms:<sup>3</sup></p>
+				<p class="contenido">The formation of the IPTG-repressor complex can occur through two mechanisms:<sup><a href="#referenciaM3" class="referencias">3</a></sup></p>
 				<ol  class="contenido">
 				  <li  class="contenido">The repressor exists in a free state.</li>
 				  <li  class="contenido">The repressor is part of the repressor-operator complex, where it is already bound to the operator sequence.</li>
@@ -728,7 +721,7 @@
 				</figure>
 			</div>
 		</div>
-	<p class="contenido">When the repressor is bound to the operator, the introduction of IPTG interferes with the repressor-operator complex, leading to its disruption. As a result, the extent of repressor inactivation is directly correlated with the number of binding sites occupied by IPTG. Interestingly, even with just two IPTG molecules bound to specific sites, the repressor can undergo effective inactivation.<sup>7</sup> <b>Figure 2</b> illustrates the different conformations that can exist.</p>		 
+	<p class="contenido">When the repressor is bound to the operator, the introduction of IPTG interferes with the repressor-operator complex, leading to its disruption. As a result, the extent of repressor inactivation is directly correlated with the number of binding sites occupied by IPTG. Interestingly, even with just two IPTG molecules bound to specific sites, the repressor can undergo effective inactivation.<sup><a href="#referenciaM7" class="referencias">7</a></sup> <b>Figure 2</b> illustrates the different conformations that can exist.</p>		 
 	<br>
 	<p class="contenido">We are considering these distinct conformations to deactivate the tetramer repressor, which requires a Hill coefficient of 2-3. However, it's noteworthy that only two IPTG molecules are required to inactivate the dimeric repressor.</p>
    	<math display='block'>
@@ -867,7 +860,7 @@
 	<br>
    	<p class="contenido">As the operator becomes unoccupied due to the inactivation of the lac repressor through IPTG binding, RNA polymerase gains the ability to initiate transcription of the endolysin gene. In our model, the transcription of endolysin is solely contingent on the concentration of free operator sites.</p>
    	<br>
-   	<p class="contenido"><em>E. coli</em>recombinant expression systems that utilize lac operon control elements to modulate gene expression, low levels expression are produced during bacterial growth prior to induction, known as leakage. This leaking limits cell growth when toxic proteins for <em>E. coli</em> are produced and cause instability in the pET expression system.<sup>8</sup></p>
+   	<p class="contenido"><em>E. coli</em>recombinant expression systems that utilize lac operon control elements to modulate gene expression, low levels expression are produced during bacterial growth prior to induction, known as leakage. This leaking limits cell growth when toxic proteins for <em>E. coli</em> are produced and cause instability in the pET expression system.<sup><a href="#referenciaM8" class="referencias">8</a></sup></p>
    	<br>
    	<p class="contenido">The concentration of recombinant proteins in bacterial cells is crucial for large-scale production, as high levels can be toxic, reducing yields. However, for the sake of model simplicity and tractability, we have omitted toxicity considerations.</p>
     <math display='block'>
@@ -4103,7 +4096,7 @@
 			<br>
 			<p  class="contenido"">Precise predictions of biological processes rely on understanding intricate networks. Nonetheless, this understanting is hindered by the lack of data concerning numerous model parameters, especially reaction kinetics. In our system of ODEs, we encountered a shorfall of associated parameters for some of the reaction kinetics presented in <b>Table 2.</b> Selecting the suitable -range of- values presented a challenge as it should encompass a broad spectrum to ensure the experimental results are representative, detailed enough to capture essential information, but not overly extensive that it becomes too complex and time-consuming due to limitations in computational resources. </p>
 			<br>
-			<p  class="contenido">Monte Carlo (MC) simulations have been employed to predict the effects of stochasticity among reaction events, as well as in model developments where parameters are unknown, and for parameter estimation.<sup>15–18</sup> Furthermore, MC simulations demonstrate a noteworthy level of accuracy, efficiency in computation, and ease of implementation. In our model, we employ a MC simulation to conduct 10,000 iterative excecutions utilizing randomly assing values for the unknown kinetic constants in <b>Table 2.</b></p>
+			<p  class="contenido">Monte Carlo (MC) simulations have been employed to predict the effects of stochasticity among reaction events, as well as in model developments where parameters are unknown, and for parameter estimation.<sup><a href="#referenciaM15" class="referencias">15-18</a></sup> Furthermore, MC simulations demonstrate a noteworthy level of accuracy, efficiency in computation, and ease of implementation. In our model, we employ a MC simulation to conduct 10,000 iterative excecutions utilizing randomly assing values for the unknown kinetic constants in <b>Table 2.</b></p>
 			<br>
 			<p  class="contenido">Through this approach, a diverse and extensive array of potential parameter sets is generated, facilitating a probabilistic exploration of the parameter space. Subsequently, we leverage the established range of viable kinetic constant values obtained from the MC simulation as an input for a machine-learning-based parameter estimation algorithm, aiming to narrow down said parameter range.</p>
 			<div class="tituloContenido">
@@ -4126,7 +4119,7 @@
 					</div>
 				</div>
 			<br>
-			<p  class="contenido">Combining the range of parameters obtained through MC simulation with a GA -or any suitable parameter estimation algorithm- is essential when modeling systems characterized by indeterminate kinetic constants. The empirical data sourced from SDS-PAGE gel electrophoresis was analyzed through <a href="#popup2-optin" class="popupColor">ImageJ</a>. The initial preprocessing phase involves the segmentation of gel lanes and accurate delineation of protein bands, extracting quasi-quantitative concentration data across different time points. This processed concentration data forms the foundation for constructing an objective function within the GA, to iteratively optimize the kinetic parameters.<sup>20</sup> The objective function evaluates the fitness of each parameter set by comparing simulated protein concentration profiles with the experimentally derived data. Employing a generational approach, the GA refines the kinetic parameter space, converging towards optimal or near-optimal solutions that exhibit the highest fidelity with observed protein distribution.</p>
+			<p  class="contenido">Combining the range of parameters obtained through MC simulation with a GA -or any suitable parameter estimation algorithm- is essential when modeling systems characterized by indeterminate kinetic constants. The empirical data sourced from SDS-PAGE gel electrophoresis was analyzed through <a href="#popup2-optin">ImageJ</a>. The initial preprocessing phase involves the segmentation of gel lanes and accurate delineation of protein bands, extracting quasi-quantitative concentration data across different time points. This processed concentration data forms the foundation for constructing an objective function within the GA, to iteratively optimize the kinetic parameters.<sup><a href="#referenciaM20" class="referencias">20</a></sup> The objective function evaluates the fitness of each parameter set by comparing simulated protein concentration profiles with the experimentally derived data. Employing a generational approach, the GA refines the kinetic parameter space, converging towards optimal or near-optimal solutions that exhibit the highest fidelity with observed protein distribution.</p>
 			<br>
 				<div class="bg-overlay" id="popup2-optin">
 					<div class="subscribe-optin">
@@ -4151,10 +4144,10 @@
    			<p class="contenido">To address the preparation of an intramammary infusion composed of our three endolysins LysK-ABD-SH3B30, LysCSA13-ABD, and PCNP-CecA-LysSS (which will further be referred as LysK, LysCSA13 and LysSS), it was imperative to determine the optimal combination of concentrations for targeting each specific bacterium. Initially, experiments were envisioned utilizing purified recombinant proteins; however, challenges were encountered in the purification process. Consequently, a decision was made to conduct bactericidal assays using crude extracts of each endolysin. Despite this modification, the primary objective remains to attain the most effective formulation of AureoBos.
 				<br>
 				<br>
-				The presence of endolysins targeting different bonds within the peptidoglycan suggests a promising potential for a synergistic effect against their target bacteria when these enzymes are used in combination.<sup>20</sup> While one-factor-at-a-time approach is commonly used to optimize components and conditions, it is time-consuming and tends to overlook the interactions between independent variables.<sup>21</sup> To screen and analyze interactions between the endolysins, particularly focusing on their combined effect, we aim to analyze the potential synergistic impact, finding the optimum quickly and efficiently.
+				The presence of endolysins targeting different bonds within the peptidoglycan suggests a promising potential for a synergistic effect against their target bacteria when these enzymes are used in combination.<sup><a href="#referenciaM20" class="referencias">20</a></sup> While one-factor-at-a-time approach is commonly used to optimize components and conditions, it is time-consuming and tends to overlook the interactions between independent variables.<sup><a href="#referenciaM21" class="referencias">21</a></sup> To screen and analyze interactions between the endolysins, particularly focusing on their combined effect, we aim to analyze the potential synergistic impact, finding the optimum quickly and efficiently.
 				<br>
 				<br>
-				Response Surface Methodology (RSM) comprises a set of mathematical and statistical techniques valuable for construction models and analyzing scenarios where multiple independent variables or controllable factors influence a dependent variable or response. RSM efficiently extracts a wealth of information through minimal effort.<sup>22</sup> As such, we utilize RSM to estimate a response based on a combination of factor levels and determining the optimum concentratios to maximize the endolysins’ performance. The optimum concentrations were first determined by screening independent factors (protein concentrations of each construct) and selecting desired responses (bactericidal effect), followed by choosing the experimental design strategy and running the experiments to obtain the results. After that, the model is confirmed by utilizing response graphs and analysis of variance, and optimal conditions are determined in the end.
+				Response Surface Methodology (RSM) comprises a set of mathematical and statistical techniques valuable for construction models and analyzing scenarios where multiple independent variables or controllable factors influence a dependent variable or response. RSM efficiently extracts a wealth of information through minimal effort.<sup><a href="#referenciaM22" class="referencias">22</a></sup> As such, we utilize RSM to estimate a response based on a combination of factor levels and determining the optimum concentratios to maximize the endolysins’ performance. The optimum concentrations were first determined by screening independent factors (protein concentrations of each construct) and selecting desired responses (bactericidal effect), followed by choosing the experimental design strategy and running the experiments to obtain the results. After that, the model is confirmed by utilizing response graphs and analysis of variance, and optimal conditions are determined in the end.
 				<br>
 				<br>
 				In our case, the three factors, namely LysK, LysCSA13, and LysSS, in three levels within 875-2625 µg mL<sup>-1</sup>, 500-1500 µg mL<sup>-1</sup>, 25-75 µg mL<sup>-1</sup> respectively, were assessed using 3-Level full factorial design, which assesses specific pre-set combinations of the independent variables and enables the optimization of the target response adapted to each bacteria. The concentration levels were determined based on total protein concentration in each crude extract, categorizing them as low, middle, and high boundaries. Our model operates under the assumption that the optimal conditions fall within the specified ranges. The focus was solely on assessing the efficacy of the endolysins, thus, we maintained constant temperature and pH conditions throughout the experiments. Each experiment was conducted in triplicate.
@@ -4517,53 +4510,29 @@
 				</div>
 				<div class="accordion-item-body">
 					<div class="accordion-item-body-content">
-						<p class="contenido">
-							(1)	Lewis, M.; Chang, G.; Horton, N. C.; Kercher, M. A.; Pace, H. C.; Schumacher, M. A.; Brennan, R. G.; Lu, P. Crystal Structure of the Lactose Operon Repressor and Its Complexes with DNA and Inducer. <em>Science</em> <b>1996</b>, <em>271</em> (5253), 1247–1254. https://doi.org/10.1126/science.271.5253.1247.
-							<br>
-							(2)	Stamatakis, M.; Mantzaris, N. V. Comparison of Deterministic and Stochastic Models of the Lac Operon Genetic Network. <em>Biophys. J.</em> <b>2009</b>, <em>96</em> (3), 887–906. https://doi.org/10.1016/j.bpj.2008.10.028.
-							<br>
-							(3)	Hansen, L. H.; Knudsen, S.; Sørensen, S. J. The Effect of the lacY Gene on the Induction of IPTG Inducible Promoters, Studied in Escherichia Coli and Pseudomonas Fluorescens. <em>Curr. Microbiol</em>. <b>1998</b>, <em>36</em> (6), 341–347. https://doi.org/10.1007/s002849900320.
-							<br>
-							(4)	Merino, J.; Noriega, M. Transporte de Membrana, 2011. https://ocw.unican.es/course/view.php?id=44#section-0.
-							<br>
-							(5)	Taraban, M.; Zhan, H.; Whitten, A. E.; Langley, D. B.; Matthews, K. S.; Swint-Kruse, L.; Trewhella, J. Ligand-Induced Conformational Changes and Conformational Dynamics in the Solution Structure of the Lactose Repressor Protein. <em>J. Mol. Biol. </em><b>2008</b>, <em>376</em> (2), 466–481. https://doi.org/10.1016/j.jmb.2007.11.067.
-							<br>
-							(6)	Swint-Kruse, L. Plasticity of Quaternary Structure: Twenty-Two Ways to Form a LacI Dimer. <em>Protein Sci</em>. <b>2001</b>, <em>10</em> (2), 262–276. https://doi.org/10.1110/ps.35801.
-							<br>
-							(7)	Swint-Kruse, L.; Matthews, K. S. Lac Operon. In Encyclopedia of Biological Chemistry; Elsevier, 2013; pp 694–700. https://doi.org/10.1016/B978-0-12-378630-2.00249-8.
-							<br>
-							(8)	Tan, J. S.; Ramanan, R. N.; Ling, T. C.; Mustafa, S.; Ariff, A. B. The Role of Lac Operon and Lac Repressor in the Induction Using Lactose for the Expression of Periplasmic Human Interferon-Α2b by Escherichia Coli. <em>Ann. Microbiol.</em><b> 2012</b>, <em>62</em> (4), 1427–1435. https://doi.org/10.1007/s13213-011-0394-3.
-							<br>
-							(9)	García, Y. Modelación Matemática de La Variabilidad Fenotípica Del Sistema de Regulación Lac En Escherichia Coli, Centro de Investigación en Matemáticas (CIMAT), 2012. https://cimat.repositorioinstitucional.mx/jspui/handle/1008/256.
-							<br>
-							(10) Munro, P. D.; Ackers, G. K.; Shearwin, K. E. Aspects of Protein–DNA Interactions: A Review of Quantitative Thermodynamic Theory for Modelling Synthetic Circuits Utilising LacI and CI Repressors, IPTG and the Reporter Gene lacZ. <em>Biophys. Rev.</em> <b>2016</b>, <em>8</em> (4), 331–345. https://doi.org/10.1007/s12551-016-0231-9.
-							<br>
-							(11) Daber, R.; Sharp, K.; Lewis, M. One Is Not Enough. <em>J. Mol. Biol.</em> <b>2009</b>, <em>392</em> (5), 1133–1144. https://doi.org/10.1016/j.jmb.2009.07.050.
-							<br>
-							(12) Grossman, T. H.; Kawasaki, E. S.; Punreddy, S. R.; Osburne, M. S. Spontaneous cAMP-Dependent Derepression of Gene Expression in Stationary Phase Plays a Role in Recombinant Expression Instability. <em>Gene</em> <b>1998</b>, <em>209</em> (1–2), 95–103. https://doi.org/10.1016/S0378-1119(98)00020-1.
-							<br>
-							(13) Terpe, K. Overview of Bacterial Expression Systems for Heterologous Protein Production: From Molecular and Biochemical Fundamentals to Commercial Systems. <em>Appl. Microbiol. Biotechnol.</em> <b>2006</b>, <em>72</em> (2), 211–222. https://doi.org/10.1007/s00253-006-0465-8.
-							<br>
-							(14) Semsey, S.; Jauffred, L.; Csiszovszki, Z.; Erdossy, J.; Steger, V.; Hansen, S.; Krishna, S. The Effect of LacI Autoregulation on the Performance of the Lactose Utilization System in Escherichia Coli.<em> Nucleic Acids Res.</em> <b>2013</b>, <em>41</em> (13), 6381–6390. https://doi.org/10.1093/nar/gkt351.
-							<br>
-							(15) Andrecut, M.; Cloud, D.; Kauffman, S. A. Monte Carlo Simulation of a Simple Gene Network Yields New Evolutionary Insights. <em>J. Theor. Biol.</em> <b>2008</b>, <em>250</em> (3), 468–474. https://doi.org/10.1016/j.jtbi.2007.10.035.
-							<br>
-							(16) Wierling, C.; Kühn, A.; Hache, H.; Daskalaki, A.; Maschke-Dutz, E.; Peycheva, S.; Li, J.; Herwig, R.; Lehrach, H. Prediction in the Face of Uncertainty: A Monte Carlo-Based Approach for Systems Biology of Cancer Treatment. <em>Mutat. Res. Toxicol. Environ. Mutagen.</em> <b>2012</b>, <em>746</em> (2), 163–170. https://doi.org/10.1016/j.mrgentox.2012.01.005.
-							<br>
-							(17) Leigh, J. W.; Bryant, D. Monte Carlo Strategies for Selecting Parameter Values in Simulation Experiments. <em>Syst. Biol.</em> <b>2015</b>, <em>64</em> (5), 741–751. https://doi.org/10.1093/sysbio/syv030.
-							<br>
-							(18) Siu, N. A Monte Carlo Method for Multiple Parameter Estimation in the Presence of Uncertain Data. <em>Reliab. Eng. Syst. Saf.</em> <b>1990</b>, <em>28</em> (1), 59–98. https://doi.org/10.1016/0951-8320(90)90043-M.
-							<br>
-							(19) Vinnakota, K. C.; Bugenhagen, S. M. Optimization and Parameter Estimation, Genetic Algorithms. In <em>Encyclopedia of Systems Biology</em>; Dubitzky, W., Wolkenhauer, O., Cho, K.-H., Yokota, H., Eds.; Springer New York: New York, NY, 2013; pp 1600–1604. https://doi.org/10.1007/978-1-4419-9863-7_291.
-							<br>
-							(20) Schmelcher, M.; Powell, A. M.; Camp, M. J.; Pohl, C. S.; Donovan, D. M. Synergistic Streptococcal Phage λSA2 and B30 Endolysins Kill Streptococci in Cow Milk and in a Mouse Model of Mastitis. <em>Appl. Microbiol. Biotechnol.</em> <b>2015</b>, <em>99</em> (20), 8475–8486. https://doi.org/10.1007/s00253-015-6579-0.
-							<br>
-							(21) Abdel-Rahman, M. A.; Hassan, S. E. D.; El-Din, M. N.; Azab, M. S.; El-Belely, E. F.; Alrefaey, H. M. A.; Elsakhawy, T. One-Factor-at-a-Time and Response Surface Statistical Designs for Improved Lactic Acid Production from Beet Molasses by Enterococcus Hirae Ds10. <em>SN Appl. Sci</em>. <b>2020</b>, <em>2</em> (4), 573. https://doi.org/10.1007/s42452-020-2351-x.
-							<br>
-							(22) Geiger, E. O. Statistical Methods for Fermentation Optimization. In <em>Fermentation and Biochemical Engineering Handbook</em>; Elsevier, 2014; pp 415–422. https://doi.org/10.1016/B978-1-4557-2553-3.00021-0.
-							<br>
-							(23) Ashyraliyev, M.; Fomekong-Nanfack, Y.; Kaandorp, J. A.; Blom, J. G. Systems Biology: Parameter Estimation for Biochemical Models: Parameter Estimation in Systems Biology. <em>FEBS J</em>. <b>2009</b>, <em>276</em> (4), 886–902. https://doi.org/10.1111/j.1742-4658.2008.06844.x.
-						</p>
+						<p class="reference" id = "referenciaM1">(1)	Lewis, M.; Chang, G.; Horton, N. C.; Kercher, M. A.; Pace, H. C.; Schumacher, M. A.; Brennan, R. G.; Lu, P. Crystal Structure of the Lactose Operon Repressor and Its Complexes with DNA and Inducer. <em>Science</em> <b>1996</b>, <em>271</em> (5253), 1247–1254. https://doi.org/10.1126/science.271.5253.1247.</p>
+						<p class="reference" id = "referenciaM2">(2)	Stamatakis, M.; Mantzaris, N. V. Comparison of Deterministic and Stochastic Models of the Lac Operon Genetic Network. <em>Biophys. J.</em> <b>2009</b>, <em>96</em> (3), 887–906. https://doi.org/10.1016/j.bpj.2008.10.028.</p>
+						<p class="reference" id = "referenciaM3">(3)	Hansen, L. H.; Knudsen, S.; Sørensen, S. J. The Effect of the lacY Gene on the Induction of IPTG Inducible Promoters, Studied in Escherichia Coli and Pseudomonas Fluorescens. <em>Curr. Microbiol</em>. <b>1998</b>, <em>36</em> (6), 341–347. https://doi.org/10.1007/s002849900320.</p>
+						<p class="reference" id = "referenciaM4">(4)	Merino, J.; Noriega, M. Transporte de Membrana, 2011. https://ocw.unican.es/course/view.php?id=44#section-0.</p>
+						<p class="reference" id = "referenciaM5">(5)	Taraban, M.; Zhan, H.; Whitten, A. E.; Langley, D. B.; Matthews, K. S.; Swint-Kruse, L.; Trewhella, J. Ligand-Induced Conformational Changes and Conformational Dynamics in the Solution Structure of the Lactose Repressor Protein. <em>J. Mol. Biol. </em><b>2008</b>, <em>376</em> (2), 466–481. https://doi.org/10.1016/j.jmb.2007.11.067.</p>
+						<p class="reference" id = "referenciaM6">(6)	Swint-Kruse, L. Plasticity of Quaternary Structure: Twenty-Two Ways to Form a LacI Dimer. <em>Protein Sci</em>. <b>2001</b>, <em>10</em> (2), 262–276. https://doi.org/10.1110/ps.35801.</p>
+						<p class="reference" id = "referenciaM7">(7)	Swint-Kruse, L.; Matthews, K. S. Lac Operon. In Encyclopedia of Biological Chemistry; Elsevier, 2013; pp 694–700. https://doi.org/10.1016/B978-0-12-378630-2.00249-8.</p>
+						<p class="reference" id = "referenciaM8">(8)	Tan, J. S.; Ramanan, R. N.; Ling, T. C.; Mustafa, S.; Ariff, A. B. The Role of Lac Operon and Lac Repressor in the Induction Using Lactose for the Expression of Periplasmic Human Interferon-Α2b by Escherichia Coli. <em>Ann. Microbiol.</em><b> 2012</b>, <em>62</em> (4), 1427–1435. https://doi.org/10.1007/s13213-011-0394-3.</p>
+						<p class="reference" id = "referenciaM9">(9)	García, Y. Modelación Matemática de La Variabilidad Fenotípica Del Sistema de Regulación Lac En Escherichia Coli, Centro de Investigación en Matemáticas (CIMAT), 2012. https://cimat.repositorioinstitucional.mx/jspui/handle/1008/256.</p>
+						<p class="reference" id = "referenciaM10">(10) Munro, P. D.; Ackers, G. K.; Shearwin, K. E. Aspects of Protein–DNA Interactions: A Review of Quantitative Thermodynamic Theory for Modelling Synthetic Circuits Utilising LacI and CI Repressors, IPTG and the Reporter Gene lacZ. <em>Biophys. Rev.</em> <b>2016</b>, <em>8</em> (4), 331–345. https://doi.org/10.1007/s12551-016-0231-9.</p>
+						<p class="reference" id = "referenciaM11">(11) Daber, R.; Sharp, K.; Lewis, M. One Is Not Enough. <em>J. Mol. Biol.</em> <b>2009</b>, <em>392</em> (5), 1133–1144. https://doi.org/10.1016/j.jmb.2009.07.050.</p>
+						<p class="reference" id = "referenciaM12">(12) Grossman, T. H.; Kawasaki, E. S.; Punreddy, S. R.; Osburne, M. S. Spontaneous cAMP-Dependent Derepression of Gene Expression in Stationary Phase Plays a Role in Recombinant Expression Instability. <em>Gene</em> <b>1998</b>, <em>209</em> (1–2), 95–103. https://doi.org/10.1016/S0378-1119(98)00020-1.</p>
+						<p class="reference" id = "referenciaM13">(13) Terpe, K. Overview of Bacterial Expression Systems for Heterologous Protein Production: From Molecular and Biochemical Fundamentals to Commercial Systems. <em>Appl. Microbiol. Biotechnol.</em> <b>2006</b>, <em>72</em> (2), 211–222. https://doi.org/10.1007/s00253-006-0465-8.</p>
+						<p class="reference" id = "referenciaM14">(14) Semsey, S.; Jauffred, L.; Csiszovszki, Z.; Erdossy, J.; Steger, V.; Hansen, S.; Krishna, S. The Effect of LacI Autoregulation on the Performance of the Lactose Utilization System in Escherichia Coli.<em> Nucleic Acids Res.</em> <b>2013</b>, <em>41</em> (13), 6381–6390. https://doi.org/10.1093/nar/gkt351.</p>
+						<p class="reference" id = "referenciaM15">(15) Andrecut, M.; Cloud, D.; Kauffman, S. A. Monte Carlo Simulation of a Simple Gene Network Yields New Evolutionary Insights. <em>J. Theor. Biol.</em> <b>2008</b>, <em>250</em> (3), 468–474. https://doi.org/10.1016/j.jtbi.2007.10.035.</p>
+						<p class="reference" id = "referenciaM16">(16) Wierling, C.; Kühn, A.; Hache, H.; Daskalaki, A.; Maschke-Dutz, E.; Peycheva, S.; Li, J.; Herwig, R.; Lehrach, H. Prediction in the Face of Uncertainty: A Monte Carlo-Based Approach for Systems Biology of Cancer Treatment. <em>Mutat. Res. Toxicol. Environ. Mutagen.</em> <b>2012</b>, <em>746</em> (2), 163–170. https://doi.org/10.1016/j.mrgentox.2012.01.005.</p>
+						<p class="reference" id = "referenciaM17">(17) Leigh, J. W.; Bryant, D. Monte Carlo Strategies for Selecting Parameter Values in Simulation Experiments. <em>Syst. Biol.</em> <b>2015</b>, <em>64</em> (5), 741–751. https://doi.org/10.1093/sysbio/syv030.</p>
+						<p class="reference" id = "referenciaM18">(18) Siu, N. A Monte Carlo Method for Multiple Parameter Estimation in the Presence of Uncertain Data. <em>Reliab. Eng. Syst. Saf.</em> <b>1990</b>, <em>28</em> (1), 59–98. https://doi.org/10.1016/0951-8320(90)90043-M.</p>
+						<p class="reference" id = "referenciaM19">(19) Vinnakota, K. C.; Bugenhagen, S. M. Optimization and Parameter Estimation, Genetic Algorithms. In <em>Encyclopedia of Systems Biology</em>; Dubitzky, W., Wolkenhauer, O., Cho, K.-H., Yokota, H., Eds.; Springer New York: New York, NY, 2013; pp 1600–1604. https://doi.org/10.1007/978-1-4419-9863-7_291.</p>
+						<p class="reference" id = "referenciaM20">(20) Schmelcher, M.; Powell, A. M.; Camp, M. J.; Pohl, C. S.; Donovan, D. M. Synergistic Streptococcal Phage λSA2 and B30 Endolysins Kill Streptococci in Cow Milk and in a Mouse Model of Mastitis. <em>Appl. Microbiol. Biotechnol.</em> <b>2015</b>, <em>99</em> (20), 8475–8486. https://doi.org/10.1007/s00253-015-6579-0.</p>
+						<p class="reference" id = "referenciaM21">(21) Abdel-Rahman, M. A.; Hassan, S. E. D.; El-Din, M. N.; Azab, M. S.; El-Belely, E. F.; Alrefaey, H. M. A.; Elsakhawy, T. One-Factor-at-a-Time and Response Surface Statistical Designs for Improved Lactic Acid Production from Beet Molasses by Enterococcus Hirae Ds10. <em>SN Appl. Sci</em>. <b>2020</b>, <em>2</em> (4), 573. https://doi.org/10.1007/s42452-020-2351-x.</p>
+						<p class="reference" id = "referenciaM22">(22) Geiger, E. O. Statistical Methods for Fermentation Optimization. In <em>Fermentation and Biochemical Engineering Handbook</em>; Elsevier, 2014; pp 415–422. https://doi.org/10.1016/B978-1-4557-2553-3.00021-0.</p>
+						<p class="reference" id = "referenciaM23">(23) Ashyraliyev, M.; Fomekong-Nanfack, Y.; Kaandorp, J. A.; Blom, J. G. Systems Biology: Parameter Estimation for Biochemical Models: Parameter Estimation in Systems Biology. <em>FEBS J</em>. <b>2009</b>, <em>276</em> (4), 886–902. https://doi.org/10.1111/j.1742-4658.2008.06844.x.</p>
 					</div>
 				</div>
 			</div>

@@ -1037,8 +1037,12 @@ img {
 
 }
 
-.referencia{
-  color:#447D9C
+.referencias{
+  color: #5BC5AB
+}
+
+.referencias:hover{
+  color: #5BC5AB
 }
 
 /*INFECTED UDDER*/
