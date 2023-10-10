@@ -1612,6 +1612,19 @@
     transition: 0.5s;
     
   }
+  .clickInfoVan1 {
+    margin: 0 auto;
+    width: fit-content;
+    background: linear-gradient(90deg, #00C9FF 0%, #80e28a 100%);
+    border-radius: 20px;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.5s;
+    margin-left: 51vh;
+    width: 26vh;
+}
 
 /* Cosas del skeleton Loading*/
 .skeleton-box {
@@ -1725,3 +1738,38 @@
     width: fit-content;
     max-width: 100%;
   }
+  .subtitleO, .subtitleM, .subtitleU{
+    text-align: center;
+    font-family: 'Bricolage Grotesque';
+    font-size:3vw;
+    font-weight:500;
+    color:#302535; 
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 16px 0;
+    grid-gap: 22px;
+    align-items: center;
+    max-width: 100%;
+    padding-top: 10px;
+   }
+   .subtitleU:after, .subtitleU:before {
+    content: " ";
+    display: block;
+    border: 2px solid #D27063;
+    background-color:#f8f8f8;
+  }
+  .h3, h3 {
+    font-size: 1.75rem;
+    margin-left: 5vh;
+}
+.contenido1 {
+    text-align: justify;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Quicksand';
+    text-align: justify;
+    line-height: 1.5;
+    margin-left: 43px !important;
+    color: black;
+    max-width: 90%;
+}
