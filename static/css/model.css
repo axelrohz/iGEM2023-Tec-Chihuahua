@@ -612,6 +612,15 @@
  margin-left: 5%;
  margin-right: 5%;
  }
+
+ .reference{
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: 'Quicksand';
+  text-align: justify;
+  line-height: 1.5;
+  color: black;
+ }
  h2::after, h2::before{
   content: " ";
   text-align: center;
