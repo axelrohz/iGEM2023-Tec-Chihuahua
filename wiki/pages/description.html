@@ -21,18 +21,18 @@ Staphylococcus aureus and Streptococcus agalactiae.
   <link rel="stylesheet" href="../../static/css/parallax.css">
   <link rel="stylesheet" href="../../static/css/parallaxFull.css">
 
-    <link href="{{ url_for('static', filename='css/desc.css') }}" rel="stylesheet">
-    <link href="{{ url_for('static', filename='css/DescResp.css') }}" rel="stylesheet">
-    <link href="{{ url_for('static', filename='css/body.css') }}" rel="stylesheet">
-    <link href="{{ url_for('static', filename = 'css/parallax.css') }}" rel="stylesheet">
-    <link href="{{ url_for('static', filename = 'css/timeline.css') }}" rel="stylesheet">
-    <link href="{{ url_for('static', filename = 'css/parallaxFull.css') }}" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <script src="{{ url_for('static', filename='assets/js/team.js') }}"></script>
-    <script src="{{ url_for('static', filename='assets/js/desc.js') }}"></script>
+  <link href="{{ url_for('static', filename='css/desc.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/DescResp.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/body.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename = 'css/parallax.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename = 'css/timeline.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename = 'css/parallaxFull.css') }}" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="{{ url_for('static', filename='assets/js/team.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/js/desc.js') }}"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body class="mybody">
@@ -151,9 +151,13 @@ Staphylococcus aureus and Streptococcus agalactiae.
 
                 : a common and prevalent disease in dairy cattle. This caught our attention due to its significant
                 multifaceted impact on dairy owners. Motivated by Chihuahua's prominence in the Mexican dairy
-                industry<sup><a href="#referencia1" class="referencias">1</a></sup>, we recognized the global
+                industry<sup><a href="#referencia1" class="hipervinculoaqua" id="linkreferencia1">1</a></sup>, we
+                recognized the global
                 significance of addressing this issue. We were also inspired by the work of previous iGEM teams,
-                particularly the 2017 TU Delft and the 2021 IISER Kolkata teams, whose project focuses on the diagnosis
+                particularly the <a class="hipervinculoaqua" href="https://2017.igem.org/Team:TUDelft"
+                  target="_blank">2017 TU Delft</a> and the <a class="hipervinculoaqua"
+                  href="https://2021.igem.org/Team:IISER_Kolkata" target="_blank">2021 IISER Kolkata</a> teams, whose
+                project focuses on the diagnosis
                 of mastitis. This led us to choose a different path, focusing on developing a non-antibiotic treatment
                 for mastitis.
               </p>
@@ -164,7 +168,7 @@ Staphylococcus aureus and Streptococcus agalactiae.
                 decreasing even more the supply of this food. Over 6 billion people worldwide trust their nutrition on
                 milk which is rich in high-quality protein and vital nutrients that are easily absorbed by our bodies.
                 These nutrients include fats, fatty acids, carbohydrates, sugars, vitamins, and minerals<sup><a
-                    href="#referencia2" class="referencias">2</a></sup> as shown in <b>figure 1</b>.
+                    href="#referencia2" class="referencias">2</a></sup> as shown in <b>Figure 1</b>.
               </p>
               <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
               <script type="text/javascript">
@@ -201,7 +205,8 @@ Staphylococcus aureus and Streptococcus agalactiae.
               </head>
 
               <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
-              <p class="piedefig"><b>Figure 1.</b> Nutrients of whole milk, excluding water.<sup>3</sup></p>
+              <p class="piedefig"><b>Figure 1.</b> Nutrients of whole milk, excluding water.<sup> <a href="#referencia3"
+                    class="referencias">3</a></sup></p>
               <br>
               <h2> Into the Udder: Impact of Bovine Mastitis</h2>
               <br>
@@ -220,11 +225,14 @@ Staphylococcus aureus and Streptococcus agalactiae.
               <p id="TextoLeche" align="justify" style="margin-left: 50%;">
                 When we think about milk, we immediately associate it with cows, and that is not very far from reality,
                 although it can also be obtained from buffaloes, camels or goats. 82% of total world milk is obtained
-                from cattle.<sup>4</sup> About 150 million households worldwide are engaged in dairy
-                farming.<sup>5</sup> In most developing countries, like Mexico, milk production is carried out by
+                from cattle.<sup><a href="#referencia2" class="referencias">4</a></sup> About 150 million households
+                worldwide are engaged in dairy
+                farming<sup><a href="#referencia2" class="referencias">5</a></sup>.In most developing countries, like
+                Mexico, milk production is carried out by
                 smallholders, exerting a significant impact on household livelihoods, food security and nutritional
                 requirements. With an astonishing production of 550,498 thousand metric tons of milk worldwide as of
-                July 2023,<sup>6</sup> the dairy industry stands a major employer worldwide, underscoring the critical
+                July 2023<sup><a href="#referencia2" class="referencias">6</a></sup>, the dairy industry stands as a
+                major employer worldwide, underscoring the critical
                 importance of udder health.
               </p>
               <br>
@@ -236,7 +244,8 @@ Staphylococcus aureus and Streptococcus agalactiae.
 
                 <h5>Infection Sources</h5>
                 <p class="piedefig">The limited access and high cost of milk are related to several reasons that
-                  contribute to mastitis, as seen below.<sup>7,8</sup></p>
+                  contribute to mastitis, as seen below <sup><a href="#referencia2" class="referencias">7,8</a></sup>.
+                </p>
 
                 <div class="contpapa" style="--gradient:linear-gradient(45deg, rgb(197, 91, 117), rgb(215, 148, 168))">
                   <div class="cause">
@@ -254,7 +263,7 @@ Staphylococcus aureus and Streptococcus agalactiae.
                     <h1>Vectors</h1>
                   </div>
                   <div class="causetxt">
-                    <p> Flies transmit Contagious mastitis-causing pathogens as <em>S. Aureus and E. coli</em>. This
+                    <p> Flies transmit Contagious mastitis-causing pathogens as <em>S. aureus and E. coli</em>. This
                       problem intensifies especially in the summer. </p>
                   </div>
                 </div>
@@ -297,22 +306,24 @@ Staphylococcus aureus and Streptococcus agalactiae.
               <p>
                 Specific contagious pathogens stand out as significant contributors, mainly <em>Staphylococcus
                   aureus</em>, <em>Streptococcus agalactiae</em>, and <em>Streptococcus uberis</em> as shown in
-                <b>figure 2</b>, microorganisms that causes damage on the milking tissue, causing irreversible damage to
+                <b>Figure 2</b>, microorganisms that causes damage on the milking tissue, causing irreversible damage to
                 the cow’s milk peak production.
               </p <br>
               <p align="justify">
                 <em>S. aureus</em>, the predominant pathogen responsible for bovine mastitis, produces harmful toxins
                 and enzymes. These include protein A, which hinders antibody recognition by neutrophils; β-lactamase
                 inducing microabscess formation; and TSST-1 (toxic shock syndrome toxin-1), the major cause of toxic
-                shock syndrome characterized by fever, rash and organ failure.<sup>9,10</sup>
+                shock syndrome characterized by fever, rash and organ failure<sup><a href="#referencia2"
+                    class="referencias">9,10</a></sup>.
               </p>
               <br>
               <p align="justify">
                 On the other hand, <em>S. agalactiae</em> is adept at forming biofilms and resides in the bovine
-                gastrointestinal tract.<sup>11</sup> Lastly, <em>S. uberis</em> is associated with clinical and
+                gastrointestinal tract <sup><a href="#referencia2" class="referencias">11</a></sup>. Lastly, <em>S.
+                  uberis</em> is associated with clinical and
                 sub-clinical infections. It was reported that α-casein and β-casein in milk induce production of
                 biofilms, which help <em>S. uberis</em> to persist under environmental stress and resist antibiotic
-                treatment.<sup>12</sup>
+                treatment <sup><a href="#referencia2" class="referencias">12</a></sup>.
               </p>
 
               <div class="udderinfocont">
@@ -334,22 +345,25 @@ Staphylococcus aureus and Streptococcus agalactiae.
                   <div class="udderbtncont">
                     <div class="udderbtn1"
                       style="--gradient:linear-gradient(45deg, rgb(246, 174, 45), rgb(245, 209, 148))" onclick="img1()">
-                      <em>Staphylococcus <br> aureus </em></div>
+                      <em>Staphylococcus <br> aureus </em>
+                    </div>
                     <div class="udderbtn2"
                       style="--gradient:linear-gradient(45deg, rgb(68, 125, 156), rgb(156, 184, 203))" onclick="img2()">
-                      <em>Streptococcus <br> uberis</em> </div>
+                      <em>Streptococcus <br> uberis</em>
+                    </div>
                     <div class="udderbtn3"
                       style="--gradient:linear-gradient(45deg, rgb(169, 186, 108), rgb(206, 215, 179))"
                       onclick="img3()"> <em>Streptococcus <br> agalactiae</em> </div>
                     <div class="udderbtn4"
                       style="--gradient:linear-gradient(45deg, rgb(197, 91, 117), rgb(215, 148, 168))" onclick="img4()">
-                      <em>Escherichia <br> coli</em> </div>
+                      <em>Escherichia <br> coli</em>
+                    </div>
                   </div>
                 </div>
 
                 <div class="udderimgcont">
                   <div id="udtxt1" class="uddertxt">
-                    <p><em>Staphylococcus aureus</em> is one of the pathogen most feared by dairy farmers. It produces
+                    <p><em>Staphylococcus aureus</em> is one of the most feared pathogens by dairy farmers. It produces
                       toxins and enzymes that damage milking tissue for life.</p>
                   </div>
                   <div id="udtxt2" class="uddertxt">
@@ -364,7 +378,8 @@ Staphylococcus aureus and Streptococcus agalactiae.
                   <div id="udtxt4" class="uddertxt">
                     <p><em>Escherichia coli</em> is an environmental bacteria, and its entry to the udder depends on the
                       season. It has been proved that this microorganism is also very important in bovine mastitis, fact
-                      which was later confirmed by our <a>stakeholders</a> </p>
+                      which was later confirmed by our <a class="hipervinculoaqua"
+                        href="https://2023.igem.wiki/tec-chihuahua/human-practices">stakeholders</a> </p>
                   </div>
                   <div id="udtxt5" class="uddertxt active">
                     <p>The most common microorganisms known to cause bovine mastitis are three gram-positive bacteria
@@ -510,7 +525,7 @@ Staphylococcus aureus and Streptococcus agalactiae.
 
 
 
-              <p id="pieDiagrama" class="piedefig"><b>Figure 3.</b> <em>S. agalactiae, S. aureus</em> and <em>S.
+              <p id="pieDiagrama" class="piedefig"><b>Figure 2.</b> <em>S. agalactiae, S. aureus</em> and <em>S.
                   uberis</em> in the mastitis infection.</p>
               <br>
 
@@ -520,13 +535,16 @@ Staphylococcus aureus and Streptococcus agalactiae.
                   class="hipervinculoaqua"
                   href="https://2023.igem.wiki/tec-chihuahua/entrepreneurship">stakeholders</a>, we noticed that the
                 absence of preventive measures such as proper hygiene in both the cowpens and the milking routine
-                significantly raises the risk of infection. Mastitis infections manifest in three forms: subclinical
-                level is when the infection isn't visibly noticeable, and no symptoms can be detected; clinical level is
+                significantly raises the risk of infection.
+                <br>
+                Mastitis infections manifest in three forms: subclinical level is when the infection isn't visibly
+                noticeable, and no symptoms can be detected; clinical level is
                 the state, where mastitis symptoms become noticeable, and the cow's milk production decreases; chronic
                 mastitis: This refers to a condition where the infection keeps coming back, and symptoms of clinical
-                level reappears as shown in <b>figure 4</b>. Subclinical mastitis, if not addressed, progresses to
+                level reappears as shown in <b>Figure 3</b>. Subclinical mastitis, if not addressed, progresses to
                 clinical stage. Untreated mastitis lowers milk production, increases financial losses, and can harm the
-                cow's udder. Severe cases can even result in cow mortality.<sup>13</sup>
+                cow's udder. Severe cases can even result in cow mortality <sup><a href="#referencia2"
+                    class="referencias">13</a></sup>.
 
               </p>
               <div>
@@ -565,15 +583,16 @@ Staphylococcus aureus and Streptococcus agalactiae.
                 </div>
               </div>
               <p class="piedefig">
-                <b> Figure 4.</b> Classification of mastitis according to symptoms and signs.
+                <b> Figure 3.</b> Classification of mastitis according to symptoms and signs.
               </p>
               <br>
               <h2>Milk Is Money</h2>
               <br>
               <p align="justify">
                 Milk is a valuable commodity worldwide. The global dairy market was valued at 893 billion USD in
-                2022,<sup>14</sup> and milk production and consumption have been increasing in the last 5 years. As a
-                result, at least 80% of the world's population consumes dairy products.<sup>15</sup>
+                2022<sup>14</sup>, and milk production and consumption have been increasing in the last 5 years. As a
+                result, at least 80% of the world's population consumes dairy products<sup><a href="#referencia2"
+                    class="referencias">15</a></sup>.
               </p>
 
               <div class="note-contain">
@@ -586,15 +605,19 @@ Staphylococcus aureus and Streptococcus agalactiae.
               <p id="Bovine" align="justify" style="margin-left: 50%;">
                 Bovine mastitis results in substantial expenses encompassing treatment, animal care, and compromised
                 milk yield. Milk composition, quantity, and quality are adversely affected, with enduring consequences
-                such as impaired udders hindering future milk production for affected cows.<sup>8</sup> For both the
+                such as impaired udders hindering future milk production for affected cows <sup><a href="#referencia2"
+                    class="referencias">8</a></sup>.For both the
                 Mexican dairy sector and global economies, bovine mastitis stands as a leading cause of financial loss,
-                estimated at $200 USD per cow each year.<sup>16</sup> The National Mastitis Council of the United States
+                estimated at $200 USD per cow each year <sup><a href="#referencia2" class="referencias">16</a></sup>.
+                The National Mastitis Council of the United States
                 estimated that losses in this country amount to two billion dollars per year, and an average of 200
-                dollars per cow per year.<sup>17</sup> With rising dairy cattle populations, the disease's prevalence is
+                dollars per cow per year <sup><a href="#referencia2" class="referencias">17</a></sup>.With rising dairy
+                cattle populations, the disease's prevalence is
                 poised to escalate, projecting the bovine mastitis market size to significantly impact the global
                 economy by 2027. According to the research from the University of Glasgow, mastitis is estimated to cost
                 around 19.7 billion dollars to 30 billion USD worldwide; these costs include diagnostics, milk loss,
-                veterinary services, labor, therapeutics, among others.<sup>18</sup>
+                veterinary services, labor, therapeutics, among others <sup><a href="#referencia2"
+                    class="referencias">18</a></sup>.
               </p>
 
 
@@ -603,13 +626,13 @@ Staphylococcus aureus and Streptococcus agalactiae.
               <p align="justify">
                 Mastitis’ primary treatment consists of antibiotics, such as natural or synthetic penicillins. However,
                 overuse of antibiotics in bovine mastitis can trigger resistance and non-response, raising costs and
-                endangering public health.<sup>19</sup>
+                endangering public health <sup><a href="#referencia2" class="referencias">19</a></sup>.
               </p>
 
               <div class="antibioticscont">
                 <h1>Commonly used antibiotics</h1>
                 <h3>According to our <a class="hipervinculoaqua"
-                    href="https://2023.igem.wiki/tec-chihuahua/human">stakeholders</a></h3>
+                    href="https://2023.igem.wiki/tec-chihuahua/human-practices">stakeholders</a></h3>
                 <span class="antibioticsdot">
                   <p>Penicilin</p>
                   <img src="https://static.igem.wiki/teams/4607/wiki/project-description/penicilin.png" alt="Penicilin">
@@ -621,7 +644,7 @@ Staphylococcus aureus and Streptococcus agalactiae.
                   <p>Cephalosporins</p>
                   <img src="https://static.igem.wiki/teams/4607/wiki/project-description/cephalosporin-png.webp"
                     alt="Florfenicol">
-                  <div class="antibioticstxt"> Veterinary Zootechnicians and small producers also mentioned
+                  <div class="antibioticstxt"> Veterinary zootechnicians and small producers also mentioned
                     Cephalosporins, which are used because testing doesn´t detect its residues in milk.</div>
                 </span>
 
@@ -631,7 +654,7 @@ Staphylococcus aureus and Streptococcus agalactiae.
                     alt="">
                   <div class="antibioticstxt">Veterinary zootechnicians and small scale producers that mentioned the use
                     of ceftiofur was really frecuent and even the first measure of treatment since it doesn´t require
-                    milkdrawal period.</div>
+                    milk withdrawal period.</div>
                 </span>
 
                 <span class="antibioticsdot">
@@ -648,7 +671,7 @@ Staphylococcus aureus and Streptococcus agalactiae.
 
               <p id="InMexico" align="justify">
 
-                In Mexico, a wide range of antibiotics as shown in <b>figure 5 </b> are approved by the government for
+                In Mexico, a wide range of antibiotics are approved by the government for
                 treating mastitis. However, there are several alternative treatments which offer various options to
                 dairy farmers such as intramammary infusion, dry cow therapy, vaccination, bacteriophages, probiotics
                 and herbal remedies.
@@ -705,8 +728,9 @@ Staphylococcus aureus and Streptococcus agalactiae.
                 improving milk quality. Antibiotics, although effective, have the disadvantage of requiring a withdrawal
                 period after administration due to regulatory problems in many countries. This withdrawal period
                 prohibits the collection of milk for human consumption, which leads to economic losses for
-                farmers.<sup>20</sup> The economic impact of mastitis can be considerable. To learn more about the
-                existing solutions as shown in <b>figure 6</b> and the comparison of treatments against AureoBosyou can
+                farmers <sup><a href="#referencia2" class="referencias">20</a></sup>.The economic impact of mastitis can
+                be considerable. To learn more about the
+                existing solutions as shown above and the comparison of treatments against AureoBosyou can
                 check our analysis and benchmarking in the <a class="hipervinculoaqua"
                   href="https://2023.igem.wiki/tec-chihuahua/entrepreneurship">entrepreneurship</a> section.
               </p>
@@ -716,18 +740,21 @@ Staphylococcus aureus and Streptococcus agalactiae.
               <p align="justify">
                 Due to their efficacy, antibiotics are still widely used by dairy cattle farmers. However, this
                 widespread use leads to a significant release of antibiotics into milk, which poses a serious threat to
-                human health.<sup>20</sup>
+                human health <sup><a href="#referencia2" class="referencias">20</a></sup>.
               </p>
               <p align="justify">
                 Antibiotic resistance manifests itself innate or acquired, and plasmid-mediated resistance contributes
                 significantly to its dissemination. In addition, bacterial biofilm growth offers protection against the
                 effects of antibiotics, making inappropriate antibiotic stewardship counterproductive and increasing
-                resistance.<sup>21</sup> Despite the inevitability of antimicrobial resistance, the current situation is
-                due to disproportionate and erroneous use of antibiotics.<sup>22</sup>
+                resistance <sup><a href="#referencia2" class="referencias">21</a></sup>.Despite the inevitability of
+                antimicrobial resistance, the current situation is
+                due to disproportionate and erroneous use of antibiotics <sup><a href="#referencia2"
+                    class="referencias">22</a></sup>.
                 Alarmingly, about 4.95 million deaths in 2019 were related to bacterial resistance to
-                antibiotics,<sup>23</sup> underscoring the urgency of raising awareness of antibiotic use in our food
+                antibiotics <sup><a href="#referencia2" class="referencias">23</a></sup>, underscoring the urgency of
+                raising awareness of antibiotic use in our food
                 chain. WHO has declared that antimicrobial resistance is one of the top 10 public health threats facing
-                humanity.<sup>24</sup>
+                humanity <sup><a href="#referencia2" class="referencias">24</a></sup>.
               </p>
 
 
@@ -738,13 +765,14 @@ Staphylococcus aureus and Streptococcus agalactiae.
                 Discussing mastitis inevitably brings attention to the substantial issue of food wastage. The
                 persistence of food waste remains a significant challenge within the food supply chain, with a
                 staggering one-third of produced nourishment being discarded and approximately 735 million people facing
-                hunger.<sup>25</sup>
+                hunger <sup><a href="#referencia2" class="referencias">25</a></sup>.
               </p>
               <p align="justify">
                 Addressing the issue of hunger, tackling dairy industry losses becomes a significant stride in the
                 ongoing battle to eradicate health and nutrition inequality. In the past decade, dairy consumption has
                 seen an increase, however, in our country, milk production is largely dominated by bigger producers,
-                leading to inflated product prices.<sup>1</sup> In response, Aurebos introduces an innovative approach
+                leading to inflated product prices<sup><a href="#referencia2" class="referencias">1</a></sup>. In
+                response, AureoBos introduces an innovative approach
                 to curbing milk losses and enhancing the availability of dairy derivatives.
               </p>
               <br>
@@ -752,10 +780,11 @@ Staphylococcus aureus and Streptococcus agalactiae.
               <br>
               <p align="justify">
                 As previously discussed, three main gram-positive bacteria are frequently linked with mastitis:<em>S.
-                  aureus</em>, <em>S. uberis</em>, and <em>S. agalactiae</em>.<sup>26</sup> The prevalence of
+                  aureus</em>, <em>S. uberis</em>, and <em>S. agalactiae</em> <sup><a href="#referencia2"
+                    class="referencias">26</a></sup>.The prevalence of
                 multidrug-resistant strains, including methicillin-resistant <em>Staphylococcus aureus</em> (MRSA) among
                 gram-positive bacteria is a significant healthcare concern. Consequently, there's a pressing need for
-                new antimicrobial agents.<sup>27</sup>
+                new antimicrobial agents <sup><a href="#referencia2" class="referencias">27</a></sup>.
               </p>
               <p>
                 The most efficient antimicrobial agents come from submicroscopic entities: bacteriophages. Endolysins,
@@ -764,7 +793,8 @@ Staphylococcus aureus and Streptococcus agalactiae.
                 viral particles. These endolysins demonstrate notable potential as an alternative to antibiotics,
                 displaying specific antimicrobial effects on gram-positive bacteria, even in the presence of
                 antibiotic-resistant strains. AureoBos emerged from the realization that externally applying endolysins
-                to bacterial cell walls leads to peptidoglycan degradation and swift bacterial cell lysis.<sup>28</sup>
+                to bacterial cell walls leads to peptidoglycan degradation and swift bacterial cell lysis <sup><a
+                    href="#referencia2" class="referencias">28</a></sup>.
               </p>
 
               <div class="endoinfocont">
@@ -902,7 +932,8 @@ Staphylococcus aureus and Streptococcus agalactiae.
                   <div id="mechtxt3" class="mechtxt">
                     <p>Lys K has two active lysis domain amidase and endopeptidase ( is essential to attack
                       <em>Streptococci</em>) which allows it to cover a wide group of microorganisms.The SH3b cell wall
-                      binding domain is known to bind to the pentaglycine bridge </p>
+                      binding domain is known to bind to the pentaglycine bridge
+                    </p>
                   </div>
                   <div id="mechtxt4" class="mechtxt active">
                     <p> Peptidoglycan is composed of the repeat polymer of the amino sugars N-acetylglucos-amine and
@@ -933,36 +964,42 @@ Staphylococcus aureus and Streptococcus agalactiae.
                     the peptidoglycan within the bacterial cell wall</span>
                 </b>
 
-                <sup>29</sup> and albumin binding domains, resulting as a product of novel fusion proteins with great
+                <sup><a href="#referencia2" class="referencias">29</a></sup> and albumin binding domains, resulting as a
+                product of novel fusion proteins with great
                 antimicrobial potential. Fusion proteins are a novel technology that involve the genetic combination of
                 two or more domains from proteins. This changes its properties according to each component added. One of
                 its main applications is biopharmaceuticals, since the protein can acquire the ability to target
-                specific molecules or cells.<sup>30 </sup>
+                specific molecules or cells <sup><a href="#referencia2" class="referencias">30</a></sup>.
               </p>
               <p align="justify">
                 For gram-positive bacteria, we utilize two endolysins: LysCSA13 and LysK. These endolysins possess
                 distinct components, including the N-terminal catalytic domain and the C-terminal cell wall binding
-                domain, which confers bacterial specificity.<sup>31</sup>
+                domain, which confers bacterial specificity <sup><a href="#referencia2"
+                    class="referencias">31</a></sup>.
               </p>
               <p align="justify">
                 Nevertheless, gram-negative bacteria represent a challenge for endolysins due to the non-permeable
                 lipopolysaccharide layer in their cell wall. Artilysins, endolysins fused with lipopolysaccharide
                 destabilizer peptides, are able to disrupt and penetrate this layer, lysing cells in the
-                process.<sup>32</sup> By fusing endolysin LysSS, polycationic nonapeptide and CeCA, an antimicrobial
+                process <sup><a href="#referencia2" class="referencias">32</a></sup>. By fusing endolysin LysSS,
+                polycationic nonapeptide and CeCA, an antimicrobial
                 peptide, artilysins start forming part of our project.
               </p>
               <p align="justify">
                 However, a significant limitation is the remarkably short <em>in vivo</em> half-life of these
-                endolysins, lasting only 20 minutes.<sup>33</sup> This brief duration significantly impedes their
+                endolysins, lasting only 20 minutes <sup><a href="#referencia2" class="referencias">33</a></sup>. This
+                brief duration significantly impedes their
                 potential to serve as effective active pharmaceutical agents: it is unfeasible to encompass the entire
                 process of production, purification, distribution, storage, and other essential stages for successful
                 application and market availability. Thus, we aim to extend its half-life by incorporating an
-                albumin-binding domain, thereby enhancing their viability and potential impact.<sup>34 </sup>
+                albumin-binding domain, thereby enhancing their viability and potential impact <sup><a
+                    href="#referencia2" class="referencias">34</a></sup>.
               </p>
               <p align="justify">
                 All these enzymes will have a sole purpose: find mastitis causing pathogens in the udder. AureoBos’s
                 mechanism is simple: an alginate chitosan gel solution encapsulating our three endolysins will be
-                injected directly into the udder via intramammary infusion.<sup>35</sup>
+                injected directly into the udder via intramammary infusion <sup><a href="#referencia2"
+                    class="referencias">35</a></sup>.
               </p>
               <br>
               <h2>Methodology</h2>
@@ -1098,7 +1135,8 @@ Staphylococcus aureus and Streptococcus agalactiae.
                 safety. Aiming to minimize milk loss while also addressing the limitations and risks associated with
                 antibiotic use, AureoBos primary goal is to offer an effective, safe alternative benefiting dairy
                 farmers of all sizes. Our vision is simple yet profound: to showcase the antimicrobial potential of
-                endolysins, remarkable proteins that combat antibiotic-resistant strains.<sup>38 </sup>
+                endolysins, remarkable proteins that combat antibiotic-resistant strains <sup><a href="#referencia2"
+                    class="referencias">38</a></sup>.
               </p>
               <div>
 
@@ -1119,7 +1157,8 @@ Staphylococcus aureus and Streptococcus agalactiae.
 
               <p>
                 Aureobos’ mission aligns with an anti-waste focus, acknowledging the importance of Sustainable
-                Development Goal 2: Zero Hunger<sup>39</sup>, helping through the collection of safe and nutritious
+                Development Goal 2: Zero Hunger<sup><a href="#referencia2" class="referencias">39</a></sup>, helping
+                through the collection of safe and nutritious
                 milk. Our responsibility to preserve Chihuahua's culture fuels our commitment to effect positive and
                 sustainable changes both locally and beyond. Our project exemplifies how synthetic biology, an
                 unfamiliar field to many, can significantly contribute to community well-being. Through genetic
@@ -1134,14 +1173,15 @@ Staphylococcus aureus and Streptococcus agalactiae.
                 <div class="accordion-item-header">
                   References
                 </div>
-                <div class="accordion-item-body">
+                <div class="accordion-item-body" id="referencia1">
                   <div class="accordion-item-body-content">
-                    <p align="justify" id="referencia1">
+
+                    <p align="justify">
                       (1) SIAP. <em>Escenario Mensual de Productos Agroalimentarios</em>; Secretaría de Agricultura y
                       Desarrollo Rural, 2022.
                       https://www.gob.mx/cms/uploads/attachment/file/744355/Leche_de_bovino_Junio.pdf.
                     </p>
-                    <p align="justify" id="referencia2">
+                    <p align="justify">
                       (2) Górska-Warsewicz, H.; Rejman, K.; Laskowski, W.; Czeczotko, M. Milk and Dairy Products and
                       Their Nutritional Contribution to the Average Polish Diet. <em>Nutrients</em> <b>2019</b>,
                       <em>11</em> (8), 1771. https://doi.org/10.3390/nu11081771.
@@ -1390,7 +1430,9 @@ Staphylococcus aureus and Streptococcus agalactiae.
 
 
             </div>
+
             <script>
+
               const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
 
               accordionItemHeaders.forEach(accordionItemHeader => {
