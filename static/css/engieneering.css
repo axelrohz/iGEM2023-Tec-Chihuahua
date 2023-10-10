@@ -106,3 +106,10 @@
     opacity: 0.5;
     transition: 0.25s;
   }
+
+
+.fotos{
+  margin-left: 14vw;
+  width: 25vw;
+  height: auto;
+}
