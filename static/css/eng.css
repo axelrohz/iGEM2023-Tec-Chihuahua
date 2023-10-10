@@ -295,7 +295,7 @@ input {
 
 .selector {
   position: relative;
-  left: 40%;
+  left: 50%;
   top: 50%;
   width: 180px;
   height: 180px;
@@ -418,7 +418,7 @@ input {
 .description6,
 .description7 {
   display: none;
-  position: absolute;
+  position: relative;
   top: -100%;
   left: 0%;
   padding: 30px;
@@ -437,7 +437,7 @@ input {
 .selector.open li:nth-child(2):hover .description2 {
   display: inline-block;
   transform: rotate(-72deg);
-  margin-top: -10px;
+  margin-top: -1500px;
   margin-left: 500px;
 }
 
@@ -913,4 +913,138 @@ input {
     height: 515px;
 }
 
+}
+
+
+/*DIAGRAMA HOVER*/
+
+.engcont {
+  margin: auto;
+  align-items: center;
+  max-height: 900px;
+  max-width: 1200px;
+  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-left:50px;
+  padding-right:50px ;
+  gap: 20px;
+  grid-template-columns: repeat(5,1fr);
+  justify-content: center;
+  margin-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.engcont h3{
+  font-size: 1.2rem;
+  font-family: 'Quicksand';
+  color: #302535;
+  text-align: center;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+.engtxt {
+  align-self: center;
+  position: absolute;
+  visibility: hidden;
+  background-color: #F3F3FA;
+  border-radius: 5px;
+  text-align: center;
+  color: #302535;
+  text-align: center;
+  font-family: 'Quicksand';
+  font-weight: 500;
+  width: 500px;
+  font-size: 0.8rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.engcont h1 {
+  font-size: 2.2rem;
+  font-family: 'Quicksand';
+  color: #302535;
+  text-align: center;
+  margin-top: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.engdot p{
+  color: #302535;
+  text-align: center;
+  font-family: 'Quicksand';
+  font-weight: 500;
+  font-size: 1.3rem;
+  justify-self: center;
+  margin-top: 5px;
+  margin-left: 50px;
+}
+
+.engdot {
+  display: flex;
+  height: 200px;
+  width:200px;
+  border-radius: 50%;
+  background: var(--gradient);;
+  justify-self: center;
+  padding: 50px;
+  margin: 10px;
+  align-self: center;
+  transition: 0.2s ease-in-out;
+  top: 0;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  transform-origin: center center;
+}
+
+.engdot p {
+  color: #302535;
+  text-align: center;
+  font-family: 'Quicksand';
+  font-weight: 500;
+  font-size: 1.3rem;
+  justify-self: center;
+
+}
+
+.engdot img {
+  width: auto;
+  height: 150px;
+  justify-items: center;
+  align-items: center;
+  position: initial;
+  top:30%;
+  transition: 0.2s ease-in-out;
+}
+
+
+.engdot:hover {
+  display: flex;
+  height: 300px;
+  width:300px;
+  transform: scale(0.8);
+  transition: 0.2s ease-in-out;
+  border-radius: 50%;
+  background: var(--gradient);
+  justify-self: center;
+  padding: 50px;
+  margin: 10px;
+  align-self: center;
+  top: -30px;
+}
+
+.treatmentssdot:hover img {
+  width: auto;
+  height: 90px;
+  justify-items: center;
+  position: absolute;
+  top:37%;
+}
+
+.engdot:hover .engtxt{
+  visibility: visible;
 }
