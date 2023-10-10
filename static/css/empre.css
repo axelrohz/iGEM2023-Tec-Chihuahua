@@ -1725,3 +1725,15 @@
     width: fit-content;
     max-width: 100%;
   }
+  .clickInfoVan1 {
+    margin: 0 auto;
+    width: 28vh;
+    background: linear-gradient(90deg, #00C9FF 0%, #80e28a 100%);
+    border-radius: 20px;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-left: 44vh;
+    
+}
