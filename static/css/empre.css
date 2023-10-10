@@ -1773,3 +1773,52 @@
     color: black;
     max-width: 90%;
 }
+.instr_selector1 {
+    background: #309b8d;
+    color: white;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 16px;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    margin-left: 14%;
+    margin-top: -42%;
+    max-width: fit-content;
+}
+.selector {
+    position: relative;
+    left: -33vw;
+    top: -8vw;
+    width: 9.7vw;
+    height: 10vw;
+    margin-top: 25vw;
+    margin-bottom: 8vw;
+}
+.selector li:nth-child(7n+1) input + label {
+    background: #5BC5AB;
+}
+.selector li:nth-child(7n+2) input + label {
+    background: #5BC5AB;
+}
+.selector li:nth-child(7n+3) input + label {
+    background: #5BC5AB;
+}
+.selector li:nth-child(7n+4) input + label {
+    background:#5BC5AB;
+} 
+.selector li:nth-child(7n+5) input + label {
+    background: #5BC5AB;
+}
+.selector li:nth-child(7n+6) input + label {
+    background: #CE788F;
+}
+
+element.style {
+    transform: rotate(-308.571deg);
+}
+.selector li:nth-child(7n+7) input + label {
+    background:#CE788F;
+}
+.selector li:nth-child(7n+1) input + label {
+    background: #5BC5AB;
+}
