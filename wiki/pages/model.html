@@ -384,7 +384,7 @@
    				 <h3 id="upstream">First model</h3>
    			 </div>
    			 <div class="tituloContenido">
-   				 <h4 id="underlying_theory"><br><br>Underlying theory</h4>
+   				 <h4 id="underlying_theory" style="font-size: 2vw;">Underlying theory</h4>
    			 </div>
    			 <p class="contenido">The IPTG induction mechanism has 3 key elements: The operator (LacO),  lac repressor, and inductor (IPTG). These elements interact in a coordinated manner, as illustrated in <b>figure 1.</b> The process unfolds as follows:</p>
    			 <br>
@@ -515,7 +515,7 @@
       	<br>
         <br>
         <div class="tituloContenido">
-   	    <h5>Production of Lac repressor. Steps 1-4</h5>
+   	    <h5 class="ctaT"><span>Production of Lac repressor. Steps 1-4</span></h5>
         </div>
         <br>
         <p class="contenido">The system's dynamics are under the influence of the Lac repressor, which is a regulatory molecule encoded by the LacI regulatory gene (G). This protein exhibits constitutive expression, forming monomers (R<sub>M</sub>), dimers (R<sub>D</sub>), and tetramers (R<sub>T</sub>) through subunit bonding.<sup>3</sup> The chemical reaction for modeling the repressor mRNA production is assumed to be governed by the sole dependence on the quantity of the LacI gene. Additionally,  the  production of monomer is dependent on the mRNA of repressor (M<sub>LI</sub>) concentration. The favored formation is Tetramers over dimers over monomers.</p>
@@ -616,7 +616,7 @@
   		</math>
 		<p ALIGN="right" class="NumeroEcuacion">(v,vi)</p>
    	<div class="tituloContenido">
- 		 <h5>Formation of repressor-Operator complex. Steps 5-6</h5>
+ 		 <h5 class="ctaT"><span>Formation of repressor-Operator complex. Steps 5-6</span></h5>
    	</div>
 	<br>
     <p class="contenido">In its tetrameric and dimeric configurations, the repressor exhibits strong affinity for the operator (O). This binding event effectively obstructs RNA polymerase’s access to the promoter region, resulting in the inhibition of endolysin gene transcription. Consequently, in the absence of other factors, endolysin production is low or absent (leak transcript). On the contrary, the monomeric form of the lac repressor demonstrates a reduced affinity for the operator and lacks the capability to effectively bind to it.<sup>4</sup> </p>
@@ -676,7 +676,7 @@
     </math>
 	<p ALIGN="right" class="NumeroEcuacion">(ix,x)</td>    
    	<div class="tituloContenido">
- 		<h5>Input of IPTG. Step 11</h5>
+ 		<h5 class="ctaT"><span>Input of IPTG. Step 11</span></h5>
    	</div>
    	<br>
    	<p class="contenido">The entry of IPTG into <em>E. coli</em> BL21 cells occurs through two potential mechanisms: simple diffusion and active transport facilitated by the lactose permease, encoded by the LacY gene. The active transport pathway has been reported to not be significant on <em>E. coli</em>, thus, we won't take it into account in our model.<sup>5</sup> As a result, we focus solely on the predominant method of IPTG entry, which is simple diffusion. In this process, IPTG molecules passively move across the cell membrane in response to the concentration gradient, without the need for energy expenditure or assistance from specific transporters.</p>     
@@ -709,7 +709,7 @@
     </math>
 	<p ALIGN="right">(1)</p>
 	<div class="tituloContenido">
- 		<h5>Formation of repressor-IPTG complex. Steps 12-15</h5>
+ 		<h5 class="ctaT"><span>Formation of repressor-IPTG complex. Steps 12-15</span></h5>
    	</div>
 		<div class="row mt-5">
 			<div class="col-lg-8">
@@ -862,7 +862,7 @@
 	</math>
 	<p  ALIGN="right" class="NumeroEcuacion">(xvii,xviii)</p>
 	<div class="tituloContenido">
- 		<h5 class="titulosP">Protein production. Steps 18-19</h5>
+ 		<h5 class="ctaT"><span>Protein production. Steps 18-19<span></span></h5>
    	</div>
 	<br>
    	<p class="contenido">As the operator becomes unoccupied due to the inactivation of the lac repressor through IPTG binding, RNA polymerase gains the ability to initiate transcription of the endolysin gene. In our model, the transcription of endolysin is solely contingent on the concentration of free operator sites.</p>
@@ -960,7 +960,7 @@
 		 </math>
  		 <p  ALIGN="right" class="NumeroEcuacion">(xxii)</p>   	 
 		 <div class="tituloContenido">
- 		 <h5>Degradation of mRNA and protein compounds. Steps 7-10, 16-17, 20-21</h5>
+ 		 <h5 class="ctaT"><span>Degradation of mRNA and protein compounds. Steps 7-10, 16-17, 20-21</span></h5>
    	 </div>
 			<br>
    	 <p class="contenido">The non-hydrolyzable chemical bond in IPTG, specifically involving the sulfur (S) atom, is a critical aspect of its mechanism of action within the cell. This unique characteristic prevents IPTG from being metabolized or degraded by cellular machinery. In our model, we take into account this specific feature, making an important assumption that the compounds that form complexes with IPTG are subject to degradation, leaving behind the free IPTG molecules that were involved in the complex formation.</p>
@@ -1116,10 +1116,10 @@
   		 </math>
   		 <p  ALIGN="right" class="NumeroEcuacion">(xxx)</p>
   		 <div class="tituloContenido">
-   		 <h4 id="model_building"><br><br>Model building</h4>
+   		 <h4 id="model_building" style="font-size: 2vw;">Model building</h4>
  		 </div>
  		 <div class="tituloContenido">
-   		 <h5>Chemical reactions</h5>
+   		 <h5 class="ctaT"><span>Chemical reactions</span></h5>
  		 </div>
 			<br>
  		 <p class="contenido">Drawing from the available literature, we have acquired the essential chemical reactions governing our system's behavior. These reactions laid the groundwork for formulating our ODEs.</p>
@@ -1825,7 +1825,7 @@
 		</div>
 		<div  class="tituloContenido">
 			<br>
-		  <h5>Ordinary Differential Equations</h5>
+		  <h5 class="ctaT"><span>Ordinary Differential Equations</span></h5>
 		</div>
 		<br>
 		<p class="contenido">The biochemical reactions in the system were captured through the development of an ODEs model. All reactions within this model were defined using the law of mass action, offering a dynamic and quantitative description of the system. The ODEs express how the system's temporal concentrations change with time, providing a framework to analyze and predict its behavior.</p>
@@ -4098,7 +4098,7 @@
 		</div>
 			<br>
 		   <div class="tituloContenido">
-				<h4 id="monte_carlo"><br><br>Monte Carlo Simulation</h4>
+				<h4 id="monte_carlo" style="font-size: 2vw;">Monte Carlo Simulation</h4>
 			</div>
 			<br>
 			<p  class="contenido"">Precise predictions of biological processes rely on understanding intricate networks. Nonetheless, this understanting is hindered by the lack of data concerning numerous model parameters, especially reaction kinetics. In our system of ODEs, we encountered a shorfall of associated parameters for some of the reaction kinetics presented in <b>Table 2.</b> Selecting the suitable -range of- values presented a challenge as it should encompass a broad spectrum to ensure the experimental results are representative, detailed enough to capture essential information, but not overly extensive that it becomes too complex and time-consuming due to limitations in computational resources. </p>
@@ -4107,10 +4107,10 @@
 			<br>
 			<p  class="contenido">Through this approach, a diverse and extensive array of potential parameter sets is generated, facilitating a probabilistic exploration of the parameter space. Subsequently, we leverage the established range of viable kinetic constant values obtained from the MC simulation as an input for a machine-learning-based parameter estimation algorithm, aiming to narrow down said parameter range.</p>
 			<div class="tituloContenido">
-				<h4 id="parameter_estimation"><br><br>Parameter estimation</h4>
+				<h4 id="parameter_estimation" style=" font-size: 2vw;">Parameter estimation</h4>
 			</div>
 			<br id="closePopUp">
-			<p class="contenido">Subsequently, employing the collected data set of sampled parameters, we proceed to estimate the specific parameters tied to the kinetic aspects of the system. We present a computational approach for the estimation of kinetic constants, focusing on the induction phase of protein expression, through the application of a <a href="#popup-optin">Genetic Algorithm</a> (GA).</p>
+			<p class="contenido">Subsequently, employing the collected data set of sampled parameters, we proceed to estimate the specific parameters tied to the kinetic aspects of the system. We present a computational approach for the estimation of kinetic constants, focusing on the induction phase of protein expression, through the application of a <a href="#popup-optin" class="popupColor">Genetic Algorithm</a> (GA).</p>
 				<div class="bg-overlay" id="popup-optin">
 					<div class="subscribe-optin">
 					<div class="popup-inner">
@@ -4126,7 +4126,7 @@
 					</div>
 				</div>
 			<br>
-			<p  class="contenido">Combining the range of parameters obtained through MC simulation with a GA -or any suitable parameter estimation algorithm- is essential when modeling systems characterized by indeterminate kinetic constants. The empirical data sourced from SDS-PAGE gel electrophoresis was analyzed through <a href="#popup2-optin">ImageJ</a>. The initial preprocessing phase involves the segmentation of gel lanes and accurate delineation of protein bands, extracting quasi-quantitative concentration data across different time points. This processed concentration data forms the foundation for constructing an objective function within the GA, to iteratively optimize the kinetic parameters.<sup>20</sup> The objective function evaluates the fitness of each parameter set by comparing simulated protein concentration profiles with the experimentally derived data. Employing a generational approach, the GA refines the kinetic parameter space, converging towards optimal or near-optimal solutions that exhibit the highest fidelity with observed protein distribution.</p>
+			<p  class="contenido">Combining the range of parameters obtained through MC simulation with a GA -or any suitable parameter estimation algorithm- is essential when modeling systems characterized by indeterminate kinetic constants. The empirical data sourced from SDS-PAGE gel electrophoresis was analyzed through <a href="#popup2-optin" class="popupColor">ImageJ</a>. The initial preprocessing phase involves the segmentation of gel lanes and accurate delineation of protein bands, extracting quasi-quantitative concentration data across different time points. This processed concentration data forms the foundation for constructing an objective function within the GA, to iteratively optimize the kinetic parameters.<sup>20</sup> The objective function evaluates the fitness of each parameter set by comparing simulated protein concentration profiles with the experimentally derived data. Employing a generational approach, the GA refines the kinetic parameter space, converging towards optimal or near-optimal solutions that exhibit the highest fidelity with observed protein distribution.</p>
 			<br>
 				<div class="bg-overlay" id="popup2-optin">
 					<div class="subscribe-optin">
@@ -4142,12 +4142,12 @@
 					</div>
 					</div>
 				</div>
+			<div class="tituloContenido" id="RSM">
+   				 <h3 id="upstream" style="font-size: 2vw;">Second model</h3>
+   			</div>
 			<div class="tituloContenido">
-   				 <h3 id="upstream">Second model</h3>
-   			</div>
-   			<div class="tituloContenido">
-   				<h4 id="RSM"><br><br>Surface Response Method</h4>
-   			</div>
+				<h5 class="ctaT"><span>Surface Response Method</span></h5>
+			</div>
    			<p class="contenido">To address the preparation of an intramammary infusion composed of our three endolysins LysK-ABD-SH3B30, LysCSA13-ABD, and PCNP-CecA-LysSS (which will further be referred as LysK, LysCSA13 and LysSS), it was imperative to determine the optimal combination of concentrations for targeting each specific bacterium. Initially, experiments were envisioned utilizing purified recombinant proteins; however, challenges were encountered in the purification process. Consequently, a decision was made to conduct bactericidal assays using crude extracts of each endolysin. Despite this modification, the primary objective remains to attain the most effective formulation of AureoBos.
 				<br>
 				<br>

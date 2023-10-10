@@ -2545,3 +2545,64 @@ hm {
 }
 
 /* Pop-up card 2 arriba*/
+
+
+/*titulos rositas*/
+.ctaT {
+  position: relative;
+  padding: 8px 12px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  }
+ .ctaT:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0px;
+  display: block;
+  border-radius: 50px;
+  background: #D794A8;
+  width: 45px;
+  height: 100%;
+  transition: all 0.3s ease;
+ }
+
+ .ctaT span {
+  position: relative;
+  font-family: 'Quicksand';
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: black;
+  z-index: 2;
+ }
+ .ctaT svg{
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+ }
+ .cta1:hover svg{
+  transform: translateX(0);
+ }
+ .ctaT:active{
+  transform: scale(0.95);
+ }
+ .ctaT:hover:before{
+   width: 75vw;
+   background: #D794A8;
+  }
+
+.tituloTamano{
+  font-size: 2vw;
+}
+
+.popupColor{
+  color: #447D9C;
+}
