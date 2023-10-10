@@ -106,7 +106,7 @@ the world. Consider how the world affects your work and how your work affects th
 			</div>
 			<div class="results">
 				<div class="button-content">
-					<p class="tituloBoton">Gold</p>
+					<p class="tituloBoton" id="Gold">Integrated Human Practices</p>
 					<button onclick="showSection('sectionResults'),document.getElementById('titulo_gold').scrollIntoView({ behavior: 'smooth'});" class="learnMore">Go to section</button>
 				</div>
 			</div>
@@ -1713,7 +1713,33 @@ the world. Consider how the world affects your work and how your work affects th
 
 
 
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+					// Supongamos que tienes varios enlaces que muestran popups
+				var enlaces = document.querySelectorAll('.cd-read-more1');
+				enlaces.forEach(function (enlace) {
+					enlace.addEventListener('click', function (event) {
+						event.preventDefault(); // Esto evita que el enlace realice su acción por defecto
+						var idPopup = this.getAttribute('data-popup-id'); // Supongamos que cada enlace tiene un atributo data-popup-id que corresponde al ID del popup que debe mostrar
+						document.querySelector('#' + idPopup).style.display = 'block';
+						document.body.classList.add('bloquear-desbordamiento');
+					});
+				});
 
+				// Y supongamos que tienes varios botones que ocultan popups
+				var botones = document.querySelectorAll('.boton-ocultar');
+				botones.forEach(function (boton) {
+					boton.addEventListener('click', function () {
+						var idPopup = this.getAttribute('data-popup-id'); // Supongamos que cada botón tiene un atributo data-popup-id que corresponde al ID del popup que debe ocultar
+						document.querySelector('#' + idPopup).style.display = 'none';
+						document.body.classList.remove('bloquear-desbordamiento');
+					});
+				});
+				});
+
+			
+
+		</script>
 
 
 
@@ -1737,6 +1763,9 @@ the world. Consider how the world affects your work and how your work affects th
 			<div class="seccionResults">
 				<p class="subtitleR">Results</p>
 			</div>
+
+
+
 			<section id="cd-timeline" class="cd-container">
 				<div class="cd-timeline-block">
 					<div class="cd-timeline-img cd-picture">
@@ -1750,10 +1779,18 @@ the world. Consider how the world affects your work and how your work affects th
 						</div>
 						<p class="parraf"><b>Name:</b> Ruben Rodríguez<br>
 							<b>Specialty:</b> Veterinary Zootechnician</p>
-						<a href="#0" class="cd-read-more1">Read more</a>
+						<a href="#0" class="cd-read-more1" data-popup-id="popup1">Read more</a>
 						<span class="cd-date">June 24th, 2023</span>
 					</div> <!-- cd-timeline-content -->
 				</div> <!-- cd-timeline-block -->
+
+				<div id="popup1" class="popup">
+					<div class="PopUpTitle">Titulo</div>
+					<div class="PopUpContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A molestias, ex reprehenderit saepe vitae magnam incidunt? Quod, quisquam recusandae cumque temporibus sequi laborum dolorum, adipisci voluptatem facilis, numquam magnam beatae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem necessitatibus temporibus impedit asperiores quasi explicabo dolores accusantium omnis sunt itaque provident quam nesciunt debitis ipsum eos dolor, harum dolore hic.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita totam nobis illum deleniti in ipsam accusamus alias, molestias praesentium sint eius, saepe tempora, quibusdam corporis minus minima perferendis velit molestiae?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, cupiditate omnis. A, porro voluptatum. Facere vel reprehenderit dolores quas cum debitis quo nostrum placeat veniam delectus officia, sunt quam porro.</div>
+
+					<button class="boton-ocultar" data-popup-id="popup1">X</button>
+				</div>
+
 		
 				<div class="cd-timeline-block">
 					<div class="cd-timeline-img cd-picture">
