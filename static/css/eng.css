@@ -240,32 +240,32 @@ input {
 }
 
 .cta1:hover:before {
-  width: 20vw;
+  width: 10vw;
   background: #5BC5AB;
 }
 
 .cta2:hover:before {
-  width: 30vw;
+  width: 20vw;
   background: #5BC5AB;
 }
 
 .cta3:hover:before {
-  width: 40vw;
+  width: 30vw;
   background: #5BC5AB;
 }
 
 .cta4:hover:before {
-  width: 50vw;
+  width: 40vw;
   background: #5BC5AB;
 }
 
 .cta5:hover:before {
-  width: 60vw;
+  width: 50vw;
   background: #5BC5AB;
 }
 
 .cta6:hover:before {
-  width: 70vw;
+  width: 50vw;
   background: #F6AE2D;
 }
 
@@ -370,10 +370,11 @@ input {
   width: 150px;
   height: 150px;
   line-height: 100px;
-  margin-left: -100px;
+  margin-left: -90px;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
-  font-size: 14px;
+  font-size: 1.2rem;
   color: white;
+  align-content: center;
 }
 
 .selector li:nth-child(7n+1) input+label {
@@ -420,30 +421,28 @@ input {
   position: relative;
   top: -100%;
   left: 0%;
-  padding: 10px;
-  background-color: #F3F3FA;
+  padding: 30px;
+  background-color: rgba(91, 197, 171,0.2);
   color: #302535;
   border-radius: 5px;
-  width: 500px;
+  width: 400px;
 }
 
 .selector.open li:nth-child(1):hover .description1 {
-  display: inline-block;
-  margin-left: -350px;
+  display: none;
+  margin-left: -180px;
   margin-top: -50px;
-  width: 750px;
 }
 
 .selector.open li:nth-child(2):hover .description2 {
-  display: inline-block;
-  transform: rotate(-90deg);
-  margin-top: -500px;
-  margin-left: -50px;
-
+  display: none;
+  transform: rotate(-72deg);
+  margin-top: -1500px;
+  margin-left: 500px;
 }
 
 .selector.open li:nth-child(3):hover .description3 {
-  display: inline-block;
+  display: none;
   transform: rotate(180deg);
   margin-top: -500px;
   margin-left: -300px;
@@ -451,28 +450,28 @@ input {
 }
 
 .selector.open li:nth-child(4):hover .description4 {
-  display: inline-block;
+  display: none;
   transform: rotate(-155deg);
   margin-top: -140px;
   margin-left: -140px;
 }
 
 .selector.open li:nth-child(5):hover .description5 {
-  display: inline-block;
+  display: none;
   transform: rotate(154deg);
   margin-top: -300px;
   margin-left: -350px;
 }
 
 .selector.open li:nth-child(6):hover .description6 {
-  display: inline-block;
+  display: none;
   transform: rotate(103deg);
   margin-top: -110px;
   margin-left: -160px;
 }
 
 .selector.open li:nth-child(7):hover .description7 {
-  display: inline-block;
+  display: none;
   transform: rotate(51deg);
   margin-top: 10px;
   margin-left: -280px;
@@ -603,28 +602,12 @@ input {
   border-bottom: 1px solid #111;
 }
 
-.button-container {
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 2vw;
-  height: 607px;
-  background: linear-gradient(#F2F2FAff, white);
-}
+ /*botones */
 
-.instructionDiagram2{
-  background:linear-gradient(to right, #447D9C, #5BC5AB);
-  color: white;
-  width: fit-content;
-  padding-top: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  height: 3vw;
-  font-size: 1vw;
-  border-radius: 25px;
-  margin: auto;
-}
 
-.logocontainer{
+
+ /*para acomodar el div padre de los botones y de la imagen de taffy*/
+ .logocontainer{
   background: transparent;
   top: 50%;
   left: 50%;
@@ -634,11 +617,30 @@ input {
   position: relative;
   z-index:10;
  }
+ 
 
+ #taffy {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -5;
+ }
+
+/*div padre de todo*/
+ .button-container {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 2vw;
+  height: 607px;
+ }
+ 
+ /* Estilos para los botones(los circulos) en forma de div */
  .methods{
   width: 180px;
   height: 180px;
-  left: 35%;
+  left: 30%;
   color: #C55B75;
   background-color: transparent;
   border: 5px solid #C55B75;
@@ -649,7 +651,6 @@ input {
   overflow: hidden;
   z-index:10;
  }
-
  .overview{
   top: 50%;
   left: -12%;
@@ -676,7 +677,28 @@ input {
   transition: background-color 0.5s, transform 0.5s;
   position: absolute;
  }
+ 
+ /*encapsula todo el texto que va a haber en el boton, ya sea sin hover o con */
+ .button-content {
+  position: absolute;
+  top: 50%;
+  height: fit-content;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 180px;
+ }
+ 
 
+ .overview:hover .button-content,
+ .methods:hover .button-content,
+ .results:hover .button-content{
+  height: fit-content;
+  top: 40%;
+ }
+ 
+ 
+ /* Efecto de crecimiento y cambio de fondo al pasar el cursor sobre los div de los botones */
  .methods:hover {
   border: none;
   background-color: #C55B75;
@@ -692,18 +714,8 @@ input {
   background-color: #447D9C;
   transform: scale(1.5);
  }
-
- .button-content {
-  position: absolute;
-  top: 50%;
-  height: fit-content;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  width: 180px;
- }
-
-
+ 
+ /* Estilo para el contenido de los div de los botones al pasar el cursor sobre ellos */
  .methods:hover .tituloBoton,
  .overview:hover .tituloBoton,
  .results:hover .tituloBoton {
@@ -720,8 +732,11 @@ input {
   max-height: 100%;
   padding-bottom: 10px;
  }
-
- .learnMore {
+ 
+ /* Estilo para el botÃ³n "Learn More" al pasar el cursor sobre los div de los botones */
+ 
+ /*estilo del boton ler more sin hover, para que no se vea pero posicionado bien*/
+.learnMore {
   background-color: transparent;
   border: 3px solid white;
   border-radius: 10px;
@@ -748,6 +763,7 @@ input {
   outline: none;
 }
  
+/*aqui ya se cambia cuando esta en hover y se pone el color y dimensiones que se quieren para que se vea*/
  .methods:hover .learnMore {
   display: inline-block;
   width: 80px;
@@ -775,13 +791,16 @@ input {
   left: 50%;
   transform: translateX(-50%);
  }
- /* Estilo para los títulos y contenido de los div de los botones */
+ 
+ /* Estilo para los tÃ­tulos y contenido de los div de los botones */
  .tituloBoton {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   align-items: center;
   margin: auto auto;
- }
+  text-align: center;
+}
+
  
  .contentBoton {
   font-size: 13px;
@@ -801,4 +820,226 @@ input {
   display: contents;
   height: 139px;
   width: 175px;
+ }
+
+ .instructionDiagram2{
+  background:linear-gradient(to right, #447D9C, #5BC5AB);
+  color: white;
+  width: fit-content;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 3vw;
+  font-size: 1vw;
+  border-radius: 25px;
+  margin: auto;
 }
+
+.accordion {
+  width: 0%;
+  max-width: 1000px;
+  margin: 2rem auto;
+  justify-self: center;
+}
+.accordion-item {
+  background-color: #fff;
+  color: #111;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+  width: 90%;
+  justify-self: center;
+
+}
+
+.accordion-item {
+  justify-self: center;
+  background-color: #ffffff;
+  color: #111;
+  margin: auto;
+  border-radius: 3px;
+  box-shadow: 7px 7px #5BC5AB ;
+  width: 80%;
+  margin-bottom: 20px;
+  border: solid 0.5px #EBEBF1;
+
+}
+
+
+.accordion-item-header {
+  min-height: 60px;
+  font-size: 1.2rem;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  line-height: 1.5;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-family: 'Bricolage Grotesque';
+  font-size: 1.5rem;
+}
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 1.5rem;
+  position: absolute;
+  right: 1rem;
+}
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+  justify-content:center;
+  font-weight: 600;
+  font-family: 'Quicksand';
+  text-align: justify;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+@media(max-width:767px) {
+  .headParts{
+    height: 515px;
+}
+
+}
+
+
+/*DIAGRAMA HOVER*/
+
+.engcont {
+  margin: auto;
+  align-items: center;
+  max-height: 900px;
+  max-width: 1200px;
+  gap: 70px;
+  grid-template-columns: repeat(5,1fr);
+  justify-content: center;
+  margin-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+}
+
+.engcont h3{
+  font-size: 1.2rem;
+  font-family: 'Quicksand';
+  color: #302535;
+  text-align: center;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+.engtxt {
+  align-self: center;
+  position: absolute;
+  visibility: hidden;
+  background-color: #F3F3FA;
+  border-radius: 5px;
+  text-align: center;
+  color: #302535;
+  text-align: center;
+  font-family: 'Quicksand';
+  font-weight: 500;
+  width: 400px;
+  font-size: 1.2rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.engcont h1 {
+  font-size: 2.2rem;
+  font-family: 'Quicksand';
+  color: #302535;
+  text-align: center;
+  margin-top: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.engdot p{
+  color: #302535;
+  text-align: center;
+  font-family: 'Quicksand';
+  font-weight: 500;
+  font-size: 1.3rem;
+  justify-self: center;
+  margin-top: 5px;
+  margin-left: 50px;
+}
+
+.engdot {
+  display: flex;
+  height: 200px;
+  width:200px;
+  border-radius: 50%;
+  background: var(--gradient);
+  padding: 50px;
+  margin: 10px;
+  align-self: center;
+  transition: 0.2s ease-in-out;
+  top: 0;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+}
+
+.engdot p {
+  color: #302535;
+  text-align: center;
+  font-family: 'Quicksand';
+  font-weight: 500;
+  font-size: 1.3rem;
+  justify-self: center;
+
+}
+
+.engdot img {
+  width: auto;
+  height: 150px;
+  justify-items: center;
+  align-items: center;
+  position: initial;
+  top:30%;
+  transition: 0.2s ease-in-out;
+}
+
+
+.engdot:hover {
+  display: flex;
+  height: 300px;
+  width:300px;
+  transform: scale(0.8);
+  transition: 0.2s ease-in-out;
+  border-radius: 50%;
+  background: var(--gradient);
+  justify-self: center;
+  padding: 50px;
+  margin: 10px;
+  align-self: center;
+  top: -30px;
+}
+
+.treatmentssdot:hover img {
+  width: auto;
+  height: 90px;
+  justify-items: center;
+  position: absolute;
+  top:37%;
+}
+
+.engdot:hover .engtxt{
+  visibility: visible;
+}
+
