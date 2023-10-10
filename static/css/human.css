@@ -3078,7 +3078,7 @@ table tbody tr td::last-child {
   height: auto;
   position: relative;
   top: 7vw;
-  left: 23vw;
+  left: 13vw;
   transform: translate(-50%, -50%);
   z-index: 10;
 }
@@ -3086,13 +3086,15 @@ table tbody tr td::last-child {
 .ODS3 {
   background: transparent;
   top: 7vw;
-  left: 45%;
+  left: 16%;
   transform: translate(-50%, -50%);
   width: 50vw;
   max-width: 217px;
   height: auto;
   position: relative;
   z-index: 10;
+
+
 }
 .ODS12 {
   background: transparent;
@@ -3101,9 +3103,10 @@ table tbody tr td::last-child {
   height: auto;
   position: relative;
   top: 7vw;
-  left: 23vw;
+  left: 14vw;
   transform: translate(-50%, -50%);
   z-index: 10;
+
 }
 .ODS15 {
   background: transparent;
@@ -3112,7 +3115,7 @@ table tbody tr td::last-child {
   height: auto;
   position: relative;
   top: 7vw;
-  left: 23vw;
+  left: 15vw;
   transform: translate(-50%, -50%);
   z-index: 10;
 }
