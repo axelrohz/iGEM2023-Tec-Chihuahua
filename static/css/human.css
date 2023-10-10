@@ -4452,8 +4452,19 @@ table tbody tr td::last-child {
 
 .boton-ocultar {
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  width: 4%;
+  height: auto;
   color: white;
   font-weight: bold;
+  background-color: red;
+  box-shadow: 2px 2px 4px black;
+  margin-bottom: 9%;
+  position: absolute;
+  float: right;
+  top: 5%;
+  right: 5%;
+}
+
+.boton-ocultar:hover {
+  background-color: darkred;
 }
