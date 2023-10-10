@@ -4418,8 +4418,9 @@ table tbody tr td::last-child {
   width: 81%;
   height: 76%;
   z-index: 9999;
-  border-radius:4%;
+  border-radius:67px;
   animation: fade-in .5s ease forwards;
+  flex-direction: column;
   /* overflow: hidden; */
 }
 
@@ -4435,7 +4436,7 @@ table tbody tr td::last-child {
 
 .PopUpTitle {
   color: white;
-  font-size: 300%;
+  font-size: 114%;
   text-align: center;
 }
 
@@ -4446,13 +4447,12 @@ table tbody tr td::last-child {
   margin-right: auto;
   text-align: justify;
   height: fit-content;
-  max-height: 83%;
   overflow-y: auto;
+  padding-top: 2%;
 }
-
 .boton-ocultar {
   border-radius: 50%;
-  width: 4%;
+  width: 30px;
   height: auto;
   color: white;
   font-weight: bold;
