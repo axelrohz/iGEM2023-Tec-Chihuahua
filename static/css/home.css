@@ -569,16 +569,16 @@ transform: scaleX(-1);
 .howWeDoItText{
     width: 100%;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: 400;
     margin: 0;
     padding: 20px 14%;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .howWeDoItCard{
     width: 350px;
-    height: 500px;
+    height: 600px;
     background-color: rgb(255, 255, 255);
     margin: 0 20px;
     border-radius: 20px;
