@@ -244,6 +244,11 @@ button b { font-size:50px; font-weight:800; padding:0; line-height:2em; padding:
   color: #fff;
 }
 
+.solution_cards_box .solution_card2:hover .solu_title h3,
+.solution_cards_box .solution_card2:hover .solu_description p {
+  color: #fff;
+}
+
 .solution_cards_box .solution_card:before {
   content: "";
   position: absolute;
@@ -284,6 +289,10 @@ button b { font-size:50px; font-weight:800; padding:0; line-height:2em; padding:
   margin-bottom: 15px;
 }
 
+.foto_event_summer{
+  margin-left: 21vw;
+  max-width: 40vw;
+}
 .solution_card .solu_description button {
   border: 0;
   border-radius: 15px;
@@ -324,6 +333,10 @@ button b { font-size:50px; font-weight:800; padding:0; line-height:2em; padding:
 }
 
 .solution_cards_box .solution_card:hover .hover_color_bubble {
+  top: 0rem;
+}
+
+.solution_cards_box .solution_card2:hover .hover_color_bubble {
   top: 0rem;
 }
 
