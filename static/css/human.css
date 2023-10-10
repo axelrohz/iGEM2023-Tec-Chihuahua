@@ -163,7 +163,7 @@
 .secciones {
   grid-area: body;
   margin-top: 1%;
-  width: 91vw;
+  width: 100vw;
   height: 100%;
 }
 
@@ -4346,11 +4346,10 @@ table tbody tr td::last-child {
 .contOurBeg,
 .tituloOurBeg {
   margin-left: 11%;
-
 }
 
 .contOurBeg1 {
-  margin-left: 11%;
+  margin-left: 14%;
   margin-top: -28%;
 }
 
