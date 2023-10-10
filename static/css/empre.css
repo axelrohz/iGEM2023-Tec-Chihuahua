@@ -1623,7 +1623,7 @@
     font-size: 1.2rem;
     transition: 0.5s;
     margin-left: 51vh;
-    width: 26vh;
+    width: 38vh;
 }
 
 /* Cosas del skeleton Loading*/
@@ -1760,7 +1760,7 @@
   }
   .h3, h3 {
     font-size: 1.75rem;
-    margin-left: 5vh;
+    margin-left: 7vh;
 }
 .contenido1 {
     text-align: justify;
