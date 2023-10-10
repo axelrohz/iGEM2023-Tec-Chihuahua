@@ -12,8 +12,7 @@
     aspect-ratio: 16/6;
     object-position: 0% 70%;
     object-fit: cover;
-    position: fixed;
-    top: 60px;
+    position: relative;
     z-index: -10;
   
     }
@@ -21,11 +20,12 @@
     .image-space{
       position: relative;
       z-index: 100;
-      display: flex;
+      display: none;
       text-align: center;
       justify-content: center;
       align-items: center;
-      height: calc(37vw);
+      height: 37vw;
+
     }
   
     @media screen and (max-width: 768px) {
