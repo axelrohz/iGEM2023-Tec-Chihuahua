@@ -134,19 +134,22 @@
 	<div class="contenedorENTBody">
 
 		<div class="circleDiagram">
+			<div  class="clickInfoVan1" >
+				⚠️Interactive diagram!
+		   </div>
 			<div class="whatCircle">
 				<div class="circleText">
 					<h3>What?</h3>
 					<p> Enzybiotic treatment for <em>Staphylococcus aureus</em>, <em>Streptococcus agalactiae</em>,
 						<em>Streptococcus uberis</em>, and <em>Escherichia coli</em>  that cause bovine
-						mastitis
+						mastitis.
 					</p>
 				</div>
 			</div>
 			<div class="howCircle">
 				<div class="circleText">
 					<h3>How?</h3>
-					<p>Biosynthesizing recombinant proteins within prokaryotic cells</p>
+					<p>Biosynthesizing recombinant proteins within prokaryotic cells.</p>
 				</div>
 			</div>
 			<div class="whyCircle">
@@ -318,17 +321,17 @@
 							<div class="fraseInicio">
 								<div class="fraseAcomodo">
 									<div class="phrase">
-										<p class="fraseModel" id="frase">"It would be treating mastitis whithout antibiotics, the dream of every milk producer" - DVM Rodolfo Jaquez. </p>
+										<p class="fraseModel" id="frase">"It would be treating mastitis without antibiotics, the dream of every milk producer" - DVM Rodolfo Jaquez. </p>
 									</div>
 
 								</div>
 							</div>
 						</div>
-
+						
 						<div>
 							<p class="contenido">
 								<img class="eti"
-									src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/jeringa-intramamaria-5.png">
+									src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/etiqueta-1.webp">
 								<br>
 								AureoBos is set to become a groundbreaking treatment that revolutionizes, completely,
 								mastitis treatment. As shown above, we've meticulously outlined a mockup that serves as
@@ -407,9 +410,11 @@
 							that sets it apart.
 						</p>
 					</div>
+					
 				</div>
-
+				
 			</div>
+			
 		</div>
 
 
@@ -1094,7 +1099,7 @@
 
 				<div class="secciones">
 					<div class="sectionUnmet">
-						<p class="subtitleR">Unmet Needs</p>
+						<p class="subtitleU">Unmet Needs</p>
 					</div>
 
 
@@ -1105,15 +1110,11 @@
 							<div class="tituloContenido">
 								<h3 id="introduction"><br>Problem Statement </h3>
 							</div>
-							<p class="contenido">
-								Mastitis is the major infectious disease problem in dairy cows. Based on a global dairy
-								cow
-								population of 271 million dairy cows, it has been estimated that treating it costs the
-								dairy
-								industry around $19.7B–32B (USD) billion dollars per year1. These costs consist of
-								several
-								consequences that are triggered by this disease2. A visual representation of these
-								implications can be visualized in Figure 1.
+							<p class="contenido1">
+								Mastitis is the major infectious disease problem in dairy cows. Based on a global dairy cow population of 271 million, it has been estimated that treating it costs the dairy industry around $19.7B–32B (USD) billion dollars per year.<sup>1</sup> These costs consist of several consequences that are triggered by this disease<sup>2</sup>.
+								A visual representation of these implications can be visualized in Figure 1.
+
+
 							</p>
 							<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 							<script type="text/javascript">
@@ -1121,15 +1122,13 @@
 								google.charts.setOnLoadCallback(drawChart);
 								function drawChart() {
 									var data = google.visualization.arrayToDataTable([
-										['Task', 'Hours per Day'],
-										['Protein', 3.28],
-										['Total lipid (fat)', 3.2],
-										['Carbohydrate', 4.67],
-										['Sugar', 4.81],
-										['Minerals', 0.424411002],
-										['Vitamins', 0.01821007194],
-										['Fatty acids (monounsaturated)', 0.688],
-										['Fatty acids (polyunsaturated)', 0.108],
+										['Implication', 'Percentage'],
+										['Loss due to premature culling', 23],
+										['Milk production loss',31],
+										['Veterinary fees and drug costs', 24],
+										['Loss due to discarded milk', 18],
+										['Cost due to excess labor demand', 4],
+										
 
 
 
@@ -1137,7 +1136,7 @@
 
 
 									var options = {
-										title: 'Milk nutrients (100g)',
+										title: 'Costs of Bovine Mastitis',
 										is3D: true,
 										backgroundColor: "transparent",
 										colors: ["#5BC5AB", "#C55B75", "#D27063", "#447D9C", "#DE8551"],
@@ -1148,25 +1147,44 @@
 								}
 							</script>
 							<div id="piechart_3d" style="width: 900px; height: 500px;"></div>
-							<p class="piedefig"><b>Figure 1.</b> Nutrients of whole milk, excluding water.<sup>3</sup>
+							<p class="piedefig"><b>Figure 1.</b> Implications that integrate the cost of treating bovine mastitis.
 							</p>
 							<br>
 							<br>
-							<p class="contenido">
+							<p class="contenido1">
 								Currently, mastitis is being treated by different types of antibiotics and natural
 								solutions
-								which are applied through systemic administrations or intramammary infusions3. However,
-								through our integrated human practices, we have learned that even though these solutions
+								which are applied through 
+								<b class="tooltipSignificado">systemic administration
+									<span class="tooltipSignificadoBox">
+										Route of administration of medication or other substance into the circulatory system so that the entire body is affected.
+
+									</span>
+								</b> or 
+								<b class="tooltipSignificado">intramammary infusion.<sup>3</sup> 
+									<span class="tooltipSignificadoBox">
+										Delivery of an antibiotic into the mammary gland.
+	
+				
+									</span>
+								</b>However,
+								through our <a class="hipervinculoaqua" href="https://2023.igem.wiki/tec-chihuahua/human-practices">integrated human practices</a>, we have learned that even though these solutions
 								exist, milk is still being discarded in large quantities due to the fact that milk with
 								antibiotics’ residue can’t be consumed, impacting the growing amount of global food
-								waste,
-								in addition to the fact that the cost of treating mastitis is significantly high as
+								waste. Furthermore, the cost of treating mastitis is significantly high as
 								stated
 								before, and antibiotic resistance has become a real problem in tackling this challenge
 								in a
 								sustainable and safe way.
+								<br>
+								<br>
+								Delve into the following pop-ups in order to find more about our clients, end-users, their unmet needs and the existing solutions which back up AureoBos' opportunity to enter the market.
+
+
+							
 
 							</p>
+							
 							<br>
 							<div class="tituloContenido">
 
@@ -1181,11 +1199,10 @@
 											identify who is directly affected by the consequences of mastitis. As stated
 											in
 											the previous section, the implications that integrate the cost of treating
-											bovine mastitis are directly charged to dairy producers. Through our human
-											practices we learned that they are the ones who face head-on the disease,
+											bovine mastitis are directly charged to dairy producers. Through our <a class="hipervinculoaqua" href="https://2023.igem.wiki/tec-chihuahua/human-practices"> human practices</a> we learned that they are the ones who face head-on the disease,
 											deciding which treatment they are going to use based on the recommendations
 											done
-											from - the next important character- veterinary zootechnicians. Although
+											from - the next important character- theveterinary zootechnicians. Although
 											dairy
 											farmers have the power of decision making and purchasing, the reality is
 											that
@@ -1194,8 +1211,9 @@
 											differently
 											depending on the scale of their production. To better understand these
 											characteristics, check out the next figure.
+											<br>
 											<img class="dairy"
-												src="https://static.igem.wiki/teams/4607/wiki/human-2-0/wiki-design-4-entrepreneurship.png">
+												src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/wiki-design-4-entrepreneurship.svg">
 
 										</div>
 									</div>
@@ -1220,7 +1238,8 @@
 											unmet needs they have is essential for the successful development and
 											implementation of AureoBos.
 											<br>
-											Our integrated human practices helped us learn that dairy producers and
+											<br>
+											Our <a class="hipervinculoaqua" href="https://2023.igem.wiki/tec-chihuahua/human-practices">integrated human practices</a> helped us learn that dairy producers and
 											cattle
 											owners need a treatment that effectively addresses bovine mastitis, without
 											using antibiotics so milk isn’t discarded and their production isn’t reduced
@@ -1233,17 +1252,19 @@
 											also communicated that they require a treatment that is easy to administer
 											and
 											integrate into their existing routines, ensuring minimal disruption to their
-											operations. They require a product which doesn’t harm the cattle, doesn’t
-											compromise the milk quality, and doesn’t pose health risks to either animals
-											or
-											humans. Finally, the treatment needs to be accessible in terms of
+											operations. They are asking for a product which doesn’t harm the cattle,
+											compromise the milk quality, and pose risks to humans. Finally, the treatment needs to be accessible in terms of
 											availability
 											and affordability in the geographical and economic situation.
+											<br>
+											<br>
 											Having developed the above, you can find a visual representation of these
 											needs
 											through the following empathy map.
+											<br>
+											<br>
 											<img class="dairy"
-												src="https://static.igem.wiki/teams/4607/wiki/human-2-0/empathy-map.png">
+												src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/empathy-map-2.webp ">
 										</div>
 									</div>
 									<br>
@@ -1258,7 +1279,7 @@
 									</div>
 									<div class="accordion-item-body">
 										<div class="accordion-item-body-content">
-											Recognizing the presence of small, medium, and large-scale producers, as
+											After recognizing the presence of small, medium, and large-scale producers, as
 											well as
 											understanding how mastitis affects them, it becomes evident that these
 											individuals, whether under the guidance of a veterinary zootechnician or
@@ -1266,16 +1287,16 @@
 											are our ultimate end-users. However, after engaging with them and also with
 											global veterinary pharmaceutical companies like MSD Animal Health and
 											Zoetis, we
-											discerned the existence of two distinct customer types.
+											identified the existence of two distinct customer types.
 
 											<br>
-											We refer to a division between large-scale producers and small to
+											With this we refer to a division between large-scale producers and small to
 											medium-sized
-											producers. Initially, AureoBos would primarily supply to large-scale
+											producers. Initially, AureoBos will be sold directly to large-scale
 											producers,
 											whereas to reach small and medium-sized ones, an intermediary is required.
 											Thus,
-											the veterinary pharmaceutical providers in these regions would also become
+											the veterinary pharmacies in these regions would also become
 											our
 											clients, serving as the bridge to connect with the smaller producers.
 											<br>
@@ -1283,11 +1304,10 @@
 											clients
 											in both scenarios. Further detailed explanations of these business models
 											will
-											be covered in the Development Plans section below.
+											be covered in the Development Plans section.
 											<img class="dairy"
-												src="https://static.igem.wiki/teams/4607/wiki/human-2-0/wiki-design-4-entrepreneurship-1.png">
-											<img class="dairy"
-												src="https://static.igem.wiki/teams/4607/wiki/human-2-0/wiki-design-4-entrepreneurship-2.png">
+												src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/bm.webp ">
+											
 										</div>
 									</div>
 									<br>
@@ -1308,8 +1328,10 @@
 											first-hand about the competition let us do a better analysis, which
 											basically
 											consists on the following benchmarking:
+											<br>
+											
 											<img class="dairy"
-												src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/benchmarkingofi.png">
+												src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/benchmarking-1.webp ">
 											<br>
 											The common factor among current treatments is that those falling under the
 											antibiotic category leave residues in milk, requiring a withdrawal period of
