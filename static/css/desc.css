@@ -65,7 +65,18 @@
   color: #5BC5AB;
   text-decoration: underline;
 }
-  
+.hipervinculoRosa {
+  font-family: 'Quicksand';
+  font-weight: 700;
+  color: #CE788F;
+}
+
+.hipervinculoRosa:hover {
+  font-family: 'Quicksand';
+  font-weight: 700;
+  color: #CE788F;
+  text-decoration: underline;
+}
 
     p {
         align-content: center;
