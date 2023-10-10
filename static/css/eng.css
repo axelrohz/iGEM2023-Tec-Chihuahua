@@ -929,6 +929,7 @@ input {
   margin-bottom: 80px;
   display: flex;
   flex-wrap: wrap;
+  flex-direction:row;
 }
 
 .engcont h3{
@@ -983,8 +984,7 @@ input {
   height: 200px;
   width:200px;
   border-radius: 50%;
-  background: var(--gradient);;
-  justify-self: center;
+  background: var(--gradient);
   padding: 50px;
   margin: 10px;
   align-self: center;
