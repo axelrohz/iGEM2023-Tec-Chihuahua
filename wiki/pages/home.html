@@ -22,13 +22,14 @@
     <div id="show1" class="homeUsContainer">
         <div class="firstUS">
             <div class="homeUsTitle"> Intro o algo </div>
-            <img class="homeUsIMG" src="https://seastreak.com/wp-content/themes/seastreak/build/images/2022-whale.jpg" alt="iGEM US">
+            <img class="homeUsIMG" src="https://static.igem.wiki/teams/4607/wiki/home/badfood.png" alt="iGEM US">
         </div>
         <div class="secondUS">
-            <img class="homeUsIMG2" src="https://seastreak.com/wp-content/themes/seastreak/build/images/hp-nyc-brunch.jpg" alt="iGEM US">
+            <img class="homeUsIMG2" src="https://static.igem.wiki/teams/4607/wiki/home/milkwaste.png" alt="iGEM US">
             <p class="homeUsText">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel massa a risus ornare dapibus. In iaculis urna at luctus condimentum. Nulla pellentesque consectetur pellentesque. Donec lectus quam, porttitor sed sem at, tristique maximus neque. In viverra et nisl non placerat. Cras sem sapien, auctor quis luctus sit amet, semper non arcu. Aliquam in turpis turpis. Nullam luctus tincidunt orci at laoreet. Nunc dapibus gravida elit. <br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel massa a risus ornare dapibus. In iaculis urna at luctus condimentum. Nulla pellentesque consectetur pellentesque. Donec lectus quam, porttitor sed sem at, tristique maximus neque. In viverra et nisl non placerat. Cras sem sapien, auctor quis luctus sit amet, semper non arcu. Aliquam in turpis turpis. Nullam luctus tincidunt orci at laoreet. Nunc dapibus gravida elit. 
+                Besides its high nutritional value in the life of many people around the world, milk contributes to more of the <b> 10% </b> of <b> global nutrient availability, </b> Dairy production holds a significant position on the global stage, offering both economic and nutritional advantages as milk alone accounts for approximately  <b> 8%  </b> of the  <b> world's total food </b> production.<b><sup>1</sup></b>
+                <br>
+                Dairy farming is a widespread agricultural practice, with people milking dairy animals in nearly every corner of the globe. Remarkably, as many as one  <b> billion people </b> reside on dairy farms.<b><sup>2</sup></b>
             </p>
         </div>
     </div>
@@ -223,6 +224,28 @@
         </div>
 
     </div>
+
+    <div class="accordion-item">
+        <div class="accordion-item-header">
+          References
+        </div>
+        <div class="accordion-item-body">
+          <div class="accordion-item-body-content">
+            <p align="justify" id="referencia1">
+                (1) Santos, Ana Sofia. “Milk Benefits: Should We Drink Milk?” 
+                <em>Ruminants.ceva.pro,</em>
+                 2023, ruminants.ceva.pro/milk-benefits-should-we-drink-milk#:~:text=Dairy%20production%20is%20a%20major. Accessed 10 Oct. 2023.
+            </p>
+            <p align="justify" id="referencia2">
+              (2) International Dairy Federation. 
+              <em>IDF Factsheet – February 2013 Scientific Excellence Industry Applicability Strategic Networking Global Influence.</em>
+               2013.
+
+            </p>
+
+          </div>
+        </div>
+      </div>
 
     <script type="text/javascript">
         let cardNumber = 0;
@@ -554,6 +577,33 @@ function reveal(){
 }
 
     </script>
+
+    <script>
+        const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+
+        accordionItemHeaders.forEach(accordionItemHeader => {
+        accordionItemHeader.addEventListener("click", event => {
+
+            // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
+
+            // const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
+            // if(currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader!==accordionItemHeader) {
+            //   currentlyActiveAccordionItemHeader.classList.toggle("active");
+            //   currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+            // }
+
+            accordionItemHeader.classList.toggle("active");
+            const accordionItemBody = accordionItemHeader.nextElementSibling;
+            if (accordionItemHeader.classList.contains("active")) {
+            accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+            }
+            else {
+            accordionItemBody.style.maxHeight = 0;
+            }
+
+        });
+        });
+  </script>
 
 </div>
 
