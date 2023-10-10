@@ -145,7 +145,7 @@ engineering design cycle.{% endblock %}
                 <div class="button-content">
                   <p class="tituloBoton">Protein <br> Induction</p>
                   <button
-                    onclick="showSection('sectionMethods'),document.getElementById('titulo_silver').scrollIntoView();"
+                    onclick="showSection('sectionMethods'),document.getElementById('titulo_silver').scrollIntoView({ behavior: 'smooth'});"
                     class="learnMore">Go to section</button>
                 </div>
               </div>
@@ -153,7 +153,7 @@ engineering design cycle.{% endblock %}
                 <div class="button-content">
                   <p class="tituloBoton">Golden Gate Assembly</p>
                   <button
-                    onclick="showSection('sectionOverview'),document.getElementById('titulo_OB').scrollIntoView();"
+                    onclick="showSection('sectionOverview'),document.getElementById('titulo_OB').scrollIntoView({ behavior: 'smooth'});"
                     class="learnMore">Go to section</button>
                 </div>
               </div>
@@ -161,7 +161,7 @@ engineering design cycle.{% endblock %}
                 <div class="button-content">
                   <p class="tituloBoton">Bactericidal Assays</p>
                   <button
-                    onclick="showSection('sectionResults'),document.getElementById('titulo_gold').scrollIntoView();"
+                    onclick="showSection('sectionResults'),document.getElementById('titulo_gold').scrollIntoView({ behavior: 'smooth'});"
                     class="learnMore">Go to section</button>
                 </div>
               </div>
@@ -198,7 +198,6 @@ engineering design cycle.{% endblock %}
                   <h2 class="subtitleO">First Cycle: DNA Assembly</h2>
                 </div>
               </div>
-              <!--cosas del index-->
               <div class="contOurBeg1">
                 <p class="contenido">
                   Our product is composed of three fusion-endolysins: <a class="hipervinculoaqua"
@@ -959,70 +958,66 @@ engineering design cycle.{% endblock %}
 
 
 
+              </p>
+              </div>
+            </div>
+
+
+            <!--CAMBIOI DE SECCION-->
+            <div id="sectionMethods" class="sectM">
+              <!--seccion Methods-->
+              <div class="secciones">
+                <br id="titulo_silver">
+                <br>
+                <br>
+                <br>
+                <div class="seccionMethods">
+                  <h2 class="subtitleM">Protein Induction</h2>
+                </div>
+              </div>
+              <!--AQUI, DENTRO DE ESTE DIV PONER EL CONTENIDO-->
+              <div>
+                <p class="contenido">
+                  que ondaaaaa, aqui se poneeee, se puede quitar este elemento "p" para poner otras cosas
                 </p>
               </div>
             </div>
 
 
 
+            <!--CAMBIOI DE SECCION-->
+            <div id="sectionResults" class="sectR">
+              <div class="contenido">
+                <br id="titulo_gold">
+                <br>
+                <br>
+                <br>
+                <div class="secciones">
+                  <div class="seccionOverview">
+                    <h2 class="subtitleO">Bactericidal Assays</h2>
+                  </div>
+                </div>
 
-
-
-
-
-
-
-
-            </p>
-          </div>
-        </div>
-
-
-
-
-        <div id="sectionMethods" class="sectM">
-          <!--seccion Methods-->
-          <div class="secciones">
-            <br id="titulo_silver">
-            <br>
-            <br>
-            <br>
-            <div class="seccionMethods">
-              <h2 class="subtitleM">Protein Induction</h2>
+                <!--AQUI, DENTRO DE ESTE PONER EL CONTENIDO-->
+                <div class="contOurBeg1">
+                  <p class="contenido">
+                    Holaaa, aqui se poneeee, se puede quitar este elemento "p" para poner otras cosas
+                  </p>
+                </div>
+              </div>
+    
+    
             </div>
-          </div>
-          <div class="layout">
-
-            <div class="tituloContenido">
-
-            </div>
-            <p class="contenido">
-
-            </p>
-          </div>
-        </div>
 
 
-        <div id="sectionResults" class="sectR">
-          <br id="titulo_OB">
-          <br>
-          <br>
-          <br>
-          <div class="secciones">
-            <div class="seccionOverview">
-              <h2 class="subtitleO">Bactericidal Assays</h2>
-            </div>
-          </div>
-          <!--cosas del index-->
-          <div class="contOurBeg1">
-            <p class="contenido">
-              content
-            </p>
+
+
           </div>
 
 
 
-        </div>
+
+
 
       </div>
 
