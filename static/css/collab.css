@@ -203,6 +203,7 @@ button b { font-size:50px; font-weight:800; padding:0; line-height:2em; padding:
   min-height: 334px;
   min-height: -webkit-fill-available;
   transition: 0.7s;
+  margin-top: 3vw;
 }
 
 .solution_cards_box .solution_card:hover {
@@ -442,8 +443,13 @@ button b { font-size:50px; font-weight:800; padding:0; line-height:2em; padding:
   transition: 1.2s ease-in-out;
 }
 .image--cover {
- 
-
   object-fit: cover;
   object-position: center right;
+  background: currentColor;
+  padding-top: 2.5vw;
+  padding-left: 8vw;
+  margin-top: 1vw;
+  margin-bottom: -4vw;
+  margin-left: 4vw;
+  margin-right: 4vw;
 }
