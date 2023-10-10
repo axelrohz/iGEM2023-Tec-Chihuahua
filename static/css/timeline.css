@@ -2,10 +2,10 @@
 
 .blog-card{
     position: relative;
-    height: 370px;
-    width: 95%;
-    max-width: 850px;
-    margin: 10px 10px 10px 200px;
+    height: 25vw;
+    width: 60vw;
+    max-width: 60vw;
+    margin: 1vw 1vw 1vw 16vw;
     border-radius: 25px;
     background: linear-gradient(147deg,#5BC5AB 0%, rgb(198, 244, 234) 74%);
     box-shadow: 0px 10px 50px #5BC5AB;
@@ -13,20 +13,20 @@
   .inner-part{
     position: absolute;
     display: flex;
-    height: 360px;
+    height: 25vw;
     align-items: center;
     justify-content: center;
-    padding: 0 25px;
+    padding: 0 2vw;
   }
-  .inner-part .img{
-      height: 260px;
-      width: 260px;
-      flex-shrink: 0;
-      overflow: hidden;
-      border-radius: 20px;
-      position: relative;
-      margin-bottom: 120px;
-    }
+  .inner-part .img {
+    height: 18vw;
+    width: 18vw;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 1vw;
+    position: relative;
+    margin-bottom: 0vw;
+  }
   .img .imgmethodology{
     height: 100%;
     width: 100%;
@@ -44,9 +44,8 @@
     transition-delay: .2s;
   }
   .content-methodology{
-    padding: 0 20px 0 35px;
-    width: 530px;
-    margin-left: 50px;
+    padding: 0 2vw 0 3.5vw;
+    width: 37vw;
     opacity: 0;
     transition: .6s;
   }
@@ -65,36 +64,40 @@
   .content-methodology .titleMethodology{
     display: block;
     color: #0d0925;
-    font-size: 30px;
+    font-size: 2.2vw;
     font-weight: 500;
-    line-height: 30px;
+    max-width: 29vw;
+    line-height: 2vw;
+    margin-left: 0vw;
   }
   /*este es el texto */
   .content-methodology .textMethodology{
     color: #4e4a67;
-    font-size: 16px;
-    margin-bottom: 20px;
-    padding-top: 20px;
+    font-size: 1.1vw;
+    margin-bottom: 2vw;
+    padding-top: 1vw;
     line-height: 1.5em;
     text-align: justify;
     font-family: 'Quicksand';
+    margin-left: 0vw;
+    max-width: 58vw;
   }
   
   .sliders{
     position: absolute;
-    bottom: 30px;
-    left: 60%;
+    bottom: 2vw;
+    left: 36vw;
     transform: translateX(-50%);
     z-index: 15;
   }
   .sliders .tap{
     position: relative;
-    height: 15px;
-    width: 50px;
+    height: 1vw;
+    width: 3vw;
     background: #d9d9d9;
     border-radius: 10px;
     display: inline-flex;
-    margin: 0 1px;
+    margin: 0 0.1vw;
     cursor: pointer;
   }
   .sliders .tap:hover{

@@ -203,10 +203,33 @@ button b { font-size:50px; font-weight:800; padding:0; line-height:2em; padding:
   min-height: 334px;
   min-height: -webkit-fill-available;
   transition: 0.7s;
+  margin-top: 3vw;
 }
 
+.solution_cards_box .solution_card2 {
+  flex: 0 50%;
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2),
+    0 5px 15px 0 rgba(37, 44, 97, 0.15);
+  border-radius: 15px;
+  margin: 8px;
+  padding: 10px 15px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  min-height: 334px;
+  min-height: -webkit-fill-available;
+  transition: 0.7s;
+}
 .solution_cards_box .solution_card:hover {
   background: #5BC5AB;
+  color: #fff;
+  transform: scale(1.1);
+  z-index: 9;
+}
+
+.solution_cards_box .solution_card2:hover {
+  background: #D794A8;
   color: #fff;
   transform: scale(1.1);
   z-index: 9;
@@ -218,6 +241,11 @@ button b { font-size:50px; font-weight:800; padding:0; line-height:2em; padding:
 
 .solution_cards_box .solution_card:hover .solu_title h3,
 .solution_cards_box .solution_card:hover .solu_description p {
+  color: #fff;
+}
+
+.solution_cards_box .solution_card2:hover .solu_title h3,
+.solution_cards_box .solution_card2:hover .solu_description p {
   color: #fff;
 }
 
@@ -249,11 +277,22 @@ button b { font-size:50px; font-weight:800; padding:0; line-height:2em; padding:
   margin-bottom: 13px;
 }
 
+.solution_card2 .solu_title div {
+  color: #212121;
+  font-size: 1.3rem;
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+
 .solution_card .solu_description p {
   font-size: 15px;
   margin-bottom: 15px;
 }
 
+.foto_event_summer{
+  margin-left: 21vw;
+  max-width: 40vw;
+}
 .solution_card .solu_description button {
   border: 0;
   border-radius: 15px;
@@ -294,6 +333,10 @@ button b { font-size:50px; font-weight:800; padding:0; line-height:2em; padding:
 }
 
 .solution_cards_box .solution_card:hover .hover_color_bubble {
+  top: 0rem;
+}
+
+.solution_cards_box .solution_card2:hover .hover_color_bubble {
   top: 0rem;
 }
 
@@ -442,8 +485,13 @@ button b { font-size:50px; font-weight:800; padding:0; line-height:2em; padding:
   transition: 1.2s ease-in-out;
 }
 .image--cover {
- 
-
   object-fit: cover;
   object-position: center right;
+  background: currentColor;
+  padding-top: 2.5vw;
+  padding-left: 8vw;
+  margin-top: 1vw;
+  margin-bottom: -4vw;
+  margin-left: 4vw;
+  margin-right: 4vw;
 }

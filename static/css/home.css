@@ -67,11 +67,13 @@ body::-webkit-scrollbar {
 }
 
 .videoHome{
-    width: 100.1vw;
+    width: 100%;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
+    background-color: black;
+    object-fit: cover;
 }
 
 .scrollBTNHome{
@@ -567,16 +569,16 @@ transform: scaleX(-1);
 .howWeDoItText{
     width: 100%;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: 400;
     margin: 0;
     padding: 20px 14%;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .howWeDoItCard{
     width: 350px;
-    height: 500px;
+    height: 600px;
     background-color: rgb(255, 255, 255);
     margin: 0 20px;
     border-radius: 20px;
@@ -696,9 +698,103 @@ transform: scaleX(-1);
     align-items: center;
     border-radius: 10px;
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.45);
-    font-size: 1.8rem;
-    font-weight: 600;
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr5KDl3_TeEiOzzKc7Z2guRYzgRudImme-MQ&usqp=CAU');
     background-size: cover;
+    overflow: hidden;
+    z-index: -1;
+    position: relative;
 
 }
+
+.homeSectionSelectorText::before {
+    content: "";
+    position: relative;
+    top: 0; left: 0;
+    width: 100%; 
+    height: 100%;
+    background-image: var(--imageBHome);
+    background-size: cover;
+    filter: brightness(0.6);
+    z-index: -1;
+}
+
+.imgHomeText{
+    position: absolute;
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: white;
+    z-index: 100;
+    width: 100%;
+    text-align: center;
+}
+
+.homeSectionSelectorText.dark .imgHomeText{
+    color: white;
+}
+
+.accordion-item {
+    background-color: #fff;
+    color: #111;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+    width: 90%;
+    justify-self: center;
+  
+  }
+  
+  .accordion-item {
+    justify-self: center;
+    background-color: #ffffff;
+    color: #111;
+    margin: auto;
+    border-radius: 3px;
+    box-shadow: 7px 7px #5BC5AB ;
+    width: 80%;
+    margin-bottom: 20px;
+    border: solid 0.5px #EBEBF1;
+  
+  }
+  
+  
+  .accordion-item-header {
+    min-height: 60px;
+    font-size: 1.2rem;
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    line-height: 1.5;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Bricolage Grotesque';
+    font-size: 1.5rem;
+  }
+  .accordion-item-header::after {
+    content: "\002B";
+    font-size: 1.5rem;
+    position: absolute;
+    right: 1rem;
+  }
+  .accordion-item-header.active::after {
+    content: "\2212";
+  }
+  .accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    padding-left: 20px;
+    padding-right: 20px;
+  
+  }
+  .accordion-item-body-content {
+    padding: 1rem;
+    line-height: 1.5rem;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+    justify-content:center;
+    font-weight: 600;
+    font-family: 'Quicksand';
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+  }

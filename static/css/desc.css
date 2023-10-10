@@ -73,6 +73,91 @@
   text-decoration: underline;
 }
 
+/*flecha primer slider*/
+.flechaSig1{
+  position: relative;
+  top: 3.9vw;
+  left: 5vw;
+  width: fit-content;
+}
+
+/*felchas segunda slider*/
+.flechaAnt1{
+  position: relative;
+  top: 1.4vw;
+  left: 1.6vw;
+  height: 1vw;
+  width: fit-content;
+}
+
+.flechaSig2{
+  position: relative;
+  top: 0.4vw;
+  left: 8vw;
+  height: 1vw;
+  width: fit-content;
+}
+
+/*flecha tercer slider*/
+
+.flechaAnt2{
+  position: relative;
+  top: 0.4vw;
+  left: 5vw;
+  height: 1vw;
+  width: fit-content;
+}
+.flechaSig3{
+  position: relative;
+  top: -0.6vw;
+  left: 11.5vw;
+  height: 1vw;
+  width: fit-content;
+}
+
+/*flecha cuarto slider*/
+
+.flechaAnt3{
+  position: relative;
+  top: 3vw;
+  left: 8vw;
+  height: 1vw;
+  width: fit-content;
+}
+.flechaSig4{
+  position: relative;
+  top: 2vw;
+  left: 15vw;
+  height: 1vw;
+  width: fit-content;
+}
+/*flecha quinto slider*/
+
+.flechaAnt4{
+  position: relative;
+  top: 4.9vw;
+  left: 11.7vw;
+  height: 1vw;
+  width: fit-content;
+}
+.flechaSig5{
+  position: relative;
+  top: 3.9vw;
+  left: 18.5vw;
+  height: 1vw;
+  width: fit-content;
+}
+/*flecha sexto slider*/
+
+.flechaAnt5{
+  position: relative;
+  top: 1.9vw;
+  left: 15vw;
+  height: 1vw;
+  width: fit-content;
+}
+
+
 
 p {
   align-content: center;
@@ -1083,8 +1168,12 @@ h1 {
 
 }
 
-.referencia {
-  color: #447D9C
+.referencias{
+  color: #5BC5AB
+}
+
+.referencias:hover{
+  color: #5BC5AB
 }
 
 /*INFECTED UDDER*/

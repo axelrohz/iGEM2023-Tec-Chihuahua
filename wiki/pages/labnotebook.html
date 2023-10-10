@@ -6,14 +6,16 @@
 {% block page_content %}
 
 <head>
-<link rel="stylesheet" href="../../static/css/notebook.css">
-<link href="{{ url_for('static', filename = 'css/notebook.css') }}" rel="stylesheet">
-<link rel="stylesheet" href="../../static/css/NotebookResp.css">
-<link href="{{ url_for('static', filename = 'css/NotebookResp.css') }}" rel="stylesheet">
-<link rel="stylesheet" href="static/css/waveHead.css">
-<script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
-<script src="../../static/assets/js/notebook.js"></script>
-<script src="{{ url_for('static', filename = 'assets/js/notebook.js') }}"></script>
+  <link rel="stylesheet" href="../../static/css/notebook.css">
+  <link href="{{ url_for('static', filename = 'css/notebook.css') }}"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../../static/css/NotebookResp.css">
+  <link href="{{ url_for('static', filename = 'css/NotebookResp.css') }}"
+    rel="stylesheet">
+  <link rel="stylesheet" href="static/css/waveHead.css">
+  <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+  <script src="../../static/assets/js/notebook.js"></script>
+  <script src="{{ url_for('static', filename = 'assets/js/notebook.js') }}"></script>
 </head>
 
 <body>
@@ -89,7 +91,68 @@
       <div class="slider-content">
         <ul class="vinniot">
           <b><p>Week 25</p></b>
-          <li><b>23th:</b>Commencement of operations in the wet lab</li>
+          <li><b>June 23th:</b></li>
+          <p style="text-indent: 2rem;">◦ Commencement of operations in the wet
+            lab with
+            inventory, arrangement, and sterilization of the spaces and
+            materials to be used.</p><br>
+
+          <b><p>Week 26</p></b>
+          <li><b>June 26th: </b></li>
+          <p style="text-indent: 2rem;">◦ Preparation of general culture media.</p>
+          <p style="text-indent: 2rem;">◦ Reactivation of the <em>E. coli</em>
+            5-alpha
+            strain for its use in plasmid storage and replication.</p>
+          <li><b>June 27th: </b></li>
+          <p style="text-indent: 2rem;">◦ Resuspension of pDNA from the 2023
+            plates for the construction of the transcriptional unit: promoter
+            (BBa_J435350, C15-plate 2), RBS (BBa_Z0262, I18-plate 1), terminator
+            (BBa_J435371, O23-plate 2), and backbone (BBa_J435330, A15-plate 2).</p>
+          <p style="text-indent: 2rem;">◦ Attempted transformation of <em>E.
+              coli</em>
+            5-alpha with the resuspended plasmids: promoter, RBS, terminator,
+            and backbone.</p>
+          <li><b>June 28th: </b></li>
+          <p style="text-indent: 2rem;">◦ Colonies transformed with the backbone
+            and RBS showed growth on the selective medium, although the RBS grew
+            with a biofilm beneath the colonies. Promoter and terminator did not
+            yield colonies.</p>
+          <p style="text-indent: 2rem;">◦ Reattempted transformation of <em>E.
+              coli</em>
+            5-alpha with the resuspended plasmids: promoter, RBS, terminator,
+            and backbone.</p>
+          <p style="text-indent: 2rem;">◦ Inoculation by colony pick into
+            selective LB broth of the transformant with backbone.</p>
+          <p style="text-indent: 2rem;">◦ Replating RBS from plate to plate to
+            isolate colonies from the biofilm for subsequent analysis.</p>
+          <li><b>June 29th: </b></li>
+          <p style="text-indent: 2rem;">◦ Once again, there were backbone
+            transformants, from which colony picks were inoculated into
+            selective LB broth.</p>
+          <p style="text-indent: 2rem;">◦ Only one transformant colony was
+            obtained for the terminator, which was then transferred to selective
+            LB broth.</p>
+          <p style="text-indent: 2rem;">◦ Transformants with the RBS were
+            obtained again, but with the same abnormal growth pattern with
+            biofilm beneath the colonies. Another replating was performed.</p>
+          <p style="text-indent: 2rem;">◦ No transformants were obtained for the
+            promoter.</p>
+          <p style="text-indent: 2rem;">◦ Due to the transformation results, an
+            alternative approach was pursued: pDNA promoter, terminator, and RBS
+            from the 2022 plate were resuspended.</p>
+          <p style="text-indent: 2rem;">◦ Subsequently, transformation of E.
+            coli 5-alpha was carried out using the resuspended parts from the
+            2022 plate.</p>
+          <li><b>June 30th: </b></li>
+          <p style="text-indent: 2rem;">◦ No transformants for the promoter and
+            terminator.</p>
+          <p style="text-indent: 2rem;">◦ RBS exhibited the same unusual biofilm
+            growth beneath the colonies. A plate-to-plate replating was
+            performed.</p>
+          <p style="text-indent: 2rem;">◦ Cryovials were prepared with the
+            inocula from the backbone and terminator transformants.</p>
+          <p style="text-indent: 2rem;">◦ Minipreps were conducted with the
+            inocula from the backbone and terminator transformants.</p><br>
         </ul>
       </div>
     </div>
@@ -98,37 +161,219 @@
       <div id="July" class="sliders"></div>
       <div class="slider-content">
         <ul class="vinniot">
-          <li><b>2nd:</b> The context of the problem of mastitis was thoroughly
-            investigated.</li>
-          <li><b>3rd:</b> Zoom interview with Imelda Ramos.</li>
-          <li><b>5th</b> Visit to DELMAR.</li>
-          <li><b>7th:</b> The human, entrepreneurship and wiki team visited the
-            Zaragoza dairy farm.</li>
-          <li><b>10th:</b> In silico simulation of constructs in agarose gel
-            electrophoresis. <br> Resuspension of LysCSA13 and LysK DNA from
-            Twist. <br> The impact grant call was reviewed. <br> CBTa 90 was
-            visited in Cuauhtemoc to learn the milking process. <br> Class
-            taught by Adrian Sandoval on mastitis.</li>
-          <li><b>11th:</b> Production of chemocompetent 5-alpha cells. <br>
-            Transformation of pUC19 with chemocompetent cells. <br> Start
-            competitor analysis for AureoBos. <br> The sponsorship document was
-            sent to Los Pinos.</li>
-          <li><b>13th:</b> Surveys were conducted with dairy consumers in our
-            community and an informative brochure was distributed to them.</li>
-          <li><b>15th:</b> The interview was carried out with the UACJ (for its
-            acronym in English, Autonomous University of Ciudad Juarez). </li>
-          <li><b>15th and 16th:</b> Attend the iGEM Entrepreneurship Summer
-            School.</li>
-          <li><b>17th:</b> Visit to Establo 1967 in Meoqui, Chihuahua, Mexico.
-            <br> Visit to the cowshed called 1967.</li>
-          <li><b>18th:</b> Golden Gate assembly of LysCSA13 and LysK
-            transcriptional units. <br> Visit to Cesar Loya's small cowshed.</li>
-          <li><b>19th:</b> Interview with Eng. Betty Castro.</li>
-          <li><b>24th:</b> Register AureoBos in Stella Orion. <br> Sponsorships
-            were requested to local and national laboratories.</li>
-          <li><b>27th:</b> Writing of Manual 101 (contribution by
-            entrepreneurship).</li>
-          <li><b>28th:</b> Visit to Mennonite Dairy.</li>
+          <b><p>Week 27</p></b>
+          <li><b>July 3rd: </b></li>
+          <p style="text-indent: 2rem;">◦ Once again, the transformation of E.
+            coli was attempted with the parts: promoter, RBS and terminator from
+            the 2023 plates.</p>
+          <p style="text-indent: 2rem;">◦ The minipreps of the backbone and
+            terminator performed on June 30th were quantified using NanoDrop
+            2000.</p>
+          <p style="text-indent: 2rem;">◦ Furthermore, inoculations of the
+            backbone and terminator were repeated in selective LB broth.
+            Additionally, an inoculation in selective LB broth was performed for
+            the RBS isolated through previous replating.</p>
+          <li><b>July 4th: </b></li>
+          <p style="text-indent: 2rem;">◦ Once again, no transformants were
+            obtained for either the promoter or terminator. For the RBS, fewer
+            than 5 colonies were obtained, displaying the same abnormal biofilm
+            growth beneath the colonies.</p>
+          <p style="text-indent: 2rem;">◦ Using the inocula from July 3rd,
+            cryovials were prepared for the RBS, promoter, and backbone. With
+            the remaining inoculations, minipreps were conducted for the RBS,
+            promoter, and backbone.</p>
+          <p style="text-indent: 2rem;">◦ Immediately after completing the
+            minipreps, quantification of all three minipreps was performed using
+            NanoDrop 2000.</p>
+          <p style="text-indent: 2rem;">◦ To verify the sensitivity of the used
+            <em>E. coli</em> 5-alpha strain to the antibiotic chloramphenicol
+            (used for
+            selecting RBS transformants), non-transformed bacteria were replated
+            on an agar plate with chloramphenicol (25 µg/mL) and left to
+            incubate.</p>
+          <p style="text-indent: 2rem;">◦ A Gram staining of the RBS was
+            performed to rule out the presence of any other strain resistant to
+            the antibiotic chloramphenicol. The result showed pink bacilli in
+            isolated arrangement, characteristic of <em>E. coli</em>.</p>
+          <p style="text-indent: 2rem;">◦ Finally, electrophoresis was conducted
+            for the minipreps carried out on this day (backbone, terminator, and
+            RBS) and those from July 3rd (backbone and terminator).</p>
+          <li><b>July 5th: </b></li>
+          <p style="text-indent: 2rem;">◦ Upon reviewing the plating of
+            non-transformed <em>E. coli</em> 5-alpha seeded on a chloramphenicol
+            plate
+            (25 µg/mL), it was discovered that there was biofilm growth. Further
+            investigation on the specific strain from the supplier's page
+            revealed that the chloramphenicol concentration was not adequate,
+            but rather below the recommended level. The necessary concentration
+            was 33 µg/mL, not 25 µg/mL. This was attributed to the previous
+            results with the RBS. Additional media were prepared with the
+            adjusted chloramphenicol concentration.</p>
+          <p style="text-indent: 2rem;">◦ 5-alpha chemically competent cells
+            were prepared as the commercial chemically competent cells were
+            depleted. Subsequently, a transformation test was carried out with
+            the control plasmid pUC19.</p>
+          <li><b>July 6th: </b></li>
+          <p style="text-indent: 2rem;">◦ The transformation result with the
+            control plasmid yielded 6 colonies. It was decided to repeat the
+            experiment with two main changes: the volumes were halved, and the
+            transformation protocol from the previous day was replaced with the
+            one recommended by the cell provider.</p>
+          <li><b>July 7th: </b></li>
+          <p style="text-indent: 2rem;">◦ The previous day's transformation
+            yielded 5 transformants. Given this equally unsatisfactory result,
+            it was decided to repeat the process early in the following week.</p>
+          <p style="text-indent: 2rem;">◦ Competent cells were prepared to test
+            their effectiveness after being frozen at -80 °C. This experiment
+            would be conducted at the beginning of the following week.</p><br>
+
+          <b><p>Week 28</p></b>
+          <li><b>July 10th: </b></li>
+          <p style="text-indent: 2rem;">◦ Due to the results of the
+            transformations with the parts from the 2023 plates, it was decided
+            to pursue an alternative approach. Previously, Twist Bioscience was
+            commissioned to synthesize complete transcriptional units (TUs) for
+            LysK and LysCSA13. The synthesized pDNA was then resuspended for
+            subsequent assembly into the successful BBa_J435330 backbone
+            recovered from plate 2023. The resuspension of the synthesized pDNA
+            was carried out at a final stock concentration, and aliquots of each
+            TU were immediately prepared.</p>
+          <p style="text-indent: 2rem;">◦ Furthermore, a pre-inoculum of <em>E.
+              coli</em>
+            5-alpha was prepared for subsequent use in producing chemically
+            competent cells.</p>
+          <li><b>July 11th: </b></li>
+          <p style="text-indent: 2rem;">◦ The chemically competent cell
+            production protocol was executed, with the modification of employing
+            a larger EM flask (250 mL) in an attempt to enhance transformation
+            efficiency by allowing better cell growth. The transformation was
+            carried out with the control plasmid pUC19 using the freshly
+            prepared cells and also with the cells thawed from July 7th. This
+            was done to assess transformation efficiency after undergoing deep
+            freezing.</p>
+          <li><b>July 12th: </b></li>
+          <p style="text-indent: 2rem;">◦ The transformation result from the
+            previous day yielded approximately 40 colonies, signifying a
+            significant improvement in transformation efficiency. This confirmed
+            that the use of larger flasks for the production of competent cells
+            was a better choice.</p>
+          <p style="text-indent: 2rem;">◦ A pre-inoculum of <em>E. coli</em>
+            5-alpha was
+            prepared for subsequent use in competent cell production.</p>
+          <li><b>July 13th: </b></li>
+          <p style="text-indent: 2rem;">◦ It was decided to repeat the
+            production of chemically competent cells and the transformation,
+            this time varying the incubation time for cell recovery after the
+            heat shock. We tested with 1 and 2 hours.</p>
+          <p style="text-indent: 2rem;">◦ A pre-inoculum of <em>E. coli</em>
+            5-alpha was
+            prepared for subsequent use in competent cell production.</p>
+          <li><b>July 14th: </b></li>
+          <p style="text-indent: 2rem;">◦ The transformation yielded between
+            40-50 colonies for the one-hour incubation, and between 80-90
+            colonies for the two-hour incubation. It was established that a
+            two-hour incubation period would be used for all future
+            transformations.</p><br>
+
+          <b><p>Week 29</p></b>
+          <li><b>July 17th: </b></li>
+          <p style="text-indent: 2rem;">◦ A pre-inoculum of <em>E. coli</em>
+            5-alpha was
+            prepared for subsequent use in competent cell production.</p>
+          <li><b>July 18th: </b></li>
+          <p style="text-indent: 2rem;">◦ We performed the Golden Gate assembly
+            protocol to assemble the synthesized TUs of LysK and LysCSA13 into
+            the BBa_J435330 backbone.</p>
+          <p style="text-indent: 2rem;">◦ Subsequently, we prepared chemically
+            competent <em>E. coli</em> 5-alpha cells and conducted the
+            transformation
+            protocol using the products of the Golden Gate assembly as genetic
+            material to transform.</p>
+          <p style="text-indent: 2rem;">◦ A pre-inoculum of <em>E. coli</em>
+            5-alpha was
+            prepared for subsequent use in competent cell production.</p>
+          <li><b>July 19th: </b></li>
+          <p style="text-indent: 2rem;">◦ As a result of the transformation,
+            colonies grew on all plated dishes, including the negative controls.
+            Given this outcome and considering that the utilized backbone
+            typically possesses two antibiotic resistances, but only one when
+            ligated, re-plating was performed for screening with antibiotics.
+            This was done to determine whether any of the colonies had been
+            transformed with the cloned plasmid or if only colonies with the
+            unligated backbone were present.</p>
+          <li><b>July 20th: </b></li>
+          <p style="text-indent: 2rem;">◦ It was determined that two of the
+            re-plated quadrants, 16 and 18 of BBa_J435330-LysK, exhibited the
+            characteristic of having only one antibiotic resistance (kanamycin
+            and not ampicillin). This is typical of the ligated backbone, which
+            loses the ampicillin resistance gene after ligation. Consequently,
+            inoculations of these two quadrants were made in selective LB broth
+            for subsequent miniprep and analysis via electrophoresis.</p>
+          <p style="text-indent: 2rem;">◦ No quadrant of BBa_J435330-LysCSA13
+            exhibited the same behavior.</p>
+          <li><b>July 21th: </b></li>
+          <p style="text-indent: 2rem;">◦ When retrieving the inoculations from
+            the previous day from quadrants 16 and 18 of BBa_J435330-LysK, we
+            noticed there was hardly any growth, as the turbidity of the broth
+            was nearly imperceptible.</p>
+          <p style="text-indent: 2rem;">◦ Inoculations for quadrants 16 and 18
+            of BBa_J435330-LysK were repeated, taking special care to add the
+            appropriate amount of kanamycin antibiotic (50 µg/mL) to the LB
+            broth.</p>
+          <li><b>July 22th: </b></li>
+          <p style="text-indent: 2rem;">◦ This time, the inoculations showed
+            growth, so minipreps were performed for both BBa_J435330-LysK
+            quadrants 16 and 18.
+            Subsequently, each miniprep was quantified on NanoDrop 2000 and
+            visualized on agarose gels through electrophoresis.</p><br>
+
+          <b><p>Week 30</p></b>
+          <li><b>July 24th: </b></li>
+          <p style="text-indent: 2rem;">◦ Inoculations were repeated in
+            selective broth (kanamycin 50 µg/mL) for quadrants 16 and 18 of
+            BBa_J435330-LysK.</p>
+          <p style="text-indent: 2rem;">◦ In an effort to retest the antibiotic
+            screening to identify colonies transformed with the
+            BBa_J435330-LysCSA13, 32 colonies solely from this transformation
+            were replated.</p>
+          <li><b>July 25th: </b></li>
+          <p style="text-indent: 2rem;">◦ This time, there were indeed quadrants
+            of BBa_J435330-LysCSA13 that displayed the expected behavior:
+            colonies resistant to kanamycin (50 µg/mL) but not to ampicillin
+            (100 µg/mL). Quadrants 9, 18, 20, and 26 stood out.</p>
+          <p style="text-indent: 2rem;">◦ From the aforementioned four
+            quadrants, inoculations were made in selective LB broth (kanamycin
+            50 µg/mL).</p>
+          <p style="text-indent: 2rem;">◦ Cryovials were prepared for quadrants
+            16 and 18 of BBa_J435330-LysK.</p>
+          <li><b>July 26th: </b></li>
+          <p style="text-indent: 2rem;">◦ Minipreps were conducted for quadrants
+            9, 18, 20, and 26 of BBa_J435330-LysCSA13. They were promptly
+            quantified using NanoDrop 2000 and visualized through agarose gel
+            electrophoresis.</p>
+          <p style="text-indent: 2rem;">◦ Additionally, inoculations in
+            selective LB broth were repeated for these four quadrants.</p>
+          <li><b>July 27th: </b></li>
+          <p style="text-indent: 2rem;">◦ Cryovials were prepared for all four
+            quadrants of BBa_J435330-LysCSA13.</p>
+          <p style="text-indent: 2rem;">◦ Enzymatic digestions were conducted
+            using the single-cut enzyme SmaI to verify the plasmids extracted
+            from the quadrants of both BBa_J435330-LysK and
+            BBa_J435330-LysCSA13. These digestions were visualized using agarose
+            gel electrophoresis.</p>
+          <li><b>July 28th: </b></li>
+          <p style="text-indent: 2rem;">◦ A transformation of the <em>E. coli</em>
+            Bl21
+            (DE3) strain was carried out with the BBa_J435330-LysK and
+            BBa_J435330-LysCSA13 obtained through Golden Gate assembly.</p>
+          <li><b>July 31th: </b></li>
+          <p style="text-indent: 2rem;">◦ Pre-inoculum of <em>E. coli</em> BL21 (DE3)
+            were conducted in selective LB broth (kanamycin 50 µg/mL) for
+            BBa_J435330-LysK and BBa_J435330-LysCSA13 transformants.
+            Additionally, a pre-inoculum for a negative control, untransformed
+            <em>E. coli</em> BL21 (DE3), was performed.</p>
+
+          <!--<p style="text-indent: 2rem;">◦ </p>-->
 
         </ul>
       </div>

@@ -265,14 +265,40 @@
 
 .stickyButton{
     width: 100%;
-    height: 10vw;
+    height: 12vw;
     min-height: 15vh;
+    max-height: 17vh;
     position: sticky;
     top: 0;
     overflow-x: clip;
     margin-bottom: 40px;
     z-index: 99999;
 
+}
+
+@media screen and (max-width: 760px){
+    .stickyButton{
+        height: 24vw;
+        min-height: 30vh;
+        max-height: 34vh;
+    }
+    
+}
+
+@media screen and (max-width: 470px){
+    .stickyButton{
+        height: 36vw;
+        min-height: 45vh;
+        max-height: 51vh;
+    }
+    
+}
+
+@media screen and (max-width: 326px){
+    .stickyButton{
+        height: 50vw;
+        min-height: 80vh;
+    }
 }
 
 .containCirclesandCont{
@@ -412,15 +438,17 @@
    }
    
    .circles {
-    width: 10vw;
-    height: 10vw;
+    width: 12vw;
+    height: 12vw;
     min-width: 15vh;
     min-height: 15vh;
+    max-width: 17vh;
+    max-height: 17vh;
     color: var(--colorCirc);
     background-color: transparent;
     border: 0px solid var(--colorCirc);
     border-radius: 50%;
-    border-width: 1vw;
+    border-width: 8px;
     position: relative;
     transition: 1s;
     z-index: 10;
@@ -437,6 +465,13 @@
     max-width: 10vw;
     max-height: 10vw;
     border-width: 10px;
+}
+
+@media screen and (max-width: 1250px){
+    .movingContainer.active .circles {
+        border-width: 5px;
+    }
+    
 }
 
 .overview {
@@ -624,7 +659,7 @@
    }
    /* Estilo para los títulos y contenido de los div de los botones */
    .tituloBoton {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
     align-items: center;
     margin: auto auto;
@@ -637,14 +672,21 @@
     transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 1250px){
+    .tituloBoton{
+        font-size: 0.9rem;
+    }
+    
+}
+
 .movingContainer.active .circles .button-content .tituloBoton{
     font-size: 0.9vw;
 }
 
 
-@media screen and (max-width: 1250px){
+@media screen and (max-width: 1200px){
     .movingContainer.active .circles .button-content .tituloBoton{
-        font-size: 1.2vw;
+        font-size: 0.9rem;
     }
 }
 
@@ -667,12 +709,9 @@
         height: 10vw;
         min-width: 15vh;
         min-height: 15vh;
-        border-width: 1vw;
+        border-width: 8px;
         max-width: 10vw;
         max-height: 10vw;
-    }
-    .movingContainer.active .circles .button-content .tituloBoton{
-        font-size: 1.1rem;
     }
 }
 
@@ -1573,6 +1612,19 @@
     transition: 0.5s;
     
   }
+  .clickInfoVan1 {
+    margin: 0 auto;
+    width: fit-content;
+    background: linear-gradient(90deg, #00C9FF 0%, #80e28a 100%);
+    border-radius: 20px;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.5s;
+    margin-left: 51vh;
+    width: 38vh;
+}
 
 /* Cosas del skeleton Loading*/
 .skeleton-box {
@@ -1666,3 +1718,107 @@
       left: -12px;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .clickMeCr{
+      display: none;
+    }
+  }
+    
+  .taffyemprende{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .taffyemprende img{
+    width: fit-content;
+    max-width: 100%;
+  }
+  .subtitleO, .subtitleM, .subtitleU{
+    text-align: center;
+    font-family: 'Bricolage Grotesque';
+    font-size:3vw;
+    font-weight:500;
+    color:#302535; 
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 16px 0;
+    grid-gap: 22px;
+    align-items: center;
+    max-width: 100%;
+    padding-top: 10px;
+   }
+   .subtitleU:after, .subtitleU:before {
+    content: " ";
+    display: block;
+    border: 2px solid #D27063;
+    background-color:#f8f8f8;
+  }
+  .h3, h3 {
+    font-size: 1.75rem;
+    margin-left: 7vh;
+}
+.contenido1 {
+    text-align: justify;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Quicksand';
+    text-align: justify;
+    line-height: 1.5;
+    margin-left: 43px !important;
+    color: black;
+    max-width: 90%;
+}
+.instr_selector1 {
+    background: #309b8d;
+    color: white;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 16px;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    margin-left: 14%;
+    margin-top: -42%;
+    max-width: fit-content;
+}
+.selector {
+    position: relative;
+    left: -33vw;
+    top: -8vw;
+    width: 9.7vw;
+    height: 10vw;
+    margin-top: 25vw;
+    margin-bottom: 8vw;
+}
+.selector li:nth-child(7n+1) input + label {
+    background: #5BC5AB;
+}
+.selector li:nth-child(7n+2) input + label {
+    background: #5BC5AB;
+}
+.selector li:nth-child(7n+3) input + label {
+    background: #5BC5AB;
+}
+.selector li:nth-child(7n+4) input + label {
+    background:#5BC5AB;
+} 
+.selector li:nth-child(7n+5) input + label {
+    background: #5BC5AB;
+}
+.selector li:nth-child(7n+6) input + label {
+    background: #CE788F;
+}
+
+element.style {
+    transform: rotate(-308.571deg);
+}
+.selector li:nth-child(7n+7) input + label {
+    background:#CE788F;
+}
+.selector li:nth-child(7n+1) input + label {
+    background: #5BC5AB;
+}

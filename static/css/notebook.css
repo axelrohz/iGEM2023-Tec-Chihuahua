@@ -1,3 +1,8 @@
+p {
+    margin-top: 0;
+    margin-bottom: 0 !important;
+}
+
 .month-container {
     width: 1142px;
     margin: 0 auto;
@@ -178,6 +183,7 @@
 .vinniot{
     list-style-type: disc; /* Utiliza disc para viñetas */
     padding-left: 20px; /* Espacio a la izquierda de la lista */
+    padding-right: 20px; /* Espacio a la derecha de la lista */
   }
 
   /* Estilo para los elementos de la lista */
