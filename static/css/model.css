@@ -891,6 +891,13 @@ margin-left: 30%;
  background-color:red;
  }
  
+.referencias{
+  color:#D27063;
+}
+.referencias:hover{
+  color: #C55B75;
+}
+
  /*Boton desplegable de referencias*/
 .accordion {
   width: 0%;
