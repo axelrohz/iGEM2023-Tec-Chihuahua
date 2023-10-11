@@ -80,31 +80,10 @@
    			    </div>
    		    </div>
    	    </div>
-	<div class="fraseInicio">
-		<div class="fraseAcomodo">
-			<div class="phrase">
-        <p class = "fraseModel" id="frase">"Precision in every projection, excellence in every decision."</p>
-    	</div>
-			<script>
-				var text = document.getElementById('frase');
-        var newDom = '';
-        var animationDelay = 15;
-
-        for(let i = 0; i < text.innerText.length; i++)
-        {
-            newDom += '<span class="char">' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i])+ '</span>';
-        }
-
-        text.innerHTML = newDom;
-        var length = text.children.length;
-
-        for(let i = 0; i < length; i++)
-        {
-            text.children[i].style['animation-delay'] = animationDelay * i + 'ms';
-        }
-		    </script>
-		</div>
-	</div>
+				<div class="uno">
+					<h1>Precision in every projection,<br>
+						excellence in every decision.</h1>
+				</div>
    	 <!--Seccion que ya sirve, no mover-->
    	 <div class="button-container">
 		<p class="instructionDiagram2">Click "Learn More" to change between sections</p>
