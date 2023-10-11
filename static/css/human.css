@@ -2565,8 +2565,7 @@ table tbody tr td::last-child {
 
 .implementation4,
 .relation4 {
-  margin-left: 0.5vw;
-  margin-top: 0.4vw;
+  margin: auto;
 }
 
 .implementation5,
@@ -3673,7 +3672,7 @@ table tbody tr td::last-child {
 /* Graph */
 /* Containers */
 #wrapper {
-  min-width: 55%;
+  min-width: 100%;
   position: relative;
   margin: 2vw auto;
 }
