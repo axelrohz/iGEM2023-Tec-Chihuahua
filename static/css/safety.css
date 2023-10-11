@@ -788,6 +788,8 @@ ul.unol {
 
 /*NuevoIndexBonito*/
 .teamScroll {
+    position: sticky;
+    top:7vw;
     overflow: visible !important;
 }
 
