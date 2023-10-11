@@ -1,5 +1,5 @@
 body{
-  overflow: clip;
+  overflow-x: clip;
 }
 
 .layout {
@@ -3353,7 +3353,7 @@ table tbody tr td::last-child {
   height: 120px;
   bottom: 8.3vw;
   width: 300px;
-  margin-top: 30px !important;
+  margin-top: 40px !important;
   overflow: hidden;
   position: relative;
   left: 33vw;
