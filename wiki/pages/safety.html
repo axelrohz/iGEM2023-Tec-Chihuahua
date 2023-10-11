@@ -116,6 +116,10 @@
               onclick="goTo('7')">
               <div class="dotText">Equipment</div>
             </div>
+            <div class="dotIndex" id="dot8"
+              onclick="goTo('8')">
+              <div class="dotText">Human Practices</div>
+            </div>
           </div>
 
         </div>
@@ -574,7 +578,33 @@ function showSlides(n) {
           </div>
         </div>
       </div>
-
+      <h2 id="sec8">Human Practices</h2>
+      <p> AureoBos is highly committed to ethical responsibility, privacy, 
+        and the security of individuals involved in our human practices research. 
+        Our investigation was developed with respect and in alignment with data 
+        protection regulations in Mexico. We created a consent form based on the 
+        <b>Federal Law on Protection of Personal Data Held by Private Parties</b>, which 
+        governs and manages all the personal data collected and is established in 
+        the Political Constitution of the United Mexican States. The consent form 
+        underwent a review by our legal team and instructors and was subsequently 
+        approved. </p>
+      <p>Throughout every interview, our primary concern was to maintain the privacy 
+        and data confidentiality of the aspects that individuals preferred to keep 
+        private. We ensured that they felt protected. To achieve this, before each 
+        interview, we presented the consent form to inform them about the personal 
+        data being collected, the purpose of the investigation, and the privacy 
+        measures being followed, If they agreed the consent form was signed.
+      </p>
+      <body class="listBody">
+        <ol class="listol" style="--length: 4">
+            <li class="listli" style="--i: 1">
+                <h3 class="listh3">Privacy Notice</h3>
+                <p class="listp">
+                    <a class="hipervinculoGeneral" target="_blank" href="https://static.igem.wiki/teams/4607/wiki/safety/aviso-de-privacidad-igem-2023-docx.pdf">Privacy_Notice</a>
+                </p>
+            </li>
+        </ol>
+    </body>
       <div class="accordion refer">
         <div class="accordion-item">
           <div id="sec5" class="accordion-item-header" style="text-align: left;">
@@ -645,6 +675,7 @@ function showSlides(n) {
         var sect5 = document.getElementById('sec5');
         var sect6 = document.getElementById('sec6');
         var sect7 = document.getElementById('sec7');
+        var sect8 = document.getElementById('sec8');
     
         var dot1 = document.getElementById('dot1');
         var dot2 = document.getElementById('dot2');
@@ -653,6 +684,7 @@ function showSlides(n) {
         var dot5 = document.getElementById('dot5');
         var dot6 = document.getElementById('dot6');
         var dot7 = document.getElementById('dot7');
+        var dot8 = document.getElementById('dot8');
     
         window.addEventListener('scroll', function () {
           var sect1top = sect1.getBoundingClientRect().top;
@@ -662,6 +694,7 @@ function showSlides(n) {
           var sect5top = sect5.getBoundingClientRect().top;
           var sect6top = sect6.getBoundingClientRect().top;
           var sect7top = sect7.getBoundingClientRect().top;
+          var sect8top = sect8.getBoundingClientRect().top;
           var topPad = 200;
           if (sect7top - topPad <= topPad) {
             dot1.classList.remove('active');
@@ -671,6 +704,7 @@ function showSlides(n) {
             dot5.classList.remove('active');
             dot6.classList.remove('active');
             dot7.classList.add('active');
+            dot8.classList.add('active');
           }  else if (sect6top - topPad <= topPad) {
             dot1.classList.remove('active');
             dot2.classList.remove('active');
@@ -679,6 +713,7 @@ function showSlides(n) {
             dot5.classList.remove('active');
             dot6.classList.add('active');
             dot7.classList.remove('active');
+            dot8.classList.remove('active');
           }  else if (sect5top - topPad <= topPad) {
             dot1.classList.remove('active');
             dot2.classList.remove('active');
@@ -687,6 +722,7 @@ function showSlides(n) {
             dot5.classList.add('active');
             dot6.classList.remove('active');
             dot7.classList.remove('active');
+            dot8.classList.remove('active');
           }  else if (sect4top - topPad <= topPad) {
             dot1.classList.remove('active');
             dot2.classList.remove('active');
@@ -695,6 +731,7 @@ function showSlides(n) {
             dot5.classList.remove('active');
             dot6.classList.remove('active');
             dot7.classList.remove('active');
+            dot8.classList.remove('active');
           } else if (sect3top - topPad <= topPad) {
             dot1.classList.remove('active');
             dot2.classList.remove('active');
@@ -703,6 +740,7 @@ function showSlides(n) {
             dot5.classList.remove('active');
             dot6.classList.remove('active');
             dot7.classList.remove('active');
+            dot8.classList.remove('active');
           } else if (sect2top - topPad <= topPad) {
             dot1.classList.remove('active');
             dot2.classList.add('active');
@@ -711,6 +749,7 @@ function showSlides(n) {
             dot5.classList.remove('active');
             dot6.classList.remove('active');
             dot7.classList.remove('active');
+            dot8.classList.remove('active');
           } else if (sect1top - topPad <= topPad) {
             dot1.classList.add('active');
             dot2.classList.remove('active');
@@ -719,6 +758,7 @@ function showSlides(n) {
             dot5.classList.remove('active');
             dot6.classList.remove('active');
             dot7.classList.remove('active');
+            dot8.classList.remove('active');
           } else {
             dot1.classList.remove('active');
             dot2.classList.remove('active');
@@ -727,6 +767,7 @@ function showSlides(n) {
             dot5.classList.remove('active');
             dot6.classList.remove('active');
             dot7.classList.remove('active');
+            dot8.classList.remove('active');
           }
     
     
