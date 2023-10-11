@@ -419,39 +419,39 @@ input {
 
 .selector.open li:nth-child(1):hover .description1 {
   display: inline-block;
-  left: 12vw;
-  top: -8vw;
+  left: -52vw;
+  top: -10vw;
   width: 750px;
 }
 
 .selector.open li:nth-child(2):hover .description2 {
   display: inline-block;
-  transform: rotate(-52deg);
+  transform: rotate(-71deg);
   margin-top: -50px;
   margin-left: -50px;
+  left: -6vw;
 }
 
 .selector.open li:nth-child(3):hover .description3 {
   display: inline-block;
-  transform: rotate(-103deg);
-  top: -31vw;
-  left: -22vw;
+  transform: rotate(-144deg);
+  top: -21vw;
+  left: -34vw;
 }
 
 .selector.open li:nth-child(4):hover .description4 {
   display: inline-block;
-  transform: rotate(-154deg);
-  left: -42vw;
-  top: -20vw;
+  transform: rotate(-216deg);
+  left: -2vw;
+  top: -23vw;
 }
 
 .selector.open li:nth-child(5):hover .description5 {
   display: inline-block;
-  transform: rotate(154deg);
-  left: -42vw;
-  top: 7vw;
+  transform: rotate(72deg);
+  left: -24vw;
+  top: -27vw;
 }
-
 .circle_description1, .circle_description2, .circle_description3, .circle_description4, .circle_description5{
   color: white;
   width: 24vw;
