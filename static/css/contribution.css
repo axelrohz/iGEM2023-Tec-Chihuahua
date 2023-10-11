@@ -21,7 +21,18 @@
     color: #5BC5AB;
     text-decoration: underline;
   }
-    
+  .instructionDiagram{
+    background-color: #C55B75;
+    color: white;
+    width: fit-content;
+    padding-top: 0.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    height: 3vw;
+    border-radius: 25px;
+    font-size: 1.2vw;
+    margin: auto;
+  }
   
       p {
           align-content: center;
