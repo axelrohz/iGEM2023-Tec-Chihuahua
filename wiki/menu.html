@@ -3,7 +3,20 @@
   <link rel="stylesheet" href="../static/css/smallmenu.css">
   <link href="{{ url_for('static', filename = 'css/menu.css') }}" rel="stylesheet">
   <link href="{{ url_for('static', filename = 'css/smallmenu.css') }}" rel="stylesheet">
-	
+
+  <style>
+    .megaTitle{
+        font-family: 'Quicksand';
+    }
+
+    .megaText{
+        font-family: 'Quicksand';
+    }
+    .textNavbar{
+        font-family: 'Quicksand';
+        font-weight: 600;
+    }
+  </style>
 
   <div class="navBar" id="navBar" >
     <div class="navBarItems">
@@ -28,7 +41,7 @@
                         </div>
                         <div href="{{ url_for('pages', page='notebook') }}" class="megaContent">
                             <div class="megaTitle">Notebook</div>
-                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                            <div class="megaText">Our team's dated journey from start to end </div>
                         </div>
                     </a>    
                     <a href="{{ url_for('pages', page='description') }}" class="megaMenuItem">
@@ -37,7 +50,7 @@
                         </div>
                         <div class="megaContent">
                             <div class="megaTitle">Description</div>
-                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                            <div class="megaText">A deep dive into mastitis and AureoBos</div>
                         </div>
                     </a>    
                     <a href="{{ url_for('pages', page='safety') }}" class="megaMenuItem">
@@ -46,7 +59,7 @@
                         </div>
                         <div class="megaContent">
                             <div class="megaTitle">Safety</div>
-                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                            <div class="megaText">Check our safety measures inside and outside the lab</div>
                         </div>
                     </a>    
                     <a href="{{ url_for('pages', page='contribution') }}" class="megaMenuItem">
@@ -55,7 +68,7 @@
                         </div>
                         <div class="megaContent">
                             <div class="megaTitle">Contributions</div>
-                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                            <div class="megaText">From us to everyone, our contributions to iGEM</div>
                         </div>
                     </a>
                     <a href="{{ url_for('pages', page='engineering') }}" class="megaMenuItem">
@@ -64,7 +77,7 @@
                         </div>
                         <div class="megaContent">
                             <div class="megaTitle">Engineering</div>
-                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                            <div class="megaText">Our full cycles spinning into success </div>
                         </div>
                     </a>
                     <a href="{{ url_for('pages', page='model') }}" class="megaMenuItem">
@@ -73,7 +86,7 @@
                         </div>
                         <div class="megaContent">
                             <div class="megaTitle">Model</div>
-                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                            <div class="megaText"> Equations that shape understanding </div>
                         </div>
                     </a>
 
@@ -84,7 +97,7 @@
                         </div>
                         <div class="megaContent">
                             <div class="megaTitle">Medal Criteria</div>
-                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                            <div class="megaText">Look at our achievements here </div>
                         </div>
                     </a>
 
@@ -96,7 +109,7 @@
                         </div>
                         <div class="megaContent">
                             <div class="megaTitle">Judging Form</div>
-                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                            <div class="megaText">Go to our judging form </div>
                         </div>
                     </a>
                 </div>    
@@ -116,7 +129,7 @@
                         </div>
                         <div class="megaContent">
                             <div class="megaTitle">Members</div>
-                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                            <div class="megaText">Meet the people standing behind this project </div>
                         </div>
                     </a>    
                     <a href="{{ url_for('pages', page='attributions') }}" class="megaMenuItem">
@@ -125,7 +138,7 @@
                         </div>
                         <div class="megaContent">
                             <div class="megaTitle">Attributions</div>
-                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                            <div class="megaText">Give credit where credit is due</div>
                         </div>
                     </a>    
                     <a href="{{ url_for('pages', page='behind') }}" class="megaMenuItem">
@@ -134,7 +147,7 @@
                         </div>
                         <div class="megaContent">
                             <div class="megaTitle">Behind the scenes</div>
-                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                            <div class="megaText">Behind the scenes, where magic happens </div>
                         </div>
                     </a>    
                     <a href="{{ url_for('pages', page='sponsors') }}" class="megaMenuItem">
@@ -143,7 +156,7 @@
                         </div>
                         <div class="megaContent">
                             <div class="megaTitle">Sponsors</div>
-                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                            <div class="megaText">Sponsors which fueled our dreams.</div>
                         </div>
                     </a>
                     <a href="{{ url_for('pages', page='collaborations') }}" class="megaMenuItem">
@@ -152,7 +165,7 @@
                         </div>
                         <div class="megaContent">
                             <div class="megaTitle">Collaborations</div>
-                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                            <div class="megaText">Collaborations: Where ideas converge. </div>
                         </div>
                     </a>
                 </div>    
@@ -172,7 +185,7 @@
                         </div>
                         <div class="megaContent">
                             <div class="megaTitle">Experiments</div>
-                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                            <div class="megaText">Experiments: Unveiling our project's secrets. </div>
                         </div>
                     </a>    
                     <a href="{{ url_for('pages', page='results') }}" class="megaMenuItem">
@@ -181,7 +194,7 @@
                         </div>
                         <div class="megaContent">
                             <div class="megaTitle">Results</div>
-                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                            <div class="megaText">Results speak volumes </div>
                         </div>
                     </a>    
                     <a href="{{ url_for('pages', page='parts') }}" class="megaMenuItem">
@@ -189,8 +202,8 @@
                             <img src="https://static.igem.wiki/teams/4607/wiki/navbar/parts.png" height="100%" alt="logo" class="logo">
                         </div>
                         <div class="megaContent">
-                            <div class="megaTitle">Partss</div>
-                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                            <div class="megaTitle">Parts</div>
+                            <div class="megaText">Building us from scratch </div>
                         </div>
                     </a>    
                     <a href="{{ url_for('pages', page='proof') }}" class="megaMenuItem">
@@ -200,7 +213,7 @@
                         <div class="megaContent">
                             <div class="megaTitle">Proof of
                                 Concept</div>
-                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                            <div class="megaText">Proof of concept: Where ideas become reality</div>
                         </div>
                     </a>
                     <a href="{{ url_for('pages', page='labnotebook') }}" class="megaMenuItem">
@@ -210,7 +223,7 @@
                         <div class="megaContent">
                             <div class="megaTitle">Lab
                                 Notebook</div>
-                            <div class="megaText">Text text text Text text text Text text text Text text text </div>
+                            <div class="megaText">Our dated journey through lab </div>
                         </div>
                     </a>
                 </div>    
