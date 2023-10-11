@@ -355,6 +355,7 @@
     animation: leftonStart 0.5s;
     animation-delay: 0.5s;
     transition-delay: 0.9s, 0s, 0s, 0s, 0s;
+    background-color: transparent;
 }
 
 @keyframes leftonStart{
@@ -2096,6 +2097,99 @@ element.style {
     text-align: center;
   }
   
+  .hid{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 55px;
+
+  }
+
+  .contdiagrama {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+
+  .contenidoE{
+    display: flex;
+    height: 400px;
+    width: 500px;
+    justify-content: center;
+    overflow: hidden;
+    max-width: 109%;
+  }
+  
+.contpapa {
+    height: 400px;
+    width: 500px;
+    background: var(--gradient);
+    transition: 1s;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    overflow: auto;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contpapa:hover {
+    height: 700px;
+}
+
+.contpapa:hover .contenidotxt {
+    max-height: 2000px;
+}
+
+.contenidoE {
+    display: flex;
+    height: 400px;
+    width: 500px;
+    justify-content: center;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.contenidoE img {
+    display: flex;
+    height: 300px;
+    width: auto;
+    margin: auto;
+    border-radius: 5px;
+
+}
+
+.contenidoE h1 {
+    justify-self: center;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: "Quicksand";
+}
+
+
+.contenidotxt {
+    align-self: center;
+    text-align: center;
+    font-family: 'Quicksand';
+    font-weight: 500;
+    width: 100%;
+    transition: 2s;
+    overflow: hidden;
+    max-height: 0;
+}
+
+
   .PopUpContent {
     color: white;
     max-width: 90%;
@@ -2132,6 +2226,7 @@ element.style {
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
+    margin-top: 40px;
   }
 
   .round-imageHuman {
