@@ -3253,6 +3253,10 @@ table tbody tr td::last-child {
   margin-left: 14vw;
   max-width: 50vw;
 }
+.foto_texto {
+  margin-left: 14vw;
+  max-width: 50vw;
+}
 
 .foto_pequeño_productor {
   margin-left: 14vw;
