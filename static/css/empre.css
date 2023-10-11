@@ -1829,7 +1829,7 @@ element.style {
     display: none;
     position: fixed;
     top: 47%;
-    left: 23%;
+    left: 32%;
     width: 47%;
     height: 37%;
     z-index: 9999;
@@ -1844,7 +1844,217 @@ element.style {
     display: none;
     position: fixed;
     top: 47%;
-    left: 23%;
+    left: 32%;
+    width: 47%;
+    height: 37%;
+    z-index: 9999;
+    border-radius: 67px;
+    animation: fade-in .5s ease forwards;
+    flex-direction: column;
+    /* overflow: hidden; */
+    margin-left: 3vh;
+}
+.popup4 {
+    background-color: #447D9C;
+    display: none;
+    position: fixed;
+    top: 47%;
+    left: 32%;
+    width: 47%;
+    height: 37%;
+    z-index: 9999;
+    border-radius: 67px;
+    animation: fade-in .5s ease forwards;
+    flex-direction: column;
+    /* overflow: hidden; */
+    margin-left: 3vh;
+}
+.popup5 {
+    background-color: #447D9C;
+    display: none;
+    position: fixed;
+    top: 47%;
+    left: 32%;
+    width: 47%;
+    height: 37%;
+    z-index: 9999;
+    border-radius: 67px;
+    animation: fade-in .5s ease forwards;
+    flex-direction: column;
+    /* overflow: hidden; */
+    margin-left: 3vh;
+}
+.popup6 {
+    background-color: #447D9C;
+    display: none;
+    position: fixed;
+    top: 47%;
+    left: 32%;
+    width: 47%;
+    height: 37%;
+    z-index: 9999;
+    border-radius: 67px;
+    animation: fade-in .5s ease forwards;
+    flex-direction: column;
+    /* overflow: hidden; */
+    margin-left: 3vh;
+}
+.popup7 {
+    background-color: #447D9C;
+    display: none;
+    position: fixed;
+    top: 47%;
+    left: 32%;
+    width: 47%;
+    height: 37%;
+    z-index: 9999;
+    border-radius: 67px;
+    animation: fade-in .5s ease forwards;
+    flex-direction: column;
+    /* overflow: hidden; */
+    margin-left: 3vh;
+}
+.popup8 {
+    background-color: #447D9C;
+    display: none;
+    position: fixed;
+    top: 47%;
+    left: 32%;
+    width: 47%;
+    height: 37%;
+    z-index: 9999;
+    border-radius: 67px;
+    animation: fade-in .5s ease forwards;
+    flex-direction: column;
+    /* overflow: hidden; */
+    margin-left: 3vh;
+}
+.popup9 {
+    background-color: #447D9C;
+    display: none;
+    position: fixed;
+    top: 47%;
+    left: 32%;
+    width: 47%;
+    height: 37%;
+    z-index: 9999;
+    border-radius: 67px;
+    animation: fade-in .5s ease forwards;
+    flex-direction: column;
+    /* overflow: hidden; */
+    margin-left: 3vh;
+}
+.popup10 {
+    background-color: #447D9C;
+    display: none;
+    position: fixed;
+    top: 47%;
+    left: 32%;
+    width: 47%;
+    height: 37%;
+    z-index: 9999;
+    border-radius: 67px;
+    animation: fade-in .5s ease forwards;
+    flex-direction: column;
+    /* overflow: hidden; */
+    margin-left: 3vh;
+}
+.popup11 {
+    background-color: #447D9C;
+    display: none;
+    position: fixed;
+    top: 47%;
+    left: 32%;
+    width: 47%;
+    height: 37%;
+    z-index: 9999;
+    border-radius: 67px;
+    animation: fade-in .5s ease forwards;
+    flex-direction: column;
+    /* overflow: hidden; */
+    margin-left: 3vh;
+}
+.popup12 {
+    background-color: #447D9C;
+    display: none;
+    position: fixed;
+    top: 47%;
+    left: 32%;
+    width: 47%;
+    height: 37%;
+    z-index: 9999;
+    border-radius: 67px;
+    animation: fade-in .5s ease forwards;
+    flex-direction: column;
+    /* overflow: hidden; */
+    margin-left: 3vh;
+}
+.popup13 {
+    background-color: #447D9C;
+    display: none;
+    position: fixed;
+    top: 47%;
+    left: 32%;
+    width: 47%;
+    height: 37%;
+    z-index: 9999;
+    border-radius: 67px;
+    animation: fade-in .5s ease forwards;
+    flex-direction: column;
+    /* overflow: hidden; */
+    margin-left: 3vh;
+}
+.popup14 {
+    background-color: #447D9C;
+    display: none;
+    position: fixed;
+    top: 47%;
+    left: 32%;
+    width: 47%;
+    height: 37%;
+    z-index: 9999;
+    border-radius: 67px;
+    animation: fade-in .5s ease forwards;
+    flex-direction: column;
+    /* overflow: hidden; */
+    margin-left: 3vh;
+}
+.popup15 {
+    background-color: #447D9C;
+    display: none;
+    position: fixed;
+    top: 47%;
+    left: 32%;
+    width: 47%;
+    height: 37%;
+    z-index: 9999;
+    border-radius: 67px;
+    animation: fade-in .5s ease forwards;
+    flex-direction: column;
+    /* overflow: hidden; */
+    margin-left: 3vh;
+}
+.popup16 {
+    background-color: #447D9C;
+    display: none;
+    position: fixed;
+    top: 47%;
+    left: 32%;
+    width: 47%;
+    height: 37%;
+    z-index: 9999;
+    border-radius: 67px;
+    animation: fade-in .5s ease forwards;
+    flex-direction: column;
+    /* overflow: hidden; */
+    margin-left: 3vh;
+}
+.popup17 {
+    background-color: #447D9C;
+    display: none;
+    position: fixed;
+    top: 47%;
+    left: 32%;
     width: 47%;
     height: 37%;
     z-index: 9999;
@@ -1906,7 +2116,7 @@ element.style {
     overflow: hidden;
     transition: top .2s ease-in-out, width .5s, height .5s;
     margin-top: 7vh;
-    margin-left: 63vh;
+    margin-left: 57vh;
 }
 .round-imageHuman1 {
     border-radius: 100%;
@@ -1916,7 +2126,7 @@ element.style {
     overflow: hidden;
     transition: top .2s ease-in-out, width .5s, height .5s;
     margin-top: -25vh;
-    margin-left: 87vh;
+    margin-left: 81vh;
 }
 .round-imageHuman1:hover {
     width: 180px;
@@ -1926,6 +2136,207 @@ element.style {
     width: 180px;
     height: 180px;
   }
+  .round-imageHuman2 {
+    border-radius: 100%;
+    height: 140px;
+    margin: 0 auto;
+    width: 140px;
+    overflow: hidden;
+    transition: top .2s ease-in-out, width .5s, height .5s;
+    margin-top: -36vh;
+    margin-left: 33vh;
+}
+.round-imageHuman3:hover {
+    width: 180px;
+    height: 180px;
+  }
+  .round-imageHuman3 {
+    border-radius: 100%;
+    height: 140px;
+    margin: 0 auto;
+    width: 140px;
+    overflow: hidden;
+    transition: top .2s ease-in-out, width .5s, height .5s;
+    margin-top: -47vh;
+    margin-left: 104vh;
+}
+.round-imageHuman2:hover {
+    width: 180px;
+    height: 180px;
+  }
+  .round-imageHuman4 {
+    border-radius: 100%;
+    height: 140px;
+    margin: 0 auto;
+    width: 140px;
+    overflow: hidden;
+    transition: top .2s ease-in-out, width .5s, height .5s;
+    margin-top: -58vh;
+    margin-left: 8vh;
+}
+.round-imageHuman5:hover {
+    width: 180px;
+    height: 180px;
+  }
+  .round-imageHuman5 {
+    border-radius: 100%;
+    height: 140px;
+    margin: 0 auto;
+    width: 140px;
+    overflow: hidden;
+    transition: top .2s ease-in-out, width .5s, height .5s;
+    margin-top: -69vh;
+    margin-left: 127vh;
+}
+.round-imageHuman6:hover {
+    width: 180px;
+    height: 180px;
+  }
+  .round-imageHuman6 {
+    border-radius: 100%;
+    height: 140px;
+    margin: 0 auto;
+    width: 140px;
+    overflow: hidden;
+    transition: top .2s ease-in-out, width .5s, height .5s;
+    margin-top: -39vh;
+    margin-left: 8vh;
+}
+.round-imageHuman7:hover {
+    width: 180px;
+    height: 180px;
+  }
+  .round-imageHuman7 {
+    border-radius: 100%;
+    height: 140px;
+    margin: 0 auto;
+    width: 140px;
+    overflow: hidden;
+    transition: top .2s ease-in-out, width .5s, height .5s;
+    margin-top: -49vh;
+    margin-left: 33vh;
+}
+.round-imageHuman8:hover {
+    width: 180px;
+    height: 180px;
+  }
+  .round-imageHuman8 {
+    border-radius: 100%;
+    height: 140px;
+    margin: 0 auto;
+    width: 140px;
+    overflow: hidden;
+    transition: top .2s ease-in-out, width .5s, height .5s;
+    margin-top: -59vh;
+    margin-left: 57vh;
+}
+.round-imageHuman9:hover {
+    width: 180px;
+    height: 180px;
+  }
+  .round-imageHuman9 {
+    border-radius: 100%;
+    height: 140px;
+    margin: 0 auto;
+    width: 140px;
+    overflow: hidden;
+    transition: top .2s ease-in-out, width .5s, height .5s;
+    margin-top: -69vh;
+    margin-left: 127vh;
+}
+.round-imageHuman10:hover {
+    width: 180px;
+    height: 180px;
+  }
+  .round-imageHuman10 {
+    border-radius: 100%;
+    height: 140px;
+    margin: 0 auto;
+    width: 140px;
+    overflow: hidden;
+    transition: top .2s ease-in-out, width .5s, height .5s;
+    margin-top: -71vh;
+    margin-left: 81vh;
+}
+
+
+.round-imageHuman11:hover {
+    width: 180px;
+    height: 180px;
+  }
+  .round-imageHuman11 {
+    border-radius: 100%;
+    height: 140px;
+    margin: 0 auto;
+    width: 140px;
+    overflow: hidden;
+    transition: top .2s ease-in-out, width .5s, height .5s;
+    margin-top: -75vh;
+    margin-left: 104vh;
+}
+.round-imageHuman12:hover {
+    width: 180px;
+    height: 180px;
+  }
+  .round-imageHuman12 {
+    border-radius: 100%;
+    height: 140px;
+    margin: 0 auto;
+    width: 140px;
+    overflow: hidden;
+    transition: top .2s ease-in-out, width .5s, height .5s;
+    margin-top: -40vh;
+    margin-left: 47vh;
+}
+.round-imageHuman13:hover {
+    width: 180px;
+    height: 180px;
+  }
+  .round-imageHuman13 {
+    border-radius: 100%;
+    height: 140px;
+    margin: 0 auto;
+    width: 140px;
+    overflow: hidden;
+    transition: top .2s ease-in-out, width .5s, height .5s;
+    margin-top: -45vh;
+    margin-left: 73vh;
+}
+
+
+.round-imageHuman16:hover {
+    width: 180px;
+    height: 180px;
+  }
+  .round-imageHuman16 {
+    border-radius: 100%;
+    height: 140px;
+    margin: 0 auto;
+    width: 140px;
+    overflow: hidden;
+    transition: top .2s ease-in-out, width .5s, height .5s;
+    margin-top: -56vh;
+    margin-left: 97vh;
+}
+.round-imageHuman14:hover {
+    width: 180px;
+    height: 180px;
+  }
+  .round-imageHuman14 {
+    border-radius: 100%;
+    height: 140px;
+    margin: 0 auto;
+    width: 140px;
+    overflow: hidden;
+    transition: top .2s ease-in-out, width .5s, height .5s;
+    margin-top: -13vh;
+    margin-left: 73vh;
+}
+.round-imageHuman4:hover {
+    width: 180px;
+    height: 180px;
+  }
+  
   .clickInfoVan2 {
     margin: 0 auto;
     width: fit-content;
@@ -1939,4 +2350,63 @@ element.style {
     margin-left: 62vh;
     width: 38vh;
     text-align: center;
+}
+@media (max-width: 768px) {
+    /* Estilos específicos para pantallas pequeñas */
+    .popup {
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 70%;
+        margin-left: 1vh;
+    }
+    .popup1 {
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 70%;
+        margin-left: 1vh;
+    }
+    .popup2 {
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 70%;
+        margin-left: 1vh;
+    }
+    .popup3 {
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 70%;
+        margin-left: 1vh;
+    }
+    .popup4 {
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 70%;
+        margin-left: 1vh;
+    }
+    .popup5 {
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 70%;
+        margin-left: 1vh;
+    }
+    .popup6 {
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 70%;
+        margin-left: 1vh;
+    }
+    .popup7 {
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 70%;
+        margin-left: 1vh;
+    }
 }
