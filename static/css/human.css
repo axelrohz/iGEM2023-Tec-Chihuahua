@@ -2573,13 +2573,17 @@ table tbody tr td::last-child {
 /*DIAGRAMA GOTAS*/
 .diagrama_gotas {
   position: relative;
-  max-height: 700px;
+  height: fit-content;
   width: 100%;
-  scale: 0.5;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 
-.titulo_gota1,
+.titulo_gota,
 .titulo_gota2,
 .titulo_gota3,
 .titulo_gota4,
@@ -2596,20 +2600,8 @@ table tbody tr td::last-child {
   font-size: 1vw;
 }
 
-.gota1, .gota2, .gota3, .gota4, .gota5, .gota6, .gota7, .gota8, .gota9 {
-  position: relative;
-  z-index: 2;
-  width: 22% !important;
 
-  z-index: 2;
-  aspect-ratio: 1 / 1 !important;
-  border-radius: 0% 50% 50% 50%;
-  transform-origin: left !important;
-  transform: rotate(45deg) scale(1) !important;
-
-}
-
-.titulo_gota1 {
+.titulo_gota {
   margin-left: 0vw;
   margin-bottom: 1vw;
   margin-top: 1vw;
@@ -2665,58 +2657,73 @@ table tbody tr td::last-child {
   padding-top: 2vw;
 }
 
-.texto_gota1,
-.texto_gota2,
-.texto_gota3,
-.texto_gota4,
-.texto_gota5,
-.texto_gota6,
-.texto_gota7,
-.texto_gota8,
-.texto_gota9 {
+.texto_gota {
   display: none;
-  position: relative;
-  font-size: 0.4vw;
-  top: 1vw;
-  left: 2vw;
-  width: 4vw;
-  rotate: -45deg;
+  position: absolute;
+  width: 55%;
+  height: 70%;
+  left: 0;
+  top: 0;
+  margin: 0 !important;
+  text-align: center;
+
 }
 
+.gotaDad{
+  position: relative;
+  z-index: 2;
+  width: 20%;
+  max-width: 240px;
+  min-width: 120px;
+  aspect-ratio: 1 / 1 !important;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.7s;
+}
+
+.gotaRow{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+}
+							
 
 .gota1 {
-  background-color: #BC3F5C;
   position: relative;
   z-index: 2;
-  width: 7vw;
-  bottom: 7vw;
-  left: -9vw;
-  z-index: 2;
+  width: 70% !important;
+  aspect-ratio: 1 / 1 !important;
+  background-color: #BC3F5C;
   border-radius: 0% 50% 50% 50%;
-  transform-origin: left;
-  transform: rotate(45deg) scale(3);
+  transform: rotate(45deg) ;
 }
 
-.gota1:hover {
-  transform: scale(5);
-  rotate: 45deg;
-  z-index: 3;
-  transform-origin: left;
+.gotaDad:hover {
+  width: 30%;
+  max-width: 360px;
+  min-width: 180px;
+  
 }
 
-.gota1:hover .texto_gota1 {
-  display: grid;
-  rotate: 314deg;
-  width: 5.3vw;
-  margin-left: -1.4vw;
-  margin-top: -2.5vw;
-  font-size: 0.4vw;
-  text-align: center;
-  padding-top: 15px;
-  color: white;
+.gotaDad:hover .texto_gota {
+  display: flex;
+  font-size: 0.85vw;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 9;
 }
 
-.gota1:hover .titulo_gota1 {
+.gotaDad:hover .gota1 .titulo_gota {
   display: none;
 }
 
@@ -4513,6 +4520,11 @@ table tbody tr td::last-child {
 
 .gotas {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
 }
 
 .title_whereStarted {
