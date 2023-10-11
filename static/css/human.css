@@ -4493,6 +4493,11 @@ table tbody tr td::last-child {
   background-color: darkred;
 }
 
-.iconA{
-  
+.boton-mostrar-timeline {
+  margin: 0 auto;
+  display: flex;
+}
+
+h2{
+  text-align: center;
 }

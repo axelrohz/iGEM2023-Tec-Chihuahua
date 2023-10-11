@@ -1918,7 +1918,30 @@ the world. Consider how the world affects your work and how your work affects th
 						divs[i].style.backgroundColor = '#5CE1E6';
 					}
 				}
+
+				const elements = document.querySelectorAll(".cd-timeline-content");
+
+				elements.forEach((element, i) => {
+					if (i % 2 !== 0) {
+						element.style.float = "right";
+					}
+				});
+
 			}
+
+			function mostrarTimeline() {
+				// Obtenemos el elemento con id "cd-timeline"
+				const timeline = document.querySelector("#cd-timeline");
+
+				// Si el elemento está visible, lo ocultamos
+				if (timeline.style.display === "block") {
+					timeline.style.display = "none";
+				} else {
+					// Si el elemento está oculto, lo mostramos
+					timeline.style.display = "block";
+				}
+			}
+
 
 			document.addEventListener('DOMContentLoaded', function () {
 				// Supongamos que tienes varios enlaces que muestran popups
@@ -1970,6 +1993,41 @@ the world. Consider how the world affects your work and how your work affects th
 				<p class="subtitleR">Results</p>
 			</div>
 
+			<div class="Overview">
+				<h2>Overview Gold</h2>
+				
+				<p style="text-align: justify;"><span style="font-size:12pt;">While working on AureoBos, our main goal was to
+						continuously enhance the design of our product. We carefully considered feedback from our stakeholders, which
+						helped us improve our initial design to better attend to the needs of the dairy industry.</span></p>
+				<p style="text-align: justify;"><span style="font-size:12pt;">We followed the AREA framework methodology for our
+						analysis. This method involves five key conditions that helped us align the feedback and suggestions, resulting
+						in significant improvements.</span></p>
+				
+				<p style="text-align: justify;"><span style="font-size:12pt;">AREA framework is an approach that allows researchers to
+						demonstrate awareness of and commitment to the principles of&nbsp;</span><strong><span
+							style="font-size:12pt;">responsible research and innovation.</span></strong><span
+						style="font-size:12pt;">&nbsp;Our creativity as scientists is based on responsible research and innovation, this
+						consists in making sure that the innovation is socially desirable and undertaken in the public interest.
+						[1]</span></p>
+				<p style="text-align: justify;"><span style="font-size:12pt;">With the objective of developing a responsible project for
+						society and in turn generating a more efficient contact with all our stakeholders, allowing us to integrate
+						their observations and recommendations into our project we decided to use the AREA framework methodology.</span>
+				</p>
+				<p style="text-align: justify;"><span style="font-size:12pt;">In the anticipation phase, we had the chance to explore
+						both the potential benefits and drawbacks of our project. We considered technical, social, and political
+						factors. In the reflection phase, we&nbsp;</span><span style="font-size:11pt;">justified why we are conducting
+						interviews, including our assumptions, questions, and dilemmas.&nbsp;</span><span style="font-size:12pt;">In the
+						engagement phase, we designed different interview formats as a communication strategy to connect with a broad
+						range of stakeholders. In the apply phase, we utilized all the information gathered in the initial three phases
+						to expand and enhance our initial proposal. [2]</span></p>
+				<p style="text-align: justify;"><span style="font-size:11pt;">In the next section, you will find the analysis using the
+						AREA framework that we perform for each area of our value chain. There is also a timeline showing each person
+						who was interviewed. Clicking &apos;Read more&apos; displays a summary of the interview and its contribution to
+						our project.</span></p>
+
+			</div>
+
+			<button class="boton-mostrar-timeline" onclick="mostrarTimeline()">Mostrar timeline</button>
 
 
 			<section id="cd-timeline" class="cd-container">
@@ -2366,7 +2424,8 @@ the world. Consider how the world affects your work and how your work affects th
 					<div class="cd-timeline-content">
 						<h3>June 28th, 2023</h3>
 						<div class="round-image">
-							<img style="margin-top: 31px;" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/timeline-fotos/leonardo-del-rio.jpg"
+							<img style="margin-top: 31px;"
+								src="https://static.igem.wiki/teams/4607/wiki/human-2-0/timeline-fotos/leonardo-del-rio.jpg"
 								alt="round images">
 						</div>
 						<p class="parraf"><b>Name:</b> Leonardo del Rio<br>
@@ -2479,7 +2538,8 @@ the world. Consider how the world affects your work and how your work affects th
 					<div class="cd-timeline-content">
 						<h3>July 5th, 2023</h3>
 						<div class="round-image">
-							<img style="margin-top: 11px;" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/timeline-fotos/alfredo-arroyo.jpg"
+							<img style="margin-top: 11px;"
+								src="https://static.igem.wiki/teams/4607/wiki/human-2-0/timeline-fotos/alfredo-arroyo.jpg"
 								alt="round images">
 						</div>
 						<p class="parraf"><b>Name:</b> Alfredo Arroyo<br>
@@ -2578,7 +2638,8 @@ the world. Consider how the world affects your work and how your work affects th
 					<div class="cd-timeline-content">
 						<h3>July 7th, 2023</h3>
 						<div class="round-image">
-							<img style="margin-top: -26px;" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/timeline-fotos/enrique-rasco-n.jpg"
+							<img style="margin-top: -26px;"
+								src="https://static.igem.wiki/teams/4607/wiki/human-2-0/timeline-fotos/enrique-rasco-n.jpg"
 								alt="round images">
 						</div>
 						<p class="parraf"><b>Name:</b> Enrique Rascon<br>
@@ -2663,7 +2724,8 @@ the world. Consider how the world affects your work and how your work affects th
 					<div class="cd-timeline-content">
 						<h3>July 10th, 2023</h3>
 						<div class="round-image">
-							<img style="margin-top: -76px;" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/abf0909a-0ce7-4dd3-b616-a1fb683619cc-1-105-c.jpeg "
+							<img style="margin-top: -76px;"
+								src="https://static.igem.wiki/teams/4607/wiki/human-2-0/abf0909a-0ce7-4dd3-b616-a1fb683619cc-1-105-c.jpeg "
 								alt="round images">
 						</div>
 						<p class="parraf"><b>Name:</b> Adrian Sandoval<br>
@@ -3004,7 +3066,8 @@ the world. Consider how the world affects your work and how your work affects th
 					<div class="cd-timeline-content">
 						<h3>July 18th, 2023</h3>
 						<div class="round-image">
-							<img style="margin-top: 10px;" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/timeline-fotos/felipe.jpg"
+							<img style="margin-top: 10px;"
+								src="https://static.igem.wiki/teams/4607/wiki/human-2-0/timeline-fotos/felipe.jpg"
 								alt="round images">
 						</div>
 						<p class="parraf"><b>Name:</b> Jose Alfredo<br>
@@ -3031,7 +3094,8 @@ the world. Consider how the world affects your work and how your work affects th
 					<div class="cd-timeline-content">
 						<h3>July 18th, 2023</h3>
 						<div class="round-image">
-							<img style="margin-top: 31px;" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/timeline-fotos/jose-alfredo.jpg"
+							<img style="margin-top: 31px;"
+								src="https://static.igem.wiki/teams/4607/wiki/human-2-0/timeline-fotos/jose-alfredo.jpg"
 								alt="round images">
 						</div>
 						<p class="parraf"><b>Name:</b> Mr. Felipe<br>
@@ -3058,7 +3122,8 @@ the world. Consider how the world affects your work and how your work affects th
 					<div class="cd-timeline-content">
 						<h3>July 18th, 2023</h3>
 						<div class="round-image">
-							<img style="margin-top: 3px;" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/timeline-fotos/miguel-angel-coronado.jpg"
+							<img style="margin-top: 3px;"
+								src="https://static.igem.wiki/teams/4607/wiki/human-2-0/timeline-fotos/miguel-angel-coronado.jpg"
 								alt="round images">
 						</div>
 						<p class="parraf"><b>Name:</b> Miguel Angel Coronado<br>
@@ -3085,7 +3150,8 @@ the world. Consider how the world affects your work and how your work affects th
 					<div class="cd-timeline-content">
 						<h3>July 18th, 2023</h3>
 						<div class="round-image">
-							<img style="margin-top: 23px;" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/37c17106-f470-4fc0-85f0-05ab491f54db-1-105-c.jpeg"
+							<img style="margin-top: 23px;"
+								src="https://static.igem.wiki/teams/4607/wiki/human-2-0/37c17106-f470-4fc0-85f0-05ab491f54db-1-105-c.jpeg"
 								alt="round images">
 						</div>
 						<p class="parraf"><b>Name:</b> Cinthia Martinez<br>
@@ -3197,7 +3263,8 @@ the world. Consider how the world affects your work and how your work affects th
 					<div class="cd-timeline-content">
 						<h3>August 1st, 2023</h3>
 						<div class="round-image">
-							<img style="margin-top: -57px;" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/timeline-fotos/pedro-hanns.jpg"
+							<img style="margin-top: -57px;"
+								src="https://static.igem.wiki/teams/4607/wiki/human-2-0/timeline-fotos/pedro-hanns.jpg"
 								alt="round images">
 						</div>
 						<p class="parraf"><b>Name:</b> Pedro Hanns<br>
@@ -3241,7 +3308,7 @@ the world. Consider how the world affects your work and how your work affects th
 					<button class="boton-ocultar" data-popup-id="popup19">X</button>
 				</div>
 
-				
+
 
 				<div class="cd-timeline-block">
 					<div class="cd-timeline-img cd-picture">
@@ -3282,7 +3349,8 @@ the world. Consider how the world affects your work and how your work affects th
 					<div class="cd-timeline-content">
 						<h3>July 7th, 2023</h3>
 						<div class="round-image">
-							<img style="margin-top: -90px;" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/timeline-fotos/juan-pablo-c.jpg"
+							<img style="margin-top: -90px;"
+								src="https://static.igem.wiki/teams/4607/wiki/human-2-0/timeline-fotos/juan-pablo-c.jpg"
 								alt="round images">
 						</div>
 						<p class="parraf"><b>Name:</b> Juan Pablo Carreon<br>
@@ -3413,7 +3481,8 @@ the world. Consider how the world affects your work and how your work affects th
 					<div class="cd-timeline-content">
 						<h3>July 28th, 2023</h3>
 						<div class="round-image">
-							<img style="margin-top: -100px;" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/timeline-fotos/rodolfo-jaquez.jpg"
+							<img style="margin-top: -100px;"
+								src="https://static.igem.wiki/teams/4607/wiki/human-2-0/timeline-fotos/rodolfo-jaquez.jpg"
 								alt="round images">
 						</div>
 						<p class="parraf"><b>Name:</b> Rodolfo Jaquez<br>
@@ -3446,7 +3515,8 @@ the world. Consider how the world affects your work and how your work affects th
 					<div class="cd-timeline-content">
 						<h3>September 23th, 2023</h3>
 						<div class="round-image">
-							<img style="margin-top: -100px;" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/timeline-fotos/heber-ramirez.jpg"
+							<img style="margin-top: -100px;"
+								src="https://static.igem.wiki/teams/4607/wiki/human-2-0/timeline-fotos/heber-ramirez.jpg"
 								alt="round images">
 						</div>
 						<p class="parraf"><b>Name:</b> Eng. Heber Ramirez<br>
@@ -3511,7 +3581,8 @@ the world. Consider how the world affects your work and how your work affects th
 								alt="round images">
 						</div>
 						<p class="parraf"><b>Name:</b> Betty Castro<br>
-							<b>Specialty:</b> Bachelor's degree in bacteriological parasitological chemistry with a master's degree in animal science and nutrition, a
+							<b>Specialty:</b> Bachelor's degree in bacteriological parasitological chemistry with a
+							master's degree in animal science and nutrition, a
 							Ph.D. in biological sciences, and a Ph. D. in immunology and cancer in humans.
 
 						</p>
@@ -3541,7 +3612,8 @@ the world. Consider how the world affects your work and how your work affects th
 								alt="round images">
 						</div>
 						<p class="parraf"><b>Name:</b> Francisca Villanueva<br>
-							<b>Specialty:</b> Bachelor's Degree in Chemistry, Master's and PhD in Biochemistry, and two postdocs
+							<b>Specialty:</b> Bachelor's Degree in Chemistry, Master's and PhD in Biochemistry, and two
+							postdocs
 						</p>
 						<a href="#0" class="cd-read-more1" data-popup-id="popupTreatment2"
 							style="background-color: #CB4364;">Read
@@ -3625,7 +3697,8 @@ the world. Consider how the world affects your work and how your work affects th
 					<div class="cd-timeline-content">
 						<h3>June 30th, 2023</h3>
 						<div class="round-image">
-							<img style="margin-top: 42px;" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/timeline-fotos/gabriela-mapes.jpg"
+							<img style="margin-top: 42px;"
+								src="https://static.igem.wiki/teams/4607/wiki/human-2-0/timeline-fotos/gabriela-mapes.jpg"
 								alt="round images">
 						</div>
 						<p class="parraf"><b>Name:</b> Gabriela Mapes<br>
@@ -3686,7 +3759,8 @@ the world. Consider how the world affects your work and how your work affects th
 					<div class="cd-timeline-content">
 						<h3>July 28th, 2023</h3>
 						<div class="round-image">
-							<img style="margin-top: -68px;" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/timeline-fotos/viviana.jpg"
+							<img style="margin-top: -68px;"
+								src="https://static.igem.wiki/teams/4607/wiki/human-2-0/timeline-fotos/viviana.jpg"
 								alt="round images">
 						</div>
 						<p class="parraf"><b>Name:</b> Viviana<br>
@@ -3746,11 +3820,13 @@ the world. Consider how the world affects your work and how your work affects th
 					<div class="cd-timeline-content">
 						<h3>August 21th, 2023</h3>
 						<div class="round-image">
-							<img style="margin-top: 25px;" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/timeline-fotos/sader.jpg"
+							<img style="margin-top: 25px;"
+								src="https://static.igem.wiki/teams/4607/wiki/human-2-0/timeline-fotos/sader.jpg"
 								alt="round images">
 						</div>
 						<p class="parraf"><b>Name:</b> Juan Carlos Flores Marquez<br>
-							<b>Organization:</b> SADER (acronym in spanish for Secretary of Rural Development of the State of Chihuahua)
+							<b>Organization:</b> SADER (acronym in spanish for Secretary of Rural Development of the
+							State of Chihuahua)
 						</p>
 						<a href="#0" class="cd-read-more1" data-popup-id="popupNorma1"
 							style="background-color: #5BC5AB;">Read
@@ -3767,19 +3843,23 @@ the world. Consider how the world affects your work and how your work affects th
 
 				<div class="cd-timeline-block">
 					<div class="cd-timeline-img cd-picture5">
-						<img class="iconA" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/timeline-fotos/treatment3-2.svg"
+						<img class="iconA"
+							src="https://static.igem.wiki/teams/4607/wiki/human-2-0/timeline-fotos/treatment3-2.svg"
 							alt="Picture">
 					</div> <!-- cd-timeline-img -->
-				
+
 					<div class="cd-timeline-content">
 						<h3>August 21th, 2023</h3>
 						<div class="round-image">
-							<img style="margin-top: 25px;" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/timeline-fotos/coespris.jpg" alt="round images">
+							<img style="margin-top: 25px;"
+								src="https://static.igem.wiki/teams/4607/wiki/human-2-0/timeline-fotos/coespris.jpg"
+								alt="round images">
 						</div>
 						<p class="parraf">
 							<b>Organization:</b> State Commission for Protection against Health Risks
 						</p>
-						<a href="#0" class="cd-read-more1" data-popup-id="popupNorma2" style="background-color: #5BC5AB;">Read
+						<a href="#0" class="cd-read-more1" data-popup-id="popupNorma2"
+							style="background-color: #5BC5AB;">Read
 							more</a>
 						<span class="cd-date">August 21th, 2023</span>
 					</div> <!-- cd-timeline-content -->
@@ -3787,7 +3867,7 @@ the world. Consider how the world affects your work and how your work affects th
 				<div id="popupNorma2" class="popup">
 					<div class="PopUpTitle"></div>
 					<div class="PopUpContent"></div>
-				
+
 					<button class="boton-ocultar" data-popup-id="popupNorma2">X</button>
 				</div>
 
@@ -3795,27 +3875,30 @@ the world. Consider how the world affects your work and how your work affects th
 
 				<div class="cd-timeline-block">
 					<div class="cd-timeline-img cd-picture6">
-						<img class="iconA" src="https://static.igem.wiki/teams/4607/wiki/human-2-0/timeline-fotos/treatment5.svg"
+						<img class="iconA"
+							src="https://static.igem.wiki/teams/4607/wiki/human-2-0/timeline-fotos/treatment5.svg"
 							alt="Picture">
 					</div> <!-- cd-timeline-img -->
-				
+
 					<div class="cd-timeline-content">
 						<h3>August 1st, 2023</h3>
 						<div class="round-image">
-							<img  src="https://static.igem.wiki/teams/4607/wiki/human-2-0/usuario.png" alt="round images">
+							<img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/usuario.png"
+								alt="round images">
 						</div>
 						<p class="parraf"><b>Names: <br> </b>Sarahi <br>
-						Sulema Marquez <br>
-						Jazmin<br>
-						Azul<br>
-						Alejandro <br>
-						Mauricio Fuentes<br>
-						Esmeralda Hernández<br>
-						Gerardo<br>
-						Candy<br>
-						Jose Olivares<br>
+							Sulema Marquez <br>
+							Jazmin<br>
+							Azul<br>
+							Alejandro <br>
+							Mauricio Fuentes<br>
+							Esmeralda Hernández<br>
+							Gerardo<br>
+							Candy<br>
+							Jose Olivares<br>
 						</p>
-						<a href="#0" class="cd-read-more1" data-popup-id="popupPA1" style="background-color: #5CE1E6;">Read
+						<a href="#0" class="cd-read-more1" data-popup-id="popupPA1"
+							style="background-color: #5CE1E6;">Read
 							more</a>
 						<span class="cd-date">August 1st, 2023</span>
 					</div> <!-- cd-timeline-content -->
@@ -3823,7 +3906,7 @@ the world. Consider how the world affects your work and how your work affects th
 				<div id="popupPA1" class="popup">
 					<div class="PopUpTitle"></div>
 					<div class="PopUpContent"></div>
-				
+
 					<button class="boton-ocultar" data-popup-id="popupPA1">X</button>
 				</div>
 
@@ -3840,6 +3923,85 @@ the world. Consider how the world affects your work and how your work affects th
 
 
 			</section> <!-- cd-timeline -->
+
+			<div class="afterTImeline">
+				<p style="text-align: justify;"><span style="font-size:11pt;">In the course of our human practices, we noticed that in
+						our state, Chihuahua, there is no association that directly oversees mastitis, despite it being a big problem in
+						the livestock industry. Therefore, we propose to apply a Collective Impact methodology in our association,
+						focused on addressing this problem. We believe that by implementing this methodology the incidence of mastitis
+						in our community will be reduced.</span></p>
+				<p style="text-align: justify;"><strong><span style="font-size:11pt;">Collective Impact Explained</span></strong></p>
+				<p style="text-align: justify;"><span style="font-size:11pt;">Collective Impact is an innovative methodology that allows
+						us to incorporate the notion of all parties involved in a problem to deeply understand the areas of opportunity
+						and thus begin to develop strategies to address a collective solution. The Collective Impact framework consists
+						of five core conditions: the development of a common agenda that is shared among all stakeholders; shared
+						measurement strategies to understand if progress is being made; engage in mutually reinforcing activities;
+						continuous communications and backbone infrastructure support. By having collaborative planning, optimal
+						conditions are promoted to effectively address the problem, during development to measure the change to finally
+						understand the impact.</span></p>
+				<p style="text-align: justify;"><strong><span style="font-size:11pt;">Common Agenda</span></strong></p>
+				<p style="text-align: justify;"><span style="font-size:11pt;">To collectively understand the impact of mastitis, we
+						developed this problem tree. It is a graphic representation that allows us to understand that all our
+						stakeholders share the same concern, mastitis, and that different situations arise that affect us to a greater
+						and lesser extent.</span></p>
+				<p style="text-align: justify;"><span style="font-size:11pt;"><img
+							src="https://static.igem.wiki/teams/4607/wiki/human-2-0/arbol-de-problemas.gif"
+							width="auto" height="auto"></span></p>
+				<p style="text-align: justify;"><strong><span style="font-size:11pt;">Shared Measurement&nbsp;</span></strong><span
+						style="font-size:11pt;">&nbsp; &nbsp;</span></p>
+				<p style="text-align: justify;"><span style="font-size:11pt;">Mastitis affects different stakeholders along the value
+						chain in various ways. To represent this, we have chosen to use a traffic light system: the red color indicates
+						those involved who suffer a severe negative impact due to mastitis; the yellow color signals those whom mastitis
+						affects, but not severely; and the green color denotes those affected moderately. Additionally, we propose the
+						establishment of a shared database to register mastitis cases each year. This database will be instrumental in
+						taking measures and assisting heavily affected stables.&nbsp;</span></p>
+				<p style="text-align: justify;"><strong><span style="font-size:11pt;">Mutually Reinforcing
+							Activities&nbsp;</span></strong></p>
+				<p style="text-align: justify;"><span style="font-size:11pt;">The dairy community in our country gathers annually at
+						DIGAL (an acronym in Spanish for International Dairy Farmer&apos;s Day). We propose establishing a dedicated
+						space to discuss matters related to mastitis. This would include preventive measures, current treatments, and
+						alternative treatment options. In addition to this, we generated a&nbsp;</span><strong><span
+							style="color:#4a86e8;font-size:11pt;">manual</span></strong><span style="font-size:11pt;">&nbsp;that
+						includes relevant topics for proper management of dairy pens. The purpose of this is to offer homogeneous
+						information for all dairy farmers.</span></p>
+				<p style="text-align: justify;"><strong><span style="font-size:11pt;">Continuous Communication</span></strong></p>
+				<p style="text-align: justify;"><span style="font-size:11pt;">To maintain ongoing communication with all stakeholders,
+						we propose developing a network where ideas promoting both mastitis prevention and treatment can be discussed
+						and shared. The Chihuahua&apos;s Milk Network has the following objectives:</span></p>
+				<ul>
+					<li style="list-style-type:disc;font-size:11pt;">
+						<p style="text-align: justify;"><span style="font-size:11pt;">Research and aid in the development of milk
+								production with lower microbial load.</span></p>
+					</li>
+					<li style="list-style-type:disc;font-size:11pt;">
+						<p style="text-align: justify;"><span style="font-size:11pt;">Implement programs to assist small and
+								medium-sized farms.</span></p>
+					</li>
+					<li style="list-style-type:disc;font-size:11pt;">
+						<p style="text-align: justify;"><span style="font-size:11pt;">Inform all milk producers about public policies
+								and practices that improve the quality and quantity of milk production.</span></p>
+					</li>
+				</ul>
+				<p style="text-align: justify;"><strong><span style="font-size:11pt;">Backbone Support</span></strong></p>
+				<p style="text-align: justify;"><span style="font-size:11pt;">The most influential representatives from each stakeholder
+						will be tasked with convening and coordinating monthly meetings, fostering training and facilitating discussions
+						on crucial ideas for mastitis prevention and treatment.</span></p>
+				<p><br></p>
+				<p><br></p>
+				<p style="text-align: justify;"><span style="font-size:11pt;"><strong>Bibliography</strong></span></p>
+				<p style="text-align: justify;"><span style="font-size:12pt;">(1)</span></p>
+				<p style="text-align: justify;"><span style="font-size:12pt;">Weaver, L.&nbsp;</span><em><span
+							style="font-size:12pt;">Planning for Collective Impact: A Practical Tool</span></em><span
+						style="font-size:12pt;">. www.tamarackcommunity.ca.
+						https://www.tamarackcommunity.ca/latest/planning-for-collective-impact-a-practical-tool (accessed
+						2023-10-11).</span></p>
+				<p style="text-align: justify;"><span style="font-size:12pt;">(2)</span></p>
+				<p style="text-align: justify;"><span style="font-size:12pt;">University of Glasgow.&nbsp;</span><em><span
+							style="font-size:12pt;">Adopting Responsible Innovation to Accelerate Your Route to Impact Handbook EPSRC
+							Impact Acceleration Account 2020-2022</span></em><span style="font-size:12pt;">; 2022.
+						https://www.gla.ac.uk/media/Media_809624_smxx.pdf (accessed 2023-10-11).</span></p>
+			</div>
+
 			<script>
 				jQuery(document).ready(function ($) {
 					var $timeline_block = $('.cd-timeline-block');

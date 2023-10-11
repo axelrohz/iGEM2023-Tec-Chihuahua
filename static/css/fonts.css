@@ -25,18 +25,18 @@
 }
 
 body{
-    font-family: 'Quicksand';
+    font-family: 'Quicksand' !important;
 }
 
 body b {
-    font-family: 'Quicksand-Bold';
+    font-family: 'Quicksand-Bold' !important;
 }
 
 h1,h2,h3 {
-    font-family: 'Bricolage Grotesque';
+    font-family: 'Bricolage Grotesque' !important;
 }
 
 h1 b, h2 b, h3 b {
-    font-family: 'BricolageGrotesque-Bold';
+    font-family: 'BricolageGrotesque-Bold' !important;
 }
 
