@@ -4501,3 +4501,12 @@ table tbody tr td::last-child {
 h2{
   text-align: center;
 }
+
+#divBolitas{
+  
+  padding-bottom: 2%;
+}
+
+#divBolitas img{
+  width: 10%;
+}
