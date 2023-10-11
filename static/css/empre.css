@@ -2529,3 +2529,12 @@ element.style {
         margin-left: 1vh;
     }
 }
+.selector {
+    position: relative;
+    left: -43vw;
+    top: -8vw;
+    width: 9.7vw;
+    height: 10vw;
+    margin-top: 25vw;
+    margin-bottom: 8vw;
+}
