@@ -1,9 +1,9 @@
 :root {
   --bg-color: #5BC5AB;
-  --typewriterSpeed: 1.7s;
+  --typewriterSpeed: 0.5s;
   --typewriterCharacters: 5;
   --delay: 0;
-	--duration: 6s;
+	--duration: 3s;
 	--iterations: 1;
 }
 
@@ -52,15 +52,15 @@
  .Title::before {
    background: var(--bg-color);
    animation: typewriter var(--typewriterSpeed)
-     steps(var(--typewriterCharacters)) 1.5s forwards;
+     steps(var(--typewriterCharacters)) 1s forwards;
  }
  
  .Title::after {
    width: 0.125em;
    background: darkslategrey;
    animation: typewriter var(--typewriterSpeed)
-       steps(var(--typewriterCharacters)) 1.5s forwards,
-     blink 2.5s steps(var(--typewriterCharacters)) infinite;
+       steps(var(--typewriterCharacters)) 1s forwards,
+     blink 3s steps(var(--typewriterCharacters)) infinite;
  }
  @keyframes typewriter {
    to {
@@ -937,12 +937,12 @@ margin-left: 30%;
   z-index: 20;
 }
 .accordion-item2 {
-  background: #C55B75;
-  color: white;
+  background: white;
+  color: black;
   border-radius: 2vw;
-  box-shadow: 7px 7px #df94a787;
+  box-shadow: 7px 7px #C55B75;
   border-color: #C55B75;
-  border-width: 0.3vw;
+  border-width: 0.2vw;
 }
 
 .accordion-item-header {
@@ -2034,56 +2034,6 @@ tabla1
   display: none;
 }
 
-
-/*frase del inicio despues del welcome page*/
-.fraseInicio{
-  background: linear-gradient(#F2F2FAff,white);
-  height: 20vw;
-  margin-bottom: 2vw;
-  padding-top: 1vw;
-  color: #447D9C;
-  font-weight: bold;
-}
-.fraseAcomodo{
-  margin: 5vw auto;
-  width: fit-content;
-}
-
-.phrase{
-  position: relative;
-  width: 100%;
-  height: 3vw;
-  justify-content: center;
-  align-items: center;
-}
-
-.fraseModel{
-  margin: 2vw;
-  position: relative;
-  width: 41.5%;;
-  font-size: 40px;
-  display: block;
-  text-align: center;
-  font-family: "Bricolage Grotesque", monospace;
-}
-
-.char{
-  font-size: 3vw;
-  height: 40px;
-  animation: an 1s ease-out 1 both;
-}
-
-@keyframes an{
-  from{
-    opacity: 0;
-    transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
-  }
-  to{
-    opacity: 1;
-    transform: perspective(500px) translate3d(0, 0, 0);
-  }
-}
-
 /*imagen figuara dos 2 IPGT*/  
 
 
@@ -2642,4 +2592,17 @@ hm {
 
 .popupColor{
   color: #447D9C;
+}
+
+.uno h1 {
+  font-family: 'Bricolage Grotesque';
+  font-size: 5rem;
+  font-weight: 700;
+  background-image: linear-gradient(#C55B75, #D27063, #DE8551);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-align: center;
+  margin-top: 13vw;
+  margin-bottom: 5vw;
 }
