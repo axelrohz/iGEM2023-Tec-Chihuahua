@@ -788,6 +788,8 @@ ul.unol {
 
 /*NuevoIndexBonito*/
 .teamScroll {
+    position: sticky;
+    top:7vw;
     overflow: visible !important;
 }
 
@@ -895,6 +897,8 @@ ul.unol {
     opacity: 0.5;
     transition: 0.25s;
 }
+
+
 
 /*Para los desplegables (p. ej. las referencias)*/
 .accordion {

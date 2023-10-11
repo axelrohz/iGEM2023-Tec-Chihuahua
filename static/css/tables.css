@@ -52,6 +52,9 @@
         transform: translate(4px, -4px);
         box-shadow: 0 6px 6px -6px #ffffff;
     }
+    td:hover .hipervinculoaqua {
+      color: #D27063;
+    }
 
 .tables{
     width: 100%;
