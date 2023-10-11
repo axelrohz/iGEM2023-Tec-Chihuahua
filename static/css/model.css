@@ -1,9 +1,9 @@
 :root {
   --bg-color: #5BC5AB;
-  --typewriterSpeed: 1.7s;
+  --typewriterSpeed: 1.3s;
   --typewriterCharacters: 5;
   --delay: 0;
-	--duration: 6s;
+	--duration: 5s;
 	--iterations: 1;
 }
 
