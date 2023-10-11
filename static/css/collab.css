@@ -270,6 +270,13 @@ button b { font-size:50px; font-weight:800; padding:0; line-height:2em; padding:
 .solution_card .so_top_icon {
 }
 
+.italicas{
+  font:inherit;
+  padding: 0;
+  letter-spacing: 0;
+  font-style: italic;
+}
+
 .solution_card .solu_title div {
   color: #212121;
   font-size: 1.3rem;
