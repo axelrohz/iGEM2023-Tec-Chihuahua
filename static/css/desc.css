@@ -1176,6 +1176,14 @@ h1 {
   color: #5BC5AB
 }
 
+
+.figures{
+  color:#000
+}
+.figures:hover{
+  color: #000;
+}
+
 /*INFECTED UDDER*/
 .udderinfocont {
   margin: auto;
