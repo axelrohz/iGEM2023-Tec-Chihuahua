@@ -2122,7 +2122,7 @@ h4{
   width: 100%;
   margin: 0 auto;
   border-collapse: collapse;
-  border: 2px solid #D27063;
+  border: 2px solid #C55B75;
 }
 
 .colorTextoTabla{
@@ -2134,12 +2134,12 @@ h4{
   padding: 12px;
   max-width: 30%;
   text-align: left;
-  border: 1px solid #D27063;
+  border: 1px solid #C55B75;
   transition: background-color 0.3s, transform 0.3s;
 }
 
 .TABLA1 th {
-  background-color: #D27063;
+  background-color: #C55B75;
   color: #ffffff;
   max-width: 30%;
 }
@@ -2549,7 +2549,7 @@ hm {
   left: 0px;
   display: block;
   border-radius: 50px;
-  background: #D794A8;
+  background: #5BC5AB;
   width: 45px;
   height: 100%;
   transition: all 0.3s ease;
@@ -2583,7 +2583,7 @@ hm {
  }
  .ctaT:hover:before{
    width: 75vw;
-   background: #D794A8;
+   background: #5BC5AB;
   }
 
 .tituloTamano{
