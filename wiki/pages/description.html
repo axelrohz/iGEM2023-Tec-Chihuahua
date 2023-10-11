@@ -27,6 +27,7 @@ Staphylococcus aureus and Streptococcus agalactiae.
   <link href="{{ url_for('static', filename = 'css/parallax.css') }}" rel="stylesheet">
   <link href="{{ url_for('static', filename = 'css/timeline.css') }}" rel="stylesheet">
   <link href="{{ url_for('static', filename = 'css/parallaxFull.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename = 'css/indexes.css') }}" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <script src="{{ url_for('static', filename='assets/js/team.js') }}"></script>
@@ -42,6 +43,7 @@ Staphylococcus aureus and Streptococcus agalactiae.
   </div>
   <div class="parallax-content">
     <div class="teamBody">
+
       <div class="stickhead">
         <div class="teamHead">
           <div class="teamTxt">
@@ -59,6 +61,49 @@ Staphylococcus aureus and Streptococcus agalactiae.
         </div>
       </div>
       <div class="teamScroll">
+
+        <div class="scrollIndexContain">
+          <div class="stickyIndex">
+            <div class="lineIndex"></div>
+            <div class="indexDots">
+              <div onclick="goTo('1')" class="dotIndex" id="dot1">
+                <div class="dotText">AureoBos’ Origin</div>
+              </div>
+              <div class="dotIndex" id="dot2" onclick="goTo('2')">
+                <div class="dotText">Into the Udder</div>
+              </div>
+              <div class="dotIndex" id="dot3" onclick="goTo('3')">
+                <div class="dotText">Milk Is Money</div>
+              </div>
+              <div class="dotIndex" id="dot4" onclick="goTo('4')">
+                <div class="dotText">Conventional Treatments
+                </div>
+              </div>
+              <div class="dotIndex" id="dot5" onclick="goTo('5')">
+                <div class="dotText">The Risk Beyond</div>
+              </div>
+              <div class="dotIndex" id="dot6" onclick="goTo('6')">
+                <div class="dotText">The Landfill
+                </div>
+              </div>
+              <div class="dotIndex" id="dot7" onclick="goTo('7')">
+                <div class="dotText">The New Antimicrobial Era: Endolysins</div>
+              </div>
+              <div class="dotIndex" id="dot8" onclick="goTo('8')">
+                <div class="dotText">Design</div>
+              </div>
+              <div class="dotIndex" id="dot9" onclick="goTo('9')">
+                <div class="dotText">Methodology</div>
+              </div>
+              <div class="dotIndex" id="dot10" onclick="goTo('10')">
+                <div class="dotText">The World in Our Project
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+
         <div class="wrap" id="sec1">
           <div class="uno">
             <h1>Food Safety Starts On The Farm</h1>
@@ -209,7 +254,7 @@ Staphylococcus aureus and Streptococcus agalactiae.
               <p class="piedefig"><b>Figure 1.</b> Nutrients of whole milk, excluding water.<sup> <a href="#referencia3"
                     class="referencias">3</a></sup></p>
               <br>
-              <h2> Into the Udder: Impact of Bovine Mastitis</h2>
+              <h2 id="sec2"> Into the Udder: Impact of Bovine Mastitis</h2>
               <br>
 
               <br>
@@ -588,7 +633,7 @@ Staphylococcus aureus and Streptococcus agalactiae.
               <p class="piedefig">
                 <b> Figure 4.</b> Classification of mastitis according to symptoms and signs.
               </p>
-              <br>
+              <br id="sec3">
               <h2>Milk Is Money</h2>
               <br>
               <p align="justify">
@@ -624,7 +669,7 @@ Staphylococcus aureus and Streptococcus agalactiae.
               </p>
 
 
-              <br>
+              <br id="sec4">
               <h2>Conventional Treatments</h2>
               <p align="justify">
                 Mastitis’ primary treatment consists of antibiotics, such as natural or synthetic penicillins. However,
@@ -739,7 +784,7 @@ Staphylococcus aureus and Streptococcus agalactiae.
                 check our analysis and benchmarking in the <a class="hipervinculoaqua"
                   href="https://2023.igem.wiki/tec-chihuahua/entrepreneurship">entrepreneurship</a> section.
               </p>
-              <br>
+              <br id="sec5">
               <h2>The Risk Beyond</h2>
               <br>
               <p align="justify">
@@ -763,7 +808,7 @@ Staphylococcus aureus and Streptococcus agalactiae.
               </p>
 
 
-              <br>
+              <br id="sec6">
               <h2>The Landfill</h2>
               <br>
               <p align="justify">
@@ -780,7 +825,7 @@ Staphylococcus aureus and Streptococcus agalactiae.
                 response, AureoBos introduces an innovative approach
                 to curbing milk losses and enhancing the availability of dairy derivatives.
               </p>
-              <br>
+              <br id="sec7">
               <h2>The New Antimicrobial Era: Endolysins</h2>
               <br>
               <p align="justify">
@@ -956,7 +1001,7 @@ Staphylococcus aureus and Streptococcus agalactiae.
               <p class="piedefig"><b>Figure 7.</b> Action mechanisms that our selected endolysins show.</p>
 
 
-              <br>
+              <br id="sec8">
               <h2>Design</h2>
               <br>
               <p align="justify">
@@ -1008,7 +1053,7 @@ Staphylococcus aureus and Streptococcus agalactiae.
                 injected directly into the udder via intramammary infusion<sup><a href="#referencia2"
                     class="referencias">35</a></sup>.
               </p>
-              <br>
+              <br id="sec9">
               <h2>Methodology</h2>
               <br>
               <div>
@@ -1158,7 +1203,7 @@ Staphylococcus aureus and Streptococcus agalactiae.
                   </div>
                 </div>
               </div>
-              <br>
+              <br id="sec10">
 
               <h2>
                 The World in Our Project
@@ -1495,10 +1540,198 @@ Staphylococcus aureus and Streptococcus agalactiae.
                 });
               });
             </script>
+
+<script type="text/javascript">
+  var dot1 = document.getElementById('dot1');
+  var dot2 = document.getElementById('dot2');
+  var dot3 = document.getElementById('dot3');
+  var dot4 = document.getElementById('dot4');
+
+  function goTo(scrollID) {
+    dot1.classList.remove('active');
+    dot2.classList.remove('active');
+    dot3.classList.remove('active');
+    dot4.classList.remove('active');
+    var dot = document.getElementById('dot' + scrollID);
+    dot.classList.add('active');
+    var element = document.getElementById('sec' + scrollID);
+    element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+  }
+</script>
+
+<script type="text/javascript">
+  var sect1 = document.getElementById('sec1');
+  var sect2 = document.getElementById('sec2');
+  var sect3 = document.getElementById('sec3');
+  var sect4 = document.getElementById('sec4');
+  var sect5 = document.getElementById('sec5');
+  var sect6 = document.getElementById('sec6');
+  var sect7 = document.getElementById('sec7');
+  var sect8 = document.getElementById('sec8');
+  var sect9 = document.getElementById('sec9');
+  var sect10 = document.getElementById('sec10');
+
+  var dot1 = document.getElementById('dot1');
+  var dot2 = document.getElementById('dot2');
+  var dot3 = document.getElementById('dot3');
+  var dot4 = document.getElementById('dot4');
+  var dot5 = document.getElementById('dot5');
+  var dot6 = document.getElementById('dot6');
+  var dot7 = document.getElementById('dot7');
+  var dot8 = document.getElementById('dot8');
+  var dot9 = document.getElementById('dot9');
+  var dot10 = document.getElementById('dot10');
+
+
+  window.addEventListener('scroll', function () {
+    var sect1top = sect1.getBoundingClientRect().top;
+    var sect2top = sect2.getBoundingClientRect().top;
+    var sect3top = sect3.getBoundingClientRect().top;
+    var sect4top = sect4.getBoundingClientRect().top;
+    var sect5top = sect5.getBoundingClientRect().top;
+    var sect6top = sect6.getBoundingClientRect().top;
+    var sect7top = sect7.getBoundingClientRect().top;
+    var sect8top = sect8.getBoundingClientRect().top;
+    var sect9top = sect9.getBoundingClientRect().top;
+    var sect10top = sect10.getBoundingClientRect().top;
+
+    var topPad = 200;
+    if (sect10top - topPad <= topPad) {
+      dot1.classList.remove('active');
+      dot2.classList.remove('active');
+      dot3.classList.remove('active');
+      dot4.classList.remove('active');
+      dot5.classList.remove('active');
+      dot6.classList.remove('active');
+      dot7.classList.remove('active');
+      dot8.classList.remove('active');
+      dot9.classList.remove('active');
+      dot10.classList.add('active');
+    } else if (sect9top - topPad <= topPad){
+      dot1.classList.remove('active');
+      dot2.classList.remove('active');
+      dot3.classList.remove('active');
+      dot4.classList.remove('active');
+      dot5.classList.remove('active');
+      dot6.classList.remove('active');
+      dot7.classList.remove('active');
+      dot8.classList.remove('active');
+      dot9.classList.add('active');
+      dot10.classList.remove('active');
+    } else if (sect8top - topPad <= topPad){
+      dot1.classList.remove('active');
+      dot2.classList.remove('active');
+      dot3.classList.remove('active');
+      dot4.classList.remove('active');
+      dot5.classList.remove('active');
+      dot6.classList.remove('active');
+      dot7.classList.remove('active');
+      dot8.classList.add('active');
+      dot9.classList.remove('active');
+      dot10.classList.remove('active');
+    }  else if (sect7top - topPad <= topPad){
+      dot1.classList.remove('active');
+      dot2.classList.remove('active');
+      dot3.classList.remove('active');
+      dot4.classList.remove('active');
+      dot5.classList.remove('active');
+      dot6.classList.remove('active');
+      dot7.classList.add('active');
+      dot8.classList.remove('active');
+      dot9.classList.remove('active');
+      dot10.classList.remove('active');
+    } else if (sect6top - topPad <= topPad){
+      dot1.classList.remove('active');
+      dot2.classList.remove('active');
+      dot3.classList.remove('active');
+      dot4.classList.remove('active');
+      dot5.classList.remove('active');
+      dot6.classList.add('active');
+      dot7.classList.remove('active');
+      dot8.classList.remove('active');
+      dot9.classList.remove('active');
+      dot10.classList.remove('active');
+    } else if (sect5top - topPad <= topPad){
+      dot1.classList.remove('active');
+      dot2.classList.remove('active');
+      dot3.classList.remove('active');
+      dot4.classList.remove('active');
+      dot5.classList.add('active');
+      dot6.classList.remove('active');
+      dot7.classList.remove('active');
+      dot8.classList.remove('active');
+      dot9.classList.remove('active');
+      dot10.classList.remove('active');
+    } else if (sect4top - topPad <= topPad){
+      dot1.classList.remove('active');
+      dot2.classList.remove('active');
+      dot3.classList.remove('active');
+      dot4.classList.add('active');
+      dot5.classList.remove('active');
+      dot6.classList.remove('active');
+      dot7.classList.remove('active');
+      dot8.classList.remove('active');
+      dot9.classList.remove('active');
+      dot10.classList.remove('active');
+    } else if (sect3top - topPad <= topPad){
+      dot1.classList.remove('active');
+      dot2.classList.remove('active');
+      dot3.classList.add('active');
+      dot4.classList.remove('active');
+      dot5.classList.remove('active');
+      dot6.classList.remove('active');
+      dot7.classList.remove('active');
+      dot8.classList.remove('active');
+      dot9.classList.remove('active');
+      dot10.classList.remove('active');
+    } else if (sect2top - topPad <= topPad){
+      dot1.classList.remove('active');
+      dot2.classList.add('active');
+      dot3.classList.remove('active');
+      dot4.classList.remove('active');
+      dot5.classList.remove('active');
+      dot6.classList.remove('active');
+      dot7.classList.remove('active');
+      dot8.classList.remove('active');
+      dot9.classList.remove('active');
+      dot10.classList.remove('active');
+    } else if (sect1top - topPad <= topPad){
+      dot1.classList.add('active');
+      dot2.classList.remove('active');
+      dot3.classList.remove('active');
+      dot4.classList.remove('active');
+      dot5.classList.remove('active');
+      dot6.classList.remove('active');
+      dot7.classList.remove('active');
+      dot8.classList.remove('active');
+      dot9.classList.remove('active');
+      dot10.classList.remove('active');
+    } else {
+      dot1.classList.add('active');
+      dot2.classList.remove('active');
+      dot3.classList.remove('active');
+      dot4.classList.remove('active');
+      dot5.classList.remove('active');
+      dot6.classList.remove('active');
+      dot7.classList.remove('active');
+      dot8.classList.remove('active');
+      dot9.classList.remove('active');
+      dot10.classList.remove('active');
+    }
+    
+
+
+
+
+  }); 
+</script>
+
+
             <br>
           </div>
         </div>
       </div>
+    </div>
     </div>
 </body>
 
