@@ -1424,3 +1424,29 @@ h1 {
 #piechart_3d {
   margin: auto;
 }
+
+.instructionHover{
+  background:linear-gradient(to right, #447D9C, #5BC5AB);
+  color: white;
+  width: fit-content;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 3vw;
+  font-size: 1vw;
+  border-radius: 25px;
+  margin: auto;
+}
+
+.instructionClick{
+  background:linear-gradient(to right, #DE8551, #A9BA6C);
+  color: white;
+  width: fit-content;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 3vw;
+  font-size: 1vw;
+  border-radius: 25px;
+  margin: auto;
+}
