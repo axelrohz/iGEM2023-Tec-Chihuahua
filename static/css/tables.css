@@ -55,6 +55,9 @@
     td:hover .hipervinculoaqua {
       color: #D27063;
     }
+    td:hover .colorTextoTabla {
+      color: #D27063 !important;
+    }
 
 .tables{
     width: 100%;
