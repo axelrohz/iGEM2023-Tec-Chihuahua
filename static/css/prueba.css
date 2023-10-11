@@ -2538,3 +2538,13 @@ element.style {
     margin-top: 25vw;
     margin-bottom: 8vw;
 }
+.uno h1 {
+    font-family: 'Bricolage Grotesque';
+    font-size: 7rem;
+    font-weight: 700;
+    background-image: linear-gradient(#C55B75, #D27063, #DE8551);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+  }
