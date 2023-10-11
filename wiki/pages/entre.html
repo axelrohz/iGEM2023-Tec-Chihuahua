@@ -1398,7 +1398,42 @@
 
 			</div>
 		</div>
-
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				// Supongamos que tienes varios enlaces que muestran popups
+				var enlaces = document.querySelectorAll('.open-popup');
+				enlaces.forEach(function (enlace) {
+					enlace.addEventListener('click', function (event) {
+						event.preventDefault();
+						var idPopup = this.getAttribute('data-popup-id');
+						document.querySelector('#' + idPopup).style.display = 'flex';
+						document.body.classList.add('bloquear-desbordamiento');
+					});
+				});
+			
+				// Y supongamos que tienes varios botones que ocultan popups
+				var botones = document.querySelectorAll('.boton-ocultar');
+				botones.forEach(function (boton) {
+					boton.addEventListener('click', function () {
+						var idPopup = this.getAttribute('data-popup-id');
+						document.querySelector('#' + idPopup).style.display = 'none';
+						document.body.classList.remove('bloquear-desbordamiento');
+					});
+				});
+			});
+		</script>
+		<script>
+				botones.forEach(function (boton) {
+				boton.addEventListener('click', function () {
+					console.log('Botón de cierre clicado');
+					var idPopup = this.getAttribute('data-popup-id');
+					document.querySelector('#' + idPopup).style.display = 'none';
+					document.body.classList.remove('bloquear-desbordamiento');
+				});
+			});
+		</script>
+		
+		
 		<div id="sectionResults" class="sectR sectionCirclesENT">
 			<div class="seccionPaddingERR">
 				<div class="secciones">
@@ -1442,94 +1477,54 @@
 						insights gained from our interactions with them.
 
 					</p>
-
-					<div class="homeCardsContainer">
-
-						<svg class="cardBackHome reverse" id="visual" viewBox="0 0 1920 768" width="1920" height="768"
-							xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-							<path
-								d="M0 198L45.7 219.2C91.3 240.3 182.7 282.7 274.2 265.3C365.7 248 457.3 171 548.8 141.3C640.3 111.7 731.7 129.3 823 160.7C914.3"
-								fill="none" stroke="#52a595" stroke-width="40" stroke-linecap="round"
-								stroke-linejoin="miter"></path>
-						</svg>
-						<svg class="cardBackHome" id="visual" viewBox="0 0 1920 768" width="1920" height="768"
-							xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-							<path
-								d="M0 654L45.7 653.5C91.3 653 182.7 652 274.2 622C365.7 592 457.3 533 548.8 529.7C640.3 526.3 731.7 578.7 823 591.8C914.3 605 1005.7"
-								fill="none" stroke="#52a595" stroke-width="40" stroke-linecap="round"
-								stroke-linejoin="miter"></path>
-						</svg>
-
-
-						<div id="cardContain5" class="cardContain">
-							<div class="cardText ">
-								<a href="#" class="cardHomeText">Gabriela Mapes</a>
-								<a href="#" class="cardHomeTitle"></a>
-
-							</div>
-							<div class="cardHome">
-								<div onclick="selectCard0()" class="cardPos" style="--rotate:rotate(6deg);">
-									<img class="cardHomeIMG"
-										src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/gabrielamapes.jpeg"
-										alt="Card image cap">
-								</div>
-							</div>
-						</div>
-
-						<div id="cardContain4" class="cardContain">
-							<div class="cardText ">
-								<a href="#" class="cardHomeText">Ana Sofia Contreras</a>
-								<a href="#" class="cardHomeTitle"></a>
-
-							</div>
-							<div class="cardHome">
-								<div onclick="selectCard5()" class="cardPos" style="--rotate:rotate(-4deg);">
-									<img class="cardHomeIMG"
-										src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/anasofiacontreras.jpeg"
-										alt="Card image cap">
-								</div>
-							</div>
-						</div>
-
-
-						<div id="cardContain3" class="cardContain">
-							<div class="cardText ">
-								<a href="#" class="cardHomeText">Coespris</a>
-								<a href="#" class="cardHomeTitle"></a>
-
-							</div>
-							<div class="cardHome">
-								<div onclick="selectCard4()" class="cardPos" style="--rotate:rotate(-1deg);">
-									<img class="cardHomeIMG"
-										src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/coespris.jpg"
-										alt="Card image cap">
-								</div>
-							</div>
-						</div>
-
-
-
-
-
-
-
-						<div id="cardContain0" class="cardContain active">
-							<div class="cardText">
-								<a href="#" class="cardHomeText"></a>
-								<a href="#" class="cardHomeTitle"></a>
-								<div class="cardSub">
-									<< Use Arrows Or Click>>
-								</div>
-
-							</div>
-							<div class="cardHome">
-								<div onclick="selectCard1()" class="cardPos" style="--rotate:rotate(5deg);">
-									<img class="cardHomeIMG" src="" alt="Card image cap">
-									<div class="arrowSub"> -> </div>
-								</div>
-							</div>
-						</div>
+					<div  class="clickInfoVan2" >
+						⚠️Click the images!
+				   </div>
+				   <br>
+					<div >
+						<a href="#1" data-popup-id="popup2" class="open-popup">
+							<img class="round-imageHuman" src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/felisasandoval.jpeg" alt="round images">
+						</a>
+						
 					</div>
+					
+					<div id="popup2" class="popup2">
+						<div class="PopUpTitle">DVM. Ruben Rodriguez<br>Specialty: Veterinary Zootechnician<br>June 24th,
+							2023</div>
+						<div class="PopUpContent">
+							
+							<p
+								style="margin-top:0pt; margin-bottom:0pt; text-align:justify; line-height:115%; font-size:12pt;">
+								Feli Sandoval, a member of the Entrepreneurship Ecosystem and the Technology Transfer Office at our university, provided us with invaluable guidance on various aspects related to patenting our project. She helped us navigate the challenges and limitations involved in the patenting process and provided insights into the steps required for proper registration with the relevant authorities. Feli's expertise has been instrumental in ensuring the effective protection of our intellectual property.
+							</p>
+						</div>
+	
+						<button class="boton-ocultar" data-popup-id="popup2">X</button>
+
+					</div>
+					<br>
+					<div >
+						<a href="#1" data-popup-id="popup3" class="open-popup">
+							<img class="round-imageHuman1" src="https://static.igem.wiki/teams/4607/wiki/entrepreneurship/entrepreneurship/secci-n5/victorcalzadillas.jpeg" alt="round images">
+						</a>
+						
+					</div>
+					
+					<div id="popup3" class="popup3">
+						<div class="PopUpTitle">DVM. Ruben Rodriguez<br>Specialty: Veterinary Zootechnician<br>June 24th,
+							2023</div>
+						<div class="PopUpContent">
+							
+							<p
+								style="margin-top:0pt; margin-bottom:0pt; text-align:justify; line-height:115%; font-size:12pt;">
+								Víctor, as a member of Startup Chihuahua - an initiative driven by Chihuahua Futura to promote entrepreneurship, science, technology, and innovation strategies to strengthen regional competitiveness - played a pivotal role in facilitating our connections with various entrepreneurs. Through these connections, we were able to validate AureoBos by participating in several pitch events. Moreover, he significantly contributed to refining our business model and pitch.
+							</p>
+						</div>
+	
+						<button class="boton-ocultar" data-popup-id="popup3">X</button>
+
+					</div>
+
 
 
 

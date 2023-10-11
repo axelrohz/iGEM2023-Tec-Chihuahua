@@ -1,5 +1,9 @@
+body{
+  overflow-x: clip;
+}
+
 .layout {
-  width: 92vw;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-wrap: nowrap;
@@ -29,10 +33,21 @@
   position: relative;
   font-family: "Bricolage Grotesque", monospace;
   position: relative;
-  width: max-content;
-  top: 175px;
+  width: 100%;
+
   font-size: 120px;
   margin: auto;
+}
+
+.typewriter{
+  width: 100%;
+}
+
+.headingParts{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 
@@ -162,16 +177,20 @@
 /*secciones*/
 .secciones {
   grid-area: body;
-  margin-top: 1%;
-  width: 100vw;
+  margin-top: 0;
+  width: 100%;
   height: 100%;
 }
 
 .lado {
   position: relative;
-  left: 20vw;
-  width: 60vw;
-  bottom: 19vw;
+  width: 75%;
+}
+
+.contFlex{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 
@@ -605,6 +624,7 @@
   border-radius: 20px;
   position: sticky;
   top: 150px;
+  display: none !important;
 }
 
 .index1 {
@@ -765,11 +785,17 @@ h2::before {
 }
 
 .tituloContenido {
-  margin-left: 43px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .tituloContenido2 {
-  margin-left: 43px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .contenido {
@@ -811,7 +837,6 @@ h2::before {
   transition: all 0.2s ease;
   border: none;
   background: none;
-  margin-left: 130px !important;
 }
 
 .cta1:before {
@@ -935,7 +960,6 @@ h2::before {
   transition: all 0.2s ease;
   border: none;
   background: none;
-  margin-left: 130px !important;
 }
 
 .cta3:before {
@@ -2196,10 +2220,13 @@ table tbody tr td::last-child {
 
 /*COSAS DEL DIAGRAMA DE VALORES*/
 .valores_diagrama {
-  height: 35vw;
-  width: 80%;
-  margin-left: 15vw;
-  margin-bottom: -4vw;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .title_circulo1 {
@@ -2245,11 +2272,11 @@ table tbody tr td::last-child {
   border-radius: 50%;
   width: 15vw;
   height: 15vw;
-  top: 7vw;
-  left: -2vw;
   position: relative;
   color: black;
   font-weight: bold;
+  transition: 0.5s;
+
 }
 
 .public_health:hover {
@@ -2275,6 +2302,20 @@ table tbody tr td::last-child {
 .relation4,
 .relation5 {
   visibility: hidden;
+  margin: 0 !important;
+  width: 70% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .public_health:hover .relation1 {
@@ -2285,8 +2326,6 @@ table tbody tr td::last-child {
 
 .titulo_relation {
   position: relative;
-  left: 4vw;
-  bottom: 2vw;
   font-size: 0.5vw;
   width: fit-content;
 }
@@ -2294,10 +2333,11 @@ table tbody tr td::last-child {
 .descripcionR {
   font-size: 0.35vw;
   position: relative;
-  bottom: 2vw;
-  right: 0.2vw;
-  width: 10vw;
+  bottom: 0;
+  right: 0;
+  width: 100%;
   text-align: justify;
+  margin: 0 !important;
 }
 
 /*para que el texto no se vea y el titulo sin que este en hover*/
@@ -2316,8 +2356,8 @@ table tbody tr td::last-child {
 /*para acomodar el titulo y texto de implementacion*/
 .titulo_implementation {
   position: relative;
-  left: 5vw;
-  bottom: 2.5vw;
+  left: 0;
+  top: 0;
   width: fit-content;
   font-size: 0.5vw;
 }
@@ -2325,10 +2365,11 @@ table tbody tr td::last-child {
 .descripcionI {
   font-size: 0.35vw;
   position: relative;
-  bottom: 2.7vw;
-  right: 0.2vw;
-  width: 10.1vw;
+  top: 0;
+  right:0;
+  width: 100%;
   text-align: justify;
+  margin: 0;
 }
 
 
@@ -2340,10 +2381,10 @@ table tbody tr td::last-child {
   width: 15vw;
   height: 15vw;
   position: relative;
-  left: 10vw;
-  bottom: 8vw;
   color: black;
   font-weight: bold;
+  transition: 0.5s;
+
 }
 
 .anti_waste:hover {
@@ -2378,10 +2419,10 @@ table tbody tr td::last-child {
   width: 15vw;
   height: 15vw;
   position: relative;
-  left: 22vw;
-  bottom: 23vw;
   color: black;
   font-weight: bold;
+  transition: 0.5s;
+
 }
 
 .integrity:hover {
@@ -2416,10 +2457,9 @@ table tbody tr td::last-child {
   width: 15vw;
   height: 15vw;
   position: relative;
-  left: 34vw;
-  bottom: 38vw;
   color: black;
   font-weight: bold;
+  transition: 0.5s;
 }
 
 .privacy:hover {
@@ -2454,10 +2494,10 @@ table tbody tr td::last-child {
   width: 15vw;
   height: 15vw;
   position: relative;
-  left: 45vw;
-  bottom: 53vw;
   color: black;
   font-weight: bold;
+  transition: 0.5s;
+
 }
 
 .sustainability:hover {
@@ -2475,6 +2515,23 @@ table tbody tr td::last-child {
   visibility: hidden;
 }
 
+.title_circulo1,
+.title_circulo2,
+.title_circulo3,
+.title_circulo4,
+.title_circulo5{
+  position: relative;
+  top: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw; 
+}
+
 /*para que se cambie a visible las cosas */
 .sustainability:hover .relation5 {
   visibility: visible;
@@ -2486,9 +2543,7 @@ table tbody tr td::last-child {
 
 .implementation1,
 .relation1 {
-  margin-left: 0.5vw;
-  margin-top: -2.5vw;
-  margin-bottom: 4vw;
+  margin:0;
 }
 
 .implementation2,
@@ -2518,11 +2573,9 @@ table tbody tr td::last-child {
 /*DIAGRAMA GOTAS*/
 .diagrama_gotas {
   position: relative;
-  margin-left: 3vw;
   max-height: 700px;
-  transform: scale(0.5);
-  margin-top: -8vw;
-  margin-bottom: 5vw;
+  width: 100%;
+  scale: 0.5;
 }
 
 
@@ -2541,6 +2594,19 @@ table tbody tr td::last-child {
   color: white;
   text-align: center;
   font-size: 1vw;
+}
+
+.gota1, .gota2, .gota3, .gota4, .gota5, .gota6, .gota7, .gota8, .gota9 {
+  position: relative;
+  z-index: 2;
+  width: 22% !important;
+
+  z-index: 2;
+  aspect-ratio: 1 / 1 !important;
+  border-radius: 0% 50% 50% 50%;
+  transform-origin: left !important;
+  transform: rotate(45deg) scale(1) !important;
+
 }
 
 .titulo_gota1 {
@@ -2626,7 +2692,6 @@ table tbody tr td::last-child {
   bottom: 7vw;
   left: -9vw;
   z-index: 2;
-  height: 7vw;
   border-radius: 0% 50% 50% 50%;
   transform-origin: left;
   transform: rotate(45deg) scale(3);
@@ -2667,7 +2732,6 @@ table tbody tr td::last-child {
   width: 7vw;
   bottom: 21vw;
   left: 46.5vw;
-  height: 7vw;
   border-radius: 0% 50% 50% 50%;
   transform: rotate(45deg);
   transform-origin: left;
@@ -2704,7 +2768,6 @@ table tbody tr td::last-child {
   width: 7vw;
   bottom: 23vw;
   left: 76.5vw;
-  height: 7vw;
   border-radius: 0% 50% 50% 50%;
   transform: rotate(45deg);
   transform-origin: left;
@@ -2740,8 +2803,7 @@ table tbody tr td::last-child {
   width: 7vw;
   bottom: 1vw;
   left: -10vw;
-  height: 7vw;
-  border-radius: 0% 50% 50% 50%;
+    border-radius: 0% 50% 50% 50%;
   transform: rotate(45deg);
   transform-origin: left;
   transform: rotate(45deg) scale(3);
@@ -2776,7 +2838,6 @@ table tbody tr td::last-child {
   width: 7vw;
   bottom: 1vw;
   left: 15.5vw;
-  height: 7vw;
   border-radius: 0% 50% 50% 50%;
   transform: rotate(45deg);
   transform-origin: left;
@@ -2813,7 +2874,6 @@ table tbody tr td::last-child {
   width: 7vw;
   bottom: 15vw;
   left: 46.5vw;
-  height: 7vw;
   border-radius: 0% 50% 50% 50%;
   transform: rotate(45deg);
   transform-origin: left;
@@ -2851,7 +2911,6 @@ table tbody tr td::last-child {
   width: 7vw;
   bottom: 15vw;
   left: 76.5vw;
-  height: 7vw;
   border-radius: 0% 50% 50% 50%;
   transform: rotate(45deg);
   transform-origin: left;
@@ -2889,7 +2948,6 @@ table tbody tr td::last-child {
   width: 7vw;
   bottom: 58vw;
   left: 17.5vw;
-  height: 7vw;
   border-radius: 0% 50% 50% 50%;
   transform: rotate(45deg);
   transform-origin: left;
@@ -3078,17 +3136,11 @@ table tbody tr td::last-child {
   max-width: 217px;
   height: auto;
   position: relative;
-  top: 7vw;
-  left: 13vw;
-  transform: translate(-50%, -50%);
   z-index: 10;
 }
 
 .ODS3 {
   background: transparent;
-  top: 7vw;
-  left: 16%;
-  transform: translate(-50%, -50%);
   width: 50vw;
   max-width: 217px;
   height: auto;
@@ -3103,9 +3155,6 @@ table tbody tr td::last-child {
   max-width: 217px;
   height: auto;
   position: relative;
-  top: 7vw;
-  left: 14vw;
-  transform: translate(-50%, -50%);
   z-index: 10;
 
 }
@@ -3115,19 +3164,23 @@ table tbody tr td::last-child {
   max-width: 217px;
   height: auto;
   position: relative;
-  top: 7vw;
-  left: 15vw;
-  transform: translate(-50%, -50%);
   z-index: 10;
 }
 
+.ODSContain{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  width: 100%;
+  gap: 15px;
+}
 
 .post_it_1 {
   background: transparent;
-  top: 10vw;
-  left: 22vw;
-  transform: translate(-50%, -50%);
-  width: 50vw;
+  width: 49%;
   max-width: 300px;
   height: auto;
   position: relative;
@@ -3136,10 +3189,7 @@ table tbody tr td::last-child {
 
 .post_it_2 {
   background: transparent;
-  top: 10vw;
-  left: 21vw;
-  transform: translate(-50%, -50%);
-  width: 50vw;
+  width: 49%;
   max-width: 300px;
   height: auto;
   position: relative;
@@ -3148,10 +3198,7 @@ table tbody tr td::last-child {
 
 .post_it_3 {
   background: transparent;
-  top: 10vw;
-  left: 20vw;
-  transform: translate(-50%, -50%);
-  width: 50vw;
+  width: 49%;
   max-width: 300px;
   height: auto;
   position: relative;
@@ -3160,10 +3207,7 @@ table tbody tr td::last-child {
 
 .graficas {
   background: transparent;
-  top: 14vw;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 1000px;
+  max-width: 100%;
   height: auto;
   position: relative;
   z-index: 10;
@@ -3179,13 +3223,11 @@ table tbody tr td::last-child {
 
 .cadena_de_valor {
   background: transparent;
-  left: 54%;
-  transform: translate(-50%, -50%);
-  max-width: 850px;
-  top: 7vw;
+  max-width: 100%;
   height: auto;
   position: relative;
   z-index: -1;
+  margin-bottom: 10px;
 }
 
 .card1 {
@@ -3197,6 +3239,14 @@ table tbody tr td::last-child {
   height: auto;
   position: absolute;
   z-index: 10;
+}
+
+.imgDad{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .foto_antibioticos {
@@ -3215,33 +3265,43 @@ table tbody tr td::last-child {
 }
 
 .foto_medicinas {
-  margin-left: 14vw;
-  max-width: 50vw;
+
+    max-width: 60%;
 }
 
 .foto_delmar {
-  margin-left: 14vw;
-  max-width: 50vw;
+  max-width: 60%
 }
 
 .foto_collection {
-  margin-left: 18vw;
-  max-width: 50vw;
+  max-width: 60%;
 }
 
 .foto_taffi_cartel {
-  margin-left: 27vw;
-  max-width: 50vw;
+
+  max-width: 60%;
 }
 
 .foto_zoetis {
-  margin-left: 14vw;
-  max-width: 50vw;
+  max-width: 60%;
 }
 
 .flecha_1 {
   margin-left: 10vw;
   max-width: 30vw;
+}
+.flechaChi{
+  max-width: 10%; 
+}
+@media (max-width: 900px)  {
+  .flechaChi{
+    max-width: 15%;
+  }
+}
+@media (max-width: 650px)  {
+  .flechaChi{
+    max-width: 22%;
+  }
 }
 
 .lado2 {
@@ -3266,15 +3326,13 @@ table tbody tr td::last-child {
   padding-right: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-left: 17%;
   max-width: fit-content;
-  margin-top: 5vw;
-  margin-bottom: 5vw;
+  margin: 0 auto;
 }
 
 .contpapa2_1 {
   height: 120px;
-  margin-top: 2vw;
+  margin-top: 0 !important;
   position: relative;
   width: 300px;
   overflow: hidden;
@@ -3283,6 +3341,8 @@ table tbody tr td::last-child {
   transition: 1s;
   border-radius: 10px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
 }
 
 .contpapa2_1:hover {
@@ -3294,6 +3354,7 @@ table tbody tr td::last-child {
   height: 120px;
   bottom: 8.3vw;
   width: 300px;
+  margin-top: 40px !important;
   overflow: hidden;
   position: relative;
   left: 33vw;
@@ -3301,6 +3362,8 @@ table tbody tr td::last-child {
   transition: 1s;
   border-radius: 10px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
 }
 
 .contpapa2_2:hover {
@@ -3316,9 +3379,13 @@ table tbody tr td::last-child {
   background: #5BC5AB;
   left: 55vw;
   bottom: 16.6vw;
+  margin-top: 60px !important;
+
   transition: 1s;
   border-radius: 10px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
 }
 
 .contpapa2_3:hover {
@@ -3334,9 +3401,12 @@ table tbody tr td::last-child {
   background: #447D9C;
   left: 11vw;
   bottom: 10.6vw;
+  margin-top: 0px !important;
   transition: 1s;
   border-radius: 10px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
 }
 
 .contpapa2_4:hover {
@@ -3349,12 +3419,15 @@ table tbody tr td::last-child {
   width: 300px;
   position: relative;
   overflow: hidden;
+  margin-top: 30px !important;
   background: #5BC5AB;
   left: 33vw;
   bottom: 18.9vw;
   transition: 1s;
   border-radius: 10px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
 }
 
 .contpapa2_5:hover {
@@ -3369,15 +3442,38 @@ table tbody tr td::last-child {
   overflow: hidden;
   background: #447D9C;
   left: 55vw;
+  margin-top: 60px !important;
+
   bottom: 27.25vw;
   transition: 1s;
   border-radius: 10px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+}
+
+.rowCont{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
 }
 
 .contpapa2_6:hover {
   height: 14vw;
   padding-bottom: 2vw;
+}
+
+.contpapa2_1,
+.contpapa2_2,
+.contpapa2_3,
+.contpapa2_4,
+.contpapa2_5,
+.contpapa2_6 {
+  margin: 0;
+  width: 30%;
 }
 
 .contpapa2_1:hover .causetxt,
@@ -3438,7 +3534,7 @@ table tbody tr td::last-child {
 .cause {
   display: flex;
   height: 120px;
-  width: 300px;
+  width: 100%;
   justify-content: center;
   overflow: hidden;
 }
@@ -3518,12 +3614,13 @@ table tbody tr td::last-child {
   background-color: #C55B75;
   color: white;
   width: fit-content;
+  margin: auto;
   padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  height: 3vw;
+  height: auto;
+  min-width: fit-content;
   border-radius: 25px;
-  margin-left: 20vw;
   margin-bottom: 45px;
 }
 
@@ -3742,6 +3839,24 @@ table tbody tr td::last-child {
   transform: scaleX(-1);
 }
 
+@media (max-width: 1020px) {
+  .homeCardsContainer{
+    height: 40vw;
+  }   
+}
+@media (max-width: 928px) {
+  .homeCardsContainer{
+    height: 50vw;
+  }   
+}
+
+@media (max-width: 825px) {
+  .homeCardsContainer{
+    height: 55vw;
+  }   
+}
+
+
 @media (max-width: 768px) {
   .homeCardsContainer {
     padding-left: 0;
@@ -3749,7 +3864,7 @@ table tbody tr td::last-child {
   }
 
   .cardContain {
-    width: 100%;
+    width: 80%;
     height: 720px;
 
   }
@@ -3785,6 +3900,8 @@ table tbody tr td::last-child {
     margin: 0 auto;
   }
 }
+
+
 
 @media (max-width: 1250px) {
   .cardHomeTitle {
@@ -4099,7 +4216,9 @@ table tbody tr td::last-child {
   width: 100%;
   height: 100%;
   background-image: url('https://static.igem.wiki/teams/4607/wiki/fonts/logopeqcut.png');
-  background-size: 460px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 50%;
   border: 0;
   color: white;
@@ -4375,8 +4494,8 @@ table tbody tr td::last-child {
 }
 
 .contOurBeg1 {
-  margin-left: 4%;
-  margin-top: -28%;
+  margin-left: 0;
+  margin-top: 0;
 }
 
 .instr_selector {
@@ -4390,11 +4509,11 @@ table tbody tr td::last-child {
   margin-left: 30%;
   margin-top: 5%;
   max-width: fit-content;
+  margin: 0 auto;
 }
 
 .gotas {
-  margin-left: -10%;
-  margin-top: 10%;
+  width: 100%;
 }
 
 .title_whereStarted {
@@ -4492,4 +4611,24 @@ table tbody tr td::last-child {
 
 .boton-ocultar:hover {
   background-color: darkred;
+}
+
+.seccionPaddingERR{
+  width: 100%;
+  height: fit-content;
+  padding: 0 10%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 65px;   
+
+}
+
+.contenido{
+  margin-left: 0 !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  overflow: hidden;
+
 }
