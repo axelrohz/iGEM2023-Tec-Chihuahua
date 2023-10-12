@@ -627,7 +627,7 @@ input {
  /*para acomodar el div padre de los botones y de la imagen de taffy*/
  .logocontainer {
   background: transparent;
-  top: 34%;
+  top: 49%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 500px;
@@ -658,7 +658,7 @@ input {
  .methods {
   width: 180px;
   height: 180px;
-  left: 75%;
+  left: 29%;
   color: #C55B75;
   background-color: transparent;
   border: 5px solid #C55B75;
@@ -668,7 +668,7 @@ input {
   transition: background-color 0.5s, transform 0.5s;
   overflow: hidden;
   z-index: 10;
-  top: 29vh;
+  top: 3vh;
 }
  .overview{
   top: 50%;
