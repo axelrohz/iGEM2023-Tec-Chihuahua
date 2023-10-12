@@ -5660,26 +5660,36 @@
 			  dot33.classList.remove('active');
 			  dot44.classList.remove('active'); 
 			  dot55.classList.add('active');
-			}  else if (sect2top - topPad <= topPad) {
-			  dot1.classList.remove('active');
-			  dot2.classList.add('active'); 
-			  dot3.classList.remove('active');
-			} else if (sect1top - topPad <= topPad) {
-			  dot1.classList.add('active');
-			  dot2.classList.remove('active');
-			  dot2.classList.remove('active');
-			} else if (sect1top - topPad <= topPad) {
-			  dot1.classList.add('active');
-			  dot2.classList.remove('active');
-			  dot2.classList.remove('active');
-			} else if (sect1top - topPad <= topPad) {
-			  dot1.classList.add('active');
-			  dot2.classList.remove('active');
-			  dot2.classList.remove('active');
+			}  else if (sect44top - topPad <= topPad) {
+			  dot11.classList.remove('active');
+			  dot22.classList.remove('active');
+			  dot33.classList.remove('active');
+			  dot44.classList.add('active'); 
+			  dot55.classList.remove('active');
+			} else if (sect33top - topPad <= topPad) {
+			  dot11.classList.remove('active');
+			  dot22.classList.remove('active');
+			  dot33.classList.add('active');
+			  dot44.classList.remove('active'); 
+			  dot55.classList.remove('active');
+			} else if (sect22top - topPad <= topPad) {
+			  dot11.classList.remove('active');
+			  dot22.classList.add('active');
+			  dot33.classList.rmeove('active');
+			  dot44.classList.remove('active'); 
+			  dot55.classList.remove('active');
+			} else if (sect11top - topPad <= topPad) {
+			  dot11.classList.add('active');
+			  dot22.classList.remove('active');
+			  dot33.classList.rmeove('active');
+			  dot44.classList.remove('active'); 
+			  dot55.classList.remove('active');
 			} else {
-			  dot1.classList.remove('active');
-			  dot2.classList.remove('active');
-			  dot3.classList.remove('active');
+			  dot11.classList.remove('active');
+			  dot22.classList.remove('active');
+			  dot33.classList.rmeove('active');
+			  dot44.classList.remove('active'); 
+			  dot55.classList.remove('active');
 			}
 		  }); 
 		</script>
