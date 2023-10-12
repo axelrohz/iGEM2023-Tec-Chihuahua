@@ -7,7 +7,6 @@
     top: 0;
     display: none;
     transition: 0s;
-    background-color: red;
 }
 
 .openCloseNav{
@@ -19,7 +18,6 @@
     top: 0;
     transition: 0.3s;
     transform: translateX(100%);
-    background-color: rgb(17, 0, 255);
 }
 
 .cellNav.active .openCloseNav{
