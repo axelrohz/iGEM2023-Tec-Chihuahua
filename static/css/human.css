@@ -4536,3 +4536,23 @@ h2 {
 #divBolitas img {
   width: 10%;
 }
+
+.afterTImeline{
+  font-weight: normal;
+}
+
+#sectionResults{
+  text-align: justify;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+#Clickhere{
+  text-align: center;
+  font-size: 15px;
+  padding-top: 2%;
+}
+
+p {
+  font-weight: normal;
+}
