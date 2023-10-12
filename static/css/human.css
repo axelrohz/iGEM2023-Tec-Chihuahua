@@ -3600,7 +3600,7 @@ table tbody tr td::last-child {
 /* Graph */
 /* Containers */
 #wrapper {
-  min-width: 55%;
+  min-width: 51vw;
   position: relative;
   margin: 2vw auto;
 }
@@ -3892,8 +3892,9 @@ table tbody tr td::last-child {
 }
 
 .bar-graph-vertical {
-  margin-top: 55px;
-  max-width: 770px;
+  margin-top: 8px;
+  max-width: 47vw;
+  margin-left: 5vw;
 }
 
 .bar-graph-vertical .bar-container {
@@ -4046,26 +4047,26 @@ table tbody tr td::last-child {
 }
 
 .Yaxis-title {
-  float: left;
   font-size: 18px;
-  position: relative;
+  position: absolute;
   text-align: center;
   transform: rotate(-90deg) translate(-110px, -110px);
-  width: 240px;
+  width: 17vw;
   font-weight: bold;
   color: #309B8D;
-  left: -12%;
+  left: 3vw;
 }
 
 .Xaxis-title {
-  float: left;
   font-size: 18px;
   position: relative;
   text-align: center;
   transform: translate(-35%, 1077%);
-  width: 240px;
+  width: 1vw;
   font-weight: bold;
   color: #309B8D;
+  left: 17vw;
+  top: 1.5vw;
 }
 
 .x-axis {
