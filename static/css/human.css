@@ -3228,7 +3228,7 @@ table tbody tr td::last-child {
   background: transparent;
   left: 54%;
   transform: translate(-50%, -50%);
-  max-width: 850px;
+  max-width: 900px;
   top: 7vw;
   height: auto;
   position: relative;
