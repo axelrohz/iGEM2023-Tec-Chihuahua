@@ -450,3 +450,17 @@ label {
   width: 800px;
   margin-left: 300vh;
 }
+
+.footImageResults { /*Esta cosa sirve para poner un pie de pagina que se ajuste a la responsividad del formato de la instruccion de arriba*/
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  align-items: center;
+  display: block;
+  margin: auto;
+  text-align: justify;
+  font-style: italic;
+  font-size: medium;
+  text-indent: 0;
+  color: gray;
+  }

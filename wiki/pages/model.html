@@ -154,16 +154,7 @@
    	    </div>
    	    <div class="layout">
    		 <!--cosas del index-->
-   		<div class="index1">
-			<nav class="navigation">
-				<ul>
-				<li><a class="introduction" href="#introduction">Introduction</a></li>
-				<li><a class="references" href="#referencesO">References</a></li>
-				</ul>
-   		 	</nav>
-   		</div>
-		
-   		<div class="secciones">
+   		<div class="seccionesO">
 			<div class="mkt-3dSlider py-6">
 				<div class="card1">
 				<div class="content">
@@ -339,19 +330,34 @@
    		 </div>
    		 <div class="layout">
    		 <!--cosas del index-->
-   		 <div class="index2">
-   			 <nav class="navigation">
-   				 <ul>
-   					 <li><a href="#underlying_theory">Underlying theory</a></li>
-   					 <li><a href="#model_building">Model building</a></li>
-   					 <li><a href="#monte_carlo">Monte Carlo Simulation</a></li>
-   					 <li><a href="#parameter_estimation">Parameter Estimation</a></li>
-					 <li><a href="#RSM">Response Surface Method</a></li>
-   					 <li><a href="#referencesM">References</a></li>
-   				 </ul>
-   			 </nav>
-   		 </div>
+   		 <div style="margin-left: 2.1%;" class="scrollIndexContain">
+			<div class="stickyIndex">
+			  <div class="lineIndex"></div>
+			  <div class="indexDots">
+				<div class="dotIndex" id="dot1" onclick="goTo('1')">
+				  <div class="dotText">Model building</div>
+				</div>
+				<div class="dotIndex" id="dot2" onclick="goTo('2')">
+				  <div class="dotText">Monte Carlo Simulation</div>
+				</div>
+				<div class="dotIndex" id="dot3" onclick="goTo('3')">
+				  <div class="dotText">Parameter Estimation</div>
+				</div>
+				<div class="dotIndex" id="dot4" onclick="goTo('4')">
+				  <div class="dotText">Response Surface Model</div>
+				</div>
+				<div class="dotIndex" id="dot5" onclick="goTo('5')">
+				  <div class="dotText">References</div>
+				</div>
+			  </div>
+  
+			</div>
+		  </div>
+
+		  <!--CONTENIDO DE LA SECCION-->
+
    		 <div class="secciones">
+			<div style="margin-left: 2%;">
    			 <div class="tituloContenido">
    				 <h3 id="upstream">First model</h3>
    			 </div>
@@ -1082,8 +1088,10 @@
    		 <mo>&#x2205;</mo>
   		 </math>
   		 <p  ALIGN="right" class="NumeroEcuacion">(xxx)</p>
+			 <br>
+				<br id="sec1">
   		 <div class="tituloContenido">
-   		 <h4 id="model_building" style="font-size: 2vw;">Model building</h4>
+   		 <h4 style="font-size: 2vw;">Model building</h4>
  		 </div>
  		 <div class="tituloContenido">
    		 <h5 class="ctaT"><span>Chemical reactions</span></h5>
@@ -3303,11 +3311,15 @@
 						<table class="table1-responsive TABLA1">
 							<p style="height: 6px; left: -28px; position: relative;"><b>Table 2.</b> Constants on the IPTG induction model</p>
 					<tr>
-						<th>Constant</th>
-						<th>Meaning</th>
-						<th>Value</th>
-						<th>Unit</th>
-					 <th>Reference</th>
+						<th rowspan="2">Constant</th>
+						<th rowspan="2">Meaning</th>
+						<th colspan="2">Value</th>
+						<th rowspan="2">Unit</th>
+					 	<th rowspan="2">Reference</th>
+					</tr>
+					<tr>
+						<th >LysK</th>
+						<th >LysCSA13</th>
 					</tr>
 				<tbody>
 					<tr>
@@ -3322,10 +3334,11 @@
 					   </math>
 					   </td>
 						<td>Simple diffusion constant of IPTG*</td>
-						<td>0.92</td>
+						<td colspan="2">0.92</td>
 					 <td><math display='block'>
+						<mi>m</mi><mi>i</mi>
 						<msup>
-						 <mi>min</mi>
+						<mi>n</mi>
 						 <mrow>
 						  <mo>&#x2212;</mo><mn>1</mn></mrow>
 						</msup>
@@ -3344,10 +3357,10 @@
 						   </math>
 						</td>
 						<td>Transcription rate of LacI*</td>
-						<td>0.23</td>
+						<td colspan="2">0.23</td>
 						<td><math display='block'>
-							<mi>n</mi><mi>M</mi><mo>&#x22C5;</mo><msup>
-							 <mi>min</mi>
+							<mi>n</mi><mi>M</mi><mo>&#x22C5;</mo><mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
 							 <mrow>
 							  <mo>&#x2212;</mo><mn>1</mn></mrow>
 							</msup>
@@ -3365,11 +3378,12 @@
 							 </mrow>
 						   </math></td>
 						<td>Translation rate of LacI*</td>
-						<td>15</td>
+						<td colspan="2">15</td>
 						<td><math display='block'>
+							<mi>m</mi><mi>i</mi>
 							<msup>
-							 <mi>min</mi>
-							 <mrow>
+							<mi>n</mi>
+							<mrow>
 							  <mo>&#x2212;</mo><mn>1</mn></mrow>
 							</msup>
 						   </math>
@@ -3386,10 +3400,10 @@
 							 </mrow>
 						   </math></td>
 						<td>Dimerization rate of LacI*</td>
-						<td>50</td>
+						<td colspan="2">50</td>
 						<td><math display='block'>
-							<mi>n</mi><mi>M</mi><mo>&#x22C5;</mo><msup>
-							 <mi>min</mi>
+							<mi>n</mi><mi>M</mi><mo>&#x22C5;</mo><mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
 							 <mrow>
 							  <mo>&#x2212;</mo><mn>1</mn></mrow>
 							</msup>
@@ -3407,17 +3421,10 @@
 							 </mrow>
 						   </math></td>
 						<td>LacI dimerization rate constant*</td>
+						<td colspan="2">10<sup>-3</sup></td>
 						<td><math display='block'>
-							<msup>
-							 <mn>10</mn>
-							 <mrow>
-							  <mo>&#x2212;</mo><mn>3</mn></mrow>
-							</msup>
-						   </math>
-						   </td>
-						<td><math display='block'>
-							<msup>
-							 <mi>min</mi>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
 							 <mrow>
 							  <mo>&#x2212;</mo><mn>1</mn></mrow>
 							</msup>
@@ -3435,9 +3442,13 @@
 							 </mrow>
 						   </math></td>
 						<td>Tetramerization rate of LacI</td>
-						<td>10<sup>4</sup>-10<sup>5</sup></td>
-						<td>nM<sup>-1</sup>·seg<sup>-1</sup></td>
-						<td></td>	   
+						<td>172806.1332</td>
+						<td>528929.5329</td>
+						<td><math display='block'>
+							<mi>n</mi><msup><mi>M</mi><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></msup><mrow><mo>&#x22C5; </mo><mi>m</mi><mi>i</mi><msup><mi>n</mi><mrow> <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
+						<td>estimated</td>	   
 					</tr>
 					<tr>
 						<td><math display='block'>
@@ -3449,22 +3460,32 @@
 							 </mrow>
 						   </math></td>
 						<td>Dissociation rate of LacI tetramers</td>
-						<td></td>
-						<td></td>
-						<td></td>	   
+						<td>0.004646925019</td>
+						<td>0.004682362659</td>
+						<td><math display='block'>
+							<mi>m</mi><mi>i</mi>
+							<msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>	
+						<td>estimated</td>   
 					</tr>
 					<tr>
 						<td><math display='block'>
 							<mrow>
 							 <msub>
-							  <mi>k</mi>
-							  <mn>8</mn>
+							  <mi>k</mi> <mn>8</mn>
 							 </msub>
 							 </mrow>
 						   </math></td>
 						<td>Association rate of the first repression mechanism*</td>
-						<td></td>
-						<td></td>
+						<td colspan="2">960</td>
+						<td><math display='block'>
+							<mi>n</mi><msup><mi>M</mi><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></msup><mrow><mo>&#x22C5; </mo><mi>m</mi><mi>i</mi><msup><mi>n</mi><mrow> <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
 						<td><sup>4</sup></td>	   
 					</tr>
 					<tr>
@@ -3477,8 +3498,14 @@
 							 </mrow>
 						   </math></td>
 						<td>Dissociation rate of the first repression mechanism*</td>
-						<td></td>
-						<td></td>
+						<td colspan="2">2.4</td>
+						<td><math display='block'>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
 						<td><sup>4</sup></td>	   
 					</tr>
 					<tr>
@@ -3491,9 +3518,13 @@
 							 </mrow>
 						   </math></td>
 						<td>Association rate of the second repression mechanism</td>
-						<td></td>
-						<td></td>
-						<td></td>	   
+						<td>8289.871938</td>
+						<td>5870.331195</td>
+						<td><math display='block'>
+							<mi>n</mi><msup><mi>M</mi><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></msup><mrow><mo>&#x22C5; </mo><mi>m</mi><mi>i</mi><msup><mi>n</mi><mrow> <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
+						<td>estimated</td>	   
 					</tr>
 					<tr>
 						<td><math display='block'>
@@ -3505,9 +3536,16 @@
 							 </mrow>
 						   </math></td>
 						<td>Dissociation rate of the second repression mechanism</td>
-						<td></td>
-						<td></td>
-						<td></td>	   
+						<td>1.401669318</td>
+						<td>1.596701205</td>
+						<td><math display='block'>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
+						<td>estimated</td>	   
 					</tr>
 					<tr>
 						<td><math display='block'>
@@ -3519,8 +3557,11 @@
 							 </mrow>
 						   </math></td>
 						<td>Association rate of the second derepression mechanism*</td>
-						<td></td>
-						<td></td>
+						<td colspan="2">3x10<sup>-7</sup></td>
+						<td><math display='block'>
+							<mi>n</mi><msup><mi>M</mi><mrow><mo>&#x2212;</mo><mn>2</mn></mrow></msup><mrow><mo>&#x22C5; </mo><mi>m</mi><mi>i</mi><msup><mi>n</mi><mrow> <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
 						<td><sup>4</sup></td>	   
 					</tr>
 					<tr>
@@ -3533,8 +3574,14 @@
 							 </mrow>
 						   </math></td>
 						<td>Dissociation rate of the first derepression mechanism*</td>
-						<td></td>
-						<td></td>
+						<td colspan="2">12</td>
+						<td><math display='block'>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
 						<td><sup>4</sup></td>	   
 					</tr>
 					<tr>
@@ -3547,8 +3594,11 @@
 							 </mrow>
 						   </math></td>
 						<td>Association rate of the second derepression mechanism*</td>
-						<td></td>
-						<td></td>
+						<td colspan="2">3x10<sup>-7</sup></td>
+						<td><math display='block'>
+							<mi>n</mi><msup><mi>M</mi><mrow><mo>&#x2212;</mo><mn>2</mn></mrow></msup><mrow><mo>&#x22C5; </mo><mi>m</mi><mi>i</mi><msup><mi>n</mi><mrow> <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
 						<td><sup>4</sup></td>	   
 					</tr>
 					<tr>
@@ -3561,8 +3611,11 @@
 							 </mrow>
 						   </math></td>
 						<td>Dissociation rate of the second derepression mechanism*</td>
-						<td></td>
-						<td></td>
+						<td colspan="2">4.8x10<sup>-7</sup></td>
+						<td><math display='block'>
+							<mi>n</mi><msup><mi>M</mi><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></msup><mrow><mo>&#x22C5; </mo><mi>m</mi><mi>i</mi><msup><mi>n</mi><mrow> <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
 						<td><sup>4</sup></td>	   
 					</tr>
 					<tr>
@@ -3577,9 +3630,13 @@
 					   </math>
 					   </td>
 						<td>Association rate of the third derepression mechanism</td>
-						<td></td>
-					 	<td></td>
-					   <td></td>
+						<td>7.36E-07</td>
+						<td>3.94E-07</td>
+					 	<td><math display='block'>
+							<mi>n</mi><msup><mi>M</mi><mrow><mo>&#x2212;</mo><mn>2</mn></mrow></msup><mrow><mo>&#x22C5; </mo><mi>m</mi><mi>i</mi><msup><mi>n</mi><mrow> <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
+					   <td>estimated</td>
 					</tr>
 					<tr>
 						<td>
@@ -3593,9 +3650,16 @@
 						   </math>
 						</td>
 						<td>Dissociation rate of the third derepression mechanism </td>
-						<td></td>
-						<td></td>
-						<td></td>
+						<td>2988.006153</td>
+						<td>2284.487239</td>
+						<td><math display='block'>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
+						<td>estimated</td>
 					</tr>
 					<tr>
 						<td><math display='block'>
@@ -3607,9 +3671,13 @@
 							 </mrow>
 						   </math></td>
 						<td>Association rate of the fourth derepression mechanism</td>
-						<td></td>
-						<td></td>
-						<td></td>	   
+						<td>9.87E-08</td>
+						<td>1.00E-07</td>
+						<td><math display='block'>
+							<mi>n</mi><msup><mi>M</mi><mrow><mo>&#x2212;</mo><mn>2</mn></mrow></msup><mrow><mo>&#x22C5; </mo><mi>m</mi><mi>i</mi><msup><mi>n</mi><mrow> <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
+						<td>estimated</td>	   
 					</tr>
 					<tr>
 						<td><math display='block'>
@@ -3621,9 +3689,16 @@
 							 </mrow>
 						   </math></td>
 						<td>Dissociation rate of the fourth derepression mechanism </td>
-						<td></td>
-						<td></td>
-						<td></td>	   
+						<td>2411.253642</td>
+						<td>1960.781346</td>
+						<td><math display='block'>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
+						<td>estimated</td>	   
 					</tr>
 					<tr>
 						<td><math display='block'>
@@ -3635,9 +3710,16 @@
 							 </mrow>
 						   </math></td>
 						<td>Transcriptional rate of endolysin</td>
-						<td></td>
-						<td></td>
-						<td></td>	   
+						<td>0.1361368059</td>
+						<td>0.1283765476</td>
+						<td><math display='block'>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
+						<td>estimated</td>	   
 					</tr>
 					<tr>
 						<td><math display='block'>
@@ -3649,9 +3731,16 @@
 							 </mrow>
 						   </math></td>
 						<td>Transcriptional leak rate of endolysin in dimers</td>
-						<td></td>
-						<td></td>
-						<td></td>	   
+						<td>0.07776261945</td>
+						<td>0.2261425676</td>
+						<td><math display='block'>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
+						<td>estimated</td>	   
 					</tr>
 					<tr>
 						<td><math display='block'>
@@ -3663,9 +3752,16 @@
 							 </mrow>
 						   </math></td>
 						<td>Transcriptional leak rate of endolysin in tetramers</td>
-						<td></td>
-						<td></td>
-						<td></td>	   
+						<td>0.4241461762</td>
+						<td>0.3737824434</td>
+						<td><math display='block'>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
+						<td>estimated</td>	   
 					</tr>
 					<tr>
 						<td><math display='block'>
@@ -3677,9 +3773,16 @@
 							 </mrow>
 						   </math></td>
 						<td>Translation rate of the endolysin</td>
-						<td></td>
-						<td></td>
-						<td></td>	   
+						<td>13.7090742</td>
+						<td>10.93457685</td>
+						<td><math display='block'>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
+						<td>estimated</td>	   
 					</tr>
 					<tr>
 						<td><math display='block'>
@@ -3691,8 +3794,14 @@
 							 </mrow>
 						   </math></td>
 						<td>Degradation rate constant of the repressor mRNA*</td>
-						<td></td>
-						<td></td>
+						<td colspan="2">0.462</td>
+						<td><math display='block'>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
 						<td><sup>4</sup></td>	   
 					</tr>
 					<tr>
@@ -3705,23 +3814,15 @@
 							 </mrow>
 						   </math></td>
 						<td>Degradation rate constant of the repressor monomer*</td>
-						<td></td>
-						<td></td>
-						<td></td>	   
-					</tr>
-					<tr>
+						<td colspan="2">0.2</td>
 						<td><math display='block'>
-							<mrow>
-							 <msub>
-							  <mi>k</mi>
-							  <mn>11</mn>
-							 </msub>
-							 </mrow>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
 						   </math></td>
-						<td>Dissociation rate of the second repression mechanism</td>
-						<td></td>
-						<td></td>
-						<td><sup>4</sup></td>	   
+						<td></td>	   
 					</tr>
 					<tr>
 						<td><math display='block'>
@@ -3733,8 +3834,14 @@
 							 </mrow>
 						   </math></td>
 						<td>Degradation rate constant of the repressor dimer*</td>
-						<td></td>
-						<td></td>
+						<td colspan="2">0.2</td>
+						<td><math display='block'>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
 						<td><sup>4</sup></td>	   
 					</tr>
 					<tr>
@@ -3747,9 +3854,16 @@
 							 </mrow>
 						   </math></td>
 						<td>Degradation rate constant of the repressor tetramer</td>
-						<td></td>
-						<td></td>
-						<td></td>	   
+						<td>0.08567815958</td>
+						<td>0.1271362511</td>
+						<td><math display='block'>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
+						<td>estimated</td>	   
 					</tr>
 					<tr>
 						<td><math display='block'>
@@ -3761,8 +3875,14 @@
 							 </mrow>
 						   </math></td>
 						<td>Degradation rate constant of the dimer-IPTG complex*</td>
-						<td></td>
-						<td></td>
+						<td colspan="2">0.2</td>
+						<td><math display='block'>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
 						<td><sup>4</sup></td>	   
 					</tr>
 					<tr>
@@ -3775,9 +3895,16 @@
 							 </mrow>
 						   </math></td>
 						<td>Degradation rate constant of the tetramer-IPTG complex</td>
-						<td></td>
-						<td></td>
-						<td></td>	   
+						<td>0.05925751146</td>
+						<td>0.1315557746</td>
+						<td><math display='block'>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
+						<td>estimated</td>	   
 					</tr>
 					<tr>
 						<td><math display='block'>
@@ -3789,9 +3916,16 @@
 							 </mrow>
 						   </math></td>
 						<td>Degradation rate constant of the repressor monomer</td>
-						<td></td>
-						<td></td>
-						<td></td>	   
+						<td>0.05214786934</td>
+						<td>0.1212103757</td>
+						<td><math display='block'>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
+						<td>estimated</td>	   
 					</tr>
 					<tr>
 						<td><math display='block'>
@@ -3803,9 +3937,16 @@
 							 </mrow>
 						   </math></td>
 						<td>Degradation rate constant of endolysin mRNA</td>
-						<td></td>
-						<td></td>
-						<td></td>	   
+						<td>0.8233674927</td>
+						<td>1.531937249</td>
+						<td><math display='block'>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
+						<td>estimated</td>	   
 					</tr>
 				</tbody>
 						</table>
@@ -4062,8 +4203,10 @@
 				</div>
 		</div>
 			<br>
+			<br>
+			<br id = "sec2">
 		   <div class="tituloContenido">
-				<h4 id="monte_carlo" style="font-size: 2vw;">Monte Carlo Simulation</h4>
+				<h4 style="font-size: 2vw;">Monte Carlo Simulation</h4>
 			</div>
 			<br>
 			<p  class="contenido">Precise predictions of biological processes rely on understanding intricate networks. Nonetheless, this understanting is hindered by the lack of data concerning numerous model parameters, especially reaction kinetics. In our system of ODEs, we encountered a shorfall of associated parameters for some of the reaction kinetics presented in <a class="figures" href="#table2"><b>Table 2.</b></a> Selecting the suitable -range of- values presented a challenge as it should encompass a broad spectrum to ensure the experimental results are representative, detailed enough to capture essential information, but not overly extensive that it becomes too complex and time-consuming due to limitations in computational resources. </p>
@@ -4071,8 +4214,10 @@
 			<p  class="contenido">Monte Carlo (MC) simulations have been employed to predict the effects of stochasticity among reaction events, as well as in model developments where parameters are unknown, and for parameter estimation.<sup><a href="#referenciaM15" class="referencias">15-18</a></sup> Furthermore, MC simulations demonstrate a noteworthy level of accuracy, efficiency in computation, and ease of implementation. In our model, we employ a MC simulation to conduct 10,000 iterative excecutions utilizing randomly assing values for the unknown kinetic constants in <a class="figures" href="#table2"><b>Table 2.</b></a></p>
 			<br>
 			<p  class="contenido">Through this approach, a diverse and extensive array of potential parameter sets is generated, facilitating a probabilistic exploration of the parameter space. Subsequently, we leverage the established range of viable kinetic constant values obtained from the MC simulation as an input for a machine-learning-based parameter estimation algorithm, aiming to narrow down said parameter range.</p>
+			<br>
+			<br id="sec3">
 			<div class="tituloContenido">
-				<h4 id="parameter_estimation" style=" font-size: 2vw;">Parameter estimation</h4>
+				<h4 style=" font-size: 2vw;">Parameter estimation</h4>
 			</div>
 			<br id="closePopUp">
 			<p class="contenido">Subsequently, employing the collected data set of sampled parameters, we proceed to estimate the specific parameters tied to the kinetic aspects of the system. We present a computational approach for the estimation of kinetic constants, focusing on the induction phase of protein expression, through the application of a <a href="#popup-optin" class="popupColor">Genetic Algorithm</a> (GA).</p>
@@ -4110,8 +4255,8 @@
 			<div class="tituloContenido" id="RSM">
    				 <h3 id="upstream" style="font-size: 2vw;">Second model</h3>
    			</div>
-			<div class="tituloContenido">
-				<h4 id="parameter_estimation" style=" font-size: 2vw;">Response Surface Method</span></h4>
+			<div id="sec4" class="tituloContenido">
+				<h4 style=" font-size: 2vw;">Response Surface Method</span></h4>
 			</div>
 			<div class="tituloContenido">
 				<h5 class="ctaT"><span>Background</span></h5>
@@ -4266,6 +4411,7 @@
 					   </msub>
 					   </math>
 					   <br>
+					   <p class="contenido">Where cell viability (% control) represents the proportion of viable cells remaining post-treatment. A sample refers to a specific concentration combination being assayed. The positive control is the corresponding bacteria treated with resazurin, while the negative control comprises the crude extract of E. coli BL21(DE3), the corresponding bacteria and resarzurin.</p>
 
 
 
@@ -4590,9 +4736,13 @@
 				<br>
 				In order to construct an accurate model from our data, it's crucial to have a normally distributed dataset. We achieved this by implementing a Box-Cox transformation, selecting the appropriate transformation by evaluating a Box-Cox plot. After applying the suitable transformation, we confirmed the normal distribution through a normal probability plot and determined the best-fit equation recommended by Design Expert out of three options: linear, 2FI, or quadratic. If the p-value exceeded 0.05 and the term wasn't necessary hierarchically, it was eliminated. Below is a summary outlining the models for each bacterium.
 			</p>
+			<br id="sec5">
+			<br>
+			<br>
+			<br>
 			<div class="accordion-item">
 				<div class="accordion-item-header">
-					<h3 id="referencesM">References</h3>
+					<h3>References</h3>
 				</div>
 				<div class="accordion-item-body">
 					<div class="accordion-item-body-content">
@@ -4622,7 +4772,9 @@
 					</div>
 				</div>
 			</div>
+		</div>
       </div>
+
       </div>
 </div>
 
@@ -4637,15 +4789,31 @@
       </div>
     <div class="layout">
       <!--cosas del index-->
-      <div class="index3">
-   	 <nav class="navigation">
- 		 <ul>
-   		 <li>
-     		 <a href="#referencesR">References</a>
-   		 </li>
- 		 </ul>
-   	 </nav>
-      </div>
+      <div style="margin-left: 2.1%;" class="scrollIndexContain">
+		<div class="stickyIndex">
+		  <div class="lineIndex"></div>
+		  <div class="indexDots">
+			<div class="dotIndex" id="dot1" onclick="goTo('1')">
+			  <div class="dotText">Model building</div>
+			</div>
+			<div class="dotIndex" id="dot2" onclick="goTo('2')">
+			  <div class="dotText">Monte Carlo Simulation</div>
+			</div>
+			<div class="dotIndex" id="dot3" onclick="goTo('3')">
+			  <div class="dotText">Monte Carlo Simulation</div>
+			</div>
+			<div class="dotIndex" id="dot4" onclick="goTo('4')">
+			  <div class="dotText">Response Surface Model</div>
+			</div>
+			<div class="dotIndex" id="dot5" onclick="goTo('5')">
+			  <div class="dotText">References</div>
+			</div>
+		  </div>
+
+		</div>
+	  </div>
+
+	  
       <div class="secciones">
    	 <p>DENTRO DE ESTE DIV PONER LAS COSAS DE LAS SECCIONES</p>
       </div>
@@ -4681,5 +4849,87 @@
 		});
 	  });
 	  </script>
+	      <script type="text/javascript">
+			var dot1 = document.getElementById('dot1');
+			var dot2 = document.getElementById('dot2');
+			var dot3 = document.getElementById('dot3');
+			var dot4 = document.getElementById('dot4');
+			var dot5 = document.getElementById('dot5');
+		
+			function goTo(scrollID) {
+			  dot1.classList.remove('active');
+			  dot2.classList.remove('active');
+			  dot3.classList.remove('active');
+			  dot4.classList.remove('active');
+			  dot5.classList.remove('active');
+			  var dot = document.getElementById('dot' + scrollID);
+			  dot.classList.add('active');
+			  var element = document.getElementById('sec' + scrollID);
+			  element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+			}
+			</script>
+  
+	  <script type="text/javascript">
+		  var sect1 = document.getElementById('sec1');
+		  var sect2 = document.getElementById('sec2');
+		  var sect3 = document.getElementById('sec3');
+		  var sect4 = document.getElementById('sec4');
+		  var sect5 = document.getElementById('sec5');
+	  
+		  var dot1 = document.getElementById('dot1');
+		  var dot2 = document.getElementById('dot2');
+		  var dot3 = document.getElementById('dot3');
+		  var dot4 = document.getElementById('dot4');
+		  var dot5 = document.getElementById('dot5');
+	  
+		  window.addEventListener('scroll', function () {
+			var sect1top = sect1.getBoundingClientRect().top;
+			var sect2top = sect2.getBoundingClientRect().top;
+			var sect3top = sect3.getBoundingClientRect().top;
+			var sect4top = sect4.getBoundingClientRect().top;
+			var sect5top = sect5.getBoundingClientRect().top;
+			var topPad = 200;
+			if (sect5top - topPad <= topPad) {
+			  dot1.classList.remove('active');
+			  dot2.classList.remove('active');
+			  dot3.classList.remove('active');
+			  dot4.classList.remove('active');
+			  dot5.classList.add('active');
+			}  else if (sect4top - topPad <= topPad) {
+			  dot1.classList.remove('active');
+			  dot2.classList.remove('active');
+			  dot3.classList.remove('active');
+			  dot4.classList.add('active');
+			  dot5.classList.remove('active');
+			} else if (sect3top - topPad <= topPad) {
+			  dot1.classList.remove('active');
+			  dot2.classList.remove('active');
+			  dot3.classList.add('active');
+			  dot4.classList.remove('active');
+			  dot5.classList.remove('active');
+			} else if (sect2top - topPad <= topPad) {
+			  dot1.classList.remove('active');
+			  dot2.classList.add('active');
+			  dot3.classList.remove('active');
+			  dot4.classList.remove('active');
+			  dot5.classList.remove('active');
+			} else if (sect1top - topPad <= topPad) {
+			  dot1.classList.add('active');
+			  dot2.classList.remove('active');
+			  dot3.classList.remove('active');
+			  dot4.classList.remove('active');
+			  dot5.classList.remove('active');
+			} else {
+			  dot1.classList.remove('active');
+			  dot2.classList.remove('active');
+			  dot3.classList.remove('active');
+			  dot4.classList.remove('active');
+			  dot5.classList.remove('active');
+			}
+	  
+	  
+		  }); 
+		</script>
+  
 </html>
 {% endblock %}
