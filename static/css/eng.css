@@ -625,16 +625,16 @@ input {
 
 
  /*para acomodar el div padre de los botones y de la imagen de taffy*/
- .logocontainer{
+ .logocontainer {
   background: transparent;
-  top: 50%;
+  top: 34%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 500px;
   height: 500px;
   position: relative;
-  z-index:10;
- }
+  z-index: 10;
+}
  
 
  #taffy {
@@ -655,10 +655,10 @@ input {
  }
  
  /* Estilos para los botones(los circulos) en forma de div */
- .methods{
+ .methods {
   width: 180px;
   height: 180px;
-  left: 30%;
+  left: 75%;
   color: #C55B75;
   background-color: transparent;
   border: 5px solid #C55B75;
@@ -667,8 +667,9 @@ input {
   position: relative;
   transition: background-color 0.5s, transform 0.5s;
   overflow: hidden;
-  z-index:10;
- }
+  z-index: 10;
+  top: 29vh;
+}
  .overview{
   top: 50%;
   left: -12%;
