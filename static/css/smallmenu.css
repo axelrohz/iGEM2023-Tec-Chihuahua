@@ -7,7 +7,6 @@
     top: 0;
     display: none;
     transition: 0s;
-    background-color: red;
 }
 
 .openCloseNav{
@@ -19,12 +18,9 @@
     top: 0;
     transition: 0.3s;
     transform: translateX(100%);
-    background-color: rgb(17, 0, 255);
 }
 
 .cellNav.active .openCloseNav{
-    width: 80%;
-    height: 100vh;
     transform: translateX(0);
 }
 
@@ -100,7 +96,7 @@
     cursor: pointer;
     transition: 0.3s;
     position: absolute;
-    width: 80%;
+    width: 100%;
     right: 0;
     top: 0;
     padding-top: 100px;
