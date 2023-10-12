@@ -791,6 +791,20 @@ ul.unol {
     border-bottom: 1px solid #111;
 }
 
+.instructionDiagram{
+    background-color: #C55B75;
+    color: white;
+    width: fit-content;
+    padding-top: 0.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    height: 3vw;
+    border-radius: 25px;
+    margin-left: 18vw;
+    font-size: 1.2vw;
+    margin-bottom: 4vw;
+  }
+
 /*NuevoIndexBonito*/
 .teamScroll {
     position: sticky;

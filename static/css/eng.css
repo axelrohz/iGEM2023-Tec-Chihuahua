@@ -627,11 +627,11 @@ input {
  /*para acomodar el div padre de los botones y de la imagen de taffy*/
  .logocontainer {
   background: transparent;
-  top: 49%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 500px;
-  height: 500px;
+  height: 180px;
   position: relative;
   z-index: 10;
 }
