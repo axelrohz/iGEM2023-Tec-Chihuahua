@@ -2643,3 +2643,193 @@ element.style {
     width: 508px;
     margin-left: 29vh;
 }
+ 
+
+/*diagrama de bolitas*/
+.selector {
+    position: relative;
+    left: 37vw;
+    top: -8vw;
+    width: 9.7vw;
+    height: 10vw;
+    margin-top: 25vw;
+    margin-bottom: 8vw;
+  }
+  
+  .selector button {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://static.igem.wiki/teams/4607/wiki/fonts/logopeqcut.png');
+    background-size: 32vw;
+    border-radius: 50%;
+    border: 0;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+    transition: all .1s;
+  }
+  
+  .selector button:focus {
+    outline: none;
+  }
+  
+  .selector ul {
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: -20px;
+    right: -20px;
+    bottom: -20px;
+    left: -20px;
+  }
+  
+  .selector li {
+    position: absolute;
+    width: 0;
+    height: 100%;
+    margin: 0 50%;
+    -webkit-transform: rotate(-360deg);
+    transition: all 0.8s ease-in-out;
+    color: white;
+  }
+  
+  .selector li input {
+    display: none;
+  }
+  
+  .selector li input+label {
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    width: 0;
+    height: 0;
+    line-height: 1px;
+    margin-left: 0;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: none;
+    transition: all 0.8s ease-in-out, color 0.1s, background 0.1s;
+  }
+  
+  .selector li input:checked+label {
+    color: white;
+  }
+  
+  .selector.open li input+label {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin-left: -40px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    color: white;
+  }
+  
+  .selector li:nth-child(7n+1) input+label {
+    background: #5BC5AB;
+    /* Verde */
+  }
+  
+  .selector li:nth-child(7n+2) input+label {
+    background: #CE788F;
+    /* Rosa */
+  }
+  
+  .selector li:nth-child(7n+3) input+label {
+    background: #E4A17C;
+    /* Naranja */
+  }
+  
+  .selector li:nth-child(7n+4) input+label {
+    background: #CE788F;
+    /* Rosa */
+  }
+  
+  .selector li:nth-child(7n+5) input+label {
+    background: #5BC5AB;
+    /* Verde */
+  }
+  
+  .selector li:nth-child(7n+6) input+label {
+    background: #CE788F;
+    /* Rosa */
+  }
+  
+  .selector li:nth-child(7n+7) input+label {
+    background: #E4A17C;
+    /* Naranja */
+  }
+  
+  .description1,
+  .description2,
+  .description3,
+  .description4,
+  .description5,
+  .description6,
+  .description7 {
+    display: none;
+    position: relative;
+    top: -200%;
+    left: 0%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 5px;
+    width: 500px;
+  }
+  
+  .selector.open li:nth-child(1):hover .description1 {
+    display: inline-block;
+    left: 12vw;
+    top: -8vw;
+    width: 750px;
+  }
+  
+  .selector.open li:nth-child(2):hover .description2 {
+    display: inline-block;
+    transform: rotate(-52deg);
+    margin-top: -50px;
+    margin-left: -50px;
+  }
+  
+  .selector.open li:nth-child(3):hover .description3 {
+    display: inline-block;
+    transform: rotate(-103deg);
+    top: -31vw;
+    left: -22vw;
+  }
+  
+  .selector.open li:nth-child(4):hover .description4 {
+    display: inline-block;
+    transform: rotate(-154deg);
+    left: -42vw;
+    top: -20vw;
+  }
+  
+  .selector.open li:nth-child(5):hover .description5 {
+    display: inline-block;
+    transform: rotate(154deg);
+    left: -42vw;
+    top: 7vw;
+  }
+  
+  .selector.open li:nth-child(6):hover .description6 {
+    display: inline-block;
+    transform: rotate(103deg);
+    left: -24vw;
+    top: 28vw;
+  }
+  
+  .selector.open li:nth-child(7):hover .description7 {
+    display: inline-block;
+    transform: rotate(51deg);
+    left: 2vw;
+    top: 24vw;
+  }
+  
