@@ -1,5 +1,5 @@
 .cellNavLeft{
-    width: 20vh;
+    width: 19%vh;
     height: 100vh;
     position: absolute;
     z-index: 99998;
@@ -26,7 +26,7 @@
 }
 
 .cellNav.active .openCloseNav{
-    width: 80vw;
+    width: 80%;
     height: 100vh;
     transform: translateX(0);
 }
