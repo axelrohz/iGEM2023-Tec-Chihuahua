@@ -5045,7 +5045,7 @@
 										<td>1</td>
 										<td>286.16</td>
 										<td>25.53</td>
-										<td>"<0001"</td>
+										<td><0001</td>
 										<td></td>
 									</tr>
 									<tr>
@@ -5101,7 +5101,7 @@
 										<td>3</td>
 										<td>123.66</td>
 										<td>12.43</td>
-										<td>"<0.0001"</td>
+										<td><0.0001</td>
 										<td>significant</td>
 									</tr>
 									<tr>
@@ -5128,7 +5128,7 @@
 										<td>1</td>
 										<td>286.16</td>
 										<td>28.77</td>
-										<td>"<0.0001"</td>
+										<td><0.0001</td>
 										<td></td>
 									</tr>
 									<tr>
@@ -5155,12 +5155,220 @@
 							<h5>
 								<em>E. coli</em>
 							</h5>
-							
-
-
-
-
-
+							For the <em>E. coli </em> response, linear and quadratic models were recommended. Box-Cox plot for the crude extracts data for bactericiday activity (%) against <em>E. coli</em>. Based on this, the software recommended not performing a transformation.
+							<br>
+							<br>
+							<br>
+							Illustrated in <b>Figure 8</b>, the dataset displays a significant alignment of data points along the plotted straight line, implying an approximate normal distribution of the data. Thus, a transformation was also deemed unnecessary.
+							<br>
+							<br>
+							<br>
+							<table class="tabla2-responsive TABLA2">
+								<p style="
+								height: 6px;
+								left: -28px;
+								position: relative;"><b>Table 10.</b>ANOVA table of the bactericidal activity against <em>E. coli</em>. Quadratic equation: no transformation applied.</p>
+										<th>Source</th>
+										<th>Sum of squares</th>
+										<th>df</th>
+										<th>Mean square</th>
+										<th>F-value</th>
+										<th>p-value</th>
+										<th> </th>
+									</tr>
+								<tbody>
+									<tr>
+										<td>Model</td>
+										<td>685.35</td>
+										<td>9</td>
+										<td>76.15</td>
+										<td>3.35</td>
+										<td>0.0153</td>
+										<td>significant</td>
+									</tr>
+									<tr>
+										<td>A-LysK</td>
+										<td>3.87</td>
+										<td>1</td>
+										<td>3.87</td>
+										<td>0.1703</td>
+										<td>0.6850</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>B-LysCSA13</td>
+										<td>229.34</td>
+										<td>1</td>
+										<td>229.34</td>
+										<td>10.09</td>
+										<td>0.0055</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>C-LysSS</td>
+										<td>90.14</td>
+										<td>1</td>
+										<td>90.14</td>
+										<td>3.96</td>
+										<td>0.0628</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>AB</td>
+										<td>18.60</td>
+										<td>1</td>
+										<td>18.60</td>
+										<td>0.8180</td>
+										<td>0.3784</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>AC</td>
+										<td>6.41</td>
+										<td>1</td>
+										<td>6.41</td>
+										<td>0.2819</td>
+										<td>0.6023</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>BC</td>
+										<td>54.87</td>
+										<td>1</td>
+										<td>54.87</td>
+										<td>2.41</td>
+										<td>0.1387</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>A<sup>2</sup></td>
+										<td>19.62</td>
+										<td>1</td>
+										<td>19.62</td>
+										<td>0.8629</td>
+										<td>0.3659</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>B<sup>2</sup></td>
+										<td>195.97</td>
+										<td>1</td>
+										<td>195.97</td>
+										<td>8.62</td>
+										<td>0.0092</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>C<sup>2</sup></td>
+										<td>66.53</td>
+										<td>1</td>
+										<td>66.53</td>
+										<td>2.93</td>
+										<td>0.1053</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Residual</td>
+										<td>386.55</td>
+										<td>17</td>
+										<td>22.74</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Cor Total </td>
+										<td>1071.90</td>
+										<td>26</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+							<br>
+							As outlined in <b>Table 10</b>, the sole significant term appears to be B<sup>2</sup>. However, this finding contradicts the expected outcome, considering our target is <em>E. coli</em>, a gram-negative bacterium. Given that LysCSA13 is specific to <em>S. aureus</em>, it would not exhibit significant bactericidal activity in this particular experiment. As such, we opted to leave the model to explore the potential effects of the C terms, even if they were initially deemed insignificant.
+							<br>
+							<table class="tabla2-responsive TABLA2">
+								<p style="
+								height: 6px;
+								left: -28px;
+								position: relative;"><b>Table 11.</b> ANOVA table of the bactericidal activity against <em>E. coli</em>. Quadratic equation without A, AB, AC, BC, and A<sup>2</sup>: no transformation applied.</p>
+										<th>Source</th>
+										<th>Sum of squares</th>
+										<th>df</th>
+										<th>Mean square</th>
+										<th>F-value</th>
+										<th>p-value</th>
+										<th> </th>
+									</tr>
+								<tbody>
+									<tr>
+										<td>Model</td>
+										<td>581.98</td>
+										<td>4</td>
+										<td>145.49</td>
+										<td>6.53</td>
+										<td>0.0013</td>
+										<td>significant</td>
+									</tr>
+									<tr>
+										<td>B-LysCSA13</td>
+										<td>229.34</td>
+										<td>1</td>
+										<td>229.34</td>
+										<td>10.30</td>
+										<td>0.0040</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>C-LysSS</td>
+										<td>90.14</td>
+										<td>1</td>
+										<td>90.14</td>
+										<td>4.05</td>
+										<td>0.0566</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>B<sup>2</sup></td>
+										<td>195.97</td>
+										<td>1</td>
+										<td>195.97</td>
+										<td>8.80</td>
+										<td>0.0071</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>C<sup>2</sup></td>
+										<td>66.53</td>
+										<td>1</td>
+										<td>66.53</td>
+										<td>2.99</td>
+										<td>0.0979</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Residual</td>
+										<td>489.93</td>
+										<td>22</td>
+										<td>22.27</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Cor Total</td>
+										<td>1071.90</td>
+										<td>26</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
 							</div>
 						</div>
 					</div>
