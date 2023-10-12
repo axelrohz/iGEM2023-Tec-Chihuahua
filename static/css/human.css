@@ -4098,7 +4098,7 @@ table tbody tr td::last-child {
   width: 100%;
   height: 100%;
   background-image: url('https://static.igem.wiki/teams/4607/wiki/fonts/logopeqcut.png');
-  background-size: 460px;
+  background-size: 32vw;
   border-radius: 50%;
   border: 0;
   color: white;
