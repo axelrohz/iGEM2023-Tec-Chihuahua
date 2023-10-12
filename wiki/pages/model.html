@@ -155,11 +155,11 @@
 					</div>
 					<div class="dotIndex" id="dot2"
 						onclick="goTo('2')">
-						<div class="dotText">Introduction/div>
+						<div class="dotText">Introduction</div>
 					</div>
 					<div onclick="goTo('3')" class="dotIndex"
 						id="dot3">
-						<div class="dotText">References<div>
+						<div class="dotText">References</div>
 					</div>
 				</div>
 			</div>
@@ -210,7 +210,7 @@
 				</div>
 			</div>
 			<div class="tituloContenido">
-				<h3 id="sec1"><br><br><br><br>Introduction</h3>
+				<h3 id="sec2"><br><br><br><br>Introduction</h3>
 			</div>
 			<div>
 				<p class="contenido">
@@ -5513,10 +5513,12 @@
 	      <script type="text/javascript">
 			var dot1 = document.getElementById('dot1');
 			var dot2 = document.getElementById('dot2');
+			var dot3 = document.getElementById('dot3');
 		
 			function goTo(scrollID) {
 			  dot1.classList.remove('active');
 			  dot2.classList.remove('active');
+			  dot3.classList.remove('active');
 			  var dot = document.getElementById('dot' + scrollID);
 			  dot.classList.add('active');
 			  var element = document.getElementById('sec' + scrollID);
@@ -5527,23 +5529,33 @@
 	  <script type="text/javascript">
 		  var sect1 = document.getElementById('sec1');
 		  var sect2 = document.getElementById('sec2');
+		  var sect3 = document.getElementById('sec3');
 	  
 		  var dot1 = document.getElementById('dot1');
 		  var dot2 = document.getElementById('dot2');
+		  var dot3 = document.getElementById('dot3');
 	  
 		  window.addEventListener('scroll', function () {
 			var sect1top = sect1.getBoundingClientRect().top;
 			var sect2top = sect2.getBoundingClientRect().top;
+			var sect3top = sect3.getBoundingClientRect().top;
 			var topPad = 200;
-			if (sect2top - topPad <= topPad) {
+			if (sect3top - topPad <= topPad) {
 			  dot1.classList.remove('active');
-			  dot2.classList.add('active');
-			}  else if (sect1top - topPad <= topPad) {
+			  dot2.classList.remove('active'); 
+			  dot3.classList.add('active');
+			}  else if (sect2top - topPad <= topPad) {
+			  dot1.classList.remove('active');
+			  dot2.classList.add('active'); 
+			  dot3.classList.remove('active');
+			} else if (sect1top - topPad <= topPad) {
 			  dot1.classList.add('active');
+			  dot2.classList.remove('active');
 			  dot2.classList.remove('active');
 			} else {
 			  dot1.classList.remove('active');
 			  dot2.classList.remove('active');
+			  dot3.classList.remove('active');
 			}
 		  }); 
 		</script>
