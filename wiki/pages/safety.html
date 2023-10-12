@@ -81,7 +81,13 @@
   <div class="div">
 
     <!--Index Bonito-->
-    <div class="teamScroll">
+      
+
+    <script src="../../static/assets/js/main.js"></script>
+    <div class="wrap">
+    </div>
+
+    <div class="container relative con">
       <div style="margin-left: 2.1%;" class="scrollIndexContain">
         <div class="stickyIndex">
           <div class="lineIndex"></div>
@@ -114,13 +120,7 @@
 
         </div>
       </div>
-    </div>
 
-    <script src="../../static/assets/js/main.js"></script>
-    <div class="wrap">
-    </div>
-
-    <div class="container relative con">
 
       <h2 id="sec1">Overview</h2>
       <div class="row">
@@ -677,7 +677,17 @@
           var sect7top = sect7.getBoundingClientRect().top;
           var sect8top = sect8.getBoundingClientRect().top;
           var topPad = 200;
-          if (sect7top - topPad <= topPad) {
+          
+          if (sect8top - topPad <= topPad) {
+            dot1.classList.remove('active');
+            dot2.classList.remove('active');
+            dot3.classList.remove('active');
+            dot4.classList.remove('active');
+            dot5.classList.remove('active');
+            dot6.classList.remove('active');
+            dot7.classList.remove('active');
+            dot8.classList.add('active');
+          } else if (sect7top - topPad <= topPad) {
             dot1.classList.remove('active');
             dot2.classList.remove('active');
             dot3.classList.remove('active');
@@ -685,7 +695,7 @@
             dot5.classList.remove('active');
             dot6.classList.remove('active');
             dot7.classList.add('active');
-            dot8.classList.add('active');
+            dot8.classList.remove('active');
           } else if (sect6top - topPad <= topPad) {
             dot1.classList.remove('active');
             dot2.classList.remove('active');
@@ -756,33 +766,33 @@
       </script>
 
       <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
+        let slideIndexx = 1;
+        showSlides(slideIndexx);
 
         // Next/previous controls
         function plusSlides(n) {
-          showSlides(slideIndex += n);
+          showSlides(slideIndexx += n);
         }
 
         // Thumbnail image controls
         function currentSlide(n) {
-          showSlides(slideIndex = n);
+          showSlides(slideIndexx = n);
         }
 
         function showSlides(n) {
           let i;
           let slides = document.getElementsByClassName("mySlides");
           let dots = document.getElementsByClassName("dot");
-          if (n > slides.length) { slideIndex = 1 }
-          if (n < 1) { slideIndex = slides.length }
+          if (n > slides.length) { slideIndexx = 1 }
+          if (n < 1) { slideIndexx = slides.length }
           for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
           }
           for (i = 0; i < dots.length; i++) {
             dots[i].className = dots[i].className.replace(" active", "");
           }
-          slides[slideIndex - 1].style.display = "block";
-          dots[slideIndex - 1].className += " active";
+          slides[slideIndexx - 1].style.display = "block";
+          dots[slideIndexx - 1].className += " active";
         }
       </script>
 
