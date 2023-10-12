@@ -3068,6 +3068,7 @@ table tbody tr td::last-child {
   padding: 10px 0;
   border-radius: 5px 5px 0 0;
 }
+
 .card:hover .card-item1 {
   background-color: #D27063;
   color: white;
@@ -3076,6 +3077,7 @@ table tbody tr td::last-child {
   padding: 10px 0;
   border-radius: 5px 5px 0 0;
 }
+
 .card:hover .card-item2 {
   background-color: #447D9C;
   color: white;
@@ -3084,6 +3086,7 @@ table tbody tr td::last-child {
   padding: 10px 0;
   border-radius: 5px 5px 0 0;
 }
+
 .card:hover .card-item3 {
   background-color: #F6AE2D;
   color: white;
@@ -3092,6 +3095,7 @@ table tbody tr td::last-child {
   padding: 10px 0;
   border-radius: 5px 5px 0 0;
 }
+
 .card:hover .card-item4 {
   background-color: #A9BA6C;
   color: white;
@@ -3224,7 +3228,7 @@ table tbody tr td::last-child {
   background: transparent;
   left: 54%;
   transform: translate(-50%, -50%);
-  max-width: 850px;
+  max-width: 900px;
   top: 7vw;
   height: auto;
   position: relative;
@@ -3596,7 +3600,7 @@ table tbody tr td::last-child {
 /* Graph */
 /* Containers */
 #wrapper {
-  min-width: 55%;
+  min-width: 51vw;
   position: relative;
   margin: 2vw auto;
 }
@@ -3888,8 +3892,9 @@ table tbody tr td::last-child {
 }
 
 .bar-graph-vertical {
-  margin-top: 55px;
-  max-width: 770px;
+  margin-top: 8px;
+  max-width: 47vw;
+  margin-left: 5vw;
 }
 
 .bar-graph-vertical .bar-container {
@@ -4042,26 +4047,26 @@ table tbody tr td::last-child {
 }
 
 .Yaxis-title {
-  float: left;
   font-size: 18px;
-  position: relative;
+  position: absolute;
   text-align: center;
   transform: rotate(-90deg) translate(-110px, -110px);
-  width: 240px;
+  width: 17vw;
   font-weight: bold;
   color: #309B8D;
-  left: -12%;
+  left: 3vw;
 }
 
 .Xaxis-title {
-  float: left;
   font-size: 18px;
   position: relative;
   text-align: center;
   transform: translate(-35%, 1077%);
-  width: 240px;
+  width: 1vw;
   font-weight: bold;
   color: #309B8D;
+  left: 17vw;
+  top: 1.5vw;
 }
 
 .x-axis {
@@ -4345,7 +4350,8 @@ table tbody tr td::last-child {
   justify-content: space-between;
   align-items: center;
 }
-.scrollIndexContain{
+
+.scrollIndexContain {
   position: absolute;
   height: calc(100% - 150px);
   z-index: 1;
@@ -4353,7 +4359,7 @@ table tbody tr td::last-child {
 
 }
 
-.stickyIndex{
+.stickyIndex {
   position: sticky;
   top: 15vh;
   width: fit-content;
@@ -4363,7 +4369,7 @@ table tbody tr td::last-child {
   align-items: center;
 }
 
-.lineIndex{
+.lineIndex {
   position: absolute;
   width: 2px;
   height: 100%;
@@ -4373,7 +4379,7 @@ table tbody tr td::last-child {
   transform: translate(-50%, 0);
 }
 
-.indexDots{
+.indexDots {
   position: absolute;
   width: 20px;
   height: 100%;
@@ -4385,7 +4391,7 @@ table tbody tr td::last-child {
   align-items: center;
 }
 
-.dotIndex{
+.dotIndex {
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -4393,18 +4399,19 @@ table tbody tr td::last-child {
   cursor: pointer;
   transition: 0.3s;
   position: relative;
-} 
+}
 
-.dotIndex:hover{
+.dotIndex:hover {
   width: 20px;
   height: 20px;
 }
 
-.dotIndex.active{
+.dotIndex.active {
   width: 20px;
   height: 20px;
 }
-.dotIndex::before{
+
+.dotIndex::before {
   content: '';
   position: absolute;
   width: 0px;
@@ -4417,12 +4424,12 @@ table tbody tr td::last-child {
   transition: 0.5s;
 }
 
-.dotIndex.active::before{
+.dotIndex.active::before {
   width: 10px;
   height: 10px;
 }
 
-.dotText{
+.dotText {
   position: absolute;
   font-size: 1.2rem;
   font-weight: 500;
@@ -4435,36 +4442,39 @@ table tbody tr td::last-child {
   opacity: 0;
 }
 
-.stickyIndex:hover .indexDots .dotIndex .dotText{
+.stickyIndex:hover .indexDots .dotIndex .dotText {
   opacity: 0.5;
 }
 
-.dotIndex.active .dotText{
+.dotIndex.active .dotText {
   opacity: 1;
   transition-delay: 0.3s;
 }
 
 
-.dotIndex:hover .dotText, .stickyIndex:hover .indexDots .dotIndex:hover .dotText{
+.dotIndex:hover .dotText,
+.stickyIndex:hover .indexDots .dotIndex:hover .dotText {
   opacity: 0.7;
   transition: 0.25s;
 }
-.dotIndex.active:hover .dotText{
+
+.dotIndex.active:hover .dotText {
   opacity: 1;
   transition-delay: 0.3s;
 }
 
-.active .scrollIndexContain{
+.active .scrollIndexContain {
   opacity: 1;
 
 }
 
-.teamScroll{
+.teamScroll {
   overflow: visible;
   overflow-x: clip;
   overflow-y: visible;
   overflow-y: clip;
 }
+
 .dotIndex {
   width: 10px;
   height: 10px;
@@ -4683,14 +4693,14 @@ table tbody tr td::last-child {
   font-weight: 600;
   box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px, rgb(246, 84, 174) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
   transition: all 0.2s;
-  
+
 
 }
 
 .boton-mostrar-timeline:hover {
-   box-shadow: rgb(246, 84, 174) -2px -2px 0px 2px, rgb(255, 198, 0) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
-   transform: scale(1.01);
- }
+  box-shadow: rgb(246, 84, 174) -2px -2px 0px 2px, rgb(255, 198, 0) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+  transform: scale(1.01);
+}
 
 h2 {
   text-align: center;
@@ -4706,17 +4716,17 @@ h2 {
   width: 10%;
 }
 
-.afterTImeline{
+.afterTImeline {
   font-weight: normal;
 }
 
-#sectionResults{
+#sectionResults {
   text-align: justify;
   font-size: 17px;
   font-weight: normal;
 }
 
-#Clickhere{
+#Clickhere {
   text-align: center;
   font-size: 15px;
   padding-top: 2%;
@@ -4729,8 +4739,98 @@ p {
 #traffic {
   clip-path: inset(0px 0px 150px);
   width: 100%;
-  height: 500px;;
+  height: 500px;
+  ;
   object-fit: cover;
   margin-top: 1%;
   margin-bottom: -8%;
-} 
+}
+
+#DiagramOverview {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#DiagramOverview img {
+  width: 17%;
+  margin-left: 45%;
+  margin-right: 45%;
+}
+
+#botons {
+  display: flex;
+  align-items: center;
+  padding-top: 2%;
+}
+
+#botons button {
+  margin: 0 5%;
+  background-color: #00b9b0;
+  color: #fff;
+
+  font-size: 24px;
+  padding: 10px;
+  width: 150px;
+  height: 50px;
+
+  border: 1px solid #fff;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+.TitleCArd {
+
+  margin: 20px auto;
+  border: 2px solid black;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), inset 0 0 10px rgba(255, 255, 255, 0.5);
+  transition: all 0.5s ease-in-out;
+  font-weight: bold;
+}
+
+.TitleCArd:hover {
+  transform: scale(1.1);
+  background-color: #00b9b0;
+  color: white;
+}
+
+#AppM-Info,
+#TargeM-Info,
+#DrugSys-Info,
+#AppM-Info2,
+#TargeM-Info2,
+#DrugSys-Info2 {
+  height: 50%;
+  margin: 20px auto;
+  border: 2px solid black;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), inset 0 0 10px rgba(255, 255, 255, 0.5);
+  transition: all 0.5s ease-in-out;
+}
+
+#AppM-Info:hover,
+#TargeM-Info:hover,
+#DrugSys-Info:hover,
+#AppM-Info2:hover,
+#TargeM-Info2:hover,
+#DrugSys-Info2:hover {
+  transform: scale(1.1);
+    background-color: #00b9b0;
+    color: white;
+}
+
+.COntent{
+  width: 50%;
+}
+
+.content{
+  display: flex;
+}
