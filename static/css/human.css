@@ -4834,3 +4834,9 @@ p {
 .content{
   display: flex;
 }
+.referencias{
+  color:#C55B75;
+}
+.referencias:hover{
+  color: #C55B75;
+}
