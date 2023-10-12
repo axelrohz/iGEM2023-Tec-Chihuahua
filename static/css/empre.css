@@ -1789,7 +1789,7 @@
 }
 .selector {
     position: relative;
-    left: -33vw;
+    left: -13vw !important;
     top: -8vw;
     width: 9.7vw;
     height: 10vw;
@@ -1823,6 +1823,75 @@ element.style {
 }
 .selector li:nth-child(7n+1) input + label {
     background: #5BC5AB;
+}
+
+.selector button {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://static.igem.wiki/teams/4607/wiki/fonts/logopeqcut.png');
+    background-size: 32vw;
+    border-radius: 50%;
+    border: 0;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+    transition: all .1s;
+}
+  
+.selector button:focus {
+    outline: none;
+}
+.selector.open li:nth-child(1):hover .description1 {
+    display: inline-block;
+    left: 16vw;
+    top: 1vw;
+    width: 24vw;
+}
+.selector.open li:nth-child(2):hover .description2 {
+    display: inline-block;
+    transform: rotate(-52deg);
+    margin-top: -44px;
+    margin-left: -50px;
+    width: 20vw;
+    top: -18vw;
+    left: 9vw;
+}
+.selector.open li:nth-child(3):hover .description3 {
+    display: inline-block;
+    transform: rotate(-103deg);
+    top: -28vw;
+    left: -19vw;
+    width: 25vw;
+}
+.selector.open li:nth-child(4):hover .description4 {
+    display: inline-block;
+    transform: rotate(-154deg);
+    left: -38vw;
+    top: -10vw;
+    width: 25vw;
+}
+.selector.open li:nth-child(5):hover .description5 {
+    display: inline-block;
+    transform: rotate(154deg);
+    left: 13vw;
+    top: -11vw;
+    width: 25vw;
+}
+.selector.open li:nth-child(6):hover .description6 {
+    display: inline-block;
+    transform: rotate(103deg);
+    left: -8vw;
+    top: -31vw;
+    width: 29vw;
+}
+.selector.open li:nth-child(7):hover .description7 {
+    display: inline-block;
+    transform: rotate(51deg);
+    left: -34vw;
+    top: -30vw;
+    width: 29vw;
 }
 
 .popup2 {

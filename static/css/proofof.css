@@ -2,7 +2,7 @@
   font-family: 'Bricolage Grotesque';
   font-size: 3rem;
   font-weight: bold;
-  background-image: linear-gradient(#C55B75, #D27063, #DE8551);
+  background-image: linear-gradient(#D27063, #D27063, #DE8551);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -334,7 +334,8 @@ label {
 .subtitleF1,
 .subtitleF2,
 .subtitleF3,
-.subtitleF4 {
+.subtitleF4,
+.subtitleF5 {
   text-align: center;
   font-family: 'Bricolage Grotesque';
   font-size: 3vw;
@@ -361,7 +362,7 @@ label {
 .subtitleF2:before {
   content: " ";
   display: block;
-  border: 2px solid #C55B75;
+  border: 2px solid #D27063;
   background-color: #f8f8f8;
 }
 
@@ -369,7 +370,7 @@ label {
 .subtitleF3:before {
   content: " ";
   display: block;
-  border: 2px solid #A9BA6C;
+  border: 2px solid #447D9C;
   background-color: #f8f8f8;
 }
 
@@ -377,7 +378,15 @@ label {
 .subtitleF4:before {
   content: " ";
   display: block;
-  border: 2px solid #F6AE2D;
+  border: 2px solid #D27063;
+  background-color: #f8f8f8;
+}
+
+.subtitleF5:after,
+.subtitleF5:before {
+  content: " ";
+  display: block;
+  border: 2px solid #447D9C;
   background-color: #f8f8f8;
 }
 
@@ -388,17 +397,32 @@ label {
   margin: 0.5rem;
 }
 
-.accordion-item {
+.accordion-item, .accordion-item2, .accordion-item3, .accordion-item4, .accordion-item5{
   justify-self: center;
   background-color: #ffffff;
   color: #111;
   margin: auto;
   border-radius: 3px;
-  box-shadow: 7px 7px #5BC5AB;
   width: 80%;
   margin-bottom: 20px;
   border: solid 0.5px #EBEBF1;
 
+}
+.accordion-item{
+  background: white;
+  color: black;
+  border-radius: 2vw;
+  box-shadow: 7px 7px #447D9C;
+  border-color: #447D9C;
+  border-width: 0.2vw;
+}
+.accordion-item2{
+  background: white;
+  color: black;
+  border-radius: 2vw;
+  box-shadow: 7px 7px #D27063;
+  border-color: #D27063;
+  border-width: 0.2vw;
 }
 
 .accordion-item-header {
@@ -426,7 +450,7 @@ label {
   content: "\2212";
 }
 
-.accordion-item-body {
+.accordion-item-body, .accordion-item-body2, .accordion-item-body3, .accordion-item-body4, .accordion-item-body5 {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -450,3 +474,17 @@ label {
   width: 800px;
   margin-left: 300vh;
 }
+
+.footImageResults { /*Esta cosa sirve para poner un pie de pagina que se ajuste a la responsividad del formato de la instruccion de arriba*/
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  align-items: center;
+  display: block;
+  margin: auto;
+  text-align: justify;
+  font-style: italic;
+  font-size: medium;
+  text-indent: 0;
+  color: gray;
+  }
