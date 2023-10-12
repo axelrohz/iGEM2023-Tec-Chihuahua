@@ -3048,15 +3048,45 @@ table tbody tr td::last-child {
   overflow: auto;
 }
 
-.card:hover .card-item {
+.card:hover .card-item5 {
   background-color: #5BC5AB;
   color: white;
   height: 300px;
   width: 100%;
   padding: 10px 0;
   border-radius: 5px 5px 0 0;
-
-
+}
+.card:hover .card-item1 {
+  background-color: #D27063;
+  color: white;
+  height: 300px;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 5px 5px 0 0;
+}
+.card:hover .card-item2 {
+  background-color: #447D9C;
+  color: white;
+  height: 300px;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 5px 5px 0 0;
+}
+.card:hover .card-item3 {
+  background-color: #F6AE2D;
+  color: white;
+  height: 300px;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 5px 5px 0 0;
+}
+.card:hover .card-item4 {
+  background-color: #A9BA6C;
+  color: white;
+  height: 300px;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 5px 5px 0 0;
 }
 
 .card:hover .card-text {
