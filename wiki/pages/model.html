@@ -143,15 +143,37 @@
    	 <!--secciones-->
    	<div id="scrlS3"> <!--encapsula todos los divs-->
    		<div id="sectionOverview" class="sectO"><!--seccion de overview-->
-   	    <div class="seccionesTituolo">
+			<div class="seccionesTituolo">
 					<br id="titulo_overview">
 					<br>
 					<br>
 					<br>
    		    <div class="seccionOverview">
-   			 <p class="subtitleO">Overview</p>
+   			 <p id="sec1" class="subtitleO">Overview</p>
    		    </div>
    	    </div>
+
+		   <div style="margin-left: 2.1%;"
+		   class="scrollIndexContain">
+		   <div class="stickyIndex">
+			   <div class="lineIndex"></div>
+			   <div class="indexDots">
+				   <div onclick="goTo('1')" class="dotIndex"
+					   id="dot1">
+					   <div class="dotText">Overview</div>
+				   </div>
+				   <div class="dotIndex" id="dot2"
+					   onclick="goTo('2')">
+					   <div class="dotText">Introduction</div>
+				   </div>
+				   <div onclick="goTo('3')" class="dotIndex"
+					   id="dot3">
+					   <div class="dotText">References</div>
+				   </div>
+			   </div>
+		   </div>
+		   </div>
+
    	    <div class="layout">	
    		<div class="seccionesO">
 			<div class="mkt-3dSlider py-6">
@@ -188,7 +210,7 @@
 				</div>
 			</div>
 			<div class="tituloContenido">
-				<h3 id="introduction"><br><br><br><br>Introduction</h3>
+				<h3 id="sec2"><br><br><br><br>Introduction</h3>
 			</div>
 			<div>
 				<p class="contenido">
@@ -298,7 +320,7 @@
 			<br><br><br><br>
 			<div class="accordion-item">
 				<div class="accordion-item-header">
-					<h3 id="referencesO">References</h3>
+					<h3 id="sec3">References</h3>
 				</div>
 				<div class="accordion-item-body">
 					<div class="accordion-item-body-content">
@@ -333,19 +355,22 @@
 			<div class="stickyIndex">
 			  <div class="lineIndex"></div>
 			  <div class="indexDots">
-				<div class="dotIndex" id="dot1" onclick="goTo('1')">
+				<div class="dotIndex" id="dot11" onclick="goTo('11')">
+					<div class="dotText">Underlying theory</div>
+				  </div>
+				<div class="dotIndex" id="dot22" onclick="goTo('22')">
 				  <div class="dotText">Model building</div>
 				</div>
-				<div class="dotIndex" id="dot2" onclick="goTo('2')">
+				<div class="dotIndex" id="dot33" onclick="goTo('33')">
 				  <div class="dotText">Monte Carlo Simulation</div>
 				</div>
-				<div class="dotIndex" id="dot3" onclick="goTo('3')">
+				<div class="dotIndex" id="dot44" onclick="goTo('44')">
 				  <div class="dotText">Parameter Estimation</div>
 				</div>
-				<div class="dotIndex" id="dot4" onclick="goTo('4')">
+				<div class="dotIndex" id="dot55" onclick="goTo('55')">
 				  <div class="dotText">Response Surface Model</div>
 				</div>
-				<div class="dotIndex" id="dot5" onclick="goTo('5')">
+				<div class="dotIndex" id="dot66" onclick="goTo('66')">
 				  <div class="dotText">References</div>
 				</div>
 			  </div>
@@ -361,7 +386,7 @@
    				 <h3 id="upstream">First model</h3>
    			 </div>
    			 <div class="tituloContenido">
-   				 <h4 id="underlying_theory" style="font-size: 2vw;">Underlying theory</h4>
+   				 <h4 id="sec11" style="font-size: 2vw;">Underlying theory</h4>
    			 </div>
    			 <p class="contenido">The IPTG induction mechanism has 3 key elements: The operator (LacO),  lac repressor, and inductor (IPTG). These elements interact in a coordinated manner, as illustrated in <b>figure 1.</b> The process unfolds as follows:</p>
    			 <br>
@@ -1087,8 +1112,8 @@
    		 <mo>&#x2205;</mo>
   		 </math>
   		 <p  ALIGN="right" class="NumeroEcuacion">(xxx)</p>
-			 <br>
-				<br id="sec1">
+			 <br id="sec22">
+				<br>
   		 <div class="tituloContenido">
    		 <h4 style="font-size: 2vw;">Model building</h4>
  		 </div>
@@ -4191,9 +4216,9 @@
 					</div>
 				</div>
 		</div>
+			<br id = "sec33">
 			<br>
 			<br>
-			<br id = "sec2">
 		   <div class="tituloContenido">
 				<h4 style="font-size: 2vw;">Monte Carlo Simulation</h4>
 			</div>
@@ -4203,8 +4228,8 @@
 			<p  class="contenido">Monte Carlo (MC) simulations have been employed to predict the effects of stochasticity among reaction events, as well as in model developments where parameters are unknown, and for parameter estimation.<sup><a href="#referenciaM15" class="referencias">15-18</a></sup> Furthermore, MC simulations demonstrate a noteworthy level of accuracy, efficiency in computation, and ease of implementation. In our model, we employ a MC simulation to conduct 10,000 iterative excecutions utilizing randomly assing values for the unknown kinetic constants in <a class="figures" href="#table2"><b>Table 2.</b></a></p>
 			<br>
 			<p  class="contenido">Through this approach, a diverse and extensive array of potential parameter sets is generated, facilitating a probabilistic exploration of the parameter space. Subsequently, we leverage the established range of viable kinetic constant values obtained from the MC simulation as an input for a machine-learning-based parameter estimation algorithm, aiming to narrow down said parameter range.</p>
+			<br id="sec44">
 			<br>
-			<br id="sec3">
 			<div class="tituloContenido">
 				<h4 style=" font-size: 2vw;">Parameter estimation</h4>
 			</div>
@@ -4244,7 +4269,7 @@
 			<div class="tituloContenido" id="RSM">
    				 <h3 id="upstream" style="font-size: 2vw;">Second model</h3>
    			</div>
-			<div id="sec4" class="tituloContenido">
+			<div class="tituloContenido" id="sec55">
 				<h4 style=" font-size: 2vw;">Response Surface Method</span></h4>
 			</div>
 			<div class="tituloContenido">
@@ -5357,13 +5382,13 @@
 
 
 			</p>
-			<br id="sec5">
+			<br>
 			<br>
 			<br>
 			<br>
 			<div class="accordion-item">
 				<div class="accordion-item-header">
-					<h3>References</h3>
+					<h3 id="sec66">References</h3>
 				</div>
 				<div class="accordion-item-body">
 					<div class="accordion-item-body-content">
@@ -5414,19 +5439,19 @@
 		<div class="stickyIndex">
 		  <div class="lineIndex"></div>
 		  <div class="indexDots">
-			<div class="dotIndex" id="dot1" onclick="goTo('1')">
+			<div class="dotIndex" id="dot111" onclick="goTo('111')">
 			  <div class="dotText">Model building</div>
 			</div>
-			<div class="dotIndex" id="dot2" onclick="goTo('2')">
+			<div class="dotIndex" id="dot222" onclick="goTo('222')">
 			  <div class="dotText">Monte Carlo Simulation</div>
 			</div>
-			<div class="dotIndex" id="dot3" onclick="goTo('3')">
+			<div class="dotIndex" id="dot333" onclick="goTo('333')">
 			  <div class="dotText">Monte Carlo Simulation</div>
 			</div>
-			<div class="dotIndex" id="dot4" onclick="goTo('4')">
+			<div class="dotIndex" id="dot444" onclick="goTo('444')">
 			  <div class="dotText">Response Surface Model</div>
 			</div>
-			<div class="dotIndex" id="dot5" onclick="goTo('5')">
+			<div class="dotIndex" id="dot555" onclick="goTo('555')">
 			  <div class="dotText">References</div>
 			</div>
 		  </div>
@@ -5468,21 +5493,19 @@
 		  }
 		  
 		});
-	  });
+	  });	  
 	  </script>
+
+	<!--Primer index-->
 	      <script type="text/javascript">
 			var dot1 = document.getElementById('dot1');
 			var dot2 = document.getElementById('dot2');
 			var dot3 = document.getElementById('dot3');
-			var dot4 = document.getElementById('dot4');
-			var dot5 = document.getElementById('dot5');
 		
 			function goTo(scrollID) {
 			  dot1.classList.remove('active');
 			  dot2.classList.remove('active');
 			  dot3.classList.remove('active');
-			  dot4.classList.remove('active');
-			  dot5.classList.remove('active');
 			  var dot = document.getElementById('dot' + scrollID);
 			  dot.classList.add('active');
 			  var element = document.getElementById('sec' + scrollID);
@@ -5494,63 +5517,136 @@
 		  var sect1 = document.getElementById('sec1');
 		  var sect2 = document.getElementById('sec2');
 		  var sect3 = document.getElementById('sec3');
-		  var sect4 = document.getElementById('sec4');
-		  var sect5 = document.getElementById('sec5');
 	  
 		  var dot1 = document.getElementById('dot1');
 		  var dot2 = document.getElementById('dot2');
 		  var dot3 = document.getElementById('dot3');
-		  var dot4 = document.getElementById('dot4');
-		  var dot5 = document.getElementById('dot5');
 	  
 		  window.addEventListener('scroll', function () {
 			var sect1top = sect1.getBoundingClientRect().top;
 			var sect2top = sect2.getBoundingClientRect().top;
 			var sect3top = sect3.getBoundingClientRect().top;
-			var sect4top = sect4.getBoundingClientRect().top;
-			var sect5top = sect5.getBoundingClientRect().top;
 			var topPad = 200;
-			if (sect5top - topPad <= topPad) {
+			if (sect3top - topPad <= topPad) {
 			  dot1.classList.remove('active');
-			  dot2.classList.remove('active');
-			  dot3.classList.remove('active');
-			  dot4.classList.remove('active');
-			  dot5.classList.add('active');
-			}  else if (sect4top - topPad <= topPad) {
-			  dot1.classList.remove('active');
-			  dot2.classList.remove('active');
-			  dot3.classList.remove('active');
-			  dot4.classList.add('active');
-			  dot5.classList.remove('active');
-			} else if (sect3top - topPad <= topPad) {
-			  dot1.classList.remove('active');
-			  dot2.classList.remove('active');
+			  dot2.classList.remove('active'); 
 			  dot3.classList.add('active');
-			  dot4.classList.remove('active');
-			  dot5.classList.remove('active');
-			} else if (sect2top - topPad <= topPad) {
+			}  else if (sect2top - topPad <= topPad) {
 			  dot1.classList.remove('active');
-			  dot2.classList.add('active');
+			  dot2.classList.add('active'); 
 			  dot3.classList.remove('active');
-			  dot4.classList.remove('active');
-			  dot5.classList.remove('active');
 			} else if (sect1top - topPad <= topPad) {
 			  dot1.classList.add('active');
 			  dot2.classList.remove('active');
-			  dot3.classList.remove('active');
-			  dot4.classList.remove('active');
-			  dot5.classList.remove('active');
+			  dot2.classList.remove('active');
 			} else {
 			  dot1.classList.remove('active');
 			  dot2.classList.remove('active');
 			  dot3.classList.remove('active');
-			  dot4.classList.remove('active');
-			  dot5.classList.remove('active');
 			}
-	  
-	  
 		  }); 
 		</script>
+
+		<!--Segundo index-->
+		<script type="text/javascript">
+			var dot11 = document.getElementById('dot11');
+			var dot22 = document.getElementById('dot22');
+			var dot33 = document.getElementById('dot33');
+			var dot44 = document.getElementById('dot44');
+			var dot55 = document.getElementById('dot55');
+			var dot66 = document.getElementById('dot66');
+		
+			function goTo(scrollID) {
+			  dot11.classList.remove('active');
+			  dot22.classList.remove('active');
+			  dot33.classList.remove('active');
+			  dot44.classList.remove('active');
+			  dot55.classList.remove('active');
+			  dot66.classList.remove('active');
+			  var dot = document.getElementById('dot' + scrollID);
+			  dot.classList.add('active');
+			  var element = document.getElementById('sec' + scrollID);
+			  element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+			}
+			</script>
   
+	  <script type="text/javascript">
+		  var sect11 = document.getElementById('sec11');
+		  var sect22 = document.getElementById('sec22');
+		  var sect33 = document.getElementById('sec33');
+		  var sect44 = document.getElementById('sec44');
+		  var sect55 = document.getElementById('sec55');
+		  var sect66 = document.getElementById('sec66');
+	  
+		  var dot11 = document.getElementById('dot11');
+		  var dot22 = document.getElementById('dot22');
+		  var dot33 = document.getElementById('dot33');
+		  var dot44 = document.getElementById('dot44');
+		  var dot55 = document.getElementById('dot55');
+		  var dot66 = document.getElementById('dot66');
+	  
+		  window.addEventListener('scroll', function () {
+			var sect11top = sect11.getBoundingClientRect().top;
+			var sect22top = sect22.getBoundingClientRect().top;
+			var sect33top = sect33.getBoundingClientRect().top;
+			var sect44top = sect44.getBoundingClientRect().top;
+			var sect55top = sect55.getBoundingClientRect().top;
+			var sect66top = sect66.getBoundingClientRect().top;
+			var topPad = 200;
+			if (sect66top - topPad <= topPad) {
+			  dot11.classList.remove('active');
+			  dot22.classList.remove('active');
+			  dot33.classList.remove('active');
+			  dot44.classList.remove('active'); 
+			  dot55.classList.remove('active');
+			  dot66.classList.add('active');
+			} else if (sect55top - topPad <= topPad) {
+			  dot11.classList.remove('active');
+			  dot22.classList.remove('active');
+			  dot33.classList.remove('active');
+			  dot44.classList.remove('active'); 
+			  dot55.classList.add('active');
+			  dot66.classList.remove('active');
+			} else if (sect44top - topPad <= topPad) {
+			  dot11.classList.remove('active');
+			  dot22.classList.remove('active');
+			  dot33.classList.remove('active');
+			  dot44.classList.add('active'); 
+			  dot55.classList.remove('active');
+			  dot66.classList.remove('active');
+			} else if (sect33top - topPad <= topPad) {
+			  dot11.classList.remove('active');
+			  dot22.classList.remove('active');
+			  dot33.classList.add('active');
+			  dot44.classList.remove('active'); 
+			  dot55.classList.remove('active');
+			  dot66.classList.remove('active');
+			} else if (sect22top - topPad <= topPad) {
+			  dot11.classList.remove('active');
+			  dot22.classList.add('active');
+			  dot33.classList.remove('active');
+			  dot44.classList.remove('active'); 
+			  dot55.classList.remove('active');
+			  dot66.classList.remove('active');
+			} else if (sect11top - topPad <= topPad) {
+			  dot11.classList.add('active');
+			  dot22.classList.remove('active');
+			  dot33.classList.remove('active');
+			  dot44.classList.remove('active'); 
+			  dot55.classList.remove('active');
+			  dot66.classList.remove('active');
+			} else {
+			  dot11.classList.remove('active');
+			  dot22.classList.remove('active');
+			  dot33.classList.remove('active');
+			  dot44.classList.remove('active'); 
+			  dot55.classList.remove('active');
+			  dot66.classList.remove('active');			  
+			}
+		  }); 
+		</script>
+
+
+
 </html>
 {% endblock %}

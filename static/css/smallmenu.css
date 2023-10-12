@@ -1,5 +1,5 @@
 .cellNavLeft{
-    width: 20vh;
+    width: 19%;
     height: 100vh;
     position: absolute;
     z-index: 99998;
@@ -9,13 +9,8 @@
     transition: 0s;
 }
 
-.cellNav.active .cellNavLeft{
-    display: block;
-    transition-delay: 0.3s ;
-}
-
 .openCloseNav{
-    width: 80vw;
+    width: 80%;
     height: 100vh;
     right: 0;
     position: absolute;
@@ -26,8 +21,6 @@
 }
 
 .cellNav.active .openCloseNav{
-    width: 80vw;
-    height: 100vh;
     transform: translateX(0);
 }
 
@@ -66,7 +59,7 @@
     cursor: pointer;
     transition: 0.3s;
     z-index: 99999;
-    width: 100vw;
+    width: 100%;
     height: 70px;
     display: flex;
     justify-content: space-between;
@@ -103,7 +96,7 @@
     cursor: pointer;
     transition: 0.3s;
     position: absolute;
-    width: 80vw;
+    width: 100%;
     right: 0;
     top: 0;
     padding-top: 100px;
@@ -112,8 +105,6 @@
     height: 100vh;
     z-index: 99998;
     box-shadow: 0 6px 14px 5px rgb(0 0 0 / 33%);
-    overflow-x: hidden;
-    overflow-x: clip;
 
 }
 
@@ -168,7 +159,7 @@
     transition: 0.7s;
 }
 .expandNavMore.active .expandNav{
-    max-width: 100vw;
+    max-width: 100%;
 }
 
 .secondNavText{
