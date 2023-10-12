@@ -5485,7 +5485,7 @@
     <div class="secciones">
 		<div style="margin-left: 2%">
 			<div class="tituloContenido">
-				<h3 id="upstream">First model</h3>
+				<h3 id="upstream" class="ctaT2"><span>First model</span></h3>
 			</div>
 			<p class="contenido">
 				An analysis of the behavior exhibited by each species within the IPTG induction model was conducted, aiming to align their behavior with literature-derived expectations. <b>Figure 1</b> visually represents how the IPTG concentration diminishes in the medium as it permeates the bacterial cells. Notably, monomers and dimers of the repressor associate, forming tetramers, leading to a predominant concentration of tetramers for a considerable duration. Around the 4-hour mark, we observe an increase on the endolysin production, this occurs as a consequence of the deactivation of the tetramer repressor by forming the tetramer-IPTG complex. At the 5 hour mark the protein production has reached its maximum point. This observed behavior concurs with the laboratory experiments. After being stable for a few moments it begins to decrease the endolysin concentration.
@@ -5590,10 +5590,56 @@
 				</tbody>
 			</table>
 			<br>
+			<div class="tituloContenido">
+				<h3 id="secondModel" class="cta2T">Second Model</h3>
+			</div>
+			<p class="contenido">The results section presents an analysis of a three-level full factorial response surface model investigating the multifaceted effects of 
+				varying protein concentrations of LysK, LysCSA13, and LysSS on bactericidal activity towards <em>S. aureus, S. agalactie,</em> and <em>E. coli.</em> 
+				The experiment explored all possible combinations of these factors, aiming to elucidate the relationship between protein concentrations and their 
+				responses against the targeted bacterial strains.
+			</p>
+			<div class="imagenFig5">
+				<img src="https://static.igem.wiki/teams/4607/wiki/modelo/second-model/screen-shot-2023-10-11-at-4-20-42-p-m.png" alt="graph1">
+				<p class="contenido pieFig"><b>Figure 5.</b> Response surface graph of coded values, from -1 to 1, representing the low and high limits of protein concentration for LysK and LysCSA13, which are 875-2625 μg/mL and 500-1500 μg/mL, respectively. The response is quantified in terms of the percentage of <em>S. aureus</em> killed.
+				</p>
 
-
-
-
+			</div>
+			<p class="contenido">The quadratic model for bactericidal activity in S. aurers after treatment is significant, with LysK and LysCSA13 being significant 
+				factors affecting bactericidal activity. Both LysK and LysCSA13 contribute positively to bactericidal activity, with their quadratic effect being particularly 
+				influential for LysCSA13. The impact of LysSS is not visually represented as a distinct axis on the graph. However, there is a control mechanism to adjust this 
+				graph at a specific LysSS level. Despite this control, altering the LysSS coded values does not significantly influence the graph, and thus it is not shown. 
+				This lack of influence is attributed to the removal of LysSS variables from the model, justified by their observed statistical insignificance in our analysis. 
+			</p>
+			<div>
+				<img src="https://static.igem.wiki/teams/4607/wiki/modelo/anova/screen-shot-2023-10-11-at-2-34-08-p-m.png" alt="graph2">
+				<p class="contenido pieFig"><b>Figure 6.</b> Response surface graph of coded values, from -1 to 1, representing the low and high limits of protein concentration for LysK and LysSS, which are 875-2625 μg/mL and 25-75 μg/mL, respectively. The response is quantified in terms of the percentage of <em>S. agalactie</em> killed.</p>
+			</div>
+			<p class="contenido">The 2FI model for bactericidal activity is significant, with LysK (A), LysSS (C), and the interaction term AC being significant factors affecting bactericidal activity. Interestingly, the model establishes that interaction between LysK and LysSS has a synergistic effect on bactericidal activity. 
+			</p>
+			<p class="contenido">This model aligns with reality, considering that LysK exhibits a broad spectrum of target bacteria, with <em>S. agalactiae</em> being one of them. The potential synergistic effect observed with LysSS could be attributed to its low protein concentration, suggesting that it might contribute to the overall effect observed with LysK. 
+			</p>
+			<div>
+				<div>
+					<img src="https://static.igem.wiki/teams/4607/wiki/modelo/second-model/screen-shot-2023-10-12-at-2-44-50-a-m.png" alt="graph3" class="fig7">
+					<p class="contenido"><b>Figure 7.</b> Response surface graph of coded values, from -1 to 1, representing the low and high limits of protein 
+						concentration for LysK and LysCSA13, which are 875-2625 μg/mL and 500-1500 μg/mL, respectively. LysSS is coded at -1 representing 25 μg/mL. 
+						​​The response is quantified in terms of the percentage of <em>E. coli</em> killed.</p>
+				</div>
+				<div>
+					<img src="https://static.igem.wiki/teams/4607/wiki/modelo/second-model/screen-shot-2023-10-12-at-2-45-14-a-m.png" alt="graph4" class="fig8">
+					<p class="contenido"><b>Figure 8.</b> Response surface graph of coded values, from -1 to 1, representing the low and high limits of protein concentration for LysK and LysCSA13, which are 875-2625 μg/mL and 500-1500 μg/mL, respectively. LysSS is coded at 0.0335 representing ≈ 50 μg/mL. ​​The response is quantified in terms of the percentage of <em>E. coli</em> killed.</p>
+				</div>
+				<div>
+					<img src="https://static.igem.wiki/teams/4607/wiki/modelo/second-model/screen-shot-2023-10-12-at-2-45-26-a-m.png" alt="graph5" class="fig9">
+					<p class="contenido"><b>Figure 9.</b> Response surface graph of coded values, from -1 to 1, representing the low and high limits of protein concentration for LysK and LysCSA13, which are 875-2625 μg/mL and 500-1500 μg/mL, respectively. LysSS is coded at 1 representing 75 μg/mL. ​​The response is quantified in terms of the percentage of <em>E. coli</em> killed.</p>
+				</div>
+			</div>
+			<p class="contenido">Even though the ANOVA analysis indicated the lack of statistical significance for the terms associated with LysSS (C values), the graphical representations above clearly illustrate subtle variations in the response when altering the C value, represented by coded values ranging from -1 to 1 (25 to 75 μg/mL). Intriguingly, the model suggests a bactericidal effect of LysCSA13 on <em>E. coli</em>, contradicting its known target specificity towards <em>S. aureus</em>.
+			</p>
+			<p class="contenido">It's important to note that statistical significance and practical significance are not always the same. The ANOVA results may indicate that the term C associated with LysSS is not statistically significant, which means it doesn't contribute significantly to the model's explanatory power based on the available data. However, this doesn't necessarily imply that the C term has no practical or real-world effect on the response. The graphical representation, where changes in C values result in minimal changes in the response, could suggest that the relationship between C and the response is relatively weak but still present.</p>
+			<div class="tituloContenido">
+				<h3 class="ctaT2"><span>Discussion</span></h3>
+			</div>
 
 
 
