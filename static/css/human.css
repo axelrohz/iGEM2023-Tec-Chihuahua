@@ -2630,6 +2630,7 @@ table tbody tr td::last-child {
   border-radius: 0% 50% 50% 50%;
   transform-origin: left;
   transform: rotate(45deg) scale(3);
+  top: -2vw;
 }
 
 .gota1:hover {
@@ -2703,12 +2704,13 @@ table tbody tr td::last-child {
   z-index: 2;
   width: 7vw;
   bottom: 23vw;
-  left: 76.5vw;
+  left: 72.5vw;
   height: 7vw;
   border-radius: 0% 50% 50% 50%;
   transform: rotate(45deg);
   transform-origin: left;
   transform: rotate(45deg) scale(3);
+  top: -12vw;
 }
 
 .gota4:hover {
@@ -2739,12 +2741,13 @@ table tbody tr td::last-child {
   z-index: 2;
   width: 7vw;
   bottom: 1vw;
-  left: -10vw;
+  left: 45vw;
   height: 7vw;
   border-radius: 0% 50% 50% 50%;
   transform: rotate(45deg);
   transform-origin: left;
   transform: rotate(45deg) scale(3);
+  top: -20vw;
 }
 
 .gota5:hover {
@@ -2775,7 +2778,7 @@ table tbody tr td::last-child {
   z-index: 2;
   width: 7vw;
   bottom: 1vw;
-  left: 15.5vw;
+  left: 4.5vw;
   height: 7vw;
   border-radius: 0% 50% 50% 50%;
   transform: rotate(45deg);
@@ -2812,12 +2815,13 @@ table tbody tr td::last-child {
   z-index: 2;
   width: 7vw;
   bottom: 15vw;
-  left: 46.5vw;
+  left: 31.5vw;
   height: 7vw;
   border-radius: 0% 50% 50% 50%;
   transform: rotate(45deg);
   transform-origin: left;
   transform: rotate(45deg) scale(3);
+  top: -9vw;
 }
 
 .gota7:hover {
@@ -2849,12 +2853,13 @@ table tbody tr td::last-child {
   z-index: 2;
   width: 7vw;
   bottom: 15vw;
-  left: 76.5vw;
+  left: 59.5vw;
   height: 7vw;
   border-radius: 0% 50% 50% 50%;
   transform: rotate(45deg);
   transform-origin: left;
   transform: rotate(45deg) scale(3);
+  top: -17vw;
 }
 
 .gota8:hover {
@@ -2893,6 +2898,7 @@ table tbody tr td::last-child {
   transform: rotate(45deg);
   transform-origin: left;
   transform: rotate(45deg) scale(3);
+  top: -51vw;
 }
 
 .gota9:hover {
