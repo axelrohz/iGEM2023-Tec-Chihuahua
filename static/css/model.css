@@ -754,7 +754,7 @@ body{
   text-align: justify;
   line-height: 1.5;
   width: 97%;
-  margin-left: 43px !important;
+  margin-left: 60px !important;
   color: black;
  }
  
@@ -2053,6 +2053,10 @@ tabla1
   display: none;
 }
 
+.sectO, .sectM, .sectR {
+  position: relative;
+}
+
 /*imagen figuara dos 2 IPGT*/  
 
 
@@ -2985,9 +2989,11 @@ hm {
 
 .scrollIndexContain {
   position: absolute;
-  height: calc(100% - 150px);
+  height: calc(100% - 15vh);
   z-index: 1;
-
+  top:0;
+  left: 0;
+  top: 15vh;
 }
 
 .stickyIndex {

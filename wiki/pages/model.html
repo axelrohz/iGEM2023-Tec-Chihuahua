@@ -355,19 +355,19 @@
 			<div class="stickyIndex">
 			  <div class="lineIndex"></div>
 			  <div class="indexDots">
-				<div class="dotIndex" id="dot1" onclick="goTo('1')">
+				<div class="dotIndex" id="dot11" onclick="goTo('1')">
 				  <div class="dotText">Model building</div>
 				</div>
-				<div class="dotIndex" id="dot2" onclick="goTo('2')">
+				<div class="dotIndex" id="dot22" onclick="goTo('2')">
 				  <div class="dotText">Monte Carlo Simulation</div>
 				</div>
-				<div class="dotIndex" id="dot3" onclick="goTo('3')">
+				<div class="dotIndex" id="dot33" onclick="goTo('3')">
 				  <div class="dotText">Parameter Estimation</div>
 				</div>
-				<div class="dotIndex" id="dot4" onclick="goTo('4')">
+				<div class="dotIndex" id="dot44" onclick="goTo('4')">
 				  <div class="dotText">Response Surface Model</div>
 				</div>
-				<div class="dotIndex" id="dot5" onclick="goTo('5')">
+				<div class="dotIndex" id="dot55" onclick="goTo('5')">
 				  <div class="dotText">References</div>
 				</div>
 			  </div>
@@ -1110,9 +1110,9 @@
   		 </math>
   		 <p  ALIGN="right" class="NumeroEcuacion">(xxx)</p>
 			 <br>
-				<br id="sec1">
+				<br>
   		 <div class="tituloContenido">
-   		 <h4 style="font-size: 2vw;">Model building</h4>
+   		 <h4 style="font-size: 2vw;" id="sec11">Model building</h4>
  		 </div>
  		 <div class="tituloContenido">
    		 <h5 class="ctaT"><span>Chemical reactions</span></h5>
@@ -4225,9 +4225,9 @@
 		</div>
 			<br>
 			<br>
-			<br id = "sec2">
+			<br>
 		   <div class="tituloContenido">
-				<h4 style="font-size: 2vw;">Monte Carlo Simulation</h4>
+				<h4 style="font-size: 2vw;" id = "sec22">Monte Carlo Simulation</h4>
 			</div>
 			<br>
 			<p  class="contenido">Precise predictions of biological processes rely on understanding intricate networks. Nonetheless, this understanting is hindered by the lack of data concerning numerous model parameters, especially reaction kinetics. In our system of ODEs, we encountered a shorfall of associated parameters for some of the reaction kinetics presented in <a class="figures" href="#table2"><b>Table 2.</b></a> Selecting the suitable -range of- values presented a challenge as it should encompass a broad spectrum to ensure the experimental results are representative, detailed enough to capture essential information, but not overly extensive that it becomes too complex and time-consuming due to limitations in computational resources. </p>
@@ -4236,9 +4236,9 @@
 			<br>
 			<p  class="contenido">Through this approach, a diverse and extensive array of potential parameter sets is generated, facilitating a probabilistic exploration of the parameter space. Subsequently, we leverage the established range of viable kinetic constant values obtained from the MC simulation as an input for a machine-learning-based parameter estimation algorithm, aiming to narrow down said parameter range.</p>
 			<br>
-			<br id="sec3">
+			<br>
 			<div class="tituloContenido">
-				<h4 style=" font-size: 2vw;">Parameter estimation</h4>
+				<h4 style=" font-size: 2vw;" id="sec33">Parameter estimation</h4>
 			</div>
 			<br id="closePopUp">
 			<p class="contenido">Subsequently, employing the collected data set of sampled parameters, we proceed to estimate the specific parameters tied to the kinetic aspects of the system. We present a computational approach for the estimation of kinetic constants, focusing on the induction phase of protein expression, through the application of a <a href="#popup-optin" class="popupColor">Genetic Algorithm</a> (GA).</p>
@@ -4276,8 +4276,8 @@
 			<div class="tituloContenido" id="RSM">
    				 <h3 id="upstream" style="font-size: 2vw;">Second model</h3>
    			</div>
-			<div id="sec4" class="tituloContenido">
-				<h4 style=" font-size: 2vw;">Response Surface Method</span></h4>
+			<div class="tituloContenido">
+				<h4 style=" font-size: 2vw;" id="sec44">Response Surface Method</span></h4>
 			</div>
 			<div class="tituloContenido">
 				<h5 class="ctaT"><span>Background</span></h5>
@@ -5397,13 +5397,13 @@
 
 
 			</p>
-			<br id="sec5">
+			<br>
 			<br>
 			<br>
 			<br>
 			<div class="accordion-item">
 				<div class="accordion-item-header">
-					<h3>References</h3>
+					<h3 id="sec55">References</h3>
 				</div>
 				<div class="accordion-item-body">
 					<div class="accordion-item-body-content">
@@ -5454,19 +5454,19 @@
 		<div class="stickyIndex">
 		  <div class="lineIndex"></div>
 		  <div class="indexDots">
-			<div class="dotIndex" id="dot1" onclick="goTo('1')">
+			<div class="dotIndex" id="dot111" onclick="goTo('1')">
 			  <div class="dotText">Model building</div>
 			</div>
-			<div class="dotIndex" id="dot2" onclick="goTo('2')">
+			<div class="dotIndex" id="dot222" onclick="goTo('2')">
 			  <div class="dotText">Monte Carlo Simulation</div>
 			</div>
-			<div class="dotIndex" id="dot3" onclick="goTo('3')">
+			<div class="dotIndex" id="dot333" onclick="goTo('3')">
 			  <div class="dotText">Monte Carlo Simulation</div>
 			</div>
-			<div class="dotIndex" id="dot4" onclick="goTo('4')">
+			<div class="dotIndex" id="dot444" onclick="goTo('4')">
 			  <div class="dotText">Response Surface Model</div>
 			</div>
-			<div class="dotIndex" id="dot5" onclick="goTo('5')">
+			<div class="dotIndex" id="dot555" onclick="goTo('5')">
 			  <div class="dotText">References</div>
 			</div>
 		  </div>
@@ -5508,8 +5508,10 @@
 		  }
 		  
 		});
-	  });
+	  });	  
 	  </script>
+
+	<!--Primer index-->
 	      <script type="text/javascript">
 			var dot1 = document.getElementById('dot1');
 			var dot2 = document.getElementById('dot2');
@@ -5559,6 +5561,130 @@
 			}
 		  }); 
 		</script>
+
+	<!--Primer index-->
+	      <script type="text/javascript">
+			var dot1 = document.getElementById('dot1');
+			var dot2 = document.getElementById('dot2');
+			var dot3 = document.getElementById('dot3');
+		
+			function goTo(scrollID) {
+			  dot1.classList.remove('active');
+			  dot2.classList.remove('active');
+			  dot3.classList.remove('active');
+			  var dot = document.getElementById('dot' + scrollID);
+			  dot.classList.add('active');
+			  var element = document.getElementById('sec' + scrollID);
+			  element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+			}
+			</script>
   
+	  <script type="text/javascript">
+		  var sect1 = document.getElementById('sec1');
+		  var sect2 = document.getElementById('sec2');
+		  var sect3 = document.getElementById('sec3');
+	  
+		  var dot1 = document.getElementById('dot1');
+		  var dot2 = document.getElementById('dot2');
+		  var dot3 = document.getElementById('dot3');
+	  
+		  window.addEventListener('scroll', function () {
+			var sect1top = sect1.getBoundingClientRect().top;
+			var sect2top = sect2.getBoundingClientRect().top;
+			var sect3top = sect3.getBoundingClientRect().top;
+			var topPad = 200;
+			if (sect3top - topPad <= topPad) {
+			  dot1.classList.remove('active');
+			  dot2.classList.remove('active'); 
+			  dot3.classList.add('active');
+			}  else if (sect2top - topPad <= topPad) {
+			  dot1.classList.remove('active');
+			  dot2.classList.add('active'); 
+			  dot3.classList.remove('active');
+			} else if (sect1top - topPad <= topPad) {
+			  dot1.classList.add('active');
+			  dot2.classList.remove('active');
+			  dot2.classList.remove('active');
+			} else {
+			  dot1.classList.remove('active');
+			  dot2.classList.remove('active');
+			  dot3.classList.remove('active');
+			}
+		  }); 
+		</script>
+
+		<!--Segundo index-->
+		<script type="text/javascript">
+			var dot11 = document.getElementById('dot11');
+			var dot22 = document.getElementById('dot22');
+			var dot33 = document.getElementById('dot33');
+			var dot44 = document.getElementById('dot44');
+			var dot55 = document.getElementById('dot55');
+		
+			function goTo(scrollID) {
+			  dot11.classList.remove('active');
+			  dot22.classList.remove('active');
+			  dot33.classList.remove('active');
+			  dot44.classList.remove('active');
+			  dot55.classList.remove('active');
+			  var dot = document.getElementById('dot' + scrollID);
+			  dot.classList.add('active');
+			  var element = document.getElementById('sec' + scrollID);
+			  element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+			}
+			</script>
+  
+	  <script type="text/javascript">
+		  var sect11 = document.getElementById('sec11');
+		  var sect22 = document.getElementById('sec22');
+		  var sect33 = document.getElementById('sec33');
+		  var sect44 = document.getElementById('sec44');
+		  var sect55 = document.getElementById('sec55');
+	  
+		  var dot11 = document.getElementById('dot11');
+		  var dot22 = document.getElementById('dot22');
+		  var dot33 = document.getElementById('dot33');
+		  var dot44 = document.getElementById('dot44');
+		  var dot55 = document.getElementById('dot55');
+	  
+		  window.addEventListener('scroll', function () {
+			var sect11top = sect11.getBoundingClientRect().top;
+			var sect22top = sect22.getBoundingClientRect().top;
+			var sect33top = sect33.getBoundingClientRect().top;
+			var sect44top = sect44.getBoundingClientRect().top;
+			var sect55top = sect55.getBoundingClientRect().top;
+			var topPad = 200;
+			if (sect55top - topPad <= topPad) {
+			  dot11.classList.remove('active');
+			  dot22.classList.remove('active');
+			  dot33.classList.remove('active');
+			  dot44.classList.remove('active'); 
+			  dot55.classList.add('active');
+			}  else if (sect2top - topPad <= topPad) {
+			  dot1.classList.remove('active');
+			  dot2.classList.add('active'); 
+			  dot3.classList.remove('active');
+			} else if (sect1top - topPad <= topPad) {
+			  dot1.classList.add('active');
+			  dot2.classList.remove('active');
+			  dot2.classList.remove('active');
+			} else if (sect1top - topPad <= topPad) {
+			  dot1.classList.add('active');
+			  dot2.classList.remove('active');
+			  dot2.classList.remove('active');
+			} else if (sect1top - topPad <= topPad) {
+			  dot1.classList.add('active');
+			  dot2.classList.remove('active');
+			  dot2.classList.remove('active');
+			} else {
+			  dot1.classList.remove('active');
+			  dot2.classList.remove('active');
+			  dot3.classList.remove('active');
+			}
+		  }); 
+		</script>
+
+
+
 </html>
 {% endblock %}
