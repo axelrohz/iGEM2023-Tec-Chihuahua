@@ -4407,6 +4407,14 @@ table tbody tr td::last-child {
   text-decoration: underline !important;
 }
 
+.listDot {
+  font-size: 17px;
+  margin-left: 50px;
+  list-style-type: circle;
+  display: list-item;
+}
+
+
 .parraf {
   margin-left: 15vh !important;
   margin-top: 1vh !important;
