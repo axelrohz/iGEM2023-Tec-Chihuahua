@@ -7,6 +7,10 @@
 	--iterations: 1;
 }
 
+body{
+  overflow-x: clip;
+}
+
 .layout {
   width: 98vw;
   height: 100%;
