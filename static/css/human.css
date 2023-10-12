@@ -1057,76 +1057,12 @@ table tbody tr td::last-child {
   background-color: red;
 }
 
-
-
-/*diagrama de las 4 main problems*/
-.accordion2 {
-  width: 90%;
-  max-width: 1000px;
-  margin: 2rem auto;
-}
-
-.accordion-item2,
-.accordion-item3,
-.accordion-item4,
-.accordion-item5 {
-  color: #111;
-  margin: 1rem 0;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
-}
-
-.accordion-item2 {
-  background-color: #3fa88f;
-}
-
-.accordion-item3 {
-  background-color: #5BC5AB;
-}
-
-.accordion-item4 {
-  background-color: #81D1BF;
-}
-
-.accordion-item5 {
-  background-color: #A7DCD3;
-}
-
-.accordion-item-body2,
-.accordion-item-body3,
-.accordion-item-body4,
-.accordion-item-body5 {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  padding-left: 2vw;
-  padding-right: 2vw;
-}
-
-.accordion-item-body2 {
-  background: linear-gradient(180deg, rgba(63, 168, 143, 1) 0%, rgba(240, 240, 240, 1) 100%);
-}
-
-.accordion-item-body3 {
-  background: linear-gradient(180deg, #5BC5AB 0%, rgba(240, 240, 240, 1) 100%);
-}
-
-.accordion-item-body4 {
-  background: linear-gradient(180deg, #81D1BF 0%, rgba(240, 240, 240, 1) 100%);
-}
-
-.accordion-item-body5 {
-  background: linear-gradient(180deg, #A7DCD3 0%, rgba(240, 240, 240, 1) 100%);
-}
-
-
-
-
 /*Boton desplegable de referencias*/
 .accordion {
-  width: 90%;
+  width: 0%;
   max-width: 1000px;
   margin: 2rem auto;
+  justify-self: center;
 }
 
 .accordion-item {
@@ -1135,14 +1071,31 @@ table tbody tr td::last-child {
   margin: 1rem 0;
   border-radius: 0.5rem;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+  width: 90%;
+  justify-self: center;
 
 }
 
+.accordion-item {
+  justify-self: center;
+  background-color: #ffffff;
+  color: #111;
+  margin: auto;
+  border-radius: 3px;
+  box-shadow: 7px 7px #5BC5AB;
+  width: 80%;
+  margin-bottom: 20px;
+  border: solid 0.5px #EBEBF1;
+
+}
+
+
 .accordion-item-header {
+  min-height: 60px;
+  font-size: 1.2rem;
   padding: 0.5rem 3rem 0.5rem 1rem;
-  min-height: 3.5rem;
-  line-height: 1.25rem;
-  font-weight: bold;
+  line-height: 1.5;
+  font-weight: 500;
   display: flex;
   align-items: center;
   position: relative;
@@ -1168,6 +1121,7 @@ table tbody tr td::last-child {
   transition: max-height 0.2s ease-out;
   padding-left: 20px;
   padding-right: 20px;
+
 }
 
 .accordion-item-body-content {

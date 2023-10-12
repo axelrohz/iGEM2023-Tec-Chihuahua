@@ -369,7 +369,7 @@ transition: 0.25s;
 
 .refer .accordion-item{
     width: 100%;
-    box-shadow: 7px 7px #447d9c;
+    box-shadow: 7px 7px #5BC5AB;
 }
 
 @media screen and (max-width: 780px){
