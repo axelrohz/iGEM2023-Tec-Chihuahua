@@ -788,6 +788,8 @@ ul.unol {
 
 /*NuevoIndexBonito*/
 .teamScroll {
+    position: sticky;
+    top:7vw;
     overflow: visible !important;
 }
 
@@ -829,6 +831,126 @@ ul.unol {
     justify-content: space-between;
     align-items: center;
 }
+.scrollIndexContain{
+    position: absolute;
+    height: calc(100% - 150px);
+    z-index: 1;
+    margin-left: 30px;
+  
+  }
+  
+  .stickyIndex{
+    position: sticky;
+    top: 15vh;
+    width: fit-content;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .lineIndex{
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: #00b9b0;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  
+  .indexDots{
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dotIndex{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #00b9b0;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+  } 
+  
+  .dotIndex:hover{
+    width: 20px;
+    height: 20px;
+  }
+  
+  .dotIndex.active{
+    width: 20px;
+    height: 20px;
+  }
+  .dotIndex::before{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    top: 50%;
+    left: 50%;
+    transition: 0.5s;
+  }
+  
+  .dotIndex.active::before{
+    width: 10px;
+    height: 10px;
+  }
+  
+  .dotText{
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: 0.5s;
+    opacity: 1;
+    color: rgba(15, 14, 15, 0.788);
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 22px;
+    opacity: 0;
+  }
+
+  .stickyIndex:hover .indexDots .dotIndex .dotText{
+    opacity: 0.5;
+  }
+
+  .dotIndex.active .dotText{
+    opacity: 1;
+    transition-delay: 0.3s;
+  }
+  
+  
+  .dotIndex:hover .dotText, .stickyIndex:hover .indexDots .dotIndex:hover .dotText{
+    opacity: 0.7;
+    transition: 0.25s;
+  }
+  .dotIndex.active:hover .dotText{
+    opacity: 1;
+    transition-delay: 0.3s;
+  }
+
+  .active .scrollIndexContain{
+    opacity: 1;
+
+  }
+
+  .teamScroll{
+    overflow: visible;
+    overflow-x: clip;
+    overflow-y: visible;
+    overflow-y: clip;
+  }
 
 .dotIndex {
     width: 10px;
@@ -895,6 +1017,8 @@ ul.unol {
     opacity: 0.5;
     transition: 0.25s;
 }
+
+
 
 /*Para los desplegables (p. ej. las referencias)*/
 .accordion {
@@ -1084,3 +1208,144 @@ ul.unol {
       margin-right: 1.5rem;
     }
   }
+
+
+  .ag-format-container {
+    width: 1142px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    max-width: 100%;
+  }
+  
+  
+  
+  .ag-courses_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  
+    padding: 50px 0;
+  }
+  
+  .ag-courses_item {
+  
+    margin: 0 15px 30px;
+  
+    overflow: hidden;
+  
+    border-radius: 28px;
+    width: 30%;
+    min-width: 300px;
+    max-width: 90vw;
+  }
+  
+  .ag-courses-item_link {
+    display: block;
+    padding: 30px 20px;
+    background-color: #dbdbe0;
+  
+    overflow: hidden;
+  
+    position: relative;
+  }
+  
+  .ag-courses-item_link:hover,
+  .ag-courses-item_link:hover .ag-courses-item_date {
+    text-decoration: none;
+    color: #FFF;
+  }
+  
+  .ag-courses-item_link:hover .ag-courses-item_bg {
+    -webkit-transform: scale(10);
+    -ms-transform: scale(10);
+    transform: scale(10);
+  }
+  
+  .ag-courses-item_title {
+    margin: 0 0 25px;
+    font-family: 'Bricolage Grotesque';
+    overflow: hidden;
+    font-weight: 400;
+    font-size: 23px;
+    color: #000000;
+    line-height: 1.15;
+    z-index: 2;
+    position: relative;
+  }
+  
+  .ag-courses-item_content {
+    font-family: 'Quicksand';
+    font-size: 12px;
+    color: #000000;
+    font-weight: 400;
+  }
+  
+  .ag-courses-item_bg {
+    height: 128px;
+    width: 128px;
+  
+    z-index: 1;
+    position: absolute;
+    top: -75px;
+    right: -75px;
+  
+    border-radius: 50%;
+  
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  
+  .ag-courses_item:nth-child(-n+7) .ag-courses-item_bg {
+    background-color: #C55B75;
+  }
+  
+  
+  
+  
+    @media only screen and (max-width: 979px) {
+      .ag-courses_item {
+        -ms-flex-preferred-size: calc(50% - 30px);
+        flex-basis: calc(50% - 30px);
+      }
+  
+      .ag-courses-item_title {
+        font-size: 24px;
+      }
+    }
+  
+    @media only screen and (max-width: 767px) {
+      .ag-format-container {
+        width: 96%;
+      }
+  
+    }
+  
+    @media only screen and (max-width: 639px) {
+      .ag-courses_item {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+      }
+  
+      .ag-courses-item_title {
+        min-height: 72px;
+        line-height: 1;
+  
+        font-size: 24px;
+      }
+  
+      .ag-courses-item_link {
+        padding: 22px 40px;
+      }
+  
+      .ag-courses-item_date-box {
+        font-size: 16px;
+      }
+  }
+  

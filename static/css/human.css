@@ -2630,6 +2630,7 @@ table tbody tr td::last-child {
   border-radius: 0% 50% 50% 50%;
   transform-origin: left;
   transform: rotate(45deg) scale(3);
+  top: -2vw;
 }
 
 .gota1:hover {
@@ -2703,12 +2704,13 @@ table tbody tr td::last-child {
   z-index: 2;
   width: 7vw;
   bottom: 23vw;
-  left: 76.5vw;
+  left: 72.5vw;
   height: 7vw;
   border-radius: 0% 50% 50% 50%;
   transform: rotate(45deg);
   transform-origin: left;
   transform: rotate(45deg) scale(3);
+  top: -12vw;
 }
 
 .gota4:hover {
@@ -2739,12 +2741,13 @@ table tbody tr td::last-child {
   z-index: 2;
   width: 7vw;
   bottom: 1vw;
-  left: -10vw;
+  left: 45vw;
   height: 7vw;
   border-radius: 0% 50% 50% 50%;
   transform: rotate(45deg);
   transform-origin: left;
   transform: rotate(45deg) scale(3);
+  top: -20vw;
 }
 
 .gota5:hover {
@@ -2775,7 +2778,7 @@ table tbody tr td::last-child {
   z-index: 2;
   width: 7vw;
   bottom: 1vw;
-  left: 15.5vw;
+  left: 4.5vw;
   height: 7vw;
   border-radius: 0% 50% 50% 50%;
   transform: rotate(45deg);
@@ -2812,12 +2815,13 @@ table tbody tr td::last-child {
   z-index: 2;
   width: 7vw;
   bottom: 15vw;
-  left: 46.5vw;
+  left: 31.5vw;
   height: 7vw;
   border-radius: 0% 50% 50% 50%;
   transform: rotate(45deg);
   transform-origin: left;
   transform: rotate(45deg) scale(3);
+  top: -9vw;
 }
 
 .gota7:hover {
@@ -2849,12 +2853,13 @@ table tbody tr td::last-child {
   z-index: 2;
   width: 7vw;
   bottom: 15vw;
-  left: 76.5vw;
+  left: 59.5vw;
   height: 7vw;
   border-radius: 0% 50% 50% 50%;
   transform: rotate(45deg);
   transform-origin: left;
   transform: rotate(45deg) scale(3);
+  top: -17vw;
 }
 
 .gota8:hover {
@@ -2893,6 +2898,7 @@ table tbody tr td::last-child {
   transform: rotate(45deg);
   transform-origin: left;
   transform: rotate(45deg) scale(3);
+  top: -51vw;
 }
 
 .gota9:hover {
@@ -3048,15 +3054,45 @@ table tbody tr td::last-child {
   overflow: auto;
 }
 
-.card:hover .card-item {
+.card:hover .card-item5 {
   background-color: #5BC5AB;
   color: white;
   height: 300px;
   width: 100%;
   padding: 10px 0;
   border-radius: 5px 5px 0 0;
-
-
+}
+.card:hover .card-item1 {
+  background-color: #D27063;
+  color: white;
+  height: 300px;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 5px 5px 0 0;
+}
+.card:hover .card-item2 {
+  background-color: #447D9C;
+  color: white;
+  height: 300px;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 5px 5px 0 0;
+}
+.card:hover .card-item3 {
+  background-color: #F6AE2D;
+  color: white;
+  height: 300px;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 5px 5px 0 0;
+}
+.card:hover .card-item4 {
+  background-color: #A9BA6C;
+  color: white;
+  height: 300px;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 5px 5px 0 0;
 }
 
 .card:hover .card-text {
@@ -3096,6 +3132,7 @@ table tbody tr td::last-child {
 
 
 }
+
 .ODS12 {
   background: transparent;
   width: 50%;
@@ -3108,6 +3145,7 @@ table tbody tr td::last-child {
   z-index: 10;
 
 }
+
 .ODS15 {
   background: transparent;
   width: 50%;
@@ -4098,7 +4136,7 @@ table tbody tr td::last-child {
   width: 100%;
   height: 100%;
   background-image: url('https://static.igem.wiki/teams/4607/wiki/fonts/logopeqcut.png');
-  background-size: 460px;
+  background-size: 32vw;
   border-radius: 50%;
   border: 0;
   color: white;
@@ -4301,7 +4339,126 @@ table tbody tr td::last-child {
   justify-content: space-between;
   align-items: center;
 }
+.scrollIndexContain{
+  position: absolute;
+  height: calc(100% - 150px);
+  z-index: 1;
+  margin-left: 30px;
 
+}
+
+.stickyIndex{
+  position: sticky;
+  top: 15vh;
+  width: fit-content;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lineIndex{
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: #00b9b0;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.indexDots{
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dotIndex{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #00b9b0;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+} 
+
+.dotIndex:hover{
+  width: 20px;
+  height: 20px;
+}
+
+.dotIndex.active{
+  width: 20px;
+  height: 20px;
+}
+.dotIndex::before{
+  content: '';
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  top: 50%;
+  left: 50%;
+  transition: 0.5s;
+}
+
+.dotIndex.active::before{
+  width: 10px;
+  height: 10px;
+}
+
+.dotText{
+  position: absolute;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: 0.5s;
+  opacity: 1;
+  color: rgba(15, 14, 15, 0.788);
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 22px;
+  opacity: 0;
+}
+
+.stickyIndex:hover .indexDots .dotIndex .dotText{
+  opacity: 0.5;
+}
+
+.dotIndex.active .dotText{
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+
+
+.dotIndex:hover .dotText, .stickyIndex:hover .indexDots .dotIndex:hover .dotText{
+  opacity: 0.7;
+  transition: 0.25s;
+}
+.dotIndex.active:hover .dotText{
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+
+.active .scrollIndexContain{
+  opacity: 1;
+
+}
+
+.teamScroll{
+  overflow: visible;
+  overflow-x: clip;
+  overflow-y: visible;
+  overflow-y: clip;
+}
 .dotIndex {
   width: 10px;
   height: 10px;
@@ -4405,6 +4562,14 @@ table tbody tr td::last-child {
   text-decoration: underline !important;
 }
 
+.listDot {
+  font-size: 17px;
+  margin-left: 50px;
+  list-style-type: circle;
+  display: list-item;
+}
+
+
 .parraf {
   margin-left: 15vh !important;
   margin-top: 1vh !important;
@@ -4442,7 +4607,7 @@ table tbody tr td::last-child {
   width: 81%;
   height: 76%;
   z-index: 9999;
-  border-radius:67px;
+  border-radius: 67px;
   animation: fade-in .5s ease forwards;
   flex-direction: column;
   /* overflow: hidden; */
@@ -4474,6 +4639,7 @@ table tbody tr td::last-child {
   overflow-y: auto;
   padding-top: 2%;
 }
+
 .boton-ocultar {
   border-radius: 50%;
   width: 30px;
@@ -4494,19 +4660,71 @@ table tbody tr td::last-child {
 }
 
 .boton-mostrar-timeline {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  color: #000;
+  background: #fff;
+  line-height: 30px;
+  border-radius: 40px;
+  padding: 20px;
+  font-size: 70px;
+  font-weight: 600;
+  box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px, rgb(246, 84, 174) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+  transition: all 0.2s;
+  
+
 }
 
-h2{
+.boton-mostrar-timeline:hover {
+   box-shadow: rgb(246, 84, 174) -2px -2px 0px 2px, rgb(255, 198, 0) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+   transform: scale(1.01);
+ }
+
+h2 {
   text-align: center;
 }
 
-#divBolitas{
-  
+#divBolitas {
+
   padding-bottom: 2%;
+  padding-top: 5%;
 }
 
-#divBolitas img{
+#divBolitas img {
   width: 10%;
+}
+
+.afterTImeline{
+  font-weight: normal;
+}
+
+#sectionResults{
+  text-align: justify;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+#Clickhere{
+  text-align: center;
+  font-size: 15px;
+  padding-top: 2%;
+}
+
+p {
+  font-weight: normal;
+}
+
+#traffic {
+  clip-path: inset(0px 0px 150px);
+  width: 100%;
+  height: 500px;;
+  object-fit: cover;
+  margin-top: 1%;
+  margin-bottom: -8%;
 }
