@@ -628,9 +628,16 @@ transform: scaleX(-1);
     color: #272729;
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
-    color: white;
     font-weight: 600;
     transition: 0.5s;
+    text-decoration: underline;
+}
+
+.howWeDoItBTN:hover{
+    font-size: 1.2rem;
+    color: #000;
+    transition: 0.5s;
+    
 }
 
 
