@@ -48,19 +48,14 @@
             significant economic gains for the industry.</div>
 
         <div class="whyUsFact">
-            <div class="whyUsNumber"> 175 <span class="liters"> liters </span>
-            </div>
+            <div class="whyUsNumber"> <span id="valueGrow"> 175 </span> <span
+                class="liters"> liters </span> </div>
+
             <div class="whyUsNumText"> Discarded liters of milk per cow treated
                 with a 5 day antibiotic*
                 <span class="infomorewhy">*Information gathered from the
                     interviews and visits conducted at Human Practices </span>
             </div>
-        </div>
-        <div class="whyUsFact">
-            <div class="whyUsNumber"> <span id="valueGrow"> 175 </span> <span
-                    class="liters"> liters </span> </div>
-            <div class="whyUsNumText">Discarded liters of milk per cow treated
-                with AureoBos</div>
         </div>
     </div>
     <svg id="visual" viewBox="0 0 1920 400" width="1920" height="400"
@@ -81,7 +76,9 @@
 
         <div class="howWeDoItCard">
             <div class="howWeDoItCardTitle">Design</div>
-            <img class="howWeDoItCardIMG" src alt="Card image cap" />
+            <img class="howWeDoItCardIMG" 
+            src
+             alt="Card image cap" />
             <div class="howWeDoItCardText">The design relied on utilizing
                 specific endolysins from the microorganisms responsible for
                 bovine mastitis, in conjunction with albumin binding domains.
@@ -606,12 +603,12 @@ function reveal(){
     let objtop = obj.getBoundingClientRect().top;
     let windoHeigth = window.innerHeight;
     if(objtop < windoHeigth){
-        if (obj.innerHTML == 175){
-            animateValue(obj, 175, 0, 1650);
+        if (obj.innerHTML == 0){
+            animateValue(obj, 0, 175, 1650);
         }
     }
     else{
-        animateValue(obj, 175, 175, 1650);
+        animateValue(obj, 0, 0, 1650);
     }
 }
 

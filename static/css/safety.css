@@ -543,6 +543,11 @@ ul.unol {
     }
 }
 
+.dotd:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+}
+
 @keyframes onda {
 
     0%,
@@ -793,12 +798,20 @@ ul.unol {
     overflow: visible !important;
 }
 
-.scrollIndexContain {
-    position: absolute;
-    height: calc(100% - 150px);
-    z-index: 1;
 
-}
+.scrollIndexContain{
+    position: absolute;
+    height: calc(100% - 15vh);
+    z-index: 1;
+    left: 2vw;
+    margin: 0 !important;
+    left: -6vw;
+    top: 0;
+    }
+
+    .relative{
+        position: relative;
+    }
 
 .stickyIndex {
     position: sticky;
@@ -830,6 +843,10 @@ ul.unol {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+.div{
+    position: relative;
+    z-index: 999;
 }
 .scrollIndexContain{
     position: absolute;
