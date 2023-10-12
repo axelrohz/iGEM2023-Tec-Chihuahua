@@ -619,3 +619,12 @@ transition: 0.25s;
       font-size: 16px;
   }
 }
+
+.reference{
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: 'Quicksand';
+  text-align: justify;
+  line-height: 1.5;
+  color: black;
+ }
