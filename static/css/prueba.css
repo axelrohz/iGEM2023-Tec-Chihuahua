@@ -54,6 +54,10 @@
     overflow: clip;
     top: -72px;
   }
+
+  .seccionResults{
+    width: 100%;
+  }
   
 .headParts{
     position: relative;
