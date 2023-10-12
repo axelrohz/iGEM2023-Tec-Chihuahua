@@ -1088,8 +1088,10 @@
    		 <mo>&#x2205;</mo>
   		 </math>
   		 <p  ALIGN="right" class="NumeroEcuacion">(xxx)</p>
+			 <br>
+				<br id="sec1">
   		 <div class="tituloContenido">
-   		 <h4 id="sec1" style="font-size: 2vw;">Model building</h4>
+   		 <h4 style="font-size: 2vw;">Model building</h4>
  		 </div>
  		 <div class="tituloContenido">
    		 <h5 class="ctaT"><span>Chemical reactions</span></h5>
@@ -4068,8 +4070,10 @@
 				</div>
 		</div>
 			<br>
+			<br>
+			<br id = "sec2">
 		   <div class="tituloContenido">
-				<h4 id="sec2" style="font-size: 2vw;">Monte Carlo Simulation</h4>
+				<h4 style="font-size: 2vw;">Monte Carlo Simulation</h4>
 			</div>
 			<br>
 			<p  class="contenido">Precise predictions of biological processes rely on understanding intricate networks. Nonetheless, this understanting is hindered by the lack of data concerning numerous model parameters, especially reaction kinetics. In our system of ODEs, we encountered a shorfall of associated parameters for some of the reaction kinetics presented in <a class="figures" href="#table2"><b>Table 2.</b></a> Selecting the suitable -range of- values presented a challenge as it should encompass a broad spectrum to ensure the experimental results are representative, detailed enough to capture essential information, but not overly extensive that it becomes too complex and time-consuming due to limitations in computational resources. </p>
@@ -4077,8 +4081,10 @@
 			<p  class="contenido">Monte Carlo (MC) simulations have been employed to predict the effects of stochasticity among reaction events, as well as in model developments where parameters are unknown, and for parameter estimation.<sup><a href="#referenciaM15" class="referencias">15-18</a></sup> Furthermore, MC simulations demonstrate a noteworthy level of accuracy, efficiency in computation, and ease of implementation. In our model, we employ a MC simulation to conduct 10,000 iterative excecutions utilizing randomly assing values for the unknown kinetic constants in <a class="figures" href="#table2"><b>Table 2.</b></a></p>
 			<br>
 			<p  class="contenido">Through this approach, a diverse and extensive array of potential parameter sets is generated, facilitating a probabilistic exploration of the parameter space. Subsequently, we leverage the established range of viable kinetic constant values obtained from the MC simulation as an input for a machine-learning-based parameter estimation algorithm, aiming to narrow down said parameter range.</p>
+			<br>
+			<br id="sec3">
 			<div class="tituloContenido">
-				<h4 id="sec3" style=" font-size: 2vw;">Parameter estimation</h4>
+				<h4 style=" font-size: 2vw;">Parameter estimation</h4>
 			</div>
 			<br id="closePopUp">
 			<p class="contenido">Subsequently, employing the collected data set of sampled parameters, we proceed to estimate the specific parameters tied to the kinetic aspects of the system. We present a computational approach for the estimation of kinetic constants, focusing on the induction phase of protein expression, through the application of a <a href="#popup-optin" class="popupColor">Genetic Algorithm</a> (GA).</p>
