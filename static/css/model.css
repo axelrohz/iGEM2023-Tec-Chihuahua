@@ -2719,6 +2719,19 @@ hm {
   font-size: 2vw;
 }
 
+.hipervinculoaqua {
+  font-family: 'Quicksand';
+  font-weight: 700;
+  color: #5BC5AB;
+}
+
+.hipervinculoaqua:hover {
+  font-family: 'Quicksand';
+  font-weight: 700;
+  color: #5BC5AB;
+  text-decoration: underline;
+}
+
 .popupColor{
   color: #447D9C;
 }
