@@ -356,11 +356,11 @@
   }
 
   /*aqui se acaba lo del indice */
-.taffy {
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  width: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -5;
- }
+  .taffy {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -5;
+   }
