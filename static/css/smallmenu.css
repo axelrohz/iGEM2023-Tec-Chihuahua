@@ -10,11 +10,6 @@
     background-color: red;
 }
 
-.cellNav.active .cellNavLeft{
-    display: block;
-    transition-delay: 0.3s ;
-}
-
 .openCloseNav{
     width: 80%;
     height: 100vh;
