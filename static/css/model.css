@@ -3146,7 +3146,6 @@ hm {
   transition: 0.25s;
 }
 
-<<<<<<< HEAD
 
 .hipervinculoaqua {
   font-family: 'Quicksand';
@@ -3160,7 +3159,6 @@ hm {
   color: #5BC5AB;
   text-decoration: underline;
 }
-=======
 input[type=checkbox] {
   display: none;
 }
@@ -3175,4 +3173,3 @@ input[type=checkbox]:checked ~ label > img {
   transform: scale(2);
   cursor: zoom-out;
 }
->>>>>>> 74d7c07d (Cambios)
