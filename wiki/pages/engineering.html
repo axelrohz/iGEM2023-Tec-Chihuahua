@@ -51,7 +51,7 @@ engineering design cycle.{% endblock %}
         </div>
       </div>
       <div class="teamScroll">
-        <div class="wrap" id="sec1">
+        <div class="wrap">
 
           <div class="unoch">
             <h1>From DNA to impact, we engineer solutions for our world.</h1>
@@ -222,6 +222,7 @@ engineering design cycle.{% endblock %}
                     href="parts" target="_blank">LysCSA13, LysK, and LysSS</a>. The aim of the Golden Gate Assembly cycle was to
                   obtain our expression constructs.
                 </p>
+                <br id="sec1">
                 <br>
                 <h3 class="cta5">
                   <span>First sub-cycle: Chemocompetence and transformation</span>
@@ -480,7 +481,7 @@ engineering design cycle.{% endblock %}
                   </div>
                 </div>
                 <br>
-                <br>
+                <br id="sec2">
                 <br>
 
                 <h3 class="cta5">
@@ -724,7 +725,7 @@ engineering design cycle.{% endblock %}
                     </div>
                   </div>
                 </div>
-                <br>
+                <br id="sec3">
                 <br>
 
                 <h3 class="cta5">
@@ -1675,6 +1676,57 @@ engineering design cycle.{% endblock %}
     });
   });
 </script>
+</script>
+<script type="text/javascript">
+var dot1 = document.getElementById('dot1');
+var dot2 = document.getElementById('dot2');
+var dot3 = document.getElementById('dot3');
 
+function goTo(scrollID) {
+dot1.classList.remove('active');
+dot2.classList.remove('active');
+dot3.classList.remove('active');
+var dot = document.getElementById('dot' + scrollID);
+dot.classList.add('active');
+var element = document.getElementById('sec' + scrollID);
+element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+}
+</script>
+
+<script type="text/javascript">
+var sect1 = document.getElementById('sec1');
+var sect2 = document.getElementById('sec2');
+var sect3 = document.getElementById('sec3');
+
+var dot1 = document.getElementById('dot1');
+var dot2 = document.getElementById('dot2');
+var dot3 = document.getElementById('dot3');
+
+window.addEventListener('scroll', function () {
+var sect1top = sect1.getBoundingClientRect().top;
+var sect2top = sect2.getBoundingClientRect().top;
+var sect3top = sect3.getBoundingClientRect().top;
+var topPad = 200;
+if (sect3top - topPad <= topPad) {
+dot1.classList.remove('active');
+dot2.classList.remove('active');
+dot3.classList.add('active');
+} else if (sect2top - topPad <= topPad) {
+dot1.classList.remove('active');
+dot2.classList.add('active');
+dot3.classList.remove('active');
+} else if (sect1top - topPad <= topPad) {
+dot1.classList.add('active');
+dot2.classList.remove('active');
+dot3.classList.remove('active');
+} else {
+dot1.classList.remove('active');
+dot2.classList.remove('active');
+dot3.classList.remove('active');
+}
+
+
+}); 
+</script>
 </body>
 {% endblock %}
