@@ -1057,76 +1057,12 @@ table tbody tr td::last-child {
   background-color: red;
 }
 
-
-
-/*diagrama de las 4 main problems*/
-.accordion2 {
-  width: 90%;
-  max-width: 1000px;
-  margin: 2rem auto;
-}
-
-.accordion-item2,
-.accordion-item3,
-.accordion-item4,
-.accordion-item5 {
-  color: #111;
-  margin: 1rem 0;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
-}
-
-.accordion-item2 {
-  background-color: #3fa88f;
-}
-
-.accordion-item3 {
-  background-color: #5BC5AB;
-}
-
-.accordion-item4 {
-  background-color: #81D1BF;
-}
-
-.accordion-item5 {
-  background-color: #A7DCD3;
-}
-
-.accordion-item-body2,
-.accordion-item-body3,
-.accordion-item-body4,
-.accordion-item-body5 {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  padding-left: 2vw;
-  padding-right: 2vw;
-}
-
-.accordion-item-body2 {
-  background: linear-gradient(180deg, rgba(63, 168, 143, 1) 0%, rgba(240, 240, 240, 1) 100%);
-}
-
-.accordion-item-body3 {
-  background: linear-gradient(180deg, #5BC5AB 0%, rgba(240, 240, 240, 1) 100%);
-}
-
-.accordion-item-body4 {
-  background: linear-gradient(180deg, #81D1BF 0%, rgba(240, 240, 240, 1) 100%);
-}
-
-.accordion-item-body5 {
-  background: linear-gradient(180deg, #A7DCD3 0%, rgba(240, 240, 240, 1) 100%);
-}
-
-
-
-
 /*Boton desplegable de referencias*/
 .accordion {
-  width: 90%;
+  width: 0%;
   max-width: 1000px;
   margin: 2rem auto;
+  justify-self: center;
 }
 
 .accordion-item {
@@ -1135,14 +1071,31 @@ table tbody tr td::last-child {
   margin: 1rem 0;
   border-radius: 0.5rem;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+  width: 90%;
+  justify-self: center;
 
 }
 
+.accordion-item {
+  justify-self: center;
+  background-color: #ffffff;
+  color: #111;
+  margin: auto;
+  border-radius: 3px;
+  box-shadow: 7px 7px #5BC5AB;
+  width: 80%;
+  margin-bottom: 20px;
+  border: solid 0.5px #EBEBF1;
+
+}
+
+
 .accordion-item-header {
+  min-height: 60px;
+  font-size: 1.2rem;
   padding: 0.5rem 3rem 0.5rem 1rem;
-  min-height: 3.5rem;
-  line-height: 1.25rem;
-  font-weight: bold;
+  line-height: 1.5;
+  font-weight: 500;
   display: flex;
   align-items: center;
   position: relative;
@@ -1168,6 +1121,7 @@ table tbody tr td::last-child {
   transition: max-height 0.2s ease-out;
   padding-left: 20px;
   padding-right: 20px;
+
 }
 
 .accordion-item-body-content {
@@ -2538,7 +2492,8 @@ table tbody tr td::last-child {
 .titulo_gota6,
 .titulo_gota7,
 .titulo_gota8,
-.titulo_gota9 {
+.titulo_gota9,
+.titulo_gota10 {
   position: relative;
   rotate: -45deg;
   font-size: 15px;
@@ -2555,10 +2510,11 @@ table tbody tr td::last-child {
 }
 
 .titulo_gota9 {
-  margin-left: 0.5vw;
+  margin-left: -1vw;
   margin-bottom: 1vw;
   margin-top: 1vw;
-  padding-top: 2vw;
+  padding-top: 3.5vw;
+  font-size: 0.8vw;
 }
 
 .titulo_gota3 {
@@ -2603,6 +2559,13 @@ table tbody tr td::last-child {
   padding-top: 2vw;
 }
 
+.titulo_gota10 {
+  margin-left: 0.5vw;
+  margin-bottom: 1vw;
+  margin-top: 1vw;
+  padding-top: 2vw;
+}
+
 .texto_gota1,
 .texto_gota2,
 .texto_gota3,
@@ -2611,7 +2574,9 @@ table tbody tr td::last-child {
 .texto_gota6,
 .texto_gota7,
 .texto_gota8,
-.texto_gota9 {
+.texto_gota9,
+.texto_gota10
+ {
   display: none;
   position: relative;
   font-size: 0.4vw;
@@ -2727,12 +2692,13 @@ table tbody tr td::last-child {
 .gota4:hover .texto_gota4 {
   display: grid;
   rotate: 314deg;
-  width: 5.3vw;
-  margin-left: -1.2vw;
+  width: 5.7vw;
+  margin-left: -1.1vw;
   margin-top: -2.5vw;
   font-size: 0.4vw;
   text-align: center;
   color: white;
+  padding-top: -1vw;
 }
 
 .gota4:hover .titulo_gota4 {
@@ -2761,13 +2727,14 @@ table tbody tr td::last-child {
   z-index: 3;
 }
 
+
 .gota5:hover .texto_gota5 {
   display: grid;
   rotate: 314deg;
   width: 6.2vw;
-  margin-left: -1.5vw;
+  margin-left: -1.7vw;
   margin-top: -2.5vw;
-  font-size: 0.365vw;
+  font-size: 0.36vw;
   text-align: center;
   color: white;
 }
@@ -2806,7 +2773,6 @@ table tbody tr td::last-child {
   font-size: 0.35vw;
   text-align: center;
   color: white;
-  padding-top: 0.4vw;
 }
 
 .gota6:hover .titulo_gota6 {
@@ -2876,13 +2842,14 @@ table tbody tr td::last-child {
 .gota8:hover .texto_gota8 {
   display: grid;
   rotate: 314deg;
-  width: 5.6vw;
-  margin-left: -0.9vw;
+  width: 5.7vw;
+  margin-left: -1.5vw;
   margin-top: -2.5vw;
   font-size: 0.4vw;
   text-align: center;
   color: white;
-  padding-top: 0.2vw;
+  font-size: 0.37vw;
+  padding-top: 0.5vw;
 }
 
 .gota8:hover .titulo_gota8 {
@@ -2891,7 +2858,7 @@ table tbody tr td::last-child {
 
 
 .gota9 {
-  background-color: #B76277;
+  background-color: #447D9C;
   position: relative;
   z-index: 2;
   width: 7vw;
@@ -2916,19 +2883,54 @@ table tbody tr td::last-child {
   display: grid;
   rotate: 314deg;
   width: 5.6vw;
-  margin-left: -1.5vw;
+  margin-left: -1vw;
   margin-top: -2.5vw;
   font-size: 0.4vw;
   text-align: center;
   color: white;
-  padding-top: 1.5vw;
+  padding-top: -2.5vw;
 }
 
 .gota9:hover .titulo_gota9 {
   display: none;
 }
 
+.gota10 {
+  background-color: #DF8A8A;
+  position: relative;
+  z-index: 2;
+  width: 7vw;
+  left: 87.5vw;
+  height: 7vw;
+  border-radius: 0% 50% 50% 50%;
+  transform: rotate(45deg);
+  transform-origin: left;
+  transform: rotate(45deg) scale(3);
+  top: -33vw;
+}
 
+.gota10:hover {
+  transform: scale(5);
+  rotate: 45deg;
+  transform-origin: left;
+  z-index: 3;
+}
+
+.gota10:hover .texto_gota10 {
+  display: grid;
+  rotate: 314deg;
+  width: 5.6vw;
+  margin-left: -1.5vw;
+  margin-top: -2.5vw;
+  font-size: 0.4vw;
+  text-align: center;
+  color: white;
+  padding-top: -2.5vw;
+}
+
+.gota10:hover .titulo_gota10 {
+  display: none;
+}
 
 
 
@@ -4563,7 +4565,7 @@ table tbody tr td::last-child {
 
 .gotas {
   margin-left: -10%;
-  margin-top: 10%;
+  margin-top: 18%;
 }
 
 .title_whereStarted {
