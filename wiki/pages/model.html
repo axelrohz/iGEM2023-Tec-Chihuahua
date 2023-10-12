@@ -3331,11 +3331,15 @@
 						<table class="table1-responsive TABLA1">
 							<p style="height: 6px; left: -28px; position: relative;"><b>Table 2.</b> Constants on the IPTG induction model</p>
 					<tr>
-						<th>Constant</th>
-						<th>Meaning</th>
-						<th>Value</th>
-						<th>Unit</th>
-					 <th>Reference</th>
+						<th rowspan="2">Constant</th>
+						<th rowspan="2">Meaning</th>
+						<th colspan="2">Value</th>
+						<th rowspan="2">Unit</th>
+					 	<th rowspan="2">Reference</th>
+					</tr>
+					<tr>
+						<th >LysK</th>
+						<th >LysCSA13</th>
 					</tr>
 				<tbody>
 					<tr>
@@ -3350,10 +3354,11 @@
 					   </math>
 					   </td>
 						<td>Simple diffusion constant of IPTG*</td>
-						<td>0.92</td>
+						<td colspan="2">0.92</td>
 					 <td><math display='block'>
+						<mi>m</mi><mi>i</mi>
 						<msup>
-						 <mi>min</mi>
+						<mi>n</mi>
 						 <mrow>
 						  <mo>&#x2212;</mo><mn>1</mn></mrow>
 						</msup>
@@ -3372,10 +3377,10 @@
 						   </math>
 						</td>
 						<td>Transcription rate of LacI*</td>
-						<td>0.23</td>
+						<td colspan="2">0.23</td>
 						<td><math display='block'>
-							<mi>n</mi><mi>M</mi><mo>&#x22C5;</mo><msup>
-							 <mi>min</mi>
+							<mi>n</mi><mi>M</mi><mo>&#x22C5;</mo><mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
 							 <mrow>
 							  <mo>&#x2212;</mo><mn>1</mn></mrow>
 							</msup>
@@ -3393,11 +3398,12 @@
 							 </mrow>
 						   </math></td>
 						<td>Translation rate of LacI*</td>
-						<td>15</td>
+						<td colspan="2">15</td>
 						<td><math display='block'>
+							<mi>m</mi><mi>i</mi>
 							<msup>
-							 <mi>min</mi>
-							 <mrow>
+							<mi>n</mi>
+							<mrow>
 							  <mo>&#x2212;</mo><mn>1</mn></mrow>
 							</msup>
 						   </math>
@@ -3414,10 +3420,10 @@
 							 </mrow>
 						   </math></td>
 						<td>Dimerization rate of LacI*</td>
-						<td>50</td>
+						<td colspan="2">50</td>
 						<td><math display='block'>
-							<mi>n</mi><mi>M</mi><mo>&#x22C5;</mo><msup>
-							 <mi>min</mi>
+							<mi>n</mi><mi>M</mi><mo>&#x22C5;</mo><mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
 							 <mrow>
 							  <mo>&#x2212;</mo><mn>1</mn></mrow>
 							</msup>
@@ -3435,17 +3441,10 @@
 							 </mrow>
 						   </math></td>
 						<td>LacI dimerization rate constant*</td>
+						<td colspan="2">10<sup>-3</sup></td>
 						<td><math display='block'>
-							<msup>
-							 <mn>10</mn>
-							 <mrow>
-							  <mo>&#x2212;</mo><mn>3</mn></mrow>
-							</msup>
-						   </math>
-						   </td>
-						<td><math display='block'>
-							<msup>
-							 <mi>min</mi>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
 							 <mrow>
 							  <mo>&#x2212;</mo><mn>1</mn></mrow>
 							</msup>
@@ -3463,9 +3462,13 @@
 							 </mrow>
 						   </math></td>
 						<td>Tetramerization rate of LacI</td>
-						<td>10<sup>4</sup>-10<sup>5</sup></td>
-						<td>nM<sup>-1</sup>·seg<sup>-1</sup></td>
-						<td></td>	   
+						<td>172806.1332</td>
+						<td>528929.5329</td>
+						<td><math display='block'>
+							<mi>n</mi><msup><mi>M</mi><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></msup><mrow><mo>&#x22C5; </mo><mi>m</mi><mi>i</mi><msup><mi>n</mi><mrow> <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
+						<td>estimated</td>	   
 					</tr>
 					<tr>
 						<td><math display='block'>
@@ -3477,22 +3480,32 @@
 							 </mrow>
 						   </math></td>
 						<td>Dissociation rate of LacI tetramers</td>
-						<td></td>
-						<td></td>
-						<td></td>	   
+						<td>0.004646925019</td>
+						<td>0.004682362659</td>
+						<td><math display='block'>
+							<mi>m</mi><mi>i</mi>
+							<msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>	
+						<td>estimated</td>   
 					</tr>
 					<tr>
 						<td><math display='block'>
 							<mrow>
 							 <msub>
-							  <mi>k</mi>
-							  <mn>8</mn>
+							  <mi>k</mi> <mn>8</mn>
 							 </msub>
 							 </mrow>
 						   </math></td>
 						<td>Association rate of the first repression mechanism*</td>
-						<td></td>
-						<td></td>
+						<td colspan="2">960</td>
+						<td><math display='block'>
+							<mi>n</mi><msup><mi>M</mi><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></msup><mrow><mo>&#x22C5; </mo><mi>m</mi><mi>i</mi><msup><mi>n</mi><mrow> <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
 						<td><sup>4</sup></td>	   
 					</tr>
 					<tr>
@@ -3505,8 +3518,14 @@
 							 </mrow>
 						   </math></td>
 						<td>Dissociation rate of the first repression mechanism*</td>
-						<td></td>
-						<td></td>
+						<td colspan="2">2.4</td>
+						<td><math display='block'>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
 						<td><sup>4</sup></td>	   
 					</tr>
 					<tr>
@@ -3519,9 +3538,13 @@
 							 </mrow>
 						   </math></td>
 						<td>Association rate of the second repression mechanism</td>
-						<td></td>
-						<td></td>
-						<td></td>	   
+						<td>8289.871938</td>
+						<td>5870.331195</td>
+						<td><math display='block'>
+							<mi>n</mi><msup><mi>M</mi><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></msup><mrow><mo>&#x22C5; </mo><mi>m</mi><mi>i</mi><msup><mi>n</mi><mrow> <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
+						<td>estimated</td>	   
 					</tr>
 					<tr>
 						<td><math display='block'>
@@ -3533,9 +3556,16 @@
 							 </mrow>
 						   </math></td>
 						<td>Dissociation rate of the second repression mechanism</td>
-						<td></td>
-						<td></td>
-						<td></td>	   
+						<td>1.401669318</td>
+						<td>1.596701205</td>
+						<td><math display='block'>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
+						<td>estimated</td>	   
 					</tr>
 					<tr>
 						<td><math display='block'>
@@ -3547,8 +3577,11 @@
 							 </mrow>
 						   </math></td>
 						<td>Association rate of the second derepression mechanism*</td>
-						<td></td>
-						<td></td>
+						<td colspan="2">3x10<sup>-7</sup></td>
+						<td><math display='block'>
+							<mi>n</mi><msup><mi>M</mi><mrow><mo>&#x2212;</mo><mn>2</mn></mrow></msup><mrow><mo>&#x22C5; </mo><mi>m</mi><mi>i</mi><msup><mi>n</mi><mrow> <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
 						<td><sup>4</sup></td>	   
 					</tr>
 					<tr>
@@ -3561,8 +3594,14 @@
 							 </mrow>
 						   </math></td>
 						<td>Dissociation rate of the first derepression mechanism*</td>
-						<td></td>
-						<td></td>
+						<td colspan="2">12</td>
+						<td><math display='block'>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
 						<td><sup>4</sup></td>	   
 					</tr>
 					<tr>
@@ -3575,8 +3614,11 @@
 							 </mrow>
 						   </math></td>
 						<td>Association rate of the second derepression mechanism*</td>
-						<td></td>
-						<td></td>
+						<td colspan="2">3x10<sup>-7</sup></td>
+						<td><math display='block'>
+							<mi>n</mi><msup><mi>M</mi><mrow><mo>&#x2212;</mo><mn>2</mn></mrow></msup><mrow><mo>&#x22C5; </mo><mi>m</mi><mi>i</mi><msup><mi>n</mi><mrow> <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
 						<td><sup>4</sup></td>	   
 					</tr>
 					<tr>
@@ -3589,8 +3631,11 @@
 							 </mrow>
 						   </math></td>
 						<td>Dissociation rate of the second derepression mechanism*</td>
-						<td></td>
-						<td></td>
+						<td colspan="2">4.8x10<sup>-7</sup></td>
+						<td><math display='block'>
+							<mi>n</mi><msup><mi>M</mi><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></msup><mrow><mo>&#x22C5; </mo><mi>m</mi><mi>i</mi><msup><mi>n</mi><mrow> <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
 						<td><sup>4</sup></td>	   
 					</tr>
 					<tr>
@@ -3605,9 +3650,13 @@
 					   </math>
 					   </td>
 						<td>Association rate of the third derepression mechanism</td>
-						<td></td>
-					 	<td></td>
-					   <td></td>
+						<td>7.36E-07</td>
+						<td>3.94E-07</td>
+					 	<td><math display='block'>
+							<mi>n</mi><msup><mi>M</mi><mrow><mo>&#x2212;</mo><mn>2</mn></mrow></msup><mrow><mo>&#x22C5; </mo><mi>m</mi><mi>i</mi><msup><mi>n</mi><mrow> <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
+					   <td>estimated</td>
 					</tr>
 					<tr>
 						<td>
@@ -3621,9 +3670,16 @@
 						   </math>
 						</td>
 						<td>Dissociation rate of the third derepression mechanism </td>
-						<td></td>
-						<td></td>
-						<td></td>
+						<td>2988.006153</td>
+						<td>2284.487239</td>
+						<td><math display='block'>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
+						<td>estimated</td>
 					</tr>
 					<tr>
 						<td><math display='block'>
@@ -3635,9 +3691,13 @@
 							 </mrow>
 						   </math></td>
 						<td>Association rate of the fourth derepression mechanism</td>
-						<td></td>
-						<td></td>
-						<td></td>	   
+						<td>9.87E-08</td>
+						<td>1.00E-07</td>
+						<td><math display='block'>
+							<mi>n</mi><msup><mi>M</mi><mrow><mo>&#x2212;</mo><mn>2</mn></mrow></msup><mrow><mo>&#x22C5; </mo><mi>m</mi><mi>i</mi><msup><mi>n</mi><mrow> <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
+						<td>estimated</td>	   
 					</tr>
 					<tr>
 						<td><math display='block'>
@@ -3649,9 +3709,16 @@
 							 </mrow>
 						   </math></td>
 						<td>Dissociation rate of the fourth derepression mechanism </td>
-						<td></td>
-						<td></td>
-						<td></td>	   
+						<td>2411.253642</td>
+						<td>1960.781346</td>
+						<td><math display='block'>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
+						<td>estimated</td>	   
 					</tr>
 					<tr>
 						<td><math display='block'>
@@ -3663,9 +3730,16 @@
 							 </mrow>
 						   </math></td>
 						<td>Transcriptional rate of endolysin</td>
-						<td></td>
-						<td></td>
-						<td></td>	   
+						<td>0.1361368059</td>
+						<td>0.1283765476</td>
+						<td><math display='block'>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
+						<td>estimated</td>	   
 					</tr>
 					<tr>
 						<td><math display='block'>
@@ -3677,9 +3751,16 @@
 							 </mrow>
 						   </math></td>
 						<td>Transcriptional leak rate of endolysin in dimers</td>
-						<td></td>
-						<td></td>
-						<td></td>	   
+						<td>0.07776261945</td>
+						<td>0.2261425676</td>
+						<td><math display='block'>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
+						<td>estimated</td>	   
 					</tr>
 					<tr>
 						<td><math display='block'>
@@ -3691,9 +3772,16 @@
 							 </mrow>
 						   </math></td>
 						<td>Transcriptional leak rate of endolysin in tetramers</td>
-						<td></td>
-						<td></td>
-						<td></td>	   
+						<td>0.4241461762</td>
+						<td>0.3737824434</td>
+						<td><math display='block'>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
+						<td>estimated</td>	   
 					</tr>
 					<tr>
 						<td><math display='block'>
@@ -3705,9 +3793,16 @@
 							 </mrow>
 						   </math></td>
 						<td>Translation rate of the endolysin</td>
-						<td></td>
-						<td></td>
-						<td></td>	   
+						<td>13.7090742</td>
+						<td>10.93457685</td>
+						<td><math display='block'>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
+						<td>estimated</td>	   
 					</tr>
 					<tr>
 						<td><math display='block'>
@@ -3719,8 +3814,14 @@
 							 </mrow>
 						   </math></td>
 						<td>Degradation rate constant of the repressor mRNA*</td>
-						<td></td>
-						<td></td>
+						<td colspan="2">0.462</td>
+						<td><math display='block'>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
 						<td><sup>4</sup></td>	   
 					</tr>
 					<tr>
@@ -3733,23 +3834,15 @@
 							 </mrow>
 						   </math></td>
 						<td>Degradation rate constant of the repressor monomer*</td>
-						<td></td>
-						<td></td>
-						<td></td>	   
-					</tr>
-					<tr>
+						<td colspan="2">0.2</td>
 						<td><math display='block'>
-							<mrow>
-							 <msub>
-							  <mi>k</mi>
-							  <mn>11</mn>
-							 </msub>
-							 </mrow>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
 						   </math></td>
-						<td>Dissociation rate of the second repression mechanism</td>
-						<td></td>
-						<td></td>
-						<td><sup>4</sup></td>	   
+						<td></td>	   
 					</tr>
 					<tr>
 						<td><math display='block'>
@@ -3761,8 +3854,14 @@
 							 </mrow>
 						   </math></td>
 						<td>Degradation rate constant of the repressor dimer*</td>
-						<td></td>
-						<td></td>
+						<td colspan="2">0.2</td>
+						<td><math display='block'>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
 						<td><sup>4</sup></td>	   
 					</tr>
 					<tr>
@@ -3775,9 +3874,16 @@
 							 </mrow>
 						   </math></td>
 						<td>Degradation rate constant of the repressor tetramer</td>
-						<td></td>
-						<td></td>
-						<td></td>	   
+						<td>0.08567815958</td>
+						<td>0.1271362511</td>
+						<td><math display='block'>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
+						<td>estimated</td>	   
 					</tr>
 					<tr>
 						<td><math display='block'>
@@ -3789,8 +3895,14 @@
 							 </mrow>
 						   </math></td>
 						<td>Degradation rate constant of the dimer-IPTG complex*</td>
-						<td></td>
-						<td></td>
+						<td colspan="2">0.2</td>
+						<td><math display='block'>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
 						<td><sup>4</sup></td>	   
 					</tr>
 					<tr>
@@ -3803,9 +3915,16 @@
 							 </mrow>
 						   </math></td>
 						<td>Degradation rate constant of the tetramer-IPTG complex</td>
-						<td></td>
-						<td></td>
-						<td></td>	   
+						<td>0.05925751146</td>
+						<td>0.1315557746</td>
+						<td><math display='block'>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
+						<td>estimated</td>	   
 					</tr>
 					<tr>
 						<td><math display='block'>
@@ -3817,9 +3936,16 @@
 							 </mrow>
 						   </math></td>
 						<td>Degradation rate constant of the repressor monomer</td>
-						<td></td>
-						<td></td>
-						<td></td>	   
+						<td>0.05214786934</td>
+						<td>0.1212103757</td>
+						<td><math display='block'>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
+						<td>estimated</td>	   
 					</tr>
 					<tr>
 						<td><math display='block'>
@@ -3831,9 +3957,16 @@
 							 </mrow>
 						   </math></td>
 						<td>Degradation rate constant of endolysin mRNA</td>
-						<td></td>
-						<td></td>
-						<td></td>	   
+						<td>0.8233674927</td>
+						<td>1.531937249</td>
+						<td><math display='block'>
+							<mi>m</mi><mi>i</mi><msup>
+							<mi>n</mi>
+							 <mrow>
+							  <mo>&#x2212;</mo><mn>1</mn></mrow>
+							</msup>
+						   </math></td>
+						<td>estimated</td>	   
 					</tr>
 				</tbody>
 						</table>
@@ -4283,6 +4416,7 @@
 					   </msub>
 					   </math>
 					   <br>
+					   <p class="contenido">Where cell viability (% control) represents the proportion of viable cells remaining post-treatment. A sample refers to a specific concentration combination being assayed. The positive control is the corresponding bacteria treated with resazurin, while the negative control comprises the crude extract of E. coli BL21(DE3), the corresponding bacteria and resarzurin.</p>
 
 
 
