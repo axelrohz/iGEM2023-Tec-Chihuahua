@@ -2735,3 +2735,126 @@ hm {
   margin-top: 13vw;
   margin-bottom: 5vw;
 }
+
+/*Tabla de explicacion segundo modelo   abajo*/
+@media (max-width: 575.98px) {
+  .table2-responsive-sm {
+      display:block;
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch
+  }
+
+  .table2-responsive-sm>.table2-bordered {
+      border: 0
+  }
+}
+
+@media (max-width: 767.98px) {
+  .table2-responsive-md {
+      display:block;
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch
+  }
+
+  .table2-responsive-md>.table2-bordered {
+      border: 0
+  }
+}
+
+@media (max-width: 991.98px) {
+  .table2-responsive-lg {
+      display:block;
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch
+  }
+}
+
+
+@media (max-width: 1199.98px) {
+  .table2-responsive-xl {
+      display:block;
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch
+  }
+
+  .table2-responsive-xl>.table1-bordered {
+      border: 0
+  }
+}
+
+.table2-responsive {
+  display: block;
+  max-width: 100% ;
+  width: -webkit-fil-available;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touchñ
+  
+}
+
+/*!-- TABLAS -->*/
+.TABLA2 {
+  font-family: 'Inter', sans-serif;
+  width: fit-content;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border: 2px solid #C55B75;
+}
+
+.colorTextoTabla{
+  color: #447d9c;
+  font-weight: 600;
+  font-family: 'Quicksand';
+}
+.TABLA2 th, .TABLA2 td {
+  padding: 12px;
+  max-width: 30%;
+  text-align: left;
+  border: 1px solid #989898;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.TABLA2 th {
+  background-color: #989898;
+  color: #ffffff;
+  max-width: 30%;
+  text-align: center
+}
+
+.TABLA2 th h1 {
+  margin: auto;
+  max-width: 30%;
+  font-size: 1.5rem;
+  text-align: center;
+  justify-self: center;
+}
+
+.TABLA2 td {
+  background-color: #f5f5f5;
+  color: #302535;
+  max-width: 30%;
+}
+
+
+.TABLA2 td:hover {
+  background-color: #989898;
+  color: #ffffff;
+  transform: translate(4px, -4px);
+  box-shadow: 0 6px 6px -6px #ffffff;
+  max-width: 30%;
+}
+
+
+  .TABLA2 .error td:hover{
+      background-color: #5BC5AB;
+      color: #ffffff;
+      transform: translate(4px, -4px);
+      box-shadow: 0 6px 6px -6px #ffffff;
+      max-width: 30%;
+  }
+
+
+/*Tabla de explicacion segundo modelo   arriba*/
