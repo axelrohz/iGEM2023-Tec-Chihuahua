@@ -668,7 +668,7 @@ input {
   transition: background-color 0.5s, transform 0.5s;
   overflow: hidden;
   z-index: 10;
-  top: 3vh;
+  top: 34vh;
 }
  .overview{
   top: 50%;
