@@ -3093,3 +3093,17 @@ hm {
   opacity: 0.5;
   transition: 0.25s;
 }
+
+
+.hipervinculoaqua {
+  font-family: 'Quicksand';
+  font-weight: 700;
+  color: #5BC5AB;
+}
+
+.hipervinculoaqua:hover {
+  font-family: 'Quicksand';
+  font-weight: 700;
+  color: #5BC5AB;
+  text-decoration: underline;
+}
