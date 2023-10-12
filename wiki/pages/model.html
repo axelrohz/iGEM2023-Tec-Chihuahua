@@ -4721,7 +4721,7 @@
 				<h5 class="ctaT"><span>Data analysis</span></h5>
 			</div>
 			<p class="contenido">
-				The data collected from our experiments, available in the datatables below, was analyzed using the Design Expert software by Stat-Ease. Our objective was to minimize the number of viable cells of each bacteria, and for this purpose, we utilized the software to input the calculated correlations for each combination of the tested factors. The following methodology was applied to each case:
+				The data collected from our experiments (available in the datatables <a class="hipervinculoaqua" href="https://static.igem.wiki/teams/4607/wiki/modelo/datatable1.csv">1</a> ,<a href="https://static.igem.wiki/teams/4607/wiki/modelo/datatable2.csv">2</a>,<a href="https://static.igem.wiki/teams/4607/wiki/modelo/datatable3.csv">3</a>)  was analyzed using the Design Expert software by Stat-Ease. Our objective was to minimize the number of viable cells of each bacteria, and for this purpose, we utilized the software to input the calculated correlations for each combination of the tested factors. The following methodology was applied to each case:
 			</p>
 
 			<div class="accordion-item2">
@@ -4736,23 +4736,34 @@
 								<span class="tooltipSignificadoBox">
 									Power transformation to find the best λ that maximizes the log-likelihood of the transformed data, making it as close to normally distributed as possible.
 							</b>
-							transformation, selecting the appropriate transformation by evaluating a Box-Cox plot. After applying the suitable transformation, we confirmed the normal distribution through a <b>normal probability plot</b> and determined the best-fit equation recommended by Design Expert out of three options: linear, 2FI, or quadratic. If the p-value exceeded 0.05 and the term wasn't necessary hierarchically, it was eliminated. Below is a summary outlining the models for each bacterium.
+							plot.  After applying the suitable transformation, we confirmed the normal distribution through a <b>normal probability plot</b> and determined the best-fit equation recommended by Design Expert out of three options: linear, 2FI, or quadratic. If the p-value exceeded 0.05 and the term wasn't necessary hierarchically, it was eliminated. Below is a summary outlining the models for each bacterium.
+							<br>
+							<br>
+							<h5>
+								<em>S. aureus</em>
+							</h5>
 							<br>
 							For the <em>S. aureus </em> response, the cuadratic model was recommended. Box-Cox plot for the crude extracts data for bactericiday activity (%) against <em>S. aureus</em>. Based on this, the software recommended not performing a transformation.
 							<br>
-							<br>
+							<figure>
+								<img src="https://static.igem.wiki/teams/4607/wiki/modelo/anova/reen-shot-2023-10-12-at-5-32-06-a-m.webp"   style="max-width:40vh;max-height:45vh"/></td>
+								<p class="textoFigura2">
+								<b>Figure 3.</b>Box-Cox plot for <em>S. aureus</em> data. The green line represents the best λ (2.77). The red line represent the confidence interval (-0.07, 5.38), and the blue line represents the current transformation (1). 
+							</figure>
 							<br>
 							Based on <b>Figure 4</b>, it is evident that the data closely follows a normal distribution. The points on the plot align well with the straight line, indicating that the distribution of the data is approximately normal. This conformity to a normal distribution is important for various statistical analyses that assume normality, as it ensures the validity and reliability of the results derived from those analyses. It signifies that the underlying assumptions of these statistical methods, based on normality, are met by the dataset.
 							<br>
-							<br>
+							<figure>
+								<img src="https://static.igem.wiki/teams/4607/wiki/modelo/anova/screen-shot-2023-10-11-at-6-52-37-p-m.webp"  style="max-width:50vh;max-height:50vh">
+								<b>Figure 4.</b> Normal probability plot of <em>S. aureus</em> data. No transformation applied
+							</figure>
 							<br>
 							ANOVA, or Analysis of Variance, is a statistical method used to assess differences in means among two or more groups or treatments. It aims to determine whether these differences are significant or if they could likely be due to random chance. The key values in ANOVA provide crucial insights into the variability within and between groups. The "Sum of Squares" (SS) quantifies the dispersion of data, categorizing it into between-group and within-group variance. "Degrees of Freedom" (df) represent the number of values that are free to vary within the statistical analysis. "Mean Square" (MS) is a measure of variance, enabling the computation of the F-value—a ratio that assesses the significance of group differences. The associated p-value helps researchers conclude whether the observed differences are statistically meaningful or likely a result of chance.
-							
 							<table class="tabla2-responsive TABLA2">
 								<p style="
 								height: 6px;
 								left: -28px;
-								position: relative;"><b>Table 6.</b>ANOVA table of the bactericidal activity agains S. aureus. Quadratic equation: no transformation applied.</p>
+								position: relative;"><b>Table 5.</b>ANOVA table of the bactericidal activity agains <em>S. aureus</em>. Quadratic equation: no transformation applied.</p>
 									<tr>
 										<th>Source</th>
 										<th>Sum of squeares</th>
@@ -4881,7 +4892,7 @@
 								<p style="
 								height: 6px;
 								left: -28px;
-								position: relative;"><b>Table 7.</b>ANOVA table of the bactericidal activity agains <em>S. aureus</em>. Quadratic equation without the terms BC, A<sup>2</sup>, and C<sup>2</sup>: no transformation applied.</p>
+								position: relative;"><b>Table 6.</b>ANOVA table of the bactericidal activity agains <em>S. aureus</em>. Quadratic equation without the terms BC, A<sup>2</sup>, and C<sup>2</sup>: no transformation applied.</p>
 									<tr>
 										<th>Source</th>
 										<th>Sum of squeares</th>
@@ -4980,17 +4991,24 @@
 							</h5>
 							For the <em>S. agalactie</em> response, a two-factor (2FI) model was recommended. Box-Cox plot for the crude extracts data for bactericidal activity (%) against <em>S. agalactie</em>. Based on this, the software recommended not performing a transformation.
 							<br>
+							<figure>
+								<img src="https://static.igem.wiki/teams/4607/wiki/modelo/anova/screen-shot-2023-10-11-at-2-30-55-p-m.webp"  style="max-width:50vh;max-height:50vh">
+								<b>Figure 5.</b> Box-Cox plot for <em>S. agalactie</em> data. The green line represents the best λ (0.29). Confidence interval (-4.32, 4.90), and the blue line represents the current transformation (1).
+							</figure>
 							<br>
 							<br>
 							As depicted in <b>Figure 6</b>, the dataset also exhibits a notable alignment of points along the plotted straight line, suggesting an approximate normal distribution of the data. Thus, a transformation was not necessary.
 							<br>
-							<br>
+							<figure>
+								<img src="https://static.igem.wiki/teams/4607/wiki/modelo/anova/screen-shot-2023-10-11-at-2-32-01-p-m.webp"  style="max-width:50vh;max-height:50vh">
+								<b>Figure 6.</b> Normal probability plot of S. agalactie data. No transformation applied. 
+							</figure>
 							<br>
 							<table class="tabla2-responsive TABLA2">
 								<p style="
 								height: 6px;
 								left: -28px;
-								position: relative;"><b>Table 8.</b>ANOVA table of the bactericidal activity agains S. agalactie. 2FI equation: no transformation applied. </p>
+								position: relative;"><b>Table 7.</b>ANOVA table of the bactericidal activity agains S. agalactie. 2FI equation: no transformation applied. </p>
 									<tr>
 										<th>Source</th>
 										<th>Sum of squares</th>
@@ -5091,7 +5109,7 @@
 								<p style="
 								height: 6px;
 								left: -28px;
-								position: relative;"><b>Table 9.</b>ANOVA table of the bactericidal activity against <em>S. agalactie</em>. 2FI equation without AB and BC: no transformation applied. </p>
+								position: relative;"><b>Table 8.</b>ANOVA table of the bactericidal activity against <em>S. agalactie</em>. 2FI equation without AB and BC: no transformation applied. </p>
 									<tr>
 										<th>Source</th>
 										<th>Sum of squares</th>
@@ -5164,17 +5182,23 @@
 							</h5>
 							For the <em>E. coli </em> response, linear and quadratic models were recommended. Box-Cox plot for the crude extracts data for bactericiday activity (%) against <em>E. coli</em>. Based on this, the software recommended not performing a transformation.
 							<br>
-							<br>
+							<figure>
+								<img src="https://static.igem.wiki/teams/4607/wiki/modelo/anova/screen-shot-2023-10-11-at-8-16-09-p-m.webp"  style="max-width:50vh;max-height:50vh">
+								<b>Figure 7.</b>Box-Cox plot for <em>E. coli</em> data. The green line represents the best λ (-0.77). The red lines represent the confidence interval (-3.11, 1.23), and the blue line represents the current transformation (1). 
+							</figure>
 							<br>
 							Illustrated in <b>Figure 8</b>, the dataset displays a significant alignment of data points along the plotted straight line, implying an approximate normal distribution of the data. Thus, a transformation was also deemed unnecessary.
 							<br>
-							<br>
+							<figure>
+								<img src="https://static.igem.wiki/teams/4607/wiki/modelo/anova/screen-shot-2023-10-12-at-6-00-46-a-m.webp"  style="max-width:50vh;max-height:50vh">
+								<b>Figure 8.</b>Normal probability plot of <em>E. coli</em> data. No transformation applied. 
+							</figure>
 							<br>
 							<table class="tabla2-responsive TABLA2">
 								<p style="
 								height: 6px;
 								left: -28px;
-								position: relative;"><b>Table 10.</b>ANOVA table of the bactericidal activity against <em>E. coli</em>. Quadratic equation: no transformation applied.</p>
+								position: relative;"><b>Table 9.</b>ANOVA table of the bactericidal activity against <em>E. coli</em>. Quadratic equation: no transformation applied.</p>
 										<th>Source</th>
 										<th>Sum of squares</th>
 										<th>df</th>
@@ -5301,7 +5325,7 @@
 								<p style="
 								height: 6px;
 								left: -28px;
-								position: relative;"><b>Table 11.</b> ANOVA table of the bactericidal activity against <em>E. coli</em>. Quadratic equation without A, AB, AC, BC, and A<sup>2</sup>: no transformation applied.</p>
+								position: relative;"><b>Table 10.</b> ANOVA table of the bactericidal activity against <em>E. coli</em>. Quadratic equation without A, AB, AC, BC, and A<sup>2</sup>: no transformation applied.</p>
 										<th>Source</th>
 										<th>Sum of squares</th>
 										<th>df</th>
@@ -5379,8 +5403,6 @@
 							</div>
 						</div>
 					</div>
-
-
 			</p>
 			<br>
 			<br>
@@ -5460,9 +5482,143 @@
 	  </div>
 
 	  
-      <div class="secciones">
-   	 <p>DENTRO DE ESTE DIV PONER LAS COSAS DE LAS SECCIONES</p>
-      </div>
+    <div class="secciones">
+		<div style="margin-left: 2%">
+			<div class="tituloContenido">
+				<h3 id="upstream">First model</h3>
+			</div>
+			<p class="contenido">
+				An analysis of the behavior exhibited by each species within the IPTG induction model was conducted, aiming to align their behavior with literature-derived expectations. <b>Figure 1</b> visually represents how the IPTG concentration diminishes in the medium as it permeates the bacterial cells. Notably, monomers and dimers of the repressor associate, forming tetramers, leading to a predominant concentration of tetramers for a considerable duration. Around the 4-hour mark, we observe an increase on the endolysin production, this occurs as a consequence of the deactivation of the tetramer repressor by forming the tetramer-IPTG complex. At the 5 hour mark the protein production has reached its maximum point. This observed behavior concurs with the laboratory experiments. After being stable for a few moments it begins to decrease the endolysin concentration.
+				<br>
+				Additionally, this behavior in <b>Figure 1</b> underscores the critical role of tetramer formation in influencing endolysin production within the model. It substantiates the necessity to consider these dynamic shifts in the repressor states to understand and predict the endolysin concentration dynamics. 
+				<br>
+			</p>
+				<figure>
+				<img src="https://static.igem.wiki/teams/4607/wiki/modelo/modelo-1-secci-n-de-resultados/induccion-imagengraficas.webp"   style="max-width:50vh;max-height:50vh"/></td>
+				<p class="textoFigura2">
+				<b>Figure 1.  </b>Visualization of each species' behavior in the induction model. Accomplished using the estimated parameters for LysCSA13.
+				</p>
+				</figure>
+				<br>
+			<p class="contenido">As outlined in the methodology, we encountered a limitation regarding certain parameters that were not available in existing literature. This scarcity had a significant impact on the system, prompting us to emphasize the effect of minor variations in kinetic parameters. To achieve this, we employed a Monte Carlo approach and generated graphs reflecting a vast solution space. This approach aimed to delineate the operational ranges within which the model adheres to its assumptions, enabling accurate predictions. In total, 2000 distinct scenarios were generated, each incorporating a standard deviation of 0.05, and subsequently plotted for analysis.</p>
+				<figure>
+					<img src="https://static.igem.wiki/teams/4607/wiki/modelo/modelo-1-secci-n-de-resultados/montecarlo-lysk-final.webp"  style="max-width:50vh;max-height:50vh"/></td>
+					<p class="textoFigura2">
+					<b>Figure 2.</b>Montecarlo mechanism of LysK induction with 200 nM of IPTG and standard deviation of 0.05.
+					</p>
+				</figure>
+			<p class="contenido">In our Monte Carlo simulations, we observed that the anticipated concentration of LysK (<b>figure 2</b>) falls within the range of 8000-15000 nM, while for LysCSA13 (<b>figure 3</b>), it lies between 1500-3000 nM. Intriguingly, our simulations unveiled a captivating insight—the potential protein yield of the final endolysin surpasses that of the other species by a staggering factor. By considering the biological variability and comprehending how different factors within the cell influence the protein yield, we can foresee the conditions for maximum protein production. This not only enhances our understanding of the system but also provides valuable insights for scaling up production by predicting the potential protein yield under different conditions. This revelation not only underscores the significance of considering interactions within the system but also opens up exciting possibilities for optimizing protein yield in our bactericidal system.</p>
+			<br>
+			<figure>
+				<img src="https://static.igem.wiki/teams/4607/wiki/modelo/modelo-1-secci-n-de-resultados/montecarlo-lyscsa13-final.webp"    style="max-width:50vh;max-height:50vh">
+				<b>Figure 3.</b>Montecarlo mechanism of LysCSA13 induction with  200 nM of IPTG and standard deviation of 0.05.
+				</p>
+			</figure>
+			<p class="contenido">To enhance the confidence and accuracy of the model, our approach involved conducting a focused set of experiments. After confirming the satisfactory performance and alignment of the model with expected behavior, we proceeded with parameter estimation utilizing the deterministic IPTG induction model. Specifically, protein induction experiments at different IPTG concentrations (e.g., 0.2, 0.5, and 1 mM) combined with data obtained from SDS-PAGE gel electrophoresis analyzed using ImageJ served as inputs for the genetic algorithm (GA) to estimate the missing parameters previously mentioned. <b>Table 1</b> presents the outcomes of this optimization process. The objective was to identify the specific model that optimally fits the data for various concentrations.			</p>
+			<br>
+			<table class="tabla1-responsive TABLA1">
+				<p style="
+				height: 6px;
+				left: -28px;
+				position: relative;"><b>Table 1.</b>Estimated kinetic constants for LysK and LysCSA13 at 200 nM IPTG induction. Determined using a GA.</p>
+						<th>Endolysin</th>
+						<th>k6</th>
+						<th>k7</th>
+						<th>k10</th>
+						<th>k11</th>
+						<th>k16</th>
+						<th>k17</th>
+						<th>k18</th>
+						<th>k19</th>
+					</tr>
+				<tbody>
+					<tr>
+						<td>LysK</td>
+						<td>172806.1332</td>
+						<td>0.004646925019</td>
+						<td>8289.871938</td>
+						<td>1.401669318</td>
+						<td>7.36E-07</td>
+						<td>2988.006153</td>
+						<td>9.87E-08</td>
+						<td>2411.253642</td>
+					</tr>
+					<tr>
+						<td>LysCSA13</td>
+						<td>528929.5329</td>
+						<td>0.004682362659</td>
+						<td>5870.331195</td>
+						<td>1.596701205</td>
+						<td>3.94E-07</td>
+						<td>2284.487239</td>
+						<td>1.00E-07</td>
+						<td>1960.781346</td>
+					</tr>
+					<tr>
+						<th>Endolysin</th>
+						<th>k20</th>
+						<th>k21</th>
+						<th>k22</th>
+						<th>k23</th>
+						<th>k27</th>
+						<th>k29</th>
+						<th>k30</th>
+						<th>k31</th>
+					</tr>
+					<tr>
+						<td>LysK</td>
+						<td>0.1361368059</td>
+						<td>0.07776261945</td>
+						<td>0.4241461762</td>
+						<td>13.7090742</td>
+						<td>0.08567815958</td>
+						<td>0.05925751146</td>
+						<td>0.05214786934</td>
+						<td>0.8233674927</td>
+					</tr>
+					<tr>
+						<td>LysCSA13</td>
+						<td>0.1283765476</td>
+						<td>0.2261425676</td>
+						<td>0.3737824434</td>
+						<td>10.93457685</td>
+						<td>0.1271362511</td>
+						<td>0.1315557746</td>
+						<td>0.1212103757</td>
+						<td>1.531937249</td>
+					</tr>
+				</tbody>
+			</table>
+			<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+	 	
+
+    </div>
      </div>
      </div>    
      </div>

@@ -2492,7 +2492,8 @@ table tbody tr td::last-child {
 .titulo_gota6,
 .titulo_gota7,
 .titulo_gota8,
-.titulo_gota9 {
+.titulo_gota9,
+.titulo_gota10 {
   position: relative;
   rotate: -45deg;
   font-size: 15px;
@@ -2509,10 +2510,11 @@ table tbody tr td::last-child {
 }
 
 .titulo_gota9 {
-  margin-left: 0.5vw;
+  margin-left: -1vw;
   margin-bottom: 1vw;
   margin-top: 1vw;
-  padding-top: 2vw;
+  padding-top: 3.5vw;
+  font-size: 0.8vw;
 }
 
 .titulo_gota3 {
@@ -2557,6 +2559,13 @@ table tbody tr td::last-child {
   padding-top: 2vw;
 }
 
+.titulo_gota10 {
+  margin-left: 0.5vw;
+  margin-bottom: 1vw;
+  margin-top: 1vw;
+  padding-top: 2vw;
+}
+
 .texto_gota1,
 .texto_gota2,
 .texto_gota3,
@@ -2565,7 +2574,9 @@ table tbody tr td::last-child {
 .texto_gota6,
 .texto_gota7,
 .texto_gota8,
-.texto_gota9 {
+.texto_gota9,
+.texto_gota10
+ {
   display: none;
   position: relative;
   font-size: 0.4vw;
@@ -2681,12 +2692,13 @@ table tbody tr td::last-child {
 .gota4:hover .texto_gota4 {
   display: grid;
   rotate: 314deg;
-  width: 5.3vw;
-  margin-left: -1.2vw;
+  width: 5.7vw;
+  margin-left: -1.1vw;
   margin-top: -2.5vw;
   font-size: 0.4vw;
   text-align: center;
   color: white;
+  padding-top: -1vw;
 }
 
 .gota4:hover .titulo_gota4 {
@@ -2715,13 +2727,14 @@ table tbody tr td::last-child {
   z-index: 3;
 }
 
+
 .gota5:hover .texto_gota5 {
   display: grid;
   rotate: 314deg;
   width: 6.2vw;
-  margin-left: -1.5vw;
+  margin-left: -1.7vw;
   margin-top: -2.5vw;
-  font-size: 0.365vw;
+  font-size: 0.36vw;
   text-align: center;
   color: white;
 }
@@ -2760,7 +2773,6 @@ table tbody tr td::last-child {
   font-size: 0.35vw;
   text-align: center;
   color: white;
-  padding-top: 0.4vw;
 }
 
 .gota6:hover .titulo_gota6 {
@@ -2830,13 +2842,14 @@ table tbody tr td::last-child {
 .gota8:hover .texto_gota8 {
   display: grid;
   rotate: 314deg;
-  width: 5.6vw;
-  margin-left: -0.9vw;
+  width: 5.7vw;
+  margin-left: -1.5vw;
   margin-top: -2.5vw;
   font-size: 0.4vw;
   text-align: center;
   color: white;
-  padding-top: 0.2vw;
+  font-size: 0.37vw;
+  padding-top: 0.5vw;
 }
 
 .gota8:hover .titulo_gota8 {
@@ -2845,7 +2858,7 @@ table tbody tr td::last-child {
 
 
 .gota9 {
-  background-color: #B76277;
+  background-color: #447D9C;
   position: relative;
   z-index: 2;
   width: 7vw;
@@ -2870,19 +2883,54 @@ table tbody tr td::last-child {
   display: grid;
   rotate: 314deg;
   width: 5.6vw;
-  margin-left: -1.5vw;
+  margin-left: -1vw;
   margin-top: -2.5vw;
   font-size: 0.4vw;
   text-align: center;
   color: white;
-  padding-top: 1.5vw;
+  padding-top: -2.5vw;
 }
 
 .gota9:hover .titulo_gota9 {
   display: none;
 }
 
+.gota10 {
+  background-color: #DF8A8A;
+  position: relative;
+  z-index: 2;
+  width: 7vw;
+  left: 87.5vw;
+  height: 7vw;
+  border-radius: 0% 50% 50% 50%;
+  transform: rotate(45deg);
+  transform-origin: left;
+  transform: rotate(45deg) scale(3);
+  top: -33vw;
+}
 
+.gota10:hover {
+  transform: scale(5);
+  rotate: 45deg;
+  transform-origin: left;
+  z-index: 3;
+}
+
+.gota10:hover .texto_gota10 {
+  display: grid;
+  rotate: 314deg;
+  width: 5.6vw;
+  margin-left: -1.5vw;
+  margin-top: -2.5vw;
+  font-size: 0.4vw;
+  text-align: center;
+  color: white;
+  padding-top: -2.5vw;
+}
+
+.gota10:hover .titulo_gota10 {
+  display: none;
+}
 
 
 
@@ -4508,7 +4556,7 @@ table tbody tr td::last-child {
 
 .gotas {
   margin-left: -10%;
-  margin-top: 10%;
+  margin-top: 18%;
 }
 
 .title_whereStarted {
