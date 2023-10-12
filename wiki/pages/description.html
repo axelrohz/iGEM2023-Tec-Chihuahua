@@ -389,7 +389,48 @@ Staphylococcus aureus and Streptococcus agalactiae.
                         src="https://static.igem.wiki/teams/4607/wiki/project-description/infectedudder.png" alt="">
                     </div>
                   </div>
-
+                  <div id="dumbClick" class="clickMeCr active"> <- Click me! </div>
+                  <script>
+                    function showSection(sectionId) {
+                      // Hide all sections
+                      var byebye = document.getElementById("byebyeClick");
+                      var dumb = document.getElementById("dumbClick");
+                      byebye.style.opacity = "0";
+                      dumb.style.display = "none";
+                      var sections = document.querySelectorAll('#scrlS3 > div');
+                      sections.forEach(function (section) {
+                        section.style.display = 'none';
+                        section.style.visibility = 'visible';
+                      });
+                
+                      // Show the selected section
+                      var selectedSection = document.getElementById(sectionId);
+                      if (selectedSection) {
+                        selectedSection.style.display = 'block';
+                      }
+                    }
+                
+                  </script>
+                
+                  <script>
+                    window.addEventListener('scroll', reveal);
+                
+                    function reveal() {
+                      let activate = document.getElementById('stickyPP');
+                      let revealItem = document.getElementById('stickyTOP');
+                      var dumb = document.getElementById("dumbClick");
+                      let reveal = activate.getBoundingClientRect().top;
+                
+                      if (reveal < 50) {
+                        revealItem.classList.add('active');
+                        dumb.classList.add('active');
+                      }
+                      else {
+                        revealItem.classList.remove('active');
+                        dumb.classList.remove('active');
+                      }
+                    }
+                  </script>
                   <div class="udderbtncont">
                     <div class="udderbtn1"
                       style="--gradient:linear-gradient(45deg, rgb(246, 174, 45), rgb(245, 209, 148))" onclick="img1()">
