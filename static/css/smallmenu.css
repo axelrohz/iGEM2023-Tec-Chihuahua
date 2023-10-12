@@ -9,11 +9,6 @@
     transition: 0s;
 }
 
-.cellNav.active .cellNavLeft{
-    display: block;
-    transition-delay: 0.3s ;
-}
-
 .openCloseNav{
     width: 80%;
     height: 100vh;
@@ -26,8 +21,6 @@
 }
 
 .cellNav.active .openCloseNav{
-    width: 80%;
-    height: 100vh;
     transform: translateX(0);
 }
 
@@ -103,7 +96,7 @@
     cursor: pointer;
     transition: 0.3s;
     position: absolute;
-    width: 80%;
+    width: 100%;
     right: 0;
     top: 0;
     padding-top: 100px;
