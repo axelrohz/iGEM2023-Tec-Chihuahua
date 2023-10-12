@@ -334,14 +334,14 @@
 			<div class="stickyIndex">
 			  <div class="lineIndex"></div>
 			  <div class="indexDots">
-				<div onclick="goTo('1')" class="dotIndex" id="dot1">
-				  <div class="dotText">Underlying theory</div>
-				</div>
-				<div class="dotIndex" id="dot2" onclick="goTo('2')">
+				<div class="dotIndex" id="dot1" onclick="goTo('1')">
 				  <div class="dotText">Model building</div>
 				</div>
-				<div class="dotIndex" id="dot3" onclick="goTo('3')">
+				<div class="dotIndex" id="dot2" onclick="goTo('2')">
 				  <div class="dotText">Monte Carlo Simulation</div>
+				</div>
+				<div class="dotIndex" id="dot3" onclick="goTo('3')">
+				  <div class="dotText">Parameter Estimation</div>
 				</div>
 				<div class="dotIndex" id="dot4" onclick="goTo('4')">
 				  <div class="dotText">Response Surface Model</div>
@@ -4116,8 +4116,8 @@
 			<div class="tituloContenido" id="RSM">
    				 <h3 id="upstream" style="font-size: 2vw;">Second model</h3>
    			</div>
-			<div class="tituloContenido">
-				<h4 id="sec4" style=" font-size: 2vw;">Response Surface Method</span></h4>
+			<div id="sec4" class="tituloContenido">
+				<h4 style=" font-size: 2vw;">Response Surface Method</span></h4>
 			</div>
 			<div class="tituloContenido">
 				<h5 class="ctaT"><span>Background</span></h5>
@@ -4596,9 +4596,13 @@
 				<br>
 				In order to construct an accurate model from our data, it's crucial to have a normally distributed dataset. We achieved this by implementing a Box-Cox transformation, selecting the appropriate transformation by evaluating a Box-Cox plot. After applying the suitable transformation, we confirmed the normal distribution through a normal probability plot and determined the best-fit equation recommended by Design Expert out of three options: linear, 2FI, or quadratic. If the p-value exceeded 0.05 and the term wasn't necessary hierarchically, it was eliminated. Below is a summary outlining the models for each bacterium.
 			</p>
+			<br id="sec5">
+			<br>
+			<br>
+			<br>
 			<div class="accordion-item">
 				<div class="accordion-item-header">
-					<h3 id="sec5">References</h3>
+					<h3>References</h3>
 				</div>
 				<div class="accordion-item-body">
 					<div class="accordion-item-body-content">
@@ -4649,11 +4653,11 @@
 		<div class="stickyIndex">
 		  <div class="lineIndex"></div>
 		  <div class="indexDots">
-			<div onclick="goTo('1')" class="dotIndex" id="dot1">
-			  <div class="dotText">Underlying theory</div>
+			<div class="dotIndex" id="dot1" onclick="goTo('1')">
+			  <div class="dotText">Model building</div>
 			</div>
 			<div class="dotIndex" id="dot2" onclick="goTo('2')">
-			  <div class="dotText">Model building</div>
+			  <div class="dotText">Monte Carlo Simulation</div>
 			</div>
 			<div class="dotIndex" id="dot3" onclick="goTo('3')">
 			  <div class="dotText">Monte Carlo Simulation</div>
@@ -4711,9 +4715,6 @@
 			var dot3 = document.getElementById('dot3');
 			var dot4 = document.getElementById('dot4');
 			var dot5 = document.getElementById('dot5');
-			var dot6 = document.getElementById('dot6');
-			var dot7 = document.getElementById('dot7');
-			var dot8 = document.getElementById('dot8');
 		
 			function goTo(scrollID) {
 			  dot1.classList.remove('active');
@@ -4721,9 +4722,6 @@
 			  dot3.classList.remove('active');
 			  dot4.classList.remove('active');
 			  dot5.classList.remove('active');
-			  dot6.classList.remove('active');
-			  dot7.classList.remove('active');
-			  dot8.classList.remove('active');
 			  var dot = document.getElementById('dot' + scrollID);
 			  dot.classList.add('active');
 			  var element = document.getElementById('sec' + scrollID);
@@ -4737,18 +4735,12 @@
 		  var sect3 = document.getElementById('sec3');
 		  var sect4 = document.getElementById('sec4');
 		  var sect5 = document.getElementById('sec5');
-		  var sect6 = document.getElementById('sec6');
-		  var sect7 = document.getElementById('sec7');
-		  var sect8 = document.getElementById('sec8');
 	  
 		  var dot1 = document.getElementById('dot1');
 		  var dot2 = document.getElementById('dot2');
 		  var dot3 = document.getElementById('dot3');
 		  var dot4 = document.getElementById('dot4');
 		  var dot5 = document.getElementById('dot5');
-		  var dot6 = document.getElementById('dot6');
-		  var dot7 = document.getElementById('dot7');
-		  var dot8 = document.getElementById('dot8');
 	  
 		  window.addEventListener('scroll', function () {
 			var sect1top = sect1.getBoundingClientRect().top;
@@ -4756,91 +4748,43 @@
 			var sect3top = sect3.getBoundingClientRect().top;
 			var sect4top = sect4.getBoundingClientRect().top;
 			var sect5top = sect5.getBoundingClientRect().top;
-			var sect6top = sect6.getBoundingClientRect().top;
-			var sect7top = sect7.getBoundingClientRect().top;
-			var sect8top = sect8.getBoundingClientRect().top;
 			var topPad = 200;
-			if (sect8top - topPad <= topPad) {
-			  dot1.classList.remove('active');
-			  dot2.classList.remove('active');
-			  dot3.classList.remove('active');
-			  dot4.classList.remove('active');
-			  dot5.classList.remove('active');
-			  dot6.classList.remove('active');
-			  dot7.classList.remove('active');
-			  dot8.classList.add('active');
-			}  else if (sect7top - topPad <= topPad) {
-			  dot1.classList.remove('active');
-			  dot2.classList.remove('active');
-			  dot3.classList.remove('active');
-			  dot4.classList.remove('active');
-			  dot5.classList.remove('active');
-			  dot6.classList.remove('active');
-			  dot7.classList.add('active');
-			  dot8.classList.remove('active');
-			}  else if (sect6top - topPad <= topPad) {
-			  dot1.classList.remove('active');
-			  dot2.classList.remove('active');
-			  dot3.classList.remove('active');
-			  dot4.classList.remove('active');
-			  dot5.classList.remove('active');
-			  dot6.classList.add('active');
-			  dot7.classList.remove('active');
-			  dot8.classList.remove('active');
-			}  else if (sect5top - topPad <= topPad) {
+			if (sect5top - topPad <= topPad) {
 			  dot1.classList.remove('active');
 			  dot2.classList.remove('active');
 			  dot3.classList.remove('active');
 			  dot4.classList.remove('active');
 			  dot5.classList.add('active');
-			  dot6.classList.remove('active');
-			  dot7.classList.remove('active');
-			  dot8.classList.remove('active');
 			}  else if (sect4top - topPad <= topPad) {
 			  dot1.classList.remove('active');
 			  dot2.classList.remove('active');
 			  dot3.classList.remove('active');
 			  dot4.classList.add('active');
 			  dot5.classList.remove('active');
-			  dot6.classList.remove('active');
-			  dot7.classList.remove('active');
-			  dot8.classList.remove('active');
 			} else if (sect3top - topPad <= topPad) {
 			  dot1.classList.remove('active');
 			  dot2.classList.remove('active');
 			  dot3.classList.add('active');
 			  dot4.classList.remove('active');
 			  dot5.classList.remove('active');
-			  dot6.classList.remove('active');
-			  dot7.classList.remove('active');
-			  dot8.classList.remove('active');
 			} else if (sect2top - topPad <= topPad) {
 			  dot1.classList.remove('active');
 			  dot2.classList.add('active');
 			  dot3.classList.remove('active');
 			  dot4.classList.remove('active');
 			  dot5.classList.remove('active');
-			  dot6.classList.remove('active');
-			  dot7.classList.remove('active');
-			  dot8.classList.remove('active');
 			} else if (sect1top - topPad <= topPad) {
 			  dot1.classList.add('active');
 			  dot2.classList.remove('active');
 			  dot3.classList.remove('active');
 			  dot4.classList.remove('active');
 			  dot5.classList.remove('active');
-			  dot6.classList.remove('active');
-			  dot7.classList.remove('active');
-			  dot8.classList.remove('active');
 			} else {
 			  dot1.classList.remove('active');
 			  dot2.classList.remove('active');
 			  dot3.classList.remove('active');
 			  dot4.classList.remove('active');
 			  dot5.classList.remove('active');
-			  dot6.classList.remove('active');
-			  dot7.classList.remove('active');
-			  dot8.classList.remove('active');
 			}
 	  
 	  
