@@ -1396,6 +1396,106 @@
 
 					</p>
 
+					<script>
+						function toggleContent(id) {
+							var content = document.getElementById(id);
+							if (content.style.display === "none") {
+								content.style.display = "block";
+							} else {
+								content.style.display = "none";
+							}
+						}
+
+						// Primero, obtenemos los botones y los divs de contenido
+							var beforeButton = document.getElementById('BeforeB');
+							var afterButton = document.getElementById('AfterB');
+
+							var contentAppM1 = document.getElementById('AppM-Info');
+							var contentAppM2 = document.getElementById('AppM-Info2');
+							var contentTarM1 = document.getElementById('TarM-Info');
+							var contentTarM2 = document.getElementById('TarM-Info2');
+							var contentDrugSys1 = document.getElementById('DrugSys-Info');
+							var contentDrugSys2 = document.getElementById('DrugSys-Info2');
+
+
+							// Luego, agregamos un event listener a cada botón
+							beforeButton.addEventListener('click', function () {
+								// Cuando se hace clic en el botón "Before", mostramos el primer div y ocultamos el segundo
+								contentAppM1.style.display = "block";
+								contentAppM2.style.display = "none";
+								contentTarM1.style.display = "block";
+								contentTarM2.style.display = "none";
+								contentDrugSys1.style.display = "block";
+								contentDrugSys2.style.display = "none";
+							});
+
+							afterButton.addEventListener('click', function () {
+								// Cuando se hace clic en el botón "After", mostramos el segundo div y ocultamos el primero
+								contentAppM1.style.display = "none";
+								contentAppM2.style.display = "block";
+								contentTarM1.style.display = "none";
+								contentTarM2.style.display = "block";
+								contentDrugSys1.style.display = "none";
+								contentDrugSys2.style.display = "block";
+							});
+
+					</script>
+					<div id="DiagramOverview">
+						<img src="https://static.igem.wiki/teams/4607/wiki/human-2-0/aureobos.svg" alt="Aureobos logo">
+						<div id="botons">
+							<button id="BeforeB">Before</button>
+							<button id="AfterB">After</button>
+						</div>
+		
+						<div class="TitleCArd" id="AppM" onclick="toggleContent('AppM-Info')">Application Method</div>
+						<div class="content">
+							<div id="AppM-Info" class="COntent">Initially the method of application consisted on a topic nanogel that was
+								going to be applied directly in the udder of the cow.</div>
+							<div id="AppM-Info2" class="COntent">After the interviews carried out with our stakeholders we find out that a topic
+								method to treat mastitis would not be
+								efficient and optimal to apply. So based on the opinion of our stakeholders we decided to change our application
+								method
+								to an intramammary infusion, according to the interviews is the most common application method , easy and practical
+								to
+								use for the veterinary zootechnicians and dairy cattle owners.</div>
+						</div>
+						
+						
+						<div class="TitleCArd" id="TarM" onclick="toggleContent('TargeM-Info')">Targeted Microorganism</div>
+						
+						<div class="content">
+							<div id="TargeM-Info" class="COntent">Based in the bibliographic research at the beginning of AureBos, we decided
+								to focus on the principal microorganisms that causes mastitis: Staphylococcus aureus, Streptococcus agalactiae and
+								Streptococcus uberis.</div>
+							<div id="TargeM-Info2" class="COntent">During the interviews with the veterinary zootechnicians and dairy cattle owners
+								they mentioned that there is another
+								microorganism that also is one of the most prevalents in mastitis infection: “E coli”. So due to this we implemented
+								one
+								more endolysin to our product that attacks E. coli: LysSS.</div>
+						</div>
+						
+						
+						<div class="TitleCArd" id="DrugD" onclick="toggleContent('DrugSys-Info')">Drug delivery system</div>
+						<div class="content">
+							<div id="DrugSys-Info" class="COntent">
+								To improve our delivery system, we conducted a thorough analysis of the market competition. During our research, we
+								noticed that all the existing formulations included a transportation vehicle. As we delved deeper into this, we
+								discovered that these vehicles were compounds designed to stabilize the active ingredient in the medication and
+								facilitate its effective transfer.
+								Considering that our product was intended for intramammary use, we decided to explore formulations used in
+								intravaginal products for humans since our attempts with animal formulations had been unsuccessful. This led us to
+								the discovery of Carbopol 940 gel, which seemed promising for our purposes.
+							</div>
+							<div id="DrugSys-Info2" class="COntent">In the research of the vehicle for our endolysins we found out reported that
+								nanoparticles of alginate-chitosan are a
+								good vehicle for endolysins. [12] Also according to the opinion of experts in the pharmaceutical area they mentioned
+								that nanoparticles are a good drug vehicle and that chitosan posess antimicrobial properties which can enhance the
+								efficacy of AureoBos.</div>
+						</div>
+						
+
+					</div>
+
 					<div class="seccionResults">
 						<p class="subtitleR">AREA Framework</p>
 					</div>
