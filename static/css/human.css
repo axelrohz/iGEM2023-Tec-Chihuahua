@@ -2727,13 +2727,14 @@ table tbody tr td::last-child {
   z-index: 3;
 }
 
+
 .gota5:hover .texto_gota5 {
   display: grid;
   rotate: 314deg;
   width: 6.2vw;
-  margin-left: -1.5vw;
+  margin-left: -1.7vw;
   margin-top: -2.5vw;
-  font-size: 0.365vw;
+  font-size: 0.36vw;
   text-align: center;
   color: white;
 }
