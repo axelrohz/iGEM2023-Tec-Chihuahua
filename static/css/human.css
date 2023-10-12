@@ -4713,3 +4713,12 @@ h2 {
 p {
   font-weight: normal;
 }
+
+#traffic {
+  clip-path: inset(0px 0px 150px);
+  width: 100%;
+  height: 500px;;
+  object-fit: cover;
+  margin-top: 1%;
+  margin-bottom: -8%;
+}
