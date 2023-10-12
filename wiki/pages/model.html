@@ -356,18 +356,21 @@
 			  <div class="lineIndex"></div>
 			  <div class="indexDots">
 				<div class="dotIndex" id="dot11" onclick="goTo('11')">
+					<div class="dotText">Underlying theory</div>
+				  </div>
+				<div class="dotIndex" id="dot22" onclick="goTo('22')">
 				  <div class="dotText">Model building</div>
 				</div>
-				<div class="dotIndex" id="dot22" onclick="goTo('22')">
+				<div class="dotIndex" id="dot33" onclick="goTo('33')">
 				  <div class="dotText">Monte Carlo Simulation</div>
 				</div>
-				<div class="dotIndex" id="dot33" onclick="goTo('33')">
+				<div class="dotIndex" id="dot44" onclick="goTo('44')">
 				  <div class="dotText">Parameter Estimation</div>
 				</div>
-				<div class="dotIndex" id="dot44" onclick="goTo('44')">
+				<div class="dotIndex" id="dot55" onclick="goTo('55')">
 				  <div class="dotText">Response Surface Model</div>
 				</div>
-				<div class="dotIndex" id="dot55" onclick="goTo('55')">
+				<div class="dotIndex" id="dot66" onclick="goTo('66')">
 				  <div class="dotText">References</div>
 				</div>
 			  </div>
@@ -1109,7 +1112,7 @@
    		 <mo>&#x2205;</mo>
   		 </math>
   		 <p  ALIGN="right" class="NumeroEcuacion">(xxx)</p>
-			 <br id="sec11">
+			 <br id="sec22">
 				<br>
   		 <div class="tituloContenido">
    		 <h4 style="font-size: 2vw;">Model building</h4>
@@ -4223,7 +4226,7 @@
 					</div>
 				</div>
 		</div>
-			<br id = "sec22">
+			<br id = "sec33">
 			<br>
 			<br>
 		   <div class="tituloContenido">
@@ -4235,7 +4238,7 @@
 			<p  class="contenido">Monte Carlo (MC) simulations have been employed to predict the effects of stochasticity among reaction events, as well as in model developments where parameters are unknown, and for parameter estimation.<sup><a href="#referenciaM15" class="referencias">15-18</a></sup> Furthermore, MC simulations demonstrate a noteworthy level of accuracy, efficiency in computation, and ease of implementation. In our model, we employ a MC simulation to conduct 10,000 iterative excecutions utilizing randomly assing values for the unknown kinetic constants in <a class="figures" href="#table2"><b>Table 2.</b></a></p>
 			<br>
 			<p  class="contenido">Through this approach, a diverse and extensive array of potential parameter sets is generated, facilitating a probabilistic exploration of the parameter space. Subsequently, we leverage the established range of viable kinetic constant values obtained from the MC simulation as an input for a machine-learning-based parameter estimation algorithm, aiming to narrow down said parameter range.</p>
-			<br id="sec33">
+			<br id="sec44">
 			<br>
 			<div class="tituloContenido">
 				<h4 style=" font-size: 2vw;">Parameter estimation</h4>
@@ -4276,7 +4279,7 @@
 			<div class="tituloContenido" id="RSM">
    				 <h3 id="upstream" style="font-size: 2vw;">Second model</h3>
    			</div>
-			<div class="tituloContenido" id="sec44">
+			<div class="tituloContenido" id="sec55">
 				<h4 style=" font-size: 2vw;">Response Surface Method</span></h4>
 			</div>
 			<div class="tituloContenido">
@@ -5403,7 +5406,7 @@
 			<br>
 			<div class="accordion-item">
 				<div class="accordion-item-header">
-					<h3 id="sec55">References</h3>
+					<h3 id="sec66">References</h3>
 				</div>
 				<div class="accordion-item-body">
 					<div class="accordion-item-body-content">
@@ -5569,6 +5572,7 @@
 			var dot33 = document.getElementById('dot33');
 			var dot44 = document.getElementById('dot44');
 			var dot55 = document.getElementById('dot55');
+			var dot66 = document.getElementById('dot66');
 		
 			function goTo(scrollID) {
 			  dot11.classList.remove('active');
@@ -5576,6 +5580,7 @@
 			  dot33.classList.remove('active');
 			  dot44.classList.remove('active');
 			  dot55.classList.remove('active');
+			  dot66.classList.remove('active');
 			  var dot = document.getElementById('dot' + scrollID);
 			  dot.classList.add('active');
 			  var element = document.getElementById('sec' + scrollID);
@@ -5589,12 +5594,14 @@
 		  var sect33 = document.getElementById('sec33');
 		  var sect44 = document.getElementById('sec44');
 		  var sect55 = document.getElementById('sec55');
+		  var sect66 = document.getElementById('sec66');
 	  
 		  var dot11 = document.getElementById('dot11');
 		  var dot22 = document.getElementById('dot22');
 		  var dot33 = document.getElementById('dot33');
 		  var dot44 = document.getElementById('dot44');
 		  var dot55 = document.getElementById('dot55');
+		  var dot66 = document.getElementById('dot66');
 	  
 		  window.addEventListener('scroll', function () {
 			var sect11top = sect11.getBoundingClientRect().top;
@@ -5602,43 +5609,57 @@
 			var sect33top = sect33.getBoundingClientRect().top;
 			var sect44top = sect44.getBoundingClientRect().top;
 			var sect55top = sect55.getBoundingClientRect().top;
+			var sect66top = sect55.getBoundingClientRect().top;
 			var topPad = 200;
-			if (sect55top - topPad <= topPad) {
+			if (sect66top - topPad <= topPad) {
+			  dot11.classList.remove('active');
+			  dot22.classList.remove('active');
+			  dot33.classList.remove('active');
+			  dot44.classList.remove('active'); 
+			  dot55.classList.remove('active');
+			  dot66.classList.add('active');
+			} else if (sect55top - topPad <= topPad) {
 			  dot11.classList.remove('active');
 			  dot22.classList.remove('active');
 			  dot33.classList.remove('active');
 			  dot44.classList.remove('active'); 
 			  dot55.classList.add('active');
-			}  else if (sect44top - topPad <= topPad) {
+			  dot66.classList.remove('active');
+			} else if (sect44top - topPad <= topPad) {
 			  dot11.classList.remove('active');
 			  dot22.classList.remove('active');
 			  dot33.classList.remove('active');
 			  dot44.classList.add('active'); 
 			  dot55.classList.remove('active');
+			  dot66.classList.remove('active');
 			} else if (sect33top - topPad <= topPad) {
 			  dot11.classList.remove('active');
 			  dot22.classList.remove('active');
 			  dot33.classList.add('active');
 			  dot44.classList.remove('active'); 
 			  dot55.classList.remove('active');
+			  dot66.classList.remove('active');
 			} else if (sect22top - topPad <= topPad) {
 			  dot11.classList.remove('active');
 			  dot22.classList.add('active');
 			  dot33.classList.remove('active');
 			  dot44.classList.remove('active'); 
 			  dot55.classList.remove('active');
+			  dot66.classList.remove('active');
 			} else if (sect11top - topPad <= topPad) {
 			  dot11.classList.add('active');
 			  dot22.classList.remove('active');
 			  dot33.classList.remove('active');
 			  dot44.classList.remove('active'); 
 			  dot55.classList.remove('active');
+			  dot66.classList.remove('active');
 			} else {
 			  dot11.classList.remove('active');
 			  dot22.classList.remove('active');
 			  dot33.classList.remove('active');
 			  dot44.classList.remove('active'); 
 			  dot55.classList.remove('active');
+			  dot66.classList.remove('active');			  
 			}
 		  }); 
 		</script>
