@@ -239,7 +239,7 @@
 <div id="myNav" class="cellNav">
     <div class="cellNavTop">
         <img class="toplogo" src="https://static.igem.wiki/teams/4607/wiki/fonts/logopeqcut.png" height="100%" alt="logo" class="logo">
-        <div class="topclose" onclick="openNav()"> X </div>
+        <div class="topclose" id="openNavO" onclick="openNav()"> X </div>
     </div>
     <div class="cellNavLeft" onclick="openNav()"></div>   
     <div class="openCloseNav">
@@ -300,6 +300,12 @@
 </div>
 
 </div>
+
+<script>
+    var navBar = document.getElementById("openNavO");
+    navBar.addEventListener("click", openNav);
+    navBar.addEventListener("touchend", openNav);
+</script>
 
 <script>
 
